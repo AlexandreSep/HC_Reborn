@@ -1,0 +1,82 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>250</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="50.0" width="50.0" />
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>70</MinPop>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Salamander Den</GenericName>
+    <History>The reptilian Salamanders have long dwelled underground, rarely coming to the surface unless provoked. Gorons have tamed the beasts for a variety of uses, in particular as war beasts.</History>
+    <Icon>structures/goron/gor_saladen.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Allows the training of Salamander Creature units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/goron/{civ}_salamander_b
+      units/goron/{civ}_salawagon_b
+      units/goron/{civ}_warsalamander_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>13</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+      goron/troop_heatedclutch
+    goron/troop_wagonbrace
+    goron/troop_bombjuice
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/goron/goron_saladenA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

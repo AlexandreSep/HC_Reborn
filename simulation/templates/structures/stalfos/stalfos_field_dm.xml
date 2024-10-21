@@ -1,0 +1,5 @@
+<Entity parent="structures/stalfos/stalfos_field">
+   <VisualActor>
+    <Actor>structures/stalfos/stalfos_burialsiteA_des.xml</Actor>
+  </VisualActor>
+</Entity>

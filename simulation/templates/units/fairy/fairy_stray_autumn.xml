@@ -1,0 +1,21 @@
+<Entity parent="units/fairy/fairy_stray_b">
+  <DeathDamage>
+    <Damage>
+      <Spirit>35.0</Spirit>
+    </Damage>
+  </DeathDamage>
+  <Identity>
+    <Classes datatype="tokens">Autumn</Classes>
+    <Icon>units/fairy/fai_stray_autumn.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_stray_winter</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Vision>
+    <Range>160</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/fairy/fairy_stray_autumn.xml</Actor>
+  </VisualActor>
+</Entity>

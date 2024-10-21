@@ -1,0 +1,8 @@
+<Entity parent="structures/stalfos/stalfos_market">
+   <VisualActor>
+    <Actor>structures/stalfos/stalfos_marketA_des.xml</Actor>
+  </VisualActor>
+  <Health>
+	<SpawnEntityOnDeath>rubble/debris_stalfos_ruins_des</SpawnEntityOnDeath>
+  </Health>
+</Entity>

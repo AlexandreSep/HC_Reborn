@@ -1,0 +1,13 @@
+{
+	"genericName": "Professional Goat Wrangling",
+	"description": ".",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "ordona/goatbarn_prowrangler.dds",
+	"researchTime": 40,
+	"tooltip": "(Increases the spawn rate of Shepherd goats by 25%)",
+	"modifications": [{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.75 }],
+  "affects": [ "Shepherdgoat" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

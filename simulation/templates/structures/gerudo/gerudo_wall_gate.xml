@@ -1,0 +1,35 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="8.5" width="38.5" />
+  </Footprint>
+  <Gate>
+    <PassRange>20</PassRange>
+  </Gate>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Border</Classes>
+    <GenericName>Adobe Wall</GenericName>
+    <History>The Adobe walls of the Gerudo are quite durable, and help keep out invaders.</History>
+    <Icon>structures/gerudo/ger_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Door depth="7" width="10" x="0" z="0" />
+      <Left depth="7" width="14" x="-12" z="0" />
+      <Right depth="7" width="14" x="12" z="0" />
+    </Obstructions>
+    <Static disable="" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_wall_gate.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldH.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>37.0</Length>
+  </WallPiece>
+</Entity>

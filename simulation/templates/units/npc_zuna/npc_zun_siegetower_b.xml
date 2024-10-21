@@ -1,0 +1,132 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Melee>
+      <AttackName>Ram</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Structure</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Crush>100.0</Crush>
+      </Damage>
+      <MaxRange>6.5</MaxRange>
+      <PreferredClasses datatype="tokens">Gates Structure</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>10</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Decay>
+    <Active>false</Active>
+    <DelayTime>80.0</DelayTime>
+    <SinkAccel>0.0</SinkAccel>
+    <SinkRate>0.01</SinkRate>
+    <SinkingAnim>false</SinkingAnim>
+  </Decay>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">CanGarrison</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>6</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>4.2</X>
+        <Y>10.75 </Y>
+        <Z>9</Z>
+      </Archer1>
+      <Archer2>
+        <X>4.2</X>
+        <Y>10.75 </Y>
+        <Z>6</Z>
+      </Archer2>
+      <Archer3>
+        <X>4.2</X>
+        <Y>10.75 </Y>
+        <Z>3</Z>
+      </Archer3>
+      <Archer4>
+        <X>-4.2</X>
+        <Y>10.75 </Y>
+        <Z>9</Z>
+      </Archer4>
+      <Archer5>
+        <X>-4.2</X>
+        <Y>10.75 </Y>
+        <Z>6</Z>
+      </Archer5>
+      <Archer6>
+        <X>-4.2</X>
+        <Y>10.75 </Y>
+        <Z>3</Z>
+      </Archer6>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>civ_zuna</Civ>
+    <Classes datatype="tokens">-Organic Construct Ram Large Class40 MinorFaction</Classes>
+    <History>A giant and mighty battering ram that the Zuna once used to destroy many a castle, they were perhaps most well known from history in the battle against Baral's Stand, where they managed to break into the mighty Darknut fortress. The Siege Tower can effortlessly destroy the heaviest of fortifications and garrison troops inside.</History>
+    <Icon>units/npc_zuna/npc_zun_siegetower.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SpecificName>Zunayun Siege Tower</SpecificName>
+    <Tooltip>Large Siege tower that tears apart enemy structures up close.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>false</Floating>
+    <TurnRate>1</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
+      <death>voice/zuna/zuna_death.xml</death>
+      <order_attack>voice/zuna/zuna_attack.xml</order_attack>
+      <order_garrison>voice/zuna/zuna_garrison.xml</order_garrison>
+      <order_gather>voice/zuna/zuna_gather.xml</order_gather>
+      <order_repair>voice/zuna/zuna_repair.xml</order_repair>
+      <order_walk>voice/zuna/zuna_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/zuna/zuna_select.xml</select>
+      <trained>interface/alarm/alarm_create_engine.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>3.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/npc_zuna/npc_zun_towerram_b.xml</Actor>
+  </VisualActor>
+</Entity>

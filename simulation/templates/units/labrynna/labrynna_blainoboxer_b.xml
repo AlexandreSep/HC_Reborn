@@ -1,0 +1,75 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Fists</AttackName>
+      <Bonuses>
+        <BonusInfantryMelee>
+          <Classes>Infantry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusInfantryMelee>
+      </Bonuses>
+      <Damage>
+        <Crush>10.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>200</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Medium Class100 Blaino</Classes>
+    <GenericName>Blaino Boxer</GenericName>
+    <History>An exotic creature imported from far east of Mount Dunsel, Blainos were a nickname for these hostile creatures that would pick fights with just about anyone. Labrynna would at times use these strange beasts to beat up enemy forces with their vicious punches and kicks</History>
+    <Icon>units/labrynna/lab_blainoboxer.dds</Icon>
+    <Lang>labrynna</Lang>
+    <SelectionGroupName>units/labrynna/labrynna_blainoboxer_b</SelectionGroupName>
+    <Tooltip>Very fast moving Creature unit that beats up enemies with its fists.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>22.0</Crush>
+        <Hack>25.0</Hack>
+        <Pierce>23.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/blaino_punch.xml</attack_melee>
+      <death>voice/labrynna/blaino/blaino_death.xml</death>
+      <order_attack>voice/labrynna/blaino/blaino_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/blaino/blaino_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/blaino/blaino_gather.xml</order_gather>
+      <order_repair>voice/labrynna/blaino/blaino_repair.xml</order_repair>
+      <order_walk>voice/labrynna/blaino/blaino_walk.xml</order_walk>
+      <run>actor/movement/boar/boar_footsteps.xml</run>
+      <select>voice/labrynna/blaino/blaino_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/boar/boar_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2916</RunMultiplier>
+    <WalkSpeed>12</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_blainoboxer_b.xml</Actor>
+  </VisualActor>
+</Entity>

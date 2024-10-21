@@ -1,0 +1,73 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="11.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>400</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>60</MinPop>
+    </AIBuild>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Bigbonepit</Classes>
+    <GenericName>Big Bone Pit</GenericName>
+    <History>Makes cool new weapons and junk!</History>
+    <Icon>structures/moblin/mob_bonepit.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Moblins find so much stuff that other people throw out as junk! One time I found half eaten ratty in the biggo pile of stink! That was a free meal! Moblins smart we look in all the junk and make great time!</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="24.0" width="24.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    moblin/bonepit_foundcool
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/moblin/complete_bonepit.xml</constructed>
+      <select>interface/select/building/moblin/sel_bonepit.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_bonepit_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack up this Big Bone Pit.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_bigbonepitA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

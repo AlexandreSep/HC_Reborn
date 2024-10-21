@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Deku Forest Tree</SpecificName>
+    <Tooltip>A durable tree found in the eastern Kokiri forest.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/dekuforest_treesA.xml</Actor>
+  </VisualActor>
+</Entity>

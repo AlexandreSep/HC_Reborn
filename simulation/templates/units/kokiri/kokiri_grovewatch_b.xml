@@ -1,0 +1,78 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Damage>
+        <Hack>8.0</Hack>
+        <Pierce>2</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>0</metal>
+      <stone>5</stone>
+      <wood>10</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>70</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">Small WoodArmor FairyGuard Class100 GroveWatcher</Classes>
+    <GenericName>Grove Watcher</GenericName>
+    <History>A dedicated soldier wielding their iconic Kokiri Sword and Deku Shield. These warriors are trained from their creation to guard the Groves of the forest. Unlike most of their kind, their bravery is unmatched and they will fight to the death to protect the forest from invaders.</History>
+    <Icon>units/kokiri/kok_grovewatch.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>kokiri/get_fightyard</RequiredTechnology>
+    <SelectionGroupName>units/kokiri/kokiri_grovewatch_b</SelectionGroupName>
+    <Tooltip>Medium Melee unit armed with a sword and shield that is also partially resistant to Knockback. Can also Camouflage and is unaffected by Fear and Terror. Finally, gain improved stats when fighting within friendly territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/kokiri/kokiri_grovewatch_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>25</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/kokiri/grovewatcher/grovewatcher_death.xml</death>
+      <order_attack>voice/kokiri/grovewatcher/grovewatcher_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/grovewatcher/grovewatcher_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/grovewatcher/grovewatcher_gather.xml</order_gather>
+      <order_repair>voice/kokiri/grovewatcher/grovewatcher_repair.xml</order_repair>
+      <order_walk>voice/kokiri/grovewatcher/grovewatcher_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/kokiri/grovewatcher/grovewatcher_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.3636</RunMultiplier>
+    <WalkSpeed>11.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>70</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_grovewatch_b.xml</Actor>
+  </VisualActor>
+</Entity>

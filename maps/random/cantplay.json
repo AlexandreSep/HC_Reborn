@@ -1,0 +1,10 @@
+{
+	"settings" : {
+		"Name" : "Random Maps Not Enabled",
+		"Script" : "cantplay.js",
+		"Description" : "Random Maps are currently not enabled in Hyrule Conquest, they are a low priority feature.",
+		"Preview" : "please_choose.dds",
+		"CircularMap" : true
+	}
+}
+

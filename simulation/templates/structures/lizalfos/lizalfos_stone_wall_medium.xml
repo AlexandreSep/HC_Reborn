@@ -1,0 +1,49 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="26.5" />
+  </Footprint>
+  <GarrisonHolder>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>4</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-4</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Stone Wall</GenericName>
+    <History>A sturdy wooden wall built to protect Lizalfos settlements.</History>
+    <Icon>structures/lizalfos/liz_stonewall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="30.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_stonewall_medium.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldE_S.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>30.0</Length>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,10 @@
+{
+	"type": "formation",
+	"affects": ["Infantry Melee"],
+	"modifications": [
+		{ "value": "Armor/Hack", "multiply": 1.50 },
+		{ "value": "Armor/Pierce", "multiply": 1.50 }],
+	"auraName": "Gerudo Reflexes",
+	"auraDescription": "(In formation, +50% Armor vs Hack and Pierce (Dodge) - Melee Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/urbosa_gerudoreflexes.dds"
+}

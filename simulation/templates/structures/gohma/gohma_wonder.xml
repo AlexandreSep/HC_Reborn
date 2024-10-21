@@ -1,0 +1,82 @@
+<Entity parent="HC_template_structure_wonder">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Light>12.0</Light>
+      </Damage>
+      <Delay>0</Delay>
+	  <ElevationBonus>15</ElevationBonus>
+      <MaxRange>100.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.175</LineThickness>
+      </RangeOverlay>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>7</DefaultArrowCount>
+	<GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Footprint>
+    <Circle radius="30.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <Max>8000</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic GohmaBuild</Classes>
+    <GenericName>Eyes of Vitreous</GenericName>
+    <History>One of the seven eyes of Iemanis that morphed and grew into a new form after its body was destoyed in ages past. Vitreous lurked without purpose beneath the Misery Mire for countless ages, until the Gohma found and reintegrated it into their Hive. The eyes of Vitreous relentlessly observe everything around them, torching invaders with powerful electric shocks when they meet its gaze.	With the eyes and the power of Sulkaris the Gohma can reconstruct the form of Ieamnis.</History>
+    <Icon>structures/gohma/goh_wonder.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>The Gohma Wonder, allows you to summon Iemanis.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="56.0" width="56.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/gohma/{civ}_titan_iemanis
+    </Entities>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/magic_lightningbolt.xml</attack_ranged>
+      <constructed>interface/complete/building/gohma/complete_vitreous.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/gohma/sel_vitreous.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_wonderA.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

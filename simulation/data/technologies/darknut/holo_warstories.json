@@ -1,0 +1,13 @@
+{
+	"genericName": "War Stories",
+	"description": "Much could be learned from the story of a seasoned warrior... both from the truth and from the lies.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "darknut/holo_warstories.dds",
+	"researchTime": 40,
+	"tooltip": "Much could be learned from the story of a seasoned warrior... both from the truth and from the lies. (Experience required for units trained at Holosideros to gain a level is reduced by 10%)",
+	"modifications": [{"value": "Promotion/RequiredXp", "multiply": 0.90}],
+	"affects": ["Holounit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

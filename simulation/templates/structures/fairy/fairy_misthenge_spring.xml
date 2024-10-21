@@ -1,0 +1,20 @@
+<Entity parent="structures/fairy/fairy_blacksmithB">
+  <Identity>
+    <Classes datatype="tokens">Spring</Classes>
+    <Icon>structures/fairy/fai_misthenge_spring.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    fairy/season_lentenrest
+    </Technologies>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/fairy/fairy_misthenge_summer</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_misthengeA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,94 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>60</MinPop>
+    </AIBuild>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Town OrdTavern</Classes>
+    <GenericName>Tavern</GenericName>
+    <History>Allows Ordona Province to hire Mercenary units.</History>
+    <Icon>structures/ordona/ord_tavern.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Ordonians brewed quite a few strong brands of ale and mead and were famous throughout Hyrule for it. Many travellers would pass through the Province just to sample and partake at the parties that unfolded at these jovial (and often drunken) halls.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="35.0" width="35.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/ordona/{civ}_drunkard_b
+    units/ordona/{civ}_theresistance_b
+      units/merc_forestthief_b
+    units/merc_pikku_b
+    units/merc_mago_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>20</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    ordona/ashei_barterpromises
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_tavernA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldG.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,209 @@
+{
+	"Code": "sheikah",
+	"Culture": "civilized",
+	"Name": "Sheikah Cadre",
+	"Emblem": "session/portraits/emblems/emblem_sheikah.dds",
+	"History": "The Cadre is the ruling body of Hyrule's seven Sheikah Clans. The Cadre's goals are not explicit to outsiders, though it seems in general they wish to direct history and avoid cataclysmic disaster and change. To accomplish this the Sheikah have adopted extremely subversive and secretive methods: Spying, bribing, black mailing, and assassination to change the course of events rather than military or diplomatic might.",
+	"Music": [
+		{
+			"File": "sheikah_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "sheikah_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "sheikah_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "sheikah_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "sheikah_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+
+	"Factions": [
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies": [
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Sheik",
+					"Class": "",
+					"Armament": "Kunai",
+					"Emblem": "",
+					"History": "A mysterious figure that does not seem to hail from any Sheikah Clan, the warrior known only as Sheik is found in the service of the Nirvata Monks. Sheik's presence is often a portent of a cataclysmic event about to transpire in Hyrule, and death is sure to follow."
+				},
+				{
+					"Name": "Kohga",
+					"Class": "",
+					"Armament": "Sickles",
+					"Emblem": "",
+					"History": "The Chief of the Yiga Clan, Master Kohga has long lived on the frontier of Hyrule and is an ardent supporter of his clan's supremacy within the Cadre. Despite his attempts the Cadre has pushed the Yiga Clan away from their council, leading him to be disillusioned with the other Clan chiefs. Kohga himself is boisterous and full of pride, though he often seeks to gain people on his side through lavish gifts, parties, and bribes."
+				},
+				{
+					"Name": "Impa",
+					"Class": "",
+					"Armament": "Katana",
+					"Emblem": "",
+					"History": "The Chief of both the Kakari and Naldari Clan as well as the Sage of Shadows, Impa wields unprecedented political power within the Cadre and has long served both the Sheikah and the Royal Family of Hyrule. Perhaps the best swordsman in the history of Hyrule, her presence is often met with fear or reverence, depending on who is friend and foe. To those that do not know Impa she is seen as a cold and emotionless killer, perhaps an appearance that is a result of her extreme age and distance from society. She is in truth a very motherly figure to those that have her in their lives, perhaps an echo of a life she could have had in ages past."
+				},
+				{
+					"Name": "Maz Koshia",
+					"Class": "",
+					"Armament": "Katanas and Lightning",
+					"Emblem": "",
+					"History": "The eldest of the Nirvata Monks and the most feared sorcerer of the Cadre, Maz Koshia has long lorded over the council of Elders and influenced the Cadre for centuries. With the exception of his brief appearances at the gathering of council, Maz Koshia lives in utter isolation deep under the earth, amassing untold dark powers. He is utterly disconnected from the rest of his kind after centuries of isolation, and none know his true motives."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Double Agent",
+			"History": "",
+			"Description": "The Sheikah can retrieve Line of Sight from a randomized enemy unit via their Clan Hall."
+		},
+		{
+			"Name": "",
+			"History": "",
+
+			"Description": ""
+		},
+		{
+			"Name": "",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"CivChoices": [
+		"civ_choices/sheikah/choosehero_paya",
+		"civ_choices/sheikah/choosehero_purah",
+		"civ_choices/sheikah/choosehero_sheik",
+		"civ_choices/sheikah/choosehero_kohga",
+		"civ_choices/sheikah/choosehero_impa",
+		"civ_choices/sheikah/choosehero_mazkoshia"
+	],
+	"TeamBonuses": [
+		{
+			"Name": "",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"Structures": [
+		{
+			"Name": "Wonder: Shadow Seal",
+			"Class": "",
+			"Emblem": "",
+			"History": "A large and powerful seal created by the Sheikah to keep evil at bay beneath the earth. One such seal survives and has been placed at the entrance to the Shadow Temple, a monument to the sins of Hyrule. With great risk the Cadre can let loose a horrific monster that has been cast away beneath the seal.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		},
+		{
+			"Name": "Titan: Bongo Bongo",
+			"Class": "",
+			"Emblem": "",
+			"History": "An ancient monster that the Cadre had sealed beneath Kakariko Village in ages past, the creature known as Bongo Bongo has become nothing but a vague legend even to other Sheikah. The Nirvata Monks at times have sought to master and control this demon for their own ends in the past. Many attempts have failed, resulting in Bongo Bongo bringing havoc to Hyrule until it could be sealed away again. The monster itself appears as a large headless corpse with disembodied hands that follow it around as it goes.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/sheikah/sheikah_civil_centre"
+		},
+		{
+			"Template": "units/sheikah/sheikah_shadowfolkA",
+			"Count": 4
+		},
+		{
+			"Template": "units/sheikah/sheikah_trainee_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/sheikah/sheikah_hawkeye_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/sheikah/sheikah_spy_b"
+		}
+	],
+	"Formations": [
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames": [
+		"Paya",
+		"Purah",
+		"Sheik",
+		"Kohga",
+		"Impa",
+		"Maz Koshia"
+	],
+	"SkirmishReplacements": {
+		"skirmish/structures/default_civil_centre": "structures/sheikah/sheikah_civil_centre",
+		"skirmish/units/default_support_female_citizen": "units/sheikah/sheikah_shadowfolkA",
+		"skirmish/units/default_cavalry": "units/sheikah/sheikah_spy_b",
+		"skirmish/units/default_infantry_melee_b": "units/sheikah/sheikah_trainee_b",
+		"skirmish/units/default_infantry_ranged_b": "units/sheikah/sheikah_hawkeye_b",
+		"skirmish/structures/default_house_10": "structures/sheikah/sheikah_house"
+	},
+	"SelectableInGameSetup": false
+}

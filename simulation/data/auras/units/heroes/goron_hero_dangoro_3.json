@@ -1,0 +1,11 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [{ "value": "Attack/Ranged/Hack", "multiply": 1.25 },
+	{ "value": "Attack/Ranged/Pierce", "multiply": 1.25 },
+	{ "value": "Attack/Ranged/Crush", "multiply": 1.25 }],
+	"auraName": "Bomb's Away!",
+	"auraDescription": "{If Garrisoned, +25% Ranged Attack - Building)",
+	"overlayIcon": "art/textures/ui/session/auras/dangoro_bombsaway.dds"
+}
+

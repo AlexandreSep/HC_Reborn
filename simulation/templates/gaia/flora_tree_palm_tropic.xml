@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Moruge Palm</SpecificName>
+    <Tooltip>A ancient cousin of the Gerudo Palm that colonized over the Moruge Mountains, the Moruge Palm has managed to not just survive but thrive in the toxic waters of Misery Mire, feeding off the dim light they are allowed.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/palm_tropical_tall.xml</Actor>
+  </VisualActor>
+</Entity>

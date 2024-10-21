@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": ["Human"],
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": 0.5 }
+	],
+	"auraName": "Siege Shelters",
+	"auraDescription": "(Requires 'Siege Shelters' researched. Heal 0.5 health/second - Humanoid)",
+	"requiredTechnology": "hylian/bimaristan_siege_shelters",	
+	"overlayIcon": "art/textures/ui/session/auras/heal.png"
+}

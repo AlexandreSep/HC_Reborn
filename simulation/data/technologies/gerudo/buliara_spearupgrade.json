@@ -1,0 +1,14 @@
+{
+	"genericName": "Expert Spearmen",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 400, "metal": 400},
+	"requirements": {"all": [ {"tech": "civ_choices/gerudo/choosehero_buliara"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Buliara.",
+	"icon": "tech_generic.dds",
+	"researchTime": 50,
+	"tooltip": "(+25% HP - All Spearmen units)",
+	"modifications": [{"value": "Health/Max", "multiply": 1.25}],
+	"affects": ["Spearmen"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

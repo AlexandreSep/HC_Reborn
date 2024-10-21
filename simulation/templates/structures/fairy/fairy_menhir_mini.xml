@@ -1,0 +1,72 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/menhir_gather
+  </Auras>
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>250</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_smallA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <GenericName>Mini Menhir</GenericName>
+    <History>A shard of a fallen Fey rooted into the earth. It seems to behave as though it were a smaller Menhir.</History>
+    <Icon>structures/fairy/fai_menhir_spring.dds</Icon>
+    <Tooltip>A shard of a fallen Fey rooted into the earth. It seems to behave as though it were a smaller Menhir.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="5.0" width="5.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.25</food>
+      <metal>0.25</metal>
+      <stone>0.25</stone>
+      <wood>0.25</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_menhir.xml</constructed>
+      <select>interface/select/building/fairy/sel_menhir.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>10</Radius>
+    <Root>true</Root>
+    <Weight>1000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_menhir_mini.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

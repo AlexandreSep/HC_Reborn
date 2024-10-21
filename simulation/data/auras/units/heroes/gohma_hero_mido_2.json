@@ -1,0 +1,11 @@
+{
+	"type": "formation",
+	"affects": ["HeroMido"],
+	"modifications": [{ "value": "Armour/Pierce", "add": 3 },
+		{ "value": "Armour/Hack", "add": 3 },
+		{ "value": "Armour/Crush", "add": 3 }
+	],
+	"auraName": "Low Priority",
+	"auraDescription": "Mido takes no damage when in formation with units larger than himself.",
+	"overlayIcon": "art/textures/ui/session/auras/mido_lowpriority.dds"
+}

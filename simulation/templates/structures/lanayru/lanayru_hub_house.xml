@@ -1,0 +1,83 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="27.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lanayru_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>10</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Home Hub</GenericName>
+    <History>Hub structure that could add various rooms to house Zora families on to itself. Lanayru Provoince required such a building to increase its population capacity and field larger armies.</History>
+    <Icon>structures/lanayru/lan_hub_home.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Hub that can add Housing stuctures to itself.</Tooltip>
+    <VisibleClasses datatype="tokens">Hub</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="50.0" width="50.0" />
+  </Obstruction>
+  <Plots>
+    <PlotsToSpawn>
+      <PlotA>
+        <Angle>0</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/lanayru/lanayru_plot_houseB</Template>
+        <X>0</X>
+        <Z>-10</Z>
+      </PlotA>
+      <PlotB>
+        <Angle>90</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/lanayru/lanayru_plot_houseA</Template>
+        <X>-14</X>
+        <Z>5</Z>
+      </PlotB>
+      <PlotC>
+        <Angle>-90</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/lanayru/lanayru_plot_houseA</Template>
+        <X>14</X>
+        <Z>5</Z>
+      </PlotC>
+    </PlotsToSpawn>
+  </Plots>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    lanayru/home_privatequarters
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_house.xml</constructed>
+      <select>interface/select/building/sel_house.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_homehubA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,75 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Swords</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>3.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Hack>10.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>30</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>npc_lonlon</Civ>
+    <Classes datatype="tokens">Large MinorFaction</Classes>
+    <GenericName>Ranch Riders</GenericName>
+    <History>Mounted on the fastest horses in all of Hyrule, Lon Lon's Ranch Riders patrolled Hyrule Field with vigilance to protect the busienss and services of their employer. Nothing on foot could match their speed.</History>
+    <Icon>units/npc_lonlon/npc_lon_rider.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Fast Melee Cavalry unit that can take on and best other cavalry units.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>7.0</Crush>
+        <Forest>1.0</Forest>
+        <Hack>7.0</Hack>
+        <Pierce>7.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/hylian/soldier/soldier_death.xml</death>
+      <order_attack>voice/hylian/soldier/soldier_attack.xml</order_attack>
+      <order_garrison>voice/hylian/soldier/soldier_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/soldier/soldier_gather.xml</order_gather>
+      <order_repair>voice/hylian/soldier/soldier_repair.xml</order_repair>
+      <order_walk>voice/hylian/soldier/soldier_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/hylian/soldier/soldier_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.4814</RunMultiplier>
+    <WalkSpeed>27.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/npc_lonlon/npc_lon_rider_b.xml</Actor>
+  </VisualActor>
+</Entity>

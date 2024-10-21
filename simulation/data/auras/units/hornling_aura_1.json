@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.1 }
+	],
+	"auraName": "Deku Horns",
+	"auraDescription": "(+10% Walk/Run Speed - Unit)",
+	"overlayIcon": "art/textures/ui/session/auras/hornling_aura_1.dds"
+}

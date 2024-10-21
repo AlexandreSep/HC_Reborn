@@ -1,0 +1,106 @@
+<Entity parent="structures/ruins/ruins_baseB">
+  <Health disable="" />
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Barracks Ruins</Classes>
+    <GenericName>Ancient Ruins</GenericName>
+    <History>The long-abandoned remnants of a past culture.</History>
+    <Icon>structures/ruins/ruins_ancientA_small.dds</Icon>
+    <Tooltip>The long-abandoned remnants of a past culture.</Tooltip>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/armos/armos_alttp_b
+    </Entities>
+  </ProductionQueue>
+  <Upgrade>
+    <ADarknut>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_CC_ancientB</Entity>
+      <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <RequiredTechnology>darknut/ruins_isdarknut</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Restore these ruins into a Darknut Agora.</Tooltip>
+    </ADarknut>
+	<BDefiled>
+      <Entity>structures/stalfos/stalfos_defiled_anc_inv</Entity>
+      <Tooltip>Transform ruins into a Defiled Grave, which spawns piles of bones that can be gathered by Stalchildren.</Tooltip>
+      <Cost>
+        <wood>150</wood>
+		<stone>150</stone>
+      </Cost>
+      <Time>30</Time>
+	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
+	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+	  <Variant>upg_stalfos</Variant>
+    </BDefiled>	  
+	<CMarket>
+      <Entity>structures/stalfos/stalfos_market_anc_inv</Entity>
+      <Tooltip>Transform ruins into Occult Peddler, allowing you to trade resources.</Tooltip>
+      <Cost>
+        <wood>150</wood>
+		<stone>150</stone>
+      </Cost>
+      <Time>30</Time>
+	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
+	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+	  <Variant>upg_stalfos</Variant>
+    </CMarket>		
+	<DSepulcrum>
+      <Entity>structures/stalfos/stalfos_blacksmith_anc_inv</Entity>
+      <Tooltip>Transform ruins into Soldier's Sepulcrum, allowing you to raise many battle ready Stalfos forms.</Tooltip>
+      <Cost>
+        <wood>150</wood>
+		<stone>150</stone>
+      </Cost>
+      <Time>30</Time>
+	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
+	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+	  <Variant>upg_stalfos</Variant>
+    </DSepulcrum> 
+	<ESlab>
+      <Entity>structures/stalfos/stalfos_blacksmithB_anc_inv</Entity>
+      <Tooltip>Transform ruins into Sacrificial Slab, allowing you to raise many creature Stalfos forms.</Tooltip>
+      <Cost>
+        <wood>150</wood>
+		<stone>150</stone>
+      </Cost>
+      <Time>30</Time>
+	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
+	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+	  <Variant>upg_stalfos</Variant>
+    </ESlab>
+    <FHauntedRuins>
+      <Entity>structures/stalfos/stalfos_barracks_anc_inv</Entity>
+      <Tooltip>Haunt these ruins, allowing the summoning of Poes.</Tooltip>
+      <Cost>
+        <wood>150</wood>
+		<stone>150</stone>
+      </Cost>
+      <Time>30</Time>
+	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
+	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+	  <Variant>upg_stalfos</Variant>
+    </FHauntedRuins> 	
+	<GTemple>
+      <Entity>structures/stalfos/stalfos_temple_anc_inv</Entity>
+      <Tooltip>Transform ruins into Dark Reliquary, allowing you to raise magical Stalfos and improve them.</Tooltip>
+      <Cost>
+        <wood>150</wood>
+		<stone>150</stone>
+      </Cost>
+      <Time>30</Time>
+	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
+	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+	  <Variant>upg_stalfos</Variant>
+    </GTemple>				
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/ruins/ruins_ancientA_small.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

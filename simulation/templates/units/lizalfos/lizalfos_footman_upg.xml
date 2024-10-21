@@ -1,0 +1,6 @@
+<Entity parent="units/lizalfos/lizalfos_footman_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_footman_upg.xml</Actor>
+  </VisualActor>
+</Entity>

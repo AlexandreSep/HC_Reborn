@@ -1,0 +1,5 @@
+<Entity parent="template_gaia_geo_sirloin_slabs">
+  <VisualActor>
+    <Actor>geology/raw_sirloinA.xml</Actor>
+  </VisualActor>
+</Entity>

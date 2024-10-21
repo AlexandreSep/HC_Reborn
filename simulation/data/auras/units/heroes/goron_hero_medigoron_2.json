@@ -1,0 +1,12 @@
+{
+	"type": "formation",
+	"affects": ["Infantry Melee"],
+	"modifications": [
+		{ "value": "Armour/Pierce", "add": 5 },
+		{ "value": "Armour/Hack", "add": 5 },
+		{ "value": "Armour/Crush", "add": 5 }
+	],
+	"auraName": "Goron Heavyweight",
+	"auraDescription": "(+5 Armor (Knockback Immunity) - Melee Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/medigoron_heavyweight.dds"
+}

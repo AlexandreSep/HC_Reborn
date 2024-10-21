@@ -1,0 +1,69 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Auditorium</GenericName>
+    <History>The Darknuts would mass at their Auditoriums to listen to, debate, and refine their proposals and treatises.</History>
+    <Icon>structures/darknut/dar_auditorium.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Creates a variety of improvements for many Darknut features.</Tooltip>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    darknut/treatise_cliffarch
+    darknut/treatise_baralstand
+    darknut/treatise_domatech
+    darknut/treatise_ahkraspush
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_research.xml</constructed>
+      <select>interface/select/building/sel_research.xml</select>
+      <upgraded>interface/complete/building/complete_research.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_auditoriumbaseA.xml</Actor>
+  </VisualActor>
+</Entity>

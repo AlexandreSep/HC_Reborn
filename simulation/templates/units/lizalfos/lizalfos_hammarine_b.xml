@@ -1,0 +1,77 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Hammer</AttackName>
+      <Damage>
+        <Crush>25.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>75</food>
+      <metal>0</metal>
+      <stone>55</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>350</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Medium Class100 Volvamight Hammarine Lizarmored</Classes>
+    <GenericName>Hammarine</GenericName>
+    <History>A sect of warrior princesses, the Hammarines wielded a mighty hammer and displayed the colors of her chosen clutch. With such mighty force they could rupture armored victims without resistance.</History>
+    <Icon>units/lizalfos/liz_hammarine.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_hammarine_b</SelectionGroupName>
+    <Tooltip>Powerful Melee unit armed with a giant warhammer.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/goron_firewarrior_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>55.0</Hack>
+        <Pierce>65.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>50</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lizalfos/hammarine/hammarine_death.xml</death>
+      <order_attack>voice/lizalfos/hammarine/hammarine_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/hammarine/hammarine_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/hammarine/hammarine_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/hammarine/hammarine_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/hammarine/hammarine_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/lizalfos/hammarine/hammarine_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_hammarine_b.xml</Actor>
+  </VisualActor>
+</Entity>

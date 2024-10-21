@@ -1,0 +1,104 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="28.0" width="28.0" />
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>50</MinPop>
+    </AIBuild>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Goat Barn</GenericName>
+    <History>Ordonians were notable for devoting sizeable portions of their farmlands to the signature goats that roamed the southern plains. Shephards tend to flocks of the creatures, while Yeoman pick from the group their mounts into battle.</History>
+    <Icon>structures/ordona/ord_goatbarn.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Trains Goat related Ordonian units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="24.0" width="24.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>-2</X>
+        <Z>2</Z>
+      </step1>
+	  <step2>
+        <X>-3</X>
+        <Z>10</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/ordona/{civ}_hawk_b
+      units/ordona/{civ}_shepherd_b
+    units/ordona/{civ}_yeoman_b
+    units/ordona/{civ}_billybat_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-2</X>
+      <Z>0</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    ordona/goatbarn_prowrangler
+    ordona/goatbarn_billybuckin
+    ordona/goatbarn_fadofrolick
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_stables.xml</constructed>
+      <select>interface/select/building/sel_stables.xml</select>
+      <upgraded>interface/complete/building/complete_stables.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <stone>100</stone>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/ordona/ordona_stablesB</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Upgrade to Ranch.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_goatbarnA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+</Entity>

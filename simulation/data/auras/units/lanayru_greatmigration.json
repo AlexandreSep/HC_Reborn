@@ -1,0 +1,19 @@
+{
+  "type": "formation",
+  "affects": [ "PrawnBowman" ],
+  "modifications": [
+    {
+      "value": "UnitMotion/WalkSpeed",
+      "multiply": 2
+    },
+    {
+      "value": "UnitMotion/RunMultiplier",
+      "multiply": 2
+    }
+  ],
+  "auraName": "Great Migration",
+  "auraDescription": "{In Formation, Prawn Bowmen move 100% fast)",
+  "requiredTechnology": "lanayru/animal_greatmigration",
+  "stackable": false,
+  "overlayIcon": "art/textures/ui/session/auras/battlebro_aura_1.dds"
+}

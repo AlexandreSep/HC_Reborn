@@ -1,0 +1,103 @@
+<Entity parent="HC_template_structure_plot">
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <GenericName>Large Construction Plot</GenericName>
+    <History>Goron structures tended to be made from large hills and mountains. They would carve and build specialized areas to meet their needs.</History>
+    <Icon>structures/goron/gor_plot.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Constructs Goron Buildings on this space.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <stone>150</stone>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/goron/goron_market</Entity>
+      <Time>60</Time>
+      <Tooltip>Build a Market Plaza on this plot.</Tooltip>
+      <Variant>upg_market</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <stone>250</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/goron/goron_barracksA</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Hall of Warriors on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <stone>250</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/goron/goron_barracksB</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Salamander Den on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerC>
+    <TowerD>
+      <Cost>
+        <stone>250</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/goron/goron_barracksC</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Gladiator Ring on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerD>
+    <TowerE>
+      <Cost>
+        <stone>250</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/goron/goron_barracksD</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build an Explosive Foundary on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerE>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/goron/goron_plot_largeA.xml</Actor>
+  </VisualActor>
+</Entity>

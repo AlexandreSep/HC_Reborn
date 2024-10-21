@@ -1,0 +1,64 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="52.0" width="52.0" />
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Arena</GenericName>
+    <History>Lizalfos welcomed battle, due in part to the fact that they enjoyed the fight so much. While hunting prey was one thing, testing their might against fellow Lizalfos was a true challenge. All manner of soldiers would compete to prove who was the best fighter.</History>
+    <Icon>structures/lizalfos/liz_arena.dds</Icon>
+    <RequiredTechnology>lizalfos_doda</RequiredTechnology>
+    <Tooltip>Improves Lizalfos Units.</Tooltip>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="50.0" width="50.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    lizalfos/arena_standtilldeath
+    lizalfos/arena_battlescars
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/lizalfos/complete_arena.xml</constructed>
+      <select>interface/select/building/lizalfos/sel_arena.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_arenaA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_S.xml</FoundationActor>
+  </VisualActor>
+</Entity>

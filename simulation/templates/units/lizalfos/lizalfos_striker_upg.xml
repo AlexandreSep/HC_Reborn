@@ -1,0 +1,6 @@
+<Entity parent="units/lizalfos/lizalfos_striker_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_chameleo_upg.xml</Actor>
+  </VisualActor>
+</Entity>

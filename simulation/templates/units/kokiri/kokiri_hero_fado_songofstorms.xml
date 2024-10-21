@@ -1,0 +1,22 @@
+<Entity parent="units/kokiri/kokiri_hero_fado_base">
+  <Auras datatype="tokens">
+    units/heroes/hylian_hero_rauru_1
+  units/heroes/hylian_hero_rauru_2
+  units/heroes/hylian_hero_rauru_3
+  </Auras>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/abilities/kokiri/fado_songofstorms.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <SongA>
+      <Entity>units/kokiri/kokiri_hero_fado_songofstorms</Entity>
+      <Time>1</Time>
+      <Tooltip>Play the Song of Storms.</Tooltip>
+    </SongA>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_hero_fado_songofstorms.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,86 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Hooves</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Structure</Classes>
+          <Multiplier>3.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Crush>35.0</Crush>
+      </Damage>
+      <Knockback>
+        <Horizontal>15</Horizontal>
+      </Knockback>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>1800</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>85</food>
+      <metal>0</metal>
+      <stone>30</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Hydrophant Large HydroDemolish</Classes>
+    <GenericName>Hydrophant Demolisher</GenericName>
+    <History>Guided by a Zora Rider, these giant adult Hydrophants can use their massive weight to ram into other large targets. The Dominion frequently uses Demolishers to break through enemy walls and knock down towers and buildings. They are somewhat less effective against smaller and mobile targets, seeing as Hydrophants have a difficult time focusing on movement below their heads.</History>
+    <Icon>units/zora/zor_hydrodemolish.dds</Icon>
+    <Lang>zora</Lang>
+    <SelectionGroupName>units/zora/zora_hydrodemolish_b</SelectionGroupName>
+    <Tooltip>Large Cavalry Siege unit that excells at destroying enemy structures.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/zora/demolisher/demolisher_death.xml</death>
+      <order_attack>voice/zora/demolisher/demolisher_attack.xml</order_attack>
+      <order_garrison>voice/zora/demolisher/demolisher_garrison.xml</order_garrison>
+      <order_gather>voice/zora/demolisher/demolisher_gather.xml</order_gather>
+      <order_repair>voice/zora/demolisher/demolisher_repair.xml</order_repair>
+      <order_walk>voice/zora/demolisher/demolisher_walk.xml</order_walk>
+      <run>actor/movement/giant/giant_walkB.xml</run>
+      <select>voice/zora/demolisher/demolisher_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/giant/giant_walkB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_hydrodemolish_b.xml</Actor>
+  </VisualActor>
+</Entity>

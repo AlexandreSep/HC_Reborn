@@ -1,0 +1,78 @@
+<Entity parent="HC_template_structure_defense">
+  <BuildingAI>
+    <DefaultArrowCount>1</DefaultArrowCount>
+  </BuildingAI>
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="10.0" width="10.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>2</LoadingRange>
+    <Max>2</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>14.5</Y>
+        <Z>2</Z>
+      </Archer1>
+      <Archer2>
+        <X>0</X>
+        <Y>14.5</Y>
+        <Z>-2</Z>
+      </Archer2>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Sentries Nurses</Classes>
+    <GenericName>Watch Tower</GenericName>
+    <History>With so many hostile neighbors, the Kingdom is wise to have posts along their vast borders to help forewarn of intrusions.</History>
+    <Icon>structures/hylian/hyl_sentry_tower.dds</Icon>
+    <Tooltip>Small Tower that can detect Camouflaged and Stealthed units.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="7.5" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    hylian/tower_sentries
+    </Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_towerA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldI.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,89 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sickles</AttackName>
+      <Damage>
+        <Hack>40.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>5</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>350</food>
+      <metal>125</metal>
+      <stone>125</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>800</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">HeroKohga Hero4 Medium</Classes>
+    <GenericName>Yiga Master</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The Chief of the Yiga Clan, Master Kohga has long lived on the frontier of Hyrule and is an ardent supporter of his clan's supremacy within the Cadre. Despite his attempts the Cadre has pushed the Yiga Clan away from their council, leading him to be disillusioned with the other Clan chiefs. Kohga himself is boisterous and full of pride, though he often seeks to gain people on his side through lavish gifts, parties, and bribes.</History>
+    <Icon>units/sheikah/she_hero_kohga.dds</Icon>
+    <Lang>sheikah</Lang>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_kohga</RequiredTechnology>
+    <SpecificName>Kohga</SpecificName>
+    <Tooltip>Durable and hearty Infantry Melee Hero armed with a a pair of sickles.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <DodgeRating>10.0</DodgeRating>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>50.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>40.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/sheikah/kohga/kohga_death.xml</death>
+      <order_attack>voice/sheikah/kohga/kohga_attack.xml</order_attack>
+      <order_garrison>voice/sheikah/kohga/kohga_garrison.xml</order_garrison>
+      <order_gather>voice/sheikah/kohga/kohga_gather.xml</order_gather>
+      <order_repair>voice/sheikah/kohga/kohga_repair.xml</order_repair>
+      <order_walk>voice/sheikah/kohga/kohga_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/sheikah/kohga/kohga_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero4</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/sheikah/sheikah_hero_kohga_b.xml</Actor>
+  </VisualActor>
+</Entity>

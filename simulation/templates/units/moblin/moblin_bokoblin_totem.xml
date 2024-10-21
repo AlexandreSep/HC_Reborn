@@ -1,0 +1,5 @@
+<Entity parent="units/moblin/moblin_bokoblin_b">
+  <Cost>
+    <Population>0</Population>
+  </Cost>
+</Entity>

@@ -1,0 +1,71 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/hanging_aura
+  </Auras>
+  <BuildRestrictions>
+    <Category>Temple</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>250</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="11.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_kokiri_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">Addon Town</Classes>
+    <GenericName>Public Hangings</GenericName>
+    <History>Kokiri criminals are rare but they do exist. Kokiri are very easily embarrassed, and to deal with these criminals they hang them publicly by their undergarments for all to point and laugh at. A crude and painful, but very effective means of punishment.</History>
+    <Icon>structures/kokiri/kok_publichanging.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Structure that boosts the performance of Kokiri Laborers.</Tooltip>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="10.0" width="10.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <Selectable>
+    <EditorOnly />
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.4</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/kokiri/complete_hanging.xml</constructed>
+      <select>interface/select/building/kokiri/sel_hanging.xml</select>
+      <upgraded>interface/complete/building/kokiri/complete_hanging.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_publichangA.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

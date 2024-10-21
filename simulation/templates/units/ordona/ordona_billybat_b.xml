@@ -1,0 +1,76 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Damage>
+        <Hack>12.0</Hack>
+        <Pierce>4</Pierce>
+      </Damage>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>75</food>
+      <metal>0</metal>
+      <stone>20</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>370</Max>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Large Class100 Goat BillyBat</Classes>
+    <GenericName>Billy Battler</GenericName>
+    <History>The Billy Battler is the face of the Ordonian army, and perhaps their nation's most numerous military unit. A trained warrior riding on the back of an angry Ordonian goat, these armored cavalry may lack speed but pack quite the buck. After charging into an enemy with their looped horn, the Billy Battler's rider chops and decapitates enemies with their axe. Like all of Ordona's goat cavalry, the Billy Battler can climb over mountainous terrain.</History>
+    <Icon>units/ordona/ord_billybat.dds</Icon>
+    <Lang>ordona</Lang>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/ordona/ordona_billybat_b</SelectionGroupName>
+    <Tooltip>Medium Cavalry unit with a strong melee attack and Knockback damage.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/ordona/billybat/billybat_death.xml</death>
+      <order_attack>voice/ordona/billybat/billybat_attack.xml</order_attack>
+      <order_garrison>voice/ordona/billybat/billybat_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/billybat/billybat_gather.xml</order_gather>
+      <order_repair>voice/ordona/billybat/billybat_repair.xml</order_repair>
+      <order_walk>voice/ordona/billybat/billybat_walk.xml</order_walk>
+      <run>actor/movement/goat/goat_footsteps.xml</run>
+      <select>voice/ordona/billybat/billybat_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/goat/goat_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>climbing</PassabilityClass>
+    <RunMultiplier>1.4</RunMultiplier>
+    <WalkSpeed>12.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ordona/ordona_billybat_b.xml</Actor>
+  </VisualActor>
+</Entity>

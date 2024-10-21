@@ -1,0 +1,21 @@
+<Entity parent="units/moblin/moblin_mob_b">
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>30.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>30.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/moblin/moblin_mob_upg.xml</Actor>
+  </VisualActor>
+</Entity>

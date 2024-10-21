@@ -1,0 +1,33 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="8.5" width="38.5" />
+  </Footprint>
+  <Gate>
+    <PassRange>20</PassRange>
+  </Gate>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_goron_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <GenericName>Goron Gate</GenericName>
+    <History>Goron Walls are some of the sturdiest defenses in all of Hyrule. It takes quite a force to break through metal and stone.</History>
+    <Icon>structures/goron/gor_wall_gate.dds</Icon>
+    <Tooltip>Defensive Wall to slow invaders.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Door depth="7" width="10" x="0" z="0" />
+      <Left depth="7" width="14" x="-12" z="0" />
+      <Right depth="7" width="14" x="12" z="0" />
+    </Obstructions>
+    <Static disable="" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/goron/goron_wall_gateA.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>37.0</Length>
+  </WallPiece>
+</Entity>

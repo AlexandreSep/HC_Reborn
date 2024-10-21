@@ -1,0 +1,19 @@
+<Entity parent="units/zora/zora_floodmaster_b">
+  <Attack>
+    <Ranged>
+      <Splash>
+        <Damage>
+          <Water>22.5</Water>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>15</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <Knockback>
+        <Horizontal>30</Horizontal>
+        <Vertical>15</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Promotion disable="" />
+</Entity>

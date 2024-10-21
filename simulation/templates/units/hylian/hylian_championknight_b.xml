@@ -1,0 +1,87 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Commander</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+        <Bonus2>
+          <Classes>Hero</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus2>
+        <Bonus3>
+          <Classes>Huge</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus3>
+      </Bonuses>
+      <Damage>
+        <Hack>25.0</Hack>
+        <Pierce>15</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>3</BattalionSlots>
+    <BuildTime>55</BuildTime>
+    <Resources>
+      <food>150</food>
+      <metal>20</metal>
+      <stone>75</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>250</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Knight HylianShield UniqueUnit</Classes>
+    <GenericName>Champion Knight</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Trained by the last heir of Gustaf, these knights display the lost techniques of the Ancient Hylians and command great bravery and courage in battle. They dramatically improve the performance of all Infantry under their command.</History>
+    <Icon>units/hylian/hyl_championknight.dds</Icon>
+    <Lang>hylian</Lang>
+    <RequiredTechnology>civ_choices/hylian/choosehero_link</RequiredTechnology>
+    <SelectionGroupName>units/hylian/hylian_championknight_b</SelectionGroupName>
+    <Tooltip>Link's Unique Unit. Extremely powerful infantry unit that is immune to Knockback and inflicts bonus damage against large creature units and commanders.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>35.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/hylian/knights/knights_death.xml</death>
+      <order_attack>voice/hylian/knights/knights_attack.xml</order_attack>
+      <order_garrison>voice/hylian/knights/knights_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/knights/knights_gather.xml</order_gather>
+      <order_repair>voice/hylian/knights/knights_repair.xml</order_repair>
+      <order_walk>voice/hylian/knights/knights_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/hylian/knights/knights_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5555</RunMultiplier>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/hylian/hylian_champknight_b.xml</Actor>
+  </VisualActor>
+</Entity>

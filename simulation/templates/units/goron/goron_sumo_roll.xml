@@ -1,0 +1,53 @@
+<Entity parent="units/goron/goron_sumo_b">
+  <Attack>
+    <Melee>
+      <AttackName>Rolling</AttackName>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Classes datatype="tokens">Rolling CoronBonusB</Classes>
+    <GenericName>Rolling Sumo</GenericName>
+    <Icon>units/goron/gor_sumo_roll.dds</Icon>
+    <SelectionGroupName>units/goron/goron_sumo_roll_b</SelectionGroupName>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>false</Floating>
+    <TurnRate>2.5</TurnRate>
+  </Position>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.1086</RunMultiplier>
+    <WalkSpeed>23.0</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>0</wood>
+      </Cost>
+      <Entity>units/goron/goron_sumo_b</Entity>
+      <Time>1</Time>
+      <Tooltip>Leave Rolling mode.</Tooltip>
+    </Tower>
+  </Upgrade>
+  <Vision>
+    <Range>10</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/goron/goron_sumo_roll.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

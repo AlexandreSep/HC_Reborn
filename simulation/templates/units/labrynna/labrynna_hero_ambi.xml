@@ -1,0 +1,85 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>15.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>4</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>360</food>
+      <metal>100</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">HeroAmbi Hero4 Medium</Classes>
+    <GenericName>Queen of Labrynna</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The latest member of the long lasting Ambi dynasty, Queen Solado Ambi was placed on the throne shortly after her father’s death. Later in her reign she encountered Veran, whom she quickly instated as her personal advisor. Soon after Ambi ushered in a new age of expansion and formerly established the new Empire. Queen Ambi was known as a kind and gentle person during the first part of her reign over Labrynna. Shortly after Veran’s insertion into her court however, Ambi’s attitude began to degenerate. Bouts of depression seemed to overcome her, as well as a great sense of impatience for everything.</History>
+    <Icon>units/labrynna/lab_hero_ambi.dds</Icon>
+    <Lang>labrynna</Lang>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_ambi</RequiredTechnology>
+    <SpecificName>Solado Ambi</SpecificName>
+    <Tooltip>Commanding Hero unit who augments her soldiers with powerful abilities.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>20.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/labrynna/ambi/ambi_death.xml</death>
+      <order_attack>voice/labrynna/ambi/ambi_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/ambi/ambi_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/ambi/ambi_gather.xml</order_gather>
+      <order_repair>voice/labrynna/ambi/ambi_repair.xml</order_repair>
+      <order_walk>voice/labrynna/ambi/ambi_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/labrynna/ambi/ambi_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero4</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.4166</RunMultiplier>
+    <WalkSpeed>6</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_ambi_b.xml</Actor>
+  </VisualActor>
+</Entity>

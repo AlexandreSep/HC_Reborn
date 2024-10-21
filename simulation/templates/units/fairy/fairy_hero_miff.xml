@@ -1,0 +1,93 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Fairy Magic</AttackName>
+      <Damage>
+        <Spirit>20.0</Spirit>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>30.0</MaxRange>
+      <MinRange>1.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1900</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>460</food>
+      <metal>100</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2200</Max>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">HeroMiff Hero6 Medium</Classes>
+    <GenericName>Fairy of the West</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A friendly, if mischievous spirit as far as Fairies are concerned. Legend says that heroes who have proven themselves brave may call upon her in trouble.</History>
+    <Icon>units/fairy/fai_hero_miff.dds</Icon>
+    <Lang>zora</Lang>
+    <RequiredTechnology>civ_choices/fairy/choosehero_miff</RequiredTechnology>
+    <SpecificName>Miff</SpecificName>
+    <Tooltip>Mage unit that attacks with her staff at close range.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>15.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/greatfairy_wind_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/greatfairy_wind.xml</attack_ranged>
+      <death>voice/fairy/sekaia/sekaia_death.xml</death>
+      <order_attack>voice/fairy/sekaia/sekaia_attack.xml</order_attack>
+      <order_garrison>voice/fairy/sekaia/sekaia_garrison.xml</order_garrison>
+      <order_gather>voice/fairy/sekaia/sekaia_gather.xml</order_gather>
+      <order_repair>voice/fairy/sekaia/sekaia_repair.xml</order_repair>
+      <order_walk>voice/fairy/sekaia/sekaia_walk.xml</order_walk>
+      <run>actor/movement/fairy/fairy_hoverA.xml</run>
+      <select>voice/fairy/sekaia/sekaia_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero6</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_hero_miff_b.xml</Actor>
+  </VisualActor>
+</Entity>

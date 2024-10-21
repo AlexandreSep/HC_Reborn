@@ -1,0 +1,178 @@
+{
+	"Code": "moblin",
+	"Culture": "barbaric",
+	"Name": "Moblins",
+	"Emblem": "session/portraits/emblems/emblem_moblin.dds",
+	"History": "Once the dominant power in what is now known as the Land of Famine, the Moblin's homeland was utterly devestated and left in ruins after a brutal war with the Akkalans. After centuries of slowly recovering, the Moblins and their Blin servants reunited under the guidance of the warlord Ganon. Now the united powers of Blin-kind seek to continue their relentless rampage across Hyrule.",
+	"Music":[
+			{"File":"moblin_theme1.ogg", "Type":"peace"},
+			{"File":"moblin_ambient1.ogg", "Type":"peace"},
+			{"File":"moblin_ambient2.ogg", "Type":"peace"},
+			{"File":"moblin_ambient3.ogg", "Type":"peace"},
+			{"File":"moblin_ambient4.ogg", "Type":"peace"},
+			{"File":"moblin_ambient5.ogg", "Type":"peace"},
+			{"File":"moblin_ambient6.ogg", "Type":"peace"},
+			{"File":"moblin_ambient7.ogg", "Type":"peace"},
+			{"File":"moblin_ambient8.ogg", "Type":"peace"},
+			{"File":"moblin_ambient9.ogg", "Type":"peace"},
+			{"File":"moblin_ambient10.ogg", "Type":"peace"},
+			{"File":"moblin_battle1.ogg", "Type":"battle"},
+			{"File":"moblin_battle2.ogg", "Type":"battle"},
+			{"File":"moblin_battle3.ogg", "Type":"battle"},
+			{"File":"moblin_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Ganon",
+					"Class": "",
+					"Armament": "Giant Zuna Trident",
+					"Emblem": "",
+					"History": "Ahhh good old Ganon, the biggest and the best of the Blins! When we were down in the muck Ganon came round and made us strong again! He united the Moblins, he united the Bulblins, he united the Bokoblins, by great Ukblinro he even united the Dodoblins! Ganon was the smartest of us all, trickin' and besting the Hylians at every turn! He made us so close to conquering all of Hyrule, were it not for those stinking traitorous Sheikah! Hail Ganon the Great!"
+				},
+				{
+					"Name": "King Bulblin",
+					"Class": "",
+					"Armament": "Bulblin Axe",
+					"Emblem": "",
+					"History": "Mighty scary King Bulblin is, we Blins have legends that say he fell off a bridge and lived... twice! Ridin' on the back of the big old awesome Lord Bullbo, he goes swinging into battle to lop some heads off of the stinking Hylians and anyone who gets in the Moblin way!"
+				},
+				{
+					"Name": "Ogalon",
+					"Class": "",
+					"Armament": "Moblin Spear",
+					"Emblem": "",
+					"History": "The right hand proper lady of Ganon, Ogalon was a very smarty Blin that made all his great plans work and come true! Wearing nice armor and having a big pointy stick, Ogalon could kill ten whole Hylians all at once! Well maybe not that many, but she was a smart and strong fighter and lead Blins to winning!"
+				},
+				{
+					"Name": "Ghirahim",
+					"Class": "",
+					"Armament": "Spirit Sword",
+					"Emblem": "",
+					"History": "Ooooo spooky Ghirahim, the great weapon of our great god Demise! This scary spirit can make swords fly around all birdy like, choppin' off heads and making the Hylians run in fear! There's a good reason Ukblinro, our great god blessed be his awesome name, made Ghirahim his most trusted servant... he's that good at killing!"
+				}  
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Pillagin' is the Best!",
+			"History": "",
+			"Description": "All Soldier units can gather meat and gain Resources for each attack against buildings." 
+		},
+		{
+			"Name": "Pssh We Don't Need no Fancy Beds!",
+			"History": "",
+
+			"Description": "+10 Free Population cap bonus, even if you control no house structures." 
+		},
+		{
+			"Name": "Moblins need to stinky Towns!",
+			"History": "",
+			"Description": "Moblins have no Civic Center, Phases, or techtree. All structures and units can be created immediately." 
+		}  
+	],
+	"CivChoices":
+	[
+		"civ_choices/moblin/choosehero_kojaku",
+		"civ_choices/moblin/choosehero_ogalon",
+		"civ_choices/moblin/choosehero_kingbulblin",
+		"civ_choices/moblin/choosehero_glutko",
+		"civ_choices/moblin/choosehero_ghirahim",
+		"civ_choices/moblin/choosehero_ganon"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "We Tell Ya How to Tear Down!",
+			"History": "",
+			"Description": "Allied Mechanical Siege units gain a 10% increase in damage and gain +10% range."
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Ganon's Castle",
+			"Class": "",
+			"Emblem": "",
+			"History": "Whooaaahh it's Ganon's big scary Castle! So big and so scary! Ahhhh! We Moblins don't know where it came from, some say Moblins made it in Olden Timey! Whoever put the big scary castle there don't matter no more, Ganon made it his base and make his best plan to take over the Hylians and kill em all there! Very important place for all us Blinny kind, we go there and pray to Ukblinro for super power every year or two or three! (Garrison up to 60 units, slows down the movement speed of enemies within it's radius and functions like a normal Castle)",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "Titan: Ukbklinro, Bringer of Demise",
+			"Class": "",
+			"Emblem": "",
+			"History": "Yeaaahhh our God Ukblinro! The Bestest Goddy that there is in all of Hyrule and other places! Long time ago he was hurt bad in a big fight with st?upid Hylian God Hylia! But our God is best, so he survived and is back and better than ever! Goddy Ukblinro brings a biiiigggggg sword into the fight, and he goes and makes us win! All hail Ukblinro!",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/moblin/moblin_civil_centre"
+		},
+		{
+			"Template": "units/moblin/moblin_dummyA",
+			"Count": 4
+		},
+		{
+			"Template": "units/moblin/moblin_dummyA",
+			"Count": 2
+		},		
+		{
+			"Template": "units/moblin/moblin_dummyA",
+			"Count": 2
+		},
+		{
+			"Template": "units/moblin/moblin_storehouse_packed"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Ganon",
+		"King Bulblin",
+		"Ogalon",
+		"Ghirahim"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/moblin/moblin_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/moblin/moblin_dummyA",
+		"skirmish/units/default_cavalry" :  "units/moblin/moblin_dummyA",
+		"skirmish/units/default_infantry_melee_b": "units/moblin/moblin_dummyA",
+		"skirmish/units/default_infantry_ranged_b": "units/moblin/moblin_dummyA",
+		"skirmish/structures/default_house_10" : "units/moblin/moblin_house_packed",
+		"skirmish/units/special_starting_unit" : "structures/moblin/moblin_popbonus"
+	},
+	"SelectableInGameSetup": true
+}

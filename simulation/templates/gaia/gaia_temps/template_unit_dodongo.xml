@@ -1,0 +1,11 @@
+<Entity parent="template_unit_fauna_hunt">
+  <Loot>
+    <xp>20</xp>
+  </Loot>
+  <UnitAI>
+    <DefaultStance>aggressive</DefaultStance>
+  </UnitAI>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+</Entity>

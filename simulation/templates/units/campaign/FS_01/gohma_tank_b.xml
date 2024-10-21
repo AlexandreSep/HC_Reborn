@@ -1,0 +1,5 @@
+<Entity parent="units/gohma/gohma_tank_b">
+  <Identity>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+</Entity>

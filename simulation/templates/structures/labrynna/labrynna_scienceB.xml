@@ -1,0 +1,29 @@
+<Entity parent="structures/labrynna/labrynna_science">
+  <Identity>
+    <GenericName>Laboratories</GenericName>
+    <History>These expansed laboratories were provided with the best equipment the Empire could affors to aid the Proffessors in new and powerful breakthroughs.</History>
+    <Icon>structures/labrynna/lab_scienceB.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    labrynna/upgrade_footwear
+    labrynna/upgrade_frogeyedrops
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_scienceC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Add Chemist to Science Institute.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_scienceB.xml</Actor>
+  </VisualActor>
+</Entity>

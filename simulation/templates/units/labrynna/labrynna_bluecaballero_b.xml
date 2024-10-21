@@ -1,0 +1,77 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Claws</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Pierce>25.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>75</food>
+      <metal>0</metal>
+      <stone>100</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Large Class100 BlueCaballero</Classes>
+    <GenericName>Blue Caballerro</GenericName>
+    <History>Mounted on the Blue Bears of the northern highlands between Labrynna and Holodrum, Blue Caballeros fill the cavalry gap that Labrynna lacked for centuries due the absence of horses in their homelands. While the rider poses little threat, enemy soldiers were rightfully more worried about being mauled by the bear itself.</History>
+    <Icon>units/labrynna/lab_caballero.dds</Icon>
+    <Lang>labrynna</Lang>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/labrynna/labrynna_bluecaballero_b</SelectionGroupName>
+    <Tooltip>Aggresive Melee Cavalry unit that can maul enemies with their claws.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/bear_maul.xml</attack_melee>
+      <death>voice/labrynna/bluebear/bluebear_death.xml</death>
+      <order_attack>voice/labrynna/bluebear/bluebear_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/bluebear/bluebear_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/bluebear/bluebear_gather.xml</order_gather>
+      <order_repair>voice/labrynna/bluebear/bluebear_repair.xml</order_repair>
+      <order_walk>voice/labrynna/bluebear/bluebear_walk.xml</order_walk>
+      <run>actor/movement/boar/boar_footsteps.xml</run>
+      <select>voice/labrynna/bluebear/bluebear_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/boar/boar_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>10</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_caballero_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,33 @@
+<Entity parent="units/fairy/fairy_stray_b">
+  <DeathDamage>
+    <Damage>
+      <Water>35.0</Water>
+    </Damage>
+  </DeathDamage>
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>units/fairy/fai_stray_winter.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_stray_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Fire>3.0</Fire>
+        <Forest>3.0</Forest>
+        <Hack>25.0</Hack>
+        <Light>3.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>3.0</Shadow>
+        <Spirit>3.0</Spirit>
+        <Water>3.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/fairy/fairy_stray_winter.xml</Actor>
+  </VisualActor>
+</Entity>

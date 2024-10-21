@@ -1,0 +1,47 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Cost>
+    <BuildTime>15</BuildTime>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="8.0" width="4.0" />
+  </Footprint>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Large Trader</Classes>
+    <GenericName>Dealer</GenericName>
+    <History>Darknut Dealers wander from town to town, seeking out the best deals they can find and trading away their valuable jewelry and other trinkets. The more prominent Dealers even sell away Legion weapons.</History>
+    <Icon>units/darknut/dar_dealer.dds</Icon>
+    <Lang>darknut</Lang>
+    <Tooltip>Support unit that can continue to trade between your Marketplace and an ally's.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/darknut/thrall/thrall_attack.xml</order_attack>
+      <order_garrison>voice/darknut/thrall/thrall_garrison.xml</order_garrison>
+      <order_gather>voice/darknut/thrall/thrall_gather.xml</order_gather>
+      <order_repair>voice/darknut/thrall/thrall_repair.xml</order_repair>
+      <order_trade>voice/darknut/thrall/thrall_attack.xml</order_trade>
+      <order_walk>voice/darknut/thrall/thrall_walk.xml</order_walk>
+      <select>voice/darknut/thrall/thrall_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Trader>
+    <GainMultiplier>0.75</GainMultiplier>
+  </Trader>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
+  <VisualActor>
+    <Actor>units/darknut/darknut_dealer_b.xml</Actor>
+  </VisualActor>
+</Entity>

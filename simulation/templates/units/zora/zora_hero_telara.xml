@@ -1,0 +1,92 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Stormbolter</AttackName>
+      <Damage>
+        <Crush>30</Crush>
+        <Light>8.0</Light>
+      </Damage>
+      <MaxRange>5</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+      <Stun>
+        <Chance>25</Chance>
+        <Time>1500</Time>
+      </Stun>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>360</food>
+      <metal>100</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1050</Max>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">HeroTelara Hero2 ZoraFemale Electric Medium</Classes>
+    <GenericName>Headmaster Historian</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Initially trained as a Mage, Telara left the Communion in order to live a less hostile life. She eventually married Zaleen and became a librarian in Domain Prime, assembling historial documents and compiling much of the information that would be later used in Midna’s Hyrule Historia Tome. Telara’s personality is known as quiet and bashful. She is rather introverted and avoids appearing in public unless in the company of Zaleen or her library.</History>
+    <Icon>units/zora/zor_hero_telara.dds</Icon>
+    <Lang>zora</Lang>
+    <RequiredTechnology>civ_choices/zora/choosehero_telara</RequiredTechnology>
+    <SpecificName>Telara</SpecificName>
+    <Tooltip>Melee Hero that can shock and Stun enemies with her attacks.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>20.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>20.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/magic/magic_stormbolter.xml</attack_ranged>
+      <death>voice/zora/telara/telara_death.xml</death>
+      <order_attack>voice/zora/telara/telara_attack.xml</order_attack>
+      <order_garrison>voice/zora/telara/telara_garrison.xml</order_garrison>
+      <order_gather>voice/zora/telara/telara_gather.xml</order_gather>
+      <order_repair>voice/zora/telara/telara_repair.xml</order_repair>
+      <order_walk>voice/zora/telara/telara_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zora/telara/telara_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero2</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.5789</RunMultiplier>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/zora/zora_hero_telara_b.xml</Actor>
+  </VisualActor>
+</Entity>

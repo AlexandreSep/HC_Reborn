@@ -1,0 +1,30 @@
+{
+	"genericName": "Coralmold Loom",
+	"description": "Coralmold Looms are able to weave coralmold filaments into flexible and resilient clothing.",
+	"cost": {"food": 0, "wood": 0, "stone": 50, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "zora/armor_coralloom.dds",
+	"researchTime": 40,
+	"tooltip": "Coralmold Looms are able to weave coralmold filaments into flexible and resilient clothing. (+15 Health and +10% Armor - Worker)",
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 10
+    },
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 10
+    },
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 10
+    },
+    {
+      "value": "Health/Max",
+      "add": 15
+    }
+  ],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

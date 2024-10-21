@@ -1,0 +1,25 @@
+<Entity parent="units/moblin/moblin_picket_b">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrows</AttackName>
+      <Damage>
+        <Fire>7</Fire>
+        <Pierce>7</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>76</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Promotion disable="" />
+</Entity>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Tali Ramming Horn",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/tali_horn.dds",
+	"researchTime": 40,
+	"tooltip": "Reinforcement to Sandseal Plower horns. (+30% Melee Attack - Sandseal Plower)",
+	"modifications": [{"value": "Attack/Melee/Damage/Crush", "multiply": 1.3}],
+	"affects": ["Seal Ram"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.90 }
+	],
+	"auraName": "Archive Overseer",
+	"auraDescription": "(-10% Tech Research Time - Building)",
+	"overlayIcon": "art/textures/ui/session/auras/telara_archiveoverseer.dds"
+}

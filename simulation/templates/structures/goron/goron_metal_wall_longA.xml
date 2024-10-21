@@ -1,0 +1,98 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="38.5" />
+  </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>-4</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>4</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>8</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer4>
+      <Archer5>
+        <X>-8</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer5>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_goron_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Goron Wall</GenericName>
+    <History>Goron Walls are some of the sturdiest defenses in all of Hyrule. It takes quite a force to break through metal and stone.</History>
+    <Icon>structures/goron/gor_wallA.dds</Icon>
+    <SelectionGroupName>structures/goron_metal_wall_longA</SelectionGroupName>
+    <Tooltip>Defensive Wall to slow invaders.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="40.0" />
+  </Obstruction>
+  <Upgrade>
+    <Gate>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/goron/goron_metal_wall_gateA</Entity>
+      <Time>10</Time>
+      <Tooltip>Convert to Goron Gate.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Gate>
+    <WallB>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/goron/goron_metal_wall_longB</Entity>
+      <Time>10</Time>
+      <Tooltip>Upgrade with Double Layer.</Tooltip>
+      <Variant>upgrading</Variant>
+    </WallB>
+    <WallC>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/goron/goron_metal_wall_longC</Entity>
+      <Time>10</Time>
+      <Tooltip>Upgrade with Lava Moat.</Tooltip>
+      <Variant>upgrading</Variant>
+    </WallC>
+    <WallD>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/goron/goron_metal_wall_longD</Entity>
+      <Time>10</Time>
+      <Tooltip>Upgrade wih Bulwark.</Tooltip>
+      <Variant>upgrading</Variant>
+    </WallD>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/goron/goron_wall_longA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>40.0</Length>
+  </WallPiece>
+</Entity>

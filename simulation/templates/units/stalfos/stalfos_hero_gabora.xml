@@ -1,0 +1,88 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Hammer</AttackName>
+      <Damage>
+        <Crush>20</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>455</food>
+      <metal>100</metal>
+      <stone>110</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Hero6 HeroGabora Large </Classes>
+    <GenericName>Dark Blacksmith</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Legend has it that those seeking the perfect sword must venture to the dead and pay tribute to the greatest blacksmith who ever lived. In life Gabora and his partner Zubora had earned that reputation, a reputation that lasted long after the lifetime of these famous blacksmiths. Many warriors have sought the lost knowledge of Gabora; few who did have returned from the dead as themselves.</History>
+    <Icon>units/stalfos/sta_hero_gabora.dds</Icon>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_gabora</RequiredTechnology>
+    <SpecificName>Gabora</SpecificName>
+    <Tooltip>Melee Hero with decent armor and splash damage.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>40.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>55.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/gabora_hammer.xml</attack_melee>
+      <death>voice/stalfos/gabora/gabora_death.xml</death>
+      <order_attack>voice/stalfos/gabora/gabora_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/gabora/gabora_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/gabora/gabora_gather.xml</order_gather>
+      <order_repair>voice/stalfos/gabora/gabora_repair.xml</order_repair>
+      <order_walk>voice/stalfos/gabora/gabora_walk.xml</order_walk>
+      <run>actor/movement/darknut/darknut_armor_step.xml</run>
+      <select>voice/stalfos/gabora/gabora_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/darknut/darknut_armor_step.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero6</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.3333</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_gabora_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,93 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Lantern</AttackName>
+      <Damage>
+        <Fire>35.0</Fire>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Large Class100</Classes>
+    <GenericName>Big Poe</GenericName>
+    <History>These large spectral menaces have taken to spreading their misery far beyond their grave and seek to drag the living into Poehood. Like their smaller counterpart, the Big Poes will relentlessly bash attackers with their lanterns. Their victims slain, the Big Poe will drag their spirits from their bodies and bring about more Poes.</History>
+    <Icon>units/stalfos/sta_bigpoe.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_poebig_b</SelectionGroupName>
+    <Tooltip>Floating unit with Camouflage. Can raise Poes from the corpses of fallen enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">
+    </VisibleClasses>
+    <RequiredTechnology>stalfos/stalfos_gettomb</RequiredTechnology>
+  </Identity>
+  <Position>
+    <Floating>true</Floating>
+    <TurnRate>3.25</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>45.0</Hack>
+        <Pierce>45.0</Pierce>
+        <Crush>45.0</Crush>
+        <Fire>3.0</Fire>
+        <Forest>3.0</Forest>
+        <Hack>25.0</Hack>
+        <Light>3.0</Light>
+        <Shadow>3.0</Shadow>
+        <Spirit>3.0</Spirit>
+        <Water>3.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/poe_lantern.xml</attack_melee>
+      <attack_ranged>attack/weapon/poe_lantern.xml</attack_ranged>
+      <death>voice/stalfos/bigpoe/bigpoe_death.xml</death>
+      <order_attack>voice/stalfos/bigpoe/bigpoe_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/bigpoe/bigpoe_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/bigpoe/bigpoe_gather.xml</order_gather>
+      <order_repair>voice/stalfos/bigpoe/bigpoe_repair.xml</order_repair>
+      <order_walk>voice/stalfos/bigpoe/bigpoe_walk.xml</order_walk>
+      <run>actor/movement/poe/poe_hover.xml</run>
+      <select>voice/stalfos/bigpoe/bigpoe_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/poe/poe_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_poebig_b.xml</Actor>
+  </VisualActor>
+</Entity>

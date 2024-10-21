@@ -1,0 +1,78 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/religious_territory_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>Temple</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="33.0" width="33.0" />
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+	<SpawnEntityOnDeath>rubble/debris_stalfos_ruins_anc</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>50</MinPop>
+    </AIBuild>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <History>.</History>
+    <Icon>structures/stalfos/sta_darkreliquary.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SpecificName>Dark Reliquary</SpecificName>
+    <Tooltip>Religious building that increases the spread of your territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>25</Z>
+      </step2>
+    </DestinationOffset>
+	<Entities datatype="tokens">
+		units/stalfos/stalfos_redead_b
+		units/stalfos/stalfos_stalmaster_b
+		units/stalfos/stalfos_stalreaper_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>3</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_darkreliquaryA_anc.xml</Actor>
+    <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

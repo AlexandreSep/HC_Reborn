@@ -1,0 +1,13 @@
+{
+	"genericName": "Superheated Lava",
+	"description": "Deep shafts into the Earth draw particularly searing lava up into Goron Moats.",
+	"cost": {"food": 0, "wood": 0, "stone": 1000, "metal": 350},
+	"requirements": {"all": [ {"tech": "phase_city"}, {"civ": "goron"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "goron/building_superlava.dds",
+	"researchTime": 40,
+	"tooltip": "Deep shafts into the Earth draw particularly searing lava up into Goron Moats. (Activates 'Superheated Lava' Aura - Lava Moat Goron Wall and Stronghold)",
+	"modifications": [],
+	"affects": ["LavaMoat"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

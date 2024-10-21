@@ -1,0 +1,30 @@
+<Entity parent="units/fairy/fairy_fey_b">
+  <Attack disable="" />
+  <Auras datatype="tokens">
+    units/icewisp_aura_1
+  </Auras>
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>0</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/fairy/fairy_wispice</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Winter FeyWisp</Classes>
+    <GenericName>Fey Wisp</GenericName>
+    <History>Animated from the destroyed stonework of the Tarm Ruins and twisted into vaguely living shapes, the nature of these magical constructs remain a mystery. What was known is that fighting them head on was a terrible mistake. These powerful beings were resistant to most conventional weapons; it often took powerful magic in return to halt their relentless advance</History>
+    <Icon>units/fairy/fai_fey_wisp.dds</Icon>
+    <SelectionGroupName>units/fairy/fairy_fey_wisp</SelectionGroupName>
+    <Tooltip>Stealthed Support unit that slows down and freezes enemies within its aura. Can detect Camouflaged and Stealthed units.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_fey_golem</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_fey_wisp.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,28 @@
+<Entity parent="gaia/gaia_temps/template_unit_fauna_noroam">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Crush>1</Crush>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Structure Ship Siege</RestrictedClasses>
+    </Melee>
+  </Attack>
+  <Loot>
+    <xp>20</xp>
+  </Loot>
+  <ResourceSupply>
+    <Max>50</Max>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>4</MaxGatherers>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+</Entity>

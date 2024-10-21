@@ -1,0 +1,65 @@
+<Entity parent="HC_template_structure_wonder">
+  <BuildRestrictions>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Circle radius="40.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3500</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_huge</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>70</MinPop>
+    </AIBuild>
+    <Civ>zora</Civ>
+    <GenericName>Shrine of Jabu</GenericName>
+    <History>One of the most Sacred spaces in the Zora Dominion, this quiet lagoon in the Jabun Reservoir serves as a pilgrimage site and resting place of Jabu-Jabu, Sage of Water and founder of the Dominion.</History>
+    <Icon>structures/zora/zor_jabushrine.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>The Dominion Wonder, allows you to summon Lord Jabu Jabu.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="60.0" width="60.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>45</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>50</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/zora/{civ}_titan_jabujabu
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>40</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/zora/zora_wonder.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+</Entity>

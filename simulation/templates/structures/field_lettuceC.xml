@@ -1,0 +1,5 @@
+<Entity parent="structures/field_lettuceA">
+  <VisualActor>
+    <Actor>structures/misc/field_lettuceC.xml</Actor>
+  </VisualActor>
+</Entity>

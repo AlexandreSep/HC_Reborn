@@ -1,0 +1,15 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Attack/Melee/PrepareTime", "multiply": 1.10 },
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 1.10 }
+	],
+	"auraName": "Gaze of the Gohma",
+	"auraDescription": "(-10% Attack rate, chance for attackers to flee - Enemy Units)",
+	"overlayIcon": "art/textures/ui/session/auras/sulkaris_gohmagaze.dds"
+}

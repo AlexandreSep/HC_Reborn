@@ -1,0 +1,21 @@
+<Entity parent="gaia/gaia_temps/template_tunnel">
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="45.5" width="25.5" />
+  </Footprint>
+  <Identity>
+    <GenericName>Forest Tunnel</GenericName>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Left depth="41" width="20" x="-20" z="0" />
+      <Right depth="41" width="20" x="20" z="0" />
+    </Obstructions>
+  </Obstruction>
+  <VisualActor>
+    <Actor>geology/landscape/tunnels/kf_logtunnel_big.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>60.0</Length>
+  </WallPiece>
+</Entity>

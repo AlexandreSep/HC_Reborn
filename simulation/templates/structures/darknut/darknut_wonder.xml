@@ -1,0 +1,108 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <BuildRestrictions>
+    <Category>Wonder</Category>
+  </BuildRestrictions>
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>500</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>500</metal>
+      <stone>250</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="90.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>12000</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_wonderA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Tower of Hera</GenericName>
+    <History>One of the oldest structures in Hyrule, the Tower of Hera has long stood in the mountains of the Gerudo Desert, visible from many locations below. It has been abandoned by the Darknut people many times throughout history, only to be reconquered and repurposed. The original purpose of the tower is lost to history, though many believe it once served as an Apotheon for Darknut Kings and Queens. During their various reconquests of the ancient tower, it has also served as a prison, a lair for captured beasts and monsters, and a general temple of worship. In more modern times it serves as powerful Fortress and command center for those truely in power over the Legion.</History>
+    <Icon>structures/darknut/dar_towerhera.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>The Darknut Wonder, allows you to summon Vaati. Continues to function as an Agora.</Tooltip>
+    <VisibleClasses datatype="tokens">Wonder</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="115.0" width="115.0" />
+  </Obstruction>
+  <Plots>
+    <CanTakeOverPlots>true</CanTakeOverPlots>
+  </Plots>
+  <Population>
+    <Bonus>20</Bonus>
+  </Population>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>25</X>
+        <Z>62</Z>
+      </step1>
+      <step2>
+        <X>42</X>
+        <Z>87</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/darknut/{civ}_thrallA
+      units/darknut/{civ}_molgera_b
+      units/darknut/{civ}_patra_b
+    units/darknut/{civ}_hero_zalunbar
+    units/darknut/{civ}_hero_yaraxonal
+    units/darknut/{civ}_hero_senturon
+    units/darknut/{civ}_hero_alros
+    units/darknut/{civ}_titan_vaati
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>19</X>
+      <Z>48</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>1.0</food>
+      <metal>1.0</metal>
+      <stone>1.0</stone>
+      <wood>1.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <alert0>interface/alarm/alarm_alert_0.xml</alert0>
+      <alert1>interface/alarm/alarm_alert_1.xml</alert1>
+      <alert2>interface/alarm/alarm_alert_2.xml</alert2>
+      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
+      <constructed>interface/complete/building/darknut/complete_towerhera.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/darknut/sel_towerhera.xml</select>
+      <upgraded>interface/complete/building/darknut/complete_towerhera.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_wonderA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

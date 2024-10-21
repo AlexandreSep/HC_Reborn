@@ -1,0 +1,19 @@
+{
+  "type": "global",
+  "affects": [ "Unit" ],
+  "affectedPlayers": [ "Enemy" ],
+  "modifications": [
+    {
+      "value": "UnitMotion/WalkSpeed",
+      "multiply": 0.90
+    },
+    {
+      "value": "UnitMotion/Run/Speed",
+      "multiply": 0.90
+    }
+  ],
+  "auraName": "Song of Storms",
+  "auraDescription": "(-10% Slow for all enemies units on the map)",
+  "overlayIcon": "art/textures/ui/session/auras/fado_songofstorms.dds"
+}
+

@@ -1,0 +1,90 @@
+<Entity parent="HC_template_hero_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Lance</AttackName>
+      <Damage>
+        <Hack>11.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>1600</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>425</food>
+      <metal>100</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2300</Max>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">HeroMayorBo Hero2 Large</Classes>
+    <GenericName>Lord Mayor of Ordona Province</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The Lord Mayor and head of all of Ordona Province, Mayor Bo has served his leadership role longer than any other man of the Ordonian people. He is loved by the people for his humble attitude and knack for partaking in menial labor with the Serfs of the Province. Mayor Bo was a man of impressive durability, and was famous for getting into sumo fights with Gorons. His daughter Ilia claims that he ripped the horn off of a Moblin that he made a bet with, but he denies ever pulling the stunt off. In battle Mayor Bo rides on top of his Elder Goat, swinging the family axe into the heads of his enemies.</History>
+    <Icon>units/ordona/ord_hero_mayorbo.dds</Icon>
+    <Lang>ordona</Lang>
+    <RequiredTechnology>civ_choices/ordona/choosehero_mayorbo</RequiredTechnology>
+    <SpecificName>Bo</SpecificName>
+    <Tooltip>Slow but powerful Melee Cavalry Hero aramed with a lance.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee Worker</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>30.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>40.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/ordona/mayorbo/mayorbo_death.xml</death>
+      <order_attack>voice/ordona/mayorbo/mayorbo_attack.xml</order_attack>
+      <order_garrison>voice/ordona/mayorbo/mayorbo_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/mayorbo/mayorbo_gather.xml</order_gather>
+      <order_repair>voice/ordona/mayorbo/mayorbo_repair.xml</order_repair>
+      <order_walk>voice/ordona/mayorbo/mayorbo_walk.xml</order_walk>
+      <run>actor/movement/goat/goat_footsteps.xml</run>
+      <select>voice/ordona/mayorbo/mayorbo_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/goat/goat_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero2</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>climbing</PassabilityClass>
+    <RunMultiplier>1.4</RunMultiplier>
+    <WalkSpeed>12.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ordona/ordona_hero_mayorbo_b.xml</Actor>
+  </VisualActor>
+</Entity>

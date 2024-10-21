@@ -1,0 +1,12 @@
+<Entity parent="structures/moblin/moblin_house">
+  <Promotion disable="" />
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_house_packed_upg</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>10</Time>
+      <Tooltip>Pack this Housin' Yurt.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+</Entity>

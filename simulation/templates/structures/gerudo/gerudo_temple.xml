@@ -1,0 +1,113 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/religious_territory_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>Temple</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>70</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>100</metal>
+      <stone>0</stone>
+      <wood>350</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="39.5" width="39.5" />
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_altarA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>35</MinPop>
+    </AIBuild>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Spirit Altar</GenericName>
+    <History>Lost during the ancient days of the Gerudo Empire, Spirit Altars were conduits that allowed Gerudo Kings to plead to Kovaloo to speak with their dead ancestors. The Wind Witches have recently unearthed these secrets. and have begun recreating these shrines.</History>
+    <Icon>structures/gerudo/ger_religionA.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Religious building that increases the spread of your territory and allows the training of several units.</Tooltip>
+    <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="39.5" width="39.5" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>25</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/gerudo/{civ}_windwitch_b
+    units/gerudo/{civ}_ironknuckle_b
+    units/gerudo/{civ}_serpentkeep_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>13</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+      gerudo/wind_of_death
+    gerudo/ancestral_spirit
+    gerudo/bounded_essence
+    gerudo/gerudo_mirrorshield
+    gerudo/nabooru_kovaloogift
+    </Technologies>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>95</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_religionB.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+</Entity>

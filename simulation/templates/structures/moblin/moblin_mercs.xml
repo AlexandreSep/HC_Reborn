@@ -1,0 +1,89 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="14.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>400</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>60</MinPop>
+    </AIBuild>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Cool Friend's Club</GenericName>
+    <History>Moblins hire Mercenary people from this place!</History>
+    <Icon>structures/moblin/mob_coolclub.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Yeah, yeah we know we are too mean sometimes! Sometimes we gotta be friends with the others! Like the doggydarknutys! Sometimes Skeleton-mans cause they scary! But not the Hylians! They is bad! That why Ukblinro made a peacey treaty with them! Oh wait...</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="24.0" width="24.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>-2</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/merc_goriya_b
+    units/merc_taros_b
+    units/merc_daira_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-2</X>
+      <Z>5</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_mercs_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack this Cool Friend's Club.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_coolclubA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

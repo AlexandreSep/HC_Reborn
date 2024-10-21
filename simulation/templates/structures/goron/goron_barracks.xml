@@ -1,0 +1,93 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>100</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="45.0" width="45.0" />
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Battle Chambers</GenericName>
+    <History>Gorons love punching things and fighting. Battle Chambers give their warriors a chance to train and spar with their own kind in a variety of ways.</History>
+    <Icon>structures/goron/gor_battlechamb.dds</Icon>
+    <Tooltip>Gorons love punching things and fighting. Battle Chambers give their warriors a chance to train and spar with their own kind in a variety of ways.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-3</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>10</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>20</Z>
+      </step3>
+      <step4>
+        <X>0</X>
+        <Z>30</Z>
+      </step4>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/goron/{civ}_guardian_b
+      units/goron/{civ}_rocktosser_b
+      units/goron/{civ}_beastmaster_b
+      units/goron/{civ}_battlebro_b
+      units/goron/{civ}_drummer_b
+    units/goron/{civ}_tribalmonk_b
+  </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-7</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+      goron/troop_primalhunt
+    goron/troop_goronrage
+    goron/troop_goronbibeats
+    goron/gorgoron_damage
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/goron/goron_battlechambA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

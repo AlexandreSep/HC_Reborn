@@ -1,0 +1,60 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>20</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Domus</GenericName>
+    <History>Though Darknuts were large creatures, their living spaces and requirements were rather spartan and small. Little more than a bed and storage for personal items, many members of the Legion could live within the limited space of Darknut cities.</History>
+    <Icon>structures/darknut/dar_domus.dds</Icon>
+    <Tooltip>Housing that allows you to field larger armies.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+    darknut/domus_bunks
+    darknut/domus_warriorpairings
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_house.xml</constructed>
+      <select>interface/select/building/sel_house.xml</select>
+      <upgraded>interface/complete/building/complete_house.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_domusbaseA.xml</Actor>
+  </VisualActor>
+</Entity>

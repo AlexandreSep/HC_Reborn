@@ -1,0 +1,81 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Spear.</AttackName>
+      <Damage>
+        <Pierce>17</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>90</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="4" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Large Class90 UniqueUnit Giantblin</Classes>
+    <GenericName>Lynelblin</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History> We guess the Lynel was not thinkin straight and babymade with a Moblin and had an oopsie! Preeeettyyyy gross! But Lynelblins are pretty great if you ask me! They can run nice and fast and beat those dead horses!</History>
+    <Icon>units/moblin/mob_lynelblin.dds</Icon>
+    <Lang>moblin</Lang>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ogalon</RequiredTechnology>
+    <SelectionGroupName>units/moblin_lynelblin_b</SelectionGroupName>
+    <Tooltip>Only the Ogalon commander lady can make these guys! Half Moblin Half Lynel that run down the baddies with point spear stick!</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>60.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>8</food>
+    </Capacities>
+    <MaxDistance>5.0</MaxDistance>
+    <Rates>
+      <food.meat>1</food.meat>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/moblin/lynelblin/lynelblin_death.xml</death>
+      <order_attack>voice/moblin/lynelblin/lynelblin_attack.xml</order_attack>
+      <order_garrison>voice/moblin/lynelblin/lynelblin_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/lynelblin/lynelblin_gather.xml</order_gather>
+      <order_repair>voice/moblin/lynelblin/lynelblin_repair.xml</order_repair>
+      <order_walk>voice/moblin/lynelblin/lynelblin_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/moblin/lynelblin/lynelblin_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/moblin/moblin_lynelblin_b.xml</Actor>
+  </VisualActor>
+</Entity>

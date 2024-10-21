@@ -1,0 +1,19 @@
+<Entity parent="structures/fairy/fairy_market">
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>structures/fairy/fai_meetingspring_winter.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/fairy/{civ}_xana_winter
+    </Entities>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/fairy/fairy_meeting_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_meetingspringA_winter.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
+  </VisualActor>
+</Entity>

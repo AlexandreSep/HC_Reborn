@@ -1,0 +1,15 @@
+{
+	"genericName": "Sharpshooting",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
+	"requirements": {"all": [ {"tech": "civ_choices/labrynna/choosehero_ambi"}, {"tech": "phase_town"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Requires Queen Ambi and Town Phase.",
+	"icon": "labrynna/ralph_sharpshooting.dds",
+	"researchTime": 40,
+	"tooltip": "Hand Cannoneers and Conquerors have 50% increased accuracy and +10% Range",
+	"modifications": [{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 1.10},
+	{"value": "Attack/Ranged/Damage/Spread", "multiply": 0.5}],
+	"affects": ["Sharpshooters"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

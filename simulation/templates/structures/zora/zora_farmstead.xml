@@ -1,0 +1,58 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>75</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>100</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Coralfarm Field</Classes>
+    <GenericName>Coramold Bed</GenericName>
+    <History>A simple plot of land devoted to growing Coralmold, the malleable material used by the Zora for many aspects of their society</History>
+    <Icon>structures/zora/zor_coralfarm.dds</Icon>
+    <Tooltip>A growth of Coralmold that can be harvested for Ore.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <DiminishingReturns>0.90</DiminishingReturns>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>2</MaxGatherers>
+    <Type>stone.coralmold</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mine.xml</constructed>
+      <select>interface/select/building/sel_mine.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zora/zora_coralfarmA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

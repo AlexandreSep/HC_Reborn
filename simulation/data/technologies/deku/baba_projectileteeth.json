@@ -1,0 +1,13 @@
+{
+	"genericName": "Projectile Teeth",
+	"description": "Deku Babas could be bred to eject their spiny teeth from a distance. As with most Babas, their teeth could grow back in a matter of hours.",
+	"cost": {"food": 150, "wood": 0, "stone": 150, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "deku/baba_projectileteeth.dds",
+	"researchTime": 40,
+	"tooltip": "Deku Babas could be bred to eject their spiny teeth from a distance. As with most Babas, their teeth could grow back in a matter of hours. (Allows Deku Babas to grow Projectile Teeth, giving them a ranged attack)",
+	"modifications": [],
+	"affects": ["DekuBaba"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

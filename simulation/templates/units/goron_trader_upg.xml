@@ -1,0 +1,18 @@
+<Entity parent="units/goron_trader_b">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Pierce>5.0</Pierce>
+      </Damage>
+      <MaxRange>8.0</MaxRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/goron/goron_retailer_upg.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,37 @@
+<Entity parent="template_destructible">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>250</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="8.0" width="28.0" />
+  </Footprint>
+  <Health>
+    <Max>5000</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Barrier</GenericName>
+    <History>Large gate baring passage into the Tarm Ruins. It seems like it might be vulnerable to siege weapons.</History>
+    <Icon>gaia/flora_tree_generic.dds</Icon>
+    <SpecificName>Tarminian Gate</SpecificName>
+    <Tooltip>Large gate baring passage into the Tarm Ruins. It seems like it might be vulnerable to siege weapons.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="8.0" width="28.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_tarm/tarm_gateA.xml</Actor>
+  </VisualActor>
+</Entity>

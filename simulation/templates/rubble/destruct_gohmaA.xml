@@ -1,0 +1,5 @@
+<Entity parent="template_rubble">
+  <VisualActor>
+    <Actor>structures/gohma/destruct_gohmaA.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 1,
+	"affects": ["HeroMirora"],
+	"modifications": [
+	],
+	"auraName": "Survival of the Fitest",
+	"auraDescription": "(Chance for Mirora to survive the death of her mount.)", 
+	"overlayIcon": "art/textures/ui/session/auras/mirora_survival.dds"
+}
+

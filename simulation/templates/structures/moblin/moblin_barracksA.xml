@@ -1,0 +1,89 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Baddy Buggo Camp</GenericName>
+    <History>Whooooahh those Bugblins have the coolest treehouse! So cool! Bugblin treehouse is so awesome that they take the tree with em wherever they go! Smart little Bugblins! Now go get beated for us in the fight!</History>
+    <Icon>structures/moblin/mob_camp_bug.dds</Icon>
+    <Tooltip>Get the Bugblin units from here!</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="30.0" width="30.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>10</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>10</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/moblin/{civ}_bugblin_b
+      units/moblin/{civ}_baddyram_b
+    units/moblin/{civ}_tallblin_b
+    units/moblin/{civ}_bokonox_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>10</X>
+      <Z>0</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    moblin/bug_buyembetter
+    moblin/bug_fullrun
+    moblin/bug_tossemwhoop
+    moblin/glutko_bugbashin
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracksA_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack up this Baddy Buggo Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_bugA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

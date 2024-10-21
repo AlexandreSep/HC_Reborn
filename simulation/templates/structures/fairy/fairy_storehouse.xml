@@ -1,0 +1,100 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/menhir_gather
+  </Auras>
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+	<Distance>
+      <FromClass>Menhir</FromClass>
+      <MinDistance>75</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_smallA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">DropsiteFood DropsiteWood DropsiteMetal DropsiteStone Menhir</Classes>
+    <GenericName>Magic Menhir</GenericName>
+    <History>A small but peculiar stone jutting forth from the ground said to be the work of Fairies. To many onlookers, this stone simply sat still and did nothing. To the Fairies, the world around them would slowly change as food and material fed their being.</History>
+    <Icon>structures/fairy/fai_menhir_spring.dds</Icon>
+    <Tooltip>Gathers resources within its aura.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    fairy/menhir_secondarycauses
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <ResourceDrain>
+    <MaxResourceSpotsToDrainSimultaneously>
+      <food>3</food>
+      <metal>3</metal>
+      <stone>3</stone>
+      <wood>3</wood>
+    </MaxResourceSpotsToDrainSimultaneously>
+    <Radius>50</Radius>
+    <ResourcesPerTick>
+      <food>1</food>
+      <metal>1</metal>
+      <stone>1</stone>
+      <wood>1</wood>
+    </ResourcesPerTick>
+    <TickRate>2000</TickRate>
+    <DepleteResource>true</DepleteResource>
+    <VisualEffectDuration>1000</VisualEffectDuration>
+  </ResourceDrain>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_menhir.xml</constructed>
+      <select>interface/select/building/fairy/sel_menhir.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_menhirA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

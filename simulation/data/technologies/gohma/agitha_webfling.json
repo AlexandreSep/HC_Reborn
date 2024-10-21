@@ -1,0 +1,14 @@
+{
+	"genericName": "Webweaver Fling",
+	"description": "The abdomens of Hive Keepers could launch smaller creatures through the air with enough force.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"tech": "civ_choices/gohma/choosehero_agitha"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Requires Agitha.",
+	"icon": "gohma/keeper_webfling.dds",
+	"researchTime": 40,
+	"tooltip": "The abdomens of Hive Keepers could launch smaller creatures through the air with enough force. (Hive Keepers can now fling their Webweaver followers from a distance at enemy units)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["GohKeeper"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

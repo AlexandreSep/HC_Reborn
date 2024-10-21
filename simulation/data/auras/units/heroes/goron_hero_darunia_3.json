@@ -1,0 +1,11 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Capturable/GarrisonRegenRate", "multiply": 2 }
+	],
+	"auraName": "Mountain King",
+	"auraDescription": "(If Garrisoned, x2 Capture Regen Rate -Building)",
+	"overlayIcon": "art/textures/ui/session/auras/darunia_mountainking.dds"
+}
+

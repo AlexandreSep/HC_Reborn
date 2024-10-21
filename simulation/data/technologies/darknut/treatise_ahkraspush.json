@@ -1,0 +1,17 @@
+{
+	"genericName": "Treatise on Doma's Technioue",
+	"description": "A lecture and study on the legendary day long push lead by Ahkra and his group of Hoplites. The event is recorded into this Treatise for future use.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "darknut/treatise_ahkraspush.dds",
+	"researchTime": 40,
+	"tooltip": "A lecture and study on the legendary day long push lead by Ahkra and his group of Hoplites. The event is recorded into this Treatise for future use. (Increases the knockback power of all Darknut units by +5)",
+	"modifications": [{"value": "Attack/Ranged/Damage/Knockback/Horizontal", "add": 5},
+					  {"value": "Attack/Ranged/Damage/Knockback/Vertical", "add": 5},
+					  {"value": "Attack/Ranged/Damage/Splash/Knockback/Horizontal", "add": 5},
+					  {"value": "Attack/Ranged/Damage/Splash/Knockback/Vertical", "add": 5}	
+		],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

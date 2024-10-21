@@ -1,0 +1,23 @@
+<Entity parent="template_wallset">
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">Summer</Classes>
+    <GenericName>Ley Line</GenericName>
+    <History>A magical line drawn upon the earth by Fairies. It seems to confuse and halt the passage of enemies.</History>
+    <Icon>structures/fairy/fai_leyline_summer.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <WallSet>
+    <MaxTowerOverlap>0.80</MaxTowerOverlap>
+    <MinTowerOverlap>0.10</MinTowerOverlap>
+    <Templates>
+      <Gate>structures/fairy/fairy_wall_long_summer</Gate>
+      <Tower>structures/fairy/fairy_wall_tower_summer</Tower>
+      <WallLong>structures/fairy/fairy_wall_long_summer</WallLong>
+      <WallMedium>structures/fairy/fairy_wall_medium_summer</WallMedium>
+      <WallShort>structures/fairy/fairy_wall_short_summer</WallShort>
+    </Templates>
+  </WallSet>
+</Entity>

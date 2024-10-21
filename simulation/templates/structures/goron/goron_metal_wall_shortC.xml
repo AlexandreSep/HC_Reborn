@@ -1,0 +1,31 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Auras datatype="tokens">
+    structures/lavawall_aura_1
+  structures/lavawall_aura_2
+  </Auras>
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="14.5" />
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_goron_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">LavaMoat</Classes>
+    <GenericName>Goron Wall (Lava Moat)</GenericName>
+    <History>Goron Walls are some of the sturdiest defenses in all of Hyrule. It takes quite a force to break through metal and stone.</History>
+    <Icon>structures/goron/gor_wallC.dds</Icon>
+    <SelectionGroupName>structures/goron_metal_wall_shortC</SelectionGroupName>
+    <Tooltip>Defensive Wall to slow invaders.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="20.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/goron/goron_wall_shortC.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>20.0</Length>
+  </WallPiece>
+</Entity>

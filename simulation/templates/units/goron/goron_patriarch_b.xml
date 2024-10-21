@@ -1,0 +1,78 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Fists</AttackName>
+      <Damage>
+        <Crush>40.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/commander_aura_1
+  </Auras>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>70</food>
+      <metal>20</metal>
+      <stone>30</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>450</Max>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Large Class90 LargeGarrison Patriarch</Classes>
+    <GenericName>Patriarch</GenericName>
+    <History>The towering Patriarchs are elder Gorons who have long trained and led armies into battle. There are no finer commanders amongst the brotherhood’s ranks, and a single Patriarch can turn the tide of battle by rallying his soldiers and keeping them in line.</History>
+    <Icon>units/goron/gor_patriarch.dds</Icon>
+    <Lang>goron</Lang>
+    <SelectionGroupName>units/goron/goron_patriarch_b</SelectionGroupName>
+    <Tooltip>Goron Commander unit that helps other Gorons fight better.</Tooltip>
+    <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>35.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/goron_fist_light.xml</attack_melee>
+      <death>voice/goron/patriarch/patriarch_death.xml</death>
+      <order_attack>voice/goron/patriarch/patriarch_attack.xml</order_attack>
+      <order_garrison>voice/goron/patriarch/patriarch_garrison.xml</order_garrison>
+      <order_gather>voice/goron/patriarch/patriarch_gather.xml</order_gather>
+      <order_repair>voice/goron/patriarch/patriarch_repair.xml</order_repair>
+      <order_walk>voice/goron/patriarch/patriarch_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/goron/patriarch/patriarch_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.75</RunMultiplier>
+    <WalkSpeed>8.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/goron/goron_patriarch_b.xml</Actor>
+  </VisualActor>
+</Entity>

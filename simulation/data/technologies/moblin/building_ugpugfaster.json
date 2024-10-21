@@ -1,0 +1,13 @@
+{
+	"genericName": "Go Faster Ugpug!",
+	"description": "Gahhh you big fat Upgpugs are too slow! Move it faster or you get no meat for dinner!",
+	"cost": {"food": 200, "wood": 200, "stone": 0, "metal": 150},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/building_ugpugfaster.dds",
+	"researchTime": 40,
+	"tooltip": "Gahhh you big fat Upgpugs are too slow! Move it faster or you get no meat for dinner! (Increases movement speed of all packed buildings by 25%)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.25}],
+	"affects": ["Packed"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

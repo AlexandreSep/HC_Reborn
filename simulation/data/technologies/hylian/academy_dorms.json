@@ -1,0 +1,15 @@
+{
+	"genericName": "Academy Dorms",
+	"description": "Adding in-house living quarters streamlines training.",
+	"cost": {"food": 0, "wood": 400, "stone": 0, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/academy_dorms.dds",
+	"researchTime": 40,
+	"tooltip": "Adding in-house living quarters streamlines training. (+5 Population, -10% Batch Build Speed - Kingdom Academy)",
+	"modifications": [{"value": "Cost/PopulationBonus", "add": 5.0},
+		{ "value": "ProductionQueue/BatchTimeModifier", "add": -0.1 }
+		],
+	"affects": ["KingdomAcademy"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

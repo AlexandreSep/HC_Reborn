@@ -1,0 +1,72 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="25.0" width="25.0" />
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_houseA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Kingdom Housing</GenericName>
+    <History>Hylian civilians lived in quite high standards for commonfolk. Their houses were often multi-leveled and quite comfortable even in harsher elements.</History>
+    <Icon>structures/hylian/hyl_houses.dds</Icon>
+    <Tooltip>Housing that allows you to field larger armies.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>95</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_house.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_house.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_housesA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldI.xml</FoundationActor>
+  </VisualActor>
+</Entity>

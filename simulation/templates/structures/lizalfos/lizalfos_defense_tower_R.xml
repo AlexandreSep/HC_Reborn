@@ -1,0 +1,8 @@
+<Entity parent="structures/lizalfos/lizalfos_defense_tower">
+  <Identity>
+    <RequiredTechnology>lizalfos_dinraal</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_towerB.xml</Actor>
+  </VisualActor>
+</Entity>

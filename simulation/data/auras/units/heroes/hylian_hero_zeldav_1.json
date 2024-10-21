@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Archer", "Mage"],
+	"modifications": [
+		{ "value": "Attack/Ranged/Spread", "multiply": 0.0 },
+		{ "value": "Attack/Ranged/Hack", "multiply": 1.1 },
+		{ "value": "Attack/Ranged/Pierce", "multiply": 1.1 },
+		{ "value": "Attack/Ranged/Crush", "multiply": 1.1 }],
+	"auraName": "Eyes of the Prophet",
+	"auraDescription": "(-100% Ranged Attack Spread, +10% Ranged Attack - Archer and Mage)",
+	"overlayIcon": "art/textures/ui/session/auras/zeldav_propheteyes.dds"
+}

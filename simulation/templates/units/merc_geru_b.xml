@@ -1,0 +1,70 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Infantry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Crush>15.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>75</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>70</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Medium</Classes>
+    <GenericName>Geru Maceman</GenericName>
+    <History>Once part of the Lizalfos race, Gerus migrated north and east instead of to the south with most of their brethren. Their physical differences are very minor, though their culture is very different. Geru do not live in villages and do not build empires; rather, they roam the lands in groups and earn their living fighting in wars for others.</History>
+    <Icon>units/merc/merc_geru.dds</Icon>
+    <Lang>gaia</Lang>
+    <SelectionGroupName>units/merc/merc_geru_b</SelectionGroupName>
+    <Tooltip>Melee unit armed with a mace that can travel across bodies of water.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>60.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/sword.xml</attack_ranged>
+      <death>voice/merc/geru/geru_death.xml</death>
+      <order_attack>voice/merc/geru/geru_attack.xml</order_attack>
+      <order_garrison>voice/merc/geru/geru_garrison.xml</order_garrison>
+      <order_gather>voice/merc/geru/geru_gather.xml</order_gather>
+      <order_repair>voice/merc/geru/geru_repair.xml</order_repair>
+      <order_walk>voice/merc/geru/geru_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/merc/geru/geru_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/merc/merc_geru_b.xml</Actor>
+  </VisualActor>
+</Entity>

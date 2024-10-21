@@ -1,0 +1,59 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/commclutch_aura_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="30.0" width="30.0" />
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>100</MinPop>
+    </AIBuild>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Community Clutch</GenericName>
+    <History>Many Lizalfos families would join together to monitor and protect eggs if they happened to lay them in the same season. With a bit of regulation large Lizalfos cities would synch their mating habits so that all females would lay eggs at roughly the same time. The growing children would then be placed in a well guarded chamber.</History>
+    <Icon>structures/lizalfos/liz_commclutch.dds</Icon>
+    <RequiredTechnology>pair_lizgodsB</RequiredTechnology>
+    <Tooltip>Improves the rate that units are trained at nearby structures.</Tooltip>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="28.0" width="28.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/lizalfos/complete_clutch.xml</constructed>
+      <select>interface/select/building/lizalfos/sel_clutch.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_commclutchA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_S.xml</FoundationActor>
+  </VisualActor>
+</Entity>

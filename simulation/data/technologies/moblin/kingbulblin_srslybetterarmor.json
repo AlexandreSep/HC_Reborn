@@ -1,0 +1,14 @@
+{
+	"genericName": "Seriously Better Armor!",
+	"description": "Coolo little Bulblins get the good stuff from their King! Biiigggg nice shields look great!",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"all": [ {"tech": "civ_choices/moblin/choosehero_kingbulblin"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "You must select King Bulblin as your hero.",
+	"icon": "moblin/kingbulblin_srslybetterarmor.dds",
+	"researchTime": 40,
+	"tooltip": "Coolo little Bulblins get the good stuff from their King! Biiigggg nice shields look great! (Bulblin Thugs and Bullbo Riders are outfitted with armor and a shield, giving them +3 non magic armor)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["BulblinThug", "BullboRider"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

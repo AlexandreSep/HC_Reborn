@@ -1,0 +1,71 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>75</stone>
+      <wood>75</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Gorminer</List>
+    <LoadingRange>2</LoadingRange>
+    <Max>4</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>900</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>20</MaxCopies>
+      <MaxCopiesPerBase>2</MaxCopiesPerBase>
+      <MinPop>0</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">SirloinMine Field Village</Classes>
+    <GenericName>Rock Sirloin Mine</GenericName>
+    <History>Gorons are capable of consuming a wide variety of minerals, though Rock Sirloin is among their favorite diets. This primary food of the Goron people can be mined just under the surface of most landscapes.</History>
+    <Icon>structures/goron/gor_mine.dds</Icon>
+    <Tooltip>Mine that can be garrisoned by additional Goron Miners to generate Rock Sirloin Food.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="30.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ResourceTrickle>
+    <Interval>5000</Interval>
+    <Rates>
+      <food>1.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mine.xml</constructed>
+      <select>interface/select/building/sel_mine.xml</select>
+      <upgraded>interface/complete/building/complete_mine.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/goron/goron_mineA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

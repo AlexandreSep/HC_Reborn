@@ -1,0 +1,87 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Scimitars</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Infantry</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+      <Damage>
+        <Hack>35.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>3</BattalionSlots>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>55</food>
+      <metal>0</metal>
+      <stone>15</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Medium Class100 MasterThief</Classes>
+    <GenericName>Master Thief</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>In the harsh desert, thievery is often the best means of survival, and the Gerudo are the undisputed champions. Master Thieves can sneak into just about any location and pickpocket, steal, murder, and engage in all-out melee.</History>
+    <Icon>units/gerudo/ger_masterthief.dds</Icon>
+    <Lang>gerudo</Lang>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_nabooru</RequiredTechnology>
+    <SelectionGroupName>units/gerudo/gerudo_masterthief_b</SelectionGroupName>
+    <Tooltip>Swift Melee unit that is Stealthed.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+    <DodgeRating>50.0</DodgeRating>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/gerudo/gerudo_deathA.xml</death>
+      <order_attack>voice/gerudo/masterthief/masterthief_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/masterthief/masterthief_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/masterthief/masterthief_gather.xml</order_gather>
+      <order_repair>voice/gerudo/masterthief/masterthief_repair.xml</order_repair>
+      <order_walk>voice/gerudo/masterthief/masterthief_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/gerudo/masterthief/masterthief_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5833</RunMultiplier>
+    <WalkSpeed>12.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_masterthief_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

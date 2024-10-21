@@ -1,0 +1,13 @@
+{
+	"genericName": "Sac Growth",
+	"description": "Gohma Caretakers could be trained and mutated with the capacity to carry larger loads of eggs, as well as methods of healing them.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "gohma/caretaker_sacgrowth.dds",
+	"researchTime": 40,
+	"tooltip": "Gohma Caretakers could be trained and mutated with the capacity to carry larger loads of eggs, as well as methods of healing them. (Caretakers can now carry two eggs at a time and regenerate their HP)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["GohCaretaker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

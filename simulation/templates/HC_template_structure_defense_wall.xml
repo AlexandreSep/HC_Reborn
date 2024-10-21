@@ -1,0 +1,89 @@
+<Entity parent="HC_template_structure_defense">
+  <BuildRestrictions>
+    <Category>Wall</Category>
+    <PlacementType>land-shore</PlacementType>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>1</DefaultArrowCount>
+    <GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <stone>50</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="6.0" width="6.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens"></List>
+    <LoadingRange>2</LoadingRange>
+    <Max>1</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_2x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Stone Wall</GenericName>
+    <Tooltip>Wall off your town for a stout defense.</Tooltip>
+    <VisibleClasses datatype="tokens">Wall</VisibleClasses>
+  </Identity>
+  <Loot>
+    <stone>0</stone>
+    <wood>25</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="6.0" width="6.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue disable="" />
+  <RallyPoint disable="" />
+  <Repairable>
+    <RepairTimeRatio>4.5</RepairTimeRatio>
+  </Repairable>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1.0</Crush>
+        <Hack>1.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_wall.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_wall.xml</select>
+      <upgraded>interface/complete/building/complete_wall.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryDecay>
+    <DecayRate>5.0</DecayRate>
+  </TerritoryDecay>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+    <Root>false</Root>
+    <Weight>65535</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+</Entity>

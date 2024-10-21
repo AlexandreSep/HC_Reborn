@@ -1,0 +1,34 @@
+<Entity parent="structures/fairy/fairy_sundial">
+  <Auras datatype="tokens">
+    structures/fairy_season_autumn
+  </Auras>
+  <Identity>
+    <Classes datatype="tokens">Autumn</Classes>
+    <GenericName>Autumn Sundial</GenericName>
+    <Icon>structures/fairy/fai_sundial_autumn.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    fairy/unlock_winter
+    fairy/essence_05_nurturingwarmth
+    fairy/essence_06_blowingwind
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <metal>100</metal>
+      </Cost>
+      <Entity>structures/fairy/fairy_sundial_winter</Entity>
+      <Icon>portraits/structures/fairy/fairy_winter.dds</Icon>
+      <RequiredTechnology>fairy/unlock_winter</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Change the Season to Winter.</Tooltip>
+    </TowerA>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_sundialA_autumn.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_autumn.xml</FoundationActor>
+  </VisualActor>
+</Entity>

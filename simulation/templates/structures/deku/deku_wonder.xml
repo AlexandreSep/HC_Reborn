@@ -1,0 +1,69 @@
+<Entity parent="HC_template_structure_wonder">
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="81.0" width="81.0" />
+  </Footprint>
+  <Health>
+    <Max>8000</Max>
+    <SpawnEntityOnDeath>rubble/debris_deku_wonderA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>deku</Civ>
+    <GenericName>Wooded Temple</GenericName>
+    <History>A large and ancient Temple in the Picorou Woods. The Scrubs claim to have build it in ages past, but despite their iconagraphy carved into its stone the design has little resemblence to their civilization. The massive temple is home to many Orhat Beetle nests and the structure seems to have sunken into the ground since its construction.</History>
+    <Icon>structures/deku/dek_woodedtemple.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>The Deku Scrub Wonder, allows you to summon Stagnox.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="80.0" width="80.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>55</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>60</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/deku/{civ}_titan_stagnox
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>50</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/deku/complete_woodtemple.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/deku/sel_woodtemple.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/deku/deku_wonderA.xml</Actor>
+    <FoundationActor>structures/deku/deku_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+</Entity>

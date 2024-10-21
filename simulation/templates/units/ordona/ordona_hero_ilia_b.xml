@@ -1,0 +1,83 @@
+<Entity parent="HC_template_hero_cavalry">
+  <Attack>
+    <Ranged>
+      <AttackName>Bolts</AttackName>
+      <Damage>
+        <Pierce>100</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>80.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>800</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>475</food>
+      <metal>100</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1900</Max>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">HeroIlia Hero3 Large</Classes>
+    <GenericName>Mayor's Daughter</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Ilia was the daughter of Mayor Bo and trading assistant of Rusl in her youth. Being born into a privileged class, she had the opportunity to try various job paths before settling on breeding and training horses. As a young adult Ilia became quite a business woman in Ordona Province, gaining stock over some of the best horses in Hyrule while simultaneously managing a lumber company to supply the building of stables across Hyrule. She was known for her party loving personality and habit of holding down quite a bit of ale. She has somewhat of a friendly rivalry with Malon of Lon Lon Ranch, and hopes to one day out-compete the famous horse breeder. In battle Ilia rides atop a horse, using a Ranger Crossbow to snipe down anyone who threatens the Province.</History>
+    <Icon>units/ordona/ord_hero_ilia.dds</Icon>
+    <RequiredTechnology>civ_choices/ordona/choosehero_ilia</RequiredTechnology>
+    <SpecificName>Ilia</SpecificName>
+    <Tooltip>Fast Missile Cavalry Hero armed with an armor piercing Crossbow.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile Worker</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
+      <death>voice/ordona/ilia/ilia_death.xml</death>
+      <order_attack>voice/ordona/ilia/ilia_attack.xml</order_attack>
+      <order_build>voice/ordona/ilia/ilia_repair.xml</order_build>
+      <order_garrison>voice/ordona/ilia/ilia_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/ilia/ilia_gather.xml</order_gather>
+      <order_repair>voice/ordona/ilia/ilia_repair.xml</order_repair>
+      <order_walk>voice/ordona/ilia/ilia_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/ordona/ilia/ilia_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero3</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/ordona/ordona_hero_ilia_b.xml</Actor>
+  </VisualActor>
+</Entity>

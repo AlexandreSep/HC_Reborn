@@ -1,0 +1,83 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>400</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="35.0" width="35.0" />
+  </Footprint>
+  <Health>
+    <Max>5000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Monster Mound</GenericName>
+    <History>An underground den that the Lizalfos would keep their monsterous pets. From here they could summon creatures to do battle in their hunts.</History>
+    <Icon>structures/lizalfos/liz_monstermound.dds</Icon>
+    <Tooltip>Trains Creature units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>7</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>25</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+</Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-7</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>1</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_stables.xml</constructed>
+      <select>interface/select/building/sel_stables.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_monstermoundA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_S.xml</FoundationActor>
+  </VisualActor>
+</Entity>

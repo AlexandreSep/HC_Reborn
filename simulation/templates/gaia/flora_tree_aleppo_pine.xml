@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Hylian Pine</SpecificName>
+    <Tooltip>These sturdy pines grow throughout Hyrule Field, particularly the hilly northern regions around Vigjaro.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/aleppo_pine.xml</Actor>
+  </VisualActor>
+</Entity>

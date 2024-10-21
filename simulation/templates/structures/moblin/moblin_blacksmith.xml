@@ -1,0 +1,76 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="12.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Handmedown Armor Place</GenericName>
+    <History>The Hylians they make some stuff for a quick rupee! We though, we are smarter regarding that there thing! When our armor gets all worn down, we put it on the shelf and sell it like new! Half the Blinys don&#8217;t know the difference ahaahahah!</History>
+    <Icon>structures/moblin/mob_handmedown.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Make the Moblins armor and weapons even better than they already are!</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="20.0" width="20.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    moblin/attack_pointierA
+    moblin/attack_pointierB
+    moblin/armor_betterarmorA
+    moblin/armor_betterarmorB
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_blacksmith.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_blacksmith_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack up this Handmedown Armor Place.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_handmedownA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

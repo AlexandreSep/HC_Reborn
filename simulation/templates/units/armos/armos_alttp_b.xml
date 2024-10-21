@@ -1,0 +1,13 @@
+<Entity parent="HC_template_armos">
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Ancient Armos</GenericName>
+    <History>Typically found in ruins in the forests of Hyrule, these statues, and their creators, are still a mystery to this day. What can be surmised is that they were intended to guard passages and other important locations, as those found active will begin to rampage and defend the immediate area.</History>
+    <Icon>units/ruins/armos_ALTTPA.dds</Icon>
+    <Tooltip>Armos Melee unit that rams into targets.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <VisualActor>
+    <Actor>units/ruins/armos_alttpA.xml</Actor>
+  </VisualActor>
+</Entity>

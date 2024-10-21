@@ -1,0 +1,73 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Khopesh</AttackName>
+      <Damage>
+        <Hack>6.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>0</metal>
+      <stone>15</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>190</Max>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Yarapromote Gymunit Large BasicSoldier</Classes>
+    <GenericName>Gymnatai</GenericName>
+    <History>These young and eager warriors had yet to become trained by the Legion, and therefore attempted to prove themselves as volunteer soldiers. Those that survived combat or showed exceptional skill would be adopted into the Legion without question.</History>
+    <Icon>units/darknut/dar_gymnatai.dds</Icon>
+    <Lang>darknut</Lang>
+    <SelectionGroupName>units/darknut/darknut_gymnatai_b</SelectionGroupName>
+    <Tooltip>Fast Melee unit armed with a khopesh.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/darknut/darknut_gymnatai_mighty</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/darknut/unarmored/unarmored_death.xml</death>
+      <order_attack>voice/darknut/unarmored/unarmored_attack.xml</order_attack>
+      <order_garrison>voice/darknut/unarmored/unarmored_garrison.xml</order_garrison>
+      <order_gather>voice/darknut/unarmored/unarmored_gather.xml</order_gather>
+      <order_repair>voice/darknut/unarmored/unarmored_repair.xml</order_repair>
+      <order_walk>voice/darknut/unarmored/unarmored_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/darknut/unarmored/unarmored_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2307</RunMultiplier>
+    <WalkSpeed>6.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/darknut/darknut_gymnatai_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,6 @@
+{
+	"genericName": "Farosh vs. Dinraal",
+	"top": "lizalfos_farosh",
+	"bottom": "lizalfos_dinraal",
+	"requirements": { "civ": "lizalfos" }
+}

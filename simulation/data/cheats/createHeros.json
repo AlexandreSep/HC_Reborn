@@ -1,0 +1,9 @@
+{
+	"Name": "all true warriors",
+	"Data": {
+		"Action": "createunits",
+		"DefaultParameter": 1,
+		"isNumeric": true,
+		"Templates": ["units/hylian_hero_kazakk", "units/hylian_hero_link", "units/hylian_hero_rauru", "hylian_hero_zeldaV", "units/gerudo_hero_ganondorf", "units/gerudo_hero_nabooru", "units/gerudo_hero_riju", "units/gerudo_hero_urbosa"]
+	}
+}

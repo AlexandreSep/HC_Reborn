@@ -1,0 +1,70 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Armorum</GenericName>
+    <History>Much like warriors, some Darknut blacksmiths became so famous that they were practically worshiped as flawless deities for their work. The best of Darknut armor crafters worked at these sacred altars, creating only the finest armors for the soldiers of the Legion.</History>
+    <Icon>structures/darknut/dar_armorum.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Improves armor and weaponry of Darknut units.</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    darknut/attack_legion_01
+    darknut/attack_legion_02
+    darknut/armor_legion_01
+    darknut/armor_legion_02
+    darknut/armor_generational
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
+      <select>interface/select/building/sel_blacksmith.xml</select>
+      <upgraded>interface/complete/building/complete_blacksmith.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_armorumbaseA.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,60 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>75</stone>
+      <wood>75</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="24.0" width="24.0" />
+  </Footprint>
+  <Health>
+    <Max>1800</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_plantationA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">DropsiteFood Village</Classes>
+    <GenericName>Plantation</GenericName>
+    <History>Plantations were devoted entirely to the production of excess and surpluss food stocks. A lone Plantation could provide quite a feast for its entire population after its crops had grown.</History>
+    <Icon>structures/ordona/ord_plantation.dds</Icon>
+    <Tooltip>Serves as a drop off point for Food and improves your Fields.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="12.0" width="12.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    ordona/gather_food_heartypumpkins
+    ordona/gather_food_lordshare
+    </Technologies>
+  </ProductionQueue>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_farm.xml</constructed>
+      <select>interface/select/building/sel_farm.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>50</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_plantationA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

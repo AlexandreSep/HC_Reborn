@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodadB">
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="40" width="12.5" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="40.0" width="12.5" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>structures/npc_tokay/npc_tok_bridgeA.xml</Actor>
+  </VisualActor>
+</Entity>

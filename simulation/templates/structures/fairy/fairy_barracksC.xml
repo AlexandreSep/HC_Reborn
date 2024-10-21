@@ -1,0 +1,87 @@
+<Entity parent="HC_template_structure_military">
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>300</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="35.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>5000</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_largeA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Tarm Dolmen</GenericName>
+    <History>A peculiar fomation of rocks, many believed that Fairies would arrange these monoliths to mark the ground where Fairies had died. Time seems to stand still near these engimatic monuments as the inanimate rocks seem to speak and move about.</History>
+    <Icon>structures/fairy/fai_dolmen_spring.dds</Icon>
+    <RequiredTechnology>fairy/unlock_autumn</RequiredTechnology>
+    <Tooltip>Summons Fey units for the Fairies.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="55.0" width="55.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>5</X>
+        <Z>10</Z>
+      </step1>
+      <step2>
+        <X>5</X>
+        <Z>10</Z>
+      </step2>
+      <step3>
+        <X>5</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+</Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>3</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    fairy/fey_foundationearth
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_dolmen.xml</constructed>
+      <select>interface/select/building/fairy/sel_dolmen.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_dolemA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,11 @@
+<Entity parent="structures/moblin/moblin_bar">
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <FriendlyFire>true</FriendlyFire>
+    <Range>20</Range>
+    <Damage>
+      <Fire>200.0</Fire>
+    </Damage>
+  </DeathDamage>
+  <Promotion disable="" />
+</Entity>

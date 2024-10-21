@@ -1,0 +1,115 @@
+<Entity parent="HC_template_unit_titan">
+  <Attack>
+    <Ranged>
+      <AttackName>Sword of Demise</AttackName>
+      <Damage>
+        <Crush>160</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>10</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/demise_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>300.0</Speed>
+        <Spread>1.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2400</RepeatTime>
+      <Splash>
+        <Damage>
+          <Crush>80.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>15</Range>
+        <Shape>Circular</Shape>
+        <Knockback>
+          <Horizontal>25</Horizontal>
+          <Vertical>25</Vertical>
+        </Knockback>
+      </Splash>
+      <Knockback>
+        <Horizontal>25</Horizontal>
+        <Vertical>25</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <food>1900</food>
+      <metal>250</metal>
+      <stone>200</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <IdleRegenRate>2</IdleRegenRate>
+    <Max>8000</Max>
+    <RegenRate>1</RegenRate>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Titan Huge</Classes>
+    <GenericName>Bringer of Demise</GenericName>
+    <History>Yeaaahhh our God Ukblinro! The Bestest Goddy that there is in all of Hyrule and other places! Long time ago he was hurt bad in a big fight with st﻿upid Hylian God Hylia! But our God is best, so he survived and is back and better than ever! Goddy Ukblinro brings a biiiigggggg sword into the fight, and he goes and makes us win! All hail Ukblinro﻿!﻿﻿</History>
+    <Icon>units/moblin/mob_titan_demise.dds</Icon>
+    <Lang>moblin</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SpecificName>Ukblinro</SpecificName>
+    <Tooltip>Moblin Titan unit! Big Moblin Goddy hit them all with biggest sword!</Tooltip>
+    <VisibleClasses datatype="tokens">Titan Melee Blunt</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>upright</Anchor>
+    <TurnRate>3.5</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Fire>20.0</Fire>
+        <Forest>20.0</Forest>
+        <Hack>50.0</Hack>
+        <Light>20.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>20.0</Shadow>
+        <Spirit>20.0</Spirit>
+        <Water>20.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/demise_sword_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/demise_sword.xml</attack_ranged>
+      <death>voice/moblin/demise/demise_death.xml</death>
+      <order_attack>voice/moblin/demise/demise_attack.xml</order_attack>
+      <order_garrison>voice/moblin/demise/demise_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/demise/demise_gather.xml</order_gather>
+      <order_repair>voice/moblin/demise/demise_repair.xml</order_repair>
+      <order_walk>voice/moblin/demise/demise_walk.xml</order_walk>
+      <run>actor/movement/demonblight/demonblight_walk.xml</run>
+      <select>voice/moblin/demise/demise_select.xml</select>
+      <trained>interface/alarm/alarm_create_titan.xml</trained>
+      <walk>actor/movement/demonblight/demonblight_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.2222</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/moblin/moblin_demise_b.xml</Actor>
+  </VisualActor>
+</Entity>

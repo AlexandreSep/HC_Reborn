@@ -1,0 +1,62 @@
+<Entity parent="template_unit_fauna_wild_violent">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Crush>10</Crush>
+        <Pierce>6</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="5.0" width="3.0" />
+  </Footprint>
+  <Health>
+    <Max>330</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Giant Mountain Tektite</GenericName>
+    <History />
+    <Icon>gaia/fauna_tektite_giant_rock.dds</Icon>
+    <Tooltip>These thankfully-rare monsters are elder Mountain Tektites that have grown to prodigious size. While few survive to grow this large, these horrors haunt cliff-faces and mountainsides, relentlessly crawling after prey when hungry.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>true</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <Max>100</Max>
+    <Type>food.meat</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/tektite_bite.xml</attack_melee>
+      <death>voice/wild/tektite/tektite_death.xml</death>
+      <run>actor/movement/tektite/tektite_move.xml</run>
+      <select>voice/wild/tektite/tektite_select.xml</select>
+      <walk>actor/movement/tektite/tektite_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>climbing</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/wild/wild_tektite_giant_rockA.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,73 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>25.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>90</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Alrospromote Large Class90</Classes>
+    <GenericName>Lynel Pride</GenericName>
+    <History>The notoriously violent and bloodthirsty Lynels have long been tied to the Darknut people. In more modern ages, they were the Legion’s favorite mercenaries. So often were Lynels hired and deployed with Legion forces that many of the Darknut’s enemies assumed they were members of the same empire.</History>
+    <Icon>units/darknut/dar_lynel.dds</Icon>
+    <Lang>darknut</Lang>
+    <SelectionGroupName>units/darknut_lynel_b</SelectionGroupName>
+    <Tooltip>Powerful Cavalry unit armed with a sword and shield.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/darknut/darknut_lynel_mighty</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>25.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/darknut/lynel/lynel_death.xml</death>
+      <order_attack>voice/darknut/lynel/lynel_attack.xml</order_attack>
+      <order_garrison>voice/darknut/lynel/lynel_garrison.xml</order_garrison>
+      <order_gather>voice/darknut/lynel/lynel_gather.xml</order_gather>
+      <order_repair>voice/darknut/lynel/lynel_repair.xml</order_repair>
+      <order_walk>voice/darknut/lynel/lynel_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/darknut/lynel/lynel_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.0967</RunMultiplier>
+    <WalkSpeed>15.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/darknut/darknut_lynel_b.xml</Actor>
+  </VisualActor>
+</Entity>

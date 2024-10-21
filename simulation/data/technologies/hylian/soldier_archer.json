@@ -1,0 +1,33 @@
+{
+  "genericName": "Upgrade to Soldier Archer",
+  "description": "As a Hylian house and its subordinate houses gained more wealth and prestige, they could afford better armor and weapons for their military.",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 150,
+    "metal": 150
+  },
+  "requirements": {
+    "all": [
+      { "tech": "phase_town" },
+      { "civ": "hylian" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with Town.",
+  "icon": "hylian/soldier_archer.dds",
+  "researchTime": 40,
+  "tooltip": "Improves Levy Archers by making them Soldier Archers.",
+  "modifications": [
+    {
+      "value": "ProductionQueue/Entities/_string",
+      "tokens": "units/hylian/{civ}_levy_archer>units/hylian/{civ}_soldier_archer",
+      "affects": "Structure"
+    },
+    {
+      "value": "Promotion/RequiredXp",
+      "replace": 0
+    }
+  ],
+  "affects": [ "LevyArcher" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,5 @@
+<Entity parent="template_rubble">
+  <VisualActor>
+    <Actor>structures/debris/debris_ordona_huge.xml</Actor>
+  </VisualActor>
+</Entity>

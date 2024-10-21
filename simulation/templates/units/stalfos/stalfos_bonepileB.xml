@@ -1,0 +1,19 @@
+<Entity parent="units/stalfos/stalfos_bonepileA">
+  <ResourceSupply>
+    <Max>400</Max>
+    <Initial>10</Initial>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.bones</Type>
+    <Change>
+      <Growth>
+        <Value>1</Value>
+        <Interval>1000</Interval>
+        <UpperLimit>200</UpperLimit>
+      </Growth>
+    </Change>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>structures/misc/bone_pileB.xml</Actor>
+  </VisualActor>
+</Entity>

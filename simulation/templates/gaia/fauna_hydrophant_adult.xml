@@ -1,0 +1,48 @@
+<Entity parent="template_unit_fauna_hunt_defensive_elephant">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Crush>30.0</Crush>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Height>3.0</Height>
+    <Square depth="7.0" width="3.5" />
+  </Footprint>
+  <Health>
+    <Max>370</Max>
+  </Health>
+  <Identity>
+    <GenericName>Hydrophant</GenericName>
+    <History />
+    <Icon>gaia/fauna_hydrophant_generic.dds</Icon>
+    <Tooltip>A large aquatic animal that congregates in River and Lakes, Hydrophants are intelligent and ornery, but usually live passive existences in large groups.</Tooltip>
+    <VisibleClasses datatype="tokens">-Elephant</VisibleClasses>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>40.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <Max>500</Max>
+    <Type>food.meat</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>units/wild/wild_hydrophant_largeA.xml</Actor>
+  </VisualActor>
+</Entity>

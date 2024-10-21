@@ -1,0 +1,17 @@
+<Entity parent="template_gaia_geo_rupees">
+  <Identity>
+    <GenericName>Currency</GenericName>
+    <History>A crate full of Rupees for the taking.</History>
+    <SpecificName>Rupee Crate</SpecificName>
+    <Tooltip>A crate full of Rupees for the taking.</Tooltip>
+  </Identity>
+  <ResourceSupply>
+    <Max>100</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>2</MaxGatherers>
+    <Type>metal.rupees</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>props/resources/crate_rupeesA.xml</Actor>
+  </VisualActor>
+</Entity>

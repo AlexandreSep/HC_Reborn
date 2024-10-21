@@ -1,0 +1,31 @@
+<Entity parent="structures/fairy/fairy_civil_centre">
+  <Builder>
+    <Entities datatype="tokens">
+    structures/fairy/fairy_sundial_summer
+    structures/fairy/fairy_wishingwell_summer
+    structures/fairy/fairy_menhir_summer
+    structures/fairy/fairy_meeting_summer
+    structures/fairy/fairy_fountain_summer
+    structures/fairy/fairy_greatfountain_summer
+    structures/fairy/fairy_dolmen_summer
+    structures/fairy/fairy_waterheaven_summer
+    structures/fairy/fairy_misthenge_summer
+    structures/fairy/fairy_wallset_summer
+    structures/fairy/fairy_uniwonder_summer
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <Icon>structures/fairy/fai_wishingwell_summer.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Promotion>
+    <Entity>structures/fairy/fairy_wishingwell_autumn</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_wishingwellA_summer.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_summer.xml</FoundationActor>
+  </VisualActor>
+</Entity>

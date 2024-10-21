@@ -1,0 +1,21 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["Unit"],
+	"supersedes": "units/deacon_chant_1",
+	"modifications": [
+		{ "value": "Builder/Rate", "multiply": 1.2 },
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.2 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.2 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.2 }
+	],
+	"auraName": "Religious Devotion",
+	"auraDescription": "(Requires 'Religious Devotion' researched. +10% Build Rate, Gather Rate, and Walk/Run Speed - Unit)",
+	"overlayIcon": "art/textures/ui/session/auras/deacon_chant.dds",
+	"requiredTechnology": "hylian/deacon_devotion",		
+	"rangeOverlay" : {
+		"lineTexture": "outline_border.png",
+		"lineTextureMask": "outline_border_mask.png",
+		"lineThickness": 0.075
+	}
+}

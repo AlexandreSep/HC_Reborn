@@ -1,0 +1,26 @@
+<Entity parent="units/hylian/hylian_citizenA">
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>50</food>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>75</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Civilian Medium</Classes>
+    <GenericName>Civilian</GenericName>
+    <History>A Civilian from the Kingdom of Hyrule.</History>
+    <Icon>units/hylian/hyl_citizen.dds</Icon>
+    <Lang>hylian</Lang>
+    <SelectionGroupName>units/rome_support_female_citizen</SelectionGroupName>
+    <SpecificName>Hylian Civilian</SpecificName>
+    <Tooltip>A Civilian from the Kingdom of Hyrule.</Tooltip>
+    <VisibleClasses datatype="tokens">Citizen Worker Support</VisibleClasses>
+  </Identity>
+  <VisualActor>
+    <Actor>units/hylian/hylian_F_civilianA.xml</Actor>
+  </VisualActor>
+</Entity>

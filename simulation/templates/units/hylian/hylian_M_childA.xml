@@ -1,0 +1,41 @@
+<Entity parent="units/hylian/hylian_citizenA">
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>50</food>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>75</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Civilian Medium</Classes>
+    <GenericName>Civilian</GenericName>
+    <History>A Child from the Kingdom of Hyrule.</History>
+    <Icon>units/hylian/hyl_citizen.dds</Icon>
+    <Lang>hylian</Lang>
+    <SelectionGroupName>units/rome_support_female_citizen</SelectionGroupName>
+    <SpecificName>Hylian Child</SpecificName>
+    <Tooltip>A Child from the Kingdom of Hyrule.</Tooltip>
+    <VisibleClasses datatype="tokens">Citizen Worker Support</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/kokiri/grovewatcher/grovewatcher_death.xml</death>
+      <order_attack>voice/kokiri/grovewatcher/grovewatcher_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/grovewatcher/grovewatcher_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/grovewatcher/grovewatcher_gather.xml</order_gather>
+      <order_repair>voice/kokiri/grovewatcher/grovewatcher_repair.xml</order_repair>
+      <order_walk>voice/kokiri/grovewatcher/grovewatcher_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/kokiri/grovewatcher/grovewatcher_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/hylian/hylian_M_child.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,61 @@
+<Entity parent="HC_template_structure_defense">
+  <BuildRestrictions>
+    <Category>Fortress</Category>
+    <Distance>
+      <FromClass>Fortress</FromClass>
+      <MinDistance>180</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>10</DefaultArrowCount>
+    <GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Cost>
+    <BuildTime>180</BuildTime>
+    <Resources>
+      <stone>0</stone>
+      <wood>1000</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="62.0" width="62.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>20</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>8000</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_castleA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <GenericName>FORTRESS FOR WALL HOLDER</GenericName>
+    <History>THIS IS NOT THE ACTUAL FORTRESS. THIS TEMPLATE STOPS WALLS FROM GIVING A SPECIFIC ERROR.</History>
+    <Tooltip>THIS IS NOT THE ACTUAL FORTRESS. THIS TEMPLATE STOPS WALLS FROM GIVING A SPECIFIC ERROR.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="60.0" width="60.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    </Entities>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_castleA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Indent>7.6</Indent>
+    <Length>50.0</Length>
+  </WallPiece>
+</Entity>

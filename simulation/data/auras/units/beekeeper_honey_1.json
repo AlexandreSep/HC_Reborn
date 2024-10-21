@@ -1,0 +1,11 @@
+{
+	"type": "garrison",
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/food", "add": 1.00 }
+	],
+	"affects": ["Apiary"],
+	"auraName": "Harvest Honey",
+	"stackable" : true ,
+	"auraDescription": "(If Garrisoned, +1 Food Resource Trickle/1 second - Apiary)"
+}
+

@@ -1,0 +1,64 @@
+<Entity parent="HC_template_unit_packed">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>20</metal>
+      <stone>0</stone>
+      <wood>85</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Large</Classes>
+    <GenericName>Baddy Buggo Camp</GenericName>
+    <History>Whooooahh those Bugblins have the coolest treehouse! So cool! Bugblin treehouse is so awesome that they take the tree with em wherever they go! Smart little Bugblins! Now go get beated for us in the fight!</History>
+    <Icon>structures/moblin/mob_camp_bug.dds</Icon>
+    <Tooltip>Moblins can find a buncho Bugblins to help them out from this place!</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/salamander_big_breath.xml</attack_melee>
+      <death>voice/moblin/ugpug/ugpug_death.xml</death>
+      <order_attack>voice/moblin/ugpug/ugpug_attack.xml</order_attack>
+      <order_garrison>voice/moblin/ugpug/ugpug_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/ugpug/ugpug_garrison.xml</order_gather>
+      <order_repair>voice/moblin/ugpug/ugpug_repair.xml</order_repair>
+      <order_walk>voice/moblin/ugpug/ugpug_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/moblin/ugpug/ugpug_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>2.6</RunMultiplier>
+    <WalkSpeed>5</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <CheckPlacementRestrictions />
+      <Entity>structures/moblin/moblin_barracksA</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Unpack this Baddy Buggo Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/moblin/moblin_mobcartC.xml</Actor>
+  </VisualActor>
+</Entity>

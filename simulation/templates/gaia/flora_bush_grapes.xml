@@ -1,0 +1,12 @@
+<Entity parent="template_gaia_fruit">
+  <Identity>
+    <GenericName>Fruit</GenericName>
+    <History />
+    <Icon>gaia/flora_forage_generic.dds</Icon>
+    <SpecificName>Aslosus Grapes</SpecificName>
+    <Tooltip>A rare vine found in the less harsh regions of the Gerudo Desert, these Grapes are prized by the Gerudo for Winemaking.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>props/flora/forage_grapes.xml</Actor>
+  </VisualActor>
+</Entity>

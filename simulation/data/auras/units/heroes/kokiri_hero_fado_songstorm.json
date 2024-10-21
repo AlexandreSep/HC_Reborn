@@ -1,0 +1,12 @@
+{
+	"type": "global",
+	"affects": ["Unit" , "Structure"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 0.75 }
+	],
+	"auraName": "Song of Storms",
+	"auraDescription": "(-25% Vision Range for all enemies on map)", 
+	"overlayIcon": "art/textures/ui/session/auras/fado_songofstorms.dds"
+}
+

@@ -1,0 +1,6 @@
+<Entity parent="units/deku/deku_dekupult_b">
+  <Turretable />
+  <Identity>
+    <Classes datatype="tokens">HiddenUI</Classes>
+  </Identity>
+</Entity>

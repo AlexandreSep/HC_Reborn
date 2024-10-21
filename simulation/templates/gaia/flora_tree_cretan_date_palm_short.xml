@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Gerudo Palm</SpecificName>
+    <Tooltip>The hardy Gerudo Palm has long withstood the harsh landscape of the Gerudo Desert, and serves as a backbone of the Gerudo's culture, providing scarce wood.</Tooltip>
+  </Identity>
+  <ResourceSupply>
+    <Max>100</Max>
+    <Type>wood.tree</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>flora/trees/palm_cretan_date_short.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,23 @@
+<Entity parent="template_wallset">
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Stone Wall</GenericName>
+    <History>A sturdy wooden wall built to protect Lizalfos settlements.</History>
+    <Icon>structures/lizalfos/liz_stonewall.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <WallSet>
+    <MaxTowerOverlap>0.80</MaxTowerOverlap>
+    <MinTowerOverlap>0.10</MinTowerOverlap>
+    <Templates>
+      <Gate>structures/lizalfos/lizalfos_stone_wall_gate</Gate>
+      <Tower>structures/lizalfos/lizalfos_stone_wall_tower</Tower>
+      <WallLong>structures/lizalfos/lizalfos_stone_wall_long</WallLong>
+      <WallMedium>structures/lizalfos/lizalfos_stone_wall_medium</WallMedium>
+      <WallShort>structures/lizalfos/lizalfos_stone_wall_short</WallShort>
+    </Templates>
+  </WallSet>
+</Entity>

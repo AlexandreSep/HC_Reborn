@@ -1,0 +1,14 @@
+{
+	"genericName": "Forced Mating Season",
+	"description": "Shrimperies will overflow with new Prawns, occasionally spawns a herdable Prawn near the Shrimpery that can be harvested for additional food.",
+	"cost": {"food": 150, "wood": 0, "stone": 0, "metal": 550},
+	"requirements": { "all": [{ "entity": { "class": "Shrimpery", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Shrimpery.",
+	"icon": "lanayru/gather_food_forcedmating.dds",
+	"researchTime": 40,
+	"tooltip": "Shrimperies will overflow with new Prawns, occasionally spawns a herdable Prawn near the Shrimpery that can be harvested for additional food.",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.75},
+					  {"value": "ResourceGatherer/Capacities/food", "add": 5}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

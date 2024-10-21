@@ -1,0 +1,23 @@
+<Entity parent="structures/lizalfos/lizalfos_barracksB">
+  <Identity>
+    <RequiredTechnology>lizalfos_farosh</RequiredTechnology>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/lizalfos/{civ}_striker_b
+      units/lizalfos/{civ}_shaman_b
+    units/lizalfos/{civ}_spearlauncher_b
+    units/lizalfos/{civ}_footman_nardu
+    </Entities>
+    <Technologies datatype="tokens">
+    lizalfos/striker_perfectcloak
+    lizalfos/shaman_revengeofgods
+    lizalfos/poisonspear_heartofbeast
+    lizalfos/nardu_boundB
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_warriorclutchA.xml</Actor>
+  </VisualActor>
+</Entity>

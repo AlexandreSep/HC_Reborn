@@ -1,0 +1,34 @@
+<Entity parent="structures/labrynna/labrynna_market">
+  <Identity>
+    <GenericName>Clientele</GenericName>
+    <History>The Clientele attracts foreign agents and soldiers from all over Hyrule. Labrynna occasionally hires these Mercenaries to fill out their ranks.</History>
+    <Icon>structures/labrynna/lab_marketB.dds</Icon>
+    <Tooltip>Allows the trading of resources on the market or with your allies. Also allows Labrynna to hire Mercenary units.</Tooltip>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/labrynna/{civ}_trader_b
+    gaia/lon_lon_cow_1
+    units/merc_geru_b
+    units/merc_tinsuit_b
+    units/merc_wosu_b
+    </Entities>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_marketC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Add Carnival to Bodega.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_marketB.xml</Actor>
+  </VisualActor>
+</Entity>

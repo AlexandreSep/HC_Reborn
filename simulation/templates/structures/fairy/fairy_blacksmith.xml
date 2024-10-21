@@ -1,0 +1,70 @@
+<Entity parent="HC_template_structure_civilian">
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_mediumA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Waters of Heaven</GenericName>
+    <History>Legend has it that these magical waterfalls would grant wishes to anyone who offered enough of a material sacrifice to its waters. Travellers would seek them out to offer money and other doodads in hopes of receiving something in return from the Fairies who lorded over.</History>
+    <Icon>structures/fairy/fai_waterheaven_spring.dds</Icon>
+    <RequiredTechnology>fairy/unlock_autumn</RequiredTechnology>
+    <Tooltip>Improves various Fairy units.</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="35.0" width="35.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    fairy/attack_disharmony
+    fairy/armor_earthcharm
+    fairy/armor_heavencharm
+    fairy/speed_easternwinds
+    fairy/vision_glimpseofnous
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_waterheaven.xml</constructed>
+      <select>interface/select/building/fairy/sel_waterheaven.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_waterheavenA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

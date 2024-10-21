@@ -1,0 +1,106 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Market</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="27.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_medium</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>gaia/lon_lon_cow_1</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Market Village Barter BarterMarket</Classes>
+    <GenericName>Bodega</GenericName>
+    <History>A small but bustling center for trade and barter within Labrynna. These markets export Labrynnian goods and bring in valuables from foreign nations.</History>
+    <Icon>structures/labrynna/lab_marketA.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Market>
+    <InternationalBonus>0.2</InternationalBonus>
+    <TradeType>land</TradeType>
+  </Market>
+  <Obstruction>
+    <Static depth="40.0" width="40.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>2.2</X>
+        <Z>7.6</Z>
+      </step1>
+      <step2>
+        <X>2.2</X>
+        <Z>15.5</Z>
+      </step2>
+      <step3>
+        <X>2.2</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/{civ}_trader_b
+    gaia/lon_lon_cow_1
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>1</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    labrynna/trade_insurance
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_market.xml</constructed>
+      <select>interface/select/building/sel_market.xml</select>
+      <upgraded>interface/complete/building/complete_market.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_marketB</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Add Clientele tents to Bodega.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_marketA.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

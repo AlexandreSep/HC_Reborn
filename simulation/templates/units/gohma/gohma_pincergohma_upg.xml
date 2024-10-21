@@ -1,0 +1,6 @@
+<Entity parent="units/gohma/gohma_pincergohma_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/gohma/gohma_pincer_upg.xml</Actor>
+  </VisualActor>
+</Entity>

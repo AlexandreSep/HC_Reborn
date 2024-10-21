@@ -1,0 +1,28 @@
+<Entity parent="structures/hylian/hylian_market">
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>gaia/lon_lon_cow_1</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <GenericName>Malkariko Marketplace</GenericName>
+  </Identity>
+  <Obstruction>
+    <Static depth="25.0" width="25.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_market_bigmerchA.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

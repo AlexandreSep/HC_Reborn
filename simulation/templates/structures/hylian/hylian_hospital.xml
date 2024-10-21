@@ -1,0 +1,62 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/bimaristan_heal
+  </Auras>
+  <BuildRestrictions>
+    <Category>Temple</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>170</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>100</metal>
+      <stone>200</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="20.0" width="20.0" />
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_houseA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>80</MinPop>
+    </AIBuild>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Hospital Town</Classes>
+    <GenericName>Bimaristan</GenericName>
+    <History>The Kingdom of Hyrule was one of the first nations to establish government-funded healing services within their borders. Using various medicines and potions, nurses within the Bimaristan can tend to the sick and wounded.</History>
+    <Icon>structures/hylian/hyl_hospital.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Heals injured units and researches related upgrades.</Tooltip>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="20.0" width="20.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    hylian/bimaristan_open_foyer
+      hylian/bimaristan_potion_markets
+    hylian/bimaristan_siege_shelters
+    hylian/bimaristan_nurse_dispatch
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/hylian/complete_bimaristan.xml</constructed>
+      <select>interface/select/building/hylian/sel_bimaristan.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_hospitalA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldG.xml</FoundationActor>
+  </VisualActor>
+</Entity>

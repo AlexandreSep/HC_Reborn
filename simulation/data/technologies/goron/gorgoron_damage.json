@@ -1,0 +1,27 @@
+{
+	"genericName": "Sumo Arts",
+	"description": "",
+	"cost": {"food": 150, "wood": 0, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"tech": "civ_choices/goron/choosehero_gorcoron"}, {"civ": "goron"}]},
+	"requirementsTooltip": "Unlocked with Gor Coron.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+15% Melee Damage - Melee Infantry",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "multiply": 1.2
+    },
+    {
+      "value": "Attack/Melee/Damage/Pierce",
+      "multiply": 1.2
+    },
+    {
+      "value": "Attack/Melee/Damage/Crush",
+      "multiply": 1.2
+    }
+  ],
+	"affects": ["Infantry Melee"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

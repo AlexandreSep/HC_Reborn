@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodad">
+  <Footprint>
+    <Circle radius="2.0" />
+    <Height>2.5</Height>
+  </Footprint>
+  <Obstruction>
+    <Static depth="2.0" width="2.0" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>geology/landscape/rocks/rock_temperate_tiny.xml</Actor>
+  </VisualActor>
+</Entity>

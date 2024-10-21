@@ -1,0 +1,82 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Trident</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Pierce>18.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>80</Max>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Medium Class100 MirrorShield TombGuard Spearmen GoldenArmor</Classes>
+    <GenericName>Tomb Guard</GenericName>
+    <History>High-ranking soldiers in the Gerudo military, Tomb Guards watch over the graves of long-deceased Gerudo Kings, as well as the Royal Palace and other political centers. Armed with a Trident-Spear and shining Golden Shield, Tomb Guards can stand their ground and hold off almost any foe.</History>
+    <Icon>units/gerudo/ger_tombguard.dds</Icon>
+    <Lang>gerudo</Lang>
+    <SelectionGroupName>units/gerudo/gerudo_tombguard_b</SelectionGroupName>
+    <Tooltip>Strong defensive Infantry unit armed with a spear and shield.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/gerudo/gerudo_tombguard_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>40.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+    <DodgeRating>10.0</DodgeRating>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/gerudo/gerudo_deathA.xml</death>
+      <order_attack>voice/gerudo/tombguard/tombguard_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/tombguard/tombguard_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/tombguard/tombguard_gather.xml</order_gather>
+      <order_repair>voice/gerudo/tombguard/tombguard_repair.xml</order_repair>
+      <order_walk>voice/gerudo/tombguard/tombguard_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/gerudo/tombguard/tombguard_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.3636</RunMultiplier>
+    <WalkSpeed>11.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_tombguard_b.xml</Actor>
+  </VisualActor>
+</Entity>

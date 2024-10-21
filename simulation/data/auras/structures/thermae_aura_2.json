@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 80,
+	"affects": ["Unit"],
+	"modifications": [{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"auraName": "Refreshing Waters",
+	"auraDescription": "(Improves the HP of all units by 10%)",
+	"requiredTechnology": "darknut/thermae_refresh",
+	"overlayIcon": "art/textures/ui/session/auras/thermae_aura_2.dds"
+}

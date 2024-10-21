@@ -1,0 +1,119 @@
+<Entity parent="HC_template_unit_titan">
+  <Attack>
+    <Ranged>
+      <AttackName>Roots</AttackName>
+      <Damage>
+        <Crush>265</Crush>
+      </Damage>
+      <Delay>3</Delay>
+      <MaxRange>10</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure Infantry</PreferredClasses>
+      <PrepareTime>2000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/biggoron_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>300.0</Speed>
+        <Spread>1.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>3000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Crush>50.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>12</Range>
+        <Shape>Circular</Shape>
+        <Knockback>
+          <Horizontal>25</Horizontal>
+          <Vertical>25</Vertical>
+        </Knockback>
+      </Splash>
+      <Knockback>
+        <Horizontal>25</Horizontal>
+        <Vertical>25</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+  units/reallytall_aura_1
+  </Auras>
+  <Cost>
+    <BattalionSlots>5</BattalionSlots>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <food>2000</food>
+      <metal>250</metal>
+      <stone>400</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <IdleRegenRate>2</IdleRegenRate>
+    <Max>8500</Max>
+    <RegenRate>1</RegenRate>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Huge</Classes>
+    <GenericName>Guardian of Labrynna</GenericName>
+    <History>Once a powerful force of nature that watched over the land of Labrynna, upon Veran’s arrival the personality of the Maku Tree seemed to have dramatically changed. The being’s visual appearance has changed to reflect the shift as well. Now fueled with power from Labrynna’s might, the Maku Tree’s once kind and gentle demeanor has warped into that of a bloodthirsty and battle ready beast. Whatever the truth behind her transformation, it’s clear that the Maku Tree is now out to conquer the land rather than guard it from invaders.</History>
+    <Icon>units/labrynna/lab_titan_maku.dds</Icon>
+    <Lang>labrynna</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SpecificName>Maku Tree of Labrynna</SpecificName>
+    <Tooltip>Labrynnian Titan unit. Huge Siege unit that can rip apart even the most sturdy of enemy defenses.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>upright</Anchor>
+    <TurnRate>1.1</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>60.0</Crush>
+        <Fire>15.0</Fire>
+        <Forest>20.0</Forest>
+        <Hack>50.0</Hack>
+        <Light>20.0</Light>
+        <Pierce>75.0</Pierce>
+        <Shadow>20.0</Shadow>
+        <Spirit>20.0</Spirit>
+        <Water>25.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/natural/GDT_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/natural/makulab_smash.xml</attack_ranged>
+      <death>voice/labrynna/makulab/makulab_death.xml</death>
+      <order_attack>voice/labrynna/makulab/makulab_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/makulab/makulab_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/makulab/makulab_gather.xml</order_gather>
+      <order_repair>voice/labrynna/makulab/makulab_repair.xml</order_repair>
+      <order_walk>voice/labrynna/makulab/makulab_walk.xml</order_walk>
+      <run>actor/movement/GDT/makulab_walk.xml</run>
+      <select>voice/labrynna/makulab/makulab_select.xml</select>
+      <trained>interface/alarm/alarm_create_titan.xml</trained>
+      <walk>actor/movement/GDT/makulab_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.2222</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_makutree_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,72 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Staff</AttackName>
+      <Damage>
+        <Crush>12.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>50</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">Medium</Classes>
+    <GenericName>Protector</GenericName>
+    <History>Protectors serve as personal guardians for their respective clans. They are often used as the bodyguards of important figures by the Cadre. The Protector has mastered the art of turning an enemy's attack against themselves and have been known to parry everything from arrows to magical attacks.</History>
+    <Icon>units/sheikah/she_protector.dds</Icon>
+    <Lang>sheikah</Lang>
+    <SelectionGroupName>units/sheikah/sheikah_trainee_b</SelectionGroupName>
+    <Tooltip>Counter melee unit with a high Dodge rate.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <DodgeRating>50.0</DodgeRating>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/sheikah/sheikahC/sheikahC_death.xml</death>
+      <order_attack>voice/sheikah/sheikahC/sheikahC_attack.xml</order_attack>
+      <order_garrison>voice/sheikah/sheikahC/sheikahC_garrison.xml</order_garrison>
+      <order_gather>voice/sheikah/sheikahC/sheikahC_gather.xml</order_gather>
+      <order_repair>voice/sheikah/sheikahC/sheikahC_repair.xml</order_repair>
+      <order_walk>voice/sheikah/sheikahC/sheikahC_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/sheikah/sheikahC/sheikahC_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5833</RunMultiplier>
+    <WalkSpeed>12.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/sheikah/sheikah_protector_b.xml</Actor>
+  </VisualActor>
+</Entity>

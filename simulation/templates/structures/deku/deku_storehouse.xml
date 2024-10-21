@@ -1,0 +1,76 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="41.0" width="41.0" />
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_deku_medium</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>5</BattalionSize>
+      <Chance>0</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/deku/deku_scrubling_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">DekuBuilding DropsiteFood DropsiteWood DropsiteMetal DropsiteStone Village</Classes>
+    <GenericName>Supply Stores</GenericName>
+    <History>A small yard for gathering, packing, storing, and hauling collected resources for the Deku Scrubs.</History>
+    <Icon>structures/deku/dek_supplystores.dds</Icon>
+    <Tooltip>Drop off point for gathered Resources.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="40.0" width="40.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    deku/gather_capacity_buckethead
+    deku/gather_specialsnout
+    deku/decci_megaloads
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <select>interface/select/building/sel_storehouse.xml</select>
+      <upgraded>interface/complete/building/complete_storehouse.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/deku/deku_supplystoreA.xml</Actor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+  </VisualActor>
+</Entity>

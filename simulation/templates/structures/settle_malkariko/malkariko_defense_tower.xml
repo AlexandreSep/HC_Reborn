@@ -1,0 +1,31 @@
+<Entity parent="structures/hylian/hylian_defense_tower">
+  <BuildingAI>
+    <DefaultArrowCount>15</DefaultArrowCount>
+    <GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Capturable disable="" />
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="11.0" width="11.0" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <GenericName>Malkariko Guard Tower</GenericName>
+  </Identity>
+  <Obstruction>
+    <Static depth="10.5" width="10.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_towerA.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

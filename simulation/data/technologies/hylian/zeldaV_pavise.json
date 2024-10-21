@@ -1,0 +1,16 @@
+{
+	"genericName": "Pavise",
+	"description": "",
+	"cost": {"food": 0, "wood": 250, "stone": 100, "metal": 100},
+	"requirements": {"all": [{"tech": "civ_choices/hylian/choosehero_zeldaV"},{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Princess Zelda and the Town Phase.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": " (+50% Non-Magic Armor - Crossbowmen)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.5},
+		{"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.5},
+		{"value": "Resistance/Entity/Damage/Crush", "multiply": 1.5}],
+	"affects": ["HylianCrossbowman"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

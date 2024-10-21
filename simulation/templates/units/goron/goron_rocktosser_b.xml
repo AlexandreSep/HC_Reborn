@@ -1,0 +1,86 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Rocks</AttackName>
+      <Damage>
+        <Crush>15</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>60</MaxRange>
+      <MinRange>10.0</MinRange>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BattalionSlots>1</BattalionSlots>
+    <BuildTime>35</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>0</metal>
+      <stone>20</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>110</Max>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">PowerBracelet Medium BasicSoldier CanGarrison RockTosser</Classes>
+    <GenericName>Rock Tosser</GenericName>
+    <History>Composed of the less battle-ready members of Goron society, Rock Tossers use their strength to hurl rocks at fast speeds at their enemies from a distance. A well-placed shot from a Rock Tosser can leave quite a dent in a knight's helm.</History>
+    <Icon>units/goron/gor_rocktosser.dds</Icon>
+    <Lang>goron</Lang>
+    <SelectionGroupName>units/goron/gor_rocktosser_b</SelectionGroupName>
+    <Tooltip>Light Missile unit that tosses rocks at enemies from a distance. Has a chance to deal Critical Hits.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>35.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>25</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/goron_throw_light.xml</attack_ranged>
+      <build>resource/construction/con_wood.xml</build>
+      <death>voice/goron/rocktosser/rocktosser_death.xml</death>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <order_attack>voice/goron/rocktosser/rocktosser_attack.xml</order_attack>
+      <order_garrison>voice/goron/rocktosser/rocktosser_garrison.xml</order_garrison>
+      <order_gather>voice/goron/rocktosser/rocktosser_gather.xml</order_gather>
+      <order_repair>voice/goron/rocktosser/rocktosser_repair.xml</order_repair>
+      <order_walk>voice/goron/rocktosser/rocktosser_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/goron/rocktosser/rocktosser_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>2.0</RunMultiplier>
+    <WalkSpeed>7.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/goron/goron_rocktosser_b.xml</Actor>
+  </VisualActor>
+</Entity>

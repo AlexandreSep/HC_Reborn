@@ -1,0 +1,47 @@
+<Entity parent="HC_template_unit_infantry">
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Population>0</Population>
+    <Resources>
+      <food>10</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>35</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">Field Tree</Classes>
+    <GenericName>Flora</GenericName>
+    <Icon>structures/kokiri/kok_bush.dds</Icon>
+    <SpecificName>Kokiri Forest Tree</SpecificName>
+    <Tooltip>Harvest Kokiri Forest Tree for wood. Max gatherers: 1.</Tooltip>
+    <VisibleClasses datatype="tokens">-Infantry Resource</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <ResourceSupply>
+    <Max>200</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>wood.tree</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_field.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_field.xml</select>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.0</RunMultiplier>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>flora/forest/kokiri_trees_smallB.xml</Actor>
+  </VisualActor>
+</Entity>

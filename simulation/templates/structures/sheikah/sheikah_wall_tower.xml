@@ -1,0 +1,36 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/debris_sheikah_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <GenericName>Wooden Wall Tower</GenericName>
+    <History>A makeshift wooden wall to keep the elements out of Hylian villages.</History>
+    <Icon>structures/sheikah/she_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>40.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>structures/sheikah/sheikah_wall_tower.xml</Actor>
+	<FoundationActor>structures/sheikah/sheikah_scaffoldG.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

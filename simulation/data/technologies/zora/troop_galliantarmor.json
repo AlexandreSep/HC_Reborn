@@ -1,0 +1,16 @@
+{
+	"genericName": "Galliant Armor",
+	"description": "Adorning War Hydrophants in Coralmold armor great increases their survivability.",
+	"cost": {"food": 0, "wood": 0, "stone": 100, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "zora/troop_galliantarmor.dds",
+	"researchTime": 40,
+	"tooltip": "Adorning War Hydrophants in Coralmold armor great increases their survivability.(+10% Health, +5 Armor - Hydrophant Lancer, Hydrophant Demolisher, and Hydrophant Canopy)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 5},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 5},
+		{"value": "Health/Max", "multiply": 1.1}],
+	"affects": ["Hydrophant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

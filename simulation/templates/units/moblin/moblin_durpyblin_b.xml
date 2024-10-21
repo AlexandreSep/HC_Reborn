@@ -1,0 +1,81 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Hack>7.0</Hack>
+        <Pierce>7.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>50</food>
+      <metal>0</metal>
+      <stone>15</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Medium Class100 Durpy Ogabonus</Classes>
+    <GenericName>Durpyblin Defender</GenericName>
+    <History>The only thing dumber than the Durpyblin is the Dodoblin! Actually these guys might be dumber, they cant even do all the nice work! Instead we give em a big pointy stick and tell em to stay put or run that way!</History>
+    <Icon>units/moblin/mob_durpyblin.dds</Icon>
+    <Lang>moblin</Lang>
+    <SelectionGroupName>units/moblin/moblin_durpyblin_b</SelectionGroupName>
+    <Tooltip>Big fat hard to kill Melee guy with a spear and shield!</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>12.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>8</food>
+    </Capacities>
+    <MaxDistance>5.0</MaxDistance>
+    <Rates>
+      <food.meat>1</food.meat>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/moblin/durpyblin/durpyblin_death.xml</death>
+      <order_attack>voice/moblin/durpyblin/durpyblin_attack.xml</order_attack>
+      <order_garrison>voice/moblin/durpyblin/durpyblin_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/durpyblin/durpyblin_gather.xml</order_gather>
+      <order_repair>voice/moblin/durpyblin/durpyblin_repair.xml</order_repair>
+      <order_walk>voice/moblin/durpyblin/durpyblin_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/moblin/durpyblin/durpyblin_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/moblin/moblin_durpyblin_b.xml</Actor>
+  </VisualActor>
+</Entity>

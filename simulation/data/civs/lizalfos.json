@@ -1,0 +1,184 @@
+{
+	"Code": "lizalfos",
+	"Culture": "naturalistic",
+	"Name": "Lizalfos",
+	"Emblem": "session/portraits/emblems/emblem_lizalfos.dds",
+	"History": "Once the lords of the Death Mountain range before a defeat at the hands of the Gorons drove them into exodus, the Lizalfos settled deep in the forests south of their homeland. After decades they had rebuilt their brutal empire and carved their borders all throughout Faron. While many of their kin are content to hunt and dance in their newfound home, some have more ambitions to expand their holdings.",
+	"Music":[
+			{"File":"lizalfos_theme1.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient1.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient2.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient3.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient4.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient5.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient6.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient7.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient8.ogg", "Type":"peace"},
+			{"File":"lizalfos_ambient9.ogg", "Type":"peace"},
+			{"File":"lizalfos_battle1.ogg", "Type":"battle"},
+			{"File":"lizalfos_battle2.ogg", "Type":"battle"},
+			{"File":"lizalfos_battle3.ogg", "Type":"battle"},
+			{"File":"lizalfos_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Nardu the White",
+					"Class": "",
+					"Armament": "Sacrificial Dagger",
+					"Emblem": "",
+					"History": "Hailing from the once minuscule and politically weak Clutch of pure White, Nardu's mysterious rise to power and assumption of Matron made her family line the most recognized over night. There is much confusion around how Nardu amassed such power from nothing, but none dare confront her lest they encourage their own sacrifice at the altar. Though she can be incredibly violent, Nardu is a bit uncharacteristic for a Lizalfos. She believes all the Pantheon of gods unworthy of worship, and seeks to prove that only she herself is deserving of worship by her people."
+				},
+				{
+					"Name": "Vakat the Winged",
+					"Class": "",
+					"Armament": "Aeralfos Sword and Shield",
+					"Emblem": "",
+					"History": "The last Aeralfos to have lived during the time of the old Death Mountain Empire, Vakat the Winged was once a respected leader of the Lizalfos people before the Gorons drove them into the south. Now many see him as an old fool, blaming him and the other Aeralfos for losing their homeland to the Gorons. Perhaps because of so many years of shame, Vakat is a pessimist and often spends his time in the wilderness alone. One day he wishes to find a way to restore his and his people�s status."
+				},
+				{
+					"Name": "Talik the Red",
+					"Class": "",
+					"Armament": "Dragon Lance",
+					"Emblem": "",
+					"History": "The twisted offspring of a Dinalfos and Volvagian union, Talik the Red enjoys the cowering fear she brings forth from her people due to the blood in her veins. The right hand enforcer of Nardu the White, Talik is brought in when brute force is needed to accomplish the Queen�s ends. Talik believes herself superior to all other Lizalfos kind, a trait likely encouraged by her Volvagian parentage and towering size. She holds little respect for anyone, save the White Queen. It is unknown why Talik thinks so highly of Nardu or why she so loyally serves her, but many think the key the Queen�s power lies in their cooperation."
+				},
+				{
+					"Name": "Okakusha the Green",
+					"Class": "",
+					"Armament": "Faron Spear",
+					"Emblem": "",
+					"History": "A Chameleofos born long after the Lizalfos were driven from the north, Okakusha has defended the Faron borders most of her adult life and not thought much of the world beyond them. She follows the deity Faron rather wholeheartedly, believing her people are fortunate that he granted them a new empire in his forest. Lately Okakusha has become somewhat disturbed by the rise of Nardu the White and the increasing popularity of retaking Death Mountain. Why risk another collapse when the new Lizalfos empire is just beginning to thrive in the forest?"
+				}
+			]
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Blood Frenzy",
+			"History": "",
+
+			"Description": "Lizalfos units killed in battle give a temporary bonus to the combat damage of nearby units."
+		},
+		{
+			"Name": "Initiation Sacrifices",
+			"History": "",
+
+			"Description": "Lizalfos begin a game with herdable animals instead of soldiers."
+		},
+		{
+			"Name": "Carnivore Kings",
+			"History": "",
+			"Description": "All sources of meat and fish harvested by Lizalfos last 15% longer."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/lizalfos/choosehero_nardu",
+		"civ_choices/lizalfos/choosehero_vakat",
+		"civ_choices/lizalfos/choosehero_talik",
+		"civ_choices/lizalfos/choosehero_okakusha"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Sacrificial Gifts",
+			"History": "",
+			"Description": "Allies begin the game with herdable animals and bundles of other resources near their starting base. If their faction cannot harvest meat, they are replaced with appropriate sources of food."
+		}
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonders: Eastern Palace and Turtle Rock",
+			"Class": "",
+			"Emblem": "",
+			"History": "The Eastern Palace was found in ruins by the Lizalfos after their long exodus from Death Mountain. A generation later and the abandoned seat of royalty had been refurbished and converted to a massive temple of worship for the Helmasaur King. Turtle Rock once served a similar purpose on Death Mountain before the Lizalfos were driven out, save that it was Trinexx who was worshiped in its heated halls.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		},
+		{
+			"Name": "Titan: Garnyle Og, the Helmasaur King",
+			"Class": "",
+			"Emblem": "",
+			"History": "Once a tyrant of Death Mountain, the Helmasaur King was driven from its homeland and settled in the Eastern Palace of Faron Woods where many Lizalfos have added him to their Pantheon of Gods. Although certainly smarter than an animal, Garnyle Og is hardly intelligent and is easily riled to fits of anger. His huge form can easily knock over buildings and his spiky carapace naturally impales enemies that try to get too close.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		},
+		{
+			"Name": "Titan: Trinexx, Lord of Turtle Rock",
+			"Class": "",
+			"Emblem": "",
+			"History": "The lord of Turtle Rock on Death Mountain, Trinexx was defeated by the Gorons and driven into the forests where the Lizalfos have added him to their Pantheon of Gods. A very large and powerful three headed Dodongo Snake, Trinexx can attack enemies with both fire and ice blasts and crush smaller victims with its central head. Only crushing damage or magic powers can crack the rocky shell of this mighty beast.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		}
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/lizalfos/lizalfos_civil_centre"
+		},
+		{
+			"Template": "units/lizalfos/lizalfos_peonA",
+			"Count": 4
+		},
+		{
+			"Template": "gaia/fauna_sheep",
+			"Count": 2
+		},
+		{
+			"Template": "units/lizalfos/lizalfos_sneak_b",
+			"Count": 2
+		},
+		{
+			"Template": "gaia/fauna_sheep"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Nardu the White",
+		"Vakat the Winged",
+		"Talik the Red",
+		"Okakusha the Greeb"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/lizalfos/lizalfos_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/lizalfos/lizalfos_peonA",
+		"skirmish/units/default_cavalry" :  "units/lizalfos/lizalfos_sneak_b",
+		"skirmish/units/default_infantry_melee_b": "units/lizalfos/lizalfos_peonA",
+		"skirmish/units/default_infantry_ranged_b": "units/lizalfos/lizalfos_peonA",
+		"skirmish/structures/default_house_10" : "structures/lizalfos/lizalfos_house"
+	},
+	"SelectableInGameSetup": true
+}

@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Wasteland Stump</SpecificName>
+    <Tooltip>Dead stump that once belonged to a tree in the Moblin Wastelands.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/waste_stump_small.xml</Actor>
+  </VisualActor>
+</Entity>

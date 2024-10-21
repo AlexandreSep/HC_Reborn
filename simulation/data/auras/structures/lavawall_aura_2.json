@@ -1,0 +1,16 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"supersedes": "structures/lavawall_aura_1",
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": -1.6 }
+	],
+	"auraName": "Superheated Lava",
+	"auraDescription": "(Requires 'Superheated Lava' researched. -1.6 Health/second - Enemy Unit).",
+	"requiredTechnology": "goron/building_superlava",
+	"stackable" : true ,
+	"overlayIcon": "art/textures/ui/session/auras/lavawall_aura_1.dds"
+	
+}

@@ -1,0 +1,22 @@
+{
+  "genericName": "Wild Nest",
+  "description": "DOES NOT WORK!!!",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 0,
+    "metal": 0
+  },
+  "requirements": {
+    "all": [
+      { "tech": "phase_village" },
+      { "civ": "ordona" }
+    ]
+  },
+  "icon": "ordona/apiary_wildhives.dds",
+  "researchTime": 0,
+  "tooltip": "(Beekeepers can now place Beehives. Beehive will remain inactive for several minutes after being placed. Once active, it will generate Wild Killer Bees that attack all nearby units.)",
+  "modifications": [],
+  "affects": [ "Beekeeper" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

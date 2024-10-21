@@ -1,0 +1,76 @@
+<Entity parent="HC_template_structure_wonder">
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Circle radius="50.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>10000</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_largeA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>fairy</Civ>
+    <GenericName>Unicorn Fountain</GenericName>
+    <History>A mythical fountain still believed to be unreal. Many have searched their entire lives for this fabled wonder, and none have found it. Legend says that only a Fairy may visit the Unicorn Fountain, and she may permit a mortal friend a glimpse in their sleep.</History>
+    <Icon>structures/fairy/fai_unicornwonder.dds</Icon>
+    <RequiredTechnology>fairy/unlock_winter</RequiredTechnology>
+    <Tooltip>The Fairy Wonder, allows you to summon the Maku Tree of Horon.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Static depth="90.0" width="90.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>35</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>40</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/fairy/{civ}_titan_makuhoron
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>30</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_unicornfountain.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/fairy/sel_unicornfountain.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_uniwonderA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,67 @@
+<Entity parent="HC_template_structure_civilian">
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="35.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_mediumA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Misthenge</GenericName>
+    <History>Perhaps one of the rarest Fairy locations in all known records, a Misthenge was considered an impossible task to find unless its Fairy master allowed one to stumble unto it. Believed to be a library of all manner of ancient secrets, legend has it that magic too powerful to be known by the world was kept locked away under the stones of these ringed henges.</History>
+    <Icon>structures/fairy/fai_misthenge_spring.dds</Icon>
+    <RequiredTechnology>fairy/unlock_winter</RequiredTechnology>
+    <Tooltip>Discovers Fairy secrets to improve various features.</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="52.0" width="52.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    fairy/season_tooshort
+    fairy/valanavi_weirdingpaths
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_misthenge.xml</constructed>
+      <select>interface/select/building/fairy/sel_misthenge.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_misthengeA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

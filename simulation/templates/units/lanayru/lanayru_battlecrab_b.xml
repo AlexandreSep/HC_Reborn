@@ -1,0 +1,84 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Claws</AttackName>
+      <Damage>
+        <Crush>7.0</Crush>
+        <Pierce>10.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>95</food>
+      <metal>20</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>520</Max>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>4</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/lanayru/lanayru_minicrab_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">Medium Class100</Classes>
+    <GenericName>Battlecrab</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Hostile beasts found across the entire coast of Lanayru in the summer, Battlecrabs were best left alone. General Aydia saw great use in turning the creatures into makeshift defenders and successfully domesticated the crustaceans. A Battlecrab is followed by a small host of its children, who seek out and attack anything near their mother.</History>
+    <Icon>units/lanayru/lan_battlecrab.dds</Icon>
+    <Lang>lanayru</Lang>
+    <RequiredTechnology>civ_choices/lanayru/choosehero_dorephan</RequiredTechnology>
+    <SelectionGroupName>units/lanayru/lanayru_battlecrab_b</SelectionGroupName>
+    <Tooltip>Durable Melee Creature that continually spawns baby Battlecrabs.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>55.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lanayru/battlecrab/battlecrab_death.xml</death>
+      <order_attack>voice/lanayru/battlecrab/battlecrab_attack.xml</order_attack>
+      <order_garrison>voice/lanayru/battlecrab/battlecrab_garrison.xml</order_garrison>
+      <order_gather>voice/lanayru/battlecrab/battlecrab_gather.xml</order_gather>
+      <order_repair>voice/lanayru/battlecrab/battlecrab_repair.xml</order_repair>
+      <order_walk>voice/lanayru/battlecrab/battlecrab_walk.xml</order_walk>
+      <select>voice/lanayru/battlecrab/battlecrab_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lanayru/lanayru_battlecrab_b.xml</Actor>
+  </VisualActor>
+</Entity>

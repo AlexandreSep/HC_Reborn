@@ -1,0 +1,88 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Hack>25.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1600</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/commander_aura_1
+  </Auras>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>115</food>
+      <metal>20</metal>
+      <stone>75</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>550</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Large Class60 MoblinWarlord BlightedMob</Classes>
+    <GenericName>Moblin Warlord</GenericName>
+    <History>Whooooaaaahhh big bad boss Moblin! You better listen to him, Warlord super smart and super bossy! He has nice awesome axe and can eat other Moblins for breakfast! Ok that last part was made up, but still listen to him or else!</History>
+    <Icon>units/moblin/mob_warlord.dds</Icon>
+    <Lang>moblin</Lang>
+    <SelectionGroupName>units/moblin/moblin_warlord_b</SelectionGroupName>
+    <Tooltip>Big bad bossy unit that can boss around other Blins!</Tooltip>
+    <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/moblin/moblin_warlord_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>70.0</Hack>
+        <Pierce>80.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>8</food>
+    </Capacities>
+    <MaxDistance>5.0</MaxDistance>
+    <Rates>
+      <food.meat>1</food.meat>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/moblin/mob/mob_death.xml</death>
+      <order_attack>voice/moblin/mob/mob_attack.xml</order_attack>
+      <order_garrison>voice/moblin/mob/mob_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/mob/mob_gather.xml</order_gather>
+      <order_repair>voice/moblin/mob/mob_repair.xml</order_repair>
+      <order_walk>voice/moblin/mob/mob_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/moblin/mob/mob_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/moblin/moblin_warlord_b.xml</Actor>
+  </VisualActor>
+</Entity>

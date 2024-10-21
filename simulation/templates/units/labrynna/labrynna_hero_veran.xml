@@ -1,0 +1,109 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Fairy Whip</AttackName>
+      <Damage>
+        <Pierce>15.0</Pierce>
+        <Shadow>25.0</Shadow>
+      </Damage>
+      <Delay>0</Delay>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>15</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>1700</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>15.0</Pierce>
+          <Shadow>25.0</Shadow>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>545</food>
+      <metal>100</metal>
+      <stone>80</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="7.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2700</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">HeroVeran Hero1 Large</Classes>
+    <GenericName>Sorceress of Shadows</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A mystery to all in Labrynna, even those most close to her, Veran’s past is a terrible saga of personal loss and trauma. Once a Great Fairy, circumstances in the past lead to her banishment to the Realm of Twilight with other criminal elements of her people. Sometime during the Gerudo Wars she managed to return into Hyrule, fleeing far to the east into Labrynna where she observed and became friends with Queen Ambi. Currently Veran’s plan is unknown. She is however quite clearly connected to Labrynna’s rapid and extreme military growth. She is the architect of the Black Tower, a massive monolithic structure designed to serve as the new throne of Queen Ambi. Some suspect there’s more to the tower’s purpose than just an ego trip for Veran’s royal friend, however.</History>
+    <Icon>units/labrynna/lab_hero_veran.dds</Icon>
+    <Lang>labrynna</Lang>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
+    <SpecificName>Veran</SpecificName>
+    <Tooltip>Tall and slow moving Melee Hero with a powerful Splash Damage whip.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>30.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>35.0</Pierce>
+        <Shadow>30.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/veran_whip.xml</attack_impact_ranged>
+      <death>voice/labrynna/veran/veran_death.xml</death>
+      <order_attack>voice/labrynna/veran/veran_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/veran/veran_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/veran/veran_gather.xml</order_gather>
+      <order_repair>voice/labrynna/veran/veran_repair.xml</order_repair>
+      <order_walk>voice/labrynna/veran/veran_walk.xml</order_walk>
+      <select>voice/labrynna/veran/veran_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero1</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_veran_b.xml</Actor>
+  </VisualActor>
+</Entity>

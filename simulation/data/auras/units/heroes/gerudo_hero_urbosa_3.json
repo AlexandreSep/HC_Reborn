@@ -1,0 +1,11 @@
+{
+	"type": "garrison",
+	"affects": ["Ashinon"],
+	"modifications": [
+		{ "value": "Capturable/GarrisonRegenRate", "add": 5 }
+	],
+	"auraName": "Ashinon General",
+	"auraDescription": "(If Garrisoned, +5 Capture Regen Rate - Border Tower, Gerudo Guard Tower, and Gerudo Fortress)",
+	"overlayIcon": "art/textures/ui/session/auras/urbosa_ashinongeneral.dds"
+}
+

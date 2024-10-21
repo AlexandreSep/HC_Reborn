@@ -1,0 +1,8 @@
+{
+	"type": "range",
+	"radius": 65,
+	"affects": ["Structure"],
+	"modifications": [],
+	"auraName": "Hive Projection",
+	"auraDescription": "Projection of the Gohma's will, a radius which Gohma structures must be built within."
+}

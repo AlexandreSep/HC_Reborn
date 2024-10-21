@@ -1,0 +1,12 @@
+<Entity parent="structures/hylian/hylian_stone_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9" width="55.0" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="7.5" width="55.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_wall_long.xml</Actor>
+  </VisualActor>
+</Entity>

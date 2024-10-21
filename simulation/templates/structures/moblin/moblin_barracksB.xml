@@ -1,0 +1,89 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Bashin' Bulblin Camp</GenericName>
+    <History>Those Bulblins are a nasty bunch they are! They may be small but they gots some smarts in their head! They don&#8217;t like to hang out with us other Blins much though, so they make their own village out over there! We don&#8217;t mind!</History>
+    <Icon>structures/moblin/mob_camp_bulb.dds</Icon>
+    <Tooltip>Makes the Bulblin units!</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="40.0" width="40.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0.5</X>
+        <Z>5</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/moblin/{civ}_thug_b
+      units/moblin/{civ}_picket_b
+    units/moblin/{civ}_bullborider_b
+    units/moblin/{civ}_bullboram_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0.5</X>
+      <Z>-10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    moblin/bulb_headhittin
+    moblin/bulb_flaminarrow
+    moblin/bulb_getupnow
+    moblin/kingbulblin_srslybetterarmor
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracksB_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack up this Bashin' Bulblin Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_bulbA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

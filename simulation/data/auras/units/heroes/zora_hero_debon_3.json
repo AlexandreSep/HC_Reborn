@@ -1,0 +1,12 @@
+{
+	"type": "garrison",
+	"affects": ["Fortress"],
+	"modifications": [
+		{ "value": "GarrisonHolder/Max", "add": 10 },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 3 }
+	],
+	"auraName": "River Bastion",
+	"auraDescription": "(If Garrisoned, x2 Garrison Limit and +3 Capture Regen Rate - Bastille)",
+	"overlayIcon": "art/textures/ui/session/auras/debon_riverbastion.dds"
+}
+

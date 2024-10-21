@@ -1,0 +1,17 @@
+<Entity parent="units/labrynna/labrynna_cannon_common">
+  <Identity>
+    <Icon>units/labrynna/lab_cannon.dds</Icon>
+  </Identity>
+  <Pack>
+    <Entity>units/labrynna/labrynna_cannon_packed</Entity>
+    <State>unpacked</State>
+    <Time>7000</Time>
+  </Pack>
+  <UnitMotion>
+    <RunMultiplier>1.0</RunMultiplier>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_cannon_b.xml</Actor>
+  </VisualActor>
+</Entity>

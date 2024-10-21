@@ -1,0 +1,49 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="25.0" width="25.0" />
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_smallB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Hut</GenericName>
+    <History>A small and simple hut with a single room is all the average Lizalfos family needed to dwell in.</History>
+    <Icon>structures/lizalfos/liz_hut.dds</Icon>
+    <Tooltip>Housing that allows you to field larger armies.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_house.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_house.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_houseA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldD_W.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,32 @@
+<Entity parent="structures/labrynna/labrynna_blacksmith">
+  <Identity>
+    <GenericName>Cannon Foundry</GenericName>
+    <History>Cannons quickly became the siege weapon of choice used by the Regime, and dedicated factories could produce the machines at quite a staggering rate.</History>
+    <Icon>structures/labrynna/lab_gunpowderB.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/labrynna/{civ}_cannon
+      units/labrynna/{civ}_organgun
+    </Entities>
+    <Technologies datatype="tokens">
+    labrynna/cannon_highyield
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_blacksmithC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Upgrade Cannon Foundry with Garage.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_powderB.xml</Actor>
+  </VisualActor>
+</Entity>

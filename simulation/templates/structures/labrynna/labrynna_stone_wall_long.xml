@@ -1,0 +1,69 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="38.5" />
+  </Footprint>
+  <GarrisonHolder>
+    <Max>5</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>11.1</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>4</X>
+        <Y>11.1</Y>
+        <Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-4</X>
+        <Y>11.1</Y>
+        <Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>8</X>
+        <Y>11.1</Y>
+        <Z>0</Z>
+      </Archer4>
+      <Archer5>
+        <X>-8</X>
+        <Y>11.1</Y>
+        <Z>0</Z>
+      </Archer5>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <GenericName>Stone Wall</GenericName>
+    <History>A large stone wall to protect the Empire from any who dare invade Labrynna.</History>
+    <Icon>structures/labrynna/lab_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="40.0" />
+  </Obstruction>
+  <Upgrade>
+    <Gate>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_stone_wall_gate</Entity>
+      <Time>45</Time>
+      <Tooltip>Convert to Stone Gate.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Gate>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_wall_long.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldI.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>40.0</Length>
+  </WallPiece>
+</Entity>

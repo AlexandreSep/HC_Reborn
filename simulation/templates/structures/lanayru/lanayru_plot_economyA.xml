@@ -1,0 +1,87 @@
+<Entity parent="HC_template_structure_plot">
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_lanayru_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lanayru</Civ>
+    <GenericName>Hub Addon-On</GenericName>
+    <History>Construct Economy Hub Add-ons on this space.</History>
+    <Icon>structures/lanayru/lan_plotA.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Construct Economy Hub Add-ons on this space.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_market</Entity>
+      <Time>30</Time>
+      <Tooltip>Add an Emporium to this building.</Tooltip>
+      <Variant>upgrading_I</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_blacksmith</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Silver Exchange to this building.</Tooltip>
+      <Variant>upgrading_L</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_mercs</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Bordello to this building.</Tooltip>
+      <Variant>upgrading_J</Variant>
+    </TowerC>
+    <TowerD>
+      <Cost>
+        <stone>80</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_watch_towerA</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Guard Post to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerD>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_plotB.xml</Actor>
+  </VisualActor>
+</Entity>

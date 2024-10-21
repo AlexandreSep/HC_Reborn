@@ -1,0 +1,68 @@
+<Entity parent="HC_template_structure_defense">
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="10.0" width="10.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>2</X>
+        <Y>16.2</Y>
+        <Z>0</Z>
+      </Archer1>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Hawksentry RangerWatches LiteDefenseTower</Classes>
+    <GenericName>Border Post</GenericName>
+    <History>Border Posts dot the western and eastern borders of the Province, watching and warning of all incoming threats to the nation.</History>
+    <Icon>structures/ordona/ord_borderpost.dds</Icon>
+    <Tooltip>Small Tower that can detect Camouflaged and Stealthed units.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="7.5" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_hawk_b2
+    </Entities>
+    <Technologies datatype="tokens">
+    ordona/tower_hawkpatrols
+    </Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_towerA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldI.xml</FoundationActor>
+  </VisualActor>
+</Entity>

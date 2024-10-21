@@ -1,0 +1,72 @@
+<Entity parent="HC_template_structure_wonder">
+  <BuildRestrictions>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Circle radius="40.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>10000</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_huge</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>ordona</Civ>
+    <GenericName>Ordona Spring</GenericName>
+    <History>Legend says that the guardian spirit of Ordona blessed the southern lands of Hyrule with healing waters and a bountiful harvest. While the elusive demigod has not been seen in modern times, these springs nevertheless create vast tracts of fertile lands around their perimeter.</History>
+    <Icon>structures/ordona/ord_ordonspring.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>The Ordonian Wonder, allows you to summon Latoan, the Spirit of Ordona.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="60.0" width="60.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>45</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>50</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/ordona/{civ}_titan_latoan
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>40</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/ordona/complete_ordspring.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/ordona/sel_ordspring.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_wonderA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldK.xml</FoundationActor>
+  </VisualActor>
+</Entity>

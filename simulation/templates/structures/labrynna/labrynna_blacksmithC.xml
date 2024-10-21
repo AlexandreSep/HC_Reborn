@@ -1,0 +1,23 @@
+<Entity parent="structures/labrynna/labrynna_blacksmithB">
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_mediumB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Garage</GenericName>
+    <History>The house of the dreaded Steam Tank; Labrynna&#8217;s fearsome machine of death and destruction.</History>
+    <Icon>structures/labrynna/lab_gunpowderC.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/labrynna/{civ}_steamtank_b
+    </Entities>
+    <Technologies datatype="tokens">
+    labrynna/steamtank_yoribiengine
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_powderC.xml</Actor>
+  </VisualActor>
+</Entity>

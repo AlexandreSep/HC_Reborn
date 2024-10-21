@@ -1,0 +1,20 @@
+<Entity parent="structures/lizalfos/lizalfos_blacksmith">
+  <Identity>
+    <RequiredTechnology>lizalfos_okra</RequiredTechnology>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+</Entities>
+    <Technologies datatype="tokens">
+    lizalfos/weapon_bonebow
+    lizalfos/weapon_tukitalarrow
+    lizalfos/armor_scalecoat
+    lizalfos/armor_exposure
+    lizalfos/vakat_axetails
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_weaponshackA.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Sulkaris, the Fallen Sage",
+	"description": "Sulkaris, the Fallen Sage.",
+	"icon": "gohma/choosehero_sulkaris.png",
+	"tooltip": "Select Sulkaris, the Fallen Sage as your hero of choice.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["GohQueen", "GohPrincess"],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Armor Focus", "tooltipText": "Sulkaris focuses on improving the durability of Gohma units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Sulkaris", "tooltipText": "Allows you to summon Sulkaris, a massive creature hero that tears apart enemies with her claws."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Acid Sprayer", "tooltipText": "Short ranged unit that deals damage through enemy armor and self destructs when slain."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Spiked Carapace", "tooltipText": "Gohma Princesses and Queens grow barbed spikes that passively damage melee attackers."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Crystalline Armor", "tooltipText": "Dramatically improves Magic armor, slightly improves non-magic armor, and passively damages melee attackers for Soldier Larva, Pincergohma, and Spinalgohma."}]	
+}

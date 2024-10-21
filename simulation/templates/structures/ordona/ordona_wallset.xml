@@ -1,0 +1,21 @@
+<Entity parent="template_wallset">
+  <Identity>
+    <Civ>ordona</Civ>
+    <GenericName>Palisade Wall</GenericName>
+    <History>A makeshift wooden wall to keep the elements out of Ordonian villages.</History>
+    <Icon>structures/ordona/ord_wall.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <WallSet>
+    <MaxTowerOverlap>0.80</MaxTowerOverlap>
+    <MinTowerOverlap>0.10</MinTowerOverlap>
+    <Templates>
+      <Gate>structures/ordona/ordona_wall_gate</Gate>
+      <Tower>structures/ordona/ordona_wall_tower</Tower>
+      <WallLong>structures/ordona/ordona_wall_long</WallLong>
+      <WallMedium>structures/ordona/ordona_wall_medium</WallMedium>
+      <WallShort>structures/ordona/ordona_wall_short</WallShort>
+    </Templates>
+  </WallSet>
+</Entity>

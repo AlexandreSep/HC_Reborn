@@ -1,0 +1,13 @@
+{
+	"genericName": "Forced Laying",
+	"description": "Induces Gohma Queens within the Solarium Nursery into excessive egg laying.",
+	"cost": {"food": 0, "wood": 400, "stone": 0, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "gohma/nursery_forcedlay.dds",
+	"researchTime": 40,
+	"tooltip": "Induces Gohma Queens within the Solarium Nursery into excessive egg laying. ( -10% Batch Build Speed - Solarium Nursery)",
+	"modifications": [{ "value": "ProductionQueue/BatchTimeModifier", "add": -0.1 }],
+	"affects": ["GohNursery"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,20 @@
+<Entity parent="units/zora/zora_sapwarden_b">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Fire>18.0</Fire>
+        <Water>18.0</Water>
+      </Damage>
+      <Splash>
+        <Damage>
+          <Fire>9.0</Fire>
+          <Water>9.0</Water>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Promotion disable="" />
+</Entity>

@@ -1,0 +1,88 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Javelin</AttackName>
+      <Damage>
+        <Pierce>20</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>60</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>3000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>35</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>0</metal>
+      <stone>10</stone>
+      <wood>70</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="2.0" />
+    <Height>3.0</Height>
+  </Footprint>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">Medium FairyGuard Mudman Mantlet</Classes>
+    <GenericName>Mudman Mantlet</GenericName>
+    <History>A pair of Mudmen hiding behind a large mantlet shield. This pair of Mudmen is brought up by the Kokiri to lead and protect the frontline of their armies from ranged attacks. When in range of enemies they toss javelins from behind their shield.</History>
+    <Icon>units/kokiri/kok_mantlet.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>kokiri/get_mudcolony</RequiredTechnology>
+    <SelectionGroupName>units/kokiri/kokiri_mantlet_b</SelectionGroupName>
+    <Tooltip>Small, anti-Missile unit protected by a large mantlet shield. Extremely resistant to non-magic ranged attacks.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/kokiri/kokiri_mantlet_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>25.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <death>voice/kokiri/mantlet/mantlet_death.xml</death>
+      <order_attack>voice/kokiri/mantlet/mantlet_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/mantlet/mantlet_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/mantlet/mantlet_gather.xml</order_gather>
+      <order_repair>voice/kokiri/mantlet/mantlet_repair.xml</order_repair>
+      <order_walk>voice/kokiri/mantlet/mantlet_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/kokiri/mantlet/mantlet_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.0476</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_mantlet_b.xml</Actor>
+  </VisualActor>
+</Entity>

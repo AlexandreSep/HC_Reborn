@@ -1,0 +1,19 @@
+<Entity parent="structures/lizalfos/lizalfos_stables">
+  <Identity>
+    <RequiredTechnology>lizalfos_helmking</RequiredTechnology>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/lizalfos/{civ}_helmram_b
+      units/lizalfos/{civ}_helmqueen_b
+    </Entities>
+    <Technologies datatype="tokens">
+    lizalfos/helmram_broadskulls
+    lizalfos/helmqueen_maternalrevenge
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_monstermoundA.xml</Actor>
+  </VisualActor>
+</Entity>

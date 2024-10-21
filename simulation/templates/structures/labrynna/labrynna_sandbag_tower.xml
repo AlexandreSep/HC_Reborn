@@ -1,0 +1,33 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <BuildRestrictions>
+    <Category>Wall</Category>
+    <PlacementType>land-shore</PlacementType>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <Health>
+    <Max>25</Max>
+    <SpawnEntityOnDeath>structures/labrynna/labrynna_scaffold_sandA.xml</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Sandbag</Classes>
+    <GenericName>Sandbags</GenericName>
+    <History>Labrynnians used piles of snad filled bags for a large range of purposes. Pioneers would create makeshift walls form them, allowing their Gunpowder units to take shots at Cavalry that could not charge into them.</History>
+    <Icon>structures/labrynna/lab_sandbag.dds</Icon>
+    <Tooltip>Pile of sandbags to halt enemy movement, especially Cavalry.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_sandbagsB.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffold_sandA.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

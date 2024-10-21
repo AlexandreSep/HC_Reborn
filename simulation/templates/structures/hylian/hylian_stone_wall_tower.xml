@@ -1,0 +1,27 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_hylian_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <GenericName>Stone Wall Tower</GenericName>
+    <History>The cities on the plains of Hyrule were vulnerable from many sides. The Hylians resorted to building durable stone walls to protect themselves.</History>
+    <Icon>structures/hylian/hyl_stonewall.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_stone_wall_tower.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldG.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

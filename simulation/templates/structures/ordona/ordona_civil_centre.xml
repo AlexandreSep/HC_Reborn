@@ -1,0 +1,100 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <Cost>
+    <BuildTime>500</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>500</metal>
+      <stone>0</stone>
+      <wood>500</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="25.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_manorA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/node_civcenterA</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">RangerWatches</Classes>
+    <GenericName>Mayor's Manor</GenericName>
+    <History>The Mayors and Mayor Lords of Ordona Province often lived in style, at least compared to the lower class workers under their command. Ordonian Manors still came off as quite humble compared to the lavish castles and fortresses occupied by royalty across Hyrule, but by Province standards they were high class living. An Ordonian Mayor could manage an establishments's work force and labor from such a home.</History>
+    <Icon>structures/ordona/ord_mayormanor.dds</Icon>
+    <Tooltip>Ordonian Civil Center: Trains Worker units and all Resources can be dropped off here.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>10</X>
+        <Z>-15</Z>
+      </step1>
+      <step2>
+        <X>17</X>
+        <Z>-21</Z>
+      </step2>
+      <step3>
+        <X>30</X>
+        <Z>-21</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/ordona/{civ}_serfA
+      units/ordona/{civ}_lumberjack_b
+    units/ordona/{civ}_hero_colin_b
+    units/ordona/{civ}_hero_beth_b
+      units/ordona/{civ}_hero_ilia_b
+    units/ordona/{civ}_hero_ashei_b
+    units/ordona/{civ}_hero_mayorbo_b
+    units/ordona/{civ}_hero_rusl_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>3</X>
+      <Z>-10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    ordona/civiccenter_mayorpet
+    ordona/civiccenter_allotments
+    ordona/beth_villeins
+    ordona/mayorbo_latoanblood
+    ordona/player_isordona
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <alert0>interface/alarm/alarm_alert_0.xml</alert0>
+      <alert1>interface/alarm/alarm_alert_1.xml</alert1>
+      <alert2>interface/alarm/alarm_alert_2.xml</alert2>
+      <constructed>interface/complete/building/complete_civ_center_ordona.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_civ_center_ordona.xml</select>
+      <upgraded>interface/complete/building/complete_civ_center_ordona.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_civic_centreA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

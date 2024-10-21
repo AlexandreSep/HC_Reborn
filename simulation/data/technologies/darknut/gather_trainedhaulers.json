@@ -1,0 +1,14 @@
+{
+	"genericName": "Trained Haulers",
+	"description": "Darknut Thralls became quite well trained in hauling large loads of cargo across heated deserts and the steep cliffscape of their homelands.",
+	"cost": {"food": 400, "wood": 0, "stone": 0, "metal": 450},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "darknut/gather_trainedhaulers.dds",
+	"researchTime": 40,
+	"tooltip": "Darknut Thralls became quite well trained in hauling large loads of cargo across heated deserts and the steep cliffscape of their homelands. (Thrall movement speed increased by 15%)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.15},
+					  {"value": "UnitMotion/RunMultiplier", "multiply": 1.15}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

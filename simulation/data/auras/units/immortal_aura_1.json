@@ -1,0 +1,17 @@
+{
+	"type": "range",
+	"radius": 15,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Forest", "add": 3 },
+		{ "value": "Resistance/Entity/Damage/Fire", "add": 3 },
+		{ "value": "Resistance/Entity/Damage/Water", "add": 3 },
+		{ "value": "Resistance/Entity/Damage/Shadow", "add": 3 },
+		{ "value": "Resistance/Entity/Damage/Spirit", "add": 3 },
+		{ "value": "Resistance/Entity/Damage/Light", "add": 3 }
+	],
+	"auraName": "Charm of Protection",
+	"auraDescription": "(+3 Magic Armor for all units within her aura)",
+	"requiredTechnology": "darknut/summon_charm",
+	"overlayIcon": "art/textures/ui/session/auras/immortal_aura1.dds"
+}

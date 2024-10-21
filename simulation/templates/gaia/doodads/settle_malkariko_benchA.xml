@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodadB">
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="2" width="4.5" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="2.0" width="4.5" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_benchA.xml</Actor>
+  </VisualActor>
+</Entity>

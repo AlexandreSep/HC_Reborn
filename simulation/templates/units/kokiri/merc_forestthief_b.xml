@@ -1,0 +1,5 @@
+<Entity parent="units/merc_forestthief_b">
+  <Identity>
+    <RequiredTechnology>kokiri/get_forestlodge</RequiredTechnology>
+  </Identity>
+</Entity>

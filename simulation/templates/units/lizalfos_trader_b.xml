@@ -1,0 +1,51 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Cost>
+    <BuildTime>15</BuildTime>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="8.0" width="4.0" />
+  </Footprint>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Medium Trader</Classes>
+    <GenericName>Sellsayer</GenericName>
+    <History>Though the Whispering Song was effective against other Lizalfos, members of other races had varying degrees of resistence to such speech before becoming influenced. Sellsayers specialized in speaking to other races and infleuncing them to buy or sell goods. A skilled Sellsayer could convince just about anyone to buy their merchandise, both good and junk.</History>
+    <Icon>units/lizalfos/liz_sellsayerA.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <Tooltip>Support unit that can continue to trade between your Marketplace and an ally's.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lizalfos/lizfemaleA/lizfemaleA_death.xml</death>
+      <order_attack>voice/lizalfos/lizfemaleA/lizfemaleA_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/lizfemaleA/lizfemaleA_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/lizfemaleA/lizfemaleA_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/lizfemaleA/lizfemaleA_repair.xml</order_repair>
+      <order_trade>voice/lizalfos/lizfemaleA/lizfemaleA_attack.xml</order_trade>
+      <order_walk>voice/lizalfos/lizfemaleA/lizfemaleA_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/lizalfos/lizfemaleA/lizfemaleA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <Trader>
+    <GainMultiplier>0.75</GainMultiplier>
+  </Trader>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_sellsayer_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,19 @@
+{
+	"genericName": "Sheikah Wheelbarrows",
+	"description": ".",
+	"cost": {"food": 0, "wood": 350, "stone": 0, "metal": 350},
+	"supersedes": "sheikah/gather_capacity_sheA",
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "kokiri"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+5 Resource Capacity - Shadowfolk",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 5},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 5},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 5},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 5}
+	],
+	"affects": ["SheWorker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

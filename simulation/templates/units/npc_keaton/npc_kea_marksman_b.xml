@@ -1,0 +1,83 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Bolts</AttackName>
+      <Damage>
+        <Pierce>19.0</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+      </Knockback>
+      <MaxRange>76</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>3500</RepeatTime>
+      <TrueDamage>14</TrueDamage>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>30</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>270</Max>
+  </Health>
+  <Identity>
+    <Civ>npc_keaton</Civ>
+    <Classes datatype="tokens">Medium Class100 CanGarrison MinorFaction FemaleCitizen</Classes>
+    <GenericName>Keaton Marksman</GenericName>
+    <History>Both sneaky and deadly with their crossbows, Keaton Marksmen are reserved for intimidation and ambush, but when used properly, can take down some of the toughest armor with their bolts.</History>
+    <Icon>units/npc_keaton/npc_kea_marksman.dds</Icon>
+    <Lang>keaton</Lang>
+    <SelectionGroupName>units/npc_keaton/npc_keaton_marksman_b</SelectionGroupName>
+    <Tooltip>Camouflaged Missile unit that can snipe enemies with their crossbows.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>35.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
+      <death>voice/merc/pikku/pikku_death.xml</death>
+      <order_attack>voice/merc/pikku/pikku_attack.xml</order_attack>
+      <order_garrison>voice/merc/pikku/pikku_garrison.xml</order_garrison>
+      <order_gather>voice/merc/pikku/pikku_gather.xml</order_gather>
+      <order_repair>voice/merc/pikku/pikku_repair.xml</order_repair>
+      <order_walk>voice/merc/pikku/pikku_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/merc/pikku/pikku_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/npc_keaton/npc_kea_marksman_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

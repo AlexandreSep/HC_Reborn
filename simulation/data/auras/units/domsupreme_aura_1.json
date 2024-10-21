@@ -1,0 +1,17 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Attack/Melee/PrepareTime", "multiply": 0.90 },
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.90 },
+		{ "value": "Attack/Ranged/MaxRange", "multiply": 2 },
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.90 },
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.90 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.10 }
+	],
+	"auraName": "Supreme Commander",
+	"auraDescription": "{+10% Melee and Ranged Attack Rate, +2 Meters Ranged Attack Range, +10% Walk/Run Speed - Unit)",
+	"overlayIcon": "art/textures/ui/session/auras/domsupreme_aura_1.dds"
+}

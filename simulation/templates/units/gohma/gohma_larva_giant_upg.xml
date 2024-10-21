@@ -1,0 +1,31 @@
+<Entity parent="units/gohma/gohma_larva_giant_b">
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <FriendlyFire>false</FriendlyFire>
+    <Range>15</Range>
+    <Damage>
+      <Pierce>15.0</Pierce>
+      <Hack>15.0</Hack>
+      <Crush>15.0</Crush>
+    </Damage>
+  </DeathDamage>
+  <Promotion disable="" />
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_smallA/gohma_smallA_death.xml</death>
+      <order_attack>voice/gohma/gohma_smallA/gohma_smallA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_smallA/gohma_smallA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_smallA/gohma_smallA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_smallA/gohma_smallA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_smallA/gohma_smallA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlB.xml</run>
+      <select>voice/gohma/gohma_smallA/gohma_smallA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/gohma/gohma_larva_giant_upg.xml</Actor>
+  </VisualActor>
+</Entity>

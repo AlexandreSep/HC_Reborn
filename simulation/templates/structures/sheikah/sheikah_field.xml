@@ -1,0 +1,38 @@
+<Entity parent="template_structure_resource_field">
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">Field</Classes>
+    <GenericName>Rice Paddy</GenericName>
+    <History>Rice was a staple of the Sheikah diet, largely due the ease with which it grew in the limited space of the lands that the Cadre held.</History>
+    <Icon>structures/sheikah/she_field.dds</Icon>
+    <Tooltip>Grows Food that can be harvested by Worker units.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <TerritoryInfluence>
+    <Radius>35</Radius>
+    <Root>false</Root>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <DiminishingReturns>0.90</DiminishingReturns>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.grain</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>structures/sheikah/sheikah_field_rice.xml</Actor>
+  </VisualActor>
+</Entity>

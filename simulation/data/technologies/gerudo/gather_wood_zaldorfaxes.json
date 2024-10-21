@@ -1,0 +1,12 @@
+{
+	"genericName": "Zaldorf Cutting Axes",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 50},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "gerudo"}]},
+	"icon": "gerudo/gather_wood_zaldorfaxes.dds",
+	"researchTime": 40,
+	"tooltip": "Sturdy woodcutting axes from the port of Zaldorf. (+15% Material (Wood) Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.15}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,30 @@
+{
+	"genericName": "Glass Rupees",
+	"description": "The Kingdom of Hyrule was one of the first states to introduce government currency notes, in the form of Glass Rupees.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/glass_rupees.dds",
+	"researchTime": 40,
+	"tooltip": "The Kingdom of Hyrule was one of the first states to introduce government currency notes, in the form of Glass Rupees. (-10% Currency and Metal - Unit, Building, and Technology)",
+  "modifications": [
+    {
+      "value": "Cost/Resources/metal",
+      "multiply": 0.90
+    },
+    {
+      "value": "Cost/Resources/stone",
+      "multiply": 0.90
+    },
+    {
+      "value": "ProductionQueue/TechCostMultiplier/stone",
+      "multiply": 0.90
+    },
+    {
+      "value": "ProductionQueue/TechCostMultiplier/metal",
+      "multiply": 0.90
+    }
+  ],
+	"affects": ["Unit", "Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "global",
+  "affects": [ "CivCentre" ],
+  "affectedPlayers": [ "ExclusiveMutualAlly" ],
+  "modifications": [
+    {
+      "value": "ResourceTrickle/Rates/wood",
+      "add": 0.75
+    }
+  ],
+  "auraName": "Kin of the Forest",
+  "auraDescription": "(Allies gain a slow trickle of materials)"
+}

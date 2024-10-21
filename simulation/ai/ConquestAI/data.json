@@ -1,0 +1,7 @@
+{
+  "name": "ConquestAI",
+  "description": "ConquestAI is the Overhauled Hyrule Conquest AI.\n It currently supports The Kingdom of Hyrule and the Gerudo Faction.\n\n Please report issues on the HC discord or comment on the other media locations (see the links in the main menu).\n on Hard difficulty and below, the AI receives a penalty to responsiveness in all areas, which increases per lower level, Sandbox works the same as Very Easy for now. \n\n Finally in ConquestAI, the AI behavior (Aggressive, Defensive, Balanced) has no effect.",
+  "moduleName" : "CONQUESTAI",
+  "constructor": "ConquestAIBot",
+  "useShared": true
+}

@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodadB">
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="25.0" width="55.0" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="25.0" width="55.0" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>structures/misc/waste_barricade_huge_top.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,76 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Damage>
+        <Pierce>30</Pierce>
+      </Damage>
+      <MaxRange>7.0</MaxRange>
+      <PrepareTime>1375</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>200</food>
+      <metal>0</metal>
+      <stone>75</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>380</Max>
+  </Health>
+  <Identity>
+    <Civ>npc_tokay</Civ>
+    <Classes datatype="tokens">Large Class90 MinorFaction</Classes>
+    <GenericName>Aquadongo Jockey</GenericName>
+    <History>Fitted with a giant head-mounted horn, the Sandseal Plower serves as a living battering ram for Gerudo armies. Capable of crossing harsh deserts as well as bodies of water, the Plower can charge into buildings and walls, tearing them apart brick-by-brick.</History>
+    <Icon>units/npc_tokay/npc_tok_aquajockey.dds</Icon>
+    <Lang>npc_tokay</Lang>
+    <SelectionGroupName>units/npc_tokay/npc_tok_aquajockey_b</SelectionGroupName>
+    <Tooltip>Melee Cavalry unit that can cross over bodies of water.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>true</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/aquadongo_bite.xml</attack_melee>
+      <death>voice/wild/aquadongo/aquadongo_death.xml</death>
+      <order_attack>voice/wild/aquadongo/aquadongo_attack.xml</order_attack>
+      <order_garrison>voice/wild/aquadongo/aquadongo_garrison.xml</order_garrison>
+      <order_gather>voice/wild/aquadongo/aquadongo_gather.xml</order_gather>
+      <order_repair>voice/wild/aquadongo/aquadongo_repair.xml</order_repair>
+      <order_walk>voice/wild/aquadongo/aquadongo_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/wild/aquadongo/aquadongo_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.7142</RunMultiplier>
+    <WalkSpeed>3.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/npc_tokay/npc_tok_aquajockey_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,116 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <food>250</food>
+      <metal>250</metal>
+      <stone>250</stone>
+      <wood>500</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>10.0</Height>
+    <Square depth="37.0" width="37.0" />
+  </Footprint>
+  <Health>
+    <Max>2500</Max>
+    <SpawnEntityOnDeath>rubble/debris_sheikah_clanhallA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/node_civcenterA</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens"></Classes>
+    <GenericName>Clan Hall</GenericName>
+    <History>A gathering place for the heads of the Sheikah Clans. The Clan Hall directs all Sheikah activity within the region. It serves as a central drop off point for resources and can train new workers.</History>
+    <Icon>structures/sheikah/she_clanhall.dds</Icon>
+    <Tooltip>Sheikah Civil Center: Trains Worker units and all Resources can be dropped off here.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>20</Bonus>
+  </Population>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>11</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+		units/sheikah/{civ}_shadowfolkA
+		units/sheikah/{civ}_hero_paya
+		units/sheikah/{civ}_hero_purah
+		units/sheikah/{civ}_hero_sheik
+		units/sheikah/{civ}_hero_kohga
+		units/sheikah/{civ}_hero_impa
+		units/sheikah/{civ}_hero_mazkoshia
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>3</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+		sheikah/player_issheikah
+    </Technologies>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>85.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>95</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <alert0>interface/alarm/alarm_alert_0.xml</alert0>
+      <alert1>interface/alarm/alarm_alert_1.xml</alert1>
+      <alert2>interface/alarm/alarm_alert_2.xml</alert2>
+      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_civ_center_hylian.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_civ_center_hylian.xml</select>
+      <upgraded>interface/complete/building/complete_civ_center_hylian.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/sheikah/sheikah_civic_centreA.xml</Actor>
+    <FoundationActor>structures/sheikah/sheikah_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,24 @@
+<Entity parent="structures/lizalfos/lizalfos_barracks">
+  <Identity>
+    <RequiredTechnology>lizalfos_okra</RequiredTechnology>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/lizalfos/{civ}_rope_b
+      units/lizalfos/{civ}_treehopper_b
+    units/lizalfos/{civ}_trapper_b
+    units/lizalfos/{civ}_carcasslauncher_b
+    </Entities>
+    <Technologies datatype="tokens">
+    lizalfos/rope_ropeskulls
+    lizalfos/treehopper_treeleap
+    lizalfos/trapper_weakness
+    lizalfos/carcass_tenacious
+    lizalfos/okakusha_patienthunter
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_hunterclutchA.xml</Actor>
+  </VisualActor>
+</Entity>

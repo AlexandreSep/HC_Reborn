@@ -1,0 +1,67 @@
+<Entity parent="HC_template_unit_infantry">
+  <Builder>
+    <Entities datatype="tokens">
+    structures/labrynna/labrynna_guerrillabomb
+    </Entities>
+    <Rate>1</Rate>
+  </Builder>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>25</metal>
+      <stone>15</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Medium UniqueUnit Darkblessing</Classes>
+    <GenericName>Tokay Guerrilla</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>These sneaky bands of Tokay have mastered the art of not drawing attention to themselves, something not hard to pull off since most dismiss the Tokay in general. The Guerilla can hide in open view and sneak explosives into an enemy base, sabotaging their buildings and bringing them down to rubble.</History>
+    <Icon>units/labrynna/lab_guerrilla.dds</Icon>
+    <Lang>labrynna</Lang>
+    <Rank>Basic</Rank>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
+    <SelectionGroupName>units/labrynna/labrynna_guerrilla_b</SelectionGroupName>
+    <Tooltip>Ralph's Unique Unit. A Stealthed Support unit that can place explosive bombs in enemy territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/tokay/tokayA/tokayA_death.xml</death>
+      <order_attack>voice/tokay/tokayA/tokayA_attack.xml</order_attack>
+      <order_garrison>voice/tokay/tokayA/tokayA_garrison.xml</order_garrison>
+      <order_gather>voice/tokay/tokayA/tokayA_gather.xml</order_gather>
+      <order_heal>voice/tokay/tokayA/tokayA_attack.xml</order_heal>
+      <order_repair>voice/tokay/tokayA/tokayA_repair.xml</order_repair>
+      <order_walk>voice/tokay/tokayA/tokayA_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/tokay/tokayA/tokayA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_guerilla_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Stealth>
+      <RevealOnAttackDelay>3000</RevealOnAttackDelay>
+    </Stealth>
+  </Visibility>
+</Entity>

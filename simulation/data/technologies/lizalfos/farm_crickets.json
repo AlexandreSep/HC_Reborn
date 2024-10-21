@@ -1,0 +1,13 @@
+{
+	"genericName": "Crickets and Snails",
+	"description": "Considered a delicacy by many Lizalfos, Crickets and Snails are usually only consumed by royalty. When the hunt is plentiful and a city wealthy, these creatures become a more common diet for the entire population.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a third deity.",
+	"icon": "lizalfos/farm_crickets.dds",
+	"researchTime": 40,
+	"tooltip": "+0.5 Food Resource Trickle/1 second - Grub Growers",
+	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 0.5}],
+	"affects": ["GrubFarm"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

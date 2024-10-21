@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodadB">
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="4.5" width="4.5" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="4.5" width="4.5" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>flora/flower/flora_tokaycocoA.xml</Actor>
+  </VisualActor>
+</Entity>

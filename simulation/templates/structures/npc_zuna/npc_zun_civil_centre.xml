@@ -1,0 +1,87 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <Attack disable="" />
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+    <GarrisonRegenRate>10.0</GarrisonRegenRate>
+    <RegenRate>0.5</RegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>500</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>500</metal>
+      <stone>0</stone>
+      <wood>500</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="47.0" width="37.0" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>npc_zuna</Civ>
+    <GenericName>Zunayan Weaponcrafters</GenericName>
+    <History>The Zuna were masters at crafting weaponry. The Darknuts had commissioned and stolen their techniques for years, and many mercenaries from Hyrule would seek the Zuna out to purchase their fine weapons.</History>
+    <Icon>structures/npc_zuna/npc_zun_civcenter.dds</Icon>
+    <Tooltip>Zuna Civil Center: trains all Zuna units and serves as a Resource drop off point.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Static depth="45" width="35" />
+  </Obstruction>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>25</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/npc_zuna/npc_zun_craftsmanA
+      units/npc_zuna/npc_zun_merchantman_b
+      units/npc_zuna/npc_zun_tridenteer_b
+    units/npc_zuna/npc_zun_tribowman_b
+    units/npc_zuna/npc_zun_triballista_b
+    units/npc_zuna/npc_zun_siegetower_b
+    units/npc_zuna/npc_zun_hero_vorday
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>5</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    npc_zuna/zuna_craftsmanship
+    npc_zuna/zuna_merchantguild
+    npc_zuna/zuna_zunayustax
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/npc_zuna/npc_zun_civiccenterA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

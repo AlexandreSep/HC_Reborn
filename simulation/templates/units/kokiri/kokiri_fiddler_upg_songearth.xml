@@ -1,0 +1,22 @@
+<Entity parent="units/kokiri/kokiri_fiddler_upg">
+  <Auras datatype="tokens">
+    -units/fiddler_music_songwind
+    units/fiddler_music_songearth
+    units/fiddler_music_songearth2
+    units/fiddler_music_songearth3
+    -units/fiddler_music_songsaria
+    -units/fiddler_music_songsaria2
+  </Auras>
+  <Upgrade>
+    <SongA>
+      <Entity>units/kokiri/kokiri_fiddler_upg_songsaria</Entity>
+      <Time>1</Time>
+      <Tooltip>Play the Saria's Song.</Tooltip>
+    </SongA>
+    <SongB>
+      <Entity>units/kokiri/kokiri_fiddler_upg_songwind</Entity>
+      <Time>1</Time>
+      <Tooltip>Play the Wind God's Aria.</Tooltip>
+    </SongB>
+  </Upgrade>
+</Entity>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Hull Mounting",
+	"description": "Aquamarine capture rate against enemy ships increased by 100%",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": { "all": [{ "entity": { "class": "CoastWatch", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Coast Watch.",
+	"icon": "lanayru/barracks_hullmount.dds",
+	"researchTime": 40,
+	"tooltip": "Aquamarine capture rate against enemy ships increased by 100%)",
+	"modifications": [{"value": "Attack/Capture/Value", "multiply": 2.0}],
+	"affects": ["Aquamarine"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,71 @@
+<Entity parent="HC_template_structure_wonder">
+  <Footprint>
+    <Circle radius="40.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>10000</Max>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_wonderA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>The Black Tower</GenericName>
+    <History>A giant and imposing tower orchestrated by Veran as the new throne of Queen Ambi. The staggering amount of resources Labrynna obtained to construct this massive structure has been fueled by their aggressive expansion into all neighboring lands. In truth, there is more to the Black Tower's purpose then a mere show of ego.</History>
+    <Icon>structures/labrynna/lab_blacktower.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>The Labrynnian Wonder, allows you to summon the Maku Tree of Labrynna.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Static depth="75.0" width="75.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+	  units/labrynna/{civ}_titan_makulab
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>20</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/labrynna/complete_blacktower.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/labrynna/sel_blacktower.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_blacktowerA.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldJ.xml</FoundationActor>
+  </VisualActor>
+</Entity>

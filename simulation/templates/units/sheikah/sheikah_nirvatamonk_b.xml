@@ -1,0 +1,84 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Lightning</AttackName>
+      <Damage>
+        <Crush>12</Crush>
+        <Light>8.0</Light>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>5</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>1300</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>125</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>55</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">Electric Medium Class100</Classes>
+    <GenericName>Nirvata Monk</GenericName>
+    <History>The oldest living Sheikah in Hyrule, the Monks of the Nirvata Clan blend the line between life and death. In ancient times is it believed that they served as messengers between Hyrule and the Oocca and may still serve such a role. Having lived many decades in complete isolation and darkness to contemplate and discover the dark secrets under the earth, the Nirvata Monks are detached and distant even to their own kind. In battle they bring ancient magics to bear on their enemies.</History>
+    <Icon>units/sheikah/she_nirvatamonk.dds</Icon>
+    <Lang>sheikah</Lang>
+    <SelectionGroupName>units/sheikah/sheikah_nirvatamonk_b</SelectionGroupName>
+    <Tooltip>Sheikah mage unit that attacks with an electric shock and deals splash damage.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/magic/magic_stormbolter.xml</attack_ranged>
+      <death>voice/sheikah/monk/monk_death.xml</death>
+      <order_attack>voice/sheikah/monk/monk_attack.xml</order_attack>
+      <order_garrison>voice/sheikah/monk/monk_garrison.xml</order_garrison>
+      <order_gather>voice/sheikah/monk/monk_gather.xml</order_gather>
+      <order_repair>voice/sheikah/monk/monk_repair.xml</order_repair>
+      <order_walk>voice/sheikah/monk/monk_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/sheikah/monk/monk_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5789</RunMultiplier>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/sheikah/nirvata/sheikah_nirvata_monk_b.xml</Actor>
+  </VisualActor>
+</Entity>

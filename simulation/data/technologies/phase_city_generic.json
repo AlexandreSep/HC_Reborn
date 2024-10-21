@@ -1,0 +1,19 @@
+{
+	"genericName": "City Phase",
+	"specificName": {
+	},
+	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
+	"cost": { "food": 750, "wood": 350, "stone": 350, "metal": 350 },
+	"requirements": { "all": [{ "entity": { "class": "Town", "number": 3 } }] },
+	"requirementsTooltip": "Requires 3 Town Phase Buildings.",
+  "supersedes": "phase_town_generic",
+  "replaces": ["phase_city"],
+	"icon": "city_phase.png",
+	"researchTime": 180,
+	"tooltip": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology. (+15% Territory - Civic Center; - Worker; +9 Capture Regen Rate - Building)",
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.2, "affects": "CivilCentre" },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 9.0, "affects": "Structure" }
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml" 
+}

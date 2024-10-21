@@ -1,0 +1,12 @@
+{
+	"type": "garrison",
+  "affects": [ "Vineyard" ],
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/food", "add": 1.00 }
+	],
+	"auraName": "Harvest Vineyard",
+	"stackable" : true ,
+	"requiredTechnology": "darknut/vineyard_baralferment",	
+	"auraDescription": "(If Garrisoned, +1 Food Resource Trickle/1 second - Vineyard)"
+}
+

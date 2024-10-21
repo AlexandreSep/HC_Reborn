@@ -1,0 +1,74 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="38.5" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>2</LoadingRange>
+    <Max>5</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>4</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-4</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>8</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer4>
+      <Archer5>
+        <X>-8</X>
+        <Y>11.5</Y>
+        <Z>0</Z>
+      </Archer5>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_hylian_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <GenericName>Stone Wall</GenericName>
+    <History>The cities on the plains of Hyrule were vulnerable from many sides. The Hylians resorted to building durable stone walls to protect themselves.</History>
+    <Icon>structures/hylian/hyl_stonewall.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="40.0" />
+  </Obstruction>
+  <Upgrade>
+    <Gate>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/hylian/hylian_stone_wall_gate</Entity>
+      <Time>45</Time>
+      <Tooltip>Convert to Stone Gate.</Tooltip>
+    </Gate>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_stone_wall_long.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldH.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>40.0</Length>
+  </WallPiece>
+</Entity>

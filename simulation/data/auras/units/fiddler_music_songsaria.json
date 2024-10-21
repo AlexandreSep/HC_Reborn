@@ -1,0 +1,18 @@
+{
+  "type": "range",
+  "radius": 50,
+  "affects": [ "Structure" ],
+  "modifications": [
+    {
+      "value": "ProductionQueue/BatchTimeModifier",
+      "multiply": 0.9
+    },
+    {
+      "value": "ProductionQueue/TechCostMultiplier/time",
+      "multiply": 0.9
+    }
+  ],
+  "auraName": "Saria's Song",
+  "auraDescription": "(+10% Research Speed, Batch Training Speed)",
+  "overlayIcon": "art/textures/ui/session/auras/fado_sariasong.dds"
+}

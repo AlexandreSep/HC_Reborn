@@ -1,0 +1,18 @@
+{
+	"type": "formation",
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Armour/Pierce", "add": 1 },
+		{ "value": "Armour/Hack", "add": 1 },
+		{ "value": "Armour/Crush", "add": 1 },
+		{"value": "Armour/Forest", "add": 3.0},
+		{"value": "Armour/Fire", "add": 3.0},
+		{"value": "Armour/Water", "add": 3.0},
+		{"value": "Armour/Spirit", "add": 3.0},
+		{"value": "Armour/Light", "add": 3.0},
+		{"value": "Armour/Shadow", "add": 3.0}
+	],
+	"auraName": "Nayru's Love",
+	"auraDescription": "(In Formation, +1 Armor, +3 Armor vs. Magic - Unit)",
+	"overlayIcon": "art/textures/ui/session/auras/ruto_naryuslove.dds"
+}

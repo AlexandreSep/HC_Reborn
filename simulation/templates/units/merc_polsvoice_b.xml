@@ -1,0 +1,68 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Pierce>5</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Small</Classes>
+    <GenericName>Pols Voice</GenericName>
+    <History>A mysterious and reclusive creature of legend, the Pols Voice hide from the world and rarely surface. Many believe them to be nothing but a mythical beast, but those of ancient wisdom know where to find these creatures and how converse with them. For the right price a Pols Voice can be hired to take on your enemies, latching on like a viscious leech with their giant gaping toothed maws.</History>
+    <Icon>units/merc/merc_polsvoice.dds</Icon>
+    <Lang>gaia</Lang>
+    <SelectionGroupName>units/merc/merc_polsvoice_b</SelectionGroupName>
+    <Tooltip>Strange Creature unit that hops right into their enemies to attack.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/polsvoice_bite.xml</attack_melee>
+      <death>voice/merc/polsvoice/polsvoice_death.xml</death>
+      <order_attack>voice/merc/polsvoice/polsvoice_attack.xml</order_attack>
+      <order_garrison>voice/merc/polsvoice/polsvoice_garrison.xml</order_garrison>
+      <order_gather>voice/merc/polsvoice/polsvoice_gather.xml</order_gather>
+      <order_repair>voice/merc/polsvoice/polsvoice_repair.xml</order_repair>
+      <order_walk>voice/merc/polsvoice/polsvoice_walk.xml</order_walk>
+      <run>actor/movement/polsvoice/polsvoice_hop.xml</run>
+      <select>voice/merc/polsvoice/polsvoice_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/polsvoice/polsvoice_hop.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>3.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/merc/merc_polsvoice_b.xml</Actor>
+  </VisualActor>
+</Entity>

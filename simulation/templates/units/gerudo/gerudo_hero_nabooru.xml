@@ -1,0 +1,98 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Scimitar</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Hero</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+        <Bonus2>
+          <Classes>Commander</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus2>
+      </Bonuses>
+      <Damage>
+        <Hack>70</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>415</food>
+      <metal>100</metal>
+      <stone>75</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">HeroNabooru Hero3 Medium</Classes>
+    <GenericName>Sage of Spirits</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The legal wife of Ganondorf and Empress of the Gerudo, as well as the Sage of Spirits. Nabooru faces a struggle between loyalty to her husband, and her duty of Sagehood and to the greater safety of Hyrule.</History>
+    <Icon>units/gerudo/ger_hero_nabooru.dds</Icon>
+    <Lang>gerudo</Lang>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_nabooru</RequiredTechnology>
+    <SpecificName>Empress Nabooru</SpecificName>
+    <Tooltip>Fast moving Assassin Hero who is Stealthed and can detect other Stealthed and Camouflaged units. High damage output against infantry and heroes.</Tooltip>
+    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>15.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>15.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <DodgeRating>50.0</DodgeRating>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/gerudo/nabooru/nabooru_death.xml</death>
+      <order_attack>voice/gerudo/nabooru/nabooru_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/nabooru/nabooru_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/nabooru/nabooru_gather.xml</order_gather>
+      <order_repair>voice/gerudo/nabooru/nabooru_repair.xml</order_repair>
+      <order_walk>voice/gerudo/nabooru/nabooru_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/gerudo/nabooru/nabooru_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero3</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.5833</RunMultiplier>
+    <WalkSpeed>12.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_hero_nabooru_b.xml</Actor>
+  </VisualActor>
+</Entity>

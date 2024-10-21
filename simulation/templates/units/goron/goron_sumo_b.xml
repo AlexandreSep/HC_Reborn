@@ -1,0 +1,86 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Fists</AttackName>
+      <Damage>
+        <Crush>40.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>85</food>
+      <metal>0</metal>
+      <stone>15</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Large Class80 LargeGarrison Sumo CoronBonusA</Classes>
+    <GenericName>Sumo</GenericName>
+    <History>Champions of the Gorons' favourite sport of wrestling, Sumos are giant hulking beasts that can bring their skill to the frontlines of battle. Unexpectedly swift for their huge size, they can catch enemies off guard with all manners of parries and grapples. Since they lack any heavy armor or weapons, Sumos are able to curl up and roll at very fast speeds.</History>
+    <Icon>units/goron/gor_sumo.dds</Icon>
+    <Lang>goron</Lang>
+    <SelectionGroupName>units/goron/goron/goron_sumo_b</SelectionGroupName>
+    <Tooltip>Large Melee unit that has a change to dodge enemy attacks. Can roll up to move rapidly.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <DodgeRating>20.0</DodgeRating>
+        <Hack>35.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/goron_fist_light.xml</attack_melee>
+      <death>voice/goron/sumo/sumo_death.xml</death>
+      <order_attack>voice/goron/sumo/sumo_attack.xml</order_attack>
+      <order_garrison>voice/goron/sumo/sumo_garrison.xml</order_garrison>
+      <order_gather>voice/goron/sumo/sumo_gather.xml</order_gather>
+      <order_repair>voice/goron/sumo/sumo_repair.xml</order_repair>
+      <order_walk>voice/goron/sumo/sumo_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/goron/sumo/sumo_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.7647</RunMultiplier>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>0</wood>
+      </Cost>
+      <Entity>units/goron/goron_sumo_roll</Entity>
+      <Time>1</Time>
+      <Tooltip>Enter Rolling mode. (+Movement Speed, but no Line-of-Sight and Attack)</Tooltip>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/goron/goron_sumo_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,78 @@
+<Entity parent="template_structure_resource">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <wood>25</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>decay|rubble/debris_kokiri_supertiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">Tree</Classes>
+    <GenericName>Kokiri Tree</GenericName>
+    <Icon>gaia/flora_tree_generic.dds</Icon>
+    <Tooltip>An everlasting Kokiri Tree. Max gatherers: 1.</Tooltip>
+  </Identity>
+  <Minimap>
+    <Color b="102" g="204" r="155" />
+    <Type>wood</Type>
+  </Minimap>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <Static depth="2.0" width="2.0" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue disable="" />
+  <RallyPoint disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>40.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <Max>100</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>wood.tree</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_field.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_field.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>5.0</DecayRate>
+  </TerritoryDecay>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>flora/forest/kokiri_trees_smallB.xml</Actor>
+    <FoundationActor>flora/forest/kokiri_trees_smallB.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint />
+    </SelectionShape>
+  </VisualActor>
+</Entity>

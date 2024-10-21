@@ -1,0 +1,5 @@
+<Entity parent="template_gaia_geo_rupee_vein">
+  <VisualActor>
+    <Actor>geology/rupee_veinA.xml</Actor>
+  </VisualActor>
+</Entity>

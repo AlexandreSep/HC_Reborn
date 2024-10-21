@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Worker"],
+	"modifications": [
+		{ "value": "Builder/Rate", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.1 }],
+	"auraName": "Grand Overseer",
+	"auraDescription": "(+10% Build Rate and Repair Rate, +10% Gather Rate - Worker)",
+	"overlayIcon": "art/textures/ui/session/auras/rauru_grandoverseer.dds"
+}

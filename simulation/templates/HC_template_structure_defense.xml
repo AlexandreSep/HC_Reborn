@@ -1,0 +1,74 @@
+<Entity parent="template_structure">
+  <Battalion>
+    <FormationTemplate>special/formations/battle_line</FormationTemplate>
+    <SameActorSeed>false</SameActorSeed>
+    <Size>1</Size>
+    <SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <BuildRestrictions>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Capturable disable="" />
+  <BuildingAI>
+    <DefaultArrowCount>5</DefaultArrowCount>
+    <GarrisonArrowClasses></GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Cost>
+      <BattalionSlots>0</BattalionSlots>
+  </Cost>
+  <Identity>
+    <Classes datatype="tokens">Construct</Classes>
+    <GenericName>Defensive Structure</GenericName>
+    <VisibleClasses datatype="tokens">Defense</VisibleClasses>
+  </Identity>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens"></List>
+    <LoadingRange>2</LoadingRange>
+    <Max>1</Max>
+  </GarrisonHolder>
+  <Loot>
+    <xp>100</xp>
+  </Loot>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1.0</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1.0</Hack>
+        <Light>0.0</Light>
+        <Pierce>95.0</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_tower.xml</constructed>
+      <select>interface/select/building/sel_tower.xml</select>
+      <upgraded>interface/complete/building/complete_tower.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>32</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+</Entity>

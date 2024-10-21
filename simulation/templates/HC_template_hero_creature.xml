@@ -1,0 +1,57 @@
+<Entity parent="HC_template_hero">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Hack>26.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
+      <PrepareTime>1375</PrepareTime>
+      <RepeatTime>1750</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>200</food>
+      <metal>150</metal>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="1.5" />
+    <Height>2.5</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <GenericName>Hero</GenericName>
+    <VisibleClasses datatype="tokens">Creature</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>8.0</Crush>
+        <Hack>8.0</Hack>
+        <Pierce>8.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{phenotype}_death.xml</death>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+</Entity>

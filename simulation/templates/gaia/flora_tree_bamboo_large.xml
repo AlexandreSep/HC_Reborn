@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Large Tokay Bamboo</SpecificName>
+    <Tooltip>Durable plant from the sub-tropical Crescent Islands. Named after the islands' native inhabitants, whom use this plant for many of their buildings.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/bamboo_treesA_large.xml</Actor>
+  </VisualActor>
+</Entity>

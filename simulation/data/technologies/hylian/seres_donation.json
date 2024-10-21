@@ -1,0 +1,14 @@
+{
+	"genericName": "Tithe Donations",
+	"description": "",
+	"cost": {"food": 50, "wood": 0, "stone": 0, "metal": 0},
+    "requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_seres"}, {"civ": "hylian"}]},
+    "requirementsTooltip": "Unlocked with Seres.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+1 Rupee Resource Trickle/1 second - Church of the Goddesses.)",
+	"modifications": [{"value": "ResourceTrickle/Rates/metal", "add": 1}],
+	"affects": ["HylTemple"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,75 @@
+<Entity parent="template_entity_full">
+  <Footprint replace="">
+    <Height>2.25</Height>
+    <Square depth="3.5" width="1.75" />
+  </Footprint>
+  <Guard disable="" />
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>1</BuildTime>
+    <Population>0</Population>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Classes datatype="tokens">Weather</Classes>
+    <Formations datatype="tokens">
+      special/formations/null
+      special/formations/box
+      special/formations/column_closed
+      special/formations/line_closed
+      special/formations/column_open
+      special/formations/line_open
+      special/formations/flank
+      special/formations/battle_line
+    </Formations>
+    <GenericName>Weather</GenericName>
+    <Undeletable>false</Undeletable>
+  </Identity>
+  <Loot disable="" />
+  <Minimap>
+    <Color b="141" g="130" r="227" />
+    <Type>food</Type>
+  </Minimap>
+  <ResourceGatherer disable="" />
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/ellipse.png</MainTexture>
+        <MainTextureMask>128x128/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <UnitAI>
+    <CanGuard>true</CanGuard>
+    <CanPatrol>true</CanPatrol>
+    <DefaultStance>aggressive</DefaultStance>
+    <FleeDistance>12.0</FleeDistance>
+    <FormationController>false</FormationController>
+    <PatrolWaitTime>2</PatrolWaitTime>
+  </UnitAI>
+  <UnitMotion>
+    <FormationController>false</FormationController>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.6666</RunMultiplier>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <Visibility>
+    <AlwaysVisible>true</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
+    <RetainInFog>true</RetainInFog>
+  </Visibility>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <SilhouetteDisplay>true</SilhouetteDisplay>
+    <SilhouetteOccluder>false</SilhouetteOccluder>
+    <VisibleInAtlasOnly>false</VisibleInAtlasOnly>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,77 @@
+<Entity parent="HC_template_structure_plot">
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_kokiri_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <GenericName>Grove Addon-On</GenericName>
+    <History>Construct Community Grove Add-ons on this space.</History>
+    <Icon>structures/kokiri/kok_plotA.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Construct Community Grove Add-ons on this space.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="2" width="2" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_farmstead</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Berry Seeder to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_publichanging</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add Public Hangings to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <wood>60</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_house</Entity>
+      <Time>20</Time>
+      <Tooltip>Add a Community Home to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerC>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_plotA.xml</Actor>
+  </VisualActor>
+</Entity>

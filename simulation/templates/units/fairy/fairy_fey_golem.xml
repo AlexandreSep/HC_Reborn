@@ -1,0 +1,47 @@
+<Entity parent="units/fairy/fairy_fey_b">
+  <Attack>
+    <Melee>
+      <AttackName>Rock Fists</AttackName>
+      <Damage>
+        <Crush>15.0</Crush>
+      </Damage>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>0</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/fairy/fairy_menhir_mini</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Spring FeyGolem</Classes>
+    <GenericName>Fey Golem</GenericName>
+    <History>Animated from the destroyed stonework of the Tarm Ruins and twisted into vaguely living shapes, the nature of these magical constructs remain a mystery. What was known is that fighting them head on was a terrible mistake. These powerful beings were resistant to most conventional weapons; it often took powerful magic in return to halt their relentless advance.</History>
+    <Icon>units/fairy/fai_fey_golem.dds</Icon>
+    <SelectionGroupName>units/fairy/fairy_fey_golem</SelectionGroupName>
+    <Tooltip>Large durable Melee unit that bashes enemies with its stone-like arms.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_fey_strider</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/feygolem_bash.xml</attack_melee>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/fairy/fairy_fey_golem.xml</Actor>
+  </VisualActor>
+</Entity>

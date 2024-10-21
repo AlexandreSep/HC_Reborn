@@ -1,0 +1,74 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>false</LinkedDestruction>
+      <Max>3</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/darknut/darknut_supplycart_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Storehouse DropsiteWood DropsiteWood DropsiteMetal DropsiteStone Village</Classes>
+    <GenericName>Horreum</GenericName>
+    <History>The Horreum was a public storehouse established within Darknut cities. Several carts would be deployed to stock up on resources from remote locations so that the Legion did not have to make long trips with their Thralls.</History>
+    <Icon>structures/darknut/dar_horreum.dds</Icon>
+    <Tooltip>Drop off point for all collected Resources. The Horreum will automatically create several Supply Carts that serve as mobile Drop off points.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    darknut/gather_warriormeal
+    darknut/gather_cliffstone
+    darknut/gather_cliffmetal
+    darknut/gather_molgerabag
+    darknut/gather_trainedhaulers
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <select>interface/select/building/sel_storehouse.xml</select>
+      <upgraded>interface/complete/building/complete_storehouse.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_horreumbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+  </VisualActor>
+</Entity>

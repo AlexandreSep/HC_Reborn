@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Organic"],
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 0.7 }
+	],
+	"auraName": "Renewal of Life",
+	"auraDescription": "( Heal 0.8 health/second - All Units)",
+	"overlayIcon": "art/textures/ui/session/auras/saria_liferenewal.dds"
+}

@@ -1,0 +1,15 @@
+{
+	"genericName": "Bulk Workouts",
+	"description": "",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 150},
+	"supersedes": "gerudo/gather_stone_artificer",
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/gather_stone_bulkwork.dds",
+	"researchTime": 40,
+	"tooltip": "Workout routines developed by the strongest Gerudo. (+15% Material (Stone) and Ore (Metal) Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.15},
+		{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.15}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

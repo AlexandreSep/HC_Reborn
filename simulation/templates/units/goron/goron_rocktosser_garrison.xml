@@ -1,0 +1,16 @@
+<Entity parent="units/goron/goron_rocktosser_b">
+  <Turretable />
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">HiddenUI</Classes>
+  </Identity>
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/goron/goron_rocktosser_b.xml</Actor>
+  </VisualActor>
+</Entity>

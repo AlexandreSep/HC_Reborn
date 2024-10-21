@@ -1,0 +1,35 @@
+<Entity parent="units/gohma/gohma_titan_iemanis">
+  <Auras datatype="tokens">
+  units/reallytall_aura_1
+  </Auras>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>20.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Huge</Classes>
+    <GenericName>God of the Gohma</GenericName>
+    <History>Creator and deity of the Gohma, revived from death after countless ages through the will of Sulkaris using the remains of Vitreous and six of the Sage Medallions. This massive arthropod attacks with claws, electric bolts, and a giant beam of fire from its primary eye. Iemanis can also spawn new swarms of Gohma directly from its body, replenishing the ranks of its army.</History>
+    <Icon>units/gohma/goh_titan_iemanis.dds</Icon>
+    <Lang>gohma</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SpecificName>Iemanis</SpecificName>
+    <Tooltip>Creator and deity of the Gohma, revived from death after countless ages through the will of Sulkaris using the remains of Vitreous and six of the Sage Medallions. This massive arthropod attacks with claws, electric bolts, and a giant beam of fire from its primary eye. Iemanis can also spawn new swarms of Gohma directly from its body, replenishing the ranks of its army.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Upgrade>
+    <Electric>
+      <Cost>
+        <food>50</food>
+      </Cost>
+      <Entity>units/gohma/gohma_titan_iemanis</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>3</Time>
+      <Tooltip>Eyes of Vitreous.</Tooltip>
+    </Electric>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/gohma/gohma_sulkiem_electric.xml</Actor>
+  </VisualActor>
+</Entity>

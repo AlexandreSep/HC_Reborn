@@ -1,0 +1,77 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Pierce>5</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Small Larva LarvaRoyal CasteRoyal Upgradeable</Classes>
+    <GenericName>Royal Larva</GenericName>
+    <History>Potentially some of the most important Gohma in any Hive, Royal Larva can grow into larger Queens and eventually produce even more offspring. They have a nasty bite but are not particularly durable or combat-worthy.</History>
+    <Icon>units/gohma/goh_larva_royal.dds</Icon>
+    <Lang>gohma</Lang>
+    <SelectionGroupName>units/gohma/gohma_larva_royal_b</SelectionGroupName>
+    <Tooltip>A small but bloated larva that can grow into various reproductive or support forms.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_smallA/gohma_smallA_death.xml</death>
+      <order_attack>voice/gohma/gohma_smallA/gohma_smallA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_smallA/gohma_smallA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_smallA/gohma_smallA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_smallA/gohma_smallA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_smallA/gohma_smallA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlB.xml</run>
+      <select>voice/gohma/gohma_smallA/gohma_smallA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <TowerB>
+      <Cost>
+        <food>65</food>
+        <metal>50</metal>
+        <stone>30</stone>
+      </Cost>
+      <Entity>units/campaign/gohma_queen_b</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>40</Time>
+      <Tooltip>Create Gohma Queen.</Tooltip>
+    </TowerB>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/gohma/gohma_larva_royal_b.xml</Actor>
+  </VisualActor>
+</Entity>

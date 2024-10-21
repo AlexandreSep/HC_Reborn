@@ -1,0 +1,80 @@
+<Entity parent="HC_template_unit_creature">
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">Small Flying</Classes>
+    <GenericName>Drifting Peahat</GenericName>
+    <History>An uncharacteristically passive Peahat, this particular variety were bred by Deku Scrubs to serve as pets and wards. They would often use them to monitor the perimeter of their territory or explore dangerous areas. Drifting Peahats could not be given direct orders and would automatically move around with the wind, hence their name.</History>
+    <Icon>units/deku/dek_peahatdrift.dds</Icon>
+    <Lang>deku</Lang>
+    <SelectionGroupName>units/deku/deku_driftingpeahat_b</SelectionGroupName>
+    <Tooltip>Creature Scout unit that cannot be given orders, it automatically explores the map at its own pace. Can detect Camouflaged and Stealthed units.</Tooltip>
+    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+  </Identity>
+  <Minimap>
+    <Color b="141" g="130" r="227" />
+    <Type>food</Type>
+  </Minimap>
+  <Position>
+    <Altitude>20.0</Altitude>
+    <Floating>true</Floating>
+    <TurnRate>3.5</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/hawk_dive.xml</attack_melee>
+      <death>voice/deku/minipeahat/minipeahat_death.xml</death>
+      <order_attack>voice/deku/minipeahat/minipeahat_attack.xml</order_attack>
+      <order_garrison>voice/deku/minipeahat/minipeahat_garrison.xml</order_garrison>
+      <order_gather>voice/deku/minipeahat/minipeahat_gather.xml</order_gather>
+      <order_repair>voice/deku/minipeahat/minipeahat_repair.xml</order_repair>
+      <order_walk>voice/deku/minipeahat/minipeahat_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/deku/minipeahat/minipeahat_select.xml</select>
+      <trained>interface/alarm/alarm_create_flying.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitAI>
+    <FeedTimeMax>1000</FeedTimeMax>
+    <FeedTimeMin>500</FeedTimeMin>
+    <DefaultStance>aggressive</DefaultStance>
+    <RoamDistance>50.0</RoamDistance>
+    <RoamTimeMax>12000</RoamTimeMax>
+    <PatrolWaitTime>2</PatrolWaitTime>
+    <RoamTimeMin>5000</RoamTimeMin>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/deku/deku_peahatdrift_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

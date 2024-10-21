@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_mantlet_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_mantlet_F.xml</Actor>
+  </VisualActor>
+</Entity>

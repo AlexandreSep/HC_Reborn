@@ -1,0 +1,13 @@
+{
+	"type": "formation",
+	"affects": ["Soldier", "Siege"],
+	"modifications": [
+		{ "value": "Looter/Resource/food", "multiply": 2.0 },
+		{ "value": "Looter/Resource/wood", "multiply": 2.0 },
+		{ "value": "Looter/Resource/stone", "multiply": 2.0 },
+		{ "value": "Looter/Resource/metal", "multiply": 2.0 }
+	],
+	"auraName": "Supply Raid",
+	"auraDescription": "(In Formation, x2 Loot - Soldier and Siege)",
+	"overlayIcon": "art/textures/ui/session/auras/nabooru_supplyraid.dds"
+}

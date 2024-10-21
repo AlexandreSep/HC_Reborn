@@ -1,0 +1,8 @@
+<Entity parent="structures/lizalfos/lizalfos_defense_tower">
+  <Identity>
+    <RequiredTechnology>lizalfos_farosh</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_towerA.xml</Actor>
+  </VisualActor>
+</Entity>

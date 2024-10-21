@@ -1,0 +1,98 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>75</stone>
+      <wood>75</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="25.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Beekeeper</List>
+    <LoadingRange>2</LoadingRange>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>900</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>80</MinPop>
+    </AIBuild>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Field Apiary</Classes>
+    <GenericName>Apiary</GenericName>
+    <History>Ordona Province seemed to be quite the hotspot for bees. More varieties could be found there than any other location in Hyrule, and the Ordonians took advantage in the way they know best: Food. Honey and other Bee products were part of daily life in the Province, and all the surplus was sold for a nice sum of Rupees.</History>
+    <Icon>structures/ordona/ord_apiary.dds</Icon>
+    <Tooltip>Trains Beekeepers and provides a steady flow of Food.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="30.0" width="30.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>16</X>
+        <Z>10</Z>
+      </step1>
+      <step2>
+        <X>16</X>
+        <Z>25</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/ordona/{civ}_beekeeper_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>8</X>
+      <Z>1</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    ordona/apiary_honeyexport
+    ordona/apiary_wildhives
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>5000</Interval>
+    <Rates>
+      <food>1.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/ordona/complete_apiary.xml</constructed>
+      <select>interface/select/building/ordona/sel_apiary.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_apiaryA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

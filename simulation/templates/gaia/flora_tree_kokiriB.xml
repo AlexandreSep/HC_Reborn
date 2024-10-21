@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Kokiri Tree</SpecificName>
+    <Tooltip>The Kokiri Forest in unnaturally lush, and its trees nearly radiate with healthy green leaves.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/kokiri_treesB.xml</Actor>
+  </VisualActor>
+</Entity>

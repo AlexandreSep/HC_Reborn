@@ -1,0 +1,66 @@
+<Entity parent="template_structure">
+  <Battalion>
+    <FormationTemplate>special/formations/battle_line</FormationTemplate>
+    <SameActorSeed>false</SameActorSeed>
+    <Size>1</Size>
+    <SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <BuildRestrictions>
+    <Category>Field</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BattalionSlots>1</BattalionSlots>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>100</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="1.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>35</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohma_eggA</SpawnEntityOnDeath>
+    <TransformAfterCreation>
+      <TemplateToTransformInto>units/gohma/gohma_pincergohma_b</TemplateToTransformInto>
+      <TransformAfterSeconds>10</TransformAfterSeconds>
+    </TransformAfterCreation>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Organic GohEggA Close2Base SummonerEntity</Classes>
+    <GenericName>Gohma Egg - Princegohma</GenericName>
+    <History>Automatically Hatches into Princegohma</History>
+    <Icon>units/gohma/goh_pincer.dds</Icon>
+    <Tooltip>Automatically Hatches into Princegohma.&#65279;</Tooltip>
+    <VisibleClasses datatype="tokens">Egg</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <Static depth="3.0" width="3.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/gohma/complete_eggA.xml</constructed>
+      <death>voice/gohma/gohma_egg/gohma_eggA_death.xml</death>
+      <select>interface/select/building/gohma/sel_eggA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>1</Radius>
+    <Root>false</Root>
+    <Weight>1</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_egg.xml</Actor>
+  </VisualActor>
+</Entity>

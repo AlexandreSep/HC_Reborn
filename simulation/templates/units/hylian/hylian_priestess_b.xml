@@ -1,0 +1,33 @@
+<Entity parent="units/hylian/hylian_deacon_b">
+  <Auras datatype="tokens">
+    units/deacon_chant_1
+    units/deacon_chant_4
+  </Auras>
+  <Heal>
+    <Health>6</Health>
+    <Range>30</Range>
+  </Heal>
+  <Health>
+    <Max>350</Max>
+  </Health>
+  <Identity>
+    <GenericName>Goddess Priestess</GenericName>
+    <History>Members of Hyrule's clergy, the Goddess Deacons traditionally venture into the border realms of Hyrule to spread the doctrine of the Goddesses. During wartime, they march alongside Hyrule's soldiers to chant various psalms and incantations from among the holy texts, improving the performance of their allies in battle.</History>
+    <Icon>units/hylian/hyl_priestess.dds</Icon>
+    <SelectionGroupName>units/hylian/hylian_priestess_b</SelectionGroupName>
+    <Tooltip>Support unit with many aiding abilities.</Tooltip>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/hylian/hylian_priestess_b.xml</Actor>
+  </VisualActor>
+</Entity>

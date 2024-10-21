@@ -1,0 +1,102 @@
+<Entity parent="HC_template_structure_plot">
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="16.0" />
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <GenericName>Medium Construction Plot</GenericName>
+    <History>Goron structures tended to be made from large hills and mountains. They would carve and build specialized areas to meet their needs.</History>
+    <Icon>structures/goron/gor_plot.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Constructs Goron Buildings on this space.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <stone>75</stone>
+        <wood>75</wood>
+      </Cost>
+      <Entity>structures/goron/goron_field</Entity>
+      <Time>45</Time>
+      <Tooltip>Build a Rock Sirloin Mine on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <stone>200</stone>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/goron/goron_mercs</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Bazaar on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <metal>200</metal>
+        <stone>200</stone>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/goron/goron_hotspring</Entity>
+      <Time>60</Time>
+      <Tooltip>Build a Hot Spring on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerC>
+    <TowerD>
+      <Cost>
+        <stone>100</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/goron/goron_barracks</Entity>
+      <Time>60</Time>
+      <Tooltip>Build Battle Chambers on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerD>
+    <TowerE>
+      <Cost>
+        <stone>150</stone>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/goron/goron_blacksmith</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Lava Smithy on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerE>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/goron/goron_plot_mediumA.xml</Actor>
+  </VisualActor>
+</Entity>

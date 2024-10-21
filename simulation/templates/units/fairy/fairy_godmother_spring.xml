@@ -1,0 +1,16 @@
+<Entity parent="units/fairy/fairy_godmother_b">
+  <Auras datatype="tokens">
+    units/commander_aura_1
+  </Auras>
+  <Identity>
+    <Classes datatype="tokens">Spring</Classes>
+    <Icon>units/fairy/fai_godmother_spring.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_godmother_summer</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_godmother_spring.xml</Actor>
+  </VisualActor>
+</Entity>

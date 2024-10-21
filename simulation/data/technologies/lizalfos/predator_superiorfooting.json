@@ -1,0 +1,15 @@
+{
+	"genericName": "Superior Footing",
+	"description": "Lizalfos Predators had excellent skill over their ability to parry and dodge. With enough training they could have complete mastery.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a second deity.",
+	"icon": "lizalfos/predator_superiorfooting.dds",
+	"researchTime": 40,
+	"tooltip": "Predator Dodge rate increased by 25%",
+	"modifications": [
+		{"value": "Resistance/Entity/Damage/DodgeRating", "multiply": 1.25}
+	],
+	"affects": ["Predator"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,66 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Hack>10.0</Hack>
+        <Pierce>10</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>250</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Small Class100</Classes>
+    <GenericName>Pikku</GenericName>
+    <History>A nomadic and fox like creature that generally sticks to forested lands, the Pikku are all in it for themselves. They care only for material wealth and fight for nothing greater. For the right price they will be more than happy to aid you in the theft and death of your enemies.</History>
+    <Icon>units/merc/merc_pikku.dds</Icon>
+    <Lang>gaia</Lang>
+    <SelectionGroupName>units/merc/merc_pikku_b</SelectionGroupName>
+    <Tooltip>Stealthed Melee unit that has a high dodge chance.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <DodgeRating>25.0</DodgeRating>
+        <Hack>10.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/merc/pikku/pikku_death.xml</death>
+      <order_attack>voice/merc/pikku/pikku_attack.xml</order_attack>
+      <order_garrison>voice/merc/pikku/pikku_garrison.xml</order_garrison>
+      <order_gather>voice/merc/pikku/pikku_gather.xml</order_gather>
+      <order_repair>voice/merc/pikku/pikku_repair.xml</order_repair>
+      <order_walk>voice/merc/pikku/pikku_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/merc/pikku/pikku_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/merc/merc_pikku_b.xml</Actor>
+  </VisualActor>
+</Entity>

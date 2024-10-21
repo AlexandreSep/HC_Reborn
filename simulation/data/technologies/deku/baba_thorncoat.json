@@ -1,0 +1,13 @@
+{
+	"genericName": "Thorny Coating",
+	"description": "Deku Babas could be bred to grow exceptionally thorny coverings. Enemies that came too close were bound to be hurt or even impaled by these Babas.",
+	"cost": {"food": 150, "wood": 0, "stone": 150, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "deku/baba_thorncoat.dds",
+	"researchTime": 40,
+	"tooltip": "Deku Babas could be bred to grow exceptionally thorny coverings. Enemies that came too close were bound to be hurt or even impaled by these Babas. (Allows Deku Babas to grow Thorny Coatings, giving them passive pierce damage to all enemies that engage them in melee)",
+	"modifications": [],
+	"affects": ["DekuBaba"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

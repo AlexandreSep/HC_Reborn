@@ -1,0 +1,34 @@
+{
+  "type": "range",
+  "radius": 80,
+  "affects": [ "Unit" ],
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Forest",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Fire",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Water",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Spirit",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Light",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Shadow",
+      "add": 5
+    }
+  ],
+  "auraName": "Holy Protection",
+  "auraDescription": "(Gives 5 Magic Armor to anyone nearby)",
+  "overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"
+}

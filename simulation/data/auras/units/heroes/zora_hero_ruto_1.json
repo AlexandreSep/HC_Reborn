@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.50 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 0.50 }
+	],
+	"auraName": "Iceheart",
+	"auraDescription": "(-50% Walk/Run Speed - Enemy Unit)",
+	"overlayIcon": "art/textures/ui/session/auras/ruto_iceheart.dds"
+}

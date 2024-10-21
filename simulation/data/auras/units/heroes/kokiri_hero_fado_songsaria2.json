@@ -1,0 +1,17 @@
+{
+  "type": "range",
+  "radius": 50,
+  "affects": [ "Unit Structure" ],
+  "modifications": [
+    {
+      "value": "Health/RegenRate",
+      "multiply": 2
+    },
+    {
+      "value": "Health/IdleRegenRate",
+      "multiply": 2
+    }
+  ],
+  "auraName": "Saria's Song",
+  "auraDescription": "(+100% Regen increase)"
+}

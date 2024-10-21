@@ -1,0 +1,111 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Market</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="30.0" />
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_medium</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>gaia/lon_lon_cow_1</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>4</MaxCopies>
+      <MaxCopiesPerBase>1</MaxCopiesPerBase>
+      <MinPop>0</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Market Village Barter BarterMarket</Classes>
+    <GenericName>Goron Market Plaza</GenericName>
+    <History>A series of shops that sell various goods and services within their host settlement, increasing both its economy and the happiness of people within.</History>
+    <Icon>structures/goron/gor_market.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Market>
+    <InternationalBonus>0.2</InternationalBonus>
+    <TradeType>land</TradeType>
+  </Market>
+  <Obstruction>
+    <Static depth="45.0" width="45.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/{civ}_trader_b
+    gaia/lon_lon_cow_1
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>20</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    unlock_shared_los
+      goron/trade_firetunic
+    goron/trade_salapet
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_market.xml</constructed>
+      <select>interface/select/building/sel_market.xml</select>
+      <upgraded>interface/complete/building/complete_market.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/goron/goron_marketA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

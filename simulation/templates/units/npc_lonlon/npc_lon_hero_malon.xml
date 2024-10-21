@@ -1,0 +1,67 @@
+<Entity parent="HC_template_hero_cavalry">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrows</AttackName>
+      <Damage>
+        <Pierce>75</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>120.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>800</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>npc_lonlon</Civ>
+    <Classes datatype="tokens">HeroMalon Hero1 Large MinorFaction</Classes>
+    <GenericName>Famous Rancher of Lon Lon</GenericName>
+    <History>Malon Lontha is the owner of Lon Lon Ranch and a renowned businesswoman in the Kingdom of Hyrule. Continuing her father's work, she runs and operates Lon Lon Ranch, raising the world's best horses and selling the most famous milk to countless customers.</History>
+    <Icon>units/npc_lonlon/npc_lon_malon.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SpecificName>Malon</SpecificName>
+    <Tooltip>Missile Cavalry Hero that snipes her enemies with bow and arrows on horseback.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <order_attack>voice/hylian/civilian_female/civilian_female_attack.xml</order_attack>
+      <order_build>voice/hylian/civilian_female/civilian_female_repair.xml</order_build>
+      <order_garrison>voice/hylian/civilian_female/civilian_female_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/civilian_female/civilian_female_gather.xml</order_gather>
+      <order_repair>voice/hylian/civilian_female/civilian_female_repair.xml</order_repair>
+      <order_walk>voice/hylian/civilian_female/civilian_female_walk.xml</order_walk>
+      <select>voice/hylian/civilian_female/civilian_female_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero1 NPCHero</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/npc_lonlon/npc_lon_hero_malon_b.xml</Actor>
+  </VisualActor>
+</Entity>

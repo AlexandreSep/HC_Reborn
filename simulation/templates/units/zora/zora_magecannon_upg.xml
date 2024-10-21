@@ -1,0 +1,27 @@
+<Entity parent="units/zora/zora_magecannon_b">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Light>225.0</Light>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>150.0</MaxRange>
+      <MinRange>45.0</MinRange>
+      <PrepareTime>9000</PrepareTime>
+      <Projectile>
+        <Speed>125.0</Speed>
+        <Spread>3.25</Spread>
+      </Projectile>
+      <RepeatTime>11700</RepeatTime>
+      <Splash>
+        <Damage>
+          <Light>112.0</Light>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>15</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Promotion disable="" />
+</Entity>

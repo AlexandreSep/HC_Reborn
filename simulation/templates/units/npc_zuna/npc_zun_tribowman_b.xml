@@ -1,0 +1,80 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Bolts</AttackName>
+      <Damage>
+        <Pierce>20</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>70</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>800</PrepareTime>
+      <Projectile>
+        <FriendlyFire>false</FriendlyFire>
+        <Gravity>9.81</Gravity>
+        <Speed>100.5</Speed>
+        <Spread>3.0</Spread>
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>20</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>7</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <TrueDamage>20</TrueDamage>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>20</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>280</Max>
+  </Health>
+  <Identity>
+    <Civ>npc_zuna</Civ>
+    <Classes datatype="tokens">Medium Class80 CanGarrison MinorFaction</Classes>
+    <GenericName>Zuna Tribowman</GenericName>
+    <History>Along the terraced walls of Zunayus, scores of these deadly archers defended the capital for many generations. The strange design of the Zuna’s crossbow allowed it to hold and store up to three bolts instead of one, giving them the chance to fire several shots before reloading.</History>
+    <Icon>units/npc_zuna/npc_zun_tribowman.dds</Icon>
+    <SelectionGroupName>units/npc_zuna/npc_zun_tribowman</SelectionGroupName>
+    <Tooltip>Missile unit that looses a triad of projectiles from its crossbow.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
+      <death>voice/zuna/zuna_death.xml</death>
+      <order_attack>voice/zuna/zuna_attack.xml</order_attack>
+      <order_garrison>voice/zuna/zuna_garrison.xml</order_garrison>
+      <order_gather>voice/zuna/zuna_gather.xml</order_gather>
+      <order_repair>voice/zuna/zuna_repair.xml</order_repair>
+      <order_walk>voice/zuna/zuna_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zuna/zuna_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/npc_zuna/npc_zun_tribowman_b.xml</Actor>
+  </VisualActor>
+</Entity>

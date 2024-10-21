@@ -1,0 +1,74 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Hack>20.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1600</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/commander_aura_1
+  </Auras>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>120</food>
+      <metal>20</metal>
+      <stone>75</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>450</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Medium Class60 Brigada Darkblessing</Classes>
+    <GenericName>Brigada</GenericName>
+    <History>Masked with the face of a Golden Lynel, Brigadas were the supreme commanders of Labrynna's multiple fronts, answering only to the Queen herself. Brigadas had years of academic training, as well as personal experience in multiple skirmishes and campaigns.</History>
+    <Icon>units/labrynna/lab_brigada.dds</Icon>
+    <Lang>labrynna</Lang>
+    <SelectionGroupName>units/labrynna/labrynna_brigada_b</SelectionGroupName>
+    <Tooltip>Labrynnian Commander unit who leads other soldiers into battle.</Tooltip>
+    <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>40.0</Hack>
+        <Pierce>80.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/labrynna/conqueror/conqueror_death.xml</death>
+      <order_attack>voice/labrynna/conqueror/conqueror_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/conqueror/conqueror_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/conqueror/conqueror_gather.xml</order_gather>
+      <order_repair>voice/labrynna/conqueror/conqueror_repair.xml</order_repair>
+      <order_walk>voice/labrynna/conqueror/conqueror_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/labrynna/conqueror/conqueror_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_brigada_b.xml</Actor>
+  </VisualActor>
+</Entity>

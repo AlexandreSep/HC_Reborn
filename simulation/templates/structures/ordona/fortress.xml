@@ -1,0 +1,5 @@
+<Entity parent="structures/fortress_wallfixer">
+   <Identity>
+		<Civ>ordona</Civ>
+   </Identity>
+</Entity>

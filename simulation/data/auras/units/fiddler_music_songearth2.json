@@ -1,0 +1,23 @@
+{
+  "type": "range",
+  "radius": 50,
+  "affects": [ "Units" ],
+  "affectedPlayers": [ "Enemy" ],
+  "modifications": [
+    {
+      "value": "Armor/Hack",
+      "add": -1
+    },
+    {
+      "value": "Armor/Pierce",
+      "add": -1
+    },
+    {
+      "value": "Armor/Crush",
+      "add": -1
+    }
+  ],
+  "auraName": "Earth God's Lyric",
+  "auraDescription": "(Enemy units will take more damage)",
+  "overlayIcon": "art/textures/ui/session/auras/fado_earthgodlyric.dds"
+}

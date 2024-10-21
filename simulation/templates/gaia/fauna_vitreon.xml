@@ -1,0 +1,66 @@
+<Entity parent="template_unit_fauna_wild_aggressive">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Light>15.0</Light>
+      </Damage>
+      <Delay>0</Delay>
+	  <ElevationBonus>15</ElevationBonus>
+      <MaxRange>33</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.8</Spread>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RepeatTime>1500</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="5.0" width="3.0" />
+  </Footprint>
+  <Health>
+    <Max>380</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Vitreon</GenericName>
+    <History />
+    <Icon>gaia/fauna_vitreon.dds</Icon>
+    <Tooltip>These large floating eyeballs, coated in disgusting slime, are believed to be the spawn of Vitreous. The horrifying monsters do not seem to have any awareness, aimlessly wandering around the Misery Mire as if they were mindless drones. If provoked, however, they will attack with a deadly shock.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>true</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/magic_spark.xml</attack_ranged>
+      <death>voice/zora/kyameron/kyameron_death.xml</death>
+      <run>actor/movement/morpha/morpha_move.xml</run>
+      <walk>actor/movement/morpha/morpha_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/wild/wild_vitreonA.xml</Actor>
+  </VisualActor>
+</Entity>

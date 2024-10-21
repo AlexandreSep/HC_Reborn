@@ -1,0 +1,14 @@
+{
+	"genericName": "Stronger Axes",
+	"description": "Use Hylian steel-smelting techniques to produce sturdy Steel axeheads.",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 50},
+	"supersedes": "hylian/gather_wood_ironaxes",
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/gather_wood_strongeraxe.dds",
+	"researchTime": 40,
+	"tooltip": "Use Hylian steel-smelting techniques to produce sturdy Steel axeheads. (+20% Material (Wood) Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.2}],
+  "affects": [ "FemaleCitizen" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

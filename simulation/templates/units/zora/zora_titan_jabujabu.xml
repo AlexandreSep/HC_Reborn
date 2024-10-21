@@ -1,0 +1,84 @@
+<Entity parent="HC_template_unit_titan">
+  <Auras datatype="tokens">
+  units/titans/zora_titan_jabujabu_1
+  </Auras>
+  <Heal>
+    <HealableClasses datatype="tokens">Organic</HealableClasses>
+    <Health>15</Health>
+    <Range>40</Range>
+    <Interval>200</Interval>
+    <UnhealableClasses datatype="tokens" />
+  </Heal>
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <food>1430</food>
+      <metal>500</metal>
+      <stone>150</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <IdleRegenRate>2</IdleRegenRate>
+    <Max>4000</Max>
+    <RegenRate>1</RegenRate>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Healer Huge Flying</Classes>
+    <GenericName>Founder of the Dominion</GenericName>
+    <History>Jabun, more commonly known as Lord Jabu Jabu, is the second Sage of Water of Hyrule and the founder of the Zora Dominion. Jabun is known for his vanity and over-bloated ego. He refuses to speak to anyone other than his servants or worshippers. He has an insatiable appetite and is also known for his gluttony and laziness. As an ancient Oshunite, he wields tremendous magical powers, in particular that of healing flesh. Many spending time near Lord Jabu Jabu have had wounds and sicknesses cured in short order.</History>
+    <Icon>units/zora/zor_titan_jabujabu.dds</Icon>
+    <Lang>zora</Lang>
+    <SpecificName>Lord Jabu Jabu</SpecificName>
+    <Tooltip>Zora Titan unit. Giant Support unit that can heal many injured Zora.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>upright</Anchor>
+    <Floating>true</Floating>
+    <TurnRate>3.5</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>75.0</Crush>
+        <Fire>50.0</Fire>
+        <Forest>25.0</Forest>
+        <Hack>35.0</Hack>
+        <Light>25.0</Light>
+        <Pierce>45.0</Pierce>
+        <Shadow>25.0</Shadow>
+        <Spirit>25.0</Spirit>
+        <Water>90.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/magic/twinrova_attack.xml</attack_ranged>
+      <death>voice/zora/jabujabu/jabujabu_death.xml</death>
+      <order_attack>voice/zora/jabujabu/jabujabu_attack.xml</order_attack>
+      <order_garrison>voice/zora/jabujabu/jabujabu_garrison.xml</order_garrison>
+      <order_gather>voice/zora/jabujabu/jabujabu_gather.xml</order_gather>
+      <order_repair>voice/zora/jabujabu/jabujabu_repair.xml</order_repair>
+      <order_walk>voice/zora/jabujabu/jabujabu_walk.xml</order_walk>
+      <run>actor/movement/jabu/jabu_fly.xml</run>
+      <select>voice/zora/jabujabu/jabujabu_select.xml</select>
+      <trained>interface/alarm/alarm_create_titan.xml</trained>
+      <walk>actor/movement/jabu/jabu_fly.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_jabujabu.xml</Actor>
+  </VisualActor>
+</Entity>

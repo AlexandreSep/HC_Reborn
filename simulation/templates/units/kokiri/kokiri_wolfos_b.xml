@@ -1,0 +1,76 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Claws and Fangs</AttackName>
+      <Damage>
+        <Hack>40.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>20</metal>
+      <stone>30</stone>
+      <wood>30</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>160</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">Medium Class100 Wolfos</Classes>
+    <GenericName>Wolfos</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The Wolfos are a very violent and bloodthirsty creature native to the Kokiri Forest. They typically operate on their own and will attack anything outside of their pack, even other Wolfos groups. Only a particularly powerful and brave warrior can hope to win their respect and aid in battle.</History>
+    <Icon>units/kokiri/kok_wolfos.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_mirora</RequiredTechnology>
+    <SelectionGroupName>units/kokiri/kokiri_wolfos_b</SelectionGroupName>
+    <Tooltip>Mirora's Unique Unit. Fast Melee Creature unit that is immune to anti-creature units and cause the Bleeding Ailment with their attacks. Also has a Dodge Rating and can Camouflage.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <DodgeRating>40.0</DodgeRating>
+        <Hack>20.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>50</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/salamander_bite.xml</attack_melee>
+      <death>voice/kokiri/wolfos/wolfos_death.xml</death>
+      <order_attack>voice/kokiri/wolfos/wolfos_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/wolfos/wolfos_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/wolfos/wolfos_gather.xml</order_gather>
+      <order_repair>voice/kokiri/wolfos/wolfos_repair.xml</order_repair>
+      <order_walk>voice/kokiri/wolfos/wolfos_walk.xml</order_walk>
+      <run>actor/movement/boar/boar_footsteps.xml</run>
+      <select>voice/kokiri/wolfos/wolfos_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/boar/boar_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2571</RunMultiplier>
+    <WalkSpeed>17.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_wolfos_b.xml</Actor>
+  </VisualActor>
+</Entity>

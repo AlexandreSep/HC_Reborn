@@ -1,0 +1,32 @@
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Footprint>
+    <Height>1.0</Height>
+    <Square depth="2.0" width="1.2" />
+  </Footprint>
+  <Health>
+    <Max>10</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Hylian Rabbit</GenericName>
+    <History />
+    <Icon>gaia/fauna_generic.dds</Icon>
+    <Tooltip>These rabbits live in extensive burrows under the soil of Hyrule Field, and are often seen as pests.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+  </Obstruction>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>50</Max>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <StatusBars>
+    <HeightOffset>3.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>fauna/rabbit1.xml</Actor>
+  </VisualActor>
+</Entity>

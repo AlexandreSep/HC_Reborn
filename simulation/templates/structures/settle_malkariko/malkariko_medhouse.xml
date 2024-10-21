@@ -1,0 +1,14 @@
+<Entity parent="structures/hylian/hylian_house">
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Health>
+    <Max>1600</Max>
+  </Health>
+  <Identity>
+    <GenericName>Malkariko Housing</GenericName>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_houses_medA.xml</Actor>
+  </VisualActor>
+</Entity>

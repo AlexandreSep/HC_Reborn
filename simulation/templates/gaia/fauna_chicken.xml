@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Footprint>
+    <Height>1.0</Height>
+    <Square depth="1.8" width="0.9" />
+  </Footprint>
+  <Health>
+    <Max>5</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Cucco</GenericName>
+    <History />
+    <Icon>units/wild/wild_cucco.dds</Icon>
+    <Tooltip>These birds are commonly raised and slaughtered as food by many people across Hyrule. Rumors of their gathering into large, murderous flocks are unfounded.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+  </Obstruction>
+  <ResourceSupply>
+    <Max>50</Max>
+	<KillBeforeGather>true</KillBeforeGather>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <death>actor/fauna/animal/chickens.xml</death>
+      <panic>actor/fauna/animal/chickens.xml</panic>
+      <select>actor/fauna/animal/chickens.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>3.0</HeightOffset>
+  </StatusBars>
+  <UnitAI>
+    <FeedTimeMax>40000</FeedTimeMax>
+    <FeedTimeMin>10000</FeedTimeMin>
+    <FleeDistance>12.0</FleeDistance>
+    <RoamDistance>4.0</RoamDistance>
+    <RoamTimeMax>8000</RoamTimeMax>
+    <RoamTimeMin>2000</RoamTimeMin>
+    <PatrolWaitTime>2</PatrolWaitTime>
+  </UnitAI>
+  <UnitMotion>
+    <RunMultiplier>1.75</RunMultiplier>
+    <WalkSpeed>8.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/wild/wild_cuccoA.xml</Actor>
+  </VisualActor>
+</Entity>

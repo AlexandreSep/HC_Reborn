@@ -1,0 +1,24 @@
+<Entity parent="structures/labrynna/labrynna_marketB">
+  <Identity>
+    <GenericName>Carnival</GenericName>
+    <History>One of the only pre-empire celebrations left, the Carnival is a crazy gathering of rabid feasts, celebration, and all manner of silly displays. Many Labrynnians flock to these events before they finally are banned from the Empire.</History>
+    <Icon>structures/labrynna/lab_marketC.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+      units/labrynna/{civ}_trader_b
+    gaia/lon_lon_cow_1
+    units/merc_geru_b
+    units/merc_tinsuit_b
+    units/merc_wosu_b
+    units/labrynna/{civ}_vire_b
+    </Entities>
+    <Technologies datatype="tokens">
+    labrynna/creature_circusbeasts
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_marketC.xml</Actor>
+  </VisualActor>
+</Entity>

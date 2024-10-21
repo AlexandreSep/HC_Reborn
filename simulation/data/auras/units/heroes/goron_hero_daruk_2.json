@@ -1,0 +1,10 @@
+{
+	"type": "formation",
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.10 }
+	],
+	"auraName": "Toughen Up",
+	"auraDescription": "(In Formation, +10% Health - Unit)",
+	"overlayIcon": "art/textures/ui/session/auras/daruk_toughenup.dds"
+}

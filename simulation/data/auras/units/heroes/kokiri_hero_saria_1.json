@@ -1,0 +1,12 @@
+{
+	"type": "formation",
+	"affects": ["Ranged"],
+	"modifications": [
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.85 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.85 }
+	],
+	"auraName": "Farore's Wind",
+	"auraDescription": "(In Formation, +15% Attack Rate - Ranged Units)", 
+	"overlayIcon": "art/textures/ui/session/auras/saria_faroreswind.dds"
+}
+

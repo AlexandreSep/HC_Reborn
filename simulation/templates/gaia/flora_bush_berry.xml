@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_fruit">
+  <Identity>
+    <GenericName>Fruit</GenericName>
+    <Icon>gaia/flora_forage_generic.dds</Icon>
+    <SpecificName>Hyrulean Berries</SpecificName>
+    <Tooltip>These hardy berry bushes can be found almost anywhere on the Hylian continent, growing even in the harshest of environments. While far from a delicacy, they are commonly harvested by many Hyrulean peoples, and form a staple of many race's diets.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>props/flora/berry_bush.xml</Actor>
+  </VisualActor>
+</Entity>

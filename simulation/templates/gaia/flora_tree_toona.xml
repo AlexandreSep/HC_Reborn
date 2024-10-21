@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Hyrulean Mahogany</SpecificName>
+    <Tooltip>Highly desired by many peoples across Hyrule for its luxurious wood, the Hyrulean Mahogany is a rare deciduous tree that only grows in wet climates such as Zora's Domain and the Misery Mire.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/tree_tropic.xml</Actor>
+  </VisualActor>
+</Entity>

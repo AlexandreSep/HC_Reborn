@@ -1,0 +1,8 @@
+{
+	"Name": "as it is written",
+	"Data": {
+		"Action": "defeatplayer",
+		"DefaultParameter": 2,
+		"isNumeric": true
+	}
+}

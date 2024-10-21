@@ -1,0 +1,87 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Ranged>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Pierce>17</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>5</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>1700</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>17</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>200</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>250</Max>
+    <IdleRegenRate>1</IdleRegenRate>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Small Class70</Classes>
+    <GenericName>Staldra</GenericName>
+    <History>The animated remains of a monster that predates all history and myth. These multiheaded creatures are able to attack from any and multiple directions, making it impossible to surround them. They seem to also possess the ability to regenerate, making them very difficult to destroy.</History>
+    <Icon>units/stalfos/sta_staldra.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_staldra_b</SelectionGroupName>
+    <Tooltip>Melee Creature unit in that can attack multiple enemies at once. Has regeneration.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_blind</RequiredTechnology>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/staldra_bite.xml</attack_ranged>
+      <death>voice/stalfos/staldra/staldra_death.xml</death>
+      <order_attack>voice/stalfos/staldra/staldra_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/staldra/staldra_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/staldra/staldra_gather.xml</order_gather>
+      <order_repair>voice/stalfos/staldra/staldra_repair.xml</order_repair>
+      <order_walk>voice/stalfos/staldra/staldra_walk.xml</order_walk>
+      <run>actor/movement/blind/blind_slither.xml</run>
+      <select>voice/stalfos/staldra/staldra_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/blind/blind_slither.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_staldra_b.xml</Actor>
+  </VisualActor>
+</Entity>

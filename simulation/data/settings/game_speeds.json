@@ -1,0 +1,58 @@
+{
+	"TranslatedKeys": ["Title"],
+	"Data":
+	[
+		{
+			"Speed": 0.10,
+			"Title": "Song of Inverted Time (0.1x)"
+		},
+		{
+			"Speed": 0.25,
+			"Title": "Song of Inverted Time (0.25x)"
+		},
+		{
+			"Speed": 0.50,
+			"Title": "Song of Time (0.5x)"
+		},
+		{
+			"Speed": 0.75,
+			"Title": "Song of Time (0.75x)"
+		},
+		{
+			"Speed": 0.000,
+			"Title": "Song of no Time (0.0x)"
+		},
+		{
+			"Speed": 1.0,
+			"Title": "Song of Time (1x)",
+			"Default": true
+		},
+		{
+			"Speed": 1.25,
+			"Title": "Song of Time (1.25x)"
+		},
+		{
+			"Speed": 1.5,
+			"Title": "Song of Time (1.5x)"
+		},
+		{
+			"Speed": 2.0,
+			"Title": "Song of Double Time (2x)"
+		},
+		{
+			"Speed": 5.0,
+			"Title": "Song of Double Time (5x)",
+			"ReplayOnly": true
+		},
+		{
+			"Speed": 10.0,
+			"Title": "Song of Double Time (10x)",
+			"ReplayOnly": true
+		},
+		{
+			"Speed": 20.0,
+			"Title": "Song of Double Time (20x)",
+			"ReplayOnly": true
+		}
+	]
+}

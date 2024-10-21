@@ -1,0 +1,6 @@
+<Entity parent="units/dummy_unit">
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+</Entity>

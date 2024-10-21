@@ -1,0 +1,11 @@
+{
+  "name": "Hyrule Conquest",
+  "version": "0.11.0",
+  "label": "Stalfos Update",
+  "url": "https://www.moddb.com/mods/hyrule-conquest/",
+  "description": "A real time strategy game set withing the fantasy setting of Hyrule. Command one from over two dozen factions from the Zelda mythos.",
+  "dependencies": [
+    "0ad=0.0.25"
+  ],
+  "type": "game"
+}

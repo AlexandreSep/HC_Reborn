@@ -1,0 +1,74 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Fire>20.0</Fire>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>100</MaxRange>
+      <MinRange>25.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1700</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>75</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Civ>mercenary</Civ>
+    <Classes datatype="tokens">Small Class80</Classes>
+    <GenericName>Mago</GenericName>
+    <History>Once a practicing Witch, the Mago went a bit too far with their spells and ended up being shunned by even the outcasts. Many Mago live isolated deep in the forest, most often losing their sanity as they attempt ever deadlier and crazier magics. A fair sum of Rupees might be enough to encourage one to torch your enemies with a fireball.</History>
+    <Icon>units/merc/merc_mago.dds</Icon>
+    <Lang>mercenary</Lang>
+    <SelectionGroupName>units/merc/merc_mago_b</SelectionGroupName>
+    <Tooltip>Small Mage unit that can hurl fireballs at their targets.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage Mercenary</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/immortal_fire_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/immortal_fire.xml</attack_ranged>
+      <death>voice/merc/mago/mago_death.xml</death>
+      <order_attack>voice/merc/mago/mago_attack.xml</order_attack>
+      <order_garrison>voice/merc/mago/mago_garrison.xml</order_garrison>
+      <order_gather>voice/merc/mago/mago_gather.xml</order_gather>
+      <order_repair>voice/merc/mago/mago_repair.xml</order_repair>
+      <order_walk>voice/merc/mago/mago_walk.xml</order_walk>
+      <run>actor/movement/immortal/immortal_hover.xml</run>
+      <select>voice/merc/mago/mago_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/immortal/immortal_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/merc/merc_mago_b.xml</Actor>
+  </VisualActor>
+</Entity>

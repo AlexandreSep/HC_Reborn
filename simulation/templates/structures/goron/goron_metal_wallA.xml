@@ -1,0 +1,25 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="8.5" width="26.0" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_goron_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <GenericName>Defensive Wall to slow invaders.</GenericName>
+    <History>Goron walls were some of the sturdiest defenses in all of Hyrule. It took quite a force to break through metal and stone.</History>
+    <Icon>structures/goron/gor_wallA.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <SpecificName>Goron Wall</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.0" width="24.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/goron/goron_wall_mediumA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+</Entity>

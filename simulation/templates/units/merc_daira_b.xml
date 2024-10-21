@@ -1,0 +1,75 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Infantry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Hack>20.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>75</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>120</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Large</Classes>
+    <GenericName>Daira Marauder</GenericName>
+    <History>A particularly feral group of people, Dairas are believed to be relatives to modern Lizalfos. While most Lizalfos migrated south into the Kokiri Forest from the Death Mountain Ranges, the Daira migrated west into the Misery Mire and other swamplands of Hyrule. They are one of the few races to have survived against the native Gohma, and are often hired as guides for travelers intending to pass through the Misery Mire. In recent times the Daira have begun to migrate south into the Gerudo Desert, where both the Gerudo and Darknuts have made uneasy pacts with them.</History>
+    <Icon>units/merc/merc_daira.dds</Icon>
+    <Lang>gaia</Lang>
+    <SelectionGroupName>units/merc/merc_daira_b</SelectionGroupName>
+    <Tooltip>Large axe wielding Melee unit that can cross bodies of water.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>40.0</Hack>
+        <Pierce>55.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/merc/daira/daira_death.xml</death>
+      <order_attack>voice/merc/daira/daira_attack.xml</order_attack>
+      <order_garrison>voice/merc/daira/daira_garrison.xml</order_garrison>
+      <order_gather>voice/merc/daira/daira_gather.xml</order_gather>
+      <order_repair>voice/merc/daira/daira_repair.xml</order_repair>
+      <order_walk>voice/merc/daira/daira_walk.xml</order_walk>
+      <run>actor/movement/giant/giant_walkB.xml</run>
+      <select>voice/merc/daira/daira_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/giant/giant_walkB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.2307</RunMultiplier>
+    <WalkSpeed>9</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/merc/merc_daira_b.xml</Actor>
+  </VisualActor>
+</Entity>

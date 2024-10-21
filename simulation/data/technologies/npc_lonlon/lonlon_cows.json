@@ -1,0 +1,11 @@
+{
+	"genericName": "Lon Lon Cows",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_village"}]},
+	"icon": "npc_lonlon/lonlon_cows.dds",
+	"researchTime": 40,
+	"tooltip": "Happy Cows come from Lon Lon Ranch. (Train Lon Lon Cows - Market)",
+	"affects": ["Market"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,89 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>100</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>50</MinPop>
+    </AIBuild>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Hydrophant Nest</GenericName>
+    <History>Hydrophants are notoriously difficult to domesticate. The Zora of the Dominion are amongst the only individuals in Hyrule to successfully turn the creatures into mounts.</History>
+    <Icon>structures/zora/zor_hydronest.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Trains Zora Hydrophant units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-3</Z>
+      </step1>
+	  <step2>
+        <X>0</X>
+        <Z>7</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/zora/{civ}_hydrolancer_b
+      units/zora/{civ}_hydrodemolish_b
+      units/zora/{civ}_hydrocanopy_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+      zora/troop_terrupbring
+    zora/troop_galliantarmor
+    zora/debon_hydrofrenzy
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_stables.xml</constructed>
+      <select>interface/select/building/sel_stables.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zora/zora_hydronestA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

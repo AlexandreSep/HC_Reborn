@@ -1,0 +1,19 @@
+{
+  "type": "range",
+  "radius": 30,
+  "affects": [ "Unit" ],
+  "modifications": [
+    {
+      "value": "Health/IdleRegenRate",
+      "add": 0.50
+    },
+    {
+      "value": "Health/RegenRate",
+      "add": 0.50
+    }
+  ],
+  "auraName": "Faith in Farore",
+  "requiredTechnology": "kokiri/temple_faithfarore",
+  "auraDescription": "(+0.5 HP Regen, +1 when Idle - All Units)",
+  "overlayIcon": "art/textures/ui/session/auras/shrine_faithfarore_1.dds"
+}

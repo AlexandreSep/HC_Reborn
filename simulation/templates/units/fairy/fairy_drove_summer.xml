@@ -1,0 +1,25 @@
+<Entity parent="units/fairy/fairy_drove_b">
+  <Attack>
+    <Melee>
+      <AttackName>Teeth</AttackName>
+      <Damage>
+        <Pierce>16.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <Icon>units/fairy/fai_drove_summer.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_drove_autumn</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_drove_summer.xml</Actor>
+  </VisualActor>
+</Entity>

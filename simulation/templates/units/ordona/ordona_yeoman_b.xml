@@ -1,0 +1,77 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Pierce>17.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>15</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>290</Max>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Goat Large Class100 Yeoman</Classes>
+    <GenericName>Yeoman</GenericName>
+    <History>Yeomen were the owners of an Ordonian household, often with several families of farmers below them. Though they were often a bit wealthier than their workers, they still answered to their immediate fief lord and were drafted into mandatory military service. Often Yeomen would ride their family's Goat into battle, bringing with them a spear to match enemy cavalry. Like all of Ordona's goat cavalry, the Yeoman can climb over mountainous terrain.</History>
+    <Icon>units/ordona/ord_yeoman.dds</Icon>
+    <Lang>ordona</Lang>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/ordona/ordona_yeoman_b</SelectionGroupName>
+    <Tooltip>Light Melee Cavalry unit armed with a spear, ideal for attacking other Cavalry units.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>25.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/ordona/yeoman/yeoman_death.xml</death>
+      <order_attack>voice/ordona/yeoman/yeoman_attack.xml</order_attack>
+      <order_garrison>voice/ordona/yeoman/yeoman_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/yeoman/yeoman_gather.xml</order_gather>
+      <order_repair>voice/ordona/yeoman/yeoman_repair.xml</order_repair>
+      <order_walk>voice/ordona/yeoman/yeoman_walk.xml</order_walk>
+      <run>actor/movement/goat/goat_footsteps.xml</run>
+      <select>voice/ordona/yeoman/yeoman_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/goat/goat_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>climbing</PassabilityClass>
+    <RunMultiplier>1.4</RunMultiplier>
+    <WalkSpeed>12.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ordona/ordona_yeoman_b.xml</Actor>
+  </VisualActor>
+</Entity>

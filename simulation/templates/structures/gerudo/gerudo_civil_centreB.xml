@@ -1,0 +1,103 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <Auras datatype="tokens">
+    structures/palace_heal
+  </Auras>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>150</metal>
+      <stone>100</stone>
+      <wood>225</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="17.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_oasisA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Oasis</Classes>
+    <GenericName>Oasis</GenericName>
+    <History>Containing refreshing waters from deep within the Gerudo Desert, an Oasis is often set up in forward military bases or small villages. A single Oasis can advance the growth and expansion of the Gerudo.</History>
+    <Icon>structures/gerudo/ger_oasis.dds</Icon>
+    <Tooltip>Acts as a smaller Civil Center: Extends Territory, trains Worker units and all Resources can be dropped off here.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Static depth="16.0" width="16.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>20</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/gerudo/{civ}_artisanA
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>10</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>95</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <alert0>interface/alarm/alarm_alert_0.xml</alert0>
+      <alert1>interface/alarm/alarm_alert_1.xml</alert1>
+      <alert2>interface/alarm/alarm_alert_2.xml</alert2>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <constructed>interface/complete/building/gerudo/complete_oasis.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/gerudo/sel_oasis.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_oasisA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

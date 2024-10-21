@@ -1,0 +1,12 @@
+{
+	"genericName": "Desert Haven",
+	"description": "",
+	"cost": {"food": 0, "wood": 250, "stone": 0, "metal": 300},
+	"requirements": {"all": [ {"tech": "civ_choices/gerudo/choosehero_riju"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Princess Makeela Riju",
+	"icon": "gerudo/riju_deserthaven.dds",
+	"researchTime": 45,
+	"tooltip": "Healing waters from deep within the Gerudo Desert are exported to Palaces and Oases. (Activates 'Desert Haven' Aura)",
+	"modifications": [],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

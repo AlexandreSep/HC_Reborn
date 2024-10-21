@@ -1,0 +1,85 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Ram</AttackName>
+      <Bonuses>
+        <BonusStructureMelee>
+          <Classes>Structure</Classes>
+          <Multiplier>20.0</Multiplier>
+        </BonusStructureMelee>
+      </Bonuses>
+      <Damage>
+        <Crush>5.0</Crush>
+      </Damage>
+      <MaxRange>6.5</MaxRange>
+      <PreferredClasses datatype="tokens">Gates Structure</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>2500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Capturable disable="" />
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>15</stone>
+      <wood>40</wood>
+    </Resources>
+  </Cost>
+  <Decay>
+    <Active>false</Active>
+    <DelayTime>80.0</DelayTime>
+    <SinkAccel>0.0</SinkAccel>
+    <SinkRate>0.01</SinkRate>
+    <SinkingAnim>false</SinkingAnim>
+  </Decay>
+  <Health>
+    <Max>125</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">MudRam FairyGuard Mudman Class40</Classes>
+    <History>They may not pack the punch of most siege weapons, but this pair of Mudmen can move quickly and batter down gates with ease. They are quite vulnerable to attacks however and lack any form of armor.</History>
+    <Icon>units/kokiri/kok_mudram.dds</Icon>
+    <RequiredTechnology>kokiri/get_mudcolony</RequiredTechnology>
+    <SpecificName>Mudman Battering Ram</SpecificName>
+    <Tooltip>Cheap Siege unit that can deal decent damage to structures.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/kokiri/kokiri_mudram_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
+      <death>voice/kokiri/mudram/mudram_death.xml</death>
+      <order_attack>voice/kokiri/mudram/mudram_attack.xml</order_attack>
+      <order_walk>voice/kokiri/mudram/mudram_walk.xml</order_walk>
+      <select>voice/kokiri/mudram/mudram_select.xml</select>
+      <trained>attack/siege/ram_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.0476</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>70</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_mudram_b.xml</Actor>
+  </VisualActor>
+</Entity>

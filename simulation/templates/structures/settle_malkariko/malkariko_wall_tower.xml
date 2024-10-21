@@ -1,0 +1,42 @@
+<Entity parent="structures/hylian/hylian_stone_wall_tower">
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>1</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>2</LoadingRange>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>4</X>
+        <Y>39</Y>
+        <Z>-4</Z>
+      </Archer1>
+      <Archer2>
+        <X>0</X>
+        <Y>39</Y>
+        <Z>-4</Z>
+      </Archer2>
+      <Archer3>
+        <X>-4</X>
+        <Y>39</Y>
+        <Z>-4</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_wall_tower.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

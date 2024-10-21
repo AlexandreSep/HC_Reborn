@@ -1,0 +1,11 @@
+{
+	"type": "formation",
+	"affects": ["Wolfos"],
+	"modifications": [
+		{ "value": "Attack/Melee/Hack", "multiply": 1.25 }
+	],
+	"auraName": "Blood Moon",
+	"auraDescription": "(+25% Hack Damage for Wolfos in formation.)", 
+	"overlayIcon": "art/textures/ui/session/auras/mirora_bloodmoon.dds"
+}
+

@@ -1,0 +1,19 @@
+{
+	"genericName": "Seriously Carry More!",
+	"description": "You stupid Dodos! Why can't you just listen and carry more! Oh right, you are big dumb Dodos!",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 300},
+	"supersedes": "moblin/gather_mob_carrymoreB",
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/carrymoreC.dds",
+	"researchTime": 40,
+	"tooltip": "You stupid Dodos! Why can't you just listen and carry more! Oh right, you are big dumb Dodos! (+2 Resource Capacity - Worker)",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 2},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 2},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 2},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 2}
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

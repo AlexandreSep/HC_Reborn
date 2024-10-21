@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_entity_full">
+  <Battalion>
+    <Size>1</Size>
+    <SameActorSeed>false</SameActorSeed>
+    <FormationTemplate>special/formations/battle_line</FormationTemplate>
+	<SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <Population>0</Population>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="1.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <DeathType>corpse</DeathType>
+    <Max>60</Max>
+    <RegenRate>0</RegenRate>
+    <IdleRegenRate>0</IdleRegenRate>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+	<Classes datatype="tokens">HeroBonusReplace HiddenUI</Classes>
+	 <GenericName>Hero Unit Replacer</GenericName>
+    <Civ>lanayru</Civ>
+	<Undeletable>false</Undeletable>
+  </Identity>
+  <Promotion>
+    <Entity>units/lanayru/lanayru_guardianmaiden_b</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Selectable>
+	<Overlay>
+      <Texture>
+        <MainTexture>circle/128x128.png</MainTexture>
+        <MainTextureMask>circle/128x128_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+    <EditorOnly/>
+  </Selectable>
+  <VisualActor>
+    <Actor>other/empty_model.xml</Actor>
+	<SilhouetteDisplay>true</SilhouetteDisplay>
+    <SilhouetteOccluder>false</SilhouetteOccluder>
+    <VisibleInAtlasOnly>true</VisibleInAtlasOnly>
+  </VisualActor>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+</Entity>

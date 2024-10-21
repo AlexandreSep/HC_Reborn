@@ -1,0 +1,13 @@
+<Entity parent="structures/gohma/gohma_special_tower">
+  <Auras datatype="tokens">
+    structures/hivecreep
+  </Auras>
+  <Identity>
+    <Classes datatype="tokens">Organic GohmaDen HiveNode GohmaBuild NetworkBuilding Village</Classes>
+  </Identity>
+  <TerritoryInfluence>
+    <Radius>75</Radius>
+    <Root>true</Root>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+</Entity>

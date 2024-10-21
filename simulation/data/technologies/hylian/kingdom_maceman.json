@@ -1,0 +1,20 @@
+{
+	"genericName": "Upgrade to Kingdom Maceman",
+	"description": "As a Hylian house and its subordinate houses gained more wealth and prestige, they could afford better armor and weapons for their military.",
+	"supersedes": "hylian/soldier_maceman",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 250,
+    "metal": 250
+  },
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/kingdom_maceman.dds",
+	"researchTime": 60,
+	"tooltip": "Improves Soldier Maceman by making them Kingdom Maceman.",
+	"modifications": [{"value": "ProductionQueue/Entities/_string",	"tokens": "units/hylian/{civ}_soldier_maceman>units/hylian/{civ}_kingdom_maceman", "affects": "Structure" },
+					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "SoldierMaceman" }
+	],	
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+} 

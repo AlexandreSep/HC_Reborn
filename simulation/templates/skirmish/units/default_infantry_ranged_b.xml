@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit">
+  <Identity>
+    <Civ>skirm</Civ>
+  </Identity>
+  <Promotion disable=""/>
+  <SkirmishReplacer/>
+  <VisualActor>
+    <Actor>structures/SkirmishReplacer_CivRangedA.xml</Actor>
+  </VisualActor>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+</Entity>

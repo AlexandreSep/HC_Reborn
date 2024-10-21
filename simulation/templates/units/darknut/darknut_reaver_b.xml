@@ -1,0 +1,76 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>15.0</Hack>
+      </Damage>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>220</Max>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Large Class90</Classes>
+    <GenericName>Reaver</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Outcast Darknut warriors that have survived through raiding and theft in the Gerudo Desert. Reavers have abandoned the bulky armor of their brothers and instead rely on their incredible muscles and speed to survive. The Legion is willing to hire these warriors when the need arrises.</History>
+    <Icon>units/darknut/dar_reaver.dds</Icon>
+    <Lang>darknut</Lang>
+    <RequiredTechnology>civ_choices/darknut/choosehero_alros</RequiredTechnology>
+    <SelectionGroupName>units/darknut/darknut_reaver_b</SelectionGroupName>
+    <Tooltip>Alros' Unique Unit. Quick Mercenary Melee unit that raids enemies with a huge sword.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <DodgeRating>30.0</DodgeRating>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/reaver_sword.xml</attack_melee>
+      <order_attack>voice/darknut/reaver/reaver_attack.xml</order_attack>
+      <order_garrison>voice/darknut/reaver/reaver_garrison.xml</order_garrison>
+      <order_gather>voice/darknut/reaver/reaver_gather.xml</order_gather>
+      <order_repair>voice/darknut/reaver/reaver_repair.xml</order_repair>
+      <order_walk>voice/darknut/reaver/reaver_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/darknut/reaver/reaver_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>climbing</PassabilityClass>
+    <RunMultiplier>1.2307</RunMultiplier>
+    <WalkSpeed>6.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/darknut/darknut_reaver_b.xml</Actor>
+  </VisualActor>
+</Entity>

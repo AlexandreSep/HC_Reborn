@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["Structure"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 0.9 }
+	],
+	"auraName": "Foundation Smasher",
+	"auraDescription": "(-10% Health - Enemy Building)",
+	"overlayIcon": "art/textures/ui/session/auras/dangoro_foundationsmash.dds"
+}

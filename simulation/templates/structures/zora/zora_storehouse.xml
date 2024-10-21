@@ -1,0 +1,66 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1200</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Archive DropsiteFood DropsiteWood DropsiteMetal DropsiteStone Village</Classes>
+    <GenericName>Depository</GenericName>
+    <History>Logistics in the Dominion are highly documented and controlled, with excess resources stored in these public sites for state use.</History>
+    <Icon>structures/zora/zor_depository.dds</Icon>
+    <Tooltip>Drop off location for all resources.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="20.0" width="20.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    zora/gather_capacity_reefletcasing
+    zora/economic_algalcleanse
+    zora/economic_coralablation
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_storehouse.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/zora/zora_depositoryA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

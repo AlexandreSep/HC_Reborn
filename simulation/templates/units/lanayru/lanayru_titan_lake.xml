@@ -1,0 +1,19 @@
+<Entity parent="units/lanayru/lanayru_titan_vrylonacia">
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>20.0</Height>
+  </Footprint>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>0</wood>
+      </Cost>
+      <Entity>units/lanayru/lanayru_titan_vrylonacia</Entity>
+      <Time>1</Time>
+      <Tooltip>Liquify</Tooltip>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/lanayru/lanayru_spiritlake_border.xml</Actor>
+  </VisualActor>
+</Entity>

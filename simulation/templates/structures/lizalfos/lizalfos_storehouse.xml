@@ -1,0 +1,67 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_smallB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">DropsiteFood DropsiteWood DropsiteMetal DropsiteStone </Classes>
+    <GenericName>Hutches</GenericName>
+    <History>A gathering hut where the Lizalfos would store their caches of resources for later use.</History>
+    <Icon>structures/lizalfos/liz_hutches.dds</Icon>
+    <Tooltip>Drop off point for gathered Resources.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    lizalfos/gather_poaching
+    lizalfos/gather_skinritual
+    lizalfos/gather_mountainancestor
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_storehouse.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_hutchesA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldD_W.xml</FoundationActor>
+  </VisualActor>
+</Entity>

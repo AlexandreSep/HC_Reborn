@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Commander"],
+	"modifications": [{ "value": "Health/Max", "multiply": 1.25 }],
+	"auraName": "King and General",
+	"auraDescription": "(+25% Health - Iron-clad Elite and Golden-clad Elite)",
+	"overlayIcon": "art/textures/ui/session/auras/kazakk_kingngeneral.dds"
+}

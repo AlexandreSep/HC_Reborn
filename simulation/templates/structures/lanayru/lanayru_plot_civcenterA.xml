@@ -1,0 +1,88 @@
+<Entity parent="HC_template_structure_plot">
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_lanayru_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lanayru</Civ>
+    <GenericName>Hub Addon-On</GenericName>
+    <History>Construct Royal Hub Add-ons on this space.</History>
+    <Icon>structures/lanayru/lan_plotA.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Construct Royal Hub Add-ons on this space.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_field</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Shrimpery to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_temple</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add an Effigy to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_bank</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Bank to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerC>
+    <TowerD>
+      <Cost>
+        <stone>100</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_watch_towerB</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Guard Post to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerD>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_plotB.xml</Actor>
+  </VisualActor>
+</Entity>

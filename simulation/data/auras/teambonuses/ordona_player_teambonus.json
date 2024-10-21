@@ -1,0 +1,13 @@
+{
+  "type": "global",
+  "affects": [ "CivCentre" ],
+  "affectedPlayers": [ "ExclusiveMutualAlly" ],
+  "modifications": [
+    {
+      "value": "ResourceTrickle/Rates/food",
+      "add": 0.75
+    }
+  ],
+  "auraName": "Bread basket of Hyrule",
+  "auraDescription": "(Allies gain a slow trickle of Food Resources)"
+}

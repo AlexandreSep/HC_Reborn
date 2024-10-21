@@ -1,0 +1,106 @@
+<Entity parent="HC_template_structure_defense">
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="10.0" width="10.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>2</X>
+        <Y>17.1</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>-3</X>
+        <Y>12.1</Y>
+        <Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>2</X>
+        <Y>8.1</Y>
+        <Z>0</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Ashinon</Classes>
+    <GenericName>Border Tower</GenericName>
+    <History>Gerudo borders are guarded with care. Many of these towers are built along the mountainous reaches of the Gerudo Desert to keep watch for invaders.</History>
+    <Icon>structures/gerudo/ger_sentry_tower.dds</Icon>
+    <Tooltip>Small Tower that can detect Camouflaged and Stealthed units.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="7.5" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      gerudo/birida_lookouts
+    </Technologies>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>95</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Vision>
+    <Range>110</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_towerA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldI.xml</FoundationActor>
+  </VisualActor>
+</Entity>

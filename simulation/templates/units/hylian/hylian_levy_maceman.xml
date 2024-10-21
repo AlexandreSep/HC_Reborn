@@ -1,0 +1,83 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Mace</AttackName>
+      <Damage>
+        <Crush>2.0</Crush>
+        <TrueDamage>10</TrueDamage>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <RepeatTime>1600</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>200</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>60</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">LevyMaceman HylBarInf HylianShield</Classes>
+    <GenericName>Levy Maceman</GenericName>
+    <History>Conscripted during times of war from their home villages and towns, these Levies are given cheap maces and shields to protect and bolster the armies of Hyrule. Though they lack experience and notable armor, they can cause quite a dent in enemy armor with their blunt weapons.</History>
+    <Icon>units/hylian/hyl_levymace.dds</Icon>
+    <Lang>hylian</Lang>
+    <SelectionGroupName>units/hylian/hylian_soldier_macemen</SelectionGroupName>
+    <Tooltip>Light unit armed with a mace and shield. Deals Crushing damage.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/hylian/hylian_soldier_maceman</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/mace.xml</attack_melee>
+      <build>resource/construction/con_wood.xml</build>
+      <death>voice/hylian/civilian_male/civilian_male_death.xml</death>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <order_attack>voice/hylian/civilian_male/civilian_male_attack.xml</order_attack>
+      <order_garrison>voice/hylian/civilian_male/civilian_male_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/civilian_male/civilian_male_gather.xml</order_gather>
+      <order_repair>voice/hylian/civilian_male/civilian_male_repair.xml</order_repair>
+      <order_walk>voice/hylian/civilian_male/civilian_male_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/hylian/civilian_male/civilian_male_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/hylian/hylian_levy_maceman_b.xml</Actor>
+  </VisualActor>
+</Entity>

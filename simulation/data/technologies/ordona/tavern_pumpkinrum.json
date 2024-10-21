@@ -1,0 +1,13 @@
+{
+	"genericName": "Honey Brand Export",
+	"description": "Spiced Rum famous in Ordona Province.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "ordona/tavern_pumpkinrum.dds",
+	"researchTime": 40,
+	"tooltip": "Spiced Rum famous in Ordona Province. (Tavern will now occasionally generate extra Rupees.)",
+	"modifications": [{"value": "ResourceTrickle/Rates/metal", "add": 1.0}],
+	"affects": ["Tavern"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

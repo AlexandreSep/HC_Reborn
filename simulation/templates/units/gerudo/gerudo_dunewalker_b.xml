@@ -1,0 +1,85 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrows</AttackName>
+      <Damage>
+        <Pierce>20.0</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>70.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>15</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>325</Max>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Seal Large DuneWalker</Classes>
+    <GenericName>Dune Walker</GenericName>
+    <History>The Sandseals native to the Gerudo Desert are difficult to tame, but the Gerudo have mastered the beasts. Slow, but durable and immune to the deadly sandstorms of the desert, Sandseal Dune Walkers may lack speed, but they are guaranteed to bring themselves and their riders to their destinations, even if they have to cross bodies of water. Mounted by an archer, they are excellent rear-line cavalry.</History>
+    <Icon>units/gerudo/ger_dunewalker.dds</Icon>
+    <Lang>gerudo</Lang>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/gerudo/gerudo_dunewalker_b</SelectionGroupName>
+    <Tooltip>Slow moving cavalry Missile unit that can attack enemies from afar with her bow and arrows.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>true</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/gerudo/gerudo_deathA.xml</death>
+      <order_attack>voice/gerudo/dunewalker/dunewalker_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/dunewalker/dunewalker_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/dunewalker/dunewalker_gather.xml</order_gather>
+      <order_repair>voice/gerudo/dunewalker/dunewalker_repair.xml</order_repair>
+      <order_walk>voice/gerudo/dunewalker/dunewalker_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/gerudo/dunewalker/dunewalker_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.3157</RunMultiplier>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_dunewalker_b.xml</Actor>
+  </VisualActor>
+</Entity>

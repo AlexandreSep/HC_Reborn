@@ -1,0 +1,78 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Shovel</AttackName>
+      <Damage>
+        <Hack>15.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>405</food>
+      <metal>100</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">HeroDampe Hero5 Small</Classes>
+    <GenericName>Gravedigger</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Dampe has gone long unnoticed in Hyrule, serving as an undertaker based in Kakariko Village. While his services have been respected for most of his life, across the decades he has been suspected of and blamed for the increasing appearance of Stalchildren around Hyrule. He denies these accusations... or at least the malevolent intentions implied in them.</History>
+    <Icon>units/stalfos/sta_hero_dampe.dds</Icon>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_dampe</RequiredTechnology>
+    <SpecificName>Dampe</SpecificName>
+    <Tooltip>Support Hero that summons swarms of Stalchidren.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/stalfos/dampe/dampe_death.xml</death>
+      <order_attack>voice/stalfos/dampe/dampe_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/dampe/dampe_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/dampe/dampe_gather.xml</order_gather>
+      <order_repair>voice/stalfos/dampe/dampe_repair.xml</order_repair>
+      <order_walk>voice/stalfos/dampe/dampe_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/stalfos/dampe/dampe_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero5</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.3636</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_dampe_b.xml</Actor>
+  </VisualActor>
+</Entity>

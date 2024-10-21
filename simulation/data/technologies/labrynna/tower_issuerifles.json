@@ -1,0 +1,18 @@
+{
+	"genericName": "Issue Rifles",
+	"description": "Replaces the Crossbows with Rifles.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "labrynna/upgrade_aerosulfur.dds",
+	"researchTime": 40,
+	"tooltip": "Replaces the Crossbows with Rifles.(Increases the damage of all Gunpowder units by 10%)",
+  "modifications": [
+    {
+      "value": "Promotion/RequiredXp",
+      "replace": 0
+    }
+  ],
+  "affects": [ "LabTower" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

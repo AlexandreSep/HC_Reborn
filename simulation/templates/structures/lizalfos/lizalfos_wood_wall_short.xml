@@ -1,0 +1,34 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="14.5" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_tinyB</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>0</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/lizalfos/lizalfos_rope</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">RopeWalls</Classes>
+    <GenericName>Wooden Wall</GenericName>
+    <History>A sturdy wooden wall built to protect Lizalfos settlements.</History>
+    <Icon>structures/lizalfos/liz_woodwall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="20.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_woodwall_short.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldE_W.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>20.0</Length>
+  </WallPiece>
+</Entity>

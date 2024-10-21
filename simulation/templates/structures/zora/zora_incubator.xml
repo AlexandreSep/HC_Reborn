@@ -1,0 +1,56 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/incubator_aura_1
+  structures/incubator_aura_2
+  </Auras>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Incubator</GenericName>
+    <History>Zora eggs are beyond precious to their mothers. Each community often has a dedicated incubator to house and grow their unborn children securely.</History>
+    <Icon>structures/zora/zor_incubator.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Boosts the rate at which Zora structures train units.</Tooltip>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    zora/incubator_regiments
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/zora/complete_incubator.xml</constructed>
+      <select>interface/select/building/zora/sel_incubator.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zora/zora_incubatorA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

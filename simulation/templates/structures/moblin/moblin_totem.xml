@@ -1,0 +1,71 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/totem_aura_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="11.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Totem</Classes>
+    <GenericName>Moblin Totem</GenericName>
+    <History>This here the greatest arty of Moblin kind! Moblin Totem mark the land that is ours! With Moblin Totem  we can set up all the great houseys and bases to get more Blins! More Blins, more better the world is! When the land is bad we can pick up the Totem and move it to brand new best land! Moblins are smart!</History>
+    <Icon>structures/moblin/mob_totem.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Lets us Moblins get Territory and make more buildings! Yaaay!</Tooltip>
+    <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+</Entities>
+    <Technologies datatype="tokens">
+    moblin/totem_killemtheycome
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_civ_center_moblin.xml</constructed>
+      <select>interface/select/building/sel_civ_center_moblin.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>50</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_totem_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>10</Time>
+      <Tooltip>Pack up this Moblin Totem.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_totemA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

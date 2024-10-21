@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Material</GenericName>
+    <History>A coniferous tree native to the Ordona Province region.</History>
+    <SpecificName>Ordon Pine</SpecificName>
+    <Tooltip>A coniferous tree native to the Ordona Province region.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/ordon_pinesA.xml</Actor>
+  </VisualActor>
+</Entity>

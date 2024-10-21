@@ -1,0 +1,10 @@
+<Entity parent="structures/darknut/darknut_thermae">
+  <Footprint>
+    <Circle radius="41.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_thermaebaseC.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

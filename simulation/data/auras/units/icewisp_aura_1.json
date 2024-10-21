@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.25 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 0.25 }
+	],
+	"auraName": "Wispy Cold",
+	"auraDescription": "(-75% Movement Speed)",
+	"overlayIcon": "art/textures/ui/session/auras/ice_slippery1.dds"
+}

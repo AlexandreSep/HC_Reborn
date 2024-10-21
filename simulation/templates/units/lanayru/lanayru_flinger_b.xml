@@ -1,0 +1,96 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+      <AttackName>Shrapnel</AttackName>
+      <Damage>
+        <Crush>300.0</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>110.0</MaxRange>
+      <MinRange>45.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>7000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+        <Speed>37.5</Speed>
+        <Spread>3.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>7500</RepeatTime>
+      <SpawnEntityOnImpact>
+        <SpawnNumberMax>1</SpawnNumberMax>
+        <SpawnNumberMin>1</SpawnNumberMin>
+        <SpawnOnHit>
+          <Chance>100</Chance>
+          <SpawnAtTarget>true</SpawnAtTarget>
+        </SpawnOnHit>
+        <SpawnOnImpact>
+          <Chance>100</Chance>
+        </SpawnOnImpact>
+        <Template>units/lanayru_shrapnel</Template>
+      </SpawnEntityOnImpact>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>190</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="12.0" width="8.0" />
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">-Organic Construct ShrapnelFlinger Large Class40</Classes>
+    <GenericName>Shrapnel Flinger</GenericName>
+    <History>Shrapnel Flingers were perhaps the Province’s most infamous weapon, even amongst their own ranks. The catapult would indiscriminately unleash countless jagged shards of razor sharp coralmold, potentially slicing up a dozen soldiers in one volley. Even if the attack completely missed, soldiers could still accidentally step on the resting shards and slice their feet in half.</History>
+    <Icon>units/lanayru/lan_flinger.dds</Icon>
+    <Tooltip>Support unit that hurls large fields of twisted caltrops to damage passing enemy units.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+      <death>voice/lanayru/conscript/conscript_death.xml</death>
+      <order_attack>voice/lanayru/conscript/conscript_attack.xml</order_attack>
+      <order_garrison>voice/lanayru/conscript/conscript_garrison.xml</order_garrison>
+      <order_gather>voice/lanayru/conscript/conscript_gather.xml</order_gather>
+      <order_repair>voice/lanayru/conscript/conscript_repair.xml</order_repair>
+      <order_walk>voice/lanayru/conscript/conscript_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/lanayru/conscript/conscript_select.xml</select>
+      <trained>interface/alarm/alarm_create_engine.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lanayru/lanayru_flinger_b.xml</Actor>
+  </VisualActor>
+</Entity>

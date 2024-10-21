@@ -1,0 +1,25 @@
+<Entity parent="structures/lanayru/lanayru_plot_houseA">
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_houseB</Entity>
+      <Time>20</Time>
+      <Tooltip>Add a Cove on to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <stone>80</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_watch_towerA</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Guard Post to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerB>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_plotB.xml</Actor>
+  </VisualActor>
+</Entity>

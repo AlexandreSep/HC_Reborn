@@ -1,0 +1,59 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="26.5" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>2</LoadingRange>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>4</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>-4</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>8</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>-8</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer4>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Border</Classes>
+    <GenericName>Adobe Wall</GenericName>
+    <History>The Adobe walls of the Gerudo are quite durable, and help keep out invaders.</History>
+    <Icon>structures/gerudo/ger_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="30.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_wall_medium.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldH.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>30.0</Length>
+  </WallPiece>
+</Entity>

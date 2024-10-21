@@ -1,0 +1,87 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Hack>5.0</Hack>
+        <Pierce>3</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>6</BuildTime>
+    <Resources>
+      <food>35</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>160</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Small Larva LarvaSoldier CasteSoldier Upgradeable</Classes>
+    <GenericName>Soldier Larva</GenericName>
+    <History>The first form in what can become many of the Gohma's combat units, Soldier Larva swarm from hives to overwhelm and massacre their targets. They are weak, but in large numbers they can swarm and rip apart their enemies.</History>
+    <Icon>units/gohma/goh_larva_soldier.dds</Icon>
+    <Lang>gohma</Lang>
+    <SelectionGroupName>units/gohma/gohma_larva_soldier_b</SelectionGroupName>
+    <Tooltip>A small and vicious larva that can grow into various combat forms used by the Gohma.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_smallA/gohma_smallA_death.xml</death>
+      <order_attack>voice/gohma/gohma_smallA/gohma_smallA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_smallA/gohma_smallA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_smallA/gohma_smallA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_smallA/gohma_smallA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_smallA/gohma_smallA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlB.xml</run>
+      <select>voice/gohma/gohma_smallA/gohma_smallA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <food>15</food>
+        <stone>25</stone>
+      </Cost>
+      <Entity>units/gohma_pincergohma_b</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>20</Time>
+      <Tooltip>Create Pincergohma.</Tooltip>
+    </Tower>
+    <TowerA>
+      <Cost>
+        <food>25</food>
+        <stone>30</stone>
+      </Cost>
+      <Entity>units/gohma_spinalgohma_b</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>20</Time>
+      <Tooltip>Create Spinalgohma.</Tooltip>
+    </TowerA>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/gohma/gohma_larva_soldier_b.xml</Actor>
+  </VisualActor>
+</Entity>

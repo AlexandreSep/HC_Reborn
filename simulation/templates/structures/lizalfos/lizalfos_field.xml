@@ -1,0 +1,68 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>900</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_smallB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>20</MaxCopies>
+      <MaxCopiesPerBase>2</MaxCopiesPerBase>
+      <MinPop>0</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Field GrubFarm</Classes>
+    <GenericName>Grub Growers</GenericName>
+    <History>The base of a Lizalfos diet is all sorts of bugs. One of the most commonly bred by their kind are the grubs of all manner of insect. When hunts are low these handy creatures keep the reptiles eating.</History>
+    <Icon>structures/lizalfos/liz_grubgrowers.dds</Icon>
+    <Tooltip>Automatically generates Food.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="30.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+</Entities>
+    <Technologies datatype="tokens">
+    lizalfos/farm_crickets
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>5000</Interval>
+    <Rates>
+      <food>1.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_farm.xml</constructed>
+      <select>interface/select/building/sel_farm.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_grubgrowerA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_W.xml</FoundationActor>
+  </VisualActor>
+</Entity>

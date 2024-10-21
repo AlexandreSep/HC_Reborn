@@ -1,0 +1,50 @@
+<Entity parent="template_unit_fauna_wild_violent">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Crush>5</Crush>
+        <Pierce>7</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="5.0" width="3.0" />
+  </Footprint>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Giant Skulltula</GenericName>
+    <History />
+    <Icon>gaia/fauna_spider_skulltula_giant.dds</Icon>
+    <Tooltip>This large variety of Tula is infamous for the very detailed and frightening likeness of a skull displayed on its abdomen. These monsters are very aggressive and are cautiously hunted by exterminators every breeding season.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>true</Floating>
+  </Position>
+  <ResourceSupply>
+    <Max>100</Max>
+    <Type>food.meat</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/skulltula_attack.xml</attack_melee>
+      <death>voice/wild/skulltula/skulltula_death.xml</death>
+      <run>actor/movement/skulltula/skulltula_walk.xml</run>
+      <select>voice/wild/skulltula/skulltula_select.xml</select>
+      <walk>actor/movement/skulltula/skulltula_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/wild/wild_spider_giantskulltulaA.xml</Actor>
+  </VisualActor>
+</Entity>

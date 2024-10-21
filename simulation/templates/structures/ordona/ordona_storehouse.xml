@@ -1,0 +1,65 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">DropsiteWood DropsiteMetal DropsiteStone Village BethEco</Classes>
+    <GenericName>Harvest Camp</GenericName>
+    <History>Harvest Camps could bring down and processes quite a hefty load of trees, as well as stock up on other handy resources. With tools on site for workers, there was rarely a shortage of supply from these Camps.</History>
+    <Icon>structures/ordona/ord_harvestcamp.dds</Icon>
+    <Tooltip>Serves as a drop off point for Material, Ore, and Rupees.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="28.0" width="28.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    ordona/gather_wood_timberfellcutters
+    ordona/gather_capacity_youthlabor
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_storehouse.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_harvestA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+</Entity>

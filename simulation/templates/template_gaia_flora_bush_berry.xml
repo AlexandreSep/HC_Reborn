@@ -1,0 +1,38 @@
+<Entity parent="template_gaia_fruit">
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>1.0</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Food</GenericName>
+    <History>This bush with edible berries grow across Hyrule Field, and is a common foodstuff in Hylian towns and villages.</History>
+    <Icon>gaia/flora_forage_generic.dds</Icon>
+    <SpecificName>Hylian Berries</SpecificName>
+    <Tooltip>This bush with edible berries grow across Hyrule Field, and is a common foodstuff in Hylian towns and villages.</Tooltip>
+  </Identity>
+  <Minimap>
+    <Color b="102" g="204" r="155" />
+    <Type>food</Type>
+  </Minimap>
+  <ResourceSupply>
+    <Max>200</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>9</MaxGatherers>
+    <Type>food.fruit</Type>
+  </ResourceSupply>
+  <Selectable>
+    <EditorOnly disable="" />
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/ellipse.png</MainTexture>
+        <MainTextureMask>128x128/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_bush.xml</constructed>
+      <select>interface/select/building/sel_bush.xml</select>
+    </SoundGroups>
+  </Sound>
+</Entity>

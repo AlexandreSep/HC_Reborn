@@ -1,0 +1,44 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="8.0" width="4.0" />
+  </Footprint>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Large Trader</Classes>
+    <GenericName>Gerudo Trader</GenericName>
+    <History>Importing and exporting goods has long been key to the Gerudo civilization's survival. Gerudo Traders venture far and wide to find products their people need, and venues to sell their own excess. If push comes to shove, they are more than willing to resort to theft to get what they need.</History>
+    <Icon>units/gerudo/ger_traderA.dds</Icon>
+    <Lang>gerudo</Lang>
+    <Tooltip>Support unit that can continue to trade between your Marketplace and an ally's.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/gerudo/gerudo_deathA.xml</death>
+      <order_attack>voice/gerudo/dunewalker/dunewalker_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/dunewalker/dunewalker_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/dunewalker/dunewalker_gather.xml</order_gather>
+      <order_repair>voice/gerudo/dunewalker/dunewalker_repair.xml</order_repair>
+      <order_trade>voice/gerudo/dunewalker/dunewalker_attack.xml</order_trade>
+      <order_walk>voice/gerudo/dunewalker/dunewalker_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/gerudo/dunewalker/dunewalker_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <Trader>
+    <GainMultiplier>6</GainMultiplier>
+  </Trader>
+  <UnitMotion>
+    <WalkSpeed>12</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_trader_upg.xml</Actor>
+  </VisualActor>
+</Entity>

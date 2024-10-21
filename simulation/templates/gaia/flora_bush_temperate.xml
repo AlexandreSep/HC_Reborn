@@ -1,0 +1,19 @@
+<Entity parent="template_gaia_tree">
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>3.0</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Hylian Chaparral</SpecificName>
+    <Tooltip>Hyrule Field is dominated by a warm, relatively dry climate most peoples find quite pleasant. These lowland scrubs cover much of the open plains.</Tooltip>
+  </Identity>
+  <ResourceSupply>
+    <Max>50</Max>
+    <Type>wood.tree</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>props/flora/bush_tempe_a.xml</Actor>
+  </VisualActor>
+</Entity>

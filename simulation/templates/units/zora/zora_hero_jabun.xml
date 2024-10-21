@@ -1,0 +1,98 @@
+<Entity parent="HC_template_hero_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Head Lantern</AttackName>
+      <Damage>
+        <Fire>24.0</Fire>
+        <Water>24.0</Water>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>10.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>500</food>
+      <metal>200</metal>
+      <stone>100</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3150</Max>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">HeroJabun Hero5 Large</Classes>
+    <GenericName>Spawn of Lord Jabu</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The only surviving offspring of Lord Jabu Jabu, the young Jabun serves as one of Princess Ruto's only loyal friends. Jabun spends most of his time in the Great Sea, but heeds any summon to the Domain when needed.</History>
+    <Icon>units/zora/zor_hero_jabun.dds</Icon>
+    <Lang>zora</Lang>
+    <RequiredTechnology>civ_choices/zora/choosehero_jabun</RequiredTechnology>
+    <SpecificName>Jabun</SpecificName>
+    <Tooltip>Flying Mage Hero that can attack with burning fireballs.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>30.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/immortal_fire_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/immortal_fire.xml</attack_ranged>
+      <death>voice/zora/jabujabu/jabujabu_death.xml</death>
+      <order_attack>voice/zora/jabujabu/jabujabu_attack.xml</order_attack>
+      <order_garrison>voice/zora/jabujabu/jabujabu_garrison.xml</order_garrison>
+      <order_gather>voice/zora/jabujabu/jabujabu_gather.xml</order_gather>
+      <order_repair>voice/zora/jabujabu/jabujabu_repair.xml</order_repair>
+      <order_walk>voice/zora/jabujabu/jabujabu_walk.xml</order_walk>
+      <run>actor/movement/jabu/jabu_fly.xml</run>
+      <select>voice/zora/jabujabu/jabujabu_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/jabu/jabu_fly.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero5</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.0526</RunMultiplier>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_hero_jabun_b.xml</Actor>
+  </VisualActor>
+</Entity>

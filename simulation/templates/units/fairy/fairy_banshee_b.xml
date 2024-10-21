@@ -1,0 +1,74 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Magic Wand</AttackName>
+      <Damage>
+        <Forest>15.0</Forest>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>100</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">Medium Class100 Banshee</Classes>
+    <GenericName>Banshee</GenericName>
+    <History>To those that encountered these humanoid Fairies in the wild, many would find them to be comely women offering gifts, kisses, or playing mischievous tricks. When provoked, the nature of the Banshee would become clear as their pleasant Hylian features fell and those of a gnawing insect took over. Banshees would use their magic wands to attack their assailants, the method of attack would often change with the seasons.</History>
+    <Icon>units/fairy/fai_banshee_spring.dds</Icon>
+    <Lang>fairy</Lang>
+    <SelectionGroupName>units/fairy/fairy_banshee_b</SelectionGroupName>
+    <Tooltip>Close combat Mage unit that attacks its enemies with a magic wand.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Fire>3.0</Fire>
+        <Forest>3.0</Forest>
+        <Hack>25.0</Hack>
+        <Light>3.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>3.0</Shadow>
+        <Spirit>3.0</Spirit>
+        <Water>3.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/magic/fairy_wand.xml</attack_melee>
+      <death>voice/fairy/banshee/banshee_death.xml</death>
+      <order_attack>voice/fairy/banshee/banshee_attack.xml</order_attack>
+      <order_garrison>voice/fairy/banshee/banshee_garrison.xml</order_garrison>
+      <order_gather>voice/fairy/banshee/banshee_gather.xml</order_gather>
+      <order_repair>voice/fairy/banshee/banshee_repair.xml</order_repair>
+      <order_walk>voice/fairy/banshee/banshee_walk.xml</order_walk>
+      <run>actor/movement/fairy/fairy_hoverA.xml</run>
+      <select>voice/fairy/banshee/banshee_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/fairy/fairy_large_spring.xml</Actor>
+  </VisualActor>
+</Entity>

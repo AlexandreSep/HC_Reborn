@@ -1,0 +1,132 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="25.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">GohQueen</List>
+    <LoadingRange>15</LoadingRange>
+    <Max>1</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>7.6</Y>
+        <Z>-5.4</Z>
+      </Archer1>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>5</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>80</MinPop>
+    </AIBuild>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic GohmaDen GohmaBuild Town</Classes>
+    <GenericName>Large Birthing Chamber</GenericName>
+    <History>These massive and oversized chambers allow for the growth of Giant Caste Gohma forms. Various improvements for these forms can be researched within this huge nest.</History>
+    <Icon>structures/gohma/goh_blacksmithB.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Upgrades Giant Gohma units.</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="45.0" width="45.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/gohma/{civ}_larva_giant_b
+    units/gohma/{civ}_longlegs_b
+    units/gohma/{civ}_tank_b
+    units/gohma/{civ}_armogohma_b
+    units/gohma/{civ}_acidsprayer_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>8.7</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    gohma/larva_acidjelly
+    gohma/longlegs_hydrajoints
+    gohma/tank_doubleclaws
+    gohma/armo_contbeam
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/gohma/complete_gohnestA.xml</constructed>
+      <select>interface/select/building/gohma/sel_gohnestA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_birthingchamber.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,12 @@
+{
+	"type": "garrison",
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/metal", "add": 1.00 }
+	],
+	"affects": ["Apiary"],
+	"auraName": "Sell Honey",
+	"stackable" : true ,
+	"requiredTechnology": "ordona/apiary_honeyexport",		
+	"auraDescription": "(If Garrisoned, +1 Currency Resource Trickle/1 second - Apiary)"
+}
+

@@ -1,0 +1,5 @@
+<Entity parent="structures/gerudo/gerudo_temple">
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_religionB.xml</Actor>
+  </VisualActor>
+</Entity>

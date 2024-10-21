@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 2 }
+	],
+	"auraName": "Get Yer Lon Lon Milk!",		
+	"auraDescription": "(+2 Idle HP Regen - All Units)",
+	"overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"
+}

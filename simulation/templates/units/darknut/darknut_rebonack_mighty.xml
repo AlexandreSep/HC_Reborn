@@ -1,0 +1,64 @@
+<Entity parent="units/darknut/darknut_rebonack_b">
+  <Attack>
+    <Ranged>
+      <AttackName>Lance</AttackName>
+      <Damage>
+        <Pierce>40.0</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>5</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>1700</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>40.0</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+        <Knockback>
+          <Horizontal>10</Horizontal>
+          <Vertical>10</Vertical>
+        </Knockback>
+      </Splash>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Health>
+    <Max>420</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">GainedLevel</Classes>
+    <GenericName>Mighty Rebonack</GenericName>
+    <SpecificName>Mighty Rebonack</SpecificName>
+  </Identity>
+  <Promotion>
+    <Entity>units/darknut/darknut_rebonack_master</Entity>
+    <RequiredXp>100</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>70.0</Hack>
+        <Pierce>80.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/darknut/darknut_rebonack_mighty.xml</Actor>
+  </VisualActor>
+</Entity>

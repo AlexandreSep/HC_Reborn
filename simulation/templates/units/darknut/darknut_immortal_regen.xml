@@ -1,0 +1,58 @@
+<Entity parent="HC_template_unit_infantry">
+  <Cost>
+    <BattalionSlots>1</BattalionSlots>
+    <BuildTime>1</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>10</Max>
+    <RegenRate>-1</RegenRate>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SameBattalion>true</SameBattalion>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/darknut/darknut_immortal_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Large Fire Class80</Classes>
+    <GenericName>Reanimating Immortal</GenericName>
+    <History>A Darknut Immortal in the process of reanimating themselves.</History>
+    <Icon>units/darknut/dar_immortal.dds</Icon>
+    <Tooltip>A Darknut Immortal in the process of reanimating themselves.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/immortal_fire_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/immortal_fire.xml</attack_ranged>
+      <death>voice/darknut/immortal/immortal_death.xml</death>
+      <order_attack>voice/darknut/immortal/immortal_attack.xml</order_attack>
+      <order_garrison>voice/darknut/immortal/immortal_garrison.xml</order_garrison>
+      <order_gather>voice/darknut/immortal/immortal_gather.xml</order_gather>
+      <order_repair>voice/darknut/immortal/immortal_repair.xml</order_repair>
+      <order_walk>voice/darknut/immortal/immortal_walk.xml</order_walk>
+      <run>actor/movement/immortal/immortal_hover.xml</run>
+      <select>voice/darknut/immortal/immortal_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/immortal/immortal_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.0</RunMultiplier>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/darknut/darknut_immortal_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,27 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Circle radius="8.0" />
+    <Height>10.0</Height>
+    <Square disable="" />
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_zora_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <GenericName>Dominion Wall Tower</GenericName>
+    <History>Built to impress vistors and invaders as much as defend Zora Cities, these graceful gilded walls are nonetheless master-crafted and can withstand almost anything thrown at them.</History>
+    <Icon>structures/zora/zor_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="12.0" width="12.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/zora/zora_wall_towerA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

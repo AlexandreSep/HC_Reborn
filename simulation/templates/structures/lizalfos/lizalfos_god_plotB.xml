@@ -1,0 +1,58 @@
+<Entity parent="HC_template_structure_plot">
+  <Battalion disable="" />
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="12.0" />
+    <Height>15.0</Height>
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes>Farosh</Classes>
+    <GenericName>Deity Alcove</GenericName>
+    <History>A space for the Lizalfos to place a stone idol of one of their gods.</History>
+    <Icon>structures/lizalfos/liz_deity.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>A space for the Lizalfos to place a stone idol of one of their gods.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/lizalfos/lizalfos_deity_farosh</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Selectable>
+    <EditorOnly />
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.4</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>structures/goron/goron_plot_smallA.xml</Actor>
+  </VisualActor>
+</Entity>

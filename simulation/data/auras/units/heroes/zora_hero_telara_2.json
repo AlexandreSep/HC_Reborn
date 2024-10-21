@@ -1,0 +1,25 @@
+{
+	"type": "formation",
+	"affects": ["Mage"],
+  "modifications": [
+    {
+      "value": "Attack/Melee/Light",
+      "multiply": 1.20
+    },
+    {
+      "value": "Attack/Ranged/Fire",
+      "multiply": 1.20
+    },
+    {
+      "value": "Attack/Ranged/Water",
+      "multiply": 1.20
+    },
+    {
+      "value": "Attack/Ranged/Light",
+      "multiply": 1.20
+    }
+  ],
+	"auraName": "Storm Master",
+	"auraDescription": "(In Formation, +20% Melee and Ranged Attack (Magic) - Mage)",
+	"overlayIcon": "art/textures/ui/session/auras/telara_stormmaster.dds"
+}

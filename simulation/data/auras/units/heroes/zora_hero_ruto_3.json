@@ -1,0 +1,11 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Attack/Ranged/MaxRange", "multiply": 1.50 }
+	],
+	"auraName": "Nayru's Guidance",
+	"auraDescription": "{If Garrisoned, +50% Ranged Attack Range - Building)",
+	"overlayIcon": "art/textures/ui/session/auras/ruto_nayrusguidance.dds"
+}
+

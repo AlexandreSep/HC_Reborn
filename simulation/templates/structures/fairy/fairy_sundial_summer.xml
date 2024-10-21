@@ -1,0 +1,34 @@
+<Entity parent="structures/fairy/fairy_sundial">
+  <Auras datatype="tokens">
+    structures/fairy_season_summer
+  </Auras>
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <GenericName>Summer Sundial</GenericName>
+    <Icon>structures/fairy/fai_sundial_summer.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    fairy/unlock_autumn
+    fairy/essence_03_brightsun
+    fairy/essence_04_soothingrain
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <metal>100</metal>
+      </Cost>
+      <Entity>structures/fairy/fairy_sundial_autumn</Entity>
+      <Icon>portraits/structures/fairy/fairy_autumn.dds</Icon>
+      <RequiredTechnology>fairy/unlock_autumn</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Change the Season to Autumn.</Tooltip>
+    </TowerA>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_sundialA_summer.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_summer.xml</FoundationActor>
+  </VisualActor>
+</Entity>

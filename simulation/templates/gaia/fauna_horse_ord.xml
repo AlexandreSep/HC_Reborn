@@ -1,0 +1,57 @@
+<Entity parent="template_unit_fauna_herd_horse">
+  <Capturable>
+    <CapturePoints>10</CapturePoints>
+    <GarrisonRegenRate>1</GarrisonRegenRate>
+    <RegenRate>1</RegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>35</BuildTime>
+    <Resources>
+      <food>50</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>1.5</Height>
+    <Square depth="2.8" width="1.4" />
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Wildhorse</Classes>
+    <GenericName>Ordonian Horse</GenericName>
+    <History>A wild horse that can be traced back to the Plains of Ordona. Despite their origins, these horses have spread far across Hyrule and can be found in many wilderness regions.</History>
+    <Icon>gaia/fauna_horse_ord.dds</Icon>
+    <Tooltip>A wild horse that can be traced back to the Plains of Ordona. Despite their origins, these horses have spread far across Hyrule and can be found in many wilderness regions.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Sound>
+    <SoundGroups>
+      <death>actor/fauna/animal/horse_death.xml</death>
+      <order_walk>actor/fauna/animal/horse_order.xml</order_walk>
+      <select>actor/fauna/animal/horse_select.xml</select>
+      <trained>actor/fauna/animal/horse_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed>6.0</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <stone>7</stone>
+        <wood>7</wood>
+      </Cost>
+      <Entity>units/ordona/ordona_horseman_b</Entity>
+      <RequiredTechnology>civ_choices/ordona/choosehero_ilia</RequiredTechnology>
+      <Time>1</Time>
+      <Tooltip>Find a Horseman to mount this horse.</Tooltip>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/wild/wild_horse_ord.xml</Actor>
+  </VisualActor>
+</Entity>

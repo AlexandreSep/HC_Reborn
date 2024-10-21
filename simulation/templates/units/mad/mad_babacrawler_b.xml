@@ -1,0 +1,45 @@
+<Entity parent="units/deku/deku_babacrawler_b">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Hack>12.0</Hack>
+        <Pierce>12</Pierce>
+      </Damage>
+      <MaxRange>15.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+      <SpawnEntityOnImpact>
+        <SpawnNumberMax>1</SpawnNumberMax>
+        <SpawnNumberMin>1</SpawnNumberMin>
+        <SpawnOnHit>
+          <Chance>10</Chance>
+          <SpawnAtTarget>true</SpawnAtTarget>
+        </SpawnOnHit>
+        <Template>units/mad/mad_baba_b</Template>
+      </SpawnEntityOnImpact>
+    </Melee>
+  </Attack>
+  <Health>
+    <Max>125</Max>
+    <RegenRate>-1</RegenRate>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">MadScrub</Classes>
+  </Identity>
+  <UnitAI>
+    <DefaultStance>aggressive</DefaultStance>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+    <RoamDistance>12.0</RoamDistance>
+    <FleeDistance>5000.0</FleeDistance>
+    <RoamTimeMin>5000</RoamTimeMin>
+    <RoamTimeMax>12000</RoamTimeMax>
+    <FeedTimeMin>500</FeedTimeMin>
+    <FeedTimeMax>1000</FeedTimeMax>
+  </UnitAI>
+  <VisualActor>
+    <Actor>units/mad/deku_babacrawler_b.xml</Actor>
+  </VisualActor>
+</Entity>

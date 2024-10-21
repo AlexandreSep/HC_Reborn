@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": [],
+	"modifications": [],
+	"auraName": "Magic Gathering",
+	"auraDescription": "Area which the Magic Menhir can gather resources.",
+	"overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"
+}

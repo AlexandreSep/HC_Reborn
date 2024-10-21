@@ -1,0 +1,80 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Mace</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Crush>20.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>35</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Alrospromote Large Class100</Classes>
+    <GenericName>Mazura Hippikon</GenericName>
+    <History>The angry and stubborn Mazura, much like the Fokka, were highly valued soldiers in the legion because of their speed. While not as fast as the swift Fokka or most other cavalry, a Mazura Hippikon could nonetheless plow into enemy forces and cause havoc with their maces.</History>
+    <Icon>units/darknut/dar_mazura.dds</Icon>
+    <Lang>darknut</Lang>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/darknut/darknut_mazura_b</SelectionGroupName>
+    <Tooltip>Fast moving Melee unit that behaves as if it were Cavalry.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/darknut/darknut_mazura_mighty</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>45.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/mace.xml</attack_melee>
+      <death>voice/darknut/mazura/mazura_death.xml</death>
+      <order_attack>voice/darknut/mazura/mazura_attack.xml</order_attack>
+      <order_garrison>voice/darknut/mazura/mazura_garrison.xml</order_garrison>
+      <order_gather>voice/darknut/mazura/mazura_gather.xml</order_gather>
+      <order_repair>voice/darknut/mazura/mazura_repair.xml</order_repair>
+      <order_walk>voice/darknut/mazura/mazura_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/darknut/mazura/mazura_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.1428</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/darknut/darknut_mazura_b.xml</Actor>
+  </VisualActor>
+</Entity>

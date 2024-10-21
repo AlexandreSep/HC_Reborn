@@ -1,0 +1,17 @@
+<Entity parent="template_gaia_fruit">
+  <Identity>
+    <GenericName>Food</GenericName>
+    <History>A crate full of Foods for the taking.</History>
+    <SpecificName>Food Crate</SpecificName>
+    <Tooltip>A crate full of Foods for the taking.</Tooltip>
+  </Identity>
+  <ResourceSupply>
+    <Max>100</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>2</MaxGatherers>
+    <Type>food.fruit</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>props/resources/crate_foodA.xml</Actor>
+  </VisualActor>
+</Entity>

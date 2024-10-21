@@ -1,0 +1,73 @@
+<Entity parent="HC_template_structure_wonder">
+  <BuildRestrictions>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Height>10.0</Height>
+    <Square depth="115.0" width="115.0" />
+  </Footprint>
+  <Health>
+    <Max>10000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_wonderA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>lizalfos</Civ>
+    <GenericName>Turtle Rock</GenericName>
+    <History>The throne of Trinexx and a massive edifice that once loomed over the Death Mountain Range. Before the exile of the Lizalfos this palace served as the heart of their culture. Indeed to this day the Lizalfos wish to storm the mountains and retake Turtle Rock for themselves.</History>
+    <Icon>structures/lizalfos/liz_turtlerock.dds</Icon>
+    <RequiredTechnology>lizalfos_trinexx</RequiredTechnology>
+    <Tooltip>The Lizalfos Wonder, allows you to summon Trinexx.</Tooltip>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="108.0" width="108.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>55</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>60</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/lizalfos/{civ}_titan_trinexx
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>50</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/lizalfos/complete_turtlerock.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/lizalfos/sel_turtlerock.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_turtlerockA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldC_S.xml</FoundationActor>
+  </VisualActor>
+</Entity>

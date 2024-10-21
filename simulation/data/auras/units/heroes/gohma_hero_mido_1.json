@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.10 }
+	],
+	"auraName": "Wanderer",
+	"auraDescription": "{+10% Vision Range for all units)",
+	"overlayIcon": "art/textures/ui/session/auras/mido_wanderer.dds"
+}

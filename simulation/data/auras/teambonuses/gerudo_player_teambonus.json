@@ -1,0 +1,13 @@
+{
+	"type": "global",
+	"affects": ["Unit"],
+	"affectedPlayers": ["ExclusiveMutualAlly"],
+	"modifications": [
+		{ "value": "Looter/Resource/food", "multiply": 1.10 },
+		{ "value": "Looter/Resource/wood", "multiply": 1.10 },
+		{ "value": "Looter/Resource/stone", "multiply": 1.10 },
+		{ "value": "Looter/Resource/metal", "multiply": 1.10 }
+	],
+	"auraName": "Spoils of War",
+	"auraDescription": "(+10% allied Loot from enemies)"
+}

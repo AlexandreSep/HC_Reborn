@@ -1,0 +1,103 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Master Sword</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Hero</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+        <Bonus2>
+          <Classes>Commander</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus2>
+        <Bonus3>
+          <Classes>Huge</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus3>
+      </Bonuses>
+      <Damage>
+        <Hack>50.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>475</food>
+      <metal>100</metal>
+      <stone>90</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2100</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">HeroLink Hero3 HylianShield Knight Medium Hero</Classes>
+    <GenericName>Heir of King Gustaf</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The last surviving member of the First King of Hyrule's bloodline, Link was raised as a warrior amongst the Order of the Wizzrobe. With knowledge of both martial skill and arcane powers, he trains and leads Hyrule's Knights into battle.</History>
+    <Icon>units/hylian/hyl_hero_link.dds</Icon>
+    <Lang>hylian</Lang>
+    <RequiredTechnology>civ_choices/hylian/choosehero_link</RequiredTechnology>
+    <SpecificName>Link</SpecificName>
+    <Tooltip>Swift and powerful Melee Hero that attacks with his sword and defends with his shield. Effective against Heroes, Commanders, Monsters in particular.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>40.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>40.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/hylian/link/link_death.xml</death>
+      <order_attack>voice/hylian/link/link_attack.xml</order_attack>
+      <order_garrison>voice/hylian/link/link_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/link/link_gather.xml</order_gather>
+      <order_repair>voice/hylian/link/link_repair.xml</order_repair>
+      <order_walk>voice/hylian/link/link_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/hylian/link/link_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero3</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/hylian/hylian_hero_link.xml</Actor>
+  </VisualActor>
+</Entity>

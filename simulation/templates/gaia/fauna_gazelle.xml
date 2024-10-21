@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="3.0" width="1.5" />
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Gerudo Gazelle</GenericName>
+    <History />
+    <Icon>gaia/fauna_generic.dds</Icon>
+    <Tooltip>Usually found only in the more fertile region of the Desert, Gerudo Gazelles use their swift speed to escape predators such as Leevers.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>fauna/gazelle.xml</Actor>
+  </VisualActor>
+</Entity>

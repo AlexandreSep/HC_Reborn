@@ -1,0 +1,45 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="38.5" />
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <GenericName>Wooden Wall</GenericName>
+    <History>A makeshift wooden wall to keep the elements out of Hylian villages.</History>
+    <Icon>structures/hylian/hyl_woodwall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="40.0" />
+  </Obstruction>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>40.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Upgrade>
+    <Gate>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/hylian/hylian_wood_wall_gate</Entity>
+      <Time>15</Time>
+      <Tooltip>Convert to Wooden Gate.</Tooltip>
+    </Gate>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_wood_wall_long.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>40.0</Length>
+  </WallPiece>
+</Entity>

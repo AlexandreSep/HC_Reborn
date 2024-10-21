@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 65,
+	"affects": [],
+	"modifications": [],
+	"auraName": "Aqueduct Water",
+	"auraDescription": "Area with which Aqueducts provide water for Dominion buildings.",
+	"overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"
+}

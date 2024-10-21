@@ -1,0 +1,104 @@
+<Entity parent="HC_template_structure_civilian">
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Category>Market</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="25.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_mediumA</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>gaia/lon_lon_cow_1</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">MeetingSpring Market Barter BarterMarket</Classes>
+    <GenericName>Meeting Spring</GenericName>
+    <History>There are stories from time to time of a Fairy revealing the location of their home to outsiders. Many would flock to these springs in hope of gaining the favor of Fairies, bringing gifts and services as offerings.</History>
+    <Icon>structures/fairy/fai_meetingspring_spring.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Allows the trading of resources on the market or with your allies. Also allows the Fairies to hire Mercenaries.</Tooltip>
+    <VisibleClasses datatype="tokens">Economig</VisibleClasses>
+  </Identity>
+  <Market>
+    <InternationalBonus>0.2</InternationalBonus>
+    <TradeType>land</TradeType>
+  </Market>
+  <Obstruction>
+    <Static depth="40.0" width="40.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/merc_forestthief_b
+    units/merc_pikku_b
+    units/merc_mago_b
+    gaia/lon_lon_cow_1
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>20</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    fairy/trade_fairyfavor
+    fairy/trade_fairykiss
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_meetingspring.xml</constructed>
+      <select>interface/select/building/fairy/sel_meetingspring.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_meetingspringA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

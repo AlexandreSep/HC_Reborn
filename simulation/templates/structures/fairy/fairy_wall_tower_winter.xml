@@ -1,0 +1,17 @@
+<Entity parent="structures/fairy/fairy_wall_tower">
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_fairy_leyA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>structures/fairy/fai_leyline_winter.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>structures/fairy/fairy_wall_tower_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_leyline_tower_winter.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonW_winter.xml</FoundationActor>
+  </VisualActor>
+</Entity>

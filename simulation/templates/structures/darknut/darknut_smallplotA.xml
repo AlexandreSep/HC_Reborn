@@ -1,0 +1,58 @@
+<Entity parent="HC_template_structure_plot">
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <GenericName>Darknut Building Plot</GenericName>
+    <History>Construct an extension of the Darknut Agora.</History>
+    <Icon>structures/darknut/dar_plot.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Construct an extension of the Darknut Agora.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="27.5" width="27.5" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_defense_tower</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Vineyard to the Agora.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerA>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_smallplotA.xml</Actor>
+  </VisualActor>
+</Entity>

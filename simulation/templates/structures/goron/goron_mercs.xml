@@ -1,0 +1,92 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="30.0" width="30.0" />
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>60</MinPop>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Bazaar</GenericName>
+    <History>A basic shop that can be set up early in a settlement's development, the Bazaar sells any extra supplies or items produced by its host settlement.</History>
+    <Icon>structures/goron/gor_bazaar.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Allows the Gorons to hire Mercenary units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-2</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>7</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>20</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/merc_goriya_b
+    units/merc_taros_b
+    units/merc_daira_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-3.3</X>
+      <Z>-6.5</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+      goron/merc_favoredshop
+    goron/merc_armsdealer
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+      <upgraded>interface/complete/building/complete_mercs.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/goron/goron_bazaarA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

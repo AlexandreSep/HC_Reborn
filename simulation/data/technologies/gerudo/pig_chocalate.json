@@ -1,0 +1,23 @@
+{
+	"genericName": "Chocolate Rewards",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 400},
+	"supersedes": "gerudo/pig_limestone",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/chocolate_reward.dds",
+	"researchTime": 50,
+	"tooltip": "Happy Swine come from Calidanon. (+50 Food, 20% faster spawn rate - Gerudo Swine)",
+  "modifications": [
+    {
+      "value": "Health/SpawnOnInterval/Interval",
+      "multiply": 0.8
+    },
+    {
+      "value": "Promotion/RequiredXp",
+      "replace": 0
+    }
+  ],
+  "affects": [ "GerudoPigB", "PigFarm" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

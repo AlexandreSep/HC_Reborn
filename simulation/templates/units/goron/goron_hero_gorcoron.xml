@@ -1,0 +1,86 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Fists</AttackName>
+      <Damage>
+        <Crush>45.0</Crush>
+      </Damage>
+      <MaxRange>7.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>250</food>
+      <metal>150</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="7.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">HeroGorcoron Hero5 Large LargeGarrison</Classes>
+    <GenericName>Elder of Death Mountain</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>One of two remaining elders of Death Mountain. Gor Coron was the youngest of the four elders and by far the most loved. Gor Coron oversaw much of the Goron's military during his younger days, though he now prefers to spend his time fighting in sport against other Gorons.</History>
+    <Icon>units/goron/gor_hero_gorcoron.dds</Icon>
+    <Lang>goron</Lang>
+    <RequiredTechnology>civ_choices/goron/choosehero_gorcoron</RequiredTechnology>
+    <SpecificName>Gor Coron</SpecificName>
+    <Tooltip>Faster Melee Goron Hero that has excellent parry skills.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>35.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>50.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/goron/medigoron/medigoron_death.xml</death>
+      <order_attack>voice/goron/medigoron/medigoron_attack.xml</order_attack>
+      <order_garrison>voice/goron/medigoron/medigoron_garrison.xml</order_garrison>
+      <order_gather>voice/goron/medigoron/medigoron_gather.xml</order_gather>
+      <order_repair>voice/goron/medigoron/medigoron_repair.xml</order_repair>
+      <order_walk>voice/goron/medigoron/medigoron_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/goron/medigoron/medigoron_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero5</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.7647</RunMultiplier>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/goron/goron_hero_coron_b.xml</Actor>
+  </VisualActor>
+</Entity>

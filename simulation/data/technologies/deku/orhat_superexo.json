@@ -1,0 +1,15 @@
+{
+	"genericName": "Superior Exoskeletons",
+	"description": "Orhat Beetles had some of the most durable armor considering how fast they could move. Deku Scrubs eventually found ways to assure that future generations had only the best exoskeleton.",
+	"cost": {"food": 0, "wood": 0, "stone": 450, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "deku/orhat_superexo.dds",
+	"researchTime": 40,
+	"tooltip": "Orhat Beetles had some of the most durable armor considering how fast they could move. Deku Scrubs eventually found ways to assure that future generations had only the best exoskeleton. (Non-magic armor values for Orhat Beetle and Giant Orhat Beetle increased by 25%)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.25},
+					  {"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.25},
+					  {"value": "Resistance/Entity/Damage/Crush", "multiply": 1.25}],
+	"affects": ["Beetle"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

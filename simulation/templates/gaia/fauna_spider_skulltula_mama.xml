@@ -1,0 +1,50 @@
+<Entity parent="template_unit_fauna_wild_violent">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Crush>7</Crush>
+        <Pierce>10</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="5.0" width="3.0" />
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Mother Skulltula</GenericName>
+    <History />
+    <Icon>gaia/fauna_spider_skulltula_mama.dds</Icon>
+    <Tooltip>Mother Skulltula are very large breeding females that lays clutches of eggs during mating seasons. While not as invasive as their male counterparts, they will violently defend their nests from intruders.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>true</Floating>
+  </Position>
+  <ResourceSupply>
+    <Max>200</Max>
+    <Type>food.meat</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/skulltula_attack.xml</attack_melee>
+      <death>voice/wild/skulltula/skulltula_death.xml</death>
+      <run>actor/movement/skulltula/skulltula_walk.xml</run>
+      <select>voice/wild/skulltula/skulltula_select.xml</select>
+      <walk>actor/movement/skulltula/skulltula_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/wild/wild_spider_mamaskulltulaA.xml</Actor>
+  </VisualActor>
+</Entity>

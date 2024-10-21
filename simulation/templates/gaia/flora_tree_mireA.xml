@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Mire Spiral Root</SpecificName>
+    <Tooltip>These strange, twisting plants are the roots of the Mire Spiral Palm, twisting through the toxic green waters of the Misery Mire in search of nutrients.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/mire_treesA.xml</Actor>
+  </VisualActor>
+</Entity>

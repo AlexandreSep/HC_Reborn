@@ -1,0 +1,106 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sage Water</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>FireElement</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+      <Damage>
+        <Pierce>13</Pierce>
+        <Water>20.0</Water>
+      </Damage>
+      <MaxRange>10.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>1700</RepeatTime>
+      <Splash>
+        <Damage>
+          <Water>20.0</Water>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>500</food>
+      <metal>200</metal>
+      <stone>100</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1950</Max>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">HeroLaruto Hero6 ZoraFemale Medium WaterElement Sage</Classes>
+    <GenericName>Sage of Water</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The tutor of Princess Ruto and one of the elder Sages, Laruto has long served the Dominion both as a priestess and advisor to royalty. Laruto's power over water is unmatched and she has defended her people without equal during her long service.</History>
+    <Icon>units/zora/zor_hero_laruto.dds</Icon>
+    <Lang>zora</Lang>
+    <RequiredTechnology>civ_choices/zora/choosehero_laruto</RequiredTechnology>
+    <SpecificName>Laruto</SpecificName>
+    <Tooltip>Powerful Mage Hero that can attack many enemies with her water magic.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>30.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/magic/ruto_ice.xml</attack_ranged>
+      <death>voice/zora/ruto/ruto_death.xml</death>
+      <order_attack>voice/zora/ruto/ruto_attack.xml</order_attack>
+      <order_garrison>voice/zora/ruto/ruto_garrison.xml</order_garrison>
+      <order_gather>voice/zora/ruto/ruto_gather.xml</order_gather>
+      <order_repair>voice/zora/ruto/ruto_repair.xml</order_repair>
+      <order_walk>voice/zora/ruto/ruto_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zora/ruto/ruto_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero6</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.0526</RunMultiplier>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_hero_laruto_b.xml</Actor>
+  </VisualActor>
+</Entity>

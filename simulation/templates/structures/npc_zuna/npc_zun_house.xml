@@ -1,0 +1,40 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="25.0" width="25.0" />
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>npc_zuna</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Zuna House</GenericName>
+    <History>Dwelling place for the Zuna people.</History>
+    <Icon>structures/npc_zuna/npc_zun_house.dds</Icon>
+    <Tooltip>Dwelling place for the Zuna people.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <VisualActor>
+    <Actor>structures/npc_zuna/npc_zun_houseA.xml</Actor>
+  </VisualActor>
+</Entity>

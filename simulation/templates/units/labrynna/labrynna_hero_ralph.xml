@@ -1,0 +1,93 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Bullets</AttackName>
+      <Damage>
+        <Pierce>80</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>65</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>250</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>8000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>70</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>25</Range>
+        <Shape>Linear</Shape>
+      </Splash>
+      <TrueDamage>10.0</TrueDamage>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>250</food>
+      <metal>125</metal>
+      <stone>125</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">HeroRalph Hero2 Medium</Classes>
+    <GenericName>Prince of Labrynna</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The grandson of Queen Ambi, Ralphonso was born of the first generation to live during Labrynna’s new Empire. Machinery is second nature to him, and years of education had landed him an internship commanding batteries of cannons. Despite Ralph’s clear admiration for Labrynna’s technological prowess, he feels Labrynna has gone into a stage of decline as if something is missing. He has since turned to seeking out the supernatural, in particular he hopes to uncover the mythical Fairies and ancient creatures that once coexisted in his homeland.</History>
+    <Icon>units/labrynna/lab_hero_ralph.dds</Icon>
+    <Lang>labrynna</Lang>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_ralph</RequiredTechnology>
+    <SpecificName>Ralphonso Ambi</SpecificName>
+    <Tooltip>Missile Hero unit that attacks with a long ranged pistol.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/bullet_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/musket.xml</attack_ranged>
+      <death>voice/labrynna/ralph/ralph_death.xml</death>
+      <order_attack>voice/labrynna/ralph/ralph_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/ralph/ralph_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/ralph/ralph_gather.xml</order_gather>
+      <order_repair>voice/labrynna/ralph/ralph_repair.xml</order_repair>
+      <order_walk>voice/labrynna/ralph/ralph_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/labrynna/ralph/ralph_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero2</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_ralph_b.xml</Actor>
+  </VisualActor>
+</Entity>

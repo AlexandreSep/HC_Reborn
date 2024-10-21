@@ -1,0 +1,64 @@
+<Entity parent="HC_template_unit_packed">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>20</metal>
+      <stone>0</stone>
+      <wood>85</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Large</Classes>
+    <GenericName>Swap Meet n' Meat</GenericName>
+    <History>Oh man when a Moblin gets a shiny, he is like a kind of king! The smartest ones know that shinies are a joke though, just a trick they Hylians made to make money on stuff! So smartest Moblins sell it to dumber Moblins and make lots of money!</History>
+    <Icon>structures/moblin/mob_meetnmeat.dds</Icon>
+    <Tooltip>Moblins trade the money here and make the trade with their big bad friends too!</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/salamander_big_breath.xml</attack_melee>
+      <death>voice/moblin/ugpug/ugpug_death.xml</death>
+      <order_attack>voice/moblin/ugpug/ugpug_attack.xml</order_attack>
+      <order_garrison>voice/moblin/ugpug/ugpug_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/ugpug/ugpug_garrison.xml</order_gather>
+      <order_repair>voice/moblin/ugpug/ugpug_repair.xml</order_repair>
+      <order_walk>voice/moblin/ugpug/ugpug_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/moblin/ugpug/ugpug_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>2.6</RunMultiplier>
+    <WalkSpeed>5</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <CheckPlacementRestrictions />
+      <Entity>structures/moblin/moblin_market</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Unpack this Swap Meet n' Meat.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/moblin/moblin_mobcartG.xml</Actor>
+  </VisualActor>
+</Entity>

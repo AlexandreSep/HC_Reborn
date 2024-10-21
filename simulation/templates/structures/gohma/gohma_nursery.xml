@@ -1,0 +1,73 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/solarium_aura_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>100</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>3</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>2</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic GohmaDen GohmaBuild GohNursery Town</Classes>
+    <GenericName>Solarium Nursery</GenericName>
+    <History>Arrayed across the Misery Mire, these giant nests are opened to the sun, a process that seems to increase both the speed of maturation and the strength of Gohma eggs. A Nursery can garrison a Gohma Queen, allowing her to lay eggs in batches as opposed to one at a time.</History>
+    <Icon>structures/gohma/goh_nursery.dds</Icon>
+    <Tooltip>Nest that can lay Gohma Eggs to hatch into new units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="20.0" width="20.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    gohma/nursery_forcedlay
+    gohma/nursery_solgrowth
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/gohma/complete_gohnestA.xml</constructed>
+      <select>interface/select/building/gohma/sel_gohnestA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_nursery.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

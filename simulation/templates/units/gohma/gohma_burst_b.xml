@@ -1,0 +1,72 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Claws</AttackName>
+      <Damage>
+        <Pierce>3</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>6</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <DeathDamage>
+    <Damage>
+      <Forest>50</Forest>
+    </Damage>
+    <FriendlyFire>false</FriendlyFire>
+    <Range>10</Range>
+    <Shape>Circular</Shape>
+  </DeathDamage>
+  <Health>
+    <Max>50</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Small</Classes>
+    <GenericName>Burst Gohma</GenericName>
+    <History>A small Gohma that the hive will use is desparate situations. These tiny nightmares seek out their targets and selflessly kill themselves by erupting into a burning green ooze.</History>
+    <Icon>units/gohma/goh_burst.dds</Icon>
+    <Lang>gohma</Lang>
+    <SelectionGroupName>units/gohma/gohma_burst_b</SelectionGroupName>
+    <Tooltip>Small Gohma that explodes into burning acid when slain.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_smallA/gohma_smallA_death.xml</death>
+      <order_attack>voice/gohma/gohma_smallA/gohma_smallA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_smallA/gohma_smallA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_smallA/gohma_smallA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_smallA/gohma_smallA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_smallA/gohma_smallA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlB.xml</run>
+      <select>voice/gohma/gohma_smallA/gohma_smallA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/gohma/gohma_burst_b.xml</Actor>
+  </VisualActor>
+</Entity>

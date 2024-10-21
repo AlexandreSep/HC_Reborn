@@ -1,0 +1,93 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>350</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="24.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Moblin Base n' Camp</GenericName>
+    <History>Moblins smarter, braver, stronger, faster, cooler, prettier, handsomer, and better then all the Blins! That's why we boss them all around! Hahahahaha! We train really hard at our best base to boss the blinnys around and then boss the baddies around after that! Go Moblins!</History>
+    <Icon>structures/moblin/mob_camp_mob.dds</Icon>
+    <Tooltip>Makes the Moblins, best Blins units!</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="42.0" width="42.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>-1</X>
+        <Z>6</Z>
+      </step1>
+      <step2>
+        <X>-1</X>
+        <Z>15</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/moblin/{civ}_mob_b
+      units/moblin/{civ}_grunt_b
+    units/moblin/{civ}_warlord_b
+    units/moblin/{civ}_demonblight_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-2</X>
+      <Z>-3</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    moblin/mob_joinmobby
+    moblin/mob_traininghard
+    moblin/mob_bigmuscle
+    moblin/ghirahim_demonblighty
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracksC_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack up this Moblin Base n' Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_mobA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+</Entity>

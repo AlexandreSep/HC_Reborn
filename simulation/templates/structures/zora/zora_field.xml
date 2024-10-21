@@ -1,0 +1,53 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>120</stone>
+      <wood>120</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Fishfarm Field</Classes>
+    <GenericName>Fishery</GenericName>
+    <History>Entire Fish Farms will pop up in some larger bodies of water around Hyrule. These closed-off areas can breed a wide variety of fishlife for the Zora to eat and consume.</History>
+    <Icon>structures/zora/zor_fishery.dds</Icon>
+    <Tooltip>A pool of fish that can be harvested for Food.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>2</MaxGatherers>
+    <Type>food.fish</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_farm.xml</constructed>
+      <select>interface/select/building/sel_farm.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zora/zora_fisheryA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

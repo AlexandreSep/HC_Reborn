@@ -1,0 +1,16 @@
+{
+  "type": "range",
+  "radius": 50,
+  "modifications": [
+    {
+      "value": "Health/RegenRate",
+      "multiply": 1.3
+    },
+    {
+      "value": "Health/IdleRegenRate",
+      "multiply": 1.3
+    }
+  ],
+  "auraName": "Musically Soothing",
+  "auraDescription": "(+30% Regen and IdleRegen increase - Unit)"
+}

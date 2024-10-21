@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Domain Acacia</SpecificName>
+    <Tooltip>Found in the dryer area along the Zora River, the Domain Acacia is not favored by most peoples for wood, thought the toxins in its leaves are sometimes harvested for poisons.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/acacia.xml</Actor>
+  </VisualActor>
+</Entity>

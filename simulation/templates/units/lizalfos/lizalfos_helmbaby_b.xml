@@ -1,0 +1,66 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Crush>7.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>45</food>
+      <metal>0</metal>
+      <stone>30</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>260</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Small Class100</Classes>
+    <GenericName>Light Creature Unit</GenericName>
+    <History>Helmasaur babies would often follow their mother for the first few months of their lived untle their skulls had begun to grow.</History>
+    <Icon>units/lizalfos/liz_helmbaby.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_helmbaby_b</SelectionGroupName>
+    <SpecificName>Helmasaur Baby</SpecificName>
+    <Tooltip>Small Melee Creature that bites and bashes with its skull.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>40.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
+      <death>voice/lizalfos/helmram/helmram_death.xml</death>
+      <order_attack>voice/lizalfos/helmram/helmram_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/helmram/helmram_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/helmram/helmram_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/helmram/helmram_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/helmram/helmram_walk.xml</order_walk>
+      <run>actor/movement/boar/boar_footsteps.xml</run>
+      <select>voice/lizalfos/helmram/helmram_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/boar/boar_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_helmbaby_b.xml</Actor>
+  </VisualActor>
+</Entity>

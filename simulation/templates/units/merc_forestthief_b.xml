@@ -1,0 +1,73 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Pierce>12</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>60</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>1700</RepeatTime>
+      <TrueDamage>12</TrueDamage>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>220</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Medium Class100</Classes>
+    <GenericName>Forest Thief</GenericName>
+    <History>Kokiri that left the influence of the Great Deku Tree, Forest Thieves have resumed aging and inheriting the culture of the original Kokiri Bandits. Ruthless and without mercy, Forest Thieves are more then willing to steal from anyone, and even more then willing to kill anyone if they are paid up front.</History>
+    <Icon>units/merc/merc_forestthief.dds</Icon>
+    <SelectionGroupName>units/merc/merc_forestthief_b</SelectionGroupName>
+    <Tooltip>Missile unit that tosses knives at their victims from a distance.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile Mercenary</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/javelin_toss.xml</attack_ranged>
+      <death>voice/kokiri/emarcher/emarcher_death.xml</death>
+      <order_attack>voice/kokiri/emarcher/emarcher_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/emarcher/emarcher_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/emarcher/emarcher_gather.xml</order_gather>
+      <order_repair>voice/kokiri/emarcher/emarcher_repair.xml</order_repair>
+      <order_walk>voice/kokiri/emarcher/emarcher_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/kokiri/emarcher/emarcher_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/merc/merc_forestthief_b.xml</Actor>
+  </VisualActor>
+</Entity>

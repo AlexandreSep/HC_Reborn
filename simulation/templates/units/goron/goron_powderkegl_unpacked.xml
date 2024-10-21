@@ -1,0 +1,17 @@
+<Entity parent="units/goron/goron_powderkegl_common">
+  <Identity>
+    <Icon>units/goron/gor_powderkegl.dds</Icon>
+  </Identity>
+  <Pack>
+    <Entity>units/goron/goron_powderkegl_packed</Entity>
+    <State>unpacked</State>
+    <Time>5000</Time>
+  </Pack>
+  <UnitMotion>
+    <RunMultiplier>1.0</RunMultiplier>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/goron/gor_powderkegl_unpacked.xml</Actor>
+  </VisualActor>
+</Entity>

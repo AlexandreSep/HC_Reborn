@@ -1,0 +1,13 @@
+<Entity parent="structures/hylian/hylian_dock">
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="30.0" width="26.0" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="26.0" width="22.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_house_onwaterA.xml</Actor>
+    <FoundationActor>structures/fndn_6x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>

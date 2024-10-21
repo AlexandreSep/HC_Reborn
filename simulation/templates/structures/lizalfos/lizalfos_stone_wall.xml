@@ -1,0 +1,23 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="8.5" width="26.0" />
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <History>A large stone wall to protect the heart of Lizalfos community and sacrifice from outsiders.</History>
+    <Icon>structures/lizalfos/liz_stonewall.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SpecificName>Stone Wall</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.0" width="24.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_stonewall_medium.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldE_S.xml</FoundationActor>
+  </VisualActor>
+</Entity>

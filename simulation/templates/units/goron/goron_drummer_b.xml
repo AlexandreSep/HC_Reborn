@@ -1,0 +1,63 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Auras datatype="tokens">
+    units/drummer_aura_1
+  units/drummer_aura_2
+  </Auras>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>10</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">GoronDrummer Medium Class40</Classes>
+    <GenericName>Drummer</GenericName>
+    <History>Gorons are famous drummers and dancers, and some of their most talented players will direct soldiers to battle with their beats. These drummers can keep Gorons in marching order and morale high as they enter into a warzone.</History>
+    <Icon>units/goron/gor_drummer.dds</Icon>
+    <Lang>goron</Lang>
+    <Rank>Basic</Rank>
+    <SelectionGroupName>units/goron/goron_drummer_b</SelectionGroupName>
+    <Tooltip>Support unit that increases the movement speed of other Gorons.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>35.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>25</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/goron_fist_light.xml</attack_melee>
+      <death>voice/goron/drummer/drummer_death.xml</death>
+      <order_attack>voice/goron/drummer/drummer_attack.xml</order_attack>
+      <order_garrison>voice/goron/drummer/drummer_garrison.xml</order_garrison>
+      <order_gather>voice/goron/drummer/drummer_gather.xml</order_gather>
+      <order_heal>voice/goron/drummer/drummer_attack.xml</order_heal>
+      <order_repair>voice/goron/drummer/drummer_repair.xml</order_repair>
+      <order_walk>voice/goron/drummer/drummer_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/goron/drummer/drummer_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.75</RunMultiplier>
+    <WalkSpeed>8.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/goron/goron_drummer_b.xml</Actor>
+  </VisualActor>
+</Entity>

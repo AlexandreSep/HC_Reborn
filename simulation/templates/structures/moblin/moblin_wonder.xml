@@ -1,0 +1,71 @@
+<Entity parent="HC_template_structure_wonder">
+  <BuildRestrictions>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Circle radius="42.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>10000</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_wonderA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>moblin</Civ>
+    <GenericName>Ganon's Castle</GenericName>
+    <Icon>structures/moblin/mob_ganonscastle.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Moblin Wonder! Big Demise comes from here! Whooaaahh it's Ganon's big scary Castle! So big and so scary! Ahhhh! We Moblins don't know where it came from, some say Moblins made it in Olden Timey! Whoever put the big scary castle there don't matter no more, Ganon made it his base and make his best plan to take over the Hylians and kill em all there! Very important place for all us Blinny kind, we go there and pray to Ukblinro for super power every year or two or three!</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="64.0" width="64.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>55</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>60</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/moblin/{civ}_titan_demise
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>20</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/moblin/complete_ganoncastle.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/moblin/sel_ganoncastle.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_wonderA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+</Entity>

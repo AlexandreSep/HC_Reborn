@@ -1,0 +1,85 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>250</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="55.0" width="55.0" />
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>50</MinPop>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Hall of Warriors</GenericName>
+    <History>Reserved for the best soldiers of the Goron people, a Hall of Warriors allows these fighters the chance to train in the most grueling battles yet.</History>
+    <Icon>structures/goron/gor_hallwarriors.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Trains many Melee centric Goron units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/goron/{civ}_rubyguard_b
+      units/goron/{civ}_firewarrior_b
+      units/goron/{civ}_patriarch_b
+    units/goron/{civ}_berserker_b
+    units/goron/{civ}_brotheratarms_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>17.5</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+      goron/troop_rubyshield
+    goron/troop_megatonsteel
+    goron/troop_elderhide
+    goron/darunia_rubyarmor
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/goron/goron_hallwarriorA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,9 @@
+{
+	"Name": "bomb some dodongos",
+	"Data": {
+		"Action": "addresource",
+		"Type": "stone",
+		"DefaultParameter": 1000,
+		"isNumeric": true
+	}
+}

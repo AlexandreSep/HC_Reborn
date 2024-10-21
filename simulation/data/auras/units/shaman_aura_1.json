@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Peon"],
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.sacrifices", "multiply": 2 }
+	],
+	"auraName": "Revenge of the Gods",
+	"requiredTechnology": "lizalfos/shaman_revengeofgods",
+	"auraDescription": "(Doubles resource generation of Peon or Aeralfos Peon sacrifices)",
+	"overlayIcon": "art/textures/ui/session/auras/shaman_aura_1.dds"
+}

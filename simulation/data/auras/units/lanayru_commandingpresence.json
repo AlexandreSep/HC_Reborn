@@ -1,0 +1,11 @@
+{
+	"type": "garrison",
+	"radius": 30,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Attack/Range/RepeatTime", "multiply": 0.5 }
+	],
+	"auraName": "Commanding Presence",
+	"auraDescription": "(Increases the attack rate of the Royal Hub when garrisoned by a Commander or Hero by 50%.)",
+	"overlayIcon": "art/textures/ui/session/auras/ironclad_aura1.dds"
+}

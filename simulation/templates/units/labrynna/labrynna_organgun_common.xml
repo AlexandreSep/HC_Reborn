@@ -1,0 +1,86 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+      <AttackName>Cannonballs</AttackName>
+      <Damage>
+        <Crush>50.0</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>120.0</MaxRange>
+      <MinRange>25.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <PrepareTime>3000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+        <Speed>200.0</Speed>
+        <Spread>3.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>3500</RepeatTime>
+      <Splash>
+        <Damage>
+          <Crush>50.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>30</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BattalionSlots>3</BattalionSlots>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>20</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>5.0</Height>
+    <Square depth="10.0" width="10.0" />
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Large Class40 Gunpowder UniqueUnit</Classes>
+    <GenericName>Ribauldequin</GenericName>
+    <History>Nicknamed the Organ Gun by their enemies, the Ribauldequin was a battery of lighter cannons linked together. The weapon functioned much differently than its single barreled counterpart however; the Organ Gun would unleash a rapid fire shotgun spray over a large area rather than picking out a target. The resulting volley could indiscriminately shred apart large swaths of enemy soldiers.</History>
+    <Icon>units/labrynna/lab_organgun.dds</Icon>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_ambi</RequiredTechnology>
+    <Tooltip>Queen Ambi's Unique Unit. Ranged Siege unit with very wide field of fire and Splash Damage.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege Ranged</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/cannon_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/organgun_fire.xml</attack_ranged>
+      <order_attack>voice/labrynna/handcannon/handcannon_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/handcannon/handcannon_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/handcannon/handcannon_gather.xml</order_gather>
+      <order_repair>voice/labrynna/handcannon/handcannon_repair.xml</order_repair>
+      <order_walk>voice/labrynna/handcannon/handcannon_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/labrynna/handcannon/handcannon_select.xml</select>
+      <trained>interface/alarm/alarm_create_engine.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+</Entity>

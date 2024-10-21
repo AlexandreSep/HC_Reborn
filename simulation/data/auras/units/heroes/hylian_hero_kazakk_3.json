@@ -1,0 +1,13 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "BuildingAI/GarrisonArrowMultiplier", "multiply": 1.75 },
+		{ "value": "BuildingAI/MaxArrowCount", "multiply": 1.75 },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 2 }
+	],
+	"auraName": "Deliverance",
+	"auraDescription": "(If Garrisoned, +75% Projectile Limit Per Unit, +2 Capture Regen Rate - Building)", 
+	"overlayIcon": "art/textures/ui/session/auras/kazakk_deliverance.dds"
+}
+

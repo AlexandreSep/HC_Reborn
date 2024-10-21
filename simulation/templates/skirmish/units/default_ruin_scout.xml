@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry">
+  <Identity>
+    <Civ>skirm</Civ>
+  </Identity>
+  <Promotion disable=""/>
+  <SkirmishReplacer/>
+  <VisualActor>
+    <Actor>structures/SkirmishReplacer_ScoutA.xml</Actor>
+  </VisualActor>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+</Entity>

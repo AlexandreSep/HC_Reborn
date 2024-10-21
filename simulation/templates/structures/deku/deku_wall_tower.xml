@@ -1,0 +1,27 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_deku_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <GenericName>Wooden Wall Tower</GenericName>
+    <History>A makeshift wooden wall to keep the elements out of Deku territory.</History>
+    <Icon>structures/deku/dek_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/deku/deku_wall_tower.xml</Actor>
+    <FoundationActor>structures/deku/deku_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

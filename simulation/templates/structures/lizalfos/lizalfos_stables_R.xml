@@ -1,0 +1,19 @@
+<Entity parent="structures/lizalfos/lizalfos_stables">
+  <Identity>
+    <RequiredTechnology>lizalfos_trinexx</RequiredTechnology>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/lizalfos/{civ}_heatoise_b
+      units/lizalfos/{civ}_dodongosnake_b
+    </Entities>
+    <Technologies datatype="tokens">
+    lizalfos/heatoise_perfectshell
+    lizalfos/dodongosnake_diet
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_monstermoundB.xml</Actor>
+  </VisualActor>
+</Entity>

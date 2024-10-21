@@ -1,0 +1,85 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+      <AttackName>Hurled Stone</AttackName>
+      <Damage>
+        <Crush>200.0</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>130.0</MaxRange>
+      <MinRange>60.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <PrepareTime>4000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+        <Speed>50.0</Speed>
+        <Spread>3.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>7500</RepeatTime>
+      <Splash>
+        <Damage>
+          <Crush>50.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>6</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BattalionSlots>3</BattalionSlots>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>20</food>
+      <metal>0</metal>
+      <stone>100</stone>
+      <wood>225</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>5.0</Height>
+    <Square depth="10.0" width="10.0" />
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Large Class40 HylianTrebuchet</Classes>
+    <GenericName>Trebuchet</GenericName>
+    <History>These towering siege weapons are deployed by the Kingdom of Hyrule during invasions of enemy cities. They can hurl giant flaming boulders with tremendous force, and knock down the most sturdy of fortifications. Any enemy soldiers unlucky enough to be near the impact of these projectiles will usually crushed or burned in the resulting shockwave.</History>
+    <Icon>units/hylian/hyl_trebuchet.dds</Icon>
+    <Tooltip>Powerful and long ranged siege unit. Must take several moments to pack and unpack.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/hylian/civilian_male/civilian_male_attack.xml</order_attack>
+      <order_garrison>voice/hylian/civilian_male/civilian_male_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/civilian_male/civilian_male_gather.xml</order_gather>
+      <order_repair>voice/hylian/civilian_male/civilian_male_repair.xml</order_repair>
+      <order_walk>voice/hylian/civilian_male/civilian_male_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/hylian/civilian_male/civilian_male_select.xml</select>
+      <trained>interface/alarm/alarm_create_engine.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/hylian/hylian_trebuchet_unpacked.xml</Actor>
+  </VisualActor>
+</Entity>

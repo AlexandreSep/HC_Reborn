@@ -1,0 +1,11 @@
+<Entity parent="units/gohma/gohma_keeper_b">
+  <Builder>
+    <Entities datatype="tokens">
+    structures/gohma/gohma_temple
+    structures/gohma/gohma_house
+    structures/gohma/gohma_storehouse
+    structures/gohma/gohma_market
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
+</Entity>

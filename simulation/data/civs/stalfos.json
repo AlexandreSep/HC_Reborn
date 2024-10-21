@@ -1,0 +1,181 @@
+{
+	"Code": "stalfos",
+	"Culture": "shadow",
+	"Name": "Stalfos",
+	"Emblem": "session/portraits/emblems/emblem_stalfos.dds",
+	"History": "The creation of horrifying magic that was outlawed and sealed away in Hyrule’s ancient past, the Stalfos are a vast ever growing army of animated corpses. Headed by a collection of warring and elite Necromancers, the modern incarnation of Hyrule’s undead seek to fill its ranks with mindless followers and to establish a kingdom of immortality that can stand against the supernatural forces of Hyrule.",
+	"Music":[
+			{"File":"stalfos_theme1.ogg", "Type":"peace"},
+			{"File":"stalfos_ambient1.ogg", "Type":"peace"},
+			{"File":"stalfos_ambient2.ogg", "Type":"peace"},
+			{"File":"stalfos_ambient3.ogg", "Type":"peace"},
+			{"File":"stalfos_ambient4.ogg", "Type":"peace"},
+			{"File":"stalfos_ambient5.ogg", "Type":"peace"},
+			{"File":"stalfos_ambient6.ogg", "Type":"peace"},
+			{"File":"stalfos_battle1.ogg", "Type":"battle"},
+			{"File":"stalfos_battle2.ogg", "Type":"battle"},
+			{"File":"stalfos_battle3.ogg", "Type":"battle"},
+			{"File":"stalfos_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Bones, Meat, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Meg",
+					"Class": "",
+					"Armament": "Poe's Torch",
+					"Emblem": "",
+					"History": "."
+				},
+				{
+					"Name": "Irene",
+					"Class": "",
+					"Armament": "Witch's Broom",
+					"Emblem": "",
+					"History": "."
+				},
+				{
+					"Name": "Blind",
+					"Class": "",
+					"Armament": "Sword",
+					"Emblem": "",
+					"History": "."
+				},
+				{
+					"Name": "Death Sword",
+					"Class": "",
+					"Armament": "Death Sword",
+					"Emblem": "",
+					"History": "."
+				}  
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "",
+			"History": "",
+			"Description": "" 
+		},
+		{
+			"Name": "",
+			"History": "",
+
+			"Description": "" 
+		},
+		{
+			"Name": "",
+			"History": "",
+			"Description": "" 
+		}  
+	],
+	"CivChoices":
+	[
+		"civ_choices/stalfos/choosehero_dampe",
+		"civ_choices/stalfos/choosehero_gabora",
+		"civ_choices/stalfos/choosehero_meg",
+		"civ_choices/stalfos/choosehero_irene",
+		"civ_choices/stalfos/choosehero_blind",
+		"civ_choices/stalfos/choosehero_deathsword"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "",
+			"History": "",
+			"Description": ""
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Arbiter's Grounds",
+			"Class": "",
+			"Emblem": "",
+			"History": ".",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "Titan: Stallord",
+			"Class": "",
+			"Emblem": "",
+			"History": ".",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/stalfos/stalfos_civil_centre"
+		},
+		{
+			"Template": "units/stalfos/stalfos_stalchildA",
+			"Count": 4
+		},
+		{
+			"Template": "units/stalfos/stalfos_stalkin_b",
+			"Count": 2
+		},		
+		{
+			"Template": "units/stalfos/stalfos_bubble_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/stalfos/stalfos_eyesoar_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Dampe",
+		"Gabora",
+		"Meg",
+		"Irene",
+		"Blind the Thief",
+		"Death Sword"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/node_civcenterA",
+		"skirmish/structures/default_ruin_start_anc" : "structures/stalfos/stalfos_civil_centre_anc",
+		"skirmish/structures/default_ruin_start_des" : "structures/stalfos/stalfos_civil_centre_des",
+		"skirmish/structures/default_ruin_start_dm" : "structures/stalfos/stalfos_civil_centre_dm",
+		"skirmish/structures/default_ruin_start_tar" : "structures/stalfos/stalfos_civil_centre_tar",
+		"skirmish/structures/default_graves_anc" : "structures/stalfos/stalfos_field",
+		"skirmish/structures/default_graves_des" : "structures/stalfos/stalfos_field_des",
+		"skirmish/structures/default_graves_dm" : "structures/stalfos/stalfos_field_dm",
+		"skirmish/structures/default_graves_tar" : "structures/stalfos/stalfos_field_tar",
+		"skirmish/units/default_ruin_starting_unit": "units/stalfos/stalfos_staltroop_b",
+		"skirmish/units/default_ruin_scout": "units/stalfos/stalfos_eyesoar_b",
+		"skirmish/units/default_ruin_worker": "units/stalfos/stalfos_stalchildA"
+	},
+	"SelectableInGameSetup": false
+}

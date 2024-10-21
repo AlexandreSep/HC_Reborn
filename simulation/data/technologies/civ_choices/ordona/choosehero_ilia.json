@@ -1,0 +1,11 @@
+{
+	"genericName": "Ilia",
+	"description": "Ilia.",
+	"icon": "ordona/choosehero_ilia.png",
+	"tooltip": "Select Ilia as your hero of choice.",
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Cavalry Focus", "tooltipText": "Ilia focuses on producing Ordonian Cavalry units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Ilia", "tooltipText": "Allows you to summon Ilia, a Cavalry unit armed with a Crossbow."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Rough Rider", "tooltipText": "The fastest horses in all of Hyrule, a Melee Cavalry unit."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Horse Broker", "tooltipText": "Wild Horses can be upgraded into Horsemen for half their cost."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Spiked Spurs", "tooltipText": "Improves the speed of all Cavalry units by 10%."}]	
+}

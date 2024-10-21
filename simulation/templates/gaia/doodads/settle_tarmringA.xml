@@ -1,0 +1,12 @@
+<Entity parent="template_gaia_doodad">
+  <Footprint>
+    <Circle radius="70.0" />
+    <Height>3.5</Height>
+  </Footprint>
+  <Obstruction>
+    <Static depth="130.0" width="130.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_tarm/tarm_ruinringA.xml</Actor>
+  </VisualActor>
+</Entity>

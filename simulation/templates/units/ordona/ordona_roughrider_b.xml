@@ -1,0 +1,72 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Damage>
+        <Hack>11.0</Hack>
+        <Pierce>3</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>90</food>
+      <metal>20</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Large Class100 RoughRider</Classes>
+    <GenericName>Rough Rider</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A special battalion of horse riding raiders formed by Ilia shortly after Labrynna's invasion of Ordona Province. The Rough Riders push speed over anything else in hopes to being difficult targets for Labrynna's gunpowder. They are the single fastest cavalry in the known world, and nothing can hope to keep up pace with them. While not particularly durable, they swing a ferocious axe in a fight and can deal some serious damage. When things are too tough they can easily retreat before it's too late.</History>
+    <Icon>units/ordona/ord_roughrider.dds</Icon>
+    <Lang>hylian</Lang>
+    <RequiredTechnology>civ_choices/ordona/choosehero_ilia</RequiredTechnology>
+    <SelectionGroupName>units/ordona_roughrider_b</SelectionGroupName>
+    <Tooltip>Ilia's Unique Unit. Melee Cavalry unit armed with axes. The fastest Cavalry in all of Hyrule.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>35.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>25.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/ordona/roughrider/roughrider_death.xml</death>
+      <order_attack>voice/ordona/roughrider/roughrider_attack.xml</order_attack>
+      <order_garrison>voice/ordona/roughrider/roughrider_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/roughrider/roughrider_gather.xml</order_gather>
+      <order_repair>voice/ordona/roughrider/roughrider_repair.xml</order_repair>
+      <order_walk>voice/ordona/roughrider/roughrider_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/ordona/roughrider/roughrider_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.4814</RunMultiplier>
+    <WalkSpeed>27.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ordona/ordona_roughrider_b.xml</Actor>
+  </VisualActor>
+</Entity>

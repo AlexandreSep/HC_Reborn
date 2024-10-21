@@ -1,0 +1,90 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <Attack disable="" />
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+    <GarrisonRegenRate>10.0</GarrisonRegenRate>
+    <RegenRate>0.5</RegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>500</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>500</metal>
+      <stone>0</stone>
+      <wood>500</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="33.0" width="40.0" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>npc_lonlon</Civ>
+    <GenericName>Lon Lon Ranch</GenericName>
+    <History>The center of any Hylian establishment, a Town Hall mandates and regulates the economy and growth of both civilian and military expansion. Able to train a workforce of Citizens for both labor and soldier duty as well as stock resources.</History>
+    <Icon>structures/npc_lonlon/npc_lon_civcenter.dds</Icon>
+    <Tooltip>Lon Lon Ranch Civil Center: trains all Lon Lon units and serves as a Resource drop off point.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Right depth="25" width="42" x="0" z="-6" />
+    </Obstructions>
+    <Static disable="" />
+  </Obstruction>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>-7</X>
+        <Z>-11</Z>
+      </step1>
+      <step2>
+        <X>-21</X>
+        <Z>-11</Z>
+      </step2>
+      <step3>
+        <X>-21</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/npc_lonlon/npc_lon_rancherA
+      units/npc_lonlon/npc_lon_hand_b
+      units/npc_lonlon/npc_lon_watch_b
+    units/npc_lonlon/npc_lon_riders_b
+    units/npc_lonlon/npc_lon_cowgirl_b
+    units/npc_lonlon/npc_lon_cowcart_b
+    units/npc_lonlon/npc_lon_hero_malon
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-1</X>
+      <Z>-11</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    npc_lonlon/lonlon_milk
+    npc_lonlon/lonlon_cows
+    npc_lonlon/malon_horsetrain
+  </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/npc_lonlon/npc_lon_civiccenterA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

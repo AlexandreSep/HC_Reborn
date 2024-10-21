@@ -1,0 +1,10 @@
+{
+	"type": "formation",
+	"affects": ["Cavalry"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 1.10 }],
+	"auraName": "Flight of the Forest",
+	"auraDescription": "(In Formation, +25% Movement Speed - Cavalry)",
+	"overlayIcon": "art/textures/ui/session/auras/gulley_forestflight.dds"
+}

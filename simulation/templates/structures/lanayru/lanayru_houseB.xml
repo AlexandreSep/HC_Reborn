@@ -1,0 +1,5 @@
+<Entity parent="structures/lanayru/lanayru_house">
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_homeB.xml</Actor>
+  </VisualActor>
+</Entity>

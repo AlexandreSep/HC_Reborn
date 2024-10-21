@@ -1,0 +1,17 @@
+<Entity parent="units/zora/zora_sparkmage_b">
+  <Attack>
+    <Ranged>
+      <MinRange>0</MinRange>
+    </Ranged>
+  </Attack>
+  <Turretable />
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">HiddenUI</Classes>
+  </Identity>
+  <VisualActor>
+    <Actor>units/zora/zora_mage_b.xml</Actor>
+  </VisualActor>
+</Entity>

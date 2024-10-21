@@ -1,0 +1,81 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Lance</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Pierce>25.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <RepeatTime>1600</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>5</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>375</food>
+      <metal>150</metal>
+      <stone>150</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>350</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Knight Large Class100 UniqueUnit HylianRedlion</Classes>
+    <GenericName>Knight of the Red Lion</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>These mounted warriors are perhaps the best tacticians and leaders in the entire Hylian army. Usually they are deployed as lone Generals to command armies, but a line of these soldiers armed with lances can tear through enemy infantry with ease.</History>
+    <Icon>units/hylian/hyl_redlion.dds</Icon>
+    <Lang>hylian</Lang>
+    <RequiredTechnology>civ_choices/hylian/choosehero_kazakk</RequiredTechnology>
+    <SelectionGroupName>units/hylian/hylian_redlion_b</SelectionGroupName>
+    <Tooltip>King Daphnes' Unique Unit. Heavily armored cavalry unit armed with a rider downing lance.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>70.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/hylian/knights/knights_death.xml</death>
+      <order_attack>voice/hylian/knights/knights_attack.xml</order_attack>
+      <order_garrison>voice/hylian/knights/knights_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/knights/knights_gather.xml</order_gather>
+      <order_repair>voice/hylian/knights/knights_repair.xml</order_repair>
+      <order_walk>voice/hylian/knights/knights_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/hylian/knights/knights_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5151</RunMultiplier>
+    <WalkSpeed>16.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/hylian/hylian_redlion_b.xml</Actor>
+  </VisualActor>
+</Entity>

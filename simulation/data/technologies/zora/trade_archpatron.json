@@ -1,0 +1,14 @@
+{
+	"genericName": "Architectural Patrons",
+	"description": "Wealthy Zora commonly commission great works of art and public spaces.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "zora/trade_archpatron.dds",
+	"researchTime": 40,
+	"tooltip": "Wealthy Zora commonly commission great works of art and public spaces. (-10% Material and Ore - Building)",
+	"modifications": [{ "value": "Cost/Resources/wood", "multiply": 0.90 },
+					  { "value": "Cost/Resources/stone", "multiply": 0.90 }],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

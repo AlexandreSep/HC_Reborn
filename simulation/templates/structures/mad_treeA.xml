@@ -1,0 +1,56 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>8</Max>
+      <SpawnNumber>2</SpawnNumber>
+      <StartDelay>3000</StartDelay>
+      <Template>units/mad/mad_scrubling_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens"> MadScrub</Classes>
+    <GenericName>Mad Scrub Tree</GenericName>
+    <History>A sick and corrupted tree that seems to spread the Mad Scrub blight.</History>
+    <Icon>units/deku/dek_scrubling.dds</Icon>
+    <Tooltip>A sick and corrupted tree that seems to spread the Mad Scrub blight.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/mad/mad_scrubling_b
+    units/mad/mad_guardling_b
+    units/mad/mad_megascrub_b
+    </Entities>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>flora/forest/mad_treeA.xml</Actor>
+  </VisualActor>
+</Entity>

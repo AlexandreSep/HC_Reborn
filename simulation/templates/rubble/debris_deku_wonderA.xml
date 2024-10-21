@@ -1,0 +1,5 @@
+<Entity parent="template_rubble">
+  <VisualActor>
+    <Actor>structures/debris/debris_deku_wonderA.xml</Actor>
+  </VisualActor>
+</Entity>

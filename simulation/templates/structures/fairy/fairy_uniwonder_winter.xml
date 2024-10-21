@@ -1,0 +1,13 @@
+<Entity parent="structures/fairy/fairy_wonder">
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+  </Identity>
+  <Promotion>
+    <Entity>structures/fairy/fairy_uniwonder_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_uniwonderA_winter.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
+  </VisualActor>
+</Entity>

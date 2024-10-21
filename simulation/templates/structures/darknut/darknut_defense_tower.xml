@@ -1,0 +1,117 @@
+<Entity parent="HC_template_structure_defense">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Pierce>12.0</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>90.0</MaxRange>
+      <MinRange>10.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>8</DefaultArrowCount>
+    <GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>32.1</Y>
+        <Z>5.7</Z>
+      </Archer1>
+      <Archer2>
+        <X>5</X>
+        <Y>32.1</Y>
+        <Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-5</X>
+        <Y>32.1</Y>
+        <Z>0</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Overwatch</GenericName>
+    <History>A very tall tower built along the rims of Darknut cities. Citizens manned the Overwatch day and night, tossing Javelins from above with thunderous force.</History>
+    <Icon>structures/darknut/dar_overwatch.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Tower that attacks enemies wite javelins.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="27.5" width="27.5" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/javelin_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/javelin_toss.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_overwatchA.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

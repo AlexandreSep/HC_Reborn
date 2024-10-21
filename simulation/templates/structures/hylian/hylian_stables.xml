@@ -1,0 +1,116 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>350</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="28.0" width="28.0" />
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_stablesA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>35</MinPop>
+    </AIBuild>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Town HylStables</Classes>
+    <GenericName>Urban Stables</GenericName>
+    <History>The Hylians prefer stalling their horses deep within their urban centers, and as such construct housing for cavalry inside city walls.</History>
+    <Icon>structures/hylian/hyl_stablesA.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Trains several Hylian Cavalry units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="30.0" width="30.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>-2.3</X>
+        <Z>-4</Z>
+      </step1>
+	  <step2>
+        <X>-2.3</X>
+        <Z>0</Z>
+      </step2>
+      <step3>
+        <X>-2.3</X>
+        <Z>5</Z>
+      </step3>
+      <step4>
+        <X>-2.3</X>
+        <Z>25</Z>
+      </step4>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/hylian/{civ}_scout_cavalry
+    units/hylian/{civ}_levy_cavalry
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-2.3</X>
+      <Z>-6</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+      hylian/light_cavalry
+    hylian/light_cavalry_krin
+    hylian/soldier_cavalry
+    hylian/kingdom_cavalry
+    </Technologies>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>95</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_stables.xml</constructed>
+      <select>interface/select/building/sel_stables.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_stablesA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldG.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_grovewatch_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_grovewatch_F.xml</Actor>
+  </VisualActor>
+</Entity>

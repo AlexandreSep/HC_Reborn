@@ -1,0 +1,59 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="9.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Yurt</Classes>
+    <GenericName>Housin' Yurt</GenericName>
+    <History>Ahhhh home sweet home! We Moblins make the best houses for our kind! Other Blins could learn from us! Our houses only fall down maybe two or three times a season instead of five!</History>
+    <Icon>structures/moblin/mob_yurt.dds</Icon>
+    <Tooltip>We live here!</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="14.0" width="14.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+    moblin/house_homeonthemove
+    </Technologies>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/moblin/moblin_house_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_house_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>10</Time>
+      <Tooltip>Pack this Housin' Yurt.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_yurtsA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

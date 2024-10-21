@@ -1,0 +1,17 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Infantry"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Attack/Melee/Hack", "multiply": 0.9 },
+		{ "value": "Attack/Melee/Pierce", "multiply": 0.9 },
+		{ "value": "Attack/Melee/Crush", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/Hack", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/Pierce", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/Crush", "multiply": 0.9 }
+	],
+	"auraName": "Tyrant of the Dunes",
+	"auraDescription": "(-10% Melee and Ranged Attack - Enemy Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/ganondorf_dunetyrant.dds"
+}

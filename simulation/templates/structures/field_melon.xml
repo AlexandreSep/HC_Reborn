@@ -1,0 +1,40 @@
+<Entity parent="template_structure_resource_field">
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_field</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Field</Classes>
+    <GenericName>Melon Field</GenericName>
+    <History>A field of Melon to harvest.</History>
+    <Icon>structures/ordona/ord_field.dds</Icon>
+    <Tooltip>A field of Melon to harvest.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <DiminishingReturns>0.90</DiminishingReturns>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.grain</Type>
+  </ResourceSupply>
+  <TerritoryInfluence>
+    <Radius>35</Radius>
+    <Root>false</Root>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/misc/field_melon.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

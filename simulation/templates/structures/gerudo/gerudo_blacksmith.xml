@@ -1,0 +1,77 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="37.0" width="37.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>5</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Weapon Cache</GenericName>
+    <History>Dotted throughout the Gerudo Desert are caches full of weaponry. Armies are never short of supply, and can easily replace broken or lost weaponry at these hidden locations.</History>
+    <Icon>structures/gerudo/ger_cacheA.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Improves Gerudo weapons and armor.</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="35.0" width="35.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      gerudo/attack_ger_infantry_melee_01
+    gerudo/attack_ger_infantry_melee_02
+    gerudo/attack_ger_infantry_ranged_01
+    gerudo/attack_ger_infantry_ranged_02
+    gerudo/attack_ger_cavalry_01
+    gerudo/riju_rapidbows
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_blacksmith.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_cacheA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

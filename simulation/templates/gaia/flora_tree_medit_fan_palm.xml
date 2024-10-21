@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Material</GenericName>
+    <History />
+    <SpecificName>Hylian Palm</SpecificName>
+    <Tooltip>Believed to be an Ancient cousin to the Gerudo Palm from when the Desert was greener, the Hylian Palm thrives along the desert fringes of western Hyrule Field.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/palm_medit_fan_palm.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,11 @@
+{
+	"genericName": "Fadoti",
+	"description": "Fadoti",
+	"icon": "kokiri/choosehero_fado.png",
+	"tooltip": "Select Fadoti as your hero of choice.",
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Support Focus", "tooltipText": "Fadoti focuses on supporting the Kokiri with a variety of abilities."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Fadoti", "tooltipText": "Allows you to summon Fadoti, a support hero that influences others with his music."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Fiddler", "tooltipText": "Support unit that increases the movement speed of attached Battalion."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Seclusion", "tooltipText": "Kokiri Defenses (Barricades, Mudmen Towers, and Walls) become Stealthed."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Forest Festivals", "tooltipText": "Kokiri Laborers now regenerate HP when not in combat."}]
+}

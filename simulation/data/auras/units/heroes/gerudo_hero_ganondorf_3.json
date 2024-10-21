@@ -1,0 +1,15 @@
+{
+	"type": "garrison",
+	"affects": ["Palace"],
+	"modifications": [
+		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.75 },
+		{ "value": "Armour/Pierce", "add": 5 },
+		{ "value": "Armour/Hack", "add": 5 },
+		{ "value": "Armour/Crush", "add": 5 },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 2 }
+	],
+	"auraName": "King of the Gerudo",
+	"auraDescription": "(If Garrisoned, -25% Batch Build Time, +5 Armor, +2 Capture Regen Rate - Palace)",
+	"overlayIcon": "art/textures/ui/session/auras/ganondorf_kinggerudo.dds"
+}
+

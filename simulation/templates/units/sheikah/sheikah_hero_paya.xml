@@ -1,0 +1,86 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Staff</AttackName>
+      <Damage>
+        <Crush>25.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>200</food>
+      <metal>100</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">HeroPaya Hero6 Medium</Classes>
+    <GenericName>Shadow Apprentice</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A young prodigy of Impa's, Paya lives a humble life in Kakariko Village. To others she appears to be a meek and clumsy fool, but it is merely her manner of gathering information and secrets from those that let their guard down around her. She is skilled in the art of drunken monkey and fighting with a quarterstaff.</History>
+    <Icon>units/sheikah/she_hero_paya.dds</Icon>
+    <Lang>sheikah</Lang>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_paya</RequiredTechnology>
+    <SpecificName>Paya</SpecificName>
+    <Tooltip>Melee Hero with countering abilities.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Fire>25.0</Fire>
+        <Forest>25.0</Forest>
+        <Hack>10.0</Hack>
+        <Light>25.0</Light>
+        <Pierce>10.0</Pierce>
+        <Shadow>25.0</Shadow>
+        <Spirit>25.0</Spirit>
+        <Water>25.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>voice/sheikah/paya/paya_death.xml</death>
+      <order_attack>voice/sheikah/paya/paya_attack.xml</order_attack>
+      <order_build>voice/sheikah/paya/paya_repair.xml</order_build>
+      <order_garrison>voice/sheikah/paya/paya_garrison.xml</order_garrison>
+      <order_gather>voice/sheikah/paya/paya_gather.xml</order_gather>
+      <order_heal>voice/sheikah/paya/paya_repair.xml</order_heal>
+      <order_repair>voice/sheikah/paya/paya_repair.xml</order_repair>
+      <order_walk>voice/sheikah/paya/paya_walk.xml</order_walk>
+      <select>voice/sheikah/paya/paya_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero6</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/sheikah/sheikah_hero_paya_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,25 @@
+<Entity parent="units/goron/goron_minerA">
+  <Promotion disable="" />
+  <Attack>
+    <Melee>
+      <AttackName>Drill</AttackName>
+      <Damage>
+        <Pierce>15.0</Pierce>
+      </Damage>
+      <MaxRange>5</MaxRange>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+    <Slaughter>
+      <RepeatTime>1000</RepeatTime>
+      <AttackName>Drill</AttackName>
+      <Damage>
+        <Pierce>25.0</Pierce>
+      </Damage>
+      <MaxRange>5</MaxRange>
+    </Slaughter>
+  </Attack>
+  <VisualActor>
+    <Actor>units/goron/goron_miner_upg.xml</Actor>
+  </VisualActor>
+</Entity>

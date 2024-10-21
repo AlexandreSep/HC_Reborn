@@ -1,0 +1,48 @@
+<Entity parent="template_unit_fauna_hunt_defensive_elephant">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Crush>15.0</Crush>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Height>3.0</Height>
+    <Square depth="7.0" width="3.5" />
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <GenericName>Young Hydrophant</GenericName>
+    <History />
+    <Icon>gaia/fauna_hydrophant_generic.dds</Icon>
+    <Tooltip>Inquisitive and intelligent, young Hydrophants are fiercely guarded by their parents should they stray from their sheltered pools.</Tooltip>
+    <VisibleClasses datatype="tokens">-Elephant</VisibleClasses>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <Max>250</Max>
+    <Type>food.meat</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>units/wild/wild_hydrophantA.xml</Actor>
+  </VisualActor>
+</Entity>

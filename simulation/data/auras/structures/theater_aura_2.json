@@ -1,0 +1,16 @@
+{
+	"type": "range",
+	"radius": 70,
+	"affects": ["Soldier"],
+	"supersedes": "structures/theatre_aura_1",
+	"modifications": [
+		{ "value": "Builder/Rate", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.10 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.10 }
+	],
+	"auraName": "Epic War Plays",
+	"auraDescription": "(Requires 'Epic War Plays' researched. +5% Build Rate, Gather Rate, and Walk/Run Speed - Soldier)",
+	"requiredTechnology": "zora/theater_epicplays",
+	"overlayIcon": "art/textures/ui/session/auras/theater_aura_1.dds"
+}

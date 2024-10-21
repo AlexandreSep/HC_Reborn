@@ -1,0 +1,33 @@
+<Entity parent="structures/stalfos/stalfos_civil_centre">
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/ruins/ruins_DMA</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Icon>structures/stalfos/sta_cc_dmA.dds</Icon>
+  </Identity>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+	  structures/stalfos/stalfos_ruinsA_dm
+    </Entities>
+  </Builder>
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_civic_centreA_dm.xml</Actor>
+  </VisualActor>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/stalfos/stalfos_civil_centreB_dm</Entity>
+      <Time>60</Time>
+      <Tooltip>Upgrade into Cemetery.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+</Entity>

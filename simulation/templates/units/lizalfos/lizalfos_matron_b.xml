@@ -1,0 +1,68 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Fire Sword</AttackName>
+      <Damage>
+        <Fire>10.0</Fire>
+        <Hack>10.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>65</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>380</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Medium Class70 Volvamight Lizarmored</Classes>
+    <GenericName>Unique Unit</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Matrons were the head mothers of a given Clutch and thus owned all labor and soldiers belonging to their family line. When threatened by any enemy the Matron would bring a powerful flaming sword with her into battle, igniting anything she attacked on fire.</History>
+    <Icon>units/lizalfos/liz_matron.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>civ_choices/lizalfos/choosehero_talik</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_matron_b</SelectionGroupName>
+    <SpecificName>Matron</SpecificName>
+    <Tooltip>Talik's Unique Unit. Poweful Melee unit armed with a flaming sword.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lizalfos/matron/matron_death.xml</death>
+      <order_attack>voice/lizalfos/matron/matron_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/matron/matron_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/matron/matron_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/matron/matron_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/matron/matron_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/lizalfos/matron/matron_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_matron_b.xml</Actor>
+  </VisualActor>
+</Entity>

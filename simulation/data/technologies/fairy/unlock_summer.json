@@ -1,0 +1,10 @@
+{
+	"genericName": "The Secret of Summer",
+	"description": ".",
+	"cost": { "food": 0, "wood": 0, "stone": 0, "metal": 250 },
+	"icon": "fairy/unlock_summer.dds",
+	"researchTime": 30,
+	"tooltip": "The Secret of Summer is revealed by Tarm, allowing the Fairies to move the Sundial into the Season of Summer. (Allows you to change the current season from Spring to Summer)",
+	"modifications": [],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

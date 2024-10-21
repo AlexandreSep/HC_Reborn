@@ -1,0 +1,70 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Smithy</GenericName>
+    <History>Ordonians were known for agriculture, livestock, beer, and many other things... but weapons and armor were not among them. Province blacksmiths may not have been anywhere near the finest in Hyrule, but they still did their best to provide soldiers with decent swords and armor.</History>
+    <Icon>structures/ordona/ord_smithy.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Upgrades Ordonian armor and weapons.</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="25.0" width="25.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    ordona/smithy_apprenticeship
+    ordona/smithy_cottoncuirass
+    ordona/smithy_ramscrown
+    ordona/smithy_isonarrow
+    ordona/smithy_apprenticeship_rusl
+    ordona/smithy_isonarrow_rusl
+    ordona/rusl_academycraft
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_blacksmith.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_smithyA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

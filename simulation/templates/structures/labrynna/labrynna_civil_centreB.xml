@@ -1,0 +1,21 @@
+<Entity parent="structures/labrynna/labrynna_civil_centre">
+  <Identity>
+    <GenericName>Town Center</GenericName>
+    <Icon>structures/labrynna/lab_civcenterB.dds</Icon>
+  </Identity>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_civil_centreC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Upgrade into City Hall.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_civic_centreB.xml</Actor>
+  </VisualActor>
+</Entity>

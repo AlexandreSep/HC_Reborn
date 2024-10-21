@@ -1,0 +1,86 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Lantern</AttackName>
+      <Damage>
+        <Fire>50.0</Fire>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>75</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>350</Max>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Large Class100</Classes>
+    <GenericName>Poe Necromancer</GenericName>
+    <History>The long departed spirits of ancient necromancers, these phantasmal Poes hold the secret to everlasting undeath in their grasp. When the Stalfos roam around and invade to increase their number, the tall and lumbering Poe Necromancers will glide across the battlefield and animate the slain corpses of their victims.</History>
+    <Icon>units/stalfos/sta_necromancer.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_poenecro_b</SelectionGroupName>
+    <Tooltip>Ghost unit that can pass through any obstacle and raise the dead from corpses.</Tooltip>
+    <VisibleClasses datatype="tokens">
+    </VisibleClasses>
+    <RequiredTechnology>stalfos/stalfos_getmausoleum</RequiredTechnology>
+  </Identity>
+  <Position>
+    <Floating>true</Floating>
+    <TurnRate>3.25</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>45.0</Hack>
+        <Pierce>45.0</Pierce>
+        <Crush>45.0</Crush>
+        <Fire>3.0</Fire>
+        <Forest>3.0</Forest>
+        <Hack>25.0</Hack>
+        <Light>3.0</Light>
+        <Shadow>3.0</Shadow>
+        <Spirit>3.0</Spirit>
+        <Water>3.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/poe_lantern.xml</attack_melee>
+      <death>voice/stalfos/necropoe/necropoe_death.xml</death>
+      <order_attack>voice/stalfos/necropoe/necropoe_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/necropoe/necropoe_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/necropoe/necropoe_gather.xml</order_gather>
+      <order_repair>voice/stalfos/necropoe/necropoe_repair.xml</order_repair>
+      <order_walk>voice/stalfos/necropoe/necropoe_walk.xml</order_walk>
+      <run>actor/movement/poe/poe_hover.xml</run>
+      <select>voice/stalfos/necropoe/necropoe_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/poe/poe_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_poenecro_b.xml</Actor>
+  </VisualActor>
+</Entity>

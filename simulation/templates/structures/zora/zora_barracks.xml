@@ -1,0 +1,84 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_barracksA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Dormitory</GenericName>
+    <History>The best and brightest warriors of the Zora Dominion are present at these large schools, from which they can train dozens of soldiers to fill the ranks of their army.</History>
+    <Icon>structures/zora/zor_dormitory.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Trains the bulk of the Dominion's units.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/zora/{civ}_riverpatrol_b
+    units/zora/{civ}_halberdier_b
+      units/zora/{civ}_blademaster_b
+    units/zora/{civ}_boomeranger_b
+    units/zora/{civ}_infiltrator_b
+    units/zora/{civ}_shocktroop_b
+    units/zora/{civ}_domsupreme_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>13</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+      zora/troop_secureddomain
+    zora/troop_lutoboomerang
+    zora/troop_mixedteam
+    zora/ruto_nayrushield
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/zora/zora_barracksA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

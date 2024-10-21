@@ -1,0 +1,12 @@
+{
+	"type": "formation",
+	"affects": ["Seal"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 1.1 },
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"auraName": "Sandseal Master",
+	"auraDescription": "(In Formation, +25% Health, +10% Walk/Run Speed - Dune Walker, Sandseal Plower, and Dust Sentinel)",
+	"overlayIcon": "art/textures/ui/session/auras/riju_sealmaster.dds"
+}

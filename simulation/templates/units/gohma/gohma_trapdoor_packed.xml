@@ -1,0 +1,22 @@
+<Entity parent="units/gohma/gohma_trapdoor_common">
+  <Identity>
+    <Icon>units/gohma/goh_trapdoor.dds</Icon>
+  </Identity>
+  <Pack>
+    <Entity>units/gohma/gohma_trapdoor_unpacked</Entity>
+    <State>packed</State>
+    <Time>100</Time>
+  </Pack>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/gohma/gohma_trapdoor_b.xml</Actor>
+  </VisualActor>
+</Entity>

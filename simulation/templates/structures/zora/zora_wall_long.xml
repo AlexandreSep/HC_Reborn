@@ -1,0 +1,65 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="38.5" />
+  </Footprint>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>4</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer2>
+      <Archer3>
+        <X>-4</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer3>
+      <Archer4>
+        <X>8</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer4>
+      <Archer5>
+        <X>-8</X>
+        <Y>9.5</Y>
+        <Z>0</Z>
+      </Archer5>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_zora_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <GenericName>Dominion Wall</GenericName>
+    <History>Built to impress vistors and invaders as much as defend Zora Cities, these graceful gilded walls are nonetheless master-crafted and can withstand almost anything thrown at them.</History>
+    <Icon>structures/zora/zor_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="40.0" />
+  </Obstruction>
+  <Upgrade>
+    <Gate>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/zora/zora_wall_gate</Entity>
+      <Time>10</Time>
+      <Tooltip>Convert to Dominion Gate.</Tooltip>
+    </Gate>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/zora/zora_wall_longA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldG.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>40.0</Length>
+  </WallPiece>
+</Entity>

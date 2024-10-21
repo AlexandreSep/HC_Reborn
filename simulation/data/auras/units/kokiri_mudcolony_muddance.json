@@ -1,0 +1,15 @@
+{
+  "type": "formation",
+  "affects": [ "Mudman" ],
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/DodgeRate",
+      "add": 15
+    }
+  ],
+  "auraName": "Mud Dance",
+  "auraDescription": "{Kokiri Melee Infantry in formation with non-mechanical Mudmen units gain the Nimble Footing bonus)",
+  "requiredTechnology": "kokiri/mirora_muddance",
+  "stackable": false,
+  "overlayIcon": "art/textures/ui/session/auras/battlebro_aura_1.dds"
+}

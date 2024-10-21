@@ -1,0 +1,41 @@
+<Entity parent="units/darknut/darknut_mazura_b">
+  <Attack>
+    <Melee>
+      <AttackName>Mace</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+      <Damage>
+        <Crush>30.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Health>
+    <Max>350</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">GainedLevel</Classes>
+    <SpecificName>Mighty Mazura Hippikon</SpecificName>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>55.0</Hack>
+        <Pierce>45.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/darknut/darknut_mazura_mighty.xml</Actor>
+  </VisualActor>
+</Entity>

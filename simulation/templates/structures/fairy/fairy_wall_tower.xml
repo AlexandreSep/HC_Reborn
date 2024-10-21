@@ -1,0 +1,29 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_fairy_leyA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <GenericName>Ley Line</GenericName>
+    <History>A magical line drawn upon the earth by Fairies. It seems to confuse and halt the passage of enemies.</History>
+    <Icon>structures/fairy/fai_leyline_spring.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_leyline_tower_spring.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

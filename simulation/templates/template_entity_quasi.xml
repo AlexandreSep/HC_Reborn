@@ -1,0 +1,32 @@
+<Entity>
+  <AIProxy />
+  <Battalion>
+    <FormationTemplate>special/formations/HC_standard</FormationTemplate>
+    <SameActorSeed>false</SameActorSeed>
+    <Size>1</Size>
+    <SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <Cost>
+    <BattalionSlots>1</BattalionSlots>
+    <BuildTime>1</BuildTime>
+    <Population>0</Population>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Ownership />
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <FloatDepth>0.0</FloatDepth>
+    <Floating>false</Floating>
+    <TurnRate>6.0</TurnRate>
+  </Position>
+  <Selectable />
+</Entity>

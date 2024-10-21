@@ -1,0 +1,13 @@
+{
+	"genericName": "Know it all Nuts",
+	"description": "Well loved and spiced Deku Nuts packed with flavor, courtesy of the Know-it-all-Brothers' secret recipe.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": { "all": [{ "entity": { "class": "Fairgrounds", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Fairgrounds Addon.",
+	"icon": "kokiri/trade_knowitallnuts.dds",
+	"researchTime": 40,
+	"tooltip": "Well loved and spiced Deku Nuts packed with flavor, courtesy of the Know-it-all-Brothers' secret recipe. (+25% Income - Shopkeeper)",
+	"modifications": [{"value": "Trader/GainMultiplier", "multiply": 1.25}],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,17 @@
+<Entity parent="template_gaia_geo_rock">
+  <Identity>
+    <GenericName>Ore</GenericName>
+    <History>A crate full of Metal Ores for the taking.</History>
+    <SpecificName>Ore Crate</SpecificName>
+    <Tooltip>A crate full of Metal Ores for the taking.</Tooltip>
+  </Identity>
+  <ResourceSupply>
+    <Max>100</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>2</MaxGatherers>
+    <Type>stone.ore</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>props/resources/crate_metalA.xml</Actor>
+  </VisualActor>
+</Entity>

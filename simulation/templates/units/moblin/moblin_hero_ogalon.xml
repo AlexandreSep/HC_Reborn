@@ -1,0 +1,80 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Damage>
+        <Hack>20.0</Hack>
+        <Pierce>9.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>455</food>
+      <metal>100</metal>
+      <stone>110</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2500</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">HeroOgalon Hero1 Medium</Classes>
+    <GenericName>Big Bad Baddy Commander</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The right hand proper lady of Ganon, Ogalon was a very smarty Blin that made all his great plans work and come true! Wearing nice armor and having a big pointy stick, Ogalon could kill ten whole H﻿ylians all at once! Well maybe not that many, but she was a smart and stro﻿ng fighter and lead Blins to winning﻿﻿!</History>
+    <Icon>units/moblin/mob_hero_ogalon.dds</Icon>
+    <Lang>moblin</Lang>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ogalon</RequiredTechnology>
+    <SpecificName>Ogalon</SpecificName>
+    <Tooltip>Ganon's best Hero lady! She stab the bad guys with her spear and has a big shield!</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>50.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>65.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/moblin/ogalon/ogalon_death.xml</death>
+      <order_attack>voice/moblin/ogalon/ogalon_attack.xml</order_attack>
+      <order_garrison>voice/moblin/ogalon/ogalon_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/ogalon/ogalon_gather.xml</order_gather>
+      <order_repair>voice/moblin/ogalon/ogalon_repair.xml</order_repair>
+      <order_walk>voice/moblin/ogalon/ogalon_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/moblin/ogalon/ogalon_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero1</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/moblin/moblin_hero_ogalon_b.xml</Actor>
+  </VisualActor>
+</Entity>

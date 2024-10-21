@@ -1,0 +1,21 @@
+<Entity parent="units/fairy/fairy_drove_b">
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>10</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/fairy/fairy_drove_spring</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Spring</Classes>
+    <Icon>units/fairy/fai_drove_spring.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_drove_summer</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_drove_spring.xml</Actor>
+  </VisualActor>
+</Entity>

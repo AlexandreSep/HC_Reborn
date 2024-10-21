@@ -1,0 +1,177 @@
+{
+	"Code": "gerudo",
+	"Culture": "desert",
+	"Name": "Gerudo",
+	"Emblem": "session/portraits/emblems/emblem_gerudo.dds",
+	"History": "A desert-dwelling race of female warriors, the Gerudo are descended from an ancient and powerful empire that stretched across the western sands of Hyrule for countless centuries. Surrounded on all sides by hostile nations, scarce resources, and a curse that wiped out all the men of their race, the Gerudo have suffered a continuous barrage of brutal hardships, setbacks, and wars without abandon.",
+	"Music":[
+			{"File":"gerudo_theme1.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient1.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient2.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient3.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient4.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient5.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient6.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient7.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient8.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient9.ogg", "Type":"peace"},
+			{"File":"gerudo_ambient10.ogg", "Type":"peace"},
+			{"File":"gerudo_battle1.ogg", "Type":"battle"},
+			{"File":"gerudo_battle2.ogg", "Type":"battle"},
+			{"File":"gerudo_battle3.ogg", "Type":"battle"},
+			{"File":"gerudo_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Emperor Ganondorf",
+					"Class": "",
+					"Armament": "Warlord's Scimitar",
+					"Emblem": "",
+					"History": "After the Moblin King Ganon has cursed the Gerudo people, within but a generation the entire male population had all but vanished. Despite this affliction, Ganondorf was born. Thrust into a leadership position and raised by his two surrogate mothers, the King of Thieves would ascend the throne and lead the Gerudo people in several desperate attempts to save themselves from extinction. Ganondorf has little compassion, and years of watching his people fade into death has driven his madness to save them. He has a personal hatred for Hylians, whom he blames for preventing the Gerudo from expanding to save themselves."
+				},
+				{
+					"Name": "Nabooru, Sage of Spirits",
+					"Class": "",
+					"Armament": "Dual Scimitars",
+					"Emblem": "",
+					"History": "The legal wife of Ganondorf, right-hand woman in command of the Gerudo armies, and the Sage of Spirits, Nabooru's life is one of servitude to many competing individuals and ideologies. At a young age she was wed to Ganondorf against her will, only to be awakened as a Sage soon after and forced to undermine his command. Nabooru constantly struggles to work both with and against the regime of her husband. Though she shares in his belief of saving their people through conquest, her duties as a Sage often puts her in direct opposition with Ganondorf, and perhaps more notably, his surrogate mothers, Koume and Kotake."
+				},
+				{
+					"Name": "General Urbosa",
+					"Class": "",
+					"Armament": "Scimitar of the Seven",
+					"Emblem": "",
+					"History": "One of Ganondorf's countless daughters, Urbosa has loyally served the Gerudo people, and zealously believes in the Emperor's cause and the invasion of Hyrule. During Ganondorf's imprisonment at the hands of the Darknuts, she ruthlessly rallied the scattered Gerudo armies and established a network of allies to free her father and retake the entire Desert. Urbosa display and unwavering loyalty to Ganondorf and is jealous of his legal daughter, the Princess Riju. She is quite brutal in her demeanor and will to fight."
+				},
+				{
+					"Name": "Princess Makeela Riju",
+					"Class": "",
+					"Armament": "Golden Bow",
+					"Emblem": "",
+					"History": "The daughter of Ganondorf and Nabooru, Riju is the only heir to the Gerudo throne. Because of her youth, she tends to be shunned from events in Hyrule, and usually spends her time raising the Sandseals of the Desert. However, as the actions of her father tear Hyrule apart, the young princess is drawn closer to action. Riju believes that the survival of the Gerudo people is through reaching out to other cultures, and not through the conquest her father seeks. Many Gerudo see such ideas as naive, and certain to doom their people."
+				}  
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Desert Raiders",
+			"History": "",
+			"Description": "Attacking enemy workers and resource-drop off buildings generates a trickle of Rupees." 
+		},			
+		{
+			"Name": "Battle Ready",
+			"History": "",
+			"Description": "All Buildings are garrisonable, and most can fire arrows at enemy units." 
+		},
+		{
+			"Name": "Ransack",
+			"History": "",
+			"Description": "+20% loot from enemy units and buildings." 
+		}  
+	],
+	"CivChoices":
+	[
+		"civ_choices/gerudo/choosehero_aveil",
+		"civ_choices/gerudo/choosehero_buliara",
+		"civ_choices/gerudo/choosehero_urbosa",
+		"civ_choices/gerudo/choosehero_riju",
+		"civ_choices/gerudo/choosehero_ganondorf",
+		"civ_choices/gerudo/choosehero_nabooru"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Spoils of War",
+			"History": "",
+			"Description": "Allies gain +10% Loot"
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Desert Colossus",
+			"Class": "",
+			"Emblem": "",
+			"History": "Standing tall and defiant against the harsh winds of the Haunted Wasteland, the Desert Colossus is a true beacon of Gerudo masonry and engineering. Built in the likeness of the First Sage of Spirits, Kovaloo, the Desert Colossus guards the entrance to the Spirit Temple: a place of meditation, reflection, and communion with the souls of the deceased. (In Aura, +2 Attack Internal per Garrison Unit - Buildings, +50% Territory Influence)",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "Titan: Twinrova, the Sorceress Sisters",
+			"Class": "",
+			"Emblem": "",
+			"History": "The surrogate mothers of Ganondorf, the twin sisters Koume and Kotake are capable of magically merging into a powerful and malevolent entity known as Twinrova. When combined, the witches are capable of unleashing devastating fire and ice magic against enemies.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/gerudo/gerudo_civil_centre"
+		},
+		{
+			"Template": "units/gerudo/gerudo_artisanA",
+			"Count": 4
+		},
+		{
+			"Template": "units/gerudo/gerudo_glaivegrunt_b",
+			"Count": 2
+		},		
+		{
+			"Template": "units/gerudo/gerudo_marauder_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/gerudo/gerudo_trailblazer_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+  "AINames": [
+    "Emperor Ganondorf",
+    "Nabooru, Sage of Spirits",
+    "General Urbosa",
+    "Princess Makeela Riju",
+    "Buliara",
+    "Aveil"
+  ],
+  "SkirmishReplacements": {
+    "skirmish/structures/default_civil_centre": "structures/gerudo/gerudo_civil_centre",
+    "skirmish/units/default_support_female_citizen": "units/gerudo/gerudo_artisanA",
+    "skirmish/units/default_cavalry": "units/gerudo/gerudo_trailblazer_b",
+    "skirmish/units/default_infantry_melee_b": "units/gerudo/gerudo_artisanA",
+    "skirmish/units/default_infantry_ranged_b": "units/gerudo/gerudo_artisanA",
+    "skirmish/structures/default_defense_tower": "structures/gerudo/gerudo_defense_tower",
+    "skirmish/structures/default_house_10": "structures/gerudo/gerudo_house"
+  },
+	"SelectableInGameSetup": true
+}

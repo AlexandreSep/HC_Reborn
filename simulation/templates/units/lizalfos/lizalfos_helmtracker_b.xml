@@ -1,0 +1,74 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Damage>
+        <Pierce>14.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+      <Stun>
+        <Chance>0</Chance>
+        <Time>1000</Time>
+      </Stun>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>35</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>290</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Large Class100 Helmtracker</Classes>
+    <GenericName>Helmasaur Tracker</GenericName>
+    <History>The stocky Helmasaurs native to Death Mountain were brought south by the Lizalfos during their exodus away from their homeland. Used as pets, beasts and burden, and war mounts, the Helmasaurs may have been short but packed a terrifying ram. Their external skulls were more durable than most iron armor, and anything unfortunate enough to be caught in a charge was sure to be splattered to guts.</History>
+    <Icon>units/lizalfos/liz_helmtracker.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_helmtracker_b</SelectionGroupName>
+    <Tooltip>Durable Cavalry unit that chases down enemies with their axes in hand.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>45.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/blunt_hit.xml</attack_melee>
+      <death>voice/lizalfos/lizalfosA/lizalfosA_death.xml</death>
+      <order_attack>voice/lizalfos/lizalfosA/lizalfosA_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/lizalfosA/lizalfosA_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/lizalfosA/lizalfosA_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/lizalfosA/lizalfosA_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/lizalfosA/lizalfosA_walk.xml</order_walk>
+      <run>actor/movement/boar/boar_footsteps.xml</run>
+      <select>voice/lizalfos/lizalfosA/lizalfosA_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/boar/boar_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.3076</RunMultiplier>
+    <WalkSpeed>13.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_helmasaur_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,79 @@
+<Entity parent="HC_template_hero_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Axe</AttackName>
+      <Damage>
+        <Hack>20.0</Hack>
+        <Pierce>14.0</Pierce>
+      </Damage>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>440</food>
+      <metal>100</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2200</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">HeroKingBulblin Hero2 Large</Classes>
+    <GenericName>Boss of the Bulblins</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Mighty scary King Bulblin is, we Blins have legends that say he fell off a bridge and lived... twice! Ridin' on the back of the big old awesome Lord Bullbo, he goes swinging into battle to lop some heads off of the stinking Hylians and anyone who gets in the Moblin way!</History>
+    <Icon>units/moblin/mob_hero_kingbulblin.dds</Icon>
+    <Lang>moblin</Lang>
+    <RequiredTechnology>civ_choices/moblin/choosehero_kingbulblin</RequiredTechnology>
+    <SpecificName>King Bulblin</SpecificName>
+    <Tooltip>Big bad Cavalry Hero who chops up the baddies with his big axe!</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>60.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/moblin/kingbulblin/kingbulblin_death.xml</death>
+      <order_attack>voice/moblin/kingbulblin/kingbulblin_attack.xml</order_attack>
+      <order_garrison>voice/moblin/kingbulblin/kingbulblin_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/kingbulblin/kingbulblin_gather.xml</order_gather>
+      <order_repair>voice/moblin/kingbulblin/kingbulblin_repair.xml</order_repair>
+      <order_walk>voice/moblin/kingbulblin/kingbulblin_walk.xml</order_walk>
+      <run>actor/movement/boar/boar_footsteps.xml</run>
+      <select>voice/moblin/kingbulblin/kingbulblin_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/boar/boar_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero2</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/moblin/moblin_hero_lordbullbo_b.xml</Actor>
+  </VisualActor>
+</Entity>

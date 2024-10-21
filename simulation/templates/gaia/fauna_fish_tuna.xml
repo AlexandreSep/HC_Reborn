@@ -1,0 +1,12 @@
+<Entity parent="template_gaia_fish">
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Reekfish</GenericName>
+    <History />
+    <Icon>gaia/fauna_fish_generic.dds</Icon>
+    <Tooltip>Although they have a nasty smell to most civilized beings, Reekfish are renowned for their excellent taste. Their odor is also a powerful lure for all sorts of predators, and is used by many hunters and poachers across Hyrule. The Zora of Lanayru Province do not kill or eat these fish, for they are considered sacred, and they will buy living specimens to preserve them.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>fauna/fish_generic.xml</Actor>
+  </VisualActor>
+</Entity>

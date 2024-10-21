@@ -1,0 +1,15 @@
+<Entity parent="units/moblin/moblin_bugblin_b">
+  <Attack>
+    <Melee>
+      <AttackName>Various</AttackName>
+      <Damage>
+        <Crush>7.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Promotion disable="" />
+</Entity>

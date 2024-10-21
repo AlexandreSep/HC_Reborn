@@ -1,0 +1,108 @@
+<Entity parent="HC_template_structure_defense">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Forest>5.0</Forest>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>80.0</MaxRange>
+      <MinRange>5.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>2200</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/acid_explosionA.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>45.0</Speed>
+        <Spread>1.5</Spread>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+    units/mite_aura_2
+  </Auras>
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>4</DefaultArrowCount>
+    <GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>3</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>10</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/gohma/gohma_mite_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic GohmaBuild DefenseTower Town</Classes>
+    <GenericName>Mite Mound</GenericName>
+    <History>The Mite Mound spawns and houses a huge swarm of Gohma Mites. When enemy forces come within the radius of the Mite Mound, its swarms will relentlessly tear apart anything they can get their tiny mouths unto.</History>
+    <Icon>structures/gohma/goh_mitemound.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Defensive Structure that spawns Gohma Mites.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="7.5" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/natural/gohma_acid_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/natural/gohma_acid_attack.xml</attack_ranged>
+      <constructed>interface/complete/building/gohma/complete_gohwallA.xml</constructed>
+      <select>interface/select/building/gohma/sel_gohwallA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_turretB.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

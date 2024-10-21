@@ -1,0 +1,22 @@
+<Entity parent="units/fairy/fairy_mistwalker_b">
+  <Identity>
+    <Classes datatype="tokens">Autumn</Classes>
+    <Icon>units/fairy/fai_mistwalker_autumn.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_mistwalker_winter</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.25</food>
+      <metal>0.25</metal>
+      <stone>0.25</stone>
+      <wood>0.25</wood>
+    </Rates>
+  </ResourceTrickle>
+  <VisualActor>
+    <Actor>units/fairy/fairy_mistwalker_autumn.xml</Actor>
+  </VisualActor>
+</Entity>

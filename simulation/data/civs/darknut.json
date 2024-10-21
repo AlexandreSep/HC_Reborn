@@ -1,0 +1,177 @@
+{
+	"Code": "darknut",
+	"Culture": "ancient",
+	"Name": "Darknut Legion",
+	"Emblem": "session/portraits/emblems/emblem_darknut.dds",
+	"History": "Perhaps the most ancient civilization still standing in Hyrule, the Darknut people nearly exterminated themselves in a massive civil war nearly four thousand years past. Banning all practice of magic and dishonorable forms of combat and warfare, a strict code of honor and ethics was mandated and their society was brutally restructured in order to avoid such a fate.",
+	"Music":[
+			{"File":"darknut_theme1.ogg", "Type":"peace"},
+			{"File":"darknut_ambient1.ogg", "Type":"peace"},
+			{"File":"darknut_ambient2.ogg", "Type":"peace"},
+			{"File":"darknut_ambient3.ogg", "Type":"peace"},
+			{"File":"darknut_ambient4.ogg", "Type":"peace"},
+			{"File":"darknut_ambient5.ogg", "Type":"peace"},
+			{"File":"darknut_ambient6.ogg", "Type":"peace"},
+			{"File":"darknut_ambient7.ogg", "Type":"peace"},
+			{"File":"darknut_ambient8.ogg", "Type":"peace"},
+			{"File":"darknut_ambient9.ogg", "Type":"peace"},
+			{"File":"darknut_ambient10.ogg", "Type":"peace"},
+			{"File":"darknut_battle1.ogg", "Type":"battle"},
+			{"File":"darknut_battle2.ogg", "Type":"battle"},
+			{"File":"darknut_battle3.ogg", "Type":"battle"},
+			{"File":"darknut_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Zalunbar",
+					"Class": "",
+					"Armament": "Deity Axe",
+					"Emblem": "",
+					"History": "A powerful Darknut warrior, Zalunbar was deified by his people and assumed control of the Legion nearly three thousand years prior. His unnaturally long life and apparent immortality ignited much fervor amongst his people and convinced many he was a true god. Zalunbar was utterly narcissistic and completely egocentric. Centuries of constant praise and worship has let his ego spiral completely out of control, and there are few who would dare question his godhood."
+				},
+				{
+					"Name": "Yaraxonal",
+					"Class": "",
+					"Armament": "Duel Khopesh",
+					"Emblem": "",
+					"History": "Yaraxonal was a former Sage of Hyrule, as well as leader and chief deity of the Darknut Legion prior to Zalunbar. Unknown to the Darknut populace, she was imprisoned in stone by Vaati and usurped by Zalunbar. For nearly three thousand years she faded from memory, using her powers as a Sage to reach out and send a message for help. As a Sage of Hyrule, Yaraxonal was an exception to the Legion's no magic policy. She had command of the desert winds and would use them against enemies of the Legion. Despite her power and veneration as a god, Yaraxonal was rather humble and was responsible for expanding the Legion through diplomacy and assimilation rather than conquest."
+				},
+				{
+					"Name": "Senturon",
+					"Class": "",
+					"Armament": "Armorbreaker Sword",
+					"Emblem": "",
+					"History": "Senturon served as one of Vaati's enforcers during the ancient age of Hyrule. Seemingly unkillable, rumors began to build around Senturon that he had the power to raise himself from the dead. Regardless, he mercilessly carried out the orders of the Legion and completely drove the Wind Tribe from Hyrule. After nearly three thousand years, the name Senturon has been forgotten and the moniker of Black Knight has faded into legend. Still, there are some words spoken that this grim warrior still walks in the shadows of Hyrule and serves the Legion to this day."
+				},
+				{
+					"Name": "Alros",
+					"Class": "",
+					"Armament": "Armorbreaker Sword",
+					"Emblem": "",
+					"History": "A former fanatic of Zalunbar, Alros fled into the Gerudo Desert after the fall of his former idol and abandoned the code of the Legion. After decades in sorrow, Alros regained his resolve and began amassing an army of mercenaries and fellow Darknut outcasts. For years he has ravaged the desert with his fellow reavers; his ultimate goal is nothing short of taking the Darknut throne and replacing Zalunbar as the living god of the Legion."
+				}
+			]
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Legendary Warriors",
+			"History": "",
+			"Description": "Many Darknut units can gain experience and level up like Heroes."
+		},
+		{
+			"Name": "Megalopolis",
+			"History": "",
+
+			"Description": "Darknuts have a single Civil Center and cannot build a new one or replace it."
+		},
+		{
+			"Name": "Mercenary Masters",
+			"History": "",
+			"Description": "Darknuts can hire Mercenaries from every culture."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/darknut/choosehero_onon",
+		"civ_choices/darknut/choosehero_militron",
+		"civ_choices/darknut/choosehero_alros",
+		"civ_choices/darknut/choosehero_senturon",
+		"civ_choices/darknut/choosehero_yaraxonal",
+		"civ_choices/darknut/choosehero_zalunbar"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Mercenary Connections",
+			"History": "",
+			"Description": "Allies can train all Mercs as the Darknuts do, except for Legion specific Mercs."
+		}
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Tower of Hera",
+			"Class": "",
+			"Emblem": "",
+			"History": "One of the oldest structures in Hyrule, the Tower of Hera has long stood in the mountains of the Gerudo Desert, visible from many locations below. It has been abandoned by the Darknut people many times throughout history, only to be reconquered and repurposed. The original purpose of the tower is lost to history, though many believe it once served as an Apotheon for Darknut Kings and Queens. During their various reconquests of the ancient tower, it has also served as a prison, a lair for captured beasts and monsters, and a general temple of worship. In more modern times it serves as powerful Fortress and command center for those truely in power over the Legion.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		},
+		{
+			"Name": "Titan: Vaati, the Wind Demon",
+			"Class": "",
+			"Emblem": "",
+			"History": "Once a member of the Minish race, Vaati encountered one of the ancient demons that ravaged primordial Hyrule and formed a pact with the beast. Granting him incredible power, Vaati eventually lost himself to the beast's possession. Although no longer himself, the demon retained Vaati's image, name, and personality as it set out to accomplish its goals in Hyrule. When exposed and under threat, the demon abandons his Vaati disguise and reveals his horrific bat-like form.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		}
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/darknut/darknut_civil_centre"
+		},
+		{
+			"Template": "units/darknut/darknut_thrallA",
+			"Count": 4
+		},
+		{
+			"Template": "units/darknut/darknut_hoplite_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/darknut/darknut_peltast_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/darknut/darknut_gymnatai_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Zalunbar",
+		"Yaraxonal",
+		"Senturon",
+		"Alros"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/darknut/darknut_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/darknut/darknut_thrallA",
+		"skirmish/units/default_cavalry" :  "units/darknut/darknut_molgera_b",
+		"skirmish/units/default_infantry_melee_b": "units/darknut/darknut_thrallA",
+		"skirmish/units/default_infantry_ranged_b": "units/darknut/darknut_thrallA",
+		"skirmish/structures/default_house_10" : "units/darknut/darknut_gymnatai_b"
+	},
+	"SelectableInGameSetup": true
+}

@@ -1,0 +1,6 @@
+<Entity parent="units/labrynna/labrynna_borderguard_b">
+  <Turretable />
+  <Identity>
+    <Classes datatype="tokens">HiddenUI</Classes>
+  </Identity>
+</Entity>

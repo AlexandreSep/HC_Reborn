@@ -1,0 +1,17 @@
+{
+	"genericName": "Mage Fasting",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 100, "metal": 200},
+	"requirements": {"all": [ {"tech": "civ_choices/zora/choosehero_laruto"}, {"tech": "phase_city"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Requires Laruto and City Phase.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+10% Cost Reduction - All Mages.",
+	"modifications": [{ "value": "Cost/Resources/food", "multiply": 0.90 },
+					  { "value": "Cost/Resources/wood", "multiply": 0.90 },
+					  { "value": "Cost/Resources/stone", "multiply": 0.90 },
+					  { "value": "Cost/Resources/metal", "multiply": 0.90 }],
+	"affects": ["Mage"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

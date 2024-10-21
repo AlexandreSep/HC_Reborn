@@ -1,0 +1,101 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/religious_territory_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>200</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="41.0" width="41.0" />
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_deku_medium</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>5</BattalionSize>
+      <Chance>0</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/deku/deku_scrubling_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">DekuBuilding Town</Classes>
+    <GenericName>Stage</GenericName>
+    <History>A little known fact to outsiders about Scrubs was their elaborate and musical stage plays. The Stage often served as the heart of a Scrub community and many Hornlings would play and dance on the platform.</History>
+    <Icon>structures/deku/dek_stage.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Cultural building that increases the range of Territory that Civil Centers generate.</Tooltip>
+    <VisibleClasses datatype="tokens">Culture</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="40.0" width="40.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>0</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>15</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>20</Z>
+      </step3>
+      <step4>
+        <X>0</X>
+        <Z>30</Z>
+      </step4>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/deku/{civ}_hornling_b
+    units/deku/{civ}_tiffer_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    deku/hornling_bwaamp
+    deku/hornling_amplification
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+      <upgraded>interface/complete/building/complete_temple.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/deku/deku_stageA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

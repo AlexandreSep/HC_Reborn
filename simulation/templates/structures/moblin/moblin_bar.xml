@@ -1,0 +1,65 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/bar_aura
+  </Auras>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="12.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>100</MinPop>
+    </AIBuild>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">BestinBar</Classes>
+    <GenericName>Bestin' Bar n Drinks</GenericName>
+    <History>Oh man the Boko juice is the best! We Moblins when we are done fighting we gulp that stuff up real nice like! Makes us happy for the night and ready for more fighting!</History>
+    <Icon>structures/moblin/mob_bar.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Makes the Workers work even better!</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="21.0" width="21.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    moblin/bar_lightemup
+    </Technologies>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/moblin/moblin_bar_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_bar_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack up this Bestin' Bar n Drinks.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_barA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

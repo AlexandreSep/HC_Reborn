@@ -1,0 +1,5 @@
+<Entity parent="units/hylian/hylian_scorpio_b">
+  <VisualActor>
+    <Actor>units/hylian/malkariko/malkariko_scorpio_b.xml</Actor>
+  </VisualActor>
+</Entity>

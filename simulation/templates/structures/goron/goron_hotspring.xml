@@ -1,0 +1,61 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Temple</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>200</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="30.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>2</MaxCopies>
+      <MaxCopiesPerBase>1</MaxCopiesPerBase>
+      <MinPop>90</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Hot Spring</GenericName>
+    <History>Resting in Hot Springs is a popular Goron pastime, and they often build many of their cities around these natural formations. With a bit of clever digging, the Gorons can unearth and set up Hot Springs almost anywhere they please.</History>
+    <Icon>structures/goron/gor_hotspring.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Structure that heals wounded Goron units.</Tooltip>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      goron/hotspring_mineralbath
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/goron/complete_hotspring.xml</constructed>
+      <select>interface/select/building/goron/sel_hotspring.xml</select>
+      <upgraded>interface/complete/building/goron/complete_hotspring.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/goron/goron_hotspringA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

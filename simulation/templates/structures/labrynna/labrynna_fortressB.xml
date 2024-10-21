@@ -1,0 +1,23 @@
+<Entity parent="structures/labrynna/labrynna_fortress">
+  <Identity>
+    <GenericName>Towered Star Fort</GenericName>
+    <History>A large expansion upon the Star Fort, outfitting it with a collection of defensive towers.</History>
+    <Icon>structures/labrynna/lab_starfortB.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_fortressC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Upgrade Star Fort with Cannon Ramparts.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_starfortB.xml</Actor>
+  </VisualActor>
+</Entity>

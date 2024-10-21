@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 2 }
+	],
+	"auraName": "Empathic Healing",
+	"requiredTechnology": "gohma/princess_empath",		
+	"auraDescription": "(+2 Idle HP Regen - All Units)",
+	"overlayIcon": "art/textures/ui/session/auras/gohprincess_aura_2.dds"
+}

@@ -1,0 +1,72 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Scimitar</AttackName>
+      <Damage>
+        <Hack>12.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>35</food>
+      <metal>0</metal>
+      <stone>5</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>60</Max>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Medium Marauder GoldenArmor</Classes>
+    <GenericName>Marauder</GenericName>
+    <History>Gerudo Marauders are comprised of many of the nation's youngest warriors, just fresh out of training. With little armor to worry about, Marauders can sprint across the sands of their homeland with ease, and swiftly raid enemy settlements with their scimitar.</History>
+    <Icon>units/gerudo/ger_marauder.dds</Icon>
+    <Lang>gerudo</Lang>
+    <SelectionGroupName>units/gerudo/gerudo_marauder_b</SelectionGroupName>
+    <Tooltip>Light Infantry Melee unit that can raid enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <DodgeRating>10.0</DodgeRating>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/gerudo/gerudo_deathA.xml</death>
+      <order_attack>voice/gerudo/marauder/marauder_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/marauder/marauder_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/marauder/marauder_gather.xml</order_gather>
+      <order_repair>voice/gerudo/marauder/marauder_repair.xml</order_repair>
+      <order_walk>voice/gerudo/marauder/marauder_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/gerudo/marauder/marauder_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5833</RunMultiplier>
+    <WalkSpeed>12.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_marauder_b.xml</Actor>
+  </VisualActor>
+</Entity>

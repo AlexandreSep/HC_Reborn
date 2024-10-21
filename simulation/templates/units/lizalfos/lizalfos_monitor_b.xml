@@ -1,0 +1,69 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>13.0</Hack>
+        <Pierce>3.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/commander_aura_1
+  </Auras>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>20</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>350</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Medium Class80 Volvamight Battlescar Monitor</Classes>
+    <GenericName>Monitor</GenericName>
+    <History>Lizalfos Monitors were assigned to watch over and assure that all other soldiers were performing their orders in battle. With a large and colorful display of feathers signifying their rank, a Monitor was never questioned by those under his command.</History>
+    <Icon>units/lizalfos/liz_monitor.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_monitor_b</SelectionGroupName>
+    <Tooltip>Commander unit that improves the performance of other Lizalfos.</Tooltip>
+    <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>25.0</Hack>
+        <Pierce>25.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lizalfos/lizalfosA/lizalfosA_death.xml</death>
+      <order_attack>voice/lizalfos/lizalfosA/lizalfosA_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/lizalfosA/lizalfosA_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/lizalfosA/lizalfosA_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/lizalfosA/lizalfosA_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/lizalfosA/lizalfosA_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/lizalfos/lizalfosA/lizalfosA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_monitor_b.xml</Actor>
+  </VisualActor>
+</Entity>

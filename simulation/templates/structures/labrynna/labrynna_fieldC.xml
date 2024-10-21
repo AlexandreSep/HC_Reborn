@@ -1,0 +1,33 @@
+<Entity parent="structures/labrynna/labrynna_fieldB">
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_smallB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">MachineFarm DropsiteFood</Classes>
+    <GenericName>Machine Farm</GenericName>
+    <History>Adding in machinery to the farming process has allowed farmers and Tokay slaves to speed up the process of creating food, as well as increasing the sheer volume of food produced. Unfortunate that it&#8217;s left a bit of a bad after taste in all the vegetables.</History>
+    <Icon>structures/labrynna/lab_farmC.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+    labrynna/gather_autofarming
+    </Technologies>
+  </ProductionQueue>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food</Types>
+  </ResourceDropsite>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.5</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_farmhouseB.xml</Actor>
+  </VisualActor>
+</Entity>

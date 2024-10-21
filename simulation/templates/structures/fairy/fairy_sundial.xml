@@ -1,0 +1,73 @@
+<Entity parent="HC_template_structure_civilian">
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Category>Sundial</Category>
+    <Distance>
+      <FromClass>Sundial</FromClass>
+      <MinDistance>200</MinDistance>
+    </Distance>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>500</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>500</metal>
+      <stone>0</stone>
+      <wood>500</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="35.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_largeA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">Sundial</Classes>
+    <GenericName>Sundial</GenericName>
+    <History>A mysterious ruin believed to somehow be connected to the Fairies' power over the seasons. These giant sundials would glow with different colors reflecting the time and place, though in truth this connection might go the other way around.</History>
+    <Icon>structures/fairy/fai_sundial_spring.dds</Icon>
+    <Tooltip>Structure that allows the Fairies to change the Season that they operate under.</Tooltip>
+    <VisibleClasses datatype="tokens">-Civilian Special</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="55.0" width="55.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/fairy/{civ}_hero_ciela
+    units/fairy/{civ}_hero_miff
+    units/fairy/{civ}_hero_sekaia
+    units/fairy/{civ}_hero_venus
+      units/fairy/{civ}_hero_dezaia
+    units/fairy/{civ}_hero_valanavi
+    </Entities>
+    <Technologies datatype="tokens">
+    fairy/ciela_thegathering
+    fairy/miff_seasonharmony
+    fairy/sekaia_yearwinds
+    fairy/dezaia_hysterics
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_sundial.xml</constructed>
+      <select>interface/select/building/fairy/sel_sundial.xml</select>
+      <upgraded>interface/complete/building/fairy/complete_sundial.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_sundialA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

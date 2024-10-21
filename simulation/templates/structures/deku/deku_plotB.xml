@@ -1,0 +1,70 @@
+<Entity parent="HC_template_structure_plot">
+  <BuildRestrictions>
+    <PlacementType>land</PlacementType>
+  </BuildRestrictions>
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="11.0" width="11.0" />
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_deku_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <GenericName>Construction Plot</GenericName>
+    <History>Construct Deku Buildings on this space.</History>
+    <Icon>structures/deku/dek_plot.dds</Icon>
+    <Tooltip>Construct Deku Buildings on this space.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="10.5" width="10.5" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <food>100</food>
+        <wood>100</wood>
+      </Cost>
+      <Entity>units/deku/deku_baba_giant_b</Entity>
+      <Time>30</Time>
+      <Tooltip>Grow a Giant Deku Baba on this plot.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/deku/deku_defense_tower</Entity>
+      <Time>60</Time>
+      <Tooltip>Build a Lookout Wards on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerB>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/deku/deku_plotB.xml</Actor>
+  </VisualActor>
+</Entity>

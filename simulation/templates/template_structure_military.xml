@@ -1,0 +1,34 @@
+<Entity parent="template_structure">
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Identity>
+    <Classes datatype="tokens">ConquestCritical</Classes>
+    <GenericName>Military Structure</GenericName>
+    <VisibleClasses datatype="tokens">Military</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>3</Crush>
+        <Hack>20</Hack>
+        <Pierce>35</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Hack>1</Hack>
+        <Pierce>5</Pierce>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <TerritoryInfluence>
+    <Radius>50</Radius>
+    <Root>false</Root>
+    <Weight>40000</Weight>
+  </TerritoryInfluence>
+</Entity>

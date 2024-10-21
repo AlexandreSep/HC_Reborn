@@ -1,0 +1,13 @@
+{
+	"genericName": "Broadskulls",
+	"description": "Most of the time Dodongo Snakes seemed to rove around as if they had no awareness at all. This lack of attention could really be put to the Lizalfos' advantage as they were tricked into eating all manner of small enemies.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 200},
+	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a third deity.",
+	"icon": "lizalfos/helmram_broadskulls.dds",
+	"researchTime": 40,
+	"tooltip": "Helmasaurus Ram now deals splash damage.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["Helmram"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

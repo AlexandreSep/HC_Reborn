@@ -1,0 +1,13 @@
+{
+	"genericName": "Bounded Essence",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/bounded_essence.dds",
+	"researchTime": 50,
+	"tooltip": "Powerful Gerudo Witches can so strongly bind a Spirit to the Armor of an Iron Knuckle it will rise again even after seemingly being destroyed. (Spawn Unarmored Iron Knuckle on Death - Iron Knuckle)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["Knuckle"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

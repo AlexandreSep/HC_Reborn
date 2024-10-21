@@ -1,0 +1,14 @@
+{
+	"genericName": "Puncturing Deku Nuts",
+	"description": "Nut Carvers would apply their art to giving Deku Nuts sharper points, allowing them to wound their targets better.",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "deku/dek_puncturenuts.dds",
+	"researchTime": 40,
+	"tooltip": "CNut Carvers would apply their art to giving Deku Nuts sharper points, allowing them to wound their targets better. (Units that attack with Deku Nuts now deal Pierce Damage and their crush damaged is increased by 25%)",
+	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "add": 5},
+					  {"value": "Attack/Ranged/Damage/Crush", "multiply": 1.25}],
+	"affects": ["SpitDekuNut"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

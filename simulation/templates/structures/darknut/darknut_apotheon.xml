@@ -1,0 +1,87 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">City</Classes>
+    <GenericName>Apotheon</GenericName>
+    <History>When such a Darknut became so famous as to be worshiped, he was brought forth to the Apotheon to undergo a formal transition to godhood. Countless Darknuts would fanatically worship their chosen heroes at these altars of deification.</History>
+    <Icon>structures/darknut/dar_apotheon.dds</Icon>
+    <Tooltip>Trains high level and powerful Darknut units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>40</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/darknut/{civ}_dux_b
+      units/darknut/{civ}_idolthrone_b
+    units/darknut/{civ}_legatus_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    darknut/apoth_leadbyexample
+    darknut/apoth_lemons
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/darknut/complete_apotheon.xml</constructed>
+      <select>interface/select/building/darknut/sel_apotheon.xml</select>
+      <upgraded>interface/complete/building/darknut/complete_apotheon.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_apotheonbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

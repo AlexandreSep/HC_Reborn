@@ -1,0 +1,19 @@
+<Entity parent="units/moblin/moblin_house_packed">
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
+  <Promotion disable="" />
+  <Upgrade>
+    <Tower>
+      <CheckPlacementRestrictions />
+      <Entity>structures/moblin/moblin_house_upg</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>10</Time>
+      <Tooltip>Unpack this Housin' Yurt.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/moblin/moblin_mobcartA.xml</Actor>
+  </VisualActor>
+</Entity>

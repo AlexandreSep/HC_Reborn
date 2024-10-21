@@ -1,0 +1,11 @@
+{
+	"type": "formation",
+	"affects": ["Healer"],
+	"modifications": [
+		{ "value": "Heal/HP", "multiply": 2.0 },
+		{ "value": "Heal/Range", "multiply": 2.0 }
+	],
+	"auraName": "Healing Directive",
+	"auraDescription": "(In Formation, x2 Heal Rate and Range - Healer)",
+	"overlayIcon": "art/textures/ui/session/auras/zaleen_healdirective.dds"
+}

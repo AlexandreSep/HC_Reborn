@@ -1,0 +1,85 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+      <AttackName>Guardian Fairy</AttackName>
+      <Damage>
+        <Spirit>20.0</Spirit>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>60</MaxRange>
+      <MinRange>25.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1700</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>1800</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>40</food>
+      <metal>0</metal>
+      <stone>10</stone>
+      <wood>10</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>170</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">Small FairyGuard Class100</Classes>
+    <GenericName>Enchantress</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A rare Kokiri magic user who has befriended a pair of rogue Fairies. An Enchantress is often quite old for a Kokiri and they tend to display a mischievous (and sometimes downright mean-spirited) sense of humor. The Enchantress can confuse enemies and deflect ranged attacks back at their attackers.</History>
+    <Icon>units/kokiri/kok_enchantress.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_saria</RequiredTechnology>
+    <SelectionGroupName>units/kokiri/kokiri_enchant_b</SelectionGroupName>
+    <Tooltip>Support Mage unit that can deflect ranged projectile back at their attackers.</Tooltip>
+    <VisibleClasses datatype="tokens">Support Mage</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/kokiri/kokiri_enchant_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>35.0</Crush>
+        <Fire>30.0</Fire>
+        <Forest>30.0</Forest>
+        <Hack>5.0</Hack>
+        <Light>30.0</Light>
+        <Pierce>20.0</Pierce>
+        <Shadow>30.0</Shadow>
+        <Spirit>30.0</Spirit>
+        <Water>30.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/magic/witch_wind.xml</attack_ranged>
+      <death>voice/kokiri/enchantress/enchantress_death.xml</death>
+      <order_attack>voice/kokiri/enchantress/enchantress_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/enchantress/enchantress_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/enchantress/enchantress_gather.xml</order_gather>
+      <order_repair>voice/kokiri/enchantress/enchantress_repair.xml</order_repair>
+      <order_walk>voice/kokiri/enchantress/enchantress_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/kokiri/enchantress/enchantress_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_enchant_b.xml</Actor>
+  </VisualActor>
+</Entity>

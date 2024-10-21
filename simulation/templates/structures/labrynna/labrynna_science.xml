@@ -1,0 +1,66 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="38.0" width="38.0" />
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Science Institute</GenericName>
+    <History>The shift from symbolic to material thinking eventually lead to the development of methods of discovery that brought Labrynna great power over the earth. At these institutes many of their Proffessors could apply these new methods and brings forth great discoveries.</History>
+    <Icon>structures/labrynna/lab_scienceA.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Researches various Labrynnian technologies</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="34.0" width="34.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    labrynna/attack_perfectedweap
+    labrynna/armor_modernmethod
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/labrynna/complete_science.xml</constructed>
+      <select>interface/select/building/labrynna/sel_science.xml</select>
+      <upgraded>interface/complete/building/labrynna/complete_science.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_scienceB</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Add Laboratories to Science Institute.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_scienceA.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

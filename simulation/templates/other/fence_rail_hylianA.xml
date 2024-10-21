@@ -1,0 +1,45 @@
+<Entity parent="template_structure">
+  <BuildRestrictions>
+    <Category>Special</Category>
+  </BuildRestrictions>
+  <Capturable disable="" />
+  <Footprint>
+    <Height>4.0</Height>
+    <Square depth="2.0" width="4.5" />
+  </Footprint>
+  <Health>
+    <Max>25</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Stone Fence</GenericName>
+    <Icon>gaia/special_fence.png</Icon>
+    <SpecificName>Stone Fence</SpecificName>
+  </Identity>
+  <Loot>
+    <stone>20</stone>
+  </Loot>
+  <Obstruction>
+    <Static depth="2.0" width="4.5" />
+  </Obstruction>
+  <ProductionQueue disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>2.0</Crush>
+        <Hack>2.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <StatusBars>
+    <HeightOffset>6.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable="" />
+  <Vision>
+    <Range>4</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_fenceA.xml</Actor>
+  </VisualActor>
+</Entity>

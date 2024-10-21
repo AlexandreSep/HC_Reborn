@@ -1,0 +1,11 @@
+{
+	"type": "formation",
+	"affects": ["ZorHealer"],
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": 1.0 }
+	],
+	"auraName": "Warzone Pairings",
+	"auraDescription": "(In Formation, Heal 1 Health/second - Healer)",
+	"requiredTechnology": "zora/healer_warpair",	
+	"overlayIcon": "art/textures/ui/session/auras/healer_warpair_1.dds"
+}

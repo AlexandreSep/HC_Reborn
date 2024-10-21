@@ -1,0 +1,67 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>75</stone>
+      <wood>75</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lanayru_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>20</MaxCopies>
+      <MaxCopiesPerBase>2</MaxCopiesPerBase>
+      <MinPop>0</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">Addon Field Village Shrimpery</Classes>
+    <GenericName>Shrimpery</GenericName>
+    <History>Shellfish were abundant on Lanayru&#8217;s Coast and could be easily grown further inland as well; so long as water was part of the mix. Prawns were usually the foundation of any Lanayru Zora&#8217;s diet, and ponds of the creatures dotted their coastal cities.</History>
+    <Icon>structures/lanayru/lan_shrimpery.dds</Icon>
+    <Tooltip>Generates Shrimp that can be harvested for Food.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    lanayru/get_shrimpery
+    </Technologies>
+  </ProductionQueue>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <DiminishingReturns>0.90</DiminishingReturns>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.fish</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_farm.xml</constructed>
+      <select>interface/select/building/sel_farm.xml</select>
+      <upgraded>interface/complete/building/complete_farm.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_shrimperyA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldH.xml</FoundationActor>
+  </VisualActor>
+</Entity>

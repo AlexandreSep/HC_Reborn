@@ -1,0 +1,59 @@
+<Entity parent="gaia/gaia_temps/template_unit_dodongo">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Crush>6.0</Crush>
+        <Pierce>8.0</Pierce>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint replace="">
+    <Circle radius="1.0" />
+    <Height>3.5</Height>
+  </Footprint>
+  <Health>
+    <Max>270</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Praddle Prawn</GenericName>
+    <History>Large crustacean creatures native to the Great Sea. Throughout the year they occasionally make landfall across the Coasts of Airu, appearing in very large numbers during their Great Migration. Though they can cause quite a bit of harm with their class, Praddle Prawns are only aggressive if provoked.</History>
+    <Icon>gaia/fauna_praddle_prawn.dds</Icon>
+    <Tooltip>Large crustacean creatures native to the Great Sea. Throughout the year they occasionally make landfall across the Coasts of Airu, appearing in very large numbers during their Great Migration. Though they can cause quite a bit of harm with their class, Praddle Prawns are only aggressive if provoked.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <Max>150</Max>
+    <Type>food.meat</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lanayru/battlecrab/battlecrab_death.xml</death>
+      <select>voice/lanayru/battlecrab/battlecrab_select.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>units/wild/wild_praddleprawnA.xml</Actor>
+  </VisualActor>
+</Entity>

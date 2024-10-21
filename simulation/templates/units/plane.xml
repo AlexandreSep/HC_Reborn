@@ -1,0 +1,104 @@
+<Entity parent="template_unit">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Light>250.0</Light>
+        <Pierce>150.0</Pierce>
+      </Damage>
+      <Delay>3</Delay>
+      <MaxRange>200</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure Human</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>300.0</Speed>
+        <Spread>1.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2300</RepeatTime>
+      <Splash>
+        <Damage>
+          <Light>250.0</Light>
+          <Pierce>150.0</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <Knockback>
+        <Horizontal>15</Horizontal>
+        <Vertical>15</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>3</DefaultArrowCount>
+    <GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Decay>
+    <DelayTime>0.0</DelayTime>
+    <SinkAccel>7.0</SinkAccel>
+    <SinkRate>3.0</SinkRate>
+    <SinkingAnim>true</SinkingAnim>
+  </Decay>
+  <GarrisonHolder>
+    <BuffHeal>1</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens" />
+    <EjectHealth>0</EjectHealth>
+    <List datatype="tokens">Support Infantry</List>
+    <LoadingRange>5</LoadingRange>
+    <Max>1</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>100</Max>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Formations datatype="tokens" replace="" />
+    <Icon>units/starfox/sf_arwingm2.dds</Icon>
+    <SpecificName>Arwing X-02</SpecificName>
+    <Tooltip>The Mark II Arwing was comissioned by the Cornerian Army and created by Arspace Dynamics as a potential replacement for the AL1 Bottlenose Fighter. While the craft exceeded expectations, the Cornerian Army abandoned them in favor of the cheaper AL2 Bottlenose. The few Arwing X-02's that were built were bought by James McCloud and were made famous by the Star Fox Team.</Tooltip>
+  </Identity>
+  <Obstruction disable="" />
+  <Position>
+    <FloatDepth>0.0</FloatDepth>
+    <Floating>true</Floating>
+    <TurnRate>1.0</TurnRate>
+  </Position>
+  <Repairable>
+    <RepairTimeRatio>3.0</RepairTimeRatio>
+  </Repairable>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/magic/arwing_blaster.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion disable="" />
+  <UnitMotionFlying>
+    <AccelRate>25.0</AccelRate>
+    <BrakingRate>10.0</BrakingRate>
+    <ClimbRate>15.0</ClimbRate>
+    <DiesInWater>true</DiesInWater>
+    <FlyingHeight>50.0</FlyingHeight>
+    <LandingSpeed>40.0</LandingSpeed>
+    <MaxSpeed>60.0</MaxSpeed>
+    <OvershootTime>2.0</OvershootTime>
+    <PassabilityClass>unrestricted</PassabilityClass>
+    <SlowingRate>5.0</SlowingRate>
+    <TakeoffSpeed>50.0</TakeoffSpeed>
+    <TurnRate>2.0</TurnRate>
+  </UnitMotionFlying>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/starfox/starfox_arwingM2.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,195 @@
+<Entity parent="HC_template_structure_plot">
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="25.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <GenericName>Darknut Building Plot</GenericName>
+    <History>Construct an extension of the Darknut Agora.</History>
+    <Icon>structures/darknut/dar_plot.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Construct an extension of the Darknut Agora.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="2" width="2" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_houseC</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Domus to the Agora.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_fieldC</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Vineyard to the Agora.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_storehouseC</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Horreum to the Agora.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerC>
+    <TowerD>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_marketC</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Public Forum to the Agora.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerD>
+    <TowerE>
+      <Cost>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_thermaeC</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Thermae to the Agora.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerE>
+    <TowerF>
+      <Cost>
+        <metal>100</metal>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_jewellerC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Jeweller to the Agora.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerF>
+    <TowerG>
+      <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_colosseumC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Colosseum to the Agora.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerG>
+    <TowerH>
+      <Cost>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_templeC</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Honor Monument to the Agora.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerH>
+    <TowerI>
+      <Cost>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_barracksC</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Gymnasia to the Agora.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerI>
+    <TowerJ>
+      <Cost>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_legbarracksC</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Holosideros to the Agora.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerJ>
+    <TowerK>
+      <Cost>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_mercsC</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Foreign Quarter to the Agora.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerK>
+    <TowerL>
+      <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_apotheonC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add am Apotheon to the Agora.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerL>
+    <TowerM>
+      <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_summonereC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Summonere to the Agora.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerM>
+    <TowerN>
+      <Cost>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_blacksmithC</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add an Armorum to the Agora.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerN>
+    <TowerO>
+      <Cost>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_auditoriumC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add an Auditorium to the Agora.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerO>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_plotB.xml</Actor>
+  </VisualActor>
+</Entity>

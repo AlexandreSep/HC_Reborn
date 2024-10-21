@@ -1,0 +1,87 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/bar_aura
+  </Auras>
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="23.0" width="23.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>4</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>14.0</Y>
+        <Z>-4.5</Z>
+      </Archer1>
+      <Archer2>
+        <X>3</X>
+        <Y>14.0</Y>
+        <Z>-4.5</Z>
+      </Archer2>
+      <Archer3>
+        <X>-3</X>
+        <Y>14.0</Y>
+        <Z>-4.5</Z>
+      </Archer3>
+      <Archer4>
+        <X>6</X>
+        <Y>14.0</Y>
+        <Z>-4.5</Z>
+      </Archer4>
+      <Archer5>
+        <X>-6</X>
+        <Y>14.0</Y>
+        <Z>-4.5</Z>
+      </Archer5>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_oasisA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>0</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Civilian</GenericName>
+    <History>Serving everything from Keaton Cider to Lon Lon Milk, the local Bar was often a hotbed of activity for Gerudo civilians. After a long day's work, a Bar went to great lengths to improve the populace's happiness.</History>
+    <Icon>structures/gerudo/ger_bar.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SpecificName>Gerudo Bar</SpecificName>
+    <Tooltip>Gerudo Bar that serves drinks to patrons.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_barA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

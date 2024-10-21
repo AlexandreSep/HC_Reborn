@@ -1,0 +1,74 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Capture>
+      <AttackName>Effigy</AttackName>
+      <Bonuses>
+        <BonusTurret>
+          <Classes>Structure</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusTurret>
+      </Bonuses>
+      <Capture>8</Capture>
+      <MaxRange>6</MaxRange>
+      <RepeatTime>750</RepeatTime>
+      <RestrictedClasses datatype="tokens">Field Palisade SiegeWall StoneWall</RestrictedClasses>
+    </Capture>
+  </Attack>
+  <Auras datatype="tokens">
+    units/deacon_chant_1
+  units/deacon_chant_2
+  units/deacon_chant_3
+  units/deacon_chant_4
+  </Auras>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>25</food>
+      <metal>30</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Class40 Priest Medium Reverend</Classes>
+    <GenericName>Reverend</GenericName>
+    <History>While Ordona Province is not as dogmatic as the Hylian’s religious establishment, the nation has bred a more passionate and expressive line of priests to spread the Book of Mudora and knowledge of the Goddesses to all of Hyrule. These Reverends will preach in just about any land, be they welcoming or hostile to their intent.</History>
+    <Icon>units/ordona/ord_reverend.dds</Icon>
+    <Lang>ordona</Lang>
+    <Rank>Basic</Rank>
+    <SelectionGroupName>units/ordona/ordona_reverend_b</SelectionGroupName>
+    <Tooltip>Support unit with several buffing abilities.</Tooltip>
+    <VisibleClasses datatype="tokens">Support Worker</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/ordona/reverend/reverend_death.xml</death>
+      <order_attack>voice/ordona/reverend/reverend_attack.xml</order_attack>
+      <order_garrison>voice/ordona/reverend/reverend_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/reverend/reverend_gather.xml</order_gather>
+      <order_repair>voice/ordona/reverend/reverend_repair.xml</order_repair>
+      <order_walk>voice/ordona/reverend/reverend_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/ordona/reverend/reverend_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/ordona/ordona_reverend_b.xml</Actor>
+  </VisualActor>
+</Entity>

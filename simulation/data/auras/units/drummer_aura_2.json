@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Unit"],
+	"supersedes": "units/drummer_aura_1",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.2 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.2 }
+	],
+	"auraName": "Goronbi Beats",
+	"auraDescription": "(Requires 'Goronbi Beats' researched. +20% Walk/Run Speed - Unit)",
+	"requiredTechnology": "goron/troop_goronbibeats",
+	"overlayIcon": "art/textures/ui/session/auras/drummer_aura_1.dds"
+}

@@ -1,0 +1,13 @@
+{
+	"genericName": "Generational Armorcraft",
+	"description": "With each new generation of blacksmiths comes a minor refinement here, a better improvement there. Legion Armor gets better as time marches on.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "darknut/armor_generational.dds",
+	"researchTime": 40,
+	"tooltip": "With each new generation of blacksmiths comes a minor refinement here, a better improvement there. Legion Armor gets better as time marches on. (Ore cost of all units is reduced by 25%)",
+	"modifications": [{"value": "Cost/Resources/stone", "multiply": 0.75}],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

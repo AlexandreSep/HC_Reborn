@@ -1,0 +1,79 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Fairy Magic</AttackName>
+      <Damage>
+        <Spirit>25.0</Spirit>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>70.0</MaxRange>
+      <MinRange>35.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1900</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>70</food>
+      <metal>0</metal>
+      <stone>20</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">Large Class80 GreatFairy</Classes>
+    <GenericName>Great Fairy</GenericName>
+    <History>Great Fairies were amongst the most powerful Fairies of legend. Blessed with amazing intellect and an arsenal of tremendous magic, a lone Great Fairy could shape the world around it with nothing but their will power alone. Many stories claim that those who gained the favor of a Great Fairy were granted wishes. Such power tended to make Great Fairies rather egocentric, arrogant, and in worse cases; power hungry. The risk of tyrannical Great Fairies trying to take over their kind was not unheard of. </History>
+    <Icon>units/fairy/fai_great_spring.dds</Icon>
+    <Lang>fairy</Lang>
+    <SelectionGroupName>units/fairy/fairy_great_b</SelectionGroupName>
+    <Tooltip>Very powerful ranged Mage unit who's method of attack changes its nature with each season.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Fire>7.0</Fire>
+        <Forest>7.0</Forest>
+        <Hack>15.0</Hack>
+        <Light>7.0</Light>
+        <Pierce>15.0</Pierce>
+        <Shadow>7.0</Shadow>
+        <Spirit>7.0</Spirit>
+        <Water>7.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <death>voice/fairy/greatfairy/greatfairy_death.xml</death>
+      <order_attack>voice/fairy/greatfairy/greatfairy_attack.xml</order_attack>
+      <order_garrison>voice/fairy/greatfairy/greatfairy_garrison.xml</order_garrison>
+      <order_gather>voice/fairy/greatfairy/greatfairy_gather.xml</order_gather>
+      <order_repair>voice/fairy/greatfairy/greatfairy_repair.xml</order_repair>
+      <order_walk>voice/fairy/greatfairy/greatfairy_walk.xml</order_walk>
+      <run>actor/movement/fairy/fairy_hoverA.xml</run>
+      <select>voice/fairy/greatfairy/greatfairy_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/fairy/fairy_great_spring.xml</Actor>
+  </VisualActor>
+</Entity>

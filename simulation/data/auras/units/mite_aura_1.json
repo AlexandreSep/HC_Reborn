@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 10,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": -5 }
+	],
+	"auraName": "Mite Swarm",
+	"auraDescription": "(-5 Health/second - Enemy Unit)",
+	"stackable" : true ,
+	"overlayIcon": "art/textures/ui/session/auras/mite_aura_1.dds"
+	
+}

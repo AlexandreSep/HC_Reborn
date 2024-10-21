@@ -1,0 +1,17 @@
+<Entity parent="structures/labrynna/labrynna_houseB">
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_smallB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Steam Manor</GenericName>
+    <History>Upgraded with boilers and other steamy doodads, Labrynna's homes could be outfitted with the latest inventions.</History>
+    <Icon>structures/labrynna/lab_houseC.dds</Icon>
+  </Identity>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_houseC.xml</Actor>
+  </VisualActor>
+</Entity>

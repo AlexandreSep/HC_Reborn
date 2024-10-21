@@ -1,0 +1,175 @@
+{
+	"Code": "lanayru",
+	"Culture": "civilized",
+	"Name": "Lanayru Province",
+	"Emblem": "session/portraits/emblems/emblem_lanayru.dds",
+	"History": "Originally established as a small vassal state through the union of Hylian and Zora marriages, Lanayru Province quickly grew to become an economic juggernaut that financially rivalled the larger empires of the world. The bountiful resources of their homeland allowed for rapid wealth, but made the small and young nation a prime target for constant invasions at the hands of greedy and hungry forces.",
+	"Music":[
+			{"File":"lanayru_theme1.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient1.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient2.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient3.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient4.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient5.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient6.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient7.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient8.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient9.ogg", "Type":"peace"},
+			{"File":"lanayru_ambient10.ogg", "Type":"peace"},
+			{"File":"lanayru_battle1.ogg", "Type":"battle"},
+			{"File":"lanayru_battle2.ogg", "Type":"battle"},
+			{"File":"lanayru_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Food: Farms, Fruit, Meat, Fish, Material: Stone Ore: Metal, Coralmold Currency: Rupees, Gold, Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Queen Rutela",
+					"Class": "",
+					"Armament": "Serpentine Sword",
+					"Emblem": "",
+					"History": "The former wife of King Zora De Bon XVI, Rutela eventually split from the Dominion and more or less formally sanctified Lanayru Province as a distinct nation. Prior to her marriage she was a general in the Dominion's army and had participated in the defense against Ganon's first invasion. Perhaps because of her military background, Queen Rutela was not above educating her people in the means of self defense and combat. Despite this, she was incredibly kind and clearly a non-violent pacifist in her policies and goals."
+				},
+				{
+					"Name": "Prince Ralis",
+					"Class": "",
+					"Armament": "Serpentine Sword",
+					"Emblem": "",
+					"History": "The Son of King De Bon and Queen Rutela, Ralis was born shortly after the royal divorce. For most of his life he lacked a father figure and was raised entirely by his mother, perhaps stunting his maturity as a result. He was seen as a late bloomer, and somewhat immature for his age in the eyes of others outside of the royal court. Ralis took notice of outsider opinions, and after the death of his mother he began a quest to achieve what he hoped was the manhood that his father was never able to teach him. Perhaps foolishly he associated bravado and aggressiveness with masculinity, leading to him becoming a somewhat reckless warrior Prince."
+				},
+				{
+					"Name": "Aydia Dorephan",
+					"Class": "",
+					"Armament": "Silver Sword",
+					"Emblem": "",
+					"History": "Aydia was a long serving Marshal in Lanayru's army. She was almost entirely responsible for the Province's conscription program and without it the nation would have likely fell from a lack of military force. She has perhaps participated in more battles than any other Zora of the north, and bears scars from her numerous engagements. Aydia comes from a family with a long line of military tradition and firmly believed a strong standing army that could engage in prolonged warfare was necessary for Lanayru Province to survive. While not a warmonger by any means, she was never slow to suggest direct military action as a solution to any potential problem. "
+				},
+				{
+					"Name": "Mipha Dorephan",
+					"Class": "",
+					"Armament": "Ordonian Sword",
+					"Emblem": "",
+					"History": "The only daughter of Aydia, Mipha was encouraged from a young age to follow her in her mother's footsteps and uphold her family's military lineage. Despite some talent with pole-arms, Mipha felt her place was not in taking life, but healing it. Under the tutelage of Zaleen the young Mipha learned a variety of healing arts, both magical and medicinal, and hopes to become a great doctor one day. Mipha is a very private and introverted person despite her desire to help so many people. Very few people know much of her personal life, other than her habit of fishing in Airu with her younger brother."
+				}
+			]
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Aquatic",
+			"History": "",
+			"Description": "All land units can move or swim through deep water."
+		},
+		{
+			"Name": "Volunteer Armies",
+			"History": "",
+			"Description": "Every completed Hub spawns a pair of Conscripts. Begins every match with an extra pair of Conscripts."
+		},
+		{
+			"Name": "Kingdom of the Silver Snake",
+			"History": "",
+			"Description": "All Currency harvested from Precious Metal sources also provide 50% of their value in Ore, 75% if it's from a Silver source."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/lanayru/choosehero_ralis",
+		"civ_choices/lanayru/choosehero_sidon",
+		"civ_choices/lanayru/choosehero_aydia",
+		"civ_choices/lanayru/choosehero_mipha",
+		"civ_choices/lanayru/choosehero_rutela",
+		"civ_choices/lanayru/choosehero_dorephan"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "International Banking",
+			"History": "",
+			"Description": "Allies gain a slow trickle of Currency Resources."
+		}
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Rutala Dam",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "This massive structure was built across the Airu River near its source in the Death Mountain range. It was able to regulate the flow of water through Lanayru Province as well as habor aquatic life in its reservoir. (+50% Territory Influence.)"
+		},
+		{
+			"Name": "Titan: Vrylonacia, Spirit of Lanayru",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "A primordial Spirit from which Lanayru Province is named after, Vrylonacia was likely worshiped as a pagan deity by ancient Zora before the Akkalans arrived? in the area and introduced worship of the Goddesses. Legend says that Vrylonacia fled the coast and into the south and slumbers somewhere beneath Hyrule's waters. While no longer active ?in the world, Vrylonacia's influence and symbols can be found throughout all of the Province's architecture and culture."
+		}
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/lanayru/lanayru_civil_centre"
+		},
+		{
+			"Template": "units/lanayru/lanayru_handmaidenA",
+			"Count": 4
+		},
+		{
+			"Template": "units/lanayru/lanayru_conscript_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/lanayru/lanayru_lancer_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/lanayru/lanayru_sentry_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Queen Rutela",
+		"Prince Ralis",
+		"Aydia Dorephan",
+		"Mipha Dorephan"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/lanayru/lanayru_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/lanayru/lanayru_handmaidenA",
+		"skirmish/units/default_cavalry" :  "units/lanayru/lanayru_sentry_b",
+		"skirmish/units/default_infantry_melee_b": "units/lanayru/lanayru_handmaidenA",
+		"skirmish/units/default_infantry_ranged_b": "units/lanayru/lanayru_handmaidenA",
+		"skirmish/structures/default_house_10" : "structures/lanayru/lanayru_house"
+	},
+	"SelectableInGameSetup": true
+}

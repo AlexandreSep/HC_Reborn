@@ -1,0 +1,23 @@
+{
+	"genericName": "Hylian Shields",
+	"description": "A very durable shield that has become legendary thanks to its use by Link and the Knights of Hyrule.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 400},
+	"requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_link"}, {"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "You must select Link, Heir of King Gustaf, as your hero.",
+	"icon": "hylian/hylian_shield.dds",
+	"researchTime": 40,
+	"tooltip": "A very durable shield that has become legendary thanks to its use by Link and the Knights of Hyrule. (+15 Crush Armor, +25% Stun Resistance - Melee Infantry)",
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 15.0
+    },
+    {
+      "value": "Resistance/StunResistance",
+      "add": 25
+    }
+  ],
+	"affects": ["HylianShield"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

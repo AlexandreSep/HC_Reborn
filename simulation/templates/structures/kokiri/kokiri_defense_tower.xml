@@ -1,0 +1,123 @@
+<Entity parent="HC_template_structure_defense">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Pierce>12.0</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>90.0</MaxRange>
+      <MinRange>10.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>5</DefaultArrowCount>
+    <GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="20.0" width="20.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <Max>5</Max>
+  </GarrisonHolder>
+      <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>-1.5</X>
+        <Y>14.5</Y>
+        <Z>2</Z>
+      </Archer1>
+      <Archer2>
+        <X>1.7</X>
+        <Y>14.5</Y>
+        <Z>2</Z>
+      </Archer2>
+      <Archer3>
+        <X>-2.8</X>
+        <Y>14.5</Y>
+        <Z>-1</Z>
+      </Archer3>
+      <Archer4>
+        <X>-1.7</X>
+        <Y>14.5</Y>
+        <Z>-3</Z>
+      </Archer4>
+      <Archer5>
+        <X>0.5</X>
+        <Y>14.5</Y>
+        <Z>-3</Z>
+      </Archer5>
+    </TurretPoints>
+    </TurretHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_kokiri_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">MudmanTower</Classes>
+    <GenericName>Mudman Tower</GenericName>
+    <History>The Mudmen of Faron were known for the network of towers along the border of their Grove. When adopted back into Kokiri society they established these towers across the forest, guarding it from invaders.</History>
+    <Icon>structures/kokiri/kok_mudtower.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Defensive Tower that hurls javelins at enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/javelin_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/javelin_toss.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_tower.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_tower.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_mudtowerA.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

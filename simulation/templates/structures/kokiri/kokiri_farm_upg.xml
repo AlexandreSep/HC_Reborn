@@ -1,0 +1,75 @@
+<Entity parent="template_structure_resource">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <wood>25</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_field</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">Field BerryBush</Classes>
+    <GenericName>Kokiri Berry Bush</GenericName>
+    <Icon>structures/kokiri/kok_bush.dds</Icon>
+    <Tooltip>Harvest Kokiri Berries for food. Max gatherers: 3.</Tooltip>
+  </Identity>
+  <Minimap>
+    <Color b="102" g="204" r="155" />
+    <Type>food</Type>
+  </Minimap>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <Static depth="4.0" width="4.0" />
+  </Obstruction>
+  <ProductionQueue disable="" />
+  <RallyPoint disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>40.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <Max>400</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.fruit</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_field.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_field.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>5.0</DecayRate>
+  </TerritoryDecay>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>flora/bush/kokiri_berrybushesA.xml</Actor>
+    <FoundationActor>flora/bush/kokiri_berrybushesA.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint />
+    </SelectionShape>
+  </VisualActor>
+</Entity>

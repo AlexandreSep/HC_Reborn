@@ -1,0 +1,5 @@
+<Entity parent="structures/ordona/ordona_defense_tower">
+  <Identity>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+</Entity>

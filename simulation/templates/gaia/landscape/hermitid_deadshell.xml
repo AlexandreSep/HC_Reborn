@@ -1,0 +1,12 @@
+<Entity parent="template_gaia_doodad">
+  <Footprint>
+    <Circle radius="11.0" />
+    <Height>3.5</Height>
+  </Footprint>
+  <Obstruction>
+    <Static depth="11.0" width="11.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>geology/landscape/organic/hermitid_deadshellA.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 80,
+	"affects": ["Worker"],
+	"modifications": [{ "value": "Health/RegenRate", "add": 0.1 },
+		{ "value": "Builder/Rate", "multiply": 1.05 },
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.05 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.05 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.05 }
+	],
+	"auraName": "Bar Sales",
+	"auraDescription": "(Heal 0.1 health/second, +5% Build Rate, Gather Rate, and Walk/Run Speed - Worker)",
+	"overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"
+}

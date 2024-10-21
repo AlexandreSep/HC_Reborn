@@ -1,0 +1,71 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Market</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="17.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>5</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic GohmaDen GohmaBuild Market Barter BarterMarket</Classes>
+    <GenericName>Recycler</GenericName>
+    <History>The Recycler's powerful claws and stomach can destroy and digest various materials, converting them into other resource that the Gohma may then use. The process is not perfect, and some of the value of the original resource is lost in the conversion. Regardless, this structure can save a Hive from doom if there is an abundance of one resource but dry spell of another.</History>
+    <Icon>structures/gohma/goh_recycler.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Structure that can transform one resource into another.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Market>
+    <InternationalBonus>0.2</InternationalBonus>
+    <TradeType>land</TradeType>
+  </Market>
+  <Obstruction>
+    <Static depth="40.0" width="40.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+    gaia/lon_lon_cow_1
+    </Entities>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/gohma/complete_gohA.xml</constructed>
+      <select>interface/select/building/gohma/sel_gohA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_recycler.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

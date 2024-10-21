@@ -1,0 +1,20 @@
+<Entity parent="structures/deku/deku_civil_centre">
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="82.0" width="123.0" />
+  </Footprint>
+  <Identity>
+    <Classes datatype="tokens">Placer</Classes>
+  </Identity>
+  <Obstruction>
+    <Static depth="81" width="122" />
+  </Obstruction>
+  <Promotion>
+    <Entity>structures/deku/deku_civil_centre</Entity>
+    <RequiredXp>1</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/deku/deku_civic_centre_placer.xml</Actor>
+    <FoundationActor>structures/deku/deku_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

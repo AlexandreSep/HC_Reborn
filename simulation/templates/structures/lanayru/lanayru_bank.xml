@@ -1,0 +1,80 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Temple</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>250</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lanayru_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>2</MaxCopies>
+      <MaxCopiesPerBase>1</MaxCopiesPerBase>
+      <MinPop>0</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">Addon City LanBank</Classes>
+    <GenericName>Bank</GenericName>
+    <History>One of the keys to Lanayru Province&#8217;s rapid growth and financial success, Banks could hold citiziens&#8217; money for use in investements and other business ventures, as well as issue out loans and generate interest. Lanayru Banks were careful with this practice however, as mismanagement could lead to rapid inflation and economic collapse.</History>
+    <Icon>structures/lanayru/lan_bank.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Automatically generates Rupees.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    lanayru/get_bank
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.5</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Selectable>
+    <EditorOnly />
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.4</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/lanayru/complete_bank.xml</constructed>
+      <select>interface/select/building/lanayru/sel_bank.xml</select>
+      <upgraded>interface/complete/building/lanayru/complete_bank.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_bankA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldH.xml</FoundationActor>
+  </VisualActor>
+</Entity>

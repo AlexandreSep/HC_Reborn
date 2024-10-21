@@ -1,0 +1,14 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Armour/Pierce", "add": 5 },
+		{ "value": "Armour/Hack", "add": 5 },
+		{ "value": "Armour/Crush", "add": 5 },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 2 }
+	],
+	"auraName": "Stalwart Defense",
+	"auraDescription": "{If Garrisoned, +5 Armor, +2 Capture Regen Rate - Building)",
+	"overlayIcon": "art/textures/ui/session/auras/rauru_stalwartdefense.dds"
+}
+

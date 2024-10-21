@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 100,
+	"affects": ["Structure"],
+	"supersedes": "structures/incubator_aura_1",
+	"modifications": [
+		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.80 }
+	],
+	"auraName": "Regimented Schools",
+	"auraDescription": "(Requires 'Regimented Schools' researched. -20% Batch Build Time - Building)",
+	"requiredTechnology": "zora/incubator_regiments",
+	"overlayIcon": "art/textures/ui/session/auras/incubator_aura_1.dds"
+}

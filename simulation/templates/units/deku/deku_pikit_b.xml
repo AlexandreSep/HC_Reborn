@@ -1,0 +1,76 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Spiked Tongue</AttackName>
+      <Damage>
+        <Pierce>21.0</Pierce>
+      </Damage>
+      <MaxRange>25.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+      <Stun>
+        <Chance>0</Chance>
+        <Time>1000</Time>
+      </Stun>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>40</food>
+      <metal>0</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>150</Max>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <OwnerID>0</OwnerID>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/mad/mad_pikit_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">Pikit Small Class90</Classes>
+    <GenericName>Pikit</GenericName>
+    <History>Pikits were one of several creatures that the Deku Scrubs commonly captured and used in their armies. While not intelligent by any stretch of the imagination, Pikits seemed to be able to understand the musical Scrub language and take basic orders from them. The Pikit's main attack was a long and flexible vine-like tongue that was coated with small but extremely sharp tips that could cut through armor.</History>
+    <Icon>units/deku/dek_pikit.dds</Icon>
+    <Lang>deku</Lang>
+    <SelectionGroupName>units/deku/deku_pikit_b</SelectionGroupName>
+    <Tooltip>Melee Creature unit who's spiked vine-like tongue can attack enemies from quite a distance.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/pikit_stab.xml</attack_melee>
+      <death>voice/deku/pikit/pikit_death.xml</death>
+      <order_attack>voice/deku/pikit/pikit_attack.xml</order_attack>
+      <order_garrison>voice/deku/pikit/pikit_garrison.xml</order_garrison>
+      <order_gather>voice/deku/pikit/pikit_gather.xml</order_gather>
+      <order_repair>voice/deku/pikit/pikit_repair.xml</order_repair>
+      <order_walk>voice/deku/pikit/pikit_walk.xml</order_walk>
+      <run>actor/movement/dekuscrub/scrub_hopA.xml</run>
+      <select>voice/deku/pikit/pikit_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/deku/deku_pikit_b.xml</Actor>
+  </VisualActor>
+</Entity>

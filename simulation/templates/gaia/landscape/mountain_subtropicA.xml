@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodad">
+  <Footprint>
+    <Circle radius="275.0" />
+    <Height>3.5</Height>
+  </Footprint>
+  <Obstruction>
+    <Static depth="275.0" width="17.0" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>geology/landscape/rocks/mountain_subtropicA.xml</Actor>
+  </VisualActor>
+</Entity>

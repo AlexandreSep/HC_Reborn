@@ -1,0 +1,23 @@
+<Entity parent="structures/fairy/fairy_barracksC">
+  <Identity>
+    <Classes datatype="tokens">Spring</Classes>
+    <Icon>structures/fairy/fai_dolmen_spring.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/fairy/{civ}_fey_golem
+    </Entities>
+    <Technologies datatype="tokens">
+    fairy/fey_windowdeath
+    </Technologies>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/fairy/fairy_dolmen_summer</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_dolemA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

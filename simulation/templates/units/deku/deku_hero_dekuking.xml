@@ -1,0 +1,106 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Light>7.0</Light>
+        <Pierce>7.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>475</food>
+      <metal>100</metal>
+      <stone>80</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">BabaCanRide</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>1</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>4.6</Y>
+        <Z>-0.9</Z>
+      </Archer1>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>1500</Max>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <OwnerID>0</OwnerID>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/mad/mad_hero_dekuking</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">HeroDekuKing Hero4 BeetleRider Medium</Classes>
+    <GenericName>King of the Deku Scrubs</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Perhaps one of the most powerful rulers of the Deku Scrubs, King Kud-Loh-Kan was the first of his race to unite every single Scrub under one banner, albeit only temporarily. His success did not rise from the people’s favor however; King Kud-Loh-Kan ruled like a tyrant and constantly threatened his people with executions. Despite his angry demeanor, the King’s motivations seem to be rooted in his love for his daughter. Though kept secret, he had been struck with a case of Mad Scrub and wished for her to replace him on the throne after his passing.</History>
+    <Icon>units/deku/dek_hero_dekuking.dds</Icon>
+    <Lang>deku</Lang>
+    <RequiredTechnology>civ_choices/deku/choosehero_dekuking</RequiredTechnology>
+    <SpecificName>Kud-Loh-Kan</SpecificName>
+    <Tooltip>Strong Hero with many commanding abilites.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>40.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>60.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>50</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/deku/dekuking/dekuking_death.xml</death>
+      <order_attack>voice/deku/dekuking/dekuking_attack.xml</order_attack>
+      <order_garrison>voice/deku/dekuking/dekuking_garrison.xml</order_garrison>
+      <order_gather>voice/deku/dekuking/dekuking_gather.xml</order_gather>
+      <order_repair>voice/deku/dekuking/dekuking_repair.xml</order_repair>
+      <order_walk>voice/deku/dekuking/dekuking_walk.xml</order_walk>
+      <run>actor/movement/dekuscrub/scrub_hopA.xml</run>
+      <select>voice/deku/dekuking/dekuking_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero4</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/deku/deku_hero_dekuking_b.xml</Actor>
+  </VisualActor>
+</Entity>

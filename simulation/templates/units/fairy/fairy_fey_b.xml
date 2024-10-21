@@ -1,0 +1,63 @@
+<Entity parent="HC_template_unit_creature">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>75</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>450</Max>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">-Organic Construct Fey Large Class80</Classes>
+    <GenericName>Heavy Assault Unit</GenericName>
+    <History>Animated from the destroyed stonework of the Tarm Ruins and twisted into vaguely living shapes, the nature of these magical constructs remain a mystery. What was known is that fighting them head on was a terrible mistake. These powerful beings were resistant to most conventional weapons; it often took powerful magic in return to halt their relentless advance.</History>
+    <Icon>units/fairy/fai_fey_golem.dds</Icon>
+    <Lang>fairy</Lang>
+    <SelectionGroupName>units/fairy/fairy_fey_golem</SelectionGroupName>
+    <SpecificName>Fey Golem</SpecificName>
+    <Tooltip>Fey unit of the Fairies of Tarm.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/bash_generic.xml</attack_melee>
+      <death>voice/fairy/fey/fey_death.xml</death>
+      <order_attack>voice/fairy/fey/fey_attack.xml</order_attack>
+      <order_garrison>voice/fairy/fey/fey_garrison.xml</order_garrison>
+      <order_gather>voice/fairy/fey/fey_gather.xml</order_gather>
+      <order_repair>voice/fairy/fey/fey_repair.xml</order_repair>
+      <order_walk>voice/fairy/fey/fey_walk.xml</order_walk>
+      <run>actor/movement/fairy/fey_rumble.xml</run>
+      <select>voice/fairy/fey/fey_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/fairy/fey_rumble.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.2857</RunMultiplier>
+    <WalkSpeed>3.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_fey_golem.xml</Actor>
+  </VisualActor>
+</Entity>

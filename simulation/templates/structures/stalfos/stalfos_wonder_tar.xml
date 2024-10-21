@@ -1,0 +1,8 @@
+<Entity parent="structures/stalfos/stalfos_wonder">
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_wonderA_tar.xml</Actor>
+  </VisualActor>
+  <Health>
+	<SpawnEntityOnDeath>rubble/debris_stalfos_wonder_tar</SpawnEntityOnDeath>
+  </Health>
+</Entity>

@@ -1,0 +1,109 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>30</Hack>
+      </Damage>
+      <Delay>0</Delay>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>5</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>2400</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2700</RepeatTime>
+      <Splash>
+        <Damage>
+          <Hack>30.0</Hack>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>455</food>
+      <metal>100</metal>
+      <stone>110</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2700</Max>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Hero1 HeroDeathsword Large</Classes>
+    <GenericName>The Executioner</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>His name has been lost to all record. His origin is obscure at best: rumored to be one of the previous Gerudo Kings before the time of their Great Curse. All that remains of this infamous beast is the story of his sealing deep within the Arbiter Grounds: a story that itself has many versions and mysteries. The Death Sword was charged with the crimes of unearthing and re-instituting Necromancy after it had been abolished and destroyed from Hyrule. He is considered the father of all current Stalfos that haunt and torment the living of Hyrule.</History>
+    <Icon>units/stalfos/sta_hero_deathsword.dds</Icon>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_deathsword</RequiredTechnology>
+    <SpecificName>Death Sword</SpecificName>
+    <Tooltip>Hovering Melee Hero that attacks with giant sword.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>50.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>65.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/deathsword_sword.xml</attack_ranged>
+      <death>voice/stalfos/deathsword/deathsword_death.xml</death>
+      <order_attack>voice/stalfos/deathsword/deathsword_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/deathsword/deathsword_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/deathsword/deathsword_gather.xml</order_gather>
+      <order_repair>voice/stalfos/deathsword/deathsword_repair.xml</order_repair>
+      <order_walk>voice/stalfos/deathsword/deathsword_walk.xml</order_walk>
+      <run>actor/movement/stalreaper/stalreaper_hover.xml</run>
+      <select>voice/stalfos/deathsword/deathsword_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/stalreaper/stalreaper_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero1</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>5.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_deathsword_b.xml</Actor>
+  </VisualActor>
+</Entity>

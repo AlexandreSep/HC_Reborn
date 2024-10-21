@@ -1,0 +1,18 @@
+{
+	"code": "food",
+	"name": "Food",
+	"description": "Used to feed the mouths of your soldiers.",
+	"order": 1,
+	"subtypes": {
+		"fish": "Fish",
+		"fruit": "Fruit",
+		"grain": "Grain",
+		"meat": "Meat",
+		"rocksirloin": "Rock Sirloin",
+		"bones": "Bones",
+		"sacrifices": "Sacrifices"
+	},
+	"properties": ["barterable", "tradable", "tributable"],
+	"truePrice": 100,
+	"aiAnalysisInfluenceGroup": "ignore"
+}

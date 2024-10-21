@@ -1,0 +1,50 @@
+<Entity parent="template_unit_fauna_wild_violent">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Crush>5</Crush>
+        <Pierce>7</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="5.0" width="3.0" />
+  </Footprint>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Gold Skulltula</GenericName>
+    <History />
+    <Icon>gaia/fauna_spider_skulltula_gold.dds</Icon>
+    <Tooltip>A legendary creature across Hyrule, the rare Gold Skulltula is an elusive and relatively passive variant of Tula. For unknown reasons, the Gold Skulltula naturally builds up a layer of solid gold within its abdomen, making its chitin highly prized.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>true</Floating>
+  </Position>
+  <ResourceSupply>
+    <Max>300</Max>
+    <Type>metal.rupees</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/skulltula_attack.xml</attack_melee>
+      <death>voice/wild/skulltula/gold_skulltula_death.xml</death>
+      <run>actor/movement/skulltula/skulltula_walk.xml</run>
+      <select>voice/wild/skulltula/skulltula_select.xml</select>
+      <walk>actor/movement/skulltula/skulltula_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/wild/wild_spider_goldskulltulaA.xml</Actor>
+  </VisualActor>
+</Entity>

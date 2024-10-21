@@ -1,0 +1,84 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Farmstead</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>75</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1800</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>5</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic GohmaBuild GohmaDen</Classes>
+    <GenericName>Extractor</GenericName>
+    <History>The Extractor's purpose is to strip the flesh off of the Gohma's victims so that it may be stored for future consumption. This creepy and monsterous structure can improve the Gohma's ability to gather, hunt, and grow food.</History>
+    <Icon>structures/gohma/goh_extractor.dds</Icon>
+    <Tooltip>Slowly drains Food within its aura.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="12.0" width="12.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    gohma/gather_corpseextract
+    gohma/gather_webbingnets
+    </Technologies>
+  </ProductionQueue>
+    <ResourceDrain>
+    <MaxResourceSpotsToDrainSimultaneously>
+      <food>3</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </MaxResourceSpotsToDrainSimultaneously>
+    <Radius>50</Radius>
+    <ResourcesPerTick>
+      <food>1</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </ResourcesPerTick>
+    <TickRate>2000</TickRate>
+    <DepleteResource>true</DepleteResource>
+    <VisualEffectDuration>1000</VisualEffectDuration>
+  </ResourceDrain>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/gohma/complete_gohA.xml</constructed>
+      <select>interface/select/building/gohma/sel_gohA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_extractor.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,5 @@
+<Entity parent="units/merc_geru_b">
+  <Identity>
+    <RequiredTechnology>lanayru/get_bordello</RequiredTechnology>
+  </Identity>
+</Entity>

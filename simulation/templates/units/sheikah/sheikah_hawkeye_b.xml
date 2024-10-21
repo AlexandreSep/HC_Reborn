@@ -1,0 +1,73 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrows</AttackName>
+      <Damage>
+        <Pierce>12</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>80</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2500</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>35</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>125</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>70</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">Medium</Classes>
+    <GenericName>Hawkeye</GenericName>
+    <History>While there are many cultures who practice impressive archery across Hyrule, the Sheikah have made accuracy with a bow their own art. Hawkeyes are infamous for their uncanny ability to hit exactly what they set out to hit, regardless of the chaos of battle.</History>
+    <Icon>units/sheikah/she_hawkeye.dds</Icon>
+    <SelectionGroupName>units/sheikah/sheikah_hawkeye_b</SelectionGroupName>
+    <Tooltip>Archer unit armed with a bow and arrows. Deals moderate Piercing damage and has 100% accuracy.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <death>voice/sheikah/sheikahB/sheikahB_death.xml</death>
+      <order_attack>voice/sheikah/sheikahB/sheikahB_attack.xml</order_attack>
+      <order_garrison>voice/sheikah/sheikahB/sheikahB_garrison.xml</order_garrison>
+      <order_gather>voice/sheikah/sheikahB/sheikahB_gather.xml</order_gather>
+      <order_repair>voice/sheikah/sheikahB/sheikahB_repair.xml</order_repair>
+      <order_walk>voice/sheikah/sheikahB/sheikahB_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/sheikah/sheikahB/sheikahB_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/sheikah/sheikah_hawkeye_b.xml</Actor>
+  </VisualActor>
+</Entity>

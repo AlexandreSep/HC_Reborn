@@ -1,0 +1,40 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="25.0" width="25.0" />
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Tokay Shack</GenericName>
+    <History>Crude dwelling that Tokay live in.</History>
+    <Icon>structures/npc_tokay/npc_tok_shack.dds</Icon>
+    <Tooltip>Crude dwelling that Tokay live in.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <VisualActor>
+    <Actor>structures/npc_tokay/npc_tok_houseA.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Try not to Trip!",
+	"description": "The smartest of the Blins came up with the smartest idea! What if when we walked we were a little bit extra careful to not trip on anything! At first it seemed to slow us down, but we saved all the time in the world by not falling over! Smart Moblin science at work!",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/unit_trynottrip.dds",
+	"researchTime": 40,
+	"tooltip": "The smartest of the Blins came up with the smartest idea! What if when we walked we were a little bit extra careful to not trip on anything! At first it seemed to slow us down, but we saved all the time in the world by not falling over! Smart Moblin science at work!(All non-mechanical Moblin units now move 10% faster)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.10}],
+	"affects": ["Organic"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

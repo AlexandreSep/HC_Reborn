@@ -1,0 +1,77 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Claws</AttackName>
+      <Damage>
+        <Crush>12.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>40</food>
+      <metal>0</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="5.0" />
+    <Height>4.5</Height>
+  </Footprint>
+  <Health>
+    <Max>320</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Medium Shieldgohma CasteSoldier</Classes>
+    <GenericName>Shield Gohma</GenericName>
+    <History>The Shield Gohma has one disproportionately large appendage that forms a rudimentary shield. These Gohma use their durable shields to protect themselves and those in formation with them from ranged attacks.</History>
+    <Icon>units/gohma/goh_shield.dds</Icon>
+    <Lang>gohma</Lang>
+    <SelectionGroupName>units/gohma/gohma_shieldgohma_b</SelectionGroupName>
+    <Tooltip>Defensive Melee unit that is extremely resistant to non-magic projectiles.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/gohma/gohma_shieldgohma_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>85.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_largeA/gohma_largeA_death.xml</death>
+      <order_attack>voice/gohma/gohma_largeA/gohma_largeA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_largeA/gohma_largeA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_largeA/gohma_largeA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_largeA/gohma_largeA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_largeA/gohma_largeA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlC.xml</run>
+      <select>voice/gohma/gohma_largeA/gohma_largeA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlC.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.8888</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gohma/gohma_shieldgohma_b.xml</Actor>
+  </VisualActor>
+</Entity>

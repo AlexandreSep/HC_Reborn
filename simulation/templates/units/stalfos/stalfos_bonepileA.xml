@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Footprint>
+    <Height>1.0</Height>
+    <Square depth="1.8" width="0.9" />
+  </Footprint>
+  <Health>
+    <Max>1</Max>
+    <IdleRegenRate>-1</IdleRegenRate>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Corpse Pile</GenericName>
+    <History />
+    <Icon>units/stalfos/sta_bonepile.dds</Icon>
+    <Tooltip>Pile of dead bones that can gathered by Stalchildren.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+  </Obstruction>
+  <Position>
+    <TurnRate>0.001</TurnRate>
+  </Position>
+  <ResourceSupply>
+    <Max>100</Max>
+    <Initial>100</Initial>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.bones</Type>
+    <Change>
+      <Growth>
+        <Value>-1</Value>
+        <Interval>1000</Interval>
+        <UpperLimit>200</UpperLimit>
+      </Growth>
+    </Change>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <death>voice/stalfos/undead_medium/undeadmed_death.xml</death>
+      <panic>voice/stalfos/undead_medium/undeadmed_death.xml</panic>
+      <select>voice/stalfos/undead_medium/undeadmed_select.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>3.0</HeightOffset>
+  </StatusBars>
+  <UnitAI>
+    <FeedTimeMax>40000</FeedTimeMax>
+    <FeedTimeMin>10000</FeedTimeMin>
+    <FleeDistance>12.0</FleeDistance>
+    <RoamDistance>4.0</RoamDistance>
+    <RoamTimeMax>8000</RoamTimeMax>
+    <RoamTimeMin>2000</RoamTimeMin>
+    <PatrolWaitTime>2</PatrolWaitTime>
+  </UnitAI>
+  <UnitMotion>
+    <RunMultiplier>1.0</RunMultiplier>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>structures/misc/bone_pileA.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,77 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Lance</AttackName>
+      <Damage>
+        <Hack>14.0</Hack>
+        <Pierce>4</Pierce>
+      </Damage>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>95</food>
+      <metal>20</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>580</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Goat Large Class90 GoatLord</Classes>
+    <GenericName>Goat Lord</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A powerful Elder Goat ridden by one of Ordona Province's Mayors, the Goat Lords lead entire populations of Ordonians into battle and on to victory. With a banner in one hand and a mighty lance in the other, a Goat Lord can down enemy cavalry with ease and hold their own in a melee. Like all of Ordona's goat cavalry, the Goat Lord can climb over mountainous terrain.</History>
+    <Icon>units/ordona/ord_goatlord.dds</Icon>
+    <Lang>hylian</Lang>
+    <RequiredTechnology>civ_choices/ordona/choosehero_mayorbo</RequiredTechnology>
+    <SelectionGroupName>units/ordona_goatlord_b</SelectionGroupName>
+    <Tooltip>Heavy Cavalry Commander unit armed with a large lance that improves other Cavalry units.</Tooltip>
+    <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>45.0</Hack>
+        <Pierce>55.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/ordona/goatlord/goatlord_death.xml</death>
+      <order_attack>voice/ordona/goatlord/goatlord_attack.xml</order_attack>
+      <order_garrison>voice/ordona/goatlord/goatlord_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/goatlord/goatlord_gather.xml</order_gather>
+      <order_repair>voice/ordona/goatlord/goatlord_repair.xml</order_repair>
+      <order_walk>voice/ordona/goatlord/goatlord_walk.xml</order_walk>
+      <run>actor/movement/goat/goat_footsteps.xml</run>
+      <select>voice/ordona/goatlord/goatlord_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/goat/goat_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>climbing</PassabilityClass>
+    <RunMultiplier>1.4</RunMultiplier>
+    <WalkSpeed>12.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/ordona/ordona_goatlord_b.xml</Actor>
+  </VisualActor>
+</Entity>

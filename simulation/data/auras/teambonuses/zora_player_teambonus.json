@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["CivilCentre"],
+	"affectedPlayers": ["ExclusiveMutualAlly"],
+	"modifications": [
+		{ "value": "GarrisonHolder/BuffHeal", "add": 1 }
+	],
+	"auraName": "Zora Medicine",
+	"auraDescription": "(Garrison Heal 1 Heath/second - Allied Civil Centers)"
+}

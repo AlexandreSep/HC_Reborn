@@ -1,0 +1,38 @@
+<Entity parent="structures/labrynna/labrynna_field">
+  <Health>
+    <Max>700</Max>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Slave Farm</GenericName>
+    <History>Using scores of Tokay labor to replace their civilian workforce, Labrynna&#8217;s farming industry took quite a turn after Ambi&#8217;s campaign of conquest. The food may not be the best quality, but the Tokay are able to produce quite a lot of it for the Empire&#8217;s hungry military.</History>
+    <Icon>structures/labrynna/lab_farmB.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+    labrynna/edgar_bipishasoil
+    </Technologies>
+  </ProductionQueue>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food</Types>
+  </ResourceDropsite>
+  <ResourceSupply>
+    <MaxGatherers>3</MaxGatherers>
+  </ResourceSupply>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_fieldC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Upgrade Slave Farm into Machine Farm.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_farmhouseA.xml</Actor>
+  </VisualActor>
+</Entity>

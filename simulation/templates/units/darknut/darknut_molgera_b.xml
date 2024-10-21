@@ -1,0 +1,74 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Hack>9.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <food>45</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>210</Max>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Small Class100</Classes>
+    <GenericName>Molgera Grub</GenericName>
+    <History>Molgera were creatures of near legend status; many to the east doubted they even existed. With luck the Legion could tame a Molgera while it was still a grub, and used them in much the same way others tamed guard dogs. When these worms grew too old the Darknuts would have to release them back into the desert: an adult Molgera was impossibly large for even they to control. Molgera had an uncanny ability to sense the vibrations of anything around them, making it almost impossible to sneak up on one of these creatures.</History>
+    <Icon>units/darknut/dar_molgera.dds</Icon>
+    <Lang>darknut</Lang>
+    <SelectionGroupName>units/darknut/darknut_molgera_b</SelectionGroupName>
+    <Tooltip>Small Scout Creature that can burrow into the ground and hide.</Tooltip>
+    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/molgera_larva_bite.xml</attack_melee>
+      <death>voice/wild/molgera_larva/molgera_larva_death.xml</death>
+      <order_attack>voice/wild/molgera_larva/molgera_larva_attack.xml</order_attack>
+      <order_garrison>voice/wild/molgera_larva/molgera_larva_garrison.xml</order_garrison>
+      <order_gather>voice/wild/molgera_larva/molgera_larva_gather.xml</order_gather>
+      <order_repair>voice/wild/molgera_larva/molgera_larva_repair.xml</order_repair>
+      <order_walk>voice/wild/molgera_larva/molgera_larva_walk.xml</order_walk>
+      <run>actor/movement/molgera/molgera_larva_crawl.xml</run>
+      <select>voice/wild/molgera_larva/molgera_larva_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/molgera/molgera_larva_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2</RunMultiplier>
+    <WalkSpeed>12.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/darknut/darknut_molgera_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

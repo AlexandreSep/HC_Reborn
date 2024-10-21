@@ -1,0 +1,25 @@
+<Entity parent="units/stalfos/stalfos_poebig_b">
+  <Attack>
+    <Melee>
+      <AttackName>Lantern</AttackName>
+      <Damage>
+        <Fire>35.0</Fire>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+      <Stun>
+        <Chance>100</Chance>
+        <Time>100</Time>
+      </Stun>
+    </Melee>
+  </Attack>
+  <Identity>
+    <GenericName>Icy Big Poe</GenericName>
+    <Icon>units/stalfos/sta_icypoe.dds</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_poeicy_b.xml</Actor>
+  </VisualActor>
+</Entity>

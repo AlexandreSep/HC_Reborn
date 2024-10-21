@@ -1,0 +1,17 @@
+{
+	"genericName": "War of the Gods",
+	"description": "In Lizalfos mythology and religion, the gods are constantly at each other's throats and do battle for the blood of worshipppers. The Lizalfos pay close attention to the state of the world and pick the gods that seem to be winning.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a third deity.",
+	"icon": "lizalfos/altar_wargods.dds",
+	"researchTime": 40,
+	"tooltip": "Ziggurats, Altars, and Citadels cost 25% less of all resources to construct and generate 10% more territory",
+	"modifications": [{"value": "Cost/Resources/food", "multiply": 0.75},
+	{"value": "Cost/Resources/wood", "multiply": 0.75},
+	{"value": "Cost/Resources/stone", "multiply": 0.75},
+	{"value": "Cost/Resources/metal", "multiply": 0.75},
+	{"value": "TerritoryInfluence/Radius", "multiply": 1.10}],
+	"affects": ["Wargods"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

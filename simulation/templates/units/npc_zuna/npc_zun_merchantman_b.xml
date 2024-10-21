@@ -1,0 +1,88 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="4.0" />
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>npc_zuna</Civ>
+    <Classes>Large Trader DropsiteFood DropsiteWood DropsiteMetal DropsiteStone MinorFaction</Classes>
+    <Formations disable="" />
+    <GenericName>Zuna Merchantman</GenericName>
+    <History>The crafty Zuna were known throughout Hyrule for their honest merchant skills. Many expensive and ornate weapons and decorations came from their work and were highly regarded by many. The Merchantmen could trade for vast sums of Rupees at Markets, as well as store gathered resources for later use.</History>
+    <Icon>units/npc_zuna/npc_zun_merchantman.dds</Icon>
+    <Tooltip>Trader unit that also serves as a Storehouse for all types of Resources.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Loot>
+    <food>25</food>
+    <metal>10</metal>
+    <stone>10</stone>
+    <wood>10</wood>
+    <xp>50</xp>
+  </Loot>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>8.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <ResourceDropsite>
+    <Sharable>false</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/ellipse.png</MainTexture>
+        <MainTextureMask>256x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/zuna/zuna_death.xml</death>
+      <order_attack>voice/zuna/zuna_attack.xml</order_attack>
+      <order_garrison>voice/zuna/zuna_garrison.xml</order_garrison>
+      <order_gather>voice/zuna/zuna_gather.xml</order_gather>
+      <order_repair>voice/zuna/zuna_repair.xml</order_repair>
+      <order_walk>voice/zuna/zuna_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zuna/zuna_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <Trader>
+    <GainMultiplier>1</GainMultiplier>
+  </Trader>
+  <UnitAI>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+    <RunMultiplier>1.2307</RunMultiplier>
+    <WalkSpeed>6.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/npc_zuna/npc_zun_supplycart_b.xml</Actor>
+  </VisualActor>
+</Entity>

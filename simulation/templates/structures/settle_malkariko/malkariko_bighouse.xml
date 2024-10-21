@@ -1,0 +1,23 @@
+<Entity parent="structures/hylian/hylian_house">
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="30.0" width="35.0" />
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+  </Health>
+  <Identity>
+    <GenericName>Large Malkariko Housing</GenericName>
+  </Identity>
+  <Obstruction>
+    <Static depth="28.0" width="33.0" />
+  </Obstruction>
+  <TerritoryInfluence>
+    <Radius>200</Radius>
+    <Root>false</Root>
+    <Weight>500</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_houses_bigA.xml</Actor>
+  </VisualActor>
+</Entity>

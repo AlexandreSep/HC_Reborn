@@ -1,0 +1,27 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="15.5" width="15.5" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <GenericName>Stone Tower</GenericName>
+    <History>A large stone wall to protect the Empire from any who dare invade Labrynna.</History>
+    <Icon>structures/labrynna/lab_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="13.5" width="13.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_wall_tower.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldH.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

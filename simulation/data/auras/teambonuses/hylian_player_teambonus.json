@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["CivCentre"],
+	"affectedPlayers": ["ExclusiveMutualAlly"],
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.10 }
+	],
+	"auraName": "Vassals",
+	"auraDescription": "(+10% ally Territory Influence - Civil Centers)"
+}

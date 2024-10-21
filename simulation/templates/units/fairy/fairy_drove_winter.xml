@@ -1,0 +1,32 @@
+<Entity parent="units/fairy/fairy_drove_b">
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>units/fairy/fai_drove_winter.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_drove_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <DodgeRating>25.0</DodgeRating>
+        <Fire>6.0</Fire>
+        <Forest>6.0</Forest>
+        <Hack>15.0</Hack>
+        <Light>6.0</Light>
+        <Pierce>15.0</Pierce>
+        <Shadow>6.0</Shadow>
+        <Spirit>6.0</Spirit>
+        <Water>6.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/fairy/fairy_drove_winter.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,18 @@
+<Entity parent="gaia/gaia_temps/template_tunnel">
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="12.5" width="45.5" />
+  </Footprint>
+  <Obstruction>
+    <Obstructions>
+      <Left depth="12" width="12" x="-20" z="0" />
+      <Right depth="12" width="12" x="20" z="0" />
+    </Obstructions>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_tarm/tarm_archway_ruinedC.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>60.0</Length>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,86 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Trident</AttackName>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>8.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>545</food>
+      <metal>100</metal>
+      <stone>80</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="7.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2700</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">HeroGanon Hero4 Large</Classes>
+    <GenericName>King Warlord of the Blins</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Ahhh good old Ganon, the biggest and the best of the Blins! When we were down in the muck Ganon came round and made us strong again! He united the Moblins, he united the Bulblins, he united the Bokoblins, by great Ukblinro he even united the Dodoblins! Ganon was the smartest of us all, trickin' and besting the Hylians at every turn! He made us so close to conquering all of Hyrule, were it not for those stinking traitorous Sheikah! Hail Ganon the Great!</History>
+    <Icon>units/moblin/mob_hero_ganon.dds</Icon>
+    <Lang>moblin</Lang>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
+    <SpecificName>Ganon</SpecificName>
+    <Tooltip>Big Giant Hero with reaallly big Trident for stabbin the baddies!</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>40.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>55.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/ganon_trident.xml</attack_melee>
+      <death>voice/moblin/ganon/ganon_death.xml</death>
+      <order_attack>voice/moblin/ganon/ganon_attack.xml</order_attack>
+      <order_garrison>voice/moblin/ganon/ganon_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/ganon/ganon_gather.xml</order_gather>
+      <order_repair>voice/moblin/ganon/ganon_repair.xml</order_repair>
+      <order_walk>voice/moblin/ganon/ganon_walk.xml</order_walk>
+      <run>actor/movement/ganon/ganon_walk.xml</run>
+      <select>voice/moblin/ganon/ganon_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/ganon/ganon_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero4</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/moblin/moblin_hero_ganon_b.xml</Actor>
+  </VisualActor>
+</Entity>

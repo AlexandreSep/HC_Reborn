@@ -1,0 +1,72 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Builder>
+    <Entities datatype="tokens">
+      units/zora/zora_kyameron_b
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>25</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>125</Max>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>0</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Summoner ZoraFemale Medium KyaMaster</Classes>
+    <GenericName>Kyameron Master</GenericName>
+    <History>A rare type of Mage found within the Zora Dominion, Kyameron Masters wield the power of animating and giving life to water. Their methods are kept secret to those outside of cults devoted to Malkorbagia, but they are more than willing to lend military aid to the Dominion during times of war. A Kyameron Master can summon autonomous blobs of living water to go forth and attack enemy forces.</History>
+    <Icon>units/zora/zor_kyamaster.dds</Icon>
+    <Lang>zora</Lang>
+    <Rank>Basic</Rank>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/zora/zora_kyamaster_b</SelectionGroupName>
+    <Tooltip>Support Mage that can summon swarms of Kyamerons to do her bidding.</Tooltip>
+    <VisibleClasses datatype="tokens">Support Mage</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/zora/kyamaster/kyamaster_death.xml</death>
+      <order_attack>voice/zora/kyamaster/kyamaster_attack.xml</order_attack>
+      <order_garrison>voice/zora/kyamaster/kyamaster_garrison.xml</order_garrison>
+      <order_gather>voice/zora/kyamaster/kyamaster_gather.xml</order_gather>
+      <order_repair>voice/zora/kyamaster/kyamaster_repair.xml</order_repair>
+      <order_walk>voice/zora/kyamaster/kyamaster_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zora/kyamaster/kyamaster_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.1111</RunMultiplier>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_kyamaster_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,36 @@
+<Entity parent="template_unit_fauna_wild_passive">
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="5.0" width="3.0" />
+  </Footprint>
+  <Health>
+    <Max>150</Max>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>3</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>gaia/fauna_tektite_baby_aqua</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Aqua Tektite Egg</GenericName>
+    <History />
+    <Icon>gaia/fauna_tektite_eggs_aqua.dds</Icon>
+    <Tooltip>Many races in Hyrule consider Tektite Eggs a delicious delicacy. The difficulty in obtaining them (due to a defending mother, and the very short gestation period before hatching) makes them go for quite a market price in some circles.</Tooltip>
+  </Identity>
+  <ResourceSupply>
+    <Max>100</Max>
+    <Type>food.meat</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.0</RunMultiplier>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>structures/wild/tektite_eggs_aquaA.xml</Actor>
+  </VisualActor>
+</Entity>

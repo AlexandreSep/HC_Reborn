@@ -1,0 +1,13 @@
+{
+	"genericName": "Dark Solstice",
+	"description": "Woe to those under the Dark Solstice of Winter.",
+	"cost": {"food": 200, "wood": 200, "stone": 200, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "fairy/season_darksolstice.dds",
+	"researchTime": 40,
+	"tooltip": "Woe to those under the Dark Solstice of Winter. (Winter Global Passives are 25% stronger)",
+	"modifications": [{"value": "Health/Max", "multiply": 1.10, "affects": "Winter Structure" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

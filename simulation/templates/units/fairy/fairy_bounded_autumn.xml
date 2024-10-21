@@ -1,0 +1,16 @@
+<Entity parent="units/fairy/fairy_bounded_b">
+  <Health>
+    <Max>525</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Autumn</Classes>
+    <Icon>units/fairy/fai_bounded_autumn.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_bounded_winter</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_bounded_autumn.xml</Actor>
+  </VisualActor>
+</Entity>

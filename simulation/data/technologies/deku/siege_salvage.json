@@ -1,0 +1,13 @@
+{
+	"genericName": "Salvage Operations",
+	"description": "Do to the nature of their construction, Deku Scrubs could recycle their broken Siege engines to be used to make new ones, or perhaps use their parts for other construction work.",
+	"cost": {"food": 0, "wood": 200, "stone": 200, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "deku/siege_salvage.dds",
+	"researchTime": 40,
+	"tooltip": "Do to the nature of their construction, Deku Scrubs could recycle their broken Siege engines to be used to make new ones, or perhaps use their parts for other construction work. (Deku Scrub Siege Engines can now be harvested for Wood after they are destroyed)",
+	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 100}],
+	"affects": ["DekuSiege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,15 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Infantry Melee"],
+	"modifications": [
+		{ "value": "Attack/Melee/MaxRange", "multiply": 2 },
+		{ "value": "Attack/Melee/PrepareTime", "multiply": 0.90 },
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.90 },
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.90 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.90 }
+	],
+	"auraName": "Battle Dance",
+	"auraDescription": "(x2 Melee Attack Range, +10% Melee Attack Rate - Melee Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/daruk_battledance.dds"
+}

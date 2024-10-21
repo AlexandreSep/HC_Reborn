@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["CivilCentre"],
+	"modifications": [{"value": "TerritoryInfluence/Radius", "multiply": 1.10}],
+	"auraName": "Territory Influence",
+	"auraDescription": "Extends the range of territory that your Civil Centers can generate.",
+	"stackable" : true ,
+	"overlayIcon": "art/textures/ui/session/auras/empty_aura_1.dds"
+}

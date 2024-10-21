@@ -1,0 +1,19 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 0.80 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 0.80 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 0.80 },
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 0.80 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 0.80 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 0.80 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "multiply": 0.80 },
+		{ "value": "Resistance/Entity/Damage/Hack", "multiply": 0.80 },
+		{ "value": "Resistance/Entity/Damage/Crush", "multiply": 0.80 }
+	],
+	"auraName": "Dead Idol",
+	"auraDescription": "(-20% Melee Attack, -20% Ranged Attack, -20% Non Magic Armor)",
+	"overlayIcon": "art/textures/ui/session/auras/idoldead_aura1.dds"
+}

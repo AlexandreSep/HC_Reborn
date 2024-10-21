@@ -1,0 +1,21 @@
+<Entity parent="template_wallset">
+  <Identity>
+    <Civ>hylian</Civ>
+    <GenericName>Stone Wall</GenericName>
+    <History>The cities on the plains of Hyrule were vulnerable from many sides. The Hylians resorted to building durable stone walls to protect themselves.</History>
+    <Icon>structures/hylian/hyl_stonewall.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <WallSet>
+    <MaxTowerOverlap>0.80</MaxTowerOverlap>
+    <MinTowerOverlap>0.10</MinTowerOverlap>
+    <Templates>
+      <Gate>structures/hylian/hylian_stone_wall_gate</Gate>
+      <Tower>structures/hylian/hylian_stone_wall_tower</Tower>
+      <WallLong>structures/hylian/hylian_stone_wall_long</WallLong>
+      <WallMedium>structures/hylian/hylian_stone_wall_medium</WallMedium>
+      <WallShort>structures/hylian/hylian_stone_wall_short</WallShort>
+    </Templates>
+  </WallSet>
+</Entity>

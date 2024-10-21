@@ -1,0 +1,15 @@
+{
+	"genericName": "Uncaring Diet",
+	"description": "Most of the time Dodongo Snakes seemed to rove around as if they had no awareness at all. This lack of attention could really be put to the Lizalfos' advantage as they were tricked into eating all manner of small enemies.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a third deity.",
+	"icon": "lizalfos/dodongosnake_diet.dds",
+	"researchTime": 40,
+	"tooltip": "Bonus damage against Small targets increases by 50%",
+	"modifications": [
+		{"value": "Attack/Melee/Damage/Bonuses/BonusSmall/Multiplier", "multiply": 1.5}
+	],
+	"affects": ["Dodongosnake"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

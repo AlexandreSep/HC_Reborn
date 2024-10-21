@@ -1,0 +1,94 @@
+<Entity parent="HC_template_structure_civil_centreB">
+  <Auras datatype="tokens">
+    structures/totem_aura_1
+  </Auras>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_tiny</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/node_civcenterA</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Totem</Classes>
+    <GenericName>Ukblinro Totem</GenericName>
+    <History>Ukblinro, the god that made us! Ukblinro is the bestest! Without him, we Moblins would be pretty dumb! We may have had farms, and gardens, and nice houses that never fell down before he came around and made us smart, but now we has fighting! Hail Ukblinro!</History>
+    <Icon>structures/moblin/mob_totemB.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Lets us Moblins get Territory and make more buildings! Yaaay!</Tooltip>
+    <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="40.0" width="40.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/moblin/{civ}_bokoblin_b
+    units/moblin/{civ}_hero_kojaku
+    units/moblin/{civ}_hero_ogalon
+    units/moblin/{civ}_hero_kingbulblin
+    units/moblin/{civ}_hero_glutko
+    units/moblin/{civ}_hero_ganon
+    units/moblin/{civ}_hero_ghirahim
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>3</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    moblin/totem_killemtheycome
+    moblin/kojaku_pack
+    moblin/player_ismoblin
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_civ_center_moblin.xml</constructed>
+      <select>interface/select/building/sel_civ_center_moblin.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_centercampA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

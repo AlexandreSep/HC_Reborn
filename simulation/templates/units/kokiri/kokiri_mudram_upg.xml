@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_mudram_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_mudram_F.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,8 @@
+<Entity parent="structures/stalfos/stalfos_defiled">
+   <VisualActor>
+    <Actor>structures/stalfos/stalfos_defiledA_dm.xml</Actor>
+  </VisualActor>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_stalfos_ruins_des</SpawnEntityOnDeath>
+  </Health>
+</Entity>

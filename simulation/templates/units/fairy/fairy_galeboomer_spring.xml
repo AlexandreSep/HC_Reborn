@@ -1,0 +1,18 @@
+<Entity parent="units/fairy/fairy_galeboomer_b">
+  <Identity>
+    <Classes datatype="tokens">Spring</Classes>
+    <Icon>units/fairy/fai_galeboomer_spring.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_galeboomer_summer</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.125</RunMultiplier>
+    <WalkSpeed>16</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_galeboomer_spring.xml</Actor>
+  </VisualActor>
+</Entity>

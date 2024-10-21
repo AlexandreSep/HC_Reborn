@@ -1,0 +1,24 @@
+{
+	"genericName": "Silver Shields",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"all": [ {"tech": "civ_choices/lanayru/choosehero_mipha"}, { "tech": "phase_town" }, {"civ": "lanayru"}]},
+	"requirementsTooltip": "Requires Mipha and the Town Phase.",
+	"icon": "lanayru/ralis_silvershield.dds",
+	"researchTime": 40,
+	"tooltip": "Conscripts, Silverscale Slashers, and Marshals gain a Silver Shield, increasing non-magic armor by +20 and Magic armor by +10",
+	"modifications": [
+	{"value": "Resistance/Entity/Damage/Hack", "add": 20.0},
+	{"value": "Resistance/Entity/Damage/Pierce", "add": 20.0},
+	{"value": "Resistance/Entity/Damage/Crush", "add": 20.0},
+	{"value": "Resistance/Entity/Damage/Forest", "add": 10.0},
+	{"value": "Resistance/Entity/Damage/Fire", "add": 10.0},
+	{"value": "Resistance/Entity/Damage/Water", "add": 10.0},
+	{"value": "Resistance/Entity/Damage/Spirit", "add": 10.0},
+	{"value": "Resistance/Entity/Damage/Light", "add": 10.0},
+	{"value": "Resistance/Entity/Damage/Shadow", "add": 10.0}
+	],
+	"affects": ["SilverShield"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,18 @@
+{
+	"genericName": "Vigjaro Wicker",
+	"description": "Forage baskets made from fine Vigjaro Wicker.",
+  "cost": {
+    "food": 0,
+    "wood": 100,
+    "stone": 0,
+    "metal": 100
+  },
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "hylian/vigjaro_wicker.dds",
+	"researchTime": 40,
+	"tooltip": "Forage baskets made from fine Vigjaro Wicker. (+25% Food Gather Rate (Farm) - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.25}],
+  "affects": [ "FemaleCitizen" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

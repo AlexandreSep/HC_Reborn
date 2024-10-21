@@ -1,0 +1,97 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>400</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="35.0" width="35.0" />
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>60</MinPop>
+    </AIBuild>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Town TreasureTrove</Classes>
+    <GenericName>Treasure Trove</GenericName>
+    <History>Allows the Lizalfos to hire Mercenary units.</History>
+    <Icon>structures/lizalfos/liz_treasuretrove.dds</Icon>
+    <RequiredTechnology>pair_lizgodsA</RequiredTechnology>
+    <Tooltip>A hoard of loot and treasure kept in a safe cavern from other plunderers. Such treasure draws the services of many mercenaries, and Lizalfos are more than willing to hand out some Rupees and Gold if they are paid in kind.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="35.0" width="35.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>1</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>35</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/merc_forestthief_b
+    units/merc_pikku_b
+    units/merc_mago_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-12</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    lizalfos/mercs_spoilsofhunt
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>5000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_treasuretroveB.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldD_S.xml</FoundationActor>
+  </VisualActor>
+</Entity>

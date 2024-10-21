@@ -1,0 +1,172 @@
+{
+	"Code": "zora",
+	"Culture": "civilized",
+	"Name": "Zora Dominion",
+	"Emblem": "session/portraits/emblems/emblem_zora.dds",
+	"History": "The fish-men and women of Hyrule's waters have long dominated the submerged realms. With a focus on the ideal of beauty and grace, they have crafted an Empire bent on shaping others to their extraordinary standards... A goal that has made them quite prideful and arrogant in the eyes of their land-dwelling neighbors. When convincing others fails, the Dominion has both military and magic might on their side.",
+	"Music":[
+			{"File":"zora_theme1.ogg", "Type":"peace"},
+			{"File":"zora_ambient1.ogg", "Type":"peace"},
+			{"File":"zora_ambient2.ogg", "Type":"peace"},
+			{"File":"zora_ambient3.ogg", "Type":"peace"},
+			{"File":"zora_ambient4.ogg", "Type":"peace"},
+			{"File":"zora_ambient5.ogg", "Type":"peace"},
+			{"File":"zora_ambient6.ogg", "Type":"peace"},
+			{"File":"zora_ambient7.ogg", "Type":"peace"},
+			{"File":"zora_ambient8.ogg", "Type":"peace"},
+			{"File":"zora_battle1.ogg", "Type":"battle"},
+			{"File":"zora_battle2.ogg", "Type":"battle"},
+			{"File":"zora_battle3.ogg", "Type":"battle"},
+			{"File":"zora_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Fruit, Meat, Fish, Stone, Metal, Coralmold, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "King Zora De Bon XVI",
+					"Class": "",
+					"Armament": "Battlecrab",
+					"Emblem": "",
+					"History": "The latest in a long line of monarchs of the Dominion, King Zora Farkos is a rather undignified ruler who abuses his station of power. He has been responsible for several unnecessary expansion campaigns, one of which lead to a full invasion of Death Mountain. King Farkos is known as quite a selfish individual who shuns tradition. He unlawfully married the half-breed Zora, Rutela, only to divorce her and thereby pollute the royal bloodline, and splinter the Dominion into two empires."
+				},
+				{
+					"Name": "Princess Ruto, Sage of Water",
+					"Class": "",
+					"Armament": "Ice and Water Magic",
+					"Emblem": "",
+					"History": "The daughter of King Farkos and Queen Rutela, Ruto’s bloodline was polluted by their union, as is evidenced by her eyes. Despite this, she retains her title, and inheritance of the Dominion throne, after the divorce of her two parents. An accident that nearly killed her early in adulthood has led to her adopting Sagehood. To this day, she is one of the youngest Sages to have lived. Ruto is known for her very fiesty and aggressive personality, in some cases being described as a total brat. Despite this demeanor, she withholds a lifelong sadness after the splitting of her parents, that she tries to cure by finding a husband; a venture she often spectacularly fails in."
+				},
+				{
+					"Name": "Ambassador Zaleen",
+					"Class": "",
+					"Armament": "Hidden Fin Blades",
+					"Emblem": "",
+					"History": "For many years, Zaleen has served as Ambassador between the Dominion and its many neighbors. He is perhaps the most well-versed in Hyrulean lore and cultures, due in part to help from his wife’s library of information. Zaleen was a very close friend of Ruto’s during childhood, however an accident that he was involved in nearly killed her, and resulted in her adoption into Sagehood. Since then he has maintained emotional (and literal) distance from her and has grown antagonistic to her rise to the throne."
+				},
+				{
+					"Name": "Telara, Headmaster Historian",
+					"Class": "",
+					"Armament": "Healing Magic",
+					"Emblem": "",
+					"History": "Initially trained as a Mage, Telara left the Communion in order to live a less hostile life. She eventually married Zaleen and became a librarian in Domain Prime, assembling historial documents and compiling much of the information that would be later used in Midna’s Hyrule Historia Tome. Telara’s personality is known as quiet and bashful. She is rather introverted and avoids appearing in public unless in the company of Zaleen or her library."
+				}  
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Aquatic",
+			"History": "",
+			"Description": "All land units can move through deep water." 
+		},
+		{
+			"Name": "Beacon of Culture",
+			"History": "",
+			"Description": "All Civilized Culture Techs are researched for free when the appropriate building is constructed." 
+		},
+		{
+			"Name": "Gift of Healing",
+			"History": "",
+			"Description": "All garrisoned buildings can slowly heal units." 
+		}  
+	],
+	"CivChoices":
+	[
+		"civ_choices/zora/choosehero_zaleen",
+		"civ_choices/zora/choosehero_telara",
+		"civ_choices/zora/choosehero_jabun",
+		"civ_choices/zora/choosehero_debon",
+		"civ_choices/zora/choosehero_ruto",
+		"civ_choices/zora/choosehero_laruto"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Zora Medicine",
+			"History": "",
+			"Description": "Ally Civic Centers can slowly heal garrisoned units."
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Shrine of Jabu",
+			"Class": "",
+			"Emblem": "",
+			"History": "One of the most sacred spaces in the Zora Dominion, this quiet lagoon in the Jabun Reservoir serves as a pilgrimage site and resting place of Jabu-Jabu, Sage of Water and founder of the Dominion. (In Aura, +5 Attack (Magic)- Units and Buildings, 50% Territory Influence)",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "Titan: Lord Jabu Jabu",
+			"Class": "",
+			"Emblem": "",
+			"History": "Jabun, more commonly known as Lord Jabu Jabu, is the second Sage of Water of Hyrule and the founder of the Zora Dominion. Jabun is known for his vanity and over-bloated ego. He refuses to speak to anyone other than his servants or worshipers. He has an insatiable appetite and is also known for his gluttony and laziness. As an ancient Oshunite, he wields tremendous magical powers, in particular that of healing flesh. Many spending time near Lord Jabu Jabu have had wounds and sicknesses cured in short order.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/zora/zora_civil_centre"
+		},
+		{
+			"Template": "units/zora/zora_servantA",
+			"Count": 4
+		},
+		{
+			"Template": "units/zora/zora_riverpatrol_b",
+			"Count": 2
+		},		
+		{
+			"Template": "units/zora/zora_infiltrator_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+  "AINames": [
+    "King Zora De Bon XVI",
+    "Princess Ruto, Sage of Water",
+    "Ambassador Zaleen",
+    "Telara, Headmaster Historian",
+    "Jabun, Spawn of Lord Jabu Jabu",
+    "Laruto, the Elder Sage"
+  ],
+  "SkirmishReplacements": {
+    "skirmish/structures/default_civil_centre": "structures/zora/zora_civil_centre",
+    "skirmish/units/default_support_female_citizen": "units/zora/zora_servantA",
+    "skirmish/units/default_cavalry": "units/zora/zora_infiltrator_b",
+    "skirmish/units/default_infantry_melee_b": "units/zora/zora_servantA",
+    "skirmish/units/default_infantry_ranged_b": "units/zora/zora_servantA",
+    "skirmish/units/special_herobonus_unit": "skirmish/units/special_herobonus_unit_zora",
+    "skirmish/structures/default_defense_tower": "structures/zora/zora_defense_tower",
+    "skirmish/structures/default_house_10": "structures/zora/zora_house"
+  },
+	"SelectableInGameSetup": true
+}

@@ -1,0 +1,81 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Water Mass</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>FireElement</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+      <Damage>
+        <Water>3.0</Water>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <BuildRestrictions>
+    <Category>Special</Category>
+    <PlacementType>land</PlacementType>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>20</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>40</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>25</Max>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Kyameron Medium Close2Base WaterElement SummonerEntity</Classes>
+    <GenericName>Kyameron</GenericName>
+    <History>An animate blob of water that seems to be able to act on basic orders from the master that summoned it. Kyamerons are near useless in combat, but they can easily keep an enemy army distracted.</History>
+    <Icon>units/zora/zor_kyameron.dds</Icon>
+    <Lang>zora</Lang>
+    <SelectionGroupName>units/zora/zora_kyameron_b</SelectionGroupName>
+    <Tooltip>Small Melee Creature unit with a weak Water attack.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>90.0</Crush>
+        <Hack>90.0</Hack>
+        <Pierce>90.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/blob_attack.xml</attack_melee>
+      <death>voice/zora/kyameron/kyameron_death.xml</death>
+      <order_attack>voice/zora/kyameron/kyameron_attack.xml</order_attack>
+      <order_garrison>voice/zora/kyameron/kyameron_garrison.xml</order_garrison>
+      <order_gather>voice/zora/kyameron/kyameron_gather.xml</order_gather>
+      <order_repair>voice/zora/kyameron/kyameron_repair.xml</order_repair>
+      <order_walk>voice/zora/kyameron/kyameron_walk.xml</order_walk>
+      <run>actor/movement/morpha/morpha_move.xml</run>
+      <select>voice/zora/kyameron/kyameron_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/morpha/morpha_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.1111</RunMultiplier>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_kyameron_b.xml</Actor>
+  </VisualActor>
+</Entity>

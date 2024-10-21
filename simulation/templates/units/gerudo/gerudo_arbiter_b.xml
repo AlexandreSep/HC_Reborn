@@ -1,0 +1,74 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Scimitar</AttackName>
+      <Damage>
+        <Hack>40.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/arbiter_aura_1
+  </Auras>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>115</food>
+      <metal>20</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Large UniqueUnit Arbiter</Classes>
+    <GenericName>Arbiter</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Serving as judge, jury, and executioner, Arbiters are the right-hand-women of Emperor Ganondorf, seeing to the affairs of his desert Empire. All Gerudo fear them, and their arrival usually signals the coming of a great and deadly battle. Arbiters can dramatically improve the performance of all cavalry under their command.</History>
+    <Icon>units/gerudo/ger_arbiter.dds</Icon>
+    <Lang>gerudo</Lang>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_ganondorf</RequiredTechnology>
+    <SelectionGroupName>units/gerudo/gerudo_arbiter_b</SelectionGroupName>
+    <Tooltip>Ganondorf's Unique Unit. Cavalry Commander unit that improves the performance of other Cavalry units.</Tooltip>
+    <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>25.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/gerudo/gerudo_deathA.xml</death>
+      <order_attack>voice/gerudo/arbiter/arbiter_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/arbiter/arbiter_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/arbiter/arbiter_gather.xml</order_gather>
+      <order_repair>voice/gerudo/arbiter/arbiter_repair.xml</order_repair>
+      <order_walk>voice/gerudo/arbiter/arbiter_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/gerudo/arbiter/arbiter_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2631</RunMultiplier>
+    <WalkSpeed>19</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_arbiter_b.xml</Actor>
+  </VisualActor>
+</Entity>

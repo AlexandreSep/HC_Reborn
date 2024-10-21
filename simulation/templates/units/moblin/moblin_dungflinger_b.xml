@@ -1,0 +1,93 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+      <AttackName>Dung</AttackName>
+      <Damage>
+        <Crush>300.0</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>110.0</MaxRange>
+      <MinRange>45.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>4000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/small_dust_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.25</ImpactAnimationLifetime>
+        <Speed>37.5</Speed>
+        <Spread>3.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4500</RepeatTime>
+      <SpawnEntityOnImpact>
+        <SpawnNumberMax>1</SpawnNumberMax>
+        <SpawnNumberMin>1</SpawnNumberMin>
+        <SpawnOnHit>
+          <Chance>100</Chance>
+          <SpawnAtTarget>true</SpawnAtTarget>
+        </SpawnOnHit>
+        <SpawnOnImpact>
+          <Chance>100</Chance>
+        </SpawnOnImpact>
+        <Template>units/moblin/moblin_dungpile</Template>
+      </SpawnEntityOnImpact>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>190</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="12.0" width="8.0" />
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">-Organic Construct Large Class40</Classes>
+    <GenericName>Dungflinger</GenericName>
+    <History>The best that the smart science makers of all blinkind could make! Behold the Dungflinger! Such a smart idea I don't know why I didn't think of it! So ya put the dung in the cart and you let it all go and man oh man it sure does make the baddies confused! They dance around all smelly while we go in an whack em all dead! Thanks smart science makers!</History>
+    <Icon>units/moblin/mob_dungflinger.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Big Moblin Support thing flings the dung at the baddies to slow them down!</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/dungflinger_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+      <death>voice/moblin/dodoblin/dodoblin_death.xml</death>
+      <order_attack>voice/moblin/dodoblin/dodoblin_attack.xml</order_attack>
+      <order_garrison>voice/moblin/dodoblin/dodoblin_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/dodoblin/dodoblin_gather.xml</order_gather>
+      <order_repair>voice/moblin/dodoblin/dodoblin_repair.xml</order_repair>
+      <order_walk>voice/moblin/dodoblin/dodoblin_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/moblin/dodoblin/dodoblin_select.xml</select>
+      <trained>interface/alarm/alarm_create_engine.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/moblin/moblin_dungflinger_b.xml</Actor>
+  </VisualActor>
+</Entity>

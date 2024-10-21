@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 1,
+	"affects": ["HeroAgitha"],
+	"modifications": [	],
+	"auraName": "Constructor",
+	"auraDescription": "Agitha can construct all Gohma Buildings.",
+	"overlayIcon": "art/textures/ui/session/auras/agitha_constructor.dds"
+}

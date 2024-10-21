@@ -1,0 +1,86 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <Resources>
+      <stone>0</stone>
+      <wood>600</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="32.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>100</MinPop>
+    </AIBuild>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">City</Classes>
+    <GenericName>Carriage Barn</GenericName>
+    <History>Periodically Ordona Province would launch counter attacks against Moblins and Lizalfos, bringing the fight to their enemies&#8217; villages and cities. Ordonians were more than happy to assemble their Catapults to help take down any fortifications halting their advance.</History>
+    <Icon>structures/ordona/ord_carriagebarn.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Builds and trains various mechanical engines used by Ordona.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="28.0" width="28.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>14</X>
+        <Z>9.5</Z>
+      </step1>
+      <step2>
+        <X>18</X>
+        <Z>18</Z>
+      </step2>
+      <step3>
+        <X>25</X>
+        <Z>35</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/ordona/{civ}_warwagon_b
+    units/ordona/{civ}_siegeram_b
+    units/ordona/{civ}_catapult_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-7</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>6</X>
+      <Z>-2</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    ordona/carriagebarn_sideseats
+    ordona/carriagebarn_timberram
+    ordona/carriagebarn_boozeboulder
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
+      <select>interface/select/building/sel_siegeworks.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_carriagebarnA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+</Entity>

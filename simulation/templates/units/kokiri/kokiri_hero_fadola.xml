@@ -1,0 +1,94 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Deku Seeds</AttackName>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Forest>40.0</Forest>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>90.0</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2500</RepeatTime>
+      <Stun>
+        <Chance>1</Chance>
+        <Time>500</Time>
+      </Stun>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>200</food>
+      <metal>100</metal>
+      <stone>0</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">HeroFadola Hero6 Small FairyGuard</Classes>
+    <GenericName>Kokiri Watcher</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Fadola is one of the less social Kokiri, often spending her time in high places that other Kokiri are afraid to climb to. She has a very calm and friendly demeanor to those that know her. Rumor has it that Fadola is the world's greatest Slingshotter, but she lacks the pride to boast and prove if it's true.</History>
+    <Icon>units/kokiri/kok_hero_fadola.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_fadola</RequiredTechnology>
+    <SpecificName>Fadola</SpecificName>
+    <Tooltip>Ranged hero that attacks with her Slingshot.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/slingshot.xml</attack_ranged>
+      <death>voice/kokiri/saria/saria_death.xml</death>
+      <order_attack>voice/kokiri/saria/saria_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/saria/saria_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/saria/saria_gather.xml</order_gather>
+      <order_repair>voice/kokiri/saria/saria_repair.xml</order_repair>
+      <order_walk>voice/kokiri/saria/saria_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/kokiri/saria/saria_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero6</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.3636</RunMultiplier>
+    <WalkSpeed>11.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_hero_fadola_b.xml</Actor>
+  </VisualActor>
+</Entity>

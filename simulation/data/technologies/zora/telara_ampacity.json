@@ -1,0 +1,13 @@
+{
+	"genericName": "Ampacity Expansion",
+	"description": "As a Mage student, Telara developed a method of extending the power of Zora magic via resonating crystals and lenses.",
+	"cost": {"food": 0, "wood": 0, "stone": 4000, "metal": 500},
+	"requirements": {"all": [ {"tech": "civ_choices/zora/choosehero_telara"}, {"civ": "zora"}]},
+	"requirementsTooltip": "You must select Telara, Headmaster Historian, as your hero.",
+	"icon": "zora/telara_ampacity.dds",
+	"researchTime": 40,
+	"tooltip": "As a Mage student, Telara developed a method of extending the power of Zora magic via resonating crystals and lenses. (+15% Ranged Attack Range - Spark Mage, Stormbolter, Mage Cannon, Ministry, Crystal Tower, and Bastille)",
+	"modifications": [{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 1.15}],
+	"affects": ["Electric"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

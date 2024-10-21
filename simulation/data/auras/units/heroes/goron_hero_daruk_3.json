@@ -1,0 +1,12 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.75 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.75 }
+	],
+	"auraName": "Mountain Eyes",
+	"auraDescription": "(If Garrisoned, -25% Ranged Attack Interval - Building)",
+	"overlayIcon": "art/textures/ui/session/auras/daruk_mountaineyes.dds"
+}
+

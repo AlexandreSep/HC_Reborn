@@ -1,0 +1,45 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="25.0" width="20.0" />
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_sheikah_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Hottatebashira</GenericName>
+    <History>Sheikah houses tended to be small and simple. Having little possessions helped one to be a nomad.</History>
+    <Icon>structures/sheikah/she_house.dds</Icon>
+    <Tooltip>Housing that allows you to field larger armies.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/sheikah/sheikah_houseA.xml</Actor>
+    <FoundationActor>structures/sheikah/sheikah_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+</Entity>

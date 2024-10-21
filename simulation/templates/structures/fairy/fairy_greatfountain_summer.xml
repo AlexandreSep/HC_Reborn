@@ -1,0 +1,24 @@
+<Entity parent="structures/fairy/fairy_barracksB">
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <Icon>structures/fairy/fai_greatfountain_summer.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/fairy/{civ}_great_summer
+    units/fairy/{civ}_godmother_summer
+    units/fairy/{civ}_madmystic_summer
+      units/fairy/{civ}_bounded_summer
+    units/fairy/{civ}_mistwalker_summer
+    </Entities>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/fairy/fairy_greatfountain_autumn</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_greatfountainA_summer.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_summer.xml</FoundationActor>
+  </VisualActor>
+</Entity>

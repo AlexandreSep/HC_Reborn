@@ -1,0 +1,45 @@
+<Entity filtered="">
+  <AIProxy merge="" />
+  <AutoBuildable merge="" />
+  <BuildRestrictions merge="" />
+  <Cost merge="" />
+  <Decay merge="" />
+  <Fogging merge="" />
+  <Footprint merge="" />
+<!-- Add the Foundation component, to deal with the construction process. -->
+<Foundation replace="">
+    <BuildTimeModifier>0.7</BuildTimeModifier>
+  </Foundation>
+  <Health>
+    <Initial>1</Initial>
+  </Health>
+  <Identity merge="">
+    <Classes datatype="tokens">Foundation</Classes>
+  </Identity>
+  <Market merge="" />
+  <Minimap merge="" />
+  <Obstruction merge="">
+    <DisableBlockMovement>true</DisableBlockMovement>
+    <DisableBlockPathfinding>true</DisableBlockPathfinding>
+  </Obstruction>
+  <OverlayRenderer merge="" />
+  <Ownership merge="" />
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
+  <Position merge="" />
+  <RallyPoint merge="" />
+  <RallyPointRenderer merge="" />
+  <Resistance merge="" />
+  <Selectable merge="" />
+  <Sound merge="" />
+  <StatusBars merge="" />
+  <Visibility merge="" />
+  <Vision merge="">
+    <Range>0</Range>
+    <RevealShore>false</RevealShore>
+  </Vision>
+  <VisualActor>
+    <Foundation />
+  </VisualActor>
+</Entity>

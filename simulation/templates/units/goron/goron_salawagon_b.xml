@@ -1,0 +1,82 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Cost>
+    <BattalionSlots>3</BattalionSlots>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>40</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>70</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="7.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>-1.2</X>
+        <Y>2.9</Y>
+        <Z>-12</Z>
+      </Archer1>
+      <Archer2>
+        <X>1.2</X>
+        <Y>2.9</Y>
+        <Z>-12</Z>
+      </Archer2>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>250</Max>
+    <SpawnGarrison>
+      <Template>units/goron/goron_rocktosser_garrison</Template>
+      <SpawnNumber>2</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Salamander Wagon Large Class40 GarrisonClass SalaWagon</Classes>
+    <GenericName>Salamander Wagon</GenericName>
+    <History>Larger Salamanders are used by Gorons are beasts of burden, useful for hauling carts and supplies around the craggy terrain of their homeland. These wagons can also be used as platforms for up to four Goron ranged units in battle. </History>
+    <Icon>units/goron/gor_salawagon.dds</Icon>
+    <Lang>goron</Lang>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/goron/goron_salawagon_b</SelectionGroupName>
+    <Tooltip>Cavalry Support unit that can transport other Goron units into battle. Ranged units can attack from the Wagon while garrisoned.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>60.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/salamander_big_breath.xml</attack_melee>
+      <death>voice/goron/salamander/salamander_death.xml</death>
+      <order_attack>voice/goron/salamander/salamander_attack.xml</order_attack>
+      <order_garrison>voice/goron/salamander/salamander_garrison.xml</order_garrison>
+      <order_gather>voice/goron/salamander/salamander_gather.xml</order_gather>
+      <order_repair>voice/goron/salamander/salamander_repair.xml</order_repair>
+      <order_walk>voice/goron/salamander/salamander_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/goron/salamander/salamander_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.3333</RunMultiplier>
+    <WalkSpeed>12</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/goron/goron_salawagon_b.xml</Actor>
+  </VisualActor>
+</Entity>

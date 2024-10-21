@@ -1,0 +1,103 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+      <AttackName>Lightning</AttackName>
+      <Damage>
+        <Light>150.0</Light>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>120.0</MaxRange>
+      <MinRange>45.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <PrepareTime>7000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/electric_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>100.0</Speed>
+        <Spread>2.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>9000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Light>75.0</Light>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <Stun>
+        <Time>1000</Time>
+        <Chance>100</Chance>
+      </Stun>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>70</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>40</stone>
+      <wood>285</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="12.0" width="8.0" />
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">-Organic Construct Electric MageCannon Large</Classes>
+    <GenericName>Mage Cannon</GenericName>
+    <History>Created by breaking a shard off of the powerful Mage Crystals and laying it in a mobile chassis, these cannons can be pushed around by Zora magic users and overloaded with power. When reaching capacity, a Mage Cannon will explode with tremendous force and unleash a powerful electrical bolt that can incinerate just about anything it hits.</History>
+    <Icon>units/zora/zor_magecannon.dds</Icon>
+    <Tooltip>Very long ranged Siege unit that blasts and stuns enemies with bolts of electricity.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>25.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Promotion>
+    <Entity>units/zora/zora_magecannon_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/magic_lightningbolt.xml</attack_ranged>
+      <death>voice/zora/sparkmage/sparkmage_death.xml</death>
+      <order_attack>voice/zora/sparkmage/sparkmage_attack.xml</order_attack>
+      <order_garrison>voice/zora/sparkmage/sparkmage_garrison.xml</order_garrison>
+      <order_gather>voice/zora/sparkmage/sparkmage_gather.xml</order_gather>
+      <order_repair>voice/zora/sparkmage/sparkmage_repair.xml</order_repair>
+      <order_walk>voice/zora/sparkmage/sparkmage_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/zora/sparkmage/sparkmage_select.xml</select>
+      <trained>interface/alarm/alarm_create_engine.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.1666</RunMultiplier>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_magecannon_b.xml</Actor>
+  </VisualActor>
+</Entity>

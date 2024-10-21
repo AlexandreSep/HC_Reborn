@@ -1,0 +1,25 @@
+<Entity>
+  <AIProxy />
+  <Battalion>
+    <FormationTemplate>special/formations/HC_standard</FormationTemplate>
+    <SameActorSeed>false</SameActorSeed>
+    <Size>1</Size>
+    <SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <Looter />
+  <Ownership />
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <FloatDepth>0.0</FloatDepth>
+    <Floating>false</Floating>
+    <TurnRate>6.0</TurnRate>
+  </Position>
+  <Selectable />
+  <Visibility>
+    <AlwaysVisible>false</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
+    <RetainInFog>false</RetainInFog>
+  </Visibility>
+</Entity>

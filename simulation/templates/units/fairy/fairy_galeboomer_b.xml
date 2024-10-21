@@ -1,0 +1,78 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Boomerang</AttackName>
+      <Damage>
+        <Hack>15.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>400</PrepareTime>
+      <RepeatTime>400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>125</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>50</Max>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">-Organic Construct Small UniqueUnit</Classes>
+    <GenericName>Gale Boomerang</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Appearing to be a simple Boomerang that has a life of its own, the Gale Boomerangs were said to be gifted from Sekaia to brave heroes that earned her favor or affection. When not in the hands of her chosen warriors, they would fly about and attack her enemies on their own.</History>
+    <Icon>units/fairy/fai_galeboomer_spring.dds</Icon>
+    <Lang>fairy</Lang>
+    <RequiredTechnology>civ_choices/fairy/choosehero_sekaia</RequiredTechnology>
+    <SelectionGroupName>units/fairy/fairy_galeboomer_b</SelectionGroupName>
+    <Tooltip>Sekaia's Unique Unit. Fast moving Melee unit that can travel over any terrain.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>true</Floating>
+    <TurnRate>1.25</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <DodgeRating>50.0</DodgeRating>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/galeboomer_hit.xml</attack_melee>
+      <attack_ranged>attack/weapon/galeboomer_hit.xml</attack_ranged>
+      <death>voice/fairy/galeboomer/galeboomer_death.xml</death>
+      <order_attack>voice/fairy/galeboomer/galeboomer_attack.xml</order_attack>
+      <order_garrison>voice/fairy/galeboomer/galeboomer_garrison.xml</order_garrison>
+      <order_gather>voice/fairy/galeboomer/galeboomer_gather.xml</order_gather>
+      <order_repair>voice/fairy/galeboomer/galeboomer_repair.xml</order_repair>
+      <order_walk>voice/fairy/galeboomer/galeboomer_walk.xml</order_walk>
+      <run>actor/movement/fairy/galeboomer_whooshA.xml</run>
+      <select>voice/fairy/galeboomer/galeboomer_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/fairy/galeboomer_whooshA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>8</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_galeboomer_spring.xml</Actor>
+  </VisualActor>
+</Entity>

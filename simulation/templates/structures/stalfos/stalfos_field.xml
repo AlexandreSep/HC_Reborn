@@ -1,0 +1,45 @@
+<Entity parent="template_structure_resource_field">
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="10.0" width="10.0" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="10.0" width="10.0" />
+  </Obstruction>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Field</Classes>
+    <GenericName>Burial Site</GenericName>
+    <History>.</History>
+    <Icon>structures/stalfos/sta_field.dds</Icon>
+    <Tooltip>Contains bones that can be gathered by Stalchildren.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <TerritoryInfluence>
+    <Radius>35</Radius>
+    <Root>false</Root>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <ResourceSupply>
+    <Max>200</Max>
+    <DiminishingReturns>0.90</DiminishingReturns>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.bones</Type>
+  </ResourceSupply>  
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_burialsiteA_anc.xml</Actor>
+  </VisualActor>
+</Entity>

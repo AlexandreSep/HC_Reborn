@@ -1,0 +1,78 @@
+<Entity parent="units/fairy/fairy_great_b">
+  <Attack>
+    <Ranged>
+      <AttackName>Fairy Magic</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>FireElement</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+      <Damage>
+        <Water>25.0</Water>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>70.0</MaxRange>
+      <MinRange>35.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2800</RepeatTime>
+      <SpawnEntityOnImpact>
+        <SpawnNumberMax>1</SpawnNumberMax>
+        <SpawnNumberMin>1</SpawnNumberMin>
+        <SpawnOnHit>
+          <Chance>100</Chance>
+          <SpawnAtTarget>true</SpawnAtTarget>
+        </SpawnOnHit>
+        <SpawnOnImpact>
+          <Chance>100</Chance>
+        </SpawnOnImpact>
+        <Template>units/fairy/fairy_icepatch</Template>
+      </SpawnEntityOnImpact>
+      <Stun>
+        <Chance>100</Chance>
+        <Time>3000</Time>
+      </Stun>
+    </Ranged>
+  </Attack>
+  <Heal>
+    <HealableClasses datatype="tokens">Human</HealableClasses>
+    <Health>0</Health>
+    <Range>15</Range>
+    <Interval>0</Interval>
+    <UnhealableClasses datatype="tokens" />
+  </Heal>
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>2</BattalionSize>
+      <Chance>0</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/fairy/fairy_stray_winter</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>units/fairy/fai_great_winter.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_great_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/greatfairy_ice_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/greatfairy_ice.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/fairy/fairy_great_winter.xml</Actor>
+  </VisualActor>
+</Entity>

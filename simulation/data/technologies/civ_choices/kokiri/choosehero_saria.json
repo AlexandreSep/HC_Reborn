@@ -1,0 +1,11 @@
+{
+	"genericName": "Saria, Sage of the Forests",
+	"description": "Saria, Sage of the Forests",
+	"icon": "kokiri/choosehero_saria.png",
+	"tooltip": "Select Saria, Sage of the Forests as your hero of choice.",
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Ranged Unit Focus", "tooltipText": "Saria focuses on improving Ranged Kokiri units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Saria", "tooltipText": "Allows you to summon Saria, a ranged hero that attacks with her bow and arrows."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Enchantress", "tooltipText": "Non-combat Mage that has a chance to deflect ranged attacks back at their attackers."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Fairy Affinity", "tooltipText": "Fairy Guardians are free and granted instantly."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Fairy Bow", "tooltipText": "Emerald Archers gain Fairy Bows, increasing their attack range and attack rate."}]
+}

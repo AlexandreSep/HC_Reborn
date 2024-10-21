@@ -1,0 +1,41 @@
+<Entity parent="units/hylian/hylian_soldier_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Damage>
+        <Crush>14.0</Crush>
+        <TrueDamage>16</TrueDamage>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">-SoldierCavalry KingdomCavalry</Classes>
+    <GenericName>Kingdom Cavalry</GenericName>
+    <History>These mounted incarnations of the Kingdom Infantry add much-needed speed and range. Armed with a spear, Kingdom Cavalry are light, but swift, and can punch holes into soft enemy formations.</History>
+    <Icon>units/hylian/hyl_kingdomcav.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/hylian/hylian_kingdom_cavalry</SelectionGroupName>
+    <Tooltip>Heavy armored cavalry unit armed with a flail.</Tooltip>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>60.0</Hack>
+        <Pierce>60.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/hylian/hylian_kingdom_cav_b.xml</Actor>
+  </VisualActor>
+</Entity>

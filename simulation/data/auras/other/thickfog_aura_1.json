@@ -1,0 +1,15 @@
+{
+	"type": "range",
+	"radius": 75,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 0.50},
+		{ "value": "Attack/Ranged/Spread", "multiply": 2.00 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.75 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 0.75 }
+	],
+	"auraName": "Thick Fog",
+	"auraDescription": "{-50% Vision Range, -100% Enemy Ranged Attack Accuracy, -25% Movement Speed)",
+	"overlayIcon": "art/textures/ui/session/auras/dust_cloud1.dds"
+}

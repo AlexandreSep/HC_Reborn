@@ -1,0 +1,80 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic Field GohmaBuild</Classes>
+    <GenericName>Fly Trap</GenericName>
+    <History>The Gohma have developed a somewhat livestock relationship with the giant flies of the Misery Mire, much like Hylians and Cows. When game is scarce the Gohma create and grow swarms of the Mire Flies as a supplimentary source of food.</History>
+    <Icon>structures/gohma/goh_flytrap.dds</Icon>
+    <Tooltip>Traps giant flies that the Gohma can Harvest for Food.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Loot>
+    <food>50</food>
+    <wood>0</wood>
+  </Loot>
+  <Minimap>
+    <Color b="46" g="82" r="119" />
+  </Minimap>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <Static depth="5.0" width="5.0" />
+  </Obstruction>
+  <ProductionQueue disable="" />
+  <RallyPoint disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>40.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <DiminishingReturns>0.90</DiminishingReturns>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.grain</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/gohma/complete_gohA.xml</constructed>
+      <select>interface/select/building/gohma/sel_gohA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>5.0</DecayRate>
+  </TerritoryDecay>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_farmA.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint />
+    </SelectionShape>
+  </VisualActor>
+</Entity>

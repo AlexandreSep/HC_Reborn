@@ -1,0 +1,21 @@
+<Entity parent="template_wallset">
+  <Identity>
+    <Civ>lanayru</Civ>
+    <GenericName>Silver Wall</GenericName>
+    <History>The walls of Lanayru Province, while not as durable as those of other civilizations, were nonetheless impressive and served their defnesive purpose well.</History>
+    <Icon>structures/lanayru/lan_wall.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <WallSet>
+    <MaxTowerOverlap>0.80</MaxTowerOverlap>
+    <MinTowerOverlap>0.10</MinTowerOverlap>
+    <Templates>
+      <Gate>structures/lanayru/lanayru_wall_gate</Gate>
+      <Tower>structures/lanayru/lanayru_wall_tower</Tower>
+      <WallLong>structures/lanayru/lanayru_wall_long</WallLong>
+      <WallMedium>structures/lanayru/lanayru_wall_medium</WallMedium>
+      <WallShort>structures/lanayru/lanayru_wall_short</WallShort>
+    </Templates>
+  </WallSet>
+</Entity>

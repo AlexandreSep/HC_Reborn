@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["GohEggA", "GohEggB"],
+	"modifications": [	],
+	"auraName": "Rapid Birthing",
+	"auraDescription": "+10% Hatching rate for all eggs.",
+	"overlayIcon": "art/textures/ui/session/auras/matriarch_rapidbirth.dds"
+}

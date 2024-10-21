@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_mudlaborerA">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_mudlaborer_F.xml</Actor>
+  </VisualActor>
+</Entity>

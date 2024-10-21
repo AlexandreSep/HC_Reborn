@@ -1,0 +1,14 @@
+{
+  "type": "range",
+  "radius": 50,
+  "affects": [ "Units" ],
+  "modifications": [
+    {
+      "value": "Attack/Capture/Value",
+      "multiply": 2.00
+    }
+  ],
+  "auraName": "Earth God's Lyric",
+  "auraDescription": "(Enemy Structures are easier to capture)",
+  "overlayIcon": "art/textures/ui/session/auras/fado_earthgodlyric.dds"
+}

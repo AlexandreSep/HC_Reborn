@@ -1,0 +1,75 @@
+<Entity parent="HC_template_structure_wonder">
+  <BuildRestrictions>
+    <Territory>own</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Height>10.0</Height>
+    <Square depth="90.0" width="90.0" />
+  </Footprint>
+  <Health>
+    <Max>10000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lanayru_wonderA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>150</MinPop>
+    </AIBuild>
+    <Civ>lanayru</Civ>
+    <GenericName>Rutala Dam</GenericName>
+    <History>This massive structure was built across the Airu River near its source in the Death Mountain range. It was able to regulate the flow of water through Lanayru Province as well as habor aquatic life in its reservoir.</History>
+    <Icon>structures/lanayru/lan_rutaladam.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>The Lanayru Wonder, allows you to summon Vrylonacia, the Spirit of Lanayru.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="90.0" width="90.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>55</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>60</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/lanayru/{civ}_titan_vrylonacia
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>50</Z>
+    </SpawnOffset>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/lanayru/complete_rutaladam.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/lanayru/sel_rutaladam.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_wonderA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldM.xml</FoundationActor>
+  </VisualActor>
+</Entity>

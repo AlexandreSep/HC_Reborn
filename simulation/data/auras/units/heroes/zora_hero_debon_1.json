@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Cavalry", "Creature"],
+	"modifications": [
+		{ "value": "Attack/Melee/PrepareTime", "multiply": 0.90 },
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.90 },
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.90 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.90 }
+	],
+	"auraName": "Hydro Haste",
+	"auraDescription": "(+10% Melee and Ranged Attack Rate - Cavalry and Creature)",
+	"overlayIcon": "art/textures/ui/session/auras/debon_hydrohaste.dds"
+}

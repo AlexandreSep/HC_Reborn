@@ -1,0 +1,25 @@
+<Entity parent="units/fairy/fairy_madmystic_b">
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>4</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/fairy/fairy_stray_autumn</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Autumn</Classes>
+    <Icon>units/fairy/fai_madmystic_autumn.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_madmystic_winter</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Vision>
+    <Range>160</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/fairy/fairy_mad_autumn.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,46 @@
+<Entity parent="units/hylian/hylian_soldier_spearman">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+      <Damage>
+        <Pierce>8.0</Pierce>
+        <TrueDamage>8.0</TrueDamage>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">-SoldierSpearman KingdomSpearman</Classes>
+    <GenericName>Kingdom Spearman</GenericName>
+    <History>A private order of soldiers tasked with protecting Hyrule Castle and other important military bases, Castle Guards are purely defensive infantry armed with tower shields and spears. They are very resistant to cavalry and arrow fire; only if an enemy manages to break their lines will they fall easy.</History>
+    <Icon>units/hylian/hyl_kingdomspear.dds</Icon>
+    <SelectionGroupName>units/hylian/hylian_kingdom_spearman</SelectionGroupName>
+    <Tooltip>Heavy unit armed with a spear and shield. Deals Piercing damage.</Tooltip>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/hylian/hylian_kingdom_spearman_b.xml</Actor>
+  </VisualActor>
+</Entity>

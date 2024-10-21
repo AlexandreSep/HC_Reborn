@@ -1,0 +1,6 @@
+<Entity parent="units/gerudo/gerudo_windwitch_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_windwitch_upg.xml</Actor>
+  </VisualActor>
+</Entity>

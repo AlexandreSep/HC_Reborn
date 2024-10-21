@@ -1,0 +1,12 @@
+<Entity parent="template_rubble">
+  <Decay>
+    <Active>true</Active>
+    <DelayTime>0.1</DelayTime>
+    <SinkAccel>0</SinkAccel>
+    <SinkRate>0.5</SinkRate>
+    <SinkingAnim>true</SinkingAnim>
+  </Decay>
+  <VisualActor>
+    <Actor>particle/explosion_fire_core.xml</Actor>
+  </VisualActor>
+</Entity>

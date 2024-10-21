@@ -1,0 +1,29 @@
+<Entity parent="units/kokiri/kokiri_hero_fado_base">
+  <Auras datatype="tokens">
+    -units/heroes/kokiri_hero_fado_songwind
+    units/heroes/kokiri_hero_fado_songearth
+    units/heroes/kokiri_hero_fado_songearth2
+    units/heroes/kokiri_hero_fado_songearth3
+    -units/heroes/kokiri_hero_fado_songsaria
+    -units/heroes/kokiri_hero_fado_songsaria2
+    -units/heroes/kokiri_hero_fado_songstorm
+    -units/heroes/kokiri_hero_fado_songstorm2
+  </Auras>
+  <Upgrade>
+    <SongA>
+      <Entity>units/kokiri/kokiri_hero_fado_songwind</Entity>
+      <Time>1</Time>
+      <Tooltip>Play the Wind God's Aria.</Tooltip>
+    </SongA>
+    <SongB>
+      <Entity>units/kokiri/kokiri_hero_fado_songstorm</Entity>
+      <Time>1</Time>
+      <Tooltip>Play the Song of Storms.</Tooltip>
+    </SongB>
+    <SongC>
+      <Entity>units/kokiri/kokiri_hero_fado_songsaria</Entity>
+      <Time>1</Time>
+      <Tooltip>Play Saria's Song.</Tooltip>
+    </SongC>
+  </Upgrade>
+</Entity>

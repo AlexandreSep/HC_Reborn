@@ -1,0 +1,81 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>400</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="50.0" width="50.0" />
+  </Footprint>
+  <Health>
+    <Max>5000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Crest</GenericName>
+    <History>Lizalfos royalty is far from glamorous, though compared to their kin they live in style. Often building their homes high above their peers, the highest class of reptiles look down to rule over their warriors.</History>
+    <Icon>structures/lizalfos/liz_crest.dds</Icon>
+    <RequiredTechnology>pair_lizgodsC</RequiredTechnology>
+    <Tooltip>Trains many higher tier Lizalfos units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="47.0" width="47.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>14.5</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/lizalfos/{civ}_aeralfos_b
+      units/lizalfos/{civ}_songsayer_b
+    units/lizalfos/{civ}_aeralfire_b
+    units/lizalfos/{civ}_matron_b
+    units/lizalfos/{civ}_iguanalfos_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>14.5</X>
+      <Z>14.5</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    lizalfos/aeralfos_flightoverfaron
+    lizalfos/talik_volvagianlegacy
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_crestA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldA_S.xml</FoundationActor>
+  </VisualActor>
+</Entity>

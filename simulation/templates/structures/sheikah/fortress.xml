@@ -1,0 +1,5 @@
+<Entity parent="structures/fortress_wallfixer">
+   <Identity>
+		<Civ>sheikah</Civ>
+   </Identity>
+</Entity>

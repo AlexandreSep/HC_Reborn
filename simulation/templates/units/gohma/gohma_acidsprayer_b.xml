@@ -1,0 +1,62 @@
+<Entity parent="HC_template_unit_creature">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>110</food>
+      <metal>20</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <FriendlyFire>false</FriendlyFire>
+    <Range>10</Range>
+    <Damage>
+      <Forest>258.0</Forest>
+    </Damage>
+  </DeathDamage>
+  <Health>
+    <Max>220</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Huge UniqueUnit AcidSprayer</Classes>
+    <GenericName>Acid Sprayer</GenericName>
+    <History>The Acid Sprayer is a giant and slow moving unit. It has an equally slow and rather weak melee attack. Rather, these units are specialized to absorb damage from enemy forces and then violently explode when slain, splashing corrosive acid over everything around itself.</History>
+    <Icon>units/gohma/goh_acidsprayer.dds</Icon>
+    <Lang>gohma</Lang>
+    <RequiredTechnology>civ_choices/gohma/choosehero_sulkaris</RequiredTechnology>
+    <SelectionGroupName>units/gohma/gohma_acidsprayer_b</SelectionGroupName>
+    <Tooltip>Sulkaris' Unique Unit. Large Gohma Creature that self destructs and burns all enemies in the blast with its poison acids.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_hugeA_bite.xml</attack_melee>
+      <death>voice/gohma/acidsprayer/acidsprayer_death.xml</death>
+      <order_attack>voice/gohma/gohma_largeA/gohma_largeA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_largeA/gohma_largeA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_largeA/gohma_largeA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_largeA/gohma_largeA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_largeA/gohma_largeA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlE.xml</run>
+      <select>voice/gohma/gohma_largeA/gohma_largeA_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlE.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/gohma/gohma_acid_b.xml</Actor>
+  </VisualActor>
+</Entity>

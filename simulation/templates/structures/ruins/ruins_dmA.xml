@@ -1,0 +1,47 @@
+<Entity parent="structures/ruins/ruins_baseA">
+  <Health disable="" />
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Barracks Ruins</Classes>
+    <GenericName>Death Mountain Ruins</GenericName>
+    <History>The long-abandoned remnants of a past culture.</History>
+    <Icon>structures/ruins/ruins_dmA.dds</Icon>
+    <Tooltip>The long-abandoned remnants of a past culture.</Tooltip>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/armos/armos_dm_b
+    </Entities>
+  </ProductionQueue>
+  <Upgrade>
+    <ADarknut>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_CC_dmA</Entity>
+      <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <RequiredTechnology>darknut/ruins_isdarknut</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Restore these ruins into a Darknut Agora.</Tooltip>
+	  <Variant>upgrading_darknut</Variant>
+    </ADarknut>
+	<AStalfos>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/stalfos/stalfos_civil_centre_dm</Entity>
+      <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Convert ruins into a Crypt.</Tooltip>
+	  <Variant>upg_stalfos</Variant>
+    </AStalfos>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/ruins/ruins_DMA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

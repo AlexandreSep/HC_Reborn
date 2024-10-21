@@ -1,0 +1,20 @@
+<Entity parent="gaia/flora_stump_waste_smallA">
+  <Footprint>
+    <Circle radius="14.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Identity>
+    <SpecificName>Large Wasteland Stump</SpecificName>
+    <Tooltip>Giant dead stump that once belonged to a huge tree in the Moblin Wastelands.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="14.0" width="14.0" />
+  </Obstruction>
+  <ResourceSupply>
+    <Max>400</Max>
+    <MaxGatherers>16</MaxGatherers>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>flora/forest/waste_stump_large.xml</Actor>
+  </VisualActor>
+</Entity>

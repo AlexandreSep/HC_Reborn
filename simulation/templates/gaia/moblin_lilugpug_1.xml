@@ -1,0 +1,47 @@
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>25</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>1.5</Height>
+    <Square depth="2.8" width="1.4" />
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">LiveStock</Classes>
+    <GenericName>Meat</GenericName>
+    <History />
+    <Icon>gaia/fauna_lilugpug.dds</Icon>
+    <SpecificName>Lil Ugpug</SpecificName>
+    <Tooltip>Mmmmm yuummy piggy meat for the Moblins to eat all up! When the wild animals are all onna run and gone, we go for the Lil Upgpugs!</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>125</Max>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>8</MaxGatherers>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <death>actor/fauna/animal/pig.xml</death>
+      <order_walk>actor/fauna/animal/pig.xml</order_walk>
+      <select>actor/fauna/animal/pig.xml</select>
+      <trained>actor/fauna/animal/pig.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed>3.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/moblin/moblin_lilugpug_b.xml</Actor>
+  </VisualActor>
+</Entity>

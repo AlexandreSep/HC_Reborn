@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Legion"],
+	"modifications": [{"value": "Promotion/RequiredXp", "multiply": 0.90}],
+	"auraName": "Dux's Experience",
+	"auraDescription": "(+10% Less experience required to level up)",
+	"overlayIcon": "art/textures/ui/session/auras/dux_aura1.dds"
+}

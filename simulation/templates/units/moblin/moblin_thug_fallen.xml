@@ -1,0 +1,5 @@
+<Entity parent="units/moblin/moblin_thug_b">
+  <Identity>
+    <Classes datatype="tokens">HiddenUI</Classes>
+  </Identity>
+</Entity>

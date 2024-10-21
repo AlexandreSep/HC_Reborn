@@ -1,0 +1,13 @@
+{
+	"genericName": "Legion Loyalty",
+	"description": "Much money could be made if one was hired by the Darknut Legion to fight. Many Mercenaries would prioritize their busieness in favor of the Legion, sometimes even offering discounts.",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "darknut/mercs_legionloyalty.dds",
+	"researchTime": 40,
+	"tooltip": "Much money could be made if one was hired by the Darknut Legion to fight. Many Mercenaries would prioritize their busieness in favor of the Legion, sometimes even offering discounts. (Cost to train Mercenaries is reduced by 25%)",
+	"modifications": [{"value": "Cost/Resources/metal", "multiply": 0.75}],
+	"affects": ["Mercenary"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,20 @@
+<Entity parent="structures/goron/goron_civil_centre">
+  <Footprint>
+    <Circle radius="100.0" />
+    <Height>15.0</Height>
+  </Footprint>
+  <Identity>
+    <Classes datatype="tokens">Placer</Classes>
+  </Identity>
+  <Obstruction>
+    <Static depth="100.5" width="100.5" />
+  </Obstruction>
+  <Promotion>
+    <Entity>structures/goron/goron_civil_centre</Entity>
+    <RequiredXp>1</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/SkirmishReplacer_CivCentreA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

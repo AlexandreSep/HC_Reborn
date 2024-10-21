@@ -1,0 +1,80 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrows</AttackName>
+      <Damage>
+        <Pierce>40</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>80</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>800</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+      <TrueDamage>40</TrueDamage>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>105</food>
+      <metal>0</metal>
+      <stone>30</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>380</Max>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Medium Class80 CanGarrison Ranger</Classes>
+    <GenericName>Ranger</GenericName>
+    <History>Ordonian Rangers were those dedicated to protecting the wild borders of the Province from encroachment. Initially established on the western border to watch and warn of incoming Moblin invasions, Rangers can now be found on all edges of Ordona, from Faron to the haunted canyons of Ikana. These stealthy soldiers know how to survive in the wilderness and take out almost any foe before they knew what hit them. They can snipe enemies with their Ranger Crossbows as well as switch to using battle axes in a melee.</History>
+    <Icon>units/ordona/ord_ranger.dds</Icon>
+    <Lang>ordona</Lang>
+    <SelectionGroupName>units/ordona/ordona_ranger_b</SelectionGroupName>
+    <Tooltip>Fast moving heavy Missile unit armed with a powerful crossbow.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile Worker</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
+      <death>voice/ordona/ranger/ranger_death.xml</death>
+      <order_attack>voice/ordona/ranger/ranger_attack.xml</order_attack>
+      <order_garrison>voice/ordona/ranger/ranger_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/ranger/ranger_gather.xml</order_gather>
+      <order_repair>voice/ordona/ranger/ranger_repair.xml</order_repair>
+      <order_walk>voice/ordona/ranger/ranger_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/ordona/ranger/ranger_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/ordona/ordona_ranger_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

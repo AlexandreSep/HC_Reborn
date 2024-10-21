@@ -1,0 +1,8 @@
+<Entity parent="units/hylian/hylian_crossbowman_b">
+  <Identity>
+    <SpecificName>Malkariko Crossbowman</SpecificName>
+  </Identity>
+  <VisualActor>
+    <Actor>units/hylian/malkariko/malkariko_crossbowman_b.xml</Actor>
+  </VisualActor>
+</Entity>

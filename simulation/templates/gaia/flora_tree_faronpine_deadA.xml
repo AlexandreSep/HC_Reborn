@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Material</GenericName>
+    <History>A coniferous tree native to the Faron Woods.</History>
+    <SpecificName>Faron Pine</SpecificName>
+    <Tooltip>A coniferous tree native to the Faron Woods.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/faron_pines_deadA.xml</Actor>
+  </VisualActor>
+</Entity>

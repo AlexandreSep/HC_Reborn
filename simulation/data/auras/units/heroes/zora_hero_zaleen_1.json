@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Healer"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 1.25 }
+	],
+	"auraName": "Doctor Commando",
+	"auraDescription": "(+25% Walk/Run Speed - Healer)",
+	"overlayIcon": "art/textures/ui/session/auras/zaleen_doctorcommando.dds"
+}

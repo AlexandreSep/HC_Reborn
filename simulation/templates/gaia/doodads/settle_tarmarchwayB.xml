@@ -1,0 +1,57 @@
+<Entity parent="gaia/gaia_temps/template_tunnel">
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="12.5" width="45.5" />
+  </Footprint>
+  <Health>
+    <DamageVariants>
+      <heavydamage>0.35</heavydamage>
+      <lightdamage>0.85</lightdamage>
+      <mediumdamage>0.65</mediumdamage>
+    </DamageVariants>
+    <DeathType>corpse</DeathType>
+    <IdleRegenRate>0</IdleRegenRate>
+    <Max>500</Max>
+    <RegenRate>0</RegenRate>
+    <SpawnEntityOnDeath>rubble/rubble_stone_wall_medium</SpawnEntityOnDeath>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Nottall</Classes>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Left depth="12" width="12" x="-20" z="0" />
+      <Right depth="12" width="12" x="20" z="0" />
+    </Obstructions>
+  </Obstruction>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>100.0</Crush>
+        <Hack>100.0</Hack>
+        <Pierce>100.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>1</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <VisualActor>
+    <Actor>structures/settle_tarm/tarm_archwayB.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>60.0</Length>
+  </WallPiece>
+</Entity>

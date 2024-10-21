@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 0.50 },
+		{ "value": "Attack/Ranged/Spread", "multiply": 2.00 }
+	],
+	"auraName": "Shroudwalker Fog",
+	"auraDescription": "{-50% Enemy Vision Range, -100% Enemy Ranged Attack Accuracy)",
+	"overlayIcon": "art/textures/ui/session/auras/shroudwalker_aura1.dds"
+}

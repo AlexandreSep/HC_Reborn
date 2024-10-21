@@ -1,0 +1,89 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrows</AttackName>
+      <Damage>
+        <Pierce>100</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>80.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>800</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>385</food>
+      <metal>100</metal>
+      <stone>70</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2200</Max>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">HeroBeth Hero6 Medium</Classes>
+    <GenericName>Lady of Ordon</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The daughter of Sera and inheritor of Sera's Sundries, Beth runs one of the largest market chains in all of Hyrule. She is tied to Ordona's economic prosperity and foreign trade and hopes to keep the Province one of Hyrule's greatest market powers. While not skilled in fighting, she has enough training with a bow and arrows.</History>
+    <Icon>units/ordona/ord_hero_beth.dds</Icon>
+    <Lang>ordona</Lang>
+    <RequiredTechnology>civ_choices/ordona/choosehero_beth</RequiredTechnology>
+    <SpecificName>Ashei</SpecificName>
+    <Tooltip>Ranged Hero carrying a bow and arrow.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile Worker</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <DodgeRating>25.0</DodgeRating>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>30.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>15.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <death>voice/ordona/ashei/ashei_death.xml</death>
+      <order_attack>voice/ordona/ashei/ashei_attack.xml</order_attack>
+      <order_garrison>voice/ordona/ashei/ashei_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/ashei/ashei_gather.xml</order_gather>
+      <order_repair>voice/ordona/ashei/ashei_repair.xml</order_repair>
+      <order_walk>voice/ordona/ashei/ashei_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/ordona/ashei/ashei_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero6</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/ordona/ordona_hero_beth_b.xml</Actor>
+  </VisualActor>
+</Entity>

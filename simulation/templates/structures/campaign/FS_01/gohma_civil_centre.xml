@@ -1,0 +1,97 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Shadow>10.0</Shadow>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>90.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+      </Projectile>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.175</LineThickness>
+      </RangeOverlay>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+    structures/hivecreep
+  </Auras>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>500</metal>
+      <stone>0</stone>
+      <wood>500</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="27.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>6000</Max>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>10</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/gohma_larva_sterile_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/gohma_larva_sterile_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic GohmaDen HiveNode GohmaBuild</Classes>
+    <GenericName>Hive Core</GenericName>
+    <History>The apparent center of a Gohma Hive, the Hive Core creates and pumps the mysterious blue Shroud of the arachnids to the surrounding landscape, coating it in webbing and growth that can spawn new buildings. The Hive Core is needed to construct all Gohma buildings, and also serves as a resource drop off point.</History>
+    <Icon>structures/gohma/goh_hive_core.dds</Icon>
+    <Tooltip>Gohma Civil Center: All Resources can be dropped off here.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>
+  <ProductionQueue>
+    <Entities datatype="tokens">
+</Entities>
+    <Technologies datatype="tokens">
+	gohma/player_isgohma
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>1000</Interval>
+    <Rates>
+      <food>1</food>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/natural/gohma_acid_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/natural/gohma_acid_attack.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_hivecore.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

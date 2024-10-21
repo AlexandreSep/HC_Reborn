@@ -1,0 +1,103 @@
+<Entity parent="HC_template_hero_creature">
+  <Attack>
+    <Ranged>
+      <AttackName>Ball and Chain</AttackName>
+      <Damage>
+        <Crush>18</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>35</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>2400</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/small_dust_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.25</ImpactAnimationLifetime>
+        <Speed>50.0</Speed>
+        <Spread>1.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2700</RepeatTime>
+      <Splash>
+        <Damage>
+          <Crush>7.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>15</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>75</food>
+      <metal>0</metal>
+      <stone>55</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="7" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2500</Max>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">HeroOnox Large Hero6</Classes>
+    <GenericName>General of Darkness</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A Dark Dragon summoned forth by Veran, the Sorcresses of Shadows sends General Onox on missions deemed too dangerous for any normal Labrynnian. Carrying a huge Flail and wearing a near invulnerable suit of armor into battle, Onox's presence alone is sometimes enough to bring about a surrender.</History>
+    <Icon>units/labrynna/lab_hero_onox.dds</Icon>
+    <Lang>labrynna</Lang>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_onox</RequiredTechnology>
+    <SelectionGroupName>units/labrynna/lab_onox_b</SelectionGroupName>
+    <SpecificName>Onox</SpecificName>
+    <Tooltip>Powerful Siege Hero with a huge Flail.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>55.0</Hack>
+        <Pierce>65.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/ball_n_chainA.xml</attack_ranged>
+      <death>voice/moblin/gooma/gooma_death.xml</death>
+      <order_attack>voice/moblin/gooma/gooma_attack.xml</order_attack>
+      <order_garrison>voice/moblin/gooma/gooma_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/gooma/gooma_gather.xml</order_gather>
+      <order_repair>voice/moblin/gooma/gooma_repair.xml</order_repair>
+      <order_walk>voice/moblin/gooma/gooma_walk.xml</order_walk>
+      <run>actor/movement/gooma/gooma_walk.xml</run>
+      <select>voice/moblin/gooma/gooma_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/gooma/gooma_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero6</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.5714</RunMultiplier>
+    <WalkSpeed>3.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_onox_b.xml</Actor>
+  </VisualActor>
+</Entity>

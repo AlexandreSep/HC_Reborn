@@ -1,0 +1,53 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="30.0" width="30.0" />
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Villa</GenericName>
+    <History>Labrynnian homes were superior by the standards of their neighbors, the wealth generated from their expansion allowed for higher levels of living compared to before the Empire.</History>
+    <Icon>structures/labrynna/lab_houseA.dds</Icon>
+    <Tooltip>Housing that allows you to field larger armies.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="27.0" width="27.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>15</Bonus>
+  </Population>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_houseB</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Upgrade Villa into Manor.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_houseA.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldG.xml</FoundationActor>
+  </VisualActor>
+</Entity>

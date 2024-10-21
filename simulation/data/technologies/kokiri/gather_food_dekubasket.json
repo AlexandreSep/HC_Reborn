@@ -1,0 +1,13 @@
+{
+	"genericName": "Deku Baskets",
+	"description": "Finely crafted baskets made from the bark of sturdy Deku trees.",
+	"cost": {"food": 0, "wood": 50, "stone": 0, "metal": 50},
+	"requirements": { "all": [{ "entity": { "class": "BerrySeeder", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Berry Seeder Addon.",
+	"icon": "kokiri/gather_food_dekubasket.dds",
+	"researchTime": 40,
+	"tooltip": "Finely crafted baskets made from the bark of sturdy Deku trees (+50% Food Gather Rate (Forage) - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.fruit", "multiply": 1.5}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

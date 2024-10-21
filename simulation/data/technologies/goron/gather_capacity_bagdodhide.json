@@ -1,0 +1,19 @@
+{
+	"genericName": "Dodongo Hide Bag",
+	"description": "Strong bags reinforced with Dodongo Hide.",
+	"cost": {"food": 0, "wood": 1000, "stone": 0, "metal": 1000},
+	"supersedes": "goron/gather_capacity_bagstomach",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "goron"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "goron/gather_capacity_bagdodhide.dds",
+	"researchTime": 40,
+	"tooltip": "Strong bags reinforced with Dodongo Hide. (+10 Resource Capacity - Worker)",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 10},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 10},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 10},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 10}
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

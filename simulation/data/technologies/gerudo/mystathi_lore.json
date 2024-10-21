@@ -1,0 +1,15 @@
+{
+	"genericName": "Mystathi's Lore",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 750},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/mystathi_lore.dds",
+	"researchTime": 40,
+	"tooltip": "Sacred magic of the ancient Gerudo ice sorceress, Mystathi. (Ranged Attack Rate 0.5 seconds - Ice Archer)",
+	"modifications": [{ "value": "Attack/Ranged/Damage/PrepareTime", "add": -500 }, 
+		{ "value": "Attack/Ranged/Damage/RepeatTime", "add": -500 },
+		{"value": "Attack/Ranged/Damage/ProjectileSpeed", "add": 10.0}],
+	"affects": ["IceArcher"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

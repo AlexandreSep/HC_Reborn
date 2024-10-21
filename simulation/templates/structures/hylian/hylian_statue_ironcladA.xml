@@ -1,0 +1,44 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/religious_territory_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>Temple</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>250</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="5.0" width="5.0" />
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <GenericName>Royal Knight Statue</GenericName>
+    <History>A tall statue of a proud Royal Knight.</History>
+    <Icon>structures/hylian/hyl_statue.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>A tall statue of a proud Royal Knight.</Tooltip>
+    <VisibleClasses datatype="tokens">Culture</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="5.0" width="5.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_statue_ironcladA.xml</Actor>
+  </VisualActor>
+</Entity>

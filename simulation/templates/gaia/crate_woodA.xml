@@ -1,0 +1,17 @@
+<Entity parent="template_gaia_flora">
+  <Identity>
+    <GenericName>Material</GenericName>
+    <History>A crate full of Lumber for the taking.</History>
+    <SpecificName>Lumber Crate</SpecificName>
+    <Tooltip>A crate full of Lumber for the taking.</Tooltip>
+  </Identity>
+  <ResourceSupply>
+    <Max>100</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>2</MaxGatherers>
+    <Type>wood.tree</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>props/resources/crate_woodA.xml</Actor>
+  </VisualActor>
+</Entity>

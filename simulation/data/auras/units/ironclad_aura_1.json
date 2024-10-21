@@ -1,0 +1,17 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.10 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.10 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.10 },
+		{ "value": "Health/Max", "multiply": 1.10 }
+	],
+	"auraName": "Kingdom Commander",
+	"auraDescription": "(+10% Melee Attack, +10% Ranged Attack, +10% Health - Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/ironclad_aura1.dds"
+}

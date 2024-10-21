@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Battalion>
+    <Size>1</Size>
+    <SameActorSeed>false</SameActorSeed>
+    <FormationTemplate>special/formations/battle_line</FormationTemplate>
+	<SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <Population>0</Population>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="1.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Identity>
+	<Classes datatype="tokens">HeroBonusReplace HiddenUI</Classes>
+    <Civ>lanayru</Civ>
+  </Identity>
+  <Promotion>
+    <Entity>units/zora/zora_infiltrator_b</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Selectable>
+    <EditorOnly/>
+  </Selectable>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>other/empty_model.xml</Actor>
+  </VisualActor>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+</Entity>

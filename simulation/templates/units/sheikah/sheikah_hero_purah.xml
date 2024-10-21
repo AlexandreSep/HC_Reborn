@@ -1,0 +1,89 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrows</AttackName>
+      <Damage>
+        <Pierce>100</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>80.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>800</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>385</food>
+      <metal>100</metal>
+      <stone>70</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2200</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">HeroPurah Hero5 Medium</Classes>
+    <GenericName>Shadow Hermit</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The older sister of Impa, long ago Purah discovered the secret of eternal youth. She has never revealed the dark art to any, and despite being well over a century old she still retains her youthful appearance. Despite her advanced age she does not appear to have amassed the wisdom of her younger sister; she has been known to be driven by petty and vain desires. Many other Sheikah find her unbearable to be around, something that Purah seems to approve of since she prefers to live as a hermit alone.</History>
+    <Icon>units/sheikah/she_hero_purah.dds</Icon>
+    <Lang>sheikah</Lang>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_purah</RequiredTechnology>
+    <SpecificName>Purah</SpecificName>
+    <Tooltip>Ranged Hero carrying a bow and arrow.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <DodgeRating>25.0</DodgeRating>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>30.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>15.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <death>voice/sheikah/purah/purah_death.xml</death>
+      <order_attack>voice/sheikah/purah/purah_attack.xml</order_attack>
+      <order_garrison>voice/sheikah/purah/purah_garrison.xml</order_garrison>
+      <order_gather>voice/sheikah/purah/purah_gather.xml</order_gather>
+      <order_repair>voice/sheikah/purah/purah_repair.xml</order_repair>
+      <order_walk>voice/sheikah/purah/purah_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/sheikah/purah/purah_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero5</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/sheikah/sheikah_hero_purah_b.xml</Actor>
+  </VisualActor>
+</Entity>

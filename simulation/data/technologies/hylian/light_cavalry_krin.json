@@ -1,0 +1,31 @@
+{
+  "genericName": "Upgrade to Light Cavalry",
+  "description": "As a Hylian house and its subordinate houses gained more wealth and prestige, they could afford better armor and weapons for their military.",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 100,
+    "metal": 100
+  },
+  "requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_krin"}, { "tech": "phase_town" }, {"civ": "hylian"}]},
+  "requirementsTooltip": "Unlocked with Town.",
+  "icon": "hylian/light_cavalry.dds",
+  "researchTime": 40,
+  "tooltip": "Improves Scout Cavalry by making them Light Cavalry.",
+  "modifications": [
+    {
+      "value": "ProductionQueue/Entities/_string",
+      "tokens": "units/hylian/{civ}_scout_cavalry>units/hylian/{civ}_light_cavalry",
+      "affects": "Structure"
+    },
+    {
+      "value": "Promotion/RequiredXp",
+      "replace": 0
+    }
+  ],
+  "affects": [ "ScoutCavalry" ],
+  "autoResearch": true,
+  "replaces": ["hylian/light_cavalry"],
+  "hideIfTechnologyRequirementIsNotMet": "true",
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

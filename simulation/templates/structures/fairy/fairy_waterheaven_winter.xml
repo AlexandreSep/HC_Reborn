@@ -1,0 +1,14 @@
+<Entity parent="structures/fairy/fairy_blacksmith">
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>structures/fairy/fai_waterheaven_winter.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>structures/fairy/fairy_waterheaven_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_waterheavenA_winter.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
+  </VisualActor>
+</Entity>

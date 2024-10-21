@@ -1,0 +1,23 @@
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="3.4" width="1.7" />
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Domain Deer</GenericName>
+    <History />
+    <Icon>gaia/fauna_generic.dds</Icon>
+    <Tooltip>Smaller cousins of the great Deer of the Kokiri Forest, these shy deer graze the highland meadows and forested slopes along the banks of the Zora River, and are favorite meal of Hylian travelers.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <UnitMotion>
+    <RunMultiplier>5.0</RunMultiplier>
+    <WalkSpeed>2.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/deer.xml</Actor>
+  </VisualActor>
+</Entity>

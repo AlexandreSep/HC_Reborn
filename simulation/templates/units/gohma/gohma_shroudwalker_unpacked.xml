@@ -1,0 +1,20 @@
+<Entity parent="units/gohma/gohma_shroudwalker_common">
+  <Auras datatype="tokens">
+    units/shroudwalker_aura_1
+  </Auras>
+  <Identity>
+    <Icon>units/gohma/goh_shroudwalker.dds</Icon>
+  </Identity>
+  <Pack>
+    <Entity>units/gohma/gohma_shroudwalker_packed</Entity>
+    <State>unpacked</State>
+    <Time>100</Time>
+  </Pack>
+  <UnitMotion>
+    <RunMultiplier>1.0</RunMultiplier>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gohma/gohma_shroudwalker_fog.xml</Actor>
+  </VisualActor>
+</Entity>

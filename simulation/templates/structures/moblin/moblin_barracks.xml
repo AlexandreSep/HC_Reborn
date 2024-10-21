@@ -1,0 +1,89 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Dumb Dodo Camp</GenericName>
+    <History>Ahahaha the Dodo! Real freakin&#8217;s dumb those lots are! Have you seen the way they look?! What kind of Blin would look all cute like?! Pshaw, they make the Hylian scum go awwww!! instead of ahhhhhhgg! We loves our Ukblinro and stuff, but he seriously super failed at making an awesome Blin monster with those Dodo&#8217;s! Big Fail!</History>
+    <Icon>structures/moblin/mob_camp_dodo.dds</Icon>
+    <Tooltip>Get your dumb Dodo units from this ugly place!</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="40.0" width="40.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>5</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/moblin/{civ}_dummyA
+      units/moblin/{civ}_squaddie_b
+    units/moblin/{civ}_durpyblin_b
+    units/moblin/{civ}_dungflinger_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    moblin/dumb_niceandstinky
+    moblin/dumb_betterguardin
+    moblin/dumb_helpem
+    moblin/ogalon_themgreatest
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracks_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack up this Dumb Dodo Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_dodoA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+</Entity>

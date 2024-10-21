@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Infantry Melee"],
+	"modifications": [
+		{ "value": "Attack/Capture/Value", "multiply": 1.5 }
+	],
+	"auraName": "Take and Hold",
+	"auraDescription": "(+50% Capture Rate - Melee Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/darunia_takenhold.dds"
+}

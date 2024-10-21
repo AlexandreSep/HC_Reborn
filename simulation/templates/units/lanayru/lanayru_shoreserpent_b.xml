@@ -1,0 +1,77 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>80</food>
+      <metal>0</metal>
+      <stone>30</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>430</Max>
+  </Health>
+  <Identity>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">ShoreSerpent Medium Class100</Classes>
+    <GenericName>Shore Serpent</GenericName>
+    <History>Aquatic snakes that live off the coasts of Airu, the Shore Serpent in the wild is a very aggressive and hostile creature with a powerful bite. Domesticated variations of the beast are used by the Zora of Lanayru as pets and circus attractions, though they also make a frightening opponent when spread into their army.</History>
+    <Icon>units/lanayru/lan_shoreserpent.dds</Icon>
+    <Lang>lanayru</Lang>
+    <RequiredTechnology>lanayru/get_serpentburrow</RequiredTechnology>
+    <SelectionGroupName>units/lanayru/lanayru_shoreserpent_b</SelectionGroupName>
+    <Tooltip>Slithering Melee Creature with a venomous bite.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>40.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lanayru/shoreserpent/shoreserpent_death.xml</death>
+      <order_attack>voice/lanayru/shoreserpent/shoreserpent_attack.xml</order_attack>
+      <order_garrison>voice/lanayru/shoreserpent/shoreserpent_garrison.xml</order_garrison>
+      <order_gather>voice/lanayru/shoreserpent/shoreserpent_gather.xml</order_gather>
+      <order_repair>voice/lanayru/shoreserpent/shoreserpent_repair.xml</order_repair>
+      <order_walk>voice/lanayru/shoreserpent/shoreserpent_walk.xml</order_walk>
+      <select>voice/lanayru/shoreserpent/shoreserpent_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.3333</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lanayru/lanayru_shoreserpent_b.xml</Actor>
+  </VisualActor>
+</Entity>

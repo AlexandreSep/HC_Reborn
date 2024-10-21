@@ -1,0 +1,86 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Bolts</AttackName>
+      <Damage>
+        <Pierce>10</Pierce>
+        <TrueDamage>30</TrueDamage>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>100</MaxRange>
+      <MinRange>25.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>10.0</Pierce>
+          <TrueDamage>15</TrueDamage>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>20</Range>
+        <Shape>Linear</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>35</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>150</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>140</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Large HylianScorpio</Classes>
+    <GenericName>Scorpio</GenericName>
+    <History>These ingenious contraptions can be loaded with a magazine of large crossbow bolts and then fired in rapid succession at enemy formations. Their bolts are launched with such force that they can impale almost a dozen men at a time and pierce all but the strongest of gates.</History>
+    <Icon>units/hylian/hyl_scorpio.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Large and slow moving ranged unit that deals Piercing linear Splash Damage. Takes a few moments to unpack and repack.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
+      <death>voice/hylian/soldier/soldier_death.xml</death>
+      <order_attack>voice/hylian/soldier/soldier_attack.xml</order_attack>
+      <order_garrison>voice/hylian/soldier/soldier_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/soldier/soldier_gather.xml</order_gather>
+      <order_repair>voice/hylian/soldier/soldier_repair.xml</order_repair>
+      <order_walk>voice/hylian/soldier/soldier_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/hylian/soldier/soldier_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.1111</RunMultiplier>
+    <WalkSpeed>9</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/hylian/hylian_scorpio_b.xml</Actor>
+  </VisualActor>
+</Entity>

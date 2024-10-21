@@ -1,0 +1,13 @@
+{
+	"genericName": "Hidden Arrow Slits",
+	"description": "",
+	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/hidden_arrow_slits.dds",
+	"researchTime": 40,
+	"tooltip": "Strategically-placed arrow slits allow a Fortress' defenders to fend of numerous attackers at once. (+5 Arrow Count - Gerudo Fortress)",
+	"modifications": [{ "value": "BuildingAI/DefaultArrowCount", "add": 5}],
+	"affects": ["Fortress"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

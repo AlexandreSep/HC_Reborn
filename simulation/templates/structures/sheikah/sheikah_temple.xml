@@ -1,0 +1,85 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/religious_territory_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>Temple</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>350</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="17.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_sheikah_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>50</MinPop>
+    </AIBuild>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <History>A secluded temple where Sheikah Monks reside when they come from their isolation under the earth. Members of various clans may come here to seek an audience with these monks.</History>
+    <Icon>structures/sheikah/she_monastery.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SpecificName>Monastery</SpecificName>
+    <Tooltip>Religious building that increases the spread of your territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="21.0" width="34.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>25</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/sheikah/{civ}_nirvatamonk_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/sheikah/sheikah_monasteryA.xml</Actor>
+    <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

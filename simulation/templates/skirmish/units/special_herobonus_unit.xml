@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Battalion>
+    <Size>1</Size>
+    <SameActorSeed>false</SameActorSeed>
+    <FormationTemplate>special/formations/battle_line</FormationTemplate>
+	<SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <Footprint>
+    <Circle radius="4.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>skirm</Civ>
+  </Identity>
+  <Promotion disable=""/>
+  <SkirmishReplacer/>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>structures/SkirmishReplacer_HeroBonusA.xml</Actor>
+  </VisualActor>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+</Entity>

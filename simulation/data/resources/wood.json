@@ -1,0 +1,14 @@
+{
+	"code": "wood",
+	"name": "Material",
+	"description": "Used in the construction of buildings.",
+	"order": 2,
+	"subtypes": {
+		"tree": "Wood",
+		"rock": "Stone",
+		"ruins": "Ruins"
+	},
+	"properties": ["barterable", "tradable", "tributable"],
+	"truePrice": 100,
+	"aiAnalysisInfluenceGroup": "abundant"
+}

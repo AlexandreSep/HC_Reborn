@@ -1,0 +1,26 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_ordona_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <GenericName>Palisade Wall</GenericName>
+    <History>A makeshift wooden wall to keep the elements out of Ordonian villages.</History>
+    <Icon>structures/ordona/ord_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_wall_tower.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldI.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

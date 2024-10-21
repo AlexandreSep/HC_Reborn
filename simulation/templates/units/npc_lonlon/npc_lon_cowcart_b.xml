@@ -1,0 +1,58 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Auras datatype="tokens">
+    units/cowcart_aura_1
+  </Auras>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>20</metal>
+      <stone>0</stone>
+      <wood>85</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="7.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>npc_lonlon</Civ>
+    <Classes datatype="tokens">-Organic Construct Large MinorFaction</Classes>
+    <GenericName>Cow Cart</GenericName>
+    <History>A simple cart carrying a cache of famous Lon Lon Milk. In the heat of battle soldiers could return to this supply and refresh themselves, even healing some of their wound before returning to the frontlines.</History>
+    <Icon>units/npc_lonlon/npc_lon_cowcart.dds</Icon>
+    <SelectionGroupName>units/npc_lonlon/npc_lon_cowcart_b</SelectionGroupName>
+    <Tooltip>Support unit that can heal nearby units.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <death>actor/fauna/animal/cow.xml</death>
+      <order_walk>actor/fauna/animal/cow.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>actor/fauna/animal/cow.xml</select>
+      <trained>actor/fauna/animal/cow.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.3</RunMultiplier>
+    <WalkSpeed>10</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/npc_lonlon/npc_lon_cowcart_b.xml</Actor>
+  </VisualActor>
+</Entity>

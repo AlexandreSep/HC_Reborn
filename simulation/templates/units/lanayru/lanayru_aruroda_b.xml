@@ -1,0 +1,82 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Claws and Stinger</AttackName>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Pierce>8.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>55</food>
+      <metal>0</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <Health>
+    <Max>310</Max>
+  </Health>
+  <Identity>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">Arach Medium Class100</Classes>
+    <GenericName>Aruroda</GenericName>
+    <History>The scorpion beasts native to the sands of Lanayru, Arurodas are considered an extremely dangerous pest by many civilizations in Hyrule. The Zora of Lanayru Province have found ways to adapt and avoid their aggressive seasons and rarely run into problems with the creatures. If caught at a young enough age, Arurodas could be domesticated and used as beasts of war.</History>
+    <Icon>units/lanayru/lan_aruroda.dds</Icon>
+    <Lang>lanayru</Lang>
+    <RequiredTechnology>lanayru/get_arachden</RequiredTechnology>
+    <SelectionGroupName>units/lanayru/lanayru_aruroda_b</SelectionGroupName>
+    <Tooltip>Light Melee Creature unit that can burrow to become Stealthed.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>65.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lanayru/aruroda/aruroda_death.xml</death>
+      <order_attack>voice/lanayru/aruroda/aruroda_attack.xml</order_attack>
+      <order_garrison>voice/lanayru/aruroda/aruroda_garrison.xml</order_garrison>
+      <order_gather>voice/lanayru/aruroda/aruroda_gather.xml</order_gather>
+      <order_repair>voice/lanayru/aruroda/aruroda_repair.xml</order_repair>
+      <order_walk>voice/lanayru/aruroda/aruroda_walk.xml</order_walk>
+      <run>actor/movement/arach/arach_walk.xml</run>
+      <select>voice/lanayru/aruroda/aruroda_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/arach/arach_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lanayru/lanayru_aruroda_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

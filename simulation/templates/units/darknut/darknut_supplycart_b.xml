@@ -1,0 +1,83 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="4.0" />
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes>Large DropsiteFood DropsiteWood DropsiteMetal DropsiteStone</Classes>
+    <Formations disable="" />
+    <GenericName>Supply Cart</GenericName>
+    <Icon>units/darknut/dar_supplycart.dds</Icon>
+    <Tooltip>Mobile dropsite for resources.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Loot>
+    <food>25</food>
+    <metal>10</metal>
+    <stone>10</stone>
+    <wood>10</wood>
+    <xp>50</xp>
+  </Loot>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>8.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <ResourceDropsite>
+    <Sharable>false</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/ellipse.png</MainTexture>
+        <MainTextureMask>256x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_attack>voice/darknut/thrall/thrall_attack.xml</order_attack>
+      <order_garrison>voice/darknut/thrall/thrall_garrison.xml</order_garrison>
+      <order_gather>voice/darknut/thrall/thrall_gather.xml</order_gather>
+      <order_repair>voice/darknut/thrall/thrall_repair.xml</order_repair>
+      <order_walk>voice/darknut/thrall/thrall_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/darknut/thrall/thrall_select.xml</select>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitAI>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <RunMultiplier>1.2307</RunMultiplier>
+    <WalkSpeed>6.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/darknut/darknut_supplycart_b.xml</Actor>
+  </VisualActor>
+</Entity>

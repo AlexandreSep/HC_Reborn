@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 1,
+	"affects": ["HeroAgitha"],
+	"modifications": [	],
+	"auraName": "Voice of the Gohma",
+	"auraDescription": "Agitha can trade with allied Markets.",
+	"overlayIcon": "art/textures/ui/session/auras/agitha_gohmavoice.dds"
+}

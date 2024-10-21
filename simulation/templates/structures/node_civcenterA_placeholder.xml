@@ -1,0 +1,207 @@
+<Entity parent="template_node">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>250</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="60.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Node</Classes>
+    <GenericName>Village Site</GenericName>
+    <History>An ideal location to start a new village.</History>
+    <Icon>structures/node_civcenterA.dds</Icon>
+    <Tooltip>An ideal location to start a new village.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="115.0" width="115.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+</Entities>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <metal>1.0</metal>
+      <stone>1.0</stone>
+      <time>1.0</time>
+      <wood>1.0</wood>
+    </TechCostMultiplier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <TerritoryInfluence>
+    <Radius>50</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Upgrade>
+    <ADarknut>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_civil_centre</Entity>
+      <RequiredTechnology>darknut/player_isdarknut</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Darknut Agora on this Village Site.</Tooltip>
+      <Variant>upgrading_darknut</Variant>
+    </ADarknut>
+    <ADeku>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/deku/deku_civil_centre</Entity>
+      <RequiredTechnology>deku/player_isdeku</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Large Encampment on this Village Site.</Tooltip>
+      <Variant>upgrading_deku</Variant>
+    </ADeku>
+    <AFairy>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/fairy/fairy_civil_centre</Entity>
+      <RequiredTechnology>fairy/player_isfairy</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Wishing Well on this Village Site.</Tooltip>
+      <Variant>upgrading_fairy</Variant>
+    </AFairy>
+    <AGerudo>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/gerudo/gerudo_civil_centre</Entity>
+      <RequiredTechnology>gerudo/player_isgerudo</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Palace on this Village Site.</Tooltip>
+      <Variant>upgrading_gerudo</Variant>
+    </AGerudo>
+    <AGohma>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/gohma/gohma_civil_centre</Entity>
+      <RequiredTechnology>gohma/player_isgohma</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Grow a Hive Core on this Village Site.</Tooltip>
+      <Variant>upgrading_gohma</Variant>
+    </AGohma>
+    <AGoron>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/goron/goron_civil_centre</Entity>
+      <RequiredTechnology>goron/player_isgoron</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Hall of Brotherhood on this Village Site.</Tooltip>
+      <Variant>upgrading_goron</Variant>
+    </AGoron>
+    <AHylian>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/hylian/hylian_civil_centre</Entity>
+      <RequiredTechnology>hylian/player_ishylian</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Town Hall on this Village Site.</Tooltip>
+      <Variant>upgrading_hylian</Variant>
+    </AHylian>
+    <AKokiri>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_civil_centre</Entity>
+      <RequiredTechnology>kokiri/player_iskokiri</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Community Grove on this Village Site.</Tooltip>
+      <Variant>upgrading_kokiri</Variant>
+    </AKokiri>
+    <ALabrynna>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_civil_centre</Entity>
+      <RequiredTechnology>labrynna/player_islabrynna</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Town Hall on this Village Site.</Tooltip>
+      <Variant>upgrading_labrynna</Variant>
+    </ALabrynna>
+    <ALizalfos>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/lizalfos/lizalfos_civil_centre</Entity>
+      <RequiredTechnology>lizalfos/player_islizalfos</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Ziggurat on this Village Site.</Tooltip>
+      <Variant>upgrading_lizalfos</Variant>
+    </ALizalfos>
+    <AMoblin>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/moblin/moblin_civil_centre</Entity>
+      <RequiredTechnology>moblin/player_ismoblin</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build an Ukblinro Totem on this Village Site.</Tooltip>
+      <Variant>upgrading_moblin</Variant>
+    </AMoblin>
+    <AOrdona>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/ordona/ordona_civil_centre</Entity>
+      <RequiredTechnology>ordona/player_isordona</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Manor on this Village Site.</Tooltip>
+      <Variant>upgrading_ordona</Variant>
+    </AOrdona>
+    <AZora>
+      <Cost>
+        <stone>500</stone>
+        <wood>500</wood>
+      </Cost>
+      <Entity>structures/zora/zora_civil_centre</Entity>
+      <RequiredTechnology>zora/player_iszora</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Ministry on this Village Site.</Tooltip>
+      <Variant>upgrading_zora</Variant>
+    </AZora>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/node_civcenterA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

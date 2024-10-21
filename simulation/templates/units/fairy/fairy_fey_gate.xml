@@ -1,0 +1,40 @@
+<Entity parent="units/fairy/fairy_fey_b">
+  <Attack disable="" />
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Classes datatype="tokens">Autumn FeyGate</Classes>
+    <GenericName>Fey Gate</GenericName>
+    <History>Animated from the destroyed stonework of the Tarm Ruins and twisted into vaguely living shapes, the nature of these magical constructs remain a mystery. What was known is that fighting them head on was a terrible mistake. These powerful beings were resistant to most conventional weapons; it often took powerful magic in return to halt their relentless advance.</History>
+    <Icon>units/fairy/fai_fey_gate.dds</Icon>
+    <SelectionGroupName>units/fairy/fairy_fey_gate</SelectionGroupName>
+    <Tooltip>Moving Support unit that summons additional Fairies to battle anywhere on the map.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/{civ}_drove_autumn
+    </Entities>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <metal>1.0</metal>
+      <stone>1.0</stone>
+      <time>1.0</time>
+      <wood>1.0</wood>
+    </TechCostMultiplier>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>units/fairy/fairy_fey_wisp</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <UnitMotion>
+    <RunMultiplier>2.3333</RunMultiplier>
+    <WalkSpeed>1.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_fey_gate.xml</Actor>
+  </VisualActor>
+</Entity>

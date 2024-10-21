@@ -1,0 +1,11 @@
+{
+	"type": "garrison",
+  "affects": [ "SirloinMine" ],
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/food", "add": 1.5 }
+	],
+	"auraName": "Harvest Rock Sirloin",
+	"stackable" : true ,
+	"auraDescription": "(If Garrisoned, +1 Food Resource Trickle/1 second - Rock Sirloin Mine)"
+}
+

@@ -1,0 +1,9 @@
+<Entity parent="units/hylian/hylian_levy_spearman">
+  <Identity>
+    <SpecificName>Malkariko Town Guard</SpecificName>
+  </Identity>
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/hylian/malkariko/malkariko_levy_spearman_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,31 @@
+<Entity parent="structures/fairy/fairy_civil_centre">
+  <Builder>
+    <Entities datatype="tokens">
+    structures/fairy/fairy_sundial_spring
+    structures/fairy/fairy_wishingwell_spring
+    structures/fairy/fairy_menhir_spring
+    structures/fairy/fairy_meeting_spring
+    structures/fairy/fairy_fountain_spring
+    structures/fairy/fairy_greatfountain_spring
+    structures/fairy/fairy_dolmen_spring
+    structures/fairy/fairy_waterheaven_spring
+    structures/fairy/fairy_misthenge_spring
+    structures/fairy/fairy_wallset_spring
+    structures/fairy/fairy_uniwonder_spring
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
+  <Identity>
+    <Classes datatype="tokens">Spring</Classes>
+    <Icon>structures/fairy/fai_wishingwell_spring.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Promotion>
+    <Entity>structures/fairy/fairy_wishingwell_summer</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_wishingwellA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,11 @@
+<Entity parent="template_unit_fauna">
+  <Identity>
+    <Classes datatype="tokens">Domestic</Classes>
+  </Identity>
+  <UnitAI>
+    <DefaultStance>passive</DefaultStance>
+  </UnitAI>
+  <Vision>
+    <Range>6</Range>
+  </Vision>
+</Entity>

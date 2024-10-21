@@ -1,0 +1,6 @@
+<Entity parent="units/gohma/gohma_shieldgohma_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/gohma/gohma_shieldgohma_upg.xml</Actor>
+  </VisualActor>
+</Entity>

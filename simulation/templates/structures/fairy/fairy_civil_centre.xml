@@ -1,0 +1,71 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <AutoBuildable>
+    <Rate>1</Rate>
+  </AutoBuildable>
+  <Builder>
+    <Entities datatype="tokens">
+	</Entities>
+    <Rate>1.0</Rate>
+  </Builder>
+  <Cost>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="25.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_fairy_mediumA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/node_civcenterA</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>60</MinPop>
+    </AIBuild>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Wishing Well</GenericName>
+    <History>A Fairy Fountain dedicated to prayer and wishes. Fairies were believed to come to these fountains and through their wishing would bring more of their kind into the world.</History>
+    <Icon>structures/fairy/fai_wishingwell_spring.dds</Icon>
+    <Tooltip>Fairy Civil Center: Summons all Fairy Structures.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Obstruction>
+    <Static depth="20.0" width="20.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+</Entities>
+    <Technologies datatype="tokens">
+    fairy/valanavi_weirdingpaths
+    fairy/player_isfairy
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_wishingwell.xml</constructed>
+      <select>interface/select/building/fairy/sel_wishingwell.xml</select>
+      <upgraded>interface/complete/building/fairy/complete_wishingwell.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_wishingwellA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,60 @@
+<Entity parent="HC_template_hero">
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>300</food>
+      <metal>250</metal>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="2.5" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Formations datatype="tokens">
+      special/formations/wedge
+    </Formations>
+    <GenericName>Hero Cavalry</GenericName>
+    <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>8.0</Crush>
+        <Hack>8.0</Hack>
+        <Pierce>8.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/fauna/death/death_horse.xml</death>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <run>actor/mounted/movement/walk.xml</run>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <trained>interface/alarm/alarm_create_cav.xml</trained>
+      <walk>actor/mounted/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>6.5</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <RunMultiplier>1.1555</RunMultiplier>
+    <WalkSpeed>22.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
+</Entity>

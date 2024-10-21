@@ -1,0 +1,87 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>40</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>70</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="7.0" />
+    <Height>7.0</Height>
+  </Footprint>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>2.6</Y>
+        <Z>-6.8</Z>
+      </Archer1>
+      <Archer2>
+        <X>0</X>
+        <Y>2.6</Y>
+        <Z>-9.5</Z>
+      </Archer2>
+      <Archer3>
+        <X>0</X>
+        <Y>2.6</Y>
+        <Z>-12.1</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>590</Max>
+    <SpawnGarrison>
+      <Template>units/labrynna/labrynna_borderguard_garrison</Template>
+      <SpawnNumber>3</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Wagon Large Class40 GarrisonClass Ursawagon</Classes>
+    <GenericName>Ursa Wagon</GenericName>
+    <History>A simple wagon pulled by a Labrynnian Blue Bear, these platforms could be garrisoned by ranged units and used as mobile turrets. They were perhaps most effective being used by gunpowder units, allowing them to reload and fire while on the move.</History>
+    <Icon>units/labrynna/lab_ursawagon.dds</Icon>
+    <Lang>labrynna</Lang>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <SelectionGroupName>units/labrynna/labrynna_ursawagon_b</SelectionGroupName>
+    <Tooltip>Cavalry Support unit that can transport other units to battle. Garrisoned ranged units can attack from the wagon.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>25.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/bear_maul.xml</attack_melee>
+      <death>voice/labrynna/bluebear/bluebear_death.xml</death>
+      <order_attack>voice/labrynna/bluebear/bluebear_attack.xml</order_attack>
+      <order_garrison>voice/labrynna/bluebear/bluebear_garrison.xml</order_garrison>
+      <order_gather>voice/labrynna/bluebear/bluebear_gather.xml</order_gather>
+      <order_repair>voice/labrynna/bluebear/bluebear_repair.xml</order_repair>
+      <order_walk>voice/labrynna/bluebear/bluebear_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/labrynna/bluebear/bluebear_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.3</RunMultiplier>
+    <WalkSpeed>10</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/labrynna/labrynna_bearwagon_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,12 @@
+{
+	"genericName": "Leever Teeth",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 50},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "gerudo"}]},
+	"icon": "gerudo/gather_rupee_leevertooth.dds",
+	"researchTime": 40,
+	"tooltip": "Equip workers with helpful Leever Teeth cutters. (+15% Currency (Rupees) Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.15}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

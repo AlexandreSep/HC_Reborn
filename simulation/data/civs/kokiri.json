@@ -1,0 +1,177 @@
+{
+	"Code": "kokiri",
+	"Culture": "naturalistic",
+	"Name": "Kokiri",
+	"Emblem": "session/portraits/emblems/emblem_kokiri.dds",
+	"History": "Deep in the forests of eastern Hyrule rested a kingdom unlike any other. Under the guidance and lordship of the Great Deku Tree, the childlike Kokiri arrested control of the woodland realm and established a land of peace and isolation. The Great Deku Tree's utopia would not last however, and as wars ravaged the surface of Hyrule time and again, such conflict would bring the Kokiri into the field of battle.",
+	"Music":[
+			{"File":"kokiri_theme1.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient1.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient2.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient3.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient4.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient5.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient6.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient7.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient8.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient9.ogg", "Type":"peace"},
+			{"File":"kokiri_ambient10.ogg", "Type":"peace"},
+			{"File":"kokiri_battle1.ogg", "Type":"battle"},
+			{"File":"kokiri_battle2.ogg", "Type":"battle"},
+			{"File":"kokiri_battle3.ogg", "Type":"battle"},
+			{"File":"kokiri_battle4.ogg", "Type":"battle"},
+			{"File":"kokiri_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Food, Wood, Stone, and Rupees"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Saria, Sage of Forests",
+					"Class": "",
+					"Armament": "Emerald Bow",
+					"Emblem": "",
+					"History": "Birthed to become the heir of the Great Deku Tree's Sagehood and Queen of the Kokiri, Saria was his most prized creation. Despite his attempts to protect the Kokiri, Saria was killed in battle and the Great Deku Tree was forced to awaken her as a Sage much earlier then he anticipated."
+				},
+				{
+					"Name": "Fado",
+					"Class": "",
+					"Armament": "Fiddle",
+					"Emblem": "",
+					"History": "One of Saria's close friends and a famous musician, Fado is skilled with all manner of stringed intruments. He often organizes the many Kokiri festivals, but when danger looms over the forest he plays a tune to keep spirits high and troops in marching order."
+				},
+				{
+					"Name": "Chief Mirora",
+					"Class": "",
+					"Armament": "Mantis Blades",
+					"Emblem": "",
+					"History": "Mirora briefly served as the head Chief of the Kokiri after Mido's exile from the Forest. Although not quite suited for governance, Mirora's years of experience defending the borders of the Forest made her an ideal general."
+				},
+				{
+					"Name": "Prince Kasuto",
+					"Class": "",
+					"Armament": "Deku Vines",
+					"Emblem": "",
+					"History": "The Great Deku Tree's only surviving sprouting, Kasuto is young, wide-eyed, and rather energetic compared to the older Deku Trees."
+				}
+			]
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Blessed Fertility",
+			"History": "",
+			"Description": "All buildings create fertile terrain and can generate trees to be harvested for Material."
+		},
+		{
+			"Name": "Forest Symbiosis",
+			"History": "",
+			"Description": "Kokiri buildings do not decay outside of territory, they only lose ownership."
+		},
+		{
+			"Name": "Camouflage",
+			"History": "",
+			"Description": "All Kokiri units are invisible when standing still."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/kokiri/choosehero_domiso",
+		"civ_choices/kokiri/choosehero_fadola",
+		"civ_choices/kokiri/choosehero_fado",
+		"civ_choices/kokiri/choosehero_mirora",
+		"civ_choices/kokiri/choosehero_gulley",
+		"civ_choices/kokiri/choosehero_saria"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Kin of the Forest",
+			"History": "",
+			"Description": "Allies gain a slow trickle of Material resources."
+		}
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: The Great Deku Tree's Grove",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "The sacred grove of King Kasuto, the Great Deku Tree. This secluded shelter provides all that a Kokiri community needs, as well as houses the Great Deku Tree himself."
+		},
+		{
+			"Name": "Titan: King Kasuto, the Great Deku Tree",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "One of the most ancient beings in Hyrule, the Great Deku Tree assumed fathership of the Kokiri after his kind won a war against their violent ancestors. He has since shaped the Kokiri generation after generation, altering their nature on the path to becoming Koroks."
+		}
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/kokiri/kokiri_civil_centre"
+		},
+		{
+			"Template": "units/kokiri/kokiri_laborerA",
+			"Count": 4
+		},
+		{
+			"Template": "units/kokiri/kokiri_minutemen_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/kokiri/kokiri_slingshotter_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/kokiri/kokiri_explorer_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Saria, Sage of Forests",
+		"Fado",
+		"Chief Mirora",
+		"Gulley"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/kokiri/kokiri_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/kokiri/kokiri_laborerA",
+		"skirmish/units/default_cavalry" :  "units/kokiri/kokiri_explorer_b",
+		"skirmish/units/default_infantry_melee_b": "units/kokiri/kokiri_laborerA",
+		"skirmish/units/default_infantry_ranged_b": "units/kokiri/kokiri_laborerA",
+		"skirmish/structures/default_house_10" : "structures/kokiri/hylian_house"
+	},
+	"SelectableInGameSetup": true
+}

@@ -1,0 +1,23 @@
+<Entity parent="structures/fairy/fairy_barracksC">
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <Icon>structures/fairy/fai_dolmen_summer.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/fairy/{civ}_fey_strider
+    </Entities>
+    <Technologies datatype="tokens">
+    fairy/fey_haste
+    </Technologies>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/fairy/fairy_dolmen_autumn</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_dolemA_summer.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_summer.xml</FoundationActor>
+  </VisualActor>
+</Entity>

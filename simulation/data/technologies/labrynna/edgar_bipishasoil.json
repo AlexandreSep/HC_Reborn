@@ -1,0 +1,14 @@
+{
+	"genericName": "Bipisha Soils",
+	"description": "Edgar the Giant came from a family of profficient farmers, and many of the methods they used to grow their bountiful crops were adopted and applied to Labrynna's farming system.",
+	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
+	"requirements": {"all": [ {"tech": "civ_choices/labrynna/choosehero_edgar"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "You must select Edgar the Giant as your hero.",
+	"icon": "labrynna/edgar_bipishasoil.dds",
+	"researchTime": 40,
+	"tooltip": "Edgar the Giant came from a family of profficient farmers, and many of the methods they used to grow their bountiful crops were adopted and applied to Labrynna's farming system. ((Tokay Slave gather rate from farms increased by 100% and Machine Farm yield increased by +1)",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 2.00, "affects": "Slave" },
+					  {"value": "ResourceTrickle/Rates/food", "add": 1, "affects": "MachineFarm" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

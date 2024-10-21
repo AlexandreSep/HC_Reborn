@@ -1,0 +1,85 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Hack>7.0</Hack>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+    <Slaughter>
+      <RepeatTime>1000</RepeatTime>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Hack>15.0</Hack>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+    </Slaughter>
+  </Attack>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>125</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>25</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">Small Class100</Classes>
+    <GenericName>Ghoul Rat</GenericName>
+    <History>Vermin that have been tainted by the magic of demons, Ghoul Rats are used by the Cadre to spread disease and clear areas of groups of people. The small size of Ghoul Rats make them perfect at finding ways of sneaking into fortified areas, and legend says a Ghoul Rat can slip through even the most fortified of walls.</History>
+    <Icon>units/sheikah/she_ghoulrat.dds</Icon>
+    <Lang>sheikah</Lang>
+    <SelectionGroupName>units/sheikah/sheikah_ghoulrat_b</SelectionGroupName>
+    <Tooltip>Camouflaged Creature unit that can pass through walls.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/rat_bite.xml</attack_melee>
+      <death>voice/wild/rat/rat_death.xml</death>
+      <order_attack>voice/wild/rat/rat_attack.xml</order_attack>
+      <order_garrison>voice/wild/rat/rat_garrison.xml</order_garrison>
+      <order_gather>voice/wild/rat/rat_gather.xml</order_gather>
+      <order_repair>voice/wild/rat/rat_repair.xml</order_repair>
+      <order_walk>voice/wild/rat/rat_walk.xml</order_walk>
+      <run>actor/movement/rat/rat_crawl.xml</run>
+      <select>voice/wild/rat/rat_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/rat/rat_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2222</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+  <VisualActor>
+    <Actor>units/sheikah/sheikah_ghoulrat_b.xml</Actor>
+  </VisualActor>
+</Entity>

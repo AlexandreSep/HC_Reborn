@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Hylian Poplar</SpecificName>
+    <Tooltip>A stately dry-climate tree that grows throughout Hyrule Field. The Hylians favor these trees for lining their couryards and plazas.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/poplar_lombardy.xml</Actor>
+  </VisualActor>
+</Entity>

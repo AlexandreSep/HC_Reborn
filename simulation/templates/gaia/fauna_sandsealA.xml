@@ -1,0 +1,41 @@
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Footprint>
+    <Height>3.0</Height>
+    <Square depth="5.0" width="2.5" />
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Sandseal</GenericName>
+    <History />
+    <Icon>gaia/fauna_sandseal.dds</Icon>
+    <Tooltip>The Sandseal is a large mammal that clusters in colonies around the rare Oases in the Gerudo Desert. While awkward and lumbering on land, these creatures are very strong and fast in water.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>200</Max>
+  </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>256x256/ellipse.png</MainTexture>
+        <MainTextureMask>256x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <death>voice/gerudo/sandseal/sandseal_death.xml</death>
+      <order_walk>voice/gerudo/sandseal/sandseal_walk.xml</order_walk>
+      <select>voice/gerudo/sandseal/sandseal_select.xml</select>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>3.0</RunMultiplier>
+    <WalkSpeed>3.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/wild/wild_sandsealA.xml</Actor>
+  </VisualActor>
+</Entity>

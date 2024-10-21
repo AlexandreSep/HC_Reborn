@@ -1,0 +1,12 @@
+<Entity parent="units/deku/deku_baba_b">
+  <Health>
+    <Max>25</Max>
+    <RegenRate>-1</RegenRate>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">MadScrub</Classes>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mad/deku_baba_b.xml</Actor>
+  </VisualActor>
+</Entity>

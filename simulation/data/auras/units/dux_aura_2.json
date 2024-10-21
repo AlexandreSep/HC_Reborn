@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Legion"],
+	"supersedes": "units/dux_aura_1",
+	"modifications": [{"value": "Promotion/RequiredXp", "multiply": 0.80}],
+	"auraName": "Dux's Experience",
+	"auraDescription": "(+20% Less experience required to level up)",
+	"requiredTechnology": "darknut/apoth_leadbyexample",
+	"overlayIcon": "art/textures/ui/session/auras/dux_aura_1.dds"
+}

@@ -1,0 +1,33 @@
+<Entity parent="structures/stalfos/stalfos_civil_centreB">
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/ruins/ruins_tar</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_civic_centreB_tar.xml</Actor>
+  </VisualActor>
+  <Identity>
+    <Icon>structures/stalfos/sta_cc_tarB.dds</Icon>
+  </Identity>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+	  structures/stalfos/stalfos_ruinsA_tar
+    </Entities>
+  </Builder>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/stalfos/stalfos_civil_centreC_tar</Entity>
+      <Time>60</Time>
+      <Tooltip>Upgrade into Tomb.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+</Entity>

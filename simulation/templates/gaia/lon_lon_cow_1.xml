@@ -1,0 +1,47 @@
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>50</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>1.5</Height>
+    <Square depth="2.8" width="1.4" />
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Meat</GenericName>
+    <History />
+    <Icon>units/npc_lonlon/npc_lon_cow.dds</Icon>
+    <RequiredTechnology>npc_lonlon/lonlon_cows</RequiredTechnology>
+    <SpecificName>Lon Lon Cow</SpecificName>
+    <Tooltip>Cows from Lon Lon Ranch have a reputation for producing the best-tasting Milk in Hyrule. In addition to quenching thirst, the Milk has similar effects to alcohol.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>300</Max>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>8</MaxGatherers>
+    <Type>food.meat</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <death>actor/fauna/animal/cow.xml</death>
+      <order_walk>actor/fauna/animal/cow.xml</order_walk>
+      <select>actor/fauna/animal/cow.xml</select>
+      <trained>actor/fauna/animal/cow.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed>3.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/npc_lonlon/npc_lon_cow.xml</Actor>
+  </VisualActor>
+</Entity>

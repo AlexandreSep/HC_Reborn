@@ -1,0 +1,70 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Mandibles</AttackName>
+      <Damage>
+        <Pierce>3</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>75</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Small</Classes>
+    <GenericName>Gohma Mite</GenericName>
+    <History>A small Gohma creature that defends Gohma bases.</History>
+    <Icon>units/gohma/goh_mite.dds</Icon>
+    <Lang>gohma</Lang>
+    <SelectionGroupName>units/gohma/gohma_larva_mite_b</SelectionGroupName>
+    <Tooltip>A small Gohma creature that defends Gohma bases.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>3.0</Crush>
+        <Hack>3.0</Hack>
+        <Pierce>3.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_smallA/gohma_smallA_death.xml</death>
+      <order_attack>voice/gohma/gohma_smallA/gohma_smallA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_smallA/gohma_smallA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_smallA/gohma_smallA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_smallA/gohma_smallA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_smallA/gohma_smallA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlB.xml</run>
+      <select>voice/gohma/gohma_smallA/gohma_smallA_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/gohma/gohma_mite_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

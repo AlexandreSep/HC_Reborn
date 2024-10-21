@@ -1,0 +1,89 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Fists</AttackName>
+      <Damage>
+        <Crush>11.0</Crush>
+        <Hack>11.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>65</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">BabaCanRide</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>1</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>4.8</Y>
+        <Z>-0.36</Z>
+      </Archer1>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>300</Max>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <OwnerID>0</OwnerID>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/mad/mad_megascrub_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">ScrubUnit Megascrub Medium Class70 DeppiBonus Sonata</Classes>
+    <GenericName>Megascrub</GenericName>
+    <History>These large Deku Scrubs served little purpose in their culture other than bashing the heads in of their enemies. Although barely taller than the average Hylian, they were some of the largest Scrubs to live and were considered by their people to be the apex of their race. In a battle they would relentlessly maul victims with their two clawed arms.</History>
+    <Icon>units/deku/dek_megascrub.dds</Icon>
+    <Lang>deku</Lang>
+    <SelectionGroupName>units/deku/deku_megascrub_b</SelectionGroupName>
+    <Tooltip>Large Deku Scrub warrior that attacks enemies with their sharp clawed hands.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/mace.xml</attack_melee>
+      <death>voice/deku/megascrub/megascrub_death.xml</death>
+      <order_attack>voice/deku/megascrub/megascrub_attack.xml</order_attack>
+      <order_garrison>voice/deku/megascrub/megascrub_garrison.xml</order_garrison>
+      <order_gather>voice/deku/megascrub/megascrub_gather.xml</order_gather>
+      <order_repair>voice/deku/megascrub/megascrub_repair.xml</order_repair>
+      <order_walk>voice/deku/megascrub/megascrub_walk.xml</order_walk>
+      <run>actor/movement/dekuscrub/scrub_hopA.xml</run>
+      <select>voice/deku/megascrub/megascrub_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/deku/deku_megascrub_b.xml</Actor>
+  </VisualActor>
+</Entity>

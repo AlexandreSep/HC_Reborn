@@ -1,0 +1,15 @@
+{
+	"type": "formation",
+	"affects": ["Soldier"],
+	"modifications": [
+		{"value": "Armour/Forest", "add": 5.0},
+		{"value": "Armour/Fire", "add": 5.0},
+		{"value": "Armour/Water", "add": 5.0},
+		{"value": "Armour/Spirit", "add": 5.0},
+		{"value": "Armour/Light", "add": 5.0},
+		{"value": "Armour/Shadow", "add": 5.0}
+	],
+	"auraName": "Shield of Light",
+	"auraDescription": "(In Formation, +5 Armor vs Magic - Soldier)",
+	"overlayIcon": "art/textures/ui/session/auras/rauru_shieldoflight.dds"
+}

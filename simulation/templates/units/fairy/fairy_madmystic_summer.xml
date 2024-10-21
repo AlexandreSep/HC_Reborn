@@ -1,0 +1,39 @@
+<Entity parent="units/fairy/fairy_madmystic_b">
+  <Attack>
+    <Melee>
+      <AttackName>Fairy Magic</AttackName>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Spirit>40.0</Spirit>
+      </Damage>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+      <MaxRange>7.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>200</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>4</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/fairy/fairy_stray_summer</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <Icon>units/fairy/fai_madmystic_summer.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_madmystic_autumn</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_mad_summer.xml</Actor>
+  </VisualActor>
+</Entity>

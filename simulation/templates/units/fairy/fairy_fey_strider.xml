@@ -1,0 +1,47 @@
+<Entity parent="units/fairy/fairy_fey_b">
+  <Attack>
+    <Ranged>
+      <AttackName>Fairy Magic</AttackName>
+      <Damage>
+        <Shadow>75.0</Shadow>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>100.0</MaxRange>
+      <MinRange>35.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <PrepareTime>2900</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>particle/fairy_mist_summon.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.25</ImpactAnimationLifetime>
+        <Speed>37.5</Speed>
+        <Spread>2.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>3000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Classes datatype="tokens">Summer FeyStrider</Classes>
+    <GenericName>Fey Strider</GenericName>
+    <History>Animated from the destroyed stonework of the Tarm Ruins and twisted into vaguely living shapes, the nature of these magical constructs remain a mystery. What was known is that fighting them head on was a terrible mistake. These powerful beings were resistant to most conventional weapons; it often took powerful magic in return to halt their relentless advance.</History>
+    <Icon>units/fairy/fai_fey_strider.dds</Icon>
+    <SelectionGroupName>units/fairy/fairy_fey_strider</SelectionGroupName>
+    <Tooltip>Large Siege unit that bombards targets with magic attacks from a distance.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_fey_gate</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/feystrider_fire_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/feystrider_fire.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/fairy/fairy_fey_strider.xml</Actor>
+  </VisualActor>
+</Entity>

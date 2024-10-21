@@ -1,0 +1,9 @@
+<Entity parent="units/goron/goron_rubyguard_b">
+  <Promotion disable="" />
+  <Resistance>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/goron/goron_rubyguard_upg.xml</Actor>
+  </VisualActor>
+</Entity>

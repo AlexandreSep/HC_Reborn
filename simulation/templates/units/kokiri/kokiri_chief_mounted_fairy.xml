@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_chief_mounted">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_chief_mounted_F.xml</Actor>
+  </VisualActor>
+</Entity>

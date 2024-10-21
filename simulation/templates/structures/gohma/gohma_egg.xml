@@ -1,0 +1,120 @@
+<Entity parent="template_structure">
+  <Battalion>
+    <FormationTemplate>special/formations/battle_line</FormationTemplate>
+    <SameActorSeed>false</SameActorSeed>
+    <Size>1</Size>
+    <SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <BuildRestrictions>
+    <Category>Field</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BattalionSlots>1</BattalionSlots>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <food>10</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="1.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>35</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohma_eggA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Organic GohEggA Close2Base SummonerEntity</Classes>
+    <GenericName>Gohma Egg</GenericName>
+    <History>The genesis of all Gohma units, these eggs can morph into one of the four Gohma Larva or Harvesters. They are precious to the Gohma and are laid by their reproductive Queens.</History>
+    <Icon>structures/gohma/goh_egg.dds</Icon>
+    <Tooltip>Hatches into Gohma Larva.&#65279;</Tooltip>
+    <VisibleClasses datatype="tokens">Egg</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <Static depth="3.0" width="3.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/gohma/complete_eggA.xml</constructed>
+      <death>voice/gohma/gohma_egg/gohma_eggA_death.xml</death>
+      <select>interface/select/building/gohma/sel_eggA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>1</Radius>
+    <Root>false</Root>
+    <Weight>1</Weight>
+  </TerritoryInfluence>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <food>50</food>
+      </Cost>
+      <Entity>units/gohma/gohma_harvesterA</Entity>
+      <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>10</Time>
+      <Tooltip>Create Harvester.</Tooltip>
+    </Tower>
+    <TowerA>
+      <Cost>
+        <food>30</food>
+      </Cost>
+      <Entity>units/gohma/gohma_larva_hive_b</Entity>
+      <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>6</Time>
+      <Tooltip>Create Hive Larva.</Tooltip>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <food>35</food>
+      </Cost>
+      <Entity>units/gohma/gohma_larva_soldier_b</Entity>
+      <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>6</Time>
+      <Tooltip>Create Soldier Larva.</Tooltip>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <food>30</food>
+      </Cost>
+      <Entity>units/gohma/gohma_larva_giant_b</Entity>
+      <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>6</Time>
+      <Tooltip>Create Giant Larva.</Tooltip>
+    </TowerC>
+    <TowerD>
+      <Cost>
+        <food>30</food>
+      </Cost>
+      <Entity>units/gohma/gohma_larva_royal_b</Entity>
+      <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>6</Time>
+      <Tooltip>Create Royal Larva.</Tooltip>
+    </TowerD>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_egg.xml</Actor>
+  </VisualActor>
+</Entity>

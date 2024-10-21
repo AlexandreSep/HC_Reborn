@@ -1,0 +1,16 @@
+{
+	"type": "range",
+	"radius": 75,
+	"affects": ["SilverTower"],
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.30 },
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.75 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.75 }
+	],
+	"auraName": "Tower Coordination",
+	"auraDescription": "Royal Hubs, Guard Posts, and Silver Keeps within the Silver Tower's aura have a +25% increase in their fire rate and deal +30% Pierce Damage. Does not stack.",
+	"stackable" : false ,
+	"requiredTechnology": "lanayru/tower_coordination",	
+	"overlayIcon": "art/textures/ui/session/auras/tcoordination_aura_1.dds"
+	
+}

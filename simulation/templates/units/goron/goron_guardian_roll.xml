@@ -1,0 +1,49 @@
+<Entity parent="units/goron/goron_guardian_b">
+  <Attack>
+    <Melee>
+      <AttackName>Rolling</AttackName>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Classes datatype="tokens">Rolling CoronBonusB</Classes>
+    <GenericName>Rolling</GenericName>
+    <Icon>units/goron/gor_guardian_roll.dds</Icon>
+    <SelectionGroupName>units/goron/goron_guardian_roll</SelectionGroupName>
+    <SpecificName>Rolling Guardian</SpecificName>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>false</Floating>
+    <TurnRate>2.5</TurnRate>
+  </Position>
+  <UnitMotion>
+    <RunMultiplier>2.0</RunMultiplier>
+    <WalkSpeed>15.0</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>0</wood>
+      </Cost>
+      <Entity>units/goron/goron_guardian_b</Entity>
+      <Time>1</Time>
+      <Tooltip>Leave Rolling mode.</Tooltip>
+    </Tower>
+  </Upgrade>
+  <Vision>
+    <Range>10</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/goron/goron_guardian_roll.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

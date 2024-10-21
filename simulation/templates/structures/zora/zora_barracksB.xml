@@ -1,0 +1,98 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_magechamberA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>15</MinPop>
+    </AIBuild>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Mage Chambers</GenericName>
+    <History>Gatherings of young Zora women can be taught from a young age the ways in which to gather their magic and use it in battle. The teachers at a Crystal Chamber can even alter the nature of Zora magic, warping water into a freezing Blue Fire.</History>
+    <Icon>structures/zora/zor_magechamber.dds</Icon>
+    <Tooltip>Trains a variety of Mage units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/zora/{civ}_healer_b
+      units/zora/{civ}_sparkmage_b
+      units/zora/{civ}_sapwarden_b
+      units/zora/{civ}_floodmaster_b
+      units/zora/{civ}_magecannon_b
+      units/zora/{civ}_kyamaster_b
+      units/zora/{civ}_morphite_b
+      units/zora/{civ}_nayrublessed_b
+      units/zora/{civ}_stormbolter_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    zora/healer_battleprep
+    zora/healer_zodobon
+      zora/troop_rutalancrystal
+    zora/troop_akkalanflames
+    zora/troop_ulriawaves
+    zora/troop_overchargedcore
+      zora/troop_cephlasecret
+    zora/troop_coredivision
+    zora/laruto_fasting
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/magic_lightningbolt.xml</attack_ranged>
+      <constructed>interface/complete/building/zora/complete_magechamber.xml</constructed>
+      <select>interface/select/building/zora/sel_magechamber.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zora/zora_barracksB.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

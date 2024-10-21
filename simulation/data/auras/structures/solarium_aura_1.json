@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 100,
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.90 }
+	],
+	"auraName": "Solarium Growth",
+	"auraDescription": "(-10% Batch Build Time - Building)",
+	"overlayIcon": "art/textures/ui/session/auras/solarium_aura_1.dds"
+}

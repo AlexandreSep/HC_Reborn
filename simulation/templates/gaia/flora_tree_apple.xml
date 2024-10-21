@@ -1,0 +1,19 @@
+<Entity parent="template_gaia_fruit">
+  <Footprint>
+    <Circle radius="2.5" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Fruit</GenericName>
+    <History />
+    <Icon>gaia/flora_forage_generic.dds</Icon>
+    <SpecificName>Domain Apple Tree</SpecificName>
+    <Tooltip>Not particularly noted by the aquatic Zora, Domain Apples that bloom on the lush banks of the Zora River are nonetheless highly-sought after across Hyrule.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="1.8" width="1.8" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>flora/trees/apple_bloom.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,81 @@
+<Entity parent="HC_template_hero_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Throned Claws</AttackName>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>545</food>
+      <metal>100</metal>
+      <stone>80</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="7.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2700</Max>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">HeroDezaia Hero4 Large</Classes>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Dezaia was once a powerful Great Fairy that rivaled almost all others. Her ambitions grew too high, and she believed she could conquer Tarm itself and command the forces of nature under her will. After instigating a civil war, she was eventually defeated. As punishment for nearly tearing apart their society, Dezaia was cut off from magic and bound forever into a spider-like suit of armor that served as a prison. Before her fall, Dezaia was associated with the season of Autumn. She was said to hush animals to sleep in preparation for the dark of winter.</History>
+    <Icon>units/fairy/fai_hero_dezaia.dds</Icon>
+    <Lang>fairy</Lang>
+    <RequiredTechnology>civ_choices/fairy/choosehero_dezaia</RequiredTechnology>
+    <SpecificName>Dezaia</SpecificName>
+    <Tooltip>A large and mosnterous Hero that rips apart her victims with wicked insect-like claws.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>40.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>55.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/dezaia_claw.xml</attack_melee>
+      <death>voice/fairy/dezaia/dezaia_death.xml</death>
+      <order_attack>voice/fairy/dezaia/dezaia_attack.xml</order_attack>
+      <order_garrison>voice/fairy/dezaia/dezaia_garrison.xml</order_garrison>
+      <order_gather>voice/fairy/dezaia/dezaia_gather.xml</order_gather>
+      <order_repair>voice/fairy/dezaia/dezaia_repair.xml</order_repair>
+      <order_walk>voice/fairy/dezaia/dezaia_walk.xml</order_walk>
+      <run>actor/movement/dezaia/dezaia_crawl.xml</run>
+      <select>voice/fairy/dezaia/dezaia_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/dezaia/dezaia_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero4</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/fairy/fairy_hero_dezaia_b.xml</Actor>
+  </VisualActor>
+</Entity>

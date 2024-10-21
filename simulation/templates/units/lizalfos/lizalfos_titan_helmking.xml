@@ -1,0 +1,115 @@
+<Entity parent="HC_template_unit_titan">
+  <Attack>
+    <Ranged>
+      <AttackName>Skull and Tail</AttackName>
+      <Damage>
+        <Crush>160</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>10</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/biggoron_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>300.0</Speed>
+        <Spread>1.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2400</RepeatTime>
+      <Splash>
+        <Damage>
+          <Crush>80.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>15</Range>
+        <Shape>Circular</Shape>
+        <Knockback>
+          <Horizontal>25</Horizontal>
+          <Vertical>25</Vertical>
+        </Knockback>
+      </Splash>
+      <Knockback>
+        <Horizontal>25</Horizontal>
+        <Vertical>25</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <food>1900</food>
+      <metal>250</metal>
+      <stone>200</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <IdleRegenRate>2</IdleRegenRate>
+    <Max>8000</Max>
+    <RegenRate>1</RegenRate>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Huge</Classes>
+    <GenericName>The Helmasaur King</GenericName>
+    <History>Once a tyrant of Death Mountain, the Helmasaur King was driven from its homeland and settled in the Eastern Palace of Faron Woods where many Lizalfos have added him to their Pantheon of Gods. Although certainly smarter than an animal, Garnyle Og is hardly intelligent and is easily riled to fits of anger. His huge form can easily knock over buildings and his spiky carapace naturally impales enemies that try to get too close.</History>
+    <Icon>units/lizalfos/liz_helmasaurking.dds</Icon>
+    <Lang>goron</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SpecificName>Garnyle Og</SpecificName>
+    <Tooltip>Lizalfos Titan unit. Giant Siege unit that rams into enemies with its huge skull and large whip tail.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>upright</Anchor>
+    <TurnRate>3.5</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Fire>20.0</Fire>
+        <Forest>20.0</Forest>
+        <Hack>50.0</Hack>
+        <Light>20.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>20.0</Shadow>
+        <Spirit>20.0</Spirit>
+        <Water>20.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/natural/biggoron_fists_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/natural/helmking_bash.xml</attack_ranged>
+      <death>voice/lizalfos/helmking/helmking_death.xml</death>
+      <order_attack>voice/lizalfos/helmking/helmking_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/helmking/helmking_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/helmking/helmking_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/helmking/helmking_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/helmking/helmking_walk.xml</order_walk>
+      <run>actor/movement/GDT/GDT_walk.xml</run>
+      <select>voice/lizalfos/helmking/helmking_select.xml</select>
+      <trained>interface/alarm/alarm_create_titan.xml</trained>
+      <walk>actor/movement/GDT/GDT_walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>default</PassabilityClass>
+    <RunMultiplier>1.2222</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_helmasaurking_b.xml</Actor>
+  </VisualActor>
+</Entity>

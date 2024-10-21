@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["HeroSulkaris"],
+	"modifications": [	],
+	"auraName": "Burning Blood",
+	"auraDescription": "Sulkaris explodes into burning acid when slain.",
+	"overlayIcon": "art/textures/ui/session/auras/sulkaris_burningblood.dds"
+}

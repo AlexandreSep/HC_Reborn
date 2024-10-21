@@ -1,0 +1,22 @@
+<Entity parent="template_wallset">
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Aqueduct</Classes>
+    <GenericName>Aqueduct</GenericName>
+    <History>The Zora require near-constant contact with water to live, and thus pump water to all of their structures via an elaborate network of Aqueducts and Pools.</History>
+    <Icon>structures/zora/zor_aqueduct.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Extends Dominion Territory from the Ministry.</Tooltip>
+  </Identity>
+  <WallSet>
+    <MaxTowerOverlap>0.90</MaxTowerOverlap>
+    <MinTowerOverlap>0.30</MinTowerOverlap>
+    <Templates>
+      <Gate>structures/zora/zora_aqueduct</Gate>
+      <Tower>structures/zora/zora_aquepool</Tower>
+      <WallLong>structures/zora/zora_aqueduct</WallLong>
+      <WallMedium>structures/zora/zora_aqueduct_med</WallMedium>
+      <WallShort>structures/zora/zora_aqueduct_small</WallShort>
+    </Templates>
+  </WallSet>
+</Entity>

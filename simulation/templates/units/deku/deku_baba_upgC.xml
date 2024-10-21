@@ -1,0 +1,10 @@
+<Entity parent="units/deku/deku_baba_b">
+  <Auras datatype="tokens">
+    units/baba_thorns
+  </Auras>
+  <Identity>
+    <GenericName>Deku Baba (Thorny Coating)</GenericName>
+    <SelectionGroupName>units/deku/deku_baba_b</SelectionGroupName>
+  </Identity>
+  <Upgrade disable="" />
+</Entity>

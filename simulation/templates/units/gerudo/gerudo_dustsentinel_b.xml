@@ -1,0 +1,92 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Ranged>
+      <AttackName>Arroows</AttackName>
+      <Damage>
+        <Pierce>22.0</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>70.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BattalionSlots>3</BattalionSlots>
+    <BuildTime>55</BuildTime>
+    <Resources>
+      <food>85</food>
+      <metal>20</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>350</Max>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Seal Large UniqueUnit DustSentinel</Classes>
+    <GenericName>Dust Sentinel</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The reclusive Dust Sentinels are the stoic guardians of the desert borders. Capable of bunkering down, these Sandseal riders create a thick cloud of dust around themselves, which renders them invisible even while attacking, so long as they are stationary.</History>
+    <Icon>units/gerudo/ger_dustsentinel.dds</Icon>
+    <Lang>gerudo</Lang>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
+    <SelectionGroupName>units/gerudo/gerudo_dustsentinel_b</SelectionGroupName>
+    <Tooltip>Princess Riju's Unique Unit. Mounted Missile Cavalry that can attack from afar and cloak nearbye units in a Sandstorm</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <Floating>true</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>45.0</Crush>
+        <Hack>35.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <death>voice/gerudo/gerudo_deathA.xml</death>
+      <order_attack>voice/gerudo/dustsent/dustsent_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/dustsent/dustsent_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/dustsent/dustsent_gather.xml</order_gather>
+      <order_repair>voice/gerudo/dustsent/dustsent_repair.xml</order_repair>
+      <order_walk>voice/gerudo/dustsent/dustsent_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/gerudo/dustsent/dustsent_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.3157</RunMultiplier>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_dustsent_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

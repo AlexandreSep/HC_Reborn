@@ -1,0 +1,16 @@
+{
+	"Name": "scrub all the floors",
+	"Data": {
+		"Action": "createunits",
+		"DefaultParameter": 10,
+		"isNumeric": true,
+		"Templates": [
+			"units/gerudo_glaivegrunt_b",
+			"units/gerudo_marauder_b",
+			"units/hylian_macemen_b",
+			"units/hylian_squire_b",
+			"units/hylian_town_guard_b",
+			"units/hylian_town_lookout_b"
+		]
+	}
+}

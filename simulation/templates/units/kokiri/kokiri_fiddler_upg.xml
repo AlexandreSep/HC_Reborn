@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_fiddler_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_fiddler_F.xml</Actor>
+  </VisualActor>
+</Entity>

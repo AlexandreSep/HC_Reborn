@@ -1,0 +1,98 @@
+<Entity parent="HC_template_structure_defense">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+<Max>5</Max>
+  </GarrisonHolder>
+      <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>-11.4</X>
+        <Y>8.1</Y>
+        <Z>9</Z>
+      </Archer1>
+      <Archer2>
+        <X>-0.4</X>
+        <Y>5.8</Y>
+        <Z>9</Z>
+      </Archer2>
+      <Archer3>
+        <X>5.2</X>
+        <Y>5.8</Y>
+        <Z>2.2</Z>
+      </Archer3>
+      <Archer4>
+        <X>-4.6</X>
+        <Y>5.8</Y>
+        <Z>-2.7</Z>
+      </Archer4>
+      <Archer5>
+        <X>-7.7</X>
+        <Y>5.8</Y>
+        <Z>2.3</Z>
+      </Archer5>
+    </TurretPoints>
+    </TurretHolder>
+  <Health>
+    <Max>700</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Watchin' You Tower</GenericName>
+    <History>Stupid Blins, always wanting to do what they want to do! They is too stupid to be free! That&#8217;s why we Moblins always gotta watch them and boss them around! With us in charge, we all eat and we all fight the real enemies over the hills! If we was not here, all Blins kill themselves! The world would be a sadder place!</History>
+    <Icon>structures/moblin/mob_watchyoutower.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Tower hits the baddies with arrows!</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="25" width="25" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    moblin/tower_icanseemyhouse
+    </Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_defense_tower_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack this Watchin' You Tower.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_turretA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

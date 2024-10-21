@@ -1,0 +1,34 @@
+<Entity parent="template_gaia">
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>3.5</Height>
+  </Footprint>
+  <Identity>
+    <GenericName>Currency</GenericName>
+    <History>Rupees are colorful gemstones commonly used as a currency across Hyrule. Denoted in value by their color and rarity, they are mined from large veins located under the earth.</History>
+    <Icon>gaia/geology_metal.dds</Icon>
+    <SpecificName>Rupee Vein</SpecificName>
+    <Tooltip>Rupees are colorful gemstones commonly used as a currency across Hyrule. Denoted in value by their color and rarity, they are mined from large veins located under the earth.</Tooltip>
+  </Identity>
+  <Minimap>
+    <Color b="170" g="170" r="170" />
+    <Type>metal</Type>
+  </Minimap>
+  <Obstruction>
+    <Static depth="7.0" width="7.0" />
+  </Obstruction>
+  <Position>
+    <Anchor>pitch-roll</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>5000</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>metal.rupees</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/resource/sel_metal.xml</select>
+    </SoundGroups>
+  </Sound>
+</Entity>

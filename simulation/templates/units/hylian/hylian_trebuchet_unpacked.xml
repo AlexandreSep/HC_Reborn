@@ -1,0 +1,17 @@
+<Entity parent="units/hylian/hylian_trebuchet_common">
+  <Identity>
+    <Icon>units/hylian/hyl_trebuchet.dds</Icon>
+  </Identity>
+  <Pack>
+    <Entity>units/hylian/hylian_trebuchet_packed</Entity>
+    <State>unpacked</State>
+    <Time>7000</Time>
+  </Pack>
+  <UnitMotion>
+    <RunMultiplier>1.0</RunMultiplier>
+    <WalkSpeed>0.001</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/hylian/hylian_trebuchet_unpacked.xml</Actor>
+  </VisualActor>
+</Entity>

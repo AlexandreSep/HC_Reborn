@@ -1,0 +1,69 @@
+<Entity parent="template_ruin">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>250</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="38.0" width="38.0" />
+  </Footprint>
+  <Health>
+    <DeathType>corpse</DeathType>
+    <IdleRegenRate>0.0</IdleRegenRate>
+    <Max>6000</Max>
+    <RegenRate>0.0</RegenRate>
+    <Unhealable>false</Unhealable>
+  </Health>  
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Barracks Ruins HiveNest</Classes>
+    <GenericName>Gohma Entity</GenericName>
+    <History>A buried Gohma Nest that can grow into a Hive.</History>
+    <Icon>structures/gohma/goh_hive_core.dds</Icon>
+    <SpecificName>Buried Nest</SpecificName>
+    <Tooltip>A buried Gohma Nest that can grow into a Hive.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="34.0" width="34.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/natural/gohma_acid_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/natural/gohma_acid_attack.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>50</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Upgrade>
+    <ADarknut>
+      <Cost>
+        <food>0</food>
+        <metal>0</metal>
+        <stone>0</stone>
+        <wood>0</wood>
+      </Cost>
+      <Entity>structures/campaign/FS_01/gohma_civil_centre</Entity>
+      <Time>30</Time>
+      <Tooltip>Dig up this Nest and transform it into a Hive Core.</Tooltip>
+    </ADarknut>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_hivecore_buried.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

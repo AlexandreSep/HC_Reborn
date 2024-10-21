@@ -1,0 +1,23 @@
+<Entity parent="structures/stalfos/stalfos_civil_centreC">
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/ruins/ruins_DMA</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_civic_centreC_dm.xml</Actor>
+  </VisualActor>
+  <Identity>
+    <Icon>structures/stalfos/sta_cc_dmC.dds</Icon>
+  </Identity>
+  <Builder>
+    <Entities datatype="tokens">
+	 structures/stalfos/stalfos_ruinsA_dm
+     structures/stalfos/stalfos_wonder_dm
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
+</Entity>

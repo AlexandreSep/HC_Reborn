@@ -1,0 +1,23 @@
+<Entity parent="units/fairy/fairy_bounded_b">
+  <Attack>
+    <Melee>
+      <AttackName>Great Fairy Sword</AttackName>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+      <TrueDamage>17</TrueDamage>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <Icon>units/fairy/fai_bounded_summer.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_bounded_autumn</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_bounded_summer.xml</Actor>
+  </VisualActor>
+</Entity>

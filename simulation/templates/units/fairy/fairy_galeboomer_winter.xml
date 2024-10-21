@@ -1,0 +1,13 @@
+<Entity parent="units/fairy/fairy_galeboomer_b">
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>units/fairy/fai_galeboomer_winter.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_galeboomer_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_galeboomer_winter.xml</Actor>
+  </VisualActor>
+</Entity>

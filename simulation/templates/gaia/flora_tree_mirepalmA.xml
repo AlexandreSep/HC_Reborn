@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Mire Spiral Palm</SpecificName>
+    <Tooltip>These strange palmlike trees form the fruiting bodies of the Mire Spiral Palm, a hardy and twisted plant that thrives in the toxic green waters of the Mire, its snarled roots digging far and wide for nutrients.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/mire_palmsA.xml</Actor>
+  </VisualActor>
+</Entity>

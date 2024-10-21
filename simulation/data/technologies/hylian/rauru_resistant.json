@@ -1,0 +1,20 @@
+{
+	"genericName": "Divine Protection",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 600},
+	"requirements": {"all": [{"tech": "civ_choices/hylian/choosehero_rauru"}, {"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Rauru and the City Phase.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+25% Magic Armor - All units.",
+	"modifications": [
+		{"value": "Resistance/Entity/Damage/Forest", "add": 25},
+		{"value": "Resistance/Entity/Damage/Fire", "add": 25},
+		{"value": "Resistance/Entity/Damage/Water", "add": 25},
+		{"value": "Resistance/Entity/Damage/Spirit", "add": 25},
+		{"value": "Resistance/Entity/Damage/Light", "add": 25},
+		{"value": "Resistance/Entity/Damage/Shadow", "add": 25}],
+	"affects": ["Unit"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

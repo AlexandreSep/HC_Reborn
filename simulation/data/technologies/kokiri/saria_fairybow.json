@@ -1,0 +1,33 @@
+{
+  "genericName": "Fairy Bow",
+  "description": "The mythical Fairy Bow was an ancient weapon lost to time for countless years until Saria recovered the last one from the Forest Temple. After the discovery the Kokiri quickly learned how to create new Fairy Bows for use by their archers.",
+  "cost": {
+    "food": 0,
+    "wood": 250,
+    "stone": 0,
+    "metal": 350
+  },
+  "requirements": {
+    "all": [
+      { "tech": "civ_choices/kokiri/choosehero_saria" },
+	  {"tech": "phase_city"},
+      { "civ": "kokiri" }
+    ]
+  },
+  "requirementsTooltip": "Requires Saria and City Phase.",
+  "icon": "kokiri/saria_fairybow.dds",
+  "researchTime": 40,
+  "tooltip": "Emerald Archers and Safeholds gain +20% Attack Range and now deal an additional +7 Magic Damage.",
+  "modifications": [
+    {
+      "value": "Attack/Ranged/Damage/MaxRange",
+      "multiply": 1.2
+    },
+    {
+      "value": "Attack/Ranged/Damage/Forest",
+      "add": 7.0
+    }
+  ],
+  "affects": [ "EmArcher" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

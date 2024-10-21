@@ -1,0 +1,18 @@
+<Entity parent="template_formation">
+  <Formation>
+    <CenterGap>0</CenterGap>
+    <FormationName>Battle Line</FormationName>
+    <FormationShape>square</FormationShape>
+    <Icon>formations/battle_line.png</Icon>
+    <MaxColumns>8</MaxColumns>
+    <MaxRows>4</MaxRows>
+    <MinColumns>4</MinColumns>
+    <ShiftRows>false</ShiftRows>
+    <Sloppiness>1.5</Sloppiness>
+    <SortingClasses>Melee</SortingClasses>
+    <SortingOrder>fillFromTheSides</SortingOrder>
+    <UnitSeparationDepthMultiplier>1.6</UnitSeparationDepthMultiplier>
+    <UnitSeparationWidthMultiplier>1.6</UnitSeparationWidthMultiplier>
+    <WidthDepthRatio>1</WidthDepthRatio>
+  </Formation>
+</Entity>

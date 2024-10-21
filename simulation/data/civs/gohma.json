@@ -1,0 +1,180 @@
+{
+	"Code": "gohma",
+	"Culture": "hive",
+	"Name": "Gohma",
+	"Emblem": "session/portraits/emblems/emblem_gohma.dds",
+	"History": "In all the dark corners of Hyrule lurk the spider-like Gohma. Incredibly ancient, these arachnid monsters are the oldest surviving creature native to Hyrule. They were purged by even more powerful ancient forces, broken and left wandering the world as animals for countless ages. That is, until a Fallen Sage discovered a way to resurrect their lost power and use it to her own ends...",
+	"Music":[
+			{"File":"gohma_theme1.ogg", "Type":"peace"},
+			{"File":"gohma_ambient1.ogg", "Type":"peace"},
+			{"File":"gohma_ambient2.ogg", "Type":"peace"},
+			{"File":"gohma_ambient3.ogg", "Type":"peace"},
+			{"File":"gohma_ambient4.ogg", "Type":"peace"},
+			{"File":"gohma_ambient5.ogg", "Type":"peace"},
+			{"File":"gohma_ambient6.ogg", "Type":"peace"},
+			{"File":"gohma_ambient7.ogg", "Type":"peace"},
+			{"File":"gohma_ambient8.ogg", "Type":"peace"},
+			{"File":"gohma_ambient9.ogg", "Type":"peace"},
+			{"File":"gohma_ambient10.ogg", "Type":"peace"},
+			{"File":"gohma_battle1.ogg", "Type":"battle"},
+			{"File":"gohma_battle2.ogg", "Type":"battle"},
+			{"File":"gohma_battle3.ogg", "Type":"battle"},
+			{"File":"gohma_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Corpses, Wood, Stone, Metal, Rupees, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Sulkaris, the Fallen Sage",
+					"Class": "",
+					"Armament": "Gohma Claws",
+					"Emblem": "",
+					"History": "Sulkaris once served as a First Sage, a guardian of the Triforce and the world of Hyrule from the corruption of demons and other malevolent beings. Sometime early in her existence, she deemed it necessary to take the Triforce into her own hands and assume control of Hyrule. She was stopped by her fellow First Sages, stripped of her powers, and banished to Hyrule forever. She proceeded to wage war against the many nations of Hyrule, eventually being slain by King Gustaf. Sulkaris had far more planned, however. After her fall, she came across the Gohma and discovered a way to unite them all under her influence. Now all Gohma exist as extensions of her will, and so long as they live she can endlessly respawn until her mission is fulfilled."
+				},
+				{
+					"Name": "Agitha",
+					"Class": "",
+					"Armament": "Hive Keeper",
+					"Emblem": "",
+					"History": "As a child, Agitha was fond of insects and arachnids and would often collect them within the basement of her house to occupy her time while her parents were gone. When the Gerudo Wars claimed the lives of her parents, a Gohma that she had in her possession made a then-defeated Sulkaris aware of her trauma. She took advantage of Agitha's grief, tricking the young girl into becoming a pawn of the Gohma. Agitha is completely out of step with reality, the trauma of her missing parent coloring her view of the world. She sees the will of the Gohma as the only means to solve Hyrule's problems, in particular that of loneliness. She sees Sulkaris as a mother figure, perhaps filling the void her own parents left."
+				},
+				{
+					"Name": "Mido",
+					"Class": "",
+					"Armament": "Gohma Spear",
+					"Emblem": "",
+					"History": "Once a chieftain of the Kokiri, Mido was tricked by the will of Sulkaris with promises of power over his people. In return he was exiled by the Great Deku Tree, losing everything he had and becoming a pawn of the Gohma. To this day, he blames the outcome of his life on the Great Deku Tree, whom he plot to take revenge upon. Luckily for him, his wish coincides with Sulkaris, who also seeks the destruction of the forest guardian."
+				},
+				{
+					"Name": "Matriarch",
+					"Class": "",
+					"Armament": "Royal Larva Bodyguards",
+					"Emblem": "",
+					"History": "The Matriarch is one of the oldest surviving Gohma in all of Hyrule. A massive Queen that has grown to frightening proportions, the Matriarch can lay thousands of eggs in a single day and shows no sign of stopping anytime soon. It is rumored that Matriarch was the Gohma that Sulkaris first encountered, and imbued with the will to dominate and destroy. The Matriarch is also believed to be one of the sources of the Gohma's Will; creating and expanding it through the blue Shroud of their hives."
+				}  
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Infestation",
+			"History": "",
+			"Description": "Gohma buildings cannot be captured by any means."
+		},
+		{
+			"Name": "All-Consuming",
+			"History": "",
+			"Description": "Gohma can harvest Food from the corpses of all slain organic units, including their own."
+		},
+		{
+			"Name": "Hive Affinity",
+			"History": "",
+			"Description": "All Gohma Buildings spawn sterile larvae when destroyed."
+		}  
+	],
+	"CivChoices":
+	[
+		"civ_choices/gohma/choosehero_agitha",
+		"civ_choices/gohma/choosehero_mido",
+		"civ_choices/gohma/choosehero_queenbaga",
+		"civ_choices/gohma/choosehero_praetorian",
+		"civ_choices/gohma/choosehero_matriarch",
+		"civ_choices/gohma/choosehero_sulkaris"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Hive Regiments",
+			"History": "",
+			"Description": "Allies receive +1 pop from each House and Civil Center."
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Eyes of Vitreous",
+			"Class": "",
+			"Emblem": "",
+			"History": "One of the seven eyes of Iemanis that morphed and grew into a new form after its body was destoyed in ages past, Vitreous lurked without purpose beneath the Misery Mire for countless ages, until the Gohma found and reintegrated it into their Hive. The eyes of Vitreous relentlessly observe everything around them, torching invaders with powerful electric shocks when they meet their gaze. With the eyes and the power of Sulkaris the Gohma can reconstruct the form of Iemanis.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "Titan: Iemanis, God of the Gohma",
+			"Class": "",
+			"Emblem": "",
+			"History": "The creator and deity of the Gohma, revived from death after countless ages, through the Will of Sulkaris, using the remains of Vitreous and six of the Sage Medallions. This massive arthropod attacks with claws, electric bolts, and a giant beam of fire from its primary eye. Iemanis can also spawn new swarms of Gohma directly from its body, replenishing the ranks of its army.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/gohma/gohma_civil_centre"
+		},
+		{
+			"Template": "units/gohma/gohma_harvesterA",
+			"Count": 4
+		},
+		{
+			"Template": "units/gohma/gohma_keeper_b",
+			"Count": 2
+		},		
+		{
+			"Template": "units/gohma/gohma_larva_soldier_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/gohma/gohma_keeper_b"
+		},
+		{
+			"Template": "units/gohma/gohma_queen_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Sulkaris, the Fallen Sage",
+		"Agitha",
+		"Mido",
+		"Matriarch"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/gohma/gohma_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/gohma/gohma_harvesterA",
+		"skirmish/units/default_cavalry" :  "units/gohma/gohma_keeper_b",
+		"skirmish/units/default_infantry_melee_b": "units/gohma/gohma_harvesterA",
+		"skirmish/units/default_infantry_ranged_b": "units/gohma/gohma_harvesterA",
+		"skirmish/structures/default_house_10" : "structures/gohma/gohma_house",
+		"skirmish/units/special_starting_unit" : "units/gohma/gohma_queen_b"
+	},
+	"SelectableInGameSetup": true
+}

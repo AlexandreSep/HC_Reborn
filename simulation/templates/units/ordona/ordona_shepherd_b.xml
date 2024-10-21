@@ -1,0 +1,66 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>25</food>
+      <metal>40</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>200</Max>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>false</LinkedDestruction>
+      <Max>5</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/ordona/ordona_attackgoat_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Medium Class40 Shepherdgoat</Classes>
+    <GenericName>Shepherd</GenericName>
+    <History>Shepherds guide and care for Ordona's native goats. Providing meat and milk as well as serving the role of beast of burden and battle mount, Ordonian goats are treasured and nearly sacred to the people of the province. A Shepherd can summon a small flock of Ordonian goats that follow their leader around, attacking any enemies that come near.</History>
+    <Icon>units/ordona/ord_shepherd.dds</Icon>
+    <Lang>ordona</Lang>
+    <Rank>Basic</Rank>
+    <SelectionGroupName>units/ordona/ordona_shepherd_b</SelectionGroupName>
+    <SpecificName>Shepherd</SpecificName>
+    <Tooltip>Support unit that summons herds of Attack Goats to swarm their enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/ordona/shepherd/shepherd_death.xml</death>
+      <order_attack>voice/ordona/shepherd/shepherd_attack.xml</order_attack>
+      <order_garrison>voice/ordona/shepherd/shepherd_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/shepherd/shepherd_gather.xml</order_gather>
+      <order_repair>voice/ordona/shepherd/shepherd_repair.xml</order_repair>
+      <order_walk>voice/ordona/shepherd/shepherd_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/ordona/shepherd/shepherd_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/ordona/ordona_shepherd_b.xml</Actor>
+  </VisualActor>
+</Entity>

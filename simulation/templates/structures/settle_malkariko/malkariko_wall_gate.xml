@@ -1,0 +1,19 @@
+<Entity parent="structures/hylian/hylian_stone_wall_gate">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="8.5" width="55.5" />
+  </Footprint>
+  <Obstruction>
+    <Obstructions>
+      <Door depth="7" width="10" x="0" z="0" />
+      <Left depth="7" width="32" x="-22" z="0" />
+      <Right depth="7" width="32" x="22" z="0" />
+    </Obstructions>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_wall_gatehouse.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>37.0</Length>
+  </WallPiece>
+</Entity>

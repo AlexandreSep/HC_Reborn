@@ -1,0 +1,95 @@
+<Entity parent="HC_template_hero_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs and Claws</AttackName>
+      <Bonuses>
+        <BonusCreatureMelee>
+          <Classes>Creature</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCreatureMelee>
+        <BonusInfantryMelee>
+          <Classes>Infantry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusInfantryMelee>
+      </Bonuses>
+      <Damage>
+        <Hack>20.0</Hack>
+        <Pierce>14.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>440</food>
+      <metal>100</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2200</Max>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/kokiri/kokiri_hero_mirora_nomount</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">HeroMirora Hero2 Medium FairyGuard Hero</Classes>
+    <GenericName>Mudman Chief</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The leader of the Mudmen of Faron, Mirora briefly served as the head Chief of all the Kokiri after Mido’s exile from the Forest. Although not quite suited for governance, Mirora’s years of experience defending the borders of the Forest made her an ideal general. Mirora was known for her rather short temper, especially for a Kokiri. She prefered to solve problems through force and saw ranged weapons as dishonorable. She was also quite a wild dancer, as is common amongst the Mudmen.</History>
+    <Icon>units/kokiri/kok_hero_mirora.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_mirora</RequiredTechnology>
+    <SpecificName>Mirora</SpecificName>
+    <Tooltip>Quick and powerful Creature Hero that can shred apart units in melee. Immune to all Knockback.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>60.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/kokiri/mirora/mirora_death.xml</death>
+      <order_attack>voice/kokiri/mirora/mirora_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/mirora/mirora_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/mirora/mirora_gather.xml</order_gather>
+      <order_repair>voice/kokiri/mirora/mirora_repair.xml</order_repair>
+      <order_walk>voice/kokiri/mirora/mirora_walk.xml</order_walk>
+      <run>actor/movement/boar/boar_footsteps.xml</run>
+      <select>voice/kokiri/mirora/mirora_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/boar/boar_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero3</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.5757</RunMultiplier>
+    <WalkSpeed>16.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_hero_shamnon_b.xml</Actor>
+  </VisualActor>
+</Entity>

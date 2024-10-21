@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_shrinecourage_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_shrinecart_b.xml</Actor>
+  </VisualActor>
+</Entity>

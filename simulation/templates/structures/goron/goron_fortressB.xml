@@ -1,0 +1,18 @@
+<Entity parent="structures/goron/goron_fortress">
+  <Health>
+    <Max>9000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_huge</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">DoubleLayer City</Classes>
+    <GenericName>Stronghold (Double Layer)</GenericName>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/goron/goron_strongholdB.xml</Actor>
+  </VisualActor>
+</Entity>

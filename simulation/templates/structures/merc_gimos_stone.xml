@@ -1,0 +1,156 @@
+<Entity parent="template_entity_full">
+  <Battalion>
+    <FormationTemplate>special/formations/battle_line</FormationTemplate>
+    <SameActorSeed>false</SameActorSeed>
+    <Size>1</Size>
+    <SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
+  <BuildRestrictions>
+    <Category>House</Category>
+    <PlacementType>land</PlacementType>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Population>0</Population>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <DamageVariants>
+      <heavydamage>0.35</heavydamage>
+      <lightdamage>0.85</lightdamage>
+      <mediumdamage>0.65</mediumdamage>
+    </DamageVariants>
+    <DeathType>corpse</DeathType>
+    <IdleRegenRate>0</IdleRegenRate>
+    <Max>150</Max>
+    <RegenRate>5</RegenRate>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <Civ>mercenary</Civ>
+    <Classes datatype="tokens">Medium</Classes>
+    <GenericName>Flying Attack Unit</GenericName>
+    <History>.</History>
+    <Icon>units/merc/merc_gimos.dds</Icon>
+    <Lang>mercenary</Lang>
+    <SelectionGroupName>units/merc/merc_gimos_b</SelectionGroupName>
+    <SpecificName>Gimos</SpecificName>
+    <Tooltip>.</Tooltip>
+    <Undeletable>false</Undeletable>
+    <VisibleClasses datatype="tokens">Melee Trident Mercenary</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Active>true</Active>
+    <BlockConstruction>false</BlockConstruction>
+    <BlockFoundation>true</BlockFoundation>
+    <BlockMovement>true</BlockMovement>
+    <BlockPathfinding>true</BlockPathfinding>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
+    <DisableBlockMovement>false</DisableBlockMovement>
+    <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <Static depth="5.0" width="5.0" />
+  </Obstruction>
+  <OverlayRenderer />
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>1.0</BatchTimeModifier>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <metal>1.0</metal>
+      <stone>1.0</stone>
+      <time>1.0</time>
+      <wood>1.0</wood>
+    </TechCostMultiplier>
+  </ProductionQueue>
+  <RallyPoint />
+  <RallyPointRenderer>
+    <LineDashColor b="15" g="11" r="158" />
+    <LineEndCap>round</LineEndCap>
+    <LinePassabilityClass>default</LinePassabilityClass>
+    <LineStartCap>square</LineStartCap>
+    <LineTexture>art/textures/misc/rallypoint_line.png</LineTexture>
+    <LineTextureMask>art/textures/misc/rallypoint_line_mask.png</LineTextureMask>
+    <LineThickness>0.25</LineThickness>
+    <MarkerTemplate>special/rallypoint</MarkerTemplate>
+  </RallyPointRenderer>
+  <RangeOverlayManager />
+  <RangeOverlayRenderer />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>70.0</Hack>
+        <Pierce>85.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>1</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.4</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>12.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>0</wood>
+      </Cost>
+      <Entity>units/merc_gimos_b</Entity>
+      <Time>15</Time>
+      <Tooltip>Become active. (Gimos becomes active again.)</Tooltip>
+    </Tower>
+  </Upgrade>
+  <Visibility>
+    <AlwaysVisible>false</AlwaysVisible>
+    <Corpse>false</Corpse>
+    <Preview>false</Preview>
+    <RetainInFog>true</RetainInFog>
+  </Visibility>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisionSharing>
+    <Bribable>false</Bribable>
+  </VisionSharing>
+  <VisualActor>
+    <Actor>units/merc/merc_gimos_stone.xml</Actor>
+    <ConstructionPreview />
+    <SilhouetteDisplay>false</SilhouetteDisplay>
+    <SilhouetteOccluder>true</SilhouetteOccluder>
+    <VisibleInAtlasOnly>false</VisibleInAtlasOnly>
+  </VisualActor>
+</Entity>

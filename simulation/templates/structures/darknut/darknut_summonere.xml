@@ -1,0 +1,80 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">City</Classes>
+    <GenericName>Summonere</GenericName>
+    <History>When an exceptionally deadly mission was required of the Legion, summons would be sent out to bring forth those from the margins of their world. Ancient and forgotten practitioners of magic, eccentric and secret convents, and exiled outcasts would be hired and put to use here.</History>
+    <Icon>structures/darknut/dar_summonere.dds</Icon>
+    <Tooltip>Allows the training of exotic Darknut units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>40</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/darknut/{civ}_immortal_b
+      units/darknut/{civ}_glasswitch_b
+    units/darknut/{civ}_reaver_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    darknut/summon_reanimation
+    darknut/summon_charm
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_summonerebaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

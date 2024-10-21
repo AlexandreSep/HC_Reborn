@@ -1,0 +1,78 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+      <AttackName>Boulder</AttackName>
+      <Damage>
+        <Crush>300.0</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>110.0</MaxRange>
+      <MinRange>45.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <PrepareTime>5000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+        <Speed>37.5</Speed>
+        <Spread>3.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>7500</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>190</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="12.0" width="8.0" />
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">-Organic Construct Large Class40</Classes>
+    <GenericName>Ordona Catapult</GenericName>
+    <History>With enemies on all sides, Ordona was often on the defensive. In the cases where the tables were turned, Catapults served as their big guns for taking out enemy walls and towers. Ordonian catapults could hurl boulders from safe behind their army's lines, busting open gates and taking out large targets with ease.</History>
+    <Icon>units/ordona/ord_catapult.dds</Icon>
+    <Tooltip>Small but effective ranged Siege unit that can knock down enemy structures.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+      <death>voice/ordona/peasantM/peasantM_death.xml</death>
+      <order_attack>voice/ordona/peasantM/peasantM_attack.xml</order_attack>
+      <order_garrison>voice/ordona/peasantM/peasantM_garrison.xml</order_garrison>
+      <order_gather>voice/ordona/peasantM/peasantM_gather.xml</order_gather>
+      <order_repair>voice/ordona/peasantM/peasantM_repair.xml</order_repair>
+      <order_walk>voice/ordona/peasantM/peasantM_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/ordona/peasantM/peasantM_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/ordona/ordona_catapult_b.xml</Actor>
+  </VisualActor>
+</Entity>

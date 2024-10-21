@@ -1,0 +1,103 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Ranged>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Crush>20.0</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>12.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1500</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>1700</RepeatTime>
+      <Splash>
+        <Damage>
+          <Crush>7.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>6</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+      <Knockback>
+        <Horizontal>10</Horizontal>
+        <Vertical>10</Vertical>
+      </Knockback>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>150</food>
+      <metal>0</metal>
+      <stone>100</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="12.0" />
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <Max>450</Max>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>false</LinkedDestruction>
+      <Max>4</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>units/lizalfos/lizalfos_helmbaby_b</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Huge Class40 Helmqueen</Classes>
+    <GenericName>Helmasaur Queen</GenericName>
+    <History>One of the many females in the harem of the Helmasaur King, these members of the wicked Helmasaurs were in charge of laying clutches of eggs and teaching the newborns to hunt. A Helmasaur Queen was large and slow, but she could spawn baby Helmasaurs to follow her around in battle.</History>
+    <Icon>units/lizalfos/liz_helmqueen.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_helmqueen_b</SelectionGroupName>
+    <Tooltip>Very large Melee Creature unit who spawns smaller babies to follow her into battle.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>65.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>65.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/helmqueen_ram.xml</attack_ranged>
+      <death>voice/lizalfos/helmqueen/helmqueen_death.xml</death>
+      <order_attack>voice/lizalfos/helmqueen/helmqueen_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/helmqueen/helmqueen_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/helmqueen/helmqueen_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/helmqueen/helmqueen_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/helmqueen/helmqueen_walk.xml</order_walk>
+      <run>actor/movement/giant/giant_walkB.xml</run>
+      <select>voice/lizalfos/helmqueen/helmqueen_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/giant/giant_walkB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.8461</RunMultiplier>
+    <WalkSpeed>6.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_helmasaurqueen_b.xml</Actor>
+  </VisualActor>
+</Entity>

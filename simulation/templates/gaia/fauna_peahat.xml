@@ -1,0 +1,65 @@
+<Entity parent="template_unit_fauna_wild_violent">
+  <Attack>
+    <Melee>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Hack>7.0</Hack>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Footprint replace="">
+    <Circle radius="1.0" />
+    <Height>3.5</Height>
+  </Footprint>
+  <Health>
+    <Max>50</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Peahat Larva</GenericName>
+    <History />
+    <Icon>gaia/fauna_peahat.dds</Icon>
+    <Tooltip>These strange flying predatory plants live in flatlands such as Hyrule Field, lying in wait for prey and hurtling at it at high speeds with their razor-sharp leaves.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>50</Max>
+    <Type>food.fruit</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/peahat_cut.xml</attack_ranged>
+      <death>voice/wild/peahat/peahat_death.xml</death>
+      <order_attack>voice/wild/peahat/peahat_attack.xml</order_attack>
+      <order_garrison>voice/wild/peahat/peahat_garrison.xml</order_garrison>
+      <order_gather>voice/wild/peahat/peahat_gather.xml</order_gather>
+      <order_repair>voice/wild/peahat/peahat_repair.xml</order_repair>
+      <order_walk>voice/wild/peahat/peahat_walk.xml</order_walk>
+      <run>actor/movement/peahat/peahat_spin.xml</run>
+      <select>voice/wild/peahat/peahat_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/peahat/peahat_spin.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>units/wild/wild_peahatA.xml</Actor>
+  </VisualActor>
+  <UnitAI>
+    <CanGuard>true</CanGuard>
+    <CanPatrol>true</CanPatrol>
+    <DefaultStance>aggressive</DefaultStance>
+    <FleeDistance>12.0</FleeDistance>
+    <FormationController>false</FormationController>
+    <PatrolWaitTime>2</PatrolWaitTime>
+  </UnitAI>
+</Entity>

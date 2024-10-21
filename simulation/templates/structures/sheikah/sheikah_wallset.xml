@@ -1,0 +1,22 @@
+<Entity parent="template_wallset">
+  <Identity>
+    <Civ>sheikah</Civ>
+    <GenericName>Defense</GenericName>
+    <History>A makeshift wooden wall to keep the elements out of Sheikah villages.</History>
+    <Icon>structures/sheikah/she_wall.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SpecificName>Wooden Wall</SpecificName>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <WallSet>
+    <MaxTowerOverlap>0.80</MaxTowerOverlap>
+    <MinTowerOverlap>0.10</MinTowerOverlap>
+    <Templates>
+      <Gate>structures/sheikah/sheikah_wall_gate</Gate>
+      <Tower>structures/sheikah/sheikah_wall_tower</Tower>
+      <WallLong>structures/sheikah/sheikah_wall_long</WallLong>
+      <WallMedium>structures/sheikah/sheikah_wall_medium</WallMedium>
+      <WallShort>structures/sheikah/sheikah_wall_short</WallShort>
+    </Templates>
+  </WallSet>
+</Entity>

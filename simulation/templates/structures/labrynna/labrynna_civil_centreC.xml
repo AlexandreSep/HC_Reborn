@@ -1,0 +1,13 @@
+<Entity parent="structures/labrynna/labrynna_civil_centreB">
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_centerB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>City Center</GenericName>
+    <Icon>structures/labrynna/lab_civcenterC.dds</Icon>
+  </Identity>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_civic_centreC.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,85 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Melee>
+      <AttackName>Mandibles</AttackName>
+      <Damage>
+        <Pierce>7</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+    structures/gohma/gohma_civil_centre
+    structures/gohma/gohma_temple
+    structures/gohma/gohma_house
+    structures/gohma/gohma_farmstead
+    structures/gohma/gohma_field
+    structures/gohma/gohma_storehouse
+    structures/gohma/gohma_market
+    structures/gohma/gohma_nursery
+    structures/gohma/gohma_blacksmithD
+    structures/gohma/gohma_blacksmith
+    structures/gohma/gohma_blacksmithA
+    structures/gohma/gohma_blacksmithB
+    structures/gohma/gohma_blacksmithC
+    structures/gohma/gohma_barrierset
+    structures/gohma/gohma_sentry_tower
+    structures/gohma/gohma_wonder
+    </Entities>
+    <Rate>0.25</Rate>
+  </Builder>
+  <Cost>
+    <BuildTime>6</BuildTime>
+    <Resources>
+      <food>30</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>140</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Small Larva LarvaHive CasteHive Upgradeable BasicSoldier</Classes>
+    <GenericName>Hive Larva</GenericName>
+    <History>A secondary workforce for the Gohma, Hive Larva can eventually grow into larger and more useful utility forms. They have very minimal armor and their bites are hardly effective.</History>
+    <Icon>units/gohma/goh_larva_hive.dds</Icon>
+    <Lang>gohma</Lang>
+    <SelectionGroupName>units/gohma/gohma_larva_hive_b</SelectionGroupName>
+    <Tooltip>A small and hairy larva that can grow into various non-combat, utility forms. They can aid Harvesters and Hive Keepers with gathering Food and construction duty respectively.</Tooltip>
+    <VisibleClasses datatype="tokens">Worker</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_smallA/gohma_smallA_death.xml</death>
+      <order_attack>voice/gohma/gohma_smallA/gohma_smallA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_smallA/gohma_smallA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_smallA/gohma_smallA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_smallA/gohma_smallA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_smallA/gohma_smallA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlB.xml</run>
+      <select>voice/gohma/gohma_smallA/gohma_smallA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/gohma/gohma_larva_hive_b.xml</Actor>
+  </VisualActor>
+</Entity>

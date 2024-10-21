@@ -1,0 +1,17 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.1 }
+	],
+	"auraName": "Chant",
+	"auraDescription": "(+10% Walk/Run Speed - Unit)",
+	"overlayIcon": "art/textures/ui/session/auras/deacon_chant.dds",
+	"rangeOverlay" : {
+		"lineTexture": "outline_border.png",
+		"lineTextureMask": "outline_border_mask.png",
+		"lineThickness": 0.075
+	}
+}

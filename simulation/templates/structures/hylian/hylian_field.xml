@@ -1,0 +1,88 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Farmstead</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>125</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="30.0" width="44.0" />
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_houseA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">DropsiteFood Field Farmstead</Classes>
+    <GenericName>Urban Farm</GenericName>
+    <History>With enemies on all sides, and war quite frequent within the Kingdom's borders, the Hylians shifted to creating their farms within city walls over the centuries. They may not yield as bountiful of harvest because of their limited space, but they provide enough food nonetheless.</History>
+    <Icon>structures/hylian/hyl_urbanfarm.dds</Icon>
+    <Tooltip>Workers can harvest Food at this centralized location. Kingdom of Hyrule farms are also unique in that they provide a small amount of population.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic Storehouse</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="25.0" width="40.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>2</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      hylian/gather_vigjaro_wicker
+    hylian/gather_peahat_fertilizer
+    </Technologies>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>95</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <ResourceDropsite>
+    <Sharable>false</Sharable>
+    <Types>food</Types>
+  </ResourceDropsite>  
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.grain</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_farm.xml</constructed>
+      <select>interface/select/building/sel_farm.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_farmsteadA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldI.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,63 @@
+<Entity parent="template_structure_resource_field">
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_field</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Field</Classes>
+    <GenericName>Field</GenericName>
+    <History>Cheap and easily grown vegetables became the mandate of the Empire upon the campaign of conquest. Tokay Slaves would flood these fields to gather the ever increasing demands of the Labrynnian people.</History>
+    <Icon>structures/labrynna/lab_farmA.dds</Icon>
+    <Tooltip>Grows food that can be gathered by Worker units.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <metal>1.0</metal>
+      <stone>1.0</stone>
+      <time>1.0</time>
+      <wood>1.0</wood>
+    </TechCostMultiplier>
+  </ProductionQueue>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <DiminishingReturns>0.90</DiminishingReturns>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>1</MaxGatherers>
+    <Type>food.grain</Type>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_farm.xml</constructed>
+      <select>interface/select/building/sel_farm.xml</select>
+      <upgraded>interface/complete/building/complete_farm.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_fieldB</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Upgrade Field into Slave Farm.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/misc/field_labrynnaA.xml</Actor>
+  </VisualActor>
+</Entity>

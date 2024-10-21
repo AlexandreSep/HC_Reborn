@@ -1,0 +1,102 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Foreign Quarter</GenericName>
+    <History>The Foreign Quater was dedicated to hiring and housing mercenaries of all races and creeds for the Legion. A staggering number of creatures and warriors passed through and dwelled in these halls, all seeking the Rupees that the Legion was more than happy to provide.</History>
+    <Icon>structures/darknut/dar_foreign.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Allows the Legion to hire Mercenary units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>40</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/darknut/{civ}_hypaspist_b
+      units/darknut/{civ}_mazura_b
+    units/darknut/{civ}_lynel_b
+    units/darknut/{civ}_fokkalista_b
+    units/merc_geru_b
+    units/merc_goriya_b
+    units/merc_forestthief_b
+    units/merc_polsvoice_b
+    units/merc_tinsuit_b
+    units/merc_taros_b
+    units/merc_pikku_b
+    units/merc_gimos_b
+    units/merc_wosu_b
+    units/merc_daira_b
+    units/merc_mago_b
+    units/merc_meteo_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    darknut/mercs_legionloyalty
+    darknut/mercs_privatepacts
+    darknut/alros_supermercs
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+      <upgraded>interface/complete/building/complete_mercs.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_foreignbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,64 @@
+<Entity parent="HC_template_unit_packed">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>20</metal>
+      <stone>0</stone>
+      <wood>85</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Large</Classes>
+    <GenericName>Moblin Totem</GenericName>
+    <History>This here the greatest arty of Moblin kind! Moblin Totem mark the land that is ours! With Moblin Totem  we can set up all the great houseys and bases to get more Blins! More Blins, more better the world is! When the land is bad we can pick up the Totem and move it to brand new best land! Moblins are smart!</History>
+    <Icon>structures/moblin/mob_totem.dds</Icon>
+    <Tooltip>Blin Totem make more territory for Blins to make big bad base on!</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/salamander_big_breath.xml</attack_melee>
+      <death>voice/moblin/ugpug/ugpug_death.xml</death>
+      <order_attack>voice/moblin/ugpug/ugpug_attack.xml</order_attack>
+      <order_garrison>voice/moblin/ugpug/ugpug_garrison.xml</order_garrison>
+      <order_gather>voice/moblin/ugpug/ugpug_garrison.xml</order_gather>
+      <order_repair>voice/moblin/ugpug/ugpug_repair.xml</order_repair>
+      <order_walk>voice/moblin/ugpug/ugpug_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/moblin/ugpug/ugpug_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>2.6</RunMultiplier>
+    <WalkSpeed>5</WalkSpeed>
+  </UnitMotion>
+  <Upgrade>
+    <Tower>
+      <CheckPlacementRestrictions />
+      <Entity>structures/moblin/moblin_totem</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>10</Time>
+      <Tooltip>Unpack this Moblin Totem.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/moblin/moblin_mobcartI.xml</Actor>
+  </VisualActor>
+</Entity>

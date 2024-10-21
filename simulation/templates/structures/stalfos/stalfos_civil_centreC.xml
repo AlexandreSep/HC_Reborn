@@ -1,0 +1,16 @@
+<Entity parent="structures/stalfos/stalfos_civil_centreB">
+  <Identity>
+    <GenericName>Mausoleum</GenericName>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_civic_centreC_anc.xml</Actor>
+  </VisualActor>
+  <Identity>
+    <Icon>structures/stalfos/sta_cc_ancC.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+		stalfos/stalfos_getmausoleum
+    </Technologies>
+  </ProductionQueue>
+</Entity>

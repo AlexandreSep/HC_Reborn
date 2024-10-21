@@ -1,0 +1,30 @@
+<Entity parent="units/fairy/fairy_great_b">
+  <Attack disable="" />
+  <Heal>
+    <HealableClasses datatype="tokens">Organic</HealableClasses>
+    <Health>1</Health>
+    <Range>15</Range>
+    <Interval>200</Interval>
+    <UnhealableClasses datatype="tokens" />
+  </Heal>
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>2</BattalionSize>
+      <Chance>0</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/fairy/fairy_stray_spring</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Spring</Classes>
+    <Icon>units/fairy/fai_great_spring.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_great_summer</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_great_spring.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,20 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Giant Stump</SpecificName>
+    <Tooltip>A relic of an age long past, when the Kokiri Woods once was covered in great primordial trees.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="3.7" width="3.7" />
+  </Obstruction>
+  <ResourceSupply>
+    <Max>200</Max>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>12</MaxGatherers>
+    <Type>wood.tree</Type>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>flora/forest/LW_stump_bigA.xml</Actor>
+  </VisualActor>
+</Entity>

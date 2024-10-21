@@ -1,0 +1,64 @@
+<Entity parent="template_unit_fauna_wild_violent">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Fire>15.0</Fire>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>5</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.7</Spread>
+        <FriendlyFire>false</FriendlyFire>
+      </Projectile>
+      <RepeatTime>1500</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="5.0" width="3.0" />
+  </Footprint>
+  <Health>
+    <Max>320</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Dodongo (Male)</GenericName>
+    <History>7</History>
+    <Icon>gaia/fauna_dodongoM.dds</Icon>
+    <Tooltip>Male Dodongos are notable for a large horn atop their head,and typically serve as hunters and nest guardians, roasting intruders or prey from a distance with their flame breath.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>35.0</Hack>
+        <Pierce>25.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <Max>300</Max>
+    <Type>food.meat</Type>
+	<KillBeforeGather>true</KillBeforeGather>
+	<MaxGatherers>1</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/dodongo_breath.xml</attack_ranged>
+      <death>voice/wild/dodongo/dodongo_death.xml</death>
+      <select>actor/fauna/animal/lion_select.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/wild/wild_dodongoA.xml</Actor>
+  </VisualActor>
+</Entity>

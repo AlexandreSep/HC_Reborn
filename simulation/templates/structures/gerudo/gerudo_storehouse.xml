@@ -1,0 +1,127 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>0</DefaultArrowCount>
+    <GarrisonArrowClasses>Soldier</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="27.0" width="27.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>4</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>-3</X>
+        <Y>7.1</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>-3</X>
+        <Y>7.1</Y>
+        <Z>-5</Z>
+      </Archer2>
+      <Archer3>
+        <X>-3</X>
+        <Y>7.1</Y>
+        <Z>-10</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_medium</SpawnEntityOnDeath>
+    <SpawnGarrison>
+      <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
+      <SpawnNumber>3</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Logistics DropsiteFood DropsiteWood DropsiteMetal DropsiteStone</Classes>
+    <GenericName>Supply Mill</GenericName>
+    <History>The Windmills of the Gerudo Desert served as storage for food, wood, and all manner of resources. Within wood was chopped and refined, as well as stone and Rupees.</History>
+    <Icon>structures/gerudo/ger_supplymill.dds</Icon>
+    <Tooltip>Serves as a dropoff point for collected Resources.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="30.0" width="30.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      gerudo/gather_wood_zaldorfaxes
+	  gerudo/gather_wood_palmskin
+	  gerudo/gather_wood_endgrain
+	  gerudo/gather_stone_artificer
+      gerudo/gather_stone_bulkwork
+	  gerudo/gather_stone_manslaves
+      gerudo/gather_rupee_leevertooth
+	  gerudo/gather_rupee_ishafinder
+	  gerudo/gather_rupee_ruvaraexec
+      gerudo/gather_ger_capacity_gadura
+	  gerudo/gather_ger_capacity_pokey
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>85.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Hack>1</Hack>
+        <Pierce>95</Pierce>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_storehouse.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_millA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+</Entity>

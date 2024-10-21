@@ -1,0 +1,179 @@
+{
+	"Code": "deku",
+	"Culture": "naturalistic",
+	"Name": "Deku Scrubs",
+	"Emblem": "session/portraits/emblems/emblem_deku.dds",
+	"History": "The Kingdom of the Deku Scrubs were a loose collection of feudal territories deep within the eastern reaches of the Kokiri Forest. Known for their irrational bursts of anger and their perpetual short-man's complex, large gatherings of these normally comical forest dwellers could result in terrifying destruction and chaos when unleashed on Hyrule.",
+	"Music":[
+			{"File":"deku_theme1.ogg", "Type":"peace"},
+			{"File":"deku_ambient1.ogg", "Type":"peace"},
+			{"File":"deku_ambient2.ogg", "Type":"peace"},
+			{"File":"deku_ambient3.ogg", "Type":"peace"},
+			{"File":"deku_ambient4.ogg", "Type":"peace"},
+			{"File":"deku_ambient5.ogg", "Type":"peace"},
+			{"File":"deku_ambient6.ogg", "Type":"peace"},
+			{"File":"deku_ambient7.ogg", "Type":"peace"},
+			{"File":"deku_ambient8.ogg", "Type":"peace"},
+			{"File":"deku_ambient9.ogg", "Type":"peace"},
+			{"File":"deku_ambient10.ogg", "Type":"peace"},
+			{"File":"deku_battle1.ogg", "Type":"battle"},
+			{"File":"deku_battle2.ogg", "Type":"battle"},
+			{"File":"deku_battle3.ogg", "Type":"battle"},
+			{"File":"deku_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Farms, Fruit, Wood, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "King Kud-Loh-Kan",
+					"Class": "",
+					"Armament": "Deku Staff",
+					"Emblem": "",
+					"History": "Perhaps one of the most powerful rulers of the Deku Scrubs, King Kud-Loh-Kan was the first of his race to unite every single Scrub under one banner, albeit only temporarily. His success did not rise from the people's favor however; King Kud-Loh-Kan ruled like a tyrant and constantly threatened his people with executions. Despite his angry demeanor, the King's motivations seem to be rooted in his love for his daughter. Though kept secret, he had been struck with a case of Mad Scrub and wished for her to replace him on the throne after his passing."
+				},
+				{
+					"Name": "Princess Kad-A-Kana",
+					"Class": "",
+					"Armament": "Deku Nut",
+					"Emblem": "",
+					"History": "The only daughter of King Kud-Loh-Kan, Kad-A-Kana may not have been the one sitting on the throne but she was certainly the one calling the shots. Her father could not help but give in to her demands, and many of the Scrubs wondered just who exactly was in charge. Things would change once the King was diagnosed with Mad Scrub. Princess Kad-A-Kana was noted for her long bouts of sadness, punctuated by violent bursts of anger. When her father became a victim of the terminal Mad Scrub, her motivations and intentions turned to darker places elsewhere."
+				},
+				{
+					"Name": "Kado",
+					"Class": "",
+					"Armament": "Dekupult",
+					"Emblem": "",
+					"History": "A brilliant engineer, the son of Butler Kuh-Do, and the only friend of Princess Kad-A-Kana, Kado was at the forefront of creating siege engines and other contraptions for Scrub kind. He had an endless fascination with watching things fall to the ground... usually as a result of one of his new catapult inventions. Kado was rather small, even for a Deku Scrub, and was often considered a joke most of his life. After compensating with his clearly more exercised brain and ending up in the King's favor, his lot in life changed quite considerably. He currently serves as an adviser to the Princess, and has grown concerned with her interest in ancient Odolwan rituals."
+				},
+				{
+					"Name": "Butler Kuh-Do",
+					"Class": "",
+					"Armament": "Deku Candle",
+					"Emblem": "",
+					"History": "A personal servant of King Kuh-Loh-Kan and manager of all things money, Butler Kuh-Do was quiet and out of the spotlight but clearly had vast power over Scrub kind. His hands seemed to be tied to the Scrubs' every growing markets across Hyrule, and he maintained his own force of tax collectors and bullies to insure that the royal coffers... and his personal bank account... were flowing with Rupees."
+				}
+			]
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Mad Blight Disease",
+			"History": "",
+			"Description": "There is a small chance that any Deku Scrub unit (except for Orhats, Giant Orhats, and Stagnox) will become a Mad Scrub on death, attacking anything near itself."
+		},
+		{
+			"Name": "Menagerie Stocks",
+			"History": "",
+
+			"Description": "Captured Livestock reduces the Food cost of training Creature units."
+		},
+		{
+			"Name": "Forestwalk",
+			"History": "",
+			"Description": "All non-mechanical Deku Scrub units can walk through Thick Forests."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/deku/choosehero_decci",
+		"civ_choices/deku/choosehero_deppi",
+		"civ_choices/deku/choosehero_kado",
+		"civ_choices/deku/choosehero_butler",
+		"civ_choices/deku/choosehero_dekuprincess",
+		"civ_choices/deku/choosehero_dekuking"
+		
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Partner Networks",
+			"History": "",
+			"Description": "25% land trade route bonus."
+		}
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Wooded Temple",
+			"Class": "",
+			"Emblem": "",
+			"History": "A large and ancient Temple in the Picorou Woods. The Scrubs claim to have build it in ages past, but despite their iconagraphy carved into its stone the design has little resemblence to their civilization. The massive temple is home to many Orhat Beetle nests and the structure seems to have sunken into the ground since its construction.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		},
+		{
+			"Name": "Titan: Stagnox, Armored Colossus",
+			"Class": "",
+			"Emblem": "",
+			"History": "This giant hulking Orhat Beetle has long lurked on the eastern forests of Hyrule. In some cases the Scrubs have been known to coerce this huge monster into fighting on their behalf. The Stagnox may be slow, but his armor is some of the most impressive and durable in Hyrule. While the Stagnox has wings, his huge size makes his ability to fly very limited.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		}
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/deku/deku_civil_centre"
+		},
+		{
+			"Template": "units/deku/deku_underlingA",
+			"Count": 4
+		},
+		{
+			"Template": "units/deku/deku_scrubling_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/deku/deku_guardling_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/deku/deku_peahatdrift_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"King Kud-Loh-Kan",
+		"Princess Kad-A-Kana",
+		"Kado",
+		"Butler Kuh-Do"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/deku/deku_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/deku/deku_underlingA",
+		"skirmish/units/default_cavalry" :  "units/deku/deku_peahatdrift_b",
+		"skirmish/units/default_infantry_melee_b": "units/deku/deku_underlingA",
+		"skirmish/units/default_infantry_ranged_b": "units/deku/deku_underlingA",
+		"skirmish/structures/default_house_10" : "structures/deku/deku_house"
+	},
+	"SelectableInGameSetup": true,
+	"AllowedHeroes": 3
+}

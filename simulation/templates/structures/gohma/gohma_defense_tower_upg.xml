@@ -1,0 +1,108 @@
+<Entity parent="HC_template_structure_defense">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+	  <Damage>
+        <Forest>5.0</Forest>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>125.0</MaxRange>
+      <MinRange>30.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>2200</PrepareTime>
+      <Projectile>
+        <Gravity>0.81</Gravity>
+        <ImpactActorName>props/units/explosions/acid_explosionA.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>45.0</Speed>
+        <Spread>1.5</Spread>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RepeatTime>6000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Forest>5.0</Forest>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>7</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>3</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/gohma/gohma_larva_sterile_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic GohmaBuild DefenseTower</Classes>
+    <GenericName>Acid Batch</GenericName>
+    <History>A Gohma form in a tower like structure, these turrets are able to boil and hurl large globs of burning acid from quite a distance. They are slow to fire, but deal very painful damage to anyone unfortunate enough to be in the blast radius.</History>
+    <Icon>structures/gohma/goh_acidbatch.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Defensive Tower that lauches globs of burning Acid at its targets.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+		gohma/mido_subpit
+		gohma/turret_toxicbath
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/natural/gohma_acid_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/natural/gohma_acid_volley.xml</attack_ranged>
+      <constructed>interface/complete/building/gohma/complete_gohwallA.xml</constructed>
+      <select>interface/select/building/gohma/sel_gohwallA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_turretC.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

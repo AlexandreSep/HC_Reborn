@@ -1,0 +1,54 @@
+<Entity parent="structures/labrynna/labrynna_defense_tower">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Fire>100.0</Fire>
+        <Pierce>15</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+	  <ElevationBonus>15</ElevationBonus>
+      <MaxRange>125</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>250</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>200.0</Speed>
+        <Spread>1.8</Spread>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RepeatTime>8000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>250</Pierce>
+          <Fire>25.0</Fire>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>25</Range>
+        <Shape>Linear</Shape>
+      </Splash>
+      <TrueDamage>30</TrueDamage>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Tooltip>Defense Tower that attacks enemies with gunpowder.</Tooltip>
+  </Identity>
+  <Promotion disable="" />
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/bullet_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/musket.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_towerB.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

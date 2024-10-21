@@ -1,0 +1,26 @@
+{
+  "type": "garrison",
+  "modifications": [
+    {
+      "value": "ResourceTrickle/Rates/food",
+      "add": 0.12
+    },
+    {
+      "value": "ResourceTrickle/Rates/wood",
+      "add": 0.12
+    },
+    {
+      "value": "ResourceTrickle/Rates/stone",
+      "add": 0.12
+    },
+    {
+      "value": "ResourceTrickle/Rates/metal",
+      "add": 0.12
+    }
+  ],
+  "affects": [ "Effigy" ],
+  "auraName": "Offering",
+  "stackable": true,
+  "requiredTechnology": "lanayru/temple_offerings",
+  "auraDescription": "(Citizen can pray at the Effigy, slowly generating a trickle of resources.)"
+}

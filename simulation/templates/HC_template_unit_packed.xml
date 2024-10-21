@@ -1,0 +1,34 @@
+<Entity parent="template_unit">
+  <Cost>
+    <Population>0</Population>
+  </Cost>
+  <Decay>
+    <DelayTime>0.0</DelayTime>
+    <SinkAccel>2.0</SinkAccel>
+    <SinkRate>0.0</SinkRate>
+  </Decay>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <GenericName>Packed Building</GenericName>
+    <VisibleClasses datatype="tokens">Packed</VisibleClasses>
+  </Identity>
+  <Loot>
+    <food>0</food>
+    <metal>25</metal>
+    <stone>0</stone>
+    <wood>50</wood>
+    <xp>60</xp>
+  </Loot>
+  <Repairable>
+    <RepairTimeRatio>4.0</RepairTimeRatio>
+  </Repairable>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+</Entity>

@@ -1,0 +1,12 @@
+{
+	"type": "formation",
+	"affects": ["Infantry Melee"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 3 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 3 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 3 }
+	],
+	"auraName": "Officer",
+	"auraDescription": "(In Formation, +3 Armor - Melee Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/champknight_aura.dds"
+}

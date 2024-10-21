@@ -1,0 +1,30 @@
+<Entity parent="template_bird">
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <FloatDepth>0.0</FloatDepth>
+    <Floating>false</Floating>
+    <TurnRate>1.0</TurnRate>
+  </Position>
+  <UnitAI>
+    <RoamDistance>1000.0</RoamDistance>
+  </UnitAI>
+  <UnitMotion disable="" />
+  <UnitMotionFlying>
+    <AccelRate>5.0</AccelRate>
+    <BrakingRate>5.0</BrakingRate>
+    <ClimbRate>4.0</ClimbRate>
+    <DiesInWater>false</DiesInWater>
+    <FlyingHeight>40.0</FlyingHeight>
+    <LandingSpeed>5.0</LandingSpeed>
+    <MaxSpeed>15.0</MaxSpeed>
+    <OvershootTime>2.0</OvershootTime>
+    <PassabilityClass>unrestricted</PassabilityClass>
+    <SlowingRate>5.0</SlowingRate>
+    <TakeoffSpeed>1.0</TakeoffSpeed>
+    <TurnRate>0.5</TurnRate>
+  </UnitMotionFlying>
+  <VisualActor>
+    <Actor>fauna/fauna_pigeon_rainbowA.xml</Actor>
+  </VisualActor>
+</Entity>

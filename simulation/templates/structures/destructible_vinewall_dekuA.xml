@@ -1,0 +1,37 @@
+<Entity parent="template_destructible">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>250</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="28.0" width="108.0" />
+  </Footprint>
+  <Health>
+    <Max>5000</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Barrier</GenericName>
+    <History>This cluster of vines looks like it can be destroyed.</History>
+    <Icon>gaia/flora_tree_generic.dds</Icon>
+    <SpecificName>Vine Wall</SpecificName>
+    <Tooltip>This cluster of vines looks like it can be destroyed.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="24.0" width="134.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>flora/forest/vinewall_dekuA.xml</Actor>
+  </VisualActor>
+</Entity>

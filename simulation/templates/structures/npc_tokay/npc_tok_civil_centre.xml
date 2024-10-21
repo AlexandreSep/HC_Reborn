@@ -1,0 +1,82 @@
+<Entity parent="HC_template_structure_civil_centre">
+  <Attack disable="" />
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+    <GarrisonRegenRate>10.0</GarrisonRegenRate>
+    <RegenRate>0.5</RegenRate>
+  </Capturable>
+  <Cost>
+    <BuildTime>500</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>500</metal>
+      <stone>0</stone>
+      <wood>500</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="30.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>npc_tokay</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Maku Temple</GenericName>
+    <History>A large Tokay head carved out of a giant dead Maku tree stump on the beaches of Crescent Island. No one is quite sure the makeup of Tokay religion, not even the Tokay themselves.</History>
+    <Icon>structures/npc_tokay/npc_tok_temple.dds</Icon>
+    <Tooltip>Tokay Religious structure that spreads their territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="39.5" width="39.5" />
+  </Obstruction>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/npc_tokay/npc_tok_noshirtA
+      units/npc_tokay/npc_tok_hunter_b
+      units/npc_tokay/npc_tok_slinger_b
+    units/npc_tokay/npc_tok_bonker_b
+    units/npc_tokay/npc_tok_aquajockey_b
+    units/npc_tokay/npc_tok_hero_otaylo
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>3</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    npc_tokay/tokay_labor
+    npc_tokay/tokay_coco
+    npc_tokay/tokay_fishing
+  </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/npc_tokay/npc_tok_templeA.xml</Actor>
+  </VisualActor>
+</Entity>

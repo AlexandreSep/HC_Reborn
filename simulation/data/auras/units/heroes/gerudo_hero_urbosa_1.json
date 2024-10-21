@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Infantry"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Armour/Pierce", "subtract": 1 },
+		{ "value": "Armour/Hack", "subtract": 1 },
+		{ "value": "Armour/Crush", "subtract": 1 }
+	],
+	"auraName": "Urbosa's Fury",
+	"auraDescription": "(-1 Armor - Enemy Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/urbosa_urbosafury.dds"
+}

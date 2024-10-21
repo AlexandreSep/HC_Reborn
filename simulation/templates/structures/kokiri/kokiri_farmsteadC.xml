@@ -1,0 +1,5 @@
+<Entity parent="structures/kokiri/kokiri_farmstead">
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_berryfarmC.xml</Actor>
+  </VisualActor>
+</Entity>

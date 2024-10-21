@@ -1,0 +1,3 @@
+<Entity parent="units/gohma/gohma_hero_agitha">
+  <Builder disable="" />
+</Entity>

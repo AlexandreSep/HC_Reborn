@@ -1,0 +1,96 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>SpiritElement</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+        <Bonus2>
+          <Classes>Infantry</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus2>
+      </Bonuses>
+      <Damage>
+        <Hack>20.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+      <Stun>
+        <Chance>25</Chance>
+        <Time>3000</Time>
+      </Stun>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>415</food>
+      <metal>100</metal>
+      <stone>75</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2200</Max>
+  </Health>
+  <Identity>
+    <Civ>sheikah</Civ>
+    <Classes datatype="tokens">HeroImpa Medium ShadowElement Hero1</Classes>
+    <GenericName>Sage of Shadows</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The Chief of both the Kakari and Naldari Clan as well as the Sage of Shadows, Impa wields unprecedented political power within the Cadre and has long served both the Sheikah and the Royal Family of Hyrule. Perhaps the best swordsman in the history of Hyrule, her presence is often met with fear or reverence, depending on who is friend and foe. To those that do not know Impa she is seen as a cold and emotionless killer, perhaps an appearance that is a result of her extreme age and distance from society. She is in truth a very motherly figure to those that have her in their lives, perhaps an echo of a life she could have had in ages past.</History>
+    <Icon>units/sheikah/she_hero_impa.dds</Icon>
+    <Lang>sheikah</Lang>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_impa</RequiredTechnology>
+    <SpecificName>Impa</SpecificName>
+    <Tooltip>Stealthed Melee Hero that has a high chance to Critical Hit her targets.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>35.0</Crush>
+        <DodgeRating>50.0</DodgeRating>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>25.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>15.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/sheikah/impa/impa_death.xml</death>
+      <order_attack>voice/sheikah/impa/impa_attack.xml</order_attack>
+      <order_garrison>voice/sheikah/impa/impa_garrison.xml</order_garrison>
+      <order_gather>voice/sheikah/impa/impa_gather.xml</order_gather>
+      <order_repair>voice/sheikah/impa/impa_repair.xml</order_repair>
+      <order_walk>voice/sheikah/impa/impa_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/sheikah/impa/impa_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero1</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/sheikah/sheikah_hero_impa_b.xml</Actor>
+  </VisualActor>
+</Entity>

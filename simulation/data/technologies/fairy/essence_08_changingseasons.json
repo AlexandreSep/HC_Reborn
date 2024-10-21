@@ -1,0 +1,13 @@
+{
+	"genericName": "Changing Seasons",
+	"description": "Scattered seeds sprout in spring, grow in summer, bear fruit in fall and sleep through winter. It is an endless cycle of life... the Changing Seasons.",
+	"cost": {"food": 200, "wood": 200, "stone": 200, "metal": 200},
+	"supersedes": "fairy/essence_07_seedoflife",
+	"requirementsTooltip": "Requires the Seed of Life.",
+	"icon": "fairy/essence_changingseasons.dds",
+	"researchTime": 40,
+	"tooltip": "Scattered seeds sprout in spring, grow in summer, bear fruit in fall and sleep through winter. It is an endless cycle of life... the Changing Seasons. (Reduces time to change Seasons by 25%)",
+	"modifications": [],
+	"affects": ["Sundial"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

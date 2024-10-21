@@ -1,0 +1,66 @@
+<Entity parent="HC_template_structure_defense">
+  <Auras datatype="tokens">
+    structures/poisontrap_aura_1
+  </Auras>
+  <BuildRestrictions>
+    <Category>DefenseTower</Category>
+    <Distance>
+      <FromClass>DefenseTower</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="20.0" width="20.0" />
+  </Footprint>
+  <GarrisonHolder>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_tinyB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Liztower</Classes>
+    <GenericName>Lizalfos Guard Tower</GenericName>
+    <History>A lone tower built to stand watch and protect Lizalfos settlements from intruders.</History>
+    <Icon>structures/lizalfos/liz_tower.dds</Icon>
+    <Tooltip>Defense Tower that attack enemies with arrows.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_towerA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldD_W.xml</FoundationActor>
+  </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
+</Entity>

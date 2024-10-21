@@ -1,0 +1,13 @@
+{
+	"genericName": "Tokay Fisherman",
+	"description": "On the Crescent Islands your best source of food was the plentiful fish. Tokay were experts at hunting schools to feed their villages.",
+	"cost": {"food": 200, "wood": 200, "stone": 200, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_village"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "npc_tokay/tokay_fishing.dds",
+	"researchTime": 40,
+	"tooltip": "On the Crescent Islands your best source of food was the plentiful fish. Tokay were experts at hunting schools to feed their villages. (+100% Fish harvest rate)",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.fish", "multiply": 2}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

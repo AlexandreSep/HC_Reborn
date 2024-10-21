@@ -1,0 +1,42 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/aqueduct
+  </Auras>
+  <BuildRestrictions>
+    <Category>Wall</Category>
+    <PlacementType>land-shore</PlacementType>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_zora_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Aqueduct NetworkBuilding</Classes>
+    <GenericName>Aqueduct</GenericName>
+    <History>The Zora require near-constant contact with water to live, and thus pump water to all of their structures via an elaborate network of Aqueducts and Pools.</History>
+    <Icon>structures/zora/zor_aqueduct.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Extends Dominion Territory from the Ministry.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="10.0" width="10.0" />
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/zora/complete_aqueduct.xml</constructed>
+      <select>interface/select/building/zora/sel_aqueduct.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zora/zora_reservoirA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>10.5</Length>
+  </WallPiece>
+</Entity>

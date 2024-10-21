@@ -1,0 +1,81 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>0</DefaultArrowCount>
+    <GarrisonArrowClasses>Soldier</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="25.0" width="25.0" />
+  </Footprint>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>6</X>
+        <Y>6.1</Y>
+        <Z>0</Z>
+      </Archer1>
+      <Archer2>
+        <X>0</X>
+        <Y>6.1</Y>
+        <Z>0</Z>
+      </Archer2>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_houseA</SpawnEntityOnDeath>
+    <SpawnGarrison>
+      <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
+      <SpawnNumber>2</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens"> Village</Classes>
+    <GenericName>Adobe Housing</GenericName>
+    <History>The Adobe houses of the Gerudo are quite clever, keeping a cool temperature and allowing the Gerudo to live in their harsh homelands in relative comfort.</History>
+    <Icon>structures/gerudo/ger_houses.dds</Icon>
+    <Tooltip>Housing that allows you to field larger armies.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Hack>1</Hack>
+        <Pierce>95</Pierce>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_housesA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

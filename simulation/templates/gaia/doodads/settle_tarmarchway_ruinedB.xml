@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodadB">
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="7" width="12" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="7" width="12" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/settle_tarm/tarm_archway_ruinedB.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>60.0</Length>
+  </WallPiece>
+</Entity>

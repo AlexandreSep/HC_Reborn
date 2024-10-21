@@ -1,0 +1,15 @@
+<Entity parent="units/moblin/moblin_squaddie_b">
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>6.0</Crush>
+        <Hack>6.0</Hack>
+        <Pierce>6.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/moblin/moblin_squaddie_upg.xml</Actor>
+  </VisualActor>
+</Entity>

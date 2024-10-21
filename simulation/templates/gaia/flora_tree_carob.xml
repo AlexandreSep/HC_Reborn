@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Domain Carab</SpecificName>
+    <Tooltip>Thriving along the cliffs and hills above the River Zora, the Domain Carab is at times harvested for its useful seed pods, which are considered bitter by many creatures.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/carob.xml</Actor>
+  </VisualActor>
+</Entity>

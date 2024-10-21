@@ -1,0 +1,13 @@
+<Entity parent="units/fairy_trader_b">
+  <Identity>
+    <Classes datatype="tokens">Autumn</Classes>
+    <Icon>units/fairy/fai_xana_autumn.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_xana_winter</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_xana_autumn.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,6 @@
+<Entity parent="units/gohma/gohma_queen_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/gohma/gohma_queen_upg.xml</Actor>
+  </VisualActor>
+</Entity>

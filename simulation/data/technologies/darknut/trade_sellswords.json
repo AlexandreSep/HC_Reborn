@@ -1,0 +1,13 @@
+{
+	"genericName": "Sellswords",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 100, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "darknut/trade_sellswords.dds",
+	"researchTime": 40,
+	"tooltip": "Darknuts were as interested in hiring foreign warriors as they were trading for their money and goods. Merchants would seek out Mercenaries from faraway lands and bring them back to join the ranks of the Legion's army. (Random Mercenary occasionally spawns instead of resources when a Darknut Merchant returns to the Public Forums)",
+	"modifications": [{"value": "Trader/GainMultiplier", "multiply": 1.20}],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

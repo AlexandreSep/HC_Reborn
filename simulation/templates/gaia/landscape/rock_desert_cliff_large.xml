@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodad">
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>3.5</Height>
+  </Footprint>
+  <Obstruction>
+    <Static depth="15.0" width="15.0" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>geology/landscape/rocks/rock_desert_cliff_large.xml</Actor>
+  </VisualActor>
+</Entity>

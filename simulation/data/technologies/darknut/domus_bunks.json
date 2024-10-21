@@ -1,0 +1,13 @@
+{
+	"genericName": "Bunks",
+	"description": "Darknuts were known for their low space requirements when it came to living conditions. Thier warrior culture would push this tendancy by sharing rooms between several soldiers.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 450},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "darknut/domus_bunks.dds",
+	"researchTime": 40,
+	"tooltip": "Darknuts were known for their low space requirements when it came to living conditions. Thier warrior culture would push this tendancy by sharing rooms between several soldiers. (Domus provides an additional +5 population)",
+	"modifications": [{"value": "Cost/PopulationBonus", "add": 5}],
+	"affects": ["House"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,43 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="8.5" width="38.5" />
+  </Footprint>
+  <Gate>
+    <PassRange>20</PassRange>
+  </Gate>
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_wall_long</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <GenericName>Wooden Gate</GenericName>
+    <History>A makeshift wooden wall to keep the elements out of Hylian villages.</History>
+    <Icon>structures/hylian/hyl_woodwall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Obstructions>
+      <Door depth="7" width="10" x="0" z="0" />
+      <Left depth="7" width="14" x="-12" z="0" />
+      <Right depth="7" width="14" x="12" z="0" />
+    </Obstructions>
+    <Static disable="" />
+  </Obstruction>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>40.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_wood_wall_gate.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>37.0</Length>
+  </WallPiece>
+</Entity>

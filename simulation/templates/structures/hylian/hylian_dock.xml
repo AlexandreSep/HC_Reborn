@@ -1,0 +1,30 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Dock</Category>
+    <PlacementType>shore</PlacementType>
+    <Territory>own ally neutral</Territory>
+  </BuildRestrictions>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="30.0" width="26.0" />
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_hylian_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <SpecificName>Dock</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static depth="26.0" width="22.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+</Entities>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_house_onwaterA.xml</Actor>
+    <FoundationActor>structures/fndn_6x4_dock.xml</FoundationActor>
+  </VisualActor>
+</Entity>

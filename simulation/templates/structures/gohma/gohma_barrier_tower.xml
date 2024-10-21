@@ -1,0 +1,66 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Pierce>30.0</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <ElevationBonus>15</ElevationBonus>
+      <MaxRange>15.0</MaxRange>
+      <MinRange>0.1</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>2200</PrepareTime>
+      <Projectile>
+        <Gravity>0.81</Gravity>
+        <ImpactActorName>props/units/explosions/acid_explosionA.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>90.0</Speed>
+        <Spread>1.5</Spread>
+		<FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RepeatTime>6000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>10.0</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>7</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">-Construct Organic</Classes>
+    <GenericName>Hive Barrier</GenericName>
+    <History>Deadly claws that jut forth from the ground, the Gohma would grow these structures along the edges of their Hives. Hive Barrier would attack anything that approached to prevent invasion.</History>
+    <Icon>structures/gohma/goh_barrierA.dds</Icon>
+    <Tooltip>Defense Wall that can attack enemy units.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/gohma_largeA_bite.xml</attack_ranged>
+      <constructed>interface/complete/building/gohma/complete_gohwallA.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/gohma/sel_gohwallA.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_barrier_short.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,6 @@
+<Entity parent="structures/hylian/hylian_temple">
+  <Identity>
+    <Classes datatype="tokens">Village</Classes>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+</Entity>

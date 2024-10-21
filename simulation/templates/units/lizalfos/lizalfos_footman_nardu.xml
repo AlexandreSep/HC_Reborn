@@ -1,0 +1,6 @@
+<Entity parent="units/lizalfos/lizalfos_footman_b">
+  <Identity>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <RequiredTechnology>lizalfos/nardu_boundB</RequiredTechnology>
+  </Identity>
+</Entity>

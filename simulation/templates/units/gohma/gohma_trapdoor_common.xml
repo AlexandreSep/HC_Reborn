@@ -1,0 +1,59 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Hack>4.0</Hack>
+        <Pierce>18.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>100</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+      <Stun>
+        <Chance>100</Chance>
+        <Time>3000</Time>
+      </Stun>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>85</food>
+      <metal>20</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="5.0" />
+    <Height>4.5</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Small CasteSoldier UniqueUnit TrapDoorGohma</Classes>
+    <GenericName>Trap-door Gohma</GenericName>
+    <History>A small and quick Gohma that can dart between locations. A Trap Door Gohma can burrow into the ground, hiding under a rock that it carriers on its back. Enemies that wander near are attacked by the creature, which has a very high chance of dealing a Critical Hit. When burrowed they can only be seen by Scouts and Towers.</History>
+    <RequiredTechnology>civ_choices/gohma/choosehero_mido</RequiredTechnology>
+    <Tooltip>Mido's Unique Unit. Support unit that can burrow into the ground and become Stealthed.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_largeA/gohma_largeA_death.xml</death>
+      <order_attack>voice/gohma/gohma_largeA/gohma_largeA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_largeA/gohma_largeA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_largeA/gohma_largeA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_largeA/gohma_largeA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_largeA/gohma_largeA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlA.xml</run>
+      <select>voice/gohma/gohma_largeA/gohma_largeA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlA.xml</walk>
+    </SoundGroups>
+  </Sound>
+</Entity>

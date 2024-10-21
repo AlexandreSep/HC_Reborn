@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_minutemen_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_minuteman_F.xml</Actor>
+  </VisualActor>
+</Entity>

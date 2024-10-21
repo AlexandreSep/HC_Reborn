@@ -1,0 +1,11 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.10 }
+	],
+	"auraName": "Death Mountain Defense",
+	"auraDescription": "(If Garrisoned, +10% Health - Building)",
+	"overlayIcon": "art/textures/ui/session/auras/medigoron_dmdefense.dds"
+}
+

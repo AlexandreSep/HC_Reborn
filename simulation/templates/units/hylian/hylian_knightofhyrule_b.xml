@@ -1,0 +1,71 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>20.0</Hack>
+        <Pierce>10</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>2</BattalionSlots>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>70</food>
+      <metal>0</metal>
+      <stone>55</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>120</Max>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">HylianShield Knight</Classes>
+    <GenericName>Knight of Hyrule</GenericName>
+    <History>Wealthy nobles, rich elites, and skilled warriors from across the land, the Knights of Hyrule, in peacetime, are autonomous warriors who are self-trained and self-funded by their life-long work and education. When war breaks out in Hyrule, they will abandon their armorial achievements and bear the icon of the holy Triforce as they answer the call of the Royal Family.</History>
+    <Icon>units/hylian/hyl_knight.dds</Icon>
+    <Lang>hylian</Lang>
+    <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
+    <Tooltip>Heavily armored infantry unit. Very resistant to non-magic damage and Knockback. A powerful all-round late game unit.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>60.0</Hack>
+        <Pierce>60.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/hylian/knights/knights_death.xml</death>
+      <order_attack>voice/hylian/knights/knights_attack.xml</order_attack>
+      <order_garrison>voice/hylian/knights/knights_garrison.xml</order_garrison>
+      <order_gather>voice/hylian/knights/knights_gather.xml</order_gather>
+      <order_repair>voice/hylian/knights/knights_repair.xml</order_repair>
+      <order_walk>voice/hylian/knights/knights_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/hylian/knights/knights_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/hylian/hylian_knightofhyrule_b.xml</Actor>
+  </VisualActor>
+</Entity>

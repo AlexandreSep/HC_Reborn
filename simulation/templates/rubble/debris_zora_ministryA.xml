@@ -1,0 +1,5 @@
+<Entity parent="template_rubble">
+  <VisualActor>
+    <Actor>structures/debris/debris_zora_ministryA.xml</Actor>
+  </VisualActor>
+</Entity>

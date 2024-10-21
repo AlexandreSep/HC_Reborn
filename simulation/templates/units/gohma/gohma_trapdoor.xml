@@ -1,0 +1,62 @@
+<Entity parent="HC_template_unit_infantry">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>55</food>
+      <metal>10</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="5.0" />
+    <Height>4.5</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>gohma</Civ>
+    <Classes datatype="tokens">Small CasteSoldier UniqueUnit TrapDoorGohma</Classes>
+    <GenericName>Trap-door Gohma</GenericName>
+    <History>A small and quick Gohma that can dart between locations. A Trap Door Gohma can burrow into the ground, hiding under a rock that it carriers on its back. Enemies that wander near are attacked by the creature, which has a very high chance of dealing a Critical Hit. When burrowed they can only be seen by Scouts and Towers.</History>
+    <Icon>units/gohma/goh_trapdoor.dds</Icon>
+    <RequiredTechnology>civ_choices/gohma/choosehero_mido</RequiredTechnology>
+    <Tooltip>Mido's Unique Unit. Support unit that can burrow into the ground and become Stealthed.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
+      <death>voice/gohma/gohma_largeA/gohma_largeA_death.xml</death>
+      <order_attack>voice/gohma/gohma_largeA/gohma_largeA_attack.xml</order_attack>
+      <order_garrison>voice/gohma/gohma_largeA/gohma_largeA_garrison.xml</order_garrison>
+      <order_gather>voice/gohma/gohma_largeA/gohma_largeA_gather.xml</order_gather>
+      <order_repair>voice/gohma/gohma_largeA/gohma_largeA_repair.xml</order_repair>
+      <order_walk>voice/gohma/gohma_largeA/gohma_largeA_walk.xml</order_walk>
+      <run>actor/movement/gohma/gohma_crawlA.xml</run>
+      <select>voice/gohma/gohma_largeA/gohma_largeA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/gohma/gohma_crawlA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>0</wood>
+      </Cost>
+      <Entity>units/gohma/gohma_trapdoor_burrow</Entity>
+      <Time>1</Time>
+      <Tooltip>Burrow underground. (Trapdoor Gohma becomes Stealthed and can Attack enemies, but loses the ability to move.)</Tooltip>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>units/gohma/gohma_trapdoor_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+</Entity>

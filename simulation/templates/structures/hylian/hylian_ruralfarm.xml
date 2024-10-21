@@ -1,0 +1,54 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Farmstead</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="25.0" width="25.0" />
+  </Footprint>
+  <Health>
+    <Max>1800</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_stablesA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Farmstead</Classes>
+    <GenericName>Rural Farm</GenericName>
+    <History>A Hylian farm.</History>
+    <Icon>structures/hylian/hyl_urbanfarm.dds</Icon>
+    <Tooltip>A Hylian farm.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="25.0" width="25.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>2</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      hylian/gather_vigjaro_wicker
+    hylian/gather_peahat_fertilizer
+    </Technologies>
+  </ProductionQueue>
+  <TerritoryInfluence>
+    <Radius>40</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_ruralfarmA.xml</Actor>
+    <FoundationActor>structures/fndn_4x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

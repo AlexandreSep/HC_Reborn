@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Scorched Tree</SpecificName>
+    <Tooltip>While Forests do grow along the slopes of the Death Mountain Range, the frequent eruptions ensure many are reduced to blackened stumps.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/tree_dead.xml</Actor>
+  </VisualActor>
+</Entity>

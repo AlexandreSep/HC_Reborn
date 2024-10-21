@@ -1,0 +1,35 @@
+<Entity parent="units/fairy/fairy_madmystic_b">
+  <Attack>
+    <Melee>
+      <AttackName>Fairy Magic</AttackName>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Spirit>40.0</Spirit>
+      </Damage>
+      <MaxRange>30.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>200</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Health>
+    <SpawnMultipleEntitiesOnDeath>
+      <BattalionSize>4</BattalionSize>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/fairy/fairy_stray_winter</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>units/fairy/fai_madmystic_winter.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_madmystic_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_mad_winter.xml</Actor>
+  </VisualActor>
+</Entity>

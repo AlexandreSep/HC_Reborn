@@ -1,0 +1,90 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Fire>20.0</Fire>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>100</MaxRange>
+      <MinRange>25.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1700</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+        <Speed>35.0</Speed>
+        <Spread>0.1</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Fire>20.0</Fire>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>5</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>75</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Civ>mercenary</Civ>
+    <Classes datatype="tokens">Medium FireElement Class80</Classes>
+    <GenericName>Meteo Magician</GenericName>
+    <History>A mysterious mage from long forgotten times, the Meteo Magicians laugh and dance effortless across the sky. Their motives are lost amongst all, but the right number of rupees might convince them to rain down molted rocks on your foes.</History>
+    <Icon>units/merc/merc_meteo.dds</Icon>
+    <Lang>mercenary</Lang>
+    <SelectionGroupName>units/merc/merc_meteo_b</SelectionGroupName>
+    <Tooltip>Hovering Mage unit that hurls flaming rocks at their targets.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage Mercenary</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/meteo_fire_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/meteo_fire.xml</attack_ranged>
+      <death>voice/merc/meteo/meteo_death.xml</death>
+      <order_attack>voice/merc/meteo/meteo_attack.xml</order_attack>
+      <order_garrison>voice/merc/meteo/meteo_garrison.xml</order_garrison>
+      <order_gather>voice/merc/meteo/meteo_gather.xml</order_gather>
+      <order_repair>voice/merc/meteo/meteo_repair.xml</order_repair>
+      <order_walk>voice/merc/meteo/meteo_walk.xml</order_walk>
+      <run>actor/movement/immortal/immortal_hover.xml</run>
+      <select>voice/merc/meteo/meteo_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/immortal/immortal_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.2</RunMultiplier>
+    <WalkSpeed>7.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/merc/merc_meteo_b.xml</Actor>
+  </VisualActor>
+</Entity>

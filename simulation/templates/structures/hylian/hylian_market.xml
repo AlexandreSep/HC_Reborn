@@ -1,0 +1,120 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Market</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="25.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_marketA</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>gaia/lon_lon_cow_1</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Market Village Barter BarterMarket</Classes>
+    <GenericName>Kingdom Market Plaza</GenericName>
+    <History>The center of any Kingdom city's economy. Market Plazas are bustling with activity and engaged in trade with many foreign powers and neighbors.</History>
+    <Icon>structures/hylian/hyl_market.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Market>
+    <InternationalBonus>0.2</InternationalBonus>
+    <TradeType>land</TradeType>
+  </Market>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-15</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>-30</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/{civ}_trader_b
+    gaia/lon_lon_cow_1
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>0</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    culture_civilized/postman_network
+      hylian/trade_hateno_dyes
+    hylian/trade_malo_mart
+    </Technologies>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1</Hack>
+        <Light>0.0</Light>
+        <Pierce>95</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_market.xml</constructed>
+      <select>interface/select/building/sel_market.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>50</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_marketA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_constA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

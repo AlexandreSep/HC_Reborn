@@ -1,0 +1,133 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Storehouse</Category>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="45.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>20</MaxCopies>
+      <MaxCopiesPerBase>1</MaxCopiesPerBase>
+      <MinPop>0</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Village Storehouse DropsiteWood DropsiteMetal DropsiteStone</Classes>
+    <GenericName>Quarry</GenericName>
+    <History>Goron quarries are considered some of the most profitable in all of Hyrule, and many dot the Death Mountain landscape. A lone Goron Quarry can provide enough resources to constuct an entire city.</History>
+    <Icon>structures/goron/gor_quarry.dds</Icon>
+    <Tooltip>A drop-off site for collected resources. The Quarry is also built with several plots to add buildings to.</Tooltip>
+    <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="75.0" width="75.0" />
+  </Obstruction>
+  <Plots>
+    <PlotsToSpawn>
+      <PlotA>
+        <Angle>135</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/goron/goron_plot_large</Template>
+        <X>20</X>
+        <Z>-22</Z>
+      </PlotA>
+      <PlotB>
+        <Angle>-135</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/goron/goron_plot_large</Template>
+        <X>-20</X>
+        <Z>-22</Z>
+      </PlotB>
+      <PlotC>
+        <Angle>45</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/goron/goron_plot_medium</Template>
+        <X>22</X>
+        <Z>18</Z>
+      </PlotC>
+      <PlotD>
+        <Angle>-45</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/goron/goron_plot_medium</Template>
+        <X>-22</X>
+        <Z>18</Z>
+      </PlotD>
+      <PlotE>
+        <Angle>0</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/goron/goron_plot_small</Template>
+        <X>0</X>
+        <Z>-25</Z>
+      </PlotE>
+      <PlotF>
+        <Angle>90</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/goron/goron_plot_small</Template>
+        <X>25</X>
+        <Z>0</Z>
+      </PlotF>
+      <PlotG>
+        <Angle>-90</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/goron/goron_plot_small</Template>
+        <X>-25</X>
+        <Z>0</Z>
+      </PlotG>
+    </PlotsToSpawn>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      goron/economic_gorkotunnel
+    goron/economic_expandshaft
+    goron/gather_gortramaxe
+    goron/gather_drillshafts
+    goron/gather_capacity_baggoron
+    goron/gather_capacity_bagstomach
+    goron/gather_capacity_bagdodhide
+    goron/gorebizo_minerupg
+    </Technologies>
+  </ProductionQueue>
+  <RallyPoint disable="" />
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_storehouse.xml</select>
+      <upgraded>interface/complete/building/complete_storehouse.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>20</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/goron/goron_quarryA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 80,
+	"affects": ["Worker"],
+	"modifications": [{ "value": "Builder/Rate", "multiply": 1.10 },
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.10 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.10 }
+	],
+	"auraName": "Public Hangings",
+	"auraDescription": "(+10% Build Rate, Gather Rate, and Walk/Run Speed - Worker)",
+	"overlayIcon": "art/textures/ui/session/auras/public_hanging.dds"
+}

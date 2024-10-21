@@ -1,0 +1,70 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>400</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <Interval>5000</Interval>
+      <LinkedDestruction>false</LinkedDestruction>
+      <Max>5</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>3000</StartDelay>
+      <Template>gaia/moblin_lilugpug_1</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Field PigFarm</Classes>
+    <GenericName>Prey Breedin' Place</GenericName>
+    <History>One pretty smart Moblin one day thought to himself, &#8221;Hey now, what if we breed the prey like the neighbors breed the cows and the goats and the horseys?!&#8221; So we Moblins did just that and now we gots lots of food running around!</History>
+    <Icon>structures/moblin/mob_preybreedin.dds</Icon>
+    <Tooltip>Makes the Ugpug Pigs that we can kill for Food!</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="28.0" width="28.0" />
+  </Obstruction>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_farm.xml</constructed>
+      <select>interface/select/building/sel_farm.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_field_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack this Prey Breedin' Place.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_preybreedinA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

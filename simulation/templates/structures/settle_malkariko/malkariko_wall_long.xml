@@ -1,0 +1,25 @@
+<Entity parent="structures/hylian/hylian_stone_wall_long">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="9.0" width="55.5" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="7.5" width="55.0" />
+  </Obstruction>
+  <Upgrade>
+    <Gate>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/settle_malkariko_wall_gate</Entity>
+      <Time>45</Time>
+      <Tooltip>Convert to Stone Gate.</Tooltip>
+    </Gate>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_wall_long.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>40.0</Length>
+  </WallPiece>
+</Entity>

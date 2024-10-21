@@ -1,0 +1,11 @@
+{
+	"genericName": "Epic War Plays",
+	"description": "These grandiose pageants of Dominion history and culture are sure to stir the hearts of Zora troops on leave.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 800},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "undefined"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "zora/theater_epicplays.dds",
+	"researchTime": 40,
+	"tooltip": "These grandiose pageants of Dominion history and culture are sure to stir the hearts of Zora troops on leave. (Activates 'Epic War Plays' Aura - Theatre)",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

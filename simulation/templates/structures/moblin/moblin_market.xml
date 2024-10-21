@@ -1,0 +1,103 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Market</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <Interval>10000</Interval>
+      <LinkedDestruction>true</LinkedDestruction>
+      <Max>0</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>5000</StartDelay>
+      <Template>gaia/lon_lon_cow_1</Template>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <Civ>moblin</Civ>
+    <Classes datatype="tokens">Market Barter BarterMarket</Classes>
+    <GenericName>Swap Meet n' Meat</GenericName>
+    <History>Oh man when a Moblin gets a shiny, he is like a kind of king! The smartest ones know that shinies are a joke though, just a trick they Hylians made to make money on stuff! So smartest Moblins sell it to dumber Moblins and make lots of money!</History>
+    <Icon>structures/moblin/mob_meetnmeat.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>We can trade on the market or with our best friend allies!</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Market>
+    <InternationalBonus>0.2</InternationalBonus>
+    <TradeType>land</TradeType>
+  </Market>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-5</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>10</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+      units/{civ}_trader_b
+    gaia/lon_lon_cow_1
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-7</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    moblin/unit_takedead
+    moblin/trade_cheat
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_market.xml</constructed>
+      <select>interface/select/building/sel_market.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_market_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack this Swap Meet n' Meat.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_meetnmeatA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+</Entity>

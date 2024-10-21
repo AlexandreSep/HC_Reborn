@@ -1,0 +1,106 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>0</DefaultArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>250</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="50.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>-8</X>
+        <Y>7.8</Y>
+        <Z>32</Z>
+      </Archer1>
+      <Archer2>
+        <X>2</X>
+        <Y>6.5</Y>
+        <Z>25</Z>
+      </Archer2>
+      <Archer3>
+        <X>-16</X>
+        <Y>7.8</Y>
+        <Z>32</Z>
+      </Archer3>
+      <Archer4>
+        <X>2</X>
+        <Y>6.5</Y>
+        <Z>20</Z>
+      </Archer4>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>1000</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>30</MinPop>
+    </AIBuild>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Tourney Field</GenericName>
+    <History>These dedicated arenas host all sorts of horseback tournaments, from jousting to horse archery to outright mounted scimitar combat. Many come to watch and place bets, and those who participate leave with all the more battle experience.</History>
+    <Icon>structures/gerudo/ger_tourneyA.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Improves Gerudo Cavalry and Sandseal units.</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="81.0" width="85.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+      gerudo/tourney_wounds
+	  gerudo/tourney_sparring
+	  gerudo/tourney_bets
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_blacksmith.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_tourneyA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+</Entity>

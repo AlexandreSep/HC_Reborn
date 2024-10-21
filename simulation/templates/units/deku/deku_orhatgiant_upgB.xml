@@ -1,0 +1,24 @@
+<Entity parent="units/deku/deku_orhatgiant_b">
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>9.5</Y>
+        <Z>-1.6</Z>
+      </Archer1>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <SpawnGarrison>
+      <Template>units/deku/deku_dekupult_orhat</Template>
+      <SpawnNumber>1</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <GenericName>Giant Orhat (Engine Mount)</GenericName>
+  </Identity>
+  <VisualActor>
+    <Actor>units/deku/deku_orhat_giant_upg.xml</Actor>
+  </VisualActor>
+</Entity>

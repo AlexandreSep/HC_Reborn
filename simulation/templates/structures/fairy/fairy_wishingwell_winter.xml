@@ -1,0 +1,31 @@
+<Entity parent="structures/fairy/fairy_civil_centre">
+  <Builder>
+    <Entities datatype="tokens">
+    structures/fairy/fairy_sundial_winter
+    structures/fairy/fairy_wishingwell_winter
+    structures/fairy/fairy_menhir_winter
+    structures/fairy/fairy_meeting_winter
+    structures/fairy/fairy_fountain_winter
+    structures/fairy/fairy_greatfountain_winter
+    structures/fairy/fairy_dolmen_winter
+    structures/fairy/fairy_waterheaven_winter
+    structures/fairy/fairy_misthenge_winter
+    structures/fairy/fairy_wallset_winter
+    structures/fairy/fairy_uniwonder_winter
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
+  <Identity>
+    <Classes datatype="tokens">Winter</Classes>
+    <Icon>structures/fairy/fai_wishingwell_winter.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Promotion>
+    <Entity>structures/fairy/fairy_wishingwell_spring</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_wishingwellA_winter.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
+  </VisualActor>
+</Entity>

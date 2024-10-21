@@ -1,0 +1,68 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Auras datatype="tokens">
+    units/nayrublessed_aura_1
+  </Auras>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>45</food>
+      <metal>40</metal>
+      <stone>10</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>0</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">CrystalShield ZoraFemale Medium Class40 UniqueUnit NayruBlessed</Classes>
+    <GenericName>Nayru's Blessed</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Nayru's Blessed wield an extremely rare magic that can create crystalline barriers from their staffs. These mages can use such an ability to create defenses around themselves and their brethren in battle.</History>
+    <Icon>units/zora/zor_nayrublessed.dds</Icon>
+    <Lang>zora</Lang>
+    <Rank>Basic</Rank>
+    <RequiredTechnology>civ_choices/zora/choosehero_ruto</RequiredTechnology>
+    <SelectionGroupName>units/zora/zora_nayrublessed_b</SelectionGroupName>
+    <Tooltip>Princess Ruto's Unique Unit. Support Mage unit that increases both the non-magic and magic armor of units.</Tooltip>
+    <VisibleClasses datatype="tokens">Support Mage</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>35.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/zora/nayrublessed/nayrublessed_death.xml</death>
+      <order_attack>voice/zora/nayrublessed/nayrublessed_attack.xml</order_attack>
+      <order_garrison>voice/zora/nayrublessed/nayrublessed_garrison.xml</order_garrison>
+      <order_gather>voice/zora/nayrublessed/nayrublessed_gather.xml</order_gather>
+      <order_repair>voice/zora/nayrublessed/nayrublessed_repair.xml</order_repair>
+      <order_walk>voice/zora/nayrublessed/nayrublessed_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zora/nayrublessed/nayrublessed_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_nayrublessed_b.xml</Actor>
+  </VisualActor>
+</Entity>

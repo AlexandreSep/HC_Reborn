@@ -1,0 +1,46 @@
+<Entity parent="template_gaia_doodad">
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <FriendlyFire>true</FriendlyFire>
+    <Range>10</Range>
+    <Damage>
+      <Crush>50.0</Crush>
+      <Fire>50.0</Fire>
+      <Hack>50.0</Hack>
+      <Pierce>50.0</Pierce>
+    </Damage>
+  </DeathDamage>
+  <Footprint>
+    <Circle radius="2.0" />
+    <Height>2.5</Height>
+  </Footprint>
+  <Health>
+    <DeathType>vanish</DeathType>
+    <IdleRegenRate>0</IdleRegenRate>
+    <Max>10</Max>
+    <RegenRate>0</RegenRate>
+    <SpawnEntityOnDeath>rubble/destruct_bombflowerA</SpawnEntityOnDeath>
+    <Unhealable>false</Unhealable>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Hazard</GenericName>
+    <History />
+    <Icon>gaia/flora_bombflowerA.dds</Icon>
+    <SpecificName>Bomb Flower</SpecificName>
+    <Tooltip>These bizarre flower-like plants create an explosive fruiting body infamous across Hyrule as the source of bombs. While commonly harvested by the Gorons, they are volatile, and if improperly picked or accidentally struck can explode in the harvester's face.</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>1.0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <EditorOnly disable="" />
+  </Selectable>
+  <VisualActor>
+    <Actor>flora/deathmountain/bomb_flowerA.xml</Actor>
+  </VisualActor>
+</Entity>

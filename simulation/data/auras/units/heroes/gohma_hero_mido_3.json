@@ -1,0 +1,10 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["HeroMido"],
+	"modifications": [
+	],
+	"auraName": "Subversion",
+	"auraDescription": "{x10 Capture bonus against Defenses)",
+	"overlayIcon": "art/textures/ui/session/auras/mido_subversion.dds"
+}

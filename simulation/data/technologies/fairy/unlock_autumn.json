@@ -1,0 +1,10 @@
+{
+	"genericName": "The Secret of Autumn",
+	"description": ".",
+	"cost": { "food": 0, "wood": 0, "stone": 0, "metal": 250 },
+	"icon": "fairy/unlock_autumn.dds",
+	"researchTime": 30,
+	"tooltip": "The Secret of Autumn is revealed by Tarm, allowing the Fairies to move the Sundial into the Season of Autumn. (Allows you to change the current season from Summer to Autumn)",
+	"modifications": [],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

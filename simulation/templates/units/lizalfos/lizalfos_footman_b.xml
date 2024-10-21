@@ -1,0 +1,71 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>13.0</Hack>
+        <Pierce>3</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>65</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>380</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Medium Class70 Volvamight Dinofootman Lizarmored Axetails</Classes>
+    <GenericName>Dinolfos Footman</GenericName>
+    <History>Wearing a suit of armor based on the old Volvagian designs, Dinolfos Footmen were the last remnants of the Lizalfos’ ancient Death Mountain empire. Though but a shadow of their ancestors, they were still deadly warriors in battle and posed a much more durable threat than their unarmored kin.</History>
+    <Icon>units/lizalfos/liz_footman.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_footman_b</SelectionGroupName>
+    <Tooltip>Heavily armored Melee unit carrying a sword and shield.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Promotion>
+    <Entity>units/lizalfos/lizalfos_footman_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>0</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/lizalfos/dinolfosA/dinolfosA_death.xml</death>
+      <order_attack>voice/lizalfos/dinolfosA/dinolfosA_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/dinolfosA/dinolfosA_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/dinolfosA/dinolfosA_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/dinolfosA/dinolfosA_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/dinolfosA/dinolfosA_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/lizalfos/dinolfosA/dinolfosA_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_footman_b.xml</Actor>
+  </VisualActor>
+</Entity>

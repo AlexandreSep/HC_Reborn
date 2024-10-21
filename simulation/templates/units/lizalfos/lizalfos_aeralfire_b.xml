@@ -1,0 +1,90 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Fire Breath</AttackName>
+      <Damage>
+        <Fire>20.0</Fire>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>100</MaxRange>
+      <MinRange>25.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1700</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>25</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Medium Class80 Volvamight Flying UniqueUnit</Classes>
+    <GenericName>Fiery Aeralfos</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A special Aeralfos that could breath and spew fireballs from its mouth. A Fiery Aeralfos could attack and bombard enemies from a distance, making them extremely difficult to catch and kill without the proper ranged weaponry.</History>
+    <Icon>units/lizalfos/liz_aeralfire.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>civ_choices/lizalfos/choosehero_vakat</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_aeralfire_b</SelectionGroupName>
+    <Tooltip>Vakat's Unique Unit. A Flying Mage unit that spits fireballs at their targets.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Position>
+    <Altitude>20.0</Altitude>
+    <Anchor>upright</Anchor>
+    <Floating>true</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/fireball_reptile.xml</attack_ranged>
+      <death>voice/lizalfos/aerfire/aerfire_death.xml</death>
+      <order_attack>voice/lizalfos/aerfire/aerfire_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/aerfire/aerfire_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/aerfire/aerfire_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/aerfire/aerfire_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/aerfire/aerfire_walk.xml</order_walk>
+      <run>actor/movement/wings_reptile/wings_reptile_flap.xml</run>
+      <select>voice/lizalfos/aerfire/aerfire_select.xml</select>
+      <trained>interface/alarm/alarm_create_flying.xml</trained>
+      <walk>actor/movement/wings_reptile/wings_reptile_flap.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.1428</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_aeral_fiery_b.xml</Actor>
+  </VisualActor>
+</Entity>

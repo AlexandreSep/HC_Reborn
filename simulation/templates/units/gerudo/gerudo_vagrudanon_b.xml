@@ -1,0 +1,70 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Scimitar</AttackName>
+      <Damage>
+        <Hack>14.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1300</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>75</food>
+      <metal>0</metal>
+      <stone>20</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Large GanondorfCav Vagrudanon</Classes>
+    <GenericName>Vagrudanon</GenericName>
+    <History>Riding on the signature black horses of the Desert, the Vagrudanon fill the core of the Gerudo's military cavalry. They are some of the fastest riders in all of Hyrule, and can strike terror into their enemies with unrelenting raids.</History>
+    <Icon>units/gerudo/ger_vagrudanon.dds</Icon>
+    <Lang>gerudo</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>units/gerudo/gerudo_vagrudanon_b</SelectionGroupName>
+    <Tooltip>Fast and Light Cavalry unit geared towards raiding enemy targets.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/gerudo/gerudo_deathA.xml</death>
+      <order_attack>voice/gerudo/vagrudanon/vagrudanon_attack.xml</order_attack>
+      <order_garrison>voice/gerudo/vagrudanon/vagrudanon_garrison.xml</order_garrison>
+      <order_gather>voice/gerudo/vagrudanon/vagrudanon_gather.xml</order_gather>
+      <order_repair>voice/gerudo/vagrudanon/vagrudanon_repair.xml</order_repair>
+      <order_walk>voice/gerudo/vagrudanon/vagrudanon_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/gerudo/vagrudanon/vagrudanon_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2631</RunMultiplier>
+    <WalkSpeed>19.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/gerudo/gerudo_vagrudanon_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Border"],
+	"modifications": [
+		{ "value": "Armour/Pierce", "add": 3 },
+		{ "value": "Armour/Hack", "add": 3 },
+		{ "value": "Armour/Crush", "add": 3 },
+		{ "value": "Health/Max", "multiply": 1.5 }
+	],
+	"auraName": "Desert Borders",
+	"auraDescription": "(+3 Armor, +50% Health - Adobe Wall)",
+	"overlayIcon": "art/textures/ui/session/auras/riju_desertborders.dds"
+}

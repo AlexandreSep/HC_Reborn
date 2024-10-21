@@ -1,0 +1,25 @@
+Trigger.prototype.eventNames =
+[
+	"OnCinemaPathEnded",
+	"OnCinemaQueueEnded",
+	"OnConstructionStarted",
+	"OnDiplomacyChanged",
+	"OnDeserialized",
+	"OnInitGame",
+	"OnInterval",
+	"OnEntityRenamed",
+	"OnOwnershipChanged",
+	"OnPlayerCommand",
+	"OnPlayerDefeated",
+	"OnPlayerWon",
+	"OnRange",
+	"OnResearchFinished",
+	"OnResearchQueued",
+	"OnStructureBuilt",
+	"OnTrainingFinished",
+	"OnTrainingQueued",
+	"OnTreasureCollected",
+    "OnUpgradeFinished",
+    "OnEntityDeath",
+    "OnHealthChanged"
+];

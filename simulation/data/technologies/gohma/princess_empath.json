@@ -1,0 +1,13 @@
+{
+	"genericName": "Empathic Healing",
+	"description": "While Gohma Queens tended to stick to laying eggs, the Princess was bred to coordinate and command. Some had wills powerful enough to form their own psudeo personalities, and their connection with those under their command was great enough to allow them to heal from a distance.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "gohma/princess_empath.dds",
+	"researchTime": 40,
+	"tooltip": "While Gohma Queens tended to stick to laying eggs, the Princess was bred to coordinate and command. Some had wills powerful enough to form their own psudeo personalities, and their connection with those under their command was great enough to allow them to heal from a distance. (The Gohma Princess's aura now heals units when not in combat)",
+	"modifications": [],
+	"affects": ["GohPrincess"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

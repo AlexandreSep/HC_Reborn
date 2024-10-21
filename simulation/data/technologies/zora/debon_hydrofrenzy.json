@@ -1,0 +1,31 @@
+{
+	"genericName": "Hydrophant Frenzy",
+	"description": "Handlers learn to control and channel an enraged Hydrophant's frenzy in the direction of the enemy.",
+	"cost": {"food": 150, "wood": 0, "stone": 0, "metal": 250},
+	"requirements": {"all": [ {"tech": "civ_choices/zora/choosehero_debon"}, {"tech": "phase_town"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Requires Debon and Town Phase.",
+	"icon": "zora/debon_hydrofrenzy.dds",
+	"researchTime": 40,
+	"tooltip": "+25% Base Melee Damage and +10% Speed - Hydrophant Lancer, Hydrophant Demolisher, and Hydrophant Canopy.",
+  "modifications": [
+    {
+      "value": "UnitMotion/WalkSpeed",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/Pierce",
+      "multiply": 1.25
+    },
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "multiply": 1.25
+    },
+    {
+      "value": "Attack/Melee/Damage/Crush",
+      "multiply": 1.25
+    }
+  ],
+	"affects": ["Hydrophant"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

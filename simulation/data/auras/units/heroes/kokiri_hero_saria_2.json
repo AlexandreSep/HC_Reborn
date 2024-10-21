@@ -1,0 +1,12 @@
+{
+	"type": "garrison",
+	"affects": ["Fortress"],
+	"modifications": [
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.85 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.85 }
+	],
+	"auraName": "Defender of the Grove",
+	"auraDescription": "(If Garrisoned, +15% Attack Rate - Safehold)", 
+	"overlayIcon": "art/textures/ui/session/auras/saria_grovedefender.dds"
+}
+

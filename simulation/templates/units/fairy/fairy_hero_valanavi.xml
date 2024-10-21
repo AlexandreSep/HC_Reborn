@@ -1,0 +1,115 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Fairy Magic</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>FireElement</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+      <Damage>
+        <Water>40.0</Water>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>70.0</MaxRange>
+      <MinRange>35.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2800</RepeatTime>
+      <SpawnEntityOnImpact>
+        <SpawnNumberMax>1</SpawnNumberMax>
+        <SpawnNumberMin>1</SpawnNumberMin>
+        <SpawnOnHit>
+          <Chance>100</Chance>
+          <SpawnAtTarget>true</SpawnAtTarget>
+        </SpawnOnHit>
+        <SpawnOnImpact>
+          <Chance>100</Chance>
+        </SpawnOnImpact>
+        <Template>units/fairy/fairy_icepatch</Template>
+      </SpawnEntityOnImpact>
+      <Stun>
+        <Chance>100</Chance>
+        <Time>3000</Time>
+      </Stun>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>460</food>
+      <metal>100</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2200</Max>
+  </Health>
+  <Identity>
+    <Civ>fairy</Civ>
+    <Classes datatype="tokens">HeroValanavi Hero2 Medium</Classes>
+    <GenericName>Queen of All Fairies</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Little myth remains of the Queen who ruled over the Fairies of Tarm, few even know her true name. It was said that she often assumed a very childlike appearance and mannerisms, both which betrayed her overwhelming intellect and clearly god like powers. To any hero who personally met the Queen of All Fairies, she was described as curious and easily amused, filled with child like glee and wonder at encountering friendly outsiders. One individual saw through her though, he saw countless generations of war, suffering, trauma, and loss that this somber and incredibly ancient being had been a witness to. The Queen of All Fairies is associated with the season of Winter. Her presence is said to freeze all who look on her, and the land itself shivers until she passes on.</History>
+    <Icon>units/fairy/fai_hero_valanavi.dds</Icon>
+    <Lang>fairy</Lang>
+    <RequiredTechnology>civ_choices/fairy/choosehero_valanavi</RequiredTechnology>
+    <SpecificName>Valanavi</SpecificName>
+    <Tooltip>Powerful Mage unit that bombards her enemies from afar.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>15.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/greatfairy_ice_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/greatfairy_ice.xml</attack_ranged>
+      <death>voice/fairy/valanavi/valanavi_death.xml</death>
+      <order_attack>voice/fairy/valanavi/valanavi_attack.xml</order_attack>
+      <order_garrison>voice/fairy/valanavi/valanavi_garrison.xml</order_garrison>
+      <order_gather>voice/fairy/valanavi/valanavi_gather.xml</order_gather>
+      <order_repair>voice/fairy/valanavi/valanavi_repair.xml</order_repair>
+      <order_walk>voice/fairy/valanavi/valanavi_walk.xml</order_walk>
+      <run>actor/movement/fairy/fairy_hoverA.xml</run>
+      <select>voice/fairy/valanavi/valanavi_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero2</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_hero_valanavi_b.xml</Actor>
+  </VisualActor>
+</Entity>

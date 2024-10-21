@@ -1,0 +1,49 @@
+<Entity parent="template_unit_support_trader">
+  <Cost>
+    <BuildTime>15</BuildTime>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="8.0" width="4.0" />
+  </Footprint>
+  <Identity>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">Medium Trader</Classes>
+    <GenericName>Broker</GenericName>
+    <History>The land of Lanayru Province was bountiful in sources of material wealth and resources, leading to the small nation becoming a financial powerhouse that rivaled even the largest of empires. Brokers were specially trained merchants that were sent out to manage the Province’s income by setting up shops and trade networks throughout Hyrule.</History>
+    <Icon>units/lanayru/lan_broker.dds</Icon>
+    <Lang>lanayru</Lang>
+    <Tooltip>Support unit that can continue to trade between your Marketplace and an ally's.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>voice/lanayru/handmaiden/handmaiden_death.xml</death>
+      <order_attack>voice/lanayru/handmaiden/handmaiden_attack.xml</order_attack>
+      <order_garrison>voice/lanayru/handmaiden/handmaiden_garrison.xml</order_garrison>
+      <order_gather>voice/lanayru/handmaiden/handmaiden_gather.xml</order_gather>
+      <order_repair>voice/lanayru/handmaiden/handmaiden_repair.xml</order_repair>
+      <order_trade>voice/lanayru/handmaiden/handmaiden_attack.xml</order_trade>
+      <order_walk>voice/lanayru/handmaiden/handmaiden_walk.xml</order_walk>
+      <select>voice/lanayru/handmaiden/handmaiden_select.xml</select>
+      <trained>interface/alarm/alarm_create_female.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Trader>
+    <GainMultiplier>0.75</GainMultiplier>
+  </Trader>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
+  <VisualActor>
+    <Actor>units/lanayru/lanayru_broker_b.xml</Actor>
+  </VisualActor>
+</Entity>

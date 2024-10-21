@@ -1,0 +1,86 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Glass Shards</AttackName>
+      <Damage>
+        <Pierce>20</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>70</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>1800</RepeatTime>
+      <Stun>
+        <Chance>100</Chance>
+        <Time>100</Time>
+      </Stun>
+      <TrueDamage>20</TrueDamage>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>20</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>280</Max>
+  </Health>
+  <Identity>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Large Class80</Classes>
+    <GenericName>Glass Witch</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A fringe convent of lady Darknuts known for their unmatched crafting of all manner of jewelry and stained glass. In a battle the Glass Witches toss razor sharp bolts of crystal at their enemies, shredding their armor and knocking them off their feet.</History>
+    <Icon>units/darknut/dar_glasswitch.dds</Icon>
+    <Lang>darknut</Lang>
+    <RequiredTechnology>civ_choices/darknut/choosehero_yaraxonal</RequiredTechnology>
+    <SelectionGroupName>units/daknur/darknut_glasswitch_b</SelectionGroupName>
+    <Tooltip>Yaraxonal's Unique Unit. A Missile unit that hurls wicked shards of glass into their enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/greenglass_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/greenglass_throw.xml</attack_ranged>
+      <death>voice/darknut/glasswitch/glasswitch_death.xml</death>
+      <order_attack>voice/darknut/glasswitch/glasswitch_attack.xml</order_attack>
+      <order_garrison>voice/darknut/glasswitch/glasswitch_garrison.xml</order_garrison>
+      <order_gather>voice/darknut/glasswitch/glasswitch_gather.xml</order_gather>
+      <order_repair>voice/darknut/glasswitch/glasswitch_repair.xml</order_repair>
+      <order_walk>voice/darknut/glasswitch/glasswitch_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/darknut/glasswitch/glasswitch_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2307</RunMultiplier>
+    <WalkSpeed>6.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/darknut/darknut_glasswitch_b.xml</Actor>
+  </VisualActor>
+</Entity>

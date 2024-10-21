@@ -1,0 +1,10 @@
+{
+	"type": "formation",
+	"affects": ["Soldier"],
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": 0.8 }
+	],
+	"auraName": "Blood of Nohansen",
+	"auraDescription": "(In Formation, Heal 0.8 health/second - Soldier)",
+	"overlayIcon": "art/textures/ui/session/auras/zeldav_bloodnohansen.dds"
+}

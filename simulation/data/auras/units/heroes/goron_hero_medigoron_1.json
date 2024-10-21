@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Infantry Melee"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 },
+		{ "value": "UnitMotion/Run/Speed", "multiply": 1.10 }
+	],
+	"auraName": "Battle Rush",
+	"auraDescription": "(+10% Walk/Run Speed - Melee Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/medigoron_battlerush.dds"
+}

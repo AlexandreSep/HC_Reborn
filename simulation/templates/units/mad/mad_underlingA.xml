@@ -1,0 +1,37 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>50</food>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>75</Max>
+    <RegenRate>-1</RegenRate>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">MadScrub ScrubUnit BeetleRider Small</Classes>
+    <GenericName>Mad Underling</GenericName>
+    <History>At the bottom of the Scrub hierarchy were Underlings. Little more than a slave class, Underlings worked tirelessly to build and maintain the Scrub civilization and were bossed around by all other Scrubs without end. They did not seem to mind much though, in fact Underlings that had no work to accomplish tended to become depressed and found ways to start trouble.</History>
+    <Icon>units/deku/dek_underling.dds</Icon>
+    <Lang>deku</Lang>
+    <SelectionGroupName>units/deku/deku_underlingA</SelectionGroupName>
+    <Tooltip>Worker unit: can gather all resources and construct buildings for the Deku Scrubs.</Tooltip>
+    <VisibleClasses datatype="tokens">Worker</VisibleClasses>
+  </Identity>
+  <UnitAI>
+    <DefaultStance>aggressive</DefaultStance>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+    <RoamDistance>12.0</RoamDistance>
+    <FleeDistance>5000.0</FleeDistance>
+    <RoamTimeMin>5000</RoamTimeMin>
+    <RoamTimeMax>12000</RoamTimeMax>
+    <FeedTimeMin>500</FeedTimeMin>
+    <FeedTimeMax>1000</FeedTimeMax>
+  </UnitAI>
+  <VisualActor>
+    <Actor>units/mad/deku_underlingA.xml</Actor>
+  </VisualActor>
+</Entity>

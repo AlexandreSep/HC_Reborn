@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 1,
+	"affects": ["HeroMatriarch"],
+	"modifications": [	],
+	"auraName": "Lay Eggs",
+	"auraDescription": "The Matriarch can lay Eggs like a Gohma Queen.",
+	"overlayIcon": "art/textures/ui/session/auras/matriarch_layeggs.dds"
+}

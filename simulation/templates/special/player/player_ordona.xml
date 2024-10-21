@@ -1,0 +1,8 @@
+<Entity parent="special/player/player">
+  <Auras datatype="tokens">
+    teambonuses/ordona_player_teambonus
+  </Auras>
+  <Player>
+    <SharedLosTech>culture_naturalistic/cartography</SharedLosTech>
+  </Player>
+</Entity>

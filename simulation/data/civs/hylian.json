@@ -1,0 +1,177 @@
+{
+	"Code": "hylian",
+	"Culture": "civilized",
+	"Name": "Kingdom of Hyrule",
+	"Emblem": "session/portraits/emblems/emblem_hylian.dds",
+	"History": "The imperial monarchy known as the Kingdom of Hyrule is one of the longest-lived and most powerful empires to have existed. For nearly three-thousand years the Hylian people have rallied behind the banner of the winged Triforce, creating one of the largest and most successful armies the land has ever known.",
+	"Music":[
+			{"File":"hylian_theme1.ogg", "Type":"peace"},
+			{"File":"hylian_ambient1.ogg", "Type":"peace"},
+			{"File":"hylian_ambient2.ogg", "Type":"peace"},
+			{"File":"hylian_ambient3.ogg", "Type":"peace"},
+			{"File":"hylian_ambient4.ogg", "Type":"peace"},
+			{"File":"hylian_ambient5.ogg", "Type":"peace"},
+			{"File":"hylian_ambient6.ogg", "Type":"peace"},
+			{"File":"hylian_ambient7.ogg", "Type":"peace"},
+			{"File":"hylian_battle1.ogg", "Type":"battle"},
+			{"File":"hylian_battle2.ogg", "Type":"battle"},
+			{"File":"hylian_battle3.ogg", "Type":"battle"},
+			{"File":"hylian_battle4.ogg", "Type":"battle"},
+			{"File":"hylian_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Princess Tetralyna Zelda V",
+					"Class": "",
+					"Armament": "Royal Estocs",
+					"Emblem": "",
+					"History": "The fifth Princess to bear the name Zelda, Tetralyna comes from a long line of royalty composing the Kingdom's second dynasty. She is one of the youngest rulers to ascend to the throne, at just the age of eighteen. Princess Zelda was known to be extremely cautious, preferring to ponder in wisdom before acting out. She is occasionally aided by powerful premonitions, and will often wait to see if such visions give her foresight of a situation."
+				},
+				{
+					"Name": "Link, Heir of King Gustaf",
+					"Class": "",
+					"Armament": "The Master Sword",
+					"Emblem": "",
+					"History": "Link is a descendant of King Gustaf and the heir to his lost First Dynasty. After Gustaf and his wife Siroc's children were chased into hiding by the false Goddess Hylia, they maintained secrecy over countless generations and hid their lineage. At a young age, Link's father was killed and he was then raised by his mother and uncle. When the Gerudo Wars claimed both their lives, the Order of the Wizzrobe adopted him under the suspicion that he was the lost heir of Gustaf. Hylia personally trained Link before unleashing him unto Hyrule to do her bidding."
+				},
+				{
+					"Name": "Lanafi Valashi",
+					"Class": "",
+					"Armament": "Cane of Byrna",
+					"Emblem": "",
+					"History": "A young woman who's parentage can be traced back to Calatia, Lana was trained as a Deacon under Rauru. Feeling unfullfilled with her humble clergy role, Lana studied more esoteric magics in secret with the help of the shady Wizzrobes in Byrna. Though her loyaties to the crown and Hyrule are not in question, many including Rauru feel her immense powers are more than enough for her to control."
+				},
+				{
+					"Name": "Rauru, Sage of Light",
+					"Class": "",
+					"Armament": "Holy Mace",
+					"Emblem": "",
+					"History": "Ascended to an immortal and ageless Sage, Rauru has served the Kingdom of Hyrule for several centuries. He has participated in several of its greatest wars, notably Ganon's first invasion of Hyrule and later the Gerudo Wars. Rauru later oversaw the construction of the Temple of Time with the ancient Oocca. He spends most of his later years preaching the word of the Goddesses and guarding over the gate that houses the Triforce."
+				}  
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Dominant Power",
+			"History": "",
+			"Description": "25% Territory influence for all Town Halls." 
+		},
+		{
+			"Name": "Center of Hyrule",
+			"History": "",
+
+			"Description": "Markets generate Territory Rings." 
+		},
+		{
+			"Name": "City Creators",
+			"History": "",
+			"Description": "Can build non-military Buildings in neutral Territory adjacent to territory ring." 
+		}  
+	],
+	"CivChoices":
+	[
+		"civ_choices/hylian/choosehero_krin",
+		"civ_choices/hylian/choosehero_seres",
+		"civ_choices/hylian/choosehero_zeldaV",
+		"civ_choices/hylian/choosehero_lana",
+		"civ_choices/hylian/choosehero_link",
+		"civ_choices/hylian/choosehero_rauru"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Vassals",
+			"History": "",
+			"Description": "Allied Civil Centers gain +10% Territory Influence."
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Temple of Time",
+			"Class": "",
+			"Emblem": "",
+			"History": "The Temple of Time, a marvel of architecture commissioned by the Oocca and designed by Rauru, the Sage of Light. Acting as a Church and housing the holy Triforce deep within its recesses, the Temple of Time is a shining wonder and revered structure across all of Hyrule. (Garrison and Heal up to 30 Units. +50% Territory Influence)",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "Titan: Fi, Spirit of the Master Sword",
+			"Class": "",
+			"Emblem": "",
+			"History": "A powerful spirit of the world that was bound against her will within the Master Sword. Now freed from her prison, Fi exhibits tremendous power and can bring animated swords against enemies of the Kingdom.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/hylian/hylian_civil_centre"
+		},
+		{
+			"Template": "units/hylian/hylian_citizenA",
+			"Count": 4
+		},
+		{
+			"Template": "units/hylian/hylian_levy_spearman",
+			"Count": 2
+		},		
+		{
+			"Template": "units/hylian/hylian_levy_archer",
+			"Count": 2
+		},
+		{
+			"Template": "units/hylian/hylian_scout_cavalry"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Princess Tetralyna Zelda V",
+		"Link, Heir of King Gustaf",
+    "Lana",
+    "Captain Krin",
+    "Seres",
+		"Rauru, Sage of Light"
+	],
+  "SkirmishReplacements": {
+    "skirmish/structures/default_civil_centre": "structures/hylian/hylian_civil_centre",
+    "skirmish/units/default_support_female_citizen": "units/hylian/hylian_citizenA",
+    "skirmish/units/default_cavalry": "units/hylian/hylian_scout_cavalry",
+    "skirmish/units/default_infantry_melee_b": "units/hylian/hylian_citizenA",
+    "skirmish/units/default_infantry_ranged_b": "units/hylian/hylian_citizenA",
+    "skirmish/structures/default_defense_tower": "structures/hylian/hylian_defense_tower",
+    "skirmish/structures/default_house_10": "structures/hylian/hylian_house"
+  },
+	"SelectableInGameSetup": true
+}

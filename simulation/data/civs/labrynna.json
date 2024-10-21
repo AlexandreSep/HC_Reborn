@@ -1,0 +1,178 @@
+{
+	"Code": "labrynna",
+	"Culture": "civilized",
+	"Name": "Empire of Labrynna",
+	"Emblem": "session/portraits/emblems/emblem_labrynna.dds",
+	"History": "Once a shining beacon of civilization in the east, Labrynna beheld a rapid advance in science and machinery seemingly from nowhere. In truth the Great Fairy Veran had managed to poison the mind of their Queen, advancing the technology of their military might by an entire generation overnight. Now the Empire seeks to expand and conquer, using their new tools to steamroll those of Hyrule.",
+	"Music":[
+			{"File":"labrynna_theme1.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient1.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient2.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient3.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient4.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient5.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient6.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient7.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient8.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient9.ogg", "Type":"peace"},
+			{"File":"labrynna_ambient10.ogg", "Type":"peace"},
+			{"File":"labrynna_battle1.ogg", "Type":"battle"},
+			{"File":"labrynna_battle2.ogg", "Type":"battle"},
+			{"File":"labrynna_battle3.ogg", "Type":"battle"},
+			{"File":"labrynna_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Queen Solado Ambi",
+					"Class": "",
+					"Armament": "Rapier",
+					"Emblem": "",
+					"History": "The latest member of the long lasting Ambi dynasty, Queen Solado Ambi was placed on the throne shortly after her father’s death. Later in her reign she encountered Veran, whom she quickly instated as her personal advisor. Soon after Ambi ushered in a new age of expansion and formerly established the new Empire. Queen Ambi was known as a kind and gentle person during the first part of her reign over Labrynna. Shortly after Veran’s insertion into her court however, Ambi’s attitude began to degenerate. Bouts of depression seemed to overcome her, as well as a great sense of impatience for everything."
+				},
+				{
+					"Name": "Veran, Sorceress of Shadows",
+					"Class": "",
+					"Armament": "Fairy Whip",
+					"Emblem": "",
+					"History": "A mystery to all in Labrynna, even those most close to her, Veran’s past is a terrible saga of personal loss and trauma. Once a Great Fairy, circumstances in the past lead to her banishment to the Realm of Twilight with other criminal elements of her people. Sometime during the Gerudo Wars she managed to return into Hyrule, fleeing far to the east into Labrynna where she observed and became friends with Queen Ambi. Currently Veran’s plan is unknown. She is however quite clearly connected to Labrynna’s rapid and extreme military growth. She is the architect of the Black Tower, a massive monolithic structure designed to serve as the new throne of Queen Ambi. Some suspect there’s more to the tower’s purpose than just an ego trip for Veran’s royal friend, however."
+				},
+				{
+					"Name": "Prince Ralphonso Ambi",
+					"Class": "",
+					"Armament": "Pistol",
+					"Emblem": "",
+					"History": "The grandson of Queen Ambi, Ralphonso was born of the first generation to live during Labrynna’s new Empire. Machinery is second nature to him, and years of education had landed him an internship commanding batteries of cannons. Despite Ralph’s clear admiration for Labrynna’s technological prowess, he feels Labrynna has gone into a stage of decline as if something is missing. He has since turned to seeking out the supernatural, in particular he hopes to uncover the mythical Fairies and ancient creatures that once coexisted in his homeland."
+				},
+				{
+					"Name": "Edgar the Giant",
+					"Class": "",
+					"Armament": "Star Glaive",
+					"Emblem": "",
+					"History": "A man of towering stature, Edgar earned his nickname for both his height and incredible strength. He earned his place as a General not for his physical prowess however, but for his battlefield strategy. Initially Homeguard to Labrynna, the Empire's expansion has seen him leading troops on frontlines, and instead of fighting off Lynels he has found himself conquering them. In recent times he has found himself supervising the young and arrogant Ralph on behalf of the Queen just as much as he has been ordered to march out further north."
+				}  
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Technocratic",
+			"History": "",
+			"Description": "All un-upgraded buildings (but not units) are available to build in the village phase." 
+		},
+		{
+			"Name": "Annexation",
+			"History": "",
+
+			"Description": "All units have a 50% damage bonus to Minor Faction units and a 50% increase in Minor Faction capture rate." 
+		},
+		{
+			"Name": "Secularism",
+			"History": "",
+			"Description": "Labrynna territory is 50% more resistant to enemy territory push." 
+		}  
+	],
+	"CivChoices":
+	[
+		"civ_choices/labrynna/choosehero_ralph",
+		"civ_choices/labrynna/choosehero_vire",
+		"civ_choices/labrynna/choosehero_edgar",
+		"civ_choices/labrynna/choosehero_ambi",
+		"civ_choices/labrynna/choosehero_veran",
+		"civ_choices/labrynna/choosehero_onox"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Scientific Method",
+			"History": "",
+			"Description": "10% time reduction to all ally research times."
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: The Black Tower",
+			"Class": "",
+			"Emblem": "",
+			"History": "A giant and imposing tower orchestrated by Veran as the new throne of Queen Ambi. The staggering amount of resources Labrynna obtained to construct this massive structure has been fueled by their aggressive expansion into all neighboring lands. In truth, there is more to the Black Tower's purpose then a mere show of ego.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "Titan: The Maku Tree of Labrynna",
+			"Class": "",
+			"Emblem": "",
+			"History": "Once a powerful force of nature that watched over the land of Labrynna, upon Veran’s arrival the personality of the Maku Tree seemed to have dramatically changed. The being’s visual appearance has changed to reflect the shift as well. Now fueled with power from Labrynna’s might, the Maku Tree’s once kind and gentle demeanor has warped into that of a bloodthirsty and battle ready beast. Whatever the truth behind her transformation, it’s clear that the Maku Tree is now out to conquer the land rather than guard it from invaders.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/labrynna/labrynna_civil_centre"
+		},
+		{
+			"Template": "units/labrynna/labrynna_tokayslaveA",
+			"Count": 4
+		},
+		{
+			"Template": "units/labrynna/labrynna_tokayfodder_b",
+			"Count": 2
+		},		
+		{
+			"Template": "units/labrynna/labrynna_homeguard_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/labrynna/labrynna_pathfinder_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Queen Solado Ambi",
+		"Veran, Sorceress of Shadows",
+		"Prince Ralphonso Ambi",
+		"Edgar the Giant"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/labrynna/labrynna_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/labrynna/labrynna_tokayslaveA",
+		"skirmish/units/default_cavalry" :  "units/labrynna/labrynna_pathfinder_b",
+		"skirmish/units/default_infantry_melee_b": "units/labrynna/labrynna_tokayslaveA",
+		"skirmish/units/default_infantry_ranged_b": "units/labrynna/labrynna_tokayslaveA",
+		"skirmish/structures/default_house_10" : "structures/labrynna/labrynna_house",
+		"skirmish/units/special_starting_unit" : "skirmish/units/special_herobonus_unit_labrynna"
+	},
+	"SelectableInGameSetup": false
+}

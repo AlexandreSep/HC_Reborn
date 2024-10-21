@@ -1,0 +1,88 @@
+<Entity parent="HC_template_unit_creature">
+  <Auras datatype="tokens">
+    units/jinx_aura_1
+  </Auras>
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Fire>15.0</Fire>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>125</food>
+      <metal>50</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>25</Max>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <SameBattalion>true</SameBattalion>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/stalfos/stalfos_bubble_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Small Class100</Classes>
+    <GenericName>Blue Bubble</GenericName>
+    <History>Immolated variations of the floating Bubble skulls, these burning blue monsters carry with them a dark curse that they spread to their victims. Those bit by these undead find themselves struggling to hit their targets, as if jinxed with poor aim and reflexes.</History>
+    <Icon>units/stalfos/sta_bluebubble.dds</Icon>
+    <Lang>stalfos</Lang>
+    <SelectionGroupName>units/stalfos/stalfos_bluebubble_b</SelectionGroupName>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_irene</RequiredTechnology>
+    <Tooltip>Small flying Creature unit that reduces the damage of enemy units it attacks.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>true</Floating>
+    <TurnRate>3.25</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/bluebubble_bite.xml</attack_melee>
+      <death>voice/stalfos/bubble/bubble_death.xml</death>
+      <order_attack>voice/stalfos/bubble/bubble_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/bubble/bubble_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/bubble/bubble_gather.xml</order_gather>
+      <order_repair>voice/stalfos/bubble/bubble_repair.xml</order_repair>
+      <order_walk>voice/stalfos/bubble/bubble_walk.xml</order_walk>
+      <run>actor/movement/patra/patra_flap.xml</run>
+      <select>voice/stalfos/bubble/bubble_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/patra/patra_flap.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.2222</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_bubble_blue_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,11 @@
+<Entity parent="structures/stalfos/stalfos_temple_dm">
+  <Health>
+	<SpawnEntityOnDeath>rubble/debris_stalfos_ruins_dm</SpawnEntityOnDeath>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/ruins/ruins_dmA_small</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+</Entity>

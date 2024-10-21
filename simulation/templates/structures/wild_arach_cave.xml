@@ -1,0 +1,48 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="20.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <Classes datatype="tokens">Wildlife ArachCave</Classes>
+    <GenericName>Arach Cave</GenericName>
+    <History>Small burrow dug out under a series of stones. Arachs will lay their eggs in these small caves, attacking anything that approaches.</History>
+    <Icon>gaia/fauna_aruroda.dds</Icon>
+    <Tooltip>Small burrow dug out under a series of stones. Arachs will lay their eggs in these small caves, attacking anything that approaches.</Tooltip>
+    <VisibleClasses datatype="tokens">-Military</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>5</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      gaia/fauna_aracha
+    gaia/fauna_aruroda
+    gaia/fauna_arach
+    </Entities>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/wild/cave_arachA.xml</Actor>
+  </VisualActor>
+</Entity>

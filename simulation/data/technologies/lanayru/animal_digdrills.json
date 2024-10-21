@@ -1,0 +1,14 @@
+{
+	"genericName": "Digging Drills",
+	"description": "Movement speed of Arurodas while burrowed increased by 100%",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 450},
+	"requirements": { "all": [{ "entity": { "class": "ArachDen", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Arach Den.",
+	"icon": "lanayru/animal_digdrills.dds",
+	"researchTime": 40,
+	"tooltip": "Movement speed of Arurodas while burrowed increased by 100%",
+	"modifications": [		{ "value": "UnitMotion/WalkSpeed", "multiply": 2.0 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 2.0 }],
+	"affects": ["ArurodaBurrowed"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

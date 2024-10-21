@@ -1,0 +1,20 @@
+<Entity parent="units/fairy/fairy_mistwalker_b">
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>900</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <Icon>units/fairy/fai_mistwalker_summer.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/fairy/fairy_mistwalker_autumn</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/fairy/fairy_mistwalker_summer.xml</Actor>
+  </VisualActor>
+</Entity>

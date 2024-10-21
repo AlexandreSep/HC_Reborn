@@ -1,0 +1,71 @@
+<Entity parent="HC_template_hero_auxiliary">
+  <Auras datatype="tokens">
+    units/heroes/kokiri_hero_fado_songwind
+    units/heroes/kokiri_hero_fado_songearth
+    units/heroes/kokiri_hero_fado_songearth2
+    units/heroes/kokiri_hero_fado_songearth3
+    units/heroes/kokiri_hero_fado_songsaria
+    units/heroes/kokiri_hero_fado_songsaria2
+    units/heroes/kokiri_hero_fado_songstorm
+    units/heroes/kokiri_hero_fado_songstorm2
+  </Auras>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>260</food>
+      <metal>200</metal>
+      <stone>20</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1900</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">HeroFado Hero1 Small FairyGuard</Classes>
+    <GenericName>Sage of Winds</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>Fado was a very talented musician and well loved violinist among the Kokiri. He was a pacifist and refused to attack anything living, an ideology he had great difficulty in upholding. His music seemed to have an almost magical power about it; he was quite able to domesticate feral beasts and monsters by playing the right tune. Fado was a friend of Saria’s and he was deeply fond of her. When she needed an heir to replace her as a Sage he volunteered for the title.</History>
+    <Icon>units/kokiri/kok_hero_fado.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_fado</RequiredTechnology>
+    <SpecificName>Fado</SpecificName>
+    <Tooltip>Support Hero that can create many powerful global buffs and debuffs.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/kokiri/fado/fado_death.xml</death>
+      <order_attack>voice/kokiri/fado/fado_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/fado/fado_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/fado/fado_gather.xml</order_gather>
+      <order_repair>voice/kokiri/fado/fado_repair.xml</order_repair>
+      <order_walk>voice/kokiri/fado/fado_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/kokiri/fado/fado_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero1</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_hero_fado_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,23 @@
+<Entity parent="structures/fairy/fairy_barracks">
+  <Identity>
+    <Classes datatype="tokens">Autumn</Classes>
+    <Icon>structures/fairy/fai_fountain_autumn.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/fairy/{civ}_stray_autumn
+    units/fairy/{civ}_drove_autumn
+      units/fairy/{civ}_banshee_autumn
+    units/fairy/{civ}_galeboomer_autumn
+    </Entities>
+  </ProductionQueue>
+  <Promotion>
+    <Entity>structures/fairy/fairy_fountain_winter</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_fountainA_autumn.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_autumn.xml</FoundationActor>
+  </VisualActor>
+</Entity>

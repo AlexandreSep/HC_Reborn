@@ -1,0 +1,175 @@
+{
+	"Code": "ordona",
+	"Culture": "naturalistic",
+	"Name": "Ordona Province",
+	"Emblem": "session/portraits/emblems/emblem_ordona.dds",
+	"History": "Established as a vassal state of the Kingdom of Hyrule, Ordona Province grew to become the most powerful agrarian nation in all of history. What they lacked in military might they made up for with a powerful economy fued by crops, livestock, and some of the finest brew this side of Lake Hylia. Motivated by hard work and having a good time, the people of Ordona Province were nonetheless some of the toughest folks around.",
+	"Music":[
+			{"File":"ordona_theme1.ogg", "Type":"peace"},
+			{"File":"ordona_ambient1.ogg", "Type":"peace"},
+			{"File":"ordona_ambient2.ogg", "Type":"peace"},
+			{"File":"ordona_ambient3.ogg", "Type":"peace"},
+			{"File":"ordona_ambient4.ogg", "Type":"peace"},
+			{"File":"ordona_ambient5.ogg", "Type":"peace"},
+			{"File":"ordona_ambient6.ogg", "Type":"peace"},
+			{"File":"ordona_ambient7.ogg", "Type":"peace"},
+			{"File":"ordona_ambient8.ogg", "Type":"peace"},
+			{"File":"ordona_ambient9.ogg", "Type":"peace"},
+			{"File":"ordona_ambient10.ogg", "Type":"peace"},
+			{"File":"ordona_battle1.ogg", "Type":"battle"},
+			{"File":"ordona_battle2.ogg", "Type":"battle"},
+			{"File":"ordona_battle3.ogg", "Type":"battle"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Food: Farms, Fruit, Meat, Fish, Material: Wood, Stone, Ore: Metal, Currency: Rupees, Gold, Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Mayor Bo",
+					"Class": "",
+					"Armament": "Family Axe",
+					"Emblem": "",
+					"History": "The Lord Mayor and head of all of Ordona Province, Mayor Bo has served his leadership role longer than any other man of the Ordonian people. He is loved by the people for his humble attitude and knack for partaking in menial labor with the Serfs of the Province."
+				},
+				{
+					"Name": "Ilia",
+					"Class": "",
+					"Armament": "Ranger Crossbow",
+					"Emblem": "",
+					"History": "Ilia was the daughter of Mayor Bo and trading assistant of Rusl in her youth. As a young adult Ilia became quite a business woman in Ordona Province, gaining stock over some of the best horses in Hyrule while simultaneously managing a lumber company to supply the building of stables across Hyrule."
+				},
+				{
+					"Name": "Rusl",
+					"Class": "",
+					"Armament": "Ordonian Sword",
+					"Emblem": "",
+					"History": "To many in Ordona Province, Rusl was just an average trader who made rounds to Hyrule Proper and Lanayru. Those that knew him personally were more than likely aware of his small background in military. Unlike many Ordonians, Rusl was actually professionally trained in several Hylian military academies, with rumors that he was attempting to become the first Hyrulean Knight from Ordona Province. "
+				},
+				{
+					"Name": "Ashei",
+					"Class": "",
+					"Armament": "Ordonian Sword",
+					"Emblem": "",
+					"History": "The daughter of a Hylian Knight, Ashei's father was expelled from his order for having a child with an Ordonian wife and corrupting the bloodline of its members. With no true connection to any nation, she was more mercenary than knight, adapting and learning a wide variety of combat techniques and sword fighting arts from various cultures."
+				}
+			]
+		}
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Battle Hardened Peasantry",
+			"History": "",
+			"Description": "All non mechanical, non-creature units have Citizen and Soldier classes, allowing them to both work and fight."
+		},
+		{
+			"Name": "Livestock Masters",
+			"History": "",
+			"Description": "Cavalry costs are reduced by 2% for each herdable Livestock that you control."
+		},
+		{
+			"Name": "Agrarian Nation",
+			"History": "",
+			"Description": "Plantations and Fields extend territory as a Civic Center or Religious building do."
+		}
+	],
+	"CivChoices":
+	[
+		"civ_choices/ordona/choosehero_beth",
+		"civ_choices/ordona/choosehero_colin",
+		"civ_choices/ordona/choosehero_ilia",
+		"civ_choices/ordona/choosehero_ashei",
+		"civ_choices/ordona/choosehero_rusl",
+		"civ_choices/ordona/choosehero_mayorbo"
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": " Breadbasket of Hyrule",
+			"History": "",
+			"Description": "Allies gain a slow trickle of Food Resources."
+		}
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Ordon Spring",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "Legend says that the guardian spirit of Ordona blessed the southern lands of Hyrule with healing waters and a bountiful harvest. While the elusive demigod has not been seen in modern times, these springs nevertheless create vast tracts of fertile lands around their perimeter. (+50% Territory Influence, Heals all units within its aura.)"
+		},
+		{
+			"Name": "Titan: Latoan, Spirit of Ordona",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "An ancient and perhaps primordial Spirit, Latoan was worshiped as a deity by the ancient pagan tribes of Ordona Province before the Hylians converted their people to worship of the Goddesses. Latoan's iconography and influence never left the Ordonians however, and even to this day he serves as somewhat of patron saint or deity of Ordona Province. Legend says that Latoan fell into a deep sleep beneath the Ordon Spring as he and his kind were no longer needed to spiritually guide the Ordonian people. When he was active in the world, legend said that Latoan would grow vast crops in the blink of an eye, bring a healing rain forth from the sky, and summon a flock of ghostly goats to protect the borders of his land from enemies."
+		}
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/ordona/ordona_civil_centre"
+		},
+		{
+			"Template": "units/ordona/ordona_serfA",
+			"Count": 4
+		},
+		{
+			"Template": "units/ordona/ordona_lumberjack_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/ordona/ordona_parcher_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/ordona/ordona_hawk_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Mayor Bo",
+		"Ilia",
+		"Rusl",
+		"Ashei"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/ordona/ordona_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/ordona/ordona_serfA",
+		"skirmish/units/default_cavalry" :  "units/ordona/ordona_hawk_b",
+		"skirmish/units/default_infantry_melee_b": "units/ordona/ordona_serfA",
+		"skirmish/units/default_infantry_ranged_b": "units/ordona/ordona_serfA",
+		"skirmish/structures/default_house_10" : "structures/ordona/ordona_house"
+	},
+	"SelectableInGameSetup": true
+}

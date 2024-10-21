@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Tarminian Tree</SpecificName>
+    <Tooltip>A dreamlike tree found in the Tarm Woods.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/forest/tarm_treesbigA_winter.xml</Actor>
+  </VisualActor>
+</Entity>

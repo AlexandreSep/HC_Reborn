@@ -1,0 +1,5 @@
+<Entity parent="template_rubble">
+  <VisualActor>
+    <Actor>structures/gohma/gohma_egg_base.xml</Actor>
+  </VisualActor>
+</Entity>

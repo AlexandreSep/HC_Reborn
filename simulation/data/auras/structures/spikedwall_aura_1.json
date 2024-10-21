@@ -1,0 +1,15 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": -1.0 }
+	],
+	"auraName": "Spiked Walls",
+	"auraDescription": "(Requires 'Spiked Walls' researched. -1.0 Health/second - Enemy Unit).",
+	"requiredTechnology": "kokiri/domiso_spikedwalls",
+	"stackable" : true ,
+	"overlayIcon": "art/textures/ui/session/auras/spikedwall_aura_1.dds"
+	
+}

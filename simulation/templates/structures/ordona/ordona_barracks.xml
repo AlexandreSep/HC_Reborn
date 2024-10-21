@@ -1,0 +1,85 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="25.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>5000</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">MilitiaBooth Village</Classes>
+    <GenericName>Militia Booth</GenericName>
+    <History>Milita Booths enlist and keep record of all manner of volunteers into the Ordonian Army, providing them with basic swords and armor should they have none of their own.</History>
+    <Icon>structures/ordona/ord_militiabooth.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Trains many Ordonian units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="30.0" width="30.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>35</Z>
+      </step3>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/ordona/{civ}_parcher_b
+    units/ordona/{civ}_militia_b
+    units/ordona/{civ}_sergeant_b
+    units/ordona/{civ}_fieflord_b
+      units/ordona/{civ}_valiant_b
+    </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>0</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    ordona/militiabooth_rushhour
+    ordona/militiabooth_criticalmass
+    ordona/colin_grueling
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_militiaboothA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+</Entity>

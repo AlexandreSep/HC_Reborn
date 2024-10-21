@@ -1,0 +1,80 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Poison Breath</AttackName>
+      <Damage>
+        <Forest>20.0</Forest>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>100</MaxRange>
+      <MinRange>5.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1700</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>25</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Medium Class80 Volvamight</Classes>
+    <GenericName>Iguanalfos</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The Iguanalfos are one of the more recent breeds of Lizalfos to surface in Hyrule. Believed to be the products of Lizalfos and Dinolfos mating with venomous reptiles native to Faron, the Iguanalfos can hurl a poisonous vat of venom from a fair distance at their targets. Unfortunate victims would often become fatally ill hours after being soaked by their toxic spray.</History>
+    <Icon>units/lizalfos/liz_iguanalfos.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>civ_choices/lizalfos/choosehero_okakusha</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_iguanalfos_b</SelectionGroupName>
+    <Tooltip>Okakusha's Unique Unit. Missile unit that sprays its enemies with poison globs.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>35.0</Hack>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/poison_spit.xml</attack_ranged>
+      <death>voice/lizalfos/iguanalfos/iguanalfos_death.xml</death>
+      <order_attack>voice/lizalfos/iguanalfos/iguanalfos_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/iguanalfos/iguanalfos_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/iguanalfos/iguanalfos_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/iguanalfos/iguanalfos_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/iguanalfos/iguanalfos_walk.xml</order_walk>
+      <run>actor/movement/immortal/immortal_hover.xml</run>
+      <select>voice/lizalfos/iguanalfos/iguanalfos_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/immortal/immortal_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.2</RunMultiplier>
+    <WalkSpeed>7.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_iguanalfos_b.xml</Actor>
+  </VisualActor>
+</Entity>

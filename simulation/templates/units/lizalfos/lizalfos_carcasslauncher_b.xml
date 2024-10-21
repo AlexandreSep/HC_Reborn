@@ -1,0 +1,92 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+      <AttackName>Cow Corpse</AttackName>
+      <Damage>
+        <Crush>300.0</Crush>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>110.0</MaxRange>
+      <MinRange>45.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>4000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/small_dust_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.25</ImpactAnimationLifetime>
+        <Speed>37.5</Speed>
+        <Spread>3.0</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4500</RepeatTime>
+      <SpawnEntityOnImpact>
+        <SpawnNumberMax>1</SpawnNumberMax>
+        <SpawnNumberMin>1</SpawnNumberMin>
+        <SpawnOnHit>
+          <Chance>100</Chance>
+          <SpawnAtTarget>true</SpawnAtTarget>
+        </SpawnOnHit>
+        <SpawnOnImpact>
+          <Chance>100</Chance>
+        </SpawnOnImpact>
+        <Template>units/lizalfos/lizalfos_cowcorpse</Template>
+      </SpawnEntityOnImpact>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>190</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="12.0" width="8.0" />
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">-Organic Construct Large Class40</Classes>
+    <GenericName>Carcass Launcher</GenericName>
+    <History>Although Lizalfos were more than eager to tear down enemy walls, they often took pleasure in drawing the enemy out of their defenses. To accomplish such a task they would lob the diseased corpses of cows and other animals into enemy cities and fortifications. </History>
+    <Icon>units/lizalfos/liz_carcasslauncher.dds</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <Tooltip>Support unit that launcher rotting corpses at its targets, spreading poison and disease.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>70.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/dungflinger_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+      <death>voice/lizalfos/lizfemaleA/lizfemaleA_death.xml</death>
+      <order_attack>voice/lizalfos/lizfemaleA/lizfemaleA_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/lizfemaleA/lizfemaleA_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/lizfemaleA/lizfemaleA_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/lizfemaleA/lizfemaleA_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/lizfemaleA/lizfemaleA_walk.xml</order_walk>
+      <run>actor/movement/cart/cart_move.xml</run>
+      <select>voice/lizalfos/lizfemaleA/lizfemaleA_select.xml</select>
+      <trained>interface/alarm/alarm_create_engine.xml</trained>
+      <walk>actor/movement/cart/cart_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_carcasslauncher_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,14 @@
+{
+	"genericName": "Shabonne Seal Saddles",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 750},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/shabonne_saddle.dds",
+	"researchTime": 40,
+	"tooltip": "Specialized saddles designed by the once-famous Shabonne to help riders keep hold of their Sandseals. (+10% Walk/Run Speed - Dune Runner, Sandseal Plower, and Dust Sentinel)",
+	"modifications": [		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.10 }],
+	"affects": ["Seal"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,79 @@
+<Entity parent="HC_template_hero_cavalry">
+  <Attack>
+    <Melee>
+      <AttackName>Antlers</AttackName>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>6.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>405</food>
+      <metal>100</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2100</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">HeroGulley Hero4 Medium FairyGuard</Classes>
+    <GenericName>The First Kokiri</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The son of a Hylian blacksmith who supported the Kokiri Bandits, Gulley was spared the death of his father's group and was the first Hylian to be transformed into a Kokiri by the Great Deku Tree. He may look small and harmless, but he is older than any other Kokiri and has tamed many forest creatures. Gulley’s years betrays his childlike appearance. He is quite detached from the world in his old age, spending most of his time isolated and away from even his fellow Kokiri.</History>
+    <Icon>units/kokiri/kok_hero_gulley.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_gulley</RequiredTechnology>
+    <SpecificName>Gulley</SpecificName>
+    <Tooltip>Swift Cavalry Hero that can buck enemies in Melee.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/kokiri/gulley/gulley_death.xml</death>
+      <order_attack>voice/kokiri/gulley/gulley_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/gulley/gulley_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/gulley/gulley_gather.xml</order_gather>
+      <order_repair>voice/kokiri/gulley/gulley_repair.xml</order_repair>
+      <order_walk>voice/kokiri/gulley/gulley_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/kokiri/gulley/gulley_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero4</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.6</RunMultiplier>
+    <WalkSpeed>25</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_hero_gulley_b.xml</Actor>
+  </VisualActor>
+</Entity>

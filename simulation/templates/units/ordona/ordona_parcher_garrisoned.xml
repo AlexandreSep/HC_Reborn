@@ -1,0 +1,9 @@
+<Entity parent="units/ordona/ordona_parcher_b">
+  <Turretable />
+  <Identity>
+    <Classes datatype="tokens">HiddenUI</Classes>
+  </Identity>
+  <VisualActor>
+    <Actor>units/ordona/ordona_parcher_b.xml</Actor>
+  </VisualActor>
+</Entity>

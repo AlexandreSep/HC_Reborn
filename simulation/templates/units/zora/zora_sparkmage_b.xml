@@ -1,0 +1,86 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Lightning</AttackName>
+      <Damage>
+        <Light>25.0</Light>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>70</MaxRange>
+      <MinRange>25.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>2000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2500</RepeatTime>
+      <Stun>
+        <Chance>20</Chance>
+        <Time>1000</Time>
+      </Stun>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>15</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>55</Max>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Electric SparkMage ZoraFemale Medium CanGarrison</Classes>
+    <GenericName>Spark Mage</GenericName>
+    <History>Carrying an electrified crystal in one hand, the powerful Spark Mages can unleash a white-hot bolt of lightning from quite a distance. A single shot can stun its victim, and sometimes instantly incinerate a target. Spark Mages need protection however; they are very vulnerable to damage and can do little to defend themselves in a melee.</History>
+    <Icon>units/zora/zor_sparkmage.dds</Icon>
+    <Lang>zora</Lang>
+    <SelectionGroupName>units/zora/zora_sparkmage_b</SelectionGroupName>
+    <Tooltip>Ranged Mage unit that hurls electic bolts at enemies from afar.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>35.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/magic_spark.xml</attack_ranged>
+      <death>voice/zora/sparkmage/sparkmage_death.xml</death>
+      <order_attack>voice/zora/sparkmage/sparkmage_attack.xml</order_attack>
+      <order_garrison>voice/zora/sparkmage/sparkmage_garrison.xml</order_garrison>
+      <order_gather>voice/zora/sparkmage/sparkmage_gather.xml</order_gather>
+      <order_repair>voice/zora/sparkmage/sparkmage_repair.xml</order_repair>
+      <order_walk>voice/zora/sparkmage/sparkmage_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zora/sparkmage/sparkmage_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.1111</RunMultiplier>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zora/zora_mage_b.xml</Actor>
+  </VisualActor>
+</Entity>

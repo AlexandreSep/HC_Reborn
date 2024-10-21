@@ -1,0 +1,16 @@
+<Entity parent="units/zora/zora_blademaster_b">
+  <Attack>
+    <Ranged>
+      <AttackName>Sword</AttackName>
+      <Splash>
+        <Damage>
+          <Hack>8.0</Hack>
+          <Pierce>5.0</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>7</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+</Entity>

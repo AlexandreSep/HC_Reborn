@@ -1,0 +1,72 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>8.0</Hack>
+        <Pierce>2.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1100</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>60</Max>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Medium</Classes>
+    <GenericName>Staltroop</GenericName>
+    <History>Scores of these infantry serve as the primary warrior deployed by the Kingdom of Hyrule. Funded by the Royal family, these soldiers have basic combat training and are provided with standardized armor and weaponry.</History>
+    <Icon>units/stalfos/sta_staltroop.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_staltroop_b</SelectionGroupName>
+    <Tooltip>Light unit armed with a sword and shield. Deals Hacking damage.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>30.0</Hack>
+        <Pierce>30.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/stalfos/undead_medium/undeadmed_death.xml</death>
+      <order_attack>voice/stalfos/undead_medium/undeadmed_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/undead_medium/undeadmed_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/undead_medium/undeadmed_gather.xml</order_gather>
+      <order_repair>voice/stalfos/undead_medium/undeadmed_repair.xml</order_repair>
+      <order_walk>voice/stalfos/undead_medium/undeadmed_walk.xml</order_walk>
+      <run>actor/movement/stalfos_med/stalfosmed_step.xml</run>
+      <select>voice/stalfos/undead_medium/undeadmed_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/stalfos_med/stalfosmed_step.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>4.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_staltroop_generic.xml</Actor>
+  </VisualActor>
+</Entity>

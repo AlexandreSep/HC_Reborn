@@ -1,0 +1,12 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "GarrisonHolder/BuffHeal", "Multiply": 1.25 }
+	],
+	"auraName": "Healing Regiments",
+	"auraDescription": "(If Garrisoned, Garrison Heal +25% health/second - Building)",
+	"overlayIcon": "art/textures/ui/session/auras/zeldav_healingreg.dds"
+}
+

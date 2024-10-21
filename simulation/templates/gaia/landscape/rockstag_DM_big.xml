@@ -1,0 +1,12 @@
+<Entity parent="template_gaia_doodad">
+  <Footprint>
+    <Circle radius="41.0" />
+    <Height>3.5</Height>
+  </Footprint>
+  <Obstruction>
+    <Static depth="41.0" width="41.0" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>geology/landscape/rocks/rockstag_DM_big.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,96 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>75</stone>
+      <wood>75</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="21.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Thrall</List>
+    <LoadingRange>21</LoadingRange>
+    <Max>3</Max>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>1</Y>
+        <Z>-4.8</Z>
+      </Archer1>
+      <Archer2>
+        <X>-11</X>
+        <Y>1</Y>
+        <Z>-1.4</Z>
+      </Archer2>
+      <Archer3>
+        <X>6.2</X>
+        <Y>13.5</Y>
+        <Z>-13.4</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <Max>900</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>20</MaxCopies>
+      <MaxCopiesPerBase>3</MaxCopiesPerBase>
+      <MinPop>0</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>darknut</Civ>
+    <Classes datatype="tokens">Vineyard Field Village</Classes>
+    <GenericName>Vineyard</GenericName>
+    <History>With such little flatland for growing crops, the Darknuts cultivated both native and imported vines as a main source for their diets. The cliffs along their cities were host to quite a variety of mounted vines.</History>
+    <Icon>structures/darknut/dar_vineyard.dds</Icon>
+    <Tooltip>Grows western grapes that can be harvested for Food.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="43.0" width="43.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+    darknut/vineyard_heatvines
+    darknut/vineyard_baralferment
+    </Technologies>
+  </ProductionQueue>
+  <ResourceTrickle>
+    <Interval>5000</Interval>
+    <Rates>
+      <food>1.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_farm.xml</constructed>
+      <select>interface/select/building/sel_farm.xml</select>
+      <upgraded>interface/complete/building/complete_farm.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_vineyardbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

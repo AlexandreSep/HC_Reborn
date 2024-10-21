@@ -1,0 +1,12 @@
+<Entity parent="units/kokiri/kokiri_laborerA">
+  <Identity>
+    <Classes datatype="tokens">-FairyGuard</Classes>
+  </Identity>
+  <Promotion>
+    <Entity>units/kokiri/kokiri_mudlaborerA</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_laborer_F.xml</Actor>
+  </VisualActor>
+</Entity>

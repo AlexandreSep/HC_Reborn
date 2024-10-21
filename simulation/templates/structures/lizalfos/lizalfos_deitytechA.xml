@@ -1,0 +1,64 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>150</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>12.0</Height>
+    <Square depth="35.0" width="35.0" />
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_mediumB</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Toxic Tarn</GenericName>
+    <History>The Lizalfos were quite infamous for their knack of mixing and matching chemicals to create some of the most potent toxins in all of Hyrule. They would coat many of their ranged weapons in such poisons to guarantee both prey and enemy died from their wounds.</History>
+    <Icon>structures/lizalfos/liz_toxictarn.dds</Icon>
+    <RequiredTechnology>lizalfos_okra</RequiredTechnology>
+    <Tooltip>Improves Poison related abilities.</Tooltip>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>25</metal>
+    <wood>50</wood>
+  </Loot>
+  <Obstruction>
+    <Static depth="33.0" width="33.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+    lizalfos/toxic_poisontrap
+    lizalfos/toxic_okrablood
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/lizalfos/complete_toxin.xml</constructed>
+      <select>interface/select/building/lizalfos/sel_toxin.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+    <Root>false</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_toxictarnA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_W.xml</FoundationActor>
+  </VisualActor>
+</Entity>

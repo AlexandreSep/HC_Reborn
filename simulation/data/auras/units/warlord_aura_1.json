@@ -1,0 +1,19 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.10 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.10 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.10 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.1 }
+		
+	],
+	"auraName": "Listen to Warlord or else!",
+	"auraDescription": "(+10% Movement Speed, 10% Damage to melee and ranged units )",
+	"overlayIcon": "art/textures/ui/session/auras/warlord_aura_1.dds"
+}

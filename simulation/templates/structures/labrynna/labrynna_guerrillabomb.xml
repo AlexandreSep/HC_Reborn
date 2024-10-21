@@ -1,0 +1,81 @@
+<Entity parent="template_structure">
+  <BuildRestrictions>
+    <Category>Wall</Category>
+    <PlacementType>land-shore</PlacementType>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <FriendlyFire>true</FriendlyFire>
+    <Damage>
+      <Fire>250.0</Fire>
+    </Damage>
+    <Bonuses>
+      <BonusStructure>
+        <Classes>Structure</Classes>
+        <Multiplier>10.0</Multiplier>
+      </BonusStructure>
+    </Bonuses>
+    <Range>50</Range>
+  </DeathDamage>
+  <Decay>
+    <DelayTime>1.0</DelayTime>
+    <SinkAccel>0.1</SinkAccel>
+    <SinkRate>0.0</SinkRate>
+  </Decay>
+  <Footprint>
+    <Height>3.0</Height>
+    <Square depth="3.0" width="3.5" />
+  </Footprint>
+  <Health>
+    <DamageVariants>
+      <heavydamage>0.35</heavydamage>
+      <lightdamage>0.85</lightdamage>
+      <mediumdamage>0.65</mediumdamage>
+    </DamageVariants>
+    <DeathType>corpse</DeathType>
+    <Max>10</Max>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">Construct</Classes>
+    <GenericName>Guerilla Bomb</GenericName>
+    <History>Give it some time and it will go bang.</History>
+    <Icon>structures/labrynna/lab_guerrillabomb.dds</Icon>
+    <SelectionGroupName>structures/labrynna_guerillabomb</SelectionGroupName>
+    <Tooltip>Give it some time and it will go bang.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="2.0" width="2.0" />
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1.0</Crush>
+        <Fire>0.0</Fire>
+        <Forest>0.0</Forest>
+        <Hack>1.0</Hack>
+        <Light>0.0</Light>
+        <Pierce>1.0</Pierce>
+        <Shadow>0.0</Shadow>
+        <Siege>0.0</Siege>
+        <Spirit>0.0</Spirit>
+        <Water>0.0</Water>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_guerillabombA.xml</Actor>
+  </VisualActor>
+</Entity>

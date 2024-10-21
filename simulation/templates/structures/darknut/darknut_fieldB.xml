@@ -1,0 +1,29 @@
+<Entity parent="structures/darknut/darknut_field">
+  <Footprint>
+    <Circle radius="41.0" />
+    <Height>12.0</Height>
+  </Footprint>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>14.7</Y>
+        <Z>-4.8</Z>
+      </Archer1>
+      <Archer2>
+        <X>-11</X>
+        <Y>14.7</Y>
+        <Z>-1.4</Z>
+      </Archer2>
+      <Archer3>
+        <X>6.2</X>
+        <Y>26.7</Y>
+        <Z>-13.4</Z>
+      </Archer3>
+    </TurretPoints>
+  </TurretHolder>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_vineyardbaseB.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

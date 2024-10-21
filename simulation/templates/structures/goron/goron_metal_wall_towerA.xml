@@ -1,0 +1,72 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <GarrisonHolder>
+  </GarrisonHolder>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>18</Y>
+        <Z>5</Z>
+      </Archer1>
+      <Archer2>
+        <X>0</X>
+        <Y>18</Y>
+        <Z>-5</Z>
+      </Archer2>
+    </TurretPoints>
+  </TurretHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_goron_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Goron Tower</GenericName>
+    <History>Goron Walls are some of the sturdiest defenses in all of Hyrule. It takes quite a force to break through metal and stone.</History>
+    <Icon>structures/goron/gor_wallA.dds</Icon>
+    <Tooltip>Defensive Wall to slow invaders.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <Upgrade>
+    <WallB>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/goron/goron_metal_wall_towerB</Entity>
+      <Time>10</Time>
+      <Tooltip>Upgrade with Double Layer.</Tooltip>
+      <Variant>upgrading</Variant>
+    </WallB>
+    <WallC>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/goron/goron_metal_wall_towerC</Entity>
+      <Time>10</Time>
+      <Tooltip>Upgrade with Lava Moat.</Tooltip>
+      <Variant>upgrading</Variant>
+    </WallC>
+    <WallD>
+      <Cost>
+        <stone>60</stone>
+      </Cost>
+      <Entity>structures/goron/goron_metal_wall_towerD</Entity>
+      <Time>10</Time>
+      <Tooltip>Upgrade with Bulwark.</Tooltip>
+      <Variant>upgrading</Variant>
+    </WallD>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/goron/goron_wall_towerA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

@@ -1,0 +1,80 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Pierce>15.0</Pierce>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>220</food>
+      <metal>50</metal>
+      <stone>30</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <OwnerID>0</OwnerID>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/mad/mad_hero_deppi</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">HeroDeppi Hero6 BeetleRider Small</Classes>
+    <GenericName>Baba Breeder</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A reclusive Deku Scrub that lives away from most Scrub civilization. Deppi spent a lot of time in the woods playing with and befriending many Deku Babas, as a result he has revolutionized breeding the hostile plants for use by all Scrub kind.</History>
+    <Icon>units/deku/dek_hero_deppi.dds</Icon>
+    <Lang>deku</Lang>
+    <RequiredTechnology>civ_choices/deku/choosehero_deppi</RequiredTechnology>
+    <SpecificName>Deppi</SpecificName>
+    <Tooltip>Melee Hero that attacks with Deku Babas.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>15.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/dekubaba_bite.xml</attack_melee>
+      <death>voice/deku/scrubA/scrubA_death.xml</death>
+      <order_attack>voice/deku/scrubA/scrubA_attack.xml</order_attack>
+      <order_garrison>voice/deku/scrubA/scrubA_garrison.xml</order_garrison>
+      <order_gather>voice/deku/scrubA/scrubA_gather.xml</order_gather>
+      <order_repair>voice/deku/scrubA/scrubA_repair.xml</order_repair>
+      <order_walk>voice/deku/scrubA/scrubA_walk.xml</order_walk>
+      <run>actor/movement/dekuscrub/scrub_hopA.xml</run>
+      <select>voice/deku/scrubA/scrubA_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero6</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <Actor>units/deku/deku_hero_deppi_b.xml</Actor>
+  </VisualActor>
+</Entity>

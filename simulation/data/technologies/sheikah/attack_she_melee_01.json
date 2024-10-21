@@ -1,0 +1,15 @@
+{
+	"genericName": "Nanna Swordcraft",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 400, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "sheikah"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 50,
+	"tooltip": "+10% Melee Attack - Melee Infantry and Melee Cavalry.",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.1},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.1},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.1}],
+	"affects": ["Infantry Melee", "Cavalry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

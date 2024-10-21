@@ -1,0 +1,6 @@
+<Entity parent="units/kokiri/kokiri_emarcher_b">
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/kokiri/fairy/kokiri_emarcher_F.xml</Actor>
+  </VisualActor>
+</Entity>

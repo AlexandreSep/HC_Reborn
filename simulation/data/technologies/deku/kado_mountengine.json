@@ -1,0 +1,14 @@
+{
+	"genericName": "Mount Engine",
+	"description": "Kado's superior genius brought him to the realization that Giant Orhats could be made even more destructive by mounting Dekupults and Baballistas on their backs with the proper equipment.",
+	"cost": {"food": 0, "wood": 150, "stone": 100, "metal": 100},
+	"requirements": {"all": [ {"tech": "civ_choices/deku/choosehero_kado"}, {"tech": "phase_town"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Requires Kado and Town Phase.",
+	"icon": "deku/kado_mountengine.dds",
+	"researchTime": 40,
+	"tooltip": "Allows Giant Orhats to mount a Dekupult or Baballista on its back after upgrading.",
+	"modifications": [],
+	"affects": ["GiantOrhat"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

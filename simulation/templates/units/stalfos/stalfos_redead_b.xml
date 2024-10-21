@@ -1,0 +1,77 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Auras datatype="tokens">
+    units/redead_aura_1
+  </Auras>
+  <Attack>
+    <Melee>
+      <AttackName>Claws</AttackName>
+      <Damage>
+        <Hack>5.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>3100</PrepareTime>
+      <RepeatTime>3200</RepeatTime>
+      <Stun>
+        <Chance>100</Chance>
+        <Time>100</Time>
+      </Stun>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BattalionSlots>0</BattalionSlots>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>25</food>
+      <metal>75</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Medium ReDead</Classes>
+    <GenericName>ReDead</GenericName>
+    <History>A nightmarish skeletal creature that stalks deep beneath the earth, there are many legends as to the origin of the ReDead. Some believe they are the result of failed immortality rituals, others say they were guardians of Sheikah graves twisted into the service of evil necromancers. In the employ of the Stalfos they are sent in to completely demoralize their foes: the visage of a ReDead causes uneasiness in almost all who look upon them... and their ghastly screams can completely paralize even the bravest of warriors.</History>
+    <Icon>units/stalfos/sta_redead.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_redead_b</SelectionGroupName>
+    <Tooltip>Support unit that slows down and stuns enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+    <RequiredTechnology>stalfos/stalfos_gettomb</RequiredTechnology>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/redead_attack.xml</attack_melee>
+      <death>voice/stalfos/redead/redead_death.xml</death>
+      <order_attack>voice/stalfos/redead/redead_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/redead/redead_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/redead/redead_gather.xml</order_gather>
+      <order_heal>voice/stalfos/redead/redead_attack.xml</order_heal>
+      <order_repair>voice/stalfos/redead/redead_repair.xml</order_repair>
+      <order_walk>voice/stalfos/redead/redead_walk.xml</order_walk>
+      <run>actor/movement/redead/redead_step.xml</run>
+      <select>voice/stalfos/redead/redead_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/redead/redead_step.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>3.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_redead_b.xml</Actor>
+  </VisualActor>
+</Entity>

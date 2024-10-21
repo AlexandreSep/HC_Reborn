@@ -1,0 +1,108 @@
+{
+	"Code": "npc_tokay",
+	"Culture": "barbaric",
+	"Name": "Tokay",
+	"Emblem": "session/portraits/emblems/emblem_npc_tokay.dds",
+	"History": "Hailing from Crescent Island just south of Labrynna, the Tokay were at first glance a tribal and primitive collection of people. Their odd manner of speaking, awkward behavior, and obsession with mundane items such as clothing rather than rupees gave them a reputaion of being backwards and outright stupid. Despite their quirky demenour, the Tokay proved to be more than a pushover tribe of spear wielding reptile barbarians.",
+	"Music":[
+			{"File":"hylian_theme1.ogg", "Type":"peace"},
+			{"File":"hylian_battle4.ogg", "Type":"battle"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+			{
+					"Name": "Tokay Big Boss Otaylo",
+					"Class": "",
+					"Armament": "Tokay Spear",
+					"Emblem": "",
+					"History": "Otaylo became Boss of the Tokay not because of power, intellect, or bloodlines... but because she bought a blue shirt to wear from Labrynna. Her actions inadvertedly lead to Labrynna duping most of her people into slavery, something she’s not all that proud of."
+			}
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+	
+		{
+			"Name": "None",
+			"History": "",
+			"Description": "" 
+		}
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "None",
+			"History": "",
+			"Description": "" 
+		}
+	],
+	"Structures":
+	[
+			{
+			"Name": "None",
+			"History": "",
+			"Description": "" 
+		}
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/npc_tok_civil_centre"
+		},
+		{
+			"Template": "units/npc_tok_noshirtA",
+			"Count": 4
+		},
+		{
+			"Template": "units/npc_tok_hunter_b",
+			"Count": 2
+		},		
+		{
+			"Template": "units/npc_tok_slinger_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/npc_tok_bonker_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Malon"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/npc_tokay/npc_tok_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/npc_tokay/npc_tok_noshirtA",
+		"skirmish/units/default_cavalry" :  "units/npc_tokay/npc_tok_bonker_b",
+		"skirmish/units/default_infantry_melee_b": "units/npc_tokay/npc_tok_noshirtA",
+		"skirmish/units/default_infantry_ranged_b": "units/npc_tokay/npc_tok_noshirtA",
+		"skirmish/structures/default_house_10" : "structures/npc_tokay/npc_tok_house"
+	},
+	"SelectableInGameSetup": false
+}

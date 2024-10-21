@@ -1,0 +1,78 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>15.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>405</food>
+      <metal>100</metal>
+      <stone>40</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">HeroDomiso Hero5 Small FairyGuard</Classes>
+    <GenericName>The Know-It-All-Brothers</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The Know-It-All-Brothers are quite famous among the Kokiri, mainly for the trait that no Kokiri can tell the brothers apart. They spend most of their time doing chores around the Deku Tree's Grove, much to their dismay. The leader of the brothers, Domiso, is a bit skilled with a sword and can defend his people if needs be.</History>
+    <Icon>units/kokiri/kok_hero_domiso.dds</Icon>
+    <Lang>kokiri</Lang>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_domiso</RequiredTechnology>
+    <SpecificName>Domiso</SpecificName>
+    <Tooltip>Melee Hero that summons his brothers to battle.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>30.0</Crush>
+        <Hack>10.0</Hack>
+        <Pierce>10.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>75</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/kokiri/gulley/gulley_death.xml</death>
+      <order_attack>voice/kokiri/gulley/gulley_attack.xml</order_attack>
+      <order_garrison>voice/kokiri/gulley/gulley_garrison.xml</order_garrison>
+      <order_gather>voice/kokiri/gulley/gulley_gather.xml</order_gather>
+      <order_repair>voice/kokiri/gulley/gulley_repair.xml</order_repair>
+      <order_walk>voice/kokiri/gulley/gulley_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/kokiri/gulley/gulley_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero5</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.3636</RunMultiplier>
+    <WalkSpeed>11.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/kokiri/kokiri_hero_domiso_b.xml</Actor>
+  </VisualActor>
+</Entity>

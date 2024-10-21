@@ -1,0 +1,14 @@
+{
+	"genericName": "More Big Faster!",
+	"description": "Ganon says we need more Bigger Blins faster! Biggest we can get as fast! Thanks!",
+	"cost": {"food": 350, "wood": 0, "stone": 0, "metal": 350},
+	"requirements": {"all": [ {"tech": "civ_choices/moblin/choosehero_ganon"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "You must select Ganon as your hero.",
+	"icon": "moblin/ganon_thorwemcareful.dds",
+	"researchTime": 40,
+	"tooltip": "Giantblin unit line training time is reduced by 25%.",
+	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.75}],
+	"affects": ["Giantblin"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

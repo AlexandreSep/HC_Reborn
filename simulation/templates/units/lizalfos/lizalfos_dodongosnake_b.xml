@@ -1,0 +1,75 @@
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Fangs</AttackName>
+      <Bonuses>
+        <BonusSmall>
+          <Classes>Small</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusSmall>
+      </Bonuses>
+      <Damage>
+        <Crush>25.0</Crush>
+      </Damage>
+      <MaxRange>7.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1375</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>65</food>
+      <metal>0</metal>
+      <stone>25</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="10.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>380</Max>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Large Class90 Dodongosnake</Classes>
+    <GenericName>Dodongo Snake</GenericName>
+    <History>The larval form of Trinexx, Dodongo Snakes spent most of their young lives harmlessly digging deep in the earth and eating rocks. As they got larger, the Lizalfos could train them to eat more than just rocks.</History>
+    <Icon>units/lizalfos/liz_dodongosnake.dds</Icon>
+    <Lang>lizalfos</Lang>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>units/lizalfos/lizalfos_dodongosnake_b</SelectionGroupName>
+    <Tooltip>Large Creature unit that deals progressively more damage to units smaller than its size.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>35.0</Crush>
+        <Pierce>35.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/dodongosnake_bite.xml</attack_melee>
+      <death>voice/lizalfos/dodongosnake/dodongosnake_death.xml</death>
+      <order_attack>voice/lizalfos/dodongosnake/dodongosnake_attack.xml</order_attack>
+      <order_garrison>voice/lizalfos/dodongosnake/dodongosnake_garrison.xml</order_garrison>
+      <order_gather>voice/lizalfos/dodongosnake/dodongosnake_gather.xml</order_gather>
+      <order_repair>voice/lizalfos/dodongosnake/dodongosnake_repair.xml</order_repair>
+      <order_walk>voice/lizalfos/dodongosnake/dodongosnake_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/lizalfos/dodongosnake/dodongosnake_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/lizalfos/lizalfos_dodongosnake_b.xml</Actor>
+  </VisualActor>
+</Entity>

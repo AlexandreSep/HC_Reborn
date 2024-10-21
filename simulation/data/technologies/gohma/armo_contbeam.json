@@ -1,0 +1,14 @@
+{
+	"genericName": "Continuous Beam",
+	"description": "Armogohma could be bred to leak their combustible fluid profusely. This allowed them to fire a constant stream of flames at their target rather then single projectiles.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "gohma/armo_contbeam.dds",
+	"researchTime": 40,
+	"tooltip": "Armogohma could be bred to leak their combustible fluid profusely. This allowed them to fire a constant stream of flames at their target rather then single projectiles.)",
+	"modifications": [{"value": "Attack/Ranged/Damage/PrepareTime", "multiply": 0.8},
+					  {"value": "Attack/Ranged/Damage/RepeatTime", "multiply": 0.8}],
+	"affects": ["GohArmogohma"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

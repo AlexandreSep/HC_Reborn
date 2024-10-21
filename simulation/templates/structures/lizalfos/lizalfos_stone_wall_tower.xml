@@ -1,0 +1,28 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="15.5" width="15.5" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Stone Wall</GenericName>
+    <History>A sturdy wooden wall built to protect Lizalfos settlements.</History>
+    <Icon>structures/lizalfos/liz_stonewall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="13.5" width="13.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_stonewall_tower.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldD_S.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

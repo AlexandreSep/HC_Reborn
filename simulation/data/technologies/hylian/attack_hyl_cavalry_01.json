@@ -1,0 +1,39 @@
+{
+	"genericName": "Manhala Cavalry Training",
+	"description": "Advanced training techniques developed by Hylian Knight orders.",
+  "cost": {
+    "food": 300,
+    "wood": 0,
+    "stone": 0,
+    "metal": 200
+  },
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/attack_manhala_training.dds",
+	"researchTime": 40,
+	"tooltip": "Advanced training techniques developed by Hylian Knight orders. (+5 Armor, +25% Stun Resistance, +10 Knockback Resistance - Melee Cavalry)",
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 5
+    },
+    {
+      "value": "Resistance/KnockbackResistance",
+      "add": 10
+    },
+    {
+      "value": "Resistance/StunResistance",
+      "add": 25
+    }
+  ],
+	"affects": ["Cavalry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

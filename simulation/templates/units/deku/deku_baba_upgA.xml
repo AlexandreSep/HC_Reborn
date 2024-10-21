@@ -1,0 +1,29 @@
+<Entity parent="units/deku/deku_baba_b">
+  <Attack>
+    <Ranged>
+      <AttackName>Fangs</AttackName>
+      <Damage>
+        <Hack>7</Hack>
+        <Pierce>4</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>75</MaxRange>
+      <MinRange>15.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>800</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <GenericName>Deku Baba (Projectile Teeth)</GenericName>
+    <VisibleClasses datatype="tokens">-Melee Missile</VisibleClasses>
+  </Identity>
+  <Upgrade disable="" />
+</Entity>

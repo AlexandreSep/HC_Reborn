@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodadB">
+  <Footprint>
+    <Height>2.0</Height>
+    <Square depth="5" width="5" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="5" width="5" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>structures/settle_tarm/tarm_pillar_smallA.xml</Actor>
+  </VisualActor>
+</Entity>

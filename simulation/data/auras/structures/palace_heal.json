@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affects": ["Human"],
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": 0.5 }
+	],
+	"auraName": "Desert Haven",
+	"auraDescription": "(Requires Princess Mikeela Riju and 'Desert Haven' researched. Heal 0.5 health/second - Humanoid)",
+	"requiredTechnology": "gerudo/riju_deserthaven",	
+	"overlayIcon": "art/textures/ui/session/auras/heal.png"
+}

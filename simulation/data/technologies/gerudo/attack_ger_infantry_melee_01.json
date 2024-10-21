@@ -1,0 +1,18 @@
+{
+	"genericName": "Gerudo Curvature",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/attack_gerudo_curvature.dds",
+	"researchTime": 40,
+	"tooltip": "The curved blades of the Gerudo are some of the finest in Hyrule, excellent for slashing. (+15% Melee Attack - Melee Infantry)",
+  "modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.15},
+    {"value": "Attack/Melee/Damage/Pierce", "multiply": 1.15},
+    {"value": "Attack/Melee/Damage/Crush", "multiply": 1.15},
+    {"value": "Attack/Ranged/Damage/Hack", "multiply": 1.15},
+    {"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15},
+	{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.15}],
+	"affects": ["Infantry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

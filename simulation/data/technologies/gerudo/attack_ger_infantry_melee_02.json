@@ -1,0 +1,19 @@
+{
+	"genericName": "Devalant-Style Blades",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 400, "metal": 450},
+	"supersedes": "gerudo/attack_ger_infantry_melee_01",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/attack_devalant_blades.dds",
+	"researchTime": 50,
+	"tooltip": "Blades forged with and molded on Devalant pincers result in wicked slashing curves. (+20% Melee Attack - Melee Infantry)",
+  "modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.25},
+    {"value": "Attack/Melee/Damage/Pierce", "multiply": 1.25},
+    {"value": "Attack/Melee/Damage/Crush", "multiply": 1.25},
+    {"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.25},
+    {"value": "Attack/Ranged/Damage/Hack", "multiply": 1.25},
+    {"value": "Attack/Ranged/Damage/Crush", "multiply": 1.25}],
+	"affects": ["Infantry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

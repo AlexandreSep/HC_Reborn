@@ -1,0 +1,12 @@
+{
+	"type": "formation",
+	"affects": ["Cavalry", "Creature"],
+	"modifications": [
+		{ "value": "Armour/Pierce", "multiply": 1.25 },
+		{ "value": "Armour/Hack", "multiply": 1.25 },
+		{ "value": "Armour/Crush", "multiply": 1.25 }
+	],
+	"auraName": "Die for your King",
+	"auraDescription": "(In Formation, +25% Armor - Cavalry and Creature)",
+	"overlayIcon": "art/textures/ui/session/auras/debon_dieforyourking.dds"
+}

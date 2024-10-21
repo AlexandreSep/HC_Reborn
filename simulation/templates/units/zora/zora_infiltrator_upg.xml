@@ -1,0 +1,21 @@
+<Entity parent="units/zora/zora_infiltrator_b">
+  <Attack>
+    <Melee>
+      <AttackName>Fin Blades</AttackName>
+      <Damage>
+        <Hack>20.0</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1300</PrepareTime>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/zora/zora_infiltrator_upg.xml</Actor>
+  </VisualActor>
+  <Health>
+    <Max>70</Max>
+  </Health>
+</Entity>

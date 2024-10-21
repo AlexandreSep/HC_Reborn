@@ -1,0 +1,115 @@
+<Entity parent="HC_template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="37.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lanayru_animalhubA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>3</MaxCopies>
+      <MaxCopiesPerBase>1</MaxCopiesPerBase>
+      <MinPop>50</MinPop>
+      <MinPopPerCopy>0</MinPopPerCopy>
+    </AIBuild>
+    <Civ>lanayru</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Animal Hub</GenericName>
+    <History>Hub structure that could add various animal pens on to itself. Domestic creatures and Cavalry required such a building to be set up.</History>
+    <Icon>structures/lanayru/lan_hub_animal.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Hub that can add Creature and Cavalry training stuctures to itself.</Tooltip>
+    <VisibleClasses datatype="tokens">Hub</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="60.0" width="60.0" />
+  </Obstruction>
+  <Plots>
+    <PlotsToSpawn>
+      <PlotA>
+        <Angle>0</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/lanayru/lanayru_plot_animalA</Template>
+        <X>0</X>
+        <Z>-20</Z>
+      </PlotA>
+      <PlotB>
+        <Angle>125</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/lanayru/lanayru_plot_animalA</Template>
+        <X>-16</X>
+        <Z>12</Z>
+      </PlotB>
+      <PlotC>
+        <Angle>-110</Angle>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Template>structures/lanayru/lanayru_plot_animalA</Template>
+        <X>18</X>
+        <Z>7</Z>
+      </PlotC>
+    </PlotsToSpawn>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <DestinationOffset>
+      <step1>
+        <X>-1</X>
+        <Z>45</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>50</Z>
+      </step2>
+    </DestinationOffset>
+    <Entities datatype="tokens">
+    units/lanayru/{civ}_battlecrab_b
+    units/lanayru/{civ}_prawnbowman_b
+    units/lanayru/{civ}_hermitid_b
+    units/lanayru/{civ}_aruroda_b
+    units/lanayru/{civ}_arachdervish_b
+    units/lanayru/{civ}_shoreserpent_b
+    units/lanayru/{civ}_gleeoklingA_2
+   </Entities>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-1</X>
+      <Z>10</Z>
+    </SpawnOffset>
+    <Technologies datatype="tokens">
+    lanayru/animalhub_tamingcoast
+    lanayru/animal_greatmigration
+    lanayru/animal_shellhallows
+    lanayru/animal_digdrills
+    lanayru/animal_riderresponse
+    lanayru/animal_noxious
+    lanayru/animal_tripleheads
+    lanayru/dorephan_endurance
+     </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_animalhubA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+</Entity>

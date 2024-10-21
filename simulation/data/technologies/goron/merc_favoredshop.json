@@ -1,0 +1,22 @@
+{
+	"genericName": "Favored Shop",
+	"description": "Goron Bazaars strive to attract repeat customers by offering the finest weapons and armor.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "goron"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "goron/merc_favoredshop.dds",
+	"researchTime": 40,
+	"tooltip": "Goron Bazaars strive to attract repeat customers by offering the finest weapons and armor. (-10% Currency and Food Cost - Mercenary)",
+  "modifications": [
+    {
+      "value": "Cost/Resources/metal",
+      "multiply": 0.90
+    },
+    {
+      "value": "Cost/Resources/food",
+      "multiply": 0.90
+    }
+  ],
+	"affects": ["Mercenary"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

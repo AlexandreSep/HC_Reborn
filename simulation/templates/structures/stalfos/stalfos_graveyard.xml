@@ -1,0 +1,51 @@
+<Entity parent="template_structure_resource_field">
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>15.0</Height>
+    <Square depth="20.0" width="20.0" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="20.0" width="20.0" />
+  </Obstruction>
+  <Health>
+    <Max>1000</Max>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>structures/node_civcenterA</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>stalfos</Civ>
+    <Classes datatype="tokens">Field</Classes>
+    <GenericName>Graveyard</GenericName>
+    <History>.</History>
+    <Icon>structures/stalfos/sta_graveyard.dds</Icon>
+    <Tooltip>Contains bones that can be gathered by Stalchildren.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <TerritoryInfluence>
+    <Radius>35</Radius>
+    <Root>true</Root>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <ResourceSupply>
+    <Max>Infinity</Max>
+    <DiminishingReturns>0.90</DiminishingReturns>
+    <KillBeforeGather>false</KillBeforeGather>
+    <MaxGatherers>8</MaxGatherers>
+    <Type>food.bones</Type>
+  </ResourceSupply> 
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_massgraveA.xml</Actor>
+  </VisualActor>
+</Entity>

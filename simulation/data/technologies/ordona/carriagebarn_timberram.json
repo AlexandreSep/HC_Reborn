@@ -1,0 +1,32 @@
+{
+  "genericName": "Timberfell Rams",
+  "description": ".",
+  "cost": {
+    "food": 0,
+    "wood": 300,
+    "stone": 0,
+    "metal": 200
+  },
+  "requirements": {
+    "all": [
+      { "tech": "phase_city" },
+      { "civ": "ordona" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with City.",
+  "icon": "ordona/carriagebarn_timberram.dds",
+  "researchTime": 40,
+  "tooltip": "(Siege Rams now cost 10% less Material to create and move 15% faster)",
+  "modifications": [
+    {
+      "value": "Cost/Resources/wood",
+      "multiply": 0.90
+    },
+    {
+      "value": "UnitMotion/WalkSpeed",
+      "multiply": 1.15
+    }
+  ],
+  "affects": [ "Ram" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

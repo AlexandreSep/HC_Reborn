@@ -1,0 +1,48 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>50</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="25.0" width="25.0" />
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>20</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Hovel</GenericName>
+    <History>Goron living reqirements are rather simple: a quiet hole to sleep in is usually more than enough. These small hovels dot the sides of the Death Mountain range, and are usually decorated with petty trinkets.</History>
+    <Icon>structures/goron/gor_house.dds</Icon>
+    <Tooltip>Housing that allows you to field larger armies.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <VisualActor>
+    <Actor>structures/goron/goron_houseA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+</Entity>

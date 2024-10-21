@@ -1,0 +1,71 @@
+<Entity parent="HC_template_unit_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Claws</AttackName>
+      <Damage>
+        <Crush>8.0</Crush>
+        <Hack>7.0</Hack>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>1200</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>75</food>
+      <metal>30</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>350</Max>
+  </Health>
+  <Identity>
+    <Civ>npc_stormzora</Civ>
+    <Classes datatype="tokens">Medium Class100 MinorFaction</Classes>
+    <GenericName>Storm Zora Viper</GenericName>
+    <History>Clad in armor made from the carapaces of unknown deep sea creatures, Vipers are terrifying creatures armed with a huge gripping claw in one hand, and a large shield in the other. There are quite hostile, and can rip enemy shields away and pry off armor with their powerful claw, while blocking out attacks with their own.</History>
+    <Icon>units/npc_stormzora/npc_stz_viper.dds</Icon>
+    <Lang>stormzora</Lang>
+    <SelectionGroupName>units/npc_stormzora/npc_stz_viper_b</SelectionGroupName>
+    <Tooltip>Durable Melee unit that can pry open armor with their razor claws.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>25.0</Crush>
+        <Hack>45.0</Hack>
+        <Pierce>55.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/stormzora/stormzora_death.xml</death>
+      <order_attack>voice/stormzora/stormzora_attack.xml</order_attack>
+      <order_garrison>voice/stormzora/stormzora_garrison.xml</order_garrison>
+      <order_gather>voice/stormzora/stormzora_gather.xml</order_gather>
+      <order_repair>voice/stormzora/stormzora_repair.xml</order_repair>
+      <order_walk>voice/stormzora/stormzora_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/stormzora/stormzora_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/npc_stormzora/npc_stz_viper_b.xml</Actor>
+  </VisualActor>
+</Entity>

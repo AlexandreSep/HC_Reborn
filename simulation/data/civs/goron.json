@@ -1,0 +1,173 @@
+{
+	"Code": "goron",
+	"Culture": "barbaric",
+	"Name": "Gorons",
+	"Emblem": "session/portraits/emblems/emblem_goron.dds",
+	"History": "Mighty rock-men hailing from the peaks of Death Mountain, the Gorons are a people of warriors, miners and boisterous party-goers. Hyrule's mightiest weapons are crafted by their hands, and the outcome of many wars has rested on their involvement. Their tenacity for battle is legendary and has earned them a place in the vast history of the land.",
+	"Music":[
+			{"File":"goron_theme1.ogg", "Type":"peace"},
+			{"File":"goron_ambient1.ogg", "Type":"peace"},
+			{"File":"goron_ambient2.ogg", "Type":"peace"},
+			{"File":"goron_ambient3.ogg", "Type":"peace"},
+			{"File":"goron_ambient4.ogg", "Type":"peace"},
+			{"File":"goron_ambient5.ogg", "Type":"peace"},
+			{"File":"goron_battle1.ogg", "Type":"battle"},
+			{"File":"goron_battle2.ogg", "Type":"battle"},
+			{"File":"goron_battle3.ogg", "Type":"battle"},
+			{"File":"goron_battle4.ogg", "Type":"battle"},
+			{"File":"goron_victory1.ogg", "Type":"victory"}
+		],
+
+	"Factions":
+	[
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies":
+			[
+				{
+					"Name": "Rock Sirloin, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes":
+			[
+				{
+					"Name": "Darunia, Sage of Fire",
+					"Class": "",
+					"Armament": "Megaton Hammer",
+					"Emblem": "",
+					"History": "The King of the Gorons and third in the line of Fire Sages, Darunia has lead his people for over a century through countless hardships. Be it overthrowing Volvagians, or fighting off the longest winters Death Mountain has faced, there is a distinct possibility that without his leadership, the Gorons may have gone extinct. Darunia is known for his aggressive mannerisms, though he is quite jovial and friendly to those that earn his respect. Dancing is among his favorite pastimes. and he will search far and wide across Hyrule to listen to the music of other races."
+				},
+				{
+					"Name": "Elder Daruk",
+					"Class": "",
+					"Armament": "The Boulder Breaker",
+					"Emblem": "",
+					"History": "The younger brother of Darunia, Daruk was one of the many Gorons who rebelled against the Volvagian Tyrants. Though victorious in freeing his people, Daruk was furious that his brother was named a Sage for reasons that have remained personal between the two for nearly a century. A rift grew between the two brothers, and Daruk left the Death Mountain Range and wandered into seclusion. Like his brother, Daruk is quite an excited and openly friendly person. In their youth, many a hard time telling the two apart. Age has differentiated the two brothers, and Daruk now comes across as a man who has clearly lost pride in his people."
+				},
+				{
+					"Name": "Dangoro",
+					"Class": "",
+					"Armament": "Megaton Fists",
+					"Emblem": "",
+					"History": "Raised in the mines of the Death Mountain Crater, Dangoro has seen quite a life of hardship. After saving Darunia from a Dodongo trap, he was plucked out of his duty as a miner and became a guardian brother. Dangoro may not be bright, but he is quick to recognize a threat and deal with it. He traditionally wears rather heavy armor and powerful gauntlets and is not shy of ramming into and punching his targets without abandon."
+				},
+				{
+					"Name": "Medigoron",
+					"Class": "",
+					"Armament": "Biggoron's Blade",
+					"Emblem": "",
+					"History": "The younger brother of the legendary Biggoron, Medigoron may only be about half his size, but he still is quite large even for a Goron. He lacks the creative skill of his brother, but certainly knows how to use the weapons that Biggoron creates to great effect. He has participated in perhaps more battles than any other Goron, and shows many scars from his victories. Medigoron is a warrior and a follower, known for his ability to act out and succeed. Conversely, he's not particularly bright and lacks foresight, perhaps one of the reasons he favors being a brawler."
+				}  
+			]
+		} 
+	],
+	"CivBonuses":
+	[
+		{
+			"Name": "Strength Greater than Men",
+			"History": "",
+			"Description": "Goron Miners can carry 20% more resources than other faction's worker units." 
+		},
+		{
+			"Name": "Mountain Defenders",
+			"History": "",
+			"Description": "Defensive Emplacements build 25% faster." 
+		},
+		{
+			"Name": "Protectors of the Earth",
+			"History": "",
+			"Description": "Stronghold can be built in Town Phase instead of City Phase." 
+		}  
+	],
+	"CivChoices":
+	[
+		"civ_choices/goron/choosehero_gorcoron",
+		"civ_choices/goron/choosehero_gorebizo",
+		"civ_choices/goron/choosehero_medigoron",
+		"civ_choices/goron/choosehero_daruk",
+		"civ_choices/goron/choosehero_darunia",
+		"civ_choices/goron/choosehero_dangoro"
+		
+	],
+	"TeamBonuses":
+	[
+		{
+			"Name": "Mountain Masonry",
+			"History": "",
+			"Description": "+10% Health to Allied buildings."
+		} 
+	],
+	"Structures":
+	[
+		{
+			"Name": "Wonder: Urn of Maphaeus",
+			"Class": "",
+			"Emblem": "",
+			"History": "A mysterious giant urn that seems to move and dance about of its own will. The Gorons claim that the spirit of Maphaeus, the First Sage of Fire, possesses the Urn and entices it to dance. Regardless of the source of its magical animation, the Gorons revere the urn as the greatest work of art their culture has produced. (In Aura, +25% Health - Buildings, +50% Territory Influence)",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		},
+		{
+			"Name": "Titan: Biggoron",
+			"Class": "",
+			"Emblem": "",
+			"History": "Perhaps the largest Goron in all of recorded history, Biggoron lives a mostly solitary life on the peak of Death Mountain. It is there that he spends most of his time perfecting the refinement of metals. His work has become the basis for forging some of the Goron’s most powerful weaponry and armor. Despite his name being associated with weaponry and bloodshed, Biggoron is a pacifist at heart, and creates his work for the sake of art and self-defense.",
+			"Requirements": "",
+			"Phase": "",
+			"Special": "" 
+		} 
+	],
+	"StartEntities":
+	[
+		{
+			"Template": "structures/goron/goron_civil_centre"
+		},
+		{
+			"Template": "units/goron/goron_minerA",
+			"Count": 4
+		},
+		{
+			"Template": "units/goron/goron_guardian_b",
+			"Count": 2
+		},		
+		{
+			"Template": "units/goron/goron_salamander_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/goron/goron_guardian_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Darunia, Sage of Fire",
+		"Elder Daruk",
+		"Dangoro",
+		"Medigoron"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/goron/goron_civil_centre",
+		"skirmish/units/default_support_female_citizen" : "units/goron/goron_minerA",
+		"skirmish/units/default_cavalry" :  "units/goron/goron_salamander_b",
+		"skirmish/units/default_infantry_melee_b": "units/goron/goron_minerA",
+		"skirmish/units/default_infantry_ranged_b": "units/goron/goron_minerA",
+		"skirmish/structures/default_house_10" : "structures/goron/goron_house"
+	},
+	"SelectableInGameSetup": true
+}

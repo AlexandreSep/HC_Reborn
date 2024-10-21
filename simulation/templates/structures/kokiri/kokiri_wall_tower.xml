@@ -1,0 +1,31 @@
+<Entity parent="HC_template_structure_defense_wall">
+  <Auras datatype="tokens">
+    structures/spikedwall_aura_1
+  </Auras>
+  <Footprint>
+    <Height>18.0</Height>
+    <Square depth="12.5" width="12.5" />
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_kokiri_tiny</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens" />
+    <GenericName>Kokiri Wall Tower</GenericName>
+    <History>The wooden Kokiri walls were durable enough and served them well keeping out invaders.</History>
+    <Icon>structures/kokiri/kok_wall.dds</Icon>
+    <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="9.5" width="9.5" />
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_wall_tower.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>9.5</Length>
+  </WallPiece>
+</Entity>

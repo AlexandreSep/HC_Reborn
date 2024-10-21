@@ -1,0 +1,13 @@
+{
+	"genericName": "Bwaamp!",
+	"description": "Bigger Horns allow for a louder sound, and Tubalings knew just how to send an enemy reeling with an acoustic blast.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "deku/hornling_bwaamp.dds",
+	"researchTime": 40,
+	"tooltip": "Bigger Horns allow for a louder sound, and Tubalings knew just how to send an enemy reeling with an acoustic blast. (Hornlings gain the Bwaamp! ability, allowing them to stun all enemies within their radius)",
+	"modifications": [],
+	"affects": ["Hornling"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

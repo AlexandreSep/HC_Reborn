@@ -1,0 +1,46 @@
+<Entity parent="structures/lanayru/lanayru_plot_civcenterA">
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_field</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Shrimpery to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_temple</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add an Effigy to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <stone>100</stone>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_bank</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add a Bank to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerC>
+    <TowerD>
+      <Cost>
+        <stone>100</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/lanayru/lanayru_watch_towerB</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Guard Post to this building.</Tooltip>
+      <Variant>upgrading_H</Variant>
+    </TowerD>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_plotB.xml</Actor>
+  </VisualActor>
+</Entity>

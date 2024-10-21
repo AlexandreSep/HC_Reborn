@@ -1,0 +1,15 @@
+<Entity parent="template_gaia_doodadB">
+  <Footprint>
+    <Height>9.0</Height>
+    <Square depth="5" width="50" />
+  </Footprint>
+  <Obstruction>
+    <Static depth="5.0" width="50.0" />
+  </Obstruction>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <VisualActor>
+    <Actor>structures/settle_malkariko/malka_shorewall_barrierA.xml</Actor>
+  </VisualActor>
+</Entity>

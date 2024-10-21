@@ -1,0 +1,19 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Organic"],
+	"affectedPlayers": ["Ally"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 },
+		{ "value": "Armor/Forest", "add": 10 },
+		{ "value": "Armor/Fire", "add": 10 },
+		{ "value": "Armor/Water", "add": 10 },
+		{ "value": "Armor/Spirit", "add": 10 },
+		{ "value": "Armor/Light", "add": 10 },
+		{ "value": "Armor/Shadow", "add": 10 }
+	],
+	"auraName": "Fairy's Kiss",
+	"auraDescription": "{25% Ally HP, +10 Magic Armor for Ally units)",
+	"overlayIcon": "art/textures/ui/session/auras/fairykiss_aura1.dds",
+    "requiredTechnology": "fairy/trade_fairykiss"
+}

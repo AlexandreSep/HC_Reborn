@@ -1,0 +1,19 @@
+{
+	"genericName": "Golden Armor",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 150},
+	"requirements": {"all": [{"tech": "civ_choices/gerudo/choosehero_urbosa"}, {"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Unlocked with Urbosa and the Town Phase.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+50% Magic Armor - Marauders and Tomb Guards.",
+	"modifications": [{"value": "Resistance/Entity/Damage/Forest", "add": 25},
+		{"value": "Resistance/Entity/Damage/Fire", "add": 25},
+		{"value": "Resistance/Entity/Damage/Water", "add": 25},
+		{"value": "Resistance/Entity/Damage/Spirit", "add": 25},
+		{"value": "Resistance/Entity/Damage/Light", "add": 25},
+		{"value": "Resistance/Entity/Damage/Shadow", "add": 25}],
+	"affects": ["Unit"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

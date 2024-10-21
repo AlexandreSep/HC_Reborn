@@ -1,0 +1,35 @@
+<Entity parent="structures/kokiri/kokiri_plot_civcenterA">
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_farmsteadB</Entity>
+      <Time>30</Time>
+      <Tooltip>Add a Berry Seeder to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_publichanging</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Add Public Hangings to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <wood>60</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_house</Entity>
+      <Time>20</Time>
+      <Tooltip>Add a Community Home to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerC>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_plotA.xml</Actor>
+  </VisualActor>
+</Entity>

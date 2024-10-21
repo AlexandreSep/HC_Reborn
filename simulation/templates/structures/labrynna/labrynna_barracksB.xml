@@ -1,0 +1,37 @@
+<Entity parent="structures/labrynna/labrynna_barracks">
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <GenericName>Academy</GenericName>
+    <History>Labrynna&#8217;s soldiers are academically trained before being thrown into the field of battle. The result has given individual soldiers in the Regime&#8217;s government run military a sense of tactics and strategy not found in other foreign powers.</History>
+    <Icon>structures/labrynna/lab_barracksB.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/labrynna/{civ}_talusknight_b
+      units/labrynna/{civ}_lynnapike_b
+    </Entities>
+    <Technologies datatype="tokens">
+    labrynna/talusknight_eagledrill
+    labrynna/lynnapike_pikemasters
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_barracksC</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Upgrade Academy into Wat Institute.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_barracksB.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,16 @@
+<Entity parent="structures/stalfos/stalfos_civil_centre">
+  <Identity>
+    <GenericName>Tomb</GenericName>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_civic_centreB_anc.xml</Actor>
+  </VisualActor>
+  <Identity>
+    <Icon>structures/stalfos/sta_cc_ancB.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+		stalfos/stalfos_gettomb
+    </Technologies>
+  </ProductionQueue>  
+</Entity>

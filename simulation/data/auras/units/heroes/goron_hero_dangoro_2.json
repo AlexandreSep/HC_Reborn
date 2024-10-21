@@ -1,0 +1,10 @@
+{
+	"type": "formation",
+	"affects": ["Siege"],
+	"modifications": [{ "value": "Attack/Melee/Hack", "multiply": 1.25 },
+		{ "value": "Attack/Ranged/Pierce", "multiply": 1.25 },
+		{ "value": "Attack/Ranged/Crush", "multiply": 1.25 }],
+	"auraName": "Wrecker",
+	"auraDescription": "(In Formation, +25% Melee and Ranged Attack - Siege)",
+	"overlayIcon": "art/textures/ui/session/auras/dangoro_wrecker.dds"
+}

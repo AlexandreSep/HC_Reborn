@@ -1,0 +1,205 @@
+<Entity parent="HC_template_structure_plot">
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>8.0</Height>
+    <Square depth="41.0" width="41.0" />
+  </Footprint>
+  <Health>
+    <Max>750</Max>
+    <SpawnEntityOnDeath>rubble/debris_deku_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <GenericName>Construction Plot</GenericName>
+    <History>Construct Deku Buildings on this space.</History>
+    <Icon>structures/deku/dek_plot.dds</Icon>
+    <Tooltip>Construct Deku Buildings on this space.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5" />
+  </Obstruction>
+  <Plots>
+    <IsPlot>true</IsPlot>
+  </Plots>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <wood>75</wood>
+      </Cost>
+      <Entity>structures/deku/deku_expander</Entity>
+      <Time>30</Time>
+      <Tooltip>Build Crossroads District on this plot.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerA>
+    <TowerB>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/deku/deku_house</Entity>
+      <Time>30</Time>
+      <Tooltip>Build Slums on this plot.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerB>
+    <TowerC>
+      <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/deku/deku_storehouse</Entity>
+      <Time>45</Time>
+      <Tooltip>Build a Supply Store on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerC>
+    <TowerD>
+      <Cost>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/deku/deku_field</Entity>
+      <Time>45</Time>
+      <Tooltip>Build a Nut Lawn on this plot.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerD>
+    <TowerE>
+      <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_market</Entity>
+      <Time>45</Time>
+      <Tooltip>Build a Deku Mart on this plot.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerE>
+    <TowerF>
+      <Cost>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/deku/deku_farmstead</Entity>
+      <Time>45</Time>
+      <Tooltip>Build a Meganut Tree on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerF>
+    <TowerG>
+      <Cost>
+        <wood>400</wood>
+      </Cost>
+      <Entity>structures/deku/deku_mercs</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Boiling Cauldron on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerG>
+    <TowerH>
+      <Cost>
+        <metal>200</metal>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/deku/deku_stage</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Stage on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerH>
+    <TowerI>
+      <Cost>
+        <metal>200</metal>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_basin</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Cleansing Basin on this plot.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerI>
+    <TowerJ>
+      <Cost>
+        <wood>350</wood>
+      </Cost>
+      <Entity>structures/deku/deku_barracks</Entity>
+      <Time>60</Time>
+      <Tooltip>Build a Mustering Base on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerJ>
+    <TowerL>
+      <Cost>
+        <wood>400</wood>
+      </Cost>
+      <Entity>structures/deku/deku_stables</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Beetle Barn on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerL>
+    <TowerM>
+      <Cost>
+        <wood>400</wood>
+      </Cost>
+      <Entity>structures/deku/deku_stablesB</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Menagerie on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerM>
+    <TowerN>
+      <Cost>
+        <metal>100</metal>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_greenhouse</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Greenhouse on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerN>
+    <TowerO>
+      <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_blacksmith</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Loggery on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerO>
+    <TowerP>
+      <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_blacksmithB</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Nut Carver on this plot.</Tooltip>
+      <Variant>upgrading_short</Variant>
+    </TowerP>
+    <TowerQ>
+      <Cost>
+        <stone>300</stone>
+        <wood>400</wood>
+      </Cost>
+      <Entity>structures/deku/deku_fortress</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Blockhouse on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerQ>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/deku/deku_plotA.xml</Actor>
+  </VisualActor>
+</Entity>

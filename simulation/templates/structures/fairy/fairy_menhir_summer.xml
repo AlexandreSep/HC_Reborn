@@ -1,0 +1,14 @@
+<Entity parent="structures/fairy/fairy_storehouse">
+  <Identity>
+    <Classes datatype="tokens">Summer</Classes>
+    <Icon>structures/fairy/fai_menhir_summer.dds</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>structures/fairy/fairy_menhir_autumn</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_menhirA_summer.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonB_summer.xml</FoundationActor>
+  </VisualActor>
+</Entity>

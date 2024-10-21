@@ -1,0 +1,14 @@
+{
+	"genericName": "Tourney Bets",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/tourney_bets.dds",
+	"researchTime": 40,
+	"tooltip": "Rupee bets from the Tourney can be put to good use in funding the training of new Cavalry. (-15% Food and Ore (Metal) - Cavalry)",
+	"modifications": [{ "value": "Cost/Resources/food", "multiply": 0.85 },
+	{ "value": "Cost/Resources/stone", "multiply": 0.85 }],
+	"affects": ["Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

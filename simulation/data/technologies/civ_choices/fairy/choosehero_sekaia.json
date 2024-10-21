@@ -1,0 +1,11 @@
+{
+	"genericName": "Sekaia, Fairy of Winds",
+	"description": "Sekaia, Fairy of Winds",
+	"icon": "fairy/choosehero_sekaia.png",
+	"tooltip": "Select Sekaia, Fairy of Winds, as your hero of choice.",
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Speed Focus", "tooltipText": "Sekaia focuses on improving the speed of Fairies in various ways."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Sekaia", "tooltipText": "Allows you to summon Sekaia, a Mage hero that summons the winds."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Gale Boomerang", "tooltipText": "Hovering unit that attacks groups of enemies with Melee Splash Damage."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Seasonal Winds", "tooltipText": "Time to change Seasons reduced by 10%."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Year-round Winds", "tooltipText": "Improves the movement speed of all Fairy units."}]
+}

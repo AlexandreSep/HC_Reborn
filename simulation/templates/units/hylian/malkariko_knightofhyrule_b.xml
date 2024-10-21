@@ -1,0 +1,8 @@
+<Entity parent="units/hylian/hylian_knightofhyrule_b">
+  <Identity>
+    <SpecificName>Knight of Malkariko</SpecificName>
+  </Identity>
+  <VisualActor>
+    <Actor>units/hylian/malkariko/malkariko_knightofhyrule_b.xml</Actor>
+  </VisualActor>
+</Entity>

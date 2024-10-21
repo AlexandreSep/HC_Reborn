@@ -1,0 +1,13 @@
+{
+	"genericName": "Emerald Garrison",
+	"description": "A permanent garrison of Emerald Archers are stationed at all Kokiri Defensive structures.",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [ {"tech": "phase_town"}, {"civ": "kokiri"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "kokiri/building_emeraldgar.dds",
+	"researchTime": 40,
+	"tooltip": "A permanent garrison of Emerald Archers are stationed at all Kokiri Defensive structures. Watchwowers, Mudman Towers, and Safeholds now attack with arrows instead of slingshots. (+5 Arrow Count)",
+	"modifications": [{ "value": "BuildingAI/DefaultArrowCount", "add": 5.0}],
+	"affects": ["Defense"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

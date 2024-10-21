@@ -1,0 +1,25 @@
+<Entity parent="structures/labrynna/labrynna_barracksB">
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <GenericName>War Institute</GenericName>
+    <History>Labrynna&#8217;s generational leap in military technology required the advance of education and tactics to grow with that advance. These War Institutes could train and produce some of the best military minds to lead the Empire's armies.</History>
+    <Icon>structures/labrynna/lab_barracksC.dds</Icon>
+  </Identity>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/labrynna/{civ}_brigada_b
+      units/labrynna/{civ}_campeador_b
+    </Entities>
+    <Technologies datatype="tokens">
+    labrynna/brigada_emergencykit
+    </Technologies>
+  </ProductionQueue>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_barracksC.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,13 @@
+<Entity parent="units/deku_trader_b">
+  <Identity>
+    <Classes datatype="tokens">Flying</Classes>
+  </Identity>
+  <Promotion disable="" />
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/deku/deku_businessscrub_holder.xml</Actor>
+  </VisualActor>
+</Entity>

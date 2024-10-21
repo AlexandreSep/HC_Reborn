@@ -1,0 +1,46 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Category>House</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>5.0</Height>
+    <Square depth="25.0" width="25.0" />
+  </Footprint>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_ordona_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Village</Classes>
+    <GenericName>Serf Stead</GenericName>
+    <History>Ordonian homes were simple and to the point, with enough room to house a couple and a half dozen children.</History>
+    <Icon>structures/ordona/ord_serfstead.dds</Icon>
+    <Tooltip>Housing that allows you to field larger armies.</Tooltip>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>25</Bonus>
+  </Population>
+  <ProductionQueue>
+    <Technologies datatype="tokens">
+    ordona/serfstead_guestroom
+    </Technologies>
+  </ProductionQueue>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_houseA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+</Entity>

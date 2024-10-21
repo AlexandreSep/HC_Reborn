@@ -1,0 +1,13 @@
+{
+	"genericName": "Royal Jelly",
+	"description": "In limited fashion the Gohma could repurpose the fluids used in larva growth to help heal damaged flesh. Royal Larva could naturally create and carry this fluid to regenerate themselves should they be harmed in a fight.",
+	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "gohma/larva_royaljelly.dds",
+	"researchTime": 40,
+	"tooltip": "In limited fashion the Gohma could repurpose the fluids used in larva growth to help heal damaged flesh. Royal Larva could naturally create and carry this fluid to regenerate themselves should they be harmed in a fight. (Royal Larva now regenerate HP when not in combat)",
+	"modifications": [{ "value": "Health/IdleRegenRate", "add": 1 }],
+	"affects": ["LarvaRoyal"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

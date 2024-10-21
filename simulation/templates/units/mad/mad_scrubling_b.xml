@@ -1,0 +1,23 @@
+<Entity parent="units/deku/deku_scrubling_b">
+  <Health>
+    <Max>37</Max>
+    <RegenRate>-1</RegenRate>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">MadScrub</Classes>
+  </Identity>
+  <UnitAI>
+    <DefaultStance>aggressive</DefaultStance>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+    <RoamDistance>12.0</RoamDistance>
+    <FleeDistance>5000.0</FleeDistance>
+    <RoamTimeMin>5000</RoamTimeMin>
+    <RoamTimeMax>12000</RoamTimeMax>
+    <FeedTimeMin>500</FeedTimeMin>
+    <FeedTimeMax>1000</FeedTimeMax>
+  </UnitAI>
+  <VisualActor>
+    <Actor>units/mad/deku_scrubling_b.xml</Actor>
+  </VisualActor>
+</Entity>

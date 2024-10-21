@@ -1,0 +1,147 @@
+<Entity parent="template_structure">
+  <AlertRaiser>
+    <EndOfAlertRange>190</EndOfAlertRange>
+    <List datatype="tokens">Worker</List>
+    <RaiseAlertRange>140</RaiseAlertRange>
+    <SearchRange>100</SearchRange>
+  </AlertRaiser>
+  <Attack>
+    <Ranged>
+      <AttackName>TBD.</AttackName>
+      <Damage>
+        <Pierce>12.0</Pierce>
+      </Damage>
+      <Delay>0</Delay>
+      <MaxRange>90.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+		<FriendlyFire>false</FriendlyFire>
+		<LaunchPoint y="3"/>
+      </Projectile>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.175</LineThickness>
+      </RangeOverlay>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <BuildRestrictions>
+    <Category>CivilCentre</Category>
+    <Distance>
+      <FromClass>CivilCentre</FromClass>
+      <MinDistance>200</MinDistance>
+    </Distance>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <BuildingAI>
+    <DefaultArrowCount>10</DefaultArrowCount>
+    <GarrisonArrowClasses>Soldier</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Capturable disable="" />
+  <Cost>
+    <BuildTime>510</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>500</metal>
+      <stone>500</stone>
+      <wood>500</wood>
+    </Resources>
+	<BattalionSlots>0</BattalionSlots>
+  </Cost>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Medium Small LargeGarrison</List>
+    <LoadingRange>1</LoadingRange>
+    <Max>20</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">CivilCentre Construct</Classes>
+    <GenericName>Civic Center</GenericName>
+    <Icon>structures/civic_centre.png</Icon>
+    <Tooltip>Build to acquire large tracts of territory. Train Workers.</Tooltip>
+    <VisibleClasses datatype="tokens" />
+  </Identity>
+  <Loot>
+    <food>0</food>
+    <metal>200</metal>
+    <stone>200</stone>
+    <wood>200</wood>
+    <xp>200</xp>
+  </Loot>
+  <Obstruction>
+    <Static depth="30.0" width="30.0" />
+  </Obstruction>
+  <Population>
+    <Bonus>20</Bonus>
+  </Population>
+  <ProductionQueue>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Technologies datatype="tokens">
+</Technologies>
+  </ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>5.0</Crush>
+        <Hack>70.0</Hack>
+        <Pierce>85.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>3</Crush>
+        <Hack>5</Hack>
+        <Pierce>15</Pierce>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <alert0>interface/alarm/alarm_alert_0.xml</alert0>
+      <alert1>interface/alarm/alarm_alert_1.xml</alert1>
+      <alert2>interface/alarm/alarm_alert_2.xml</alert2>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_civ_center.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_civ_center.xml</select>
+      <upgraded>interface/complete/building/complete_civ_center.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>175</Radius>
+    <Root>true</Root>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

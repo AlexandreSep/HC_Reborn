@@ -1,0 +1,11 @@
+<Entity parent="template_gaia_tree">
+  <Identity>
+    <GenericName>Wood</GenericName>
+    <History />
+    <SpecificName>Domain Poplar</SpecificName>
+    <Tooltip>A stately tree that grows along the banks of the Zora River, while often ignored by the Zora, it is sought after by other cultures as a luxurious and strong type of wood.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <Actor>flora/trees/poplar.xml</Actor>
+  </VisualActor>
+</Entity>

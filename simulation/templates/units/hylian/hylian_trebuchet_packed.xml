@@ -1,0 +1,13 @@
+<Entity parent="units/hylian/hylian_trebuchet_common">
+  <Identity>
+    <Icon>units/hylian/hyl_trebuchet.dds</Icon>
+  </Identity>
+  <Pack>
+    <Entity>units/hylian/hylian_trebuchet_unpacked</Entity>
+    <State>packed</State>
+    <Time>7000</Time>
+  </Pack>
+  <VisualActor>
+    <Actor>units/hylian/hylian_trebuchet_packed.xml</Actor>
+  </VisualActor>
+</Entity>
