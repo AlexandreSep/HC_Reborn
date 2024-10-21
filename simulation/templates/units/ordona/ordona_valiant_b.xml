@@ -67,4 +67,10 @@
   <VisualActor>
     <Actor>units/ordona/ordona_ruslknight_b.xml</Actor>
   </VisualActor>
+  <Visibility>
+  <Camouflage>
+     <ActivateDelay>3000</ActivateDelay>
+     <PostDelay>3000</PostDelay>
+  </Camouflage>
+  </Visibility>  
 </Entity>
