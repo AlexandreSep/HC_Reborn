@@ -1,5 +1,0 @@
-<variant name="attack_capture">
-  <animations>
-    <animation file="HC_gorongiant/gorongiant_capture.dae" name="Idle" id="idle3" speed="50"/>
-  </animations>
-</variant>

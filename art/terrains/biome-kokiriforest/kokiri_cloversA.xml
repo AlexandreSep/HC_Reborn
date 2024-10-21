@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<terrain>
-	<textures>
-		<texture name="baseTex" file="types/kokiri_cloversA.dds"/>
-		<texture name="normTex" file="types/kokiri_cloversA_normal.dds"/>
-	</textures>
-	<material>terrain_norm.xml</material>
-</terrain>

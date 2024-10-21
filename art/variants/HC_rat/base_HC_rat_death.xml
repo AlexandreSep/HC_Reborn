@@ -1,6 +1,0 @@
-<variant name="Death">
-  <animations>
-	<animation file="HC_rat/rat_deathA.dae" name="Death" speed="90"/>
-	<animation file="HC_rat/rat_deathB.dae" name="Death" speed="90"/>
-  </animations>
-</variant>

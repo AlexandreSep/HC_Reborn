@@ -1,5 +1,0 @@
-<variant name="carry_food_idle">
-  <animations>
-	<animation file="HC_archer/biped_hum_arch_carry_idle.dae" name="carry_food_idle" speed="20"/>
-  </animations>
-</variant>

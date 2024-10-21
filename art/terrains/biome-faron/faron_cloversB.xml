@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<terrain>
-	<textures>
-		<texture name="baseTex" file="types/faron_cloversB.dds"/>
-		<texture name="normTex" file="types/faron_cloversB_normal.dds"/>
-	</textures>
-	<material>terrain_norm.xml</material>
-</terrain>

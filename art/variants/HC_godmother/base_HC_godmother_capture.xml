@@ -1,5 +1,0 @@
-<variant name="attack_capture">
-  <animations>
-    <animation file="HC_godmother/godmother_capture.dae" name="Idle" id="idle3" speed="121"/>
-  </animations>
-</variant>

@@ -1,8 +1,0 @@
-<variant name="attack_slaughter">
-  <animations>
-	<animation event="0.5" file="HC_shrunkfairy/shrunkfairy_attack_magicA.dae" name="Attack_slaughter" speed="100"/>
-  </animations>
-  <props>
-	<prop attachpoint="L_weapon"/>
-  </props>
-</variant>

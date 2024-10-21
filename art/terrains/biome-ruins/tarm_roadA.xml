@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<terrain>
-	<textures>
-		<texture name="baseTex" file="types/tarm_roadA.dds"/>
-		<texture name="normTex" file="types/tarm_roadA_normal.dds"/>
-		<texture name="specTex" file="types/tarm_roadA_spec.dds"/>
-	</textures>
-	<material>terrain_norm_spec.xml</material>
-</terrain>

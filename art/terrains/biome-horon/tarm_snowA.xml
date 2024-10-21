@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<terrain>
-	<textures>
-		<texture name="baseTex" file="types/tarm_snowA.dds"/>
-		<texture name="normTex" file="types/tarm_grassA_normal.dds"/>
-	</textures>
-	<material>terrain_norm.xml</material>
-</terrain>

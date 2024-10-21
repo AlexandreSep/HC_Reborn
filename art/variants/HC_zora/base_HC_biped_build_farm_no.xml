@@ -1,5 +1,0 @@
-<variant name="Build_farm">
-  <animations>
-	<animation event="0.5" file="HC_zora/zora_build.dae" name="Build_farm" speed="100"/>
-  </animations>
-</variant>

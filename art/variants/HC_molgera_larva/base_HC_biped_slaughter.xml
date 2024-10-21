@@ -1,9 +1,0 @@
-<variant name="attack_slaughter">
-  <animations>
-	<animation event="0.5" file="HC_molgera_larva/molgera_larva_attackA.dae" name="attack_slaughter" speed="100"/>
-  </animations>
-  <props>
-	<prop attachpoint="R_weapon"/>
-	<prop attachpoint="L_weapon"/>
-  </props>
-</variant>

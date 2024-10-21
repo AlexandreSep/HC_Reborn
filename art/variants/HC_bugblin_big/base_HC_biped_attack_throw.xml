@@ -1,5 +1,0 @@
-<variant name="attack_ranged">
-  <animations>
-    <animation event="0.50" file="HC_bugblin_big/bugblin_attack_throwA.dae" load="0.45" name="attack_ranged" speed="100"/>
-  </animations>
-</variant>

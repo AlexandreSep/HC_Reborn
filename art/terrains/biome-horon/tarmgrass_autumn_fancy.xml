@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<terrain>
-        <textures>
-                <texture name="baseTex" file="types/tarmgrass_autumn_fancy.dds"/>
-        </textures>
-        <material>terrain_grass.xml</material>
-</terrain>
