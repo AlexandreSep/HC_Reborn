@@ -3,7 +3,7 @@
     units/deacon_chant_1
   </Auras>
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>25</food>
       <metal>30</metal>

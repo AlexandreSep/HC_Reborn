@@ -21,7 +21,7 @@
     units/commander_aura_1
   </Auras>
   <Cost>
-    <BuildTime>25</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>60</food>
       <metal>20</metal>

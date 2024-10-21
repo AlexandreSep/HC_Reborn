@@ -35,7 +35,7 @@
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>70</BuildTime>
+    <BuildTime>45</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>

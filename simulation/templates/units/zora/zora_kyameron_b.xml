@@ -23,7 +23,7 @@
     <Territory>own neutral enemy</Territory>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>50</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>20</food>
       <metal>0</metal>

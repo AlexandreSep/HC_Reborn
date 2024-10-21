@@ -16,7 +16,7 @@
     units/shocktroop_aura_1
   </Auras>
   <Cost>
-    <BuildTime>50</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>65</food>
       <metal>0</metal>

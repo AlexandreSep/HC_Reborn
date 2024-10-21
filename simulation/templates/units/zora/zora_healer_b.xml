@@ -3,7 +3,7 @@
     units/healer_warpair_1
   </Auras>
   <Cost>
-    <BuildTime>35</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>48</food>
       <metal>10</metal>

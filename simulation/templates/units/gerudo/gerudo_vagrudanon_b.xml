@@ -12,7 +12,7 @@
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>40</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>75</food>
       <metal>0</metal>

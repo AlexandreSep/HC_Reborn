@@ -35,7 +35,7 @@
   </Builder>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
-    <BuildTime>30</BuildTime>
+    <BuildTime>8</BuildTime>
     <Resources>
       <food>50</food>
       <metal>0</metal>

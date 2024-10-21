@@ -1,7 +1,7 @@
 <Entity parent="HC_template_unit_cavalry">
   <Cost>
     <BattalionSlots>3</BattalionSlots>
-    <BuildTime>45</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
       <food>40</food>
       <metal>0</metal>
