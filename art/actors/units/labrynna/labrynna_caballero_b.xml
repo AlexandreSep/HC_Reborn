@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_bearA.xml">
+      <mesh>units/labrynna/lab_bluebearA.dae</mesh>
+	  <textures><texture file="skeletal/wild/wild_bluebearA.dds" name="baseTex"/></textures>
+      <props>
+        <prop actor="units/labrynna/labrynna_riderA.xml" attachpoint="rider_01"/>
+		<prop actor="props/units/outfits/labrynna_bearsaddleA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="Run">
+      <props>
+		<prop actor="props/units/outfits/labrynna_bearsaddleA.xml" attachpoint="root"/>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant file="HC_mounts/base_HC_bearA_death.xml">
+      <props>
+		<prop actor="props/units/outfits/labrynna_bearsaddleA.xml" attachpoint="root"/>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

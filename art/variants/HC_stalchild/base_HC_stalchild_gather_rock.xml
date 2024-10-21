@@ -1,0 +1,9 @@
+<variant name="gather_rock">
+  <animations>
+    <animation file="HC_stalchild/stalchild_digA.dae" name="gather_rock" speed="100"/>
+  </animations>
+  <props>
+	<prop attachpoint="projectile"/>
+	<prop attachpoint="projectile"/>
+  </props>
+</variant>

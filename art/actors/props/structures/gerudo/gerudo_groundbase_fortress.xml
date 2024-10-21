@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <group>
+    <variant name="decal_dirt_small">
+      <decal angle="0" depth="113" offsetx="-3" offsetz="0" width="113"/>
+      <textures>
+        <texture file="props/gerudo/ger_groundbaseB.dds" name="baseTex"/>
+        <texture file="props/gerudo/ger_groundbaseB_normal.dds" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>terrain_norm.xml</material>
+</actor>

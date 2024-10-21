@@ -1,0 +1,9 @@
+<variant name="Build_farm">
+  <animations>
+	<animation event="0.5" file="HC_darknut_large/darknut_large_build.dae" name="Build_farm" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_mallet.xml" attachpoint="R_weapon"/>
+    <prop attachpoint="R_weapon"/>
+  </props>
+</variant>

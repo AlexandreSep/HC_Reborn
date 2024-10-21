@@ -1,0 +1,5 @@
+<variant name="carry_food_idle">
+  <animations>
+	<animation file="HC_kokiri/kokiri_minute_walk.dae" name="carry_food_idle" speed="20"/>
+  </animations>
+</variant>

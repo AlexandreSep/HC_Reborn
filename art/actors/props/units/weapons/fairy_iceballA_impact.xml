@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="rock">
+      <mesh>props/weapon/fairy_iceshardsA_impact.dae</mesh>
+	  <props>
+		<prop actor="particle/gale_leaves_winterA.xml" attachpoint="root"/>
+		<prop actor="structures/misc/ice_patchA.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/fairy/fai_iceballA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Main">
+      <animations>
+        <animation file="HC_deer/deer_idle.dae" name="Idle" speed="70"/>
+        <animation file="HC_deer/deer_idleA.dae" name="Idle" speed="70"/>
+        <animation file="HC_deer/deer_idleB.dae" name="Idle" speed="70"/>
+		<animation event="0.5" file="HC_deer/deer_attackA.dae" name="attack_melee" speed="120"/>
+        <animation file="HC_deer/deer_walk.dae" name="Walk" speed="20"/>
+        <animation file="HC_deer/deer_run.dae" name="Run" speed="10"/>
+        <animation file="HC_deer/deer_deathA.dae" name="Death" speed="90"/>
+		<animation file="HC_deer/deer_flailA.dae" name="Flail" id="flail1" speed="8"/>
+		<animation file="HC_deer/deer_recoverA.dae" name="Recover" id="recover1" speed="8"/>
+      </animations>
+      <mesh>units/wild/wild_kokiridoeA.dae</mesh>
+      <textures>
+        <texture file="skeletal/kokiri/kok_deerA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

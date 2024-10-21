@@ -1,0 +1,6 @@
+<variant name="Death">
+  <animations>
+	<animation file="HC_ganon/ganon_deathA.dae" name="Death" id="death1" speed="60"/>
+	<animation file="HC_ganon/ganon_deathA.dae" name="Death" id="death2" speed="60"/>
+  </animations>
+</variant>

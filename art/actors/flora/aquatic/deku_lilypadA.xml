@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="lilypad-a">
+      <mesh>gaia/flora/flora_dekulilypadA.dae</mesh>
+    </variant>
+	
+    <variant frequency="1" name="lilypad-b">
+      <mesh>gaia/flora/flora_dekulilypadB.dae</mesh>
+    </variant>
+  </group>	
+	
+  <group>
+    <variant name="lily-texture">
+      <textures><texture file="gaia/flora/deku_lilypadA.dds" name="baseTex"/></textures>
+    </variant>
+  </group> 
+
+  <material>basic_trans.xml</material>
+</actor>

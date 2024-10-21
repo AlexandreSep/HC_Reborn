@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="wall A">
+      <mesh>structural/zora/zor_gatehouseA.dae</mesh>
+      <textures>
+	    <texture file="structural/zora/zora_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/zora/zora_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/zora/zora_gatehouse_ao.dds" name="aoTex"/>
+	  </textures>
+      <props>
+          <prop actor="props/structures/zora/zora_gateA.xml" attachpoint="root"/>
+      </props>	  
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+   <material>basic_trans_ao.xml</material>
+</actor>

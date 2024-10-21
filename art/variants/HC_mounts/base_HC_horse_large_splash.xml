@@ -1,0 +1,5 @@
+<variant name="attack_ranged">
+  <animations>
+        <animation file="HC_horse_large/horse_large_attack.dae" name="attack_ranged" speed="100"/>
+  </animations>
+</variant>

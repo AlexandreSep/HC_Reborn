@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_ambi/base_HC_ambi_sword.xml">
+      <mesh>props/weapon/labrynna_ambiswordA.dae</mesh>
+      <props>
+      </props>
+      <textures><texture file="skeletal/labrynna/lab_mainA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_ambi/base_HC_ambi_capture.xml"/>
+    <variant file="HC_ambi/base_HC_ambi_slaughter.xml"/>
+    <variant file="HC_ambi/base_HC_ambi_death.xml">
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

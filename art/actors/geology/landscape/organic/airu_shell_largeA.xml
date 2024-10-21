@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant>
+	<mesh>gaia/landscape/organic/airu_shell_largeA.dae</mesh>
+	  <props>
+        <prop actor="props/structures/gaia/airu_shellgroundA.xml" attachpoint="root"/>
+      </props> 
+    </variant>
+  </group>
+
+  <group>
+    <variant frequency="1" name="shell_red">
+      <textures><texture file="gaia/organic/airu_largeshellA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="shell_tan">
+      <textures><texture file="gaia/organic/airu_largeshellB.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="shell_white">
+      <textures><texture file="gaia/organic/airu_largeshellC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+
+
+</actor>

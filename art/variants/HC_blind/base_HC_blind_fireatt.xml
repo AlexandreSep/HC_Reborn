@@ -1,0 +1,9 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.55" file="HC_blind/blind_attack_ranged.dae" load="0.01" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+		<prop actor="particle/flame_goronA.xml" attachpoint="projectile"/>
+		<prop actor="particle/flame_goronA.xml" attachpoint="loaded-projectile"/>
+  </props>
+</variant>

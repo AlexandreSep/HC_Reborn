@@ -1,0 +1,83 @@
+<skeletons>
+<standard_skeleton id="bouldershot_skeleton" title="bouldershot_skeleton">
+<bone name="bouldershot_base">
+<bone name="bone_plant">
+<bone name="bone_axel">
+<bone name="bone_frame">
+<bone name="bone_sling">
+<bone name="bone_Lslinger">
+</bone>
+<bone name="bone_Rslinger">
+</bone>
+<bone name="projectile">
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="bone_loader">
+<bone name="bone_crank">
+</bone>
+<bone name="bone_ties">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lwheel_01">
+<bone name="bone_Lwheel_02">
+</bone>
+</bone>
+<bone name="bone_Rwheel_01">
+<bone name="bone_Rwheel_02">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_L_pusher">
+</bone>
+<bone name="bone_R_pusher">
+</bone>
+<bone name="bone_B_pusher">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="bouldershot_skeleton" title="bouldershot_skeleton">
+<identifier><root>bouldershot_base</root></identifier>
+<bone name="bouldershot_base"><target>bouldershot_base</target>
+<bone name="bone_plant"><target>bone_plant</target>
+<bone name="bone_axel"><target>bone_axel</target>
+<bone name="bone_frame"><target>bone_frame</target>
+<bone name="bone_sling"><target>bone_sling</target>
+<bone name="bone_Lslinger"><target>bone_Lslinger</target>
+</bone>
+<bone name="bone_Rslinger"><target>bone_Rslinger</target>
+</bone>
+<bone name="projectile"><target>projectile</target>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="bone_loader"><target>bone_loader</target>
+<bone name="bone_crank"><target>bone_crank</target>
+</bone>
+<bone name="bone_ties"><target>bone_ties</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lwheel_01"><target>bone_Lwheel_01</target>
+<bone name="bone_Lwheel_02"><target>bone_Lwheel_02</target>
+</bone>
+</bone>
+<bone name="bone_Rwheel_01"><target>bone_Rwheel_01</target>
+<bone name="bone_Rwheel_02"><target>bone_Rwheel_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_L_pusher"><target>bone_L_pusher</target>
+</bone>
+<bone name="bone_R_pusher"><target>bone_R_pusher</target>
+</bone>
+<bone name="bone_B_pusher"><target>bone_B_pusher</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

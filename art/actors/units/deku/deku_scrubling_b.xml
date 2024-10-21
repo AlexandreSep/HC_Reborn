@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_dekuscrubB/base_HC_biped_scrub.xml"> 
+	  <mesh>units/deku/dek_scrublingA.dae</mesh>
+      <textures>
+        <texture file="skeletal/deku/dek_mainA.dds" name="baseTex"/>
+      </textures>
+	  <props>
+		<prop actor="units/deku/deku_scrubling_top.xml" attachpoint="root"/>
+		<prop actor="props/units/weapons/deku_nutA_shoot.xml" attachpoint="projectile"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_dekuscrubB/base_HC_biped_attack_seed.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_capture.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_slaughter.xml"/>
+	<variant file="HC_dekuscrubB/base_HC_biped_gather_tree.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_gather_grain.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_gather_fruit.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_gather_meat.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_gather_rock.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_gather_ore.xml"/>
+	<variant file="HC_dekuscrubB/base_HC_biped_gather_rupees.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_gather_ruins.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_gather_praise.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_build.xml"/>
+    <variant file="HC_dekuscrubB/base_HC_biped_death.xml">
+      <props>
+		<prop actor="units/deku/deku_scrubling_top.xml" attachpoint="root"/>
+        <prop actor="props/units/blood_sap_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

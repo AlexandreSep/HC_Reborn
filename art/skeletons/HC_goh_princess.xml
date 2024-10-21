@@ -1,0 +1,115 @@
+<skeletons>
+<standard_skeleton id="gohprincess_skel" title="gohprincess_skel">
+<bone name="goh_princess_base">
+<bone name="ass_01">
+<bone name="ass_02">
+</bone>
+</bone>
+<bone name="L_F_leg_01">
+<bone name="L_F_leg_02">
+<bone name="L_F_leg_03">
+<bone name="L_F_leg_04">
+<bone name="L_F_leg_05">
+<bone name="L_F_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01">
+<bone name="L_B_leg_02">
+<bone name="L_B_leg_03">
+<bone name="L_B_leg_04">
+<bone name="L_B_leg_05">
+<bone name="L_B_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg_01">
+<bone name="R_F_leg_02">
+<bone name="R_F_leg_03">
+<bone name="R_F_leg_04">
+<bone name="R_F_leg_05">
+<bone name="R_F_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01">
+<bone name="R_B_leg_02">
+<bone name="R_B_leg_03">
+<bone name="R_B_leg_04">
+<bone name="R_B_leg_05">
+<bone name="R_B_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="gohprincess_skel" title="gohprincess_skel">
+<identifier><root>goh_princess_base</root></identifier>
+<bone name="goh_princess_base"><target>goh_princess_base</target>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+</bone>
+</bone>
+<bone name="L_F_leg_01"><target>L_F_leg_01</target>
+<bone name="L_F_leg_02"><target>L_F_leg_02</target>
+<bone name="L_F_leg_03"><target>L_F_leg_03</target>
+<bone name="L_F_leg_04"><target>L_F_leg_04</target>
+<bone name="L_F_leg_05"><target>L_F_leg_05</target>
+<bone name="L_F_leg_06"><target>L_F_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01"><target>L_B_leg_01</target>
+<bone name="L_B_leg_02"><target>L_B_leg_02</target>
+<bone name="L_B_leg_03"><target>L_B_leg_03</target>
+<bone name="L_B_leg_04"><target>L_B_leg_04</target>
+<bone name="L_B_leg_05"><target>L_B_leg_05</target>
+<bone name="L_B_leg_06"><target>L_B_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg_01"><target>R_F_leg_01</target>
+<bone name="R_F_leg_02"><target>R_F_leg_02</target>
+<bone name="R_F_leg_03"><target>R_F_leg_03</target>
+<bone name="R_F_leg_04"><target>R_F_leg_04</target>
+<bone name="R_F_leg_05"><target>R_F_leg_05</target>
+<bone name="R_F_leg_06"><target>R_F_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01"><target>R_B_leg_01</target>
+<bone name="R_B_leg_02"><target>R_B_leg_02</target>
+<bone name="R_B_leg_03"><target>R_B_leg_03</target>
+<bone name="R_B_leg_04"><target>R_B_leg_04</target>
+<bone name="R_B_leg_05"><target>R_B_leg_05</target>
+<bone name="R_B_leg_06"><target>R_B_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

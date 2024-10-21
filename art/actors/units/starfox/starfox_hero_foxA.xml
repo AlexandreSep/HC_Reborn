@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="SF_foxA/base_SF_foxA_blaster.xml">
+      <mesh>units/starfox/sf_foxA.dae</mesh>
+      <props>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+      <textures><texture file="skeletal/starfox/sf_foxA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="SF_foxA/base_SF_foxA_capture.xml"/>
+	<variant file="SF_foxA/base_SF_foxA_attackrange.xml">
+	  <props>
+      </props>
+	</variant>
+    <variant file="SF_foxA/base_SF_foxA_death.xml">
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Vaati's Super Cool Tornado">
+      <animations>
+        <animation file="HC_tornado/tornado_spinA.dae" name="Idle" speed="100"/>
+		<animation file="HC_tornado/tornado_spinA.dae" name="Walk" speed="100"/>
+		<animation file="HC_tornado/tornado_spinA.dae" name="Run" speed="100"/>
+		<animation file="HC_tornado/tornado_spinA.dae" name="Attack_Ranged" speed="100"/>
+		<animation file="HC_tornado/tornado_vanishA.dae" name="Death" speed="200"/>
+      </animations>
+      <mesh>units/darknut/vaatinadoA.dae</mesh>  
+	  <textures>
+		<texture file="effects/vaatiwind1.png" name="baseTex"/>
+		<texture file="effects/vaatiwind1.png" name="specTex"/>
+	  </textures>
+	  <props>
+		<prop actor="particle/vaati_tornadoC.xml" attachpoint="root"/>
+		<prop actor="particle/vaati_tornadoD.xml" attachpoint="root"/>
+		<prop actor="particle/vaati_tornadoA.xml" attachpoint="projectile"/>
+	  </props>
+	 </variant>
+  </group>
+  <material>basic_glow.xml</material>
+</actor>

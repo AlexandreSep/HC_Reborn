@@ -1,0 +1,267 @@
+<skeletons>
+<standard_skeleton id="Trinexx Skeleton" title="Trinexx Skeleton">
+<bone name="trinexx_base">
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bleg_01">
+<bone name="L_Bleg_02">
+<bone name="L_Bleg_03">
+<bone name="L_Bleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bleg_01">
+<bone name="R_Bleg_02">
+<bone name="R_Bleg_03">
+<bone name="R_Bleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fleg_01">
+<bone name="L_Fleg_02">
+<bone name="L_Fleg_03">
+<bone name="L_Fleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fleg_01">
+<bone name="R_Fleg_02">
+<bone name="R_Fleg_03">
+<bone name="R_Fleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="trinexx_head_baseA">
+<bone name="L_neck_01">
+<bone name="L_neck_02">
+<bone name="L_neck_03">
+<bone name="L_neck_04">
+<bone name="L_neck_05">
+<bone name="L_neck_06">
+<bone name="L_head">
+<bone name="L_mouth_top_01">
+<bone name="L_mouth_top_02">
+</bone>
+</bone>
+<bone name="L_mouth_bot_01">
+<bone name="L_mouth_bot_02">
+</bone>
+</bone>
+<bone name="projectile_ice">
+<bone name="loaded_projectile_ice">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="trinexx_head_baseB">
+<bone name="R_neck_01">
+<bone name="R_neck_02">
+<bone name="R_neck_03">
+<bone name="R_neck_04">
+<bone name="R_neck_05">
+<bone name="R_neck_06">
+<bone name="R_head">
+<bone name="R_mouth_top_01">
+<bone name="R_mouth_top_02">
+</bone>
+</bone>
+<bone name="R_mouth_bot_01">
+<bone name="R_mouth_bot_02">
+</bone>
+</bone>
+<bone name="projectile_fire">
+<bone name="loaded_projectile_fire">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckext_01">
+<bone name="neckext_02">
+<bone name="neckext_03">
+<bone name="neckext_04">
+<bone name="neckext_05">
+<bone name="neck">
+<bone name="head">
+<bone name="mouth_top_01">
+<bone name="mouth_top_02">
+</bone>
+</bone>
+<bone name="mouth_bot_01">
+<bone name="mouth_bot_02">
+</bone>
+</bone>
+<bone name="projectile">
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Trinexx Skeleton" title="Trinexx Skeleton">
+<identifier><root>trinexx_base</root></identifier>
+<bone name="trinexx_base"><target>trinexx_base</target>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bleg_01"><target>L_Bleg_01</target>
+<bone name="L_Bleg_02"><target>L_Bleg_02</target>
+<bone name="L_Bleg_03"><target>L_Bleg_03</target>
+<bone name="L_Bleg_04"><target>L_Bleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bleg_01"><target>R_Bleg_01</target>
+<bone name="R_Bleg_02"><target>R_Bleg_02</target>
+<bone name="R_Bleg_03"><target>R_Bleg_03</target>
+<bone name="R_Bleg_04"><target>R_Bleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fleg_01"><target>L_Fleg_01</target>
+<bone name="L_Fleg_02"><target>L_Fleg_02</target>
+<bone name="L_Fleg_03"><target>L_Fleg_03</target>
+<bone name="L_Fleg_04"><target>L_Fleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fleg_01"><target>R_Fleg_01</target>
+<bone name="R_Fleg_02"><target>R_Fleg_02</target>
+<bone name="R_Fleg_03"><target>R_Fleg_03</target>
+<bone name="R_Fleg_04"><target>R_Fleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="trinexx_head_baseA"><target>trinexx_head_baseA</target>
+<bone name="L_neck_01"><target>L_neck_01</target>
+<bone name="L_neck_02"><target>L_neck_02</target>
+<bone name="L_neck_03"><target>L_neck_03</target>
+<bone name="L_neck_04"><target>L_neck_04</target>
+<bone name="L_neck_05"><target>L_neck_05</target>
+<bone name="L_neck_06"><target>L_neck_06</target>
+<bone name="L_head"><target>L_head</target>
+<bone name="L_mouth_top_01"><target>L_mouth_top_01</target>
+<bone name="L_mouth_top_02"><target>L_mouth_top_02</target>
+</bone>
+</bone>
+<bone name="L_mouth_bot_01"><target>L_mouth_bot_01</target>
+<bone name="L_mouth_bot_02"><target>L_mouth_bot_02</target>
+</bone>
+</bone>
+<bone name="projectile_ice"><target>projectile_ice</target>
+<bone name="loaded_projectile_ice"><target>loaded_projectile_ice</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="trinexx_head_baseB"><target>trinexx_head_baseB</target>
+<bone name="R_neck_01"><target>R_neck_01</target>
+<bone name="R_neck_02"><target>R_neck_02</target>
+<bone name="R_neck_03"><target>R_neck_03</target>
+<bone name="R_neck_04"><target>R_neck_04</target>
+<bone name="R_neck_05"><target>R_neck_05</target>
+<bone name="R_neck_06"><target>R_neck_06</target>
+<bone name="R_head"><target>R_head</target>
+<bone name="R_mouth_top_01"><target>R_mouth_top_01</target>
+<bone name="R_mouth_top_02"><target>R_mouth_top_02</target>
+</bone>
+</bone>
+<bone name="R_mouth_bot_01"><target>R_mouth_bot_01</target>
+<bone name="R_mouth_bot_02"><target>R_mouth_bot_02</target>
+</bone>
+</bone>
+<bone name="projectile_fire"><target>projectile_fire</target>
+<bone name="loaded_projectile_fire"><target>loaded_projectile_fire</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckext_01"><target>neckext_01</target>
+<bone name="neckext_02"><target>neckext_02</target>
+<bone name="neckext_03"><target>neckext_03</target>
+<bone name="neckext_04"><target>neckext_04</target>
+<bone name="neckext_05"><target>neckext_05</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="mouth_top_01"><target>mouth_top_01</target>
+<bone name="mouth_top_02"><target>mouth_top_02</target>
+</bone>
+</bone>
+<bone name="mouth_bot_01"><target>mouth_bot_01</target>
+<bone name="mouth_bot_02"><target>mouth_bot_02</target>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

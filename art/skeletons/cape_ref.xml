@@ -1,0 +1,43 @@
+<skeletons>
+	<standard_skeleton id="caperef" title="caperef">
+		<bone name="cape_01">
+			<bone name="cape_02">
+				<bone name="cape_03">
+					<bone name="cape_04">
+						<bone name="cape_05">
+							<bone name="cape_06">
+								<bone name="cape_07">
+									<bone name="cape_08">
+										<bone name="cape_09">
+										</bone>
+									</bone>
+								</bone>
+							</bone>
+						</bone>
+					</bone>
+				</bone>
+			</bone>
+		</bone>
+	</standard_skeleton>
+	<skeleton target="caperef" title="caperef">
+		<identifier><root>cape_01</root></identifier>
+		<bone name="cape_01"><target>cape_01</target>
+			<bone name="cape_02"><target>cape_02</target>
+				<bone name="cape_03"><target>cape_03</target>
+					<bone name="cape_04"><target>cape_04</target>
+						<bone name="cape_05"><target>cape_05</target>
+							<bone name="cape_06"><target>cape_06</target>
+								<bone name="cape_07"><target>cape_07</target>
+									<bone name="cape_08"><target>cape_08</target>
+										<bone name="cape_09"><target>cape_09</target>
+										</bone>
+									</bone>
+								</bone>
+							</bone>
+						</bone>
+					</bone>
+				</bone>
+			</bone>
+		</bone>
+	</skeleton>
+</skeletons>

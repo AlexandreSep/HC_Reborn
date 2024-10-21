@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Main">
+      <animations>
+        <animation file="HC_coach/coach_idle.dae" name="Idle" speed="70"/>
+		<animation event="0.5" file="HC_coach/coach_idle.dae" name="attack_melee" speed="120"/>
+        <animation file="HC_coach/coach_move.dae" name="Walk" speed="20"/>
+        <animation file="HC_coach/coach_move.dae" name="Run" speed="30"/>
+        <animation file="HC_coach/coach_death.dae" name="Death" speed="90"/>
+      </animations>
+      <mesh>units/ordona/ord_coachA.dae</mesh>
+      <props>
+        <prop actor="units/ordona/ordona_yeoman_b_r_body.xml" attachpoint="driver"/>
+		<prop actor="units/ordona/ordona_yeoman_b_r_legs.xml" attachpoint="driver"/>
+		<prop actor="units/ordona/ordona_yeoman_b_r_outfit.xml" attachpoint="driver"/>
+      </props>
+      <textures>
+        <texture file="skeletal/ordona/ord_vehicleA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

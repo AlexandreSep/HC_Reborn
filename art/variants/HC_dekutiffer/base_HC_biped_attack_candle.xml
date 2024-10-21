@@ -1,0 +1,7 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.5" file="HC_dekutiffer/dekutiffer_attackA.dae" load="0.5" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+  </props>
+</variant>

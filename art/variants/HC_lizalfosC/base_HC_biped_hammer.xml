@@ -1,0 +1,20 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_lizalfosC/lizalfosC_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_lizalfosC/lizalfosC_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_lizalfosC/lizalfosC_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_lizalfosC/lizalfosC_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation event="0.5" file="HC_lizalfosC/lizalfosC_walk.dae" name="Walk" id="walk1" speed="20"/>
+    <animation event="0.5" file="HC_lizalfosC/lizalfosC_walk.dae" name="Walk" id="walk2" speed="22"/>
+    <animation event="0.5" file="HC_lizalfosC/lizalfosC_walk.dae" name="Run" id="run1" speed="16"/>
+    <animation event="0.5" file="HC_lizalfosC/lizalfosC_walk.dae" name="Run" id="run2" speed="17"/>
+    <animation event="0.5" file="HC_lizalfosC/lizalfosC_walk.dae" name="Run" id="run3" speed="18"/>
+    <animation file="HC_lizalfosC/lizalfosC_promotion.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_lizalfosC/lizalfosC_promotion.dae" name="Heal" id="heal2" speed="100"/>
+	<animation event="0.5" file="HC_lizalfosC/lizalfosC_attack_hammerA.dae" name="Attack_melee" id="attack1" speed="70"/>
+    <animation event="0.5" file="HC_lizalfosC/lizalfosC_attack_hammerB.dae" name="Attack_melee" id="attack2" speed="70"/>
+	<animation file="HC_lizalfosC/lizalfosC_promotion.dae" name="promotion" speed="80"/>
+	<animation file="HC_lizalfosC/lizalfosC_flail.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_lizalfosC/lizalfosC_recover.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

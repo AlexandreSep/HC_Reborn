@@ -1,0 +1,199 @@
+<skeletons>
+<standard_skeleton id="matriarch_skel" title="matriarch_skel">
+<bone name="matriarch_small_base">
+<bone name="body">
+<bone name="ass_01">
+<bone name="ass_02">
+</bone>
+</bone>
+<bone name="L_F_leg_01">
+<bone name="L_F_leg_02">
+<bone name="L_F_leg_03">
+<bone name="L_F_leg_04">
+<bone name="L_F_leg_05">
+<bone name="L_F_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01">
+<bone name="L_B_leg_02">
+<bone name="L_B_leg_03">
+<bone name="L_B_leg_04">
+<bone name="L_B_leg_05">
+<bone name="L_B_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg_01">
+<bone name="R_F_leg_02">
+<bone name="R_F_leg_03">
+<bone name="R_F_leg_04">
+<bone name="R_F_leg_05">
+<bone name="R_F_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01">
+<bone name="R_B_leg_02">
+<bone name="R_B_leg_03">
+<bone name="R_B_leg_04">
+<bone name="R_B_leg_05">
+<bone name="R_B_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rotator_01">
+<bone name="royal_7">
+</bone>
+<bone name="royal_1">
+</bone>
+<bone name="royal_2">
+</bone>
+<bone name="royal_3">
+</bone>
+<bone name="royal_4">
+</bone>
+<bone name="royal_5">
+</bone>
+<bone name="royal_6">
+</bone>
+</bone>
+<bone name="rotator_02">
+<bone name="royal_8">
+</bone>
+<bone name="royal_9">
+</bone>
+<bone name="royal_10">
+</bone>
+<bone name="royal_11">
+</bone>
+<bone name="royal_12">
+</bone>
+<bone name="royal_13">
+</bone>
+<bone name="royal_14">
+</bone>
+<bone name="royal_15">
+</bone>
+</bone>
+<bone name="mite_01">
+</bone>
+<bone name="mite_02">
+</bone>
+<bone name="mite_03">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="matriarch_skel" title="matriarch_skel">
+<identifier><root>matriarch_small_base</root></identifier>
+<bone name="matriarch_small_base"><target>matriarch_small_base</target>
+<bone name="body"><target>body</target>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+</bone>
+</bone>
+<bone name="L_F_leg_01"><target>L_F_leg_01</target>
+<bone name="L_F_leg_02"><target>L_F_leg_02</target>
+<bone name="L_F_leg_03"><target>L_F_leg_03</target>
+<bone name="L_F_leg_04"><target>L_F_leg_04</target>
+<bone name="L_F_leg_05"><target>L_F_leg_05</target>
+<bone name="L_F_leg_06"><target>L_F_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01"><target>L_B_leg_01</target>
+<bone name="L_B_leg_02"><target>L_B_leg_02</target>
+<bone name="L_B_leg_03"><target>L_B_leg_03</target>
+<bone name="L_B_leg_04"><target>L_B_leg_04</target>
+<bone name="L_B_leg_05"><target>L_B_leg_05</target>
+<bone name="L_B_leg_06"><target>L_B_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg_01"><target>R_F_leg_01</target>
+<bone name="R_F_leg_02"><target>R_F_leg_02</target>
+<bone name="R_F_leg_03"><target>R_F_leg_03</target>
+<bone name="R_F_leg_04"><target>R_F_leg_04</target>
+<bone name="R_F_leg_05"><target>R_F_leg_05</target>
+<bone name="R_F_leg_06"><target>R_F_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01"><target>R_B_leg_01</target>
+<bone name="R_B_leg_02"><target>R_B_leg_02</target>
+<bone name="R_B_leg_03"><target>R_B_leg_03</target>
+<bone name="R_B_leg_04"><target>R_B_leg_04</target>
+<bone name="R_B_leg_05"><target>R_B_leg_05</target>
+<bone name="R_B_leg_06"><target>R_B_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rotator_01"><target>rotator_01</target>
+<bone name="royal_7"><target>royal_7</target>
+</bone>
+<bone name="royal_1"><target>royal_1</target>
+</bone>
+<bone name="royal_2"><target>royal_2</target>
+</bone>
+<bone name="royal_3"><target>royal_3</target>
+</bone>
+<bone name="royal_4"><target>royal_4</target>
+</bone>
+<bone name="royal_5"><target>royal_5</target>
+</bone>
+<bone name="royal_6"><target>royal_6</target>
+</bone>
+</bone>
+<bone name="rotator_02"><target>rotator_02</target>
+<bone name="royal_8"><target>royal_8</target>
+</bone>
+<bone name="royal_9"><target>royal_9</target>
+</bone>
+<bone name="royal_10"><target>royal_10</target>
+</bone>
+<bone name="royal_11"><target>royal_11</target>
+</bone>
+<bone name="royal_12"><target>royal_12</target>
+</bone>
+<bone name="royal_13"><target>royal_13</target>
+</bone>
+<bone name="royal_14"><target>royal_14</target>
+</bone>
+<bone name="royal_15"><target>royal_15</target>
+</bone>
+</bone>
+<bone name="mite_01"><target>mite_01</target>
+</bone>
+<bone name="mite_02"><target>mite_02</target>
+</bone>
+<bone name="mite_03"><target>mite_03</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

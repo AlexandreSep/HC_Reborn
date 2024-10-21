@@ -1,0 +1,247 @@
+<skeletons>
+<standard_skeleton id="Moa Skeleton" title="Moa Skeleton">
+<bone name="root_MoaA">
+<bone name="core">
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="jaw_top_01">
+<bone name="jaw_top_02">
+<bone name="jaw_top_03">
+</bone>
+<bone name="eye_01">
+<bone name="eye_02">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="jaw_bot_01">
+<bone name="jaw_bot_02">
+<bone name="jaw_bot_03">
+</bone>
+<bone name="tent_010">
+<bone name="tent_011">
+<bone name="tent_012">
+<bone name="tent_013">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_06">
+<bone name="tent_07">
+<bone name="tent_08">
+<bone name="tent_09">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_01">
+<bone name="tent_02">
+<bone name="tent_03">
+<bone name="tent_04">
+<bone name="tent_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="tent_014">
+<bone name="tent_015">
+<bone name="tent_016">
+<bone name="tent_017">
+<bone name="tent_018">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_019">
+<bone name="tent_020">
+<bone name="tent_021">
+</bone>
+</bone>
+</bone>
+<bone name="tent_022">
+<bone name="tent_023">
+<bone name="tent_024">
+<bone name="tent_025">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_026">
+<bone name="tent_027">
+<bone name="tent_028">
+<bone name="tent_029">
+<bone name="tent_030">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_031">
+<bone name="tent_032">
+<bone name="tent_033">
+<bone name="tent_034">
+<bone name="tent_035">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_036">
+<bone name="tent_037">
+<bone name="tent_038">
+</bone>
+</bone>
+</bone>
+<bone name="tent_039">
+<bone name="tent_040">
+<bone name="tent_041">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Moa Skeleton" title="Moa Skeleton">
+<identifier><root>root_MoaA</root></identifier>
+<bone name="root_MoaA"><target>root_MoaA</target>
+<bone name="core"><target>core</target>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="jaw_top_01"><target>jaw_top_01</target>
+<bone name="jaw_top_02"><target>jaw_top_02</target>
+<bone name="jaw_top_03"><target>jaw_top_03</target>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+<bone name="eye_02"><target>eye_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="jaw_bot_01"><target>jaw_bot_01</target>
+<bone name="jaw_bot_02"><target>jaw_bot_02</target>
+<bone name="jaw_bot_03"><target>jaw_bot_03</target>
+</bone>
+<bone name="tent_010"><target>tent_010</target>
+<bone name="tent_011"><target>tent_011</target>
+<bone name="tent_012"><target>tent_012</target>
+<bone name="tent_013"><target>tent_013</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_06"><target>tent_06</target>
+<bone name="tent_07"><target>tent_07</target>
+<bone name="tent_08"><target>tent_08</target>
+<bone name="tent_09"><target>tent_09</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_01"><target>tent_01</target>
+<bone name="tent_02"><target>tent_02</target>
+<bone name="tent_03"><target>tent_03</target>
+<bone name="tent_04"><target>tent_04</target>
+<bone name="tent_05"><target>tent_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="tent_014"><target>tent_014</target>
+<bone name="tent_015"><target>tent_015</target>
+<bone name="tent_016"><target>tent_016</target>
+<bone name="tent_017"><target>tent_017</target>
+<bone name="tent_018"><target>tent_018</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_019"><target>tent_019</target>
+<bone name="tent_020"><target>tent_020</target>
+<bone name="tent_021"><target>tent_021</target>
+</bone>
+</bone>
+</bone>
+<bone name="tent_022"><target>tent_022</target>
+<bone name="tent_023"><target>tent_023</target>
+<bone name="tent_024"><target>tent_024</target>
+<bone name="tent_025"><target>tent_025</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_026"><target>tent_026</target>
+<bone name="tent_027"><target>tent_027</target>
+<bone name="tent_028"><target>tent_028</target>
+<bone name="tent_029"><target>tent_029</target>
+<bone name="tent_030"><target>tent_030</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_031"><target>tent_031</target>
+<bone name="tent_032"><target>tent_032</target>
+<bone name="tent_033"><target>tent_033</target>
+<bone name="tent_034"><target>tent_034</target>
+<bone name="tent_035"><target>tent_035</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_036"><target>tent_036</target>
+<bone name="tent_037"><target>tent_037</target>
+<bone name="tent_038"><target>tent_038</target>
+</bone>
+</bone>
+</bone>
+<bone name="tent_039"><target>tent_039</target>
+<bone name="tent_040"><target>tent_040</target>
+<bone name="tent_041"><target>tent_041</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

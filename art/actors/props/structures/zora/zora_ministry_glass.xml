@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/zora/zor_ministry_glassA.dae</mesh>
+      <textures>
+	    <texture file="structural/zora/zora_glassC.dds" name="baseTex"/>
+		<texture file="structural/zora/zora_glassC_normal.dds" name="normTex"/>
+		<texture file="structural/zora/zora_glassC_spec.dds" name="specTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_glow_nu.xml</material>
+</actor>

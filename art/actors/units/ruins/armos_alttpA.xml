@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_armosDM/armosDM_idle.dae" name="Idle" speed="100"/>
+        <animation file="HC_armosDM/armosDM_walk.dae" name="Walk" speed="20"/>
+        <animation file="HC_armosDM/armosDM_walk.dae" name="Run" speed="25"/>
+		<animation event="0.5" file="HC_armosDM/armosDM_attackA.dae" name="Attack_melee" id="attack1" speed="100"/>
+		<animation event="0.5" file="HC_armosDM/armosDM_attackB.dae" name="Attack_melee" id="attack2" speed="100"/>
+        <animation file="HC_armosDM/armosDM_attackA.dae" name="attack_slaughter" speed="100"/>
+        <animation file="HC_armosDM/armosDM_death.dae" name="death" speed="100"/>
+		<animation file="HC_armosDM/armosDM_idle.dae" name="Flail" id="flail1" speed="8"/>
+		<animation file="HC_armosDM/armosDM_idle.dae" name="Recover" id="recover1" speed="8"/>
+      </animations>
+      <mesh>units/armos/arm_alttpA.dae</mesh>
+	  <textures><texture file="skeletal/armos/arm_ALTTPB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle">
+		<textures><texture file="skeletal/armos/arm_ALTTPA.dds" name="baseTex"/></textures>
+	</variant>
+	<variant frequency="100" name="Walk">
+		<textures><texture file="skeletal/armos/arm_ALTTPB.dds" name="baseTex"/></textures>
+	</variant>
+	<variant frequency="100" name="attack_melee">
+		<textures><texture file="skeletal/armos/arm_ALTTPB.dds" name="baseTex"/></textures>
+	</variant>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

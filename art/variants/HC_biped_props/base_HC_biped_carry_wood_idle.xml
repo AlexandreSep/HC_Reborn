@@ -1,0 +1,5 @@
+<variant name="carry_wood_idle">
+  <animations>
+	<animation file="HC_biped/biped_hum_carry_idle.dae" name="carry_wood_idle" speed="20"/>
+  </animations>
+</variant>

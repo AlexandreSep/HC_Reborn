@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="baddyram">
+      <animations> 
+        <animation file="HC_baddyram/baddyram_idle.dae" name="Idle" speed="100"/>
+        <animation event="0.5" file="HC_baddyram/baddyram_move.dae" name="Walk" speed="10"/>
+        <animation event="0.5" file="HC_baddyram/baddyram_move.dae" name="Run" speed="10"/>
+        <animation event="0.15" load="0.10" file="HC_baddyram/baddyram_attack.dae" name="attack_melee" sound="0" speed="75"/>
+		<animation file="HC_baddyram/baddyram_death.dae" name="death" speed="100"/>
+      </animations> 
+      <mesh>units/moblin/mob_baddyramA.dae</mesh>
+      <props>
+        <prop actor="units/moblin/moblin_bugblin_crew.xml" attachpoint="crew_01"/>
+		<prop actor="units/moblin/moblin_bugblin_crew.xml" attachpoint="crew_02"/>
+		<prop actor="units/moblin/moblin_bugblin_crew.xml" attachpoint="crew_03"/>
+		<prop actor="units/moblin/moblin_bugblin_crew.xml" attachpoint="crew_04"/>
+		<prop actor="units/moblin/moblin_bugblin_crew.xml" attachpoint="crew_05"/>
+		<prop actor="units/moblin/moblin_bugblin_crew.xml" attachpoint="crew_06"/>
+		<prop actor="units/moblin/moblin_bugblin_crew.xml" attachpoint="crew_07"/>
+		<prop actor="units/moblin/moblin_bugblin_crew.xml" attachpoint="crew_08"/>
+      </props>
+      <textures><texture file="skeletal/moblin/mob_siegeA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+</actor>

@@ -1,0 +1,9 @@
+<variant name="carry_wood">
+  <animations>
+	<animation file="HC_biped/biped_hum_carry.dae" name="carry_wood" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_basket_carry.xml" attachpoint="bone_Rhand"/>
+    <prop attachpoint="bone_Rhand"/>
+  </props>
+</variant>

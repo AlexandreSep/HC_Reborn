@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_zora/zora_rider_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_zora/zora_rider_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_zora/zora_rider_idle.dae" name="Run" speed="40"/>
+        <animation event="0.5" file="HC_zora/zora_rider_attack.dae" name="attack_melee" speed="100"/>
+		<animation event="0.5" file="HC_zora/zora_rider_attack_archerA.dae" name="attack_ranged" speed="100"/>
+        <animation event="0.5" file="HC_zora/zora_rider_attack.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.5" file="HC_zora/zora_rider_attack.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_zora/zora_rider_death.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>units/lanayru/lan_bodyA.dae</mesh>
+	  <props>
+	  	<prop actor="props/units/outfits/lanayru_outfit_rider.xml" attachpoint="root"/>
+		<prop actor="props/units/outfits/lanayru_beltB_rider.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>  
+    <variant frequency="1" name="body_peach">
+      <textures>
+        <texture file="skeletal/lanayru/lan_bodyA.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="body_green">
+      <textures>
+        <texture file="skeletal/lanayru/lan_bodyB.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="body_blue">
+      <textures>
+        <texture file="skeletal/lanayru/lan_bodyC.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="body_black">
+      <textures>
+        <texture file="skeletal/lanayru/lan_bodyD.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="body_pink">
+      <textures>
+        <texture file="skeletal/lanayru/lan_bodyE.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="body_yellow">
+      <textures>
+        <texture file="skeletal/lanayru/lan_bodyF.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="body_red">
+      <textures>
+        <texture file="skeletal/lanayru/lan_bodyG.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+  </group>
+  <material>default.xml</material>
+</actor>

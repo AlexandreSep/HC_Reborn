@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_darknut/base_HC_darknut_sword_slow.xml">
+      <mesh>units/stalfos/sta_gaboraA.dae</mesh>
+      <props>
+		<prop actor="units/stalfos/stalfos_gabora_outfitA.xml" attachpoint="root"/>
+		<prop actor="props/units/weapons/stalfos_gaborahammerA.xml" attachpoint="R_weapon"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+      <textures><texture file="skeletal/stalfos/sta_gaboraA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_darknut/base_HC_darknut_attack_splash.xml"/>
+    <variant file="HC_darknut/base_HC_darknut_capture.xml"/>
+    <variant file="HC_darknut/base_HC_darknut_death.xml">
+      <props>
+		<prop actor="units/stalfos/stalfos_gabora_outfitA.xml" attachpoint="root"/>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

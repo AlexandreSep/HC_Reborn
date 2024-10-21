@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="hair_A">
+    <mesh>units/ordona/ord_beth_hairA.dae</mesh>
+	<textures><texture file="skeletal/ordona/ord_bethA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

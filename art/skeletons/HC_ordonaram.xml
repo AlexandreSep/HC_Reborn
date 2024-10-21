@@ -1,0 +1,55 @@
+<skeletons>
+<standard_skeleton id="Ordonaram Skeleton" title="Ordonaram Skeleton">
+<bone name="ordona_ram_base">
+<bone name="frame">
+<bone name="roof">
+<bone name="ram">
+</bone>
+</bone>
+</bone>
+<bone name="crew_01">
+</bone>
+<bone name="crew_02">
+</bone>
+<bone name="L_wheel_front">
+</bone>
+<bone name="L_wheel_mid">
+</bone>
+<bone name="L_wheel_back">
+</bone>
+<bone name="R_wheel_front">
+</bone>
+<bone name="R_wheel_mid">
+</bone>
+<bone name="R_wheel_back">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Ordonaram Skeleton" title="Ordonaram Skeleton">
+<identifier><root>ordona_ram_base</root></identifier>
+<bone name="ordona_ram_base"><target>ordona_ram_base</target>
+<bone name="frame"><target>frame</target>
+<bone name="roof"><target>roof</target>
+<bone name="ram"><target>ram</target>
+</bone>
+</bone>
+</bone>
+<bone name="crew_01"><target>crew_01</target>
+</bone>
+<bone name="crew_02"><target>crew_02</target>
+</bone>
+<bone name="L_wheel_front"><target>L_wheel_front</target>
+</bone>
+<bone name="L_wheel_mid"><target>L_wheel_mid</target>
+</bone>
+<bone name="L_wheel_back"><target>L_wheel_back</target>
+</bone>
+<bone name="R_wheel_front"><target>R_wheel_front</target>
+</bone>
+<bone name="R_wheel_mid"><target>R_wheel_mid</target>
+</bone>
+<bone name="R_wheel_back"><target>R_wheel_back</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,18 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_morphite/morphite_idle.dae" name="Idle" id="idle1" speed="70"/>
+    <animation file="HC_morphite/morphite_idleA.dae" name="Idle" id="idle2" speed="70"/>
+    <animation file="HC_morphite/morphite_idleB.dae" name="Idle" id="idle3" speed="70"/>
+    <animation file="HC_morphite/morphite_idleC.dae" name="Idle" id="idle4" speed="70"/>
+    <animation event="0.5" file="HC_morphite/morphite_move.dae" name="Walk" id="walk1" speed="5"/>
+    <animation event="0.5" file="HC_morphite/morphite_move.dae" name="Walk" id="walk2" speed="6"/>
+    <animation event="0.5" file="HC_morphite/morphite_move.dae" name="Run" id="run1" speed="7"/>
+    <animation event="0.5" file="HC_morphite/morphite_move.dae" name="Run" id="run2" speed="8"/>
+    <animation event="0.5" file="HC_morphite/morphite_move.dae" name="Run" id="run3" speed="9"/>
+    <animation file="HC_morphite/morphite_move.dae" name="Heal" id="heal1" speed="70"/>
+    <animation file="HC_morphite/morphite_move.dae" name="Heal" id="heal2" speed="70"/>
+	<animation event="0.5" file="HC_morphite/morphite_attackA.dae" name="Attack_melee" id="attack1" speed="107"/>
+    <animation event="0.5" file="HC_morphite/morphite_attackB.dae" name="Attack_melee" id="attack2" speed="107"/>
+	<animation file="HC_morphite/morphite_move.dae" name="promotion" speed="70"/>
+  </animations>
+</variant>

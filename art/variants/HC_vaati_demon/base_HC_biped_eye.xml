@@ -1,0 +1,19 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_vaati_demon/vaati_demon_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_vaati_demon/vaati_demon_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_vaati_demon/vaati_demon_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_vaati_demon/vaati_demon_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation event="0.5" file="HC_vaati_demon/vaati_demon_move.dae" name="Walk" id="walk1" speed="8"/>
+    <animation event="0.5" file="HC_vaati_demon/vaati_demon_move.dae" name="Walk" id="walk2" speed="9"/>
+    <animation event="0.5" file="HC_vaati_demon/vaati_demon_move.dae" name="Run" id="run1" speed="10"/>
+    <animation event="0.5" file="HC_vaati_demon/vaati_demon_move.dae" name="Run" id="run2" speed="12"/>
+    <animation event="0.5" file="HC_vaati_demon/vaati_demon_move.dae" name="Run" id="run3" speed="14"/>
+    <animation file="HC_vaati_demon/vaati_demon_idleC.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_vaati_demon/vaati_demon_idleC.dae" name="Heal" id="heal2" speed="100"/>
+	<animation event="0.5" file="HC_vaati_demon/vaati_demon_attackA.dae" name="Attack_ranged" id="attack1" speed="70"/>
+    <animation event="0.5" file="HC_vaati_demon/vaati_demon_attackA.dae" name="Attack_ranged" id="attack2" speed="70"/>
+	<animation event="0.5" file="HC_vaati_demon/vaati_demon_attackA.dae" name="Attack_ranged" id="attack3" speed="70"/>
+	<animation file="HC_vaati_demon/vaati_demon_idleC.dae" name="promotion" speed="80"/>
+  </animations>
+</variant>

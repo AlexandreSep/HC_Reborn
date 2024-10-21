@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant>
+		<animations>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Idle" id="idle1" speed="100"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Walk" id="walk1" speed="10"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Walk" id="walk2" speed="15"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Walk" id="walk3" speed="17"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Walk" id="walk4" speed="17"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Run" id="run1" speed="10"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Run" id="run2" speed="15"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Run" id="run3" speed="17"/>
+			<animation event="0.5" file="flying_holder/flying_skeleton_idle.dae" name="Attack_melee" id="attack1" speed="100"/>
+			<animation event="0.5" file="flying_holder/flying_skeleton_idle.dae" name="Attack_ranged" id="attack2" speed="100"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Death" id="death1" speed="100"/>			
+		</animations>
+      <mesh>units/flying_skeleton.dae</mesh>
+	  <props>
+		<prop actor="units/sheikah/sheikah_crowling_b.xml" attachpoint="flying_01"/>
+		<prop actor="units/sheikah/sheikah_crowling_feathers.xml" attachpoint="flying_01"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="holder">
+      <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_flags/base_HC_flag_smallC.xml">
+	  <mesh>props/flags/flag_d_smallA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+     <variant frequency="1" name="RandomA_royalB">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_royalB.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="RandomA_postman">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_postmanA.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="RandomA_triforce">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_triforceA.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="RandomA_royalC">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_royalC.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="RandomA_sheikahg">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_sheikahg.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

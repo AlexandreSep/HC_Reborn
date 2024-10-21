@@ -1,0 +1,9 @@
+<variant name="carry_stone_idle">
+  <animations>
+	<animation file="HC_zora/zora_carry_idle.dae" name="carry_stone_idle" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/shuttle_wood.xml" attachpoint="R_wrist_01"/>
+	<prop attachpoint="L_wrist_01"/>
+  </props>
+</variant>

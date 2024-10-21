@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_dorephan/dorephan_rider_idle.dae" name="Idle" speed="50"/>
+		<animation file="HC_dorephan/dorephan_rider_idle.dae" name="Idle" speed="50"/>
+		<animation file="HC_dorephan/dorephan_rider_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_dorephan/dorephan_rider_move.dae" name="Walk" speed="10"/>
+        <animation file="HC_dorephan/dorephan_rider_move.dae" name="Run" speed="20"/>
+        <animation event="0.5" file="HC_dorephan/dorephan_rider_promotion.dae" name="attack_melee" speed="100"/>
+        <animation event="0.5" file="HC_dorephan/dorephan_rider_promotion.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.5" file="HC_dorephan/dorephan_rider_promotion.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_dorephan/dorephan_rider_death.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>units/lanayru/lan_dorephan_extraA.dae</mesh>
+	  <textures><texture file="skeletal/lanayru/lan_dorephanA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

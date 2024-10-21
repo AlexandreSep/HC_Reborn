@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <textures>
+        <texture file="structural/zora/zora_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/zora/zora_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/zora/zora_dormitory_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="domeA">
+      <mesh>structural/debris/debris_zora_domeA.dae</mesh>
+    </variant>
+	<variant name="domeB">
+      <mesh>structural/debris/debris_zora_domeB.dae</mesh>
+    </variant>
+	<variant name="domeC">
+      <mesh>structural/debris/debris_zora_domeC.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

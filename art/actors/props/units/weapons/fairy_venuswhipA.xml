@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_greatfairy/base_HC_greatfairy_whip.xml">
+      <mesh>props/weapon/fairy_venuswhipA.dae</mesh>
+      <props>
+      </props>
+      <textures><texture file="skeletal/fairy/fai_venusA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_greatfairy/base_HC_greatfairy_attack_whip.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_capture.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_slaughter.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_death.xml">
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant>
+		<animations>
+			<animation file="HC_dekuscrub/dekuscrub_run.dae" name="Idle" speed="100"/>
+			<animation file="HC_dekuscrub/dekuscrub_run.dae" name="Idle" speed="105"/>
+			<animation file="HC_dekuscrub/dekuscrub_run.dae" name="Idle" speed="110"/>
+			<animation file="HC_dekuscrub/dekuscrub_run.dae" name="Idle" speed="115"/>
+			<animation file="HC_dekuscrub/dekuscrub_deathA.dae" name="Death" id="death" speed="100"/>	
+			<animation file="HC_dekuscrub/dekuscrub_deathB.dae" name="Death" id="death" speed="100"/>				
+		</animations>
+      <mesh>units/deku/dek_bubblingA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant name="dancindeku">
+      <textures><texture file="skeletal/deku/dek_mainA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

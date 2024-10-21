@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_ordgoat_huge/ordgoat_huge_idle.dae" name="Idle" speed="100"/>
+        <animation file="HC_ordgoat_huge/ordgoat_huge_idle.dae" name="Idle" speed="100"/>
+        <animation file="HC_ordgoat_huge/ordgoat_huge_idleA.dae" name="Idle" speed="100"/>
+        <animation file="HC_ordgoat_huge/ordgoat_huge_idleB.dae" name="Idle" speed="100"/>
+        <animation event="0.1" file="HC_ordgoat_huge/ordgoat_huge_walk.dae" name="carry_meat" speed="10"/>
+        <animation event="0.1" file="HC_ordgoat_huge/ordgoat_huge_walk.dae" name="Walk" speed="10"/>
+        <animation event="0.1" file="HC_ordgoat_huge/ordgoat_huge_run.dae" name="Run" speed="10"/>
+        <animation file="HC_ordgoat_huge/ordgoat_huge_attackA.dae" name="attack_melee" speed="10"/>
+        <animation file="HC_ordgoat_huge/ordgoat_huge_attackA.dae" name="attack_melee" speed="20"/>
+        <animation file="HC_ordgoat_huge/ordgoat_huge_attackA.dae" name="attack_slaughter" speed="10"/>
+        <animation file="HC_ordgoat_huge/ordgoat_huge_death.dae" name="death" speed="100"/>
+      </animations>  
+	  <mesh>units/ordona/ord_goat_hugeA.dae</mesh>
+	  <textures><texture file="skeletal/ordona/ord_spiritgoatA.dds" name="baseTex"/></textures>	  
+      <props>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

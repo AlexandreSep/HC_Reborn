@@ -1,0 +1,5 @@
+<variant name="carry_metal">
+  <animations>
+	<animation file="HC_zora/zora_carry.dae" name="carry_metal" speed="20"/>
+  </animations>
+</variant>

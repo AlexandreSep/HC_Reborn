@@ -1,0 +1,9 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.3" file="HC_archer/biped_hum_arch_attack_bluntB.dae" load="0.1" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="props/units/weapons/merc_thiefknifeA_throw.xml" attachpoint="projectile"/>
+	<prop actor="props/units/weapons/merc_thiefknifeA.xml" attachpoint="loaded-projectile"/>
+  </props>
+</variant>

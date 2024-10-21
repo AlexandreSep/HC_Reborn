@@ -1,0 +1,16 @@
+<variant name="Base" frequency="1">
+  <animations>
+        <animation file="HC_orhat_giant/orhat_giant_idle.dae" name="Idle" id="idle1" speed="50"/>
+        <animation file="HC_orhat_giant/orhat_giant_idleA.dae" name="Idle" id="idle2" speed="50"/>
+        <animation file="HC_orhat_giant/orhat_giant_idleB.dae" name="Idle" id="idle3" speed="50"/>
+        <animation file="HC_orhat_giant/orhat_giant_idleC.dae" name="Idle" id="idle4" speed="50"/>
+        <animation event="0.1" file="HC_orhat_giant/orhat_giant_walk.dae" name="carry_meat" speed="7"/>
+        <animation event="0.1" file="HC_orhat_giant/orhat_giant_walk.dae" name="Walk" speed="7"/>
+        <animation event="0.1" file="HC_orhat_giant/orhat_giant_walk.dae" name="Run" speed="9"/>
+        <animation event="0.3" file="HC_orhat_giant/orhat_giant_attackA.dae" name="attack_ranged" speed="100"/>
+		<animation event="0.3" file="HC_orhat_giant/orhat_giant_attackB.dae" name="attack_ranged" speed="100"/>
+        <animation file="HC_orhat_giant/orhat_giant_attackA.dae" name="attack_slaughter" speed="70"/>
+		<animation file="HC_orhat_giant/orhat_giant_flail.dae" name="Flail" id="flail1" speed="8"/>
+		<animation file="HC_orhat_giant/orhat_giant_recover.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

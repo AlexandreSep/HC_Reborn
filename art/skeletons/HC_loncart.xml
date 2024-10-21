@@ -1,0 +1,23 @@
+<skeletons>
+<standard_skeleton id="Loncart Skeleton" title="Loncart Skeleton">
+<bone name="base_loncartA">
+<bone name="frame">
+<bone name="R_wheel_01">
+</bone>
+<bone name="L_wheel_01">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Loncart Skeleton" title="Loncart Skeleton">
+<identifier><root>base_loncartA</root></identifier>
+<bone name="base_loncartA"><target>base_loncartA</target>
+<bone name="frame"><target>frame</target>
+<bone name="R_wheel_01"><target>R_wheel_01</target>
+</bone>
+<bone name="L_wheel_01"><target>L_wheel_01</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

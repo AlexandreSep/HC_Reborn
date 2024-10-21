@@ -1,0 +1,167 @@
+<skeletons>
+<standard_skeleton id="Fox_blaster_skel" title="Fox_blaster_skel">
+<bone name="base_fox_pistolA">
+<bone name="waist_01">
+<bone name="abs_01">
+<bone name="chest_01">
+<bone name="neck_01">
+<bone name="head_01">
+<bone name="mouth_01">
+</bone>
+<bone name="L_ear_01">
+<bone name="L_ear_02">
+</bone>
+</bone>
+<bone name="R_ear_01">
+<bone name="R_ear_02">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01">
+<bone name="L_shoulder_01">
+<bone name="L_elbow_01">
+<bone name="L_wrist_01">
+<bone name="L_hand_01">
+<bone name="gun_01">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01">
+<bone name="R_shoulder_01">
+<bone name="R_elbow_01">
+<bone name="R_wrist_01">
+<bone name="R_hand_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh_01">
+<bone name="L_knee_01">
+<bone name="L_foot_01">
+<bone name="L_toes_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh_01">
+<bone name="R_knee_01">
+<bone name="R_foot_01">
+<bone name="R_toes_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Fox_blaster_skel" title="Fox_blaster_skel">
+<identifier><root>base_fox_pistolA</root></identifier>
+<bone name="base_fox_pistolA"><target>base_fox_pistolA</target>
+<bone name="waist_01"><target>waist_01</target>
+<bone name="abs_01"><target>abs_01</target>
+<bone name="chest_01"><target>chest_01</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="mouth_01"><target>mouth_01</target>
+</bone>
+<bone name="L_ear_01"><target>L_ear_01</target>
+<bone name="L_ear_02"><target>L_ear_02</target>
+</bone>
+</bone>
+<bone name="R_ear_01"><target>R_ear_01</target>
+<bone name="R_ear_02"><target>R_ear_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01"><target>L_clavical_01</target>
+<bone name="L_shoulder_01"><target>L_shoulder_01</target>
+<bone name="L_elbow_01"><target>L_elbow_01</target>
+<bone name="L_wrist_01"><target>L_wrist_01</target>
+<bone name="L_hand_01"><target>L_hand_01</target>
+<bone name="gun_01"><target>gun_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01"><target>R_clavical_01</target>
+<bone name="R_shoulder_01"><target>R_shoulder_01</target>
+<bone name="R_elbow_01"><target>R_elbow_01</target>
+<bone name="R_wrist_01"><target>R_wrist_01</target>
+<bone name="R_hand_01"><target>R_hand_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh_01"><target>L_thigh_01</target>
+<bone name="L_knee_01"><target>L_knee_01</target>
+<bone name="L_foot_01"><target>L_foot_01</target>
+<bone name="L_toes_01"><target>L_toes_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh_01"><target>R_thigh_01</target>
+<bone name="R_knee_01"><target>R_knee_01</target>
+<bone name="R_foot_01"><target>R_foot_01</target>
+<bone name="R_toes_01"><target>R_toes_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

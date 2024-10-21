@@ -1,0 +1,79 @@
+<skeletons>
+<standard_skeleton id="Skeleton Cucco" title="Skeleton Cucco">
+<bone name="skeleton_cucco">
+<bone name="cucco_chest">
+<bone name="cucco_neck">
+<bone name="cucco_head">
+</bone>
+</bone>
+<bone name="cucco_Lwing">
+<bone name="cucco_Lwing_mid">
+<bone name="cucco_Lwing_end">
+</bone>
+</bone>
+</bone>
+<bone name="cucco_Rwing">
+<bone name="cucco_Rwing_mid">
+<bone name="cucco_Rwing_end">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="cucco_ass">
+<bone name="cucco_tail">
+</bone>
+</bone>
+<bone name="cucco_Lthigh">
+<bone name="cucco_Lknee">
+<bone name="cucco_Lfoot">
+</bone>
+</bone>
+</bone>
+<bone name="cucco_Rthigh">
+<bone name="cucco_Rknee">
+<bone name="cucco_Rfoot">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Skeleton Cucco" title="Skeleton Cucco">
+<identifier><root>skeleton_cucco</root></identifier>
+<bone name="skeleton_cucco"><target>skeleton_cucco</target>
+<bone name="cucco_chest"><target>cucco_chest</target>
+<bone name="cucco_neck"><target>cucco_neck</target>
+<bone name="cucco_head"><target>cucco_head</target>
+</bone>
+</bone>
+<bone name="cucco_Lwing"><target>cucco_Lwing</target>
+<bone name="cucco_Lwing_mid"><target>cucco_Lwing_mid</target>
+<bone name="cucco_Lwing_end"><target>cucco_Lwing_end</target>
+</bone>
+</bone>
+</bone>
+<bone name="cucco_Rwing"><target>cucco_Rwing</target>
+<bone name="cucco_Rwing_mid"><target>cucco_Rwing_mid</target>
+<bone name="cucco_Rwing_end"><target>cucco_Rwing_end</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="cucco_ass"><target>cucco_ass</target>
+<bone name="cucco_tail"><target>cucco_tail</target>
+</bone>
+</bone>
+<bone name="cucco_Lthigh"><target>cucco_Lthigh</target>
+<bone name="cucco_Lknee"><target>cucco_Lknee</target>
+<bone name="cucco_Lfoot"><target>cucco_Lfoot</target>
+</bone>
+</bone>
+</bone>
+<bone name="cucco_Rthigh"><target>cucco_Rthigh</target>
+<bone name="cucco_Rknee"><target>cucco_Rknee</target>
+<bone name="cucco_Rfoot"><target>cucco_Rfoot</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

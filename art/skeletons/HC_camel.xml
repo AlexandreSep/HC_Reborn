@@ -1,0 +1,87 @@
+<skeletons>
+<standard_skeleton id="HC_camel" title="HC_camel">
+<bone name="bone_camel_root">
+<bone name="bone_camel_F_Lleg_top">
+<bone name="bone_camel_F_Lleg_low">
+<bone name="bone_camel_F_Lfoot">
+</bone>
+</bone>
+</bone>
+<bone name="bone_camel_F_Rleg_top">
+<bone name="bone_camel_F_Rleg_low">
+<bone name="bone_camel_F_Rfoot">
+</bone>
+</bone>
+</bone>
+<bone name="bone_camel_back">
+<bone name="bone_camel_R_Lleg_top">
+<bone name="bone_camel_R_Lleg_mid">
+<bone name="bone_camel_R_Lleg_low">
+<bone name="bone_camel_R_Lfoot">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_camel_R_Rleg_top">
+<bone name="bone_camel_R_Rleg_mid">
+<bone name="bone_camel_R_Rleg_low">
+<bone name="bone_camel_R_Rfoot">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_camel_neck_low">
+<bone name="bone_camel_neck_mid">
+<bone name="bone_camel_neck_top">
+<bone name="bone_camel_head">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="HC_camel" title="HC_camel">
+<identifier><root>bone_camel_root</root></identifier>
+<bone name="bone_camel_root"><target>bone_camel_root</target>
+<bone name="bone_camel_F_Lleg_top"><target>bone_camel_F_Lleg_top</target>
+<bone name="bone_camel_F_Lleg_low"><target>bone_camel_F_Lleg_low</target>
+<bone name="bone_camel_F_Lfoot"><target>bone_camel_F_Lfoot</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_camel_F_Rleg_top"><target>bone_camel_F_Rleg_top</target>
+<bone name="bone_camel_F_Rleg_low"><target>bone_camel_F_Rleg_low</target>
+<bone name="bone_camel_F_Rfoot"><target>bone_camel_F_Rfoot</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_camel_back"><target>bone_camel_back</target>
+<bone name="bone_camel_R_Lleg_top"><target>bone_camel_R_Lleg_top</target>
+<bone name="bone_camel_R_Lleg_mid"><target>bone_camel_R_Lleg_mid</target>
+<bone name="bone_camel_R_Lleg_low"><target>bone_camel_R_Lleg_low</target>
+<bone name="bone_camel_R_Lfoot"><target>bone_camel_R_Lfoot</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_camel_R_Rleg_top"><target>bone_camel_R_Rleg_top</target>
+<bone name="bone_camel_R_Rleg_mid"><target>bone_camel_R_Rleg_mid</target>
+<bone name="bone_camel_R_Rleg_low"><target>bone_camel_R_Rleg_low</target>
+<bone name="bone_camel_R_Rfoot"><target>bone_camel_R_Rfoot</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_camel_neck_low"><target>bone_camel_neck_low</target>
+<bone name="bone_camel_neck_mid"><target>bone_camel_neck_mid</target>
+<bone name="bone_camel_neck_top"><target>bone_camel_neck_top</target>
+<bone name="bone_camel_head"><target>bone_camel_head</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

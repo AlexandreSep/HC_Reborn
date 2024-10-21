@@ -1,0 +1,43 @@
+<skeletons>
+<standard_skeleton id="shrinecart_skeleton" title="shrinecart_skeleton">
+<bone name="kok_shrinecart_base">
+<bone name="bone_handle">
+<bone name="bone_cart">
+<bone name="cart_frame">
+<bone name="cart_axel_01">
+</bone>
+<bone name="rider_01">
+</bone>
+<bone name="cart_axel_02">
+</bone>
+<bone name="rider_02">
+</bone>
+<bone name="statue">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="shrinecart_skeleton" title="shrinecart_skeleton">
+<identifier><root>kok_shrinecart_base</root></identifier>
+<bone name="kok_shrinecart_base"><target>kok_shrinecart_base</target>
+<bone name="bone_handle"><target>bone_handle</target>
+<bone name="bone_cart"><target>bone_cart</target>
+<bone name="cart_frame"><target>cart_frame</target>
+<bone name="cart_axel_01"><target>cart_axel_01</target>
+</bone>
+<bone name="rider_01"><target>rider_01</target>
+</bone>
+<bone name="cart_axel_02"><target>cart_axel_02</target>
+</bone>
+<bone name="rider_02"><target>rider_02</target>
+</bone>
+<bone name="statue"><target>statue</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

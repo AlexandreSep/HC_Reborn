@@ -1,0 +1,8 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.3" file="HC_galeboomer/galeboomer_attackA.dae" load="0.1" name="attack_ranged" id="attack_ranged1" speed="100"/>
+	<animation event="0.3" file="HC_galeboomer/galeboomer_attackB.dae" load="0.1" name="attack_ranged" id="attack_ranged2" speed="100"/>
+  </animations>
+  <props>
+  </props>
+</variant>

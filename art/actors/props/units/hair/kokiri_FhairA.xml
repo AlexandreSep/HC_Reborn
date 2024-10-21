@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Hair_A">
+      <mesh>units/kokiri/kok_FhairA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Hair_B">
+      <mesh>units/kokiri/kok_FhairB.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Hair_C">
+      <mesh>units/kokiri/kok_FhairC.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Hair_D">
+      <mesh>units/kokiri/kok_FhairD.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Hair_E">
+      <mesh>units/kokiri/kok_FhairE.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="hairtexA">
+      <textures><texture file="skeletal/hylian/hyl_hairA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="hairtexB">
+      <textures><texture file="skeletal/hylian/hyl_hairB.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="hairtexC">
+      <textures><texture file="skeletal/hylian/hyl_hairC.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="hairtexD">
+      <textures><texture file="skeletal/hylian/hyl_hairD.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

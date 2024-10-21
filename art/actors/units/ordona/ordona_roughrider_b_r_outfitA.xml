@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Run" speed="40"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_sword.dae" name="attack_melee" speed="100"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_sword.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_sword.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="death" speed="230"/>
+		<animation file="HC_archer/biped_hum_arch_harvest_fruit_mount.dae" name="gather_fruit" speed="100"/>
+		<animation file="HC_archer/biped_hum_arch_harvest_grain_mount.dae" name="gather_grain" speed="100"/>
+		<animation file="HC_archer/biped_hum_arch_harvest_meat_mount.dae" name="gather_meat" speed="100"/>
+		<animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine_mount.dae" name="gather_ore" speed="100"/>
+		<animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine_mount.dae" name="gather_rock" speed="100"/>
+		<animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine_mount.dae" name="gather_ruins" speed="100"/>
+		<animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine_mount.dae" name="gather_rupees" speed="100"/>
+		<animation event="0.25" file="HC_archer/biped_hum_arch_harvest_tree_mount.dae" name="gather_tree" speed="120"/>
+      </animations>
+    </variant>
+  </group>  
+  <group>
+    <variant frequency="1" name="outfitA">
+      <mesh>units/ordona/ord_femaleA_outfitA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="outfitB">
+      <mesh>units/ordona/ord_femaleA_outfitB.dae</mesh>
+    </variant>
+  </group> 
+  <group>
+    <variant frequency="1" name="outfittexA">
+      <textures><texture file="skeletal/ordona/ord_female_bodyA.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="outfittexB">
+      <textures><texture file="skeletal/ordona/ord_female_bodyB.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="outfittexC">
+      <textures><texture file="skeletal/ordona/ord_female_bodyC.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="outfittexD">
+      <textures><texture file="skeletal/ordona/ord_female_bodyD.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="outfittexE">
+      <textures><texture file="skeletal/ordona/ord_female_bodyE.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_archer/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_tree.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_grain.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_fruit.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_meat.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_rock.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_ore.xml"/>
+	<variant file="HC_archer/base_HC_biped_gather_rupees.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_ruins.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_praise.xml"/>
+    <variant file="HC_archer/base_HC_biped_build.xml"/>
+    <variant file="HC_archer/base_HC_biped_build_farm.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_food.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_meat.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_wood.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_stone.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_metal.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_food_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_meat_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_wood_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_stone_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_metal_idle.xml"/>
+  </group>
+  <material>default.xml</material>
+</actor>

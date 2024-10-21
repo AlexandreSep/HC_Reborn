@@ -1,0 +1,9 @@
+<variant name="carry_metal_idle">
+  <animations>
+	<animation file="HC_capes/biped_hum_cape_carry_idle.dae" name="carry_metal_idle" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/shuttle_metal.xml" attachpoint="bone_Rhand"/>
+	<prop attachpoint="bone_Lhand"/>
+  </props>
+</variant>

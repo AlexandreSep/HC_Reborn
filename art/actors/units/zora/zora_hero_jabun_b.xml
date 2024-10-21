@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_jabun/base_HC_jabun.xml">
+      <mesh>units/zora/zor_jabunA.dae</mesh>
+	  <props>
+	  	<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+		<prop actor="units/zora/zora_hero_jabunwings.xml" attachpoint="root"/>
+      </props>
+      <textures><texture file="skeletal/zora/zor_jabunA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant file="HC_jabun/base_HC_jabun_capture.xml"/>
+    <variant name="Heal">
+      <props>
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>		
+  </group>
+  <material>default.xml</material>
+</actor>

@@ -1,0 +1,5 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.7" file="HC_kokiri/kokiri_attack_bow.dae" load="0.1" name="attack_ranged" speed="100"/>
+  </animations>
+</variant>

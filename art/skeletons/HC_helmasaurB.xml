@@ -1,0 +1,127 @@
+<skeletons>
+<standard_skeleton id="Helmasaurus Skeleton" title="Helmasaurus Skeleton">
+<bone name="helmasaurB_base">
+<bone name="spine">
+<bone name="chest">
+<bone name="neck">
+<bone name="head">
+<bone name="mouth_bot_01">
+<bone name="mouth_bot_02">
+</bone>
+</bone>
+<bone name="mouth_top_01">
+<bone name="mouth_top_02">
+</bone>
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rider_01">
+</bone>
+<bone name="L_fleg_01">
+<bone name="L_fleg_02">
+<bone name="L_fleg_03">
+<bone name="L_ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_fleg_01">
+<bone name="R_fleg_02">
+<bone name="R_fleg_03">
+<bone name="R_ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="joint9">
+<bone name="joint10">
+</bone>
+</bone>
+<bone name="L_bleg_01">
+<bone name="L_bleg_02">
+<bone name="L_bleg_03">
+<bone name="R_btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_bleg_01">
+<bone name="R_bleg_02">
+<bone name="R_bleg_03">
+<bone name="R_btoe_001">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Helmasaurus Skeleton" title="Helmasaurus Skeleton">
+<identifier><root>helmasaurB_base</root></identifier>
+<bone name="helmasaurB_base"><target>helmasaurB_base</target>
+<bone name="spine"><target>spine</target>
+<bone name="chest"><target>chest</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="mouth_bot_01"><target>mouth_bot_01</target>
+<bone name="mouth_bot_02"><target>mouth_bot_02</target>
+</bone>
+</bone>
+<bone name="mouth_top_01"><target>mouth_top_01</target>
+<bone name="mouth_top_02"><target>mouth_top_02</target>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rider_01"><target>rider_01</target>
+</bone>
+<bone name="L_fleg_01"><target>L_fleg_01</target>
+<bone name="L_fleg_02"><target>L_fleg_02</target>
+<bone name="L_fleg_03"><target>L_fleg_03</target>
+<bone name="L_ftoe"><target>L_ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_fleg_01"><target>R_fleg_01</target>
+<bone name="R_fleg_02"><target>R_fleg_02</target>
+<bone name="R_fleg_03"><target>R_fleg_03</target>
+<bone name="R_ftoe"><target>R_ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="joint9"><target>joint9</target>
+<bone name="joint10"><target>joint10</target>
+</bone>
+</bone>
+<bone name="L_bleg_01"><target>L_bleg_01</target>
+<bone name="L_bleg_02"><target>L_bleg_02</target>
+<bone name="L_bleg_03"><target>L_bleg_03</target>
+<bone name="R_btoe"><target>R_btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_bleg_01"><target>R_bleg_01</target>
+<bone name="R_bleg_02"><target>R_bleg_02</target>
+<bone name="R_bleg_03"><target>R_bleg_03</target>
+<bone name="R_btoe_001"><target>R_btoe_001</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

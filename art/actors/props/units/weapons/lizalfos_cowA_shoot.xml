@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="cow">
+      <textures><texture file="skeletal/lizalfos/liz_siegeA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="cow-a">
+      <mesh>props/weapon/lizalfos_cowA_shoot.dae</mesh>
+    </variant>
+  </group>
+</actor>

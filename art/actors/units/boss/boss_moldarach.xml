@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_moldarach/base_HC_moldarach.xml">
+      <mesh>units/boss/boss_moldarachA.dae</mesh>
+      <textures><texture file="skeletal/boss/boss_moldarachA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Attack_Ranged">
+      <props>
+        <prop actor="particle/biggoron_dustB.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_moldarach/base_HC_moldarach_att.xml"/>
+    <variant name="Death">
+      <props>
+		<prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>  
+  <material>basic_trans.xml</material>
+</actor>

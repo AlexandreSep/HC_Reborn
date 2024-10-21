@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/weapon/rova_blastA.dae</mesh>
+      <textures><texture file="skeletal/gerudo/ger_twinrovaA.dds" name="baseTex"/></textures>
+	  <props>
+		<prop actor="particle/gerudo_twinflameC.xml" attachpoint="blast_flame"/>
+		<prop actor="particle/gerudo_twinflameD.xml" attachpoint="blast_flame"/>
+		<prop actor="particle/gerudo_twiniceC.xml" attachpoint="blast_ice"/>
+		<prop actor="particle/gerudo_twiniceD.xml" attachpoint="blast_ice"/>
+      </props>
+    </variant>
+  </group>
+<material>basic_trans.xml</material>
+</actor>

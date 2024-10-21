@@ -1,0 +1,159 @@
+<skeletons>
+<standard_skeleton id="huntingfox_skeleton" title="huntingfox_skeleton">
+<bone name="base_huntingfox">
+<bone name="bone_belly">
+<bone name="bone_chest">
+<bone name="bone_neck">
+<bone name="bone_head">
+<bone name="bone_mouth">
+</bone>
+<bone name="bone_Lear_01">
+<bone name="bone_Lear_02">
+<bone name="bone_Lear_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rear_01">
+<bone name="bone_Rear_02">
+<bone name="bone_Rear_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lshoulder">
+<bone name="bone_Lelbow">
+<bone name="bone_Lhand">
+<bone name="bone_Lfinger">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rshoulder">
+<bone name="bone_Relbow">
+<bone name="bone_Rhand">
+<bone name="bone_Rfinger">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="joint7">
+<bone name="joint8">
+<bone name="joint9">
+<bone name="joint10">
+<bone name="joint11">
+<bone name="joint12">
+<bone name="joint13">
+<bone name="joint14">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lass">
+<bone name="bone_Lthigh">
+<bone name="bone_Lknee">
+<bone name="bone_Lfoot">
+<bone name="bone_Ltoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rass">
+<bone name="bone_Rthigh">
+<bone name="bone_Rknee">
+<bone name="bone_Rfoot">
+<bone name="bone_Rtoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="huntingfox_skeleton" title="huntingfox_skeleton">
+<identifier><root>base_huntingfox</root></identifier>
+<bone name="base_huntingfox"><target>base_huntingfox</target>
+<bone name="bone_belly"><target>bone_belly</target>
+<bone name="bone_chest"><target>bone_chest</target>
+<bone name="bone_neck"><target>bone_neck</target>
+<bone name="bone_head"><target>bone_head</target>
+<bone name="bone_mouth"><target>bone_mouth</target>
+</bone>
+<bone name="bone_Lear_01"><target>bone_Lear_01</target>
+<bone name="bone_Lear_02"><target>bone_Lear_02</target>
+<bone name="bone_Lear_03"><target>bone_Lear_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rear_01"><target>bone_Rear_01</target>
+<bone name="bone_Rear_02"><target>bone_Rear_02</target>
+<bone name="bone_Rear_03"><target>bone_Rear_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lshoulder"><target>bone_Lshoulder</target>
+<bone name="bone_Lelbow"><target>bone_Lelbow</target>
+<bone name="bone_Lhand"><target>bone_Lhand</target>
+<bone name="bone_Lfinger"><target>bone_Lfinger</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rshoulder"><target>bone_Rshoulder</target>
+<bone name="bone_Relbow"><target>bone_Relbow</target>
+<bone name="bone_Rhand"><target>bone_Rhand</target>
+<bone name="bone_Rfinger"><target>bone_Rfinger</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="joint7"><target>joint7</target>
+<bone name="joint8"><target>joint8</target>
+<bone name="joint9"><target>joint9</target>
+<bone name="joint10"><target>joint10</target>
+<bone name="joint11"><target>joint11</target>
+<bone name="joint12"><target>joint12</target>
+<bone name="joint13"><target>joint13</target>
+<bone name="joint14"><target>joint14</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lass"><target>bone_Lass</target>
+<bone name="bone_Lthigh"><target>bone_Lthigh</target>
+<bone name="bone_Lknee"><target>bone_Lknee</target>
+<bone name="bone_Lfoot"><target>bone_Lfoot</target>
+<bone name="bone_Ltoe"><target>bone_Ltoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rass"><target>bone_Rass</target>
+<bone name="bone_Rthigh"><target>bone_Rthigh</target>
+<bone name="bone_Rknee"><target>bone_Rknee</target>
+<bone name="bone_Rfoot"><target>bone_Rfoot</target>
+<bone name="bone_Rtoe"><target>bone_Rtoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

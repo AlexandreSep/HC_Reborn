@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="bubble">
+      <textures><texture file="skeletal/deku/deku_bubbleB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="bubble-a">
+      <mesh>props/weapon/deku_bubbleA_shoot.dae</mesh>
+    </variant>
+  </group>
+</actor>

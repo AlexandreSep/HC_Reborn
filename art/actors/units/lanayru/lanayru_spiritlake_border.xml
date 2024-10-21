@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>units/lanayru/lan_spiritlake_border.dae</mesh>
+	  <props>
+		<prop actor="units/lanayru/lanayru_spiritlake_water.xml" attachpoint="root"/>
+		<prop actor="props/structures/lanayru/lanayru_groundbase_mud.xml" attachpoint="root"/>
+      </props>
+      <textures>
+	    <texture file="skeletal/lanayru/lan_mudA.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

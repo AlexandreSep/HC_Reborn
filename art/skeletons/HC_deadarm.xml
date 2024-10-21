@@ -1,0 +1,99 @@
+<skeletons>
+<standard_skeleton id="Deadarm Skeleton" title="Deadarm Skeleton">
+<bone name="deadarm_base">
+<bone name="shoulder">
+<bone name="elbow">
+<bone name="hand">
+<bone name="wrist">
+<bone name="middle_01">
+<bone name="middle_02">
+<bone name="middle_03">
+<bone name="middle_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="pointer_01">
+<bone name="pointer_02">
+<bone name="pointer_03">
+<bone name="pointer_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ring_01">
+<bone name="ring_02">
+<bone name="ring_03">
+<bone name="ring_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="pinky_01">
+<bone name="pinky_02">
+<bone name="pinky_03">
+<bone name="pinky_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="thumb_01">
+<bone name="thumb_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Deadarm Skeleton" title="Deadarm Skeleton">
+<identifier><root>deadarm_base</root></identifier>
+<bone name="deadarm_base"><target>deadarm_base</target>
+<bone name="shoulder"><target>shoulder</target>
+<bone name="elbow"><target>elbow</target>
+<bone name="hand"><target>hand</target>
+<bone name="wrist"><target>wrist</target>
+<bone name="middle_01"><target>middle_01</target>
+<bone name="middle_02"><target>middle_02</target>
+<bone name="middle_03"><target>middle_03</target>
+<bone name="middle_04"><target>middle_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="pointer_01"><target>pointer_01</target>
+<bone name="pointer_02"><target>pointer_02</target>
+<bone name="pointer_03"><target>pointer_03</target>
+<bone name="pointer_04"><target>pointer_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ring_01"><target>ring_01</target>
+<bone name="ring_02"><target>ring_02</target>
+<bone name="ring_03"><target>ring_03</target>
+<bone name="ring_04"><target>ring_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="pinky_01"><target>pinky_01</target>
+<bone name="pinky_02"><target>pinky_02</target>
+<bone name="pinky_03"><target>pinky_03</target>
+<bone name="pinky_04"><target>pinky_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="thumb_01"><target>thumb_01</target>
+<bone name="thumb_02"><target>thumb_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

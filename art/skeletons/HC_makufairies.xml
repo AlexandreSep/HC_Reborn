@@ -1,0 +1,59 @@
+<skeletons>
+<standard_skeleton id="Makufairies Skeleton" title="Makufairies Skeleton">
+<bone name="base_makufairies">
+<bone name="fairy_02">
+</bone>
+<bone name="fairy_05">
+</bone>
+<bone name="fairy_04">
+</bone>
+<bone name="fairy_03">
+</bone>
+<bone name="fairy_06">
+</bone>
+<bone name="fairy_07">
+</bone>
+<bone name="fairy_08">
+</bone>
+<bone name="fairy_09">
+</bone>
+<bone name="fairy_010">
+</bone>
+<bone name="fairy_011">
+</bone>
+<bone name="fairy_012">
+</bone>
+<bone name="fairy_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Makufairies Skeleton" title="Makufairies Skeletons">
+<identifier><root>base_makufairies</root></identifier>
+<bone name="base_makufairies"><target>base_makufairies</target>
+<bone name="fairy_02"><target>fairy_02</target>
+</bone>
+<bone name="fairy_05"><target>fairy_05</target>
+</bone>
+<bone name="fairy_04"><target>fairy_04</target>
+</bone>
+<bone name="fairy_03"><target>fairy_03</target>
+</bone>
+<bone name="fairy_06"><target>fairy_06</target>
+</bone>
+<bone name="fairy_07"><target>fairy_07</target>
+</bone>
+<bone name="fairy_08"><target>fairy_08</target>
+</bone>
+<bone name="fairy_09"><target>fairy_09</target>
+</bone>
+<bone name="fairy_010"><target>fairy_010</target>
+</bone>
+<bone name="fairy_011"><target>fairy_011</target>
+</bone>
+<bone name="fairy_012"><target>fairy_012</target>
+</bone>
+<bone name="fairy_01"><target>fairy_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

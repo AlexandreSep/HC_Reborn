@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="idolthone crew">
+      <animations> 
+        <animation file="HC_darknut/darknut_carry.dae" name="Idle" speed="100"/>
+        <animation event="0.5" file="HC_darknut/darknut_walk_carry.dae" name="Walk" speed="30"/>
+        <animation event="0.5" file="HC_darknut/darknut_walk_carry.dae" name="Run" speed="35"/>
+		<animation file="HC_darknut/darknut_deathA.dae" name="death" speed="100"/>
+      </animations> 
+      <mesh>units/darknut/dar_fanaticA.dae</mesh>
+      <textures><texture file="skeletal/darknut/dar_mainB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

@@ -1,0 +1,11 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_kyameron/kyameron_idle.dae" name="Idle" id="idle1" speed="75"/>
+    <animation event="0.5" file="HC_kyameron/kyameron_idle.dae" name="Walk" id="walk1" speed="90"/>
+    <animation event="0.5" file="HC_kyameron/kyameron_idle.dae" name="Walk" id="walk2" speed="100"/>
+    <animation event="0.5" file="HC_kyameron/kyameron_idle.dae" name="Run" id="run1" speed="130"/>
+    <animation event="0.5" file="HC_kyameron/kyameron_idle.dae" name="Run" id="run2" speed="140"/>
+	<animation event="0.5" file="HC_kyameron/kyameron_attack.dae" name="Attack_melee" id="attack1" speed="107"/>
+	<animation file="HC_kyameron/kyameron_attack.dae" name="promotion" speed="80"/>
+  </animations>
+</variant>

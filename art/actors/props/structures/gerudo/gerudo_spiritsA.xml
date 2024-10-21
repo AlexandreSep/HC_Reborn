@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+ 
+  <group>
+    <variant>
+      <animations>
+        <animation file="gerudo_spirits/ger_spirits_idle.dae" name="Idle" speed="250"/>
+      </animations>
+      <mesh>structural/gerudo/ger_spiritsA.dae</mesh>
+	  <props>
+		<prop actor="particle/gerudo_spirit.xml" attachpoint="spirit_05"/>
+		<prop actor="particle/gerudo_spirit.xml" attachpoint="spirit_02"/>
+		<prop actor="particle/gerudo_spirit.xml" attachpoint="spirit_03"/>
+		<prop actor="particle/gerudo_spirit.xml" attachpoint="spirit_04"/>
+      </props>
+      <textures>
+        <texture file="structural/gerudo/gerudo_spiritA.dds" name="baseTex"/>
+		<texture file="structural/gerudo/gerudo_spiritA.dds" name="specTex"/>
+		<texture file="structural/gerudo/gerudo_spiritA.dds" name="glowTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_glow.xml</material>
+</actor>

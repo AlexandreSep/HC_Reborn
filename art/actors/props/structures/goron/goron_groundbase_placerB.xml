@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <group>
+    <variant name="hooj">
+      <decal angle="0" depth="95" offsetx="0" offsetz="0" width="95"/>
+      <textures>
+        <texture file="props/goron/gor_groundbaseA.dds" name="baseTex"/>
+        <texture file="props/goron/gor_groundbaseA_normal.dds" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>terrain_norm.xml</material>
+</actor>

@@ -1,0 +1,263 @@
+<skeletons>
+<standard_skeleton id="Twinrova_Skeleton" title="Twinrova_Skeleton">
+<bone name="bone_twinrova_pelvis">
+<bone name="belly_01">
+<bone name="chest_01">
+<bone name="torso_01">
+<bone name="neck_01">
+<bone name="head_01">
+<bone name="L_hair_01">
+<bone name="L_hair_02">
+<bone name="L_hair_03">
+<bone name="L_hair_04">
+<bone name="L_hair_05">
+<bone name="L_hair_06">
+<bone name="L_hair_07">
+<bone name="L_hair_08">
+<bone name="L_hair_09">
+<bone name="L_hair_010">
+<bone name="L_hair_011">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hair_01">
+<bone name="R_hair_02">
+<bone name="R_hair_03">
+<bone name="R_hair_04">
+<bone name="R_hair_05">
+<bone name="R_hair_06">
+<bone name="R_hair_07">
+<bone name="R_hair_08">
+<bone name="R_hair_09">
+<bone name="R_hair_010">
+<bone name="R_hair_011">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01">
+<bone name="L_shoulder_01">
+<bone name="L_elbow_01">
+<bone name="L_wrist_01">
+<bone name="L_hand_01">
+<bone name="L_broom_01">
+<bone name="L_broom_02">
+<bone name="L_broom_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_flap_01">
+<bone name="L_flap_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01">
+<bone name="R_shoulder_01">
+<bone name="R_elbow_01">
+<bone name="R_wrist_01">
+<bone name="R_hand_01">
+<bone name="R_broom_01">
+<bone name="R_broom_02">
+<bone name="R_broom_03">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+</bone>
+</bone>
+<bone name="R_flap_01">
+<bone name="R_flap_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_01">
+<bone name="L_knee_01">
+<bone name="L_ankle_01">
+<bone name="L_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip_01">
+<bone name="R_knee_01">
+<bone name="R_ankle_01">
+<bone name="R_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="drape_01">
+<bone name="drape_02">
+<bone name="drape_03">
+<bone name="drape_04">
+<bone name="drape_05">
+<bone name="drape_06">
+<bone name="drape_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Twinrova_Skeleton" title="Twinrova_Skeleton">
+<identifier><root>bone_twinrova_pelvis</root></identifier>
+<bone name="bone_twinrova_pelvis"><target>bone_twinrova_pelvis</target>
+<bone name="belly_01"><target>belly_01</target>
+<bone name="chest_01"><target>chest_01</target>
+<bone name="torso_01"><target>torso_01</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="L_hair_01"><target>L_hair_01</target>
+<bone name="L_hair_02"><target>L_hair_02</target>
+<bone name="L_hair_03"><target>L_hair_03</target>
+<bone name="L_hair_04"><target>L_hair_04</target>
+<bone name="L_hair_05"><target>L_hair_05</target>
+<bone name="L_hair_06"><target>L_hair_06</target>
+<bone name="L_hair_07"><target>L_hair_07</target>
+<bone name="L_hair_08"><target>L_hair_08</target>
+<bone name="L_hair_09"><target>L_hair_09</target>
+<bone name="L_hair_010"><target>L_hair_010</target>
+<bone name="L_hair_011"><target>L_hair_011</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hair_01"><target>R_hair_01</target>
+<bone name="R_hair_02"><target>R_hair_02</target>
+<bone name="R_hair_03"><target>R_hair_03</target>
+<bone name="R_hair_04"><target>R_hair_04</target>
+<bone name="R_hair_05"><target>R_hair_05</target>
+<bone name="R_hair_06"><target>R_hair_06</target>
+<bone name="R_hair_07"><target>R_hair_07</target>
+<bone name="R_hair_08"><target>R_hair_08</target>
+<bone name="R_hair_09"><target>R_hair_09</target>
+<bone name="R_hair_010"><target>R_hair_010</target>
+<bone name="R_hair_011"><target>R_hair_011</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01"><target>L_clavical_01</target>
+<bone name="L_shoulder_01"><target>L_shoulder_01</target>
+<bone name="L_elbow_01"><target>L_elbow_01</target>
+<bone name="L_wrist_01"><target>L_wrist_01</target>
+<bone name="L_hand_01"><target>L_hand_01</target>
+<bone name="L_broom_01"><target>L_broom_01</target>
+<bone name="L_broom_02"><target>L_broom_02</target>
+<bone name="L_broom_03"><target>L_broom_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_flap_01"><target>L_flap_01</target>
+<bone name="L_flap_02"><target>L_flap_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01"><target>R_clavical_01</target>
+<bone name="R_shoulder_01"><target>R_shoulder_01</target>
+<bone name="R_elbow_01"><target>R_elbow_01</target>
+<bone name="R_wrist_01"><target>R_wrist_01</target>
+<bone name="R_hand_01"><target>R_hand_01</target>
+<bone name="R_broom_01"><target>R_broom_01</target>
+<bone name="R_broom_02"><target>R_broom_02</target>
+<bone name="R_broom_03"><target>R_broom_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+<bone name="R_flap_01"><target>R_flap_01</target>
+<bone name="R_flap_02"><target>R_flap_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_01"><target>L_hip_01</target>
+<bone name="L_knee_01"><target>L_knee_01</target>
+<bone name="L_ankle_01"><target>L_ankle_01</target>
+<bone name="L_foot_01"><target>L_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip_01"><target>R_hip_01</target>
+<bone name="R_knee_01"><target>R_knee_01</target>
+<bone name="R_ankle_01"><target>R_ankle_01</target>
+<bone name="R_foot_01"><target>R_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="drape_01"><target>drape_01</target>
+<bone name="drape_02"><target>drape_02</target>
+<bone name="drape_03"><target>drape_03</target>
+<bone name="drape_04"><target>drape_04</target>
+<bone name="drape_05"><target>drape_05</target>
+<bone name="drape_06"><target>drape_06</target>
+<bone name="drape_07"><target>drape_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

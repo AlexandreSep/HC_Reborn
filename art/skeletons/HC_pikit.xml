@@ -1,0 +1,403 @@
+<skeletons>
+<standard_skeleton id="Pikit Skeleton" title="Pikit Skeleton">
+<bone name="pikitA_base">
+<bone name="L_leg_01">
+<bone name="L_leg_02">
+<bone name="L_leg_03">
+<bone name="L_leg_04">
+<bone name="L_leg_05">
+<bone name="L_leg_06">
+<bone name="L_leg_07">
+<bone name="L_leg_08">
+<bone name="L_leg_09">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tongue_01">
+<bone name="tongue_02">
+<bone name="tongue_03">
+<bone name="tongue_04">
+<bone name="tongue_05">
+<bone name="tongue_06">
+<bone name="tongue_07">
+<bone name="tongue_08">
+<bone name="tongue_09">
+<bone name="tongue_010">
+<bone name="tongue_011">
+<bone name="tongue_012">
+<bone name="tongue_013">
+<bone name="loaded_projectile">
+<bone name="projectile">
+<bone name="Top_tooth_01">
+<bone name="Top_tooth_02">
+<bone name="Top_tooth_03">
+<bone name="Top_tooth_04">
+<bone name="Top_tooth_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Bot_tooth_01">
+<bone name="Bot_tooth_02">
+<bone name="Bot_tooth_03">
+<bone name="Bot_tooth_04">
+<bone name="Bot_tooth_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_tooth_01">
+<bone name="L_tooth_02">
+<bone name="L_tooth_03">
+<bone name="L_tooth_04">
+<bone name="L_tooth_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_tooth_01">
+<bone name="R_tooth_02">
+<bone name="R_tooth_03">
+<bone name="R_tooth_04">
+<bone name="R_tooth_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_01">
+<bone name="R_leg_02">
+<bone name="R_leg_03">
+<bone name="R_leg_04">
+<bone name="R_leg_05">
+<bone name="R_leg_06">
+<bone name="R_leg_07">
+<bone name="R_leg_08">
+<bone name="R_leg_09">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_01">
+<bone name="flap_02">
+<bone name="flap_03">
+<bone name="flap_04">
+<bone name="flap_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_07">
+<bone name="flap_08">
+<bone name="flap_09">
+<bone name="flap_10">
+<bone name="flap_11">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_12">
+<bone name="flap_13">
+<bone name="flap_14">
+<bone name="flap_15">
+<bone name="flap_16">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegA_01">
+<bone name="LegA_02">
+<bone name="LegA_03">
+<bone name="LegA_04">
+<bone name="LegA_05">
+<bone name="LegA_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegB_01">
+<bone name="LegB_02">
+<bone name="LegB_03">
+<bone name="LegB_04">
+<bone name="LegB_05">
+<bone name="LegB_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegC_01">
+<bone name="LegC_02">
+<bone name="LegC_03">
+<bone name="LegC_04">
+<bone name="LegC_05">
+<bone name="LegC_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegD_01">
+<bone name="LegD_02">
+<bone name="LegD_03">
+<bone name="LegD_04">
+<bone name="LegD_05">
+<bone name="LegD_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegE_01">
+<bone name="LegE_02">
+<bone name="LegE_03">
+<bone name="LegE_04">
+<bone name="LegE_05">
+<bone name="LegE_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Pikit Skeleton" title="Pikit Skeleton">
+<identifier><root>pikitA_base</root></identifier>
+<bone name="pikitA_base"><target>pikitA_base</target>
+<bone name="L_leg_01"><target>L_leg_01</target>
+<bone name="L_leg_02"><target>L_leg_02</target>
+<bone name="L_leg_03"><target>L_leg_03</target>
+<bone name="L_leg_04"><target>L_leg_04</target>
+<bone name="L_leg_05"><target>L_leg_05</target>
+<bone name="L_leg_06"><target>L_leg_06</target>
+<bone name="L_leg_07"><target>L_leg_07</target>
+<bone name="L_leg_08"><target>L_leg_08</target>
+<bone name="L_leg_09"><target>L_leg_09</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tongue_01"><target>tongue_01</target>
+<bone name="tongue_02"><target>tongue_02</target>
+<bone name="tongue_03"><target>tongue_03</target>
+<bone name="tongue_04"><target>tongue_04</target>
+<bone name="tongue_05"><target>tongue_05</target>
+<bone name="tongue_06"><target>tongue_06</target>
+<bone name="tongue_07"><target>tongue_07</target>
+<bone name="tongue_08"><target>tongue_08</target>
+<bone name="tongue_09"><target>tongue_09</target>
+<bone name="tongue_010"><target>tongue_010</target>
+<bone name="tongue_011"><target>tongue_011</target>
+<bone name="tongue_012"><target>tongue_012</target>
+<bone name="tongue_013"><target>tongue_013</target>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+<bone name="projectile"><target>projectile</target>
+<bone name="Top_tooth_01"><target>Top_tooth_01</target>
+<bone name="Top_tooth_02"><target>Top_tooth_02</target>
+<bone name="Top_tooth_03"><target>Top_tooth_03</target>
+<bone name="Top_tooth_04"><target>Top_tooth_04</target>
+<bone name="Top_tooth_05"><target>Top_tooth_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Bot_tooth_01"><target>Bot_tooth_01</target>
+<bone name="Bot_tooth_02"><target>Bot_tooth_02</target>
+<bone name="Bot_tooth_03"><target>Bot_tooth_03</target>
+<bone name="Bot_tooth_04"><target>Bot_tooth_04</target>
+<bone name="Bot_tooth_05"><target>Bot_tooth_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_tooth_01"><target>L_tooth_01</target>
+<bone name="L_tooth_02"><target>L_tooth_02</target>
+<bone name="L_tooth_03"><target>L_tooth_03</target>
+<bone name="L_tooth_04"><target>L_tooth_04</target>
+<bone name="L_tooth_05"><target>L_tooth_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_tooth_01"><target>R_tooth_01</target>
+<bone name="R_tooth_02"><target>R_tooth_02</target>
+<bone name="R_tooth_03"><target>R_tooth_03</target>
+<bone name="R_tooth_04"><target>R_tooth_04</target>
+<bone name="R_tooth_05"><target>R_tooth_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_01"><target>R_leg_01</target>
+<bone name="R_leg_02"><target>R_leg_02</target>
+<bone name="R_leg_03"><target>R_leg_03</target>
+<bone name="R_leg_04"><target>R_leg_04</target>
+<bone name="R_leg_05"><target>R_leg_05</target>
+<bone name="R_leg_06"><target>R_leg_06</target>
+<bone name="R_leg_07"><target>R_leg_07</target>
+<bone name="R_leg_08"><target>R_leg_08</target>
+<bone name="R_leg_09"><target>R_leg_09</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_01"><target>flap_01</target>
+<bone name="flap_02"><target>flap_02</target>
+<bone name="flap_03"><target>flap_03</target>
+<bone name="flap_04"><target>flap_04</target>
+<bone name="flap_05"><target>flap_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_07"><target>flap_07</target>
+<bone name="flap_08"><target>flap_08</target>
+<bone name="flap_09"><target>flap_09</target>
+<bone name="flap_10"><target>flap_10</target>
+<bone name="flap_11"><target>flap_11</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_12"><target>flap_12</target>
+<bone name="flap_13"><target>flap_13</target>
+<bone name="flap_14"><target>flap_14</target>
+<bone name="flap_15"><target>flap_15</target>
+<bone name="flap_16"><target>flap_16</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegA_01"><target>LegA_01</target>
+<bone name="LegA_02"><target>LegA_02</target>
+<bone name="LegA_03"><target>LegA_03</target>
+<bone name="LegA_04"><target>LegA_04</target>
+<bone name="LegA_05"><target>LegA_05</target>
+<bone name="LegA_06"><target>LegA_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegB_01"><target>LegB_01</target>
+<bone name="LegB_02"><target>LegB_02</target>
+<bone name="LegB_03"><target>LegB_03</target>
+<bone name="LegB_04"><target>LegB_04</target>
+<bone name="LegB_05"><target>LegB_05</target>
+<bone name="LegB_06"><target>LegB_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegC_01"><target>LegC_01</target>
+<bone name="LegC_02"><target>LegC_02</target>
+<bone name="LegC_03"><target>LegC_03</target>
+<bone name="LegC_04"><target>LegC_04</target>
+<bone name="LegC_05"><target>LegC_05</target>
+<bone name="LegC_06"><target>LegC_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegD_01"><target>LegD_01</target>
+<bone name="LegD_02"><target>LegD_02</target>
+<bone name="LegD_03"><target>LegD_03</target>
+<bone name="LegD_04"><target>LegD_04</target>
+<bone name="LegD_05"><target>LegD_05</target>
+<bone name="LegD_06"><target>LegD_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegE_01"><target>LegE_01</target>
+<bone name="LegE_02"><target>LegE_02</target>
+<bone name="LegE_03"><target>LegE_03</target>
+<bone name="LegE_04"><target>LegE_04</target>
+<bone name="LegE_05"><target>LegE_05</target>
+<bone name="LegE_06"><target>LegE_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

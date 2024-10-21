@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_ruto/base_HC_biped_ruto.xml">
+      <mesh>units/zora/zor_ruto_waterA.dae</mesh>
+      <textures><texture file="skeletal/zora/zor_main3.dds" name="baseTex"/></textures>
+  <props>
+	<prop actor="particle/zora_iceflowA.xml" attachpoint="water_blast_04"/>
+	<prop actor="particle/zora_iceflowA.xml" attachpoint="water_blast_02"/>
+	<prop actor="particle/zora_iceflowA.xml" attachpoint="water_blast_03"/>
+  </props>	  
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_ruto/base_HC_biped_attack_rutoice.xml"/>
+    <variant file="HC_ruto/base_HC_biped_capture.xml"/>
+    <variant file="HC_ruto/base_HC_biped_death.xml"/>
+  </group>
+  <material>default.xml</material>
+</actor>

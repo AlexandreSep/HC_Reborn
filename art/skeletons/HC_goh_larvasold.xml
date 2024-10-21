@@ -1,0 +1,91 @@
+<skeletons>
+<standard_skeleton id="goh_larvasold_skeleton" title="goh_larvasold_skeleton">
+<bone name="goh_larvasolder_base">
+<bone name="anten_01">
+<bone name="anten_02">
+<bone name="anten_03">
+<bone name="anten_04">
+<bone name="anten_05">
+<bone name="anten_06">
+<bone name="anten_07">
+<bone name="anten_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_legtop">
+<bone name="L_knee">
+<bone name="L_ankle">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01">
+<bone name="eye_02">
+</bone>
+</bone>
+<bone name="R_legtop">
+<bone name="R_knee">
+<bone name="R_ankle">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="goh_larvasold_skeleton" title="goh_larvasold_skeleton">
+<identifier><root>goh_larvasolder_base</root></identifier>
+<bone name="goh_larvasolder_base"><target>goh_larvasolder_base</target>
+<bone name="anten_01"><target>anten_01</target>
+<bone name="anten_02"><target>anten_02</target>
+<bone name="anten_03"><target>anten_03</target>
+<bone name="anten_04"><target>anten_04</target>
+<bone name="anten_05"><target>anten_05</target>
+<bone name="anten_06"><target>anten_06</target>
+<bone name="anten_07"><target>anten_07</target>
+<bone name="anten_08"><target>anten_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_legtop"><target>L_legtop</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_ankle"><target>L_ankle</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+<bone name="eye_02"><target>eye_02</target>
+</bone>
+</bone>
+<bone name="R_legtop"><target>R_legtop</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_ankle"><target>R_ankle</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,187 @@
+<skeletons>
+<standard_skeleton id="Darknut Large Skeleton" title="Darknut Large Skeleton">
+<bone name="darknutB_base">
+<bone name="belly">
+<bone name="chest">
+<bone name="neck">
+<bone name="head">
+<bone name="helmet">
+</bone>
+</bone>
+</bone>
+<bone name="breastplate_back">
+</bone>
+<bone name="breastplate_front">
+</bone>
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_hand">
+<bone name="L_weapon">
+</bone>
+</bone>
+</bone>
+<bone name="L_pauldron">
+</bone>
+</bone>
+<bone name="cape_01">
+<bone name="cape_02">
+<bone name="cape_03">
+<bone name="cape_04">
+<bone name="cape_05">
+<bone name="cape_06">
+<bone name="cape_07">
+<bone name="cape_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_hand">
+<bone name="R_weapon">
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+<bone name="R_pauldron">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flab_01">
+<bone name="flab_02">
+<bone name="flab_03">
+<bone name="flab_04">
+<bone name="flab_05">
+<bone name="flab_06">
+<bone name="flab_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_armor">
+</bone>
+<bone name="R_hip_armor">
+</bone>
+<bone name="R_hip">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Darknut Large Skeleton" title="Darknut Large Skeleton">
+<identifier><root>darknutB_base</root></identifier>
+<bone name="darknutB_base"><target>darknutB_base</target>
+<bone name="belly"><target>belly</target>
+<bone name="chest"><target>chest</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="helmet"><target>helmet</target>
+</bone>
+</bone>
+</bone>
+<bone name="breastplate_back"><target>breastplate_back</target>
+</bone>
+<bone name="breastplate_front"><target>breastplate_front</target>
+</bone>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_weapon"><target>L_weapon</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_pauldron"><target>L_pauldron</target>
+</bone>
+</bone>
+<bone name="cape_01"><target>cape_01</target>
+<bone name="cape_02"><target>cape_02</target>
+<bone name="cape_03"><target>cape_03</target>
+<bone name="cape_04"><target>cape_04</target>
+<bone name="cape_05"><target>cape_05</target>
+<bone name="cape_06"><target>cape_06</target>
+<bone name="cape_07"><target>cape_07</target>
+<bone name="cape_08"><target>cape_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_weapon"><target>R_weapon</target>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_pauldron"><target>R_pauldron</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip"><target>L_hip</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flab_01"><target>flab_01</target>
+<bone name="flab_02"><target>flab_02</target>
+<bone name="flab_03"><target>flab_03</target>
+<bone name="flab_04"><target>flab_04</target>
+<bone name="flab_05"><target>flab_05</target>
+<bone name="flab_06"><target>flab_06</target>
+<bone name="flab_07"><target>flab_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_armor"><target>L_hip_armor</target>
+</bone>
+<bone name="R_hip_armor"><target>R_hip_armor</target>
+</bone>
+<bone name="R_hip"><target>R_hip</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

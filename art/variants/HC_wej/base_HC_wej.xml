@@ -1,0 +1,8 @@
+<variant name="Base" frequency="1">
+  <animations>
+		<animation file="HC_wej/wej_idle.dae" name="Idle" id="idle1" speed="50"/>
+        <animation file="HC_wej/wej_idleA.dae" name="Idle" id="idle2" speed="50"/>
+        <animation file="HC_wej/wej_idleB.dae" name="Idle" id="idle3" speed="50"/>
+		<animation file="HC_wej/wej_idleC.dae" name="Idle" id="idle4" speed="50"/>
+  </animations>
+</variant>

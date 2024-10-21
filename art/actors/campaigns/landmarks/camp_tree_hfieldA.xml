@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant name="a">
+      <mesh>campaign/landmarks/camp_tree_hfieldA.dae</mesh>
+	  <textures>
+			<texture file="campaigns/landmarks/camp_tree_hfieldA.dds" name="baseTex"/>
+	  	    <texture file="campaigns/landmarks/camp_tree_hfieldA_normal.dds" name="normTex"/>
+	  </textures>
+      <props>
+		<prop actor="campaigns/landmarks/camp_tree_hfieldA_l.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+
+</actor>

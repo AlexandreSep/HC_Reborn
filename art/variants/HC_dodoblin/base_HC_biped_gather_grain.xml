@@ -1,0 +1,10 @@
+<variant name="gather_grain">
+  <animations>
+    <animation file="HC_dodoblin/dodoblin_gatherA.dae" name="gather_grain" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_hoe.xml" attachpoint="R_wrist"/>
+    <prop attachpoint="R_wrist"/>
+	<prop attachpoint="L_wrist"/>
+  </props>
+</variant>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+	  <textures><texture file="skeletal/goron/gor_main3.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="gorpicaxeA">
+      <mesh>props/weapon/goron_drillshaftA.dae</mesh>
+    </variant>
+  </group>
+</actor>

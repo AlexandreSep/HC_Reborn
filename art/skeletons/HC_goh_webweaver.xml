@@ -1,0 +1,83 @@
+<skeletons>
+<standard_skeleton id="webweaver_skel" title="webweaver_skel">
+<bone name="webweaver_base">
+<bone name="ass_01">
+<bone name="ass_02">
+</bone>
+</bone>
+<bone name="L_Fleg_01">
+<bone name="L_Fleg_02">
+<bone name="L_Fleg_03">
+<bone name="L_Fleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bleg_01">
+<bone name="L_Bleg_02">
+<bone name="L_Bleg_03">
+<bone name="L_Bleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fleg_01">
+<bone name="R_Fleg_02">
+<bone name="R_Fleg_03">
+<bone name="R_Fleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bleg_01">
+<bone name="R_Bleg_02">
+<bone name="R_Bleg_03">
+<bone name="R_Bleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="webweaver_skel" title="webweaver_skel">
+<identifier><root>webweaver_base</root></identifier>
+<bone name="webweaver_base"><target>webweaver_base</target>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+</bone>
+</bone>
+<bone name="L_Fleg_01"><target>L_Fleg_01</target>
+<bone name="L_Fleg_02"><target>L_Fleg_02</target>
+<bone name="L_Fleg_03"><target>L_Fleg_03</target>
+<bone name="L_Fleg_04"><target>L_Fleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bleg_01"><target>L_Bleg_01</target>
+<bone name="L_Bleg_02"><target>L_Bleg_02</target>
+<bone name="L_Bleg_03"><target>L_Bleg_03</target>
+<bone name="L_Bleg_04"><target>L_Bleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fleg_01"><target>R_Fleg_01</target>
+<bone name="R_Fleg_02"><target>R_Fleg_02</target>
+<bone name="R_Fleg_03"><target>R_Fleg_03</target>
+<bone name="R_Fleg_04"><target>R_Fleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bleg_01"><target>R_Bleg_01</target>
+<bone name="R_Bleg_02"><target>R_Bleg_02</target>
+<bone name="R_Bleg_03"><target>R_Bleg_03</target>
+<bone name="R_Bleg_04"><target>R_Bleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

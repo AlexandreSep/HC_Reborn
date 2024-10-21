@@ -1,0 +1,9 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.7" file="HC_kokiri/kokiri_attack_swordA.dae" load="0.1" name="attack_ranged" id="attack1" speed="100"/>
+	<animation event="0.7" file="HC_kokiri/kokiri_attack_swordB.dae" load="0.1" name="attack_ranged" id="attack2" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="units/kokiri/kokiri_enchant_fairy.xml" attachpoint="projectile"/>
+  </props>
+</variant>

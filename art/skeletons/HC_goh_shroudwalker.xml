@@ -1,0 +1,315 @@
+<skeletons>
+<standard_skeleton id="shroudwalker_skel" title="shroudwalker_skel">
+<bone name="shroundwalker_base">
+<bone name="L_leg_01">
+<bone name="L_leg_02">
+<bone name="L_leg_03">
+<bone name="L_leg_04">
+<bone name="L_leg_05">
+<bone name="L_leg_06">
+<bone name="L_leg_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_08">
+<bone name="L_leg_09">
+<bone name="L_leg_010">
+<bone name="L_leg_011">
+<bone name="L_leg_012">
+<bone name="L_leg_013">
+<bone name="L_leg_014">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_015">
+<bone name="L_leg_016">
+<bone name="L_leg_017">
+<bone name="L_leg_018">
+<bone name="L_leg_019">
+<bone name="L_leg_020">
+<bone name="L_leg_021">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_022">
+<bone name="L_leg_023">
+<bone name="L_leg_024">
+<bone name="L_leg_025">
+<bone name="L_leg_026">
+<bone name="L_leg_027">
+<bone name="L_leg_028">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_claw_01">
+<bone name="L_claw_02">
+<bone name="L_claw_03">
+<bone name="L_claw_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_01">
+<bone name="stalk_02">
+<bone name="stalk_03">
+<bone name="clewb_01">
+<bone name="clewb_02">
+<bone name="clewb_03">
+</bone>
+</bone>
+</bone>
+<bone name="clewb_04">
+<bone name="clewb_05">
+<bone name="clewb_06">
+</bone>
+</bone>
+</bone>
+<bone name="clewb_07">
+<bone name="clewb_08">
+<bone name="clew_09">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_claw_01">
+<bone name="R_claw_02">
+<bone name="R_claw_03">
+<bone name="R_claw_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_01">
+<bone name="R_leg_02">
+<bone name="R_leg_03">
+<bone name="R_leg_04">
+<bone name="R_leg_05">
+<bone name="R_leg_06">
+<bone name="R_leg_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_08">
+<bone name="R_leg_09">
+<bone name="R_leg_010">
+<bone name="R_leg_011">
+<bone name="R_leg_012">
+<bone name="R_leg_013">
+<bone name="R_leg_014">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_015">
+<bone name="R_leg_016">
+<bone name="R_leg_017">
+<bone name="R_leg_018">
+<bone name="R_leg_019">
+<bone name="R_leg_020">
+<bone name="R_leg_021">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_022">
+<bone name="R_leg_023">
+<bone name="R_leg_024">
+<bone name="R_leg_025">
+<bone name="R_leg_026">
+<bone name="R_leg_027">
+<bone name="R_leg_028">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="shroudwalker_skel" title="shroudwalker_skel">
+<identifier><root>shroundwalker_base</root></identifier>
+<bone name="shroundwalker_base"><target>shroundwalker_base</target>
+<bone name="L_leg_01"><target>L_leg_01</target>
+<bone name="L_leg_02"><target>L_leg_02</target>
+<bone name="L_leg_03"><target>L_leg_03</target>
+<bone name="L_leg_04"><target>L_leg_04</target>
+<bone name="L_leg_05"><target>L_leg_05</target>
+<bone name="L_leg_06"><target>L_leg_06</target>
+<bone name="L_leg_07"><target>L_leg_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_08"><target>L_leg_08</target>
+<bone name="L_leg_09"><target>L_leg_09</target>
+<bone name="L_leg_010"><target>L_leg_010</target>
+<bone name="L_leg_011"><target>L_leg_011</target>
+<bone name="L_leg_012"><target>L_leg_012</target>
+<bone name="L_leg_013"><target>L_leg_013</target>
+<bone name="L_leg_014"><target>L_leg_014</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_015"><target>L_leg_015</target>
+<bone name="L_leg_016"><target>L_leg_016</target>
+<bone name="L_leg_017"><target>L_leg_017</target>
+<bone name="L_leg_018"><target>L_leg_018</target>
+<bone name="L_leg_019"><target>L_leg_019</target>
+<bone name="L_leg_020"><target>L_leg_020</target>
+<bone name="L_leg_021"><target>L_leg_021</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_022"><target>L_leg_022</target>
+<bone name="L_leg_023"><target>L_leg_023</target>
+<bone name="L_leg_024"><target>L_leg_024</target>
+<bone name="L_leg_025"><target>L_leg_025</target>
+<bone name="L_leg_026"><target>L_leg_026</target>
+<bone name="L_leg_027"><target>L_leg_027</target>
+<bone name="L_leg_028"><target>L_leg_028</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_claw_01"><target>L_claw_01</target>
+<bone name="L_claw_02"><target>L_claw_02</target>
+<bone name="L_claw_03"><target>L_claw_03</target>
+<bone name="L_claw_04"><target>L_claw_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_01"><target>stalk_01</target>
+<bone name="stalk_02"><target>stalk_02</target>
+<bone name="stalk_03"><target>stalk_03</target>
+<bone name="clewb_01"><target>clewb_01</target>
+<bone name="clewb_02"><target>clewb_02</target>
+<bone name="clewb_03"><target>clewb_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="clewb_04"><target>clewb_04</target>
+<bone name="clewb_05"><target>clewb_05</target>
+<bone name="clewb_06"><target>clewb_06</target>
+</bone>
+</bone>
+</bone>
+<bone name="clewb_07"><target>clewb_07</target>
+<bone name="clewb_08"><target>clewb_08</target>
+<bone name="clew_09"><target>clew_09</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_claw_01"><target>R_claw_01</target>
+<bone name="R_claw_02"><target>R_claw_02</target>
+<bone name="R_claw_03"><target>R_claw_03</target>
+<bone name="R_claw_04"><target>R_claw_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_01"><target>R_leg_01</target>
+<bone name="R_leg_02"><target>R_leg_02</target>
+<bone name="R_leg_03"><target>R_leg_03</target>
+<bone name="R_leg_04"><target>R_leg_04</target>
+<bone name="R_leg_05"><target>R_leg_05</target>
+<bone name="R_leg_06"><target>R_leg_06</target>
+<bone name="R_leg_07"><target>R_leg_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_08"><target>R_leg_08</target>
+<bone name="R_leg_09"><target>R_leg_09</target>
+<bone name="R_leg_010"><target>R_leg_010</target>
+<bone name="R_leg_011"><target>R_leg_011</target>
+<bone name="R_leg_012"><target>R_leg_012</target>
+<bone name="R_leg_013"><target>R_leg_013</target>
+<bone name="R_leg_014"><target>R_leg_014</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_015"><target>R_leg_015</target>
+<bone name="R_leg_016"><target>R_leg_016</target>
+<bone name="R_leg_017"><target>R_leg_017</target>
+<bone name="R_leg_018"><target>R_leg_018</target>
+<bone name="R_leg_019"><target>R_leg_019</target>
+<bone name="R_leg_020"><target>R_leg_020</target>
+<bone name="R_leg_021"><target>R_leg_021</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_022"><target>R_leg_022</target>
+<bone name="R_leg_023"><target>R_leg_023</target>
+<bone name="R_leg_024"><target>R_leg_024</target>
+<bone name="R_leg_025"><target>R_leg_025</target>
+<bone name="R_leg_026"><target>R_leg_026</target>
+<bone name="R_leg_027"><target>R_leg_027</target>
+<bone name="R_leg_028"><target>R_leg_028</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

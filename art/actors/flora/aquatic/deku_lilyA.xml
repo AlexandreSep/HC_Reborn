@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="lily-a">
+      <mesh>gaia/flora/flora_dekulilyA.dae</mesh>
+	  <textures><texture file="gaia/flora/deku_lilyA.dds" name="baseTex"/></textures>
+    </variant>
+	
+	<variant frequency="1" name="lily-b">
+      <mesh>gaia/flora/flora_dekulilyA.dae</mesh>
+	  <textures><texture file="gaia/flora/deku_lilyB.dds" name="baseTex"/></textures>
+    </variant>
+	
+	<variant frequency="1" name="lily-c">
+      <mesh>gaia/flora/flora_dekulilyA.dae</mesh>
+	  <textures><texture file="gaia/flora/deku_lilyC.dds" name="baseTex"/></textures>
+    </variant>
+	
+    <variant frequency="1" name="lilypod-a">
+      <mesh>gaia/flora/flora_dekulilypodA.dae</mesh>
+	  <textures><texture file="gaia/flora/deku_lilyA.dds" name="baseTex"/></textures>
+    </variant>
+	
+	<variant frequency="1" name="lilypod-b">
+      <mesh>gaia/flora/flora_dekulilypodA.dae</mesh>
+	  <textures><texture file="gaia/flora/deku_lilyB.dds" name="baseTex"/></textures>
+    </variant>
+	
+	<variant frequency="1" name="lilypod-c">
+      <mesh>gaia/flora/flora_dekulilypodA.dae</mesh>
+	  <textures><texture file="gaia/flora/deku_lilyC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>	
+	
+
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,5 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.75" file="HC_biped/biped_hum_promotion.dae" load="0.75" name="attack_ranged" id="attack_ranged1" speed="100"/>
+  </animations>
+</variant>

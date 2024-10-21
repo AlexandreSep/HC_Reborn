@@ -1,0 +1,10 @@
+<variant name="carry_food">
+  <animations>
+	<animation event="0.5" file="HC_stalchild/stalchild_walk_carry.dae" name="carry_food" id="walk1" speed="20"/>
+	<animation event="0.5" file="HC_stalchild/stalchild_walk_carry.dae" name="carry_food" id="walk2" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_basket_carry.xml" attachpoint="R_weapon"/>
+    <prop attachpoint="bone_Rhand"/>
+  </props>
+</variant>

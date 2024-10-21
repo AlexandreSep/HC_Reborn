@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_tokay/tokay_rider_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_tokay/tokay_rider_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_tokay/tokay_rider_idle.dae" name="Run" speed="40"/>
+        <animation event="0.5" file="HC_tokay/tokay_rider_attackA.dae" name="attack_melee" speed="100"/>
+        <animation event="0.5" file="HC_tokay/tokay_rider_attackA.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.5" file="HC_tokay/tokay_rider_attackA.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_tokay/tokay_rider_deathA.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>units/npc_tokay/npc_tok_maleA.dae</mesh>
+	  <props>
+        <prop actor="props/units/weapons/tokay_spearA.xml" attachpoint="R_weapon"/>
+		<prop actor="props/units/outfits/tokay_RflapsA.xml" attachpoint="root"/>
+      </props>
+	  <textures><texture file="skeletal/npc_tokay/npc_tok_tokayA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

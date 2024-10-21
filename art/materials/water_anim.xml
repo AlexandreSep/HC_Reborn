@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material>
+    <alpha_blending/>
+	<alternative material="alphatest.xml" if="CFG_FORCE_ALPHATEST"/>
+	<define name="USE_TRANSPARENT" value="1"/>
+	<required_texture name="baseTex"/>
+	<shader effect="model_water"/>
+	<renderquery name="water_tex"/>
+    <renderquery name="sky_cube"/>
+    <renderquery name="sim_time"/>
+	
+    
+    <uniform name="shininess" value="0.01"/>
+    <uniform name="specularStrength" value="0.01"/>
+    <uniform name="waviness" value="0.01"/>
+    <uniform name="waterTint" value="0.2 0.3 0.2"/>
+    <uniform name="murkiness" value="0.01"/>
+    <uniform name="reflectionTint" value="0.3 0.4 0.3"/>
+    <uniform name="reflectionTintStrength" value="0.01"/>
+	<required_texture name="baseTex"/>		
+</material>

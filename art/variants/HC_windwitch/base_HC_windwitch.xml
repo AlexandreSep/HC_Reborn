@@ -1,0 +1,16 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_windwitch/windwitch_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_windwitch/windwitch_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_windwitch/windwitch_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_windwitch/windwitch_walk.dae" name="Walk" id="walk1" speed="7"/>
+    <animation file="HC_windwitch/windwitch_run.dae" name="Run" id="run1" speed="7"/>
+	<animation event="0.5" file="HC_windwitch/windwitch_attackA.dae" name="Attack_melee" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_windwitch/windwitch_attackB.dae" name="Attack_melee" id="attack2" speed="100"/>
+    <animation event="0.5" file="HC_windwitch/windwitch_attackA.dae" name="Attack_slaughter" id="attack3" speed="100"/>
+	<animation file="HC_windwitch/windwitch_promotion.dae" name="promotion" speed="80"/>
+	<animation file="HC_windwitch/windwitch_death.dae" name="Death" id="death1" speed="100"/>
+	<animation file="HC_windwitch/windwitch_flailA.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_windwitch/windwitch_recoverA.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

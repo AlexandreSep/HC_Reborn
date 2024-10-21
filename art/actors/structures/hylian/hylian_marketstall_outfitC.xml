@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="OutfitC">
+	<mesh>structural/hylian/hyl_market_outfitC.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="OutC_TexA">
+      <textures>
+	    <texture file="skeletal/hylian/hyl_AdvoutfitA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+	<variant frequency="1" name="OutC_TexB">
+      <textures>
+	    <texture file="skeletal/hylian/hyl_AdvoutfitB.dds" name="baseTex"/>
+      </textures>
+    </variant>
+	<variant frequency="1" name="OutC_TexC">
+      <textures>
+	    <texture file="skeletal/hylian/hyl_AdvoutfitC.dds" name="baseTex"/>
+      </textures>
+    </variant>
+	<variant frequency="1" name="OutC_TexD">
+      <textures>
+	    <texture file="skeletal/hylian/hyl_AdvoutfitD.dds" name="baseTex"/>
+      </textures>
+    </variant>
+	<variant frequency="1" name="OutC_TexE">
+      <textures>
+	    <texture file="skeletal/hylian/hyl_AdvoutfitE.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

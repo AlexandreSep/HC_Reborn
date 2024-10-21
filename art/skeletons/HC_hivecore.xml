@@ -1,0 +1,171 @@
+<skeletons>
+<standard_skeleton id="Hivecore_skeleton" title="Hivecore_skeleton">
+<bone name="base_hivecore">
+<bone name="stalk">
+<bone name="generate">
+<bone name="canopy">
+<bone name="top">
+</bone>
+<bone name="hivehorn_01">
+<bone name="hivehorn_02">
+<bone name="hivehorn_03">
+<bone name="hivehorn_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hivehorn_05">
+<bone name="hivehorn_06">
+<bone name="hivehorn_07">
+<bone name="hivehorn_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hivehorn_09">
+<bone name="hivehorn_10">
+<bone name="hivehorn_11">
+<bone name="hivehorn_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="spire_01">
+<bone name="spire_02">
+<bone name="spire_03">
+<bone name="spire_04">
+<bone name="spire_05">
+<bone name="spire_06">
+<bone name="spire_07">
+<bone name="spire_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="spire_09">
+<bone name="spire_10">
+<bone name="spire_11">
+<bone name="spire_12">
+<bone name="spire_13">
+<bone name="spire_14">
+<bone name="spire_15">
+<bone name="spire_16">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="spire_17">
+<bone name="spire_18">
+<bone name="spire_19">
+<bone name="spire_20">
+<bone name="spire_21">
+<bone name="spire_22">
+<bone name="spire_23">
+<bone name="spire_24">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Hivecore_skeleton" title="Hivecore_skeleton">
+<identifier><root>base_hivecore</root></identifier>
+<bone name="base_hivecore"><target>base_hivecore</target>
+<bone name="stalk"><target>stalk</target>
+<bone name="generate"><target>generate</target>
+<bone name="canopy"><target>canopy</target>
+<bone name="top"><target>top</target>
+</bone>
+<bone name="hivehorn_01"><target>hivehorn_01</target>
+<bone name="hivehorn_02"><target>hivehorn_02</target>
+<bone name="hivehorn_03"><target>hivehorn_03</target>
+<bone name="hivehorn_04"><target>hivehorn_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hivehorn_05"><target>hivehorn_05</target>
+<bone name="hivehorn_06"><target>hivehorn_06</target>
+<bone name="hivehorn_07"><target>hivehorn_07</target>
+<bone name="hivehorn_08"><target>hivehorn_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hivehorn_09"><target>hivehorn_09</target>
+<bone name="hivehorn_10"><target>hivehorn_10</target>
+<bone name="hivehorn_11"><target>hivehorn_11</target>
+<bone name="hivehorn_12"><target>hivehorn_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="spire_01"><target>spire_01</target>
+<bone name="spire_02"><target>spire_02</target>
+<bone name="spire_03"><target>spire_03</target>
+<bone name="spire_04"><target>spire_04</target>
+<bone name="spire_05"><target>spire_05</target>
+<bone name="spire_06"><target>spire_06</target>
+<bone name="spire_07"><target>spire_07</target>
+<bone name="spire_08"><target>spire_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="spire_09"><target>spire_09</target>
+<bone name="spire_10"><target>spire_10</target>
+<bone name="spire_11"><target>spire_11</target>
+<bone name="spire_12"><target>spire_12</target>
+<bone name="spire_13"><target>spire_13</target>
+<bone name="spire_14"><target>spire_14</target>
+<bone name="spire_15"><target>spire_15</target>
+<bone name="spire_16"><target>spire_16</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="spire_17"><target>spire_17</target>
+<bone name="spire_18"><target>spire_18</target>
+<bone name="spire_19"><target>spire_19</target>
+<bone name="spire_20"><target>spire_20</target>
+<bone name="spire_21"><target>spire_21</target>
+<bone name="spire_22"><target>spire_22</target>
+<bone name="spire_23"><target>spire_23</target>
+<bone name="spire_24"><target>spire_24</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

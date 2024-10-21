@@ -1,0 +1,439 @@
+<skeletons>
+<standard_skeleton id="Demonblight Skeleton" title="Demonblight Skeleton">
+<bone name="demonblight_baseA">
+<bone name="LegC">
+<bone name="LegL">
+<bone name="KneeL">
+<bone name="FootL">
+<bone name="ToeL">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegR">
+<bone name="KneeR">
+<bone name="FootR">
+<bone name="ToeR">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="SkirtF1">
+<bone name="SkirtF2_null">
+</bone>
+</bone>
+<bone name="SkirtFL1">
+<bone name="SkirtFL2_null">
+</bone>
+</bone>
+<bone name="SkirtFR1">
+<bone name="SkirtFR2_null">
+</bone>
+</bone>
+<bone name="SkirtL1">
+<bone name="SkirtL2_null">
+</bone>
+</bone>
+<bone name="SkirtR1">
+<bone name="SkirtR2_null">
+</bone>
+</bone>
+<bone name="Tail1">
+<bone name="Tail2">
+<bone name="Tail3">
+<bone name="Tail4">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Waist">
+<bone name="Bust">
+<bone name="ClavicleC">
+<bone name="ClavicleL">
+<bone name="S_MantleL1">
+<bone name="S_MantleL2">
+<bone name="S_MantleL3_null">
+</bone>
+</bone>
+</bone>
+<bone name="ShoulderL">
+<bone name="ArmL">
+<bone name="HandL">
+<bone name="FingerL10">
+<bone name="FingerL11">
+<bone name="FingerL12">
+<bone name="FingerL13">
+</bone>
+</bone>
+</bone>
+<bone name="FingerL20">
+<bone name="FingerL21">
+<bone name="FingerL22">
+<bone name="FingerL23">
+</bone>
+</bone>
+</bone>
+<bone name="FingerL30">
+<bone name="FingerL31">
+<bone name="FingerL32">
+<bone name="FingerL33">
+</bone>
+</bone>
+</bone>
+<bone name="FingerL40">
+<bone name="FingerL41">
+<bone name="FingerL42">
+<bone name="FingerL43">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="FingerL51">
+<bone name="FingerL52">
+<bone name="FingerL53">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="HaveL">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ClavicleR">
+<bone name="S_MantleR1">
+<bone name="S_MantleR2">
+<bone name="S_MantleR3_null">
+</bone>
+</bone>
+</bone>
+<bone name="ShoulderR">
+<bone name="ArmR">
+<bone name="HandR">
+<bone name="FingerR10">
+<bone name="FingerR11">
+<bone name="FingerR12">
+<bone name="FingerR13">
+</bone>
+</bone>
+</bone>
+<bone name="FingerR20">
+<bone name="FingerR21">
+<bone name="FingerR22">
+<bone name="FingerR23">
+</bone>
+</bone>
+</bone>
+<bone name="FingerR30">
+<bone name="FingerR31">
+<bone name="FingerR32">
+<bone name="FingerR33">
+</bone>
+</bone>
+</bone>
+<bone name="FingerR40">
+<bone name="FingerR41">
+<bone name="FingerR42">
+<bone name="FingerR43">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="FingerR51">
+<bone name="FingerR52">
+<bone name="FingerR53">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="HaveR">
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Neck">
+<bone name="Head">
+<bone name="Jaw_01">
+<bone name="Jaw_02">
+</bone>
+</bone>
+<bone name="Nose_01">
+<bone name="Nose_02">
+</bone>
+</bone>
+<bone name="S_HairC1">
+<bone name="S_HairC2">
+<bone name="S_HairC3">
+<bone name="S_HairC4_null">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="S_HairL1">
+<bone name="S_HairL2">
+<bone name="S_HairL3">
+<bone name="S_HairL4_null">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="S_HairR1">
+<bone name="S_HairR2">
+<bone name="S_HairR3">
+<bone name="S_HairR4_null">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_l">
+<bone name="eye_l_billbord">
+</bone>
+</bone>
+<bone name="eye_r">
+<bone name="eye_r_billbord">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="S_MantleC1">
+<bone name="S_MantleC2">
+<bone name="S_MantleC3_null">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Demonblight Skeleton" title="Demonblight Skeleton">
+<identifier><root>demonblight_baseA</root></identifier>
+<bone name="demonblight_baseA"><target>demonblight_baseA</target>
+<bone name="LegC"><target>LegC</target>
+<bone name="LegL"><target>LegL</target>
+<bone name="KneeL"><target>KneeL</target>
+<bone name="FootL"><target>FootL</target>
+<bone name="ToeL"><target>ToeL</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LegR"><target>LegR</target>
+<bone name="KneeR"><target>KneeR</target>
+<bone name="FootR"><target>FootR</target>
+<bone name="ToeR"><target>ToeR</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="SkirtF1"><target>SkirtF1</target>
+<bone name="SkirtF2_null"><target>SkirtF2_null</target>
+</bone>
+</bone>
+<bone name="SkirtFL1"><target>SkirtFL1</target>
+<bone name="SkirtFL2_null"><target>SkirtFL2_null</target>
+</bone>
+</bone>
+<bone name="SkirtFR1"><target>SkirtFR1</target>
+<bone name="SkirtFR2_null"><target>SkirtFR2_null</target>
+</bone>
+</bone>
+<bone name="SkirtL1"><target>SkirtL1</target>
+<bone name="SkirtL2_null"><target>SkirtL2_null</target>
+</bone>
+</bone>
+<bone name="SkirtR1"><target>SkirtR1</target>
+<bone name="SkirtR2_null"><target>SkirtR2_null</target>
+</bone>
+</bone>
+<bone name="Tail1"><target>Tail1</target>
+<bone name="Tail2"><target>Tail2</target>
+<bone name="Tail3"><target>Tail3</target>
+<bone name="Tail4"><target>Tail4</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Waist"><target>Waist</target>
+<bone name="Bust"><target>Bust</target>
+<bone name="ClavicleC"><target>ClavicleC</target>
+<bone name="ClavicleL"><target>ClavicleL</target>
+<bone name="S_MantleL1"><target>S_MantleL1</target>
+<bone name="S_MantleL2"><target>S_MantleL2</target>
+<bone name="S_MantleL3_null"><target>S_MantleL3_null</target>
+</bone>
+</bone>
+</bone>
+<bone name="ShoulderL"><target>ShoulderL</target>
+<bone name="ArmL"><target>ArmL</target>
+<bone name="HandL"><target>HandL</target>
+<bone name="FingerL10"><target>FingerL10</target>
+<bone name="FingerL11"><target>FingerL11</target>
+<bone name="FingerL12"><target>FingerL12</target>
+<bone name="FingerL13"><target>FingerL13</target>
+</bone>
+</bone>
+</bone>
+<bone name="FingerL20"><target>FingerL20</target>
+<bone name="FingerL21"><target>FingerL21</target>
+<bone name="FingerL22"><target>FingerL22</target>
+<bone name="FingerL23"><target>FingerL23</target>
+</bone>
+</bone>
+</bone>
+<bone name="FingerL30"><target>FingerL30</target>
+<bone name="FingerL31"><target>FingerL31</target>
+<bone name="FingerL32"><target>FingerL32</target>
+<bone name="FingerL33"><target>FingerL33</target>
+</bone>
+</bone>
+</bone>
+<bone name="FingerL40"><target>FingerL40</target>
+<bone name="FingerL41"><target>FingerL41</target>
+<bone name="FingerL42"><target>FingerL42</target>
+<bone name="FingerL43"><target>FingerL43</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="FingerL51"><target>FingerL51</target>
+<bone name="FingerL52"><target>FingerL52</target>
+<bone name="FingerL53"><target>FingerL53</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="HaveL"><target>HaveL</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ClavicleR"><target>ClavicleR</target>
+<bone name="S_MantleR1"><target>S_MantleR1</target>
+<bone name="S_MantleR2"><target>S_MantleR2</target>
+<bone name="S_MantleR3_null"><target>S_MantleR3_null</target>
+</bone>
+</bone>
+</bone>
+<bone name="ShoulderR"><target>ShoulderR</target>
+<bone name="ArmR"><target>ArmR</target>
+<bone name="HandR"><target>HandR</target>
+<bone name="FingerR10"><target>FingerR10</target>
+<bone name="FingerR11"><target>FingerR11</target>
+<bone name="FingerR12"><target>FingerR12</target>
+<bone name="FingerR13"><target>FingerR13</target>
+</bone>
+</bone>
+</bone>
+<bone name="FingerR20"><target>FingerR20</target>
+<bone name="FingerR21"><target>FingerR21</target>
+<bone name="FingerR22"><target>FingerR22</target>
+<bone name="FingerR23"><target>FingerR23</target>
+</bone>
+</bone>
+</bone>
+<bone name="FingerR30"><target>FingerR30</target>
+<bone name="FingerR31"><target>FingerR31</target>
+<bone name="FingerR32"><target>FingerR32</target>
+<bone name="FingerR33"><target>FingerR33</target>
+</bone>
+</bone>
+</bone>
+<bone name="FingerR40"><target>FingerR40</target>
+<bone name="FingerR41"><target>FingerR41</target>
+<bone name="FingerR42"><target>FingerR42</target>
+<bone name="FingerR43"><target>FingerR43</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="FingerR51"><target>FingerR51</target>
+<bone name="FingerR52"><target>FingerR52</target>
+<bone name="FingerR53"><target>FingerR53</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="HaveR"><target>HaveR</target>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Neck"><target>Neck</target>
+<bone name="Head"><target>Head</target>
+<bone name="Jaw_01"><target>Jaw_01</target>
+<bone name="Jaw_02"><target>Jaw_02</target>
+</bone>
+</bone>
+<bone name="Nose_01"><target>Nose_01</target>
+<bone name="Nose_02"><target>Nose_02</target>
+</bone>
+</bone>
+<bone name="S_HairC1"><target>S_HairC1</target>
+<bone name="S_HairC2"><target>S_HairC2</target>
+<bone name="S_HairC3"><target>S_HairC3</target>
+<bone name="S_HairC4_null"><target>S_HairC4_null</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="S_HairL1"><target>S_HairL1</target>
+<bone name="S_HairL2"><target>S_HairL2</target>
+<bone name="S_HairL3"><target>S_HairL3</target>
+<bone name="S_HairL4_null"><target>S_HairL4_null</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="S_HairR1"><target>S_HairR1</target>
+<bone name="S_HairR2"><target>S_HairR2</target>
+<bone name="S_HairR3"><target>S_HairR3</target>
+<bone name="S_HairR4_null"><target>S_HairR4_null</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_l"><target>eye_l</target>
+<bone name="eye_l_billbord"><target>eye_l_billbord</target>
+</bone>
+</bone>
+<bone name="eye_r"><target>eye_r</target>
+<bone name="eye_r_billbord"><target>eye_r_billbord</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="S_MantleC1"><target>S_MantleC1</target>
+<bone name="S_MantleC2"><target>S_MantleC2</target>
+<bone name="S_MantleC3_null"><target>S_MantleC3_null</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

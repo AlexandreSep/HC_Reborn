@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant name="a">
+      <mesh>gaia/structure/waste_barricade_huge_wall.dae</mesh>
+	  <textures>
+		<texture file="gaia/flora/waste_stumpA.dds" name="baseTex"/>
+		<texture file="gaia/flora/waste_stumpA_normal.dds" name="normTex"/>
+		<texture file="gaia/structure/waste_barricade_huge_wall_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  
+  <material>basic_trans_ao.xml</material>
+
+</actor>

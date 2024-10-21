@@ -1,0 +1,95 @@
+<skeletons>
+<standard_skeleton id="kyameron_skel" title="kyameron_skel">
+<bone name="kyameron_base">
+<bone name="blob_01">
+<bone name="blob_02">
+<bone name="blob_03">
+</bone>
+</bone>
+</bone>
+<bone name="blob_04">
+<bone name="blob_05">
+<bone name="blob_06">
+</bone>
+</bone>
+</bone>
+<bone name="blob_07">
+<bone name="blob_08">
+<bone name="blob_09">
+</bone>
+</bone>
+</bone>
+<bone name="blob_10">
+<bone name="blob_11">
+<bone name="blob_12">
+</bone>
+</bone>
+</bone>
+<bone name="blob_13">
+<bone name="blob_14">
+<bone name="blob_15">
+</bone>
+</bone>
+</bone>
+<bone name="blob_16">
+<bone name="blob_17">
+<bone name="blob_18">
+</bone>
+</bone>
+</bone>
+<bone name="core_01">
+<bone name="core_02">
+<bone name="core_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="kyameron_skel" title="kyameron_skel">
+<identifier><root>kyameron_base</root></identifier>
+<bone name="kyameron_base"><target>kyameron_base</target>
+<bone name="blob_01"><target>blob_01</target>
+<bone name="blob_02"><target>blob_02</target>
+<bone name="blob_03"><target>blob_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="blob_04"><target>blob_04</target>
+<bone name="blob_05"><target>blob_05</target>
+<bone name="blob_06"><target>blob_06</target>
+</bone>
+</bone>
+</bone>
+<bone name="blob_07"><target>blob_07</target>
+<bone name="blob_08"><target>blob_08</target>
+<bone name="blob_09"><target>blob_09</target>
+</bone>
+</bone>
+</bone>
+<bone name="blob_10"><target>blob_10</target>
+<bone name="blob_11"><target>blob_11</target>
+<bone name="blob_12"><target>blob_12</target>
+</bone>
+</bone>
+</bone>
+<bone name="blob_13"><target>blob_13</target>
+<bone name="blob_14"><target>blob_14</target>
+<bone name="blob_15"><target>blob_15</target>
+</bone>
+</bone>
+</bone>
+<bone name="blob_16"><target>blob_16</target>
+<bone name="blob_17"><target>blob_17</target>
+<bone name="blob_18"><target>blob_18</target>
+</bone>
+</bone>
+</bone>
+<bone name="core_01"><target>core_01</target>
+<bone name="core_02"><target>core_02</target>
+<bone name="core_03"><target>core_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

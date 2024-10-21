@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="base">
+      <mesh>structural/hylian/hyl_constA.dae</mesh>
+	  <textures>
+	    <texture file="structural/hylian/hylian_craneA.dds" name="baseTex"/>
+		<texture file="structural/hylian/hylian_craneA_normal.dds" name="normTex"/>
+		<texture file="structural/hylian/hylian_constA_ao.dds" name="aoTex"/>
+	  </textures>
+      <props>
+		<prop actor="props/structures/hylian/hylian_dropcraneA.xml" attachpoint="root"/>
+        <prop actor="props/structures/hylian/hylian_constbaseA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>  
+  <group>
+    <variant frequency="1" name="Idle">
+      <props>
+        <prop actor="particle/construction_dust_huge.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hylian_dropcraneA.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hylian_constbaseA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="scaffold">
+      <props>
+        <prop actor="particle/construction_dust_huge.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hylian_dropcraneA.xml" attachpoint="root"/>
+		<prop actor="structures/hylian/hylian_constextraG.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hylian_constbaseA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

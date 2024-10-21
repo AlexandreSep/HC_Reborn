@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_bearA.xml">
+      <mesh>units/labrynna/lab_bearsaddleA.dae</mesh>
+	  <textures><texture file="skeletal/labrynna/lab_mainB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="Run">
+    </variant>
+	<variant file="HC_mounts/base_HC_bearA_death.xml">
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

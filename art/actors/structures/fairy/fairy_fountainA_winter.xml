@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Fountain">
+      <mesh>structural/fairy/fai_fountainA.dae</mesh>
+      <props>
+		<prop actor="props/structures/fairy/fairy_groundlarge_winter.xml" attachpoint="root"/>
+		<prop actor="props/structures/fairy/fairy_fountain_iceA.xml" attachpoint="root"/>
+		<prop actor="props/structures/fairy/fairy_fountgroundA_winter.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largefield_blue.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largeleaves_winter.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/fairy/fairy_buildingA_winter.dds" name="baseTex"/>
+		<texture file="structural/fairy/fairy_buildingA_winter_normal.dds" name="normTex"/>
+		<texture file="structural/fairy/fairy_fountainA_ao.dds" name="aoTex"/>		
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao.xml</material>
+</actor>

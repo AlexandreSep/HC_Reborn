@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_zora_large/base_HC_biped_sword.xml">
+      <mesh>units/lanayru/lan_sidonA.dae</mesh>
+      <props>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+		<prop actor="props/units/weapons/lanayru_sidonswordA.xml" attachpoint="R_wrist_01"/>
+		<prop actor="props/units/weapons/lanayru_silvershieldA.xml" attachpoint="L_wrist_01"/>
+      </props>
+	  <textures>
+        <texture file="skeletal/lanayru/lan_sidonA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_zora_large/base_HC_biped_capture.xml"/>
+    <variant file="HC_zora_large/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_zora_large/base_HC_biped_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

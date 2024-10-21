@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_wallmaster/base_HC_wallmasterB.xml">
+	<mesh>units/sheikah/she_wallmasterB.dae</mesh>
+	<textures><texture file="skeletal/sheikah/she_devouredA.dds" name="baseTex"/></textures>
+	  <props>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_wallmaster/base_HC_wallmasterB_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="plot">
+      <mesh>structural/goron/gor_plot_smallA.dae</mesh>
+      <textures>
+	    <texture file="structural/goron/goron_building_plots.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+	<variant name="Idle" frequency="1"/>
+	<variant name="upgrading">
+      <props>
+		<prop actor="structures/goron/goron_scaffoldE.xml" attachpoint="root"/>
+        <prop actor="structures/goron/goron_frameE.xml" attachpoint="root"/>
+		<prop actor="particle/construction_dust_hugeB.xml" attachpoint="root"/>
+      </props>
+	</variant>
+	<variant name="upgrading_hovel">
+      <props>
+		<prop actor="structures/goron/goron_scaffoldD.xml" attachpoint="root"/>
+        <prop actor="structures/goron/goron_frameD.xml" attachpoint="root"/>
+		<prop actor="particle/construction_dust_hugeB.xml" attachpoint="root"/>
+      </props>
+	</variant>
+   </group>  
+   <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

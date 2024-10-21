@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/weapon/gerudo_windblastA.dae</mesh>
+      <textures><texture file="skeletal/hylian/hyl_main1.dds" name="baseTex"/></textures>
+	    <props>
+        <prop actor="particle/gerudo_witchnado.xml" attachpoint="root"/>
+        <prop actor="particle/gerudo_witchnadoB.xml" attachpoint="root"/>
+		<prop actor="particle/gerudo_witchnadoC.xml" attachpoint="root"/>
+		<prop actor="particle/gerudo_witchnadoD.xml" attachpoint="root"/>
+		</props>
+    </variant>
+  </group>
+  
+  
+
+</actor>

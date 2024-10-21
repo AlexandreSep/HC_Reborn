@@ -1,0 +1,211 @@
+<skeletons>
+<standard_skeleton id="Krystalsaur_skeleton" title="Krystalsaur_skeleton">
+<bone name="base_krystalsaur">
+<bone name="waist">
+<bone name="chest">
+<bone name="neckbase">
+<bone name="neck">
+<bone name="head">
+<bone name="R_ear_01">
+<bone name="R_ear_02">
+<bone name="R_ear_03">
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_01">
+<bone name="L_ear_02">
+<bone name="L_ear_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical">
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="Lhand">
+<bone name="L_fingers">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical">
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="Rhand">
+<bone name="R_fingers">
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toes">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toes">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="frontflap_01">
+<bone name="frontflap_02">
+<bone name="frontflap_03">
+<bone name="frontflap_04">
+<bone name="frontflap_05">
+<bone name="frontflap_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="backflap_01">
+<bone name="backflap_02">
+<bone name="backflap_03">
+<bone name="backflap_04">
+<bone name="backflap_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Krystalsaur_skeleton" title="Krystalsaur_skeleton">
+<identifier><root>base_krystalsaur</root></identifier>
+<bone name="base_krystalsaur"><target>base_krystalsaur</target>
+<bone name="waist"><target>waist</target>
+<bone name="chest"><target>chest</target>
+<bone name="neckbase"><target>neckbase</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="R_ear_01"><target>R_ear_01</target>
+<bone name="R_ear_02"><target>R_ear_02</target>
+<bone name="R_ear_03"><target>R_ear_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_01"><target>L_ear_01</target>
+<bone name="L_ear_02"><target>L_ear_02</target>
+<bone name="L_ear_03"><target>L_ear_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical"><target>L_clavical</target>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="Lhand"><target>Lhand</target>
+<bone name="L_fingers"><target>L_fingers</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical"><target>R_clavical</target>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="Rhand"><target>Rhand</target>
+<bone name="R_fingers"><target>R_fingers</target>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip"><target>L_hip</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toes"><target>L_toes</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip"><target>R_hip</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toes"><target>R_toes</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="frontflap_01"><target>frontflap_01</target>
+<bone name="frontflap_02"><target>frontflap_02</target>
+<bone name="frontflap_03"><target>frontflap_03</target>
+<bone name="frontflap_04"><target>frontflap_04</target>
+<bone name="frontflap_05"><target>frontflap_05</target>
+<bone name="frontflap_06"><target>frontflap_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="backflap_01"><target>backflap_01</target>
+<bone name="backflap_02"><target>backflap_02</target>
+<bone name="backflap_03"><target>backflap_03</target>
+<bone name="backflap_04"><target>backflap_04</target>
+<bone name="backflap_05"><target>backflap_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

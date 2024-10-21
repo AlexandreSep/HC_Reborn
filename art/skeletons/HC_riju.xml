@@ -1,0 +1,143 @@
+<skeletons>
+<standard_skeleton id="Riju_Mounted" title="Riju_Mounted">
+<bone name="bone_riju_archer">
+<bone name="bone_RThigh">
+<bone name="bone_Rlowerleg">
+<bone name="bone_Rfoot">
+</bone>
+</bone>
+</bone>
+<bone name="bone_abs">
+<bone name="bone_torso">
+<bone name="bone_head">
+<bone name="bone_jaw">
+</bone>
+<bone name="bone_eyebrow">
+<bone name="hair_08">
+<bone name="hair_02">
+<bone name="hair_03">
+<bone name="hair_04">
+<bone name="hair_05">
+<bone name="hair_06">
+<bone name="hair_07">
+<bone name="hair_08_001">
+<bone name="hair_09">
+<bone name="hair_10">
+<bone name="hair_11">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rclavical">
+<bone name="bone_Rupperarm">
+<bone name="bone_Relbow">
+<bone name="projectile">
+<bone name="bone_weapon_weapon01">
+</bone>
+<bone name="bone_weapon02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lclavical">
+<bone name="bone_Lupperarm">
+<bone name="bone_Lelbow">
+<bone name="bone_Lhand">
+<bone name="bone_weapon03_shield_shield01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LThigh">
+<bone name="bone_Llowerleg">
+<bone name="bone_Lfoot">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Riju_Mounted" title="Riju_Mounted">
+<identifier><root>bone_riju_archer</root></identifier>
+<bone name="bone_riju_archer"><target>bone_riju_archer</target>
+<bone name="bone_RThigh"><target>bone_RThigh</target>
+<bone name="bone_Rlowerleg"><target>bone_Rlowerleg</target>
+<bone name="bone_Rfoot"><target>bone_Rfoot</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_abs"><target>bone_abs</target>
+<bone name="bone_torso"><target>bone_torso</target>
+<bone name="bone_head"><target>bone_head</target>
+<bone name="bone_jaw"><target>bone_jaw</target>
+</bone>
+<bone name="bone_eyebrow"><target>bone_eyebrow</target>
+<bone name="hair_08"><target>hair_08</target>
+<bone name="hair_02"><target>hair_02</target>
+<bone name="hair_03"><target>hair_03</target>
+<bone name="hair_04"><target>hair_04</target>
+<bone name="hair_05"><target>hair_05</target>
+<bone name="hair_06"><target>hair_06</target>
+<bone name="hair_07"><target>hair_07</target>
+<bone name="hair_08_001"><target>hair_08_001</target>
+<bone name="hair_09"><target>hair_09</target>
+<bone name="hair_10"><target>hair_10</target>
+<bone name="hair_11"><target>hair_11</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rclavical"><target>bone_Rclavical</target>
+<bone name="bone_Rupperarm"><target>bone_Rupperarm</target>
+<bone name="bone_Relbow"><target>bone_Relbow</target>
+<bone name="projectile"><target>projectile</target>
+<bone name="bone_weapon_weapon01"><target>bone_weapon_weapon01</target>
+</bone>
+<bone name="bone_weapon02"><target>bone_weapon02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lclavical"><target>bone_Lclavical</target>
+<bone name="bone_Lupperarm"><target>bone_Lupperarm</target>
+<bone name="bone_Lelbow"><target>bone_Lelbow</target>
+<bone name="bone_Lhand"><target>bone_Lhand</target>
+<bone name="bone_weapon03_shield_shield01"><target>bone_weapon03_shield_shield01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LThigh"><target>bone_LThigh</target>
+<bone name="bone_Llowerleg"><target>bone_Llowerleg</target>
+<bone name="bone_Lfoot"><target>bone_Lfoot</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

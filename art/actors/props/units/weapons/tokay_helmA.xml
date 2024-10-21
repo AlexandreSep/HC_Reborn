@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="helm">
+	<mesh>props/weapon/tokay_helmA.dae</mesh>
+      <textures><texture file="skeletal/npc_tokay/npc_tok_tokayA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+</actor>

@@ -1,0 +1,75 @@
+<skeletons>
+<standard_skeleton id="Baddyram Skeleton" title="Baddyram Skeleton">
+<bone name="base_baddyramA">
+<bone name="log">
+<bone name="log_end">
+</bone>
+</bone>
+<bone name="W1">
+<bone name="W1_end">
+</bone>
+</bone>
+<bone name="W2">
+<bone name="W2_end">
+</bone>
+</bone>
+<bone name="W3">
+<bone name="W3_end">
+</bone>
+</bone>
+<bone name="crew_01">
+</bone>
+<bone name="crew_02">
+</bone>
+<bone name="crew_03">
+</bone>
+<bone name="crew_04">
+</bone>
+<bone name="crew_05">
+</bone>
+<bone name="crew_06">
+</bone>
+<bone name="crew_07">
+</bone>
+<bone name="crew_08">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Baddyram Skeleton" title="Baddyram Skeleton">
+<identifier><root>base_baddyramA</root></identifier>
+<bone name="base_baddyramA"><target>base_baddyramA</target>
+<bone name="log"><target>log</target>
+<bone name="log_end"><target>log_end</target>
+</bone>
+</bone>
+<bone name="W1"><target>W1</target>
+<bone name="W1_end"><target>W1_end</target>
+</bone>
+</bone>
+<bone name="W2"><target>W2</target>
+<bone name="W2_end"><target>W2_end</target>
+</bone>
+</bone>
+<bone name="W3"><target>W3</target>
+<bone name="W3_end"><target>W3_end</target>
+</bone>
+</bone>
+<bone name="crew_01"><target>crew_01</target>
+</bone>
+<bone name="crew_02"><target>crew_02</target>
+</bone>
+<bone name="crew_03"><target>crew_03</target>
+</bone>
+<bone name="crew_04"><target>crew_04</target>
+</bone>
+<bone name="crew_05"><target>crew_05</target>
+</bone>
+<bone name="crew_06"><target>crew_06</target>
+</bone>
+<bone name="crew_07"><target>crew_07</target>
+</bone>
+<bone name="crew_08"><target>crew_08</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

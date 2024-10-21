@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="WatersofHeaven">
+      <mesh>structural/fairy/fai_waterheavenA.dae</mesh>
+      <props>
+		<prop actor="props/structures/fairy/fairy_groundlarge_spring.xml" attachpoint="root"/>
+		<prop actor="props/structures/fairy/fairy_heavengroundA_spring.xml" attachpoint="root"/>
+		<prop actor="props/structures/fairy/fairy_heaven_waterA.xml" attachpoint="root"/>
+		<prop actor="props/structures/fairy/fairy_heaven_waterfallA.xml" attachpoint="root"/>
+		<prop actor="particle/river_mistA.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largefield_green.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largeleaves_spring.xml" attachpoint="root"/>		
+      </props>
+      <textures>
+        <texture file="structural/fairy/fairy_buildingA_spring.dds" name="baseTex"/>
+		<texture file="structural/fairy/fairy_buildingA_spring_normal.dds" name="normTex"/>
+		<texture file="structural/fairy/fairy_watersheavenA_ao.dds" name="aoTex"/>		
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao.xml</material>
+</actor>

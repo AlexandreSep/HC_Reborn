@@ -1,0 +1,27 @@
+<skeletons>
+<standard_skeleton id="Dekudancing Skeleton" title="Dekudancing Skeleton">
+<bone name="deku_dancebaseA">
+<bone name="dance_01">
+</bone>
+<bone name="dance_02">
+</bone>
+<bone name="dance_03">
+</bone>
+<bone name="dance_04">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Dekudancing Skeleton" title="Dekudancing Skeleton">
+<identifier><root>deku_dancebaseA</root></identifier>
+<bone name="deku_dancebaseA"><target>deku_dancebaseA</target>
+<bone name="dance_01"><target>dance_01</target>
+</bone>
+<bone name="dance_02"><target>dance_02</target>
+</bone>
+<bone name="dance_03"><target>dance_03</target>
+</bone>
+<bone name="dance_04"><target>dance_04</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

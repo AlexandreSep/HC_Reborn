@@ -1,0 +1,13 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_goronsmall/goronsmall_idle_drum.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_goronsmall/goronsmall_walk_drum.dae" name="Walk" id="walk1" speed="30"/>
+    <animation file="HC_goronsmall/goronsmall_walk_drum.dae" name="Run" id="run1" speed="8"/>
+    <animation file="HC_goronsmall/goronsmall_idle.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_goronsmall/goronsmall_idle.dae" name="Heal" id="heal2" speed="100"/>
+	<animation event="0.5" file="HC_goronsmall/goronsmall_attack_punchA.dae" name="Attack_melee" id="attack1" speed="107"/>
+    <animation event="0.5" file="HC_goronsmall/goronsmall_attack_punchB.dae" name="Attack_melee" id="attack2" speed="107"/>
+	<animation event="0.5" file="HC_goronsmall/goronsmall_attack_punchC.dae" name="Attack_melee" id="attack3" speed="107"/>
+	<animation file="HC_goronsmall/goronsmall_promotion.dae" name="promotion" speed="80"/>
+  </animations>
+</variant>

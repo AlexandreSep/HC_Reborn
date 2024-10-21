@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Helm">
+      <textures><texture file="skeletal/sheikah/she_purahA.dds" name="baseTex"/></textures>
+	  <mesh>props/weapon/sheikah_hawkmaskA.dae</mesh>
+    </variant>
+  </group>
+</actor>

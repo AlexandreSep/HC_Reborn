@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="bonepile">
+      <mesh>structural/misc/bone_pileA.dae</mesh>
+      <textures>
+	    <texture file="structural/misc/bone_pileA.dds" name="baseTex"/>
+		<texture file="structural/misc/bone_pileA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

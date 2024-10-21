@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Market">
+      <mesh>structural/hylian/hyl_marketA.dae</mesh>
+	  <props>
+        <prop actor="props/structures/hylian/hylian_centre_baseA.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hyl_flag_small_d_royalA.xml" attachpoint="flag_01"/>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="flame_01"/>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="flame_02"/>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="flame_03"/>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="flame_04"/>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="flame_05"/>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="flame_06"/>
+		<prop actor="structures/hylian/hylian_marketstallA.xml" attachpoint="stall_01"/>
+		<prop actor="structures/hylian/hylian_marketstallA.xml" attachpoint="stall_02"/>
+		<prop actor="structures/hylian/hylian_marketstallA.xml" attachpoint="stall_03"/>
+		<prop actor="structures/hylian/hylian_marketstallA.xml" attachpoint="stall_04"/>
+		<prop actor="structures/hylian/hylian_marketstallA.xml" attachpoint="stall_05"/>
+      </props>
+      <textures>
+	    <texture file="structural/hylian/hylian_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/hylian/hylian_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/hylian/hylian_marketA_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

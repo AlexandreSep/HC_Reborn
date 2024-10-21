@@ -1,0 +1,171 @@
+<skeletons>
+<standard_skeleton id="Spider_fem_large_skel" title="Spider_fem_large_skel">
+<bone name="spider_fem_large_base">
+<bone name="ass_01">
+<bone name="ass_02">
+</bone>
+</bone>
+<bone name="L_mandi_01">
+<bone name="L_mandi_02">
+<bone name="L_mandi_03">
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_01">
+<bone name="L_leg_02">
+<bone name="L_leg_03">
+<bone name="L_leg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_05">
+<bone name="L_leg_06">
+<bone name="L_leg_07">
+<bone name="L_leg_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_09">
+<bone name="L_leg_10">
+<bone name="L_leg_11">
+<bone name="L_leg_12">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_13">
+<bone name="L_leg_14">
+<bone name="L_leg_15">
+<bone name="L_leg_16">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_mandi_01">
+<bone name="R_mandi_02">
+<bone name="R_mandi_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_01">
+<bone name="R_leg_02">
+<bone name="R_leg_03">
+<bone name="R_leg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_05">
+<bone name="R_leg_06">
+<bone name="R_leg_07">
+<bone name="R_leg_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_09">
+<bone name="R_leg_10">
+<bone name="R_leg_11">
+<bone name="R_leg_12">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_13">
+<bone name="R_leg_14">
+<bone name="R_leg_15">
+<bone name="R_leg_16">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Spider_fem_large_skel" title="Spider_fem_large_skel">
+<identifier><root>spider_fem_large_base</root></identifier>
+<bone name="spider_fem_large_base"><target>spider_fem_large_base</target>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+</bone>
+</bone>
+<bone name="L_mandi_01"><target>L_mandi_01</target>
+<bone name="L_mandi_02"><target>L_mandi_02</target>
+<bone name="L_mandi_03"><target>L_mandi_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_01"><target>L_leg_01</target>
+<bone name="L_leg_02"><target>L_leg_02</target>
+<bone name="L_leg_03"><target>L_leg_03</target>
+<bone name="L_leg_04"><target>L_leg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_05"><target>L_leg_05</target>
+<bone name="L_leg_06"><target>L_leg_06</target>
+<bone name="L_leg_07"><target>L_leg_07</target>
+<bone name="L_leg_08"><target>L_leg_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_09"><target>L_leg_09</target>
+<bone name="L_leg_10"><target>L_leg_10</target>
+<bone name="L_leg_11"><target>L_leg_11</target>
+<bone name="L_leg_12"><target>L_leg_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_13"><target>L_leg_13</target>
+<bone name="L_leg_14"><target>L_leg_14</target>
+<bone name="L_leg_15"><target>L_leg_15</target>
+<bone name="L_leg_16"><target>L_leg_16</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_mandi_01"><target>R_mandi_01</target>
+<bone name="R_mandi_02"><target>R_mandi_02</target>
+<bone name="R_mandi_03"><target>R_mandi_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_01"><target>R_leg_01</target>
+<bone name="R_leg_02"><target>R_leg_02</target>
+<bone name="R_leg_03"><target>R_leg_03</target>
+<bone name="R_leg_04"><target>R_leg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_05"><target>R_leg_05</target>
+<bone name="R_leg_06"><target>R_leg_06</target>
+<bone name="R_leg_07"><target>R_leg_07</target>
+<bone name="R_leg_08"><target>R_leg_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_09"><target>R_leg_09</target>
+<bone name="R_leg_10"><target>R_leg_10</target>
+<bone name="R_leg_11"><target>R_leg_11</target>
+<bone name="R_leg_12"><target>R_leg_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_13"><target>R_leg_13</target>
+<bone name="R_leg_14"><target>R_leg_14</target>
+<bone name="R_leg_15"><target>R_leg_15</target>
+<bone name="R_leg_16"><target>R_leg_16</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

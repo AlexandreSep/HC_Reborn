@@ -1,0 +1,83 @@
+<skeletons>
+<standard_skeleton id="Skeleton Ordgoat" title="Skeleton Ordgoat">
+<bone name="ordgoat_skeleton">
+<bone name="belly">
+<bone name="chest">
+<bone name="neck">
+<bone name="head">
+</bone>
+</bone>
+<bone name="L_clavical">
+<bone name="L_elbow">
+<bone name="L_hand">
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical">
+<bone name="R_elbow">
+<bone name="R_hand">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ass">
+<bone name="tail">
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Skeleton Ordgoat" title="Skeleton Ordgoat">
+<identifier><root>ordgoat_skeleton</root></identifier>
+<bone name="ordgoat_skeleton"><target>ordgoat_skeleton</target>
+<bone name="belly"><target>belly</target>
+<bone name="chest"><target>chest</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+</bone>
+</bone>
+<bone name="L_clavical"><target>L_clavical</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical"><target>R_clavical</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ass"><target>ass</target>
+<bone name="tail"><target>tail</target>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

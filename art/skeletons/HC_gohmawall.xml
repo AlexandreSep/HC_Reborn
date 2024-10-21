@@ -1,0 +1,31 @@
+<skeletons>
+<standard_skeleton id="gohmawall_skeleton" title="gohmawall_skeleton">
+<bone name="gohmawall_base">
+<bone name="wall1">
+</bone>
+<bone name="wall2">
+</bone>
+<bone name="wall3">
+</bone>
+<bone name="wallbase_01">
+</bone>
+<bone name="wallbase_02">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="gohmawall_skeleton" title="gohmawall_skeleton">
+<identifier><root>gohmawall_base</root></identifier>
+<bone name="gohmawall_base"><target>gohmawall_base</target>
+<bone name="wall1"><target>wall1</target>
+</bone>
+<bone name="wall2"><target>wall2</target>
+</bone>
+<bone name="wall3"><target>wall3</target>
+</bone>
+<bone name="wallbase_01"><target>wallbase_01</target>
+</bone>
+<bone name="wallbase_02"><target>wallbase_02</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

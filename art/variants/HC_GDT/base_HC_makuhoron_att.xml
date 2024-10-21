@@ -1,0 +1,10 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.5" file="HC_GDT/gdt_summonA.dae" name="Attack_ranged" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_GDT/gdt_summonB.dae" name="Attack_ranged" id="attack2" speed="100"/>
+	<animation event="0.5" file="HC_GDT/gdt_summonA.dae" name="Attack_ranged" id="attack3" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="props/units/weapons/fairy_striderballA.xml" attachpoint="projectile"/>
+  </props>
+</variant>

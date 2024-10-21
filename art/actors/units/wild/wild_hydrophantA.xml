@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Main">
+      <animations>
+        <animation file="HC_hydrophant/hydrophant_idle.dae" name="Idle" speed="70"/>
+        <animation file="HC_hydrophant/hydrophant_idleA.dae" name="Idle" speed="70"/>
+        <animation file="HC_hydrophant/hydrophant_idleB.dae" name="Idle" speed="70"/>
+		<animation file="HC_hydrophant/hydrophant_idleC.dae" name="Idle" speed="70"/>
+		<animation event="0.5" file="HC_hydrophant/hydrophant_attackA.dae" name="attack_melee" speed="120"/>
+		<animation event="0.5" file="HC_hydrophant/hydrophant_attackB.dae" name="attack_melee" speed="120"/>
+        <animation file="HC_hydrophant/hydrophant_walk.dae" name="Walk" speed="12"/>
+        <animation file="HC_hydrophant/hydrophant_walk.dae" name="Run" speed="20"/>
+        <animation file="HC_hydrophant/hydrophant_deathA.dae" name="Death" speed="90"/>
+		<animation file="HC_hydrophant/hydrophant_deathB.dae" name="Death" speed="90"/>
+		<animation file="HC_hydrophant/hydrophant_idle.dae" name="Flail" id="flail1" speed="8"/>
+		<animation file="HC_hydrophant/hydrophant_idle.dae" name="Recover" id="recover1" speed="8"/>
+      </animations>
+      <mesh>units/wild/wild_hydrophantA.dae</mesh>
+      <textures>
+        <texture file="skeletal/zora/zor_hydroA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant name="death">
+      <textures>
+         <texture file="skeletal/zora/zor_hydroA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

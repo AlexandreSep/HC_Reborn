@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_goh_queen/base_HC_gohma_relax.xml">
+      <mesh>units/gohma/goh_queenA.dae</mesh>
+      <textures><texture file="skeletal/gohma/goh_mainA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_goh_queen/base_HC_gohma_death.xml">
+	  <props>
+		 <prop actor="props/units/blood_gohma_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant file="HC_goh_queen/base_HC_gohma_build.xml">
+      <props>
+		<prop actor="particle/gohma_queenoozeA.xml" attachpoint="vagina_06"/>
+		<prop actor="particle/gohma_queenoozeB.xml" attachpoint="vagina_06"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

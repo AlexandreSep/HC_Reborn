@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_manhandla/base_HC_biped_manhandla.xml"> 
+	  <mesh>units/deku/dek_manhandlaA.dae</mesh>
+      <textures>
+        <texture file="skeletal/deku/dek_mainA_mad.dds" name="baseTex"/>
+      </textures>
+	  <props>
+		<prop actor="units/mad/deku_manhandla_h_a.xml" attachpoint="head_01"/>
+		<prop actor="units/mad/deku_manhandla_h_d.xml" attachpoint="head_02"/>
+		<prop actor="units/mad/deku_manhandla_h_c.xml" attachpoint="head_03"/>
+		<prop actor="units/mad/deku_manhandla_h_b.xml" attachpoint="head_04"/>
+		<prop actor="particle/acid_batch_explosion.xml" attachpoint="projectile"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_manhandla/base_HC_biped_capture.xml"/>
+    <variant file="HC_manhandla/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_manhandla/base_HC_biped_death.xml">
+      <props>
+        <prop actor="props/units/blood_sap_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

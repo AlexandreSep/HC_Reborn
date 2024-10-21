@@ -1,0 +1,11 @@
+<variant name="gather_sacrifices">
+  <animations>
+	<animation file="HC_lizalfos/lizalfos_capture.dae" name="gather_sacrifices" id="sacrifices1" speed="100"/>
+	<animation file="HC_lizalfos/lizalfos_capture.dae" name="gather_sacrifices" id="sacrifices2" speed="200"/>
+	<animation file="HC_lizalfos/lizalfos_capture.dae" name="gather_sacrifices" id="sacrifices3" speed="150"/>
+  </animations>
+  <props>
+    <prop actor="" attachpoint="R_wrist"/>
+    <prop actor="" attachpoint="L_wrist"/>
+  </props>
+</variant>

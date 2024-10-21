@@ -1,0 +1,127 @@
+<skeletons>
+<standard_skeleton id="OhNoesWedgie" title="OhNoesWedgie">
+<bone name="kokiri_wej_base">
+<bone name="bone_pelvis">
+<bone name="bone_RThigh">
+<bone name="bone_Rlowerleg">
+<bone name="bone_Rfoot">
+<bone name="bone_Rtoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_abs">
+<bone name="bone_torso">
+<bone name="bone_neck">
+<bone name="head">
+<bone name="bone_hair_01">
+</bone>
+<bone name="bone_Lear_01">
+<bone name="bone_Lear_02">
+</bone>
+</bone>
+<bone name="bone_Rear_01">
+<bone name="bone_Rear_02">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rclavical">
+<bone name="bone_Rupperarm">
+<bone name="bone_Relbow">
+<bone name="bone_Rhand">
+<bone name="bone_weapon_right">
+<bone name="projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lclavical">
+<bone name="bone_Lupperarm">
+<bone name="bone_Lelbow">
+<bone name="bone_Lhand">
+<bone name="bone_weapon_left">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LThigh">
+<bone name="bone_Llowerleg">
+<bone name="bone_Lfoot">
+<bone name="bone_Ltoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="OhNoesWedgie" title="OhNoesWedgie">
+<identifier><root>kokiri_wej_base</root></identifier>
+<bone name="kokiri_wej_base"><target>kokiri_wej_base</target>
+<bone name="bone_pelvis"><target>bone_pelvis</target>
+<bone name="bone_RThigh"><target>bone_RThigh</target>
+<bone name="bone_Rlowerleg"><target>bone_Rlowerleg</target>
+<bone name="bone_Rfoot"><target>bone_Rfoot</target>
+<bone name="bone_Rtoe"><target>bone_Rtoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_abs"><target>bone_abs</target>
+<bone name="bone_torso"><target>bone_torso</target>
+<bone name="bone_neck"><target>bone_neck</target>
+<bone name="head"><target>head</target>
+<bone name="bone_hair_01"><target>bone_hair_01</target>
+</bone>
+<bone name="bone_Lear_01"><target>bone_Lear_01</target>
+<bone name="bone_Lear_02"><target>bone_Lear_02</target>
+</bone>
+</bone>
+<bone name="bone_Rear_01"><target>bone_Rear_01</target>
+<bone name="bone_Rear_02"><target>bone_Rear_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rclavical"><target>bone_Rclavical</target>
+<bone name="bone_Rupperarm"><target>bone_Rupperarm</target>
+<bone name="bone_Relbow"><target>bone_Relbow</target>
+<bone name="bone_Rhand"><target>bone_Rhand</target>
+<bone name="bone_weapon_right"><target>bone_weapon_right</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lclavical"><target>bone_Lclavical</target>
+<bone name="bone_Lupperarm"><target>bone_Lupperarm</target>
+<bone name="bone_Lelbow"><target>bone_Lelbow</target>
+<bone name="bone_Lhand"><target>bone_Lhand</target>
+<bone name="bone_weapon_left"><target>bone_weapon_left</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LThigh"><target>bone_LThigh</target>
+<bone name="bone_Llowerleg"><target>bone_Llowerleg</target>
+<bone name="bone_Lfoot"><target>bone_Lfoot</target>
+<bone name="bone_Ltoe"><target>bone_Ltoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant name="a">
+      <mesh>gaia/landscape/rocks/rock_desert_cliff_largeA.dae</mesh>
+	  <textures><texture file="gaia/rocks/rocks_desert_cliffA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant name="b">
+      <mesh>gaia/landscape/rocks/rock_desert_cliff_largeB.dae</mesh>
+	  <textures><texture file="gaia/rocks/rocks_desert_cliffB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+</actor>

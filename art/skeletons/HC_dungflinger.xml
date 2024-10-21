@@ -1,0 +1,83 @@
+<skeletons>
+<standard_skeleton id="Dungflinger Skeleton" title="Dungflinger Skeleton">
+<bone name="mobcatapult_base">
+<bone name="axel_02">
+<bone name="L_wheelB_01">
+<bone name="L_wheelB_02">
+</bone>
+</bone>
+<bone name="R_wheelB_01">
+<bone name="R_wheelB_02">
+</bone>
+</bone>
+</bone>
+<bone name="axel_01">
+<bone name="L_wheelA_01">
+<bone name="L_wheelA_02">
+</bone>
+</bone>
+<bone name="R_wheelA_01">
+<bone name="R_wheelA_02">
+</bone>
+</bone>
+</bone>
+<bone name="wench_01">
+<bone name="scrag_01">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+<bone name="crew_01">
+</bone>
+<bone name="crew_02">
+</bone>
+<bone name="crew_03">
+</bone>
+<bone name="crew_04">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Dungflinger Skeleton" title="Dungflinger Skeleton">
+<identifier><root>mobcatapult_base</root></identifier>
+<bone name="mobcatapult_base"><target>mobcatapult_base</target>
+<bone name="axel_02"><target>axel_02</target>
+<bone name="L_wheelB_01"><target>L_wheelB_01</target>
+<bone name="L_wheelB_02"><target>L_wheelB_02</target>
+</bone>
+</bone>
+<bone name="R_wheelB_01"><target>R_wheelB_01</target>
+<bone name="R_wheelB_02"><target>R_wheelB_02</target>
+</bone>
+</bone>
+</bone>
+<bone name="axel_01"><target>axel_01</target>
+<bone name="L_wheelA_01"><target>L_wheelA_01</target>
+<bone name="L_wheelA_02"><target>L_wheelA_02</target>
+</bone>
+</bone>
+<bone name="R_wheelA_01"><target>R_wheelA_01</target>
+<bone name="R_wheelA_02"><target>R_wheelA_02</target>
+</bone>
+</bone>
+</bone>
+<bone name="wench_01"><target>wench_01</target>
+<bone name="scrag_01"><target>scrag_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+<bone name="crew_01"><target>crew_01</target>
+</bone>
+<bone name="crew_02"><target>crew_02</target>
+</bone>
+<bone name="crew_03"><target>crew_03</target>
+</bone>
+<bone name="crew_04"><target>crew_04</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

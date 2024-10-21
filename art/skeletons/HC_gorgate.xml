@@ -1,0 +1,15 @@
+<skeletons>
+<standard_skeleton id="Goron_gate" title="Goron_gate">
+<bone name="goron_gate_base">
+<bone name="gate_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Goron_gate" title="Goron_gate">
+<identifier><root>goron_gate_base</root></identifier>
+<bone name="goron_gate_base"><target>goron_gate_base</target>
+<bone name="gate_01"><target>gate_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+   <group>
+    <variant frequency="1" name="Clap A">
+      <mesh>structural/sheikah/she_birdclapA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Clap B">
+      <mesh>structural/sheikah/she_birdclapB.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Clap C">
+      <mesh>structural/sheikah/she_birdclapC.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant>
+      <textures>
+		<texture file="structural/sheikah/sheikah_buildingB.dds" name="baseTex"/>
+		<texture file="structural/sheikah/sheikah_buildingB_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group> 
+  <material>default.xml</material>
+</actor>

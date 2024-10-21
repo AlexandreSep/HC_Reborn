@@ -1,0 +1,87 @@
+<skeletons>
+<standard_skeleton id="FlagsmallA Skeleton" title="FlagsmallA Skeleton">
+<bone name="base_flagpole_smallA">
+<bone name="flagtopA">
+<bone name="flaglineA_01">
+<bone name="flaglineA_02">
+<bone name="flaglineA_03">
+<bone name="flaglineA_04">
+<bone name="flaglineA_05">
+<bone name="flaglineA_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flaglineB_01">
+<bone name="flaglineB_02">
+<bone name="flaglineB_03">
+<bone name="flaglineB_04">
+<bone name="flaglineB_05">
+<bone name="flaglineB_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flaglineC_01">
+<bone name="flaglineC_02">
+<bone name="flaglineC_03">
+<bone name="flaglineC_04">
+<bone name="flaglineC_05">
+<bone name="flaglineC_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="FlagsmallA Skeleton" title="FlagsmallA Skeleton">
+<identifier><root>base_flagpole_smallA</root></identifier>
+<bone name="base_flagpole_smallA"><target>base_flagpole_smallA</target>
+<bone name="flagtopA"><target>flagtopA</target>
+<bone name="flaglineA_01"><target>flaglineA_01</target>
+<bone name="flaglineA_02"><target>flaglineA_02</target>
+<bone name="flaglineA_03"><target>flaglineA_03</target>
+<bone name="flaglineA_04"><target>flaglineA_04</target>
+<bone name="flaglineA_05"><target>flaglineA_05</target>
+<bone name="flaglineA_06"><target>flaglineA_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flaglineB_01"><target>flaglineB_01</target>
+<bone name="flaglineB_02"><target>flaglineB_02</target>
+<bone name="flaglineB_03"><target>flaglineB_03</target>
+<bone name="flaglineB_04"><target>flaglineB_04</target>
+<bone name="flaglineB_05"><target>flaglineB_05</target>
+<bone name="flaglineB_06"><target>flaglineB_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flaglineC_01"><target>flaglineC_01</target>
+<bone name="flaglineC_02"><target>flaglineC_02</target>
+<bone name="flaglineC_03"><target>flaglineC_03</target>
+<bone name="flaglineC_04"><target>flaglineC_04</target>
+<bone name="flaglineC_05"><target>flaglineC_05</target>
+<bone name="flaglineC_06"><target>flaglineC_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

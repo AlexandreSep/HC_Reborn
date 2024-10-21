@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Hat">
+      <textures><texture file="skeletal/ordona/ord_heroA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="hat-a">
+      <mesh>units/ordona/ord_hatA.dae</mesh>
+    </variant>
+  </group>
+</actor>

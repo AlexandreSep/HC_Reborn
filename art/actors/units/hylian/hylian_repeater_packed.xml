@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant frequency="100" name="hylian_repeater_pkd">
+      <animations>
+        <animation file="HC_repeater/repeater_idle.dae" name="Idle" speed="100"/>
+        <animation event="0.5" file="HC_repeater/repeater_move.dae" name="Walk" speed="10"/>
+        <animation event="0.5" file="HC_repeater/repeater_move.dae" name="Run" speed="10"/>
+		<animation file="HC_repeater/repeater_death.dae" name="death" speed="100"/>
+      </animations>
+      <mesh>units/hylian/hyl_repeaterA.dae</mesh>
+      <props>
+        <prop actor="units/hylian/hylian_crew_b.xml" attachpoint="base_01"/>
+      </props>
+      <textures><texture file="skeletal/hylian/hyl_siegeB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+</actor>

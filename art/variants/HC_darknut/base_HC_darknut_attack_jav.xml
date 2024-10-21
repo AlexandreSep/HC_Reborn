@@ -1,0 +1,12 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.65" file="HC_darknut/darknut_attack_throwA.dae" load="0.01" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="" attachpoint="R_weapon"/>
+    <prop actor="props/units/weapons/darknut_javelinA_shoot.xml" attachpoint="projectile"/>
+	<prop actor="props/units/weapons/darknut_javelinA.xml" attachpoint="loaded-projectile"/>
+  </props>
+</variant>
+
+

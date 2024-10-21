@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Door">
+      <mesh>structural/darknut/dar_doorA.dae</mesh>
+      <props>
+      </props>
+      <textures>
+        <texture file="structural/darknut/darknut_baseA.dds" name="baseTex"/>
+		<texture file="structural/darknut/darknut_baseA_normal.dds" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

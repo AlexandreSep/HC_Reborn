@@ -1,0 +1,9 @@
+<variant name="carry_metal">
+  <animations>
+	<animation file="HC_darknut/darknut_walk.dae" name="carry_metal" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_basket_carry.xml" attachpoint="R_weapon"/>
+    <prop attachpoint="R_weapon"/>
+  </props>
+</variant>

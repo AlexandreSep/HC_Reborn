@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <group>
+    <variant>
+      <mesh>structural/fairy/fai_summonA.dae</mesh>
+      <textures>
+        <texture file="structural/fairy/fairy_summonA.png" name="baseTex"/>
+      </textures>
+	  <props>
+		<prop actor="props/structures/fairy/fairy_summoncircB_spring.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_mist_summon.xml" attachpoint="root"/>		
+      </props>
+    </variant>
+  </group>
+  <material>waterfall.xml</material>
+</actor>
+

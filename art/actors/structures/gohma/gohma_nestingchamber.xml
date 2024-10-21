@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="House A">
+      <mesh>structural/gohma/goh_nestingchamberA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant>
+      <props>
+		<prop actor="props/structures/gohma/gohma_nestingchamber_webs.xml" attachpoint="root"/>
+        <prop actor="props/structures/gohma/gohma_creep_medium.xml" attachpoint="root"/>
+		<prop actor="particle/gohma_shroudC.xml" attachpoint="root"/>
+		<prop actor="particle/gohma_shroudE.xml" attachpoint="exit_01"/>
+      </props>
+      <textures>
+		<texture file="structural/gohma/goh_buildingA.dds" name="baseTex"/>
+		<texture file="structural/gohma/goh_buildingA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

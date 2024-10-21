@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Wall gate">
+      <animations>
+        <animation file="HC_gohgate/gohgate_closed.dae" name="gate_closed" speed="65"/>
+        <animation file="HC_gohgate/gohgate_opening.dae" name="gate_opening" speed="25"/>
+        <animation file="HC_gohgate/gohgate_open.dae" name="gate_open" speed="65"/>
+        <animation file="HC_gohgate/gohgate_closing.dae" name="gate_closing" speed="25"/>
+      </animations>
+      <mesh>structural/gohma/goh_wall_gate.dae</mesh>
+      <textures>
+	    <texture file="structural/gohma/goh_buildingA.dds" name="baseTex"/>
+		<texture file="structural/gohma/goh_buildingA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+	<variant name="gate_opening">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="door_02"/>
+      </props>
+    </variant>
+	<variant name="gate_closing">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="door_02"/>
+      </props>
+    </variant>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+   <material>basic_trans.xml</material>
+</actor>

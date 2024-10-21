@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Arach Cave A">
+      <mesh>structural/wild/wild_arach_caveA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="Arach Cave B">
+      <mesh>structural/wild/wild_arach_caveB.dae</mesh>
+    </variant>
+  </group>  
+  <group>
+    <variant>
+      <props>
+        <prop actor="props/structures/wild/arach_nestbaseA.xml" attachpoint="root"/>
+      </props>
+      <textures>
+		<texture file="gaia/rocks/zora_rocks.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>  
+  <material>basic_trans.xml</material>
+</actor>

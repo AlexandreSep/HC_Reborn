@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="tree-a">
+      <mesh>gaia/flora/flora_tarmtreeA.dae</mesh>
+	  <props>
+		<prop actor="flora/forest/tarm_treeleavesA_summer.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largeleaves_summer.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largefield_red.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant frequency="1" name="tree-b">
+      <mesh>gaia/flora/flora_tarmtreeB.dae</mesh>
+	  <props>
+		<prop actor="flora/forest/tarm_treeleavesB_summer.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largeleaves_summer.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largefield_red.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant frequency="1" name="tree-C">
+      <mesh>gaia/flora/flora_tarmtreeC.dae</mesh>
+	  <props>
+		<prop actor="flora/forest/tarm_treeleavesC_summer.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largeleaves_summer.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largefield_red.xml" attachpoint="root"/>
+      </props>
+    </variant>
+
+  </group>
+  
+
+  <group>
+    <variant name="trunk-texture">
+      <textures><texture file="gaia/flora/flora_tarmtreeA_summerA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+  <material>trans_wind.xml</material>
+
+</actor>

@@ -1,0 +1,35 @@
+<skeletons>
+<standard_skeleton id="Idolthrone Skeleton" title="Idolthrone Skeleton">
+<bone name="idolthroneA_base">
+<bone name="carry_03">
+</bone>
+<bone name="carry_04">
+</bone>
+<bone name="carry_01">
+</bone>
+<bone name="carry_02">
+</bone>
+<bone name="frame">
+<bone name="rider">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Idolthrone Skeleton" title="Idolthrone Skeleton">
+<identifier><root>idolthroneA_base</root></identifier>
+<bone name="idolthroneA_base"><target>idolthroneA_base</target>
+<bone name="carry_03"><target>carry_03</target>
+</bone>
+<bone name="carry_04"><target>carry_04</target>
+</bone>
+<bone name="carry_01"><target>carry_01</target>
+</bone>
+<bone name="carry_02"><target>carry_02</target>
+</bone>
+<bone name="frame"><target>frame</target>
+<bone name="rider"><target>rider</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

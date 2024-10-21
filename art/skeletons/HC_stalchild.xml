@@ -1,0 +1,115 @@
+<skeletons>
+<standard_skeleton id="Stalchild Skeleton" title="Stalchild Skeleton">
+<bone name="stallchild_base">
+<bone name="spine">
+<bone name="chest">
+<bone name="neck">
+<bone name="head">
+<bone name="mouth_bot_01">
+<bone name="mouth_bot_02">
+</bone>
+</bone>
+<bone name="mouth_top_01">
+<bone name="mouth_top_02">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_hand">
+<bone name="L_weapon">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_hand">
+<bone name="R_weapon">
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Stalchild Skeleton" title="Stalchild Skeleton">
+<identifier><root>stallchild_base</root></identifier>
+<bone name="stallchild_base"><target>stallchild_base</target>
+<bone name="spine"><target>spine</target>
+<bone name="chest"><target>chest</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="mouth_bot_01"><target>mouth_bot_01</target>
+<bone name="mouth_bot_02"><target>mouth_bot_02</target>
+</bone>
+</bone>
+<bone name="mouth_top_01"><target>mouth_top_01</target>
+<bone name="mouth_top_02"><target>mouth_top_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_weapon"><target>L_weapon</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_weapon"><target>R_weapon</target>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Run" speed="40"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_spear.dae" name="attack_melee" speed="100"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_spear.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_spear.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="death" speed="230"/>
+		<animation file="HC_archer/biped_hum_arch_harvest_fruit_mount.dae" name="gather_fruit" speed="100"/>
+		<animation file="HC_archer/biped_hum_arch_harvest_grain_mount.dae" name="gather_grain" speed="100"/>
+		<animation file="HC_archer/biped_hum_arch_harvest_meat_mount.dae" name="gather_meat" speed="100"/>
+		<animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine_mount.dae" name="gather_ore" speed="100"/>
+		<animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine_mount.dae" name="gather_rock" speed="100"/>
+		<animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine_mount.dae" name="gather_ruins" speed="100"/>
+		<animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine_mount.dae" name="gather_rupees" speed="100"/>
+		<animation event="0.25" file="HC_archer/biped_hum_arch_harvest_tree_mount.dae" name="gather_tree" speed="120"/>
+      </animations>
+      <mesh>props/weapon/ordona_spearA.dae</mesh>
+	  <textures><texture file="skeletal/ordona/ord_weaponsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

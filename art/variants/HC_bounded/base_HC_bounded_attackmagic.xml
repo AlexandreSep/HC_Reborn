@@ -1,0 +1,9 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.3" file="HC_bounded/bounded_attack_whipA.dae" load="0.1" name="attack_ranged" id="attack_ranged1" speed="100"/>
+	<animation event="0.3" file="HC_bounded/bounded_attack_whipB.dae" load="0.1" name="attack_ranged" id="attack_ranged2" speed="100"/>
+	<animation event="0.3" file="HC_bounded/bounded_attack_whipC.dae" load="0.1" name="attack_ranged" id="attack_ranged3" speed="100"/>
+  </animations>
+  <props>
+  </props>
+</variant>

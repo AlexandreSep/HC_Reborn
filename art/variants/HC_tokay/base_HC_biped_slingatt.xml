@@ -1,0 +1,7 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.6" file="HC_tokay/tokay_attack_slingA.dae" load="0.1" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+  </props>
+</variant>

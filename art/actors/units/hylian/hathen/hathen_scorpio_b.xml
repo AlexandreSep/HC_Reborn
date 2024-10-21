@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="scorpio">
+      <animations> 
+        <animation file="HC_scorpio/scorpio_idle.dae" name="Idle" speed="100"/>
+        <animation event="0.5" file="HC_scorpio/scorpio_idle.dae" name="Walk" id="walk1" speed="10"/>
+		<animation event="0.5" file="HC_scorpio/scorpio_idle.dae" name="Walk" id="walk2" speed="10"/>
+        <animation event="0.5" file="HC_scorpio/scorpio_idle.dae" name="Run" id="run1" speed="10"/>
+        <animation event="0.45" load="0.01" file="HC_scorpio/scorpio_attack.dae" name="attack_ranged" id="attack_ranged1" sound="0" speed="75"/>
+		<animation file="HC_scorpio/scorpio_deathA.dae" name="death" id="death1" speed="100"/>
+		<animation file="HC_scorpio/scorpio_deathA.dae" name="death" id="death2" speed="100"/>
+      </animations> 
+      <mesh>units/hylian/hyl_scorpioA.dae</mesh>
+      <props>
+        <prop actor="units/hylian/hathen/hathen_scorpio_b_r.xml" attachpoint="root"/>
+		<prop actor="props/units/weapons/hylian_scorpioboltA.xml" attachpoint="projectile"/>
+		<prop actor="props/units/weapons/hylian_scorpioboltA_shoot.xml" attachpoint="loaded-projectile"/>
+      </props>
+      <textures><texture file="skeletal/hylian/hyl_siegeB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle">
+	</variant>
+    <variant name="Walk">
+      <mesh>units/hylian/hyl_scorpio_dummyA.dae</mesh>
+	  <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+    </variant>
+	<variant name="Run">
+      <mesh>units/hylian/hyl_scorpio_dummyA.dae</mesh>
+	  <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+    </variant>
+  </group>  
+  <material>default.xml</material>
+</actor>

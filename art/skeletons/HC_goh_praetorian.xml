@@ -1,0 +1,163 @@
+<skeletons>
+<standard_skeleton id="praetorian_skel" title="praetorian_skel">
+<bone name="praetorian_base">
+<bone name="L_claw_01">
+<bone name="L_claw_02">
+<bone name="L_claw_03">
+<bone name="L_claw_04">
+<bone name="L_claw_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shield_01">
+<bone name="L_shield_02">
+<bone name="L_shield_03">
+<bone name="L_shield_04">
+<bone name="L_shield_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fleg_01">
+<bone name="L_Fleg_02">
+<bone name="L_Fleg_03">
+<bone name="L_Fleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bleg_01">
+<bone name="L_Bleg_02">
+<bone name="L_Bleg_03">
+<bone name="L_Bleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01">
+<bone name="eye_02">
+</bone>
+</bone>
+<bone name="R_shield_01">
+<bone name="R_shield_02">
+<bone name="R_shield_03">
+<bone name="R_shield_04">
+<bone name="R_shield_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_claw_01">
+<bone name="R_claw_02">
+<bone name="R_claw_03">
+<bone name="R_claw_04">
+<bone name="R_claw_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fleg_01">
+<bone name="R_Fleg_02">
+<bone name="R_Fleg_03">
+<bone name="R_Fleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bleg_01">
+<bone name="R_Bleg_02">
+<bone name="R_Bleg_03">
+<bone name="R_Bleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="praetorian_skel" title="praetorian_skel">
+<identifier><root>praetorian_base</root></identifier>
+<bone name="praetorian_base"><target>praetorian_base</target>
+<bone name="L_claw_01"><target>L_claw_01</target>
+<bone name="L_claw_02"><target>L_claw_02</target>
+<bone name="L_claw_03"><target>L_claw_03</target>
+<bone name="L_claw_04"><target>L_claw_04</target>
+<bone name="L_claw_05"><target>L_claw_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shield_01"><target>L_shield_01</target>
+<bone name="L_shield_02"><target>L_shield_02</target>
+<bone name="L_shield_03"><target>L_shield_03</target>
+<bone name="L_shield_04"><target>L_shield_04</target>
+<bone name="L_shield_05"><target>L_shield_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fleg_01"><target>L_Fleg_01</target>
+<bone name="L_Fleg_02"><target>L_Fleg_02</target>
+<bone name="L_Fleg_03"><target>L_Fleg_03</target>
+<bone name="L_Fleg_04"><target>L_Fleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bleg_01"><target>L_Bleg_01</target>
+<bone name="L_Bleg_02"><target>L_Bleg_02</target>
+<bone name="L_Bleg_03"><target>L_Bleg_03</target>
+<bone name="L_Bleg_04"><target>L_Bleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+<bone name="eye_02"><target>eye_02</target>
+</bone>
+</bone>
+<bone name="R_shield_01"><target>R_shield_01</target>
+<bone name="R_shield_02"><target>R_shield_02</target>
+<bone name="R_shield_03"><target>R_shield_03</target>
+<bone name="R_shield_04"><target>R_shield_04</target>
+<bone name="R_shield_05"><target>R_shield_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_claw_01"><target>R_claw_01</target>
+<bone name="R_claw_02"><target>R_claw_02</target>
+<bone name="R_claw_03"><target>R_claw_03</target>
+<bone name="R_claw_04"><target>R_claw_04</target>
+<bone name="R_claw_05"><target>R_claw_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fleg_01"><target>R_Fleg_01</target>
+<bone name="R_Fleg_02"><target>R_Fleg_02</target>
+<bone name="R_Fleg_03"><target>R_Fleg_03</target>
+<bone name="R_Fleg_04"><target>R_Fleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bleg_01"><target>R_Bleg_01</target>
+<bone name="R_Bleg_02"><target>R_Bleg_02</target>
+<bone name="R_Bleg_03"><target>R_Bleg_03</target>
+<bone name="R_Bleg_04"><target>R_Bleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

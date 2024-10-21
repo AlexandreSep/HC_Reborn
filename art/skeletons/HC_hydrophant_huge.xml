@@ -1,0 +1,247 @@
+<skeletons>
+<standard_skeleton id="hydrophanthuge_skel" title="hydrophanthuge_skel">
+<bone name="base_hydrophant_huge">
+<bone name="back_01">
+<bone name="torso_01">
+<bone name="neck_01">
+<bone name="head_01">
+<bone name="trunk_01">
+<bone name="trunk_02">
+<bone name="trunk_03">
+<bone name="trunk_04">
+<bone name="trunk_05">
+<bone name="trunk_06">
+<bone name="trunk_07">
+<bone name="trunk_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mouthfin_01">
+<bone name="L_mouthfin_02">
+<bone name="L_mouthfin_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_mouthfin_01">
+<bone name="R_mouthfin_02">
+<bone name="R_mouthfin_03">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_01">
+<bone name="L_ear_02">
+<bone name="L_ear_03">
+<bone name="L_ear_04">
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_05">
+<bone name="L_ear_06">
+<bone name="L_ear_07">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_01">
+<bone name="R_ear_02">
+<bone name="R_ear_03">
+<bone name="R_ear_04">
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_05">
+<bone name="R_ear_06">
+<bone name="R_ear_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01">
+<bone name="L_shoulder_01">
+<bone name="L_elbow_01">
+<bone name="L_wrist_01">
+<bone name="L_hand_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01">
+<bone name="R_shoulder_01">
+<bone name="R_elbow_01">
+<bone name="R_wrist_01">
+<bone name="R_hand_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="belly_01">
+<bone name="belly_02">
+</bone>
+</bone>
+</bone>
+<bone name="ass_01">
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_02_001">
+<bone name="tail_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pelvis_01">
+<bone name="L_thigh_01">
+<bone name="L_knee_01">
+<bone name="L_ankle_01">
+<bone name="L_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pelvis_01">
+<bone name="R_thigh_01">
+<bone name="R_knee_01">
+<bone name="R_ankle_01">
+<bone name="R_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="hydrophanthuge_skel" title="hydrophanthuge_skel">
+<identifier><root>base_hydrophant_huge</root></identifier>
+<bone name="base_hydrophant_huge"><target>base_hydrophant_huge</target>
+<bone name="back_01"><target>back_01</target>
+<bone name="torso_01"><target>torso_01</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="trunk_01"><target>trunk_01</target>
+<bone name="trunk_02"><target>trunk_02</target>
+<bone name="trunk_03"><target>trunk_03</target>
+<bone name="trunk_04"><target>trunk_04</target>
+<bone name="trunk_05"><target>trunk_05</target>
+<bone name="trunk_06"><target>trunk_06</target>
+<bone name="trunk_07"><target>trunk_07</target>
+<bone name="trunk_08"><target>trunk_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mouthfin_01"><target>L_mouthfin_01</target>
+<bone name="L_mouthfin_02"><target>L_mouthfin_02</target>
+<bone name="L_mouthfin_03"><target>L_mouthfin_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_mouthfin_01"><target>R_mouthfin_01</target>
+<bone name="R_mouthfin_02"><target>R_mouthfin_02</target>
+<bone name="R_mouthfin_03"><target>R_mouthfin_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_01"><target>L_ear_01</target>
+<bone name="L_ear_02"><target>L_ear_02</target>
+<bone name="L_ear_03"><target>L_ear_03</target>
+<bone name="L_ear_04"><target>L_ear_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_05"><target>L_ear_05</target>
+<bone name="L_ear_06"><target>L_ear_06</target>
+<bone name="L_ear_07"><target>L_ear_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_01"><target>R_ear_01</target>
+<bone name="R_ear_02"><target>R_ear_02</target>
+<bone name="R_ear_03"><target>R_ear_03</target>
+<bone name="R_ear_04"><target>R_ear_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_05"><target>R_ear_05</target>
+<bone name="R_ear_06"><target>R_ear_06</target>
+<bone name="R_ear_07"><target>R_ear_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01"><target>L_clavical_01</target>
+<bone name="L_shoulder_01"><target>L_shoulder_01</target>
+<bone name="L_elbow_01"><target>L_elbow_01</target>
+<bone name="L_wrist_01"><target>L_wrist_01</target>
+<bone name="L_hand_01"><target>L_hand_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01"><target>R_clavical_01</target>
+<bone name="R_shoulder_01"><target>R_shoulder_01</target>
+<bone name="R_elbow_01"><target>R_elbow_01</target>
+<bone name="R_wrist_01"><target>R_wrist_01</target>
+<bone name="R_hand_01"><target>R_hand_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="belly_01"><target>belly_01</target>
+<bone name="belly_02"><target>belly_02</target>
+</bone>
+</bone>
+</bone>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_02_001"><target>tail_02_001</target>
+<bone name="tail_03"><target>tail_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pelvis_01"><target>L_pelvis_01</target>
+<bone name="L_thigh_01"><target>L_thigh_01</target>
+<bone name="L_knee_01"><target>L_knee_01</target>
+<bone name="L_ankle_01"><target>L_ankle_01</target>
+<bone name="L_foot_01"><target>L_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pelvis_01"><target>R_pelvis_01</target>
+<bone name="R_thigh_01"><target>R_thigh_01</target>
+<bone name="R_knee_01"><target>R_knee_01</target>
+<bone name="R_ankle_01"><target>R_ankle_01</target>
+<bone name="R_foot_01"><target>R_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

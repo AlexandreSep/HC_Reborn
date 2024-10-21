@@ -1,0 +1,19 @@
+<skeletons>
+<standard_skeleton id="Organbarrel Skeleton" title="Organbarrel Skeleton">
+<bone name="base_cannonbarrel">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Organbarrel Skeleton" title="Organbarrel Skeleton">
+<identifier><root>base_cannonbarrel</root></identifier>
+<bone name="base_cannonbarrel"><target>base_cannonbarrel</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

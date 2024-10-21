@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Run" speed="40"/>
+        <animation event="0.75" file="HC_archer/biped_rider_arch_attack_bow.dae" name="attack_ranged" id="attack_ranged1" speed="100"/>
+		<animation event="0.75" file="HC_archer/biped_rider_arch_attack_bow.dae" name="attack_ranged" id="attack_ranged2" speed="100"/>
+        <animation event="0.75" file="HC_archer/biped_rider_arch_attack_sword.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.75" file="HC_archer/biped_rider_arch_attack_sword.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>units/gerudo/ger_bodyC.dae</mesh>
+	  <props>
+        <prop actor="props/units/outfits/gerudo_shirts_random_cav_archer.xml" attachpoint="root"/>
+		<prop actor="props/units/outfits/gerudo_pantsC_cav_archer.xml" attachpoint="root"/>
+		<prop actor="props/units/outfits/gerudo_sashA_cav_archer.xml" attachpoint="root"/>		
+		<prop actor="props/units/hair/gerudo_hairA_cav_bow.xml" attachpoint="root"/>	
+        <prop actor="props/units/weapons/gerudo_bowA.xml" attachpoint="bone_Lhand"/>
+		<prop actor="props/units/weapons/gerudo_quiverA.xml" attachpoint="bone_torso"/>
+		<prop actor="props/units/weapons/hylian_arrowA_shoot.xml" attachpoint="projectile"/>
+      </props>
+	  <textures><texture file="skeletal/gerudo/ger_mainA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

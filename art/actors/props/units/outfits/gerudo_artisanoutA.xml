@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_biped_props/base_HC_biped_sword.xml">
+    <mesh>units/gerudo/ger_artisanA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Ger-Art_Teal">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_teal.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_Blue">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_blue.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_Red">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_red.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_Yellow">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_yellow.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_White">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_white.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_Black">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_black.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_Violet">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_violet.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_Green">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_green.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_Orange">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_orange.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="Ger-Art_Pink">
+	  <textures><texture file="skeletal/gerudo/ger_artisanA_pink.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_biped_props/base_HC_biped_capture.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_gather_tree.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_gather_grain.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_gather_fruit.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_gather_meat.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_gather_rock.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_gather_ore.xml"/>
+	<variant file="HC_biped_props/base_HC_biped_gather_rupees.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_gather_ruins.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_gather_praise.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_build.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_build_farm.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_food.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_meat.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_wood.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_stone.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_metal.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_food_idle.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_meat_idle.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_wood_idle.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_stone_idle.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_carry_metal_idle.xml"/>
+    <variant file="HC_biped_props/base_HC_biped_death.xml"/>
+  </group>
+   <material>player_trans.xml</material>
+</actor>

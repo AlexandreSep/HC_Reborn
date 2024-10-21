@@ -1,0 +1,10 @@
+<variant name="gather_tree">
+  <animations>
+    <animation event="0.25" file="HC_darknut/darknut_attack_swordA.dae" name="gather_tree" speed="120"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_axe.xml" attachpoint="R_weapon"/>
+    <prop attachpoint="R_weapon"/>
+	<prop attachpoint="L_weapon"/>
+  </props>
+</variant>

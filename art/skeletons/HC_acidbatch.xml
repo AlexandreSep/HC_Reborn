@@ -1,0 +1,23 @@
+<skeletons>
+<standard_skeleton id="acidbatch_skeleton" title="acidbatch_skeleton">
+<bone name="acidbatch_base">
+<bone name="stalk">
+<bone name="bowl">
+<bone name="projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="acidbatch_skeleton" title="acidbatch_skeleton">
+<identifier><root>acidbatch_base</root></identifier>
+<bone name="acidbatch_base"><target>acidbatch_base</target>
+<bone name="stalk"><target>stalk</target>
+<bone name="bowl"><target>bowl</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

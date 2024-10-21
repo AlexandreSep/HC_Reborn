@@ -1,0 +1,211 @@
+<skeletons>
+<standard_skeleton id="Feygolem Skeleton" title="Feygolem Skeleton">
+<bone name="base_feygolemA">
+<bone name="belly">
+<bone name="loaded_projectile">
+<bone name="head">
+<bone name="projectile">
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_hand">
+<bone name="L_thumb_01">
+<bone name="L_thumb_02">
+<bone name="L_thumb_03">
+</bone>
+</bone>
+</bone>
+<bone name="L_pointer_01">
+<bone name="L_pointer_02">
+<bone name="L_pointer_03">
+<bone name="L_pointer_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_hand">
+<bone name="R_thumb_01">
+<bone name="R_thumb_02">
+<bone name="R_thumb_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_pointer_01">
+<bone name="R_pointer_02">
+<bone name="R_pointer_03">
+<bone name="R_pointer_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_armthing_01">
+<bone name="R_armthing_02">
+<bone name="R_armthing_03">
+<bone name="R_armthing_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="coreA">
+</bone>
+</bone>
+<bone name="L_hip">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toetentB_01">
+<bone name="L_toetentB_02">
+<bone name="L_toetentB_03">
+</bone>
+</bone>
+</bone>
+<bone name="L_toetent_01">
+<bone name="L_toetent_02">
+<bone name="L_toetent_03">
+<bone name="L_toetent_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toetentB_01">
+<bone name="R_toetentB_02">
+<bone name="R_toetentB_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_toetent_01">
+<bone name="R_toetent_02">
+<bone name="R_toetent_03">
+<bone name="R_toetent_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="coreB">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Feygolem Skeleton" title="Feygolem Skeleton">
+<identifier><root>base_feygolemA</root></identifier>
+<bone name="base_feygolemA"><target>base_feygolemA</target>
+<bone name="belly"><target>belly</target>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+<bone name="head"><target>head</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_thumb_01"><target>L_thumb_01</target>
+<bone name="L_thumb_02"><target>L_thumb_02</target>
+<bone name="L_thumb_03"><target>L_thumb_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_pointer_01"><target>L_pointer_01</target>
+<bone name="L_pointer_02"><target>L_pointer_02</target>
+<bone name="L_pointer_03"><target>L_pointer_03</target>
+<bone name="L_pointer_04"><target>L_pointer_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_thumb_01"><target>R_thumb_01</target>
+<bone name="R_thumb_02"><target>R_thumb_02</target>
+<bone name="R_thumb_03"><target>R_thumb_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_pointer_01"><target>R_pointer_01</target>
+<bone name="R_pointer_02"><target>R_pointer_02</target>
+<bone name="R_pointer_03"><target>R_pointer_03</target>
+<bone name="R_pointer_04"><target>R_pointer_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_armthing_01"><target>R_armthing_01</target>
+<bone name="R_armthing_02"><target>R_armthing_02</target>
+<bone name="R_armthing_03"><target>R_armthing_03</target>
+<bone name="R_armthing_04"><target>R_armthing_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="coreA"><target>coreA</target>
+</bone>
+</bone>
+<bone name="L_hip"><target>L_hip</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toetentB_01"><target>L_toetentB_01</target>
+<bone name="L_toetentB_02"><target>L_toetentB_02</target>
+<bone name="L_toetentB_03"><target>L_toetentB_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_toetent_01"><target>L_toetent_01</target>
+<bone name="L_toetent_02"><target>L_toetent_02</target>
+<bone name="L_toetent_03"><target>L_toetent_03</target>
+<bone name="L_toetent_04"><target>L_toetent_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip"><target>R_hip</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toetentB_01"><target>R_toetentB_01</target>
+<bone name="R_toetentB_02"><target>R_toetentB_02</target>
+<bone name="R_toetentB_03"><target>R_toetentB_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_toetent_01"><target>R_toetent_01</target>
+<bone name="R_toetent_02"><target>R_toetent_02</target>
+<bone name="R_toetent_03"><target>R_toetent_03</target>
+<bone name="R_toetent_04"><target>R_toetent_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="coreB"><target>coreB</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

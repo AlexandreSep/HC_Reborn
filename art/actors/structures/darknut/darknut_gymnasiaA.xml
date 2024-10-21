@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Gymnasia">
+      <mesh>structural/darknut/dar_gymnasiaA.dae</mesh>
+      <props>
+      </props>
+      <textures>
+        <texture file="structural/darknut/darknut_baseA.dds" name="baseTex"/>
+		<texture file="structural/darknut/darknut_baseA_normal.dds" name="normTex"/>
+		<texture file="structural/darknut/dar_gymnasia_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

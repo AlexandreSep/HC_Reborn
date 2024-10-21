@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+	  <mesh>structural/wild/wild_moldarach_caveA.dae</mesh>
+      <props>
+        <prop actor="props/structures/wild/moldarach_nestbaseA.xml" attachpoint="root"/>
+      </props>
+      <textures>
+		<texture file="gaia/rocks/zora_rocks.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>  
+  <material>basic_trans.xml</material>
+</actor>

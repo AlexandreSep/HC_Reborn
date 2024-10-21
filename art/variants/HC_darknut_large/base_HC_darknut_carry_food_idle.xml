@@ -1,0 +1,9 @@
+<variant name="carry_food_idle">
+  <animations>
+	<animation file="HC_darknut_large/darknut_large_idle.dae" name="carry_food_idle" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/shuttle_basket.xml" attachpoint="R_weapon"/>
+	<prop attachpoint="L_weapon"/>
+  </props>
+</variant>

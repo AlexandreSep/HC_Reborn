@@ -1,0 +1,19 @@
+<skeletons>
+<standard_skeleton id="Gerudo_Gate" title="Gerudo_Gate">
+<bone name="gate_gerudo">
+<bone name="R_gate">
+</bone>
+<bone name="L_gate">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Gerudo_Gate" title="Gerudo_Gate">
+<identifier><root>gate_gerudo</root></identifier>
+<bone name="gate_gerudo"><target>gate_gerudo</target>
+<bone name="R_gate"><target>R_gate</target>
+</bone>
+<bone name="L_gate"><target>L_gate</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

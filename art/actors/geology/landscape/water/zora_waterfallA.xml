@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+ 
+ <float/>
+ 
+  <group>
+    <variant>
+      <mesh>gaia/landscape/water/zora_waterfallA.dae</mesh>
+      <props>
+		<prop actor="particle/river_mistB.xml" attachpoint="water_01"/>
+      </props>	  
+      <textures>
+        <texture file="temp/waterfall.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>waterfall_huge.xml</material>
+</actor>

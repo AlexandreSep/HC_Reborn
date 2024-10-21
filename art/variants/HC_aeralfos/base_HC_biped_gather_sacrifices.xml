@@ -1,0 +1,11 @@
+<variant name="gather_sacrifices">
+  <animations>
+	<animation file="HC_aeralfos/aeralfos_capture.dae" name="gather_sacrifices" id="praise1" speed="100"/>
+	<animation file="HC_aeralfos/aeralfos_capture.dae" name="gather_sacrifices" id="praise2" speed="200"/>
+	<animation file="HC_aeralfos/aeralfos_capture.dae" name="gather_sacrifices" id="praise3" speed="150"/>
+  </animations>
+  <props>
+    <prop actor="" attachpoint="R_wrist"/>
+    <prop actor="" attachpoint="L_wrist"/>
+  </props>
+</variant>

@@ -1,0 +1,395 @@
+<skeletons>
+<standard_skeleton id="Gleeockling Skeleton" title="Gleeockling Skeleton">
+<bone name="gleeokling_base">
+<bone name="belly_01">
+<bone name="chest_01">
+<bone name="neckA_01">
+<bone name="neckA_02">
+<bone name="neckA_03">
+<bone name="neckA_04">
+<bone name="neckA_05">
+<bone name="neckA_06">
+<bone name="neckA_07">
+<bone name="neckA_08">
+<bone name="headA_01">
+<bone name="headA_02">
+<bone name="headA_03">
+</bone>
+</bone>
+<bone name="mouthA_01">
+<bone name="mouthA_02">
+<bone name="mouthA_03">
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+<bone name="loaded_projectile">
+<bone name="tngA_03">
+<bone name="tngA_04">
+<bone name="tngA_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckB_01">
+<bone name="neckB_02">
+<bone name="neckB_03">
+<bone name="neckB_04">
+<bone name="neckB_05">
+<bone name="neckB_06">
+<bone name="neckB_07">
+<bone name="neckB_08">
+<bone name="headB_01">
+<bone name="headB_02">
+<bone name="headB_03">
+</bone>
+</bone>
+<bone name="mouthB_01">
+<bone name="mouthB_02">
+<bone name="mouthB_03">
+</bone>
+</bone>
+</bone>
+<bone name="tngB_01">
+<bone name="tngB_02">
+<bone name="tngB_03">
+<bone name="tngB_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckC_09">
+<bone name="neckC_02">
+<bone name="neckC_03">
+<bone name="neckC_04">
+<bone name="neckC_05">
+<bone name="neckC_06">
+<bone name="neckC_07">
+<bone name="neckC_08">
+<bone name="headC_01">
+<bone name="headC_02">
+<bone name="headC_03">
+</bone>
+</bone>
+<bone name="mouthC_01">
+<bone name="mouthC_02">
+<bone name="mouthC_03">
+</bone>
+</bone>
+</bone>
+<bone name="tngC_01">
+<bone name="tngC_02">
+<bone name="tngC_03">
+<bone name="tngC_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_wing_01">
+<bone name="L_wing_02">
+<bone name="L_wing_03">
+<bone name="L_wing_04">
+<bone name="L_wing_05">
+<bone name="L_wing_06">
+</bone>
+</bone>
+</bone>
+<bone name="L_wing_07">
+<bone name="L_wing_08">
+<bone name="L_wing_09">
+</bone>
+</bone>
+</bone>
+<bone name="L_wing_10">
+<bone name="L_wing_11">
+<bone name="L_wing_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_01">
+<bone name="R_wing_02">
+<bone name="R_wing_03">
+<bone name="R_wing_04">
+<bone name="R_wing_05">
+<bone name="R_wing_06">
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_07">
+<bone name="R_wing_08">
+<bone name="R_wing_09">
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_10">
+<bone name="R_wing_11">
+<bone name="R_wing_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_01">
+<bone name="L_knee_01">
+<bone name="L_foot_01">
+<bone name="L_toes_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip_01">
+<bone name="R_knee_01">
+<bone name="R_foot_01">
+<bone name="R_toes_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Gleeockling Skeleton" title="Gleeockling Skeleton">
+<identifier><root>gleeokling_base</root></identifier>
+<bone name="gleeokling_base"><target>gleeokling_base</target>
+<bone name="belly_01"><target>belly_01</target>
+<bone name="chest_01"><target>chest_01</target>
+<bone name="neckA_01"><target>neckA_01</target>
+<bone name="neckA_02"><target>neckA_02</target>
+<bone name="neckA_03"><target>neckA_03</target>
+<bone name="neckA_04"><target>neckA_04</target>
+<bone name="neckA_05"><target>neckA_05</target>
+<bone name="neckA_06"><target>neckA_06</target>
+<bone name="neckA_07"><target>neckA_07</target>
+<bone name="neckA_08"><target>neckA_08</target>
+<bone name="headA_01"><target>headA_01</target>
+<bone name="headA_02"><target>headA_02</target>
+<bone name="headA_03"><target>headA_03</target>
+</bone>
+</bone>
+<bone name="mouthA_01"><target>mouthA_01</target>
+<bone name="mouthA_02"><target>mouthA_02</target>
+<bone name="mouthA_03"><target>mouthA_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+<bone name="tngA_03"><target>tngA_03</target>
+<bone name="tngA_04"><target>tngA_04</target>
+<bone name="tngA_05"><target>tngA_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckB_01"><target>neckB_01</target>
+<bone name="neckB_02"><target>neckB_02</target>
+<bone name="neckB_03"><target>neckB_03</target>
+<bone name="neckB_04"><target>neckB_04</target>
+<bone name="neckB_05"><target>neckB_05</target>
+<bone name="neckB_06"><target>neckB_06</target>
+<bone name="neckB_07"><target>neckB_07</target>
+<bone name="neckB_08"><target>neckB_08</target>
+<bone name="headB_01"><target>headB_01</target>
+<bone name="headB_02"><target>headB_02</target>
+<bone name="headB_03"><target>headB_03</target>
+</bone>
+</bone>
+<bone name="mouthB_01"><target>mouthB_01</target>
+<bone name="mouthB_02"><target>mouthB_02</target>
+<bone name="mouthB_03"><target>mouthB_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="tngB_01"><target>tngB_01</target>
+<bone name="tngB_02"><target>tngB_02</target>
+<bone name="tngB_03"><target>tngB_03</target>
+<bone name="tngB_04"><target>tngB_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckC_09"><target>neckC_09</target>
+<bone name="neckC_02"><target>neckC_02</target>
+<bone name="neckC_03"><target>neckC_03</target>
+<bone name="neckC_04"><target>neckC_04</target>
+<bone name="neckC_05"><target>neckC_05</target>
+<bone name="neckC_06"><target>neckC_06</target>
+<bone name="neckC_07"><target>neckC_07</target>
+<bone name="neckC_08"><target>neckC_08</target>
+<bone name="headC_01"><target>headC_01</target>
+<bone name="headC_02"><target>headC_02</target>
+<bone name="headC_03"><target>headC_03</target>
+</bone>
+</bone>
+<bone name="mouthC_01"><target>mouthC_01</target>
+<bone name="mouthC_02"><target>mouthC_02</target>
+<bone name="mouthC_03"><target>mouthC_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="tngC_01"><target>tngC_01</target>
+<bone name="tngC_02"><target>tngC_02</target>
+<bone name="tngC_03"><target>tngC_03</target>
+<bone name="tngC_04"><target>tngC_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_wing_01"><target>L_wing_01</target>
+<bone name="L_wing_02"><target>L_wing_02</target>
+<bone name="L_wing_03"><target>L_wing_03</target>
+<bone name="L_wing_04"><target>L_wing_04</target>
+<bone name="L_wing_05"><target>L_wing_05</target>
+<bone name="L_wing_06"><target>L_wing_06</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_wing_07"><target>L_wing_07</target>
+<bone name="L_wing_08"><target>L_wing_08</target>
+<bone name="L_wing_09"><target>L_wing_09</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_wing_10"><target>L_wing_10</target>
+<bone name="L_wing_11"><target>L_wing_11</target>
+<bone name="L_wing_12"><target>L_wing_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_01"><target>R_wing_01</target>
+<bone name="R_wing_02"><target>R_wing_02</target>
+<bone name="R_wing_03"><target>R_wing_03</target>
+<bone name="R_wing_04"><target>R_wing_04</target>
+<bone name="R_wing_05"><target>R_wing_05</target>
+<bone name="R_wing_06"><target>R_wing_06</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_07"><target>R_wing_07</target>
+<bone name="R_wing_08"><target>R_wing_08</target>
+<bone name="R_wing_09"><target>R_wing_09</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_10"><target>R_wing_10</target>
+<bone name="R_wing_11"><target>R_wing_11</target>
+<bone name="R_wing_12"><target>R_wing_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_01"><target>L_hip_01</target>
+<bone name="L_knee_01"><target>L_knee_01</target>
+<bone name="L_foot_01"><target>L_foot_01</target>
+<bone name="L_toes_01"><target>L_toes_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip_01"><target>R_hip_01</target>
+<bone name="R_knee_01"><target>R_knee_01</target>
+<bone name="R_foot_01"><target>R_foot_01</target>
+<bone name="R_toes_01"><target>R_toes_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

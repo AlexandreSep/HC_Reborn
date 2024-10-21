@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Main">
+      <animations>
+        <animation file="HC_salawagon/salawagon_idle.dae" name="Idle" speed="70"/>
+        <animation file="HC_salawagon/salawagon_idle.dae" name="Idle" speed="70"/>
+        <animation file="HC_salawagon/salawagon_idle.dae" name="Idle" speed="70"/>
+		<animation event="0.5" file="HC_salawagon/salawagon_idle.dae" name="attack_melee" speed="120"/>
+        <animation file="HC_salawagon/salawagon_walk.dae" name="Walk" speed="20"/>
+        <animation file="HC_salawagon/salawagon_walk.dae" name="Run" speed="30"/>
+        <animation file="HC_salawagon/salawagon_death.dae" name="Death" speed="90"/>
+      </animations>
+      <mesh>units/goron/gor_salawagonA_r.dae</mesh>
+      <props>
+        <prop actor="units/goron/goron_salawagon_b_rr.xml" attachpoint="rider_01"/>
+      </props>
+      <textures>
+        <texture file="skeletal/goron/gor_main2.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

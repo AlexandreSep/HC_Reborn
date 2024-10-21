@@ -1,0 +1,13 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_ironk/ironk_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_ironk/ironk_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_ironk/ironk_walk.dae" name="Walk" id="walk1" speed="37"/>
+    <animation file="HC_ironk/ironk_walk.dae" name="Run" id="run1" speed="37"/>
+	<animation event="0.5" file="HC_ironk/ironk_attackA.dae" name="Attack_ranged" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_ironk/ironk_attackB.dae" name="Attack_ranged" id="attack2" speed="100"/>
+    <animation event="0.5" file="HC_ironk/ironk_attackC.dae" name="Attack_ranged" id="attack3" speed="100"/>
+	<animation file="HC_ironk/ironk_promotion.dae" name="promotion" speed="80"/>
+	<animation file="HC_ironk/ironk_death.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

@@ -1,0 +1,75 @@
+<skeletons>
+<standard_skeleton id="FlagcarrierA Skeleton" title="FlagcarrierA Skeleton">
+<bone name="flagA_base">
+<bone name="poleA">
+<bone name="flap_06">
+<bone name="flap_07">
+<bone name="flap_08">
+<bone name="flap_09">
+<bone name="joint7">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_10">
+<bone name="flap_11">
+<bone name="flap_12">
+<bone name="flap_13">
+<bone name="flap_14">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_01">
+<bone name="flap_02">
+<bone name="flap_03">
+<bone name="flap_04">
+<bone name="flap_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="FlagcarrierA Skeleton" title="FlagcarrierA Skeleton">
+<identifier><root>flagA_base</root></identifier>
+<bone name="flagA_base"><target>flagA_base</target>
+<bone name="poleA"><target>poleA</target>
+<bone name="flap_06"><target>flap_06</target>
+<bone name="flap_07"><target>flap_07</target>
+<bone name="flap_08"><target>flap_08</target>
+<bone name="flap_09"><target>flap_09</target>
+<bone name="joint7"><target>joint7</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_10"><target>flap_10</target>
+<bone name="flap_11"><target>flap_11</target>
+<bone name="flap_12"><target>flap_12</target>
+<bone name="flap_13"><target>flap_13</target>
+<bone name="flap_14"><target>flap_14</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="flap_01"><target>flap_01</target>
+<bone name="flap_02"><target>flap_02</target>
+<bone name="flap_03"><target>flap_03</target>
+<bone name="flap_04"><target>flap_04</target>
+<bone name="flap_05"><target>flap_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

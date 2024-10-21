@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="House A">
+      <mesh>structural/settle_malkariko/malka_house_onwaterA.dae</mesh>
+	  <textures><texture file="structural/settle_malkariko/malka_house_onwater_ao.dds" name="aoTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Roof A">
+      <textures>
+		<texture file="structural/settle_malkariko/malka_housesmallA.dds" name="baseTex"/>
+		<texture file="structural/settle_malkariko/malka_housesmallA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="Roof B">
+      <textures>
+		<texture file="structural/settle_malkariko/malka_housesmallB.dds" name="baseTex"/>
+		<texture file="structural/settle_malkariko/malka_housesmallA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

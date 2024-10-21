@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant name="a">
+      <mesh>gaia/landscape/rocks/zora_domainentB_rocks.dae</mesh>
+    </variant>
+  </group>
+
+  <group>
+    <variant>
+      <textures><texture file="gaia/rocks/zora_domainentA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+</actor>

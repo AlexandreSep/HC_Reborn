@@ -1,0 +1,51 @@
+<skeletons>
+<standard_skeleton id="Towerram Skeleton" title="Towerram Skeleton">
+<bone name="towerram_base">
+<bone name="axis_03">
+</bone>
+<bone name="axis_02">
+</bone>
+<bone name="axis_01">
+</bone>
+<bone name="ram">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="crew_01">
+</bone>
+<bone name="crew_02">
+</bone>
+<bone name="crew_03">
+</bone>
+<bone name="crew_04">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Towerram Skeleton" title="Towerram Skeleton">
+<identifier><root>towerram_base</root></identifier>
+<bone name="towerram_base"><target>towerram_base</target>
+<bone name="axis_03"><target>axis_03</target>
+</bone>
+<bone name="axis_02"><target>axis_02</target>
+</bone>
+<bone name="axis_01"><target>axis_01</target>
+</bone>
+<bone name="ram"><target>ram</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="crew_01"><target>crew_01</target>
+</bone>
+<bone name="crew_02"><target>crew_02</target>
+</bone>
+<bone name="crew_03"><target>crew_03</target>
+</bone>
+<bone name="crew_04"><target>crew_04</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

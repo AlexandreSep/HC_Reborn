@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant file="HC_dekutiffer/base_HC_biped_tiffer.xml"> 
+      <mesh>units/deku/dek_tifferA.dae</mesh>
+	  <textures><texture file="skeletal/deku/dek_mainA.dds" name="baseTex"/></textures>
+	  <props>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="candle_01"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_dekutiffer/base_HC_biped_attack_candle.xml"/>
+    <variant file="HC_dekutiffer/base_HC_biped_capture.xml"/>
+    <variant file="HC_dekutiffer/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_dekutiffer/base_HC_biped_death.xml">
+    </variant>
+  </group>  
+  <material>basic_trans.xml</material>
+</actor>

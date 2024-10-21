@@ -1,0 +1,35 @@
+<skeletons>
+<standard_skeleton id="ArmosDM_skel" title="ArmosDM_skel">
+<bone name="armos_dm_base">
+<bone name="armos_01">
+</bone>
+<bone name="armos_mount">
+</bone>
+<bone name="armos_front">
+</bone>
+<bone name="armos_back">
+</bone>
+<bone name="armos_right">
+</bone>
+<bone name="armos_left">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="ArmosDM_skel" title="ArmosDM_skel">
+<identifier><root>armos_dm_base</root></identifier>
+<bone name="armos_dm_base"><target>armos_dm_base</target>
+<bone name="armos_01"><target>armos_01</target>
+</bone>
+<bone name="armos_mount"><target>armos_mount</target>
+</bone>
+<bone name="armos_front"><target>armos_front</target>
+</bone>
+<bone name="armos_back"><target>armos_back</target>
+</bone>
+<bone name="armos_right"><target>armos_right</target>
+</bone>
+<bone name="armos_left"><target>armos_left</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

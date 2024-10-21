@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_arachA.xml">
+      <mesh>units/lanayru/lan_arachA.dae</mesh>
+	  <textures><texture file="skeletal/lanayru/lan_mainC.dds" name="baseTex"/></textures>
+      <props>
+		<prop actor="units/lanayru/lanayru_arach_saddle_b.xml" attachpoint="root"/>
+		<prop actor="units/lanayru/lanayru_hero_ralis_b_r.xml" attachpoint="rider_01"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant file="HC_mounts/base_HC_arachA_death.xml">
+      <props>
+		<prop actor="units/lanayru/lanayru_arach_saddle_b.xml" attachpoint="root"/>
+        <prop actor="props/units/blood_zora_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

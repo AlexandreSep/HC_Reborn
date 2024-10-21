@@ -1,0 +1,119 @@
+<skeletons>
+<standard_skeleton id="Peahatmama_skeleton" title="Peahatmama_skeleton">
+<bone name="peahatmom_base">
+<bone name="head_01">
+<bone name="leaf_01">
+<bone name="leaf_02">
+<bone name="leaf_03">
+<bone name="leaf_04">
+<bone name="leaf_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="leaf_06">
+<bone name="leaf_07">
+<bone name="leaf_08">
+<bone name="leaf_09">
+<bone name="leaf_10">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="leaf_11">
+<bone name="leaf_12">
+<bone name="leaf_13">
+<bone name="leaf_14">
+<bone name="leaf_15">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="leaf_16">
+<bone name="leaf_17">
+<bone name="leaf_18">
+<bone name="leaf_19">
+<bone name="leaf_20">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="blade_06">
+</bone>
+<bone name="blade_04">
+</bone>
+<bone name="blade_05">
+</bone>
+<bone name="blade_03">
+</bone>
+<bone name="blade_01">
+</bone>
+<bone name="blade_02">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Peahatmama_skeleton" title="Peahatmama_skeleton">
+<identifier><root>peahatmom_base</root></identifier>
+<bone name="peahatmom_base"><target>peahatmom_base</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="leaf_01"><target>leaf_01</target>
+<bone name="leaf_02"><target>leaf_02</target>
+<bone name="leaf_03"><target>leaf_03</target>
+<bone name="leaf_04"><target>leaf_04</target>
+<bone name="leaf_05"><target>leaf_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="leaf_06"><target>leaf_06</target>
+<bone name="leaf_07"><target>leaf_07</target>
+<bone name="leaf_08"><target>leaf_08</target>
+<bone name="leaf_09"><target>leaf_09</target>
+<bone name="leaf_10"><target>leaf_10</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="leaf_11"><target>leaf_11</target>
+<bone name="leaf_12"><target>leaf_12</target>
+<bone name="leaf_13"><target>leaf_13</target>
+<bone name="leaf_14"><target>leaf_14</target>
+<bone name="leaf_15"><target>leaf_15</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="leaf_16"><target>leaf_16</target>
+<bone name="leaf_17"><target>leaf_17</target>
+<bone name="leaf_18"><target>leaf_18</target>
+<bone name="leaf_19"><target>leaf_19</target>
+<bone name="leaf_20"><target>leaf_20</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="blade_06"><target>blade_06</target>
+</bone>
+<bone name="blade_04"><target>blade_04</target>
+</bone>
+<bone name="blade_05"><target>blade_05</target>
+</bone>
+<bone name="blade_03"><target>blade_03</target>
+</bone>
+<bone name="blade_01"><target>blade_01</target>
+</bone>
+<bone name="blade_02"><target>blade_02</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="barracks">
+      <mesh>structural/ruins/ruins_LWB.dae</mesh>
+      <textures>
+	    <texture file="structural/ruins/ruins_zoraA.dds" name="baseTex"/>
+	    <texture file="structural/ruins/ruins_zoraA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,15 @@
+<variant name="Base" frequency="1">
+  <animations>
+        <animation file="HC_prawn/prawn_idle.dae" name="Idle" speed="100"/>
+        <animation file="HC_prawn/prawn_idleA.dae" name="Idle" speed="100"/>
+        <animation file="HC_prawn/prawn_idleB.dae" name="Idle" speed="100"/>
+        <animation file="HC_prawn/prawn_idleC.dae" name="Idle" speed="100"/>
+        <animation event="0.1" file="HC_prawn/prawn_walk.dae" name="carry_meat" speed="25"/>
+        <animation event="0.1" file="HC_prawn/prawn_walk.dae" name="Walk" speed="25"/>
+        <animation event="0.1" file="HC_prawn/prawn_walk.dae" name="Run" speed="30"/>
+        <animation file="HC_prawn/prawn_attackA.dae" name="attack_melee" speed="100"/>
+        <animation file="HC_prawn/prawn_attackA.dae" name="attack_slaughter" speed="70"/>
+		<animation file="HC_prawn/prawn_flailA.dae" name="Flail" id="flail1" speed="8"/>
+		<animation file="HC_prawn/prawn_recoverA.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

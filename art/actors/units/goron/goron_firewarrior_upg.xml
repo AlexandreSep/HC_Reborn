@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_goronmed/base_HC_goron_splash.xml">
+      <mesh>units/goron/gor_firewarrior_upg.dae</mesh>
+      <props>
+		<prop actor="particle/destruction_dust_small.xml" attachpoint="projectile"/>
+      </props>
+      <textures><texture file="skeletal/goron/gor_main1.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_goronmed/base_HC_goron_capture.xml"/>
+    <variant file="HC_goronmed/base_HC_goron_slaughter.xml"/>
+    <variant file="HC_goronmed/base_HC_goron_death.xml">
+      <props>
+        <prop actor="props/units/blood_goron_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

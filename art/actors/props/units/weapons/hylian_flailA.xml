@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_flails/base_HC_biped_flail_flail.xml">
+	  <mesh>props/weapon/hylian_flailA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_flails/base_HC_biped_flail_capture.xml"/>
+    <variant file="HC_flails/base_HC_biped_flail_death.xml"/>
+  </group>
+  <group>
+    <variant frequency="1" name="Celtic cape 01">
+	  <textures>
+	    <texture file="skeletal/hylian/hyl_uu2.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+    <variant frequency="1" name="Celtic cape 02">
+	  <textures>
+	    <texture file="skeletal/hylian/hyl_uu2.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+   <material>player_trans.xml</material>
+</actor>

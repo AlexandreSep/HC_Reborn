@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particles>
+
+    <texture>art/textures/particles/smoke_256a.png</texture>
+    <blend mode="over"/>
+
+    <constant name="emissionrate" value="2.2"/>
+    <uniform name="lifetime" min="15.0" max="25.0"/>
+	
+	<uniform name="position.x" min="-17.0" max="17.0"/>
+    <uniform name="position.z" min="-17.0" max="17.0"/>
+
+
+    <uniform name="velocity.x" min="1.0" max="2.0"/>
+	 <uniform name="velocity.y" min="1.0" max="2.0"/>
+    <uniform name="velocity.angle" min="-0.1" max="0.1"/>
+    <uniform name="size" min="20.0" max="40.0"/>
+
+</particles>

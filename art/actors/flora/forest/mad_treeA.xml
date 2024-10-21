@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="trunk-a">
+      <mesh>gaia/flora/flora_treedekuA.dae</mesh>
+    </variant>
+
+  </group>
+  
+
+  <group>
+    <variant name="trunk-texture">
+      <textures><texture file="gaia/flora/mad_treeA.dds" name="baseTex"/></textures>
+	  <props>
+        <prop actor="props/flora/mad_corruptionA.xml" attachpoint="root"/>
+      </props> 
+    </variant>
+  </group>
+  
+  <material>basic_trans_wind.xml</material>
+
+</actor>

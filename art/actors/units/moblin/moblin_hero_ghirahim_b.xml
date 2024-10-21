@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_ghirahim/base_HC_ghirahim.xml">
+      <mesh>units/moblin/mob_ghirahimA.dae</mesh>
+	  <props>
+		<prop actor="props/units/weapons/ghirahim_swordA.xml" attachpoint="R_weapon"/>
+		<prop actor="props/units/weapons/ghirahim_swordB.xml" attachpoint="sword_01"/>
+		<prop actor="props/units/weapons/ghirahim_swordB.xml" attachpoint="sword_02"/>
+		<prop actor="props/units/weapons/ghirahim_swordB.xml" attachpoint="sword_03"/>
+        <prop actor="particle/ghirahim_sparklesA.xml" attachpoint="root"/>
+		<prop actor="particle/ghirahim_sparklesB.xml" attachpoint="sword_01"/>
+		<prop actor="" attachpoint="sword_01_tail"/>
+		<prop actor="particle/ghirahim_sparklesB.xml" attachpoint="sword_02"/>
+		<prop actor="" attachpoint="sword_02_tail"/>
+		<prop actor="particle/ghirahim_sparklesB.xml" attachpoint="sword_03"/>
+		<prop actor="" attachpoint="sword_03_tail"/>		
+        <prop actor="particle/blood_dropA.xml" attachpoint="B_cape_02"/>
+		<prop actor="particle/blood_dropA.xml" attachpoint="B_cape_04"/>	
+		<prop actor="particle/blood_dropA.xml" attachpoint="B_cape_07"/>					
+        <prop actor="particle/blood_dropA.xml" attachpoint="L_cape_02"/>
+		<prop actor="particle/blood_dropA.xml" attachpoint="L_cape_05"/>	
+		<prop actor="particle/blood_dropA.xml" attachpoint="L_cape_09"/>		
+		<prop actor="particle/blood_dropA.xml" attachpoint="R_cape_02"/>
+		<prop actor="particle/blood_dropA.xml" attachpoint="R_cape_05"/>	
+		<prop actor="particle/blood_dropA.xml" attachpoint="R_cape_09"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>		
+      </props>
+      <textures><texture file="skeletal/moblin/mob_ghirahimA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Attack_Ranged">
+      <props>
+        <prop actor="particle/ghirahim_doomwindA.xml" attachpoint="root"/>
+		<prop actor="particle/ghirahim_sparklesC.xml" attachpoint="sword_01_tail"/>
+		<prop actor="particle/ghirahim_sparklesC.xml" attachpoint="sword_02_tail"/>
+		<prop actor="particle/ghirahim_sparklesC.xml" attachpoint="sword_03_tail"/>
+		<prop actor="particle/ghirahim_sparklesA.xml" attachpoint="projectile"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="Death">
+      <props>
+		<prop actor="props/structures/moblin/moblin_swordspirit.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>  
+  <material>default.xml</material>
+</actor>

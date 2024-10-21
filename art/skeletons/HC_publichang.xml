@@ -1,0 +1,23 @@
+<skeletons>
+<standard_skeleton id="publichang_skel" title="publichang_skel">
+<bone name="public_hang_base">
+<bone name="staticref">
+<bone name="hang_01">
+</bone>
+<bone name="hang_02">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="publichang_skel" title="publichang_skel">
+<identifier><root>public_hang_base</root></identifier>
+<bone name="public_hang_base"><target>public_hang_base</target>
+<bone name="staticref"><target>staticref</target>
+<bone name="hang_01"><target>hang_01</target>
+</bone>
+<bone name="hang_02"><target>hang_02</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

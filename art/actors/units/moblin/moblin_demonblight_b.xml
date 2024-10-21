@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_demonblight/base_HC_biped_axe.xml"> 	
+	  <mesh>units/moblin/mob_demonblightA.dae</mesh>
+      <textures>
+        <texture file="skeletal/moblin/mob_demonblightA.dds" name="baseTex"/>
+      </textures>
+	  <props>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="projectile"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="LegC"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="Waist"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="Bust"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="Neck"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="FootR"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="FootL"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="HaveR"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="HaveL"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="ShoulderR"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="ShoulderL"/>
+			<prop actor="props/units/weapons/demonblight_swordA.xml" attachpoint="HaveR"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_demonblight/base_HC_biped_capture.xml"/>
+    <variant file="HC_demonblight/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_demonblight/base_HC_biped_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

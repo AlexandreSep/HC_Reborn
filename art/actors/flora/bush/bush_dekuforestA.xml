@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="trunk-a">
+      <mesh>gaia/flora/flora_bush_forestbigA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="trunk-b">
+      <mesh>gaia/flora/flora_bush_forestbigB.dae</mesh>
+    </variant>
+	<variant frequency="1" name="trunk-c">
+      <mesh>gaia/flora/flora_bush_forestbigC.dae</mesh>
+    </variant>
+
+  </group>
+  
+
+  <group>
+    <variant name="trunk-texture">
+      <textures><texture file="gaia/flora/bush_dekuA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+  <material>basic_trans_wind.xml</material>
+
+</actor>

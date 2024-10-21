@@ -1,0 +1,10 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.3" load="0.8" file="HC_tallblin/tallblin_attack_throwA.dae" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="units/moblin/moblin_bugblin_thrown.xml" attachpoint="projectile"/>
+	<prop actor="units/moblin/moblin_bugblin_thrown.xml" attachpoint="loaded-projectile"/>
+    <prop attachpoint="carryblin"/>
+  </props>
+</variant>

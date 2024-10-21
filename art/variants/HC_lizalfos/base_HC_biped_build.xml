@@ -1,0 +1,8 @@
+<variant name="Build">
+  <animations>
+	<animation event="0.5" file="HC_lizalfos/lizalfos_mine.dae" name="Build" speed="100"/>
+  </animations>
+  <props>
+    <prop attachpoint="R_wrist"/>
+  </props>
+</variant>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/weapon/zora_mageboltA_shoot.dae</mesh>
+      <textures><texture file="skeletal/zora/zor_main3.dds" name="baseTex"/>
+	  			<texture file="skeletal/zora/zor_main3_spec.dds" name="specTex"/>
+				<texture file="skeletal/zora/zor_main3_spec.dds" name="glowTex"/>
+	  </textures>
+	    <props>
+        <prop actor="particle/zora_sparksB.xml" attachpoint="root"/>
+		<prop actor="particle/zora_sparksC.xml" attachpoint="root"/>
+		</props>
+    </variant>
+  </group>
+   <material>basic_glow.xml</material>
+</actor>

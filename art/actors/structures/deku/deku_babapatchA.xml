@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Baba Patch">
+      <mesh>structural/deku/dek_babapatchA.dae</mesh>
+	  <textures>
+		<texture file="gaia/flora/deku_treeA.png" name="baseTex"/>
+	  </textures>
+	  <props>
+		<prop actor="props/structures/deku/deku_groundbase_cross.xml" attachpoint="root"/>
+		<prop actor="structures/deku/deku_barrier_tallB.xml" attachpoint="root"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_01"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_02"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_03"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_04"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_05"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_06"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_07"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_08"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_09"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_10"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_11"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_12"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_13"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_14"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_15"/>
+		<prop actor="units/deku/deku_baba_b.xml" attachpoint="flower_16"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

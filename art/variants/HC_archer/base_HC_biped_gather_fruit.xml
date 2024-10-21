@@ -1,0 +1,9 @@
+<variant name="gather_fruit">
+  <animations>
+	<animation file="HC_archer/biped_hum_arch_harvest_fruit.dae" name="gather_fruit" speed="100"/>
+  </animations>
+  <props>
+    <prop attachpoint="projectile"/>
+	<prop attachpoint="bone_Lhand"/>
+  </props>
+</variant>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/weapon/hylian_lightarrowA_shoot.dae</mesh>
+      <textures><texture file="skeletal/hylian/hyl_uu1.dds" name="baseTex"/>
+	  			<texture file="skeletal/hylian/hyl_uu1_spec.dds" name="specTex"/>
+				<texture file="skeletal/hylian/hyl_uu1_spec.dds" name="glowTex"/>
+	  </textures>
+	    <props>
+        <prop actor="particle/hylian_lightarrowA.xml" attachpoint="root"/>
+		<prop actor="particle/hylian_lightarrowB.xml" attachpoint="root"/>
+		</props>
+    </variant>
+  </group>
+   <material>basic_glow.xml</material>
+</actor>

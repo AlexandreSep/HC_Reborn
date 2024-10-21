@@ -1,0 +1,8 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.33" file="HC_archer/biped_hum_arch_attack_bluntA.dae" load="0.15" name="attack_ranged" id="attack_ranged1" speed="100"/>
+	 <animation event="0.33" file="HC_archer/biped_hum_arch_attack_bluntB.dae" load="0.15" name="attack_ranged" id="attack_ranged2" speed="100"/>
+  </animations>
+  <props>
+  </props>
+</variant>

@@ -1,0 +1,12 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.60" file="HC_ruto/ruto_attackA.dae" load="0.65" name="attack_ranged" speed="100"/>
+	<animation event="0.60" file="HC_ruto/ruto_attackB.dae" load="0.65" name="attack_ranged" speed="100"/>
+	<animation event="0.60" file="HC_ruto/ruto_attackC.dae" load="0.65" name="attack_ranged" speed="100"/>
+	<animation event="0.60" file="HC_ruto/ruto_attackD.dae" load="0.65" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="" attachpoint="projectile"/>
+  </props>
+</variant>
+

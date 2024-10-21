@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Lon Lon CivCenter">
+      <animations>
+        <animation event="0.5" load="0" name="attack_ranged" speed="100"/>
+      </animations>
+      <mesh>structural/npc_lonlon/npc_lon_civiccenterA.dae</mesh>
+      <props>
+	    <prop actor="props/structures/npc_lonlon/npc_lon_groundbase_large.xml" attachpoint="root"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>	
+      </props>
+      <textures>
+        <texture file="structural/npc_lonlon/npc_lon_mainA.dds" name="baseTex"/>
+		<texture file="structural/npc_lonlon/npc_lon_mainA_normal.dds" name="normTex"/>
+		<texture file="structural/npc_lonlon/npc_lon_ranchA_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

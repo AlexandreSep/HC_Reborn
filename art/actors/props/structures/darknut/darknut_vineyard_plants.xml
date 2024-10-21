@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Vineyard Plants">
+      <mesh>structural/darknut/dar_vineyard_plants.dae</mesh>
+      <props>
+      </props>
+      <textures>
+        <texture file="structural/darknut/darknut_plantsA.dds" name="baseTex"/>
+		<texture file="structural/darknut/darknut_plantsA_normal.dds" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

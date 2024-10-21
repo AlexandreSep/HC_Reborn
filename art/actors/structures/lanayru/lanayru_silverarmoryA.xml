@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="silvercove">
+      <animations>
+        <animation event="0.5" load="0" name="attack_ranged" speed="100"/>
+      </animations>
+      <mesh>structural/lanayru/lan_silvercoveA.dae</mesh>
+      <props>
+		<prop actor="props/structures/lanayru/lanayru_barracksaddA_vines.xml" attachpoint="root"/>
+		<prop actor="props/structures/lanayru/lanayru_silvercoveA_path.xml" attachpoint="root"/>
+      </props>
+      <textures>
+	    <texture file="structural/lanayru/lanayru_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/lanayru/lanayru_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/lanayru/lanayru_silvercoveA_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

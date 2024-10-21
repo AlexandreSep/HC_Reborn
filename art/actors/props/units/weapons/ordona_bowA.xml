@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Bow">
+      <textures><texture file="skeletal/ordona/ord_weaponsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="bow-a">
+      <mesh>props/weapon/ordona_bowA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="bow-b">
+      <mesh>props/weapon/ordona_bowA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="bow-d">
+      <mesh>props/weapon/ordona_bowA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="bow-e">
+      <mesh>props/weapon/ordona_bowA.dae</mesh>
+    </variant>
+  </group>
+</actor>

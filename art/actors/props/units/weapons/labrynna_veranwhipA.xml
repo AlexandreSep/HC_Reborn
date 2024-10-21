@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_veran/base_HC_veran_whip.xml">
+      <mesh>props/weapon/labrynna_veranwhipA.dae</mesh>
+      <props>
+      </props>
+      <textures><texture file="skeletal/labrynna/lab_mainC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_veran/base_HC_veran_attack_whip.xml"/>
+    <variant file="HC_veran/base_HC_veran_capture.xml"/>
+    <variant file="HC_veran/base_HC_veran_slaughter.xml"/>
+    <variant file="HC_veran/base_HC_veran_death.xml">
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

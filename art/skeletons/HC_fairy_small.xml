@@ -1,0 +1,75 @@
+<skeletons>
+<standard_skeleton id="fairysmall_skeleton" title="fairysmall_skeleton">
+<bone name="base_smallfairies">
+<bone name="fairy_rotater">
+<bone name="fairy_01">
+<bone name="f1_wing_01">
+<bone name="f1_wing_02">
+</bone>
+</bone>
+<bone name="f1_wing_03">
+<bone name="f1_wing_04">
+</bone>
+</bone>
+</bone>
+<bone name="fairy_02">
+<bone name="f2_wing_01">
+<bone name="f2_wing_02">
+</bone>
+</bone>
+<bone name="f2_wing_03">
+<bone name="f2_wing_04">
+</bone>
+</bone>
+</bone>
+<bone name="fairy_03">
+<bone name="f3_wing_01">
+<bone name="f3_wing_02">
+</bone>
+</bone>
+<bone name="f3_wing_03">
+<bone name="f3_wing_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="fairysmall_skeleton" title="fairysmall_skeleton">
+<identifier><root>base_smallfairies</root></identifier>
+<bone name="base_smallfairies"><target>base_smallfairies</target>
+<bone name="fairy_rotater"><target>fairy_rotater</target>
+<bone name="fairy_01"><target>fairy_01</target>
+<bone name="f1_wing_01"><target>f1_wing_01</target>
+<bone name="f1_wing_02"><target>f1_wing_02</target>
+</bone>
+</bone>
+<bone name="f1_wing_03"><target>f1_wing_03</target>
+<bone name="f1_wing_04"><target>f1_wing_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="fairy_02"><target>fairy_02</target>
+<bone name="f2_wing_01"><target>f2_wing_01</target>
+<bone name="f2_wing_02"><target>f2_wing_02</target>
+</bone>
+</bone>
+<bone name="f2_wing_03"><target>f2_wing_03</target>
+<bone name="f2_wing_04"><target>f2_wing_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="fairy_03"><target>fairy_03</target>
+<bone name="f3_wing_01"><target>f3_wing_01</target>
+<bone name="f3_wing_02"><target>f3_wing_02</target>
+</bone>
+</bone>
+<bone name="f3_wing_03"><target>f3_wing_03</target>
+<bone name="f3_wing_04"><target>f3_wing_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

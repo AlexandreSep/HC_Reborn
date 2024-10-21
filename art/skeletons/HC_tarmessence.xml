@@ -1,0 +1,159 @@
+<skeletons>
+<standard_skeleton id="Tarm Essence" title="Tarm Essence">
+<bone name="base_tarmessenceA">
+<bone name="rotator_stones">
+</bone>
+<bone name="rotator_vortex">
+</bone>
+<bone name="tent_01">
+<bone name="tent_02">
+<bone name="tent_03">
+<bone name="tent_04">
+<bone name="tent_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_06">
+<bone name="tent_07">
+<bone name="tent_08">
+<bone name="tent_09">
+<bone name="tent_10">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_11">
+<bone name="tent_12">
+<bone name="tent_13">
+<bone name="tent_14">
+<bone name="tent_15">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_16">
+<bone name="tent_17">
+<bone name="tent_18">
+<bone name="tent_19">
+<bone name="tent_20">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_21">
+<bone name="tent_22">
+<bone name="tent_23">
+<bone name="tent_24">
+<bone name="tent_25">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_26">
+<bone name="tent_27">
+<bone name="tent_28">
+<bone name="tent_29">
+<bone name="tent_30">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_31">
+<bone name="tent_32">
+<bone name="tent_33">
+<bone name="tent_34">
+<bone name="tent_35">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Tarm Essence" title="Tarm Essence">
+<identifier><root>base_tarmessenceA</root></identifier>
+<bone name="base_tarmessenceA"><target>base_tarmessenceA</target>
+<bone name="rotator_stones"><target>rotator_stones</target>
+</bone>
+<bone name="rotator_vortex"><target>rotator_vortex</target>
+</bone>
+<bone name="tent_01"><target>tent_01</target>
+<bone name="tent_02"><target>tent_02</target>
+<bone name="tent_03"><target>tent_03</target>
+<bone name="tent_04"><target>tent_04</target>
+<bone name="tent_05"><target>tent_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_06"><target>tent_06</target>
+<bone name="tent_07"><target>tent_07</target>
+<bone name="tent_08"><target>tent_08</target>
+<bone name="tent_09"><target>tent_09</target>
+<bone name="tent_10"><target>tent_10</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_11"><target>tent_11</target>
+<bone name="tent_12"><target>tent_12</target>
+<bone name="tent_13"><target>tent_13</target>
+<bone name="tent_14"><target>tent_14</target>
+<bone name="tent_15"><target>tent_15</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_16"><target>tent_16</target>
+<bone name="tent_17"><target>tent_17</target>
+<bone name="tent_18"><target>tent_18</target>
+<bone name="tent_19"><target>tent_19</target>
+<bone name="tent_20"><target>tent_20</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_21"><target>tent_21</target>
+<bone name="tent_22"><target>tent_22</target>
+<bone name="tent_23"><target>tent_23</target>
+<bone name="tent_24"><target>tent_24</target>
+<bone name="tent_25"><target>tent_25</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_26"><target>tent_26</target>
+<bone name="tent_27"><target>tent_27</target>
+<bone name="tent_28"><target>tent_28</target>
+<bone name="tent_29"><target>tent_29</target>
+<bone name="tent_30"><target>tent_30</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tent_31"><target>tent_31</target>
+<bone name="tent_32"><target>tent_32</target>
+<bone name="tent_33"><target>tent_33</target>
+<bone name="tent_34"><target>tent_34</target>
+<bone name="tent_35"><target>tent_35</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

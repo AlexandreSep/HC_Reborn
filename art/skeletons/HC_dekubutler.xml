@@ -1,0 +1,187 @@
+<skeletons>
+<standard_skeleton id="Dekubutler Skeleton" title="Dekubutler Skeleton">
+<bone name="dekubutler_baseA">
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="belly">
+<bone name="abs">
+<bone name="torso">
+<bone name="L_clavical">
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_forearm">
+<bone name="L_hand">
+<bone name="L_weapon">
+<bone name="candle_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical">
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_forearm">
+<bone name="R_hand">
+<bone name="R_weapon">
+<bone name="copter_01">
+<bone name="copter_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neck">
+<bone name="head">
+<bone name="projectile">
+<bone name="mouth_top">
+</bone>
+<bone name="mouth_bot">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+<bone name="L_musta1">
+<bone name="L_musta2">
+<bone name="L_musta3">
+<bone name="L_musta4">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_musta1">
+<bone name="R_musta2">
+<bone name="R_musta3">
+<bone name="R_musta4">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="headspout_01">
+<bone name="headspout_02">
+</bone>
+</bone>
+<bone name="headspout_03">
+<bone name="headspout_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Dekubutler Skeleton" title="Dekubutler Skeleton">
+<identifier><root>dekubutler_baseA</root></identifier>
+<bone name="dekubutler_baseA"><target>dekubutler_baseA</target>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="belly"><target>belly</target>
+<bone name="abs"><target>abs</target>
+<bone name="torso"><target>torso</target>
+<bone name="L_clavical"><target>L_clavical</target>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_forearm"><target>L_forearm</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_weapon"><target>L_weapon</target>
+<bone name="candle_01"><target>candle_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical"><target>R_clavical</target>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_forearm"><target>R_forearm</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_weapon"><target>R_weapon</target>
+<bone name="copter_01"><target>copter_01</target>
+<bone name="copter_02"><target>copter_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="projectile"><target>projectile</target>
+<bone name="mouth_top"><target>mouth_top</target>
+</bone>
+<bone name="mouth_bot"><target>mouth_bot</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+<bone name="L_musta1"><target>L_musta1</target>
+<bone name="L_musta2"><target>L_musta2</target>
+<bone name="L_musta3"><target>L_musta3</target>
+<bone name="L_musta4"><target>L_musta4</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_musta1"><target>R_musta1</target>
+<bone name="R_musta2"><target>R_musta2</target>
+<bone name="R_musta3"><target>R_musta3</target>
+<bone name="R_musta4"><target>R_musta4</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="headspout_01"><target>headspout_01</target>
+<bone name="headspout_02"><target>headspout_02</target>
+</bone>
+</bone>
+<bone name="headspout_03"><target>headspout_03</target>
+<bone name="headspout_04"><target>headspout_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,6 @@
+<variant name="Base" frequency="1">
+  <animations>
+        <animation file="HC_wej/wej_deathA.dae" name="Death" id="death1" speed="90"/>
+		<animation file="HC_wej/wej_deathA.dae" name="Death" id="death2" speed="90"/>
+  </animations>
+</variant>

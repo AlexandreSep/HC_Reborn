@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_bugblin/base_HC_biped_club.xml">
+      <mesh>props/weapon/moblin_bokoclubA.dae</mesh>
+      <textures><texture file="skeletal/moblin/mob_weaponsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_bugblin/base_HC_biped_capture.xml"/>
+    <variant file="HC_bugblin/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_bugblin/base_HC_biped_death.xml">
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

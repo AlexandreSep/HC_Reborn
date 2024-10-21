@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/weapon/darknut_glassA.dae</mesh>
+      <textures><texture file="skeletal/darknut/dar_mainE.dds" name="baseTex"/></textures>
+	  <props>
+		<prop actor="particle/green_glassA.xml" attachpoint="projectile"/>
+      </props>
+    </variant>
+  </group>
+
+</actor>

@@ -1,0 +1,183 @@
+<skeletons>
+<standard_skeleton id="dodongoyoung_skeleton" title="dodongoyoung_skeleton">
+<bone name="dodongoyoung_base">
+<bone name="waist_01">
+<bone name="abs_01">
+<bone name="chest_01">
+<bone name="neck_01">
+<bone name="head_01">
+<bone name="face_01">
+<bone name="R_jaw">
+</bone>
+<bone name="L_jaw">
+</bone>
+<bone name="M_bot_01">
+<bone name="projectile">
+<bone name="M_bot_03">
+</bone>
+</bone>
+</bone>
+<bone name="M_top_01">
+<bone name="M_top_02">
+<bone name="M_top_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder_01">
+<bone name="L_elbow_01">
+<bone name="L_hand_01">
+<bone name="L_wrist_01">
+<bone name="L_fingerA_01">
+<bone name="L_fingerA_02">
+<bone name="L_fingerA_03">
+</bone>
+</bone>
+</bone>
+<bone name="L_fingerB_01">
+<bone name="L_fingerB_02">
+<bone name="L_fingerB_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder_01">
+<bone name="R_elbow_01">
+<bone name="R_hand_01">
+<bone name="R_wrist_01">
+<bone name="R_fingerA_01">
+<bone name="R_fingerA_02">
+<bone name="R_fingerA_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_fingerB_01">
+<bone name="R_fingerB_02">
+<bone name="R_fingerB_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+<bone name="tail_09">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="dodongoyoung_skeleton" title="dodongoyoung_skeleton">
+<identifier><root>dodongoyoung_base</root></identifier>
+<bone name="dodongoyoung_base"><target>dodongoyoung_base</target>
+<bone name="waist_01"><target>waist_01</target>
+<bone name="abs_01"><target>abs_01</target>
+<bone name="chest_01"><target>chest_01</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="face_01"><target>face_01</target>
+<bone name="R_jaw"><target>R_jaw</target>
+</bone>
+<bone name="L_jaw"><target>L_jaw</target>
+</bone>
+<bone name="M_bot_01"><target>M_bot_01</target>
+<bone name="projectile"><target>projectile</target>
+<bone name="M_bot_03"><target>M_bot_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="M_top_01"><target>M_top_01</target>
+<bone name="M_top_02"><target>M_top_02</target>
+<bone name="M_top_03"><target>M_top_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder_01"><target>L_shoulder_01</target>
+<bone name="L_elbow_01"><target>L_elbow_01</target>
+<bone name="L_hand_01"><target>L_hand_01</target>
+<bone name="L_wrist_01"><target>L_wrist_01</target>
+<bone name="L_fingerA_01"><target>L_fingerA_01</target>
+<bone name="L_fingerA_02"><target>L_fingerA_02</target>
+<bone name="L_fingerA_03"><target>L_fingerA_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_fingerB_01"><target>L_fingerB_01</target>
+<bone name="L_fingerB_02"><target>L_fingerB_02</target>
+<bone name="L_fingerB_03"><target>L_fingerB_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder_01"><target>R_shoulder_01</target>
+<bone name="R_elbow_01"><target>R_elbow_01</target>
+<bone name="R_hand_01"><target>R_hand_01</target>
+<bone name="R_wrist_01"><target>R_wrist_01</target>
+<bone name="R_fingerA_01"><target>R_fingerA_01</target>
+<bone name="R_fingerA_02"><target>R_fingerA_02</target>
+<bone name="R_fingerA_03"><target>R_fingerA_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_fingerB_01"><target>R_fingerB_01</target>
+<bone name="R_fingerB_02"><target>R_fingerB_02</target>
+<bone name="R_fingerB_03"><target>R_fingerB_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+<bone name="tail_09"><target>tail_09</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

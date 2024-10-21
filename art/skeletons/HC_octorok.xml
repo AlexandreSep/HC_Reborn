@@ -1,0 +1,115 @@
+<skeletons>
+<standard_skeleton id="Octorok_skel" title="Octorok_skel">
+<bone name="octorok_baseA">
+<bone name="neck_01">
+<bone name="eyes_01">
+</bone>
+<bone name="snout_01">
+<bone name="snout_02">
+<bone name="snout_03">
+<bone name="snout_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_01">
+<bone name="L_leg_02">
+<bone name="L_leg_03">
+<bone name="L_leg_04">
+<bone name="L_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="F_leg_01">
+<bone name="F_leg_02">
+<bone name="F_leg_03">
+<bone name="F_leg_04">
+<bone name="F_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_leg_01">
+<bone name="B_leg_02">
+<bone name="B_leg_03">
+<bone name="B_leg_04">
+<bone name="B_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_01">
+<bone name="R_leg_02">
+<bone name="R_leg_03">
+<bone name="R_leg_04">
+<bone name="R_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Octorok_skel" title="Octorok_skel">
+<identifier><root>octorok_baseA</root></identifier>
+<bone name="octorok_baseA"><target>octorok_baseA</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="eyes_01"><target>eyes_01</target>
+</bone>
+<bone name="snout_01"><target>snout_01</target>
+<bone name="snout_02"><target>snout_02</target>
+<bone name="snout_03"><target>snout_03</target>
+<bone name="snout_04"><target>snout_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_01"><target>L_leg_01</target>
+<bone name="L_leg_02"><target>L_leg_02</target>
+<bone name="L_leg_03"><target>L_leg_03</target>
+<bone name="L_leg_04"><target>L_leg_04</target>
+<bone name="L_leg_05"><target>L_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="F_leg_01"><target>F_leg_01</target>
+<bone name="F_leg_02"><target>F_leg_02</target>
+<bone name="F_leg_03"><target>F_leg_03</target>
+<bone name="F_leg_04"><target>F_leg_04</target>
+<bone name="F_leg_05"><target>F_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_leg_01"><target>B_leg_01</target>
+<bone name="B_leg_02"><target>B_leg_02</target>
+<bone name="B_leg_03"><target>B_leg_03</target>
+<bone name="B_leg_04"><target>B_leg_04</target>
+<bone name="B_leg_05"><target>B_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_01"><target>R_leg_01</target>
+<bone name="R_leg_02"><target>R_leg_02</target>
+<bone name="R_leg_03"><target>R_leg_03</target>
+<bone name="R_leg_04"><target>R_leg_04</target>
+<bone name="R_leg_05"><target>R_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

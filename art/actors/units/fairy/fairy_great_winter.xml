@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_greatfairy/base_HC_greatfairy_whip.xml">
+      <mesh>units/fairy/fai_greatA.dae</mesh>
+	  <props>
+        <prop actor="props/units/weapons/fairy_iceballA.xml" attachpoint="projectile"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Blue">
+      <textures><texture file="skeletal/fairy/fai_great_blue.dds" name="baseTex"/></textures>
+	  <props>
+        <prop actor="particle/fairy_field_blue.xml" attachpoint="root"/>
+		<prop actor="units/fairy/fairy_gfwings_winter.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Violet">
+      <textures><texture file="skeletal/fairy/fai_great_violet.dds" name="baseTex"/></textures>
+	  <props>
+        <prop actor="particle/fairy_field_violet.xml" attachpoint="root"/>
+		<prop actor="units/fairy/fairy_gfwings_winter.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_greatfairy/base_HC_greatfairy_attackmagic.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_capture.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_slaughter.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_death.xml">
+      <props>
+        <prop actor="props/units/blood_fairy_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

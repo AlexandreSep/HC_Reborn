@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Main">
+      <animations>
+        <animation file="HC_dodongobaby/dodongobaby_idle.dae" name="Idle" speed="70"/>
+        <animation file="HC_dodongobaby/dodongobaby_idleA.dae" name="Idle" speed="70"/>
+        <animation file="HC_dodongobaby/dodongobaby_idleB.dae" name="Idle" speed="70"/>
+		<animation event="0.25" file="HC_dodongobaby/dodongobaby_attackA.dae" name="attack_melee" speed="120"/>
+        <animation file="HC_dodongobaby/dodongobaby_walk.dae" name="Walk" speed="10"/>
+        <animation file="HC_dodongobaby/dodongobaby_walk.dae" name="Run" speed="20"/>
+        <animation file="HC_dodongobaby/dodongobaby_death.dae" name="Death" speed="90"/>
+		<animation file="HC_dodongobaby/dodongobaby_walk.dae" name="Flail" id="flail1" speed="8"/>
+		<animation file="HC_dodongobaby/dodongobaby_idle.dae" name="Recover" id="recover1" speed="8"/>
+      </animations>
+      <mesh>units/wild/wild_dodongobabyA.dae</mesh>
+      <textures>
+        <texture file="skeletal/wild/wild_dodongoA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+		<prop actor="particle/smoke_catapult.xml" attachpoint="M_bot_01"/>
+      </props>
+      <textures>
+         <texture file="skeletal/wild/wild_dodongoA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

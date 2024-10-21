@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_strayfairy/base_HC_strayfairy_relax.xml">
+      <mesh>units/fairy/fai_bubbleA.dae</mesh>
+	  <textures><texture file="skeletal/fairy/fai_stray_bubble.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_strayfairy/base_HC_strayfairy_death.xml">
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

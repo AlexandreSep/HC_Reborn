@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Desert Collosus">
+      <mesh>structural/gerudo/ger_wonderA.dae</mesh>
+      <props>
+		<prop actor="props/structures/gerudo/gerudo_groundbase_wonder.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/gerudo/gerudo_buildingE.dds" name="baseTex"/>
+        <texture file="structural/gerudo/gerudo_buildingE_normal.dds" name="normTex"/>
+		<texture file="structural/gerudo/gerudo_wonder_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+    <variant name="garrisoned">
+      <props>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

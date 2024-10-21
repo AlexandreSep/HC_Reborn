@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_archer/base_HC_biped_spear.xml">
+      <mesh>units/biped_holderA.dae</mesh>
+      <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="64" name="nohansen">
+      <props>
+        <prop actor="units/hylian/nohansen/nohansen_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="64" name="royal">
+      <props>
+        <prop actor="units/hylian/royal/royal_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	
+	<variant frequency="32" name="rhoam">
+      <props>
+        <prop actor="units/hylian/rhoam/rhoam_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant frequency="32" name="harkinian">
+      <props>
+        <prop actor="units/hylian/harkinian/harkinian_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+
+	<variant frequency="16" name="hateno">
+      <props>
+        <prop actor="units/hylian/hateno/hateno_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>		
+	<variant frequency="16" name="kakariko">
+      <props>
+        <prop actor="units/hylian/kakariko/kakariko_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>		
+	<variant frequency="16" name="malkariko">
+      <props>
+        <prop actor="units/hylian/malkariko/malkariko_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>	
+	<variant frequency="16" name="morada">
+      <props>
+        <prop actor="units/hylian/morada/morada_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>	
+
+	<variant frequency="8" name="aquame">
+      <props>
+        <prop actor="units/hylian/aquame/aquame_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>	
+	<variant frequency="8" name="arcad">
+      <props>
+        <prop actor="units/hylian/arcad/arcad_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>	
+	<variant frequency="8" name="arthon">
+      <props>
+        <prop actor="units/hylian/arthon/arthon_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant frequency="8" name="atrinas">
+      <props>
+        <prop actor="units/hylian/atrinas/atrinas_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant frequency="8" name="soth">
+      <props>
+        <prop actor="units/hylian/soth/soth_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant frequency="8" name="vigjaro">
+      <props>
+        <prop actor="units/hylian/vigjaro/vigjaro_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	
+	<variant frequency="4" name="namadi">
+      <props>
+        <prop actor="units/hylian/namadi/namadi_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>	
+	<variant frequency="4" name="othrynon">
+      <props>
+        <prop actor="units/hylian/othrynon/othrynon_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant frequency="4" name="tonalindu">
+      <props>
+        <prop actor="units/hylian/tonalindu/tonalindu_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+
+	<variant frequency="2" name="panoam">
+      <props>
+        <prop actor="units/hylian/panoam/panoam_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant frequency="2" name="tarrey">
+      <props>
+        <prop actor="units/hylian/tarrey/tarrey_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>
+
+	<variant frequency="1" name="thonlon">
+      <props>
+        <prop actor="units/hylian/thonlon/thonlon_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>	
+	<variant frequency="1" name="hathen">
+      <props>
+        <prop actor="units/hylian/hathen/hathen_levy_spearman_b.xml" attachpoint="root"/>
+      </props>
+    </variant>	
+  </group>  
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_archer/base_HC_biped_capture.xml"/>
+    <variant file="HC_archer/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_tree.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_grain.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_fruit.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_meat.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_rock.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_ore.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_ruins.xml"/>
+    <variant file="HC_archer/base_HC_biped_gather_praise.xml"/>
+    <variant file="HC_archer/base_HC_biped_build.xml"/>
+    <variant file="HC_archer/base_HC_biped_build_farm.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_food.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_meat.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_wood.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_stone.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_metal.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_food_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_meat_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_wood_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_stone_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_carry_metal_idle.xml"/>
+    <variant file="HC_archer/base_HC_biped_death.xml">
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

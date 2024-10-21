@@ -1,0 +1,39 @@
+<skeletons>
+<standard_skeleton id="Bubbleblast Skeleton" title="Bubbleblast Skeleton">
+<bone name="deku_bubblebase">
+<bone name="deku_bubble">
+<bone name="bub_01">
+</bone>
+<bone name="bub_02">
+</bone>
+<bone name="bub_03">
+</bone>
+<bone name="bub_04">
+</bone>
+<bone name="bub_05">
+</bone>
+<bone name="bub_06">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Bubbleblast Skeleton" title="Bubbleblast Skeleton">
+<identifier><root>deku_bubblebase</root></identifier>
+<bone name="deku_bubblebase"><target>deku_bubblebase</target>
+<bone name="deku_bubble"><target>deku_bubble</target>
+<bone name="bub_01"><target>bub_01</target>
+</bone>
+<bone name="bub_02"><target>bub_02</target>
+</bone>
+<bone name="bub_03"><target>bub_03</target>
+</bone>
+<bone name="bub_04"><target>bub_04</target>
+</bone>
+<bone name="bub_05"><target>bub_05</target>
+</bone>
+<bone name="bub_06"><target>bub_06</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

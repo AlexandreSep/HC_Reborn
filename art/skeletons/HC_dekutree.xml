@@ -1,0 +1,151 @@
+<skeletons>
+<standard_skeleton id="dekutree_skeleton" title="dekutree_skeleton">
+<bone name="dekutree_base">
+<bone name="bone_trunk_01">
+<bone name="bone_trunk_02">
+<bone name="bone_trunk_03">
+<bone name="bone_trunk_04">
+<bone name="bone_trunk_05">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbranch_01">
+<bone name="bone_Lbranch_02">
+<bone name="bone_Lbranch_03">
+<bone name="bone_Lbranch_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbranch_01">
+<bone name="bone_Rbranch_02">
+<bone name="bone_Rbranch_03">
+<bone name="bone_Rbranch_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Fbranch_01">
+<bone name="bone_Fbranch_02">
+<bone name="bone_Fbranch_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Bbranch_01">
+<bone name="bone_Bbranch_02">
+<bone name="bone_Bbranch_03">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbackleg_01">
+<bone name="bone_Lbackleg_02">
+<bone name="bone_Lbackleg_03">
+<bone name="bone_Lbackleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lfrontleg_01">
+<bone name="bone_Lfrontleg_02">
+<bone name="bone_Lfrontleg_03">
+<bone name="bone_Lfrontleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rfrontleg_01">
+<bone name="bone_Rfrontleg_02">
+<bone name="bone_Rfrontleg_03">
+<bone name="bone_Rfrontleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbackleg_01">
+<bone name="bone_Rbackleg_02">
+<bone name="bone_Rbackleg_03">
+<bone name="bone_Rbackleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="dekutree_skeleton" title="dekutree_skeleton">
+<identifier><root>dekutree_base</root></identifier>
+<bone name="dekutree_base"><target>dekutree_base</target>
+<bone name="bone_trunk_01"><target>bone_trunk_01</target>
+<bone name="bone_trunk_02"><target>bone_trunk_02</target>
+<bone name="bone_trunk_03"><target>bone_trunk_03</target>
+<bone name="bone_trunk_04"><target>bone_trunk_04</target>
+<bone name="bone_trunk_05"><target>bone_trunk_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbranch_01"><target>bone_Lbranch_01</target>
+<bone name="bone_Lbranch_02"><target>bone_Lbranch_02</target>
+<bone name="bone_Lbranch_03"><target>bone_Lbranch_03</target>
+<bone name="bone_Lbranch_04"><target>bone_Lbranch_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbranch_01"><target>bone_Rbranch_01</target>
+<bone name="bone_Rbranch_02"><target>bone_Rbranch_02</target>
+<bone name="bone_Rbranch_03"><target>bone_Rbranch_03</target>
+<bone name="bone_Rbranch_04"><target>bone_Rbranch_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Fbranch_01"><target>bone_Fbranch_01</target>
+<bone name="bone_Fbranch_02"><target>bone_Fbranch_02</target>
+<bone name="bone_Fbranch_03"><target>bone_Fbranch_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Bbranch_01"><target>bone_Bbranch_01</target>
+<bone name="bone_Bbranch_02"><target>bone_Bbranch_02</target>
+<bone name="bone_Bbranch_03"><target>bone_Bbranch_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbackleg_01"><target>bone_Lbackleg_01</target>
+<bone name="bone_Lbackleg_02"><target>bone_Lbackleg_02</target>
+<bone name="bone_Lbackleg_03"><target>bone_Lbackleg_03</target>
+<bone name="bone_Lbackleg_04"><target>bone_Lbackleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lfrontleg_01"><target>bone_Lfrontleg_01</target>
+<bone name="bone_Lfrontleg_02"><target>bone_Lfrontleg_02</target>
+<bone name="bone_Lfrontleg_03"><target>bone_Lfrontleg_03</target>
+<bone name="bone_Lfrontleg_04"><target>bone_Lfrontleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rfrontleg_01"><target>bone_Rfrontleg_01</target>
+<bone name="bone_Rfrontleg_02"><target>bone_Rfrontleg_02</target>
+<bone name="bone_Rfrontleg_03"><target>bone_Rfrontleg_03</target>
+<bone name="bone_Rfrontleg_04"><target>bone_Rfrontleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbackleg_01"><target>bone_Rbackleg_01</target>
+<bone name="bone_Rbackleg_02"><target>bone_Rbackleg_02</target>
+<bone name="bone_Rbackleg_03"><target>bone_Rbackleg_03</target>
+<bone name="bone_Rbackleg_04"><target>bone_Rbackleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

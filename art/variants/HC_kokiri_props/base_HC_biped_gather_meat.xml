@@ -1,0 +1,5 @@
+<variant name="gather_meat">
+  <animations>
+    <animation file="HC_kokiri/kokiri_harvest_meat.dae" name="gather_meat" speed="100"/>
+  </animations>
+</variant>

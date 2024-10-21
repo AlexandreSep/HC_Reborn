@@ -1,0 +1,191 @@
+<skeletons>
+<standard_skeleton id="hivekeeper_skel" title="hivekeeper_skel">
+<bone name="hivekeeper_base">
+<bone name="mite_02">
+</bone>
+<bone name="mite_01">
+</bone>
+<bone name="body_01">
+<bone name="L_Fthigh">
+<bone name="L_Fknee">
+<bone name="L_Ffoot">
+<bone name="L_Ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bthigh">
+<bone name="L_Bknee">
+<bone name="L_Bfoot">
+<bone name="L_Btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mand_01">
+<bone name="L_mand_02">
+<bone name="L_mand_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_mand_01">
+<bone name="R_mand_02">
+<bone name="R_mand_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh">
+<bone name="R_Fknee">
+<bone name="R_Ffoot">
+<bone name="R_Ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh">
+<bone name="R_Bknee">
+<bone name="R_Bfoot">
+<bone name="R_Btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01">
+<bone name="eye_02">
+</bone>
+</bone>
+<bone name="ass_01">
+<bone name="ass_02">
+<bone name="ass_03">
+<bone name="ass_04">
+<bone name="ass_04_001">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rider_01">
+</bone>
+</bone>
+<bone name="L_claw_01">
+<bone name="L_claw_02">
+<bone name="L_claw_03">
+<bone name="L_claw_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_claw_01">
+<bone name="R_claw_02">
+<bone name="R_claw_03">
+<bone name="R_claw_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rotator">
+<bone name="helper_01">
+</bone>
+<bone name="helper_02">
+</bone>
+<bone name="helper_03">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="hivekeeper_skel" title="hivekeeper_skel">
+<identifier><root>hivekeeper_base</root></identifier>
+<bone name="hivekeeper_base"><target>hivekeeper_base</target>
+<bone name="mite_02"><target>mite_02</target>
+</bone>
+<bone name="mite_01"><target>mite_01</target>
+</bone>
+<bone name="body_01"><target>body_01</target>
+<bone name="L_Fthigh"><target>L_Fthigh</target>
+<bone name="L_Fknee"><target>L_Fknee</target>
+<bone name="L_Ffoot"><target>L_Ffoot</target>
+<bone name="L_Ftoe"><target>L_Ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bthigh"><target>L_Bthigh</target>
+<bone name="L_Bknee"><target>L_Bknee</target>
+<bone name="L_Bfoot"><target>L_Bfoot</target>
+<bone name="L_Btoe"><target>L_Btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mand_01"><target>L_mand_01</target>
+<bone name="L_mand_02"><target>L_mand_02</target>
+<bone name="L_mand_03"><target>L_mand_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_mand_01"><target>R_mand_01</target>
+<bone name="R_mand_02"><target>R_mand_02</target>
+<bone name="R_mand_03"><target>R_mand_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh"><target>R_Fthigh</target>
+<bone name="R_Fknee"><target>R_Fknee</target>
+<bone name="R_Ffoot"><target>R_Ffoot</target>
+<bone name="R_Ftoe"><target>R_Ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh"><target>R_Bthigh</target>
+<bone name="R_Bknee"><target>R_Bknee</target>
+<bone name="R_Bfoot"><target>R_Bfoot</target>
+<bone name="R_Btoe"><target>R_Btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+<bone name="eye_02"><target>eye_02</target>
+</bone>
+</bone>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+<bone name="ass_03"><target>ass_03</target>
+<bone name="ass_04"><target>ass_04</target>
+<bone name="ass_04_001"><target>ass_04_001</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rider_01"><target>rider_01</target>
+</bone>
+</bone>
+<bone name="L_claw_01"><target>L_claw_01</target>
+<bone name="L_claw_02"><target>L_claw_02</target>
+<bone name="L_claw_03"><target>L_claw_03</target>
+<bone name="L_claw_04"><target>L_claw_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_claw_01"><target>R_claw_01</target>
+<bone name="R_claw_02"><target>R_claw_02</target>
+<bone name="R_claw_03"><target>R_claw_03</target>
+<bone name="R_claw_04"><target>R_claw_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rotator"><target>rotator</target>
+<bone name="helper_01"><target>helper_01</target>
+</bone>
+<bone name="helper_02"><target>helper_02</target>
+</bone>
+<bone name="helper_03"><target>helper_03</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

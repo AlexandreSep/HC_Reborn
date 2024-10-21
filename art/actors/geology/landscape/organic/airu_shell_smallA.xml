@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant>
+	<mesh>gaia/landscape/organic/airu_shell_smallA.dae</mesh>
+    </variant>
+  </group>
+
+  <group>
+    <variant frequency="1" name="shell_tan">
+      <textures><texture file="gaia/organic/airu_shellA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="shell_pink">
+      <textures><texture file="gaia/organic/airu_shellB.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="shell_green">
+      <textures><texture file="gaia/organic/airu_shellC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+
+
+</actor>

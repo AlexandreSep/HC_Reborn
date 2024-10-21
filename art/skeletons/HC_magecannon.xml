@@ -1,0 +1,75 @@
+<skeletons>
+<standard_skeleton id="magecannon_skel" title="magecannon_skel">
+<bone name="magecannon_base">
+<bone name="L_crew_01">
+</bone>
+<bone name="R_crew_01">
+</bone>
+<bone name="frame_01">
+<bone name="front_01">
+</bone>
+<bone name="crystal_01">
+<bone name="crystal_02">
+</bone>
+</bone>
+</bone>
+<bone name="axel_back">
+<bone name="L_wheelB_01">
+<bone name="L_wheelB_02">
+</bone>
+</bone>
+<bone name="R_wheelB_01">
+<bone name="R_wheelB_02">
+</bone>
+</bone>
+</bone>
+<bone name="axel_front">
+<bone name="L_wheelF_01">
+<bone name="L_wheelF_02">
+</bone>
+</bone>
+<bone name="R_wheelF_01">
+<bone name="R_wheelF_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="magecannon_skel" title="magecannon_skel">
+<identifier><root>magecannon_base</root></identifier>
+<bone name="magecannon_base"><target>magecannon_base</target>
+<bone name="L_crew_01"><target>L_crew_01</target>
+</bone>
+<bone name="R_crew_01"><target>R_crew_01</target>
+</bone>
+<bone name="frame_01"><target>frame_01</target>
+<bone name="front_01"><target>front_01</target>
+</bone>
+<bone name="crystal_01"><target>crystal_01</target>
+<bone name="crystal_02"><target>crystal_02</target>
+</bone>
+</bone>
+</bone>
+<bone name="axel_back"><target>axel_back</target>
+<bone name="L_wheelB_01"><target>L_wheelB_01</target>
+<bone name="L_wheelB_02"><target>L_wheelB_02</target>
+</bone>
+</bone>
+<bone name="R_wheelB_01"><target>R_wheelB_01</target>
+<bone name="R_wheelB_02"><target>R_wheelB_02</target>
+</bone>
+</bone>
+</bone>
+<bone name="axel_front"><target>axel_front</target>
+<bone name="L_wheelF_01"><target>L_wheelF_01</target>
+<bone name="L_wheelF_02"><target>L_wheelF_02</target>
+</bone>
+</bone>
+<bone name="R_wheelF_01"><target>R_wheelF_01</target>
+<bone name="R_wheelF_02"><target>R_wheelF_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

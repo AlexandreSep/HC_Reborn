@@ -1,0 +1,255 @@
+<skeletons>
+<standard_skeleton id="SpiritOrdona Skeleton" title="SpiritOrdona Skeleton">
+<bone name="base_spirit_ordona">
+<bone name="belly">
+<bone name="chest">
+<bone name="collar">
+<bone name="neck">
+<bone name="head">
+<bone name="jaw_bot">
+<bone name="mouth_bot">
+<bone name="projectile">
+</bone>
+</bone>
+</bone>
+<bone name="jaw_up">
+<bone name="mouth_up">
+<bone name="lip_up">
+</bone>
+</bone>
+<bone name="L_ear_01">
+<bone name="L_ear_02">
+<bone name="L_ear_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_01">
+<bone name="R_ear_02">
+<bone name="R_ear_03">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="orb">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_hand">
+<bone name="L_Ftoe_01">
+<bone name="L_Ftoe_02">
+<bone name="L_Ftoe_03">
+<bone name="L_Ftoe_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Ftoe_05">
+<bone name="L_Ftoe_06">
+<bone name="L_Ftoe_07">
+<bone name="L_Ftoe_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_hand">
+<bone name="R_Ftoe_01">
+<bone name="R_Ftoe_02">
+<bone name="R_Ftoe_03">
+<bone name="R_Ftoe_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Ftoe_05">
+<bone name="R_Ftoe_06">
+<bone name="R_Ftoe_07">
+<bone name="R_Ftoe_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ass">
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_10">
+<bone name="tail_011">
+<bone name="tail_12">
+</bone>
+</bone>
+<bone name="tail_13">
+<bone name="tail_14">
+<bone name="tail_15">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="SpiritOrdona Skeleton" title="SpiritOrdona Skeleton">
+<identifier><root>base_spirit_ordona</root></identifier>
+<bone name="base_spirit_ordona"><target>base_spirit_ordona</target>
+<bone name="belly"><target>belly</target>
+<bone name="chest"><target>chest</target>
+<bone name="collar"><target>collar</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="jaw_bot"><target>jaw_bot</target>
+<bone name="mouth_bot"><target>mouth_bot</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+</bone>
+<bone name="jaw_up"><target>jaw_up</target>
+<bone name="mouth_up"><target>mouth_up</target>
+<bone name="lip_up"><target>lip_up</target>
+</bone>
+</bone>
+<bone name="L_ear_01"><target>L_ear_01</target>
+<bone name="L_ear_02"><target>L_ear_02</target>
+<bone name="L_ear_03"><target>L_ear_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_01"><target>R_ear_01</target>
+<bone name="R_ear_02"><target>R_ear_02</target>
+<bone name="R_ear_03"><target>R_ear_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="orb"><target>orb</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_Ftoe_01"><target>L_Ftoe_01</target>
+<bone name="L_Ftoe_02"><target>L_Ftoe_02</target>
+<bone name="L_Ftoe_03"><target>L_Ftoe_03</target>
+<bone name="L_Ftoe_04"><target>L_Ftoe_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Ftoe_05"><target>L_Ftoe_05</target>
+<bone name="L_Ftoe_06"><target>L_Ftoe_06</target>
+<bone name="L_Ftoe_07"><target>L_Ftoe_07</target>
+<bone name="L_Ftoe_08"><target>L_Ftoe_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_Ftoe_01"><target>R_Ftoe_01</target>
+<bone name="R_Ftoe_02"><target>R_Ftoe_02</target>
+<bone name="R_Ftoe_03"><target>R_Ftoe_03</target>
+<bone name="R_Ftoe_04"><target>R_Ftoe_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Ftoe_05"><target>R_Ftoe_05</target>
+<bone name="R_Ftoe_06"><target>R_Ftoe_06</target>
+<bone name="R_Ftoe_07"><target>R_Ftoe_07</target>
+<bone name="R_Ftoe_08"><target>R_Ftoe_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ass"><target>ass</target>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_10"><target>tail_10</target>
+<bone name="tail_011"><target>tail_011</target>
+<bone name="tail_12"><target>tail_12</target>
+</bone>
+</bone>
+<bone name="tail_13"><target>tail_13</target>
+<bone name="tail_14"><target>tail_14</target>
+<bone name="tail_15"><target>tail_15</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

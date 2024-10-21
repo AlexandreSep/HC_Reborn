@@ -1,0 +1,10 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.61" file="HC_goronsmall/goronsmall_attack_punchA.dae" load="0.05" name="Attack_ranged" id="attack1" speed="107"/>
+  </animations>
+  <props>
+    <prop actor="props/units/weapons/goron_bombA_shoot.xml" attachpoint="projectile"/>
+    <prop actor="props/units/weapons/goron_bombA.xml" attachpoint="loaded-projectile"/>
+  </props>
+</variant>
+

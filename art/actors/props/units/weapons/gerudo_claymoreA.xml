@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <textures><texture file="skeletal/gerudo/ger_weaponsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ger_claymoreA">
+      <mesh>props/weapon/gerudo_claymoreA.dae</mesh>
+    </variant>
+  </group>
+</actor>

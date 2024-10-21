@@ -1,0 +1,59 @@
+<skeletons>
+<standard_skeleton id="repeater_skeleton" title="repeater_skeleton">
+<bone name="repeater_base">
+<bone name="base_01">
+<bone name="wench_01">
+<bone name="frame_01">
+<bone name="axel_01">
+<bone name="L_wheel_01">
+<bone name="L_wheel_02">
+</bone>
+</bone>
+<bone name="R_wheel_01">
+<bone name="R_wheel_02">
+</bone>
+</bone>
+</bone>
+<bone name="bolt_01">
+<bone name="projectile">
+</bone>
+</bone>
+<bone name="L_bow_01">
+</bone>
+<bone name="R_bow_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="repeater_skeleton" title="repeater_skeleton">
+<identifier><root>repeater_base</root></identifier>
+<bone name="repeater_base"><target>repeater_base</target>
+<bone name="base_01"><target>base_01</target>
+<bone name="wench_01"><target>wench_01</target>
+<bone name="frame_01"><target>frame_01</target>
+<bone name="axel_01"><target>axel_01</target>
+<bone name="L_wheel_01"><target>L_wheel_01</target>
+<bone name="L_wheel_02"><target>L_wheel_02</target>
+</bone>
+</bone>
+<bone name="R_wheel_01"><target>R_wheel_01</target>
+<bone name="R_wheel_02"><target>R_wheel_02</target>
+</bone>
+</bone>
+</bone>
+<bone name="bolt_01"><target>bolt_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+<bone name="L_bow_01"><target>L_bow_01</target>
+</bone>
+<bone name="R_bow_01"><target>R_bow_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

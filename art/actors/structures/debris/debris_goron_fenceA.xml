@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <textures>
+        <texture file="structural/goron/goron_buildingA.dds" name="baseTex"/>
+		<texture file="structural/goron/goron_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/goron/goron_scaffoldingsA_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="fenceA">
+      <mesh>structural/debris/debris_goron_fenceA.dae</mesh>
+    </variant>
+	<variant name="fenceB">
+      <mesh>structural/debris/debris_goron_fenceB.dae</mesh>
+    </variant>
+	<variant name="fenceC">
+      <mesh>structural/debris/debris_goron_fenceC.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

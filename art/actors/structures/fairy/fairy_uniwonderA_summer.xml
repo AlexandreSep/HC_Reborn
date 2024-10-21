@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Fountain">
+      <mesh>structural/fairy/fai_unicorn_ringA.dae</mesh>
+      <props>
+		<prop actor="props/structures/fairy/fairy_unicorn_fountainA.xml" attachpoint="root"/>		
+		<prop actor="props/structures/fairy/fairy_unicorn_waterA.xml" attachpoint="root"/>
+		<prop actor="props/structures/fairy/fairy_unicorn_waterfallA.xml" attachpoint="root"/>
+		<prop actor="particle/unicorn_mistA.xml" attachpoint="root"/>
+		<prop actor="props/structures/fairy/fairy_unicorn_ley_summer.xml" attachpoint="root"/>
+		<prop actor="props/structures/fairy/fairy_groundlarge_summer.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largefield_red.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_largeleaves_summer.xml" attachpoint="root"/>	
+      </props>
+      <textures>
+        <texture file="structural/fairy/fairy_buildingA_summer.dds" name="baseTex"/>
+		<texture file="structural/fairy/fairy_buildingA_summer_normal.dds" name="normTex"/>
+		<texture file="structural/fairy/fairy_unicornringA_ao.dds" name="aoTex"/>		
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao.xml</material>
+</actor>

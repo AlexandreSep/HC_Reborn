@@ -1,0 +1,9 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.75" file="HC_biped/biped_hum_archeratt.dae" load="0.75" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="" attachpoint="projectile"/>
+    <prop actor="props/units/weapons/hylian_arrowA_shoot.xml" attachpoint="projectile"/>
+  </props>
+</variant>

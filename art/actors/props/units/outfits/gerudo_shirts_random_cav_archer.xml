@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Run" speed="40"/>
+        <animation event="0.75" file="HC_archer/biped_rider_arch_attack_bow.dae" name="attack_ranged" id="attack_ranged1" speed="100"/>
+		<animation event="0.75" file="HC_archer/biped_rider_arch_attack_bow.dae" name="attack_ranged" id="attack_ranged2" speed="100"/>
+        <animation event="0.75" file="HC_archer/biped_rider_arch_attack_sword.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.75" file="HC_archer/biped_rider_arch_attack_sword.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="death" speed="230"/>
+      </animations>
+	  <textures><texture file="skeletal/gerudo/ger_shirtsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+	<variant frequency="1" name="Ger-shirt-rndA">
+	  <mesh>units/gerudo/ger_shirtA_red.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndB">
+	  <mesh>units/gerudo/ger_shirtA_pin.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndC">
+	  <mesh>units/gerudo/ger_shirtA_org.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndD">
+	  <mesh>units/gerudo/ger_shirtA_grn.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndE">
+	  <mesh>units/gerudo/ger_shirtA_vio.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndF">
+	  <mesh>units/gerudo/ger_shirtB_red.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndG">
+	  <mesh>units/gerudo/ger_shirtB_pin.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndH">
+	  <mesh>units/gerudo/ger_shirtB_org.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndI">
+	  <mesh>units/gerudo/ger_shirtB_grn.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Ger-shirt-rndJ">
+	  <mesh>units/gerudo/ger_shirtB_vio.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

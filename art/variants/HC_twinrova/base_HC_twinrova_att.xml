@@ -1,0 +1,28 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.75" file="HC_twinrova/twinrova_attackA.dae" name="attack_ranged" id="attack1" speed="100"/>
+    <animation event="0.75" file="HC_twinrova/twinrova_attackB.dae" name="attack_ranged" id="attack2" speed="100"/>
+    <animation event="0.75" file="HC_twinrova/twinrova_attackC.dae" name="attack_ranged" id="attack3" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="props/units/weapons/rova_blastA.xml" attachpoint="projectile"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_02"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_03"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_04"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_05"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_06"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_07"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_08"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_09"/>
+		<prop actor="particle/gerudo_twinflameB.xml" attachpoint="R_hair_010"/>			
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_02"/>
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_03"/>
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_04"/>
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_05"/>
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_06"/>
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_07"/>
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_08"/>
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_09"/>
+		<prop actor="particle/gerudo_twiniceB.xml" attachpoint="L_hair_010"/>
+  </props>
+</variant>

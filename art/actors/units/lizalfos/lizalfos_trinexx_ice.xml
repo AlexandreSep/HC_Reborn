@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_trinexx/base_HC_trinexx_nosound.xml">
+      <mesh>units/lizalfos/liz_trinexxA_ice.dae</mesh>
+	  <props>
+		<prop actor="props/units/explosions/catapult_explosion.xml" attachpoint="projectile"/>
+		<prop actor="particle/gerudo_twiniceA.xml" attachpoint="L_neck_01"/>
+		<prop actor="particle/gerudo_twiniceA.xml" attachpoint="L_neck_02"/>
+		<prop actor="particle/gerudo_twiniceA.xml" attachpoint="L_neck_03"/>
+		<prop actor="particle/gerudo_twiniceA.xml" attachpoint="L_neck_04"/>
+		<prop actor="particle/gerudo_twiniceA.xml" attachpoint="L_neck_05"/>
+		<prop actor="particle/gerudo_twiniceA.xml" attachpoint="L_neck_06"/>
+      </props>
+      <textures><texture file="skeletal/lizalfos/liz_trinexx_ice.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Attack_Ranged">
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_trinexx/base_HC_trinexx_att_nosound.xml"/>
+    <variant name="Death">
+      <props>
+		
+      </props>
+    </variant>
+  </group>  
+  <material>default.xml</material>
+</actor>

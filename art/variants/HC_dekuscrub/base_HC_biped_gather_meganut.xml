@@ -1,0 +1,9 @@
+<variant name="gather_meganut">
+  <animations>
+    <animation event="0.25" file="HC_dekuscrub/dekuscrub_harvestA.dae" name="gather_meganut" speed="120"/>
+  </animations>
+  <props>
+    <prop attachpoint="R_wrist"/>
+	<prop attachpoint="L_wrist"/>
+  </props>
+</variant>

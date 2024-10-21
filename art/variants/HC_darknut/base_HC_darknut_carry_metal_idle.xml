@@ -1,0 +1,9 @@
+<variant name="carry_metal_idle">
+  <animations>
+	<animation file="HC_darknut/darknut_idle.dae" name="carry_metal_idle" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/shuttle_metal.xml" attachpoint="R_weapon"/>
+	<prop attachpoint="L_weapon"/>
+  </props>
+</variant>

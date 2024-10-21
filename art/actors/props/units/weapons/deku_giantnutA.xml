@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="giantnut">
+      <textures><texture file="skeletal/deku/dek_mainB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="giantnut-a">
+      <mesh>props/weapon/deku_giantnutA.dae</mesh>
+    </variant>
+  </group>
+</actor>

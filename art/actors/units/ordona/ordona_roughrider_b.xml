@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_horse.xml">   
+      <props>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="bone_Spine1"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="bone_Spine1"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="bone_Spine1"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="bone_Spine1"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="bone_Spine1"/>	
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="citz_A">
+      <mesh>units/ordona/ord_horseA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="citz_B">
+      <mesh>units/ordona/ord_horseB.dae</mesh>
+    </variant>
+	<variant frequency="1" name="citz_C">
+      <mesh>units/ordona/ord_horseC.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="horse-texture-01">
+      <textures><texture file="skeletal/ordona/ord_horse1.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-mane black">
+      <textures><texture file="skeletal/ordona/ord_horse1.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-snipe">
+      <textures><texture file="skeletal/ordona/ord_horse1.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-mane white">
+      <textures><texture file="skeletal/ordona/ord_horse1.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_fruit">
+      <props>
+		<prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+    <variant name="gather_grain">
+      <props>
+		 <prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+    <variant name="gather_meat">
+      <props>
+		 <prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+    <variant name="gather_ore">
+      <props>
+		 <prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+    <variant name="gather_rock">
+      <props>
+		 <prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+    <variant name="gather_ruins">
+      <props>
+		 <prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+    <variant name="gather_rupees">
+      <props>
+		 <prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+    <variant name="gather_rupees">
+      <props>
+		 <prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+    <variant name="gather_tree">
+      <props>
+		 <prop attachpoint="bone_Spine1"/>
+        <prop actor="units/ordona/ordona_roughrider_b_r_body.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_outfitA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_legsA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_roughrider_b_r_capeA.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_billybat_b_r_axe.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+	<variant file="HC_mounts/base_HC_horse_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

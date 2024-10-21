@@ -1,0 +1,27 @@
+<skeletons>
+<standard_skeleton id="Mobcart Skeleton" title="Mobcart Skeleton">
+<bone name="base_mobcartA">
+<bone name="axel">
+<bone name="cart">
+</bone>
+<bone name="L_wheel">
+</bone>
+<bone name="R_wheel">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Mobcart Skeleton" title="Mobcart Skeleton">
+<identifier><root>base_mobcartA</root></identifier>
+<bone name="base_mobcartA"><target>base_mobcartA</target>
+<bone name="axel"><target>axel</target>
+<bone name="cart"><target>cart</target>
+</bone>
+<bone name="L_wheel"><target>L_wheel</target>
+</bone>
+<bone name="R_wheel"><target>R_wheel</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

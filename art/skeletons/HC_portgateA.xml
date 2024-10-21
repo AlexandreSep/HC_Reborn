@@ -1,0 +1,11 @@
+<skeletons>
+<standard_skeleton id="Port GateA Skeleton" title="Port GateA Skeleton">
+<bone name="gate_rising_base">
+</bone>
+</standard_skeleton>
+<skeleton target="Port GateA Skeleton" title="Port GateA Skeleton">
+<identifier><root>gate_rising_base</root></identifier>
+<bone name="gate_rising_base"><target>gate_rising_base</target>
+</bone>
+</skeleton>
+</skeletons>

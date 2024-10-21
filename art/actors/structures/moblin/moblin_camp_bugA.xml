@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Camp A">
+      <mesh>structural/moblin/mob_camp_bugA.dae</mesh>
+      <props>
+		<prop actor="props/structures/moblin/mob_camp_bug_tentA.xml" attachpoint="root"/>
+        <prop actor="props/structures/moblin/moblin_groundbase_small.xml" attachpoint="root"/>
+      </props>
+      <textures>
+		<texture file="structural/moblin/moblin_buildingB.dds" name="baseTex"/>
+		<texture file="structural/moblin/moblin_buildingB_normal.dds" name="normTex"/>
+		<texture file="structural/moblin/moblin_camp_bug_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+	<variant name="Idle" frequency="1"/>
+	<variant name="upgrading">
+      <props>
+		<prop actor="structures/moblin/moblin_scaffoldC.xml" attachpoint="root"/>
+        <prop actor="structures/moblin/moblin_frameC.xml" attachpoint="root"/>
+		<prop actor="particle/construction_dust_hugeB.xml" attachpoint="root"/>
+      </props>
+	</variant>
+   </group> 
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

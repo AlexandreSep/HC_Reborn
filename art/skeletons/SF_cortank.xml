@@ -1,0 +1,55 @@
+<skeletons>
+<standard_skeleton id="cortank_skel" title="cortank_skel">
+<bone name="cortank_base">
+<bone name="turret_01">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+<bone name="missile_01">
+</bone>
+<bone name="missile_02">
+</bone>
+<bone name="missile_03">
+</bone>
+<bone name="missile_04">
+</bone>
+<bone name="missile_05">
+</bone>
+<bone name="missile_06">
+</bone>
+</bone>
+<bone name="blaster_02">
+</bone>
+<bone name="blaster_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="cortank_skel" title="cortank_skel">
+<identifier><root>cortank_base</root></identifier>
+<bone name="cortank_base"><target>cortank_base</target>
+<bone name="turret_01"><target>turret_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+<bone name="missile_01"><target>missile_01</target>
+</bone>
+<bone name="missile_02"><target>missile_02</target>
+</bone>
+<bone name="missile_03"><target>missile_03</target>
+</bone>
+<bone name="missile_04"><target>missile_04</target>
+</bone>
+<bone name="missile_05"><target>missile_05</target>
+</bone>
+<bone name="missile_06"><target>missile_06</target>
+</bone>
+</bone>
+<bone name="blaster_02"><target>blaster_02</target>
+</bone>
+<bone name="blaster_01"><target>blaster_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_orhat_giantA.xml">
+      <mesh>units/deku/dek_orhat_giantA.dae</mesh>
+	  <textures><texture file="skeletal/deku/dek_orhat_giantA.dds" name="baseTex"/></textures>
+	  <props>
+		<prop actor="units/deku/deku_orhat_platform.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant file="HC_mounts/base_HC_orhat_giantA_death.xml">
+      <props>
+        <prop actor="props/units/blood_green_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

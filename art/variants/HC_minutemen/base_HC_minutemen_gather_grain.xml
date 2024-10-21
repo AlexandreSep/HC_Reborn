@@ -1,0 +1,5 @@
+<variant name="gather_grain">
+  <animations>
+    <animation file="HC_kokiri/kokiri_minute_walk.dae" name="gather_grain" speed="100"/>
+  </animations>
+</variant>

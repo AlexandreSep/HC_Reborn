@@ -1,0 +1,23 @@
+<skeletons>
+<standard_skeleton id="Quarry_Skeleton" title="Quarry_Skeleton">
+<bone name="quarry_base">
+<bone name="crux_01">
+<bone name="belt_01">
+</bone>
+<bone name="wheel_01">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Quarry_Skeleton" title="Quarry_Skeleton">
+<identifier><root>quarry_base</root></identifier>
+<bone name="quarry_base"><target>quarry_base</target>
+<bone name="crux_01"><target>crux_01</target>
+<bone name="belt_01"><target>belt_01</target>
+</bone>
+<bone name="wheel_01"><target>wheel_01</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,287 @@
+<skeletons>
+<standard_skeleton id="gohmaqueen_skel" title="gohmaqueen_skel">
+<bone name="gohmaqueen_base">
+<bone name="core_01">
+<bone name="vagina_01">
+<bone name="vagina_02">
+<bone name="vagina_03">
+<bone name="vagina_04">
+<bone name="vagina_05">
+<bone name="vagina_06">
+</bone>
+<bone name="opo_17">
+</bone>
+<bone name="opo_18">
+</bone>
+<bone name="opo_19">
+</bone>
+<bone name="opo_20">
+</bone>
+</bone>
+<bone name="opo_13">
+</bone>
+<bone name="opo_14">
+</bone>
+<bone name="opo_15">
+</bone>
+<bone name="opo_16">
+</bone>
+</bone>
+<bone name="opo_09">
+</bone>
+<bone name="opo_10">
+</bone>
+<bone name="opo_11">
+</bone>
+<bone name="opo_12">
+</bone>
+</bone>
+<bone name="opo_05">
+</bone>
+<bone name="opo_06">
+</bone>
+<bone name="opo_07">
+</bone>
+<bone name="opo_08">
+</bone>
+</bone>
+<bone name="opo_01">
+</bone>
+<bone name="opo_02">
+</bone>
+<bone name="opo_03">
+</bone>
+<bone name="opo_04">
+</bone>
+</bone>
+<bone name="L_clavical">
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_wrist">
+<bone name="L_claw">
+<bone name="L_pincerup_01">
+<bone name="L_pincerup_02">
+</bone>
+</bone>
+<bone name="L_pincerdown_01">
+<bone name="L_pincerdown_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_sack">
+<bone name="L_legpit">
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_finger">
+<bone name="L_fingertip">
+</bone>
+</bone>
+<bone name="L_thumb">
+<bone name="Lthumbtip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_crest_01">
+<bone name="L_crest_02">
+<bone name="L_crest_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_crest_01">
+<bone name="R_crest_02">
+<bone name="R_crest_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical">
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_wrist">
+<bone name="R_claw">
+<bone name="R_pincerup_01">
+<bone name="R_pincerup_02">
+</bone>
+</bone>
+<bone name="R_pincerdown_01">
+<bone name="R_pincerdown_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_sack">
+<bone name="R_legpit">
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_finger">
+<bone name="R_fingertip">
+</bone>
+</bone>
+<bone name="R_thumb">
+<bone name="Rthumbtip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="gohmaqueen_skel" title="gohmaqueen_skel">
+<identifier><root>gohmaqueen_base</root></identifier>
+<bone name="gohmaqueen_base"><target>gohmaqueen_base</target>
+<bone name="core_01"><target>core_01</target>
+<bone name="vagina_01"><target>vagina_01</target>
+<bone name="vagina_02"><target>vagina_02</target>
+<bone name="vagina_03"><target>vagina_03</target>
+<bone name="vagina_04"><target>vagina_04</target>
+<bone name="vagina_05"><target>vagina_05</target>
+<bone name="vagina_06"><target>vagina_06</target>
+</bone>
+<bone name="opo_17"><target>opo_17</target>
+</bone>
+<bone name="opo_18"><target>opo_18</target>
+</bone>
+<bone name="opo_19"><target>opo_19</target>
+</bone>
+<bone name="opo_20"><target>opo_20</target>
+</bone>
+</bone>
+<bone name="opo_13"><target>opo_13</target>
+</bone>
+<bone name="opo_14"><target>opo_14</target>
+</bone>
+<bone name="opo_15"><target>opo_15</target>
+</bone>
+<bone name="opo_16"><target>opo_16</target>
+</bone>
+</bone>
+<bone name="opo_09"><target>opo_09</target>
+</bone>
+<bone name="opo_10"><target>opo_10</target>
+</bone>
+<bone name="opo_11"><target>opo_11</target>
+</bone>
+<bone name="opo_12"><target>opo_12</target>
+</bone>
+</bone>
+<bone name="opo_05"><target>opo_05</target>
+</bone>
+<bone name="opo_06"><target>opo_06</target>
+</bone>
+<bone name="opo_07"><target>opo_07</target>
+</bone>
+<bone name="opo_08"><target>opo_08</target>
+</bone>
+</bone>
+<bone name="opo_01"><target>opo_01</target>
+</bone>
+<bone name="opo_02"><target>opo_02</target>
+</bone>
+<bone name="opo_03"><target>opo_03</target>
+</bone>
+<bone name="opo_04"><target>opo_04</target>
+</bone>
+</bone>
+<bone name="L_clavical"><target>L_clavical</target>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_wrist"><target>L_wrist</target>
+<bone name="L_claw"><target>L_claw</target>
+<bone name="L_pincerup_01"><target>L_pincerup_01</target>
+<bone name="L_pincerup_02"><target>L_pincerup_02</target>
+</bone>
+</bone>
+<bone name="L_pincerdown_01"><target>L_pincerdown_01</target>
+<bone name="L_pincerdown_02"><target>L_pincerdown_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_sack"><target>L_sack</target>
+<bone name="L_legpit"><target>L_legpit</target>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_finger"><target>L_finger</target>
+<bone name="L_fingertip"><target>L_fingertip</target>
+</bone>
+</bone>
+<bone name="L_thumb"><target>L_thumb</target>
+<bone name="Lthumbtip"><target>Lthumbtip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_crest_01"><target>L_crest_01</target>
+<bone name="L_crest_02"><target>L_crest_02</target>
+<bone name="L_crest_03"><target>L_crest_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_crest_01"><target>R_crest_01</target>
+<bone name="R_crest_02"><target>R_crest_02</target>
+<bone name="R_crest_03"><target>R_crest_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical"><target>R_clavical</target>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_wrist"><target>R_wrist</target>
+<bone name="R_claw"><target>R_claw</target>
+<bone name="R_pincerup_01"><target>R_pincerup_01</target>
+<bone name="R_pincerup_02"><target>R_pincerup_02</target>
+</bone>
+</bone>
+<bone name="R_pincerdown_01"><target>R_pincerdown_01</target>
+<bone name="R_pincerdown_02"><target>R_pincerdown_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_sack"><target>R_sack</target>
+<bone name="R_legpit"><target>R_legpit</target>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_finger"><target>R_finger</target>
+<bone name="R_fingertip"><target>R_fingertip</target>
+</bone>
+</bone>
+<bone name="R_thumb"><target>R_thumb</target>
+<bone name="Rthumbtip"><target>Rthumbtip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

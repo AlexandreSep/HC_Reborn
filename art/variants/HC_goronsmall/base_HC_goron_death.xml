@@ -1,0 +1,5 @@
+<variant name="Death">
+  <animations>
+	<animation file="HC_goronsmall/goronsmall_deathA.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

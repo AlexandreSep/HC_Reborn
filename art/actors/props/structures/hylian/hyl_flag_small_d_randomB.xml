@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_flags/base_HC_flag_smallB.xml">
+	  <mesh>props/flags/flag_d_smallA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+     <variant frequency="1" name="RandomB_embassy">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_embassy.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="RandomB_princessguard">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_princessguard.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="RandomB_knightsofhyrule">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_knightsofhyrule.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="RandomB_goddesses">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_goddesses.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant frequency="1" name="RandomB_sageband">
+	  <textures>
+		<texture file="props/hylian/hyl_flag_sageband.dds" name="baseTex"/>
+		<texture file="props/hylian/hyl_flag_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

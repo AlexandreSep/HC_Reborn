@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <animations>
+        <animation file="HC_windmill_ger/ger_mill_ambient.dae" name="Idle" speed="20"/>
+      </animations>
+      <mesh>structural/gerudo/ger_mill_windA.dae</mesh>
+      <textures>
+	    <texture file="structural/gerudo/gerudo_buildingB.dds" name="baseTex"/>
+		<texture file="structural/gerudo/gerudo_buildingB_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

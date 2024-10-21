@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_shrunkfairy/base_HC_shrunkfairy_whip.xml">
+      <mesh>units/fairy/fai_cielaA_wings.dae</mesh>
+	  <textures><texture file="skeletal/fairy/fai_wings_ciela.png" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_shrunkfairy/base_HC_shrunkfairy_attackmagic.xml"/>
+    <variant file="HC_shrunkfairy/base_HC_shrunkfairy_capture.xml"/>
+    <variant file="HC_shrunkfairy/base_HC_shrunkfairy_slaughter.xml"/>
+    <variant file="HC_shrunkfairy/base_HC_shrunkfairy_death.xml">
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

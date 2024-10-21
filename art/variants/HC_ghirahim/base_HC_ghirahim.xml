@@ -1,0 +1,20 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_ghirahim/ghirahim_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_ghirahim/ghirahim_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_ghirahim/ghirahim_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_ghirahim/ghirahim_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation file="HC_ghirahim/ghirahim_idle.dae" name="Idle" id="idle5" speed="121"/>
+    <animation file="HC_ghirahim/ghirahim_idle.dae" name="Idle" id="idle6" speed="121"/>
+    <animation file="HC_ghirahim/ghirahim_idle.dae" name="Idle" id="idle7" speed="121"/>
+    <animation event="0.01" file="HC_ghirahim/ghirahim_walk.dae" name="Walk" id="walk1" speed="7"/>
+    <animation event="0.01" file="HC_ghirahim/ghirahim_walk.dae" name="Run" id="run1" speed="7"/>
+	<animation event="0.5" file="HC_ghirahim/ghirahim_attack_swordA.dae" name="Attack_ranged" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_ghirahim/ghirahim_attack_swordB.dae" name="Attack_ranged" id="attack2" speed="100"/>
+	<animation event="0.5" file="HC_ghirahim/ghirahim_attack_swordC.dae" name="Attack_ranged" id="attack3" speed="100"/>
+	<animation event="0.5" file="HC_ghirahim/ghirahim_attack_swordA.dae" name="Attack_ranged" id="attack4" speed="100"/>
+    <animation event="0.5" file="HC_ghirahim/ghirahim_attack_swordA.dae" name="Attack_slaughter" id="attack5" speed="100"/>
+	<animation file="HC_ghirahim/ghirahim_promotionA.dae" name="promotion" id="promotion1" speed="100"/>
+	<animation file="HC_ghirahim/ghirahim_deathA.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

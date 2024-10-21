@@ -1,0 +1,7 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_goh_shroudwalker/goh_shroudwalker_fog.dae" name="Idle" id="idle1" speed="50"/>
+    <animation file="HC_goh_shroudwalker/goh_shroudwalker_fog.dae" name="Idle" id="idle2" speed="70"/>
+    <animation file="HC_goh_shroudwalker/goh_shroudwalker_fog.dae" name="Idle" id="idle3" speed="90"/>
+  </animations>
+</variant>

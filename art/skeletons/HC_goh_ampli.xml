@@ -1,0 +1,131 @@
+<skeletons>
+<standard_skeleton id="amplifier_skel" title="amplifier_skel">
+<bone name="goh_ampli_base">
+<bone name="ass_01">
+<bone name="ass_02">
+</bone>
+</bone>
+<bone name="L_F_leg_01">
+<bone name="L_F_leg_02">
+<bone name="L_F_leg_03">
+<bone name="L_F_leg_04">
+<bone name="L_F_leg_05">
+<bone name="L_F_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01">
+<bone name="L_B_leg_02">
+<bone name="L_B_leg_03">
+<bone name="L_B_leg_04">
+<bone name="L_B_leg_05">
+<bone name="L_B_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg_01">
+<bone name="R_F_leg_02">
+<bone name="R_F_leg_03">
+<bone name="R_F_leg_04">
+<bone name="R_F_leg_05">
+<bone name="R_F_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01">
+<bone name="R_B_leg_02">
+<bone name="R_B_leg_03">
+<bone name="R_B_leg_04">
+<bone name="R_B_leg_05">
+<bone name="R_B_leg_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rotator">
+<bone name="mite_01">
+</bone>
+<bone name="mite_02">
+</bone>
+<bone name="mite_03">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="amplifier_skel" title="amplifier_skel">
+<identifier><root>goh_ampli_base</root></identifier>
+<bone name="goh_ampli_base"><target>goh_ampli_base</target>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+</bone>
+</bone>
+<bone name="L_F_leg_01"><target>L_F_leg_01</target>
+<bone name="L_F_leg_02"><target>L_F_leg_02</target>
+<bone name="L_F_leg_03"><target>L_F_leg_03</target>
+<bone name="L_F_leg_04"><target>L_F_leg_04</target>
+<bone name="L_F_leg_05"><target>L_F_leg_05</target>
+<bone name="L_F_leg_06"><target>L_F_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01"><target>L_B_leg_01</target>
+<bone name="L_B_leg_02"><target>L_B_leg_02</target>
+<bone name="L_B_leg_03"><target>L_B_leg_03</target>
+<bone name="L_B_leg_04"><target>L_B_leg_04</target>
+<bone name="L_B_leg_05"><target>L_B_leg_05</target>
+<bone name="L_B_leg_06"><target>L_B_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg_01"><target>R_F_leg_01</target>
+<bone name="R_F_leg_02"><target>R_F_leg_02</target>
+<bone name="R_F_leg_03"><target>R_F_leg_03</target>
+<bone name="R_F_leg_04"><target>R_F_leg_04</target>
+<bone name="R_F_leg_05"><target>R_F_leg_05</target>
+<bone name="R_F_leg_06"><target>R_F_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01"><target>R_B_leg_01</target>
+<bone name="R_B_leg_02"><target>R_B_leg_02</target>
+<bone name="R_B_leg_03"><target>R_B_leg_03</target>
+<bone name="R_B_leg_04"><target>R_B_leg_04</target>
+<bone name="R_B_leg_05"><target>R_B_leg_05</target>
+<bone name="R_B_leg_06"><target>R_B_leg_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rotator"><target>rotator</target>
+<bone name="mite_01"><target>mite_01</target>
+</bone>
+<bone name="mite_02"><target>mite_02</target>
+</bone>
+<bone name="mite_03"><target>mite_03</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

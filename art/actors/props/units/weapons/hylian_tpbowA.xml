@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="mesh">
+      <textures><texture file="skeletal/hylian/hyl_uu1.dds" name="baseTex"/>
+				<texture file="skeletal/hylian/hyl_uu1_spec.dds" name="specTex"/>
+				<texture file="skeletal/hylian/hyl_uu1_spec.dds" name="glowTex"/>
+	 </textures>
+    </variant>
+  </group>
+
+  <group>
+    <variant frequency="1" name="longbow-med">
+      <mesh>props/weapon/hylian_tplightbowA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="longbow-dark">
+      <mesh>props/weapon/hylian_tplightbowA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="longbow-light">
+      <mesh>props/weapon/hylian_tplightbowA.dae</mesh>
+    </variant>
+  </group>
+   <material>basic_glow.xml</material>
+</actor>

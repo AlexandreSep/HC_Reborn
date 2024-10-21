@@ -1,0 +1,5 @@
+<variant name="gather_rupees">
+  <animations>
+    <animation event="0.4" file="HC_kokiri/kokiri_minute_walk.dae" name="gather_rupees" speed="100"/>
+  </animations>
+</variant>

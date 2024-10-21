@@ -1,0 +1,15 @@
+<skeletons>
+<standard_skeleton id="Flying Holder Skeleton" title="Flying Holder Skeleton">
+<bone name="base_flying_holder">
+<bone name="flying_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Flying Holder Skeleton" title="Flying Holder Skeleton">
+<identifier><root>base_flying_holder</root></identifier>
+<bone name="base_flying_holder"><target>base_flying_holder</target>
+<bone name="flying_01"><target>flying_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

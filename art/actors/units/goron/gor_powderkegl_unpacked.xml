@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="gor_powderkeg_unp">
+      <animations> 
+        <animation file="HC_powderkegl/powderkegl_idle.dae" name="Idle" speed="100"/>
+        <animation event="0.8" load="0.01" file="HC_powderkegl/powderkegl_attack.dae" name="attack_ranged" sound="0" speed="75"/>
+		<animation file="HC_powderkegl/powderkegl_death.dae" name="death" speed="100"/>
+      </animations> 
+      <mesh>units/goron/gor_powderkeglA.dae</mesh>
+      <props>
+        <prop actor="units/goron/goron_crew_b.xml" attachpoint="base_01"/>
+        <prop actor="props/units/weapons/goron_powderkegA.xml" attachpoint="projectile"/>
+		<prop actor="props/units/weapons/goron_powderkegA.xml" attachpoint="loaded-projectile"/>
+      </props>
+	  <textures><texture file="skeletal/goron/gor_main2.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="barracks">
+      <mesh>structural/stalfos/sta_ruins_ancientA.dae</mesh>
+      <textures>
+	    <texture file="structural/stalfos/stalfos_ruins_ancientA.dds" name="baseTex"/>
+	    <texture file="structural/ruins/ruins_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/ruins/ruins_ancientA_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

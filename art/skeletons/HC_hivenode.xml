@@ -1,0 +1,75 @@
+<skeletons>
+<standard_skeleton id="hivenode_skeleton" title="hivenode_skeleton">
+<bone name="base_hivenode">
+<bone name="stalk">
+<bone name="generate">
+<bone name="canopy">
+<bone name="top">
+</bone>
+<bone name="hivehorn_01">
+<bone name="hivehorn_02">
+<bone name="hivehorn_03">
+<bone name="hivehorn_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hivehorn_05">
+<bone name="hivehorn_06">
+<bone name="hivehorn_07">
+<bone name="hivehorn_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hivehorn_09">
+<bone name="hivehorn_10">
+<bone name="hivehorn_11">
+<bone name="hivehorn_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="hivenode_skeleton" title="hivenode_skeleton">
+<identifier><root>base_hivenode</root></identifier>
+<bone name="base_hivenode"><target>base_hivenode</target>
+<bone name="stalk"><target>stalk</target>
+<bone name="generate"><target>generate</target>
+<bone name="canopy"><target>canopy</target>
+<bone name="top"><target>top</target>
+</bone>
+<bone name="hivehorn_01"><target>hivehorn_01</target>
+<bone name="hivehorn_02"><target>hivehorn_02</target>
+<bone name="hivehorn_03"><target>hivehorn_03</target>
+<bone name="hivehorn_04"><target>hivehorn_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hivehorn_05"><target>hivehorn_05</target>
+<bone name="hivehorn_06"><target>hivehorn_06</target>
+<bone name="hivehorn_07"><target>hivehorn_07</target>
+<bone name="hivehorn_08"><target>hivehorn_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hivehorn_09"><target>hivehorn_09</target>
+<bone name="hivehorn_10"><target>hivehorn_10</target>
+<bone name="hivehorn_11"><target>hivehorn_11</target>
+<bone name="hivehorn_12"><target>hivehorn_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

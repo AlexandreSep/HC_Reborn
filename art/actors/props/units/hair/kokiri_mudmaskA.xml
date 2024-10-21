@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="mask_A">
+      <mesh>units/kokiri/kok_mudmaskA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="masktexA">
+      <textures><texture file="skeletal/kokiri/kok_maskA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="masktexB">
+      <textures><texture file="skeletal/kokiri/kok_maskB.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="masktexC">
+      <textures><texture file="skeletal/kokiri/kok_maskC.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="masktexD">
+      <textures><texture file="skeletal/kokiri/kok_maskD.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

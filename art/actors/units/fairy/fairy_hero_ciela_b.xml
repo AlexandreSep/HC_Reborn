@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_shrunkfairy/base_HC_shrunkfairy_whip.xml">
+      <mesh>units/fairy/fai_cielaA.dae</mesh>
+	  <props>
+		<prop actor="units/fairy/fairy_hero_ciela_wings.xml" attachpoint="root"/>
+		<prop actor="units/fairy/fairy_drove_all.xml" attachpoint="root"/>
+		<prop actor="props/units/hair/fairy_ciela_hairA.xml" attachpoint="head"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+	  <textures><texture file="skeletal/fairy/fairy_body_yellow.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_shrunkfairy/base_HC_shrunkfairy_attackmagic.xml"/>
+    <variant file="HC_shrunkfairy/base_HC_shrunkfairy_capture.xml"/>
+    <variant file="HC_shrunkfairy/base_HC_shrunkfairy_slaughter.xml"/>
+    <variant file="HC_shrunkfairy/base_HC_shrunkfairy_death.xml">
+      <props>
+	    <prop actor="units/fairy/fairy_drove_all.xml" attachpoint="root"/>
+        <prop actor="props/units/blood_fairy_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

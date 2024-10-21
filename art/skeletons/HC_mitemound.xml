@@ -1,0 +1,27 @@
+<skeletons>
+<standard_skeleton id="mitemound_skeleton" title="mitemound_skeleton">
+<bone name="mite_base">
+<bone name="top">
+</bone>
+<bone name="mite_01">
+</bone>
+<bone name="mite_02">
+</bone>
+<bone name="mite_03">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="mitemound_skeleton" title="mitemound_skeleton">
+<identifier><root>mite_base</root></identifier>
+<bone name="mite_base"><target>mite_base</target>
+<bone name="top"><target>top</target>
+</bone>
+<bone name="mite_01"><target>mite_01</target>
+</bone>
+<bone name="mite_02"><target>mite_02</target>
+</bone>
+<bone name="mite_03"><target>mite_03</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

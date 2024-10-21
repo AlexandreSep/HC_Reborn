@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <animations>
+        <animation file="HC_witchspirit/witchspirit_idle.dae" name="Idle" speed="100"/>
+      </animations>
+      <mesh>units/gerudo/ger_witchspiritA.dae</mesh>
+	  <props>
+		<prop actor="particle/gerudo_spiritwitch.xml" attachpoint="sp_01"/>
+      </props>
+      <textures>
+	    <texture file="structural/gerudo/gerudo_spiritA.dds" name="baseTex"/>
+	    <texture file="structural/gerudo/gerudo_spiritA.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

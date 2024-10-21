@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_gleeockling/gleeockling_idle.dae" name="Idle" speed="100"/>
+        <animation file="HC_gleeockling/gleeockling_idleA.dae" name="Idle" speed="100"/>
+        <animation file="HC_gleeockling/gleeockling_idleB.dae" name="Idle" speed="100"/>
+        <animation file="HC_gleeockling/gleeockling_idleC.dae" name="Idle" speed="100"/>
+        <animation event="0.1" file="HC_gleeockling/gleeockling_walk.dae" name="carry_meat" speed="15"/>
+        <animation event="0.1" file="HC_gleeockling/gleeockling_walk.dae" name="Walk" speed="15"/>
+        <animation event="0.1" file="HC_gleeockling/gleeockling_walk.dae" name="Run" speed="15"/>
+        <animation file="HC_gleeockling/gleeockling_attackA.dae" name="attack_melee" speed="100"/>
+        <animation file="HC_gleeockling/gleeockling_attackA.dae" name="attack_slaughter" speed="70"/>
+        <animation file="HC_gleeockling/gleeockling_deathA.dae" name="death" speed="100"/>
+      </animations>
+      <mesh>units/lanayru/lan_gleeockling1A_damage.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="horse-texture-01">
+      <textures><texture file="skeletal/lanayru/lan_dragonA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-mane black">
+      <textures><texture file="skeletal/lanayru/lan_dragonA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-snipe">
+      <textures><texture file="skeletal/lanayru/lan_dragonA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-mane white">
+      <textures><texture file="skeletal/lanayru/lan_dragonA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_green_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

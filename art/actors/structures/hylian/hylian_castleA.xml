@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Base">
+      <animations>
+        <animation event="0.5" load="0.0" name="attack_ranged" speed="100"/>
+      </animations>
+      <mesh>structural/hylian/hyl_castleA.dae</mesh>
+      <props>
+		<prop actor="structures/hylian/hylian_castleA_tops.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hylian_castleA_flags.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hylian_groundbase_dirtB.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hyl_flag_royalA.xml" attachpoint="flag_01"/>
+		<prop actor="props/structures/hylian/hyl_flag_small_d_randomC.xml" attachpoint="flag_02"/>
+		<prop actor="props/structures/hylian/hyl_flag_small_d_randomB.xml" attachpoint="flag_03"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="projectile"/>
+        <prop actor="props/units/weapons/arrow_front.xml" attachpoint="loaded-projectile"/>
+		<prop actor="props/structures/hylian/hylian_door_castleA.xml" attachpoint="root"/>
+      </props>
+      <textures>
+	    <texture file="structural/hylian/hylian_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/hylian/hylian_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/hylian/hylian_castleA_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+		<prop actor="structures/hylian/hylian_castleA_tops.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hylian_castleA_flags.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

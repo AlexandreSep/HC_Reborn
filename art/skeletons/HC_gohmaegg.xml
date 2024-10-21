@@ -1,0 +1,67 @@
+<skeletons>
+<standard_skeleton id="gohmaegg_skeleton" title="gohmaegg_skeleton">
+<bone name="base_gohmaegg">
+<bone name="F_egg_01">
+<bone name="F_egg_02">
+<bone name="F_egg_03">
+<bone name="F_egg_04">
+<bone name="F_egg_05">
+<bone name="F_egg_06">
+<bone name="F_egg_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_egg_01">
+<bone name="B_egg_02">
+<bone name="B_egg_03">
+<bone name="B_egg_04">
+<bone name="B_egg_05">
+<bone name="B_egg_06">
+<bone name="B_egg_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="gohmaegg_skeleton" title="gohmaegg_skeleton">
+<identifier><root>base_gohmaegg</root></identifier>
+<bone name="base_gohmaegg"><target>base_gohmaegg</target>
+<bone name="F_egg_01"><target>F_egg_01</target>
+<bone name="F_egg_02"><target>F_egg_02</target>
+<bone name="F_egg_03"><target>F_egg_03</target>
+<bone name="F_egg_04"><target>F_egg_04</target>
+<bone name="F_egg_05"><target>F_egg_05</target>
+<bone name="F_egg_06"><target>F_egg_06</target>
+<bone name="F_egg_07"><target>F_egg_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_egg_01"><target>B_egg_01</target>
+<bone name="B_egg_02"><target>B_egg_02</target>
+<bone name="B_egg_03"><target>B_egg_03</target>
+<bone name="B_egg_04"><target>B_egg_04</target>
+<bone name="B_egg_05"><target>B_egg_05</target>
+<bone name="B_egg_06"><target>B_egg_06</target>
+<bone name="B_egg_07"><target>B_egg_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

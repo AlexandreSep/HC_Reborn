@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant>
+	  <textures>
+		<texture file="gaia/organic/bigbonesA.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+
+   <group>
+    <variant frequency="1" name="A">
+      <mesh>gaia/landscape/organic/bigbones_largeA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="B">
+      <mesh>gaia/landscape/organic/bigbones_largeB.dae</mesh>
+    </variant>
+    <variant frequency="1" name="C">
+      <mesh>gaia/landscape/organic/bigbones_largeC.dae</mesh>
+    </variant>
+	<variant frequency="1" name="D">
+      <mesh>gaia/landscape/organic/bigbones_largeD.dae</mesh>
+    </variant>
+  </group>
+    
+<material>basic_trans.xml</material>
+
+</actor>

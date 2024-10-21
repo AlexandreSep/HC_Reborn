@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="base">
+      <mesh>structural/ordona/ord_scaffoldF.dae</mesh>
+	  <textures>
+	    <texture file="structural/ordona/ordona_scaffoldingA.dds" name="baseTex"/>
+	    <texture file="structural/ordona/ordona_scaffoldingA_normal.dds" name="normTex"/>
+		<texture file="structural/ordona/ordona_scaffoldingsB_ao.dds" name="aoTex"/>
+	  </textures>
+      <props>
+        <prop actor="props/structures/ordona/ordona_groundbase_medium.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>  
+  <group>
+    <variant frequency="1" name="Idle">
+      <props>
+        <prop actor="particle/construction_dust_huge.xml" attachpoint="root"/>
+		<prop actor="props/structures/ordona/ordona_groundbase_medium.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="scaffold">
+      <props>
+        <prop actor="particle/construction_dust_huge.xml" attachpoint="root"/>
+		<prop actor="structures/ordona/ordona_frameF.xml" attachpoint="root"/>
+		<prop actor="props/structures/ordona/ordona_groundbase_medium.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

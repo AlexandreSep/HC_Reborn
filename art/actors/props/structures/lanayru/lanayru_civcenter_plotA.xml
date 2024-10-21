@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/lanayru/lan_plotA.dae</mesh>
+      <textures>
+	    <texture file="structural/lanayru/lanayru_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/lanayru/lanayru_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/lanayru/lanayru_plotA_ao.dds" name="aoTex"/>
+      </textures>
+	  <props>
+		<prop actor="props/structures/lanayru/lanayru_civcenter_plotA_path.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

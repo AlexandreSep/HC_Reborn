@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="mesh">
+      <textures><texture file="skeletal/kokiri/kok_mainA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+  <group>
+    <variant frequency="1" name="minuteweap-E">
+      <mesh>props/weapon/kokiri_stickA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="minuteweap-D">
+      <mesh>props/weapon/kokiri_swordA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="minuteweap-B">
+      <mesh>props/weapon/kokiri_panA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="minuteweap-C">
+      <mesh>props/weapon/kokiri_rollerA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="minuteweap-A">
+      <mesh>props/weapon/kokiri_forkA.dae</mesh>
+    </variant>
+  </group>
+
+</actor>

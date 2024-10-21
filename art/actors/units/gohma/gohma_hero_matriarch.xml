@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_goh_matriarch/base_HC_gohma_relax.xml">
+      <mesh>units/gohma/goh_matriarchA.dae</mesh>
+	  <props>
+		<prop actor="props/structures/gohma/gohma_mite_tiny.xml" attachpoint="mite_01"/>
+		<prop actor="props/structures/gohma/gohma_mite_tiny.xml" attachpoint="mite_02"/>
+		<prop actor="props/structures/gohma/gohma_mite_tiny.xml" attachpoint="mite_03"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_1"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_2"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_3"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_4"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_5"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_6"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_7"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_8"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_9"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_10"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_11"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_12"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_13"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_14"/>
+		<prop actor="units/gohma/gohma_matriarch_guards.xml" attachpoint="royal_15"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+      <textures><texture file="skeletal/gohma/goh_mainB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_goh_matriarch/base_HC_gohma_death.xml">
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

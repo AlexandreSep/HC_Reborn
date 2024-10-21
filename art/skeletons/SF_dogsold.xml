@@ -1,0 +1,115 @@
+<skeletons>
+<standard_skeleton id="dogsoldier_skel" title="dogsoldier_skel">
+<bone name="cornerian_sold_base">
+<bone name="waist">
+<bone name="chest">
+<bone name="neck">
+<bone name="head">
+<bone name="mouth">
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical">
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_wrist">
+<bone name="L_hand">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical">
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_wrist">
+<bone name="R_hand">
+</bone>
+<bone name="gun">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_ankle">
+<bone name="L_toes">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_ankle">
+<bone name="R_toes">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="dogsoldier_skel" title="dogsoldier_skel">
+<identifier><root>cornerian_sold_base</root></identifier>
+<bone name="cornerian_sold_base"><target>cornerian_sold_base</target>
+<bone name="waist"><target>waist</target>
+<bone name="chest"><target>chest</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="mouth"><target>mouth</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical"><target>L_clavical</target>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_wrist"><target>L_wrist</target>
+<bone name="L_hand"><target>L_hand</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical"><target>R_clavical</target>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_wrist"><target>R_wrist</target>
+<bone name="R_hand"><target>R_hand</target>
+</bone>
+<bone name="gun"><target>gun</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_ankle"><target>L_ankle</target>
+<bone name="L_toes"><target>L_toes</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_ankle"><target>R_ankle</target>
+<bone name="R_toes"><target>R_toes</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

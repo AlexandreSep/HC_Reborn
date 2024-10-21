@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_tallblin/base_HC_biped_club_nosound.xml">
+      <mesh>units/moblin/mob_tallblin_outfitA.dae</mesh>
+	  <textures>
+        <texture file="skeletal/moblin/mob_tallblin_bag.dds" name="baseTex"/>
+      </textures>
+	  <props>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Zebra">
+      <textures>
+        <texture file="skeletal/moblin/mob_tallblin_outfitA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Leopard">
+      <textures>
+        <texture file="skeletal/moblin/mob_tallblin_outfitB.dds" name="baseTex"/>
+      </textures>
+    </variant>
+    <variant frequency="1" name="Panther">
+      <textures>
+        <texture file="skeletal/moblin/mob_tallblin_outfitC.dds" name="baseTex"/>
+      </textures>
+    </variant>
+	<variant frequency="1" name="Cougar">
+      <textures>
+        <texture file="skeletal/moblin/mob_tallblin_outfitD.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_tallblin/base_HC_biped_attack_throw_no.xml"/>
+    <variant file="HC_tallblin/base_HC_biped_capture.xml"/>
+    <variant file="HC_tallblin/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_tallblin/base_HC_biped_death.xml">
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

@@ -1,0 +1,23 @@
+<skeletons>
+<standard_skeleton id="Resistance Skeleton" title="Resistance Skeleton">
+<bone name="resistance_base">
+<bone name="telma_01">
+</bone>
+<bone name="shad_01">
+</bone>
+<bone name="auru_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Resistance Skeleton" title="Resistance Skeleton">
+<identifier><root>resistance_base</root></identifier>
+<bone name="resistance_base"><target>resistance_base</target>
+<bone name="telma_01"><target>telma_01</target>
+</bone>
+<bone name="shad_01"><target>shad_01</target>
+</bone>
+<bone name="auru_01"><target>auru_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

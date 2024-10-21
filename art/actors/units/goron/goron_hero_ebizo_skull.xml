@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Main">
+      <animations>
+        <animation file="HC_salamander_large/salamander_idle.dae" name="Idle" id="idle1" speed="50"/>
+        <animation file="HC_salamander_large/salamander_idleA.dae" name="Idle" id="idle2" speed="50"/>
+        <animation file="HC_salamander_large/salamander_idleB.dae" name="Idle" id="idle4" speed="50"/>
+		<animation event="0.5" file="HC_salamander_large/salamander_attackA.dae" name="attack_ranged" speed="120"/>
+        <animation file="HC_salamander_large/salamander_walk.dae" name="Walk" speed="10"/>
+        <animation file="HC_salamander_large/salamander_walk.dae" name="Run" speed="20"/>
+        <animation file="HC_salamander_large/salamander_deathA.dae" name="Death" speed="70"/>
+      </animations>
+      <mesh>units/goron/gor_salaskullA.dae</mesh>
+      <textures>
+        <texture file="skeletal/goron/gor_main3.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="attack_ranged">
+      <props>		
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

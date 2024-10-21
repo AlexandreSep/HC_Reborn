@@ -1,0 +1,9 @@
+<variant name="carry_wood_idle">
+  <animations>
+	<animation file="HC_archer/biped_hum_arch_carry_idle.dae" name="carry_wood_idle" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/shuttle_wood.xml" attachpoint="projectile"/>
+	<prop attachpoint="bone_Lhand"/>
+  </props>
+</variant>

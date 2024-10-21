@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_biped/biped_rider_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_biped/biped_rider_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_biped/biped_rider_idle.dae" name="Run" speed="40"/>
+        <animation event="0.5" file="HC_biped/biped_rider_attack_spear.dae" name="attack_melee" speed="100"/>
+        <animation event="0.5" file="HC_biped/biped_rider_attack_spear.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.5" file="HC_biped/biped_rider_attack_spear.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_biped/biped_rider_idle.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>units/npc_lonlon/npc_lon_male1.dae</mesh>
+	  <props>
+		<prop actor="props/units/hair/hylian_hairA_male_cavspear.xml" attachpoint="root"/>
+		<prop actor="props/units/hair/npc_lon_hat.xml" attachpoint="bone_head"/>																	 
+      </props>
+	  <textures><texture file="skeletal/npc_lonlon/npc_lon_maleA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

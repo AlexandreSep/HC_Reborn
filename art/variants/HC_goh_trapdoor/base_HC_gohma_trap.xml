@@ -1,0 +1,6 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_goh_trapdoor/goh_trapdoor_bury_idle.dae" name="Idle" id="idle1" speed="121"/>
+	<animation event="0.5" file="HC_goh_trapdoor/goh_trapdoor_bury_attack.dae" name="Attack_melee" id="attack1" speed="100"/>
+  </animations>
+</variant>

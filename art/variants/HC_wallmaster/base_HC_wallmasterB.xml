@@ -1,0 +1,14 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_wallmasterB/wallmasterB_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_wallmasterB/wallmasterB_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_wallmasterB/wallmasterB_idleB.dae" name="Idle" id="idle3" speed="121"/>
+	<animation file="HC_wallmasterB/wallmasterB_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation event="0.1" file="HC_wallmasterB/wallmasterB_walk.dae" name="Walk" speed="10"/>
+    <animation event="0.1" file="HC_wallmasterB/wallmasterB_walk.dae" name="Run" speed="15"/>
+    <animation event="0.25" file="HC_wallmasterB/wallmasterB_attackA.dae" name="attack_melee" speed="120"/>
+    <animation event="0.25" file="HC_wallmasterB/wallmasterB_attackB.dae" name="attack_melee" speed="120"/>
+	<animation file="HC_wallmasterB/wallmasterB_flail.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_wallmasterB/wallmasterB_recover.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

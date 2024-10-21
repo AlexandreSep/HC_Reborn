@@ -1,0 +1,71 @@
+<skeletons>
+<standard_skeleton id="Molgera Larva Skeleton" title="Molgera Larva Skeleton">
+<bone name="molgera_larvaA_base">
+<bone name="neck_01">
+<bone name="neck_02">
+<bone name="head">
+<bone name="mouth_bot_01">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="mouth_top_01">
+<bone name="mouth_top_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Molgera Larva Skeleton" title="Molgera Larva Skeleton">
+<identifier><root>molgera_larvaA_base</root></identifier>
+<bone name="molgera_larvaA_base"><target>molgera_larvaA_base</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="neck_02"><target>neck_02</target>
+<bone name="head"><target>head</target>
+<bone name="mouth_bot_01"><target>mouth_bot_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="mouth_top_01"><target>mouth_top_01</target>
+<bone name="mouth_top_02"><target>mouth_top_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

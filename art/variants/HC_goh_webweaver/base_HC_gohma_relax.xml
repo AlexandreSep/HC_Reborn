@@ -1,0 +1,13 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_goh_webweaver/goh_webweaver_walk.dae" name="Idle" id="idle1" speed="25"/>
+    <animation event="0.5" file="HC_goh_webweaver/goh_webweaver_walk.dae" name="Walk" id="walk1" speed="22"/>
+    <animation event="0.5" file="HC_goh_webweaver/goh_webweaver_walk.dae" name="Walk" id="walk2" speed="20"/>
+    <animation event="0.5" file="HC_goh_webweaver/goh_webweaver_walk.dae" name="Run" id="run1" speed="8"/>
+    <animation event="0.5" file="HC_goh_webweaver/goh_webweaver_walk.dae" name="Run" id="run2" speed="9"/>
+    <animation event="0.5" file="HC_goh_webweaver/goh_webweaver_walk.dae" name="Run" id="run3" speed="10"/>
+    <animation file="HC_goh_webweaver/goh_webweaver_walk.dae" name="Heal" id="heal1" speed="100"/>
+	<animation event="0.5" file="HC_goh_webweaver/goh_webweaver_attack.dae" name="Attack_melee" id="attack1" speed="100"/>
+	<animation file="HC_goh_webweaver/goh_webweaver_walk.dae" name="promotion" speed="80"/>
+  </animations>
+</variant>

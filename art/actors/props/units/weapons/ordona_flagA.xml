@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_flagcarrier/flagcarrier_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_flagcarrier/flagcarrier_flap.dae" name="Walk" speed="18"/>
+        <animation file="HC_flagcarrier/flagcarrier_flap.dae" name="Run" speed="40"/>
+        <animation event="0.5" file="HC_flagcarrier/flagcarrier_idle.dae" name="attack_melee" speed="100"/>
+        <animation event="0.5" file="HC_flagcarrier/flagcarrier_idle.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.5" file="HC_flagcarrier/flagcarrier_idle.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_flagcarrier/flagcarrier_idle.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>props/weapon/ordona_flagA.dae</mesh>
+	  <textures><texture file="skeletal/ordona/ord_flagA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

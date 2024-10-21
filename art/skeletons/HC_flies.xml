@@ -1,0 +1,43 @@
+<skeletons>
+<standard_skeleton id="Flies_skel" title="Flies_skel">
+<bone name="base_hiveflies">
+<bone name="stalk">
+<bone name="flies_01">
+</bone>
+<bone name="flies_02">
+</bone>
+<bone name="flies_03">
+</bone>
+<bone name="flies_04">
+</bone>
+<bone name="flies_05">
+</bone>
+<bone name="flies_06">
+</bone>
+<bone name="flies_07">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Flies_skel" title="Flies_skel">
+<identifier><root>base_hiveflies</root></identifier>
+<bone name="base_hiveflies"><target>base_hiveflies</target>
+<bone name="stalk"><target>stalk</target>
+<bone name="flies_01"><target>flies_01</target>
+</bone>
+<bone name="flies_02"><target>flies_02</target>
+</bone>
+<bone name="flies_03"><target>flies_03</target>
+</bone>
+<bone name="flies_04"><target>flies_04</target>
+</bone>
+<bone name="flies_05"><target>flies_05</target>
+</bone>
+<bone name="flies_06"><target>flies_06</target>
+</bone>
+<bone name="flies_07"><target>flies_07</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

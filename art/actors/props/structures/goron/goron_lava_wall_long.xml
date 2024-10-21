@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/goron/gor_wall_lava_long.dae</mesh>
+      <textures>
+	    <texture file="structural/goron/gor_lava1.dds" name="baseTex"/>
+	    <texture file="structural/goron/gor_lava1_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

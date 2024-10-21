@@ -1,0 +1,223 @@
+<skeletons>
+<standard_skeleton id="Shore Serpent" title="Shore Serpent">
+<bone name="shoreserpent_base">
+<bone name="neck_01">
+<bone name="neck_02">
+<bone name="neck_03">
+<bone name="neck_04">
+<bone name="neck_05">
+<bone name="neck_06">
+<bone name="head_01">
+<bone name="tng_01">
+<bone name="tng_02">
+<bone name="tng_03">
+<bone name="tng_04">
+<bone name="tng_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+<bone name="L_fin_01">
+<bone name="L_fin_02">
+<bone name="L_fin_03">
+<bone name="L_fin_04">
+<bone name="L_fin_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_fin_01">
+<bone name="R_fin_02">
+<bone name="R_fin_03">
+<bone name="R_fin_04">
+<bone name="R_fin_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="mouth_01">
+<bone name="mouth_02">
+<bone name="mouth_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+<bone name="tail_09">
+<bone name="tail_10">
+<bone name="tail_11">
+<bone name="tail_12">
+<bone name="tail_13">
+<bone name="tail_14">
+<bone name="tail_15">
+<bone name="tail_16">
+<bone name="tail_17">
+<bone name="tail_18">
+<bone name="tail_19">
+<bone name="tail_20">
+<bone name="tail_21">
+<bone name="tail_22">
+<bone name="tail_23">
+<bone name="tail_24">
+<bone name="tail_25">
+<bone name="tail_26">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Shore Serpent" title="Shore Serpent">
+<identifier><root>shoreserpent_base</root></identifier>
+<bone name="shoreserpent_base"><target>shoreserpent_base</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="neck_02"><target>neck_02</target>
+<bone name="neck_03"><target>neck_03</target>
+<bone name="neck_04"><target>neck_04</target>
+<bone name="neck_05"><target>neck_05</target>
+<bone name="neck_06"><target>neck_06</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="tng_01"><target>tng_01</target>
+<bone name="tng_02"><target>tng_02</target>
+<bone name="tng_03"><target>tng_03</target>
+<bone name="tng_04"><target>tng_04</target>
+<bone name="tng_05"><target>tng_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+<bone name="L_fin_01"><target>L_fin_01</target>
+<bone name="L_fin_02"><target>L_fin_02</target>
+<bone name="L_fin_03"><target>L_fin_03</target>
+<bone name="L_fin_04"><target>L_fin_04</target>
+<bone name="L_fin_05"><target>L_fin_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_fin_01"><target>R_fin_01</target>
+<bone name="R_fin_02"><target>R_fin_02</target>
+<bone name="R_fin_03"><target>R_fin_03</target>
+<bone name="R_fin_04"><target>R_fin_04</target>
+<bone name="R_fin_05"><target>R_fin_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="mouth_01"><target>mouth_01</target>
+<bone name="mouth_02"><target>mouth_02</target>
+<bone name="mouth_03"><target>mouth_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+<bone name="tail_09"><target>tail_09</target>
+<bone name="tail_10"><target>tail_10</target>
+<bone name="tail_11"><target>tail_11</target>
+<bone name="tail_12"><target>tail_12</target>
+<bone name="tail_13"><target>tail_13</target>
+<bone name="tail_14"><target>tail_14</target>
+<bone name="tail_15"><target>tail_15</target>
+<bone name="tail_16"><target>tail_16</target>
+<bone name="tail_17"><target>tail_17</target>
+<bone name="tail_18"><target>tail_18</target>
+<bone name="tail_19"><target>tail_19</target>
+<bone name="tail_20"><target>tail_20</target>
+<bone name="tail_21"><target>tail_21</target>
+<bone name="tail_22"><target>tail_22</target>
+<bone name="tail_23"><target>tail_23</target>
+<bone name="tail_24"><target>tail_24</target>
+<bone name="tail_25"><target>tail_25</target>
+<bone name="tail_26"><target>tail_26</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_feygate/base_HC_feygate_relax.xml">
+      <mesh>units/fairy/fai_gateA.dae</mesh>
+	  <textures><texture file="skeletal/fairy/fai_golem_autumn.dds" name="baseTex"/></textures>
+	  <props>
+        <prop actor="particle/fairy_field_yellow.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_leaves_autumnA.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_leaves_autumnB.xml" attachpoint="root"/>
+		<prop actor="particle/feyphantom_smokeB.xml" attachpoint="core"/>
+		<prop actor="particle/feyphantom_smokeB.xml" attachpoint="rotator"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_feygate/base_HC_feygate_death.xml">
+      <props>
+        <prop actor="props/units/blood_fairy_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

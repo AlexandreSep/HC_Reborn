@@ -1,0 +1,147 @@
+<skeletons>
+<standard_skeleton id="shieldgohma_skeleton" title="shieldgohma_skeleton">
+<bone name="shieldgohma_base">
+<bone name="L_Fthigh">
+<bone name="L_Fknee">
+<bone name="L_Ffoot">
+<bone name="L_Ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bthigh">
+<bone name="L_Bknee">
+<bone name="L_Bfoot">
+<bone name="L_Btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clav">
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_claw_01">
+<bone name="L_claw_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mand_01">
+<bone name="L_mand_02">
+<bone name="L_mand_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_mand_01">
+<bone name="R_mand_02">
+<bone name="R_mand_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh">
+<bone name="R_Fknee">
+<bone name="R_Ffoot">
+<bone name="R_Ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh">
+<bone name="R_Bknee">
+<bone name="R_Bfoot">
+<bone name="R_Btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clav">
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_claw_01">
+<bone name="R_claw_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01">
+<bone name="eye_02">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="shieldgohma_skeleton" title="shieldgohma_skeleton">
+<identifier><root>shieldgohma_base</root></identifier>
+<bone name="shieldgohma_base"><target>shieldgohma_base</target>
+<bone name="L_Fthigh"><target>L_Fthigh</target>
+<bone name="L_Fknee"><target>L_Fknee</target>
+<bone name="L_Ffoot"><target>L_Ffoot</target>
+<bone name="L_Ftoe"><target>L_Ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bthigh"><target>L_Bthigh</target>
+<bone name="L_Bknee"><target>L_Bknee</target>
+<bone name="L_Bfoot"><target>L_Bfoot</target>
+<bone name="L_Btoe"><target>L_Btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clav"><target>L_clav</target>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_claw_01"><target>L_claw_01</target>
+<bone name="L_claw_02"><target>L_claw_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mand_01"><target>L_mand_01</target>
+<bone name="L_mand_02"><target>L_mand_02</target>
+<bone name="L_mand_03"><target>L_mand_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_mand_01"><target>R_mand_01</target>
+<bone name="R_mand_02"><target>R_mand_02</target>
+<bone name="R_mand_03"><target>R_mand_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh"><target>R_Fthigh</target>
+<bone name="R_Fknee"><target>R_Fknee</target>
+<bone name="R_Ffoot"><target>R_Ffoot</target>
+<bone name="R_Ftoe"><target>R_Ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh"><target>R_Bthigh</target>
+<bone name="R_Bknee"><target>R_Bknee</target>
+<bone name="R_Bfoot"><target>R_Bfoot</target>
+<bone name="R_Btoe"><target>R_Btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clav"><target>R_clav</target>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_claw_01"><target>R_claw_01</target>
+<bone name="R_claw_02"><target>R_claw_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+<bone name="eye_02"><target>eye_02</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

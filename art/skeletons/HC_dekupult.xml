@@ -1,0 +1,63 @@
+<skeletons>
+<standard_skeleton id="Dekupult Skeleton" title="Dekupult Skeleton">
+<bone name="dekupult_baseA">
+<bone name="axel_front">
+<bone name="R_F_wheel">
+</bone>
+<bone name="L_F_wheel">
+</bone>
+</bone>
+<bone name="axel_back">
+<bone name="R_B_wheel">
+</bone>
+<bone name="L_B_wheel">
+</bone>
+</bone>
+<bone name="swing">
+<bone name="bowl">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+<bone name="crew_01">
+</bone>
+<bone name="crew_02">
+</bone>
+<bone name="crank">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Dekupult Skeleton" title="Dekupult Skeleton">
+<identifier><root>dekupult_baseA</root></identifier>
+<bone name="dekupult_baseA"><target>dekupult_baseA</target>
+<bone name="axel_front"><target>axel_front</target>
+<bone name="R_F_wheel"><target>R_F_wheel</target>
+</bone>
+<bone name="L_F_wheel"><target>L_F_wheel</target>
+</bone>
+</bone>
+<bone name="axel_back"><target>axel_back</target>
+<bone name="R_B_wheel"><target>R_B_wheel</target>
+</bone>
+<bone name="L_B_wheel"><target>L_B_wheel</target>
+</bone>
+</bone>
+<bone name="swing"><target>swing</target>
+<bone name="bowl"><target>bowl</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+<bone name="crew_01"><target>crew_01</target>
+</bone>
+<bone name="crew_02"><target>crew_02</target>
+</bone>
+<bone name="crank"><target>crank</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

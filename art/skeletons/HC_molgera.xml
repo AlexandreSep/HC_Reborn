@@ -1,0 +1,215 @@
+<skeletons>
+<standard_skeleton id="Molgera Skeleton" title="Molgera Skeleton">
+<bone name="molgeraboss_base">
+<bone name="body">
+<bone name="L_mouth_01">
+<bone name="L_mouth_02">
+<bone name="L_mouth_03">
+<bone name="L_mouth_04">
+<bone name="L_mouth_05">
+<bone name="L_mouth_06">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_eye">
+</bone>
+</bone>
+</bone>
+<bone name="L_spiral_01">
+<bone name="L_spiral_02">
+<bone name="L_spiral_03">
+<bone name="L_spiral_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_mouth_01">
+<bone name="R_mouth_02">
+<bone name="R_mouth_03">
+<bone name="R_mouth_04">
+<bone name="R_mouth_05">
+<bone name="R_mouth_06">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_eye">
+</bone>
+</bone>
+</bone>
+<bone name="R_spiral_01">
+<bone name="R_spiral_02">
+<bone name="R_spiral_03">
+<bone name="R_spiral_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="L_wing_01">
+<bone name="L_wing_02">
+<bone name="L_wing_03">
+<bone name="L_wing_04">
+<bone name="L_wing_05">
+<bone name="L_wing_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_01">
+<bone name="R_wing_02">
+<bone name="R_wing_03">
+<bone name="R_wing_04">
+<bone name="R_wing_05">
+<bone name="R_wing_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+<bone name="L_feeler_01">
+<bone name="L_feeler_02">
+<bone name="L_feeler_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_feeler_01">
+<bone name="R_feeler_02">
+<bone name="R_feeler_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Molgera Skeleton" title="Molgera Skeleton">
+<identifier><root>molgeraboss_base</root></identifier>
+<bone name="molgeraboss_base"><target>molgeraboss_base</target>
+<bone name="body"><target>body</target>
+<bone name="L_mouth_01"><target>L_mouth_01</target>
+<bone name="L_mouth_02"><target>L_mouth_02</target>
+<bone name="L_mouth_03"><target>L_mouth_03</target>
+<bone name="L_mouth_04"><target>L_mouth_04</target>
+<bone name="L_mouth_05"><target>L_mouth_05</target>
+<bone name="L_mouth_06"><target>L_mouth_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_eye"><target>L_eye</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_spiral_01"><target>L_spiral_01</target>
+<bone name="L_spiral_02"><target>L_spiral_02</target>
+<bone name="L_spiral_03"><target>L_spiral_03</target>
+<bone name="L_spiral_04"><target>L_spiral_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_mouth_01"><target>R_mouth_01</target>
+<bone name="R_mouth_02"><target>R_mouth_02</target>
+<bone name="R_mouth_03"><target>R_mouth_03</target>
+<bone name="R_mouth_04"><target>R_mouth_04</target>
+<bone name="R_mouth_05"><target>R_mouth_05</target>
+<bone name="R_mouth_06"><target>R_mouth_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_eye"><target>R_eye</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_spiral_01"><target>R_spiral_01</target>
+<bone name="R_spiral_02"><target>R_spiral_02</target>
+<bone name="R_spiral_03"><target>R_spiral_03</target>
+<bone name="R_spiral_04"><target>R_spiral_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="L_wing_01"><target>L_wing_01</target>
+<bone name="L_wing_02"><target>L_wing_02</target>
+<bone name="L_wing_03"><target>L_wing_03</target>
+<bone name="L_wing_04"><target>L_wing_04</target>
+<bone name="L_wing_05"><target>L_wing_05</target>
+<bone name="L_wing_06"><target>L_wing_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_01"><target>R_wing_01</target>
+<bone name="R_wing_02"><target>R_wing_02</target>
+<bone name="R_wing_03"><target>R_wing_03</target>
+<bone name="R_wing_04"><target>R_wing_04</target>
+<bone name="R_wing_05"><target>R_wing_05</target>
+<bone name="R_wing_06"><target>R_wing_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+<bone name="L_feeler_01"><target>L_feeler_01</target>
+<bone name="L_feeler_02"><target>L_feeler_02</target>
+<bone name="L_feeler_03"><target>L_feeler_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_feeler_01"><target>R_feeler_01</target>
+<bone name="R_feeler_02"><target>R_feeler_02</target>
+<bone name="R_feeler_03"><target>R_feeler_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

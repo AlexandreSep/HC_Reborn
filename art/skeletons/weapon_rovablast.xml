@@ -1,0 +1,19 @@
+<skeletons>
+<standard_skeleton id="Rovablast" title="Rovablast">
+<bone name="rova_blast">
+<bone name="blast_ice">
+</bone>
+<bone name="blast_flame">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Rovablast" title="Rovablast">
+<identifier><root>rova_blast</root></identifier>
+<bone name="rova_blast"><target>rova_blast</target>
+<bone name="blast_ice"><target>blast_ice</target>
+</bone>
+<bone name="blast_flame"><target>blast_flame</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

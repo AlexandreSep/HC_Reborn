@@ -1,0 +1,251 @@
+<skeletons>
+<standard_skeleton id="Cloudrunner_skeleton" title="Cloudrunner_skeleton">
+<bone name="cloudrunner_base">
+<bone name="belly">
+<bone name="chest">
+<bone name="collar">
+<bone name="neck">
+<bone name="head">
+<bone name="projectile">
+<bone name="beak_top1">
+<bone name="beak_top2">
+</bone>
+</bone>
+<bone name="beak_bot1">
+<bone name="beak_bot2">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical">
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_wrist">
+<bone name="L_hand">
+<bone name="L_finger">
+<bone name="L_fingertip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical">
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_wrist">
+<bone name="R_hand">
+<bone name="R_finger">
+<bone name="R_fingertip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_wing1">
+<bone name="L_wing2">
+<bone name="L_wing3">
+<bone name="L_wing4">
+<bone name="L_wing5">
+<bone name="L_wing6">
+</bone>
+</bone>
+<bone name="L_wing7">
+<bone name="L_wing8">
+<bone name="L_wing9">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing1">
+<bone name="R_wing2">
+<bone name="R_wing3">
+<bone name="R_wing4">
+<bone name="R_wing5">
+<bone name="R_wing6">
+</bone>
+</bone>
+<bone name="R_wing7">
+<bone name="R_wing8">
+<bone name="R_wing9">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail1">
+<bone name="tail2">
+<bone name="tail3">
+<bone name="tail4">
+<bone name="tail5">
+<bone name="tail6">
+<bone name="tail7">
+<bone name="tail8">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_ankle">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_ankle">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Cloudrunner_skeleton" title="Cloudrunner_skeleton">
+<identifier><root>cloudrunner_base</root></identifier>
+<bone name="cloudrunner_base"><target>cloudrunner_base</target>
+<bone name="belly"><target>belly</target>
+<bone name="chest"><target>chest</target>
+<bone name="collar"><target>collar</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="projectile"><target>projectile</target>
+<bone name="beak_top1"><target>beak_top1</target>
+<bone name="beak_top2"><target>beak_top2</target>
+</bone>
+</bone>
+<bone name="beak_bot1"><target>beak_bot1</target>
+<bone name="beak_bot2"><target>beak_bot2</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical"><target>L_clavical</target>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_wrist"><target>L_wrist</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_finger"><target>L_finger</target>
+<bone name="L_fingertip"><target>L_fingertip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical"><target>R_clavical</target>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_wrist"><target>R_wrist</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_finger"><target>R_finger</target>
+<bone name="R_fingertip"><target>R_fingertip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_wing1"><target>L_wing1</target>
+<bone name="L_wing2"><target>L_wing2</target>
+<bone name="L_wing3"><target>L_wing3</target>
+<bone name="L_wing4"><target>L_wing4</target>
+<bone name="L_wing5"><target>L_wing5</target>
+<bone name="L_wing6"><target>L_wing6</target>
+</bone>
+</bone>
+<bone name="L_wing7"><target>L_wing7</target>
+<bone name="L_wing8"><target>L_wing8</target>
+<bone name="L_wing9"><target>L_wing9</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing1"><target>R_wing1</target>
+<bone name="R_wing2"><target>R_wing2</target>
+<bone name="R_wing3"><target>R_wing3</target>
+<bone name="R_wing4"><target>R_wing4</target>
+<bone name="R_wing5"><target>R_wing5</target>
+<bone name="R_wing6"><target>R_wing6</target>
+</bone>
+</bone>
+<bone name="R_wing7"><target>R_wing7</target>
+<bone name="R_wing8"><target>R_wing8</target>
+<bone name="R_wing9"><target>R_wing9</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail1"><target>tail1</target>
+<bone name="tail2"><target>tail2</target>
+<bone name="tail3"><target>tail3</target>
+<bone name="tail4"><target>tail4</target>
+<bone name="tail5"><target>tail5</target>
+<bone name="tail6"><target>tail6</target>
+<bone name="tail7"><target>tail7</target>
+<bone name="tail8"><target>tail8</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_ankle"><target>L_ankle</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_ankle"><target>R_ankle</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

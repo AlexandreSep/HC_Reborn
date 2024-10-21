@@ -1,0 +1,5 @@
+<variant name="carry_stone">
+  <animations>
+	<animation file="HC_kokiri/kokiri_carry.dae" name="carry_stone" speed="20"/>
+  </animations>
+</variant>

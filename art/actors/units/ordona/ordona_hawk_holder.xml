@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant>
+		<animations>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Idle" speed="100"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Walk" speed="10"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Walk" speed="15"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Walk" speed="17"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Walk" speed="17"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Run" speed="10"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Run" speed="15"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Run" speed="17"/>
+			<animation event="0.5" file="flying_holder/flying_skeleton_idle.dae" name="Attack_ranged" id="attack1" speed="100"/>
+			<animation file="flying_holder/flying_skeleton_idle.dae" name="Death" id="death1" speed="100"/>			
+		</animations>
+      <mesh>units/flying_skeleton.dae</mesh>
+	  <props>
+		<prop actor="units/ordona/ordona_hawk_b.xml" attachpoint="flying_01"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="holder">
+      <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,8 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.5" file="HC_baba_giant/baba_giant_attackA.dae" name="Attack_ranged" id="attack1" speed="70"/>
+    <animation event="0.5" file="HC_baba_giant/baba_giant_attackB.dae" name="Attack_ranged" id="attack2" speed="70"/>
+  </animations>
+  <props>
+  </props>
+</variant>

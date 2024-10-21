@@ -1,0 +1,83 @@
+<skeletons>
+<standard_skeleton id="tektite_large_skel" title="tektite_large_skel">
+<bone name="tektite_large_base">
+<bone name="L_leg_04">
+<bone name="L_leg_05">
+<bone name="L_leg_06">
+<bone name="L_Btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_01">
+<bone name="L_leg_02">
+<bone name="L_leg_03">
+<bone name="L_Ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="head_01">
+<bone name="head_02">
+</bone>
+</bone>
+<bone name="R_leg_01">
+<bone name="R_leg_02">
+<bone name="R_leg_03">
+<bone name="R_Ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_04">
+<bone name="R_leg_05">
+<bone name="R_leg_06">
+<bone name="R_Btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="tektite_large_skel" title="tektite_large_skel">
+<identifier><root>tektite_large_base</root></identifier>
+<bone name="tektite_large_base"><target>tektite_large_base</target>
+<bone name="L_leg_04"><target>L_leg_04</target>
+<bone name="L_leg_05"><target>L_leg_05</target>
+<bone name="L_leg_06"><target>L_leg_06</target>
+<bone name="L_Btoe"><target>L_Btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_01"><target>L_leg_01</target>
+<bone name="L_leg_02"><target>L_leg_02</target>
+<bone name="L_leg_03"><target>L_leg_03</target>
+<bone name="L_Ftoe"><target>L_Ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="head_01"><target>head_01</target>
+<bone name="head_02"><target>head_02</target>
+</bone>
+</bone>
+<bone name="R_leg_01"><target>R_leg_01</target>
+<bone name="R_leg_02"><target>R_leg_02</target>
+<bone name="R_leg_03"><target>R_leg_03</target>
+<bone name="R_Ftoe"><target>R_Ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_04"><target>R_leg_04</target>
+<bone name="R_leg_05"><target>R_leg_05</target>
+<bone name="R_leg_06"><target>R_leg_06</target>
+<bone name="R_Btoe"><target>R_Btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

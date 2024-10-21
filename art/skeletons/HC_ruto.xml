@@ -1,0 +1,387 @@
+<skeletons>
+<standard_skeleton id="Ruto_skeleton" title="Ruto_skeleton">
+<bone name="zora_base_ruto">
+<bone name="waist_01">
+<bone name="chest_01">
+<bone name="torso_01">
+<bone name="neck_01">
+<bone name="head_01">
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+<bone name="tail_09">
+<bone name="tail_10">
+<bone name="tail_011">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_earring_01">
+<bone name="L_earring_02">
+</bone>
+</bone>
+<bone name="R_earring_01">
+<bone name="R_earring_02">
+</bone>
+</bone>
+<bone name="mouth">
+<bone name="mouth_bot">
+</bone>
+<bone name="mouth_top">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01">
+<bone name="L_shoulder_01">
+<bone name="L_elbow_01">
+<bone name="L_wrist_01">
+<bone name="L_hand_01">
+</bone>
+<bone name="L_crystal_01">
+</bone>
+</bone>
+<bone name="L_armfin_01">
+<bone name="L_armfin_02">
+<bone name="L_armfin_03">
+<bone name="L_armfin_04">
+</bone>
+</bone>
+</bone>
+<bone name="L_armfin_05">
+<bone name="L_armfin_06">
+<bone name="L_armfin_07">
+</bone>
+</bone>
+</bone>
+<bone name="L_armfin_08">
+<bone name="L_armfin_09">
+<bone name="L_armfin_10">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="cape_01">
+<bone name="cape_02">
+<bone name="cape_03">
+<bone name="cape_04">
+<bone name="cape_05">
+<bone name="cape_06">
+<bone name="cape_07">
+<bone name="cape_08">
+<bone name="cape_09">
+<bone name="joint50">
+<bone name="joint51">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01">
+<bone name="R_shoulder_01">
+<bone name="R_elbow_01">
+<bone name="R_wrist_01">
+<bone name="R_hand_01">
+</bone>
+<bone name="R_crystal_01">
+</bone>
+</bone>
+<bone name="R_armfin_01">
+<bone name="R_armfin_02">
+<bone name="R_armfin_03">
+<bone name="R_armfin_04">
+</bone>
+</bone>
+</bone>
+<bone name="R_armfin_05">
+<bone name="R_armfin_06">
+<bone name="R_armfin_07">
+</bone>
+</bone>
+</bone>
+<bone name="R_armfin_08">
+<bone name="R_armfin_09">
+<bone name="R_armfin_10">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="projectile_loaded">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hipfin_01">
+<bone name="L_hipfin_02">
+<bone name="L_hipfin_03">
+<bone name="L_hipfin_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_01">
+<bone name="L_knee_01">
+<bone name="L_ankle_01">
+<bone name="L_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip_01">
+<bone name="R_knee_01">
+<bone name="R_ankle_01">
+<bone name="R_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hipfin_01">
+<bone name="R_hipfin_02">
+<bone name="R_hipfin_03">
+<bone name="R_hipfin_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ice_curved_01">
+</bone>
+<bone name="icechunk_01">
+</bone>
+<bone name="icechunk_02">
+</bone>
+<bone name="ice_spire_01">
+</bone>
+<bone name="water_blast_01">
+<bone name="water_blast_03">
+</bone>
+<bone name="water_blast_02">
+</bone>
+<bone name="water_blast_04">
+</bone>
+</bone>
+<bone name="ice_curved_02">
+</bone>
+<bone name="ice_curved_03">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Ruto_skeleton" title="Ruto_skeleton">
+<identifier><root>zora_base_ruto</root></identifier>
+<bone name="zora_base_ruto"><target>zora_base_ruto</target>
+<bone name="waist_01"><target>waist_01</target>
+<bone name="chest_01"><target>chest_01</target>
+<bone name="torso_01"><target>torso_01</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+<bone name="tail_09"><target>tail_09</target>
+<bone name="tail_10"><target>tail_10</target>
+<bone name="tail_011"><target>tail_011</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_earring_01"><target>L_earring_01</target>
+<bone name="L_earring_02"><target>L_earring_02</target>
+</bone>
+</bone>
+<bone name="R_earring_01"><target>R_earring_01</target>
+<bone name="R_earring_02"><target>R_earring_02</target>
+</bone>
+</bone>
+<bone name="mouth"><target>mouth</target>
+<bone name="mouth_bot"><target>mouth_bot</target>
+</bone>
+<bone name="mouth_top"><target>mouth_top</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01"><target>L_clavical_01</target>
+<bone name="L_shoulder_01"><target>L_shoulder_01</target>
+<bone name="L_elbow_01"><target>L_elbow_01</target>
+<bone name="L_wrist_01"><target>L_wrist_01</target>
+<bone name="L_hand_01"><target>L_hand_01</target>
+</bone>
+<bone name="L_crystal_01"><target>L_crystal_01</target>
+</bone>
+</bone>
+<bone name="L_armfin_01"><target>L_armfin_01</target>
+<bone name="L_armfin_02"><target>L_armfin_02</target>
+<bone name="L_armfin_03"><target>L_armfin_03</target>
+<bone name="L_armfin_04"><target>L_armfin_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_armfin_05"><target>L_armfin_05</target>
+<bone name="L_armfin_06"><target>L_armfin_06</target>
+<bone name="L_armfin_07"><target>L_armfin_07</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_armfin_08"><target>L_armfin_08</target>
+<bone name="L_armfin_09"><target>L_armfin_09</target>
+<bone name="L_armfin_10"><target>L_armfin_10</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="cape_01"><target>cape_01</target>
+<bone name="cape_02"><target>cape_02</target>
+<bone name="cape_03"><target>cape_03</target>
+<bone name="cape_04"><target>cape_04</target>
+<bone name="cape_05"><target>cape_05</target>
+<bone name="cape_06"><target>cape_06</target>
+<bone name="cape_07"><target>cape_07</target>
+<bone name="cape_08"><target>cape_08</target>
+<bone name="cape_09"><target>cape_09</target>
+<bone name="joint50"><target>joint50</target>
+<bone name="joint51"><target>joint51</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01"><target>R_clavical_01</target>
+<bone name="R_shoulder_01"><target>R_shoulder_01</target>
+<bone name="R_elbow_01"><target>R_elbow_01</target>
+<bone name="R_wrist_01"><target>R_wrist_01</target>
+<bone name="R_hand_01"><target>R_hand_01</target>
+</bone>
+<bone name="R_crystal_01"><target>R_crystal_01</target>
+</bone>
+</bone>
+<bone name="R_armfin_01"><target>R_armfin_01</target>
+<bone name="R_armfin_02"><target>R_armfin_02</target>
+<bone name="R_armfin_03"><target>R_armfin_03</target>
+<bone name="R_armfin_04"><target>R_armfin_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_armfin_05"><target>R_armfin_05</target>
+<bone name="R_armfin_06"><target>R_armfin_06</target>
+<bone name="R_armfin_07"><target>R_armfin_07</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_armfin_08"><target>R_armfin_08</target>
+<bone name="R_armfin_09"><target>R_armfin_09</target>
+<bone name="R_armfin_10"><target>R_armfin_10</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="projectile_loaded"><target>projectile_loaded</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hipfin_01"><target>L_hipfin_01</target>
+<bone name="L_hipfin_02"><target>L_hipfin_02</target>
+<bone name="L_hipfin_03"><target>L_hipfin_03</target>
+<bone name="L_hipfin_04"><target>L_hipfin_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_01"><target>L_hip_01</target>
+<bone name="L_knee_01"><target>L_knee_01</target>
+<bone name="L_ankle_01"><target>L_ankle_01</target>
+<bone name="L_foot_01"><target>L_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip_01"><target>R_hip_01</target>
+<bone name="R_knee_01"><target>R_knee_01</target>
+<bone name="R_ankle_01"><target>R_ankle_01</target>
+<bone name="R_foot_01"><target>R_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hipfin_01"><target>R_hipfin_01</target>
+<bone name="R_hipfin_02"><target>R_hipfin_02</target>
+<bone name="R_hipfin_03"><target>R_hipfin_03</target>
+<bone name="R_hipfin_04"><target>R_hipfin_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ice_curved_01"><target>ice_curved_01</target>
+</bone>
+<bone name="icechunk_01"><target>icechunk_01</target>
+</bone>
+<bone name="icechunk_02"><target>icechunk_02</target>
+</bone>
+<bone name="ice_spire_01"><target>ice_spire_01</target>
+</bone>
+<bone name="water_blast_01"><target>water_blast_01</target>
+<bone name="water_blast_03"><target>water_blast_03</target>
+</bone>
+<bone name="water_blast_02"><target>water_blast_02</target>
+</bone>
+<bone name="water_blast_04"><target>water_blast_04</target>
+</bone>
+</bone>
+<bone name="ice_curved_02"><target>ice_curved_02</target>
+</bone>
+<bone name="ice_curved_03"><target>ice_curved_03</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

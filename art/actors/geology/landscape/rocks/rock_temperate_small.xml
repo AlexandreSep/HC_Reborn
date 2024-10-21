@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant name="a">
+      <mesh>gaia/landscape/rocks/rock_temperate_smallA.dae</mesh>
+	  <textures><texture file="gaia/rocks/rocks_temperateA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant name="b">
+      <mesh>gaia/landscape/rocks/rock_temperate_smallB.dae</mesh>
+	  <textures><texture file="gaia/rocks/rocks_temperateB.dds" name="baseTex"/></textures>
+    </variant>	
+    <variant name="c">
+      <mesh>gaia/landscape/rocks/rock_temperate_smallC.dae</mesh>
+	  <textures><texture file="gaia/rocks/rocks_temperateC.dds" name="baseTex"/></textures>
+    </variant>
+    <variant name="d">
+      <mesh>gaia/landscape/rocks/rock_temperate_smallD.dae</mesh>
+	  <textures><texture file="gaia/rocks/rocks_temperateC.dds" name="baseTex"/></textures>
+    </variant>	
+    <variant name="e">
+      <mesh>gaia/landscape/rocks/rock_temperate_smallE.dae</mesh>
+	  <textures><texture file="gaia/rocks/rocks_temperateD.dds" name="baseTex"/></textures>
+    </variant>		
+  </group>
+   
+  <group>
+    <variant name="propsbrushA">  
+	<props>
+        <prop actor="props/flora/bush_tempe_underbrush.xml" attachpoint="root"/>
+      </props>  
+    </variant>		
+  </group>  
+
+</actor>

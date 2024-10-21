@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="trunk-a">
+      <mesh>gaia/flora/mire_treeA.dae</mesh>
+    </variant>
+	
+    <variant frequency="1" name="trunk-b">
+      <mesh>gaia/flora/mire_treeB.dae</mesh>
+    </variant>
+	
+    <variant frequency="1" name="trunk-c">
+      <mesh>gaia/flora/mire_treeC.dae</mesh>
+    </variant>
+   </group>
+	  
+
+  <group>
+    <variant name="trunk-texture">
+      <textures><texture file="gaia/flora/mire_treeA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+  <material>basic_trans.xml</material>
+
+</actor>

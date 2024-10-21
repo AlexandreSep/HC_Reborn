@@ -1,0 +1,47 @@
+<skeletons>
+<standard_skeleton id="SpiritOrdona DeadSkel" title="SpiritOrdona DeadSkel">
+<bone name="spirit_ordona_stone">
+<bone name="orb">
+</bone>
+<bone name="torso">
+</bone>
+<bone name="horn_02">
+</bone>
+<bone name="horn_01">
+</bone>
+<bone name="jaw">
+</bone>
+<bone name="head">
+</bone>
+<bone name="tail">
+</bone>
+<bone name="leg">
+</bone>
+<bone name="side">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="SpiritOrdona DeadSkel" title="SpiritOrdona DeadSkel">
+<identifier><root>spirit_ordona_stone</root></identifier>
+<bone name="spirit_ordona_stone"><target>spirit_ordona_stone</target>
+<bone name="orb"><target>orb</target>
+</bone>
+<bone name="torso"><target>torso</target>
+</bone>
+<bone name="horn_02"><target>horn_02</target>
+</bone>
+<bone name="horn_01"><target>horn_01</target>
+</bone>
+<bone name="jaw"><target>jaw</target>
+</bone>
+<bone name="head"><target>head</target>
+</bone>
+<bone name="tail"><target>tail</target>
+</bone>
+<bone name="leg"><target>leg</target>
+</bone>
+<bone name="side"><target>side</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

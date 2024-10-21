@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_godmotherB/base_HC_godmotherB_relax.xml">
+      <mesh>units/fairy/fai_godmother_summerA.dae</mesh>
+	  <textures><texture file="skeletal/fairy/fai_godmother_summer.dds" name="baseTex"/></textures>
+	  <props>
+		<prop actor="units/fairy/fairy_godmother_legs_summer.xml" attachpoint="root"/>
+	    <prop actor="units/fairy/fairy_godmother_extras.xml" attachpoint="root"/>
+        <prop actor="particle/fairy_field_red.xml" attachpoint="root"/>
+		<prop actor="particle/fairy_leaves_summer.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_godmotherB/base_HC_godmotherB_attackmagic.xml"/>
+    <variant file="HC_godmotherB/base_HC_godmotherB_capture.xml"/>
+    <variant file="HC_godmotherB/base_HC_godmotherB_slaughter.xml"/>
+    <variant file="HC_godmotherB/base_HC_godmotherB_death.xml">
+      <props>
+		<prop actor="units/fairy/fairy_godmother_legs_summer.xml" attachpoint="root"/>
+	    <prop actor="units/fairy/fairy_godmother_extras.xml" attachpoint="root"/>
+        <prop actor="props/units/blood_fairy_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

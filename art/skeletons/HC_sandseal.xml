@@ -1,0 +1,79 @@
+<skeletons>
+<standard_skeleton id="HC_sandseal" title="HC_sandseal">
+<bone name="sand_seal_base">
+<bone name="chest">
+<bone name="head">
+<bone name="head_end">
+</bone>
+</bone>
+<bone name="Lshoulder">
+<bone name="Lelbow">
+<bone name="Lwrist">
+<bone name="Lhand">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Rshoulder">
+<bone name="Relbow">
+<bone name="Rwrist">
+<bone name="Rhand">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="saddle">
+<bone name="back">
+<bone name="tailA">
+<bone name="tailB">
+<bone name="tailC">
+<bone name="tailD">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="HC_sandseal" title="HC_sandseal">
+<identifier><root>sand_seal_base</root></identifier>
+<bone name="sand_seal_base"><target>sand_seal_base</target>
+<bone name="chest"><target>chest</target>
+<bone name="head"><target>head</target>
+<bone name="head_end"><target>head_end</target>
+</bone>
+</bone>
+<bone name="Lshoulder"><target>Lshoulder</target>
+<bone name="Lelbow"><target>Lelbow</target>
+<bone name="Lwrist"><target>Lwrist</target>
+<bone name="Lhand"><target>Lhand</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Rshoulder"><target>Rshoulder</target>
+<bone name="Relbow"><target>Relbow</target>
+<bone name="Rwrist"><target>Rwrist</target>
+<bone name="Rhand"><target>Rhand</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="saddle"><target>saddle</target>
+<bone name="back"><target>back</target>
+<bone name="tailA"><target>tailA</target>
+<bone name="tailB"><target>tailB</target>
+<bone name="tailC"><target>tailC</target>
+<bone name="tailD"><target>tailD</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

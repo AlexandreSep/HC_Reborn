@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+	  <mesh>structural/debris/debris_hylian_storeA.dae</mesh>
+      <textures>
+        <texture file="structural/hylian/hylian_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/hylian/hylian_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/hylian/hylian_marketA_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

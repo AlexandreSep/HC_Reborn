@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant>
+      <mesh>units/flying_skeleton.dae</mesh>
+	  <props>
+		<prop actor="props/structures/zora/ruto_icesheet_small.xml" attachpoint="root"/>
+      </props>
+	  <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

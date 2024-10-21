@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <textures><texture file="skeletal/gerudo/ger_shirtsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="spear-a">
+      <mesh>props/weapon/gerudo_glaiveA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="spear-b">
+      <mesh>props/weapon/gerudo_glaiveA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="spear-d">
+      <mesh>props/weapon/gerudo_glaiveA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="spear-e">
+      <mesh>props/weapon/gerudo_glaiveA.dae</mesh>
+    </variant>
+  </group>
+</actor>

@@ -1,0 +1,19 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_stalmaster/stalmaster_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_stalmaster/stalmaster_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_stalmaster/stalmaster_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_stalmaster/stalmaster_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation event="0.4" file="HC_stalmaster/stalmaster_walk.dae" name="Walk" id="walk1" speed="20"/>
+    <animation event="0.4" file="HC_stalmaster/stalmaster_walk.dae" name="Walk" id="walk2" speed="22"/>
+    <animation event="0.4" file="HC_stalmaster/stalmaster_walk.dae" name="Run" id="run1" speed="16"/>
+    <animation event="0.4" file="HC_stalmaster/stalmaster_walk.dae" name="Run" id="run2" speed="17"/>
+    <animation event="0.4" file="HC_stalmaster/stalmaster_walk.dae" name="Run" id="run3" speed="18"/>
+	<animation event="0.4" file="HC_stalmaster/stalmaster_attackA.dae" name="Attack_melee" id="attack1" speed="70"/>
+    <animation event="0.4" file="HC_stalmaster/stalmaster_attackB.dae" name="Attack_melee" id="attack2" speed="70"/>
+	<animation event="0.4" file="HC_stalmaster/stalmaster_attackA.dae" name="Attack_ranged" id="attack_ranged1" speed="70"/>
+    <animation event="0.4" file="HC_stalmaster/stalmaster_attackB.dae" name="Attack_ranged" id="attack_ranged2" speed="70"/>
+	<animation file="HC_stalmaster/stalmaster_flail.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_stalmaster/stalmaster_recover.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant name="a">
+      <mesh>campaign/landmarks/camp_mountainedgeA.dae</mesh>
+	  <textures>
+			<texture file="campaigns/landmarks/camp_dm_mountainedgesA.dds" name="baseTex"/>
+	  	    <texture file="campaigns/landmarks/camp_g_mountainedgesA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+	<variant name="b">
+      <mesh>campaign/landmarks/camp_mountainedgeB.dae</mesh>
+	  <textures>
+			<texture file="campaigns/landmarks/camp_dm_mountainedgesA.dds" name="baseTex"/>
+	  	    <texture file="campaigns/landmarks/camp_g_mountainedgesA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+
+</actor>

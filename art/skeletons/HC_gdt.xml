@@ -1,0 +1,315 @@
+<skeletons>
+<standard_skeleton id="GDT_skeleton" title="GDT_skeleton">
+<bone name="gdt_base">
+<bone name="bone_trunk_01">
+<bone name="bone_trunk_02">
+<bone name="bone_trunk_03">
+<bone name="bone_trunk_04">
+<bone name="bone_trunk_05">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbranch_01">
+<bone name="bone_Lbranch_02">
+<bone name="bone_Lbranch_03">
+<bone name="bone_Lbranch_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbranch_01">
+<bone name="bone_Rbranch_02">
+<bone name="bone_Rbranch_03">
+<bone name="bone_Rbranch_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Fbranch_01">
+<bone name="bone_Fbranch_02">
+<bone name="bone_Fbranch_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Bbranch_01">
+<bone name="bone_Bbranch_02">
+<bone name="bone_Bbranch_03">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbackleg_01">
+<bone name="bone_Lbackleg_02">
+<bone name="bone_Lbackleg_03">
+<bone name="bone_Lbackleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lfrontleg_01">
+<bone name="bone_Lfrontleg_02">
+<bone name="bone_Lfrontleg_03">
+<bone name="bone_Lfrontleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lmust_01">
+<bone name="bone_Lmust_02">
+<bone name="bone_Lmust_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbeard_01">
+<bone name="bone_Lbeard_02">
+<bone name="bone_Lbeard_03">
+<bone name="bone_Lbeard_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rmust_01">
+<bone name="bone_Rmust_02">
+<bone name="bone_Rmust_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbeard_01">
+<bone name="bone_Rbeard_02">
+<bone name="bone_Rbeard_03">
+<bone name="bone_Rbeard_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rfrontleg_01">
+<bone name="bone_Rfrontleg_02">
+<bone name="bone_Rfrontleg_03">
+<bone name="bone_Rfrontleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbackleg_01">
+<bone name="bone_Rbackleg_02">
+<bone name="bone_Rbackleg_03">
+<bone name="bone_Rbackleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_broof">
+<bone name="bone_drape_01">
+<bone name="bone_drape_02">
+</bone>
+</bone>
+<bone name="bone_drape_03">
+<bone name="bone_drape_04">
+</bone>
+</bone>
+<bone name="bone_drape_05">
+<bone name="bone_drape_06">
+</bone>
+</bone>
+<bone name="bone_drape_07">
+<bone name="bone_drape_08">
+</bone>
+</bone>
+<bone name="bone_drape_09">
+<bone name="bone_drape_10">
+</bone>
+</bone>
+<bone name="bone_drape_11">
+<bone name="bone_drape_12">
+</bone>
+</bone>
+<bone name="bone_drape_13">
+<bone name="bone_drape_14">
+</bone>
+</bone>
+<bone name="bone_drape_15">
+<bone name="bone_drape_16">
+</bone>
+</bone>
+<bone name="bone_drape_17">
+<bone name="bone_drape_18">
+</bone>
+</bone>
+<bone name="bone_drape_19">
+<bone name="bone_drape_20">
+</bone>
+</bone>
+<bone name="bone_drape_21">
+<bone name="bone_drape_22">
+</bone>
+</bone>
+<bone name="bone_drape_23">
+<bone name="bone_drape_24">
+</bone>
+</bone>
+<bone name="bone_drape_25">
+<bone name="bone_drape_26">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="GDT_skeleton" title="GDT_skeleton">
+<identifier><root>gdt_base</root></identifier>
+<bone name="gdt_base"><target>gdt_base</target>
+<bone name="bone_trunk_01"><target>bone_trunk_01</target>
+<bone name="bone_trunk_02"><target>bone_trunk_02</target>
+<bone name="bone_trunk_03"><target>bone_trunk_03</target>
+<bone name="bone_trunk_04"><target>bone_trunk_04</target>
+<bone name="bone_trunk_05"><target>bone_trunk_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbranch_01"><target>bone_Lbranch_01</target>
+<bone name="bone_Lbranch_02"><target>bone_Lbranch_02</target>
+<bone name="bone_Lbranch_03"><target>bone_Lbranch_03</target>
+<bone name="bone_Lbranch_04"><target>bone_Lbranch_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbranch_01"><target>bone_Rbranch_01</target>
+<bone name="bone_Rbranch_02"><target>bone_Rbranch_02</target>
+<bone name="bone_Rbranch_03"><target>bone_Rbranch_03</target>
+<bone name="bone_Rbranch_04"><target>bone_Rbranch_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Fbranch_01"><target>bone_Fbranch_01</target>
+<bone name="bone_Fbranch_02"><target>bone_Fbranch_02</target>
+<bone name="bone_Fbranch_03"><target>bone_Fbranch_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Bbranch_01"><target>bone_Bbranch_01</target>
+<bone name="bone_Bbranch_02"><target>bone_Bbranch_02</target>
+<bone name="bone_Bbranch_03"><target>bone_Bbranch_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbackleg_01"><target>bone_Lbackleg_01</target>
+<bone name="bone_Lbackleg_02"><target>bone_Lbackleg_02</target>
+<bone name="bone_Lbackleg_03"><target>bone_Lbackleg_03</target>
+<bone name="bone_Lbackleg_04"><target>bone_Lbackleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lfrontleg_01"><target>bone_Lfrontleg_01</target>
+<bone name="bone_Lfrontleg_02"><target>bone_Lfrontleg_02</target>
+<bone name="bone_Lfrontleg_03"><target>bone_Lfrontleg_03</target>
+<bone name="bone_Lfrontleg_04"><target>bone_Lfrontleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lmust_01"><target>bone_Lmust_01</target>
+<bone name="bone_Lmust_02"><target>bone_Lmust_02</target>
+<bone name="bone_Lmust_03"><target>bone_Lmust_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbeard_01"><target>bone_Lbeard_01</target>
+<bone name="bone_Lbeard_02"><target>bone_Lbeard_02</target>
+<bone name="bone_Lbeard_03"><target>bone_Lbeard_03</target>
+<bone name="bone_Lbeard_04"><target>bone_Lbeard_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rmust_01"><target>bone_Rmust_01</target>
+<bone name="bone_Rmust_02"><target>bone_Rmust_02</target>
+<bone name="bone_Rmust_03"><target>bone_Rmust_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbeard_01"><target>bone_Rbeard_01</target>
+<bone name="bone_Rbeard_02"><target>bone_Rbeard_02</target>
+<bone name="bone_Rbeard_03"><target>bone_Rbeard_03</target>
+<bone name="bone_Rbeard_04"><target>bone_Rbeard_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rfrontleg_01"><target>bone_Rfrontleg_01</target>
+<bone name="bone_Rfrontleg_02"><target>bone_Rfrontleg_02</target>
+<bone name="bone_Rfrontleg_03"><target>bone_Rfrontleg_03</target>
+<bone name="bone_Rfrontleg_04"><target>bone_Rfrontleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbackleg_01"><target>bone_Rbackleg_01</target>
+<bone name="bone_Rbackleg_02"><target>bone_Rbackleg_02</target>
+<bone name="bone_Rbackleg_03"><target>bone_Rbackleg_03</target>
+<bone name="bone_Rbackleg_04"><target>bone_Rbackleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_broof"><target>bone_broof</target>
+<bone name="bone_drape_01"><target>bone_drape_01</target>
+<bone name="bone_drape_02"><target>bone_drape_02</target>
+</bone>
+</bone>
+<bone name="bone_drape_03"><target>bone_drape_03</target>
+<bone name="bone_drape_04"><target>bone_drape_04</target>
+</bone>
+</bone>
+<bone name="bone_drape_05"><target>bone_drape_05</target>
+<bone name="bone_drape_06"><target>bone_drape_06</target>
+</bone>
+</bone>
+<bone name="bone_drape_07"><target>bone_drape_07</target>
+<bone name="bone_drape_08"><target>bone_drape_08</target>
+</bone>
+</bone>
+<bone name="bone_drape_09"><target>bone_drape_09</target>
+<bone name="bone_drape_10"><target>bone_drape_10</target>
+</bone>
+</bone>
+<bone name="bone_drape_11"><target>bone_drape_11</target>
+<bone name="bone_drape_12"><target>bone_drape_12</target>
+</bone>
+</bone>
+<bone name="bone_drape_13"><target>bone_drape_13</target>
+<bone name="bone_drape_14"><target>bone_drape_14</target>
+</bone>
+</bone>
+<bone name="bone_drape_15"><target>bone_drape_15</target>
+<bone name="bone_drape_16"><target>bone_drape_16</target>
+</bone>
+</bone>
+<bone name="bone_drape_17"><target>bone_drape_17</target>
+<bone name="bone_drape_18"><target>bone_drape_18</target>
+</bone>
+</bone>
+<bone name="bone_drape_19"><target>bone_drape_19</target>
+<bone name="bone_drape_20"><target>bone_drape_20</target>
+</bone>
+</bone>
+<bone name="bone_drape_21"><target>bone_drape_21</target>
+<bone name="bone_drape_22"><target>bone_drape_22</target>
+</bone>
+</bone>
+<bone name="bone_drape_23"><target>bone_drape_23</target>
+<bone name="bone_drape_24"><target>bone_drape_24</target>
+</bone>
+</bone>
+<bone name="bone_drape_25"><target>bone_drape_25</target>
+<bone name="bone_drape_26"><target>bone_drape_26</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

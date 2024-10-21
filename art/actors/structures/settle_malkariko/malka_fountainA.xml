@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Fountain">
+      <mesh>structural/settle_malkariko/malka_fountainA.dae</mesh>
+      <props>
+		<prop actor="structures/settle_malkariko/malka_fountainA_water.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hylian_groundbase_fountainA.xml" attachpoint="root"/>
+      </props>
+      <textures>
+	    <texture file="structural/settle_malkariko/malka_fountainA.dds" name="baseTex"/>
+	    <texture file="structural/settle_malkariko/malka_fountainA_normal.dds" name="normTex"/>
+		<texture file="structural/settle_malkariko/malka_fountainA_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>
+

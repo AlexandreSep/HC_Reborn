@@ -1,0 +1,683 @@
+<skeletons>
+<standard_skeleton id="sulkiem_skel" title="sulkiem_skel">
+<bone name="sulk_iemanis_base">
+<bone name="L_leg_02">
+<bone name="L_leg_03">
+<bone name="L_leg_04">
+<bone name="L_leg_05">
+<bone name="L_leg_06">
+<bone name="L_leg_07">
+<bone name="L_leg_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_09">
+<bone name="L_leg_10">
+<bone name="L_leg_11">
+<bone name="L_leg_12">
+<bone name="L_leg_13">
+<bone name="L_leg_14">
+<bone name="L_leg_15">
+<bone name="L_leg_16">
+<bone name="L_leg_17">
+<bone name="L_leg_18">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_19">
+<bone name="L_leg_20">
+<bone name="L_leg_21">
+<bone name="L_leg_22">
+<bone name="L_leg_23">
+<bone name="L_leg_24">
+<bone name="L_leg_25">
+<bone name="L_leg_26">
+<bone name="L_leg_27">
+<bone name="L_leg_28">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_ant_01">
+<bone name="L_ant_02">
+<bone name="L_ant_03">
+<bone name="L_ant_04">
+<bone name="L_ant_05">
+<bone name="L_ant_06">
+<bone name="L_ant_07">
+<bone name="L_ant_08">
+<bone name="L_ant_09">
+<bone name="L_ant_10">
+<bone name="L_ant_11">
+<bone name="L_ant_12">
+<bone name="L_ant_13">
+<bone name="L_ant_14">
+<bone name="L_ant_15">
+<bone name="L_ant_16">
+<bone name="L_ant_17">
+<bone name="L_ant_18">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hanger_01">
+<bone name="L_hanger_02">
+<bone name="L_hanger_03">
+<bone name="L_hanger_04">
+<bone name="L_hanger_05">
+<bone name="L_hanger_06">
+<bone name="L_hanger_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hanger_08">
+<bone name="L_hanger_09">
+<bone name="L_hanger_10">
+<bone name="L_hanger_11">
+<bone name="L_hanger_12">
+<bone name="L_hanger_13">
+<bone name="L_hanger_14">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_arm_01">
+<bone name="L_arm_02">
+<bone name="L_arm_03">
+<bone name="L_arm_04">
+<bone name="L_arm_05">
+<bone name="L_arm_06">
+<bone name="L_claw">
+<bone name="L_pincer_01">
+<bone name="L_pincer_02">
+</bone>
+</bone>
+<bone name="L_pincer_03">
+<bone name="L_pincer_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ant_01">
+<bone name="ant_02">
+<bone name="ant_03">
+<bone name="ant_04">
+<bone name="ant_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="eye_02">
+<bone name="eye_02_point">
+</bone>
+</bone>
+<bone name="eye_03">
+<bone name="eye_03_point">
+</bone>
+</bone>
+<bone name="eye_04">
+<bone name="eye_04_point">
+</bone>
+</bone>
+<bone name="eye_05">
+<bone name="eye_05_point">
+</bone>
+</bone>
+<bone name="eye_06">
+<bone name="eye_06_point">
+</bone>
+</bone>
+<bone name="eye_07">
+<bone name="eye_07_point">
+</bone>
+</bone>
+<bone name="R_arm_01">
+<bone name="R_arm_02">
+<bone name="R_arm_03">
+<bone name="R_arm_04">
+<bone name="R_arm_05">
+<bone name="R_arm_06">
+<bone name="R_claw">
+<bone name="R_pincer_01">
+<bone name="R_pincer_02">
+</bone>
+</bone>
+<bone name="R_pincer_03">
+<bone name="R_pincer_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hanger_08">
+<bone name="R_hanger_09">
+<bone name="R_hanger_10">
+<bone name="R_hanger_11">
+<bone name="R_hanger_12">
+<bone name="R_hanger_13">
+<bone name="R_hanger_14">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_02">
+<bone name="R_leg_03">
+<bone name="R_leg_04">
+<bone name="R_leg_05">
+<bone name="R_leg_06">
+<bone name="R_leg_07">
+<bone name="R_leg_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hanger_01">
+<bone name="R_hanger_02">
+<bone name="R_hanger_03">
+<bone name="R_hanger_04">
+<bone name="R_hanger_05">
+<bone name="R_hanger_06">
+<bone name="R_hanger_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_09">
+<bone name="R_leg_10">
+<bone name="R_leg_11">
+<bone name="R_leg_12">
+<bone name="R_leg_13">
+<bone name="R_leg_14">
+<bone name="R_leg_15">
+<bone name="R_leg_16">
+<bone name="R_leg_17">
+<bone name="R_leg_18">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_19">
+<bone name="R_leg_20">
+<bone name="R_leg_21">
+<bone name="R_leg_22">
+<bone name="R_leg_23">
+<bone name="R_leg_24">
+<bone name="R_leg_25">
+<bone name="R_leg_26">
+<bone name="R_leg_27">
+<bone name="R_leg_28">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ant_01">
+<bone name="R_ant_02">
+<bone name="R_ant_03">
+<bone name="R_ant_04">
+<bone name="R_ant_05">
+<bone name="R_ant_06">
+<bone name="R_ant_07">
+<bone name="R_ant_08">
+<bone name="R_ant_09">
+<bone name="R_ant_10">
+<bone name="R_ant_11">
+<bone name="R_ant_12">
+<bone name="R_ant_13">
+<bone name="R_ant_14">
+<bone name="R_ant_15">
+<bone name="R_ant_16">
+<bone name="R_ant_17">
+<bone name="R_ant_18">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ant_06">
+<bone name="ant_07">
+<bone name="ant_08">
+<bone name="ant_09">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ant_10">
+<bone name="ant_11">
+<bone name="ant_12">
+<bone name="ant_13">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="sulkiem_skel" title="sulkiem_skel">
+<identifier><root>sulk_iemanis_base</root></identifier>
+<bone name="sulk_iemanis_base"><target>sulk_iemanis_base</target>
+<bone name="L_leg_02"><target>L_leg_02</target>
+<bone name="L_leg_03"><target>L_leg_03</target>
+<bone name="L_leg_04"><target>L_leg_04</target>
+<bone name="L_leg_05"><target>L_leg_05</target>
+<bone name="L_leg_06"><target>L_leg_06</target>
+<bone name="L_leg_07"><target>L_leg_07</target>
+<bone name="L_leg_08"><target>L_leg_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_09"><target>L_leg_09</target>
+<bone name="L_leg_10"><target>L_leg_10</target>
+<bone name="L_leg_11"><target>L_leg_11</target>
+<bone name="L_leg_12"><target>L_leg_12</target>
+<bone name="L_leg_13"><target>L_leg_13</target>
+<bone name="L_leg_14"><target>L_leg_14</target>
+<bone name="L_leg_15"><target>L_leg_15</target>
+<bone name="L_leg_16"><target>L_leg_16</target>
+<bone name="L_leg_17"><target>L_leg_17</target>
+<bone name="L_leg_18"><target>L_leg_18</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_leg_19"><target>L_leg_19</target>
+<bone name="L_leg_20"><target>L_leg_20</target>
+<bone name="L_leg_21"><target>L_leg_21</target>
+<bone name="L_leg_22"><target>L_leg_22</target>
+<bone name="L_leg_23"><target>L_leg_23</target>
+<bone name="L_leg_24"><target>L_leg_24</target>
+<bone name="L_leg_25"><target>L_leg_25</target>
+<bone name="L_leg_26"><target>L_leg_26</target>
+<bone name="L_leg_27"><target>L_leg_27</target>
+<bone name="L_leg_28"><target>L_leg_28</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_ant_01"><target>L_ant_01</target>
+<bone name="L_ant_02"><target>L_ant_02</target>
+<bone name="L_ant_03"><target>L_ant_03</target>
+<bone name="L_ant_04"><target>L_ant_04</target>
+<bone name="L_ant_05"><target>L_ant_05</target>
+<bone name="L_ant_06"><target>L_ant_06</target>
+<bone name="L_ant_07"><target>L_ant_07</target>
+<bone name="L_ant_08"><target>L_ant_08</target>
+<bone name="L_ant_09"><target>L_ant_09</target>
+<bone name="L_ant_10"><target>L_ant_10</target>
+<bone name="L_ant_11"><target>L_ant_11</target>
+<bone name="L_ant_12"><target>L_ant_12</target>
+<bone name="L_ant_13"><target>L_ant_13</target>
+<bone name="L_ant_14"><target>L_ant_14</target>
+<bone name="L_ant_15"><target>L_ant_15</target>
+<bone name="L_ant_16"><target>L_ant_16</target>
+<bone name="L_ant_17"><target>L_ant_17</target>
+<bone name="L_ant_18"><target>L_ant_18</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hanger_01"><target>L_hanger_01</target>
+<bone name="L_hanger_02"><target>L_hanger_02</target>
+<bone name="L_hanger_03"><target>L_hanger_03</target>
+<bone name="L_hanger_04"><target>L_hanger_04</target>
+<bone name="L_hanger_05"><target>L_hanger_05</target>
+<bone name="L_hanger_06"><target>L_hanger_06</target>
+<bone name="L_hanger_07"><target>L_hanger_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hanger_08"><target>L_hanger_08</target>
+<bone name="L_hanger_09"><target>L_hanger_09</target>
+<bone name="L_hanger_10"><target>L_hanger_10</target>
+<bone name="L_hanger_11"><target>L_hanger_11</target>
+<bone name="L_hanger_12"><target>L_hanger_12</target>
+<bone name="L_hanger_13"><target>L_hanger_13</target>
+<bone name="L_hanger_14"><target>L_hanger_14</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_arm_01"><target>L_arm_01</target>
+<bone name="L_arm_02"><target>L_arm_02</target>
+<bone name="L_arm_03"><target>L_arm_03</target>
+<bone name="L_arm_04"><target>L_arm_04</target>
+<bone name="L_arm_05"><target>L_arm_05</target>
+<bone name="L_arm_06"><target>L_arm_06</target>
+<bone name="L_claw"><target>L_claw</target>
+<bone name="L_pincer_01"><target>L_pincer_01</target>
+<bone name="L_pincer_02"><target>L_pincer_02</target>
+</bone>
+</bone>
+<bone name="L_pincer_03"><target>L_pincer_03</target>
+<bone name="L_pincer_04"><target>L_pincer_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ant_01"><target>ant_01</target>
+<bone name="ant_02"><target>ant_02</target>
+<bone name="ant_03"><target>ant_03</target>
+<bone name="ant_04"><target>ant_04</target>
+<bone name="ant_05"><target>ant_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="eye_02"><target>eye_02</target>
+<bone name="eye_02_point"><target>eye_02_point</target>
+</bone>
+</bone>
+<bone name="eye_03"><target>eye_03</target>
+<bone name="eye_03_point"><target>eye_03_point</target>
+</bone>
+</bone>
+<bone name="eye_04"><target>eye_04</target>
+<bone name="eye_04_point"><target>eye_04_point</target>
+</bone>
+</bone>
+<bone name="eye_05"><target>eye_05</target>
+<bone name="eye_05_point"><target>eye_05_point</target>
+</bone>
+</bone>
+<bone name="eye_06"><target>eye_06</target>
+<bone name="eye_06_point"><target>eye_06_point</target>
+</bone>
+</bone>
+<bone name="eye_07"><target>eye_07</target>
+<bone name="eye_07_point"><target>eye_07_point</target>
+</bone>
+</bone>
+<bone name="R_arm_01"><target>R_arm_01</target>
+<bone name="R_arm_02"><target>R_arm_02</target>
+<bone name="R_arm_03"><target>R_arm_03</target>
+<bone name="R_arm_04"><target>R_arm_04</target>
+<bone name="R_arm_05"><target>R_arm_05</target>
+<bone name="R_arm_06"><target>R_arm_06</target>
+<bone name="R_claw"><target>R_claw</target>
+<bone name="R_pincer_01"><target>R_pincer_01</target>
+<bone name="R_pincer_02"><target>R_pincer_02</target>
+</bone>
+</bone>
+<bone name="R_pincer_03"><target>R_pincer_03</target>
+<bone name="R_pincer_04"><target>R_pincer_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hanger_08"><target>R_hanger_08</target>
+<bone name="R_hanger_09"><target>R_hanger_09</target>
+<bone name="R_hanger_10"><target>R_hanger_10</target>
+<bone name="R_hanger_11"><target>R_hanger_11</target>
+<bone name="R_hanger_12"><target>R_hanger_12</target>
+<bone name="R_hanger_13"><target>R_hanger_13</target>
+<bone name="R_hanger_14"><target>R_hanger_14</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_02"><target>R_leg_02</target>
+<bone name="R_leg_03"><target>R_leg_03</target>
+<bone name="R_leg_04"><target>R_leg_04</target>
+<bone name="R_leg_05"><target>R_leg_05</target>
+<bone name="R_leg_06"><target>R_leg_06</target>
+<bone name="R_leg_07"><target>R_leg_07</target>
+<bone name="R_leg_08"><target>R_leg_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hanger_01"><target>R_hanger_01</target>
+<bone name="R_hanger_02"><target>R_hanger_02</target>
+<bone name="R_hanger_03"><target>R_hanger_03</target>
+<bone name="R_hanger_04"><target>R_hanger_04</target>
+<bone name="R_hanger_05"><target>R_hanger_05</target>
+<bone name="R_hanger_06"><target>R_hanger_06</target>
+<bone name="R_hanger_07"><target>R_hanger_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_09"><target>R_leg_09</target>
+<bone name="R_leg_10"><target>R_leg_10</target>
+<bone name="R_leg_11"><target>R_leg_11</target>
+<bone name="R_leg_12"><target>R_leg_12</target>
+<bone name="R_leg_13"><target>R_leg_13</target>
+<bone name="R_leg_14"><target>R_leg_14</target>
+<bone name="R_leg_15"><target>R_leg_15</target>
+<bone name="R_leg_16"><target>R_leg_16</target>
+<bone name="R_leg_17"><target>R_leg_17</target>
+<bone name="R_leg_18"><target>R_leg_18</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_leg_19"><target>R_leg_19</target>
+<bone name="R_leg_20"><target>R_leg_20</target>
+<bone name="R_leg_21"><target>R_leg_21</target>
+<bone name="R_leg_22"><target>R_leg_22</target>
+<bone name="R_leg_23"><target>R_leg_23</target>
+<bone name="R_leg_24"><target>R_leg_24</target>
+<bone name="R_leg_25"><target>R_leg_25</target>
+<bone name="R_leg_26"><target>R_leg_26</target>
+<bone name="R_leg_27"><target>R_leg_27</target>
+<bone name="R_leg_28"><target>R_leg_28</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ant_01"><target>R_ant_01</target>
+<bone name="R_ant_02"><target>R_ant_02</target>
+<bone name="R_ant_03"><target>R_ant_03</target>
+<bone name="R_ant_04"><target>R_ant_04</target>
+<bone name="R_ant_05"><target>R_ant_05</target>
+<bone name="R_ant_06"><target>R_ant_06</target>
+<bone name="R_ant_07"><target>R_ant_07</target>
+<bone name="R_ant_08"><target>R_ant_08</target>
+<bone name="R_ant_09"><target>R_ant_09</target>
+<bone name="R_ant_10"><target>R_ant_10</target>
+<bone name="R_ant_11"><target>R_ant_11</target>
+<bone name="R_ant_12"><target>R_ant_12</target>
+<bone name="R_ant_13"><target>R_ant_13</target>
+<bone name="R_ant_14"><target>R_ant_14</target>
+<bone name="R_ant_15"><target>R_ant_15</target>
+<bone name="R_ant_16"><target>R_ant_16</target>
+<bone name="R_ant_17"><target>R_ant_17</target>
+<bone name="R_ant_18"><target>R_ant_18</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ant_06"><target>ant_06</target>
+<bone name="ant_07"><target>ant_07</target>
+<bone name="ant_08"><target>ant_08</target>
+<bone name="ant_09"><target>ant_09</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ant_10"><target>ant_10</target>
+<bone name="ant_11"><target>ant_11</target>
+<bone name="ant_12"><target>ant_12</target>
+<bone name="ant_13"><target>ant_13</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

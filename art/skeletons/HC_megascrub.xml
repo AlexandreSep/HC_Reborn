@@ -1,0 +1,199 @@
+<skeletons>
+<standard_skeleton id="Megascrub Skeleton" title="Megascrub Skeleton">
+<bone name="megascrub_baseA">
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="belly">
+<bone name="abs">
+<bone name="torso">
+<bone name="L_clavical">
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_forearm">
+<bone name="L_hand">
+<bone name="L_weapon">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical">
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_forearm">
+<bone name="R_hand">
+<bone name="R_weapon">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neck">
+<bone name="head">
+<bone name="projectile">
+<bone name="mouth_top">
+</bone>
+<bone name="mouth_bot">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+<bone name="mouth_R_side">
+</bone>
+<bone name="mouth_L_side">
+</bone>
+<bone name="mouth_corner_01">
+</bone>
+<bone name="mouth_corner_02">
+</bone>
+<bone name="mouth_corner_03">
+</bone>
+<bone name="mouth_corner_04">
+</bone>
+</bone>
+<bone name="headspout_01">
+<bone name="headspout_02">
+<bone name="headspout_03">
+<bone name="headspout_04">
+<bone name="headspout_05">
+<bone name="headspout_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="headspout_07">
+<bone name="headspout_08">
+<bone name="headspout_09">
+<bone name="headspout_10">
+<bone name="headspout_11">
+<bone name="headspout_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Megascrub Skeleton" title="Megascrub Skeleton">
+<identifier><root>megascrub_baseA</root></identifier>
+<bone name="megascrub_baseA"><target>megascrub_baseA</target>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="belly"><target>belly</target>
+<bone name="abs"><target>abs</target>
+<bone name="torso"><target>torso</target>
+<bone name="L_clavical"><target>L_clavical</target>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_forearm"><target>L_forearm</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_weapon"><target>L_weapon</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical"><target>R_clavical</target>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_forearm"><target>R_forearm</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_weapon"><target>R_weapon</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="projectile"><target>projectile</target>
+<bone name="mouth_top"><target>mouth_top</target>
+</bone>
+<bone name="mouth_bot"><target>mouth_bot</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+<bone name="mouth_R_side"><target>mouth_R_side</target>
+</bone>
+<bone name="mouth_L_side"><target>mouth_L_side</target>
+</bone>
+<bone name="mouth_corner_01"><target>mouth_corner_01</target>
+</bone>
+<bone name="mouth_corner_02"><target>mouth_corner_02</target>
+</bone>
+<bone name="mouth_corner_03"><target>mouth_corner_03</target>
+</bone>
+<bone name="mouth_corner_04"><target>mouth_corner_04</target>
+</bone>
+</bone>
+<bone name="headspout_01"><target>headspout_01</target>
+<bone name="headspout_02"><target>headspout_02</target>
+<bone name="headspout_03"><target>headspout_03</target>
+<bone name="headspout_04"><target>headspout_04</target>
+<bone name="headspout_05"><target>headspout_05</target>
+<bone name="headspout_06"><target>headspout_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="headspout_07"><target>headspout_07</target>
+<bone name="headspout_08"><target>headspout_08</target>
+<bone name="headspout_09"><target>headspout_09</target>
+<bone name="headspout_10"><target>headspout_10</target>
+<bone name="headspout_11"><target>headspout_11</target>
+<bone name="headspout_12"><target>headspout_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

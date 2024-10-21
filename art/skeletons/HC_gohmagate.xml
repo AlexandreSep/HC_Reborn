@@ -1,0 +1,83 @@
+<skeletons>
+<standard_skeleton id="gohmagate_skeleton" title="gohmagate_skeleton">
+<bone name="gohmagate_base">
+<bone name="door_01">
+<bone name="door_02">
+<bone name="door_03">
+<bone name="door_04">
+<bone name="door_05">
+<bone name="door_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_01">
+<bone name="claw_02">
+<bone name="claw_03">
+<bone name="claw_04">
+<bone name="claw_05">
+<bone name="claw_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_07">
+<bone name="claw_08">
+<bone name="claw_09">
+<bone name="claw_10">
+<bone name="claw_11">
+<bone name="claw_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="gohmagate_skeleton" title="gohmagate_skeleton">
+<identifier><root>gohmagate_base</root></identifier>
+<bone name="gohmagate_base"><target>gohmagate_base</target>
+<bone name="door_01"><target>door_01</target>
+<bone name="door_02"><target>door_02</target>
+<bone name="door_03"><target>door_03</target>
+<bone name="door_04"><target>door_04</target>
+<bone name="door_05"><target>door_05</target>
+<bone name="door_06"><target>door_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_01"><target>claw_01</target>
+<bone name="claw_02"><target>claw_02</target>
+<bone name="claw_03"><target>claw_03</target>
+<bone name="claw_04"><target>claw_04</target>
+<bone name="claw_05"><target>claw_05</target>
+<bone name="claw_06"><target>claw_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_07"><target>claw_07</target>
+<bone name="claw_08"><target>claw_08</target>
+<bone name="claw_09"><target>claw_09</target>
+<bone name="claw_10"><target>claw_10</target>
+<bone name="claw_11"><target>claw_11</target>
+<bone name="claw_12"><target>claw_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

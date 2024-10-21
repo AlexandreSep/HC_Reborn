@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Vineyard">
+      <mesh>structural/darknut/dar_vineyardA.dae</mesh>
+      <props>
+		<prop actor="props/structures/darknut/darknut_vineyard_plants.xml" attachpoint="root"/>
+		<prop actor="props/structures/darknut/darknut_vineyard_ground.xml" attachpoint="root"/>
+		<prop actor="props/structures/darknut/darknut_vineyard_water.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/darknut/darknut_baseA.dds" name="baseTex"/>
+		<texture file="structural/darknut/darknut_baseA_normal.dds" name="normTex"/>
+		<texture file="structural/darknut/dar_vineyard_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

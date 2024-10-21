@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_kyameron/base_HC_kyameron.xml">
+      <mesh>units/zora/zor_kyameronA.dae</mesh>
+      <textures><texture file="skeletal/zora/zor_morpha1.dds" name="baseTex"/></textures>
+	<props>
+		<prop actor="particle/water_splash.xml" attachpoint="projectile"/>
+		<prop actor="particle/zora_kyawaterA.xml" attachpoint="root"/>
+	</props>	  
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Attack_Melee">
+      <props>
+		<prop actor="particle/zora_morphwaterB.xml" attachpoint="root"/>
+      </props>
+    </variant>	
+    <variant file="HC_kyameron/base_HC_kyameron_death.xml"/>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

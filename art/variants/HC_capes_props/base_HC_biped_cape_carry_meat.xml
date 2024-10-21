@@ -1,0 +1,5 @@
+<variant name="carry_meat">
+  <animations>
+	<animation file="HC_capes/biped_hum_cape_carry.dae" name="carry_meat" speed="20"/>
+  </animations>
+</variant>

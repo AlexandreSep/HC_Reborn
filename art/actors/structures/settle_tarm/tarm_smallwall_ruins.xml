@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Tarm Wall A">
+      <mesh>structural/settle_tarm/tarm_smallwall_ruinA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="Tarm Wall B">
+      <mesh>structural/settle_tarm/tarm_smallwall_ruinB.dae</mesh>
+    </variant>
+  </group>
+  
+  <group>
+    <variant frequency="1" name="Tarm Ruinswall Tex">
+      <textures>
+	    <texture file="structural/settle_tarm/tarm_ruinsA.dds" name="baseTex"/>
+	    <texture file="structural/settle_tarm/tarm_ruinsA_normal.dds" name="normTex"/>
+		<texture file="structural/settle_tarm/tarm_ruinpartsD_ao.dds" name="aoTex"/>	
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

@@ -1,0 +1,147 @@
+<skeletons>
+<standard_skeleton id="extractor_skeleton" title="extractor_skeleton">
+<bone name="exctractor_base">
+<bone name="core_01">
+<bone name="extr_01">
+<bone name="extr_02">
+<bone name="extr_03">
+<bone name="extr_04">
+<bone name="extr_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="extr_06">
+<bone name="extr_07">
+<bone name="extr_08">
+<bone name="extr_09">
+<bone name="extr_10">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="extr_11">
+<bone name="extr_12">
+<bone name="extr_13">
+<bone name="extr_14">
+<bone name="extr_15">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="extr_16">
+<bone name="extr_17">
+<bone name="extr_18">
+<bone name="extr_19">
+<bone name="extr_20">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_01">
+<bone name="claw_02">
+<bone name="claw_03">
+<bone name="claw_04">
+<bone name="claw_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="spire_01">
+<bone name="spire_02">
+<bone name="spire_03">
+<bone name="spire_04">
+<bone name="spire_05">
+<bone name="spire_06">
+<bone name="spire_07">
+<bone name="spire_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="extractor_skeleton" title="extractor_skeleton">
+<identifier><root>exctractor_base</root></identifier>
+<bone name="exctractor_base"><target>exctractor_base</target>
+<bone name="core_01"><target>core_01</target>
+<bone name="extr_01"><target>extr_01</target>
+<bone name="extr_02"><target>extr_02</target>
+<bone name="extr_03"><target>extr_03</target>
+<bone name="extr_04"><target>extr_04</target>
+<bone name="extr_05"><target>extr_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="extr_06"><target>extr_06</target>
+<bone name="extr_07"><target>extr_07</target>
+<bone name="extr_08"><target>extr_08</target>
+<bone name="extr_09"><target>extr_09</target>
+<bone name="extr_10"><target>extr_10</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="extr_11"><target>extr_11</target>
+<bone name="extr_12"><target>extr_12</target>
+<bone name="extr_13"><target>extr_13</target>
+<bone name="extr_14"><target>extr_14</target>
+<bone name="extr_15"><target>extr_15</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="extr_16"><target>extr_16</target>
+<bone name="extr_17"><target>extr_17</target>
+<bone name="extr_18"><target>extr_18</target>
+<bone name="extr_19"><target>extr_19</target>
+<bone name="extr_20"><target>extr_20</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_01"><target>claw_01</target>
+<bone name="claw_02"><target>claw_02</target>
+<bone name="claw_03"><target>claw_03</target>
+<bone name="claw_04"><target>claw_04</target>
+<bone name="claw_05"><target>claw_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="spire_01"><target>spire_01</target>
+<bone name="spire_02"><target>spire_02</target>
+<bone name="spire_03"><target>spire_03</target>
+<bone name="spire_04"><target>spire_04</target>
+<bone name="spire_05"><target>spire_05</target>
+<bone name="spire_06"><target>spire_06</target>
+<bone name="spire_07"><target>spire_07</target>
+<bone name="spire_08"><target>spire_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

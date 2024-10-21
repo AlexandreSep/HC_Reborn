@@ -1,0 +1,10 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_goh_matriarch/goh_matriarch_idle.dae" name="Idle" id="idle1" speed="50"/>
+    <animation event="0.01" file="HC_goh_matriarch/goh_matriarch_walk.dae" name="Walk" id="walk1" speed="10"/>
+    <animation event="0.01" file="HC_goh_matriarch/goh_matriarch_walk.dae" name="Run" id="run1" speed="8"/>
+    <animation event="0.5" file="HC_goh_matriarch/goh_matriarch_attack.dae" name="Attack_melee" id="attack1" speed="200"/>
+    <animation file="HC_goh_matriarch/goh_matriarch_idle.dae" name="Heal" id="heal1" speed="100"/>
+	<animation file="HC_goh_matriarch/goh_matriarch_idle.dae" name="promotion" speed="80"/>
+  </animations>
+</variant>

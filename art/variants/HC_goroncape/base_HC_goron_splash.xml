@@ -1,0 +1,7 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.5" file="HC_goroncape/goroncape_attackA.dae" name="Attack_ranged" id="attack1" speed="107"/>
+    <animation event="0.5" file="HC_goroncape/goroncape_attackB.dae" name="Attack_ranged" id="attack2" speed="107"/>
+	<animation event="0.5" file="HC_goroncape/goroncape_attackC.dae" name="Attack_ranged" id="attack3" speed="107"/>
+  </animations>
+</variant>

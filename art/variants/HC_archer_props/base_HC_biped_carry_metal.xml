@@ -1,0 +1,5 @@
+<variant name="carry_metal">
+  <animations>
+	<animation file="HC_archer/biped_hum_arch_carry.dae" name="carry_metal" speed="20"/>
+  </animations>
+</variant>

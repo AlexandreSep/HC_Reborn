@@ -1,0 +1,135 @@
+<skeletons>
+<standard_skeleton id="goh_larvagiant_skeleton" title="goh_larvagiant_skeleton">
+<bone name="goh_larvagiant_base">
+<bone name="abd_01">
+<bone name="abd_02">
+<bone name="abd_03">
+</bone>
+</bone>
+</bone>
+<bone name="L_Bthigh">
+<bone name="L_Bleg_01">
+<bone name="L_Dleg_02">
+<bone name="L_Bknee_01">
+<bone name="L_Bknee_02">
+<bone name="L_Bfoot_01">
+<bone name="L_Bfoot_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fthigh">
+<bone name="L_Fleg_01">
+<bone name="L_Fleg_02">
+<bone name="L_Fknee_01">
+<bone name="L_Fknee_02">
+<bone name="L_Ffoot_01">
+<bone name="L_Ffoot_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh">
+<bone name="R_Fleg_01">
+<bone name="R_Fleg_02">
+<bone name="R_Fknee_01">
+<bone name="R_Fknee_02">
+<bone name="R_Ffoot_01">
+<bone name="R_Ffoot_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh">
+<bone name="R_Bleg_01">
+<bone name="R_Dleg_02">
+<bone name="R_Bknee_01">
+<bone name="R_Bknee_02">
+<bone name="R_Bfoot_01">
+<bone name="R_Bfoot_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="goh_larvagiant_skeleton" title="goh_larvagiant_skeleton">
+<identifier><root>goh_larvagiant_base</root></identifier>
+<bone name="goh_larvagiant_base"><target>goh_larvagiant_base</target>
+<bone name="abd_01"><target>abd_01</target>
+<bone name="abd_02"><target>abd_02</target>
+<bone name="abd_03"><target>abd_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bthigh"><target>L_Bthigh</target>
+<bone name="L_Bleg_01"><target>L_Bleg_01</target>
+<bone name="L_Dleg_02"><target>L_Dleg_02</target>
+<bone name="L_Bknee_01"><target>L_Bknee_01</target>
+<bone name="L_Bknee_02"><target>L_Bknee_02</target>
+<bone name="L_Bfoot_01"><target>L_Bfoot_01</target>
+<bone name="L_Bfoot_02"><target>L_Bfoot_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fthigh"><target>L_Fthigh</target>
+<bone name="L_Fleg_01"><target>L_Fleg_01</target>
+<bone name="L_Fleg_02"><target>L_Fleg_02</target>
+<bone name="L_Fknee_01"><target>L_Fknee_01</target>
+<bone name="L_Fknee_02"><target>L_Fknee_02</target>
+<bone name="L_Ffoot_01"><target>L_Ffoot_01</target>
+<bone name="L_Ffoot_02"><target>L_Ffoot_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh"><target>R_Fthigh</target>
+<bone name="R_Fleg_01"><target>R_Fleg_01</target>
+<bone name="R_Fleg_02"><target>R_Fleg_02</target>
+<bone name="R_Fknee_01"><target>R_Fknee_01</target>
+<bone name="R_Fknee_02"><target>R_Fknee_02</target>
+<bone name="R_Ffoot_01"><target>R_Ffoot_01</target>
+<bone name="R_Ffoot_02"><target>R_Ffoot_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh"><target>R_Bthigh</target>
+<bone name="R_Bleg_01"><target>R_Bleg_01</target>
+<bone name="R_Dleg_02"><target>R_Dleg_02</target>
+<bone name="R_Bknee_01"><target>R_Bknee_01</target>
+<bone name="R_Bknee_02"><target>R_Bknee_02</target>
+<bone name="R_Bfoot_01"><target>R_Bfoot_01</target>
+<bone name="R_Bfoot_02"><target>R_Bfoot_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

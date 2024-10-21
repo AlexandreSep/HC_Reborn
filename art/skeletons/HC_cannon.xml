@@ -1,0 +1,47 @@
+<skeletons>
+<standard_skeleton id="Cannon Skeleton" title="Cannon Skeleton">
+<bone name="cannon_base">
+<bone name="frame">
+<bone name="weight">
+</bone>
+<bone name="L_wheel">
+</bone>
+<bone name="R_wheel">
+</bone>
+<bone name="cannon">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+<bone name="crew_02">
+</bone>
+<bone name="crew_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Cannon Skeleton" title="Cannon Skeleton">
+<identifier><root>cannon_base</root></identifier>
+<bone name="cannon_base"><target>cannon_base</target>
+<bone name="frame"><target>frame</target>
+<bone name="weight"><target>weight</target>
+</bone>
+<bone name="L_wheel"><target>L_wheel</target>
+</bone>
+<bone name="R_wheel"><target>R_wheel</target>
+</bone>
+<bone name="cannon"><target>cannon</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+<bone name="crew_02"><target>crew_02</target>
+</bone>
+<bone name="crew_01"><target>crew_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

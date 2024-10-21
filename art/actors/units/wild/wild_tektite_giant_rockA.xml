@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Main">
+      <animations>
+        <animation file="HC_tektite_large/tektite_large_idle.dae" name="Idle" speed="70"/>
+        <animation file="HC_tektite_large/tektite_large_idle.dae" name="Idle" speed="90"/>
+		<animation event="0.5" file="HC_tektite_large/tektite_large_hop.dae" name="attack_melee" speed="120"/>
+        <animation event="0.1" file="HC_tektite_large/tektite_large_hop.dae" name="Walk" speed="15"/>
+        <animation event="0.1" file="HC_tektite_large/tektite_large_hop.dae" name="Run" speed="20"/>
+        <animation file="HC_tektite_large/tektite_large_death.dae" name="Death" speed="90"/>
+      </animations>
+      <mesh>units/wild/wild_tektite_giantA.dae</mesh>
+      <textures>
+        <texture file="skeletal/wild/wild_tektitesB.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_green_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

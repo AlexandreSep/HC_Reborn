@@ -1,0 +1,8 @@
+<variant name="gather_meat">
+  <animations>
+    <animation file="HC_dekuscrubB/dekuscrubB_harvestA.dae" name="gather_meat" speed="100"/>
+  </animations>
+  <props>
+	<prop attachpoint="L_wrist"/>
+  </props>
+</variant>

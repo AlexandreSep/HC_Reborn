@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Monstermound Cave">
+      <mesh>structural/lizalfos/liz_monstermound_caveA.dae</mesh>
+      <textures>
+	    <texture file="structural/lizalfos/lizalfos_caveA_F.dds" name="baseTex"/>
+	    <texture file="structural/lizalfos/lizalfos_caveA_normal.dds" name="normTex"/>
+		<texture file="structural/lizalfos/lizalfos_monstermound_cave_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

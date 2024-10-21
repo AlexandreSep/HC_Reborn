@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/hylian/hyl_tot_glassA.dae</mesh>
+      <textures>
+	    <texture file="structural/hylian/hylian_glassB.dds" name="baseTex"/>
+		<texture file="structural/hylian/hylian_glassB_normal.dds" name="normTex"/>
+		<texture file="structural/hylian/hylian_glassB_spec.dds" name="specTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_glow_nu.xml</material>
+</actor>

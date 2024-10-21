@@ -1,0 +1,19 @@
+<skeletons>
+<standard_skeleton id="Windmill_ger" title="Windmill_ger">
+<bone name="ger_windmill_base">
+<bone name="windrot_01">
+<bone name="windend_01">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Windmill_ger" title="Windmill_ger">
+<identifier><root>ger_windmill_base</root></identifier>
+<bone name="ger_windmill_base"><target>ger_windmill_base</target>
+<bone name="windrot_01"><target>windrot_01</target>
+<bone name="windend_01"><target>windend_01</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

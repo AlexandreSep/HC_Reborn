@@ -1,0 +1,16 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_helmasaurking/helmasaurking_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_helmasaurking/helmasaurking_idle.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_helmasaurking/helmasaurking_idleA.dae" name="Idle" id="idle5" speed="121"/>
+    <animation file="HC_helmasaurking/helmasaurking_idleB.dae" name="Idle" id="idle6" speed="121"/>
+    <animation file="HC_helmasaurking/helmasaurking_idleC.dae" name="Idle" id="idle7" speed="121"/>
+    <animation file="HC_helmasaurking/helmasaurking_walk.dae" name="Walk" id="walk1" speed="10"/>
+    <animation file="HC_helmasaurking/helmasaurking_walk.dae" name="Run" id="run1" speed="10"/>
+	<animation file="HC_helmasaurking/helmasaurking_attackA.dae" name="Attack_melee" id="attack1" speed="100"/>
+    <animation file="HC_helmasaurking/helmasaurking_attackB.dae" name="Attack_melee" id="attack2" speed="100"/>
+	<animation file="HC_helmasaurking/helmasaurking_attackC.dae" name="Attack_melee" id="attack3" speed="100"/>
+    <animation file="HC_helmasaurking/helmasaurking_attackA.dae" name="Attack_slaughter" id="attack5" speed="100"/>
+	<animation file="HC_helmasaurking/helmasaurking_deathA.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

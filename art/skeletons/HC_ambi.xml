@@ -1,0 +1,195 @@
+<skeletons>
+<standard_skeleton id="Ambi Skeleton" title="Ambi Skeleton">
+<bone name="base_ambiA">
+<bone name="waist">
+<bone name="chest">
+<bone name="neck">
+<bone name="head">
+<bone name="tassle_01">
+<bone name="tassle_02">
+<bone name="tassle_03">
+<bone name="tassle_04">
+<bone name="tassle_05">
+<bone name="tassle_06">
+<bone name="tassle_07">
+<bone name="tassle_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_hand">
+<bone name="L_weapon">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="L_drape_01">
+<bone name="L_drape_02">
+<bone name="L_drape_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_hand">
+<bone name="R_weapon">
+</bone>
+<bone name="R_drape_01">
+<bone name="R_drape_02">
+<bone name="R_drape_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_ankle">
+<bone name="L_foot">
+<bone name="L_toes">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_dress_01">
+<bone name="L_dress_02">
+<bone name="L_dress_03">
+<bone name="L_dress_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_ankle">
+<bone name="R_foot">
+<bone name="R_toes">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_dress_01">
+<bone name="R_dress_02">
+<bone name="R_dress_03">
+<bone name="R_dress_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Ambi Skeleton" title="Ambi Skeleton">
+<identifier><root>base_ambiA</root></identifier>
+<bone name="base_ambiA"><target>base_ambiA</target>
+<bone name="waist"><target>waist</target>
+<bone name="chest"><target>chest</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="tassle_01"><target>tassle_01</target>
+<bone name="tassle_02"><target>tassle_02</target>
+<bone name="tassle_03"><target>tassle_03</target>
+<bone name="tassle_04"><target>tassle_04</target>
+<bone name="tassle_05"><target>tassle_05</target>
+<bone name="tassle_06"><target>tassle_06</target>
+<bone name="tassle_07"><target>tassle_07</target>
+<bone name="tassle_08"><target>tassle_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_weapon"><target>L_weapon</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="L_drape_01"><target>L_drape_01</target>
+<bone name="L_drape_02"><target>L_drape_02</target>
+<bone name="L_drape_03"><target>L_drape_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_weapon"><target>R_weapon</target>
+</bone>
+<bone name="R_drape_01"><target>R_drape_01</target>
+<bone name="R_drape_02"><target>R_drape_02</target>
+<bone name="R_drape_03"><target>R_drape_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_ankle"><target>L_ankle</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toes"><target>L_toes</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_dress_01"><target>L_dress_01</target>
+<bone name="L_dress_02"><target>L_dress_02</target>
+<bone name="L_dress_03"><target>L_dress_03</target>
+<bone name="L_dress_04"><target>L_dress_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_ankle"><target>R_ankle</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toes"><target>R_toes</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_dress_01"><target>R_dress_01</target>
+<bone name="R_dress_02"><target>R_dress_02</target>
+<bone name="R_dress_03"><target>R_dress_03</target>
+<bone name="R_dress_04"><target>R_dress_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

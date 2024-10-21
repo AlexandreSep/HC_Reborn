@@ -1,0 +1,21 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_feystrider/feystrider_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_feystrider/feystrider_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_feystrider/feystrider_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_feystrider/feystrider_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation event="0.1" file="HC_feystrider/feystrider_walk.dae" name="Walk" id="walk1" speed="15"/>
+    <animation event="0.1" file="HC_feystrider/feystrider_walk.dae" name="Walk" id="walk2" speed="17"/>
+    <animation event="0.1" file="HC_feystrider/feystrider_walk.dae" name="Run" id="run1" speed="21"/>
+    <animation event="0.1" file="HC_feystrider/feystrider_walk.dae" name="Run" id="run2" speed="22"/>
+    <animation event="0.1" file="HC_feystrider/feystrider_walk.dae" name="Run" id="run3" speed="23"/>
+    <animation file="HC_feystrider/feystrider_promotion.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_feystrider/feystrider_promotion.dae" name="Heal" id="heal2" speed="90"/>
+	<animation event="0.3" file="HC_feystrider/feystrider_attackA.dae" name="Attack_melee" id="attack1" speed="100"/>
+    <animation event="0.3" file="HC_feystrider/feystrider_attackB.dae" name="Attack_melee" id="attack2" speed="100"/>
+	<animation event="0.3" file="HC_feystrider/feystrider_attackC.dae" name="Attack_melee" id="attack3" speed="100"/>
+	<animation file="HC_feystrider/feystrider_promotion.dae" name="promotion" speed="80"/>
+	<animation file="HC_feystrider/feystrider_flail.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_feystrider/feystrider_recover.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

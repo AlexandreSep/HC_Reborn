@@ -1,0 +1,63 @@
+<skeletons>
+<standard_skeleton id="Fokkalista Skeleton" title="Fokkalista Skeleton">
+<bone name="fokkalista_base">
+<bone name="puller_01">
+</bone>
+<bone name="puller_02">
+</bone>
+<bone name="pusher_01">
+</bone>
+<bone name="pusher_02">
+</bone>
+<bone name="frame">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+<bone name="axel_01">
+</bone>
+<bone name="axel_02">
+</bone>
+<bone name="R_roller_01">
+<bone name="R_roller_02">
+</bone>
+</bone>
+<bone name="L_roller_01">
+<bone name="L_roller_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Fokkalista Skeleton" title="Fokkalista Skeleton">
+<identifier><root>fokkalista_base</root></identifier>
+<bone name="fokkalista_base"><target>fokkalista_base</target>
+<bone name="puller_01"><target>puller_01</target>
+</bone>
+<bone name="puller_02"><target>puller_02</target>
+</bone>
+<bone name="pusher_01"><target>pusher_01</target>
+</bone>
+<bone name="pusher_02"><target>pusher_02</target>
+</bone>
+<bone name="frame"><target>frame</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+<bone name="axel_01"><target>axel_01</target>
+</bone>
+<bone name="axel_02"><target>axel_02</target>
+</bone>
+<bone name="R_roller_01"><target>R_roller_01</target>
+<bone name="R_roller_02"><target>R_roller_02</target>
+</bone>
+</bone>
+<bone name="L_roller_01"><target>L_roller_01</target>
+<bone name="L_roller_02"><target>L_roller_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

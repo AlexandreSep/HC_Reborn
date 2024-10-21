@@ -1,0 +1,9 @@
+<variant name="carry_meat_idle">
+  <animations>
+	<animation file="HC_capes/biped_hum_cape_carry_idle.dae" name="carry_meat_idle" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/shuttle_meat_male_R.xml" attachpoint="bone_Rhand"/>
+	<prop actor="props/units/shuttle_meat_male_L.xml" attachpoint="bone_Lhand"/>
+  </props>
+</variant>

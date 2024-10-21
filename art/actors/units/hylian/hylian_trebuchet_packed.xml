@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant frequency="100" name="hylian_trebuchet_pkd">
+      <animations>
+        <animation file="HC_trebuchet/treb_idle.dae" name="Idle" speed="100"/>
+        <animation event="0.5" file="HC_trebuchet/treb_move.dae" name="Walk" speed="10"/>
+        <animation event="0.5" file="HC_trebuchet/treb_move.dae" name="Run" speed="10"/>
+		<animation file="HC_trebuchet/treb_death.dae" name="death" speed="100"/>
+      </animations>
+      <mesh>units/hylian/hyl_trebuchetA.dae</mesh>
+      <props>
+        <prop actor="units/hylian/hylian_crew_b.xml" attachpoint="L_crew_01"/>
+        <prop actor="units/hylian/hylian_crew_b.xml" attachpoint="R_crew_01"/>
+      </props>
+      <textures><texture file="skeletal/hylian/hyl_siegeA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+</actor>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/labrynna/lab_zoocageB.dae</mesh>
+      <textures>
+	    <texture file="structural/labrynna/labrynna_buildingB.dds" name="baseTex"/>
+		<texture file="structural/labrynna/labrynna_buildingB_normal.dds" name="normTex"/>
+		<texture file="structural/labrynna/labrynna_zoocageB_ao.dds" name="aoTex"/>
+	  </textures>
+	  <props>
+			<prop actor="props/structures/labrynna/labrynna_groundbase_zoocA.xml" attachpoint="root"/>
+			<prop actor="flora/trees/oak.xml" attachpoint="tree_04"/>
+			<prop actor="flora/trees/oak.xml" attachpoint="tree_05"/>
+			<prop actor="flora/trees/oak.xml" attachpoint="tree_06"/>
+	  </props>
+    </variant>
+  </group>
+  <material>player_trans_ao.xml</material>
+</actor>

@@ -1,0 +1,127 @@
+<skeletons>
+<standard_skeleton id="Hive Barrier Small Skel" title="Hive Barrier Small Skel">
+<bone name="hivebarrier_small">
+<bone name="claw_01">
+<bone name="claw_02">
+<bone name="claw_03">
+<bone name="claw_04">
+<bone name="claw_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_06">
+<bone name="claw_07">
+<bone name="claw_08">
+<bone name="claw_09">
+<bone name="claw_10">
+<bone name="claw_11">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_12">
+<bone name="claw_13">
+<bone name="claw_14">
+<bone name="claw_15">
+<bone name="claw_16">
+<bone name="claw_17">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="smallclaw_01">
+<bone name="smallclaw_02">
+<bone name="smallclaw_03">
+<bone name="smallclaw_04">
+<bone name="smallclaw_05">
+<bone name="smallclaw_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="smallclaw_07">
+<bone name="smallclaw_08">
+<bone name="smallclaw_09">
+<bone name="smallclaw_10">
+<bone name="smallclaw_11">
+<bone name="smallclaw_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Hive Barrier Small Skel" title="Hive Barrier Small Skel">
+<identifier><root>hivebarrier_small</root></identifier>
+<bone name="hivebarrier_small"><target>hivebarrier_small</target>
+<bone name="claw_01"><target>claw_01</target>
+<bone name="claw_02"><target>claw_02</target>
+<bone name="claw_03"><target>claw_03</target>
+<bone name="claw_04"><target>claw_04</target>
+<bone name="claw_05"><target>claw_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_06"><target>claw_06</target>
+<bone name="claw_07"><target>claw_07</target>
+<bone name="claw_08"><target>claw_08</target>
+<bone name="claw_09"><target>claw_09</target>
+<bone name="claw_10"><target>claw_10</target>
+<bone name="claw_11"><target>claw_11</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="claw_12"><target>claw_12</target>
+<bone name="claw_13"><target>claw_13</target>
+<bone name="claw_14"><target>claw_14</target>
+<bone name="claw_15"><target>claw_15</target>
+<bone name="claw_16"><target>claw_16</target>
+<bone name="claw_17"><target>claw_17</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="smallclaw_01"><target>smallclaw_01</target>
+<bone name="smallclaw_02"><target>smallclaw_02</target>
+<bone name="smallclaw_03"><target>smallclaw_03</target>
+<bone name="smallclaw_04"><target>smallclaw_04</target>
+<bone name="smallclaw_05"><target>smallclaw_05</target>
+<bone name="smallclaw_06"><target>smallclaw_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="smallclaw_07"><target>smallclaw_07</target>
+<bone name="smallclaw_08"><target>smallclaw_08</target>
+<bone name="smallclaw_09"><target>smallclaw_09</target>
+<bone name="smallclaw_10"><target>smallclaw_10</target>
+<bone name="smallclaw_11"><target>smallclaw_11</target>
+<bone name="smallclaw_12"><target>smallclaw_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

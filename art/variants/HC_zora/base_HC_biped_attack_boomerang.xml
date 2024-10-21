@@ -1,0 +1,8 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.50" file="HC_zora/zora_attack_boomerangA.dae" load="0.45" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="particle/dust_cav.xml" attachpoint="projectile"/>
+  </props>
+</variant>

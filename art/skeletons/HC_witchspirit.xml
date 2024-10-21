@@ -1,0 +1,15 @@
+<skeletons>
+<standard_skeleton id="witchspirit_skel" title="witchspirit_skel">
+<bone name="spirit_rotate">
+<bone name="sp_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="witchspirit_skel" title="witchspirit_skel">
+<identifier><root>spirit_rotate</root></identifier>
+<bone name="spirit_rotate"><target>spirit_rotate</target>
+<bone name="sp_01"><target>sp_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,159 @@
+<skeletons>
+<standard_skeleton id="Staldra Skeleton A" title="Staldra Skeleton A">
+<bone name="base_staldraA">
+<bone name="neckA_01">
+<bone name="neckA_02">
+<bone name="neckA_03">
+<bone name="neckA_04">
+<bone name="headA">
+<bone name="L_jawA_01">
+<bone name="L_jawA_02">
+</bone>
+</bone>
+<bone name="R_jawA_01">
+<bone name="R_jawA_02">
+</bone>
+</bone>
+<bone name="projectile">
+<bone name="forwardA">
+</bone>
+</bone>
+<bone name="loaded_projectile">
+<bone name="forwardB">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckB_01">
+<bone name="neckB_02">
+<bone name="neckB_03">
+<bone name="neckB_04">
+<bone name="headB">
+<bone name="L_jawB_01">
+<bone name="L_jawB_02">
+</bone>
+</bone>
+<bone name="R_jawB_01">
+<bone name="R_jawB_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckC_01">
+<bone name="neckC_02">
+<bone name="neckC_03">
+<bone name="neckC_04">
+<bone name="headC">
+<bone name="L_jawC_01">
+<bone name="L_jawC_02">
+</bone>
+</bone>
+<bone name="R_jawC_01">
+<bone name="R_jawC_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Staldra Skeleton A" title="Staldra Skeleton A">
+<identifier><root>base_staldraA</root></identifier>
+<bone name="base_staldraA"><target>base_staldraA</target>
+<bone name="neckA_01"><target>neckA_01</target>
+<bone name="neckA_02"><target>neckA_02</target>
+<bone name="neckA_03"><target>neckA_03</target>
+<bone name="neckA_04"><target>neckA_04</target>
+<bone name="headA"><target>headA</target>
+<bone name="L_jawA_01"><target>L_jawA_01</target>
+<bone name="L_jawA_02"><target>L_jawA_02</target>
+</bone>
+</bone>
+<bone name="R_jawA_01"><target>R_jawA_01</target>
+<bone name="R_jawA_02"><target>R_jawA_02</target>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+<bone name="forwardA"><target>forwardA</target>
+</bone>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+<bone name="forwardB"><target>forwardB</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckB_01"><target>neckB_01</target>
+<bone name="neckB_02"><target>neckB_02</target>
+<bone name="neckB_03"><target>neckB_03</target>
+<bone name="neckB_04"><target>neckB_04</target>
+<bone name="headB"><target>headB</target>
+<bone name="L_jawB_01"><target>L_jawB_01</target>
+<bone name="L_jawB_02"><target>L_jawB_02</target>
+</bone>
+</bone>
+<bone name="R_jawB_01"><target>R_jawB_01</target>
+<bone name="R_jawB_02"><target>R_jawB_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neckC_01"><target>neckC_01</target>
+<bone name="neckC_02"><target>neckC_02</target>
+<bone name="neckC_03"><target>neckC_03</target>
+<bone name="neckC_04"><target>neckC_04</target>
+<bone name="headC"><target>headC</target>
+<bone name="L_jawC_01"><target>L_jawC_01</target>
+<bone name="L_jawC_02"><target>L_jawC_02</target>
+</bone>
+</bone>
+<bone name="R_jawC_01"><target>R_jawC_01</target>
+<bone name="R_jawC_02"><target>R_jawC_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

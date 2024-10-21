@@ -1,0 +1,5 @@
+<variant name="Build">
+  <animations>
+	<animation event="0.01" file="HC_goh_queen/goh_queen_layegg.dae" name="Build" speed="100"/>
+  </animations>
+</variant>

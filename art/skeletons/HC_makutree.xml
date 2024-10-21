@@ -1,0 +1,303 @@
+<skeletons>
+<standard_skeleton id="Makutree Skeleton" title="Makutree Skeleton">
+<bone name="makulab_base">
+<bone name="bone_trunk_01">
+<bone name="bone_trunk_02">
+<bone name="bone_trunk_03">
+<bone name="bone_trunk_04">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbranch_01">
+<bone name="bone_Lbranch_02">
+<bone name="bone_Lbranch_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbranch_01">
+<bone name="bone_Rbranch_02">
+<bone name="bone_Rbranch_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Fbranch_01">
+<bone name="bone_Fbranch_02">
+<bone name="bone_Fbranch_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Bbranch_01">
+<bone name="bone_Bbranch_02">
+<bone name="bone_Bbranch_03">
+</bone>
+</bone>
+</bone>
+<bone name="stach_01">
+<bone name="smoke_01">
+</bone>
+</bone>
+<bone name="stach_02">
+<bone name="smoke_02">
+</bone>
+</bone>
+<bone name="stach_03">
+<bone name="smoke_03">
+</bone>
+</bone>
+<bone name="stach_04">
+<bone name="smoke_04">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbackleg_01">
+<bone name="bone_Lbackleg_02">
+<bone name="bone_Lbackleg_03">
+<bone name="bone_Lbackleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lfrontleg_01">
+<bone name="bone_Lfrontleg_02">
+<bone name="bone_Lfrontleg_03">
+<bone name="bone_Lfrontleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="loaded_projectile">
+<bone name="jaw_bot_02">
+<bone name="jaw_bot_03">
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+<bone name="jaw_top_02">
+<bone name="jaw_top_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rfrontleg_01">
+<bone name="bone_Rfrontleg_02">
+<bone name="bone_Rfrontleg_03">
+<bone name="bone_Rfrontleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbackleg_01">
+<bone name="bone_Rbackleg_02">
+<bone name="bone_Rbackleg_03">
+<bone name="bone_Rbackleg_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_broof">
+<bone name="bone_drape_01">
+<bone name="bone_drape_02">
+</bone>
+</bone>
+<bone name="bone_drape_03">
+<bone name="bone_drape_04">
+</bone>
+</bone>
+<bone name="bone_drape_05">
+<bone name="bone_drape_06">
+</bone>
+</bone>
+<bone name="bone_drape_07">
+<bone name="bone_drape_08">
+</bone>
+</bone>
+<bone name="bone_drape_09">
+<bone name="bone_drape_10">
+</bone>
+</bone>
+<bone name="bone_drape_11">
+<bone name="bone_drape_12">
+</bone>
+</bone>
+<bone name="bone_drape_13">
+<bone name="bone_drape_14">
+</bone>
+</bone>
+<bone name="bone_drape_15">
+<bone name="bone_drape_16">
+</bone>
+</bone>
+<bone name="bone_drape_17">
+<bone name="bone_drape_18">
+</bone>
+</bone>
+<bone name="bone_drape_19">
+<bone name="bone_drape_20">
+</bone>
+</bone>
+<bone name="bone_drape_21">
+<bone name="bone_drape_22">
+</bone>
+</bone>
+<bone name="bone_drape_23">
+<bone name="bone_drape_24">
+</bone>
+</bone>
+<bone name="bone_drape_25">
+<bone name="bone_drape_26">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Makutree Skeleton" title="Makutree Skeleton">
+<identifier><root>makulab_base</root></identifier>
+<bone name="makulab_base"><target>makulab_base</target>
+<bone name="bone_trunk_01"><target>bone_trunk_01</target>
+<bone name="bone_trunk_02"><target>bone_trunk_02</target>
+<bone name="bone_trunk_03"><target>bone_trunk_03</target>
+<bone name="bone_trunk_04"><target>bone_trunk_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbranch_01"><target>bone_Lbranch_01</target>
+<bone name="bone_Lbranch_02"><target>bone_Lbranch_02</target>
+<bone name="bone_Lbranch_03"><target>bone_Lbranch_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbranch_01"><target>bone_Rbranch_01</target>
+<bone name="bone_Rbranch_02"><target>bone_Rbranch_02</target>
+<bone name="bone_Rbranch_03"><target>bone_Rbranch_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Fbranch_01"><target>bone_Fbranch_01</target>
+<bone name="bone_Fbranch_02"><target>bone_Fbranch_02</target>
+<bone name="bone_Fbranch_03"><target>bone_Fbranch_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Bbranch_01"><target>bone_Bbranch_01</target>
+<bone name="bone_Bbranch_02"><target>bone_Bbranch_02</target>
+<bone name="bone_Bbranch_03"><target>bone_Bbranch_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="stach_01"><target>stach_01</target>
+<bone name="smoke_01"><target>smoke_01</target>
+</bone>
+</bone>
+<bone name="stach_02"><target>stach_02</target>
+<bone name="smoke_02"><target>smoke_02</target>
+</bone>
+</bone>
+<bone name="stach_03"><target>stach_03</target>
+<bone name="smoke_03"><target>smoke_03</target>
+</bone>
+</bone>
+<bone name="stach_04"><target>stach_04</target>
+<bone name="smoke_04"><target>smoke_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lbackleg_01"><target>bone_Lbackleg_01</target>
+<bone name="bone_Lbackleg_02"><target>bone_Lbackleg_02</target>
+<bone name="bone_Lbackleg_03"><target>bone_Lbackleg_03</target>
+<bone name="bone_Lbackleg_04"><target>bone_Lbackleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lfrontleg_01"><target>bone_Lfrontleg_01</target>
+<bone name="bone_Lfrontleg_02"><target>bone_Lfrontleg_02</target>
+<bone name="bone_Lfrontleg_03"><target>bone_Lfrontleg_03</target>
+<bone name="bone_Lfrontleg_04"><target>bone_Lfrontleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+<bone name="jaw_bot_02"><target>jaw_bot_02</target>
+<bone name="jaw_bot_03"><target>jaw_bot_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+<bone name="jaw_top_02"><target>jaw_top_02</target>
+<bone name="jaw_top_03"><target>jaw_top_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rfrontleg_01"><target>bone_Rfrontleg_01</target>
+<bone name="bone_Rfrontleg_02"><target>bone_Rfrontleg_02</target>
+<bone name="bone_Rfrontleg_03"><target>bone_Rfrontleg_03</target>
+<bone name="bone_Rfrontleg_04"><target>bone_Rfrontleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rbackleg_01"><target>bone_Rbackleg_01</target>
+<bone name="bone_Rbackleg_02"><target>bone_Rbackleg_02</target>
+<bone name="bone_Rbackleg_03"><target>bone_Rbackleg_03</target>
+<bone name="bone_Rbackleg_04"><target>bone_Rbackleg_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_broof"><target>bone_broof</target>
+<bone name="bone_drape_01"><target>bone_drape_01</target>
+<bone name="bone_drape_02"><target>bone_drape_02</target>
+</bone>
+</bone>
+<bone name="bone_drape_03"><target>bone_drape_03</target>
+<bone name="bone_drape_04"><target>bone_drape_04</target>
+</bone>
+</bone>
+<bone name="bone_drape_05"><target>bone_drape_05</target>
+<bone name="bone_drape_06"><target>bone_drape_06</target>
+</bone>
+</bone>
+<bone name="bone_drape_07"><target>bone_drape_07</target>
+<bone name="bone_drape_08"><target>bone_drape_08</target>
+</bone>
+</bone>
+<bone name="bone_drape_09"><target>bone_drape_09</target>
+<bone name="bone_drape_10"><target>bone_drape_10</target>
+</bone>
+</bone>
+<bone name="bone_drape_11"><target>bone_drape_11</target>
+<bone name="bone_drape_12"><target>bone_drape_12</target>
+</bone>
+</bone>
+<bone name="bone_drape_13"><target>bone_drape_13</target>
+<bone name="bone_drape_14"><target>bone_drape_14</target>
+</bone>
+</bone>
+<bone name="bone_drape_15"><target>bone_drape_15</target>
+<bone name="bone_drape_16"><target>bone_drape_16</target>
+</bone>
+</bone>
+<bone name="bone_drape_17"><target>bone_drape_17</target>
+<bone name="bone_drape_18"><target>bone_drape_18</target>
+</bone>
+</bone>
+<bone name="bone_drape_19"><target>bone_drape_19</target>
+<bone name="bone_drape_20"><target>bone_drape_20</target>
+</bone>
+</bone>
+<bone name="bone_drape_21"><target>bone_drape_21</target>
+<bone name="bone_drape_22"><target>bone_drape_22</target>
+</bone>
+</bone>
+<bone name="bone_drape_23"><target>bone_drape_23</target>
+<bone name="bone_drape_24"><target>bone_drape_24</target>
+</bone>
+</bone>
+<bone name="bone_drape_25"><target>bone_drape_25</target>
+<bone name="bone_drape_26"><target>bone_drape_26</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

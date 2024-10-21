@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_biped/base_HC_healer.xml">
+      <mesh>units/hylian/hyl_deaconA.dae</mesh>
+      <textures><texture file="skeletal/hylian/hyl_deaconA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+	<variant frequency="1" name="Idle"/>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>	
+  <material>default.xml</material>
+</actor>

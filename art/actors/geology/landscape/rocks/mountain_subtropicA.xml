@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant name="a">
+      <mesh>gaia/landscape/rocks/mountain_subtropicA.dae</mesh>
+	  <textures>
+		<texture file="gaia/rocks/mountain_subtropicA.dds" name="baseTex"/>
+		<texture file="gaia/rocks/mountain_subtropicA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  
+  <material>player_trans_parallax.xml</material>
+
+</actor>

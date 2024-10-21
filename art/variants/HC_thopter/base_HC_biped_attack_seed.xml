@@ -1,0 +1,5 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.5" file="HC_thopter/thopter_attackA.dae" load="0.4" name="attack_ranged" speed="100"/>
+  </animations>
+</variant>

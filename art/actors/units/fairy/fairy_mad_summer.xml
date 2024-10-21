@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_greatfairy/base_HC_greatfairy_whip.xml">
+      <mesh>units/fairy/fai_madmysticA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Red">
+      <textures><texture file="skeletal/fairy/fai_mad_red.dds" name="baseTex"/></textures>
+	  <props>
+        <prop actor="particle/fairy_field_red.xml" attachpoint="root"/>
+		<prop actor="units/fairy/fairy_madleaves_summer.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="Pink">
+      <textures><texture file="skeletal/fairy/fai_mad_pink.dds" name="baseTex"/></textures>
+	  <props>
+        <prop actor="particle/fairy_field_pink.xml" attachpoint="root"/>
+		<prop actor="units/fairy/fairy_madleaves_summer.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_greatfairy/base_HC_greatfairy_attackmagic.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_capture.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_slaughter.xml"/>
+    <variant file="HC_greatfairy/base_HC_greatfairy_death.xml">
+      <props>
+        <prop actor="props/units/blood_fairy_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant file="HC_dekubutler/base_HC_biped_butler.xml"> 
+      <mesh>units/deku/dek_butlerA.dae</mesh>
+	  <textures><texture file="skeletal/deku/dek_mainC.dds" name="baseTex"/></textures>
+	  <props>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="candle_01"/>
+		<prop actor="particle/flame_boozeA.xml" attachpoint="projectile"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_dekubutler/base_HC_biped_attack_candle.xml"/>
+    <variant file="HC_dekubutler/base_HC_biped_capture.xml"/>
+    <variant file="HC_dekubutler/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_dekubutler/base_HC_biped_death.xml">
+    </variant>
+  </group>  
+  <material>basic_trans.xml</material>
+</actor>

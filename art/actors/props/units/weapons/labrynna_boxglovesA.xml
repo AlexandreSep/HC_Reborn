@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_blaino/base_HC_biped_blaino.xml">
+      <mesh>props/weapon/labrynna_boxgloveA.dae</mesh>
+	  <textures><texture file="skeletal/labrynna/lab_blainoA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_blaino/base_HC_biped_capture.xml"/>
+    <variant file="HC_blaino/base_HC_biped_slaughter.xml"/>
+	<variant file="HC_blaino/base_HC_biped_death.xml">
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

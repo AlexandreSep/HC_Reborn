@@ -1,0 +1,271 @@
+<skeletons>
+<standard_skeleton id="longlegs_skel" title="longlegs_skel">
+<bone name="longlegs_base">
+<bone name="L_F_leg01">
+<bone name="L_F_leg2">
+<bone name="L_F_leg03">
+<bone name="L_F_leg04">
+<bone name="L_F_leg05">
+<bone name="L_F_leg06">
+<bone name="L_F_leg07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_F_leg08">
+<bone name="L_F_leg09">
+<bone name="L_F_leg10">
+<bone name="L_F_leg11">
+<bone name="L_F_leg12">
+<bone name="L_F_leg13">
+<bone name="L_F_leg14">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_F_leg15">
+<bone name="L_F_leg16">
+<bone name="L_F_leg17">
+<bone name="L_F_leg18">
+<bone name="L_F_leg19">
+<bone name="L_F_leg20">
+<bone name="L_F_leg21">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_F_leg22">
+<bone name="L_F_leg23">
+<bone name="L_F_leg24">
+<bone name="L_F_leg25">
+<bone name="L_F_leg26">
+<bone name="L_F_leg27">
+<bone name="L_F_leg28">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mand01">
+<bone name="L_mand02">
+<bone name="L_mand03">
+</bone>
+</bone>
+</bone>
+<bone name="eye_01">
+</bone>
+<bone name="ass_01">
+<bone name="ass_02">
+</bone>
+</bone>
+<bone name="R_mand01">
+<bone name="R_mand02">
+<bone name="R_mand03">
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg01">
+<bone name="R_F_leg2">
+<bone name="R_F_leg03">
+<bone name="R_F_leg04">
+<bone name="R_F_leg05">
+<bone name="R_F_leg06">
+<bone name="R_F_leg07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg08">
+<bone name="R_F_leg09">
+<bone name="R_F_leg10">
+<bone name="R_F_leg11">
+<bone name="R_F_leg12">
+<bone name="R_F_leg13">
+<bone name="R_F_leg14">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg15">
+<bone name="R_F_leg16">
+<bone name="R_F_leg17">
+<bone name="R_F_leg18">
+<bone name="R_F_leg19">
+<bone name="R_F_leg20">
+<bone name="R_F_leg21">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg22">
+<bone name="R_F_leg23">
+<bone name="R_F_leg24">
+<bone name="R_F_leg25">
+<bone name="R_F_leg26">
+<bone name="R_F_leg27">
+<bone name="R_F_leg28">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="longlegs_skel" title="longlegs_skel">
+<identifier><root>longlegs_base</root></identifier>
+<bone name="longlegs_base"><target>longlegs_base</target>
+<bone name="L_F_leg01"><target>L_F_leg01</target>
+<bone name="L_F_leg2"><target>L_F_leg2</target>
+<bone name="L_F_leg03"><target>L_F_leg03</target>
+<bone name="L_F_leg04"><target>L_F_leg04</target>
+<bone name="L_F_leg05"><target>L_F_leg05</target>
+<bone name="L_F_leg06"><target>L_F_leg06</target>
+<bone name="L_F_leg07"><target>L_F_leg07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_F_leg08"><target>L_F_leg08</target>
+<bone name="L_F_leg09"><target>L_F_leg09</target>
+<bone name="L_F_leg10"><target>L_F_leg10</target>
+<bone name="L_F_leg11"><target>L_F_leg11</target>
+<bone name="L_F_leg12"><target>L_F_leg12</target>
+<bone name="L_F_leg13"><target>L_F_leg13</target>
+<bone name="L_F_leg14"><target>L_F_leg14</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_F_leg15"><target>L_F_leg15</target>
+<bone name="L_F_leg16"><target>L_F_leg16</target>
+<bone name="L_F_leg17"><target>L_F_leg17</target>
+<bone name="L_F_leg18"><target>L_F_leg18</target>
+<bone name="L_F_leg19"><target>L_F_leg19</target>
+<bone name="L_F_leg20"><target>L_F_leg20</target>
+<bone name="L_F_leg21"><target>L_F_leg21</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_F_leg22"><target>L_F_leg22</target>
+<bone name="L_F_leg23"><target>L_F_leg23</target>
+<bone name="L_F_leg24"><target>L_F_leg24</target>
+<bone name="L_F_leg25"><target>L_F_leg25</target>
+<bone name="L_F_leg26"><target>L_F_leg26</target>
+<bone name="L_F_leg27"><target>L_F_leg27</target>
+<bone name="L_F_leg28"><target>L_F_leg28</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mand01"><target>L_mand01</target>
+<bone name="L_mand02"><target>L_mand02</target>
+<bone name="L_mand03"><target>L_mand03</target>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+</bone>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+</bone>
+</bone>
+<bone name="R_mand01"><target>R_mand01</target>
+<bone name="R_mand02"><target>R_mand02</target>
+<bone name="R_mand03"><target>R_mand03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg01"><target>R_F_leg01</target>
+<bone name="R_F_leg2"><target>R_F_leg2</target>
+<bone name="R_F_leg03"><target>R_F_leg03</target>
+<bone name="R_F_leg04"><target>R_F_leg04</target>
+<bone name="R_F_leg05"><target>R_F_leg05</target>
+<bone name="R_F_leg06"><target>R_F_leg06</target>
+<bone name="R_F_leg07"><target>R_F_leg07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg08"><target>R_F_leg08</target>
+<bone name="R_F_leg09"><target>R_F_leg09</target>
+<bone name="R_F_leg10"><target>R_F_leg10</target>
+<bone name="R_F_leg11"><target>R_F_leg11</target>
+<bone name="R_F_leg12"><target>R_F_leg12</target>
+<bone name="R_F_leg13"><target>R_F_leg13</target>
+<bone name="R_F_leg14"><target>R_F_leg14</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg15"><target>R_F_leg15</target>
+<bone name="R_F_leg16"><target>R_F_leg16</target>
+<bone name="R_F_leg17"><target>R_F_leg17</target>
+<bone name="R_F_leg18"><target>R_F_leg18</target>
+<bone name="R_F_leg19"><target>R_F_leg19</target>
+<bone name="R_F_leg20"><target>R_F_leg20</target>
+<bone name="R_F_leg21"><target>R_F_leg21</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg22"><target>R_F_leg22</target>
+<bone name="R_F_leg23"><target>R_F_leg23</target>
+<bone name="R_F_leg24"><target>R_F_leg24</target>
+<bone name="R_F_leg25"><target>R_F_leg25</target>
+<bone name="R_F_leg26"><target>R_F_leg26</target>
+<bone name="R_F_leg27"><target>R_F_leg27</target>
+<bone name="R_F_leg28"><target>R_F_leg28</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

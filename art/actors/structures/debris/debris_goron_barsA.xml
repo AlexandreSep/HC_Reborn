@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <textures>
+        <texture file="structural/goron/goron_buildingB.dds" name="baseTex"/>
+		<texture file="structural/goron/goron_buildingB_normal.dds" name="normTex"/>
+		<texture file="structural/goron/goron_houseC_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="barsA">
+      <mesh>structural/debris/debris_goron_barsA.dae</mesh>
+    </variant>
+	<variant name="barsB">
+      <mesh>structural/debris/debris_goron_barsB.dae</mesh>
+    </variant>
+	<variant name="barsC">
+      <mesh>structural/debris/debris_goron_barsC.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

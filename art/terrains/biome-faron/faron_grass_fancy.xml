@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<terrain>
+        <textures>
+                <texture name="baseTex" file="types/faron_grass_fancyA.dds"/>
+        </textures>
+        <material>terrain_grass.xml</material>
+</terrain>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/weapon/ordona_boozeA.dae</mesh>
+      <textures><texture file="skeletal/ordona/ord_boozeA.dds" name="baseTex"/></textures>
+	    <props>
+        <prop actor="particle/flame_boozeA.xml" attachpoint="root"/>
+		</props>
+    </variant>
+  </group>
+  
+  
+
+</actor>

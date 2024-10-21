@@ -1,0 +1,99 @@
+<skeletons>
+<standard_skeleton id="HC_horse" title="HC_horse">
+<bone name="bone_Horse_Saddle">
+<bone name="bone_Spine">
+<bone name="bone_Spine1">
+<bone name="bone_Neck">
+<bone name="bone_Head">
+</bone>
+</bone>
+<bone name="bone_RightArm">
+<bone name="bone_RightForeArm">
+<bone name="bone_RightHand">
+<bone name="bone_RightFingerBase">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LeftArm">
+<bone name="bone_LeftForeArm">
+<bone name="bone_LeftHand">
+<bone name="bone_LeftFingerBase">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Tail1">
+<bone name="bone_Tail2">
+</bone>
+</bone>
+<bone name="bone_RightUpLeg">
+<bone name="bone_RightLeg">
+<bone name="bone_RightFoot">
+<bone name="bone_RightToeBase">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LeftUpLeg">
+<bone name="bone_LeftLeg">
+<bone name="bone_LeftFoot">
+<bone name="bone_LeftToeBase">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="HC_horse" title="HC_horse">
+<identifier><root>bone_Horse_Saddle</root></identifier>
+<bone name="bone_Horse_Saddle"><target>bone_Horse_Saddle</target>
+<bone name="bone_Spine"><target>bone_Spine</target>
+<bone name="bone_Spine1"><target>bone_Spine1</target>
+<bone name="bone_Neck"><target>bone_Neck</target>
+<bone name="bone_Head"><target>bone_Head</target>
+</bone>
+</bone>
+<bone name="bone_RightArm"><target>bone_RightArm</target>
+<bone name="bone_RightForeArm"><target>bone_RightForeArm</target>
+<bone name="bone_RightHand"><target>bone_RightHand</target>
+<bone name="bone_RightFingerBase"><target>bone_RightFingerBase</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LeftArm"><target>bone_LeftArm</target>
+<bone name="bone_LeftForeArm"><target>bone_LeftForeArm</target>
+<bone name="bone_LeftHand"><target>bone_LeftHand</target>
+<bone name="bone_LeftFingerBase"><target>bone_LeftFingerBase</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Tail1"><target>bone_Tail1</target>
+<bone name="bone_Tail2"><target>bone_Tail2</target>
+</bone>
+</bone>
+<bone name="bone_RightUpLeg"><target>bone_RightUpLeg</target>
+<bone name="bone_RightLeg"><target>bone_RightLeg</target>
+<bone name="bone_RightFoot"><target>bone_RightFoot</target>
+<bone name="bone_RightToeBase"><target>bone_RightToeBase</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LeftUpLeg"><target>bone_LeftUpLeg</target>
+<bone name="bone_LeftLeg"><target>bone_LeftLeg</target>
+<bone name="bone_LeftFoot"><target>bone_LeftFoot</target>
+<bone name="bone_LeftToeBase"><target>bone_LeftToeBase</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

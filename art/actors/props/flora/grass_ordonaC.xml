@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <group>
+    <variant frequency="1" name="large-tall-b">
+      <mesh>gaia/flora/grass_ordonaB.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="ordona">
+      <textures><texture file="gaia/flora/grass_field_ordonaC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans_wind.xml</material>
+</actor>

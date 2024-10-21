@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/hylian/hyl_tot_baseA.dae</mesh>
+      <textures>
+	    <texture file="structural/hylian/hylian_roadsA.dds" name="baseTex"/>
+		<texture file="structural/hylian/hylian_roadsA_normal.dds" name="normTex"/>
+		<texture file="structural/hylian/hylian_tot_ao.dds" name="aoTex"/>
+	  </textures>
+	  <props>
+	    <prop actor="flora/trees/carob.xml" attachpoint="tree_01"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_02"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_03"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_04"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_05"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_06"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_07"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_08"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_09"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_10"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_11"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_12"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_13"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_14"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_15"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_16"/>
+		<prop actor="flora/trees/carob.xml" attachpoint="tree_17"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

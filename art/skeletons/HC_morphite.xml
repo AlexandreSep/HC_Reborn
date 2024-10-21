@@ -1,0 +1,63 @@
+<skeletons>
+<standard_skeleton id="morphite_skel" title="morphite_skel">
+<bone name="morphite_01">
+<bone name="morphite_02">
+<bone name="morphite_03">
+<bone name="morphite_04">
+<bone name="morphite_05">
+<bone name="morphite_06">
+<bone name="morphite_07">
+<bone name="morphite_08">
+<bone name="morphite_09">
+<bone name="morphite_010">
+<bone name="morphite_011">
+<bone name="morphite_012">
+<bone name="morphite_013">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="core_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="morphite_skel" title="morphite_skel">
+<identifier><root>morphite_01</root></identifier>
+<bone name="morphite_01"><target>morphite_01</target>
+<bone name="morphite_02"><target>morphite_02</target>
+<bone name="morphite_03"><target>morphite_03</target>
+<bone name="morphite_04"><target>morphite_04</target>
+<bone name="morphite_05"><target>morphite_05</target>
+<bone name="morphite_06"><target>morphite_06</target>
+<bone name="morphite_07"><target>morphite_07</target>
+<bone name="morphite_08"><target>morphite_08</target>
+<bone name="morphite_09"><target>morphite_09</target>
+<bone name="morphite_010"><target>morphite_010</target>
+<bone name="morphite_011"><target>morphite_011</target>
+<bone name="morphite_012"><target>morphite_012</target>
+<bone name="morphite_013"><target>morphite_013</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="core_01"><target>core_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,167 @@
+<skeletons>
+<standard_skeleton id="deer_Skeleton" title="deer_Skeleton">
+<bone name="deer_base">
+<bone name="bone_belly">
+<bone name="bone_chest">
+<bone name="bone_neck_01">
+<bone name="bone_neck_02">
+<bone name="bone_neck_03">
+<bone name="bone_head">
+<bone name="bone_nose">
+</bone>
+<bone name="bone_Lear_01">
+<bone name="bone_Lear_02">
+<bone name="bone_Lear_03">
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rear_01">
+<bone name="bone_Rear_02">
+<bone name="bone_Rear_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lshoulder">
+<bone name="bone_Lelbow">
+<bone name="bone_Lwrist">
+<bone name="bone_Lhand">
+<bone name="bone_Lfinger">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rshoulder">
+<bone name="bone_Relbow">
+<bone name="bone_Rwrist">
+<bone name="bone_Rhand">
+<bone name="bone_Rfinger">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_ass">
+<bone name="bone_tail_01">
+<bone name="bone_tail_02">
+<bone name="bone_tail_03">
+<bone name="bone_tail_04">
+<bone name="bone_tail_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lthigh">
+<bone name="bone_Lknee">
+<bone name="bone_Lankle">
+<bone name="bone_Lfoot">
+<bone name="bone_Ltoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rthigh">
+<bone name="bone_Rknee">
+<bone name="bone_Rankle">
+<bone name="bone_Rfoot">
+<bone name="bone_Rtoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="deer_Skeleton" title="deer_Skeleton">
+<identifier><root>deer_base</root></identifier>
+<bone name="deer_base"><target>deer_base</target>
+<bone name="bone_belly"><target>bone_belly</target>
+<bone name="bone_chest"><target>bone_chest</target>
+<bone name="bone_neck_01"><target>bone_neck_01</target>
+<bone name="bone_neck_02"><target>bone_neck_02</target>
+<bone name="bone_neck_03"><target>bone_neck_03</target>
+<bone name="bone_head"><target>bone_head</target>
+<bone name="bone_nose"><target>bone_nose</target>
+</bone>
+<bone name="bone_Lear_01"><target>bone_Lear_01</target>
+<bone name="bone_Lear_02"><target>bone_Lear_02</target>
+<bone name="bone_Lear_03"><target>bone_Lear_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rear_01"><target>bone_Rear_01</target>
+<bone name="bone_Rear_02"><target>bone_Rear_02</target>
+<bone name="bone_Rear_03"><target>bone_Rear_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lshoulder"><target>bone_Lshoulder</target>
+<bone name="bone_Lelbow"><target>bone_Lelbow</target>
+<bone name="bone_Lwrist"><target>bone_Lwrist</target>
+<bone name="bone_Lhand"><target>bone_Lhand</target>
+<bone name="bone_Lfinger"><target>bone_Lfinger</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rshoulder"><target>bone_Rshoulder</target>
+<bone name="bone_Relbow"><target>bone_Relbow</target>
+<bone name="bone_Rwrist"><target>bone_Rwrist</target>
+<bone name="bone_Rhand"><target>bone_Rhand</target>
+<bone name="bone_Rfinger"><target>bone_Rfinger</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_ass"><target>bone_ass</target>
+<bone name="bone_tail_01"><target>bone_tail_01</target>
+<bone name="bone_tail_02"><target>bone_tail_02</target>
+<bone name="bone_tail_03"><target>bone_tail_03</target>
+<bone name="bone_tail_04"><target>bone_tail_04</target>
+<bone name="bone_tail_05"><target>bone_tail_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lthigh"><target>bone_Lthigh</target>
+<bone name="bone_Lknee"><target>bone_Lknee</target>
+<bone name="bone_Lankle"><target>bone_Lankle</target>
+<bone name="bone_Lfoot"><target>bone_Lfoot</target>
+<bone name="bone_Ltoe"><target>bone_Ltoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Rthigh"><target>bone_Rthigh</target>
+<bone name="bone_Rknee"><target>bone_Rknee</target>
+<bone name="bone_Rankle"><target>bone_Rankle</target>
+<bone name="bone_Rfoot"><target>bone_Rfoot</target>
+<bone name="bone_Rtoe"><target>bone_Rtoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

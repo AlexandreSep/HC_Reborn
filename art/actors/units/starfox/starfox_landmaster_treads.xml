@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="SF_landmaster/landmaster_idle.dae" name="Idle" speed="100"/>
+        <animation file="SF_landmaster/landmaster_idle.dae" name="Idle" speed="100"/>
+        <animation file="SF_landmaster/landmaster_idle.dae" name="Idle" speed="100"/>
+        <animation file="SF_landmaster/landmaster_idle.dae" name="Idle" speed="100"/>
+		<animation file="SF_landmaster/landmaster_idle.dae" name="Idle" speed="100"/>
+		<animation file="SF_landmaster/landmaster_idle.dae" name="Idle" speed="100"/>
+        <animation file="SF_landmaster/landmaster_move.dae" name="carry_meat" speed="10"/>
+        <animation file="SF_landmaster/landmaster_move.dae" name="Walk" speed="10"/>
+        <animation file="SF_landmaster/landmaster_move.dae" name="Run" speed="10"/>
+        <animation file="SF_landmaster/landmaster_idle.dae" name="attack_melee" speed="10"/>
+        <animation file="SF_landmaster/landmaster_idle.dae" name="attack_melee" speed="20"/>
+        <animation file="SF_landmaster/landmaster_idle.dae" name="attack_slaughter" speed="10"/>
+        <animation file="SF_landmaster/landmaster_idle.dae" name="death" speed="100"/>
+      </animations>
+      <mesh>units/starfox/sf_landmaster_treads.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="horse-texture-01">
+      <textures><texture file="skeletal/starfox/sf_landmaster_treads.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>objectcolor.xml</material>
+</actor>

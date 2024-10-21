@@ -1,0 +1,91 @@
+<skeletons>
+<standard_skeleton id="Patra Skeleton" title="Patra Skeleton">
+<bone name="patraA_base">
+<bone name="L_wing_02">
+<bone name="L_wing_03">
+<bone name="L_wing_04">
+<bone name="L_wing_05">
+<bone name="L_wing_06">
+<bone name="L_wing_07">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_wing_08">
+<bone name="L_wing_09">
+<bone name="L_wing_010">
+<bone name="L_wing_011">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_02">
+<bone name="R_wing_03">
+<bone name="R_wing_04">
+<bone name="R_wing_05">
+<bone name="R_wing_06">
+<bone name="R_wing_07">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_08">
+<bone name="R_wing_09">
+<bone name="R_wing_010">
+<bone name="R_wing_011">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Patra Skeleton" title="Patra Skeleton">
+<identifier><root>patraA_base</root></identifier>
+<bone name="patraA_base"><target>patraA_base</target>
+<bone name="L_wing_02"><target>L_wing_02</target>
+<bone name="L_wing_03"><target>L_wing_03</target>
+<bone name="L_wing_04"><target>L_wing_04</target>
+<bone name="L_wing_05"><target>L_wing_05</target>
+<bone name="L_wing_06"><target>L_wing_06</target>
+<bone name="L_wing_07"><target>L_wing_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_wing_08"><target>L_wing_08</target>
+<bone name="L_wing_09"><target>L_wing_09</target>
+<bone name="L_wing_010"><target>L_wing_010</target>
+<bone name="L_wing_011"><target>L_wing_011</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_02"><target>R_wing_02</target>
+<bone name="R_wing_03"><target>R_wing_03</target>
+<bone name="R_wing_04"><target>R_wing_04</target>
+<bone name="R_wing_05"><target>R_wing_05</target>
+<bone name="R_wing_06"><target>R_wing_06</target>
+<bone name="R_wing_07"><target>R_wing_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_08"><target>R_wing_08</target>
+<bone name="R_wing_09"><target>R_wing_09</target>
+<bone name="R_wing_010"><target>R_wing_010</target>
+<bone name="R_wing_011"><target>R_wing_011</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

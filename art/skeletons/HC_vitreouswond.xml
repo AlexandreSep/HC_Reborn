@@ -1,0 +1,151 @@
+<skeletons>
+<standard_skeleton id="vitreouswond_skeleton" title="vitreouswond_skeleton">
+<bone name="vitreouswonder_base">
+<bone name="mainstalk_01">
+<bone name="mainstalk_02">
+<bone name="mainstalk_03">
+<bone name="mainstalk_04">
+<bone name="projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_01">
+<bone name="stalk_02">
+<bone name="stalk_03">
+<bone name="stalk_04">
+<bone name="stalk_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_06">
+<bone name="stalk_07">
+<bone name="stalk_08">
+<bone name="stalk_09">
+<bone name="stalk_10">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_12">
+<bone name="stalk_13">
+<bone name="stalk_14">
+<bone name="stalk_15">
+<bone name="stalk_16">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_17">
+<bone name="stalk_18">
+<bone name="stalk_19">
+<bone name="stalk_20">
+<bone name="stalk_21">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_22">
+<bone name="stalk_23">
+<bone name="stalk_24">
+<bone name="stalk_25">
+<bone name="stalk_26">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_27">
+<bone name="stalk_28">
+<bone name="stalk_29">
+<bone name="stalk_30">
+<bone name="stalk_31">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="vitreouswond_skeleton" title="vitreouswond_skeleton">
+<identifier><root>vitreouswonder_base</root></identifier>
+<bone name="vitreouswonder_base"><target>vitreouswonder_base</target>
+<bone name="mainstalk_01"><target>mainstalk_01</target>
+<bone name="mainstalk_02"><target>mainstalk_02</target>
+<bone name="mainstalk_03"><target>mainstalk_03</target>
+<bone name="mainstalk_04"><target>mainstalk_04</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_01"><target>stalk_01</target>
+<bone name="stalk_02"><target>stalk_02</target>
+<bone name="stalk_03"><target>stalk_03</target>
+<bone name="stalk_04"><target>stalk_04</target>
+<bone name="stalk_05"><target>stalk_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_06"><target>stalk_06</target>
+<bone name="stalk_07"><target>stalk_07</target>
+<bone name="stalk_08"><target>stalk_08</target>
+<bone name="stalk_09"><target>stalk_09</target>
+<bone name="stalk_10"><target>stalk_10</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_12"><target>stalk_12</target>
+<bone name="stalk_13"><target>stalk_13</target>
+<bone name="stalk_14"><target>stalk_14</target>
+<bone name="stalk_15"><target>stalk_15</target>
+<bone name="stalk_16"><target>stalk_16</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_17"><target>stalk_17</target>
+<bone name="stalk_18"><target>stalk_18</target>
+<bone name="stalk_19"><target>stalk_19</target>
+<bone name="stalk_20"><target>stalk_20</target>
+<bone name="stalk_21"><target>stalk_21</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_22"><target>stalk_22</target>
+<bone name="stalk_23"><target>stalk_23</target>
+<bone name="stalk_24"><target>stalk_24</target>
+<bone name="stalk_25"><target>stalk_25</target>
+<bone name="stalk_26"><target>stalk_26</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="stalk_27"><target>stalk_27</target>
+<bone name="stalk_28"><target>stalk_28</target>
+<bone name="stalk_29"><target>stalk_29</target>
+<bone name="stalk_30"><target>stalk_30</target>
+<bone name="stalk_31"><target>stalk_31</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

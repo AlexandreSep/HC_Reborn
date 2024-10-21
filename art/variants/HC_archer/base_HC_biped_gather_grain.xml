@@ -1,0 +1,10 @@
+<variant name="gather_grain">
+  <animations>
+    <animation file="HC_archer/biped_hum_arch_harvest_grain.dae" name="gather_grain" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_hoe.xml" attachpoint="projectile"/>
+    <prop attachpoint="projectile"/>
+	<prop attachpoint="bone_Lhand"/>
+  </props>
+</variant>

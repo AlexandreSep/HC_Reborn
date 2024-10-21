@@ -1,0 +1,7 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.55" file="HC_archer/biped_hum_handcannon_attack.dae" load="0.55" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+  </props>
+</variant>

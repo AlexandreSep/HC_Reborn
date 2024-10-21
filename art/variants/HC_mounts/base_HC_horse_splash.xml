@@ -1,0 +1,5 @@
+<variant name="Base" frequency="1">
+  <animations>
+        <animation file="HC_horse/horse_attack.dae" name="attack_ranged" speed="100"/>
+  </animations>
+</variant>

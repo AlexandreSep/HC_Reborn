@@ -1,0 +1,9 @@
+<variant name="carry_meat">
+  <animations>
+	<animation file="HC_zora/zora_carry.dae" name="carry_meat" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_basket_carry.xml" attachpoint="R_wrist_01"/>
+    <prop attachpoint="R_wrist_01"/>
+  </props>
+</variant>

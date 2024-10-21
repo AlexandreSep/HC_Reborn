@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="100" name="Base">
+      <mesh>props/weapon/zuna_triboltA_shoot.dae</mesh>
+      <textures><texture file="skeletal/npc_zuna/npc_zunaA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+</actor>

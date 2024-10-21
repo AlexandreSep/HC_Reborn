@@ -1,0 +1,16 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_molgera/molgera_idle.dae" name="Idle" id="idle1" speed="61"/>
+    <animation file="HC_molgera/molgera_idle.dae" name="Idle" id="idle2" speed="61"/>
+    <animation file="HC_molgera/molgera_idleA.dae" name="Idle" id="idle5" speed="61"/>
+    <animation file="HC_molgera/molgera_idleB.dae" name="Idle" id="idle6" speed="61"/>
+    <animation file="HC_molgera/molgera_idleC.dae" name="Idle" id="idle7" speed="61"/>
+    <animation event="0.1" file="HC_molgera/molgera_crawlA.dae" name="Walk" id="walk1" speed="5"/>
+    <animation event="0.1" file="HC_molgera/molgera_crawlA.dae" name="Run" id="run1" speed="5"/>
+	<animation event="0.5" file="HC_molgera/molgera_attackA.dae" name="Attack_melee" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_molgera/molgera_attackB.dae" name="Attack_melee" id="attack2" speed="100"/>
+	<animation event="0.5" file="HC_molgera/molgera_attackC.dae" name="Attack_melee" id="attack3" speed="100"/>
+    <animation event="0.5" file="HC_molgera/molgera_attackA.dae" name="Attack_slaughter" id="attack5" speed="100"/>
+	<animation file="HC_molgera/molgera_death.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

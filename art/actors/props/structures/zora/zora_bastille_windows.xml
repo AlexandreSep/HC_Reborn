@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/zora/zor_bastille_windowsA.dae</mesh>
+      <textures>
+	    <texture file="structural/zora/zora_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/zora/zora_buildingA_normal.dds" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,10 @@
+<variant name="gather_rock">
+  <animations>
+    <animation event="0.4" file="HC_zora/zora_harvest_mine.dae" name="gather_rock" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_pick.xml" attachpoint="R_wrist_01"/>
+    <prop attachpoint="R_wrist_01"/>
+	<prop attachpoint="L_wrist_01"/>
+  </props>
+</variant>

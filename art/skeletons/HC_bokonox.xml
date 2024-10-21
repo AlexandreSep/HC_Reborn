@@ -1,0 +1,435 @@
+<skeletons>
+<standard_skeleton id="Bokonox Skeleton" title="Bokonox Skeleton">
+<bone name="base_bokonoxA">
+<bone name="Spine_1">
+<bone name="Center_1">
+</bone>
+<bone name="Spine_2">
+<bone name="Breast_L">
+</bone>
+<bone name="Breast_R">
+</bone>
+<bone name="Center_2">
+</bone>
+<bone name="Clavicle_L">
+<bone name="Arm_1_L">
+<bone name="Arm_2_L">
+<bone name="Wrist_L">
+<bone name="Finger_A_1_L">
+<bone name="Finger_A_2_L">
+<bone name="Finger_A_3_L">
+</bone>
+</bone>
+</bone>
+<bone name="Finger_B_1_L">
+<bone name="Finger_B_2_L">
+<bone name="Finger_B_3_L">
+</bone>
+</bone>
+</bone>
+<bone name="Finger_C_1_L">
+<bone name="Finger_C_2_L">
+<bone name="Finger_C_3_L">
+</bone>
+</bone>
+</bone>
+<bone name="Weapon_L">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Clavicle_R">
+<bone name="Arm_1_R">
+<bone name="Arm_2_R">
+<bone name="Wrist_R">
+<bone name="Finger_A_1_R">
+<bone name="Finger_A_2_R">
+<bone name="Finger_A_3_R">
+</bone>
+</bone>
+</bone>
+<bone name="Finger_B_1_R">
+<bone name="Finger_B_2_R">
+<bone name="Finger_B_3_R">
+</bone>
+</bone>
+</bone>
+<bone name="Finger_C_1_R">
+<bone name="Finger_C_2_R">
+<bone name="Finger_C_3_R">
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Neck">
+<bone name="Head">
+<bone name="Cheek_L">
+</bone>
+<bone name="Cheek_R">
+</bone>
+<bone name="Chin">
+<bone name="Tongue_1">
+<bone name="Tongue_2">
+</bone>
+</bone>
+</bone>
+<bone name="Ear_1_L">
+<bone name="Ear_2_L">
+<bone name="Z_Ear_L">
+</bone>
+</bone>
+</bone>
+<bone name="Ear_1_R">
+<bone name="Ear_2_R">
+<bone name="Z_Ear_R">
+</bone>
+</bone>
+</bone>
+<bone name="Eyeball">
+</bone>
+<bone name="Eyelid_L">
+</bone>
+<bone name="Eyelid_R">
+</bone>
+<bone name="Hair_L_1">
+<bone name="Hair_L_2">
+<bone name="Hair_L_3">
+<bone name="Hair_L_4">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Hair_R_1">
+<bone name="Hair_R_2">
+<bone name="Hair_R_3">
+<bone name="Hair_R_4">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Lip_L">
+</bone>
+<bone name="Lip_R">
+</bone>
+<bone name="Nose_1">
+<bone name="Nose_2">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Necklace_1">
+<bone name="Necklace_2">
+<bone name="Necklace_F_1">
+<bone name="Necklace_F_2">
+</bone>
+</bone>
+<bone name="Necklace_L_1">
+<bone name="Necklace_L_2">
+</bone>
+</bone>
+<bone name="Necklace_R_1">
+<bone name="Necklace_R_2">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Waist">
+<bone name="Cloth_BL_1">
+<bone name="Cloth_BL_2">
+</bone>
+</bone>
+<bone name="Cloth_BR_1">
+<bone name="Cloth_BR_2">
+</bone>
+</bone>
+<bone name="Cloth_B_1">
+<bone name="Cloth_B_2">
+</bone>
+</bone>
+<bone name="Cloth_FL_1">
+<bone name="Cloth_FL_2">
+</bone>
+</bone>
+<bone name="Cloth_FR_1">
+<bone name="Cloth_FR_2">
+</bone>
+</bone>
+<bone name="Cloth_F_1">
+<bone name="Cloth_F_2">
+</bone>
+</bone>
+<bone name="Cloth_L_1">
+<bone name="Cloth_L_2">
+</bone>
+</bone>
+<bone name="Cloth_R_1">
+<bone name="Cloth_R_2">
+</bone>
+</bone>
+<bone name="Flab">
+<bone name="Flab_BL">
+</bone>
+<bone name="Flab_BR">
+</bone>
+<bone name="Flab_F">
+</bone>
+<bone name="Flab_FL">
+</bone>
+<bone name="Flab_FR">
+</bone>
+</bone>
+<bone name="Leg_1_L">
+<bone name="Leg_2_L">
+<bone name="Ankle_L">
+<bone name="Toe_L">
+<bone name="Finger_Foot_A_L">
+</bone>
+<bone name="Finger_Foot_B_L">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Leg_1_R">
+<bone name="Leg_2_R">
+<bone name="Ankle_R">
+<bone name="Toe_R">
+<bone name="Finger_Foot_A_R">
+</bone>
+<bone name="Finger_Foot_B_R">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Bokonox Skeleton" title="Bokonox Skeleton">
+<identifier><root>base_bokonoxA</root></identifier>
+<bone name="base_bokonoxA"><target>base_bokonoxA</target>
+<bone name="Spine_1"><target>Spine_1</target>
+<bone name="Center_1"><target>Center_1</target>
+</bone>
+<bone name="Spine_2"><target>Spine_2</target>
+<bone name="Breast_L"><target>Breast_L</target>
+</bone>
+<bone name="Breast_R"><target>Breast_R</target>
+</bone>
+<bone name="Center_2"><target>Center_2</target>
+</bone>
+<bone name="Clavicle_L"><target>Clavicle_L</target>
+<bone name="Arm_1_L"><target>Arm_1_L</target>
+<bone name="Arm_2_L"><target>Arm_2_L</target>
+<bone name="Wrist_L"><target>Wrist_L</target>
+<bone name="Finger_A_1_L"><target>Finger_A_1_L</target>
+<bone name="Finger_A_2_L"><target>Finger_A_2_L</target>
+<bone name="Finger_A_3_L"><target>Finger_A_3_L</target>
+</bone>
+</bone>
+</bone>
+<bone name="Finger_B_1_L"><target>Finger_B_1_L</target>
+<bone name="Finger_B_2_L"><target>Finger_B_2_L</target>
+<bone name="Finger_B_3_L"><target>Finger_B_3_L</target>
+</bone>
+</bone>
+</bone>
+<bone name="Finger_C_1_L"><target>Finger_C_1_L</target>
+<bone name="Finger_C_2_L"><target>Finger_C_2_L</target>
+<bone name="Finger_C_3_L"><target>Finger_C_3_L</target>
+</bone>
+</bone>
+</bone>
+<bone name="Weapon_L"><target>Weapon_L</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Clavicle_R"><target>Clavicle_R</target>
+<bone name="Arm_1_R"><target>Arm_1_R</target>
+<bone name="Arm_2_R"><target>Arm_2_R</target>
+<bone name="Wrist_R"><target>Wrist_R</target>
+<bone name="Finger_A_1_R"><target>Finger_A_1_R</target>
+<bone name="Finger_A_2_R"><target>Finger_A_2_R</target>
+<bone name="Finger_A_3_R"><target>Finger_A_3_R</target>
+</bone>
+</bone>
+</bone>
+<bone name="Finger_B_1_R"><target>Finger_B_1_R</target>
+<bone name="Finger_B_2_R"><target>Finger_B_2_R</target>
+<bone name="Finger_B_3_R"><target>Finger_B_3_R</target>
+</bone>
+</bone>
+</bone>
+<bone name="Finger_C_1_R"><target>Finger_C_1_R</target>
+<bone name="Finger_C_2_R"><target>Finger_C_2_R</target>
+<bone name="Finger_C_3_R"><target>Finger_C_3_R</target>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Neck"><target>Neck</target>
+<bone name="Head"><target>Head</target>
+<bone name="Cheek_L"><target>Cheek_L</target>
+</bone>
+<bone name="Cheek_R"><target>Cheek_R</target>
+</bone>
+<bone name="Chin"><target>Chin</target>
+<bone name="Tongue_1"><target>Tongue_1</target>
+<bone name="Tongue_2"><target>Tongue_2</target>
+</bone>
+</bone>
+</bone>
+<bone name="Ear_1_L"><target>Ear_1_L</target>
+<bone name="Ear_2_L"><target>Ear_2_L</target>
+<bone name="Z_Ear_L"><target>Z_Ear_L</target>
+</bone>
+</bone>
+</bone>
+<bone name="Ear_1_R"><target>Ear_1_R</target>
+<bone name="Ear_2_R"><target>Ear_2_R</target>
+<bone name="Z_Ear_R"><target>Z_Ear_R</target>
+</bone>
+</bone>
+</bone>
+<bone name="Eyeball"><target>Eyeball</target>
+</bone>
+<bone name="Eyelid_L"><target>Eyelid_L</target>
+</bone>
+<bone name="Eyelid_R"><target>Eyelid_R</target>
+</bone>
+<bone name="Hair_L_1"><target>Hair_L_1</target>
+<bone name="Hair_L_2"><target>Hair_L_2</target>
+<bone name="Hair_L_3"><target>Hair_L_3</target>
+<bone name="Hair_L_4"><target>Hair_L_4</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Hair_R_1"><target>Hair_R_1</target>
+<bone name="Hair_R_2"><target>Hair_R_2</target>
+<bone name="Hair_R_3"><target>Hair_R_3</target>
+<bone name="Hair_R_4"><target>Hair_R_4</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Lip_L"><target>Lip_L</target>
+</bone>
+<bone name="Lip_R"><target>Lip_R</target>
+</bone>
+<bone name="Nose_1"><target>Nose_1</target>
+<bone name="Nose_2"><target>Nose_2</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Necklace_1"><target>Necklace_1</target>
+<bone name="Necklace_2"><target>Necklace_2</target>
+<bone name="Necklace_F_1"><target>Necklace_F_1</target>
+<bone name="Necklace_F_2"><target>Necklace_F_2</target>
+</bone>
+</bone>
+<bone name="Necklace_L_1"><target>Necklace_L_1</target>
+<bone name="Necklace_L_2"><target>Necklace_L_2</target>
+</bone>
+</bone>
+<bone name="Necklace_R_1"><target>Necklace_R_1</target>
+<bone name="Necklace_R_2"><target>Necklace_R_2</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Waist"><target>Waist</target>
+<bone name="Cloth_BL_1"><target>Cloth_BL_1</target>
+<bone name="Cloth_BL_2"><target>Cloth_BL_2</target>
+</bone>
+</bone>
+<bone name="Cloth_BR_1"><target>Cloth_BR_1</target>
+<bone name="Cloth_BR_2"><target>Cloth_BR_2</target>
+</bone>
+</bone>
+<bone name="Cloth_B_1"><target>Cloth_B_1</target>
+<bone name="Cloth_B_2"><target>Cloth_B_2</target>
+</bone>
+</bone>
+<bone name="Cloth_FL_1"><target>Cloth_FL_1</target>
+<bone name="Cloth_FL_2"><target>Cloth_FL_2</target>
+</bone>
+</bone>
+<bone name="Cloth_FR_1"><target>Cloth_FR_1</target>
+<bone name="Cloth_FR_2"><target>Cloth_FR_2</target>
+</bone>
+</bone>
+<bone name="Cloth_F_1"><target>Cloth_F_1</target>
+<bone name="Cloth_F_2"><target>Cloth_F_2</target>
+</bone>
+</bone>
+<bone name="Cloth_L_1"><target>Cloth_L_1</target>
+<bone name="Cloth_L_2"><target>Cloth_L_2</target>
+</bone>
+</bone>
+<bone name="Cloth_R_1"><target>Cloth_R_1</target>
+<bone name="Cloth_R_2"><target>Cloth_R_2</target>
+</bone>
+</bone>
+<bone name="Flab"><target>Flab</target>
+<bone name="Flab_BL"><target>Flab_BL</target>
+</bone>
+<bone name="Flab_BR"><target>Flab_BR</target>
+</bone>
+<bone name="Flab_F"><target>Flab_F</target>
+</bone>
+<bone name="Flab_FL"><target>Flab_FL</target>
+</bone>
+<bone name="Flab_FR"><target>Flab_FR</target>
+</bone>
+</bone>
+<bone name="Leg_1_L"><target>Leg_1_L</target>
+<bone name="Leg_2_L"><target>Leg_2_L</target>
+<bone name="Ankle_L"><target>Ankle_L</target>
+<bone name="Toe_L"><target>Toe_L</target>
+<bone name="Finger_Foot_A_L"><target>Finger_Foot_A_L</target>
+</bone>
+<bone name="Finger_Foot_B_L"><target>Finger_Foot_B_L</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Leg_1_R"><target>Leg_1_R</target>
+<bone name="Leg_2_R"><target>Leg_2_R</target>
+<bone name="Ankle_R"><target>Ankle_R</target>
+<bone name="Toe_R"><target>Toe_R</target>
+<bone name="Finger_Foot_A_R"><target>Finger_Foot_A_R</target>
+</bone>
+<bone name="Finger_Foot_B_R"><target>Finger_Foot_B_R</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

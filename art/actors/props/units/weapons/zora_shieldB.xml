@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <textures><texture file="skeletal/zora/zor_main1.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="spear-a">
+      <mesh>props/weapon/zora_shieldB.dae</mesh>
+    </variant>
+  </group>
+</actor>

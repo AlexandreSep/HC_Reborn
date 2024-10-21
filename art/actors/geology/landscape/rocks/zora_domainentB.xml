@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+  
+  <group>
+    <variant name="a">
+      <mesh>gaia/landscape/rocks/zora_domainentB.dae</mesh>
+      <props>
+	    <prop actor="geology/landscape/rocks/zora_domainentB_rocks.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+
+  <group>
+    <variant>
+      <textures>
+	    <texture file="structural/zora/zora_buildingA.dds" name="baseTex"/>
+	    <texture file="structural/zora/zora_buildingA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+
+</actor>

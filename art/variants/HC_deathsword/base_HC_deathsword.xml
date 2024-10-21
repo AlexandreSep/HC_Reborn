@@ -1,0 +1,18 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_deathsword/deathsword_idle.dae" name="Idle" id="idle1" speed="75"/>
+    <animation file="HC_deathsword/deathsword_idleA.dae" name="Idle" id="idle2" speed="75"/>
+    <animation file="HC_deathsword/deathsword_idleB.dae" name="Idle" id="idle3" speed="75"/>
+    <animation file="HC_deathsword/deathsword_idleC.dae" name="Idle" id="idle4" speed="75"/>
+    <animation event="0.1" file="HC_deathsword/deathsword_hover.dae" name="Walk" id="walk1" speed="20"/>
+    <animation event="0.1" file="HC_deathsword/deathsword_hover.dae" name="Walk" id="walk2" speed="22"/>
+    <animation event="0.1" file="HC_deathsword/deathsword_hover.dae" name="Run" id="run1" speed="16"/>
+    <animation event="0.1" file="HC_deathsword/deathsword_hover.dae" name="Run" id="run2" speed="17"/>
+    <animation event="0.1" file="HC_deathsword/deathsword_hover.dae" name="Run" id="run3" speed="18"/>
+	<animation event="0.3" file="HC_deathsword/deathsword_attackA.dae" name="Attack_ranged" id="attack1" speed="70"/>
+    <animation event="0.3" file="HC_deathsword/deathsword_attackB.dae" name="Attack_ranged" id="attack2" speed="70"/>
+	<animation event="0.3" file="HC_deathsword/deathsword_attackC.dae" name="Attack_ranged" id="attack3" speed="70"/>
+	<animation file="HC_deathsword/deathsword_flail.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_deathsword/deathsword_recover.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

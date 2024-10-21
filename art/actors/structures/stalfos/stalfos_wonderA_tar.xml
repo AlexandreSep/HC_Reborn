@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="wonder">
+      <mesh>structural/stalfos/sta_arbitergroundsA.dae</mesh>
+      <textures>
+	    <texture file="structural/stalfos/stalfos_wonderA_tar.dds" name="baseTex"/>
+	    <texture file="structural/stalfos/stalfos_wonderA_normal.dds" name="normTex"/>
+		<texture file="structural/stalfos/stalfos_arbitergroundsA_ao.dds" name="aoTex"/>
+	  </textures>
+	  <props>
+	    <prop actor="structures/stalfos/stalfos_wonderA_tar_extra.xml" attachpoint="root"/>	
+        <prop actor="props/structures/stalfos/stalfos_groundbaseA_wonder.xml" attachpoint="root"/>		
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

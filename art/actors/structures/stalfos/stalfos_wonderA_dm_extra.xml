@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="wonder">
+      <mesh>structural/stalfos/sta_arbitergroundsA_extra.dae</mesh>
+      <textures>
+	    <texture file="structural/stalfos/stalfos_wonderA_dm.dds" name="baseTex"/>
+	    <texture file="structural/stalfos/stalfos_wonderA_normal.dds" name="normTex"/>
+		<texture file="structural/stalfos/stalfos_arbitergroundsA_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

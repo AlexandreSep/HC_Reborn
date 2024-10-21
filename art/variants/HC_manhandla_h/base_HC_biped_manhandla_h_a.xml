@@ -1,0 +1,22 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_manhandla/manhandla_H_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_manhandla/manhandla_H_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_manhandla/manhandla_H_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_manhandla/manhandla_H_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation file="HC_manhandla/manhandla_H_move.dae" name="Walk" id="walk1" speed="20"/>
+    <animation file="HC_manhandla/manhandla_H_move.dae" name="Walk" id="walk2" speed="22"/>
+    <animation file="HC_manhandla/manhandla_H_move.dae" name="Run" id="run1" speed="16"/>
+    <animation file="HC_manhandla/manhandla_H_move.dae" name="Run" id="run2" speed="17"/>
+    <animation file="HC_manhandla/manhandla_H_move.dae" name="Run" id="run3" speed="18"/>
+    <animation file="HC_manhandla/manhandla_H_idle.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_manhandla/manhandla_H_idle.dae" name="Heal" id="heal2" speed="100"/>
+	<animation file="HC_manhandla/manhandla_H_attackA.dae" name="Attack_ranged" id="attack1" speed="70"/>
+    <animation file="HC_manhandla/manhandla_H_idleA.dae" name="Attack_ranged" id="attack2" speed="70"/>
+	<animation file="HC_manhandla/manhandla_H_idleB.dae" name="Attack_ranged" id="attack3" speed="70"/>
+	<animation file="HC_manhandla/manhandla_H_attack_rotateA.dae" name="Attack_ranged" id="attack4" speed="70"/>
+	<animation file="HC_manhandla/manhandla_H_idleA.dae" name="promotion" speed="80"/>
+	<animation file="HC_manhandla/manhandla_H_flail.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_manhandla/manhandla_H_recover.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

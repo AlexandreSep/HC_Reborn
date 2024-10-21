@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_bulblin/bulblin_rider_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_bulblin/bulblin_rider_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_bulblin/bulblin_rider_idle.dae" name="Run" speed="40"/>
+        <animation event="0.7" file="HC_bulblin/bulblin_rider_attackA.dae" name="attack_melee" id="attack1" speed="100"/>
+		<animation event="0.7" file="HC_bulblin/bulblin_rider_attackA.dae" name="attack_melee" id="attack2" speed="100"/>
+        <animation event="0.7" file="HC_bulblin/bulblin_rider_attackA.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.7" file="HC_bulblin/bulblin_rider_attackA.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_bulblin/bulblin_rider_idle.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>props/weapon/bulblin_clubA.dae</mesh>
+	  <textures><texture file="skeletal/moblin/mob_mainB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

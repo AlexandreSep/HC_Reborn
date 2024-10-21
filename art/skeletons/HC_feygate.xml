@@ -1,0 +1,123 @@
+<skeletons>
+<standard_skeleton id="Feygate Skeleton" title="Feygate Skeleton">
+<bone name="base_feygateA">
+<bone name="body">
+<bone name="core">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="sidetent_01">
+<bone name="sidetent_02">
+<bone name="sidetent_03">
+<bone name="sidetent_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_legA_02">
+<bone name="L_legA_03">
+<bone name="L_legA_04">
+</bone>
+</bone>
+</bone>
+<bone name="L_legB_01">
+<bone name="L_legB_02">
+<bone name="L_legB_03">
+<bone name="L_legB_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="reartent_01">
+<bone name="reartent_02">
+<bone name="reartent_03">
+<bone name="reartent_04">
+<bone name="reartent_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_legB_01">
+<bone name="R_legB_02">
+<bone name="R_legB_03">
+<bone name="R_legB_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_legA_02">
+<bone name="R_legA_03">
+<bone name="R_legA_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rotator">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Feygate Skeleton" title="Feygate Skeleton">
+<identifier><root>base_feygateA</root></identifier>
+<bone name="base_feygateA"><target>base_feygateA</target>
+<bone name="body"><target>body</target>
+<bone name="core"><target>core</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="sidetent_01"><target>sidetent_01</target>
+<bone name="sidetent_02"><target>sidetent_02</target>
+<bone name="sidetent_03"><target>sidetent_03</target>
+<bone name="sidetent_04"><target>sidetent_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_legA_02"><target>L_legA_02</target>
+<bone name="L_legA_03"><target>L_legA_03</target>
+<bone name="L_legA_04"><target>L_legA_04</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_legB_01"><target>L_legB_01</target>
+<bone name="L_legB_02"><target>L_legB_02</target>
+<bone name="L_legB_03"><target>L_legB_03</target>
+<bone name="L_legB_04"><target>L_legB_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="reartent_01"><target>reartent_01</target>
+<bone name="reartent_02"><target>reartent_02</target>
+<bone name="reartent_03"><target>reartent_03</target>
+<bone name="reartent_04"><target>reartent_04</target>
+<bone name="reartent_05"><target>reartent_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_legB_01"><target>R_legB_01</target>
+<bone name="R_legB_02"><target>R_legB_02</target>
+<bone name="R_legB_03"><target>R_legB_03</target>
+<bone name="R_legB_04"><target>R_legB_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_legA_02"><target>R_legA_02</target>
+<bone name="R_legA_03"><target>R_legA_03</target>
+<bone name="R_legA_04"><target>R_legA_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rotator"><target>rotator</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_demise/base_HC_biped_sword.xml"> 	
+	  <mesh>units/moblin/mob_demiseA.dae</mesh>
+      <textures>
+        <texture file="skeletal/moblin/mob_demiseA.dds" name="baseTex"/>
+      </textures>
+	  <props>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="projectile"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="hair_01"/>
+			<prop actor="particle/demonblight_fireA.xml" attachpoint="hair_02"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="hair_03"/>
+			<prop actor="particle/demonblight_fireA.xml" attachpoint="hair_04"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="hair_05"/>
+			<prop actor="particle/demonblight_fireA.xml" attachpoint="hair_06"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="hair_07"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="cape_02"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="cape_03"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="cape_04"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="cape_05"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="cape_06"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="cape_07"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="cape_08"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="cape_09"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_10"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_11"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_12"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_13"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_14"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_15"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_16"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_17"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="cape_18"/>	  	  
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="L_cape_02"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="L_cape_03"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="L_cape_04"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="L_cape_05"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="L_cape_06"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="L_cape_07"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="L_cape_08"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="L_cape_09"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_10"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_11"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_12"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_13"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_14"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_15"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_16"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_17"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="L_cape_18"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="R_cape_02"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="R_cape_03"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="R_cape_04"/>
+			<prop actor="particle/demonblight_smokeA.xml" attachpoint="R_cape_05"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="R_cape_06"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="R_cape_07"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="R_cape_08"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="R_cape_09"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_10"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_11"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_12"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_13"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_14"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_15"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_16"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_17"/>
+			<prop actor="particle/demonblight_smokeC.xml" attachpoint="R_cape_18"/>			
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="R_weapon"/>
+			<prop actor="particle/demonblight_smokeB.xml" attachpoint="L_hand"/>
+			<prop actor="props/units/weapons/demise_swordA.xml" attachpoint="R_weapon"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_demise/base_HC_biped_capture.xml"/>
+    <variant file="HC_demise/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_demise/base_HC_biped_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

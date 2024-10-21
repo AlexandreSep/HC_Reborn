@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="castle">
+      <mesh>structural/settle_malkariko/malka_castleA.dae</mesh>
+      <props>
+		<prop actor="structures/settle_malkariko/malka_castle_wingA.xml" attachpoint="root"/>
+		<prop actor="structures/settle_malkariko/malka_castle_perimA.xml" attachpoint="root"/>
+		<prop actor="structures/settle_malkariko/malka_castle_perimB.xml" attachpoint="root"/>
+		<prop actor="structures/settle_malkariko/malka_castle_glassA.xml" attachpoint="root"/>
+		<prop actor="props/structures/hylian/hyl_flag_royalA.xml" attachpoint="flag_01"/>
+		<prop actor="props/structures/hylian/hyl_flag_malkaA.xml" attachpoint="flag_02"/>
+      </props>
+      <textures>
+	    <texture file="structural/settle_malkariko/malka_mainA.dds" name="baseTex"/>
+	    <texture file="structural/settle_malkariko/malka_mainA_normal.dds" name="normTex"/>
+		<texture file="structural/settle_malkariko/malka_castleA_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>
+

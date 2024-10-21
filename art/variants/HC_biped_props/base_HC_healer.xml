@@ -1,0 +1,24 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_biped/biped_hum_idle.dae" name="Idle" id="idle1" speed="30"/>
+    <animation file="HC_biped/biped_hum_idleA.dae" name="Idle" id="idle2" speed="31"/>
+    <animation file="HC_biped/biped_hum_idleB.dae" name="Idle" id="idle3" speed="32"/>
+	<animation file="HC_biped/biped_hum_idleC.dae" name="Idle" id="idle3" speed="32"/>
+    <animation file="HC_biped/biped_hum_walk.dae" name="Walk" id="walk1" speed="25"/>
+    <animation file="HC_biped/biped_hum_walk.dae" name="Walk" id="walk2" speed="23"/>
+    <animation file="HC_biped/biped_hum_run.dae" name="Run" id="run1" speed="10"/>
+    <animation file="HC_biped/biped_hum_run.dae" name="Run" id="run2" speed="11"/>
+    <animation file="HC_biped/biped_hum_run.dae" name="Run" id="run3" speed="12"/>
+    <animation file="HC_biped/biped_hum_heal.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_biped/biped_hum_heal.dae" name="Heal" id="heal2" speed="100"/>
+	<animation file="HC_biped/biped_hum_capture.dae" name="attack_capture" speed="100"/>
+	<animation file="HC_biped/biped_hum_heal.dae" name="gather_praise" id="praise1" speed="100"/>
+	<animation file="HC_biped/biped_hum_heal.dae" name="gather_praise" id="praise2" speed="200"/>
+	<animation file="HC_biped/biped_hum_heal.dae" name="gather_praise" id="praise3" speed="50"/>
+	<animation file="HC_biped/biped_hum_promotion.dae" name="promotion" speed="80"/>
+	<animation file="HC_biped/biped_hum_deathA.dae" name="Death" id="death1" speed="60"/>
+	<animation file="HC_biped/biped_hum_deathB.dae" name="Death" id="death2" speed="60"/>
+	<animation file="HC_biped/biped_hum_flailA.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_biped/biped_hum_recoverA.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

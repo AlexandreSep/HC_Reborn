@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant name="a">
+      <mesh>gaia/landscape/organic/hermatid_deadshellA.dae</mesh>
+    </variant>
+    <variant name="b">
+      <mesh>gaia/landscape/organic/hermatid_deadshellB.dae</mesh>
+    </variant>
+  </group>
+
+  <group>
+    <variant frequency="1" name="shell_tan">
+      <textures><texture file="skeletal/lanayru/lan_hermatid_shellA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="shell_pink">
+      <textures><texture file="skeletal/lanayru/lan_hermatid_shellB.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="shell_green">
+      <textures><texture file="skeletal/lanayru/lan_hermatid_shellC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+  <group>
+    <variant>
+	  <props>
+        <prop actor="props/structures/gaia/hermitid_deadshellgroundA.xml" attachpoint="root"/>
+      </props> 
+    </variant>
+  </group>
+
+</actor>

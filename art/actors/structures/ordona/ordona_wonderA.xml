@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Spring">
+      <mesh>structural/ordona/ord_wonderA.dae</mesh>
+      <props>
+		<prop actor="props/structures/ordona/ordona_groundbase_wonder.xml" attachpoint="root"/>
+	    <prop actor="props/structures/ordona/ordona_wonder_waterA.xml" attachpoint="root"/>
+		<prop actor="props/structures/ordona/ordona_wonder_waterfallA.xml" attachpoint="root"/>
+		<prop actor="particle/ordona_springfogA.xml" attachpoint="root"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeA"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeB"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeC"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeD"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeE"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeF"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeG"/>		
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeH"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeI"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeJ"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeK"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeL"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeM"/>
+		<prop actor="flora/forest/ordon_treesA.xml" attachpoint="treeN"/>
+      </props>
+      <textures>
+        <texture file="structural/ordona/ordona_springA.dds" name="baseTex"/>
+		<texture file="structural/ordona/ordona_springA_normal.dds" name="normTex"/>		
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

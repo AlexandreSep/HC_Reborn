@@ -1,0 +1,99 @@
+<skeletons>
+	<standard_skeleton title="HC_biped" id="HC_biped">
+		<bone name="bone_pelvis">
+			<bone name="bone_RThigh">
+				<bone name="bone_Rlowerleg">
+					<bone name="bone_Rfoot">
+					</bone>
+				</bone>
+			</bone>
+			<bone name="bone_abs">
+				<bone name="bone_torso">
+					<bone name="bone_head">
+						<bone name="bone_jaw">
+						</bone>
+						<bone name="bone_eyebrow">
+						</bone>
+					</bone>
+					<bone name="bone_Rclavical">
+						<bone name="bone_Rupperarm">
+							<bone name="bone_Relbow">
+								<bone name="bone_Rhand">
+									<bone name="bone_weapon_weapon01">
+									</bone>
+									<bone name="bone_weapon02">
+									</bone>
+								</bone>
+							</bone>
+						</bone>
+					</bone>
+					<bone name="bone_Lcalvical">
+						<bone name="bone_Lupperarm">
+							<bone name="bone_Lelbow">
+								<bone name="bone_Lhand">
+									<bone name="bone_weapon03_shield_shield01">
+									</bone>
+								</bone>
+							</bone>
+						</bone>
+					</bone>
+				</bone>
+			</bone>
+			<bone name="bone_LThigh">
+				<bone name="bone_Llowerleg">
+					<bone name="bone_Lfoot">
+					</bone>
+				</bone>
+			</bone>
+		</bone>
+	</standard_skeleton>
+	<skeleton title="HC_biped" target="HC_biped">
+		<identifier><root>bone_pelvis</root></identifier>
+		<bone name="bone_pelvis"><target>bone_pelvis</target>
+			<bone name="bone_RThigh"><target>bone_RThigh</target>
+				<bone name="bone_Rlowerleg"><target>bone_Rlowerleg</target>
+					<bone name="bone_Rfoot"><target>bone_Rfoot</target>
+					</bone>
+				</bone>
+			</bone>
+			<bone name="bone_abs"><target>bone_abs</target>
+				<bone name="bone_torso"><target>bone_torso</target>
+					<bone name="bone_head"><target>bone_head</target>
+						<bone name="bone_jaw"><target>bone_jaw</target>
+						</bone>
+						<bone name="bone_eyebrow"><target>bone_eyebrow</target>
+						</bone>
+					</bone>
+					<bone name="bone_Rclavical"><target>bone_Rclavical</target>
+						<bone name="bone_Rupperarm"><target>bone_Rupperarm</target>
+							<bone name="bone_Relbow"><target>bone_Relbow</target>
+								<bone name="bone_Rhand"><target>bone_Rhand</target>
+									<bone name="bone_weapon_weapon01"><target>bone_weapon_weapon01</target>
+									</bone>
+									<bone name="bone_weapon02"><target>bone_weapon02</target>
+									</bone>
+								</bone>
+							</bone>
+						</bone>
+					</bone>
+					<bone name="bone_Lcalvical"><target>bone_Lcalvical</target>
+						<bone name="bone_Lupperarm"><target>bone_Lupperarm</target>
+							<bone name="bone_Lelbow"><target>bone_Lelbow</target>
+								<bone name="bone_Lhand"><target>bone_Lhand</target>
+									<bone name="bone_weapon03_shield_shield01"><target>bone_weapon03_shield_shield01</target>
+									</bone>
+								</bone>
+							</bone>
+						</bone>
+					</bone>
+				</bone>
+			</bone>
+			<bone name="bone_LThigh"><target>bone_LThigh</target>
+				<bone name="bone_Llowerleg"><target>bone_Llowerleg</target>
+					<bone name="bone_Lfoot"><target>bone_Lfoot</target>
+					</bone>
+				</bone>
+			</bone>
+		</bone>
+	</skeleton>
+</skeletons>

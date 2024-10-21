@@ -1,0 +1,5 @@
+<variant name="gather_ruins">
+  <animations>
+    <animation event="0.4" file="HC_archer/biped_hum_arch_harvest_mine.dae" name="gather_ruins" speed="100"/>
+  </animations>
+</variant>

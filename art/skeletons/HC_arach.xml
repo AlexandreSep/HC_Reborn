@@ -1,0 +1,311 @@
+<skeletons>
+<standard_skeleton id="Arach Skeleton" title="Arach Skeleton">
+<bone name="arach_base">
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+<bone name="tail_09">
+<bone name="stinger_01">
+<bone name="stinger_02">
+<bone name="stinger_03">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="body_01">
+<bone name="eye_01">
+</bone>
+<bone name="L_arm_01">
+<bone name="L_arm_02">
+<bone name="L_arm_03">
+<bone name="L_arm_04">
+<bone name="L_arm_05">
+<bone name="L_claw_01">
+<bone name="L_claw_02">
+</bone>
+</bone>
+<bone name="L_claw_03">
+<bone name="L_claw_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_arm_01">
+<bone name="R_arm_02">
+<bone name="R_arm_03">
+<bone name="R_arm_04">
+<bone name="R_arm_05">
+<bone name="R_claw_01">
+<bone name="R_claw_02">
+</bone>
+</bone>
+<bone name="R_claw_03">
+<bone name="R_claw_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_A_leg_01">
+<bone name="L_A_leg_02">
+<bone name="L_A_leg_03">
+<bone name="L_A_leg_04">
+<bone name="L_A_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01">
+<bone name="L_B_leg_02">
+<bone name="L_B_leg_03">
+<bone name="L_B_leg_04">
+<bone name="L_B_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_C_leg_01">
+<bone name="L_C_leg_02">
+<bone name="L_C_leg_03">
+<bone name="L_C_leg_04">
+<bone name="L_C_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_D_leg_01">
+<bone name="L_D_leg_02">
+<bone name="L_D_leg_03">
+<bone name="L_D_leg_04">
+<bone name="L_D_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_A_leg_01">
+<bone name="R_A_leg_02">
+<bone name="R_A_leg_03">
+<bone name="R_A_leg_04">
+<bone name="R_A_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01">
+<bone name="R_B_leg_02">
+<bone name="R_B_leg_03">
+<bone name="R_B_leg_04">
+<bone name="R_B_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_C_leg_01">
+<bone name="R_C_leg_02">
+<bone name="R_C_leg_03">
+<bone name="R_C_leg_04">
+<bone name="R_C_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_D_leg_01">
+<bone name="R_D_leg_02">
+<bone name="R_D_leg_03">
+<bone name="R_D_leg_04">
+<bone name="R_D_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rider_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Arach Skeleton" title="Arach Skeleton">
+<identifier><root>arach_base</root></identifier>
+<bone name="arach_base"><target>arach_base</target>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+<bone name="tail_09"><target>tail_09</target>
+<bone name="stinger_01"><target>stinger_01</target>
+<bone name="stinger_02"><target>stinger_02</target>
+<bone name="stinger_03"><target>stinger_03</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="body_01"><target>body_01</target>
+<bone name="eye_01"><target>eye_01</target>
+</bone>
+<bone name="L_arm_01"><target>L_arm_01</target>
+<bone name="L_arm_02"><target>L_arm_02</target>
+<bone name="L_arm_03"><target>L_arm_03</target>
+<bone name="L_arm_04"><target>L_arm_04</target>
+<bone name="L_arm_05"><target>L_arm_05</target>
+<bone name="L_claw_01"><target>L_claw_01</target>
+<bone name="L_claw_02"><target>L_claw_02</target>
+</bone>
+</bone>
+<bone name="L_claw_03"><target>L_claw_03</target>
+<bone name="L_claw_04"><target>L_claw_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_arm_01"><target>R_arm_01</target>
+<bone name="R_arm_02"><target>R_arm_02</target>
+<bone name="R_arm_03"><target>R_arm_03</target>
+<bone name="R_arm_04"><target>R_arm_04</target>
+<bone name="R_arm_05"><target>R_arm_05</target>
+<bone name="R_claw_01"><target>R_claw_01</target>
+<bone name="R_claw_02"><target>R_claw_02</target>
+</bone>
+</bone>
+<bone name="R_claw_03"><target>R_claw_03</target>
+<bone name="R_claw_04"><target>R_claw_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_A_leg_01"><target>L_A_leg_01</target>
+<bone name="L_A_leg_02"><target>L_A_leg_02</target>
+<bone name="L_A_leg_03"><target>L_A_leg_03</target>
+<bone name="L_A_leg_04"><target>L_A_leg_04</target>
+<bone name="L_A_leg_05"><target>L_A_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01"><target>L_B_leg_01</target>
+<bone name="L_B_leg_02"><target>L_B_leg_02</target>
+<bone name="L_B_leg_03"><target>L_B_leg_03</target>
+<bone name="L_B_leg_04"><target>L_B_leg_04</target>
+<bone name="L_B_leg_05"><target>L_B_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_C_leg_01"><target>L_C_leg_01</target>
+<bone name="L_C_leg_02"><target>L_C_leg_02</target>
+<bone name="L_C_leg_03"><target>L_C_leg_03</target>
+<bone name="L_C_leg_04"><target>L_C_leg_04</target>
+<bone name="L_C_leg_05"><target>L_C_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_D_leg_01"><target>L_D_leg_01</target>
+<bone name="L_D_leg_02"><target>L_D_leg_02</target>
+<bone name="L_D_leg_03"><target>L_D_leg_03</target>
+<bone name="L_D_leg_04"><target>L_D_leg_04</target>
+<bone name="L_D_leg_05"><target>L_D_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_A_leg_01"><target>R_A_leg_01</target>
+<bone name="R_A_leg_02"><target>R_A_leg_02</target>
+<bone name="R_A_leg_03"><target>R_A_leg_03</target>
+<bone name="R_A_leg_04"><target>R_A_leg_04</target>
+<bone name="R_A_leg_05"><target>R_A_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01"><target>R_B_leg_01</target>
+<bone name="R_B_leg_02"><target>R_B_leg_02</target>
+<bone name="R_B_leg_03"><target>R_B_leg_03</target>
+<bone name="R_B_leg_04"><target>R_B_leg_04</target>
+<bone name="R_B_leg_05"><target>R_B_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_C_leg_01"><target>R_C_leg_01</target>
+<bone name="R_C_leg_02"><target>R_C_leg_02</target>
+<bone name="R_C_leg_03"><target>R_C_leg_03</target>
+<bone name="R_C_leg_04"><target>R_C_leg_04</target>
+<bone name="R_C_leg_05"><target>R_C_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_D_leg_01"><target>R_D_leg_01</target>
+<bone name="R_D_leg_02"><target>R_D_leg_02</target>
+<bone name="R_D_leg_03"><target>R_D_leg_03</target>
+<bone name="R_D_leg_04"><target>R_D_leg_04</target>
+<bone name="R_D_leg_05"><target>R_D_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="rider_01"><target>rider_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

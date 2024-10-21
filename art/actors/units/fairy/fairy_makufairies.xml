@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_GDT/base_HC_makufairies.xml">
+      <mesh>units/fairy/fai_makufairiesA.dae</mesh>
+      <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+	  <props>
+		<prop actor="units/fairy/fairy_drove_all.xml" attachpoint="fairy_01"/>
+		<prop actor="units/fairy/fairy_drove_spring.xml" attachpoint="fairy_02"/>
+		<prop actor="units/fairy/fairy_drove_summer.xml" attachpoint="fairy_03"/>
+		<prop actor="units/fairy/fairy_drove_autumn.xml" attachpoint="fairy_04"/>
+		<prop actor="units/fairy/fairy_drove_winter.xml" attachpoint="fairy_05"/>
+		<prop actor="units/fairy/fairy_drove_all.xml" attachpoint="fairy_06"/>
+		<prop actor="units/fairy/fairy_drove_spring.xml" attachpoint="fairy_07"/>
+		<prop actor="units/fairy/fairy_drove_summer.xml" attachpoint="fairy_08"/>
+		<prop actor="units/fairy/fairy_drove_autumn.xml" attachpoint="fairy_09"/>
+		<prop actor="units/fairy/fairy_drove_winter.xml" attachpoint="fairy_010"/>
+		<prop actor="units/fairy/fairy_drove_all.xml" attachpoint="fairy_011"/>
+		<prop actor="units/fairy/fairy_drove_all.xml" attachpoint="fairy_012"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Attack_Ranged">
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_GDT/base_HC_makufairies_att.xml"/>
+    <variant name="Death">
+    </variant>
+  </group>  
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,159 @@
+<skeletons>
+<standard_skeleton id="recycler_skeleton" title="recycler_skeleton">
+<bone name="base_recycler">
+<bone name="stalk">
+<bone name="generate">
+</bone>
+</bone>
+<bone name="arm_01">
+<bone name="arm_02">
+<bone name="arm_03">
+<bone name="arm_04">
+<bone name="arm_05">
+<bone name="arm_06">
+<bone name="arm_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="arm_08">
+<bone name="arm_09">
+<bone name="arm_10">
+<bone name="arm_11">
+<bone name="arm_12">
+<bone name="arm_13">
+<bone name="arm_14">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="arm_15">
+<bone name="arm_16">
+<bone name="arm_17">
+<bone name="arm_18">
+<bone name="arm_19">
+<bone name="arm_20">
+<bone name="arm_21">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="arm_22">
+<bone name="arm_23">
+<bone name="arm_24">
+<bone name="arm_25">
+<bone name="arm_26">
+<bone name="arm_27">
+<bone name="arm_28">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="arm_29">
+<bone name="arm_30">
+<bone name="arm_31">
+<bone name="arm_32">
+<bone name="arm_33">
+<bone name="arm_34">
+<bone name="arm_35">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="recycler_skeleton" title="recycler_skeleton">
+<identifier><root>base_recycler</root></identifier>
+<bone name="base_recycler"><target>base_recycler</target>
+<bone name="stalk"><target>stalk</target>
+<bone name="generate"><target>generate</target>
+</bone>
+</bone>
+<bone name="arm_01"><target>arm_01</target>
+<bone name="arm_02"><target>arm_02</target>
+<bone name="arm_03"><target>arm_03</target>
+<bone name="arm_04"><target>arm_04</target>
+<bone name="arm_05"><target>arm_05</target>
+<bone name="arm_06"><target>arm_06</target>
+<bone name="arm_07"><target>arm_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="arm_08"><target>arm_08</target>
+<bone name="arm_09"><target>arm_09</target>
+<bone name="arm_10"><target>arm_10</target>
+<bone name="arm_11"><target>arm_11</target>
+<bone name="arm_12"><target>arm_12</target>
+<bone name="arm_13"><target>arm_13</target>
+<bone name="arm_14"><target>arm_14</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="arm_15"><target>arm_15</target>
+<bone name="arm_16"><target>arm_16</target>
+<bone name="arm_17"><target>arm_17</target>
+<bone name="arm_18"><target>arm_18</target>
+<bone name="arm_19"><target>arm_19</target>
+<bone name="arm_20"><target>arm_20</target>
+<bone name="arm_21"><target>arm_21</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="arm_22"><target>arm_22</target>
+<bone name="arm_23"><target>arm_23</target>
+<bone name="arm_24"><target>arm_24</target>
+<bone name="arm_25"><target>arm_25</target>
+<bone name="arm_26"><target>arm_26</target>
+<bone name="arm_27"><target>arm_27</target>
+<bone name="arm_28"><target>arm_28</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="arm_29"><target>arm_29</target>
+<bone name="arm_30"><target>arm_30</target>
+<bone name="arm_31"><target>arm_31</target>
+<bone name="arm_32"><target>arm_32</target>
+<bone name="arm_33"><target>arm_33</target>
+<bone name="arm_34"><target>arm_34</target>
+<bone name="arm_35"><target>arm_35</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

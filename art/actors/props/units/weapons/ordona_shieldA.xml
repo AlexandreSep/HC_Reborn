@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Shield">
+      <textures><texture file="skeletal/ordona/ord_weaponsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="shield-a">
+      <mesh>props/weapon/ordona_shieldA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="shield-b">
+      <mesh>props/weapon/ordona_shieldA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="shield-d">
+      <mesh>props/weapon/ordona_shieldA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="shield-e">
+      <mesh>props/weapon/ordona_shieldA.dae</mesh>
+    </variant>
+  </group>
+</actor>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_hermatid/hermatid_idle.dae" name="Idle" speed="100"/>
+        <animation file="HC_hermatid/hermatid_idleA.dae" name="Idle" speed="100"/>
+        <animation file="HC_hermatid/hermatid_idleB.dae" name="Idle" speed="100"/>
+        <animation file="HC_hermatid/hermatid_idleC.dae" name="Idle" speed="100"/>
+        <animation event="0.1" file="HC_hermatid/hermatid_walk.dae" name="carry_meat" speed="10"/>
+        <animation event="0.1" file="HC_hermatid/hermatid_walk.dae" name="Walk" speed="10"/>
+        <animation event="0.1" file="HC_hermatid/hermatid_walk.dae" name="Run" speed="15"/>
+        <animation file="HC_hermatid/hermatid_attackA.dae" name="attack_melee" speed="100"/>
+        <animation file="HC_hermatid/hermatid_attackA.dae" name="attack_slaughter" speed="70"/>
+        <animation file="HC_hermatid/hermatid_deathA.dae" name="death" speed="100"/>
+      </animations>
+	  <props>
+		<prop actor="units/lanayru/lanayru_hermitid_shell.xml" attachpoint="root"/>
+      </props>
+      <mesh>units/lanayru/lan_hermatidA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="horse-texture-01">
+      <textures><texture file="skeletal/lanayru/lan_hermatidA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-mane black">
+      <textures><texture file="skeletal/lanayru/lan_hermatidA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-snipe">
+      <textures><texture file="skeletal/lanayru/lan_hermatidA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="horse-texture-mane white">
+      <textures><texture file="skeletal/lanayru/lan_hermatidA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+		<prop actor="units/lanayru/lanayru_hermitid_shell.xml" attachpoint="root"/>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_sandseal.xml">
+      <mesh>units/gerudo/ger_sandsealA_ram.dae</mesh>
+      <textures><texture file="skeletal/gerudo/ger_sandsealA.dds" name="baseTex"/></textures>
+    </variant>
+	<variant file="HC_mounts/base_HC_sandseal_death.xml">
+      <mesh>units/gerudo/ger_sandsealA_ram.dae</mesh>
+      <textures><texture file="skeletal/gerudo/ger_sandsealA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>objectcolor.xml</material>
+</actor>

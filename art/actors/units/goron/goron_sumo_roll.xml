@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_goronmed/base_HC_roll.xml">
+      <mesh>units/goron/gor_sumoA.dae</mesh>
+      <props>
+      </props>
+      <textures><texture file="skeletal/goron/gor_main1.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_goronmed/base_HC_goron_death.xml">
+      <props>
+        <prop actor="props/units/blood_goron_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="Walk">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

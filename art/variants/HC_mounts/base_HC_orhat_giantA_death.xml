@@ -1,0 +1,5 @@
+<variant name="Death">
+  <animations>
+	        <animation file="HC_orhat_giant/orhat_giant_deathA.dae" name="death" speed="50"/>
+  </animations>
+</variant>

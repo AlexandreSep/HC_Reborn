@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="Wall gate">
+      <animations>
+        <animation file="HC_gorgate/gor_gate_closed.dae" name="gate_closed" speed="65"/>
+        <animation file="HC_gorgate/gor_gate_opening.dae" name="gate_opening" speed="65"/>
+        <animation file="HC_gorgate/gor_gate_open.dae" name="gate_open" speed="65"/>
+        <animation file="HC_gorgate/gor_gate_closing.dae" name="gate_closing" speed="65"/>
+      </animations>
+      <mesh>structural/goron/gor_gateA.dae</mesh>
+      <textures>
+	    <texture file="structural/goron/goron_buildingC.dds" name="baseTex"/>
+		<texture file="structural/goron/goron_buildingC_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+        <prop actor="props/structures/hellenes/gate_door.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+   <material>basic_trans.xml</material>
+</actor>

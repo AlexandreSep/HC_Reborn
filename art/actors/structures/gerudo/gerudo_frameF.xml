@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="frame">
+	  <mesh>structural/gerudo/ger_frameF.dae</mesh>
+	  <textures>
+	    <texture file="structural/gerudo/gerudo_buildingA.dds" name="baseTex"/>
+		<texture file="structural/gerudo/gerudo_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/gerudo/gerudo_framesB_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <group>
+    <variant name="decal_reptower">
+	  <mesh>structural/hylian/hyl_special_towerA.dae</mesh>
+      <textures>
+	    <texture file="structural/hylian/hylian_wallsA.dds" name="baseTex"/>
+		<texture file="structural/hylian/hylian_wallsA_normal.dds" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

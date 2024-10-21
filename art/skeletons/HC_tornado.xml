@@ -1,0 +1,19 @@
+<skeletons>
+<standard_skeleton id="Tornado" title="Tornado">
+<bone name="base_tornado">
+<bone name="tornadoA">
+<bone name="projectile">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Tornado" title="Tornado">
+<identifier><root>base_tornado</root></identifier>
+<bone name="base_tornado"><target>base_tornado</target>
+<bone name="tornadoA"><target>tornadoA</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

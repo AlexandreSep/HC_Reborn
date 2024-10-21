@@ -1,0 +1,11 @@
+<variant name="gather_praise">
+  <animations>
+	<animation file="HC_biped/biped_hum_gather.dae" name="gather_praise" id="praise1" speed="100"/>
+	<animation file="HC_biped/biped_hum_gather.dae" name="gather_praise" id="praise2" speed="200"/>
+	<animation file="HC_biped/biped_hum_gather.dae" name="gather_praise" id="praise3" speed="50"/>
+  </animations>
+  <props>
+    <prop actor="" attachpoint="bone_Rhand"/>
+    <prop actor="" attachpoint="bone_Lhand"/>
+  </props>
+</variant>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<terrain>
+	<textures>
+		<texture name="baseTex" file="types/tarm_roadC.dds"/>
+		<texture name="normTex" file="types/tarm_roadC_normal.dds"/>
+		<texture name="specTex" file="types/tarm_roadC_spec.dds"/>
+	</textures>
+	<material>terrain_norm_spec.xml</material>
+</terrain>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <props>
+        <prop actor="particle/smoke.xml" attachpoint="root"/>
+        <prop actor="props/structures/debris/debris_ground_liz_M.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/debris/debris_lizalfosA.dds" name="baseTex"/>
+		<texture file="structural/debris/debrisA_normal.dds" name="normTex"/>
+        <texture file="structural/debris/debrisA_AO.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="debrisA">
+      <mesh>structural/debris/debris_mediumA.dae</mesh>
+    </variant>
+	<variant name="debrisB">
+      <mesh>structural/debris/debris_mediumB.dae</mesh>
+    </variant>
+	<variant name="debrisC">
+      <mesh>structural/debris/debris_mediumC.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

@@ -1,0 +1,7 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.2" file="HC_goronlarge/goronlarge_attack_punchA.dae" name="attack_ranged" speed="100"/>
+	<animation event="0.2" file="HC_goronlarge/goronlarge_attack_punchB.dae" name="attack_ranged" speed="100"/>
+	<animation event="0.2" file="HC_goronlarge/goronlarge_attack_punchC.dae" name="attack_ranged" speed="100"/>
+  </animations>
+</variant>

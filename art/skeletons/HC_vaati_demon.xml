@@ -1,0 +1,375 @@
+<skeletons>
+<standard_skeleton id="Vaati Demon Skeleton" title="Vaati Demon Skeleton">
+<bone name="base_vaati_demonA">
+<bone name="L_topwing_01">
+<bone name="L_topwing_02">
+<bone name="L_topwing_03">
+<bone name="L_topwing_04">
+<bone name="L_topwing_05">
+<bone name="L_topwing_06">
+<bone name="L_topwing_07">
+<bone name="L_topwing_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_topwing_09">
+<bone name="L_topwing_10">
+<bone name="L_topwing_11">
+<bone name="L_topwing_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_middlewing_01">
+<bone name="L_middlewing_02">
+<bone name="L_middlewing_03">
+<bone name="L_middlewing_04">
+<bone name="L_middlewing_05">
+<bone name="L_middlewing_06">
+<bone name="L_middlewing_07">
+<bone name="L_middlewing_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_middlewing_09">
+<bone name="L_middlewing_10">
+<bone name="L_middlewing_11">
+<bone name="L_middlewing_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_botwing_01">
+<bone name="L_botwing_02">
+<bone name="L_botwing_03">
+<bone name="L_botwing_04">
+<bone name="L_botwing_05">
+<bone name="L_botwing_06">
+<bone name="L_botwing_07">
+<bone name="L_botwing_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_botwing_09">
+<bone name="L_botwing_10">
+<bone name="L_botwing_11">
+<bone name="L_botwing_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_tooth_01">
+<bone name="L_tooth_02">
+<bone name="L_tooth_03">
+<bone name="L_tooth_04">
+<bone name="L_tooth_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_tooth_01">
+<bone name="B_tooth_02">
+<bone name="B_tooth_03">
+<bone name="B_tooth_04">
+<bone name="B_tooth_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_tooth_01">
+<bone name="R_tooth_02">
+<bone name="R_tooth_03">
+<bone name="R_tooth_04">
+<bone name="R_tooth_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_botwing_01">
+<bone name="R_botwing_02">
+<bone name="R_botwing_03">
+<bone name="R_botwing_04">
+<bone name="R_botwing_05">
+<bone name="R_botwing_06">
+<bone name="R_botwing_07">
+<bone name="R_botwing_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_botwing_09">
+<bone name="R_botwing_10">
+<bone name="R_botwing_11">
+<bone name="R_botwing_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_middlewing_01">
+<bone name="R_middlewing_02">
+<bone name="R_middlewing_03">
+<bone name="R_middlewing_04">
+<bone name="R_middlewing_05">
+<bone name="R_middlewing_06">
+<bone name="R_middlewing_07">
+<bone name="R_middlewing_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_middlewing_09">
+<bone name="R_middlewing_10">
+<bone name="R_middlewing_11">
+<bone name="R_middlewing_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_topwing_01">
+<bone name="R_topwing_02">
+<bone name="R_topwing_03">
+<bone name="R_topwing_04">
+<bone name="R_topwing_05">
+<bone name="R_topwing_06">
+<bone name="R_topwing_07">
+<bone name="R_topwing_08">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_topwing_09">
+<bone name="R_topwing_10">
+<bone name="R_topwing_11">
+<bone name="R_topwing_12">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="balance">
+</bone>
+<bone name="eye_01">
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Vaati Demon Skeleton" title="Vaati Demon Skeleton">
+<identifier><root>base_vaati_demonA</root></identifier>
+<bone name="base_vaati_demonA"><target>base_vaati_demonA</target>
+<bone name="L_topwing_01"><target>L_topwing_01</target>
+<bone name="L_topwing_02"><target>L_topwing_02</target>
+<bone name="L_topwing_03"><target>L_topwing_03</target>
+<bone name="L_topwing_04"><target>L_topwing_04</target>
+<bone name="L_topwing_05"><target>L_topwing_05</target>
+<bone name="L_topwing_06"><target>L_topwing_06</target>
+<bone name="L_topwing_07"><target>L_topwing_07</target>
+<bone name="L_topwing_08"><target>L_topwing_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_topwing_09"><target>L_topwing_09</target>
+<bone name="L_topwing_10"><target>L_topwing_10</target>
+<bone name="L_topwing_11"><target>L_topwing_11</target>
+<bone name="L_topwing_12"><target>L_topwing_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_middlewing_01"><target>L_middlewing_01</target>
+<bone name="L_middlewing_02"><target>L_middlewing_02</target>
+<bone name="L_middlewing_03"><target>L_middlewing_03</target>
+<bone name="L_middlewing_04"><target>L_middlewing_04</target>
+<bone name="L_middlewing_05"><target>L_middlewing_05</target>
+<bone name="L_middlewing_06"><target>L_middlewing_06</target>
+<bone name="L_middlewing_07"><target>L_middlewing_07</target>
+<bone name="L_middlewing_08"><target>L_middlewing_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_middlewing_09"><target>L_middlewing_09</target>
+<bone name="L_middlewing_10"><target>L_middlewing_10</target>
+<bone name="L_middlewing_11"><target>L_middlewing_11</target>
+<bone name="L_middlewing_12"><target>L_middlewing_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_botwing_01"><target>L_botwing_01</target>
+<bone name="L_botwing_02"><target>L_botwing_02</target>
+<bone name="L_botwing_03"><target>L_botwing_03</target>
+<bone name="L_botwing_04"><target>L_botwing_04</target>
+<bone name="L_botwing_05"><target>L_botwing_05</target>
+<bone name="L_botwing_06"><target>L_botwing_06</target>
+<bone name="L_botwing_07"><target>L_botwing_07</target>
+<bone name="L_botwing_08"><target>L_botwing_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_botwing_09"><target>L_botwing_09</target>
+<bone name="L_botwing_10"><target>L_botwing_10</target>
+<bone name="L_botwing_11"><target>L_botwing_11</target>
+<bone name="L_botwing_12"><target>L_botwing_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_tooth_01"><target>L_tooth_01</target>
+<bone name="L_tooth_02"><target>L_tooth_02</target>
+<bone name="L_tooth_03"><target>L_tooth_03</target>
+<bone name="L_tooth_04"><target>L_tooth_04</target>
+<bone name="L_tooth_05"><target>L_tooth_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_tooth_01"><target>B_tooth_01</target>
+<bone name="B_tooth_02"><target>B_tooth_02</target>
+<bone name="B_tooth_03"><target>B_tooth_03</target>
+<bone name="B_tooth_04"><target>B_tooth_04</target>
+<bone name="B_tooth_05"><target>B_tooth_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_tooth_01"><target>R_tooth_01</target>
+<bone name="R_tooth_02"><target>R_tooth_02</target>
+<bone name="R_tooth_03"><target>R_tooth_03</target>
+<bone name="R_tooth_04"><target>R_tooth_04</target>
+<bone name="R_tooth_05"><target>R_tooth_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_botwing_01"><target>R_botwing_01</target>
+<bone name="R_botwing_02"><target>R_botwing_02</target>
+<bone name="R_botwing_03"><target>R_botwing_03</target>
+<bone name="R_botwing_04"><target>R_botwing_04</target>
+<bone name="R_botwing_05"><target>R_botwing_05</target>
+<bone name="R_botwing_06"><target>R_botwing_06</target>
+<bone name="R_botwing_07"><target>R_botwing_07</target>
+<bone name="R_botwing_08"><target>R_botwing_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_botwing_09"><target>R_botwing_09</target>
+<bone name="R_botwing_10"><target>R_botwing_10</target>
+<bone name="R_botwing_11"><target>R_botwing_11</target>
+<bone name="R_botwing_12"><target>R_botwing_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_middlewing_01"><target>R_middlewing_01</target>
+<bone name="R_middlewing_02"><target>R_middlewing_02</target>
+<bone name="R_middlewing_03"><target>R_middlewing_03</target>
+<bone name="R_middlewing_04"><target>R_middlewing_04</target>
+<bone name="R_middlewing_05"><target>R_middlewing_05</target>
+<bone name="R_middlewing_06"><target>R_middlewing_06</target>
+<bone name="R_middlewing_07"><target>R_middlewing_07</target>
+<bone name="R_middlewing_08"><target>R_middlewing_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_middlewing_09"><target>R_middlewing_09</target>
+<bone name="R_middlewing_10"><target>R_middlewing_10</target>
+<bone name="R_middlewing_11"><target>R_middlewing_11</target>
+<bone name="R_middlewing_12"><target>R_middlewing_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_topwing_01"><target>R_topwing_01</target>
+<bone name="R_topwing_02"><target>R_topwing_02</target>
+<bone name="R_topwing_03"><target>R_topwing_03</target>
+<bone name="R_topwing_04"><target>R_topwing_04</target>
+<bone name="R_topwing_05"><target>R_topwing_05</target>
+<bone name="R_topwing_06"><target>R_topwing_06</target>
+<bone name="R_topwing_07"><target>R_topwing_07</target>
+<bone name="R_topwing_08"><target>R_topwing_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_topwing_09"><target>R_topwing_09</target>
+<bone name="R_topwing_10"><target>R_topwing_10</target>
+<bone name="R_topwing_11"><target>R_topwing_11</target>
+<bone name="R_topwing_12"><target>R_topwing_12</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="balance"><target>balance</target>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

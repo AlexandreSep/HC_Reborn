@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_molgera/base_HC_molgera.xml">
+      <mesh>units/boss/boss_molgeraA.dae</mesh>
+      <textures><texture file="skeletal/boss/boss_molgeraA.dds" name="baseTex"/></textures>
+	  <props>
+        <prop actor="particle/explosion_dustD.xml" attachpoint="tail_01"/>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="tail_02"/>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="tail_03"/>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="tail_04"/>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="tail_05"/>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="tail_06"/>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="tail_07"/>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="tail_08"/>		
+		<prop actor="particle/explosion_dustD.xml" attachpoint="projectile"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_molgera/base_HC_molgera_att.xml">
+	  <props>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="L_wing_04"/>
+		<prop actor="particle/explosion_dustD.xml" attachpoint="R_wing_04"/>
+      </props>
+	</variant>
+	<variant name="Walk">
+      <props>
+        <prop actor="particle/explosion_dustA.xml" attachpoint="tail_01"/>
+		<prop actor="particle/explosion_dustA.xml" attachpoint="tail_02"/>
+		<prop actor="particle/explosion_dustA.xml" attachpoint="tail_03"/>
+		<prop actor="particle/explosion_dustA.xml" attachpoint="tail_04"/>
+		<prop actor="particle/explosion_dustA.xml" attachpoint="tail_05"/>
+		<prop actor="particle/explosion_dustA.xml" attachpoint="tail_06"/>
+		<prop actor="particle/explosion_dustA.xml" attachpoint="tail_07"/>
+		<prop actor="particle/explosion_dustA.xml" attachpoint="tail_08"/>
+      </props>
+    </variant>
+    <variant name="Death">
+      <props>
+		<prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>  
+  <material>basic_trans.xml</material>
+</actor>

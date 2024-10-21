@@ -1,0 +1,55 @@
+<skeletons>
+<standard_skeleton id="Salawagon" title="Salawagon">
+<bone name="salawagon_base">
+<bone name="crux_01">
+<bone name="hinge_01">
+<bone name="wagon_01">
+<bone name="axel_01">
+<bone name="R_wheel_01">
+</bone>
+<bone name="L_wheel_01">
+</bone>
+</bone>
+<bone name="rider_05">
+</bone>
+<bone name="rider_03">
+</bone>
+<bone name="rider_01">
+</bone>
+<bone name="rider_02">
+</bone>
+<bone name="rider_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Salawagon" title="Salawagon">
+<identifier><root>salawagon_base</root></identifier>
+<bone name="salawagon_base"><target>salawagon_base</target>
+<bone name="crux_01"><target>crux_01</target>
+<bone name="hinge_01"><target>hinge_01</target>
+<bone name="wagon_01"><target>wagon_01</target>
+<bone name="axel_01"><target>axel_01</target>
+<bone name="R_wheel_01"><target>R_wheel_01</target>
+</bone>
+<bone name="L_wheel_01"><target>L_wheel_01</target>
+</bone>
+</bone>
+<bone name="rider_05"><target>rider_05</target>
+</bone>
+<bone name="rider_03"><target>rider_03</target>
+</bone>
+<bone name="rider_01"><target>rider_01</target>
+</bone>
+<bone name="rider_02"><target>rider_02</target>
+</bone>
+<bone name="rider_04"><target>rider_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

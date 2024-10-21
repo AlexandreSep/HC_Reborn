@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="labrynna_organgun">
+      <animations> 
+        <animation file="HC_organgun/organgun_idle.dae" name="Idle" speed="100"/>
+        <animation event="0.5" file="HC_organgun/organgun_move.dae" name="Walk" speed="10"/>
+        <animation event="0.5" file="HC_organgun/organgun_move.dae" name="Run" speed="10"/>
+        <animation event="0.5" load="0.10" file="HC_organgun/organgun_attack.dae" name="attack_ranged" sound="0" speed="75"/>
+		<animation file="HC_organgun/organgun_death.dae" name="death" speed="100"/>
+      </animations> 
+      <mesh>units/labrynna/lab_organgunA.dae</mesh>
+      <props>
+		<prop actor="units/labrynna/labrynna_organbarrel_b.xml" attachpoint="cannonmount_01"/>
+		<prop actor="units/labrynna/labrynna_organbarrel_b.xml" attachpoint="cannonmount_02"/>
+		<prop actor="units/labrynna/labrynna_organbarrel_b.xml" attachpoint="cannonmount_03"/>
+		<prop actor="units/labrynna/labrynna_organbarrel_b.xml" attachpoint="cannonmount_04"/>
+        <prop actor="units/labrynna/labrynna_crew_b.xml" attachpoint="crew_01"/>
+		<prop actor="units/labrynna/labrynna_crew_b.xml" attachpoint="crew_02"/>
+		<prop actor="props/units/weapons/rock_flaming.xml" attachpoint="projectile"/>
+		<prop actor="props/units/weapons/muzzleflash.xml" attachpoint="root"/>																	
+      </props>
+      <textures><texture file="skeletal/labrynna/lab_cannonA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

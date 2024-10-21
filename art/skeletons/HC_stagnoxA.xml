@@ -1,0 +1,239 @@
+<skeletons>
+<standard_skeleton id="Stagnox Skeleton" title="Stagnox Skeleton">
+<bone name="stagnox_base">
+<bone name="ass_01">
+<bone name="ass_02">
+</bone>
+<bone name="L_wing_01">
+<bone name="L_wing_02">
+</bone>
+</bone>
+<bone name="R_wing_01">
+<bone name="R_wing_02">
+</bone>
+</bone>
+<bone name="L_shell_01">
+<bone name="L_shell_02">
+</bone>
+</bone>
+<bone name="R_shell_01">
+<bone name="R_shell_02">
+</bone>
+</bone>
+</bone>
+<bone name="L_F_leg_01">
+<bone name="L_F_leg_02">
+<bone name="L_F_leg_03">
+<bone name="L_F_leg_04">
+<bone name="L_F_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_M_leg_01">
+<bone name="L_M_leg_02">
+<bone name="L_M_leg_03">
+<bone name="L_M_leg_04">
+<bone name="L_M_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01">
+<bone name="L_B_leg_02">
+<bone name="L_B_leg_03">
+<bone name="L_B_leg_04">
+<bone name="L_B_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neck">
+<bone name="head">
+<bone name="projectile">
+</bone>
+<bone name="L_ant_01">
+<bone name="L_ant_02">
+<bone name="L_ant_03">
+<bone name="L_ant_04">
+<bone name="L_ant_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ant_01">
+<bone name="R_ant_02">
+<bone name="R_ant_03">
+<bone name="R_ant_04">
+<bone name="R_ant_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="mouth_01">
+<bone name="mouth_02">
+</bone>
+</bone>
+<bone name="L_eye_01">
+</bone>
+<bone name="R_eye_01">
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg_01">
+<bone name="R_F_leg_02">
+<bone name="R_F_leg_03">
+<bone name="R_F_leg_04">
+<bone name="R_F_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_M_leg_01">
+<bone name="R_M_leg_02">
+<bone name="R_M_leg_03">
+<bone name="R_M_leg_04">
+<bone name="R_M_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01">
+<bone name="R_B_leg_02">
+<bone name="R_B_leg_03">
+<bone name="R_B_leg_04">
+<bone name="R_B_leg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Stagnox Skeleton" title="Stagnox Skeleton">
+<identifier><root>stagnox_base</root></identifier>
+<bone name="stagnox_base"><target>stagnox_base</target>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+</bone>
+<bone name="L_wing_01"><target>L_wing_01</target>
+<bone name="L_wing_02"><target>L_wing_02</target>
+</bone>
+</bone>
+<bone name="R_wing_01"><target>R_wing_01</target>
+<bone name="R_wing_02"><target>R_wing_02</target>
+</bone>
+</bone>
+<bone name="L_shell_01"><target>L_shell_01</target>
+<bone name="L_shell_02"><target>L_shell_02</target>
+</bone>
+</bone>
+<bone name="R_shell_01"><target>R_shell_01</target>
+<bone name="R_shell_02"><target>R_shell_02</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_F_leg_01"><target>L_F_leg_01</target>
+<bone name="L_F_leg_02"><target>L_F_leg_02</target>
+<bone name="L_F_leg_03"><target>L_F_leg_03</target>
+<bone name="L_F_leg_04"><target>L_F_leg_04</target>
+<bone name="L_F_leg_05"><target>L_F_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_M_leg_01"><target>L_M_leg_01</target>
+<bone name="L_M_leg_02"><target>L_M_leg_02</target>
+<bone name="L_M_leg_03"><target>L_M_leg_03</target>
+<bone name="L_M_leg_04"><target>L_M_leg_04</target>
+<bone name="L_M_leg_05"><target>L_M_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_leg_01"><target>L_B_leg_01</target>
+<bone name="L_B_leg_02"><target>L_B_leg_02</target>
+<bone name="L_B_leg_03"><target>L_B_leg_03</target>
+<bone name="L_B_leg_04"><target>L_B_leg_04</target>
+<bone name="L_B_leg_05"><target>L_B_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="L_ant_01"><target>L_ant_01</target>
+<bone name="L_ant_02"><target>L_ant_02</target>
+<bone name="L_ant_03"><target>L_ant_03</target>
+<bone name="L_ant_04"><target>L_ant_04</target>
+<bone name="L_ant_05"><target>L_ant_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ant_01"><target>R_ant_01</target>
+<bone name="R_ant_02"><target>R_ant_02</target>
+<bone name="R_ant_03"><target>R_ant_03</target>
+<bone name="R_ant_04"><target>R_ant_04</target>
+<bone name="R_ant_05"><target>R_ant_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="mouth_01"><target>mouth_01</target>
+<bone name="mouth_02"><target>mouth_02</target>
+</bone>
+</bone>
+<bone name="L_eye_01"><target>L_eye_01</target>
+</bone>
+<bone name="R_eye_01"><target>R_eye_01</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_F_leg_01"><target>R_F_leg_01</target>
+<bone name="R_F_leg_02"><target>R_F_leg_02</target>
+<bone name="R_F_leg_03"><target>R_F_leg_03</target>
+<bone name="R_F_leg_04"><target>R_F_leg_04</target>
+<bone name="R_F_leg_05"><target>R_F_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_M_leg_01"><target>R_M_leg_01</target>
+<bone name="R_M_leg_02"><target>R_M_leg_02</target>
+<bone name="R_M_leg_03"><target>R_M_leg_03</target>
+<bone name="R_M_leg_04"><target>R_M_leg_04</target>
+<bone name="R_M_leg_05"><target>R_M_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_leg_01"><target>R_B_leg_01</target>
+<bone name="R_B_leg_02"><target>R_B_leg_02</target>
+<bone name="R_B_leg_03"><target>R_B_leg_03</target>
+<bone name="R_B_leg_04"><target>R_B_leg_04</target>
+<bone name="R_B_leg_05"><target>R_B_leg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

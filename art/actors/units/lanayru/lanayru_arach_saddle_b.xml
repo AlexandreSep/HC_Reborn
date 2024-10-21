@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_arachA.xml">
+      <mesh>units/lanayru/lan_arach_saddleA.dae</mesh>
+	  <textures><texture file="skeletal/lanayru/lan_mainC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant name="Run">
+      <props>
+      </props>
+    </variant>
+	<variant file="HC_mounts/base_HC_arachA_death.xml">
+      <props>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

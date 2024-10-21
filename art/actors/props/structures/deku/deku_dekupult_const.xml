@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="Dekupult">
+      <animations> 
+        <animation file="HC_dekupult/dekupult_idle.dae" name="Idle" speed="100"/>
+		<animation file="HC_dekupult/dekupult_death.dae" name="death" speed="100"/>
+      </animations> 
+      <mesh>units/deku/dek_dekupultA.dae</mesh>
+      <textures><texture file="skeletal/deku/dek_mainB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+</actor>

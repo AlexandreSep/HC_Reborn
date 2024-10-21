@@ -1,0 +1,5 @@
+<variant name="Death">
+  <animations>
+	<animation file="HC_goh_janitor/goh_janitor_deathA.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

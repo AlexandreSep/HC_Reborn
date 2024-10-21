@@ -1,0 +1,6 @@
+<variant name="Death">
+  <animations>
+	<animation file="HC_wolfos/wolfos_deathA.dae" name="Death" speed="90"/>
+	<animation file="HC_wolfos/wolfos_deathB.dae" name="Death" speed="90"/>
+  </animations>
+</variant>

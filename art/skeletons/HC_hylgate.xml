@@ -1,0 +1,35 @@
+<skeletons>
+<standard_skeleton id="Hylian_Gate" title="Hylian_Gate">
+<bone name="gate_hylian">
+<bone name="door_left">
+<bone name="lock_left">
+<bone name="lock_left_end">
+</bone>
+</bone>
+</bone>
+<bone name="door_right">
+<bone name="lock_right">
+<bone name="lock_right_end">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Hylian_Gate" title="Hylian_Gate">
+<identifier><root>gate_hylian</root></identifier>
+<bone name="gate_hylian"><target>gate_hylian</target>
+<bone name="door_left"><target>door_left</target>
+<bone name="lock_left"><target>lock_left</target>
+<bone name="lock_left_end"><target>lock_left_end</target>
+</bone>
+</bone>
+</bone>
+<bone name="door_right"><target>door_right</target>
+<bone name="lock_right"><target>lock_right</target>
+<bone name="lock_right_end"><target>lock_right_end</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

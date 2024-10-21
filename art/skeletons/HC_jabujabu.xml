@@ -1,0 +1,455 @@
+<skeletons>
+<standard_skeleton id="jabujabu_skel" title="jabujabu_skel">
+<bone name="base_jabujabu">
+<bone name="chest_01">
+<bone name="mouth_01">
+<bone name="mouth_bot_01">
+<bone name="mouth_bot_02">
+<bone name="mouth_bot_03">
+</bone>
+</bone>
+</bone>
+<bone name="mouth_top_01">
+<bone name="mouth_top_02">
+</bone>
+</bone>
+<bone name="L_headfin_01">
+<bone name="L_headfin_02">
+<bone name="L_headfin_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_headfin_01">
+<bone name="R_headfin_02">
+<bone name="R_headfin_03">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_fin_01">
+<bone name="L_fin_02">
+<bone name="L_fin_03">
+<bone name="L_fin_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="wing_crux">
+<bone name="L_wing_01">
+<bone name="L_wing_02">
+<bone name="L_wing_03">
+<bone name="L_wing_04">
+<bone name="L_wing_05">
+<bone name="L_wing_06">
+<bone name="L_wing_07">
+<bone name="L_wing_08">
+<bone name="L_wing_09">
+<bone name="L_wing_10">
+<bone name="L_wing_11">
+<bone name="L_wing_12">
+</bone>
+<bone name="L_feather_01">
+<bone name="L_feather_02">
+<bone name="L_feather_03">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_04">
+<bone name="L_feather_05">
+<bone name="L_feather_06">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_07">
+<bone name="L_feather_08">
+<bone name="L_feather_09">
+<bone name="L_feather_10">
+<bone name="L_feather_11">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_12">
+<bone name="L_feather_13">
+<bone name="L_feather_14">
+<bone name="L_feather_15">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_16">
+<bone name="L_feather_17">
+<bone name="L_feather_18">
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_19">
+<bone name="L_feather_20">
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_21">
+<bone name="L_feather_22">
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_23">
+<bone name="L_feather_24">
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_25">
+<bone name="L_feather_26">
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_27">
+<bone name="L_feather_28">
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_29">
+<bone name="L_feather_30">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_01">
+<bone name="R_wing_02">
+<bone name="R_wing_03">
+<bone name="R_wing_04">
+<bone name="R_wing_05">
+<bone name="R_wing_06">
+<bone name="R_wing_07">
+<bone name="R_wing_08">
+<bone name="R_wing_09">
+<bone name="R_wing_10">
+<bone name="R_wing_11">
+<bone name="R_wing_12">
+</bone>
+<bone name="R_feather_01">
+<bone name="R_feather_02">
+<bone name="R_feather_03">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_04">
+<bone name="R_feather_05">
+<bone name="R_feather_06">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_07">
+<bone name="R_feather_08">
+<bone name="R_feather_09">
+<bone name="R_feather_10">
+<bone name="R_feather_11">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_12">
+<bone name="R_feather_13">
+<bone name="R_feather_14">
+<bone name="R_feather_15">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_16">
+<bone name="R_feather_17">
+<bone name="R_feather_18">
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_19">
+<bone name="R_feather_20">
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_21">
+<bone name="R_feather_22">
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_23">
+<bone name="R_feather_24">
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_25">
+<bone name="R_feather_26">
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_27">
+<bone name="R_feather_28">
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_29">
+<bone name="R_feather_30">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_fin_01">
+<bone name="R_fin_02">
+<bone name="R_fin_03">
+<bone name="R_fin_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ass_01">
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="jabujabu_skel" title="jabujabu_skel">
+<identifier><root>base_jabujabu</root></identifier>
+<bone name="base_jabujabu"><target>base_jabujabu</target>
+<bone name="chest_01"><target>chest_01</target>
+<bone name="mouth_01"><target>mouth_01</target>
+<bone name="mouth_bot_01"><target>mouth_bot_01</target>
+<bone name="mouth_bot_02"><target>mouth_bot_02</target>
+<bone name="mouth_bot_03"><target>mouth_bot_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="mouth_top_01"><target>mouth_top_01</target>
+<bone name="mouth_top_02"><target>mouth_top_02</target>
+</bone>
+</bone>
+<bone name="L_headfin_01"><target>L_headfin_01</target>
+<bone name="L_headfin_02"><target>L_headfin_02</target>
+<bone name="L_headfin_03"><target>L_headfin_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_headfin_01"><target>R_headfin_01</target>
+<bone name="R_headfin_02"><target>R_headfin_02</target>
+<bone name="R_headfin_03"><target>R_headfin_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_fin_01"><target>L_fin_01</target>
+<bone name="L_fin_02"><target>L_fin_02</target>
+<bone name="L_fin_03"><target>L_fin_03</target>
+<bone name="L_fin_04"><target>L_fin_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="wing_crux"><target>wing_crux</target>
+<bone name="L_wing_01"><target>L_wing_01</target>
+<bone name="L_wing_02"><target>L_wing_02</target>
+<bone name="L_wing_03"><target>L_wing_03</target>
+<bone name="L_wing_04"><target>L_wing_04</target>
+<bone name="L_wing_05"><target>L_wing_05</target>
+<bone name="L_wing_06"><target>L_wing_06</target>
+<bone name="L_wing_07"><target>L_wing_07</target>
+<bone name="L_wing_08"><target>L_wing_08</target>
+<bone name="L_wing_09"><target>L_wing_09</target>
+<bone name="L_wing_10"><target>L_wing_10</target>
+<bone name="L_wing_11"><target>L_wing_11</target>
+<bone name="L_wing_12"><target>L_wing_12</target>
+</bone>
+<bone name="L_feather_01"><target>L_feather_01</target>
+<bone name="L_feather_02"><target>L_feather_02</target>
+<bone name="L_feather_03"><target>L_feather_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_04"><target>L_feather_04</target>
+<bone name="L_feather_05"><target>L_feather_05</target>
+<bone name="L_feather_06"><target>L_feather_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_07"><target>L_feather_07</target>
+<bone name="L_feather_08"><target>L_feather_08</target>
+<bone name="L_feather_09"><target>L_feather_09</target>
+<bone name="L_feather_10"><target>L_feather_10</target>
+<bone name="L_feather_11"><target>L_feather_11</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_12"><target>L_feather_12</target>
+<bone name="L_feather_13"><target>L_feather_13</target>
+<bone name="L_feather_14"><target>L_feather_14</target>
+<bone name="L_feather_15"><target>L_feather_15</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_16"><target>L_feather_16</target>
+<bone name="L_feather_17"><target>L_feather_17</target>
+<bone name="L_feather_18"><target>L_feather_18</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_19"><target>L_feather_19</target>
+<bone name="L_feather_20"><target>L_feather_20</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_21"><target>L_feather_21</target>
+<bone name="L_feather_22"><target>L_feather_22</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_23"><target>L_feather_23</target>
+<bone name="L_feather_24"><target>L_feather_24</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_25"><target>L_feather_25</target>
+<bone name="L_feather_26"><target>L_feather_26</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_27"><target>L_feather_27</target>
+<bone name="L_feather_28"><target>L_feather_28</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_feather_29"><target>L_feather_29</target>
+<bone name="L_feather_30"><target>L_feather_30</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_wing_01"><target>R_wing_01</target>
+<bone name="R_wing_02"><target>R_wing_02</target>
+<bone name="R_wing_03"><target>R_wing_03</target>
+<bone name="R_wing_04"><target>R_wing_04</target>
+<bone name="R_wing_05"><target>R_wing_05</target>
+<bone name="R_wing_06"><target>R_wing_06</target>
+<bone name="R_wing_07"><target>R_wing_07</target>
+<bone name="R_wing_08"><target>R_wing_08</target>
+<bone name="R_wing_09"><target>R_wing_09</target>
+<bone name="R_wing_10"><target>R_wing_10</target>
+<bone name="R_wing_11"><target>R_wing_11</target>
+<bone name="R_wing_12"><target>R_wing_12</target>
+</bone>
+<bone name="R_feather_01"><target>R_feather_01</target>
+<bone name="R_feather_02"><target>R_feather_02</target>
+<bone name="R_feather_03"><target>R_feather_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_04"><target>R_feather_04</target>
+<bone name="R_feather_05"><target>R_feather_05</target>
+<bone name="R_feather_06"><target>R_feather_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_07"><target>R_feather_07</target>
+<bone name="R_feather_08"><target>R_feather_08</target>
+<bone name="R_feather_09"><target>R_feather_09</target>
+<bone name="R_feather_10"><target>R_feather_10</target>
+<bone name="R_feather_11"><target>R_feather_11</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_12"><target>R_feather_12</target>
+<bone name="R_feather_13"><target>R_feather_13</target>
+<bone name="R_feather_14"><target>R_feather_14</target>
+<bone name="R_feather_15"><target>R_feather_15</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_16"><target>R_feather_16</target>
+<bone name="R_feather_17"><target>R_feather_17</target>
+<bone name="R_feather_18"><target>R_feather_18</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_19"><target>R_feather_19</target>
+<bone name="R_feather_20"><target>R_feather_20</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_21"><target>R_feather_21</target>
+<bone name="R_feather_22"><target>R_feather_22</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_23"><target>R_feather_23</target>
+<bone name="R_feather_24"><target>R_feather_24</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_25"><target>R_feather_25</target>
+<bone name="R_feather_26"><target>R_feather_26</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_27"><target>R_feather_27</target>
+<bone name="R_feather_28"><target>R_feather_28</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_feather_29"><target>R_feather_29</target>
+<bone name="R_feather_30"><target>R_feather_30</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_fin_01"><target>R_fin_01</target>
+<bone name="R_fin_02"><target>R_fin_02</target>
+<bone name="R_fin_03"><target>R_fin_03</target>
+<bone name="R_fin_04"><target>R_fin_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

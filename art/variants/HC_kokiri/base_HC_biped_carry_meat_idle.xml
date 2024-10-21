@@ -1,0 +1,9 @@
+<variant name="carry_meat_idle">
+  <animations>
+	<animation file="HC_kokiri/kokiri_carry_idle.dae" name="carry_meat_idle" speed="20"/>
+  </animations>
+  <props>
+	<prop attachpoint="bone_weapon_right"/>
+	<prop attachpoint="bone_weapon_left"/>
+  </props>
+</variant>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant frequency="1" name="Beeswarm">
+      <mesh>units/flying_skeleton.dae</mesh>
+	  <props>
+		<prop actor="particle/explosion_beehiveA.xml" attachpoint="root"/>
+      </props>
+      <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+	<variant name="death">
+		<props>
+			<prop attachpoint="root"/>
+		</props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

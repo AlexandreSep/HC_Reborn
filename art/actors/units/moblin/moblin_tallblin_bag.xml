@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_tallblin/base_HC_biped_club_nosound.xml">
+      <mesh>units/moblin/mob_tallblin_bagA.dae</mesh>
+	  <textures>
+        <texture file="skeletal/moblin/mob_tallblin_bag.dds" name="baseTex"/>
+      </textures>
+	  <props>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_tallblin/base_HC_biped_attack_throw_no.xml"/>
+    <variant file="HC_tallblin/base_HC_biped_capture.xml"/>
+    <variant file="HC_tallblin/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_tallblin/base_HC_biped_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

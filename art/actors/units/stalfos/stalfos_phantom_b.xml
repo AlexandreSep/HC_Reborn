@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_horse.xml">  
+      <mesh>units/stalfos/sta_phantomhorseA.dae</mesh>	
+	  <textures><texture file="skeletal/stalfos/sta_phantomriderA.dds" name="baseTex"/></textures>
+      <props>
+        <prop actor="units/stalfos/stalfos_phantomrider_b.xml" attachpoint="bone_Spine1"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant file="HC_mounts/base_HC_horse_death.xml">
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

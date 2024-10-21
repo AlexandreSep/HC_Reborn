@@ -1,0 +1,10 @@
+<variant name="gather_meat">
+  <animations>
+	<animation event="0.4" file="HC_goronsmall/goronsmall_mine.dae" name="gather_meat" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="props/units/weapons/goron_pickaxeA.xml" attachpoint="R_wrist"/>
+    <prop attachpoint="R_wrist"/>
+	<prop attachpoint="L_wrist"/>
+  </props>
+</variant>

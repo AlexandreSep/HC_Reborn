@@ -1,0 +1,319 @@
+<skeletons>
+<standard_skeleton id="Armature" title="Armature Skeleton">
+<bone name="fi_base">
+<bone name="fi_pelvis">
+<bone name="waist_01">
+<bone name="chest_01">
+<bone name="neckbase_01">
+<bone name="neck_01">
+<bone name="head_01">
+</bone>
+</bone>
+<bone name="L_clavical_01">
+<bone name="L_shoulder_01">
+<bone name="L_elbow_01">
+<bone name="L_hand_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01">
+<bone name="R_shoulder_01">
+<bone name="R_elbow_01">
+<bone name="projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_01">
+<bone name="L_flaps_02">
+<bone name="L_flaps_03">
+<bone name="L_flaps_04">
+<bone name="L_flaps_05">
+<bone name="L_flaps_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_022">
+<bone name="L_flaps_023">
+<bone name="L_flaps_024">
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_013">
+<bone name="L_flaps_014">
+<bone name="L_flaps_015">
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_010">
+<bone name="L_flaps_011">
+<bone name="L_flaps_012">
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_07">
+<bone name="L_flaps_08">
+<bone name="L_flaps_09">
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_016">
+<bone name="L_flaps_017">
+<bone name="L_flaps_018">
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_019">
+<bone name="L_flaps_020">
+<bone name="L_flaps_021">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_01">
+<bone name="R_flaps_02">
+<bone name="R_flaps_03">
+<bone name="R_flaps_04">
+<bone name="R_flaps_05">
+<bone name="R_flaps_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_022">
+<bone name="R_flaps_023">
+<bone name="R_flaps_024">
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_013">
+<bone name="R_flaps_014">
+<bone name="R_flaps_015">
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_010">
+<bone name="R_flaps_011">
+<bone name="R_flaps_012">
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_07">
+<bone name="R_flaps_08">
+<bone name="R_flaps_09">
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_016">
+<bone name="R_flaps_017">
+<bone name="R_flaps_018">
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_019">
+<bone name="R_flaps_020">
+<bone name="R_flaps_021">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_01">
+<bone name="L_knee_01">
+<bone name="L_ankle_01">
+<bone name="L_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip_01">
+<bone name="R_knee_01">
+<bone name="R_ankle_01">
+<bone name="R_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="swordrot">
+<bone name="sword_02">
+<bone name="sword_02_trail">
+</bone>
+</bone>
+<bone name="sword_03">
+<bone name="sword_03_trail">
+</bone>
+</bone>
+<bone name="sword_01">
+<bone name="sword_01_trail">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Armature" title="Armature Skeleton">
+<identifier><root>fi_base</root></identifier>
+<bone name="fi_base"><target>fi_base</target>
+<bone name="fi_pelvis"><target>fi_pelvis</target>
+<bone name="waist_01"><target>waist_01</target>
+<bone name="chest_01"><target>chest_01</target>
+<bone name="neckbase_01"><target>neckbase_01</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="head_01"><target>head_01</target>
+</bone>
+</bone>
+<bone name="L_clavical_01"><target>L_clavical_01</target>
+<bone name="L_shoulder_01"><target>L_shoulder_01</target>
+<bone name="L_elbow_01"><target>L_elbow_01</target>
+<bone name="L_hand_01"><target>L_hand_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01"><target>R_clavical_01</target>
+<bone name="R_shoulder_01"><target>R_shoulder_01</target>
+<bone name="R_elbow_01"><target>R_elbow_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_01"><target>L_flaps_01</target>
+<bone name="L_flaps_02"><target>L_flaps_02</target>
+<bone name="L_flaps_03"><target>L_flaps_03</target>
+<bone name="L_flaps_04"><target>L_flaps_04</target>
+<bone name="L_flaps_05"><target>L_flaps_05</target>
+<bone name="L_flaps_06"><target>L_flaps_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_022"><target>L_flaps_022</target>
+<bone name="L_flaps_023"><target>L_flaps_023</target>
+<bone name="L_flaps_024"><target>L_flaps_024</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_013"><target>L_flaps_013</target>
+<bone name="L_flaps_014"><target>L_flaps_014</target>
+<bone name="L_flaps_015"><target>L_flaps_015</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_010"><target>L_flaps_010</target>
+<bone name="L_flaps_011"><target>L_flaps_011</target>
+<bone name="L_flaps_012"><target>L_flaps_012</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_07"><target>L_flaps_07</target>
+<bone name="L_flaps_08"><target>L_flaps_08</target>
+<bone name="L_flaps_09"><target>L_flaps_09</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_016"><target>L_flaps_016</target>
+<bone name="L_flaps_017"><target>L_flaps_017</target>
+<bone name="L_flaps_018"><target>L_flaps_018</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_flaps_019"><target>L_flaps_019</target>
+<bone name="L_flaps_020"><target>L_flaps_020</target>
+<bone name="L_flaps_021"><target>L_flaps_021</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_01"><target>R_flaps_01</target>
+<bone name="R_flaps_02"><target>R_flaps_02</target>
+<bone name="R_flaps_03"><target>R_flaps_03</target>
+<bone name="R_flaps_04"><target>R_flaps_04</target>
+<bone name="R_flaps_05"><target>R_flaps_05</target>
+<bone name="R_flaps_06"><target>R_flaps_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_022"><target>R_flaps_022</target>
+<bone name="R_flaps_023"><target>R_flaps_023</target>
+<bone name="R_flaps_024"><target>R_flaps_024</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_013"><target>R_flaps_013</target>
+<bone name="R_flaps_014"><target>R_flaps_014</target>
+<bone name="R_flaps_015"><target>R_flaps_015</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_010"><target>R_flaps_010</target>
+<bone name="R_flaps_011"><target>R_flaps_011</target>
+<bone name="R_flaps_012"><target>R_flaps_012</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_07"><target>R_flaps_07</target>
+<bone name="R_flaps_08"><target>R_flaps_08</target>
+<bone name="R_flaps_09"><target>R_flaps_09</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_016"><target>R_flaps_016</target>
+<bone name="R_flaps_017"><target>R_flaps_017</target>
+<bone name="R_flaps_018"><target>R_flaps_018</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_flaps_019"><target>R_flaps_019</target>
+<bone name="R_flaps_020"><target>R_flaps_020</target>
+<bone name="R_flaps_021"><target>R_flaps_021</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_hip_01"><target>L_hip_01</target>
+<bone name="L_knee_01"><target>L_knee_01</target>
+<bone name="L_ankle_01"><target>L_ankle_01</target>
+<bone name="L_foot_01"><target>L_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_hip_01"><target>R_hip_01</target>
+<bone name="R_knee_01"><target>R_knee_01</target>
+<bone name="R_ankle_01"><target>R_ankle_01</target>
+<bone name="R_foot_01"><target>R_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="swordrot"><target>swordrot</target>
+<bone name="sword_02"><target>sword_02</target>
+<bone name="sword_02_trail"><target>sword_02_trail</target>
+</bone>
+</bone>
+<bone name="sword_03"><target>sword_03</target>
+<bone name="sword_03_trail"><target>sword_03_trail</target>
+</bone>
+</bone>
+<bone name="sword_01"><target>sword_01</target>
+<bone name="sword_01_trail"><target>sword_01_trail</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

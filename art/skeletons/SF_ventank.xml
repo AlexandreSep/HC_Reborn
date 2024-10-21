@@ -1,0 +1,23 @@
+<skeletons>
+<standard_skeleton id="Ventank_skel" title="Ventank_skel">
+<bone name="ventank_base">
+<bone name="turret_01">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Ventank_skel" title="Ventank_skel">
+<identifier><root>ventank_base</root></identifier>
+<bone name="ventank_base"><target>ventank_base</target>
+<bone name="turret_01"><target>turret_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

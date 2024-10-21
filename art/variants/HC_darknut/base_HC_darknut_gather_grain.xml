@@ -1,0 +1,10 @@
+<variant name="gather_grain">
+  <animations>
+    <animation file="HC_darknut/darknut_gather_fruit.dae" name="gather_grain" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/generic_hoe.xml" attachpoint="R_weapon"/>
+    <prop attachpoint="R_weapon"/>
+	<prop attachpoint="L_weapon"/>
+  </props>
+</variant>

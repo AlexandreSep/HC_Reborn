@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particles>
+
+    <texture>art/textures/particles/fi_sparkleA.dds</texture>
+    <blend mode="add"/>
+
+    <constant name="emissionrate" value="37.0"/>
+    <uniform name="lifetime" min="6.1" max="7.2"/>
+
+
+    <uniform name="velocity.x" min="-0.1" max="0.1"/>
+    <uniform name="velocity.y" min="0.0" max="0.1"/>
+    <uniform name="velocity.z" min="-0.1" max="0.1"/>
+    <uniform name="velocity.angle" min="-0.1" max="0.1"/>
+
+    <uniform name="size" min="1.0" max="3.1"/>
+	
+    <uniform name="color.b" min="9.8" max="10.0"/>
+    <copy name="color.g" from="color.b"/>
+    <copy name="color.r" from="color.b"/>
+
+</particles>

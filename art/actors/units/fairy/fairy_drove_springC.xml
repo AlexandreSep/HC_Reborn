@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_fairy_small/base_HC_fairy_guardian.xml">
+      <mesh>units/fairy/fai_smallC.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Green">
+      <textures><texture file="skeletal/fairy/fai_wings_green.png" name="baseTex"/></textures>
+	  <props>
+		<prop actor="particle/fairy_glow_green.xml" attachpoint="fairy_03"/>
+        <prop actor="particle/fairy_sparklesA_green.xml" attachpoint="fairy_03"/>
+      </props>
+    </variant>
+    <variant frequency="1" name="White">
+      <textures><texture file="skeletal/fairy/fai_wings_white.png" name="baseTex"/></textures>
+	  <props>
+		<prop actor="particle/fairy_glow_white.xml" attachpoint="fairy_03"/>
+        <prop actor="particle/fairy_sparklesA_white.xml" attachpoint="fairy_03"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_fairy_small/base_HC_fairy_death.xml">
+      <props>
+        <prop actor="props/units/blood_fairy_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

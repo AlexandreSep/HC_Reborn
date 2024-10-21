@@ -1,0 +1,315 @@
+<skeletons>
+<standard_skeleton id="Dekuprincess Skeleton" title="Dekuprincess Skeleton">
+<bone name="dekuprincess_baseA">
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="belly">
+<bone name="abs">
+<bone name="torso">
+<bone name="head_twister">
+<bone name="neck">
+<bone name="head">
+<bone name="projectile">
+<bone name="mouth_top">
+</bone>
+<bone name="mouth_bot">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="headspout_01">
+<bone name="headspout_02">
+<bone name="headspout_03">
+<bone name="headspout_04">
+<bone name="headspout_05">
+<bone name="headspout_06">
+<bone name="headspout_07">
+<bone name="headspout_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_earing_01">
+<bone name="L_earing_02">
+</bone>
+</bone>
+<bone name="R_earing_01">
+<bone name="R_earing_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical">
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_forearm">
+<bone name="L_hand">
+<bone name="L_weapon">
+</bone>
+</bone>
+</bone>
+<bone name="L_drape_01">
+<bone name="L_drape_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical">
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_forearm">
+<bone name="R_hand">
+<bone name="R_weapon">
+</bone>
+</bone>
+</bone>
+<bone name="R_drape_01">
+<bone name="R_drape_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="F_flabber_01">
+<bone name="F_flabber_02">
+<bone name="F_flabber_03">
+<bone name="F_flabber_04">
+<bone name="F_flabber_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LF_flabber_01">
+<bone name="LF_flabber_02">
+<bone name="LF_flabber_03">
+<bone name="LF_flabber_04">
+<bone name="LF_flabber_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LB_flabber_01">
+<bone name="LB_flabber_02">
+<bone name="LB_flabber_03">
+<bone name="LB_flabber_04">
+<bone name="LB_flabber_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_flabber_01">
+<bone name="B_flabber_02">
+<bone name="B_flabber_03">
+<bone name="B_flabber_04">
+<bone name="B_flabber_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="RF_flabber_01">
+<bone name="RF_flabber_02">
+<bone name="RF_flabber_03">
+<bone name="RF_flabber_04">
+<bone name="RF_flabber_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="RB_flabber_01">
+<bone name="RB_flabber_02">
+<bone name="RB_flabber_03">
+<bone name="RB_flabber_04">
+<bone name="RB_flabber_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Dekuprincess Skeleton" title="Dekuprincess Skeleton">
+<identifier><root>dekuprincess_baseA</root></identifier>
+<bone name="dekuprincess_baseA"><target>dekuprincess_baseA</target>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="belly"><target>belly</target>
+<bone name="abs"><target>abs</target>
+<bone name="torso"><target>torso</target>
+<bone name="head_twister"><target>head_twister</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="projectile"><target>projectile</target>
+<bone name="mouth_top"><target>mouth_top</target>
+</bone>
+<bone name="mouth_bot"><target>mouth_bot</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="headspout_01"><target>headspout_01</target>
+<bone name="headspout_02"><target>headspout_02</target>
+<bone name="headspout_03"><target>headspout_03</target>
+<bone name="headspout_04"><target>headspout_04</target>
+<bone name="headspout_05"><target>headspout_05</target>
+<bone name="headspout_06"><target>headspout_06</target>
+<bone name="headspout_07"><target>headspout_07</target>
+<bone name="headspout_08"><target>headspout_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_earing_01"><target>L_earing_01</target>
+<bone name="L_earing_02"><target>L_earing_02</target>
+</bone>
+</bone>
+<bone name="R_earing_01"><target>R_earing_01</target>
+<bone name="R_earing_02"><target>R_earing_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical"><target>L_clavical</target>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_forearm"><target>L_forearm</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_weapon"><target>L_weapon</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_drape_01"><target>L_drape_01</target>
+<bone name="L_drape_02"><target>L_drape_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical"><target>R_clavical</target>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_forearm"><target>R_forearm</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_weapon"><target>R_weapon</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_drape_01"><target>R_drape_01</target>
+<bone name="R_drape_02"><target>R_drape_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="F_flabber_01"><target>F_flabber_01</target>
+<bone name="F_flabber_02"><target>F_flabber_02</target>
+<bone name="F_flabber_03"><target>F_flabber_03</target>
+<bone name="F_flabber_04"><target>F_flabber_04</target>
+<bone name="F_flabber_05"><target>F_flabber_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LF_flabber_01"><target>LF_flabber_01</target>
+<bone name="LF_flabber_02"><target>LF_flabber_02</target>
+<bone name="LF_flabber_03"><target>LF_flabber_03</target>
+<bone name="LF_flabber_04"><target>LF_flabber_04</target>
+<bone name="LF_flabber_05"><target>LF_flabber_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="LB_flabber_01"><target>LB_flabber_01</target>
+<bone name="LB_flabber_02"><target>LB_flabber_02</target>
+<bone name="LB_flabber_03"><target>LB_flabber_03</target>
+<bone name="LB_flabber_04"><target>LB_flabber_04</target>
+<bone name="LB_flabber_05"><target>LB_flabber_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_flabber_01"><target>B_flabber_01</target>
+<bone name="B_flabber_02"><target>B_flabber_02</target>
+<bone name="B_flabber_03"><target>B_flabber_03</target>
+<bone name="B_flabber_04"><target>B_flabber_04</target>
+<bone name="B_flabber_05"><target>B_flabber_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="RF_flabber_01"><target>RF_flabber_01</target>
+<bone name="RF_flabber_02"><target>RF_flabber_02</target>
+<bone name="RF_flabber_03"><target>RF_flabber_03</target>
+<bone name="RF_flabber_04"><target>RF_flabber_04</target>
+<bone name="RF_flabber_05"><target>RF_flabber_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="RB_flabber_01"><target>RB_flabber_01</target>
+<bone name="RB_flabber_02"><target>RB_flabber_02</target>
+<bone name="RB_flabber_03"><target>RB_flabber_03</target>
+<bone name="RB_flabber_04"><target>RB_flabber_04</target>
+<bone name="RB_flabber_05"><target>RB_flabber_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

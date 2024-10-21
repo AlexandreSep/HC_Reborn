@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_meg/base_HC_meg.xml">
+      <mesh>units/stalfos/sta_megA.dae</mesh>
+      <props>
+        <prop actor="particle/flame_stafos_violetA.xml" attachpoint="candle"/>
+		<prop actor="particle/flame_stafos_violetA.xml" attachpoint="projectile"/>
+		<prop actor="particle/flame_stafos_violetA.xml" attachpoint="loaded-projectile"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+      <textures><texture file="skeletal/stalfos/sta_megA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_meg/base_HC_meg_death.xml">
+      <props>
+		<prop actor="particle/flame_stafos_violetA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

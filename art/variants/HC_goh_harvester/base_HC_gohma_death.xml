@@ -1,0 +1,5 @@
+<variant name="Death">
+  <animations>
+	<animation file="HC_goh_harvester/goh_harvester_deathA.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

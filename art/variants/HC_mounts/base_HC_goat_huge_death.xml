@@ -1,0 +1,5 @@
+<variant name="Death">
+  <animations>
+	         <animation file="HC_ordgoat_huge/ordgoat_huge_death.dae" name="death" speed="100"/>
+  </animations>
+</variant>

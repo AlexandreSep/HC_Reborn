@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="decal_campaign_lanayruprovince_lanayruprovince">
+      <decal angle="0" depth="30" offsetx="0" offsetz="0" width="150"/>
+      <textures><texture file="campaigns/labels/lanayruprovince_lanayruprovince.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>terrain_base.xml</material>
+</actor>

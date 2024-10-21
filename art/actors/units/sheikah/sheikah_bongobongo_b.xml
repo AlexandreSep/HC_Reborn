@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_bongobongo/base_HC_bongobongo.xml">
+      <mesh>units/sheikah/she_bongobongoA.dae</mesh>
+      <textures>
+        <texture file="skeletal/sheikah/she_devouredA.dds" name="baseTex"/>
+      </textures>
+	  <props>
+	    <prop actor="units/sheikah/sheikah_bongohand_left.xml" attachpoint="root"/>
+		<prop actor="units/sheikah/sheikah_bongohand_right.xml" attachpoint="root"/>
+		<prop actor="particle/bongo_smokeA.xml" attachpoint="root"/>
+        <prop actor="particle/bongo_smokeB.xml" attachpoint="pelvis"/>
+		<prop actor="particle/bongo_smokeB.xml" attachpoint="neckbase"/>
+		<prop actor="particle/bongo_smokeB.xml" attachpoint="tail_01"/>
+		<prop actor="particle/bongo_smokeB.xml" attachpoint="tail_03"/>
+		<prop actor="particle/bongo_smokeB.xml" attachpoint="tail_05"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+	<variant file="HC_bongobongo/base_HC_bongobongo_att.xml">
+    </variant>
+	<variant name="Death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+		<prop actor="units/sheikah/sheikah_bongohand_left.xml" attachpoint="root"/>
+		<prop actor="units/sheikah/sheikah_bongohand_right.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

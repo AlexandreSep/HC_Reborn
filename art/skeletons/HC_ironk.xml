@@ -1,0 +1,99 @@
+<skeletons>
+<standard_skeleton id="IronKnuckle_Skeleton" title="IronKnuckle_Skeleton">
+<bone name="ironk_skeleton">
+<bone name="abs">
+<bone name="torso">
+<bone name="neck">
+<bone name="head">
+</bone>
+</bone>
+<bone name="Lclav">
+<bone name="Lsoulder">
+<bone name="Lelbow">
+<bone name="Lwrist">
+<bone name="Lhand">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Rclav">
+<bone name="Rsoulder">
+<bone name="Relbow">
+<bone name="Rwrist">
+<bone name="Rhand">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Lhip">
+<bone name="Lknee">
+<bone name="Lfoot">
+<bone name="Ltoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Rhip">
+<bone name="Rknee">
+<bone name="Rfoot">
+<bone name="Rtoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="IronKnuckle_Skeleton" title="IronKnuckle_Skeleton">
+<identifier><root>ironk_skeleton</root></identifier>
+<bone name="ironk_skeleton"><target>ironk_skeleton</target>
+<bone name="abs"><target>abs</target>
+<bone name="torso"><target>torso</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+</bone>
+</bone>
+<bone name="Lclav"><target>Lclav</target>
+<bone name="Lsoulder"><target>Lsoulder</target>
+<bone name="Lelbow"><target>Lelbow</target>
+<bone name="Lwrist"><target>Lwrist</target>
+<bone name="Lhand"><target>Lhand</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Rclav"><target>Rclav</target>
+<bone name="Rsoulder"><target>Rsoulder</target>
+<bone name="Relbow"><target>Relbow</target>
+<bone name="Rwrist"><target>Rwrist</target>
+<bone name="Rhand"><target>Rhand</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Lhip"><target>Lhip</target>
+<bone name="Lknee"><target>Lknee</target>
+<bone name="Lfoot"><target>Lfoot</target>
+<bone name="Ltoe"><target>Ltoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="Rhip"><target>Rhip</target>
+<bone name="Rknee"><target>Rknee</target>
+<bone name="Rfoot"><target>Rfoot</target>
+<bone name="Rtoe"><target>Rtoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

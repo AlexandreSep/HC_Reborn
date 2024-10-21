@@ -1,0 +1,15 @@
+<skeletons>
+<standard_skeleton id="StaticRef" title="StaticRef">
+<bone name="building_staticref">
+<bone name="staticref">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="StaticRef" title="StaticRef">
+<identifier><root>building_staticref</root></identifier>
+<bone name="building_staticref"><target>building_staticref</target>
+<bone name="staticref"><target>staticref</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

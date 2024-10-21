@@ -1,0 +1,83 @@
+<skeletons>
+<standard_skeleton id="dodongobaby_skeleton" title="dodongobaby_skeleton">
+<bone name="dodongobabyA_base">
+<bone name="waist_01">
+<bone name="abs_01">
+<bone name="chest_01">
+<bone name="neck_01">
+<bone name="head_01">
+<bone name="face_01">
+<bone name="M_bot_01">
+<bone name="projectile">
+<bone name="M_bot_03">
+</bone>
+</bone>
+</bone>
+<bone name="M_top_01">
+<bone name="M_top_02">
+<bone name="M_top_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="dodongobaby_skeleton" title="dodongobaby_skeleton">
+<identifier><root>dodongobabyA_base</root></identifier>
+<bone name="dodongobabyA_base"><target>dodongobabyA_base</target>
+<bone name="waist_01"><target>waist_01</target>
+<bone name="abs_01"><target>abs_01</target>
+<bone name="chest_01"><target>chest_01</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="face_01"><target>face_01</target>
+<bone name="M_bot_01"><target>M_bot_01</target>
+<bone name="projectile"><target>projectile</target>
+<bone name="M_bot_03"><target>M_bot_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="M_top_01"><target>M_top_01</target>
+<bone name="M_top_02"><target>M_top_02</target>
+<bone name="M_top_03"><target>M_top_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+	<variant frequency="1" name="base">  
+		<mesh>structural/lizalfos/liz_treasuretroveB.dae</mesh>
+		<textures>
+			<texture file="structural/lizalfos/lizalfos_buildingC.dds" name="baseTex"/>
+			<texture file="structural/lizalfos/lizalfos_buildingC_normal.dds" name="normTex"/>
+			<texture file="structural/lizalfos/lizalfos_treasuretroveB_ao.dds" name="aoTex"/>
+      </textures>
+	  <props>
+			<prop actor="props/structures/lizalfos/lizalfos_groundbase_R_small.xml" attachpoint="root"/>
+			<prop actor="props/structures/lizalfos/lizalfos_treasuresA.xml" attachpoint="root"/>
+			<prop actor="particle/sparkle_goldmine.xml" attachpoint="root"/>
+	  </props>  
+	</variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_small_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

@@ -1,0 +1,19 @@
+<skeletons>
+<standard_skeleton id="goron_urn" title="goron_urn">
+<bone name="gor_wonder_base">
+<bone name="pivot_01">
+<bone name="urn_01">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="goron_urn" title="goron_urn">
+<identifier><root>gor_wonder_base</root></identifier>
+<bone name="gor_wonder_base"><target>gor_wonder_base</target>
+<bone name="pivot_01"><target>pivot_01</target>
+<bone name="urn_01"><target>urn_01</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

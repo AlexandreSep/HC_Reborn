@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Plot">
+      <mesh>structural/kokiri/kok_plotA.dae</mesh>
+      <textures>
+	    <texture file="structural/kokiri/kok_plotA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+	<variant name="Idle" frequency="1"/>
+	<variant name="upgrading">
+      <props>
+		<prop actor="structures/kokiri/kokiri_scaffoldB.xml" attachpoint="root"/>
+        <prop actor="structures/kokiri/kokiri_frameB.xml" attachpoint="root"/>
+		<prop actor="particle/construction_dust_hugeB.xml" attachpoint="root"/>
+      </props>
+	</variant>
+   </group>   
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

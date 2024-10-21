@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Tektite Eggs">
+      <mesh>units/wild/wild_tektite_eggsA.dae</mesh>
+      <props>
+		<prop actor="props/structures/wild/tektite_nestwebA.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="skeletal/wild/wild_tektitesA.dds" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

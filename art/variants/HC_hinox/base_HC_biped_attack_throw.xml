@@ -1,0 +1,9 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.50" file="HC_hinox/hinox_attack_throwA.dae" load="0.01" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="props/units/weapons/goron_bombA_shoot.xml" attachpoint="projectile"/>
+    <prop actor="props/units/weapons/goron_bombA.xml" attachpoint="loaded-projectile"/>
+  </props>
+</variant>

@@ -1,0 +1,12 @@
+<variant name="Base" frequency="1">
+  <animations>
+        <animation file="HC_deer/deer_idle.dae" name="Idle" speed="70"/>
+        <animation file="HC_deer/deer_idleA.dae" name="Idle" speed="70"/>
+        <animation file="HC_deer/deer_idleB.dae" name="Idle" speed="70"/>
+		<animation event="0.5" file="HC_deer/deer_attackA.dae" name="attack_melee" speed="120"/>
+        <animation file="HC_deer/deer_run.dae" name="Walk" speed="10"/>
+        <animation file="HC_deer/deer_run.dae" name="Run" speed="10"/>
+		<animation file="HC_deer/deer_flailA.dae" name="Flail" id="flail1" speed="8"/>
+		<animation file="HC_deer/deer_recoverA.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

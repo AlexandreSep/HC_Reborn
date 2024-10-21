@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <textures>
+        <texture file="structural/labrynna/labrynna_buildingA.dds" name="baseTex"/>
+		<texture file="structural/labrynna/labrynna_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/labrynna/labrynna_farmpipes_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="pipebigA">
+      <mesh>structural/debris/debris_labrynna_pipesmallA.dae</mesh>
+    </variant>
+	<variant name="pipebigB">
+      <mesh>structural/debris/debris_labrynna_pipesmallB.dae</mesh>
+    </variant>
+	<variant name="pipebigC">
+      <mesh>structural/debris/debris_labrynna_pipesmallC.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

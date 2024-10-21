@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_battlecrab/battlecrab_idle.dae" name="Idle" speed="100"/>
+        <animation file="HC_battlecrab/battlecrab_idleA.dae" name="Idle" speed="100"/>
+        <animation file="HC_battlecrab/battlecrab_idleB.dae" name="Idle" speed="100"/>
+        <animation file="HC_battlecrab/battlecrab_idleC.dae" name="Idle" speed="100"/>
+        <animation file="HC_battlecrab/battlecrab_walk.dae" name="carry_meat" speed="10"/>
+        <animation file="HC_battlecrab/battlecrab_walk.dae" name="Walk" speed="10"/>
+        <animation file="HC_battlecrab/battlecrab_walk.dae" name="Run" speed="20"/>
+        <animation file="HC_battlecrab/battlecrab_attackA.dae" name="attack_melee" speed="100"/>
+        <animation file="HC_battlecrab/battlecrab_attackB.dae" name="attack_melee" speed="100"/>
+        <animation file="HC_battlecrab/battlecrab_attackB.dae" name="attack_slaughter" speed="100"/>
+        <animation file="HC_battlecrab/battlecrab_deathA.dae" name="death" speed="100"/>
+      </animations>
+      <mesh>units/zora/zor_crabmountA.dae</mesh>
+      <props>
+        <prop actor="units/lanayru/lanayru_hero_dorephan_b_r.xml" attachpoint="crab_med_base"/>
+		<prop actor="units/lanayru/lanayru_hero_dorephan_cape.xml" attachpoint="crab_med_base"/>
+		<prop actor="units/lanayru/lanayru_hero_dorephan_extra.xml" attachpoint="crab_med_base"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="battlecrab-texture-01">
+      <textures><texture file="skeletal/lanayru/lan_mainC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_zora_01.xml" attachpoint="root"/>
+      </props>
+    </variant>		
+  </group>
+  <material>objectcolor.xml</material>
+</actor>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_moblin/base_HC_biped_club.xml"> 	
+      <textures>
+        <texture file="skeletal/moblin/mob_mainC.dds" name="baseTex"/>
+      </textures>
+	  <props>
+			<prop actor="props/units/weapons/moblin_clubA.xml" attachpoint="R_hand"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="male">
+      <mesh>units/moblin/mob_MmoblinA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="female">
+      <mesh>units/moblin/mob_FmoblinA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="moblinox">
+      <mesh>units/moblin/mob_moblinoxA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_moblin/base_HC_biped_capture.xml"/>
+    <variant file="HC_moblin/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_moblin/base_HC_biped_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

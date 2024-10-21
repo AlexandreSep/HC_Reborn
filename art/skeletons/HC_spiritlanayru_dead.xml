@@ -1,0 +1,27 @@
+<skeletons>
+<standard_skeleton id="Spiritlanayru Dead Skeleton" title="Spiritlanayru Dead Skeleton">
+<bone name="spiritlanayru_base_dead">
+<bone name="part_01">
+</bone>
+<bone name="part_02">
+</bone>
+<bone name="part_03">
+</bone>
+<bone name="part_04">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Spiritlanayru Dead Skeleton" title="Spiritlanayru Dead Skeleton">
+<identifier><root>spiritlanayru_base_dead</root></identifier>
+<bone name="spiritlanayru_base_dead"><target>spiritlanayru_base_dead</target>
+<bone name="part_01"><target>part_01</target>
+</bone>
+<bone name="part_02"><target>part_02</target>
+</bone>
+<bone name="part_03"><target>part_03</target>
+</bone>
+<bone name="part_04"><target>part_04</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

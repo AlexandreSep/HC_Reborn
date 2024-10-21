@@ -1,0 +1,19 @@
+<skeletons>
+<standard_skeleton id="HeroSelector Skeleton" title="HeroSelector Skeleton">
+<bone name="base_hero_selectorA">
+<bone name="bot_rotator">
+</bone>
+<bone name="top_rotator">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="HeroSelector Skeleton" title="HeroSelector Skeleton">
+<identifier><root>base_hero_selectorA</root></identifier>
+<bone name="base_hero_selectorA"><target>base_hero_selectorA</target>
+<bone name="bot_rotator"><target>bot_rotator</target>
+</bone>
+<bone name="top_rotator"><target>top_rotator</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

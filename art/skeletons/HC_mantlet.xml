@@ -1,0 +1,27 @@
+<skeletons>
+<standard_skeleton id="mantlet_skeleton" title="mantlet_skeleton">
+<bone name="mantlet_base">
+<bone name="bone_mantletbot">
+<bone name="bone_manttop">
+</bone>
+</bone>
+<bone name="L_pusher">
+</bone>
+<bone name="R_pusher">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="mantlet_skeleton" title="mantlet_skeleton">
+<identifier><root>mantlet_base</root></identifier>
+<bone name="mantlet_base"><target>mantlet_base</target>
+<bone name="bone_mantletbot"><target>bone_mantletbot</target>
+<bone name="bone_manttop"><target>bone_manttop</target>
+</bone>
+</bone>
+<bone name="L_pusher"><target>L_pusher</target>
+</bone>
+<bone name="R_pusher"><target>R_pusher</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

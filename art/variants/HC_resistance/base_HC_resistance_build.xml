@@ -1,0 +1,5 @@
+<variant name="Build">
+  <animations>
+	<animation event="0.5" file="HC_resistance/resistance_walk.dae" name="Build" speed="100"/>
+  </animations>
+</variant>

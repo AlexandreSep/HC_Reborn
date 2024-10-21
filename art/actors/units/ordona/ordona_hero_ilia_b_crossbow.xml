@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Idle" speed="50"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Walk" speed="18"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="Run" speed="40"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_crossbow.dae" name="attack_ranged" speed="100"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_crossbow.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.5" file="HC_archer/biped_rider_arch_attack_sword.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_archer/biped_rider_arch_idle.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>props/weapon/ordona_crossbowA.dae</mesh>
+     <props>
+		<prop actor="props/units/weapons/hylian_arrowA_shoot.xml" attachpoint="projectile"/>
+     </props>
+	  <textures><texture file="skeletal/ordona/ord_weaponsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

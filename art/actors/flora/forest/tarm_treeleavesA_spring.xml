@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="branch-a">
+      <mesh>gaia/flora/flora_tarmtreeA_leaves.dae</mesh>
+    </variant>
+
+  </group>
+  
+
+  <group>
+    <variant name="branch_tex_A">
+      <textures><texture file="gaia/flora/flora_tarmtreeA_springA.dds" name="baseTex"/></textures>
+    </variant>
+	<variant name="branch_tex_B">
+      <textures><texture file="gaia/flora/flora_tarmtreeA_springA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+  <material>basic_trans_wind.xml</material>
+
+</actor>

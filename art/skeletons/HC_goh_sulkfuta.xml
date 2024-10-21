@@ -1,0 +1,327 @@
+<skeletons>
+<standard_skeleton id="Armature" title="Armature Skeleton">
+<bone name="sulk_futalisk_base">
+<bone name="belly">
+<bone name="chest">
+<bone name="neckbase">
+<bone name="neck">
+<bone name="head">
+<bone name="fin_01">
+<bone name="fin_02">
+<bone name="fin_03">
+</bone>
+</bone>
+</bone>
+<bone name="fin_04">
+<bone name="fin_05">
+<bone name="fin_06">
+</bone>
+</bone>
+</bone>
+<bone name="fin_07">
+<bone name="fin_08">
+<bone name="fin_09">
+</bone>
+</bone>
+</bone>
+<bone name="fin_10">
+<bone name="fin_11">
+<bone name="fin_12">
+</bone>
+</bone>
+</bone>
+<bone name="fin_13">
+<bone name="fin_14">
+<bone name="fin_15">
+</bone>
+</bone>
+</bone>
+<bone name="fin_16">
+<bone name="fin_17">
+<bone name="fin_18">
+</bone>
+</bone>
+</bone>
+<bone name="fin_19">
+<bone name="fin_20">
+<bone name="fin_21">
+</bone>
+</bone>
+</bone>
+<bone name="eye_01">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_hand">
+<bone name="L_claw">
+<bone name="L_clawtip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fleg_01">
+<bone name="L_Fleg_02">
+<bone name="L_Fleg_03">
+<bone name="L_Fleg_04">
+<bone name="L_Fleg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_blade_01">
+<bone name="L_blade_02">
+<bone name="L_blade_03">
+<bone name="L_blade_04">
+<bone name="L_blade_05">
+<bone name="L_blade_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_hand">
+<bone name="R_claw">
+<bone name="R_clawtip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fleg_01">
+<bone name="R_Fleg_02">
+<bone name="R_Fleg_03">
+<bone name="R_Fleg_04">
+<bone name="R_Fleg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_blade_01">
+<bone name="R_blade_02">
+<bone name="R_blade_03">
+<bone name="R_blade_04">
+<bone name="R_blade_05">
+<bone name="R_blade_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bleg_01">
+<bone name="L_Bleg_02">
+<bone name="L_Bleg_03">
+<bone name="L_Bleg_04">
+<bone name="L_Bleg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bleg_01">
+<bone name="R_Bleg_02">
+<bone name="R_Bleg_03">
+<bone name="R_Bleg_04">
+<bone name="R_Bleg_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toes">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toes">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Armature" title="Armature Skeleton">
+<identifier><root>sulk_futalisk_base</root></identifier>
+<bone name="sulk_futalisk_base"><target>sulk_futalisk_base</target>
+<bone name="belly"><target>belly</target>
+<bone name="chest"><target>chest</target>
+<bone name="neckbase"><target>neckbase</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="fin_01"><target>fin_01</target>
+<bone name="fin_02"><target>fin_02</target>
+<bone name="fin_03"><target>fin_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="fin_04"><target>fin_04</target>
+<bone name="fin_05"><target>fin_05</target>
+<bone name="fin_06"><target>fin_06</target>
+</bone>
+</bone>
+</bone>
+<bone name="fin_07"><target>fin_07</target>
+<bone name="fin_08"><target>fin_08</target>
+<bone name="fin_09"><target>fin_09</target>
+</bone>
+</bone>
+</bone>
+<bone name="fin_10"><target>fin_10</target>
+<bone name="fin_11"><target>fin_11</target>
+<bone name="fin_12"><target>fin_12</target>
+</bone>
+</bone>
+</bone>
+<bone name="fin_13"><target>fin_13</target>
+<bone name="fin_14"><target>fin_14</target>
+<bone name="fin_15"><target>fin_15</target>
+</bone>
+</bone>
+</bone>
+<bone name="fin_16"><target>fin_16</target>
+<bone name="fin_17"><target>fin_17</target>
+<bone name="fin_18"><target>fin_18</target>
+</bone>
+</bone>
+</bone>
+<bone name="fin_19"><target>fin_19</target>
+<bone name="fin_20"><target>fin_20</target>
+<bone name="fin_21"><target>fin_21</target>
+</bone>
+</bone>
+</bone>
+<bone name="eye_01"><target>eye_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_claw"><target>L_claw</target>
+<bone name="L_clawtip"><target>L_clawtip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fleg_01"><target>L_Fleg_01</target>
+<bone name="L_Fleg_02"><target>L_Fleg_02</target>
+<bone name="L_Fleg_03"><target>L_Fleg_03</target>
+<bone name="L_Fleg_04"><target>L_Fleg_04</target>
+<bone name="L_Fleg_05"><target>L_Fleg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_blade_01"><target>L_blade_01</target>
+<bone name="L_blade_02"><target>L_blade_02</target>
+<bone name="L_blade_03"><target>L_blade_03</target>
+<bone name="L_blade_04"><target>L_blade_04</target>
+<bone name="L_blade_05"><target>L_blade_05</target>
+<bone name="L_blade_06"><target>L_blade_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_claw"><target>R_claw</target>
+<bone name="R_clawtip"><target>R_clawtip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fleg_01"><target>R_Fleg_01</target>
+<bone name="R_Fleg_02"><target>R_Fleg_02</target>
+<bone name="R_Fleg_03"><target>R_Fleg_03</target>
+<bone name="R_Fleg_04"><target>R_Fleg_04</target>
+<bone name="R_Fleg_05"><target>R_Fleg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_blade_01"><target>R_blade_01</target>
+<bone name="R_blade_02"><target>R_blade_02</target>
+<bone name="R_blade_03"><target>R_blade_03</target>
+<bone name="R_blade_04"><target>R_blade_04</target>
+<bone name="R_blade_05"><target>R_blade_05</target>
+<bone name="R_blade_06"><target>R_blade_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bleg_01"><target>L_Bleg_01</target>
+<bone name="L_Bleg_02"><target>L_Bleg_02</target>
+<bone name="L_Bleg_03"><target>L_Bleg_03</target>
+<bone name="L_Bleg_04"><target>L_Bleg_04</target>
+<bone name="L_Bleg_05"><target>L_Bleg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bleg_01"><target>R_Bleg_01</target>
+<bone name="R_Bleg_02"><target>R_Bleg_02</target>
+<bone name="R_Bleg_03"><target>R_Bleg_03</target>
+<bone name="R_Bleg_04"><target>R_Bleg_04</target>
+<bone name="R_Bleg_05"><target>R_Bleg_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toes"><target>L_toes</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toes"><target>R_toes</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

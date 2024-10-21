@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Gohma Egg Base">
+      <mesh>structural/gohma/goh_egg_base.dae</mesh>
+      <props>
+		<prop actor="props/structures/gohma/gohma_creep_tiny.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/gohma/goh_buildingA.dds" name="baseTex"/>
+		<texture file="structural/gohma/goh_buildingA_normal.dds" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

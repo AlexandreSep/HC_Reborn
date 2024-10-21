@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_spiritlanayru/base_HC_spiritlanayru.xml">
+      <mesh>units/lanayru/lan_spiritlanayruA.dae</mesh>
+      <textures>
+		<texture file="skeletal/lanayru/lan_spiritlanayruA.dds" name="baseTex"/>
+		<texture file="skeletal/lanayru/lan_spiritlanayruA_glow.dds" name="specTex"/>
+	  </textures>
+	  <props>
+        <prop actor="particle/lanayru_spiritflareA.xml" attachpoint="orb_01"/>
+		<prop actor="particle/lanayru_sparklesA.xml" attachpoint="root"/>
+		<prop actor="units/lanayru/lanayru_spiritlanayru_water.xml" attachpoint="root"/>
+		<prop actor="particle/lanayru_spiritfogB.xml" attachpoint="root"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="neck_01"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="neck_02"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="neck_03"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="neck_04"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="neck_05"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="neck_06"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="neck_07"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="neck_08"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="tail_01"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="tail_02"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="tail_03"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="tail_04"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="tail_05"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="tail_06"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="tail_07"/>
+		<prop actor="particle/lanayru_spiritfogA.xml" attachpoint="tail_08"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Attack_Ranged">
+      <props>
+        <prop actor="particle/lanayru_megasplashA.xml" attachpoint="tail_07"/>
+		<prop attachpoint="neck_01"/>
+		<prop attachpoint="neck_02"/>
+		<prop attachpoint="neck_03"/>
+		<prop attachpoint="neck_04"/>
+		<prop attachpoint="neck_05"/>
+		<prop attachpoint="neck_06"/>
+		<prop attachpoint="neck_07"/>
+		<prop attachpoint="neck_08"/>
+		<prop attachpoint="tail_01"/>
+		<prop attachpoint="tail_02"/>
+		<prop attachpoint="tail_03"/>
+		<prop attachpoint="tail_04"/>
+		<prop attachpoint="tail_05"/>
+		<prop attachpoint="tail_06"/>
+		<prop attachpoint="tail_07"/>
+		<prop attachpoint="tail_08"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_spiritlanayru/base_HC_spiritlanayru_att.xml"/>
+    <variant name="Death">
+		<animations>
+            <animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle1" speed="71"/>
+			<animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle2" speed="71"/>
+			<animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle3" speed="71"/>
+			<animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle4" speed="71"/>
+			<animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle5" speed="71"/>
+			<animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Walk" id="walk1" speed="20"/>
+			<animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Run" id="run1" speed="20"/>
+			<animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Attack_melee" id="attack1" speed="100"/>
+			<animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Attack_melee" id="attack2" speed="100"/>
+			<animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Attack_melee" id="attack3" speed="100"/>
+			<animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Death" id="death1" speed="100"/>
+      </animations>
+	<mesh>units/lanayru/lan_spiritlanayruA_dead.dae</mesh>
+    <textures><texture file="skeletal/lanayru/lan_spiritlanayruA_stone.dds" name="baseTex"/></textures>
+      <props>
+		<prop actor="particle/explosion_dustC.xml" attachpoint="part_01"/>
+		<prop actor="particle/explosion_dustC.xml" attachpoint="part_02"/>
+		<prop actor="particle/explosion_dustC.xml" attachpoint="part_03"/>
+		<prop actor="particle/explosion_dustC.xml" attachpoint="part_04"/>
+		<prop actor="particle/lanayru_deathsparklesA.xml" attachpoint="root"/>
+		<prop attachpoint="orb_01"/>
+		<prop attachpoint="neck_01"/>
+		<prop attachpoint="neck_02"/>
+		<prop attachpoint="neck_03"/>
+		<prop attachpoint="neck_04"/>
+		<prop attachpoint="neck_05"/>
+		<prop attachpoint="neck_06"/>
+		<prop attachpoint="neck_07"/>
+		<prop attachpoint="neck_08"/>
+		<prop attachpoint="tail_01"/>
+		<prop attachpoint="tail_02"/>
+		<prop attachpoint="tail_03"/>
+		<prop attachpoint="tail_04"/>
+		<prop attachpoint="tail_05"/>
+		<prop attachpoint="tail_06"/>
+		<prop attachpoint="tail_07"/>
+		<prop attachpoint="tail_08"/>
+      </props>
+    </variant>
+  </group>  
+  <material>basic_glow_nu.xml</material>
+</actor>

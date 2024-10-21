@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="pumpkinA">
+      <mesh>gaia/flora/flora_ord_pumpkinA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="pumpkinB">
+      <mesh>gaia/flora/flora_ord_pumpkinA.dae</mesh>
+    </variant>
+	<variant frequency="1" name="pumpkinC">
+      <mesh>gaia/flora/flora_ord_pumpkinA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant>
+      <textures>
+		<texture file="structural/ordona/ordona_pumpkinA.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

@@ -1,0 +1,8 @@
+<variant name="Base" frequency="1">
+  <animations>
+		<animation file="HC_wej/public_hang_static.dae" name="Idle" id="idle1" speed="50"/>
+        <animation file="HC_wej/public_hang_static.dae" name="Idle" id="idle2" speed="50"/>
+        <animation file="HC_wej/public_hang_static.dae" name="Idle" id="idle3" speed="50"/>
+		<animation file="HC_wej/public_hang_static.dae" name="Idle" id="idle4" speed="50"/>
+  </animations>
+</variant>

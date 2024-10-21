@@ -1,0 +1,9 @@
+<variant name="carry_food">
+  <animations>
+	<animation file="HC_goronsmall/goronsmall_carry.dae" name="carry_food" speed="20"/>
+  </animations>
+  <props>
+	<prop actor="props/units/tools/goron_bagA.xml" attachpoint="L_wrist"/>
+	<prop attachpoint="L_wrist"/>
+  </props>
+</variant>

@@ -1,0 +1,63 @@
+<skeletons>
+<standard_skeleton id="Organgun Skeleton" title="Organgun Skeleton">
+<bone name="base_organgun">
+<bone name="frame">
+<bone name="weight">
+</bone>
+<bone name="mountframe">
+<bone name="cannonmount_01">
+</bone>
+<bone name="cannonmount_02">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="cannonmount_03">
+</bone>
+<bone name="cannonmount_04">
+</bone>
+</bone>
+<bone name="L_wheel">
+</bone>
+<bone name="R_wheel">
+</bone>
+</bone>
+<bone name="crew_01">
+</bone>
+<bone name="crew_02">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Organgun Skeleton" title="Organgun Skeleton">
+<identifier><root>base_organgun</root></identifier>
+<bone name="base_organgun"><target>base_organgun</target>
+<bone name="frame"><target>frame</target>
+<bone name="weight"><target>weight</target>
+</bone>
+<bone name="mountframe"><target>mountframe</target>
+<bone name="cannonmount_01"><target>cannonmount_01</target>
+</bone>
+<bone name="cannonmount_02"><target>cannonmount_02</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="cannonmount_03"><target>cannonmount_03</target>
+</bone>
+<bone name="cannonmount_04"><target>cannonmount_04</target>
+</bone>
+</bone>
+<bone name="L_wheel"><target>L_wheel</target>
+</bone>
+<bone name="R_wheel"><target>R_wheel</target>
+</bone>
+</bone>
+<bone name="crew_01"><target>crew_01</target>
+</bone>
+<bone name="crew_02"><target>crew_02</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

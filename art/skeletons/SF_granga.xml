@@ -1,0 +1,135 @@
+<skeletons>
+<standard_skeleton id="granga_skel" title="granga_skel">
+<bone name="granga_base">
+<bone name="chest">
+<bone name="backneck">
+<bone name="head">
+<bone name="face">
+<bone name="eye_01">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_turret">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+<bone name="R_turret">
+<bone name="projectile_b">
+</bone>
+<bone name="loaded_projectile_b">
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_Btoe_01">
+<bone name="L_Btoe_02">
+</bone>
+</bone>
+<bone name="L_Ltoe_01">
+<bone name="L_Ltoe_02">
+</bone>
+</bone>
+<bone name="L_Rtoe_01">
+<bone name="L_Rtoe_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_Btoe_01">
+<bone name="R_Btoe_02">
+</bone>
+</bone>
+<bone name="R_Rtoe_01">
+<bone name="R_Rtoe_02">
+</bone>
+</bone>
+<bone name="R_Rtoe_03">
+<bone name="R_Rtoe_02_001">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="blaster_02">
+</bone>
+<bone name="blaster_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="granga_skel" title="granga_skel">
+<identifier><root>granga_base</root></identifier>
+<bone name="granga_base"><target>granga_base</target>
+<bone name="chest"><target>chest</target>
+<bone name="backneck"><target>backneck</target>
+<bone name="head"><target>head</target>
+<bone name="face"><target>face</target>
+<bone name="eye_01"><target>eye_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_turret"><target>L_turret</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+<bone name="R_turret"><target>R_turret</target>
+<bone name="projectile_b"><target>projectile_b</target>
+</bone>
+<bone name="loaded_projectile_b"><target>loaded_projectile_b</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_Btoe_01"><target>L_Btoe_01</target>
+<bone name="L_Btoe_02"><target>L_Btoe_02</target>
+</bone>
+</bone>
+<bone name="L_Ltoe_01"><target>L_Ltoe_01</target>
+<bone name="L_Ltoe_02"><target>L_Ltoe_02</target>
+</bone>
+</bone>
+<bone name="L_Rtoe_01"><target>L_Rtoe_01</target>
+<bone name="L_Rtoe_02"><target>L_Rtoe_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_Btoe_01"><target>R_Btoe_01</target>
+<bone name="R_Btoe_02"><target>R_Btoe_02</target>
+</bone>
+</bone>
+<bone name="R_Rtoe_01"><target>R_Rtoe_01</target>
+<bone name="R_Rtoe_02"><target>R_Rtoe_02</target>
+</bone>
+</bone>
+<bone name="R_Rtoe_03"><target>R_Rtoe_03</target>
+<bone name="R_Rtoe_02_001"><target>R_Rtoe_02_001</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="blaster_02"><target>blaster_02</target>
+</bone>
+<bone name="blaster_01"><target>blaster_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

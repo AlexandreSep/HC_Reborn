@@ -1,0 +1,9 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.5" file="HC_darknut_large/darknut_large_attack_swordA.dae" name="attack_ranged" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_darknut_large/darknut_large_attack_swordB.dae" name="attack_ranged" id="attack2" speed="100"/>
+	<animation event="0.5" file="HC_darknut_large/darknut_large_attack_swordC.dae" name="attack_ranged" id="attack3" speed="100"/>
+  </animations>
+</variant>
+
+

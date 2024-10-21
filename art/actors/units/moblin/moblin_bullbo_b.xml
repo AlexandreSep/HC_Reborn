@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_bullbo/bullbo_idle.dae" name="Idle" id="idle1" speed="100"/>
+        <animation file="HC_bullbo/bullbo_idleA.dae" name="Idle" id="idle2" speed="100"/>
+        <animation file="HC_bullbo/bullbo_idleB.dae" name="Idle" id="idle3" speed="100"/>
+        <animation event="0.1" file="HC_bullbo/bullbo_run.dae" name="carry_meat" speed="5"/>
+        <animation event="0.1" file="HC_bullbo/bullbo_run.dae" name="Walk" speed="5"/>
+        <animation event="0.1" file="HC_bullbo/bullbo_run.dae" name="Run" speed="10"/>
+        <animation file="HC_bullbo/bullbo_attackA.dae" name="attack_melee" id="attack1" speed="100"/>
+        <animation file="HC_bullbo/bullbo_attackA.dae" name="attack_melee" id="attack2" speed="100"/>
+        <animation file="HC_bullbo/bullbo_attackA.dae" name="attack_slaughter" speed="70"/>
+        <animation file="HC_bullbo/bullbo_deathA.dae" name="death" speed="100"/>
+      </animations>    
+      <props>
+	  <prop actor="units/moblin/moblin_bullbo_b_r.xml" attachpoint="rider_01"/>
+	  <prop actor="props/units/weapons/bulblin_club_mountedA.xml" attachpoint="rider_01"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="boar_A">
+      <mesh>units/moblin/mob_bullboA.dae</mesh>
+    </variant>
+    <variant frequency="1" name="boar_B">
+      <mesh>units/moblin/mob_bullboB.dae</mesh>
+    </variant>
+	<variant frequency="1" name="boar_C">
+      <mesh>units/moblin/mob_bullboC.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="boar_tex">
+      <textures><texture file="skeletal/moblin/mob_boarsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group> 
+  <material>default.xml</material>
+</actor>

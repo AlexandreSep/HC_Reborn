@@ -1,0 +1,131 @@
+<skeletons>
+<standard_skeleton id="caretaker_skeleton" title="caretaker_skeleton">
+<bone name="caretaker_base">
+<bone name="ass_01">
+<bone name="ass_02">
+<bone name="ass_03">
+<bone name="ass_04">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fthigh">
+<bone name="L_Fleg">
+<bone name="L_Fknee">
+<bone name="L_Ffoot">
+<bone name="L_Ftoe">
+<bone name="L_Ftip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bthigh">
+<bone name="L_Bleg">
+<bone name="L_Bknee">
+<bone name="L_Bfoot">
+<bone name="L_Btoe">
+<bone name="L_Btip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh">
+<bone name="R_Fleg">
+<bone name="R_Fknee">
+<bone name="R_Ffoot">
+<bone name="R_Ftoe">
+<bone name="R_Ftip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh">
+<bone name="R_Bleg">
+<bone name="R_Bknee">
+<bone name="R_Bfoot">
+<bone name="R_Btoe">
+<bone name="R_Btip">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="caretaker_skeleton" title="caretaker_skeleton">
+<identifier><root>caretaker_base</root></identifier>
+<bone name="caretaker_base"><target>caretaker_base</target>
+<bone name="ass_01"><target>ass_01</target>
+<bone name="ass_02"><target>ass_02</target>
+<bone name="ass_03"><target>ass_03</target>
+<bone name="ass_04"><target>ass_04</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fthigh"><target>L_Fthigh</target>
+<bone name="L_Fleg"><target>L_Fleg</target>
+<bone name="L_Fknee"><target>L_Fknee</target>
+<bone name="L_Ffoot"><target>L_Ffoot</target>
+<bone name="L_Ftoe"><target>L_Ftoe</target>
+<bone name="L_Ftip"><target>L_Ftip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Bthigh"><target>L_Bthigh</target>
+<bone name="L_Bleg"><target>L_Bleg</target>
+<bone name="L_Bknee"><target>L_Bknee</target>
+<bone name="L_Bfoot"><target>L_Bfoot</target>
+<bone name="L_Btoe"><target>L_Btoe</target>
+<bone name="L_Btip"><target>L_Btip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh"><target>R_Fthigh</target>
+<bone name="R_Fleg"><target>R_Fleg</target>
+<bone name="R_Fknee"><target>R_Fknee</target>
+<bone name="R_Ffoot"><target>R_Ffoot</target>
+<bone name="R_Ftoe"><target>R_Ftoe</target>
+<bone name="R_Ftip"><target>R_Ftip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh"><target>R_Bthigh</target>
+<bone name="R_Bleg"><target>R_Bleg</target>
+<bone name="R_Bknee"><target>R_Bknee</target>
+<bone name="R_Bfoot"><target>R_Bfoot</target>
+<bone name="R_Btoe"><target>R_Btoe</target>
+<bone name="R_Btip"><target>R_Btip</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

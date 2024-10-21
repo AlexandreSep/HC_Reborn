@@ -1,0 +1,107 @@
+<skeletons>
+<standard_skeleton id="harvester_skel" title="harvester_skel">
+<bone name="gohharvester_base">
+<bone name="eye_01">
+<bone name="eye_02">
+</bone>
+</bone>
+<bone name="L_Bthigh">
+<bone name="L_Bknee">
+<bone name="L_Bfoot">
+<bone name="L_Btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fthigh">
+<bone name="L_Fknee">
+<bone name="L_Ffoot">
+<bone name="L_Ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mand01">
+<bone name="L_mand02">
+<bone name="L_mand03">
+</bone>
+</bone>
+</bone>
+<bone name="R_mand01">
+<bone name="R_mand02">
+<bone name="R_mand03">
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh">
+<bone name="R_Fknee">
+<bone name="R_Ffoot">
+<bone name="R_Ftoe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh">
+<bone name="R_Bknee">
+<bone name="R_Bfoot">
+<bone name="R_Btoe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="harvester_skel" title="harvester_skel">
+<identifier><root>gohharvester_base</root></identifier>
+<bone name="gohharvester_base"><target>gohharvester_base</target>
+<bone name="eye_01"><target>eye_01</target>
+<bone name="eye_02"><target>eye_02</target>
+</bone>
+</bone>
+<bone name="L_Bthigh"><target>L_Bthigh</target>
+<bone name="L_Bknee"><target>L_Bknee</target>
+<bone name="L_Bfoot"><target>L_Bfoot</target>
+<bone name="L_Btoe"><target>L_Btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_Fthigh"><target>L_Fthigh</target>
+<bone name="L_Fknee"><target>L_Fknee</target>
+<bone name="L_Ffoot"><target>L_Ffoot</target>
+<bone name="L_Ftoe"><target>L_Ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_mand01"><target>L_mand01</target>
+<bone name="L_mand02"><target>L_mand02</target>
+<bone name="L_mand03"><target>L_mand03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_mand01"><target>R_mand01</target>
+<bone name="R_mand02"><target>R_mand02</target>
+<bone name="R_mand03"><target>R_mand03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_Fthigh"><target>R_Fthigh</target>
+<bone name="R_Fknee"><target>R_Fknee</target>
+<bone name="R_Ffoot"><target>R_Ffoot</target>
+<bone name="R_Ftoe"><target>R_Ftoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_Bthigh"><target>R_Bthigh</target>
+<bone name="R_Bknee"><target>R_Bknee</target>
+<bone name="R_Bfoot"><target>R_Bfoot</target>
+<bone name="R_Btoe"><target>R_Btoe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

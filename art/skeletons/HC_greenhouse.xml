@@ -1,0 +1,155 @@
+<skeletons>
+<standard_skeleton id="Greenhouse Skeleton" title="Greenhouse Skeleton">
+<bone name="greenhouse_bubblebaseA">
+<bone name="bubble_01">
+</bone>
+<bone name="bubble_02">
+</bone>
+<bone name="bubble_03">
+</bone>
+<bone name="bubble_04">
+</bone>
+<bone name="bubble_05">
+</bone>
+<bone name="bubble_06">
+</bone>
+<bone name="bubble_07">
+</bone>
+<bone name="bubble_08">
+</bone>
+<bone name="bubble_09">
+</bone>
+<bone name="bubble_010">
+</bone>
+<bone name="bubble_011">
+</bone>
+<bone name="bubble_012">
+</bone>
+<bone name="bubble_013">
+</bone>
+<bone name="bubble_014">
+</bone>
+<bone name="bubble_015">
+</bone>
+<bone name="bubble_016">
+</bone>
+<bone name="bubble_017">
+</bone>
+<bone name="bubble_018">
+</bone>
+<bone name="bubble_021">
+</bone>
+<bone name="bubble_022">
+</bone>
+<bone name="bubble_023">
+</bone>
+<bone name="bubble_024">
+</bone>
+<bone name="bubble_025">
+</bone>
+<bone name="bubble_026">
+</bone>
+<bone name="bubble_027">
+</bone>
+<bone name="bubble_028">
+</bone>
+<bone name="bubble_029">
+</bone>
+<bone name="bubble_030">
+</bone>
+<bone name="bubble_031">
+</bone>
+<bone name="bubble_032">
+</bone>
+<bone name="bubble_033">
+</bone>
+<bone name="bubble_034">
+</bone>
+<bone name="bubble_035">
+</bone>
+<bone name="bubble_036">
+</bone>
+<bone name="bubble_019">
+</bone>
+<bone name="bubble_020">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Greenhouse Skeleton" title="Greenhouse Skeleton">
+<identifier><root>greenhouse_bubblebaseA</root></identifier>
+<bone name="greenhouse_bubblebaseA"><target>greenhouse_bubblebaseA</target>
+<bone name="bubble_01"><target>bubble_01</target>
+</bone>
+<bone name="bubble_02"><target>bubble_02</target>
+</bone>
+<bone name="bubble_03"><target>bubble_03</target>
+</bone>
+<bone name="bubble_04"><target>bubble_04</target>
+</bone>
+<bone name="bubble_05"><target>bubble_05</target>
+</bone>
+<bone name="bubble_06"><target>bubble_06</target>
+</bone>
+<bone name="bubble_07"><target>bubble_07</target>
+</bone>
+<bone name="bubble_08"><target>bubble_08</target>
+</bone>
+<bone name="bubble_09"><target>bubble_09</target>
+</bone>
+<bone name="bubble_010"><target>bubble_010</target>
+</bone>
+<bone name="bubble_011"><target>bubble_011</target>
+</bone>
+<bone name="bubble_012"><target>bubble_012</target>
+</bone>
+<bone name="bubble_013"><target>bubble_013</target>
+</bone>
+<bone name="bubble_014"><target>bubble_014</target>
+</bone>
+<bone name="bubble_015"><target>bubble_015</target>
+</bone>
+<bone name="bubble_016"><target>bubble_016</target>
+</bone>
+<bone name="bubble_017"><target>bubble_017</target>
+</bone>
+<bone name="bubble_018"><target>bubble_018</target>
+</bone>
+<bone name="bubble_021"><target>bubble_021</target>
+</bone>
+<bone name="bubble_022"><target>bubble_022</target>
+</bone>
+<bone name="bubble_023"><target>bubble_023</target>
+</bone>
+<bone name="bubble_024"><target>bubble_024</target>
+</bone>
+<bone name="bubble_025"><target>bubble_025</target>
+</bone>
+<bone name="bubble_026"><target>bubble_026</target>
+</bone>
+<bone name="bubble_027"><target>bubble_027</target>
+</bone>
+<bone name="bubble_028"><target>bubble_028</target>
+</bone>
+<bone name="bubble_029"><target>bubble_029</target>
+</bone>
+<bone name="bubble_030"><target>bubble_030</target>
+</bone>
+<bone name="bubble_031"><target>bubble_031</target>
+</bone>
+<bone name="bubble_032"><target>bubble_032</target>
+</bone>
+<bone name="bubble_033"><target>bubble_033</target>
+</bone>
+<bone name="bubble_034"><target>bubble_034</target>
+</bone>
+<bone name="bubble_035"><target>bubble_035</target>
+</bone>
+<bone name="bubble_036"><target>bubble_036</target>
+</bone>
+<bone name="bubble_019"><target>bubble_019</target>
+</bone>
+<bone name="bubble_020"><target>bubble_020</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

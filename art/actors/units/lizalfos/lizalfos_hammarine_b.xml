@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_lizalfosB/base_HC_biped_hammer.xml"> 
+	  <mesh>units/lizalfos/liz_female_bodyA.dae</mesh>
+      <textures>
+        <texture file="skeletal/lizalfos/liz_mainC.dds" name="baseTex"/>
+      </textures>
+	  <props>
+		<prop actor="units/lizalfos/lizalfos_hammarine_armor_b.xml" attachpoint="root"/>
+		<prop actor="props/units/weapons/lizalfos_hammerA.xml" attachpoint="R_weapon"/>	
+		<prop actor="props/units/outfits/lizalfos_featherhammerA.xml" attachpoint="head"/>	
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_lizalfosB/base_HC_biped_capture.xml"/>
+    <variant file="HC_lizalfosB/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_lizalfosB/base_HC_biped_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

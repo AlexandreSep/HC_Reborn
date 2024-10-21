@@ -1,0 +1,20 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_capes/biped_hum_cape_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_capes/biped_hum_cape_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_capes/biped_hum_cape_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_capes/biped_hum_cape_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation file="HC_capes/biped_hum_cape_walk.dae" name="Walk" id="walk1" speed="10"/>
+    <animation file="HC_capes/biped_hum_cape_walk.dae" name="Walk" id="walk2" speed="12"/>
+    <animation file="HC_capes/biped_hum_cape_run.dae" name="Run" id="run1" speed="8"/>
+    <animation file="HC_capes/biped_hum_cape_run.dae" name="Run" id="run2" speed="9"/>
+    <animation file="HC_capes/biped_hum_cape_run.dae" name="Run" id="run3" speed="10"/>
+    <animation file="HC_capes/biped_hum_cape_heal.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_capes/biped_hum_cape_heal.dae" name="Heal" id="heal2" speed="100"/>
+	<animation event="0.5" file="HC_capes/biped_hum_cape_promotion.dae" name="Attack_melee" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_capes/biped_hum_cape_promotion.dae" name="Attack_melee" id="attack2" speed="100"/>
+	<animation file="HC_capes/biped_hum_cape_promotion.dae" name="promotion" speed="80"/>
+	<animation file="HC_capes/biped_hum_cape_flailA.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_capes/biped_hum_cape_recoverA.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

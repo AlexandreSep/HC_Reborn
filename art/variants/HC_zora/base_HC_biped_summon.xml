@@ -1,0 +1,8 @@
+<variant name="Build">
+  <animations>
+	<animation event="0.5" file="HC_zora/zora_summon.dae" name="Build" speed="100"/>
+  </animations>
+  <props>
+	<prop actor="particle/zora_kyawaterA.xml" attachpoint="root"/>
+  </props>
+</variant>

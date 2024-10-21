@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_zora/base_HC_biped_sword.xml">
+      <mesh>units/lanayru/lan_beltA.dae</mesh>
+    </variant>
+  </group>
+  <group>  
+    <variant frequency="1" name="belt_pink">
+      <textures>
+        <texture file="skeletal/lanayru/lan_beltA.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="belt_gold">
+      <textures>
+        <texture file="skeletal/lanayru/lan_beltB.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="belt_grey">
+      <textures>
+        <texture file="skeletal/lanayru/lan_beltC.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="belt_red">
+      <textures>
+        <texture file="skeletal/lanayru/lan_beltD.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="belt_navy">
+      <textures>
+        <texture file="skeletal/lanayru/lan_beltE.dds" name="baseTex"/>
+      </textures>
+    </variant>  
+    <variant frequency="1" name="belt_blue">
+      <textures>
+        <texture file="skeletal/lanayru/lan_beltF.dds" name="baseTex"/>
+      </textures>
+    </variant>   
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_zora/base_HC_biped_capture.xml"/>
+    <variant file="HC_zora/base_HC_biped_slaughter_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_gather_tree_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_gather_grain_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_gather_fruit_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_gather_meat_no.xml"/>
+	<variant file="HC_zora/base_HC_biped_gather_fish_no.xml"/>
+	<variant file="HC_zora/base_HC_biped_gather_coralmold_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_gather_rock_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_gather_ore_no.xml"/>
+	<variant file="HC_zora/base_HC_biped_gather_rupees_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_gather_ruins_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_gather_praise_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_build_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_build_farm_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_food_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_meat_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_wood_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_stone_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_metal_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_food_idle_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_meat_idle_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_wood_idle_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_wood_idle_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_carry_wood_idle_no.xml"/>
+    <variant file="HC_zora/base_HC_biped_death.xml"/>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

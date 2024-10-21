@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<terrain>
+	<textures>
+		<texture name="baseTex" file="types/wasteland_dirtA.dds"/>
+		<texture name="normTex" file="types/wasteland_dirtA_normal.dds"/>
+		<texture name="specTex" file="types/wasteland_dirtA_spec.dds"/>
+	</textures>
+	<material>terrain_norm_spec.xml</material>
+</terrain>

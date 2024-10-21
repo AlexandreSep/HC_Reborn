@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/fairy/fai_unicorn_waterA.dae</mesh>
+      <textures>
+	    <texture file="structural/fairy/fairy_iceA.dds" name="baseTex"/>
+		<texture file="structural/fairy/fairy_iceA_normal.dds" name="normTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>player_trans_parallax.xml</material>
+</actor>

@@ -1,0 +1,10 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.5" file="HC_moldarach/moldarach_attackA.dae" name="Attack_ranged" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_moldarach/moldarach_attackB.dae" name="Attack_ranged" id="attack2" speed="100"/>
+	<animation event="0.5" file="HC_moldarach/moldarach_attackC.dae" name="Attack_ranged" id="attack3" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="particle/destruction_dust_med.xml" attachpoint="projectile"/>
+  </props>
+</variant>

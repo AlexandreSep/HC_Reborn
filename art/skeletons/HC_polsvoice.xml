@@ -1,0 +1,183 @@
+<skeletons>
+<standard_skeleton id="Polsvoice Skeleton" title="Polsvoice Skeleton">
+<bone name="polsvoice_base">
+<bone name="body">
+<bone name="jaw_bot_01">
+<bone name="jaw_bot_02">
+<bone name="jaw_bot_03">
+</bone>
+</bone>
+</bone>
+<bone name="jaw_top_01">
+<bone name="jaw_top_02">
+<bone name="jaw_top_03">
+</bone>
+</bone>
+</bone>
+<bone name="L_mouthstretch_01">
+<bone name="L_mouthstretch_02">
+<bone name="L_mouthstretch_03">
+</bone>
+</bone>
+</bone>
+<bone name="L_B_whisker_01">
+<bone name="L_B_whisker_02">
+<bone name="L_B_whisker_03">
+<bone name="L_B_whisker_04">
+<bone name="L_B_whisker_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_U_whisker_01">
+<bone name="L_U_whisker_02">
+<bone name="L_U_whisker_03">
+<bone name="L_U_whisker_04">
+<bone name="L_U_whisker_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_01">
+<bone name="L_ear_02">
+<bone name="L_ear_03">
+<bone name="L_ear_04">
+<bone name="L_ear_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_mouthstretch_01">
+<bone name="R_mouthstretch_02">
+<bone name="R_mouthstretch_03">
+</bone>
+</bone>
+</bone>
+<bone name="R_B_whisker_01">
+<bone name="R_B_whisker_02">
+<bone name="R_B_whisker_03">
+<bone name="R_B_whisker_04">
+<bone name="R_B_whisker_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_U_whisker_01">
+<bone name="R_U_whisker_02">
+<bone name="R_U_whisker_03">
+<bone name="R_U_whisker_04">
+<bone name="R_U_whisker_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_01">
+<bone name="R_ear_02">
+<bone name="R_ear_03">
+<bone name="R_ear_04">
+<bone name="R_ear_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Polsvoice Skeleton" title="Polsvoice Skeleton">
+<identifier><root>polsvoice_base</root></identifier>
+<bone name="polsvoice_base"><target>polsvoice_base</target>
+<bone name="body"><target>body</target>
+<bone name="jaw_bot_01"><target>jaw_bot_01</target>
+<bone name="jaw_bot_02"><target>jaw_bot_02</target>
+<bone name="jaw_bot_03"><target>jaw_bot_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="jaw_top_01"><target>jaw_top_01</target>
+<bone name="jaw_top_02"><target>jaw_top_02</target>
+<bone name="jaw_top_03"><target>jaw_top_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_mouthstretch_01"><target>L_mouthstretch_01</target>
+<bone name="L_mouthstretch_02"><target>L_mouthstretch_02</target>
+<bone name="L_mouthstretch_03"><target>L_mouthstretch_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_B_whisker_01"><target>L_B_whisker_01</target>
+<bone name="L_B_whisker_02"><target>L_B_whisker_02</target>
+<bone name="L_B_whisker_03"><target>L_B_whisker_03</target>
+<bone name="L_B_whisker_04"><target>L_B_whisker_04</target>
+<bone name="L_B_whisker_05"><target>L_B_whisker_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_U_whisker_01"><target>L_U_whisker_01</target>
+<bone name="L_U_whisker_02"><target>L_U_whisker_02</target>
+<bone name="L_U_whisker_03"><target>L_U_whisker_03</target>
+<bone name="L_U_whisker_04"><target>L_U_whisker_04</target>
+<bone name="L_U_whisker_05"><target>L_U_whisker_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_01"><target>L_ear_01</target>
+<bone name="L_ear_02"><target>L_ear_02</target>
+<bone name="L_ear_03"><target>L_ear_03</target>
+<bone name="L_ear_04"><target>L_ear_04</target>
+<bone name="L_ear_05"><target>L_ear_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_mouthstretch_01"><target>R_mouthstretch_01</target>
+<bone name="R_mouthstretch_02"><target>R_mouthstretch_02</target>
+<bone name="R_mouthstretch_03"><target>R_mouthstretch_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="R_B_whisker_01"><target>R_B_whisker_01</target>
+<bone name="R_B_whisker_02"><target>R_B_whisker_02</target>
+<bone name="R_B_whisker_03"><target>R_B_whisker_03</target>
+<bone name="R_B_whisker_04"><target>R_B_whisker_04</target>
+<bone name="R_B_whisker_05"><target>R_B_whisker_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_U_whisker_01"><target>R_U_whisker_01</target>
+<bone name="R_U_whisker_02"><target>R_U_whisker_02</target>
+<bone name="R_U_whisker_03"><target>R_U_whisker_03</target>
+<bone name="R_U_whisker_04"><target>R_U_whisker_04</target>
+<bone name="R_U_whisker_05"><target>R_U_whisker_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_01"><target>R_ear_01</target>
+<bone name="R_ear_02"><target>R_ear_02</target>
+<bone name="R_ear_03"><target>R_ear_03</target>
+<bone name="R_ear_04"><target>R_ear_04</target>
+<bone name="R_ear_05"><target>R_ear_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

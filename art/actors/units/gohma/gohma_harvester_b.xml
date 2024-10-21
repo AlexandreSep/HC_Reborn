@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_goh_harvester/base_HC_gohma_relax.xml">
+      <mesh>units/gohma/goh_harvesterA.dae</mesh>
+      <textures><texture file="skeletal/gohma/goh_harvesterA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_goh_harvester/base_HC_gohma_gather_tree.xml"/>
+    <variant file="HC_goh_harvester/base_HC_gohma_gather_grain.xml"/>
+    <variant file="HC_goh_harvester/base_HC_gohma_gather_fruit.xml"/>
+    <variant file="HC_goh_harvester/base_HC_gohma_gather_meat.xml"/>
+    <variant file="HC_goh_harvester/base_HC_gohma_gather_rock.xml"/>
+    <variant file="HC_goh_harvester/base_HC_gohma_gather_ore.xml"/>
+	<variant file="HC_goh_harvester/base_HC_gohma_gather_rupees.xml"/>
+    <variant file="HC_goh_harvester/base_HC_gohma_gather_ruins.xml"/>
+    <variant file="HC_goh_harvester/base_HC_gohma_gather_praise.xml"/>	
+    <variant file="HC_goh_harvester/base_HC_gohma_death.xml">
+      <props>
+		<prop actor="props/units/blood_gohma_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

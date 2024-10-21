@@ -1,0 +1,9 @@
+<variant name="gather_grain">
+  <animations>
+    <animation file="HC_aeralfos/aeralfos_gather.dae" name="gather_grain" speed="100"/>
+  </animations>
+  <props>
+    <prop attachpoint="R_wrist"/>
+	<prop attachpoint="L_wrist"/>
+  </props>
+</variant>

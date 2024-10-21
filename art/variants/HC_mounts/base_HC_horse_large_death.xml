@@ -1,0 +1,5 @@
+<variant name="Death">
+  <animations>
+	         <animation file="HC_horse_large/horse_large_die.dae" name="death" speed="100"/>
+  </animations>
+</variant>

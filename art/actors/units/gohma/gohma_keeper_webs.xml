@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_goh_keeper/base_HC_gohma_relax.xml">
+      <mesh>units/gohma/goh_keeper_webs.dae</mesh>
+      <textures><texture file="structural/gohma/goh_websB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_goh_keeper/base_HC_gohma_build.xml"/>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

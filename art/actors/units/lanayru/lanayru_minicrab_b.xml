@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_minicrab/minicrab_idle.dae" name="Idle" speed="100"/>
+        <animation file="HC_minicrab/minicrab_idleA.dae" name="Idle" speed="100"/>
+        <animation file="HC_minicrab/minicrab_idleB.dae" name="Idle" speed="100"/>
+        <animation file="HC_minicrab/minicrab_idleC.dae" name="Idle" speed="100"/>
+        <animation file="HC_minicrab/minicrab_walk.dae" name="carry_meat" speed="10"/>
+        <animation file="HC_minicrab/minicrab_walk.dae" name="Walk" speed="10"/>
+        <animation file="HC_minicrab/minicrab_walk.dae" name="Run" speed="20"/>
+        <animation file="HC_minicrab/minicrab_attackA.dae" name="attack_melee" speed="100"/>
+        <animation file="HC_minicrab/minicrab_attackB.dae" name="attack_melee" speed="100"/>
+        <animation file="HC_minicrab/minicrab_attackB.dae" name="attack_slaughter" speed="100"/>
+        <animation file="HC_minicrab/minicrab_deathA.dae" name="death" speed="100"/>
+		<animation file="HC_minicrab/minicrab_flailA.dae" name="Flail" id="flail1" speed="8"/>
+		<animation file="HC_minicrab/minicrab_recoverA.dae" name="Recover" id="recover1" speed="8"/>
+      </animations>
+      <mesh>units/lanayru/lan_minicrabA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="battlecrab-texture-01">
+      <textures><texture file="skeletal/lanayru/lan_mainC.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_zora_01.xml" attachpoint="root"/>
+      </props>
+    </variant>		
+  </group>
+  <material>objectcolor.xml</material>
+</actor>

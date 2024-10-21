@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_resistance/base_HC_resistance.xml">
+      <mesh>units/ordona/ord_resistanceA.dae</mesh>
+      <props>
+        <prop actor="units/ordona/ordona_telmaA.xml" attachpoint="telma_01"/>
+		<prop actor="units/ordona/ordona_shadA.xml" attachpoint="shad_01"/>
+		<prop actor="units/ordona/ordona_auruA.xml" attachpoint="auru_01"/>
+      </props>
+      <textures><texture file="skeletal/empty.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+	<variant file="HC_resistance/base_HC_resistance_handcannonatt.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_capture.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_slaughter.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_gather_tree.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_gather_grain.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_gather_fruit.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_gather_meat.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_gather_rock.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_gather_ore.xml"/>
+	<variant file="HC_resistance/base_HC_resistance_gather_rupees.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_gather_ruins.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_gather_praise.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_build.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_build_farm.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_food.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_meat.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_wood.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_stone.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_metal.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_food_idle.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_meat_idle.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_wood_idle.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_stone_idle.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_carry_metal_idle.xml"/>
+    <variant file="HC_resistance/base_HC_resistance_death.xml"/>
+  </group>
+  <material>default.xml</material>
+</actor>

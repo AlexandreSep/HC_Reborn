@@ -1,0 +1,18 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_bongobongo/bongobongo_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_bongobongo/bongobongo_idle.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_bongobongo/bongobongo_idleA.dae" name="Idle" id="idle5" speed="121"/>
+    <animation file="HC_bongobongo/bongobongo_idleB.dae" name="Idle" id="idle6" speed="121"/>
+    <animation file="HC_bongobongo/bongobongo_idleC.dae" name="Idle" id="idle7" speed="121"/>
+    <animation file="HC_bongobongo/bongobongo_walk.dae" name="Walk" id="walk1" speed="20"/>
+    <animation file="HC_bongobongo/bongobongo_walk.dae" name="Run" id="run1" speed="20"/>
+	<animation file="HC_bongobongo/bongobongo_attackA.dae" name="Attack_melee" id="attack1" speed="100"/>
+    <animation file="HC_bongobongo/bongobongo_attackB.dae" name="Attack_melee" id="attack2" speed="100"/>
+	<animation file="HC_bongobongo/bongobongo_attackC.dae" name="Attack_melee" id="attack3" speed="100"/>
+	<animation file="HC_bongobongo/bongobongo_attackD.dae" name="Attack_melee" id="attack4" speed="100"/>
+	<animation file="HC_bongobongo/bongobongo_attackE.dae" name="Attack_melee" id="attack5" speed="100"/>
+    <animation file="HC_bongobongo/bongobongo_attackA.dae" name="Attack_slaughter" id="attack5" speed="100"/>
+	<animation file="HC_bongobongo/bongobongo_deathA.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>structural/moblin/mob_camp_bug_tentA.dae</mesh>
+      <textures>
+	    <texture file="structural/moblin/moblin_buildingA.dds" name="baseTex"/>
+		<texture file="structural/moblin/moblin_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/moblin/moblin_camp_bug_tent_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>player_trans_ao.xml</material>
+</actor>

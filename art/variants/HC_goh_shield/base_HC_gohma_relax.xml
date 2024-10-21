@@ -1,0 +1,20 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_goh_shield/goh_shield_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_goh_shield/goh_shield_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_goh_shield/goh_shield_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation event="0.5" file="HC_goh_shield/goh_shield_walk.dae" name="Walk" id="walk1" speed="20"/>
+    <animation event="0.5" file="HC_goh_shield/goh_shield_walk.dae" name="Walk" id="walk2" speed="22"/>
+    <animation event="0.5" file="HC_goh_shield/goh_shield_walk.dae" name="Run" id="run1" speed="30"/>
+    <animation event="0.5" file="HC_goh_shield/goh_shield_walk.dae" name="Run" id="run2" speed="32"/>
+    <animation event="0.5" file="HC_goh_shield/goh_shield_walk.dae" name="Run" id="run3" speed="34"/>
+    <animation file="HC_goh_shield/goh_shield_idleB.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_goh_shield/goh_shield_idleA.dae" name="Heal" id="heal2" speed="100"/>
+	<animation event="0.5" file="HC_goh_shield/goh_shield_attackA.dae" name="Attack_melee" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_goh_shield/goh_shield_attackA.dae" name="Attack_melee" id="attack2" speed="100"/>
+	<animation file="HC_goh_shield/goh_shield_idleA.dae" name="promotion" speed="80"/>
+	<animation file="HC_goh_shield/goh_shield_idle_formation.dae" name="phalanx_idle" id="phalanx_idle1" speed="121"/>
+	<animation file="HC_goh_shield/goh_shield_walk_formation.dae" name="phalanx_walk" id="phalanx_walk1" speed="10"/>
+	<animation file="HC_goh_shield/goh_shield_walk_formation.dae" name="phalanx_run" id="phalanx_run1" speed="8"/>
+  </animations>
+</variant>

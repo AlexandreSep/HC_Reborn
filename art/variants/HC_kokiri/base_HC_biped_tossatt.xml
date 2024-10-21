@@ -1,0 +1,9 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.65" file="HC_kokiri/kokiri_attack_bow.dae" load="0.65" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="" attachpoint="projectile"/>
+    <prop actor="props/units/weapons/hylian_arrowA_shoot.xml" attachpoint="projectile"/>
+  </props>
+</variant>

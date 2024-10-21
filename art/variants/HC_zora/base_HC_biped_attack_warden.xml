@@ -1,0 +1,12 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.75" file="HC_zora/zora_attack_wardenA.dae" load="0.75" name="attack_ranged" speed="100"/>
+  </animations>
+  <props>
+  <prop actor="particle/zora_bluefireA.xml" attachpoint="R_wrist_01"/>
+  <prop actor="particle/zora_bluefireA.xml" attachpoint="L_wrist_01"/>
+    <prop actor="" attachpoint="projectile"/>
+    <prop actor="particle/zora_bluefireC.xml" attachpoint="projectile"/>
+  </props>
+</variant>
+

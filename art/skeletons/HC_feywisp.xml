@@ -1,0 +1,63 @@
+<skeletons>
+<standard_skeleton id="Feywisp Skeleton" title="Feywisp Skeleton">
+<bone name="base_wispA">
+<bone name="bot_tent_01">
+<bone name="bot_tent_02">
+<bone name="bot_tent_03">
+<bone name="bot_tent_04">
+<bone name="bot_tent_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="toptent_01">
+<bone name="toptent_02">
+<bone name="toptent_03">
+<bone name="toptent_04">
+<bone name="toptent_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="coreC">
+</bone>
+<bone name="coreB">
+</bone>
+<bone name="coreA">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Feywisp Skeleton" title="Feywisp Skeleton">
+<identifier><root>base_wispA</root></identifier>
+<bone name="base_wispA"><target>base_wispA</target>
+<bone name="bot_tent_01"><target>bot_tent_01</target>
+<bone name="bot_tent_02"><target>bot_tent_02</target>
+<bone name="bot_tent_03"><target>bot_tent_03</target>
+<bone name="bot_tent_04"><target>bot_tent_04</target>
+<bone name="bot_tent_05"><target>bot_tent_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="toptent_01"><target>toptent_01</target>
+<bone name="toptent_02"><target>toptent_02</target>
+<bone name="toptent_03"><target>toptent_03</target>
+<bone name="toptent_04"><target>toptent_04</target>
+<bone name="toptent_05"><target>toptent_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="coreC"><target>coreC</target>
+</bone>
+<bone name="coreB"><target>coreB</target>
+</bone>
+<bone name="coreA"><target>coreA</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

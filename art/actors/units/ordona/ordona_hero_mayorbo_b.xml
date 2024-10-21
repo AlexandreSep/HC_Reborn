@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_goat_huge.xml">      
+      <props>
+		<prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="belly"/>
+		<prop actor="props/hero_selectorA.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="goat_A">
+      <mesh>units/ordona/ord_goat_hugeA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="goat-texture-blue">
+      <textures><texture file="skeletal/wild/wild_ordgoatA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="goat-texture-brown">
+      <textures><texture file="skeletal/wild/wild_ordgoatA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="goat-texture-black">
+      <textures><texture file="skeletal/wild/wild_ordgoatA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_fruit">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_grain">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_meat">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_ore">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_rock">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_ruins">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_rupees">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_rupees">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+    <variant name="gather_tree">
+      <props>
+		 <prop attachpoint="belly"/>
+		 <prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+		 <prop actor="units/ordona/ordona_hero_mayorbo_b_r.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant file="HC_mounts/base_HC_goat_huge_death.xml"> 
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+		<prop actor="units/ordona/ordona_goatlord_b_r_armor.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

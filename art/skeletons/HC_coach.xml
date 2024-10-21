@@ -1,0 +1,71 @@
+<skeletons>
+<standard_skeleton id="Coach Skeleton" title="Coach Skeleton">
+<bone name="coach_wagon_base">
+<bone name="horse">
+</bone>
+<bone name="cart">
+<bone name="driver">
+</bone>
+<bone name="rider_03">
+</bone>
+<bone name="rider_01">
+</bone>
+<bone name="rider_02">
+</bone>
+<bone name="rider_06">
+</bone>
+<bone name="rider_04">
+</bone>
+<bone name="rider_05">
+</bone>
+</bone>
+<bone name="F_axel">
+<bone name="L_Fwheel">
+</bone>
+<bone name="R_Fwheel">
+</bone>
+</bone>
+<bone name="B_axel">
+<bone name="L_Bwheel">
+</bone>
+<bone name="R_Bwheel">
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Coach Skeleton" title="Coach Skeleton">
+<identifier><root>coach_wagon_base</root></identifier>
+<bone name="coach_wagon_base"><target>coach_wagon_base</target>
+<bone name="horse"><target>horse</target>
+</bone>
+<bone name="cart"><target>cart</target>
+<bone name="driver"><target>driver</target>
+</bone>
+<bone name="rider_03"><target>rider_03</target>
+</bone>
+<bone name="rider_01"><target>rider_01</target>
+</bone>
+<bone name="rider_02"><target>rider_02</target>
+</bone>
+<bone name="rider_06"><target>rider_06</target>
+</bone>
+<bone name="rider_04"><target>rider_04</target>
+</bone>
+<bone name="rider_05"><target>rider_05</target>
+</bone>
+</bone>
+<bone name="F_axel"><target>F_axel</target>
+<bone name="L_Fwheel"><target>L_Fwheel</target>
+</bone>
+<bone name="R_Fwheel"><target>R_Fwheel</target>
+</bone>
+</bone>
+<bone name="B_axel"><target>B_axel</target>
+<bone name="L_Bwheel"><target>L_Bwheel</target>
+</bone>
+<bone name="R_Bwheel"><target>R_Bwheel</target>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

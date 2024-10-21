@@ -1,0 +1,8 @@
+<variant name="gather_praise">
+  <animations>
+	<animation file="HC_goh_harvester/goh_harvester_gather.dae" name="gather_praise" id="praise1" speed="50"/>
+  </animations>
+  <props>
+
+  </props>
+</variant>

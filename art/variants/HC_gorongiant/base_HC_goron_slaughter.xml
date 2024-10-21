@@ -1,0 +1,5 @@
+<variant name="attack_slaughter">
+  <animations>
+	<animation event="0.5" file="HC_gorongiant/gorongiant_attack_punchC.dae" name="attack_slaughter" speed="50"/>
+  </animations>
+</variant>

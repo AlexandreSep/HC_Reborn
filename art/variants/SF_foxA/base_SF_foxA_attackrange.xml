@@ -1,0 +1,7 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.1" file="SF_foxA/fox_attackA.dae" name="Attack_Ranged" id="attack1" speed="100"/>
+    <animation event="0.1" file="SF_foxA/fox_attackA.dae" name="Attack_Ranged" id="attack2" speed="100"/>
+    <animation event="0.1" file="SF_foxA/fox_attackA.dae" name="Attack_Ranged" id="attack3" speed="100"/>
+  </animations>
+</variant>

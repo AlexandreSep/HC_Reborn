@@ -1,0 +1,7 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_flags/flag_flapA_small.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_flags/flag_flapB_small.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_flags/flag_flapC_small.dae" name="Idle" id="idle3" speed="121"/>
+  </animations>
+</variant>

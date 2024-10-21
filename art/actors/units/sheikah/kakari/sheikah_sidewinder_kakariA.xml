@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_mounts/base_HC_horse.xml"> 
+      <mesh>units/sheikah/she_horseA.dae</mesh>	
+      <textures><texture file="skeletal/sheikah/she_horse_kakariA.dds" name="baseTex"/></textures>
+      <props>
+        <prop actor="units/sheikah/kakari/sheikah_sidewinder_kakari_r.xml" attachpoint="bone_Spine1"/>	
+        <prop actor="units/sheikah/kakari/sheikah_horsehair_kakari.xml" attachpoint="root"/>		
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+		<prop actor="units/sheikah/kakari/sheikah_horsehair_kakari.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+	<variant file="HC_mounts/base_HC_horse_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+		<prop actor="units/sheikah/kakari/sheikah_horsehair_kakari.xml" attachpoint="root"/>	
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

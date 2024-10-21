@@ -1,0 +1,147 @@
+<skeletons>
+<standard_skeleton id="SpiritLanayru Skeleton" title="SpiritLanayru Skeleton">
+<bone name="spiritlanayru_base">
+<bone name="neck_01">
+<bone name="neck_02">
+<bone name="neck_03">
+<bone name="neck_04">
+<bone name="neck_05">
+<bone name="neck_06">
+<bone name="neck_07">
+<bone name="neck_08">
+<bone name="head_01">
+<bone name="jaw_bot_01">
+<bone name="jaw_bot_02">
+<bone name="jaw_bot_03">
+</bone>
+</bone>
+</bone>
+<bone name="jaw_top_01">
+<bone name="jaw_top_02">
+<bone name="jaw_top_03">
+</bone>
+</bone>
+</bone>
+<bone name="maw_01">
+<bone name="orb_01">
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+<bone name="tail_09">
+<bone name="tail_10">
+<bone name="tail_11">
+<bone name="tail_12">
+<bone name="tail_13">
+<bone name="tail_14">
+<bone name="tail_15">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="SpiritLanayru Skeleton" title="SpiritLanayru Skeleton">
+<identifier><root>spiritlanayru_base</root></identifier>
+<bone name="spiritlanayru_base"><target>spiritlanayru_base</target>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="neck_02"><target>neck_02</target>
+<bone name="neck_03"><target>neck_03</target>
+<bone name="neck_04"><target>neck_04</target>
+<bone name="neck_05"><target>neck_05</target>
+<bone name="neck_06"><target>neck_06</target>
+<bone name="neck_07"><target>neck_07</target>
+<bone name="neck_08"><target>neck_08</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="jaw_bot_01"><target>jaw_bot_01</target>
+<bone name="jaw_bot_02"><target>jaw_bot_02</target>
+<bone name="jaw_bot_03"><target>jaw_bot_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="jaw_top_01"><target>jaw_top_01</target>
+<bone name="jaw_top_02"><target>jaw_top_02</target>
+<bone name="jaw_top_03"><target>jaw_top_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="maw_01"><target>maw_01</target>
+<bone name="orb_01"><target>orb_01</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+<bone name="tail_09"><target>tail_09</target>
+<bone name="tail_10"><target>tail_10</target>
+<bone name="tail_11"><target>tail_11</target>
+<bone name="tail_12"><target>tail_12</target>
+<bone name="tail_13"><target>tail_13</target>
+<bone name="tail_14"><target>tail_14</target>
+<bone name="tail_15"><target>tail_15</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

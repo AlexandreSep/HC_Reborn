@@ -1,0 +1,11 @@
+<skeletons>
+<standard_skeleton id="Tumbleweed Skeleton" title="Tumbleweed Skeleton">
+<bone name="base_tumbleweed">
+</bone>
+</standard_skeleton>
+<skeleton target="Tumbleweed Skeleton" title="Tumbleweed Skeleton">
+<identifier><root>base_tumbleweed</root></identifier>
+<bone name="base_tumbleweed"><target>base_tumbleweed</target>
+</bone>
+</skeleton>
+</skeletons>

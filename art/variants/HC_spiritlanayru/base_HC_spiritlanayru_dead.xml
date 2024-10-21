@@ -1,0 +1,15 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle1" speed="71"/>
+    <animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle2" speed="71"/>
+    <animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle3" speed="71"/>
+    <animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle4" speed="71"/>
+    <animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Idle" id="idle5" speed="71"/>
+    <animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Walk" id="walk1" speed="20"/>
+    <animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Run" id="run1" speed="20"/>
+	<animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Attack_melee" id="attack1" speed="100"/>
+    <animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Attack_melee" id="attack2" speed="100"/>
+	<animation event="0.5" file="HC_spiritlanayru/spiritlanayru_death.dae" name="Attack_melee" id="attack3" speed="100"/>
+	<animation file="HC_spiritlanayru/spiritlanayru_death.dae" name="Death" id="death1" speed="100"/>
+  </animations>
+</variant>

@@ -1,0 +1,63 @@
+<skeletons>
+<standard_skeleton id="Morpha_skel" title="Morpha_skel">
+<bone name="morpha_01">
+<bone name="morpha_02">
+<bone name="morpha_03">
+<bone name="morpha_04">
+<bone name="morpha_05">
+<bone name="morpha_06">
+<bone name="morpha_07">
+<bone name="morpha_08">
+<bone name="morpha_09">
+<bone name="morpha_010">
+<bone name="morpha_011">
+<bone name="morpha_012">
+<bone name="morpha_013">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="core_01">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Morpha_skel" title="Morpha_skel">
+<identifier><root>morpha_01</root></identifier>
+<bone name="morpha_01"><target>morpha_01</target>
+<bone name="morpha_02"><target>morpha_02</target>
+<bone name="morpha_03"><target>morpha_03</target>
+<bone name="morpha_04"><target>morpha_04</target>
+<bone name="morpha_05"><target>morpha_05</target>
+<bone name="morpha_06"><target>morpha_06</target>
+<bone name="morpha_07"><target>morpha_07</target>
+<bone name="morpha_08"><target>morpha_08</target>
+<bone name="morpha_09"><target>morpha_09</target>
+<bone name="morpha_010"><target>morpha_010</target>
+<bone name="morpha_011"><target>morpha_011</target>
+<bone name="morpha_012"><target>morpha_012</target>
+<bone name="morpha_013"><target>morpha_013</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="core_01"><target>core_01</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

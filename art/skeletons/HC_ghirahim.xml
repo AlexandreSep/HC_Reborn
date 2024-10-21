@@ -1,0 +1,363 @@
+<skeletons>
+<standard_skeleton id="Ghirahim Skeleton" title="Ghirahim Skeleton">
+<bone name="base_ghirahimA">
+<bone name="sword_rot">
+<bone name="sword_01">
+<bone name="sword_01_tail">
+</bone>
+</bone>
+<bone name="sword_02">
+<bone name="sword_02_tail">
+</bone>
+</bone>
+<bone name="sword_03">
+<bone name="sword_03_tail">
+</bone>
+</bone>
+</bone>
+<bone name="pelvis">
+<bone name="belly">
+<bone name="chest">
+<bone name="torso">
+<bone name="neck">
+<bone name="head">
+<bone name="mouth">
+<bone name="mouth_bot_01">
+<bone name="mouth_bot_02">
+</bone>
+</bone>
+<bone name="mouth_top_01">
+<bone name="mouth_top_02">
+</bone>
+</bone>
+<bone name="kiss_01">
+<bone name="kiss_02">
+<bone name="kiss_03">
+<bone name="kiss_04">
+<bone name="kiss_05">
+<bone name="kiss_06">
+<bone name="kiss_07">
+<bone name="kiss_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hair_01">
+<bone name="hair_02">
+<bone name="hair_03">
+<bone name="hair_04">
+<bone name="hair_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="backcapeholder">
+<bone name="L_cape_01">
+<bone name="L_cape_02">
+<bone name="L_cape_03">
+<bone name="L_cape_04">
+<bone name="L_cape_05">
+<bone name="L_cape_06">
+<bone name="L_cape_07">
+<bone name="L_cape_08">
+<bone name="L_cape_09">
+<bone name="L_cape_010">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_cape_01">
+<bone name="R_cape_02">
+<bone name="R_cape_03">
+<bone name="R_cape_04">
+<bone name="R_cape_05">
+<bone name="R_cape_06">
+<bone name="R_cape_07">
+<bone name="R_cape_08">
+<bone name="R_cape_09">
+<bone name="R_cape_010">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_cape_01">
+<bone name="B_cape_02">
+<bone name="B_cape_03">
+<bone name="B_cape_04">
+<bone name="B_cape_05">
+<bone name="B_cape_06">
+<bone name="B_cape_07">
+<bone name="B_cape_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="F_cape_01">
+<bone name="F_cape_02">
+<bone name="F_cape_03">
+<bone name="F_cape_04">
+<bone name="F_cape_05">
+<bone name="F_cape_06">
+<bone name="F_cape_07">
+<bone name="F_cape_08">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_hand">
+<bone name="L_finger">
+</bone>
+<bone name="L_weapon">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_hand">
+<bone name="R_finger">
+</bone>
+<bone name="R_weapon">
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Ghirahim Skeleton" title="Ghirahim Skeleton">
+<identifier><root>base_ghirahimA</root></identifier>
+<bone name="base_ghirahimA"><target>base_ghirahimA</target>
+<bone name="sword_rot"><target>sword_rot</target>
+<bone name="sword_01"><target>sword_01</target>
+<bone name="sword_01_tail"><target>sword_01_tail</target>
+</bone>
+</bone>
+<bone name="sword_02"><target>sword_02</target>
+<bone name="sword_02_tail"><target>sword_02_tail</target>
+</bone>
+</bone>
+<bone name="sword_03"><target>sword_03</target>
+<bone name="sword_03_tail"><target>sword_03_tail</target>
+</bone>
+</bone>
+</bone>
+<bone name="pelvis"><target>pelvis</target>
+<bone name="belly"><target>belly</target>
+<bone name="chest"><target>chest</target>
+<bone name="torso"><target>torso</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="mouth"><target>mouth</target>
+<bone name="mouth_bot_01"><target>mouth_bot_01</target>
+<bone name="mouth_bot_02"><target>mouth_bot_02</target>
+</bone>
+</bone>
+<bone name="mouth_top_01"><target>mouth_top_01</target>
+<bone name="mouth_top_02"><target>mouth_top_02</target>
+</bone>
+</bone>
+<bone name="kiss_01"><target>kiss_01</target>
+<bone name="kiss_02"><target>kiss_02</target>
+<bone name="kiss_03"><target>kiss_03</target>
+<bone name="kiss_04"><target>kiss_04</target>
+<bone name="kiss_05"><target>kiss_05</target>
+<bone name="kiss_06"><target>kiss_06</target>
+<bone name="kiss_07"><target>kiss_07</target>
+<bone name="kiss_08"><target>kiss_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="hair_01"><target>hair_01</target>
+<bone name="hair_02"><target>hair_02</target>
+<bone name="hair_03"><target>hair_03</target>
+<bone name="hair_04"><target>hair_04</target>
+<bone name="hair_05"><target>hair_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="backcapeholder"><target>backcapeholder</target>
+<bone name="L_cape_01"><target>L_cape_01</target>
+<bone name="L_cape_02"><target>L_cape_02</target>
+<bone name="L_cape_03"><target>L_cape_03</target>
+<bone name="L_cape_04"><target>L_cape_04</target>
+<bone name="L_cape_05"><target>L_cape_05</target>
+<bone name="L_cape_06"><target>L_cape_06</target>
+<bone name="L_cape_07"><target>L_cape_07</target>
+<bone name="L_cape_08"><target>L_cape_08</target>
+<bone name="L_cape_09"><target>L_cape_09</target>
+<bone name="L_cape_010"><target>L_cape_010</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_cape_01"><target>R_cape_01</target>
+<bone name="R_cape_02"><target>R_cape_02</target>
+<bone name="R_cape_03"><target>R_cape_03</target>
+<bone name="R_cape_04"><target>R_cape_04</target>
+<bone name="R_cape_05"><target>R_cape_05</target>
+<bone name="R_cape_06"><target>R_cape_06</target>
+<bone name="R_cape_07"><target>R_cape_07</target>
+<bone name="R_cape_08"><target>R_cape_08</target>
+<bone name="R_cape_09"><target>R_cape_09</target>
+<bone name="R_cape_010"><target>R_cape_010</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="B_cape_01"><target>B_cape_01</target>
+<bone name="B_cape_02"><target>B_cape_02</target>
+<bone name="B_cape_03"><target>B_cape_03</target>
+<bone name="B_cape_04"><target>B_cape_04</target>
+<bone name="B_cape_05"><target>B_cape_05</target>
+<bone name="B_cape_06"><target>B_cape_06</target>
+<bone name="B_cape_07"><target>B_cape_07</target>
+<bone name="B_cape_08"><target>B_cape_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="F_cape_01"><target>F_cape_01</target>
+<bone name="F_cape_02"><target>F_cape_02</target>
+<bone name="F_cape_03"><target>F_cape_03</target>
+<bone name="F_cape_04"><target>F_cape_04</target>
+<bone name="F_cape_05"><target>F_cape_05</target>
+<bone name="F_cape_06"><target>F_cape_06</target>
+<bone name="F_cape_07"><target>F_cape_07</target>
+<bone name="F_cape_08"><target>F_cape_08</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_finger"><target>L_finger</target>
+</bone>
+<bone name="L_weapon"><target>L_weapon</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_finger"><target>R_finger</target>
+</bone>
+<bone name="R_weapon"><target>R_weapon</target>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

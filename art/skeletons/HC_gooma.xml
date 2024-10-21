@@ -1,0 +1,431 @@
+<skeletons>
+<standard_skeleton id="Gooma Skeleton" title="Gooma Skeleton">
+<bone name="base_goomaA">
+<bone name="belly">
+<bone name="chest">
+<bone name="torso">
+<bone name="neck">
+<bone name="head">
+<bone name="mouth">
+<bone name="mouth_bot_01">
+<bone name="mouth_bot_02">
+</bone>
+</bone>
+<bone name="mouth_top_01">
+<bone name="mouth_top_02">
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_01">
+<bone name="L_ear_02">
+<bone name="L_ear_03">
+<bone name="L_ear_04">
+<bone name="L_ear_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_01">
+<bone name="R_ear_02">
+<bone name="R_ear_03">
+<bone name="R_ear_04">
+<bone name="R_ear_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder">
+<bone name="L_elbow">
+<bone name="L_hand">
+<bone name="L_pinky_01">
+<bone name="L_pinky_02">
+<bone name="L_pinky_03">
+<bone name="L_pinky_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_ring_01">
+<bone name="L_ring_02">
+<bone name="L_ring_03">
+<bone name="L_ring_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_middle_01">
+<bone name="L_middle_02">
+<bone name="L_middle_03">
+<bone name="L_middle_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pointer_01">
+<bone name="L_pointer_02">
+<bone name="L_pointer_03">
+<bone name="L_pointer_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thumb_01">
+<bone name="L_thumb_02">
+<bone name="L_thumb_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder">
+<bone name="R_elbow">
+<bone name="R_hand">
+<bone name="R_pinky_01">
+<bone name="R_pinky_02">
+<bone name="R_pinky_03">
+<bone name="R_pinky_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ring_01">
+<bone name="R_ring_02">
+<bone name="R_ring_03">
+<bone name="R_ring_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_middle_01">
+<bone name="R_middle_02">
+<bone name="R_middle_03">
+<bone name="R_middle_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pointer_01">
+<bone name="R_pointer_02">
+<bone name="R_pointer_03">
+<bone name="R_pointer_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thumb_01">
+<bone name="R_thumb_02">
+<bone name="R_thumb_03">
+</bone>
+</bone>
+</bone>
+<bone name="chain_01">
+<bone name="chain_02">
+<bone name="chain_03">
+<bone name="chain_04">
+<bone name="chain_05">
+<bone name="chain_06">
+<bone name="chain_07">
+<bone name="chain_08">
+<bone name="chain_09">
+<bone name="chain_010">
+<bone name="chain_011">
+<bone name="chain_012">
+<bone name="chain_013">
+<bone name="chain_014">
+<bone name="chain_015">
+<bone name="ball">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="chain_016">
+<bone name="chain_017">
+<bone name="chain_018">
+<bone name="chain_019">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+</bone>
+<bone name="loaded_projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh">
+<bone name="L_knee">
+<bone name="L_ankle">
+<bone name="L_foot">
+<bone name="L_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh">
+<bone name="R_knee">
+<bone name="R_ankle">
+<bone name="R_foot">
+<bone name="R_toe">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+<bone name="tail_08">
+<bone name="tail_09">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Gooma Skeleton" title="Gooma Skeleton">
+<identifier><root>base_goomaA</root></identifier>
+<bone name="base_goomaA"><target>base_goomaA</target>
+<bone name="belly"><target>belly</target>
+<bone name="chest"><target>chest</target>
+<bone name="torso"><target>torso</target>
+<bone name="neck"><target>neck</target>
+<bone name="head"><target>head</target>
+<bone name="mouth"><target>mouth</target>
+<bone name="mouth_bot_01"><target>mouth_bot_01</target>
+<bone name="mouth_bot_02"><target>mouth_bot_02</target>
+</bone>
+</bone>
+<bone name="mouth_top_01"><target>mouth_top_01</target>
+<bone name="mouth_top_02"><target>mouth_top_02</target>
+</bone>
+</bone>
+</bone>
+<bone name="L_ear_01"><target>L_ear_01</target>
+<bone name="L_ear_02"><target>L_ear_02</target>
+<bone name="L_ear_03"><target>L_ear_03</target>
+<bone name="L_ear_04"><target>L_ear_04</target>
+<bone name="L_ear_05"><target>L_ear_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ear_01"><target>R_ear_01</target>
+<bone name="R_ear_02"><target>R_ear_02</target>
+<bone name="R_ear_03"><target>R_ear_03</target>
+<bone name="R_ear_04"><target>R_ear_04</target>
+<bone name="R_ear_05"><target>R_ear_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_shoulder"><target>L_shoulder</target>
+<bone name="L_elbow"><target>L_elbow</target>
+<bone name="L_hand"><target>L_hand</target>
+<bone name="L_pinky_01"><target>L_pinky_01</target>
+<bone name="L_pinky_02"><target>L_pinky_02</target>
+<bone name="L_pinky_03"><target>L_pinky_03</target>
+<bone name="L_pinky_04"><target>L_pinky_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_ring_01"><target>L_ring_01</target>
+<bone name="L_ring_02"><target>L_ring_02</target>
+<bone name="L_ring_03"><target>L_ring_03</target>
+<bone name="L_ring_04"><target>L_ring_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_middle_01"><target>L_middle_01</target>
+<bone name="L_middle_02"><target>L_middle_02</target>
+<bone name="L_middle_03"><target>L_middle_03</target>
+<bone name="L_middle_04"><target>L_middle_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pointer_01"><target>L_pointer_01</target>
+<bone name="L_pointer_02"><target>L_pointer_02</target>
+<bone name="L_pointer_03"><target>L_pointer_03</target>
+<bone name="L_pointer_04"><target>L_pointer_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thumb_01"><target>L_thumb_01</target>
+<bone name="L_thumb_02"><target>L_thumb_02</target>
+<bone name="L_thumb_03"><target>L_thumb_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_shoulder"><target>R_shoulder</target>
+<bone name="R_elbow"><target>R_elbow</target>
+<bone name="R_hand"><target>R_hand</target>
+<bone name="R_pinky_01"><target>R_pinky_01</target>
+<bone name="R_pinky_02"><target>R_pinky_02</target>
+<bone name="R_pinky_03"><target>R_pinky_03</target>
+<bone name="R_pinky_04"><target>R_pinky_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_ring_01"><target>R_ring_01</target>
+<bone name="R_ring_02"><target>R_ring_02</target>
+<bone name="R_ring_03"><target>R_ring_03</target>
+<bone name="R_ring_04"><target>R_ring_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_middle_01"><target>R_middle_01</target>
+<bone name="R_middle_02"><target>R_middle_02</target>
+<bone name="R_middle_03"><target>R_middle_03</target>
+<bone name="R_middle_04"><target>R_middle_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pointer_01"><target>R_pointer_01</target>
+<bone name="R_pointer_02"><target>R_pointer_02</target>
+<bone name="R_pointer_03"><target>R_pointer_03</target>
+<bone name="R_pointer_04"><target>R_pointer_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thumb_01"><target>R_thumb_01</target>
+<bone name="R_thumb_02"><target>R_thumb_02</target>
+<bone name="R_thumb_03"><target>R_thumb_03</target>
+</bone>
+</bone>
+</bone>
+<bone name="chain_01"><target>chain_01</target>
+<bone name="chain_02"><target>chain_02</target>
+<bone name="chain_03"><target>chain_03</target>
+<bone name="chain_04"><target>chain_04</target>
+<bone name="chain_05"><target>chain_05</target>
+<bone name="chain_06"><target>chain_06</target>
+<bone name="chain_07"><target>chain_07</target>
+<bone name="chain_08"><target>chain_08</target>
+<bone name="chain_09"><target>chain_09</target>
+<bone name="chain_010"><target>chain_010</target>
+<bone name="chain_011"><target>chain_011</target>
+<bone name="chain_012"><target>chain_012</target>
+<bone name="chain_013"><target>chain_013</target>
+<bone name="chain_014"><target>chain_014</target>
+<bone name="chain_015"><target>chain_015</target>
+<bone name="ball"><target>ball</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="chain_016"><target>chain_016</target>
+<bone name="chain_017"><target>chain_017</target>
+<bone name="chain_018"><target>chain_018</target>
+<bone name="chain_019"><target>chain_019</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+</bone>
+<bone name="loaded_projectile"><target>loaded_projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_thigh"><target>L_thigh</target>
+<bone name="L_knee"><target>L_knee</target>
+<bone name="L_ankle"><target>L_ankle</target>
+<bone name="L_foot"><target>L_foot</target>
+<bone name="L_toe"><target>L_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_thigh"><target>R_thigh</target>
+<bone name="R_knee"><target>R_knee</target>
+<bone name="R_ankle"><target>R_ankle</target>
+<bone name="R_foot"><target>R_foot</target>
+<bone name="R_toe"><target>R_toe</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+<bone name="tail_08"><target>tail_08</target>
+<bone name="tail_09"><target>tail_09</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

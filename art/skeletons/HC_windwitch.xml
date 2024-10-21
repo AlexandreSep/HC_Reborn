@@ -1,0 +1,79 @@
+<skeletons>
+<standard_skeleton id="WindWitch_skeleton" title="WindWitch_skeleton">
+<bone name="windwitch_skeleton">
+<bone name="bone_RThigh">
+<bone name="bone_Rlowerleg">
+<bone name="bone_Rfoot">
+</bone>
+</bone>
+</bone>
+<bone name="bone_abs">
+<bone name="bone_torso">
+<bone name="bone_head">
+</bone>
+<bone name="bone_Rclavical">
+<bone name="bone_Rupperarm">
+<bone name="bone_Relbow">
+<bone name="projectile">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lclavical">
+<bone name="bone_Lupperarm">
+<bone name="bone_Lelbow">
+<bone name="bone_Lhand">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LThigh">
+<bone name="bone_Llowerleg">
+<bone name="bone_Lfoot">
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="WindWitch_skeleton" title="WindWitch_skeleton">
+<identifier><root>windwitch_skeleton</root></identifier>
+<bone name="windwitch_skeleton"><target>windwitch_skeleton</target>
+<bone name="bone_RThigh"><target>bone_RThigh</target>
+<bone name="bone_Rlowerleg"><target>bone_Rlowerleg</target>
+<bone name="bone_Rfoot"><target>bone_Rfoot</target>
+</bone>
+</bone>
+</bone>
+<bone name="bone_abs"><target>bone_abs</target>
+<bone name="bone_torso"><target>bone_torso</target>
+<bone name="bone_head"><target>bone_head</target>
+</bone>
+<bone name="bone_Rclavical"><target>bone_Rclavical</target>
+<bone name="bone_Rupperarm"><target>bone_Rupperarm</target>
+<bone name="bone_Relbow"><target>bone_Relbow</target>
+<bone name="projectile"><target>projectile</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_Lclavical"><target>bone_Lclavical</target>
+<bone name="bone_Lupperarm"><target>bone_Lupperarm</target>
+<bone name="bone_Lelbow"><target>bone_Lelbow</target>
+<bone name="bone_Lhand"><target>bone_Lhand</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="bone_LThigh"><target>bone_LThigh</target>
+<bone name="bone_Llowerleg"><target>bone_Llowerleg</target>
+<bone name="bone_Lfoot"><target>bone_Lfoot</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

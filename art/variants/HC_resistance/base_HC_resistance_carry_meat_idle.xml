@@ -1,0 +1,5 @@
+<variant name="carry_meat_idle">
+  <animations>
+	<animation file="HC_resistance/resistance_walk.dae" name="carry_meat_idle" speed="20"/>
+  </animations>
+</variant>

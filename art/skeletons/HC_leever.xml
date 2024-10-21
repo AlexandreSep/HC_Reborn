@@ -1,0 +1,99 @@
+<skeletons>
+<standard_skeleton id="Leever_skeleton" title="Leever_skeleton">
+<bone name="leever_base">
+<bone name="head_01">
+<bone name="blade_015">
+<bone name="blade_016">
+<bone name="blade_017">
+<bone name="blade_018">
+<bone name="blade_019">
+<bone name="blade_020">
+<bone name="blade_021">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="blade_08">
+<bone name="blade_09">
+<bone name="blade_010">
+<bone name="blade_011">
+<bone name="blade_012">
+<bone name="blade_013">
+<bone name="blade_014">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="blade_01">
+<bone name="blade_02">
+<bone name="blade_03">
+<bone name="blade_04">
+<bone name="blade_05">
+<bone name="blade_06">
+<bone name="blade_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Leever_skeleton" title="Leever_skeleton">
+<identifier><root>leever_base</root></identifier>
+<bone name="leever_base"><target>leever_base</target>
+<bone name="head_01"><target>head_01</target>
+<bone name="blade_015"><target>blade_015</target>
+<bone name="blade_016"><target>blade_016</target>
+<bone name="blade_017"><target>blade_017</target>
+<bone name="blade_018"><target>blade_018</target>
+<bone name="blade_019"><target>blade_019</target>
+<bone name="blade_020"><target>blade_020</target>
+<bone name="blade_021"><target>blade_021</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="blade_08"><target>blade_08</target>
+<bone name="blade_09"><target>blade_09</target>
+<bone name="blade_010"><target>blade_010</target>
+<bone name="blade_011"><target>blade_011</target>
+<bone name="blade_012"><target>blade_012</target>
+<bone name="blade_013"><target>blade_013</target>
+<bone name="blade_014"><target>blade_014</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="blade_01"><target>blade_01</target>
+<bone name="blade_02"><target>blade_02</target>
+<bone name="blade_03"><target>blade_03</target>
+<bone name="blade_04"><target>blade_04</target>
+<bone name="blade_05"><target>blade_05</target>
+<bone name="blade_06"><target>blade_06</target>
+<bone name="blade_07"><target>blade_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

@@ -1,0 +1,5 @@
+<variant name="attack_ranged">
+  <animations>
+    <animation event="0.3" file="HC_tallblin/tallblin_attack_throwA.dae" name="attack_ranged" speed="100"/>
+  </animations>
+</variant>

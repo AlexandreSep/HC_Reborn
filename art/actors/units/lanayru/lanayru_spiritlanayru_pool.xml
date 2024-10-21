@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>units/lanayru/lan_spiritlanayruB_water.dae</mesh>
+      <textures>
+		 <texture file="structural/lanayru/lanayru_water.dds" name="baseTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <material>water_trans.xml</material>
+</actor>

@@ -1,0 +1,31 @@
+<skeletons>
+<standard_skeleton id="Gerudo Spirits" title="Gerudo Spirits">
+<bone name="spirit_base">
+<bone name="spirit_01">
+</bone>
+<bone name="spirit_02">
+</bone>
+<bone name="spirit_03">
+</bone>
+<bone name="spirit_04">
+</bone>
+<bone name="spirit_05">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Gerudo Spirits" title="Gerudo Spirits">
+<identifier><root>spirit_base</root></identifier>
+<bone name="spirit_base"><target>spirit_base</target>
+<bone name="spirit_01"><target>spirit_01</target>
+</bone>
+<bone name="spirit_02"><target>spirit_02</target>
+</bone>
+<bone name="spirit_03"><target>spirit_03</target>
+</bone>
+<bone name="spirit_04"><target>spirit_04</target>
+</bone>
+<bone name="spirit_05"><target>spirit_05</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

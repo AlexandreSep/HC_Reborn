@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="barracks">
+      <mesh>structural/ruins/ruins_desertA.dae</mesh>
+      <textures>
+	    <texture file="structural/ruins/ruins_desertA.dds" name="baseTex"/>
+	    <texture file="structural/ruins/ruins_desertA_normal.dds" name="normTex"/>
+		<texture file="structural/ruins/ruins_desertA_ao.dds" name="aoTex"/>
+	  </textures>
+    </variant>
+  </group>
+  <group>
+	<variant name="Idle" frequency="1"/>
+	<variant name="upgrading_darknut">
+      <props>
+		<prop actor="structures/darknut/darknut_scaffoldB.xml" attachpoint="root"/>
+      </props>
+	</variant>
+	<variant name="upg_stalfos">
+      <props>
+		<prop actor="particle/stalfos_digdustA.xml" attachpoint="root"/>
+		<prop actor="particle/stalfos_digdustB.xml" attachpoint="root"/>
+		<prop actor="particle/sandy_smokeB.xml" attachpoint="root"/>
+      </props>
+	</variant>
+   </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_med_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

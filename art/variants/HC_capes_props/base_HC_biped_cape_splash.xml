@@ -1,0 +1,6 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.5" file="HC_capes/biped_hum_cape_attack_bluntA.dae" name="Attack_ranged" id="attack1" speed="7"/>
+    <animation event="0.5" file="HC_capes/biped_hum_cape_attack_bluntB.dae" name="Attack_ranged" id="attack2" speed="7"/>
+  </animations>
+</variant>

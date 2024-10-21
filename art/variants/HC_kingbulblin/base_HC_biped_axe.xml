@@ -1,0 +1,21 @@
+<variant name="Base" frequency="1">
+  <animations>
+    <animation file="HC_kingbulblin/kingbulblin_idle.dae" name="Idle" id="idle1" speed="121"/>
+    <animation file="HC_kingbulblin/kingbulblin_idleA.dae" name="Idle" id="idle2" speed="121"/>
+    <animation file="HC_kingbulblin/kingbulblin_idleB.dae" name="Idle" id="idle3" speed="121"/>
+    <animation file="HC_kingbulblin/kingbulblin_idleC.dae" name="Idle" id="idle4" speed="121"/>
+    <animation file="HC_kingbulblin/kingbulblin_walk.dae" name="Walk" id="walk1" speed="14"/>
+    <animation file="HC_kingbulblin/kingbulblin_walk.dae" name="Walk" id="walk2" speed="15"/>
+    <animation file="HC_kingbulblin/kingbulblin_walk.dae" name="Run" id="run1" speed="16"/>
+    <animation file="HC_kingbulblin/kingbulblin_walk.dae" name="Run" id="run2" speed="17"/>
+    <animation file="HC_kingbulblin/kingbulblin_walk.dae" name="Run" id="run3" speed="18"/>
+    <animation file="HC_kingbulblin/kingbulblin_promotionA.dae" name="Heal" id="heal1" speed="100"/>
+    <animation file="HC_kingbulblin/kingbulblin_promotionA.dae" name="Heal" id="heal2" speed="100"/>
+	<animation event="0.5" file="HC_kingbulblin/kingbulblin_attackA.dae" name="Attack_melee" id="attack1" speed="70"/>
+    <animation event="0.5" file="HC_kingbulblin/kingbulblin_attackB.dae" name="Attack_melee" id="attack2" speed="70"/>
+	<animation event="0.5" file="HC_kingbulblin/kingbulblin_attackA.dae" name="Attack_melee" id="attack3" speed="70"/>
+	<animation file="HC_kingbulblin/kingbulblin_promotionA.dae" name="promotion" speed="80"/>
+	<animation file="HC_kingbulblin/kingbulblin_flailA.dae" name="Flail" id="flail1" speed="8"/>
+	<animation file="HC_kingbulblin/kingbulblin_recoverA.dae" name="Recover" id="recover1" speed="8"/>
+  </animations>
+</variant>

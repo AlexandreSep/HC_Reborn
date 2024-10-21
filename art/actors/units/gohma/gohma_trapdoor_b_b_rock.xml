@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_goh_trapdoor/base_HC_gohma_trap.xml">
+      <mesh>units/gohma/goh_trapdoorA_rock.dae</mesh>
+      <textures><texture file="gaia/rocks/gohma_rocks.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_goh_trapdoor/base_HC_gohma_death.xml"/>
+  </group>
+  <material>default.xml</material>
+</actor>

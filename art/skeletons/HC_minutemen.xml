@@ -1,0 +1,19 @@
+<skeletons>
+<standard_skeleton id="Armature" title="Armature Skeleton">
+<bone name="kokiri_doublebase">
+<bone name="kokiri_01">
+</bone>
+<bone name="kokiri_02">
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Armature" title="Armature Skeleton">
+<identifier><root>kokiri_doublebase</root></identifier>
+<bone name="kokiri_doublebase"><target>kokiri_doublebase</target>
+<bone name="kokiri_01"><target>kokiri_01</target>
+</bone>
+<bone name="kokiri_02"><target>kokiri_02</target>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

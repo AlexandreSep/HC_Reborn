@@ -1,0 +1,5 @@
+<variant name="gather_tree">
+  <animations>
+    <animation event="0.25" file="HC_kokiri/kokiri_harvest_tree.dae" name="gather_tree" speed="120"/>
+  </animations>
+</variant>

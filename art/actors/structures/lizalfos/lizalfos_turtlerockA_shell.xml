@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Turtle Rock Shell">
+      <mesh>structural/lizalfos/liz_turtlerock_shellA.dae</mesh>
+      <textures>
+	    <texture file="structural/lizalfos/lizalfos_turtlerockA_shell.dds" name="baseTex"/>
+	    <texture file="structural/lizalfos/lizalfos_turtlerockA_shell_normal.dds" name="normTex"/>	
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

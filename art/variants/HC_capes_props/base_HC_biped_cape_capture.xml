@@ -1,0 +1,5 @@
+<variant name="attack_capture">
+  <animations>
+    <animation file="HC_capes/biped_hum_cape_capture.dae" name="Idle" id="idle3" speed="121"/>
+  </animations>
+</variant>

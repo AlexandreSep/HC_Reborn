@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Spear">
+      <textures><texture file="skeletal/lanayru/lan_mainB.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="helm-a">
+      <mesh>props/weapon/lanayru_spearA.dae</mesh>
+    </variant>
+  </group>
+</actor>

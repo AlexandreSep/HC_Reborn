@@ -1,0 +1,295 @@
+<skeletons>
+<standard_skeleton id="Minicrab Skeleton" title="Minicrab Skeleton">
+<bone name="crab_small_base">
+<bone name="belly_01">
+<bone name="L_backclaw_01">
+<bone name="L_backclaw_02">
+<bone name="L_backclaw_03">
+<bone name="L_backclaw_04">
+<bone name="L_backclaw_04_001">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pelvis_03">
+<bone name="L_leg_03">
+<bone name="L_hip_03">
+<bone name="L_knee_03">
+<bone name="L_ankle_03">
+<bone name="L_foot_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pelvis_02">
+<bone name="L_leg_02">
+<bone name="L_hip_02">
+<bone name="L_knee_02">
+<bone name="L_ankle_02">
+<bone name="L_foot_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pelvis_01">
+<bone name="L_leg_01">
+<bone name="L_hip_01">
+<bone name="L_knee_01">
+<bone name="L_ankle_01">
+<bone name="L_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pelvis_01">
+<bone name="R_leg_01">
+<bone name="R_hip_01">
+<bone name="R_knee_01">
+<bone name="R_ankle_01">
+<bone name="R_foot_01">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pelvis_02">
+<bone name="R_leg_02">
+<bone name="R_hip_02">
+<bone name="R_knee_02">
+<bone name="R_ankle_02">
+<bone name="R_foot_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pelvis_03">
+<bone name="R_leg_03">
+<bone name="R_hip_03">
+<bone name="R_knee_03">
+<bone name="R_ankle_03">
+<bone name="R_foot_03">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_backclaw_01">
+<bone name="R_backclaw_02">
+<bone name="R_backclaw_03">
+<bone name="R_backclaw_04">
+<bone name="R_backclaw_04_001">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01">
+<bone name="L_shoulder_01">
+<bone name="L_elbow_01">
+<bone name="L_elbow_02">
+<bone name="L_hand_01">
+<bone name="L_claw_01">
+</bone>
+<bone name="L_claw_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_eyestalk_01">
+<bone name="L_eyestalk_02">
+<bone name="L_eyestalk_03">
+<bone name="L_eyestalk_04">
+<bone name="L_eyestalk_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_eyestalk_01">
+<bone name="R_eyestalk_02">
+<bone name="R_eyestalk_03">
+<bone name="R_eyestalk_04">
+<bone name="R_eyestalk_05">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01">
+<bone name="R_shoulder_01">
+<bone name="R_elbow_01">
+<bone name="R_elbow_02">
+<bone name="R_hand_01">
+<bone name="R_claw_01">
+</bone>
+<bone name="R_claw_02">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Minicrab Skeleton" title="Minicrab Skeleton">
+<identifier><root>crab_small_base</root></identifier>
+<bone name="crab_small_base"><target>crab_small_base</target>
+<bone name="belly_01"><target>belly_01</target>
+<bone name="L_backclaw_01"><target>L_backclaw_01</target>
+<bone name="L_backclaw_02"><target>L_backclaw_02</target>
+<bone name="L_backclaw_03"><target>L_backclaw_03</target>
+<bone name="L_backclaw_04"><target>L_backclaw_04</target>
+<bone name="L_backclaw_04_001"><target>L_backclaw_04_001</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pelvis_03"><target>L_pelvis_03</target>
+<bone name="L_leg_03"><target>L_leg_03</target>
+<bone name="L_hip_03"><target>L_hip_03</target>
+<bone name="L_knee_03"><target>L_knee_03</target>
+<bone name="L_ankle_03"><target>L_ankle_03</target>
+<bone name="L_foot_03"><target>L_foot_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pelvis_02"><target>L_pelvis_02</target>
+<bone name="L_leg_02"><target>L_leg_02</target>
+<bone name="L_hip_02"><target>L_hip_02</target>
+<bone name="L_knee_02"><target>L_knee_02</target>
+<bone name="L_ankle_02"><target>L_ankle_02</target>
+<bone name="L_foot_02"><target>L_foot_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_pelvis_01"><target>L_pelvis_01</target>
+<bone name="L_leg_01"><target>L_leg_01</target>
+<bone name="L_hip_01"><target>L_hip_01</target>
+<bone name="L_knee_01"><target>L_knee_01</target>
+<bone name="L_ankle_01"><target>L_ankle_01</target>
+<bone name="L_foot_01"><target>L_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pelvis_01"><target>R_pelvis_01</target>
+<bone name="R_leg_01"><target>R_leg_01</target>
+<bone name="R_hip_01"><target>R_hip_01</target>
+<bone name="R_knee_01"><target>R_knee_01</target>
+<bone name="R_ankle_01"><target>R_ankle_01</target>
+<bone name="R_foot_01"><target>R_foot_01</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pelvis_02"><target>R_pelvis_02</target>
+<bone name="R_leg_02"><target>R_leg_02</target>
+<bone name="R_hip_02"><target>R_hip_02</target>
+<bone name="R_knee_02"><target>R_knee_02</target>
+<bone name="R_ankle_02"><target>R_ankle_02</target>
+<bone name="R_foot_02"><target>R_foot_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_pelvis_03"><target>R_pelvis_03</target>
+<bone name="R_leg_03"><target>R_leg_03</target>
+<bone name="R_hip_03"><target>R_hip_03</target>
+<bone name="R_knee_03"><target>R_knee_03</target>
+<bone name="R_ankle_03"><target>R_ankle_03</target>
+<bone name="R_foot_03"><target>R_foot_03</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_backclaw_01"><target>R_backclaw_01</target>
+<bone name="R_backclaw_02"><target>R_backclaw_02</target>
+<bone name="R_backclaw_03"><target>R_backclaw_03</target>
+<bone name="R_backclaw_04"><target>R_backclaw_04</target>
+<bone name="R_backclaw_04_001"><target>R_backclaw_04_001</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_clavical_01"><target>L_clavical_01</target>
+<bone name="L_shoulder_01"><target>L_shoulder_01</target>
+<bone name="L_elbow_01"><target>L_elbow_01</target>
+<bone name="L_elbow_02"><target>L_elbow_02</target>
+<bone name="L_hand_01"><target>L_hand_01</target>
+<bone name="L_claw_01"><target>L_claw_01</target>
+</bone>
+<bone name="L_claw_02"><target>L_claw_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="L_eyestalk_01"><target>L_eyestalk_01</target>
+<bone name="L_eyestalk_02"><target>L_eyestalk_02</target>
+<bone name="L_eyestalk_03"><target>L_eyestalk_03</target>
+<bone name="L_eyestalk_04"><target>L_eyestalk_04</target>
+<bone name="L_eyestalk_05"><target>L_eyestalk_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_eyestalk_01"><target>R_eyestalk_01</target>
+<bone name="R_eyestalk_02"><target>R_eyestalk_02</target>
+<bone name="R_eyestalk_03"><target>R_eyestalk_03</target>
+<bone name="R_eyestalk_04"><target>R_eyestalk_04</target>
+<bone name="R_eyestalk_05"><target>R_eyestalk_05</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="R_clavical_01"><target>R_clavical_01</target>
+<bone name="R_shoulder_01"><target>R_shoulder_01</target>
+<bone name="R_elbow_01"><target>R_elbow_01</target>
+<bone name="R_elbow_02"><target>R_elbow_02</target>
+<bone name="R_hand_01"><target>R_hand_01</target>
+<bone name="R_claw_01"><target>R_claw_01</target>
+</bone>
+<bone name="R_claw_02"><target>R_claw_02</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

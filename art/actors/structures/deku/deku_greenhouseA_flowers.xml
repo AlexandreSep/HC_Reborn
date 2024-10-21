@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="100" name="field_flowers">
+      <mesh>structural/ordona/ord_fieldA.dae</mesh>
+      <props>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_002" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_004" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_006" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_008" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_010" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_012" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_014" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_016" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_018" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_020" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_022" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_024" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_026" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_028" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_030" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_032" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_034" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_036" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_038" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_040" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_042" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_044" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_046" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_048" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_050" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_052" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_054" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_056" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_058" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_060" maxheight="20" minheight="-20"/>
+        <prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="patch_062" maxheight="20" minheight="-20"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="textures">
+      <textures>
+        <texture file="gaia/decal_farmland.png" name="baseTex"/>
+        <texture file="gaia/decal_farmland_norm.png" name="normTex"/>
+        <texture file="gaia/decal_farmland_spec.png" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

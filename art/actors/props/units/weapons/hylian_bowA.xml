@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="mesh">
+	  <mesh>props/weapon/hylian_bowA.dae</mesh>
+      <textures><texture file="skeletal/hylian/hyl_weaponsA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+
+
+</actor>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_smallboar/smallboar_idle.dae" name="Idle" id="idle1" speed="100"/>
+        <animation file="HC_smallboar/smallboar_idleA.dae" name="Idle" id="idle2" speed="100"/>
+        <animation file="HC_smallboar/smallboar_idleB.dae" name="Idle" id="idle3" speed="100"/>
+        <animation event="0.1" file="HC_smallboar/smallboar_walk.dae" name="carry_meat" speed="10"/>
+        <animation event="0.1" file="HC_smallboar/smallboar_walk.dae" name="Walk" speed="10"/>
+        <animation event="0.1" file="HC_smallboar/smallboar_run.dae" name="Run" speed="10"/>
+        <animation file="HC_smallboar/smallboar_attackA.dae" name="attack_melee" id="attack1" speed="100"/>
+        <animation file="HC_smallboar/smallboar_attackA.dae" name="attack_melee" id="attack2" speed="100"/>
+        <animation file="HC_smallboar/smallboar_attackA.dae" name="attack_slaughter" speed="70"/>
+        <animation file="HC_smallboar/smallboar_deathA.dae" name="death" speed="100"/>
+      </animations>   
+	  <mesh>units/moblin/mob_lilugpugA.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="boar_A">
+      <textures><texture file="skeletal/moblin/mob_ugpugA.dds" name="baseTex"/></textures>
+    </variant>
+    <variant frequency="1" name="boar_B">
+      <textures><texture file="skeletal/moblin/mob_ugpugA.dds" name="baseTex"/></textures>
+    </variant>
+	<variant frequency="1" name="boar_C">
+      <textures><texture file="skeletal/moblin/mob_ugpugA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Run">
+      <props>
+        <prop actor="particle/dust_cav.xml" attachpoint="root"/>
+      </props>
+    </variant>
+	<variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group> 
+  <material>default.xml</material>
+</actor>

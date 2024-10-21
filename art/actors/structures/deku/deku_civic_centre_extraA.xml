@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Encampent">
+      <mesh>structural/deku/dek_encampmentB.dae</mesh>
+      <props>
+		<prop actor="props/structures/deku/deku_groundbase_dirtB.xml" attachpoint="root"/>
+		<prop actor="particle/flame_large.xml" attachpoint="campfire_01"/>
+		<prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="flower_01"/>
+		<prop actor="flora/flower/deku_flower_smallA.xml" attachpoint="flower_02"/>	
+      </props>
+      <textures>
+        <texture file="structural/deku/deku_buildingA.dds" name="baseTex"/>
+		<texture file="structural/deku/deku_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/deku/deku_encampmentB_ao.dds" name="aoTex"/>		
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="ungarrisoned" frequency="1"/>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+        
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans_ao.xml</material>
+</actor>

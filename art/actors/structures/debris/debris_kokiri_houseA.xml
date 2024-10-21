@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <props>
+        <prop actor="structures/debris/debris_kokiri_small.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/kokiri/kokiri_buildingA.dds" name="baseTex"/>
+		<texture file="structural/kokiri/kokiri_buildingA_normal.dds" name="normTex"/>
+		<texture file="structural/kokiri/kokiri_safehold_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="houseA">
+      <mesh>structural/debris/debris_kokiri_houseA.dae</mesh>
+    </variant>
+	<variant name="houseB">
+      <mesh>structural/debris/debris_kokiri_houseB.dae</mesh>
+    </variant>
+	<variant name="houseC">
+      <mesh>structural/debris/debris_kokiri_houseC.dae</mesh>
+    </variant>
+  </group>
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

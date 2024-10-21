@@ -1,0 +1,6 @@
+<variant name="Death">
+  <animations>
+	<animation file="HC_huntingfox/huntingfox_deathA.dae" name="Death" id="death1" speed="100"/>
+	<animation file="HC_huntingfox/huntingfox_deathB.dae" name="Death" id="death2" speed="100"/>
+  </animations>
+</variant>

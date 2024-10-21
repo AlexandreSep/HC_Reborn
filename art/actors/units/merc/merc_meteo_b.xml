@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_windwitch/base_HC_windwitch.xml">
+      <mesh>units/merc/merc_meteoA.dae</mesh>
+	  <props>
+        <prop actor="particle/flame_boozeA.xml" attachpoint="bone_torso"/>
+		<prop actor="props/units/weapons/rock_flaming.xml" attachpoint="projectile"/>
+      </props>
+      <textures><texture file="skeletal/merc/merc_ancA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="Death">
+      <props>
+		<prop attachpoint="bone_torso"/>
+      </props>
+	  <textures><texture file="skeletal/merc/merc_ancA_stone.dds" name="baseTex"/></textures>
+    </variant>
+  </group> 
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_windwitch/base_HC_windwitch_att.xml"/>
+  </group>   
+  <material>default.xml</material>
+</actor>

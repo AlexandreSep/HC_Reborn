@@ -1,0 +1,12 @@
+<variant name="attack_ranged">
+  <animations>
+	<animation event="0.5" file="HC_bongobongo/bongobongo_attackA.dae" name="Attack_ranged" id="attack_ranged1" speed="100"/>
+    <animation event="0.5" file="HC_bongobongo/bongobongo_attackB.dae" name="Attack_ranged" id="attack_ranged2" speed="100"/>
+	<animation event="0.5" file="HC_bongobongo/bongobongo_attackC.dae" name="Attack_ranged" id="attack_ranged3" speed="100"/>
+	<animation event="0.5" file="HC_bongobongo/bongobongo_attackD.dae" name="Attack_ranged" id="attack_ranged4" speed="100"/>
+	<animation event="0.5" file="HC_bongobongo/bongobongo_attackE.dae" name="Attack_ranged" id="attack_ranged5" speed="100"/>
+  </animations>
+  <props>
+    <prop actor="particle/destruction_dust_med.xml" attachpoint="projectile"/>
+  </props>
+</variant>

@@ -1,0 +1,111 @@
+<skeletons>
+<standard_skeleton id="Aneru Skeleton" title="Aneru Skeleton">
+<bone name="aneru_base">
+<bone name="tail_01">
+<bone name="tail_02">
+<bone name="tail_03">
+<bone name="tail_04">
+<bone name="tail_05">
+<bone name="tail_06">
+<bone name="tail_07">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neck_01">
+<bone name="neck_02">
+<bone name="neck_03">
+<bone name="head">
+<bone name="B_mouth_01">
+<bone name="B_mouth_02">
+<bone name="B_mouth_03">
+<bone name="B_mouth_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="T_mouth_01">
+<bone name="T_mouth_02">
+<bone name="T_mouth_03">
+<bone name="T_mouth_04">
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile">
+<bone name="tongue_02">
+<bone name="tongue_03">
+<bone name="tongue_04">
+<bone name="tongue_05">
+<bone name="tongue_06">
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</standard_skeleton>
+<skeleton target="Aneru Skeleton" title="Aneru Skeleton">
+<identifier><root>aneru_base</root></identifier>
+<bone name="aneru_base"><target>aneru_base</target>
+<bone name="tail_01"><target>tail_01</target>
+<bone name="tail_02"><target>tail_02</target>
+<bone name="tail_03"><target>tail_03</target>
+<bone name="tail_04"><target>tail_04</target>
+<bone name="tail_05"><target>tail_05</target>
+<bone name="tail_06"><target>tail_06</target>
+<bone name="tail_07"><target>tail_07</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="neck_01"><target>neck_01</target>
+<bone name="neck_02"><target>neck_02</target>
+<bone name="neck_03"><target>neck_03</target>
+<bone name="head"><target>head</target>
+<bone name="B_mouth_01"><target>B_mouth_01</target>
+<bone name="B_mouth_02"><target>B_mouth_02</target>
+<bone name="B_mouth_03"><target>B_mouth_03</target>
+<bone name="B_mouth_04"><target>B_mouth_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="T_mouth_01"><target>T_mouth_01</target>
+<bone name="T_mouth_02"><target>T_mouth_02</target>
+<bone name="T_mouth_03"><target>T_mouth_03</target>
+<bone name="T_mouth_04"><target>T_mouth_04</target>
+</bone>
+</bone>
+</bone>
+</bone>
+<bone name="projectile"><target>projectile</target>
+<bone name="tongue_02"><target>tongue_02</target>
+<bone name="tongue_03"><target>tongue_03</target>
+<bone name="tongue_04"><target>tongue_04</target>
+<bone name="tongue_05"><target>tongue_05</target>
+<bone name="tongue_06"><target>tongue_06</target>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</bone>
+</skeleton>
+</skeletons>

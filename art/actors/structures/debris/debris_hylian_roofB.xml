@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <textures>
+        <texture file="structural/hylian/hylian_buildingB.dds" name="baseTex"/>
+	    <texture file="structural/hylian/hylian_buildingB_normal.dds" name="normTex"/>
+		<texture file="structural/hylian/hylian_houseC_ao.dds" name="aoTex"/>
+      </textures>
+    </variant>
+  </group>  
+  <group>
+    <variant name="roofA">
+      <mesh>structural/debris/debris_hylian_roofB_A.dae</mesh>
+    </variant>
+	<variant name="roofB">
+      <mesh>structural/debris/debris_hylian_roofB_B.dae</mesh>
+    </variant>
+  </group>  
+  <material>player_trans_ao_parallax.xml</material>
+</actor>

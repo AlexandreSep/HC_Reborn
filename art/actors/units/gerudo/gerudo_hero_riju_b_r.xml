@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <animations>
+        <animation file="HC_riju/riju_idle.dae" name="Idle" speed="20"/>
+        <animation file="HC_riju/riju_idleA.dae" name="Idle" speed="20"/>
+        <animation file="HC_riju/riju_idleB.dae" name="Idle" speed="20"/>
+        <animation file="HC_riju/riju_walk.dae" name="Walk" speed="20"/>
+        <animation file="HC_riju/riju_run.dae" name="Run" speed="10"/>
+        <animation event="0.8" file="HC_riju/riju_attackbow.dae" name="attack_ranged" speed="100"/>
+        <animation event="0.8" file="HC_riju/riju_attackbow.dae" name="attack_slaughter" speed="100"/>
+        <animation event="0.8" file="HC_riju/riju_idle.dae" name="gather_meat" speed="100"/>
+        <animation file="HC_riju/riju_idle.dae" name="death" speed="230"/>
+      </animations>
+      <mesh>units/gerudo/ger_rijuA.dae</mesh>
+	  <props>
+        <prop actor="props/units/weapons/gerudo_bowB.xml" attachpoint="bone_Lhand"/>
+		<prop actor="props/units/weapons/gerudo_quiverA.xml" attachpoint="bone_torso"/>	
+		<prop actor="props/units/weapons/hylian_arrowA_shoot.xml" attachpoint="projectile"/>
+      </props>
+	  <textures><texture file="skeletal/gerudo/ger_hero3.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
+</actor>

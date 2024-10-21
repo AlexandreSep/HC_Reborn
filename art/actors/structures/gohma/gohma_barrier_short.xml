@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Hive Core">
+      <animations>
+        <animation file="HC_hivebarrier/hivebarrier_small_idle.dae" name="Idle" speed="50"/>
+		<animation file="HC_hivebarrier/hivebarrier_small_attack.dae" name="Idle" speed="50"/>
+		<animation event="0.25" file="HC_hivebarrier/hivebarrier_small_attack.dae" name="attack_ranged" speed="100"/>
+      </animations>
+      <mesh>structural/gohma/goh_hivebarrier_small.dae</mesh>
+      <props>
+		<prop actor="props/structures/gohma/gohma_creep_small.xml" attachpoint="root"/>
+      </props>
+      <textures>
+        <texture file="structural/gohma/goh_buildingA.dds" name="baseTex"/>
+		<texture file="structural/gohma/goh_buildingA_normal.dds" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant name="alive" frequency="1"/>
+    <variant name="death">
+      <props>
+        <prop actor="particle/destruction_smoke_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large.xml" attachpoint="root"/>
+        <prop actor="particle/destruction_dust_large_gray.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>

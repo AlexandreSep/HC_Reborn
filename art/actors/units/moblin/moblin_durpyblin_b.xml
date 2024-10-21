@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant file="HC_durpyblin/base_HC_biped_spear.xml"> 
+	<mesh>units/moblin/mob_durpyblinA.dae</mesh>
+      <textures>
+        <texture file="skeletal/moblin/mob_mainB.dds" name="baseTex"/>
+      </textures>
+	  <props>
+		<prop actor="props/units/weapons/durpyblin_spearA.xml" attachpoint="R_hand"/>
+		<prop actor="props/units/weapons/durpyblin_shieldA.xml" attachpoint="L_hand"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Idle"/>
+    <variant file="HC_durpyblin/base_HC_biped_capture.xml"/>
+    <variant file="HC_durpyblin/base_HC_biped_slaughter.xml"/>
+    <variant file="HC_durpyblin/base_HC_biped_death.xml">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

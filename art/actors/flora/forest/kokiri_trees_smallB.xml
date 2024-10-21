@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<actor version="1">
+
+  <castshadow/>
+
+  <group>
+    <variant frequency="1" name="trunk-a">
+      <mesh>gaia/flora/flora_kokiri_tree_smallA.dae</mesh>
+    </variant>
+	
+    <variant frequency="1" name="trunk-b">
+      <mesh>gaia/flora/flora_kokiri_tree_smallB.dae</mesh>
+    </variant>
+	
+    <variant frequency="1" name="trunk-c">
+      <mesh>gaia/flora/flora_kokiri_tree_smallC.dae</mesh>
+    </variant>
+	
+	<variant frequency="1" name="trunk-d">
+      <mesh>gaia/flora/flora_kokiri_tree_smallD.dae</mesh>
+    </variant>
+  </group>
+  
+  <group>
+    <variant name="trunk-texture">
+      <textures><texture file="structural/kokiri/kokiri_buildingA.dds" name="baseTex"/></textures>
+    </variant>
+  </group>
+  
+  <material>basic_trans.xml</material>
+
+</actor>
