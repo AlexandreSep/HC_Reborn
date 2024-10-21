@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>TBD.</AttackName>
       <Damage>
-        <Fire>20.0</Fire>
+        <Fire>40.0</Fire>
       </Damage>
       <Delay>0</Delay>
       <MaxRange>90.0</MaxRange>

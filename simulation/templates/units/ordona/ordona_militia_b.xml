@@ -24,6 +24,15 @@
   <Health>
     <Max>190</Max>
   </Health>
+  <Builder>
+    <Rate>0.75</Rate>
+    <Entities datatype="tokens">
+      structures/ordonna/ordona_wallset
+	  structures/ordonna/ordona_sentry_tower
+	  structures/ordonna/ordona_defense_tower
+	  structures/ordonna/ordona_fortress
+    </Entities>
+  </Builder>    
   <Identity>
     <Civ>ordona</Civ>
     <Classes datatype="tokens">Medium Class100 Helmed Militia</Classes>
@@ -69,4 +78,19 @@
   <VisualActor>
     <Actor>units/ordona/ordona_militia_b.xml</Actor>
   </VisualActor>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>0.5</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>0.5</food.meat>
+      <wood.tree>0.4</wood.tree>
+	  <wood.rock>0.15</wood.rock>
+      <wood.ruins>0.3</wood.ruins>
+      <stone.ore>0.15</stone.ore>
+      <stone.ruins>1</stone.ruins>
+      <metal.rupees>0.15</metal.rupees>
+    </Rates>
+  </ResourceGatherer>  
 </Entity>

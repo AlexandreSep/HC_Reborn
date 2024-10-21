@@ -40,6 +40,27 @@
     </Entities>
     <Rate>1.0</Rate>
   </Builder>
+  <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>10</food>
+      <metal>10</metal>
+      <stone>10</stone>
+      <wood>10</wood>
+    </Capacities>
+    <MaxDistance>2.0</MaxDistance>
+    <Rates>
+      <food.fruit>0.40</food.fruit>
+      <food.grain>0.40</food.grain>
+      <food.meat>0.40</food.meat>
+      <metal.rupees>0.40</metal.rupees>
+      <stone.ore>0.40</stone.ore>
+      <stone.ruins>0.40</stone.ruins>
+      <wood.rock>0.40</wood.rock>
+      <wood.ruins>0.40</wood.ruins>
+      <wood.tree>0.40</wood.tree>
+    </Rates>
+  </ResourceGatherer>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
     <BuildTime>25</BuildTime>
