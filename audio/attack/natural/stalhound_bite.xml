@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<SoundGroup>
+	<Gain>.09</Gain>
+	<Priority>100</Priority>
+	<ConeGain>1</ConeGain>
+	<Looping>0</Looping>
+	<RandOrder>1</RandOrder>
+	<RandGain>1</RandGain>
+	<GainUpper>0.5</GainUpper>
+	<GainLower>0.4</GainLower>
+	<RandPitch>1</RandPitch>
+	<PitchUpper>1.05</PitchUpper>
+	<PitchLower>0.95</PitchLower>
+	<Threshold>100</Threshold>
+	<Path>audio/attack/natural/</Path>
+	<Sound>stalhound_bite_01.ogg</Sound>
+	<Sound>stalhound_bite_02.ogg</Sound>
+	<Sound>stalhound_bite_03.ogg</Sound>
+	<Sound>stalhound_bite_04.ogg</Sound>
+	<Sound>stalhound_bite_05.ogg</Sound>
+	<Sound>stalhound_bite_02.ogg</Sound>
+	<Sound>stalhound_bite_03.ogg</Sound>
+</SoundGroup>

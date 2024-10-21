@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Unit details for Multiple Units -->
+<object size="0 0 100% 100%" hidden="false" name="militaryBattalions">
+
+	<object size="0% 0% 99% 98%" name="militaryBattalionsPanel">
+		<repeat count="120">
+		<object name="battalionSelectionButton[n]" hidden="true" style="iconButton" type="button" size="0% 0% 100% 100%" tooltip_style="sessionToolTipBold">
+		    <object name="battalionSelectionIcon[n]" type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    <object name="battalionSelectionHighlight[n]" hidden="true" type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    <object name="battalionSelectionCountContainer[n]" type="image" ghost="true" size="0% 0% 100% 100%">
+			<object name="battalionSelectionCountBackground[n]" type="image" ghost="true" sprite ="stretched:null_black.dds" size="0% 70% 35% 100%"/>
+			<object name="battalionSelectionCount[n]" ghost="true" style="UnitCountText" type="text" size="-2% -3% 100% 103%"/>
+			<object name="battalionSelectionCountSmall[n]" hidden="true" ghost="true" style="UnitCountTextSmall" type="text" size="-7% 0% 100% 107%"/>
+		    </object>
+		    <object name="battalionOrdersContainer[n]" type="image" ghost="true" size="60% 5% 95% 40%">
+			<object name="battalionOrdersBackground[n]" type="image" ghost="true" sprite ="stretched:null_black.dds" hidden="false" size="0% 0% 100% 100%"/>
+			<object name="battalionOrdersIcon[n]" ghost="true" type="image" size="0% 0% 100% 100%"/>
+		    </object>
+		    <object name="battalionSelectionUnitLifebarContainer[n]" hidden ="false" type="image" ghost="true" size="35% 90% 100% 100%">
+			<object name="battalionSelectionUnitLifebar[n]" hidden ="false" type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    </object>
+		    <object name="groupBoxLineTop[n]" hidden ="true" type="image" ghost="true" size="-5.2% -5.2% 105.2% 0.2%"/>
+		    <object name="groupBoxLineBottom[n]" hidden ="true" type="image" ghost="true" size="-5.2% 100.2% 105.2% 105.2%"/>
+		    <object name="groupBoxLineLeft[n]" hidden ="true" type="image" ghost="true" size="-5.2% -5.2% 0.2% 105.2%"/>
+		    <object name="groupBoxLineRight[n]" hidden ="true" type="image" ghost="true" size="100.2% -5.2% 105.2% 105.2%"/>
+		    <object name="battalionGroupSelectionButton[n]" hidden="true" style="iconButton" type="button" size="-5.2% -5.2% 20% 20%" tooltip_style="sessionToolTipBold">
+			<object name="battalionGroupSelectionButtonGroupNumber[n]" ghost="true" style="BattalionUIGroupNumber" type="text" size="-2% 0% 100% 103%"/>
+			<object name="battalionGroupSelectionButtonGroupNumberSmall[n]" ghost="true" style="BattalionUIGroupNumberSmall" type="text" size="-2% -10% 100% 103%"/>
+		    </object>
+		</object>
+		</repeat>
+	</object>
+
+</object>
+

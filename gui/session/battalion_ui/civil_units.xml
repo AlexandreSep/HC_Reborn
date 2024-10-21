@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Unit details for Multiple Units -->
+<object size="0 0 100% 100%" hidden="false" name="civilBattalions">
+
+	<object size="2% 2% 98% 98%" name="civilBattalionsPanel">
+		<repeat count="120">
+		<object name="civilBattalionSelectionButton[n]" hidden="true" style="iconButton" type="button" size="0% 0% 100% 100%" tooltip_style="sessionToolTipBold">
+		    <object name="civilBattalionSelectionIcon[n]" type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    <object name="civilBattalionSelectionHighlight[n]" hidden = "true"  type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    <object name="civilBattalionSelectionCountContainer[n]" type="image" ghost="true" size="0% 0% 100% 100%">
+			<object name="civilBattalionSelectionCountBackground[n]" type="image" ghost="true" sprite ="stretched:null_black.dds" size="0% 70% 35% 100%"/>
+			<object name="civilBattalionSelectionCount[n]" ghost="true" style="UnitCountText" type="text" size="0% -5% 100% 105%"/>
+			<object name="civilBattalionSelectionCountSmall[n]" hidden ="true" ghost="true" style="UnitCountTextSmall" type="text" size="-8% 0% 100% 107%"/>
+		    </object>
+		    <object name="civilBattalionOrdersContainer[n]" type="image" ghost="true" size="60% 0% 100% 40%">
+			<object name="civilBattalionOrdersBackground[n]" type="image" ghost="true" sprite ="stretched:null_black.dds" hidden="false" size="0% 0% 100% 100%"/>
+			<object name="civilBattalionOrdersIcon[n]" ghost="true" type="image" size="0% 0% 100% 100%"/>
+		    </object>
+		    <object name="civilBattalionSelectionUnitLifebarContainer[n]" hidden ="false" type="image" ghost="true" size="35% 90% 100% 100%">
+			<object name="civilBattalionSelectionUnitLifebar[n]" hidden ="false" type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    </object>
+		    <object name="civilGroupBoxLineTop[n]" hidden ="true" type="image" ghost="true" size="-5.2% -5.2% 105.2% 0.2%"/>
+		    <object name="civilGroupBoxLineBottom[n]" hidden ="true" type="image" ghost="true" size="-5.2% 100.2% 105.2% 105.2%"/>
+		    <object name="civilGroupBoxLineLeft[n]" hidden ="true" type="image" ghost="true" size="-5.2% -5.2% 0.2% 105.2%"/>
+		    <object name="civilGroupBoxLineRight[n]" hidden ="true" type="image" ghost="true" size="100.2% -5.2% 105.2% 105.2%"/>
+		    <object name="civilBattalionGroupSelectionButton[n]" hidden="true" style="iconButton" type="button" size="-5.2% -5.2% 35% 35%" tooltip_style="sessionToolTipBold">
+			<object name="civilBattalionGroupSelectionButtonGroupNumber[n]" ghost="true" style="BattalionUIGroupNumber" type="text" size="-2% -10% 100% 120%"/>
+			<object name="civilBattalionGroupSelectionButtonGroupNumberSmall[n]" ghost="true" style="BattalionUIGroupNumberSmall" type="text" size="-2% -10% 100% 120%"/>
+		    </object>
+		</object>
+		</repeat>
+	</object>
+
+</object>
+

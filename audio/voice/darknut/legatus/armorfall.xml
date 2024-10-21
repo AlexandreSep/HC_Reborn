@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<SoundGroup>
+	<Gain>0.20</Gain>
+	<Priority>100</Priority>
+	<ConeGain>1</ConeGain>
+	<Looping>0</Looping>
+	<RandOrder>1</RandOrder>
+	<RandGain>0</RandGain>
+	<GainUpper>0.20</GainUpper>
+	<GainLower>0.1</GainLower>
+	<RandPitch>1</RandPitch>
+	<PitchUpper>1.0</PitchUpper>
+	<PitchLower>0.8</PitchLower>
+	<Threshold>10</Threshold>
+	<Path>audio/voice/darknut/legatus</Path>
+	<Sound>armorfall_01.ogg</Sound>
+	<Sound>armorfall_02.ogg</Sound>
+	<Sound>armorfall_03.ogg</Sound>
+	<Sound>armorfall_04.ogg</Sound>
+	<Sound>armorfall_05.ogg</Sound>
+	<Sound>armorfall_06.ogg</Sound>
+	<Sound>armorfall_07.ogg</Sound>
+	<Sound>armorfall_08.ogg</Sound>
+</SoundGroup>

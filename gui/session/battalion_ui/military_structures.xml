@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Unit details for Multiple Units -->
+<object size="0 0 100% 100%" hidden="true" name="militaryStructureBattalions">
+
+	<object size="0% 0% 100% 100%" name="militaryStructureBattalionsPanel">
+		<repeat count="120">
+		<object name="structureSelectionButton[n]" hidden="true" style="iconButton" type="button" size="0% 0% 100% 100%" tooltip_style="sessionToolTipBold">
+		    <object name="structureSelectionIcon[n]" type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    <object name="structureSelectionHighlight[n]" hidden="true" type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    <object name="structureSelectionCountContainer[n]" type="image" ghost="true" size="0% 0% 100% 100%">
+			<object name="structureSelectionCountBackground[n]" type="image" ghost="true" sprite ="stretched:null_black.dds" size="0% 70% 35% 100%"/>
+			<object name="structureSelectionCount[n]" ghost="true" style="UnitCountText" type="text" size="-2% -3% 100% 103%"/>
+			<object name="structureSelectionCountSmall[n]" hidden="true" ghost="true" style="UnitCountTextSmall" type="text" size="-7% 0% 100% 107%"/>
+		    </object>
+		    <object name="militaryStructureOrdersContainer[n]" type="image" ghost="true" hidden="true" size="80% 0% 100% 20%">
+			<object name="militaryStructureOrdersBackground[n]" type="image" ghost="true" sprite ="stretched:null_black.dds" size="0% 0% 100% 100%"/>
+			<object name="militaryStructureOrdersIcon[n]" ghost="true" type="image" size="0% 0% 100% 100%"/>
+		    </object>
+		    <object name="structureSelectionUnitLifebarContainer[n]" hidden ="false" type="image" ghost="true" size="35% 90% 100% 100%">
+			<object name="structureSelectionUnitLifebar[n]" hidden ="false" type="image" ghost="true" size="0% 0% 100% 100%"/>
+		    </object>
+		    <object name="structureGroupBoxLineTop[n]" hidden ="true" type="image" ghost="true" size="-5.2% -5.2% 105.2% 0.2%"/>
+		    <object name="structureGroupBoxLineBottom[n]" hidden ="true" type="image" ghost="true" size="-5.2% 100.2% 105.2% 105.2%"/>
+		    <object name="structureGroupBoxLineLeft[n]" hidden ="true" type="image" ghost="true" size="-5.2% -5.2% 0.2% 105.2%"/>
+		    <object name="structureGroupBoxLineRight[n]" hidden ="true" type="image" ghost="true" size="100.2% -5.2% 105.2% 105.2%"/>
+		    <object name="structureGroupSelectionButton[n]" hidden="true" style="iconButton" type="button" size="-5.2% -5.2% 20% 20%" tooltip_style="sessionToolTipBold">
+			<object name="structureGroupSelectionButtonGroupNumber[n]" ghost="true" style="BattalionUIGroupNumber" type="text" size="-2% 0% 100% 103%"/>
+			<object name="structureGroupSelectionButtonGroupNumberSmall[n]" ghost="true" style="BattalionUIGroupNumberSmall" type="text" size="-2% -10% 100% 103%"/>
+		    </object>
+		</object>
+		</repeat>
+	</object>
+
+</object>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="campaignEndPanel" type="image" size="50%-640 60%-360 50%+640 60%+360" hidden="true">
+  <object size="50 0 904 230">
+    <object name="campaignEndPanelText" type="text" style="HyruleText"/>
+  </object>
+
+    <object size="50%-200 100%-80 50%-100 100%-50" type="button" style="StoneButtonFancy" name="campaignEndResume">
+      <translatableAttribute id="caption">Resume</translatableAttribute>
+    </object>
+
+    <object size="50%+100 100%-80 50%+200 100%-50" type="button" style="StoneButtonFancy" name="campaignEndLeave">
+      <translatableAttribute id="caption">Leave</translatableAttribute>
+  </object>
+</object>

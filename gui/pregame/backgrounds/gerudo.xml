@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprites>
+	<sprite name="background-gerudo-1">
+		<image
+			texture="pregame/backgrounds/gerudo-1.dds"
+			fixed_h_aspect_ratio="2"
+			round_coordinates="false"
+		/>
+	</sprite>
+	
+	<sprite name="background-gerudo-2">
+		<image
+			texture="pregame/backgrounds/gerudo-2.dds"
+			round_coordinates="false"
+			wrap_mode="clamp_to_edge"
+		/>
+	</sprite>
+	
+	<sprite name="background-gerudo-3">
+		<image
+			texture="pregame/backgrounds/gerudo-3.dds"
+			round_coordinates="false"
+			wrap_mode="clamp_to_edge"
+		/>
+	</sprite>
+	
+	<sprite name="background-gerudo-4">
+		<image
+			texture="pregame/backgrounds/gerudo-4.dds"
+			fixed_h_aspect_ratio="2"
+			round_coordinates="false"
+		/>
+	</sprite>
+	
+	<sprite name="background-gerudo-5">
+		<image
+			texture="pregame/backgrounds/gerudo-5.dds"
+			fixed_h_aspect_ratio="2"
+			round_coordinates="false"
+		/>
+	</sprite>
+	
+</sprites>

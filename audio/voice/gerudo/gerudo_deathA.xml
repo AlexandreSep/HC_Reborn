@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<SoundGroup>
+	<Gain>.3</Gain>
+	<Priority>100</Priority>
+	<ConeGain>1</ConeGain>
+	<Looping>0</Looping>
+	<RandOrder>1</RandOrder>
+	<RandGain>1</RandGain>
+	<GainUpper>0.5</GainUpper>
+	<GainLower>0.4</GainLower>
+	<RandPitch>1</RandPitch>
+	<PitchUpper>1.05</PitchUpper>
+	<PitchLower>0.95</PitchLower>
+	<Threshold>100</Threshold>
+	<Path>audio/voice/gerudo/</Path>
+	<Sound>ger_death_MN1_01.ogg</Sound>
+	<Sound>ger_death_MN2_01.ogg</Sound>
+	<Sound>ger_death_SB2_01.ogg</Sound>
+	<Sound>ger_death_SB6_01.ogg</Sound>
+	<Sound>ger_death_SB6_02.ogg</Sound>
+	<Sound>ger_death_SB6_03.ogg</Sound>
+	<Sound>ger_death_SG1_01.ogg</Sound>
+	<Sound>ger_death_SG1_02.ogg</Sound>
+</SoundGroup>

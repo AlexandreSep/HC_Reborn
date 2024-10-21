@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprites>
+	<sprite name="background-kokiri-1">
+		<image
+			texture="pregame/backgrounds/kokiri-1.dds"
+			fixed_h_aspect_ratio="2"
+			round_coordinates="false"
+		/>
+	</sprite>
+
+	<sprite name="background-kokiri-2">
+		<image
+			texture="pregame/backgrounds/kokiri-2.dds"
+			round_coordinates="false"
+			wrap_mode="clamp_to_edge"
+		/>
+	</sprite>
+
+	<sprite name="background-kokiri-3">
+		<image
+			texture="pregame/backgrounds/kokiri-3.dds"
+			round_coordinates="false"
+			wrap_mode="clamp_to_edge"
+		/>
+	</sprite>
+
+	<sprite name="background-kokiri-4">
+		<image
+			texture="pregame/backgrounds/kokiri-4.dds"
+			round_coordinates="false"
+			wrap_mode="clamp_to_edge"
+		/>
+	</sprite>
+
+	<sprite name="background-kokiri-5">
+		<image
+			texture="pregame/backgrounds/kokiri-5.dds"
+			round_coordinates="false"
+			wrap_mode="clamp_to_edge"
+		/>
+	</sprite>
+
+</sprites>

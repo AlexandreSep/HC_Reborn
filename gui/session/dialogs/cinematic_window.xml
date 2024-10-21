@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<object name="cinematicWindow"
+	size="50%-300 50%-150 50%+300 50%+150"
+	type="image"
+	hidden="true"
+	sprite="ModernDialog"
+>
+
+	<object type="text" style="TitleText" size="50%-96 -16 50%+96 16" name="cinematicTitle">
+		<translatableAttribute id="caption">Confirm</translatableAttribute>
+	</object>
+
+	<object name="cinematicDialogue" size="20 32 100%-20 100%-70" type="text" style="ModernLabelText" ghost="true">
+	</object>
+
+	<object size="10 100%-50 50%-10 100%-22" type="button" style="StoneButtonFancy" name="cinematicYes">
+		<translatableAttribute id="caption">Yes</translatableAttribute>
+	</object>
+
+	<object size="50%+10 100%-50 100%-10 100%-22" type="button" style="StoneButtonFancy" name="cinematicNo">
+		<translatableAttribute id="caption">No</translatableAttribute>
+	</object>
+
+</object>

@@ -1,0 +1,2748 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sprites>
+
+	<sprite name="groupsIcon">
+		<image
+			texture="session/icons/groups.png"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+	<!-- ================================  ================================ -->
+	<!-- Menu -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="horizontalThinBorder">
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+		/>
+	</sprite>
+
+	<!-- ================================  ================================ -->
+	<!-- Panel Backgrounds -->
+	<!-- ================================  ================================ -->
+
+	<!-- Generic Panel -->
+	<sprite name="genericPanel">
+		<image
+			texture="global/modern/background.png"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- sides -->
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image
+			texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="100%-4 4 100% 100%-4"
+		/>
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+		<image
+			texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="0 4 4 100%-4"
+		/>
+
+		<!-- corners -->
+		<image
+			texture="global/border/line_corner_top_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 0 100% 4"
+		/>
+		<image
+			texture="global/border/line_corner_bottom_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 100%-4 100% 100%"
+		/>
+		<image
+			texture="global/border/line_corner_bottom_left.png"
+			texture_size="0 0 4 4"
+			size="0 100%-4 4 100%"
+		/>
+		<image
+			texture="global/border/line_corner_top_left.png"
+			texture_size="0 0 4 4"
+			size="0 0 4 4"
+		/>
+	</sprite>
+
+	<!-- Top Panel -->
+	<sprite name="topPanel">
+		<image
+			texture="session/ribbon_bg.png"
+			real_texture_placement="0 0 2048 32"
+			size="0 0 100% 100%"
+		/>
+		<!-- sides -->
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+	</sprite>
+	
+	<!-- Top Panel hylian -->
+	<sprite name="topPanel_hylian">
+		<image
+			texture="session/factions/hylian/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_gerudo">
+		<image
+			texture="session/factions/gerudo/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_goron">
+		<image
+			texture="session/factions/goron/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_zora">
+		<image
+			texture="session/factions/zora/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_kokiri">
+		<image
+			texture="session/factions/kokiri/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_gohma">
+		<image
+			texture="session/factions/gohma/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 525%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_ordona">
+		<image
+			texture="session/factions/ordona/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_lanayru">
+		<image
+			texture="session/factions/lanayru/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_moblin">
+		<image
+			texture="session/factions/moblin/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_darknut">
+		<image
+			texture="session/factions/darknut/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_deku">
+		<image
+			texture="session/factions/deku/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_lizalfos">
+		<image
+			texture="session/factions/lizalfos/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_labrynna">
+		<image
+			texture="session/factions/labrynna/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_fairy_spring">
+		<image
+			texture="session/factions/fairy/spring/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_fairy_summer">
+		<image
+			texture="session/factions/fairy/summer/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_fairy_autumn">
+		<image
+			texture="session/factions/fairy/autumn/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>	
+	
+	<sprite name="topPanel_fairy_winter">
+		<image
+			texture="session/factions/fairy/winter/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="topPanel_sheikah">
+		<image
+			texture="session/factions/sheikah/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+
+	<sprite name="topPanel_stalfos">
+		<image
+			texture="session/factions/stalfos/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>
+	
+	<sprite name="CivIconOver">
+		<image
+			texture="session/portraits/emblems/states/hover.png"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+	<!-- Map Panel -->
+	<sprite name="mapPanel">
+		<image backcolor="0 0 0"
+			size="0 0 100% 100%"
+		/>
+		<!-- sides -->
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image
+			texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="100%-4 4 100% 100%-4"
+		/>
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+		<image
+			texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="0 4 4 100%-4"
+		/>
+
+		<!-- corners -->
+		<image
+			texture="global/border/line_corner_top_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 0 100% 4"
+		/>
+		<image
+			texture="global/border/line_corner_bottom_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 100%-4 100% 100%"
+		/>
+		<image
+			texture="global/border/line_corner_bottom_left.png"
+			texture_size="0 0 4 4"
+			size="0 100%-4 4 100%"
+		/>
+		<image
+			texture="global/border/line_corner_top_left.png"
+			texture_size="0 0 4 4"
+			size="0 0 4 4"
+		/>
+	</sprite>
+	
+	<!-- Minioverlays -->
+	<sprite name="minimapPanelOverlay_hylian">
+		<image texture="session/factions/hylian/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>	
+	
+	<sprite name="minimapPanelOverlay_gerudo">
+		<image texture="session/factions/gerudo/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_goron">
+		<image texture="session/factions/goron/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_zora">
+		<image texture="session/factions/zora/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_kokiri">
+		<image texture="session/factions/kokiri/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_gohma">
+		<image texture="session/factions/gohma/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_ordona">
+		<image texture="session/factions/ordona/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_lanayru">
+		<image texture="session/factions/lanayru/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_moblin">
+		<image texture="session/factions/moblin/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_darknut">
+		<image texture="session/factions/darknut/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_deku">
+		<image texture="session/factions/deku/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_lizalfos">
+		<image texture="session/factions/lizalfos/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_labrynna">
+		<image texture="session/factions/labrynna/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_fairy_spring">
+		<image texture="session/factions/fairy/spring/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_fairy_summer">
+		<image texture="session/factions/fairy/summer/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+	<sprite name="minimapPanelOverlay_fairy_autumn">
+		<image texture="session/factions/fairy/autumn/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_fairy_winter">
+		<image texture="session/factions/fairy/winter/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_sheikah">
+		<image texture="session/factions/sheikah/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="minimapPanelOverlay_stalfos">
+		<image texture="session/factions/stalfos/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+	
+	<!-- Bottom Left Panel -->
+	<sprite name="supplementalDetailsPanel">
+
+		<!-- sides -->
+		<image texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="100%-4 4 100% 100%-4"
+		/>
+		<image texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+		<image texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="0 4 4 100%-4"
+		/>
+
+		<!-- corners -->
+		<image texture="global/border/line_corner_middle_left.png"
+			texture_size="0 0 4 4"
+			size="100%-4 0 100% 4"
+		/>
+		<image texture="global/border/line_corner_bottom_middle.png"
+			texture_size="0 0 4 4"
+			size="100%-4 100%-4 100% 100%"
+		/>
+		<image texture="global/border/line_corner_bottom_middle.png"
+			texture_size="0 0 4 4"
+			size="0 100%-4 4 100%"
+		/>
+		<image texture="global/border/line_corner_middle_right.png"
+			texture_size="0 0 4 4"
+			size="0 0 4 4"
+		/>
+
+		<!-- background -->
+		<image texture="session/panel_left.png"
+			real_texture_placement="0 0 189 170"
+			texture_size="0 0 100% 100%"
+			size="4 4 100%-4 100%-4"
+		/>
+	</sprite>
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel">
+
+		<!-- background -->
+		<image texture="session/panel_middle.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- sides -->
+		<image texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="100%-4 4 100% 100%-4"
+		/>
+		<image texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+		<image texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="0 4 4 100%-4"
+		/>
+
+		<!-- corners -->
+		<image texture="global/border/line_corner_top_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 0 100% 4"
+		/>
+		<image texture="global/border/line_corner_bottom_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 100%-4 100% 100%"
+		/>
+		<image texture="global/border/line_corner_bottom_left.png"
+			texture_size="0 0 4 4"
+			size="0 100%-4 4 100%"
+		/>
+		<image texture="global/border/line_corner_top_left.png"
+			texture_size="0 0 4 4"
+			size="0 0 4 4"
+		/>
+	</sprite>
+	
+	<!-- Military and Civil battalions area border -->
+	<!-- The background will be set via code depending on the player faction -->
+	<sprite name="battalionUIMilAndCivBorders">
+
+		<!-- sides -->
+		<image texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="100%-4 4 100% 100%-4"
+		/>
+		<image texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+		<image texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="0 4 4 100%-4"
+		/>
+
+		<!-- corners -->
+		<image texture="global/border/line_corner_top_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 0 100% 4"
+		/>
+		<image texture="global/border/line_corner_bottom_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 100%-4 100% 100%"
+		/>
+		<image texture="global/border/line_corner_bottom_left.png"
+			texture_size="0 0 4 4"
+			size="0 100%-4 4 100%"
+		/>
+		<image texture="global/border/line_corner_top_left.png"
+			texture_size="0 0 4 4"
+			size="0 0 4 4"
+		/>
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel">
+
+		<!-- sides -->
+		<image texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="100%-4 4 100% 100%-4"
+		/>
+		<image texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+		<image texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="0 4 4 100%-4"
+		/>
+
+		<!-- corners -->
+		<image texture="global/border/line_corner_top_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 0 100% 4"
+		/>
+		<image texture="global/border/line_corner_bottom_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 100%-4 100% 100%"
+		/>
+		<image texture="global/border/line_corner_bottom_middle.png"
+			texture_size="0 0 4 4"
+			size="0 100%-4 4 100%"
+		/>
+		<image texture="global/border/line_corner_middle_right.png"
+			texture_size="0 0 4 4"
+			size="0 0 4 4"
+		/>
+
+		<!-- background -->
+		<image texture="session/panel_right.png"
+			real_texture_placement="0 0 398 170"
+			texture_size="0 0 100% 100%"
+			size="4 4 100%-4 100%-4"
+		/>
+	</sprite>
+
+	<!-- ==========================================  ========================================== -->
+	<!-- ==========================================  ========================================== -->
+	<!-- Faction Specific UI sprites -->
+	<!-- ==========================================  ========================================== -->
+	<!-- ==========================================  ========================================== -->
+
+	
+	<!-- ================================  ================================ -->
+	<!-- hylian  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_hylian">
+
+		<!-- background -->
+		<image texture="session/factions/hylian/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/hylian/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_hylian">
+
+		<!-- background -->
+		<image texture="session/factions/hylian/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/hylian/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_hylian">
+
+
+		<!-- background -->
+		<image texture="session/factions/hylian/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/hylian/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_hylian">
+
+		<!-- background -->
+		<image texture="session/factions/hylian/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/hylian/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_hylian">
+
+		<!-- background -->
+		<image texture="session/factions/hylian/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/hylian/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>	
+	
+	<!-- ================================  ================================ -->
+	<!-- gerudo  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_gerudo">
+
+		<!-- background -->
+		<image texture="session/factions/gerudo/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/gerudo/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_gerudo">
+
+		<!-- background -->
+		<image texture="session/factions/gerudo/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/gerudo/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_gerudo">
+
+
+		<!-- background -->
+		<image texture="session/factions/gerudo/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/gerudo/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_gerudo">
+
+		<!-- background -->
+		<image texture="session/factions/gerudo/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/gerudo/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_gerudo">
+
+		<!-- background -->
+		<image texture="session/factions/gerudo/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/gerudo/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>	
+	
+	<!-- ================================  ================================ -->
+	<!-- goron -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_goron">
+
+		<!-- background -->
+		<image texture="session/factions/goron/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/goron/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_goron">
+
+		<!-- background -->
+		<image texture="session/factions/goron/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/goron/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_goron">
+
+
+		<!-- background -->
+		<image texture="session/factions/goron/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/goron/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_goron">
+
+		<!-- background -->
+		<image texture="session/factions/goron/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/goron/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_goron">
+
+		<!-- background -->
+		<image texture="session/factions/goron/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/goron/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -50 100% 100%"
+		/>
+	</sprite>	
+	
+	
+	<!-- ================================  ================================ -->
+	<!-- zora dominion -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_zora">
+
+		<!-- background -->
+		<image texture="session/factions/zora/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/zora/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_zora">
+
+		<!-- background -->
+		<image texture="session/factions/zora/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/zora/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_zora">
+
+
+		<!-- background -->
+		<image texture="session/factions/zora/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/zora/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_zora">
+
+		<!-- background -->
+		<image texture="session/factions/zora/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/zora/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_zora">
+
+		<!-- background -->
+		<image texture="session/factions/zora/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/zora/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>	
+	
+	<!-- ================================  ================================ -->
+	<!-- kokiri -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_kokiri">
+
+		<!-- background -->
+		<image texture="session/factions/kokiri/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/kokiri/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_kokiri">
+
+		<!-- background -->
+		<image texture="session/factions/kokiri/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/kokiri/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_kokiri">
+
+
+		<!-- background -->
+		<image texture="session/factions/kokiri/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/kokiri/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_kokiri">
+
+		<!-- background -->
+		<image texture="session/factions/kokiri/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/kokiri/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_kokiri">
+
+		<!-- background -->
+		<image texture="session/factions/kokiri/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/kokiri/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -50 100% 100%"
+		/>
+	</sprite>
+	
+	
+	<!-- ================================  ================================ -->
+	<!-- gohma -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_gohma">
+
+		<!-- background -->
+		<image texture="session/factions/gohma/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/gohma/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_gohma">
+
+		<!-- background -->
+		<image texture="session/factions/gohma/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/gohma/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_gohma">
+
+
+		<!-- background -->
+		<image texture="session/factions/gohma/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/gohma/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_gohma">
+
+		<!-- background -->
+		<image texture="session/factions/gohma/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/gohma/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_gohma">
+
+		<!-- background -->
+		<image texture="session/factions/gohma/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/gohma/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 512"
+			texture_size="0 0 100% 100%"
+			size="0 -135 100% 100%"
+		/>
+	</sprite>	
+	
+	<!-- ================================  ================================ -->
+	<!-- ordona  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_ordona">
+
+		<!-- background -->
+		<image texture="session/factions/ordona/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/ordona/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_ordona">
+
+		<!-- background -->
+		<image texture="session/factions/ordona/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/ordona/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_ordona">
+
+
+		<!-- background -->
+		<image texture="session/factions/ordona/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/ordona/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_ordona">
+
+		<!-- background -->
+		<image texture="session/factions/ordona/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/ordona/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_ordona">
+
+		<!-- background -->
+		<image texture="session/factions/ordona/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/ordona/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>	
+	
+	
+	<!-- ================================  ================================ -->
+	<!-- lanayru  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_lanayru">
+
+		<!-- background -->
+		<image texture="session/factions/lanayru/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/lanayru/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_lanayru">
+
+		<!-- background -->
+		<image texture="session/factions/lanayru/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/lanayru/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_lanayru">
+
+
+		<!-- background -->
+		<image texture="session/factions/lanayru/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/lanayru/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_lanayru">
+
+		<!-- background -->
+		<image texture="session/factions/lanayru/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/lanayru/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_lanayru">
+
+		<!-- background -->
+		<image texture="session/factions/lanayru/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/lanayru/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+
+	<!-- ================================  ================================ -->
+	<!-- moblin  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_moblin">
+
+		<!-- background -->
+		<image texture="session/factions/moblin/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/moblin/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_moblin">
+
+		<!-- background -->
+		<image texture="session/factions/moblin/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/moblin/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_moblin">
+
+
+		<!-- background -->
+		<image texture="session/factions/moblin/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/moblin/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_moblin">
+
+		<!-- background -->
+		<image texture="session/factions/moblin/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/moblin/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_moblin">
+
+		<!-- background -->
+		<image texture="session/factions/moblin/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/moblin/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 384"
+			texture_size="0 0 100% 100%"
+			size="0 -84 100% 100%"
+		/>
+	</sprite>		
+	
+	<!-- ================================  ================================ -->
+	<!-- darknut  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_darknut">
+
+		<!-- background -->
+		<image texture="session/factions/darknut/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/darknut/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_darknut">
+
+		<!-- background -->
+		<image texture="session/factions/darknut/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/darknut/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_darknut">
+
+
+		<!-- background -->
+		<image texture="session/factions/darknut/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/darknut/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_darknut">
+
+		<!-- background -->
+		<image texture="session/factions/darknut/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/darknut/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_darknut">
+
+		<!-- background -->
+		<image texture="session/factions/darknut/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/darknut/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>	
+	
+	
+	<!-- ================================  ================================ -->
+	<!-- deku scrubs -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_deku">
+
+		<!-- background -->
+		<image texture="session/factions/deku/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/deku/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_deku">
+
+		<!-- background -->
+		<image texture="session/factions/deku/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/deku/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_deku">
+
+
+		<!-- background -->
+		<image texture="session/factions/deku/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/deku/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_deku">
+
+		<!-- background -->
+		<image texture="session/factions/deku/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/deku/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_deku">
+
+		<!-- background -->
+		<image texture="session/factions/deku/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/deku/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>	
+	
+	<!-- ================================  ================================ -->
+	<!-- lizalfos  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_lizalfos">
+
+		<!-- background -->
+		<image texture="session/factions/lizalfos/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/lizalfos/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_lizalfos">
+
+		<!-- background -->
+		<image texture="session/factions/lizalfos/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/lizalfos/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_lizalfos">
+
+
+		<!-- background -->
+		<image texture="session/factions/lizalfos/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/lizalfos/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_lizalfos">
+
+		<!-- background -->
+		<image texture="session/factions/lizalfos/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/lizalfos/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_lizalfos">
+
+		<!-- background -->
+		<image texture="session/factions/lizalfos/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/lizalfos/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>	
+	
+
+	<!-- ================================  ================================ -->
+	<!-- labrynna  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_labrynna">
+
+		<!-- background -->
+		<image texture="session/factions/labrynna/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/labrynna/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_labrynna">
+
+		<!-- background -->
+		<image texture="session/factions/labrynna/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/labrynna/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_labrynna">
+
+
+		<!-- background -->
+		<image texture="session/factions/labrynna/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/labrynna/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_labrynna">
+
+		<!-- background -->
+		<image texture="session/factions/labrynna/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/labrynna/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_labrynna">
+
+		<!-- background -->
+		<image texture="session/factions/labrynna/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/labrynna/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>	
+	
+	
+	<!-- ================================  ================================ -->
+	<!-- fairy  (Spring) -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_fairy_spring">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/spring/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/fairy/spring/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_fairy_spring">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/spring/civilPanelBackground.png"
+			real_texture_placement="0 0 384 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/fairy/spring/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_fairy_spring">
+
+
+		<!-- background -->
+		<image texture="session/factions/fairy/spring/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/spring/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_fairy_spring">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/spring/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/spring/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_fairy_spring">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/spring/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/spring/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>	
+	
+	<!-- ================================  ================================ -->
+	<!-- fairy (summer)  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_fairy_summer">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/summer/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/fairy/summer/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_fairy_summer">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/summer/civilPanelBackground.png"
+			real_texture_placement="0 0 384 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/fairy/summer/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_fairy_summer">
+
+
+		<!-- background -->
+		<image texture="session/factions/fairy/summer/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/summer/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_fairy_summer">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/summer/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/summer/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_fairy_summer">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/summer/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/summer/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<!-- ================================  ================================ -->
+	<!-- fairy (autumn)  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_fairy_autumn">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/autumn/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/fairy/autumn/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_fairy_autumn">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/autumn/civilPanelBackground.png"
+			real_texture_placement="0 0 384 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/fairy/autumn/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_fairy_autumn">
+
+
+		<!-- background -->
+		<image texture="session/factions/fairy/autumn/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/autumn/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_fairy_autumn">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/autumn/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/autumn/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_fairy_autumn">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/autumn/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/autumn/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<!-- ================================  ================================ -->
+	<!-- fairy (winter)  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_fairy_winter">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/winter/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/fairy/winter/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_fairy_winter">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/winter/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/fairy/winter/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_fairy_winter">
+
+
+		<!-- background -->
+		<image texture="session/factions/fairy/winter/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/winter/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_fairy_winter">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/winter/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/winter/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_fairy_winter">
+
+		<!-- background -->
+		<image texture="session/factions/fairy/winter/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/fairy/winter/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 384"
+			texture_size="0 0 100% 100%"
+			size="0 -85 100% 100%"
+		/>
+	</sprite>
+	
+	
+	<!-- ================================  ================================ -->
+	<!-- sheikah  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_sheikah">
+
+		<!-- background -->
+		<image texture="session/factions/sheikah/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/sheikah/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_sheikah">
+
+		<!-- background -->
+		<image texture="session/factions/sheikah/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/sheikah/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 384"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_sheikah">
+
+
+		<!-- background -->
+		<image texture="session/factions/sheikah/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/sheikah/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_sheikah">
+
+		<!-- background -->
+		<image texture="session/factions/sheikah/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/sheikah/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_sheikah">
+
+		<!-- background -->
+		<image texture="session/factions/sheikah/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/sheikah/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -48 100% 100%"
+		/>
+	</sprite>	
+	
+	<!-- ================================  ================================ -->
+	<!-- stalfos  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_stalfos">
+
+		<!-- background -->
+		<image texture="session/factions/stalfos/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/stalfos/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_stalfos">
+
+		<!-- background -->
+		<image texture="session/factions/stalfos/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/stalfos/civilPanelOverlay.png"
+			real_texture_placement="0 0 384 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_stalfos">
+
+
+		<!-- background -->
+		<image texture="session/factions/stalfos/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/stalfos/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_stalfos">
+
+		<!-- background -->
+		<image texture="session/factions/stalfos/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/stalfos/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_stalfos">
+
+		<!-- background -->
+		<image texture="session/factions/stalfos/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/stalfos/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 300"
+			texture_size="0 0 100% 100%"
+			size="0 -35 100% 100%"
+		/>
+	</sprite>
+
+	
+	
+	<!-- ==========================================  ========================================== -->
+	<!-- ==========================================  ========================================== -->
+	<!-- END - Faction Specific UI sprites -->
+	<!-- ==========================================  ========================================== -->
+	<!-- ==========================================  ========================================== -->
+	
+	<!-- ================================  ================================ -->
+	<!-- Shading -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="remove">
+		<image backcolor="0 0 0 0" size="0 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="panelShader">
+		<image texture="session/panel_shader.png"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+	<sprite name="edgedPanelShader">
+		<image texture="session/panel_shader_top_edge.png"
+			real_texture_placement="0 0 256 1"
+			size="0 0 100% 1"
+		/>
+
+		<image texture="session/panel_shader.png"
+			size="0 0 100% 100%-5"
+		/>
+		<image texture="session/panel_shader_bottom_edge.png"
+			real_texture_placement="0 0 256 5"
+			size="0 100%-5 100% 100%"
+		/>
+	</sprite>
+
+	<sprite name="bottomEdgedPanelShader">
+		<image texture="session/panel_shader_top_edge.png"
+			real_texture_placement="0 0 256 1"
+			size="0 0 100% 1"
+		/>
+
+		<image texture="session/panel_shader.png"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+	<sprite name="topEdgedPanelShader">
+		<image texture="session/panel_shader.png"
+			size="0 0 100% 100%-5"
+		/>
+
+		<image texture="session/panel_shader_bottom_edge.png"
+			real_texture_placement="0 0 256 5"
+			size="0 100%-5 100% 100%"
+		/>
+	</sprite>
+
+	<sprite name="queuePanelShader">
+		<image texture="session/panel_shader.png"
+			size="4 4 100%-4 100%-4"
+		/>
+
+		<!-- sides -->
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 0 100%-4 4"
+		/>
+		<image
+			texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="100%-4 4 100% 100%-4"
+		/>
+		<image
+			texture="global/border/line_horiz.png"
+			texture_size="0 0 64 4"
+			size="4 100%-4 100%-4 100%"
+		/>
+		<image
+			texture="global/border/line_vert.png"
+			texture_size="0 0 4 64"
+			size="0 4 4 100%-4"
+		/>
+
+		<!-- corners -->
+		<image
+			texture="global/border/line_corner_top_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 0 100% 4"
+		/>
+		<image
+			texture="global/border/line_corner_bottom_right.png"
+			texture_size="0 0 4 4"
+			size="100%-4 100%-4 100% 100%"
+		/>
+		<image
+			texture="global/border/line_corner_bottom_left.png"
+			texture_size="0 0 4 4"
+			size="0 100%-4 4 100%"
+		/>
+		<image
+			texture="global/border/line_corner_top_left.png"
+			texture_size="0 0 4 4"
+			size="0 0 4 4"
+		/>
+	</sprite>
+
+	<sprite name="glassSquareMap">
+		<image backcolor="255 255 255 56" size="0 0 100% 1"/>
+		<image backcolor="255 255 255 56" size="100%-1 1 100% 100%"/>
+		<image backcolor="255 255 255 56" size="0 100%-1 100% 100%"/>
+		<image backcolor="255 255 255 56" size="0 1 1 100%-1"/>
+
+		<image backcolor="255 255 255 44" size="1 1 100%-1 2"/>
+		<image backcolor="255 255 255 44" size="100%-2 2 100%-1 100%-1"/>
+		<image backcolor="255 255 255 44" size="1 100%-2 100%-1 100%-1"/>
+		<image backcolor="255 255 255 44" size="1 2 2 100%-2"/>
+
+		<image backcolor="255 255 255 32" size="2 2 100%-2 3"/>
+		<image backcolor="255 255 255 32" size="100%-3 3 100%-2 100%-2"/>
+		<image backcolor="255 255 255 32" size="2 100%-3 100%-2 100%-2"/>
+		<image backcolor="255 255 255 32" size="2 3 3 100%-3"/>
+	</sprite>
+
+	<sprite name="iconBorder">
+		<image backcolor="gold" size="0 0 100% 1"/>
+		<image backcolor="gold" size="100%-1 1 100% 100%"/>
+		<image backcolor="gold" size="0 100%-1 100% 100%"/>
+		<image backcolor="gold" size="0 1 1 100%-1"/>
+	</sprite>
+
+	<sprite name="statsBarShaderHorizontal">
+		<image texture="session/bar_lighting_horizontal.png"
+			real_texture_placement="0 0 150 7"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+	<sprite name="statsBarShaderVertical">
+		<image texture="session/bar_lighting_vertical.png"
+			real_texture_placement="0 0 7 150"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+	<!-- ================================  ================================ -->
+	<!-- Colored Stats Bars -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="playerColorBackground">
+		<image backcolor="255 255 255 128"/>
+	</sprite>
+
+	<sprite name="barBorder">
+		<image backcolor="0 0 0 128"/>
+	</sprite>
+
+	<sprite name="queueProgressSlider">
+		<image backcolor="0 255 0 128"/>
+	</sprite>
+
+	<sprite name="healthBackground">
+		<image backcolor="red"/>
+	</sprite>
+
+	<sprite name="healthForeground">
+		<image backcolor="green"/>
+	</sprite>
+
+	<sprite name="resourceBackground">
+		<image backcolor="darkgray"/>
+	</sprite>
+
+	<sprite name="resourceForeground">
+		<image backcolor="orange"/>
+	</sprite>
+
+	<sprite name="experienceBackground">
+		<image backcolor="darkgray"/>
+	</sprite>
+
+	<sprite name="experienceForeground">
+		<image backcolor="white"/>
+	</sprite>
+
+	<!-- ================================  ================================ -->
+	<!-- Chat -->
+	<!-- ================================  ================================ -->
+	<sprite name="chatInput">
+		<image backcolor="255 255 255 192" size="0 0 100% 1"/>
+		<image backcolor="255 255 255 192" size="100%-1 1 100% 100%-1"/>
+		<image backcolor="255 255 255 192" size="0 100%-1 100% 100%"/>
+		<image backcolor="255 255 255 192" size="0 1 1 100%-1"/>
+
+		<image backcolor="255 255 255 128" size="0 1 100% 2"/>
+		<image backcolor="255 255 255 128" size="100%-2 2 100%-1 100%-2"/>
+		<image backcolor="255 255 255 128" size="0 100%-2 100% 100%-1"/>
+		<image backcolor="255 255 255 128" size="1 2 2 100%-2"/>
+
+		<image backcolor="255 255 255 64" size="0 2 100% 3"/>
+		<image backcolor="255 255 255 64" size="100%-3 3 100%-2 100%-3"/>
+		<image backcolor="255 255 255 64" size="0 100%-3 100% 100%-2"/>
+		<image backcolor="255 255 255 64" size="2 3 3 100%-3"/>
+
+		<image backcolor="0 0 0 144" size="3 3 100%-3 100%-3"/>
+	</sprite>
+
+	<sprite name="chatInputHighlight">
+		<image backcolor="255 165 0 192" size="-2 1 100% 100%+1"/>
+	</sprite>
+
+	<!-- ================================  ================================ -->
+	<!-- Tooltips -->
+	<!-- ================================  ================================ -->
+	<sprite name="BackgroundSessionTooltip">
+		<image
+			backcolor="darkbrown"
+			size="0 0 100% 100%"
+		/>
+		<image backcolor="gold" size="0 0 100% 1"/>
+		<image backcolor="gold" size="0 100%-1 100% 100%"/>
+		<image backcolor="gold" size="0 0 1 100%"/>
+		<image backcolor="gold" size="100%-1 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="BackgroundInformationTooltip">
+		<image
+			backcolor="0 0 0 192"
+			size="0 0 100% 100%"
+		/>
+		<image backcolor="white" size="0 0 100% 1"/>
+		<image backcolor="white" size="0 100%-1 100% 100%"/>
+		<image backcolor="white" size="0 0 1 100%"/>
+		<image backcolor="white" size="100%-1 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="BackgroundErrorTooltip">
+		<image
+			backcolor="0 0 0 192"
+			size="0 0 100% 100%"
+		/>
+		<image backcolor="red" size="0 0 100% 1"/>
+		<image backcolor="red" size="0 100%-1 100% 100%"/>
+		<image backcolor="red" size="0 0 1 100%"/>
+		<image backcolor="red" size="100%-1 0 100% 100%"/>
+	</sprite>
+
+	<!-- ================================  ================================ -->
+	<!-- Misc -->
+	<!-- ================================  ================================ -->
+	<sprite name="bandbox">
+		<image backcolor="black" size="0 0 100% 1"/>
+		<image backcolor="black" size="100%-1 0 100% 100%"/>
+		<image backcolor="black" size="0 100%-1 100% 100%"/>
+		<image backcolor="black" size="0 0 1 100%"/>
+		<image backcolor="white" size="1 1 100%-1 2"/>
+		<image backcolor="white" size="100%-2 1 100%-1 100%-1"/>
+		<image backcolor="white" size="1 100%-2 100%-1 100%-1"/>
+		<image backcolor="white" size="1 1 2 100%-1"/>
+	</sprite>
+
+	<sprite name="sessionOverlayBackground">
+		<image backcolor="0 0 0 185"/>
+	</sprite>
+
+	<!-- ================================  ================================ -->
+	<!-- Unit portrait -->
+	<!-- ================================  ================================ -->
+	<sprite name="snIconPortrait">
+		<image texture="session/icons/bkg/portrait_black.dds" size="0 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="snIconPortraitOver">
+		<effect add_color="42 42 42 0"/>
+		<image texture="session/icons/bkg/portrait_black.dds" size="0 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="snIconPortraitDisabled">
+		<effect grayscale=""/>
+		<image texture="session/icons/bkg/portrait_black.dds" size="0 0 100% 100%"/>
+	</sprite>
+
+</sprites>

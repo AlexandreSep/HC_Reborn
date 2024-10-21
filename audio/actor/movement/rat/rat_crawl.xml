@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<SoundGroup>
+	<Gain>0.08</Gain>
+	<Priority>100</Priority>
+	<ConeGain>1</ConeGain>
+	<Looping>0</Looping>
+	<RandOrder>1</RandOrder>
+	<RandGain>0</RandGain>
+	<GainUpper>0.20</GainUpper>
+	<GainLower>0.1</GainLower>
+	<RandPitch>1</RandPitch>
+	<PitchUpper>1.0</PitchUpper>
+	<PitchLower>0.8</PitchLower>
+	<Threshold>10</Threshold>
+	<Path>audio/actor/movement/rat</Path>
+	<Sound>rat_crawl_01.ogg</Sound>
+	<Sound>rat_crawl_02.ogg</Sound>
+	<Sound>rat_crawl_03.ogg</Sound>
+	<Sound>rat_crawl_04.ogg</Sound>
+	<Sound>rat_crawl_05.ogg</Sound>
+	<Sound>rat_crawl_06.ogg</Sound>
+	<Sound>rat_crawl_07.ogg</Sound>
+	<Sound>rat_crawl_08.ogg</Sound>
+	<Sound>rat_crawl_09.ogg</Sound>
+	<Sound>rat_crawl_10.ogg</Sound>
+	<Sound>rat_crawl_11.ogg</Sound>
+	<Sound>rat_crawl_12.ogg</Sound>
+</SoundGroup>

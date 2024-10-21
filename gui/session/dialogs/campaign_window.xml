@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="campaignPanel" type="image" size="50%-362 50 50%+592 280" hidden="true">
+  <object size="100 15 250 80">
+    <object name="characterText" type="text" style="HyruleTitleText"/>
+  </object>
+	<object size="50 0 904 230">
+		<object name="dialogueText" type="text" style="HyruleText"/>
+	</object>
+  <object name="characterSprite" size="-230 0 0 230" type="image" ghost="true" hidden="false"/>
+  
+  <object size="960 0 1060 30" type="button" style="StoneButtonFancy" name="CutsceneSkipButton" hidden="true">
+    <translatableAttribute id="caption">Skip</translatableAttribute>
+  </object>
+</object>

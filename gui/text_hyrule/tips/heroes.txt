@@ -1,0 +1,5 @@
+HEROES
+Famous Heroes and Villains from Hyrule's history.
+Each player can choose several of six Heroes unique to each Faction.
+Each Hero provides a Unique Unit, a Unique researchable Technology, and a Unique Global Bonus.
+

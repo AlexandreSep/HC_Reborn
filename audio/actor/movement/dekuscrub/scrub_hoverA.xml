@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<SoundGroup>
+	<Gain>0.07</Gain>
+	<Priority>50</Priority>
+	<ConeGain>1</ConeGain>
+	<Looping>0</Looping>
+	<RandOrder>1</RandOrder>
+	<RandGain>0</RandGain>
+	<GainUpper>0.20</GainUpper>
+	<GainLower>0.1</GainLower>
+	<RandPitch>1</RandPitch>
+	<PitchUpper>1.0</PitchUpper>
+	<PitchLower>0.8</PitchLower>
+	<Threshold>10</Threshold>
+	<Path>audio/actor/movement/dekuscrub</Path>
+	<Sound>scrub_hoverA_01.ogg</Sound>
+</SoundGroup>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<SoundGroup>
+	<Gain>0.09</Gain>
+	<Priority>50</Priority>
+	<ConeGain>1</ConeGain>
+	<Looping>0</Looping>
+	<RandOrder>1</RandOrder>
+	<RandGain>0</RandGain>
+	<GainUpper>.5</GainUpper>
+	<GainLower>0</GainLower>
+	<RandPitch>0</RandPitch>
+	<PitchUpper>1.0</PitchUpper>
+	<PitchLower>1.0</PitchLower>
+	<Threshold>10</Threshold>
+	<Path>audio/actor/movement/patra</Path>
+	<Sound>patra_flap_01.ogg</Sound>
+	<Sound>patra_flap_02.ogg</Sound>
+	<Sound>patra_flap_03.ogg</Sound>
+</SoundGroup>
