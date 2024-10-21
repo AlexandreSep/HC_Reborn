@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>TBD.</AttackName>
       <Damage>
-        <Light>20.0</Light>
+        <Light>40.0</Light>
         <Pierce>0</Pierce>
       </Damage>
       <Delay>0</Delay>

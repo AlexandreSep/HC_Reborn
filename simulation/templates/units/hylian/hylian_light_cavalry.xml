@@ -15,9 +15,9 @@
     <BattalionSlots>3</BattalionSlots>
     <BuildTime>40</BuildTime>
     <Resources>
-      <food>250</food>
+      <food>60</food>
       <metal>0</metal>
-      <stone>50</stone>
+      <stone>15</stone>
       <wood>0</wood>
     </Resources>
   </Cost>

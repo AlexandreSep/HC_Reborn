@@ -63,6 +63,7 @@
         <Water>50.0</Water>
       </Damage>
     </Entity>
+    <KnockbackResistance>100</KnockbackResistance>	
   </Resistance>
   <Sound>
     <SoundGroups>

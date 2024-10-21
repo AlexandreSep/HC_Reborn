@@ -11,9 +11,6 @@
       <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Battalion>
-    <Size>5</Size>
-  </Battalion>
   <Cost>
     <BuildTime>35</BuildTime>
     <Resources>
