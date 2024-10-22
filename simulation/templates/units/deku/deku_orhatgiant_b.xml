@@ -96,4 +96,26 @@
   <VisualActor>
     <Actor>units/deku/deku_orhat_giant_b.xml</Actor>
   </VisualActor>
+ <Upgrade>
+    <OrhatA>
+      <Entity>units/deku/deku_orhatgiant_upgA</Entity>
+      <Tooltip>Add Transport Platform Mount.</Tooltip>
+      <Cost>
+        <wood>100</wood>
+		<stone>100</stone>
+      </Cost>
+      <Time>10</Time>
+	  <RequiredTechnology>deku/orhatgiant_platform</RequiredTechnology>
+    </OrhatA>
+	<OrhatB>
+      <Entity>units/deku/deku_orhatgiant_upgB</Entity>
+      <Tooltip>Add Siege Platform Mount.</Tooltip>
+      <Cost>
+        <wood>100</wood>
+		<stone>100</stone>
+      </Cost>
+      <Time>10</Time>
+	  <RequiredTechnology>deku/kado_mountengine</RequiredTechnology>
+    </OrhatB>
+  </Upgrade>     
 </Entity>

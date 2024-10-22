@@ -8,16 +8,18 @@
       </Archer1>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <SpawnGarrison>
-      <Template>units/deku/deku_dekupult_orhat</Template>
-      <SpawnNumber>1</SpawnNumber>
-      <LinkedDestruction>true</LinkedDestruction>
-    </SpawnGarrison>
-  </Health>
+  <GarrisonHolder>
+    <Max>1</Max>
+    <EjectHealth>0.075</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">OrhatSiege</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>6</LoadingRange>
+  </GarrisonHolder> 
   <Identity>
     <GenericName>Giant Orhat (Engine Mount)</GenericName>
   </Identity>
+  <Upgrade disable="" />  
   <VisualActor>
     <Actor>units/deku/deku_orhat_giant_upg.xml</Actor>
   </VisualActor>
