@@ -65,6 +65,7 @@
     <Civ>lizalfos</Civ>
     <Classes datatype="tokens">Medium Volvamight FemaleCitizen Peon</Classes>
     <GenericName>Aeralfos Peon</GenericName>
+    <SpecificName>Aeralfos Peon</SpecificName>	
     <History>The backbone and workforce of the Lizalfos people, Peons endlessly toiled to build their altars and monuments and provide sacrifices to the gods.</History>
     <Icon>units/lizalfos/liz_aeralpeon.dds</Icon>
     <Lang>lizalfos</Lang>
@@ -76,12 +77,14 @@
     <Floating>true</Floating>
   </Position>
   <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed> 
     <Capacities>
       <food>10</food>
       <metal>10</metal>
       <stone>10</stone>
       <wood>10</wood>
     </Capacities>
+    <MaxDistance>2.0</MaxDistance>	
     <Rates>
       <food.meat>1</food.meat>
       <food.sacrifices>0.5</food.sacrifices>
