@@ -88,6 +88,12 @@
   <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>10</food>
+      <metal>10</metal>
+      <stone>10</stone>
+      <wood>10</wood>
+    </Capacities>	
     <Rates>
       <food.fruit>0.5</food.fruit>
       <food.grain>0.25</food.grain>
