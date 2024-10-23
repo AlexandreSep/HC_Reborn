@@ -1,4 +1,13 @@
 <Entity parent="units/deku/deku_orhatgiant_b">
+  <Cost>
+   <BuildTime>20</BuildTime>
+    <Resources>
+      <food>250</food>
+      <metal>0</metal>
+      <stone>200</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -8,16 +17,16 @@
       </Archer1>
     </TurretPoints>
   </TurretHolder>
-  <GarrisonHolder>
-    <Max>1</Max>
-    <EjectHealth>0.075</EjectHealth>
-    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">OrhatSiege</List>
-    <BuffHeal>0</BuffHeal>
-    <LoadingRange>6</LoadingRange>
-  </GarrisonHolder> 
+  <Health>    
+	<SpawnGarrison>
+		<Template>units/deku/deku_dekupult_orhat</Template>
+		<SpawnNumber>1</SpawnNumber>
+		<LinkedDestruction>true</LinkedDestruction>
+	</SpawnGarrison>
+  </Health>
   <Identity>
     <GenericName>Giant Orhat (Engine Mount)</GenericName>
+	<RequiredTechnology>deku/kado_mountengine</RequiredTechnology>	
   </Identity>
   <Upgrade disable="" />  
   <VisualActor>

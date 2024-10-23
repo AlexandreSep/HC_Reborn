@@ -1,0 +1,11 @@
+<Entity parent="units/deku/deku_scrubling_b">
+  <Attack>
+    <Ranged>
+      <MinRange>0.0</MinRange>
+    </Ranged>
+  </Attack>
+    <Turretable />
+  <Identity>
+    <Classes datatype="tokens">HiddenUI</Classes>
+  </Identity>
+</Entity>

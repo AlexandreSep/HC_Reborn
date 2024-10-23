@@ -63,8 +63,10 @@
       </step3>
     </DestinationOffset>
     <Entities datatype="tokens">
-      units/deku/{civ}_orhat_b
-    units/deku/{civ}_orhatgiant_b
+		units/deku/{civ}_orhat_b
+		units/deku/{civ}_orhatgiant_b
+		units/deku/{civ}_orhatgiant_upgA		
+		units/deku/{civ}_orhatgiant_upgB
     </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
