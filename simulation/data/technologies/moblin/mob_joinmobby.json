@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Does not require Phases.",
 	"icon": "moblin/mob_joinmobby.dds",
 	"researchTime": 40,
-	"tooltip": "What are ya all afraid?! Moblins are never afraid! Get off your butts and join the big bad mob of Moblins nooowww! (Moblin Mob battalion size increases by 25%. Up to 25% of a Moblin Mob battalion can be restored for free)",
-	"modifications": [],
+	"tooltip": "What are ya all afraid?! Moblins are never afraid! Get off your butts and join the big bad mob of Moblins nooowww! (Moblin Mob train 20% faster)",
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.80 }],
 	"affects": ["MoblinMob"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
