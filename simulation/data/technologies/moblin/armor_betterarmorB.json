@@ -8,9 +8,9 @@
 	"icon": "moblin/armor_betterarmorB.dds",
 	"researchTime": 40,
 	"tooltip": "Ohohoho we like this! Even better armor to keep us not dead and the baddies more dead! (Increases all non-magic armor of soldiers by +4)",
-	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 4.0},
-		{"value": "Resistance/Entity/Damage/Pierce", "add": 4.0},
-		{"value": "Resistance/Entity/Damage/Crush", "add": 4.0}],
-	"affects": ["Soldier"],
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 5.0}],
+	"affects": ["Organic"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
