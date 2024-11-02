@@ -50,7 +50,7 @@
     <Max>Infinity</Max>
     <DiminishingReturns>0.90</DiminishingReturns>
     <KillBeforeGather>false</KillBeforeGather>
-    <MaxGatherers>1</MaxGatherers>
+    <MaxGatherers>3</MaxGatherers>
     <Type>food.fish</Type>
   </ResourceSupply>
   <Sound>
