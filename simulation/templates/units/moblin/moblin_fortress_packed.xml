@@ -51,7 +51,7 @@
   <Upgrade>
     <Tower>
       <CheckPlacementRestrictions />
-      <Entity>structures/moblin_fortress</Entity>
+      <Entity>structures/moblin/moblin_fortress</Entity>
       <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Unpack this Big Bad Battle Base.</Tooltip>
