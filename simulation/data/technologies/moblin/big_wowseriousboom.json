@@ -7,7 +7,7 @@
 	"icon": "moblin/big_wowseriousboom.dds",
 	"researchTime": 40,
 	"tooltip": "Hinox have the big blue bombs, but what if they had even bigger ones?! Wow that'd be a serious big boom! (Hinox attack range increases by 15%, Splash Damage increases by 10%)",
-	"modifications": [{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 1.15},
+	"modifications": [{"value": "Attack/Ranged/MaxRange", "multiply": 1.15},
 					  {"value": "Attack/Ranged/Damage/Splash/Fire", "multiply": 1.10}],
 	"affects": ["Hinox"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
