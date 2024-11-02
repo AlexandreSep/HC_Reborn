@@ -67,7 +67,6 @@
     </Technologies>
   </ProductionQueue>
   <Selectable>
-    <EditorOnly />
     <Overlay>
       <Outline>
         <LineTexture>outline_border.png</LineTexture>
