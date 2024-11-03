@@ -44,7 +44,7 @@
   <Upgrade>
     <TowerA>
       <Cost>
-        <stone>100</stone>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_field</Entity>
       <Time>30</Time>
@@ -53,7 +53,7 @@
     </TowerA>
     <TowerB>
       <Cost>
-        <stone>100</stone>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_temple</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -63,7 +63,7 @@
     </TowerB>
     <TowerC>
       <Cost>
-        <stone>100</stone>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_bank</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -73,8 +73,7 @@
     </TowerC>
     <TowerD>
       <Cost>
-        <stone>100</stone>
-        <wood>100</wood>
+        <wood>80</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_watch_towerB</Entity>
       <Time>30</Time>
