@@ -12,7 +12,7 @@
   "icon": "lanayru/aydia_drafting.dds",
   "researchTime": 40,
   "tooltip": "+25% Attack Range - Coral Archers, Silver Archers, and Coralmold Ballista.",
-  "modifications": [   {"value": "Attack/Ranged/Damage/MaxRange", "multiply": 1.25}  ],
+  "modifications": [   {"value": "Attack/Ranged/MaxRange", "multiply": 1.25}  ],
   "affects": [ "HarrowBolt" ],
   "hideIfTechnologyRequirementIsNotMet": "true",
   "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
