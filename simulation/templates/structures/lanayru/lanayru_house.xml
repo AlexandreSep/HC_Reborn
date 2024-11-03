@@ -35,7 +35,7 @@
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
   <Population>
-    <Bonus>15</Bonus>
+    <Bonus>3</Bonus>
   </Population>
   <ProductionQueue>
     <BatchTimeModifier>1.0</BatchTimeModifier>
