@@ -62,7 +62,7 @@
     </PlotsToSpawn>
   </Plots>
   <Population>
-    <Bonus>25</Bonus>
+    <Bonus>8</Bonus>
   </Population>
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
