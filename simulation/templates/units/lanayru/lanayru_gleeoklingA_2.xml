@@ -41,7 +41,7 @@
   </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">Large Class100</Classes>
+    <Classes datatype="tokens">Large Class100 Gleeockling_base</Classes>
     <GenericName>Gleeokling</GenericName>
     <History>Offspring of the legendary Gleeok Dragon, these semi-aquatic creatures are some of the only dragons left in Hyrule. Lanayru Province has gone through great efforts to tame these beasts and use their power to aid their military. A Gleeokling has multiple heads on its body which will continually regenerate if one is lost. A Gleeokling can survive and heal any injury so long as one of its heads remains attached to its body; thus the only way to slay this creature is to decapitate all of its heads.</History>
     <Icon>units/lanayru/lan_gleeockling_2.dds</Icon>
