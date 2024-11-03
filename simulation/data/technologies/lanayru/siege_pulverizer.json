@@ -7,7 +7,7 @@
 	"icon": "lanayru/siege_pulverizer.dds",
 	"researchTime": 40,
 	"tooltip": "Coralmold Ballista now deals Truedamage for 100% of its attacks)",
-	"modifications": [{"value": "Attack/Melee/Damage/Pierce", "multiply": 2.0}],
+	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "multiply": 2.0}],
 	"affects": ["Coralbolt"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
