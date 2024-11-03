@@ -7,7 +7,7 @@
 	"icon": "lanayru/barracks_snakeeyes.dds",
 	"researchTime": 40,
 	"tooltip": "Increases the Coral Archer's chance to deal Truedamage by 50%)",
-	"modifications": [{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.5}],
+	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.5}],
 	"affects": ["CoralArcher"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
