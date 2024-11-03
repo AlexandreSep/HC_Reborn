@@ -2,7 +2,7 @@
   <Upgrade>
     <TowerA>
       <Cost>
-        <wood>60</wood>
+        <wood>50</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_houseB</Entity>
       <Time>20</Time>
