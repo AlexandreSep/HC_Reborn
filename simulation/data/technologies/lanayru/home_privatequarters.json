@@ -1,13 +1,13 @@
 {
 	"genericName": "Private Quarters",
 	"description": "Having three Cove add-ons to the Home Hub now provides an extra +3 Population",
-	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 450},
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 100},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "lanayru"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "lanayru/home_privatequarters.dds",
 	"researchTime": 40,
 	"tooltip": "Having three Cove add-ons to the Home Hub now provides an extra +3 Population",
-	"modifications": [{"value": "Cost/PopulationBonus", "add": 3}],
+	"modifications": [{"value": "Population/Bonus", "add": 1}],
 	"affects": ["House"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
