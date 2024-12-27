@@ -34,7 +34,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Sandsniper</Classes>
+    <Classes datatype="tokens">Medium Sandsniper Archer</Classes>
     <GenericName>Sand Sniper</GenericName>
     <History>The Gerudo Sand Snipers represent some of the best archers in all the desert. Trained from a very young age in the art of the bow, Sand Snipers are infamous for their ability to hit their targets dead-on from extremely long ranges. There are few individuals in Hyrule who can best them from a distance. </History>
     <Icon>units/gerudo/ger_sandsniper.dds</Icon>

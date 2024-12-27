@@ -34,7 +34,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Large GanondorfCav</Classes>
+    <Classes datatype="tokens">Large GanondorfCav Archer</Classes>
     <GenericName>Trailblazer</GenericName>
     <History>A scout and explorer, the Trailblazer spends most of her life on the borders of the Gerudo Desert or in foreign lands. During times of war, Trailblazers are called to track the movements of enemy forces, whom in most cases they can easily outrun.</History>
     <Icon>units/gerudo/ger_trailblazer.dds</Icon>

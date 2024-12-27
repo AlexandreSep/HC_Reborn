@@ -35,7 +35,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Seal Large DuneWalker</Classes>
+    <Classes datatype="tokens">Seal Large DuneWalker Archer</Classes>
     <GenericName>Dune Walker</GenericName>
     <History>The Sandseals native to the Gerudo Desert are difficult to tame, but the Gerudo have mastered the beasts. Slow, but durable and immune to the deadly sandstorms of the desert, Sandseal Dune Walkers may lack speed, but they are guaranteed to bring themselves and their riders to their destinations, even if they have to cross bodies of water. Mounted by an archer, they are excellent rear-line cavalry.</History>
     <Icon>units/gerudo/ger_dunewalker.dds</Icon>

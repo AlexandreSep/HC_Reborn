@@ -39,7 +39,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">HeroRiju Hero2 Seal Large</Classes>
+    <Classes datatype="tokens">HeroRiju Hero2 Seal Large Archer</Classes>
     <GenericName>Princess of the Gerudo</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The daughter of Ganondorf and Nabooru and the legal heir to the Gerudo throne, Riju has a fondness for Sandseals, and seeks to rebuild the fallen Gerudo Empire through means other than conquest.</History>

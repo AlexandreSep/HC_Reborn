@@ -1,7 +1,7 @@
 <Entity parent="HC_template_unit_cavalry">
   <Attack>
     <Ranged>
-      <AttackName>Arroows</AttackName>
+      <AttackName>Arrows</AttackName>
       <Damage>
         <Pierce>22.0</Pierce>
       </Damage>
@@ -35,7 +35,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Seal Large UniqueUnit DustSentinel</Classes>
+    <Classes datatype="tokens">Seal Large UniqueUnit DustSentinel Archer</Classes>
     <GenericName>Dust Sentinel</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The reclusive Dust Sentinels are the stoic guardians of the desert borders. Capable of bunkering down, these Sandseal riders create a thick cloud of dust around themselves, which renders them invisible even while attacking, so long as they are stationary.</History>
