@@ -9,7 +9,7 @@
 	"tooltip": " +10 Dodge Rating and +10% Walk/Run Speed - All Infantry",
 	"modifications": [		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.10 },
 							{ "value": "UnitMotion/RunMultiplier", "multiply": 1.10 },
-							{"value": "Resistance/Entity/Damage/DodgeRating", "add": 10}],
+							{"value": "Resistance/DodgeRating", "add": 10}],
 	"affects": ["Infantry"],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
