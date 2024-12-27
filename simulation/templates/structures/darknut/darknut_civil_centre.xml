@@ -44,12 +44,6 @@
   <Health>
     <Max>6000</Max>
     <SpawnEntityOnDeath>rubble/debris_darknut_agoraA</SpawnEntityOnDeath>
-    <SpawnMultipleEntitiesOnDeath>
-      <Chance>100</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
-      <Template>structures/node_civcenterA</Template>
-    </SpawnMultipleEntitiesOnDeath>
   </Health>
   <Identity>
     <Civ>darknut</Civ>

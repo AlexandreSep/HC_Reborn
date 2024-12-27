@@ -18,12 +18,6 @@
   <Health>
     <Max>200</Max>
     <SpawnEntityOnDeath>rubble/debris_moblin_tiny</SpawnEntityOnDeath>
-    <SpawnMultipleEntitiesOnDeath>
-      <Chance>100</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
-      <Template>structures/node_civcenterA</Template>
-    </SpawnMultipleEntitiesOnDeath>
   </Health>
   <Identity>
     <Civ>moblin</Civ>

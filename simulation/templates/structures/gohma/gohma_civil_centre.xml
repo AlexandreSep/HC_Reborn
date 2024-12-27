@@ -42,12 +42,6 @@
   <Health>
     <Max>6000</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
-    <SpawnMultipleEntitiesOnDeath>
-      <Chance>100</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
-      <Template>structures/node_civcenterA</Template>
-    </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
       <Interval>10000</Interval>
       <LinkedDestruction>true</LinkedDestruction>

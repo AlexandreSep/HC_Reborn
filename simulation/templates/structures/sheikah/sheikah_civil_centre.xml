@@ -15,12 +15,6 @@
   <Health>
     <Max>2500</Max>
     <SpawnEntityOnDeath>rubble/debris_sheikah_clanhallA</SpawnEntityOnDeath>
-    <SpawnMultipleEntitiesOnDeath>
-      <Chance>100</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
-      <Template>structures/node_civcenterA</Template>
-    </SpawnMultipleEntitiesOnDeath>
   </Health>
   <Identity>
     <Civ>sheikah</Civ>

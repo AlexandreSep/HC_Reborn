@@ -57,12 +57,6 @@
   <Health>
     <Max>2500</Max>
     <SpawnEntityOnDeath>rubble/debris_gerudo_palaceA</SpawnEntityOnDeath>
-    <SpawnMultipleEntitiesOnDeath>
-      <Chance>100</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
-      <Template>structures/node_civcenterA</Template>
-    </SpawnMultipleEntitiesOnDeath>
     <SpawnGarrison>
       <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
       <SpawnNumber>7</SpawnNumber>
