@@ -13,7 +13,7 @@
   </Attack>
   <Auras datatype="tokens">
     units/commander_aura_1
-	units/ashinon_aura_2
+	units/ashinon_aura_1
   </Auras>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
@@ -39,6 +39,10 @@
     <Tooltip>Melee Commander unit that bolsters other Gerudo troops in battle.</Tooltip>
     <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
   </Identity>
+  <Promotion>
+    <Entity>units/gerudo/gerudo_ashcap_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion> 
   <Resistance>
     <Entity>
       <Damage>

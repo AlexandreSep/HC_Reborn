@@ -6,10 +6,10 @@
 	"requirementsTooltip": "Requires City Phase.",
 	"icon": "gerudo/mystathi_lore.dds",
 	"researchTime": 40,
-	"tooltip": "Sacred magic of the ancient Gerudo ice sorceress, Mystathi. (Ranged Attack Rate 0.5 seconds - Ice Archer)",
-	"modifications": [{ "value": "Attack/Ranged/Damage/PrepareTime", "add": -500 }, 
-		{ "value": "Attack/Ranged/Damage/RepeatTime", "add": -500 },
-		{"value": "Attack/Ranged/Damage/ProjectileSpeed", "add": 10.0}],
+	"tooltip": "Sacred magic of the ancient Gerudo ice sorceress, Mystathi. (Ranged Attack Rate -0.5 seconds - Ice Archer)",
+	"modifications": [{ "value": "Attack/Ranged/PrepareTime", "add": -500 }, 
+		{ "value": "Attack/Ranged/RepeatTime", "add": -500 },
+		{"value": "Attack/Ranged/ProjectileSpeed", "add": 10.0}],
 	"affects": ["IceArcher"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

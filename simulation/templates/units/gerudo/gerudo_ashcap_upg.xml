@@ -1,0 +1,7 @@
+<Entity parent="units/gerudo/gerudo_ashcap_b">
+  <Promotion disable="" />
+  <Auras datatype="tokens">
+    units/commander_aura_2
+	units/ashinon_aura_2
+  </Auras>
+</Entity>

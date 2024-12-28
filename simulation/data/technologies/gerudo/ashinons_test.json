@@ -7,7 +7,7 @@
 	"icon": "gerudo/ashinons_test.dds",
 	"researchTime": 40,
 	"tooltip": "These grueling trials and tests yield some impressive Gerudo commanders. (+10 Meter Aura Range - Ashinon Captain)",
-	"modifications": [],
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
 	"affects": ["AshCap"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
