@@ -57,7 +57,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium FemaleCitizen</Classes>
+    <Classes datatype="tokens">Medium FemaleCitizen Human</Classes>
     <GenericName>Artisan</GenericName>
     <History>The workforce of the Gerudo people, Artisans are extremely strong and fit civilians that help to build the great desert cities. They are completely subserviant to Emperor Ganondorf and his Arbiters, performing a large variety of tasks such as building and gathering resources.</History>
     <Icon>units/gerudo/ger_artisan.dds</Icon>

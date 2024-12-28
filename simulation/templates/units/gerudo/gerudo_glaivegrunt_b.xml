@@ -32,7 +32,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium GlaiveGrunt Spearmen</Classes>
+    <Classes datatype="tokens">Medium GlaiveGrunt Spearmen Human</Classes>
     <GenericName>Glaive Grunt</GenericName>
     <History>Scores of Glaive Grunts patrol the military bases across the Gerudo Desert, guarding the Empire's borders and keeping a vigilant watch for any incursion. Armed with the Gerudo's signature glaive, these women can halt charging enemies and keep cavalry at bay.</History>
     <Icon>units/gerudo/ger_glaivegrunt.dds</Icon>

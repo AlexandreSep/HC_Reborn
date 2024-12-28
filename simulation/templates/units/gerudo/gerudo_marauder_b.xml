@@ -25,7 +25,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Marauder GoldenArmor</Classes>
+    <Classes datatype="tokens">Medium Marauder GoldenArmor Human</Classes>
     <GenericName>Marauder</GenericName>
     <History>Gerudo Marauders are comprised of many of the nation's youngest warriors, just fresh out of training. With little armor to worry about, Marauders can sprint across the sands of their homeland with ease, and swiftly raid enemy settlements with their scimitar.</History>
     <Icon>units/gerudo/ger_marauder.dds</Icon>

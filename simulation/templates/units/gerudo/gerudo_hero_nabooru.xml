@@ -40,7 +40,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">HeroNabooru Hero3 Medium</Classes>
+    <Classes datatype="tokens">HeroNabooru Hero3 Medium Human</Classes>
     <GenericName>Sage of Spirits</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The legal wife of Ganondorf and Empress of the Gerudo, as well as the Sage of Spirits. Nabooru faces a struggle between loyalty to her husband, and her duty of Sagehood and to the greater safety of Hyrule.</History>

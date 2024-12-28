@@ -26,7 +26,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Class100 UniqueUnit Goldenglad</Classes>
+    <Classes datatype="tokens">Medium Class100 UniqueUnit Goldenglad Human</Classes>
     <GenericName>Golden Gladiator</GenericName>
     <History>Wielding a huge two-handed claymore, Golden Gladiators use their impressive strength and speed to overpower lesser enemies. They are swift on their feet, can dodge well in a melee, and their strength and weapon of choice allows them to crack open enemy armor with ease.</History>
     <Icon>units/gerudo/ger_goldenglad.dds</Icon>

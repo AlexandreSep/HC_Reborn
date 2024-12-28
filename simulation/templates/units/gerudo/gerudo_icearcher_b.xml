@@ -53,7 +53,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Class90 WaterElement IceArcher Archer</Classes>
+    <Classes datatype="tokens">Medium Class90 WaterElement IceArcher Archer Human</Classes>
     <GenericName>Ice Archer</GenericName>
     <History>After years of arduous training, Gerudo women are given the chance to enter the infamous Gerudo Training Grounds. Should they survive, they emerge victorious. with Ice Arrows in hand. These ancient magical weapons can fire a deadly arrow coated in frost. On contact. they explode and instantly freeze anything near their impact.</History>
     <Icon>units/gerudo/ger_icearcher.dds</Icon>

@@ -32,7 +32,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium MirrorShield SerpentSlayer</Classes>
+    <Classes datatype="tokens">Medium MirrorShield SerpentSlayer Human</Classes>
     <GenericName>Serpent Slayer</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Dressed in ceremonial golden armor in the likeness of Kovaloo, First Sage of Spirits, Serpent Slayers guard the hidden depths of Gerudo Tombs across the desert. Armed with a Khopesh and the legendary Mirror Shield, they are completely immune to all elemental and magical attacks, making them excellent at killing mages and other mystical beasts in battle.</History>

@@ -36,7 +36,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Gerudadorf</Classes>
+    <Classes datatype="tokens">Medium Gerudadorf Human</Classes>
     <GenericName>Gerudadorf</GenericName>
     <History>Armed with a pair of Katars, the Gerudadorf serve as battlefield assassins and ambush masters. Well trained in the art of stealth, Gerudadorf take advantage of both their environment and the chaos of battle to slip through enemy ranks and kill high-priority targets.</History>
     <Icon>units/gerudo/ger_gerudadorf.dds</Icon>

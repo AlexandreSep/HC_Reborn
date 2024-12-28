@@ -31,7 +31,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Class100 MirrorShield TombGuard Spearmen GoldenArmor</Classes>
+    <Classes datatype="tokens">Medium Class100 MirrorShield TombGuard Spearmen GoldenArmor Human</Classes>
     <GenericName>Tomb Guard</GenericName>
     <History>High-ranking soldiers in the Gerudo military, Tomb Guards watch over the graves of long-deceased Gerudo Kings, as well as the Royal Palace and other political centers. Armed with a Trident-Spear and shining Golden Shield, Tomb Guards can stand their ground and hold off almost any foe.</History>
     <Icon>units/gerudo/ger_tombguard.dds</Icon>

@@ -50,7 +50,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium SpiritElement Class80 WindWitch</Classes>
+    <Classes datatype="tokens">Medium SpiritElement Class80 WindWitch Human</Classes>
     <GenericName>Wind Witch</GenericName>
     <History>Elder Matriarchs of Gerudo society, the Wind Witches took control of the desert Empire after their male kings became extinct. Dark magics of the ancient desert have given them extraordinarily long lives, as well as power over sand and wind. They are feared and revered by all Gerudo.</History>
     <Icon>units/gerudo/ger_windwitch.dds</Icon>

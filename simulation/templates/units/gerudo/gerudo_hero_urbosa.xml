@@ -30,7 +30,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">HeroUrbosa Hero1 Medium</Classes>
+    <Classes datatype="tokens">HeroUrbosa Hero1 Medium Human</Classes>
     <GenericName>Ashinon General</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>One of Ganondorf's countless daughters, born to a lowly mother, Urbosa seeks the approval of her father, and religiously serves in his army and supports his campaign to conquer all of Hyrule.</History>

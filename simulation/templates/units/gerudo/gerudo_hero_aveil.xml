@@ -36,7 +36,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">HeroAveil Hero5 Medium</Classes>
+    <Classes datatype="tokens">HeroAveil Hero5 Medium Human</Classes>
     <GenericName>Queen of Pirates</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The master of the Gerudo Pirates, brought back under the Gerudo banner by Ganondorf. Aveil has long lived without any oversight and plundered many sea fareres across the Great Sea over the years. Now her power and resources have been turned to the Gerudo navy.</History>

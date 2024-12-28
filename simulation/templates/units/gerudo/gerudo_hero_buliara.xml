@@ -35,7 +35,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">HeroBuliara Hero6 Medium</Classes>
+    <Classes datatype="tokens">HeroBuliara Hero6 Medium Human</Classes>
     <GenericName>Palace Guard</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The latest in a line of Gerudo who have guarded the throne. Buliara served as a personal bodyguard for Ganondorf and later his daughter Riju.</History>
