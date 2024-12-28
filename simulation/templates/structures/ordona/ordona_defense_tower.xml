@@ -70,7 +70,7 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Technologies datatype="tokens">
-	  ordona/tower_boozebowls
+
     </Technologies>
   </ProductionQueue>
   <Sound>
