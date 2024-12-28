@@ -1,4 +1,4 @@
-<Entity parent="template_unit_fauna_herd_domestic">
+<Entity parent="template_unit_fauna_herd_horse">
   <Cost>
     <BuildTime>25</BuildTime>
     <Resources>
@@ -15,7 +15,7 @@
     <GenericName>Meat</GenericName>
     <History />
     <Icon>gaia/fauna_gerudoswine.dds</Icon>
-    <SpecificName>Gerudo Swine</SpecificName>
+    <SpecificName>Gerudo Very Well Fed Swine</SpecificName>
     <Tooltip>Lifeblood of the Gerudo people in the infertile desert, these hardy pigs are easy to raise and maintain, being able to subside on the meager vegetable scraps grown in the desert soil.</Tooltip>
   </Identity>
   <Position>

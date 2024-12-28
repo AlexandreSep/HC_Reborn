@@ -1,4 +1,4 @@
-<Entity parent="template_unit_fauna_herd_domestic">
+<Entity parent="template_unit_fauna_herd_horse">
   <Cost>
     <BuildTime>25</BuildTime>
     <Resources>
