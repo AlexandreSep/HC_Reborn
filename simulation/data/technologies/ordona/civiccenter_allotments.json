@@ -35,6 +35,6 @@
       "add": 4.0
     }
   ],
-  "affects": [ "Citizen" ],
+  "affects": [ "Worker" ],
   "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

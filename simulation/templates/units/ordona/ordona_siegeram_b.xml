@@ -35,7 +35,7 @@
   </Health>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">-Organic Construct Class40</Classes>
+    <Classes datatype="tokens">-Organic Construct Class40 Ram</Classes>
     <GenericName>Battering Ram</GenericName>
     <History>Made from sturdy Faron wood and capped with a large metal Goat head, the Siege Ram allows the Ordonians to bash their way past walls and gates and into protected areas. Their capped roof makes them quite resistant to ranged attacks, forcing enemies to bombard them with fire or stop them in a melee.</History>
     <Icon>units/ordona/ord_siegeram.dds</Icon>
