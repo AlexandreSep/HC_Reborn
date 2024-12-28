@@ -20,7 +20,7 @@
   </Attack>
   <Builder>
     <Entities datatype="tokens">
-      structures/ordona/ordona_civil_center	
+      structures/ordona/ordona_civil_centre	
       structures/ordona/ordona_house
       structures/ordona/ordona_farmstead
       structures/ordona/ordona_field

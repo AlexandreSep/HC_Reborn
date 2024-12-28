@@ -19,8 +19,8 @@
   "tooltip": "(Catapult attack now deals fire damage and ignites anything within radius of impact)",
   "modifications": [
     {
-      "value": "Attack/Ranged/Damage/Fire",
-      "add": 10
+      "value": "Promotion/RequiredXp",
+      "replace": 0
     }
   ],
   "affects": [ "Catapult" ],

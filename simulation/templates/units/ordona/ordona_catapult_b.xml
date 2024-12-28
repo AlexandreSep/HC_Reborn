@@ -4,6 +4,7 @@
       <AttackName>Boulder</AttackName>
       <Damage>
         <Crush>300.0</Crush>
+		<Fire>20.0</Fire>
       </Damage>
       <Delay>0</Delay>
       <MaxRange>110.0</MaxRange>
@@ -47,6 +48,10 @@
     <Tooltip>Small but effective ranged Siege unit that can knock down enemy structures.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
+   <Promotion>
+    <Entity>units/ordona/ordona_catapult_upg</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>  
   <Resistance>
     <Entity>
       <Damage>
