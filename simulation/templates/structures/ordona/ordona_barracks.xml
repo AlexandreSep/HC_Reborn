@@ -74,7 +74,6 @@
     </SpawnOffset>
     <Technologies datatype="tokens">
     ordona/militiabooth_rushhour
-    ordona/militiabooth_criticalmass
     ordona/colin_grueling
     </Technologies>
   </ProductionQueue>
