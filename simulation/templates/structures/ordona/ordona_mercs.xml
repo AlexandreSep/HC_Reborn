@@ -54,6 +54,9 @@
       units/merc_forestthief_b
     units/merc_pikku_b
     units/merc_mago_b
+      units/ordona/merc_geru_b
+    units/ordona/merc_tinsuit_b
+    units/ordona/merc_wosu_b
     </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
@@ -69,7 +72,7 @@
       <Z>20</Z>
     </SpawnOffset>
     <Technologies datatype="tokens">
-    ordona/ashei_barterpromises
+    ordona/ashei_taverntips
     </Technologies>
   </ProductionQueue>
   <ResourceTrickle>
