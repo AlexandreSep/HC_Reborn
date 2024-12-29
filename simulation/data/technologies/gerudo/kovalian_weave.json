@@ -6,10 +6,10 @@
 	"requirementsTooltip": "Requires Town Phase.",
 	"icon": "gerudo/kovalian_weave.dds",
 	"researchTime": 50,
-	"tooltip": "Fine and durable weave that can be traced back to the ancient Kovalians. (+15% Armor - Humanoid)",
-	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.15},
-		{"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.15},
-		{"value": "Resistance/Entity/Damage/Crush", "multiply": 1.15}],
+	"tooltip": "Fine and durable weave that can be traced back to the ancient Kovalians. (+5% Armor - Humanoid)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 5.0}],
 	"affects": ["Human"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
