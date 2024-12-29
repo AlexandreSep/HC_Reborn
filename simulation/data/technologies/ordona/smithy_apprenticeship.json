@@ -10,6 +10,6 @@
 	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.15},
 		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.15},
 		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.15}],
-	"affects": ["Infantry Melee"],
+	"affects": ["Infantry", "Melee"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

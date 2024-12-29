@@ -29,7 +29,7 @@
     <Max>Infinity</Max>
     <DiminishingReturns>0.90</DiminishingReturns>
     <KillBeforeGather>false</KillBeforeGather>
-    <MaxGatherers>1</MaxGatherers>
+    <MaxGatherers>5</MaxGatherers>
     <Type>food.grain</Type>
   </ResourceSupply>
   <Upgrade>
