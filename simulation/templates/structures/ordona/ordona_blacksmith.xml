@@ -39,13 +39,11 @@
   <ProductionQueue>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Technologies datatype="tokens">
-    ordona/smithy_apprenticeship
-    ordona/smithy_cottoncuirass
-    ordona/smithy_ramscrown
-    ordona/smithy_isonarrow
-    ordona/smithy_apprenticeship_rusl
-    ordona/smithy_isonarrow_rusl
-    ordona/rusl_academycraft
+      ordona/smithy_cottoncuirass
+      ordona/smithy_ramscrown
+      ordona/smithy_apprenticeship
+      ordona/smithy_isonarrow
+      ordona/rusl_academycraft
     </Technologies>
   </ProductionQueue>
   <Sound>
