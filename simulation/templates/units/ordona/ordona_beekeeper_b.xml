@@ -48,6 +48,12 @@
     units/beekeeper_honey_1
   units/beekeeper_honey_2
   </Auras>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/ordona/ordona_beehive
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>  
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>

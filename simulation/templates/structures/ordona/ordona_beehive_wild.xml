@@ -1,0 +1,61 @@
+<Entity parent="HC_template_structure_civilian">
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>5</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>50</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="1.0" />
+    <Height>1.0</Height>
+  </Footprint>
+  <Decay>
+    <Active>false</Active>
+    <DelayTime>0.0</DelayTime>
+    <SinkAccel>0.01</SinkAccel>
+    <SinkRate>0.0</SinkRate>
+    <SinkingAnim>false</SinkingAnim>
+  </Decay>  
+  <Health>
+    <Max>20</Max>
+    <SpawnOnInterval>
+      <Interval>5000</Interval>
+      <LinkedDestruction>false</LinkedDestruction>
+      <Max>2</Max>
+      <SpawnNumber>1</SpawnNumber>
+      <StartDelay>3000</StartDelay>
+      <Template>gaia/fauna_beeswarm_wild</Template>
+	  <OwnerID>0</OwnerID>
+    </SpawnOnInterval>		
+	<DeathType>corpse</DeathType>
+	<SpawnEntityOnDeath></SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>ordona</Civ>
+    <Classes datatype="tokens">Bee Hive</Classes>
+    <GenericName>Bee Hive</GenericName>
+    <History>A wild bee hive, spawning aggressive bee swarms.</History>
+    <Icon>technologies/ordona/apiary_wildhives.dds</Icon>
+    <Tooltip>A wild bee hive, spawning aggressive bee swarms.</Tooltip>
+    <VisibleClasses datatype="tokens">Defense</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="2.0" width="2.0" />
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/ordona/complete_apiary.xml</constructed>
+      <select>interface/select/building/ordona/sel_apiary.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_wildhiveA.xml</Actor>
+	<FoundationActor>structures/ordona/ordona_wildhiveA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

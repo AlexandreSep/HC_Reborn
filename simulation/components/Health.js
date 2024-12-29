@@ -87,6 +87,9 @@ Health.prototype.Schema =
             "<element name='Interval' a:help='the interval time in miliseconds'><data type='positiveInteger'/></element>" +
             "<element name='SpawnNumber' a:help='The amount spawned per interval'><data type='positiveInteger'/></element>" +
             "<element name='LinkedDestruction' a:help='whether the destruction of the component holder will result in the death of the spawned units'><data type='boolean'/></element>" +
+			"<optional>" +
+                "<element name='OwnerID' a:help='Which owner it should belong to.'><ref name='nonNegativeDecimal'/></element>" +
+            "</optional>" +	
         "</interleave>" +
         "</element>" +
     "</optional>" +

@@ -328,7 +328,7 @@ Health.prototype.SpawnOnIntervalInit = function ()
             "startDelay": +this.template.SpawnOnInterval.StartDelay,
             "interval": ApplyValueModificationsToEntity("Health/SpawnOnInterval/Interval", +this.template.SpawnOnInterval.Interval, this.entity),
             "spawnNumber": ApplyValueModificationsToEntity("Health/SpawnOnInterval/SpawnNumber", +this.template.SpawnOnInterval.SpawnNumber, this.entity),
-            "linkedDestruction": this.template.SpawnOnInterval.LinkedDestruction != "false"
+            "linkedDestruction": this.template.SpawnOnInterval.LinkedDestruction != "false",
         };
 
         if (this.intervalSpawnedEntities == undefined) // if this list is already created (from the upgrade section), dont remake it
@@ -367,9 +367,19 @@ Health.prototype.SpawnOnInterval = function ()
 	    cmpSpawnedHealth.freeUnit = true;	// Mark this unit as a "free" unit. So we don't need to subtract a unit from the battalion count if it dies
 
         var cmpSpawnedOwnership = Engine.QueryInterface(spawnedEntity, IID_Ownership);
-        if (cmpOwnership && cmpSpawnedOwnership)
-            cmpSpawnedOwnership.SetOwner(cmpOwnership.GetOwner());
-
+		
+		let ownerID = this.template.SpawnOnInterval.OwnerID;
+        if (ownerID != undefined)
+        {
+            if (cmpSpawnedOwnership)
+                cmpSpawnedOwnership.SetOwner(+ownerID);
+        }
+        else
+        {
+            if (cmpOwnership && cmpSpawnedOwnership)
+                cmpSpawnedOwnership.SetOwner(cmpOwnership.GetOwner());
+        }
+		
         QueryOwnerInterface(spawnedEntity).AddBattalion([spawnedEntity]); //add this ent to a battalion so it functions inside the commands department
     }
 };
