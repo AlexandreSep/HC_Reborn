@@ -1,0 +1,6 @@
+<Entity parent="units/merc_wosu_b">
+  <Identity>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <RequiredTechnology>civ_choices/ordona/choosehero_ashei</RequiredTechnology>
+  </Identity>
+</Entity>
