@@ -1,0 +1,11 @@
+{
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "darknut/armor_legion_01"},{"tech": "civ_choices/darknut/choosehero_alros"}, {"civ": "darknut"}]},
+	"autoResearch": true,
+	"researchTime": 0,
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 5.0}],
+	"affects": ["Mercenary","Alrospromote"],
+	"soundComplete": ""
+}

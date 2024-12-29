@@ -1,0 +1,14 @@
+{
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+		"requirements": {"all": [{"tech": "darknut/attack_legion_02"},{"tech": "civ_choices/darknut/choosehero_alros"}, {"civ": "darknut"}]},
+	"autoResearch": true,
+	"researchTime": 0,
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.2},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2},
+		{"value": "Attack/Ranged/Damage/Hack", "multiply": 1.2},
+		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2},
+		{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.2}],
+	"affects": ["Mercenary","Alrospromote"],
+	"soundComplete": ""
+}
