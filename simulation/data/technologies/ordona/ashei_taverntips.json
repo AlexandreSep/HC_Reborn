@@ -1,0 +1,13 @@
+{
+	"genericName": "Tavern Tips",
+	"description": "Equipping a tavern for the tastes of various travelling people in Hyrule can lead to a nice bit of extra income",
+	"cost": {"food": 300, "wood": 200, "stone": 0, "metal": 0},
+	"requirements": {"all": [ {"tech": "civ_choices/ordona/choosehero_ashei"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "You must select Ashei as your hero.",
+	"icon": "ordona/ashei_barterpromises.dds",
+	"researchTime": 40,
+	"tooltip": "(All Taverns are now generating rupees.)",
+	"modifications": [{"value": "ResourceTrickle/Rates/metal", "add": 2}],
+	"affects": ["OrdTavern"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
