@@ -1,14 +1,10 @@
 {
-	"genericName": "Ison Arrows",
-	"description": ".",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
 	"requirements": {"all": [ {"tech": "civ_choices/ordona/choosehero_rusl"}, {"civ": "ordona"}]},
 	"autoResearch": true,
 	"replaces": ["ordona/smithy_isonarrow"],
-	"icon": "ordona/smithy_isonarrow.dds",
 	"researchTime": 0,
-	"tooltip": "(Tipped with the cursed metal of the Ison Valley, all Archer units deal +3 Pierce Damage)",
 	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "add": 3.0}],
-	"affects": ["Infantry Ranged"],
+	"affects": ["Infantry", "Ranged"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
