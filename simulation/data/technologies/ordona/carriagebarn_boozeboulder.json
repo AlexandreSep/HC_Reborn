@@ -17,11 +17,9 @@
   "icon": "ordona/carriagebarn_boozeboulder.dds",
   "researchTime": 40,
   "tooltip": "(Catapult attack now deals fire damage and ignites anything within radius of impact)",
-  "modifications": [
-    {
-      "value": "Promotion/RequiredXp",
-      "replace": 0
-    }
+  "modifications": [{"value": "Attack/Ranged/SpawnEntityOnImpact/SpawnOnHit/Chance","add": 100},
+					  {"value": "Attack/Ranged/SpawnEntityOnImpact/SpawnOnImpact/Chance", "add": 100},
+					  {"value": "Attack/Ranged/Damage/Fire", "add": 100}
   ],
   "affects": [ "Catapult" ],
   "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
