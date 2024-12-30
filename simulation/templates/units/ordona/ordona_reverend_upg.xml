@@ -1,4 +1,11 @@
 <Entity parent="HC_template_unit_auxiliary">
+  <Heal>
+    <HealableClasses datatype="tokens">Organic</HealableClasses>
+    <Health>2</Health>
+    <Range>30</Range>
+    <Interval>200</Interval>
+    <UnhealableClasses datatype="tokens" />
+  </Heal>
   <Auras datatype="tokens">
     units/deacon_chant_1
   units/deacon_chant_2
@@ -55,9 +62,5 @@
   </Sound>
   <VisualActor>
     <Actor>units/ordona/ordona_reverend_b.xml</Actor>
-  </VisualActor>
-  <Promotion>
-    <Entity>units/ordona/ordona_reverend_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>   
+  </VisualActor> 
 </Entity>

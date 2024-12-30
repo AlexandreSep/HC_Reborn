@@ -8,6 +8,6 @@
 		{ "value": "UnitMotion/RunMultiplier", "multiply": 0.50 }
 	],
 	"auraName": "Slippery Surface",
-	"auraDescription": "(-75% Movement Speed)",
+	"auraDescription": "(-50% Movement Speed)",
 	"overlayIcon": "art/textures/ui/session/auras/ice_slippery1.dds"
 }
