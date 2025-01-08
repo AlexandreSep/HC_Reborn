@@ -19,7 +19,7 @@
     <Max>270</Max>
   </Health>
   <Identity>
-    <Classes datatype="tokens">Organic</Classes>
+    <Classes datatype="tokens">Organic Cavalry</Classes>
     <Formations datatype="tokens">
       special/formations/wedge
     </Formations>
