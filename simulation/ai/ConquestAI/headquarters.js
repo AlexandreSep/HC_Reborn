@@ -2072,7 +2072,7 @@ var CONQUESTAI = function (m) {
     // convert startrange and endrange parameter into a list of 'regarded' ranges e.g. [1,3,6]
     // so in this example ranges 2,4 and 5 are disregarded automagically
     // the pattern has been figured out in the booklet
-    // regarded values takes every value except disregarded values higher than itself e.g. 3 = all values except 4 and 5
+    // regarded values takes every value except disregarded values higher than itself e.g. 3 = all values except 4 and 5 
     // disregarded values only takes regarded values higher than itself e.g. 2 = none except 3 and 6
     // so first get all horizontal tiles regardless of range or regardness levels
     // after this, if this range is regarded only skip the disregarded values higher than itself
