@@ -2,6 +2,12 @@
   <Attack>
     <Melee>
       <AttackName>Spear</AttackName>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
       <Damage>
         <Pierce>10.0</Pierce>
       </Damage>
@@ -70,25 +76,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.5789</RunMultiplier>
-    <WalkSpeed>9.5</WalkSpeed>
+    <WalkSpeed>11</WalkSpeed>
   </UnitMotion>
-  <ResourceGatherer>
-    <MaxDistance>2.0</MaxDistance>
-    <BaseSpeed>1.0</BaseSpeed>
-    <Rates>
-      <food.fruit>0.5</food.fruit>
-      <food.grain>0.25</food.grain>
-      <food.meat>0.5</food.meat>
-	  <food.fish>0.5</food.fish>
-      <wood.rock>0.5</wood.rock>
-      <wood.ruins>5</wood.ruins>
-      <stone.ore>0.5</stone.ore>
-	  <stone.coralmold>0.5</stone.coralmold>
-      <stone.ruins>2</stone.ruins>
-      <metal.rupees>0.25</metal.rupees>
-    </Rates>
-  </ResourceGatherer>  
   <Vision>
     <Range>85</Range>
   </Vision>

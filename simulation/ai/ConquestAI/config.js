@@ -14,7 +14,7 @@ var CONQUESTAI = function (m) {
 
         // the additional ratio of unresponsiveness for the AI per difficulty level from hard to very easy
         // 1.5 for hard = 50% additional time spent that the AI makes no major decisions for building, recruiting, teching, trading and attacking
-        this.difficultyRatio = [2, 3, 4, 5];
+        this.difficultyRatio = [1, 1.5, 3, 5];
 
         // Set the dialog for specific AI hero characters, the AI will use these for the personality system
         // ****************************************************************************************************************************
