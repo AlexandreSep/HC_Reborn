@@ -1,0 +1,18 @@
+{
+	"genericName": "Kad-A-Kana, Deku Princess",
+	"description": "Kad-A-Kana, Deku Princess.",
+	"icon": "deku/choosehero_dekuprincess.png",
+	"tooltip": "Select Kad-A-Kana, Deku Princess, as your hero of choice.",
+	"modifications": [   
+	{
+      "value": "Health/SpawnMultipleEntitiesOnDeath/Chance",
+      "replace": 100
+    }
+	],
+	"affects": ["ScrubCenter"],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Overwhelming Force Focus", "tooltipText": "Princess Kad-A-Kana focuses on creating overwhelming numbers of cheap Deku Scrub units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Princess Kad-A-Kana", "tooltipText": "Allows you to summon Princess Kad-A-Kana, a ranged hero that attacks with bursting bubbles."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Flower Thopter", "tooltipText": "Flying Scrub unit that drops explosive Deku Nuts on its targets."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Scrub Revenge", "tooltipText": "All buildings spawn a Battalion of Scrublings when destroyed."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Sonata of Awakening", "tooltipText": "Scrublings, Guardlings, Nutlings, and Megascrub Battalion size is increased."}]
+}

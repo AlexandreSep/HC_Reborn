@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/moblin_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>moblin</Civ>
+    <GenericName>Moblins</GenericName>
+    <History>Once the dominant power in what is now known as the Land of Famine, the Moblin's homeland was utterly devestated and left in ruins after a brutal war with the Akkalans. After centuries of slowly recovering, the Moblins and their Blin servants reunited under the guidance of the warlord Ganon. Now the united powers of Blin-kind seek to continue their relentless rampage across Hyrule.</History>
+    <Icon>emblems/emblem_moblin.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+    <SharedLosTech>culture_civilized/postman_network</SharedLosTech>
+  </Player>
+</Entity>
+

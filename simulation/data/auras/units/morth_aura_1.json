@@ -1,0 +1,23 @@
+{
+	"type": "range",
+	"radius": 5,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.95 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 0.95 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": -1 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": -1 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": -1 },	
+		{ "value": "Resistance/Entity/Damage/Forest", "add": -1 },
+		{ "value": "Resistance/Entity/Damage/Fire", "add": -1 },
+		{ "value": "Resistance/Entity/Damage/Water", "add": -1 },
+		{ "value": "Resistance/Entity/Damage/Shadow", "add": -1 },
+		{ "value": "Resistance/Entity/Damage/Spirit", "add": -1 },
+		{ "value": "Resistance/Entity/Damage/Light", "add": -1 }
+	],
+	"auraName": "Morthed",
+	"auraDescription": "(-5% Movement Speed, -1 of all Armor types. Stacks.)",
+    "stackable" : true ,
+	"overlayIcon": "art/textures/ui/session/auras/morth1.dds"
+}

@@ -13,16 +13,9 @@
   </Health>
   <Identity>
     <GenericName>School</GenericName>
-    <History>Education became an important part of Labrynna&#8217;s culture around the time of the industrial boon. Free public schools became available for all young citizens of the Empire shortly after their construction.</History>
+    <History>Education became an important part of Labrynna’s culture around the time of the industrial boon. Free public schools became available for all young citizens of the Empire shortly after their construction.</History>
     <Icon>structures/labrynna/lab_libraryB.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    labrynna/school_mathtech
-    labrynna/school_approvedreading
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <Tower>
       <Cost>
@@ -38,4 +31,13 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_libraryB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/school_mathtech
+    labrynna/school_approvedreading
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

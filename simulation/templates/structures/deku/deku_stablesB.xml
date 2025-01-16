@@ -34,7 +34,7 @@
     <Civ>deku</Civ>
     <Classes datatype="tokens">DekuBuilding Town</Classes>
     <GenericName>Menagerie</GenericName>
-    <History>Within the confines of these districts the Deku Scrubs would capture and place all manner of monsterous forest creatures. While they were able to acheive some level of domestication, Deku Scrubs&#8217; control over these creatures was limited at best.</History>
+    <History>Within the confines of these districts the Deku Scrubs would capture and place all manner of monsterous forest creatures. While they were able to acheive some level of domestication, Deku Scrubs’ control over these creatures was limited at best.</History>
     <Icon>structures/deku/dek_menagerie.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Trains a variety of Creature units.</Tooltip>
@@ -46,8 +46,35 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/deku/complete_menagerie.xml</constructed>
+      <select>interface/select/building/deku/sel_menagerie.xml</select>
+      <upgraded>interface/complete/building/deku/complete_menagerie.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/deku/deku_menagerieA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/pikit_barbed
+    deku/snapdragon_rampage
+    deku/manhandla_megasymb
+    deku/kudlohkan_madhealing
+    deku/pikit_barbed_king
+    deku/snapdragon_rampage_king
+    deku/manhandla_megasymb_king
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/deku/{civ}_pikit_b
+    units/deku/{civ}_snapdragon_b
+	units/deku/{civ}_babacrawler_b
+    units/deku/{civ}_manhandla_b
+    units/deku/{civ}_peahatmama</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -62,13 +89,6 @@
         <Z>30</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/deku/{civ}_pikit_b
-    units/deku/{civ}_snapdragon_b
-	units/deku/{civ}_babacrawler_b
-    units/deku/{civ}_manhandla_b
-    units/deku/{civ}_peahatmama
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -82,25 +102,5 @@
       <X>0</X>
       <Z>5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    deku/pikit_barbed
-    deku/snapdragon_rampage
-    deku/manhandla_megasymb
-    deku/kudlohkan_madhealing
-    deku/pikit_barbed_king
-    deku/snapdragon_rampage_king
-    deku/manhandla_megasymb_king
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/deku/complete_menagerie.xml</constructed>
-      <select>interface/select/building/deku/sel_menagerie.xml</select>
-      <upgraded>interface/complete/building/deku/complete_menagerie.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/deku/deku_menagerieA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

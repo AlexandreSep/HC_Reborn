@@ -1,0 +1,13 @@
+{
+	"genericName": "Help Em Durpys now! ",
+	"description": "Durpyblins are so dumb, they need help from the also dumb Dodoblins to get anything done! That's a lot of dumb!",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/dumb_helpem.dds",
+	"researchTime": 40,
+	"tooltip": "Durpyblins are so dumb, they need help from the also dumb Dodoblins to get anything done! That's a lot of dumb! (Several Dodoblin Squaddies will now spawn with Durpyblin Defenders)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["Durpy"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

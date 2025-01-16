@@ -13,7 +13,7 @@
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>85</food>
       <metal>20</metal>
@@ -68,9 +68,9 @@
     <Actor>units/ordona/ordona_ruslknight_b.xml</Actor>
   </VisualActor>
   <Visibility>
-  <Camouflage>
-     <ActivateDelay>3000</ActivateDelay>
-     <PostDelay>3000</PostDelay>
-  </Camouflage>
-  </Visibility>  
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
 </Entity>

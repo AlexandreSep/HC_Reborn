@@ -32,13 +32,6 @@
   <Obstruction>
     <Static depth="34.0" width="34.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    labrynna/library_faltalus
-    labrynna/library_nuunarch
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_research.xml</constructed>
@@ -62,4 +55,13 @@
     <Actor>structures/labrynna/labrynna_libraryA.xml</Actor>
     <FoundationActor>structures/labrynna/labrynna_scaffoldD.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/library_faltalus
+    labrynna/library_nuunarch
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

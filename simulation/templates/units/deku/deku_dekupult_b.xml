@@ -5,7 +5,6 @@
       <Damage>
         <Crush>100.0</Crush>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>110.0</MaxRange>
       <MinRange>45.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
@@ -32,11 +31,12 @@
         <Chance>100</Chance>
         <Time>3000</Time>
       </Stun>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Turretable />  
+  <Turretable />
   <Cost>
-    <BuildTime>45</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>
@@ -56,7 +56,7 @@
     <Classes datatype="tokens">-Organic Construct OrhatSiege SpitDekuNut DekuSiege Medium Class40</Classes>
     <GenericName>Dekupult</GenericName>
     <History>While they are rather small like the Deku Scrubs themselves, these catapults were no less deadly than those used by the other races of Hyrule. Loaded with exceptionally large Deku Nuts, the ammo of these siege engines could explode in a giant flash of light. Such bursts could punch a hole into an enemy gate, or holes into multiple enemy soldiers in the area.</History>
-    <RequiredTechnology>phase_town</RequiredTechnology>	
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <Icon>units/deku/dek_dekupult.dds</Icon>
     <Tooltip>Ranged Siege unit that lobs explosive Deku Nuts at its targets.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>

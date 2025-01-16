@@ -33,7 +33,7 @@
     <GenericName>Gohma Egg Medium</GenericName>
     <History>Only Queen Baga can lay these eggs. They hatch into medium sized stronger Gohma units.</History>
     <Icon>structures/gohma/goh_egg.dds</Icon>
-    <Tooltip>Hatches into medium sized Gohma.&#65279;</Tooltip>
+    <Tooltip>Hatches into medium sized Gohma.﻿</Tooltip>
     <VisibleClasses datatype="tokens">Egg</VisibleClasses>
   </Identity>
   <Obstruction>
@@ -41,9 +41,6 @@
     <BlockPathfinding>false</BlockPathfinding>
     <Static depth="3.0" width="3.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_eggA.xml</constructed>
@@ -101,4 +98,11 @@
   <VisualActor>
     <Actor>structures/gohma/gohma_egg.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

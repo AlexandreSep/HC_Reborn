@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+
+	<!-- top panel background -->
+	<object size="0% 0% 100% 0%+67" type="image" style="MenuBackCloud"/>
+	<object size="0% 0%+67 100% 0%+69" type="image" style="GoldenLines"/>
+
+	<!-- top panel buttons -->
+	<object name="topMenu" size="50%-640 0% 50%+640 0%+68">
+
+		<object name="topMenuLeftSide" size="0% 0% 50%-160 100%">
+			<repeat count="10">
+				<object type="button" style="TopMenuButton" tooltip_style="shinyMainMenuTooltip" hidden="true"/>
+			</repeat>
+		</object>
+
+		<object name="topMenuRightSide" size="50%+160 0% 100% 100%">
+			<repeat count="10">
+				<object type="button" style="TopMenuButton" tooltip_style="shinyMainMenuTooltip" hidden="true"/>
+			</repeat>
+		</object>
+
+	</object>
+</object>
+

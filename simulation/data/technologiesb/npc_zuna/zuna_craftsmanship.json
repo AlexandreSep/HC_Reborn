@@ -1,0 +1,18 @@
+{
+	"genericName": "Zuna Crafstmanship",
+	"description": "The Zuna were masters at crafting weaponry. The Darknuts had commissioned and stolen their techniques for years, and many mercenaries from Hyrule would seek the Zuna out to purchase their fine weapons.",
+	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_village"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "npc_zuna/zuna_craftsmanship.dds",
+	"researchTime": 40,
+	"tooltip": "The Zuna were masters at crafting weaponry. The Darknuts had commissioned and stolen their techniques for years, and many mercenaries from Hyrule would seek the Zuna out to purchase their fine weapons. (+15% Attack - Soldiers)",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.15},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.15},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.15},
+		{"value": "Attack/Ranged/Damage/Hack", "multiply": 1.15},
+		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15},
+		{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.15}],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

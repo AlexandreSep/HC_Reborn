@@ -36,8 +36,27 @@
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/zora/zora_barracksA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">zora/troop_secureddomain
+    zora/troop_lutoboomerang
+    zora/troop_mixedteam
+    zora/ruto_nayrushield
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/zora/{civ}_riverpatrol_b
+    units/zora/{civ}_halberdier_b
+      units/zora/{civ}_blademaster_b
+    units/zora/{civ}_boomeranger_b
+    units/zora/{civ}_infiltrator_b
+    units/zora/{civ}_shocktroop_b
+    units/zora/{civ}_domsupreme_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -48,15 +67,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/zora/{civ}_riverpatrol_b
-    units/zora/{civ}_halberdier_b
-      units/zora/{civ}_blademaster_b
-    units/zora/{civ}_boomeranger_b
-    units/zora/{civ}_infiltrator_b
-    units/zora/{civ}_shocktroop_b
-    units/zora/{civ}_domsupreme_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -70,15 +80,5 @@
       <X>0</X>
       <Z>13</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-      zora/troop_secureddomain
-    zora/troop_lutoboomerang
-    zora/troop_mixedteam
-    zora/ruto_nayrushield
-    </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/zora/zora_barracksA.xml</Actor>
-    <FoundationActor>structures/zora/zora_scaffoldA.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

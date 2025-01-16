@@ -63,12 +63,14 @@ GuiInterface.prototype.GetSimulationState = function()
 	let numPlayers = cmpPlayerManager.GetNumPlayers();
 	for (let i = 0; i < numPlayers; ++i)
 	{
-		let cmpPlayer = QueryPlayerIDInterface(i);
-		let cmpPlayerEntityLimits = QueryPlayerIDInterface(i, IID_EntityLimits);
+		const playerEnt = cmpPlayerManager.GetPlayerByID(i);
+		const cmpPlayer = Engine.QueryInterface(playerEnt, IID_Player);
+		const cmpPlayerEntityLimits = Engine.QueryInterface(playerEnt, IID_EntityLimits);
+		const cmpIdentity = Engine.QueryInterface(playerEnt, IID_Identity);
 
 		// Work out which phase we are in.
 		let phase = "";
-		let cmpTechnologyManager = QueryPlayerIDInterface(i, IID_TechnologyManager);
+		const cmpTechnologyManager = Engine.QueryInterface(playerEnt, IID_TechnologyManager);
 		if (cmpTechnologyManager)
 		{
 			if (cmpTechnologyManager.IsTechnologyResearched("phase_city"))
@@ -93,8 +95,8 @@ GuiInterface.prototype.GetSimulationState = function()
 		}
 
 		ret.players.push({
-			"name": cmpPlayer.GetName(),
-			"civ": cmpPlayer.GetCiv(),
+			"name": cmpIdentity.GetName(),
+			"civ": cmpIdentity.GetCiv(),
 			"color": cmpPlayer.GetColor(),
 			"controlsAll": cmpPlayer.CanControlAllUnits(),
 			"popCount": cmpPlayer.GetPopulationCount(),
@@ -123,16 +125,14 @@ GuiInterface.prototype.GetSimulationState = function()
 			"matchEntityCounts": cmpPlayerEntityLimits ? cmpPlayerEntityLimits.GetMatchCounts() : null,
 			"entityLimitChangers": cmpPlayerEntityLimits ? cmpPlayerEntityLimits.GetLimitChangers() : null,
 			"researchQueued": cmpTechnologyManager ? cmpTechnologyManager.GetQueuedResearch() : null,
-			"researchStarted": cmpTechnologyManager ? cmpTechnologyManager.GetStartedTechs() : null,
 			"researchedTechs": cmpTechnologyManager ? cmpTechnologyManager.GetResearchedTechs() : null,
 			"classCounts": cmpTechnologyManager ? cmpTechnologyManager.GetClassCounts() : null,
 			"typeCountsByClass": cmpTechnologyManager ? cmpTechnologyManager.GetTypeCountsByClass() : null,
 			"canBarter": cmpPlayer.CanBarter(),
 			"barterPrices": Engine.QueryInterface(SYSTEM_ENTITY, IID_Barter).GetPrices(cmpPlayer),
 			// HC-Code
-			"averageResourceGatherRates": cmpPlayer.averageResourceGatherRates,
-			"resourceBufferUpdateTime": cmpPlayer.resourceBufferUpdateTime,
-			"resourceBufferGatherRatePerSeconds": cmpPlayer.resourceBufferGatherRatePerSeconds
+			"collectedResourcesLastInterval": cmpPlayer.collectedResourcesLastInterval,
+			"gatherRateUpdateTime": cmpPlayer.gatherRateUpdateTime
 			// HC-End
 		});
 	}
@@ -255,21 +255,23 @@ GuiInterface.prototype.AddMiragedEntity = function(player, entity, mirage)
  */
 GuiInterface.prototype.GetEntityState = function(player, ent)
 {
-	let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
-
 	if (!ent)
 		return null;
 
 	// All units must have a template; if not then it's a nonexistent entity id.
-	let template = cmpTemplateManager.GetCurrentTemplateName(ent);
+	const template = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager).GetCurrentTemplateName(ent);
 	if (!template)
 		return null;
 
-	let ret = {
+	const ret = {
 		"id": ent,
 		"player": INVALID_PLAYER,
 		"template": template
 	};
+
+	const cmpAuras = Engine.QueryInterface(ent, IID_Auras);
+	if (cmpAuras)
+		ret.auras = cmpAuras.GetDescriptions();
 
 	let cmpMirage = Engine.QueryInterface(ent, IID_Mirage);
 	if (cmpMirage)
@@ -279,12 +281,17 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 	if (cmpIdentity)
 		ret.identity = {
 			"rank": cmpIdentity.GetRank(),
+			"rankTechName": cmpIdentity.GetRankTechName(),
 			"classes": cmpIdentity.GetClassesList(),
 			"selectionGroupName": cmpIdentity.GetSelectionGroupName(),
 			"canDelete": !cmpIdentity.IsUndeletable(),
-			"hasSomeFormation": cmpIdentity.HasSomeFormation(),
-			"formations": cmpIdentity.GetFormationsList(),
 			"controllable": cmpIdentity.IsControllable()
+		};
+
+	const cmpFormation = Engine.QueryInterface(ent, IID_Formation);
+	if (cmpFormation)
+		ret.formation = {
+			"members": cmpFormation.GetMembers()
 		};
 
 	let cmpPosition = Engine.QueryInterface(ent, IID_Position);
@@ -340,6 +347,13 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 			"isUpgrading": cmpUpgrade.IsUpgrading()
 		};
 
+	const cmpResearcher = Engine.QueryInterface(ent, IID_Researcher);
+	if (cmpResearcher)
+		ret.researcher = {
+			"technologies": cmpResearcher.GetTechnologiesList(),
+			"techCostMultiplier": cmpResearcher.GetTechCostMultiplier()
+		};
+
 	let cmpStatusEffects = Engine.QueryInterface(ent, IID_StatusEffectsReceiver);
 	if (cmpStatusEffects)
 		ret.statusEffects = cmpStatusEffects.GetActiveStatuses();
@@ -347,11 +361,14 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 	let cmpProductionQueue = Engine.QueryInterface(ent, IID_ProductionQueue);
 	if (cmpProductionQueue)
 		ret.production = {
-			"entities": cmpProductionQueue.GetEntitiesList(),
-			"technologies": cmpProductionQueue.GetTechnologiesList(),
-			"techCostMultiplier": cmpProductionQueue.GetTechCostMultiplier(),
 			"queue": cmpProductionQueue.GetQueue(),
 			"autoqueue": cmpProductionQueue.IsAutoQueueing()
+		};
+
+	const cmpTrainer = Engine.QueryInterface(ent, IID_Trainer);
+	if (cmpTrainer)
+		ret.trainer = {
+			"entities": cmpTrainer.GetEntitiesList()
 		};
 
 	let cmpTrader = Engine.QueryInterface(ent, IID_Trader);
@@ -390,7 +407,7 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 			"allowedClasses": cmpGarrisonHolder.GetAllowedClasses(),
 			"capacity": cmpGarrisonHolder.GetCapacity(),
 			"occupiedSlots": cmpGarrisonHolder.OccupiedSlots(),
-			"garrisonedEntitiesCount": cmpGarrisonHolder.GetGarrisonedEntitiesCount()
+			"garrisonedEntitiesCount": cmpGarrisonHolder.GetGarrisonedEntitiesCount() // HC-Exodarion - Do you need this? Else remove
 		};
 
 	let cmpTurretHolder = Engine.QueryInterface(ent, IID_TurretHolder);
@@ -423,7 +440,9 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 			"isGuarding": cmpUnitAI.IsGuardOf(),
 			"canPatrol": cmpUnitAI.CanPatrol(),
 			"selectableStances": cmpUnitAI.GetSelectableStances(),
-			"isIdle": cmpUnitAI.IsIdle()
+			"isIdle": cmpUnitAI.IsIdle(),
+			"formations": cmpUnitAI.GetFormationsList(),
+			"formation": cmpUnitAI.GetFormationController()
 		};
 
 	let cmpGuard = Engine.QueryInterface(ent, IID_Guard);
@@ -474,6 +493,7 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 			let range = cmpAttack.GetRange(type);
 			ret.attack[type].minRange = range.min;
 			ret.attack[type].maxRange = range.max;
+			ret.attack[type].yOrigin = cmpAttack.GetAttackYOrigin(type);
 
 			let timers = cmpAttack.GetTimers(type);
 			ret.attack[type].prepareTime = timers.prepare;
@@ -481,18 +501,14 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 
 			if (type != "Ranged")
 			{
-				// Not a ranged attack, set some defaults.
-				ret.attack[type].elevationBonus = 0;
 				ret.attack[type].elevationAdaptedRange = ret.attack.maxRange;
 				continue;
 			}
 
-			ret.attack[type].elevationBonus = range.elevationBonus;
-
 			if (cmpPosition && cmpPosition.IsInWorld())
 				// For units, take the range in front of it, no spread, so angle = 0,
 				// else, take the average elevation around it: angle = 2 * pi.
-				ret.attack[type].elevationAdaptedRange = cmpRangeManager.GetElevationAdaptedRange(cmpPosition.GetPosition(), cmpPosition.GetRotation(), range.max, range.elevationBonus, cmpUnitAI ? 0 : 2 * Math.PI);
+				ret.attack[type].elevationAdaptedRange = cmpRangeManager.GetElevationAdaptedRange(cmpPosition.GetPosition(), cmpPosition.GetRotation(), range.max, ret.attack[type].yOrigin, cmpUnitAI ? 0 : 2 * Math.PI);
 			else
 				// Not in world, set a default?
 				ret.attack[type].elevationAdaptedRange = ret.attack.maxRange;
@@ -585,7 +601,8 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 	if (cmpUnitMotion)
 		ret.speed = {
 			"walk": cmpUnitMotion.GetWalkSpeed(),
-			"run": cmpUnitMotion.GetWalkSpeed() * cmpUnitMotion.GetRunMultiplier()
+			"run": cmpUnitMotion.GetWalkSpeed() * cmpUnitMotion.GetRunMultiplier(),
+			"acceleration": cmpUnitMotion.GetAcceleration()
 		};
 
 	let cmpUpkeep = Engine.QueryInterface(ent, IID_Upkeep);
@@ -615,10 +632,10 @@ GuiInterface.prototype.GetAverageRangeForBuildings = function(player, cmd)
 		"z": cmd.z
 	};
 
-	let elevationBonus = cmd.elevationBonus || 0;
+	const yOrigin = cmd.yOrigin || 0;
 	let range = cmd.range;
 
-	return cmpRangeManager.GetElevationAdaptedRange(pos, rot, range, elevationBonus, 2 * Math.PI);
+	return cmpRangeManager.GetElevationAdaptedRange(pos, rot, range, yOrigin, 2 * Math.PI);
 };
 
 GuiInterface.prototype.GetTemplateData = function(player, data)
@@ -634,7 +651,7 @@ GuiInterface.prototype.GetTemplateData = function(player, data)
 	let aurasTemplate = {};
 
 	if (!template.Auras)
-		return GetTemplateDataHelper(template, owner, aurasTemplate);
+		return GetTemplateDataHelper(template, owner, aurasTemplate, Resources);
 
 	let auraNames = template.Auras._string.split(/\s+/);
 
@@ -647,7 +664,7 @@ GuiInterface.prototype.GetTemplateData = function(player, data)
 			aurasTemplate[name] = auraTemplate;
 	}
 
-	return GetTemplateDataHelper(template, owner, aurasTemplate);
+	return GetTemplateDataHelper(template, owner, aurasTemplate, Resources);
 };
 
 GuiInterface.prototype.IsTechnologyResearched = function(player, data)
@@ -680,27 +697,7 @@ GuiInterface.prototype.CheckTechnologyRequirements = function(player, data)
  */
 GuiInterface.prototype.GetStartedResearch = function(player)
 {
-	let cmpTechnologyManager = QueryPlayerIDInterface(player, IID_TechnologyManager);
-	if (!cmpTechnologyManager)
-		return {};
-
-	let ret = {};
-	for (let tech of cmpTechnologyManager.GetStartedTechs())
-	{
-		ret[tech] = { "researcher": cmpTechnologyManager.GetResearcher(tech) };
-		let cmpProductionQueue = Engine.QueryInterface(ret[tech].researcher, IID_ProductionQueue);
-		if (cmpProductionQueue)
-		{
-			ret[tech].progress = cmpProductionQueue.GetQueue()[0].progress;
-			ret[tech].timeRemaining = cmpProductionQueue.GetQueue()[0].timeRemaining;
-		}
-		else
-		{
-			ret[tech].progress = 0;
-			ret[tech].timeRemaining = 0;
-		}
-	}
-	return ret;
+	return QueryPlayerIDInterface(player, IID_TechnologyManager)?.GetBasicInfoOfStartedTechs() || {};
 };
 
 /**
@@ -867,9 +864,9 @@ GuiInterface.prototype.GetFormationInfoFromTemplate = function(player, data)
 		return {};
 
 	return {
-		"name": template.Formation.FormationName,
+		"name": template.Identity.GenericName,
 		"tooltip": template.Formation.DisabledTooltip || "",
-		"icon": template.Formation.Icon
+		"icon": template.Identity.Icon
 	};
 };
 
@@ -1974,11 +1971,7 @@ GuiInterface.prototype.CanAttack = function(player, data)
  */
 GuiInterface.prototype.GetBatchTime = function(player, data)
 {
-	let cmpProductionQueue = Engine.QueryInterface(data.entity, IID_ProductionQueue);
-	if (!cmpProductionQueue)
-		return 0;
-
-	return cmpProductionQueue.GetBatchTime(data.batchSize);
+	return Engine.QueryInterface(data.entity, IID_Trainer)?.GetBatchTime(data.batchSize) || 0;
 };
 
 GuiInterface.prototype.IsMapRevealed = function(player)
@@ -2069,11 +2062,13 @@ GuiInterface.prototype.OnGlobalEntityRenamed = function(msg)
 	this.renamedEntities.push(msg);
 };
 
+// HC-Code
 GuiInterface.prototype.GetHeroeSettings = function(player)
 {
 	let cmpPlayer = QueryPlayerIDInterface(player);
 	return cmpPlayer.heroSettings;
 };
+// HC-End
 
 /**
  * List the GuiInterface functions that can be safely called by GUI scripts.
@@ -2161,13 +2156,12 @@ let hyruleExposedFunctions = {
     "GetPlayerCiv": 1,
     "GetHeroeSettings": 1,
     "GetFreeBattalionSlots": 1,
-    "GetPlayerCivOfPlayerID": 1,
-    "UpdateCurrentFairySeason": 1
+    "GetPlayerCivOfPlayerID": 1
 }
 
 GuiInterface.prototype.ScriptCall = function(player, name, args)
 {
-	if (exposedFunctions[name] || hyruleExposedFunctions[name])
+	if (exposedFunctions[name] || hyruleExposedFunctions [name]) // HC-Code - Added "hyruleExposedFunctions"
 		return this[name](player, args);
 
 	throw new Error("Invalid GuiInterface Call name \"" + name + "\"");

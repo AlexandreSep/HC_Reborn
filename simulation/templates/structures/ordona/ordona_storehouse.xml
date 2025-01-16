@@ -31,13 +31,6 @@
   <Obstruction>
     <Static depth="28.0" width="28.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    ordona/gather_wood_timberfellcutters
-    ordona/gather_capacity_youthlabor
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -62,4 +55,13 @@
     <Actor>structures/ordona/ordona_harvestA.xml</Actor>
     <FoundationActor>structures/ordona/ordona_scaffoldD.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/gather_wood_timberfellcutters
+    ordona/gather_capacity_youthlabor
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

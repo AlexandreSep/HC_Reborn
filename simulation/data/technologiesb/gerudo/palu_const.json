@@ -1,0 +1,13 @@
+{
+	"genericName": "Palu Construction Techniques",
+	"description": "",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 200},
+	"requirements": {"all": [ {"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/palu_const.dds",
+	"researchTime": 40,
+	"tooltip": "The Gerudo of the Palu Wasteland are renowned for their fast building techniques to survive the local sandstorms. (-25% Build Time - Building)",
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.75 }],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

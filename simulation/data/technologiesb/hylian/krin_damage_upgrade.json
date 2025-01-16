@@ -1,0 +1,31 @@
+{
+	"genericName": "Arcad Swordsmithing",
+	"description": "",
+  "cost": {"metal": 400},
+	"requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_krin"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "You must select Captain Krin as your hero.",
+	"icon": "tech_generic.dds",
+	"researchTime": 50,
+	"tooltip": "+15% Melee Attack - Melee Infantry and Melee Cavalry.",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "multiply": 1.15
+    },
+    {
+      "value": "Attack/Melee/Damage/Pierce",
+      "multiply": 1.15
+    },
+    {
+      "value": "Attack/Melee/Damage/Crush",
+      "multiply": 1.15
+    },
+    {
+      "value": "Attack/Melee/Damage/TrueDamage",
+      "multiply": 1.15
+    }
+  ],
+	"affects": ["Melee Infantry", "Melee Cavalry"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,15 @@
+{
+	"genericName": "Claw Filing",
+	"description": "Labrynnian Blue Bears already had razor charp claws to maul faces off, they became even more deadly after a proffesional training filed the imperfections away from them.",
+	"cost": {"food": 200, "wood": 0, "stone": 200, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "labrynna/bluecaballero_clawfiling.dds",
+	"researchTime": 40,
+	"tooltip": "Labrynnian Blue Bears already had razor charp claws to maul faces off, they became even more deadly after a proffesional training filed the imperfections away from them. (Blue Caballero damage increased by 20%)",
+	"modifications": [
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.20}
+	],
+  "affects": [ "BlueCaballero" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

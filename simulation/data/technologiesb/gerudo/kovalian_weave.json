@@ -1,0 +1,15 @@
+{
+	"genericName": "Kovalian Weave",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/kovalian_weave.dds",
+	"researchTime": 50,
+	"tooltip": "Fine and durable weave that can be traced back to the ancient Kovalians. (+10 Armor - Unit)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 10},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 10},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 10}],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

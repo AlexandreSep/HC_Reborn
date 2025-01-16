@@ -1,0 +1,14 @@
+{
+	"genericName": "Demonblight Taint!",
+	"description": "Ok serious time.... that Ghirahim fellow is pretty scary! He makes the badass Moblins even more bad with scary demon magic!",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 550},
+	"requirements": {"all": [ {"tech": "civ_choices/moblin/choosehero_ghirahim"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "You must select Ghirahim as your hero.",
+	"icon": "moblin/ghirahim_demonblighty.dds",
+	"researchTime": 40,
+	"tooltip": "All three Moblin units are tainted by Demonblight, growing scaled armor. Increases both magic and non magic armor by +3.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["BlightedMob"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

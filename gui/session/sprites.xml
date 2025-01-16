@@ -215,7 +215,7 @@
 		/>
 	</sprite>
 	
-	<sprite name="topPanel_fairy_spring">
+	<sprite name="topPanel_fairy">
 		<image
 			texture="session/factions/fairy/spring/ribbon_bg.png"
 			real_texture_placement="0 0 0 0"
@@ -268,6 +268,15 @@
 			size="0 0 100% 325%"
 		/>
 	</sprite>
+
+	<sprite name="topPanel_zola">
+		<image
+			texture="session/factions/zola/ribbon_bg.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 325%"
+		/>
+	</sprite>	
 	
 	<sprite name="CivIconOver">
 		<image
@@ -431,7 +440,7 @@
 		/>
 	</sprite>
 	
-	<sprite name="minimapPanelOverlay_fairy_spring">
+	<sprite name="minimapPanelOverlay_fairy">
 		<image texture="session/factions/fairy/spring/minimap_circle_modern.png"
 		    real_texture_placement="0 0 0 0"
 			texture_size="0 0 100% 100%"
@@ -479,6 +488,13 @@
 		/>
 	</sprite>
 	
+	<sprite name="minimapPanelOverlay_zola">
+		<image texture="session/factions/zola/minimap_circle_modern.png"
+		    real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>	
 	<!-- Bottom Left Panel -->
 	<sprite name="supplementalDetailsPanel">
 
@@ -683,9 +699,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/hylian/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -90 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -700,7 +716,7 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/hylian/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 384"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
 			size="0 -90 100% 100%"
 		/>
@@ -756,9 +772,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/hylian/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 384"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -90 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -777,9 +793,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/gerudo/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -90 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -794,12 +810,12 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/gerudo/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 384"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
 			size="0 -90 100% 100%"
-		/>
+		/>	
 	</sprite>
-	
+			
 	<sprite name="supplementalDetailsPanel_gerudo">
 
 
@@ -850,9 +866,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/gerudo/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 384"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -90 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -871,9 +887,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/goron/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -888,9 +904,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/goron/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -944,9 +960,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/goron/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -50 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -966,9 +982,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/zora/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -983,9 +999,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/zora/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1039,9 +1055,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/zora/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -1060,9 +1076,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/kokiri/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1077,9 +1093,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/kokiri/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1133,9 +1149,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/kokiri/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -50 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1155,9 +1171,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/gohma/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1172,7 +1188,7 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/gohma/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 384"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
 			size="0 -90 100% 100%"
 		/>
@@ -1230,7 +1246,7 @@
 		<image texture="session/factions/gohma/unitCommandsPanelOverlay.png"
 			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -135 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -1249,9 +1265,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/ordona/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -90 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1266,9 +1282,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/ordona/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1322,9 +1338,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/ordona/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -1344,9 +1360,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/lanayru/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1361,9 +1377,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/lanayru/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1417,9 +1433,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/lanayru/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 
@@ -1438,9 +1454,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/moblin/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1455,9 +1471,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/moblin/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1511,9 +1527,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/moblin/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 384"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -84 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>		
 	
@@ -1532,9 +1548,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/darknut/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1549,9 +1565,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/darknut/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1605,9 +1621,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/darknut/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -1627,9 +1643,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/deku/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1644,9 +1660,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/deku/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1700,9 +1716,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/deku/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -1721,9 +1737,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/lizalfos/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1738,9 +1754,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/lizalfos/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1794,9 +1810,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/lizalfos/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -1816,9 +1832,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/labrynna/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -90 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -1833,9 +1849,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/labrynna/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -1889,9 +1905,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/labrynna/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -1900,7 +1916,7 @@
 	<!-- fairy  (Spring) -->
 	<!-- ================================  ================================ -->
 
-	<sprite name="militaryBattalionsPanel_fairy_spring">
+	<sprite name="militaryBattalionsPanel_fairy">
 
 		<!-- background -->
 		<image texture="session/factions/fairy/spring/militaryPanelBackground.png"
@@ -1911,13 +1927,13 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/fairy/spring/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
-	<sprite name="civilBattalionsPanel_fairy_spring">
+	<sprite name="civilBattalionsPanel_fairy">
 
 		<!-- background -->
 		<image texture="session/factions/fairy/spring/civilPanelBackground.png"
@@ -1928,13 +1944,13 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/fairy/spring/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 384"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
-	<sprite name="supplementalDetailsPanel_fairy_spring">
+	<sprite name="supplementalDetailsPanel_fairy">
 
 
 		<!-- background -->
@@ -1954,7 +1970,7 @@
 
 
 	<!-- Bottom Middle Panel -->
-	<sprite name="selectionDetailsPanel_fairy_spring">
+	<sprite name="selectionDetailsPanel_fairy">
 
 		<!-- background -->
 		<image texture="session/factions/fairy/spring/selectionDetailsPanelBackground.png"
@@ -1973,7 +1989,7 @@
 	</sprite>
 
 	<!-- Bottom Right Panel -->
-	<sprite name="unitCommandsPanel_fairy_spring">
+	<sprite name="unitCommandsPanel_fairy">
 
 		<!-- background -->
 		<image texture="session/factions/fairy/spring/unitCommandsPanelBackground.png"
@@ -1984,9 +2000,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/fairy/spring/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 384"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -2005,9 +2021,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/fairy/summer/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -2022,9 +2038,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/fairy/summer/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 384"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -2078,9 +2094,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/fairy/summer/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 384"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -2099,9 +2115,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/fairy/autumn/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -2116,9 +2132,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/fairy/autumn/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 384"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -2172,9 +2188,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/fairy/autumn/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 384"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -2193,9 +2209,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/fairy/winter/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -2210,9 +2226,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/fairy/winter/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 384"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -2266,9 +2282,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/fairy/winter/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 384"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -85 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -2288,9 +2304,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/sheikah/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 384"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -90 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -2305,7 +2321,7 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/sheikah/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 384"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
 			size="0 -90 100% 100%"
 		/>
@@ -2361,9 +2377,9 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/sheikah/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -48 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>	
 	
@@ -2382,9 +2398,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/stalfos/militaryPanelOverlay.png"
-			real_texture_placement="0 0 1024 300"
+			real_texture_placement="0 0 1024 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 	
@@ -2399,9 +2415,9 @@
 
 		<!-- overlay -->
 		<image texture="session/factions/stalfos/civilPanelOverlay.png"
-			real_texture_placement="0 0 384 300"
+			real_texture_placement="0 0 256 256"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -90 100% 100%"
 		/>
 	</sprite>
 	
@@ -2455,9 +2471,107 @@
 		
 		<!-- overlay -->
 		<image texture="session/factions/stalfos/unitCommandsPanelOverlay.png"
-			real_texture_placement="0 0 512 300"
+			real_texture_placement="0 0 512 512"
 			texture_size="0 0 100% 100%"
-			size="0 -35 100% 100%"
+			size="0 -175 100% 100%"
+		/>
+	</sprite>
+
+
+
+
+	
+	<!-- ================================  ================================ -->
+	<!-- river zora  -->
+	<!-- ================================  ================================ -->
+
+	<sprite name="militaryBattalionsPanel_zola">
+
+		<!-- background -->
+		<image texture="session/factions/zola/militaryPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/zola/militaryPanelOverlay.png"
+			real_texture_placement="0 0 1024 512"
+			texture_size="0 0 100% 100%"
+			size="0 -175 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="civilBattalionsPanel_zola">
+
+		<!-- background -->
+		<image texture="session/factions/zola/civilPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+		<!-- overlay -->
+		<image texture="session/factions/zola/civilPanelOverlay.png"
+			real_texture_placement="0 0 256 256"
+			texture_size="0 0 100% 100%"
+			size="0 -90 100% 100%"
+		/>
+	</sprite>
+	
+	<sprite name="supplementalDetailsPanel_zola">
+
+
+		<!-- background -->
+		<image texture="session/factions/zola/supplementalDetailsPanelBackground.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/zola/supplementalDetailsPanelOverlay.png"
+			real_texture_placement="0 0 256 128"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<!-- Bottom Middle Panel -->
+	<sprite name="selectionDetailsPanel_zola">
+
+		<!-- background -->
+		<image texture="session/factions/zola/selectionDetailsPanelBackground.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/zola/selectionDetailsPanelOverlay.png"
+			real_texture_placement="0 0 0 0"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+
+	</sprite>
+
+	<!-- Bottom Right Panel -->
+	<sprite name="unitCommandsPanel_zola">
+
+		<!-- background -->
+		<image texture="session/factions/zola/unitCommandsPanelBackground.png"
+			real_texture_placement="0 0 512 256"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		
+		<!-- overlay -->
+		<image texture="session/factions/zola/unitCommandsPanelOverlay.png"
+			real_texture_placement="0 0 512 512"
+			texture_size="0 0 100% 100%"
+			size="0 -175 100% 100%"
 		/>
 	</sprite>
 

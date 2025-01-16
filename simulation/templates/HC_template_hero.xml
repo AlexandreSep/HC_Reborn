@@ -9,7 +9,7 @@
     </Capture>
   </Attack>
   <Cost>
-    <BuildTime>40</BuildTime>
+    <BuildTime>25</BuildTime>
     <Population>0</Population>
     <Resources>
       <food>100</food>

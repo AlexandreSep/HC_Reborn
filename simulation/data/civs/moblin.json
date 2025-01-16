@@ -1,40 +1,78 @@
 {
 	"Code": "moblin",
 	"Culture": "barbaric",
-	"Name": "Moblins",
-	"Emblem": "session/portraits/emblems/emblem_moblin.dds",
-	"History": "Once the dominant power in what is now known as the Land of Famine, the Moblin's homeland was utterly devestated and left in ruins after a brutal war with the Akkalans. After centuries of slowly recovering, the Moblins and their Blin servants reunited under the guidance of the warlord Ganon. Now the united powers of Blin-kind seek to continue their relentless rampage across Hyrule.",
-	"Music":[
-			{"File":"moblin_theme1.ogg", "Type":"peace"},
-			{"File":"moblin_ambient1.ogg", "Type":"peace"},
-			{"File":"moblin_ambient2.ogg", "Type":"peace"},
-			{"File":"moblin_ambient3.ogg", "Type":"peace"},
-			{"File":"moblin_ambient4.ogg", "Type":"peace"},
-			{"File":"moblin_ambient5.ogg", "Type":"peace"},
-			{"File":"moblin_ambient6.ogg", "Type":"peace"},
-			{"File":"moblin_ambient7.ogg", "Type":"peace"},
-			{"File":"moblin_ambient8.ogg", "Type":"peace"},
-			{"File":"moblin_ambient9.ogg", "Type":"peace"},
-			{"File":"moblin_ambient10.ogg", "Type":"peace"},
-			{"File":"moblin_battle1.ogg", "Type":"battle"},
-			{"File":"moblin_battle2.ogg", "Type":"battle"},
-			{"File":"moblin_battle3.ogg", "Type":"battle"},
-			{"File":"moblin_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "moblin_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_ambient10.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "moblin_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "moblin_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "moblin_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "moblin_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Ganon",
 					"Class": "",
@@ -62,31 +100,28 @@
 					"Armament": "Spirit Sword",
 					"Emblem": "",
 					"History": "Ooooo spooky Ghirahim, the great weapon of our great god Demise! This scary spirit can make swords fly around all birdy like, choppin' off heads and making the Hylians run in fear! There's a good reason Ukblinro, our great god blessed be his awesome name, made Ghirahim his most trusted servant... he's that good at killing!"
-				}  
+				}
 			]
-		} 
+		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Pillagin' is the Best!",
 			"History": "",
-			"Description": "All Soldier units can gather meat and gain Resources for each attack against buildings." 
+			"Description": "All Soldier units can gather meat and gain Resources for each attack against buildings."
 		},
 		{
 			"Name": "Pssh We Don't Need no Fancy Beds!",
 			"History": "",
-
-			"Description": "+10 Free Population cap bonus, even if you control no house structures." 
+			"Description": "+10 Free Population cap bonus, even if you control no house structures."
 		},
 		{
 			"Name": "Moblins need to stinky Towns!",
 			"History": "",
-			"Description": "Moblins have no Civic Center, Phases, or techtree. All structures and units can be created immediately." 
-		}  
+			"Description": "Moblins have no Civic Center, Phases, or techtree. All structures and units can be created immediately."
+		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/moblin/choosehero_kojaku",
 		"civ_choices/moblin/choosehero_ogalon",
 		"civ_choices/moblin/choosehero_kingbulblin",
@@ -94,16 +129,14 @@
 		"civ_choices/moblin/choosehero_ghirahim",
 		"civ_choices/moblin/choosehero_ganon"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "We Tell Ya How to Tear Down!",
 			"History": "",
 			"Description": "Allied Mechanical Siege units gain a 10% increase in damage and gain +10% range."
-		} 
+		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Ganon's Castle",
 			"Class": "",
@@ -111,7 +144,7 @@
 			"History": "Whooaaahh it's Ganon's big scary Castle! So big and so scary! Ahhhh! We Moblins don't know where it came from, some say Moblins made it in Olden Timey! Whoever put the big scary castle there don't matter no more, Ganon made it his base and make his best plan to take over the Hylians and kill em all there! Very important place for all us Blinny kind, we go there and pray to Ukblinro for super power every year or two or three! (Garrison up to 60 units, slows down the movement speed of enemies within it's radius and functions like a normal Castle)",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
+			"Special": ""
 		},
 		{
 			"Name": "Titan: Ukbklinro, Bringer of Demise",
@@ -120,11 +153,10 @@
 			"History": "Yeaaahhh our God Ukblinro! The Bestest Goddy that there is in all of Hyrule and other places! Long time ago he was hurt bad in a big fight with st?upid Hylian God Hylia! But our God is best, so he survived and is back and better than ever! Goddy Ukblinro brings a biiiigggggg sword into the fight, and he goes and makes us win! All hail Ukblinro!",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
-		} 
+			"Special": ""
+		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/moblin/moblin_civil_centre"
 		},
@@ -135,7 +167,7 @@
 		{
 			"Template": "units/moblin/moblin_dummyA",
 			"Count": 2
-		},		
+		},
 		{
 			"Template": "units/moblin/moblin_dummyA",
 			"Count": 2

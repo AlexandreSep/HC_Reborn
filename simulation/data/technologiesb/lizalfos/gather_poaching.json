@@ -1,0 +1,15 @@
+{
+	"genericName": "Mountain Ancestry",
+	"description": "The ancestors of the Lizalfos hail from Death Moutain. Before the great enslavement of the Goron people, the Volvagians used the Lizalfos to mine the precious gems of the earth for their empire.",
+	"cost": {"food": 0, "wood": 150, "stone": 150, "metal": 150},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a second deity.",
+	"icon": "lizalfos/gather_mountainancestor.dds",
+	"researchTime": 40,
+	"tooltip": "Stone, Metal, and Rupee gather rate increased by 25%",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.25},
+					  {"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.25},
+					  {"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.25}],
+	"affects": ["Peon"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,45 @@
+{
+  "genericName": "Lon Lon Breed Ancestry",
+  "description": "Breeding ancestral Lon Lon stock yields better war mounts.",
+  "cost": {
+    "food": 400,
+    "wood": 0,
+    "stone": 0,
+    "metal": 400
+  },
+  "supersedes": "hylian/attack_hyl_cavalry_01",
+  "requirements": {
+    "all": [
+      { "tech": "phase_city" },
+      { "civ": "hylian" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with City.",
+  "icon": "hylian/attack_lonlon_breed.dds",
+  "researchTime": 40,
+  "tooltip": "Breeding ancestral Lon Lon stock yields better war mounts. (+8 Armor, +25% Stun Resistance, Knockback Immune - Melee Cavalry)",
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 8
+    },
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 8
+    },
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 8
+    },
+    {
+      "value": "Resistance/KnockbackResistance",
+      "add": 15
+    },
+    {
+      "value": "Resistance/StunResistance",
+      "add": 25
+    }
+  ],
+  "affects": [ "Cavalry Melee" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

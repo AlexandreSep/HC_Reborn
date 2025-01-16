@@ -50,7 +50,7 @@
     <Max>300</Max>
     <Type>food.fruit</Type>
 	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>8</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

@@ -1,0 +1,18 @@
+{
+	"genericName": "Slave Routines",
+	"description": "While they were rather clumsy and lacked in strength, Tokay Slaves were very dependent on patterns and certain repeated routines could encourage them to carry larger loads than they otherwise would.",
+	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "labrynna/gather_slaveroutine.dds",
+	"researchTime": 40,
+	"tooltip": "While they were rather clumsy and lacked in strength, Tokay Slaves were very dependent on patterns and certain repeated routines could encourage them to carry larger loads than they otherwise would. (Upgrades Carrying Capacity for Tokay Slaves by +10)",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 10},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 10},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 10},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 10}
+	],
+  "affects": [ "Slave" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

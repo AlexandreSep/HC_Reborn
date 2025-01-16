@@ -5,17 +5,6 @@
     <Icon>structures/labrynna/lab_marketB.dds</Icon>
     <Tooltip>Allows the trading of resources on the market or with your allies. Also allows Labrynna to hire Mercenary units.</Tooltip>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/labrynna/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    units/merc_geru_b
-    units/merc_tinsuit_b
-    units/merc_wosu_b
-    </Entities>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <Upgrade>
     <Tower>
       <Cost>
@@ -31,4 +20,15 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_marketB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/labrynna/{civ}_trader_b
+    gaia/lon_lon_cow_1
+    units/merc_geru_b
+    units/merc_tinsuit_b
+    units/merc_wosu_b</Entities>
+  </Trainer>
 </Entity>

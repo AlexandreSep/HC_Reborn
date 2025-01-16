@@ -46,16 +46,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-</Entities>
-    <Technologies datatype="tokens">
-    deku/siege_salvage
-    deku/building_sorosalt
-    deku/building_logcons
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
@@ -74,4 +64,14 @@
   <VisualActor>
     <Actor>structures/deku/deku_loggeryA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/siege_salvage
+    deku/building_sorosalt
+    deku/building_logcons
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

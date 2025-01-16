@@ -1,5 +1,5 @@
 RESOURCES
-Resources are divided between Food, Material, Ore, and Currency, though some Factions exploit unique resources or methods.
-Fruit and Meat, Wood, Stone, Metal, and Rupees are the most commonly found types of Food, Material, Ore, and Currency.
-Be sure to protect your Workers! If an enemy disrupts your economy by attacking Resource Gatherers, it can quickly lead to defeat.
-The type of Map can determine the abundance or scarcity of some Resources, so become familiar with different environments!
+There are a variety of resource types that are turned into Currency such as Food, Wood, Stone, and Rupees.
+Resources are automatically harvested from a Node when you construct a base on them.
+Each Resource type is collected and depletes at various rates. For instance Wood can be collected very fast but depletes just as quickly, Food is very slow to collect but lasts forever.
+Each Faction can collect from some resources but not others. For instance Gorons cannot gather Food, and Kokiri cannot gather Stone.

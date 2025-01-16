@@ -1,0 +1,14 @@
+{
+	"genericName": "Baga Swarm",
+	"description": "The Mudmen of Faron were instrumental in destroying the wicked Baga Tree of the south after taking his wooden fortress, an event that greatly inspires them when storming enemy castles.",
+	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
+	"requirements": { "all": [{ "entity": { "class": "MudColony", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Mudmen Colony Addon.",
+	"icon": "kokiri/mudmen_bagaswarm.dds",
+	"researchTime": 40,
+	"tooltip": "The Mudmen of Faron were instrumental in destroying the wicked Baga Tree of the south after taking his wooden fortress, an event that greatly inspires them when storming enemy castles. (Capture rate for Mudmen Jabber, Wolfkiller, and Mantlet increased by 30%, Mudmen Battering Ram Crush Damage increased by 20%)",
+	"modifications": [{"value": "Attack/Capture", "multiply": 1.3},
+					  {"value": "Attack/Melee/Damage/Crush", "multiply": 1.2}],
+	"affects": ["Mudman"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

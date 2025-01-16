@@ -1,12 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_entity_full">
   <Cost>
     <BattalionSlots>1</BattalionSlots>
     <BuildTime>1</BuildTime>
     <Resources>
-      <food>0</food>
       <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
     </Resources>
   </Cost>
   <Decay>
@@ -17,13 +15,13 @@
     <SinkingAnim>false</SinkingAnim>
   </Decay>
   <Footprint>
-    <Circle radius="1.5" />
+    <Circle radius="1.5"/>
     <Height>2.5</Height>
   </Footprint>
   <Garrisonable>
     <Size>1</Size>
   </Garrisonable>
-  <Guard />
+  <Guard/>
   <Health>
     <DeathType>corpse</DeathType>
     <IdleRegenRate>0</IdleRegenRate>
@@ -33,16 +31,6 @@
   </Health>
   <Identity>
     <Classes datatype="tokens">Unit ConquestCritical</Classes>
-    <Formations datatype="tokens">
-      special/formations/null
-      special/formations/box
-      special/formations/column_closed
-      special/formations/line_closed
-      special/formations/column_open
-      special/formations/line_open
-      special/formations/flank
-      special/formations/battle_line
-    </Formations>
     <GenericName>Unit</GenericName>
     <Undeletable>false</Undeletable>
   </Identity>
@@ -58,14 +46,14 @@
     <DeleteUponConstruction>false</DeleteUponConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
-    <Unit />
+    <Unit/>
   </Obstruction>
-  <OverlayRenderer />
+  <OverlayRenderer/>
   <Population>
     <Bonus>0</Bonus>
   </Population>
-  <RangeOverlayManager />
-  <RangeOverlayRenderer />
+  <RangeOverlayManager/>
+  <RangeOverlayRenderer/>
   <Resistance>
     <Entity>
       <Damage>
@@ -75,11 +63,8 @@
       </Damage>
     </Entity>
   </Resistance>
-  <TreasureCollector>
-    <MaxDistance>2</MaxDistance>
-  </TreasureCollector>
   <Selectable>
-    <EditorOnly />
+    <EditorOnly/>
     <Overlay>
       <Outline>
         <LineTexture>outline_border.png</LineTexture>
@@ -99,6 +84,9 @@
     <BarWidth>2.0</BarWidth>
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
+  <TreasureCollector>
+    <MaxDistance>2</MaxDistance>
+  </TreasureCollector>
   <UnitAI>
     <CanGuard>true</CanGuard>
     <CanPatrol>true</CanPatrol>
@@ -106,6 +94,16 @@
     <FleeDistance>12.0</FleeDistance>
     <FormationController>false</FormationController>
     <PatrolWaitTime>2</PatrolWaitTime>
+    <Formations datatype="tokens">
+      special/formations/null
+      special/formations/box
+      special/formations/column_closed
+      special/formations/line_closed
+      special/formations/column_open
+      special/formations/line_open
+      special/formations/flank
+      special/formations/battle_line
+    </Formations>
   </UnitAI>
   <UnitMotion>
     <FormationController>false</FormationController>

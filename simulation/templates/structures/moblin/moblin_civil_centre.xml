@@ -35,8 +35,32 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_civ_center_moblin.xml</constructed>
+      <select>interface/select/building/sel_civ_center_moblin.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_centercampA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/totem_killemtheycome
+    moblin/kojaku_pack
+    moblin/player_ismoblin
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/moblin/{civ}_bokoblin_b
+    units/moblin/{civ}_hero_kojaku
+    units/moblin/{civ}_hero_ogalon
+    units/moblin/{civ}_hero_kingbulblin
+    units/moblin/{civ}_hero_glutko
+    units/moblin/{civ}_hero_ganon
+    units/moblin/{civ}_hero_ghirahim</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -47,15 +71,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/moblin/{civ}_bokoblin_b
-    units/moblin/{civ}_hero_kojaku
-    units/moblin/{civ}_hero_ogalon
-    units/moblin/{civ}_hero_kingbulblin
-    units/moblin/{civ}_hero_glutko
-    units/moblin/{civ}_hero_ganon
-    units/moblin/{civ}_hero_ghirahim
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -69,20 +84,5 @@
       <X>0</X>
       <Z>3</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    moblin/totem_killemtheycome
-    moblin/kojaku_pack
-    moblin/player_ismoblin
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_civ_center_moblin.xml</constructed>
-      <select>interface/select/building/sel_civ_center_moblin.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/moblin/moblin_centercampA.xml</Actor>
-    <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

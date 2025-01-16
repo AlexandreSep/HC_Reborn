@@ -8,7 +8,7 @@
   </Obstruction>
   <ResourceSupply>
     <Max>100000</Max>
-    <MaxGatherers>4</MaxGatherers>
+    <MaxGatherers>10</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

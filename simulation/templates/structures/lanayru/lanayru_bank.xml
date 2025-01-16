@@ -29,7 +29,7 @@
     <Civ>lanayru</Civ>
     <Classes datatype="tokens">Addon City LanBank</Classes>
     <GenericName>Bank</GenericName>
-    <History>One of the keys to Lanayru Province&#8217;s rapid growth and financial success, Banks could hold citiziens&#8217; money for use in investements and other business ventures, as well as issue out loans and generate interest. Lanayru Banks were careful with this practice however, as mismanagement could lead to rapid inflation and economic collapse.</History>
+    <History>One of the keys to Lanayru Province’s rapid growth and financial success, Banks could hold citiziens’ money for use in investements and other business ventures, as well as issue out loans and generate interest. Lanayru Banks were careful with this practice however, as mismanagement could lead to rapid inflation and economic collapse.</History>
     <Icon>structures/lanayru/lan_bank.dds</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Automatically generates Rupees.</Tooltip>
@@ -41,12 +41,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    lanayru/get_bank
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -77,4 +71,12 @@
     <Actor>structures/lanayru/lanayru_bankA.xml</Actor>
     <FoundationActor>structures/lanayru/lanayru_scaffoldH.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/get_bank
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

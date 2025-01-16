@@ -1,0 +1,13 @@
+{
+	"genericName": "Hiding Brush",
+	"description": "Kokiri Hunting Foxes had an uncanny green coloration that helped them hide within the forest. Selective breeding would birth Foxes with even better green coloration, allowing them to hide much easier in the underbrush.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "undefined"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "kokiri/hiding_brush.dds",
+	"researchTime": 40,
+	"tooltip": "Kokiri Hunting Foxes had an uncanny green coloration that helped them hide within the forest. Selective breeding would birth Foxes with even better green coloration, allowing them to hide much easier in the underbrush. Hunting Fox's Camouflauge bonus is replaced with Stealth.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["Fox"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

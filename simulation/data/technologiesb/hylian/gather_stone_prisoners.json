@@ -1,0 +1,15 @@
+{
+	"genericName": "Prisoners of War",
+	"description": "Hylians were known to put prisoners of war to work in their mines.",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 300},
+	"supersedes": "hylian/gather_stone_peasants",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/gather_stone_prisoners.dds",
+	"researchTime": 40,
+	"tooltip": "Hylians were known to put prisoners of war to work in their mines. (+20% Material (Stone) and Ore Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.20},
+			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.20}],
+  "affects": [ "FemaleCitizen" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

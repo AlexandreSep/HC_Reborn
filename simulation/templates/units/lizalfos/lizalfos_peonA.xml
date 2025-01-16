@@ -51,7 +51,7 @@
   </Builder>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>50</food>
       <metal>0</metal>
@@ -66,7 +66,7 @@
     <Civ>lizalfos</Civ>
     <Classes datatype="tokens">Medium Peon Volvamight FemaleCitizen</Classes>
     <GenericName>Peon</GenericName>
-    <SpecificName>Peon</SpecificName>	
+    <SpecificName>Peon</SpecificName>
     <History>The backbone and workforce of the Lizalfos people, Peons endlessly toiled to build their altars and monuments and provide sacrifices to the gods.</History>
     <Icon>units/lizalfos/liz_peon.dds</Icon>
     <Lang>lizalfos</Lang>

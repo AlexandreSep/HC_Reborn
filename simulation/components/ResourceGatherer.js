@@ -320,6 +320,7 @@ ResourceGatherer.prototype.PerformGather = function(data, lateness)
 	if (cmpStatisticsTracker)
 		cmpStatisticsTracker.IncreaseResourceGatheredCounter(type.generic, status.amount, type.specific);
 
+	// HC-Exodarion - Do you need this? Else remove
 	Engine.PostMessage(this.entity, MT_ResourceCarryingChanged, { "to": this.GetCarryingStatus() });
 
 	if (!this.CanCarryMore(type.generic))
@@ -448,7 +449,8 @@ ResourceGatherer.prototype.CommitResources = function(target)
 			delete this.carrying[type];
 		changed = true;
 	}
-
+	
+	// HC-Exodarion - Do you need this? Else remove this and the "changed" above
 	if (changed)
 		Engine.PostMessage(this.entity, MT_ResourceCarryingChanged, { "to": this.GetCarryingStatus() });
 };
@@ -461,16 +463,17 @@ ResourceGatherer.prototype.CommitResources = function(target)
 ResourceGatherer.prototype.DropResources = function()
 {
 	this.carrying = {};
-
+	
+	// HC-Exodarion - Do you need this? Else remove
 	Engine.PostMessage(this.entity, MT_ResourceCarryingChanged, { "to": this.GetCarryingStatus() });
 };
 
 /**
  * @return {string} - A generic resource type if we were tasked to gather.
  */
-ResourceGatherer.prototype.LastGatheredType = function()
+ResourceGatherer.prototype.GetTaskedResourceType = function()
 {
-	return this.lastGathered;
+	return this.taskedResourceType;
 };
 
 /**
@@ -479,14 +482,14 @@ ResourceGatherer.prototype.LastGatheredType = function()
 ResourceGatherer.prototype.AddToPlayerCounter = function(type)
 {
 	// We need to be removed from the player counter first.
-	if (this.lastGathered)
+	if (this.taskedResourceType)
 		return;
 
 	let cmpPlayer = QueryOwnerInterface(this.entity, IID_Player);
 	if (cmpPlayer)
-		cmpPlayer.AddResourceGathererHyrule(type,this.entity); // HC-Code: Call the Hyrule Version of that function now
+		cmpPlayer.AddResourceGatherer(type);
 
-	this.lastGathered = type;
+	this.taskedResourceType = type;
 };
 
 /**
@@ -494,7 +497,7 @@ ResourceGatherer.prototype.AddToPlayerCounter = function(type)
  */
 ResourceGatherer.prototype.RemoveFromPlayerCounter = function(playerid)
 {
-	if (!this.lastGathered)
+	if (!this.taskedResourceType)
 		return;
 
 	let cmpPlayer = playerid != undefined ?
@@ -502,9 +505,9 @@ ResourceGatherer.prototype.RemoveFromPlayerCounter = function(playerid)
 		QueryOwnerInterface(this.entity, IID_Player);
 
 	if (cmpPlayer)
-		cmpPlayer.RemoveResourceGathererHyrule(this.lastGathered, this.entity); // // HC-Code: Call the Hyrule Version of that function now
+		cmpPlayer.RemoveResourceGatherer(this.taskedResourceType);
 
-	delete this.lastGathered;
+	delete this.taskedResourceType;
 };
 
 /**
@@ -545,6 +548,12 @@ ResourceGatherer.prototype.OnOwnershipChanged = function(msg)
 	{
 		this.RemoveFromPlayerCounter(msg.from);
 		return;
+	}
+	if (this.lastGathered && msg.from !== INVALID_PLAYER)
+	{
+		const resource = this.taskedResourceType;
+		this.RemoveFromPlayerCounter(msg.from);
+		this.AddToPlayerCounter(resource);
 	}
 
 	this.RecalculateGatherRates();

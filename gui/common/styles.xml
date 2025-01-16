@@ -4,26 +4,6 @@
 
 	<!--
 	==========================================
-	- DEFAULT STYLE: The style with the name 'default' is special, it will
-	- be called by every object before any other style is loaded.
-	==========================================
-	-->
-
-	<style name="default"
-		absolute="false"
-		enabled="true"
-		ghost="false"
-		hidden="false"
-		size="0 0 100% 100%"
-		z="0"
-
-		font="sans-14"
-		buffer_zone="5"
-		multiline="false"
-	/>
-
-	<!--
-	==========================================
 	MENU TEXT STYLES
 	==========================================
 	-->
@@ -49,18 +29,18 @@
 		text_valign="center"
 	/>
 
-  <style name="HyruleText"
-  font="sans-bold-20"
-  textcolor="white"
-  text_align="center"
-  text_valign="center"
-	/>
+  	<style name="HyruleText"
+		font="sans-bold-20"
+		textcolor="white"
+		text_align="center"
+		text_valign="center"
+			/>
 
-  <style name="HyruleTitleText"
-  font="sans-bold-24"
-  textcolor="orange"
-  text_align="left"
-  text_valign="top"
+		<style name="HyruleTitleText"
+		font="sans-bold-24"
+		textcolor="orange"
+		text_align="left"
+		text_valign="top"
 	/>
 	<!--
 	==========================================
@@ -70,6 +50,11 @@
 
 	<style name="TranslucentPanel"
 		sprite="BackgroundTranslucent"
+		buffer_zone="10"
+		font="sans-bold-stroke-14"
+		textcolor="white"
+		text_align="left"
+		text_valign="top"
 	/>
 
 	<style name="TranslucentPanelThinBorder"
@@ -85,31 +70,63 @@
 	MENU CONTROL ELEMENT STYLES
 	==========================================
 	-->
+<!--  textcolor="224 223 210 255"-->
 
-	<style name="StoneButtonFancy"
-		sprite="StoneButton"
-		sprite_disabled="StoneButtonDisabled"
-		sprite_over="StoneButtonFancyOver"
-		sprite_pressed="StoneButtonFancyGlow"
-		font="sans-bold-stroke-14"
-		textcolor="white"
+	<style name="MainMenuButton"
+		sprite="CenterMenuButtons"
+		sprite_disabled="ShinyButtonDisabled"
+		sprite_over="CenterMenuButtonsOver"
+		sprite_pressed="CenterMenuButtonsOver"
+		font="sans-bold-22"
+		textcolor="240 240 230 255"
+		textcolor_over="white"
+		textcolor_pressed="white"
 		textcolor_disabled="210 210 210 160"
 		text_align="center"
 		text_valign="center"
 		sound_pressed="audio/interface/ui/ui_button_click.ogg"
 	/>
 
-  <style name="StoneButtonFancy2"
-  sprite="StoneButton"
-  sprite_disabled="StoneButtonDisabled"
-  sprite_over="StoneButtonFancyOver"
-  sprite_pressed="StoneButtonFancyGlow"
-  font="sans-bold-stroke-14"
-  textcolor="white"
-  textcolor_disabled="210 210 210 160"
-  text_align="center"
-  text_valign="center"
-  sound_pressed="audio/interface/ui/ui_button_select.ogg"
+	<style name="TopMenuButton"
+		sprite="TransparentButton"
+		sprite_disabled="ShinyButtonDisabled"
+		sprite_over="TransparentButton"
+		sprite_pressed="TransparentButton"
+		font="sans-bold-20"
+		textcolor="205 165 88 255"
+		textcolor_pressed="156 113 55 255"
+		textcolor_over="white"
+		text_align="center"
+		text_valign="center"
+		sound_pressed="audio/interface/ui/ui_button_click.ogg"
+	/>
+
+	<style name="SubMenuButton"
+		sprite="BackDarker"
+		sprite_disabled="ShinyButtonDisabled"
+		sprite_over="ShinyButtonOverDark"
+		sprite_pressed="ShinyButtonGlow"
+		font="sans-bold-18"
+		textcolor="224 223 210 255"
+		textcolor_pressed="white"
+		textcolor_over="white"
+		text_align="center"
+		text_valign="center"
+		sound_pressed="audio/interface/ui/ui_button_click.ogg"
+	/>
+
+	<style name="StoneButtonFancy"
+		sprite="StoneButton"
+		sprite_disabled="StoneButtonDisabled"
+		sprite_over="StoneButtonFancyOver"
+		sprite_pressed="StoneButtonFancyGlow"
+		font="sans-bold-16"
+		textcolor="white"
+		textcolor_disabled="210 210 210 160"
+		textcolor_over="156 113 55 255"
+		text_align="center"
+		text_valign="center"
+		sound_pressed="audio/interface/ui/ui_button_click.ogg"
 	/>
 
 	<style name="StoneButton"
@@ -117,11 +134,24 @@
 		sprite_disabled="StoneButtonDisabled"
 		sprite_over="StoneButtonOver"
 		sprite_pressed="StoneButtonGlow"
-		font="sans-bold-stroke-14"
+		font="sans-bold-16"
 		textcolor="white"
 		text_align="center"
 		text_valign="center"
-		sound_pressed="audio/interface/ui/ui_button_cancel.ogg"
+		sound_pressed="audio/interface/ui/ui_button_click.ogg"
+	/>
+
+	<style name="LightButton"
+		sprite="TransparentButton"
+		sprite_disabled="ShinyButtonDisabled"
+		sprite_over="ShinyButtonOver"
+		sprite_pressed="ShinyButtonGlow"
+		font="sans-bold-18"
+		textcolor="200 200 200 255"
+		textcolor_over="white"
+		text_align="center"
+		text_valign="center"
+		sound_pressed="audio/interface/ui/ui_button_click.ogg"
 	/>
 
 	<style name="MapPlayerList"

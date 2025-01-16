@@ -14,4 +14,6 @@
 	<Threshold>10</Threshold>
 	<Path>audio/voice/gerudo/urbosa/</Path>
 	<Sound>urbosa_death_01.ogg</Sound>
+	<Sound>urbosa_death_02.ogg</Sound>
+	<Sound>urbosa_death_03.ogg</Sound>
 </SoundGroup>

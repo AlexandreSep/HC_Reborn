@@ -1,0 +1,14 @@
+{
+	"genericName": "Arc Murder Holes",
+	"description": "Arced slots between battlements enable Goron defenders to hurt bombs from safety.",
+	"cost": {"food": 0, "wood": 500, "stone": 500, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "goron"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "goron/building_archoles.dds",
+	"researchTime": 40,
+	"tooltip": "Arced slots between battlements enable Goron defenders to hurt bombs from safety. (+15 Meters Range - Bulwark Goron Wall and Stronghold)",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/MaxRange", "add": 15 }],
+	"affects": ["Bulwark"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

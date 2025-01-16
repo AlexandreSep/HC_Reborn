@@ -2,7 +2,7 @@
 	"type": "garrison",
 	"affects": ["Structure"],
 	"modifications": [
-		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.5 }
+		{ "value": "Trainer/BatchTimeModifier", "multiply": 0.5 }
 	],
 	"auraName": "Legendary Training",
 	"auraDescription": "(If Garrisoned, -50% Batch Build Time - Building)",

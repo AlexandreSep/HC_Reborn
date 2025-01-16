@@ -1,0 +1,15 @@
+{
+	"genericName": "Scale Coatings",
+	"description": "A mysterious substance that the Lizalfos will coat their scales with. They believe it makes their scales less prone to rupture, and by all accounts it seems to work.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 450},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a second deity.",
+	"icon": "lizalfos/armor_scalecoat.dds",
+	"researchTime": 40,
+	"tooltip": "+15% non-magic armor for all non-creature, non mechanical units.)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.15},
+		{"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.15},
+		{"value": "Resistance/Entity/Damage/Crush", "multiply": 1.15}],
+	"affects": ["Volvamight"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

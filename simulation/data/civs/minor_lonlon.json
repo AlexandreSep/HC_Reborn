@@ -1,0 +1,84 @@
+{
+	"Code": "minor_lonlon",
+	"Culture": "civilized",
+	"Music": [
+		{
+			"File": "hylian_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_battle4.ogg",
+			"Type": "battle"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies": [
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Malon",
+					"Class": "",
+					"Armament": "Farmer's Bow",
+					"Emblem": "",
+					"History": "A renowned horse breeder and rancher all throughout Hyrule, Malon has sold countless horses to the Kingdom of Hyrule and the Ordonians from her farmland. She is perhaps the most skilled rider of her time and is deadly with a bow and arrow."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"TeamBonuses": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"Structures": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/npc_lon_civil_centre"
+		},
+		{
+			"Template": "units/npc_lon_rancherA",
+			"Count": 4
+		},
+		{
+			"Template": "units/npc_lon_hand_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/npc_lon_watch_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/npc_lon_riders_b"
+		}
+	],
+	"AINames": [
+		"Malon"
+	],
+	"SkirmishReplacements": {
+		"skirmish/structures/default_civil_centre": "structures/npc_lonlon/npc_lon_civil_centre",
+		"skirmish/units/default_scout_b": "units/npc_lonlon/npc_lon_riders_b",
+		"skirmish/units/default_battalion_b": "units/npc_lonlon/npc_lon_rancherA"
+	},
+	"SelectableInGameSetup": false
+}

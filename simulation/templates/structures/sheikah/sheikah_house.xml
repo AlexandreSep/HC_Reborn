@@ -34,12 +34,14 @@
   <Population>
     <Bonus>25</Bonus>
   </Population>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
   <VisualActor>
     <Actor>structures/sheikah/sheikah_houseA.xml</Actor>
     <FoundationActor>structures/sheikah/sheikah_scaffoldD.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

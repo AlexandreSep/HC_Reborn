@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<object
+	name="userReport"
+	size="100%-504 100%-180 100%-4 100%-70"
+	hidden="true"
+	ghost="true"
+	type="image"
+	style="userReportPanel"
+>
+
+	<action on="Load">initUserReport();</action>
+	<action on="Tick">updateUserReportStatus();</action>
+
+	<object type="text" name="userReportText" style="ModernTextPanel" size="2 2 100%-152 100%"/>
+
+	<object type="button" name="userReportTermsButton" style="ModernButtonRed" size="100%-151 0%+8 100%-8 0%+38"/>
+	<object type="button" name="userReportEnableButton" style="ModernButtonRed" size="100%-151 0%+40 100%-8 0%+70"/>
+	<object type="button" name="userReportClose" style="ModernButtonRed" size="100%-151 0%+72 100%-8 0%+102">
+		<translatableAttribute id="caption">Close</translatableAttribute>
+		<action on="Press">closeUserReport();</action>
+	</object>
+</object>

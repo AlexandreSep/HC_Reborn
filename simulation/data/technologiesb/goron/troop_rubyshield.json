@@ -1,0 +1,16 @@
+{
+	"genericName": "Volgan Ruby Shields",
+	"description": "Ruby Guards and Fire Warriors are equipped with Ruby shields of ancient Volvagian design.",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 450},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "goron"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "goron/troop_rubyshield.dds",
+	"researchTime": 40,
+	"tooltip": "Ruby Guards and Fire Warriors are equipped with Ruby shields of ancient Volvagian design. (15% Armor - Ruby Guards and Fire Warriors)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.15},
+		{"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.15},
+		{"value": "Resistance/Entity/Damage/Crush", "multiply": 1.15},
+		{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["RubyShield"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

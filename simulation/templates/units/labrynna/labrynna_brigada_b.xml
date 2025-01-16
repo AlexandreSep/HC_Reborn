@@ -22,7 +22,7 @@
   </Auras>
   <Cost>
     <BattalionSlots>2</BattalionSlots>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>120</food>
       <metal>20</metal>

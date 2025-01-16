@@ -1,39 +1,74 @@
 {
 	"Code": "lizalfos",
 	"Culture": "naturalistic",
-	"Name": "Lizalfos",
-	"Emblem": "session/portraits/emblems/emblem_lizalfos.dds",
-	"History": "Once the lords of the Death Mountain range before a defeat at the hands of the Gorons drove them into exodus, the Lizalfos settled deep in the forests south of their homeland. After decades they had rebuilt their brutal empire and carved their borders all throughout Faron. While many of their kin are content to hunt and dance in their newfound home, some have more ambitions to expand their holdings.",
-	"Music":[
-			{"File":"lizalfos_theme1.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient1.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient2.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient3.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient4.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient5.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient6.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient7.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient8.ogg", "Type":"peace"},
-			{"File":"lizalfos_ambient9.ogg", "Type":"peace"},
-			{"File":"lizalfos_battle1.ogg", "Type":"battle"},
-			{"File":"lizalfos_battle2.ogg", "Type":"battle"},
-			{"File":"lizalfos_battle3.ogg", "Type":"battle"},
-			{"File":"lizalfos_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "lizalfos_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lizalfos_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "lizalfos_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "lizalfos_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "lizalfos_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Nardu the White",
 					"Class": "",
@@ -65,18 +100,15 @@
 			]
 		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Blood Frenzy",
 			"History": "",
-
 			"Description": "Lizalfos units killed in battle give a temporary bonus to the combat damage of nearby units."
 		},
 		{
 			"Name": "Initiation Sacrifices",
 			"History": "",
-
 			"Description": "Lizalfos begin a game with herdable animals instead of soldiers."
 		},
 		{
@@ -85,23 +117,20 @@
 			"Description": "All sources of meat and fish harvested by Lizalfos last 15% longer."
 		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/lizalfos/choosehero_nardu",
 		"civ_choices/lizalfos/choosehero_vakat",
 		"civ_choices/lizalfos/choosehero_talik",
 		"civ_choices/lizalfos/choosehero_okakusha"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "Sacrificial Gifts",
 			"History": "",
 			"Description": "Allies begin the game with herdable animals and bundles of other resources near their starting base. If their faction cannot harvest meat, they are replaced with appropriate sources of food."
 		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonders: Eastern Palace and Turtle Rock",
 			"Class": "",
@@ -130,8 +159,7 @@
 			"Special": ""
 		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/lizalfos/lizalfos_civil_centre"
 		},
@@ -169,7 +197,7 @@
 		"Nardu the White",
 		"Vakat the Winged",
 		"Talik the Red",
-		"Okakusha the Greeb"
+		"Okakusha the Green"
 	],
 	"SkirmishReplacements":
 	{

@@ -1,0 +1,14 @@
+{
+	"genericName": "Fertile Soil",
+	"description": "Seeds scattered across bountiful lands are nourished in this Fertile Soil.",
+	"cost": {"food": 200, "wood": 200, "stone": 200, "metal": 200},
+	"icon": "fairy/essence_fertilesoil.dds",
+	"researchTime": 40,
+	"tooltip": "Seeds scattered across bountiful lands are nourished in this Fertile Soil. (Building Cost reduced by 10%)",
+	"modifications": [{"value": "Cost/Resources/food", "multiply": 0.90},
+					  {"value": "Cost/Resources/wood", "multiply": 0.90},
+					  {"value": "Cost/Resources/stone", "multiply": 0.90},
+					  {"value": "Cost/Resources/metal", "multiply": 0.90}],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

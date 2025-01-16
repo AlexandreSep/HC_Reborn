@@ -1,0 +1,13 @@
+{
+	"genericName": "Toruma Clay",
+	"description": "",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 300},
+	"requirements": {"all": [ {"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/toruma_clay.dds",
+	"researchTime": 40,
+	"tooltip": "Sturdy and durable clay originating from the desolate Toruma Dunes. (+25% Health - Building)",
+	"modifications": [{ "value": "Health/Max", "multiply": 1.25 }],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

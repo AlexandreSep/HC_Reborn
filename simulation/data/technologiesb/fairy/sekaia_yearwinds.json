@@ -1,0 +1,15 @@
+{
+	"genericName": "Year-round Winds",
+	"description": "",
+	"cost": {"food": 0, "wood":0, "stone": 500, "metal": 350},
+	"requirements": {"all": [ {"tech": "civ_choices/fairy/choosehero_sekaia"}, {"tech": "fairy/unlock_summer"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Sekaia and at least one Season unlocked.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+15% Movement Speed - All units",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.15},
+					  {"value": "UnitMotion/RunMultiplier", "multiply": 1.15}],
+	"affects": ["Unit"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

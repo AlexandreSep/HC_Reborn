@@ -1,0 +1,6 @@
+{
+	"genericName": "Winter",
+	"top": "fairy/unlock_winter",
+	"bottom": "fairy/unlock_winterB",
+	"requirements": { "civ": "fairy" }
+}

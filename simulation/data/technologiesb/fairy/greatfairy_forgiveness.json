@@ -1,0 +1,13 @@
+{
+	"genericName": "Forgiveness",
+	"description": "It is said in fairy tales that a Great Fairy fallen in battle will often ask forgiveness. That lingering need will persist as Stray Fairies wander the world seeking it out.",
+	"cost": {"food": 400, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Village Phase.",
+	"icon": "fairy/stray_finalfragment.dds",
+	"researchTime": 40,
+	"tooltip": "It is said in fairy tales that a Great Fairy fallen in battle will often ask forgiveness. That lingering need will persist as Stray Fairies wander the world seeking it out. (Great Fairies now spawn a pair of Stray Fairies when slain)",
+	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 100}],
+	"affects": ["GreatFairy"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

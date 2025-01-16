@@ -29,11 +29,6 @@
   <Obstruction>
     <Static depth="15.5" width="15.5" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <Selectable>
     <EditorOnly />
     <Overlay>
@@ -47,4 +42,11 @@
   <VisualActor>
     <Actor>structures/lizalfos/lizalfos_idol_dinraalA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

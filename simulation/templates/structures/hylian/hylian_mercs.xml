@@ -1,7 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Barracks</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>45</BuildTime>
@@ -37,41 +37,6 @@
   <Obstruction>
     <Static depth="30.0" width="30.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>14.3</X>
-        <Z>6.6</Z>
-      </step1>
-      <step2>
-        <X>14.3</X>
-        <Z>15.5</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>32</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/merc_geru_b
-    units/merc_tinsuit_b
-    units/merc_wosu_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>6.4</X>
-      <Z>6.6</Z>
-    </SpawnOffset>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -105,4 +70,41 @@
     <Actor>structures/hylian/hylian_barA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldI.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/merc_geru_b
+    units/merc_tinsuit_b
+    units/merc_wosu_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>14.3</X>
+        <Z>6.6</Z>
+      </step1>
+      <step2>
+        <X>14.3</X>
+        <Z>15.5</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>32</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>6.4</X>
+      <Z>6.6</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

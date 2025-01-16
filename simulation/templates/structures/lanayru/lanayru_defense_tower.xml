@@ -60,12 +60,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    lanayru/tower_coordination
-    </Technologies>
-  </ProductionQueue>
   <Selectable>
     <Overlay>
       <Outline>
@@ -90,4 +84,12 @@
       <MaxRange>80</MaxRange>
     </CanSpotStealth>
   </Visibility>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/tower_coordination
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

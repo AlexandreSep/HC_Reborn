@@ -23,7 +23,7 @@
     <KillBeforeGather>false</KillBeforeGather>
     <Max>10000</Max>
     <Type>stone.ore</Type>
-    <MaxGatherers>2</MaxGatherers>
+    <MaxGatherers>5</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

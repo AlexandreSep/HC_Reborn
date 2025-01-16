@@ -1,6 +1,6 @@
 <Entity parent="units/deku/deku_orhatgiant_b">
   <Cost>
-   <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>250</food>
       <metal>0</metal>
@@ -47,16 +47,16 @@
       </Archer7>
     </TurretPoints>
   </TurretHolder>
-  <Health>    
-	<SpawnGarrison>
-		<Template>units/deku/deku_scrubling_orhat</Template>
-		<SpawnNumber>7</SpawnNumber>
-		<LinkedDestruction>true</LinkedDestruction>
-	</SpawnGarrison>
-  </Health>  
+  <Health>
+    <SpawnGarrison>
+      <Template>units/deku/deku_scrubling_orhat</Template>
+      <SpawnNumber>7</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
   <Identity>
     <GenericName>Giant Orhat (Platform Mount)</GenericName>
-	<RequiredTechnology>deku/orhatgiant_platform</RequiredTechnology>	
+    <RequiredTechnology>deku/orhatgiant_platform</RequiredTechnology>
   </Identity>
   <Upgrade disable="" />
   <VisualActor>

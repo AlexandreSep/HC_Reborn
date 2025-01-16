@@ -1,6 +1,6 @@
-Wildlife
+Wildlife and Lairs
 Each Map has unique Wildlife native to its environment.
-Some Wildlife is passive, and can be hunted for Food (usually Meat) or even other resources.
-Predators are aggressive, and will hunt down any prey (including your Units) that they come across.
-Some Wildlife can build nests and breed more of themselves. Beware, as some of these nests may be heavily defended.
+Most areas that contain a Node for building a base are occupied by Lairs.
+Lairs will continually spawn hostile Wildlife that.
+You must destroy a Lair in order to capture the Node that is rests on.
 

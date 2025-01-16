@@ -1,0 +1,13 @@
+{
+	"genericName": "Glimpse of Nous",
+	"description": "It may come as a glimpse to a mortal as a flash of light, that sudden realization of true knowledge through no means rational but of subtle spirit.",
+	"cost": {"food": 200, "wood": 200, "stone": 200, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "fairy/vision_glimpseofnous.dds",
+	"researchTime": 40,
+	"tooltip": "It may come as a glimpse to a mortal as a flash of light, that sudden realization of true knowledge through no means rational but of subtle spirit. (+15% increased Line of Sight for all Fairy units)",
+	"modifications": [{"value": "Vision/Range", "multiply": 1.15}],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

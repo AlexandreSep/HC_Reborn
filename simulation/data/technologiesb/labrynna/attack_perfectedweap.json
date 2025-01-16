@@ -1,0 +1,15 @@
+{
+	"genericName": "Perfected Weaponry",
+	"description": "Years of scientific research, debate, and experimention has lead Labrynna to craft some of the finest weaponry in the known land.",
+	"cost": {"food": 0, "wood": 0, "stone": 400, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "labrynna/attack_perfectedweap.dds",
+	"researchTime": 40,
+	"tooltip": "Years of scientific research, debate, and experimention has lead Labrynna to craft some of the finest weaponry in the known land. (+25% Melee Attack - Melee Infantry)",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.25},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.25},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.25}],
+	"affects": ["Infantry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

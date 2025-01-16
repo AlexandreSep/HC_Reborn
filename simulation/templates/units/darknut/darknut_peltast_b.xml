@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>15</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <Knockback>
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
@@ -23,10 +22,11 @@
       </Projectile>
       <RepeatTime>1200</RepeatTime>
       <TrueDamage>20</TrueDamage>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>60</food>
       <metal>0</metal>
@@ -80,7 +80,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>6.5</WalkSpeed>
+    <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_peltast_b.xml</Actor>

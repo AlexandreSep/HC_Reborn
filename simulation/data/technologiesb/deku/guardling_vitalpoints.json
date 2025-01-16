@@ -1,0 +1,14 @@
+{
+	"genericName": "Vital Points",
+	"description": "They may have been small, but with proper training and the right stick the Guardlings knew how to stab creatures where it hurt most.",
+	"cost": {"food": 0, "wood": 250, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "deku/guardling_vitalpoints.dds",
+	"researchTime": 40,
+	"tooltip": "They may have been small, but with proper training and the right stick the Guardlings knew how to stab creatures where it hurt most. (Guardling damage bonus to Cavalry and Creatures is doubled)",
+	"modifications": [{"value": "Attack/Melee/Damage/Bonuses/BonusCavMelee/Multiplier", "multiply": 2},
+					  {"value": "Attack/Melee/Damage/Bonuses/BonusCreature/Multiplier", "multiply": 2}],
+	"affects": ["Guardling"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

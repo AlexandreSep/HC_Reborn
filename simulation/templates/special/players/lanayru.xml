@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/lanayru_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>lanayru</Civ>
+    <GenericName>Lanayru Province</GenericName>
+    <History>Originally established as a small vassal state through the union of Hylian and Zora marriages, Lanayru Province quickly grew to become an economic juggernaut that financially rivalled the larger empires of the world. The bountiful resources of their homeland allowed for rapid wealth, but made the small and young nation a prime target for constant invasions at the hands of greedy and hungry forces.</History>
+    <Icon>emblems/emblem_lanayru.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+    <SharedLosTech>culture_civilized/postman_network</SharedLosTech>
+  </Player>
+</Entity>
+

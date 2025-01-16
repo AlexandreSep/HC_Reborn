@@ -1,0 +1,13 @@
+{
+	"genericName": "Light em Up!",
+	"description": "All those great drinkys, the Boko Juice, all of them they can go BOOM! Seriously just add fire! So great Ahhhhhhhggg!",
+	"cost": {"food": 0, "wood": 400, "stone": 0, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/bar_lightemup.dds",
+	"researchTime": 40,
+	"tooltip": "All those great drinkys, the Boko Juice, all of them they can go BOOM! Seriously just add fire! So great Ahhhhhhhggg! (Besting Bar' and Drinks can now Self Destruct and deal Fire damage)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["BestinBar"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

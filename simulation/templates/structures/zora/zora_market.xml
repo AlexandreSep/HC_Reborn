@@ -19,12 +19,14 @@
     <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/debris_zora_mediumB</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>gaia/lon_lon_cow_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -44,7 +46,26 @@
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_market.xml</constructed>
+      <select>interface/select/building/sel_market.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zora/zora_marketA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">culture_civilized/postman_network_zora
+    zora/trade_archpatron
+      zora/trade_watertunic
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    gaia/lon_lon_cow_1</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -55,10 +76,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -72,20 +89,5 @@
       <X>0</X>
       <Z>18</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    culture_civilized/postman_network_zora
-    zora/trade_archpatron
-      zora/trade_watertunic
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_market.xml</constructed>
-      <select>interface/select/building/sel_market.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/zora/zora_marketA.xml</Actor>
-    <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

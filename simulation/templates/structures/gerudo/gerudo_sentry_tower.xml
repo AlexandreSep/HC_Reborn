@@ -62,12 +62,6 @@
   <Obstruction>
     <Static depth="7.5" width="7.5" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      gerudo/birida_lookouts
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -103,4 +97,12 @@
     <Actor>structures/gerudo/gerudo_towerA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldI.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/birida_lookouts
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

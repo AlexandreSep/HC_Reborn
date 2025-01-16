@@ -1,6 +1,6 @@
 <Entity parent="HC_template_unit_cavalry">
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>

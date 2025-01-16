@@ -1,0 +1,49 @@
+{
+	"Title": "Hyrule Conquest",
+	"Content": [
+	{
+		"Title": "A Total Conversion Modification for 0 A.D. based on the Legend of Zelda Series",
+		"Content": [
+		{
+			"Subtitle": "Created By",
+			"List": [{"nick": "UndyingNephalim", "name": "Chasen Lindsey"}]
+		},
+		{
+			"Subtitle": "Composer",
+			"List": [
+				{"nick": "StygianWhite", "name": "Adam Halpin"}
+			]
+		},
+		{
+			"Subtitle": "Lore Organization and Archiving",
+      "List": [
+        { "nick": "UndyingNephalim" },
+        { "nick": "Deox" }
+      ]
+		},
+    {
+			"Subtitle": "Balancing",
+      "List": [
+        {
+          "nick": "Exodarion"
+        }
+      ]
+		},
+    {
+			"Subtitle": "Programming",
+      "List": [
+        { "nick": "Exodarion" },
+        { "nick": "Askarus" }
+      ]
+		},
+	{
+		"Title": "Adventure awaits on the Great Sea..."
+	},
+	{
+		"Title": "It is the Dawning of the First Day..."
+	},
+	{
+		"Title": "In a place where the Sun never sets..."
+	}
+	]}
+]}

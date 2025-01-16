@@ -1,0 +1,14 @@
+{
+	"genericName": "The Winds of Death",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/wind_of_death.dds",
+	"researchTime": 40,
+	"tooltip": "In the Gerudo Desert, the winds only bring death. (+25% Walk/Run Speed - Wind Witch)",
+	"modifications": [		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.25 }],
+	"affects": ["WindWitch"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

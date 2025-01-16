@@ -41,12 +41,6 @@
   <Population>
     <Bonus>25</Bonus>
   </Population>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    darknut/domus_bunks
-    darknut/domus_warriorpairings
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_house.xml</constructed>
@@ -57,4 +51,12 @@
   <VisualActor>
     <Actor>structures/darknut/darknut_domusbaseA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/domus_bunks
+    darknut/domus_warriorpairings
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

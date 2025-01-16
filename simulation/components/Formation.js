@@ -1,12 +1,6 @@
 function Formation() {}
 
 Formation.prototype.Schema =
-	"<element name='FormationName' a:help='Name of the formation.'>" +
-		"<text/>" +
-	"</element>" +
-	"<element name='Icon'>" +
-		"<text/>" +
-	"</element>" +
 	"<element name='RequiredMemberCount' a:help='Minimum number of entities the formation should contain (at least 2).'>" +
 		"<data type='integer'>" +
 		  "<param name='minInclusive'>"+
@@ -22,6 +16,9 @@ Formation.prototype.Schema =
 	"</element>" +
 	"<element name='FormationShape' a:help='Formation shape, currently supported are square, triangle and special, where special will be defined in the source code.'>" +
 		"<text/>" +
+	"</element>" +
+	"<element name='MaxTurningAngle' a:help='The turning angle in radian under which the formation attempts to turn and over which the formation positions are recomputed.'>" +
+		"<ref name='nonNegativeDecimal'/>" +
 	"</element>" +
 	"<element name='ShiftRows' a:help='Set the value to true to shift subsequent rows.'>" +
 		"<text/>" +
@@ -71,7 +68,10 @@ Formation.prototype.Schema =
 	"</element>";
 
 // Distance at which we'll switch between column/box formations.
-var g_ColumnDistanceThreshold = Number.MAX_SAFE_INTEGER;
+var g_ColumnDistanceThreshold = 128;
+
+// Distance under which the formation will not try to turn towards the target position.
+var g_RotateDistanceThreshold = 1;
 
 Formation.prototype.variablesToSerialize = [
 	"lastOrderVariant",
@@ -79,7 +79,8 @@ Formation.prototype.variablesToSerialize = [
 	"memberPositions",
 	"maxRowsUsed",
 	"maxColumnsUsed",
-	"waitingOnController",
+	"finishedEntities",
+	"idleEntities",
 	"columnar",
 	"rearrange",
 	"formationMembersWithAura",
@@ -92,6 +93,7 @@ Formation.prototype.variablesToSerialize = [
 
 Formation.prototype.Init = function(deserialized = false)
 {
+	this.maxTurningAngle = +this.template.MaxTurningAngle;
 	this.sortingClasses = this.template.SortingClasses.split(/\s+/g);
 	this.shiftRows = this.template.ShiftRows == "true";
 	this.separationMultiplier = {
@@ -135,8 +137,9 @@ Formation.prototype.Init = function(deserialized = false)
 	this.memberPositions = {};
 	this.maxRowsUsed = 0;
 	this.maxColumnsUsed = [];
-	// Entities that are waiting on the controller.
-	this.waitingOnController = [];
+	// Entities that have finished the original task.
+	this.finishedEntities = new Set();
+	this.idleEntities = new Set();
 	// Whether we're travelling in column (vs box) formation.
 	this.columnar = false;
 	// Whether we should rearrange all formation members.
@@ -284,34 +287,54 @@ Formation.prototype.GetFormationAnimationVariant = function(entity)
 	return undefined;
 };
 
-Formation.prototype.SetWaitingOnController = function(ent)
+Formation.prototype.SetFinishedEntity = function(ent)
 {
-	// Rotate the entity to the right angle.
-	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
-	let cmpEntPosition = Engine.QueryInterface(ent, IID_Position);
+	// Rotate the entity to the correct angle.
+	const cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
+	const cmpEntPosition = Engine.QueryInterface(ent, IID_Position);
 	if (cmpEntPosition && cmpEntPosition.IsInWorld() && cmpPosition && cmpPosition.IsInWorld())
 		cmpEntPosition.TurnTo(cmpPosition.GetRotation().y);
+	
+// HC-Exodarion: a26 does not have the following 2 lines. Remove if it is not from you
+    if (cmpEntPosition && cmpEntPosition.IsInWorld() && cmpPosition && cmpPosition.IsInWorld())
+        cmpEntPosition.TurnTo(cmpPosition.GetRotation().y);
 
-	if (this.waitingOnController.indexOf(ent) !== -1)
-		return;
-	this.waitingOnController.push(ent);
+	this.finishedEntities.add(ent);
 };
 
-Formation.prototype.UnsetWaitingOnController = function(ent)
+Formation.prototype.UnsetFinishedEntity = function(ent)
 {
-	let ind = this.waitingOnController.indexOf(ent);
-	if (ind !== -1)
-		this.waitingOnController.splice(ind, 1);
+	this.finishedEntities.delete(ent);
 };
 
-Formation.prototype.ResetWaitingEntities = function()
+Formation.prototype.ResetFinishedEntities = function()
 {
-	this.waitingOnController = [];
+	this.finishedEntities.clear();
 };
 
-Formation.prototype.AreAllMembersWaiting = function()
+Formation.prototype.AreAllMembersFinished = function()
 {
-	return this.waitingOnController.length === this.members.length;
+	return this.finishedEntities.size === this.members.length;
+};
+
+Formation.prototype.SetIdleEntity = function(ent)
+{
+	this.idleEntities.add(ent);
+};
+
+Formation.prototype.UnsetIdleEntity = function(ent)
+{
+	this.idleEntities.delete(ent);
+};
+
+Formation.prototype.ResetIdleEntities = function()
+{
+	this.idleEntities.clear();
+};
+
+Formation.prototype.AreAllMembersIdle = function()
+{
+	return this.idleEntities.size === this.members.length;
 };
 
 /**
@@ -360,32 +383,35 @@ Formation.prototype.SetMembers = function(ents)
  */
 Formation.prototype.RemoveMembers = function(ents, renamed = false)
 {
-	this.offsets = undefined;
-	this.members = this.members.filter(ent => ents.indexOf(ent) === -1);
-	this.waitingOnController = this.waitingOnController.filter(ent => ents.indexOf(ent) === -1);
+	if (!ents.length)
+		return;
 
-	for (let ent of ents)
+	this.offsets = undefined;
+	this.members = this.members.filter(ent => !ents.includes(ent));
+
+	for (const ent of ents)
 	{
-		let cmpUnitAI = Engine.QueryInterface(ent, IID_UnitAI);
+		this.finishedEntities.delete(ent);
+		const cmpUnitAI = Engine.QueryInterface(ent, IID_UnitAI);
 		cmpUnitAI.UpdateWorkOrders();
-		cmpUnitAI.SetFormationController(INVALID_ENTITY);
+		cmpUnitAI.UnsetFormationController();
 	}
 
 	for (let ent of this.formationMembersWithAura)
 	{
-		let cmpAuras = Engine.QueryInterface(ent, IID_Auras);
+		const cmpAuras = Engine.QueryInterface(ent, IID_Auras);
 		cmpAuras.RemoveFormationAura(ents);
 
 		// The unit with the aura is also removed from the formation.
-		if (ents.indexOf(ent) !== -1)
+		if (ents.includes(ent))
 			cmpAuras.RemoveFormationAura(this.members);
 	}
 
-	this.formationMembersWithAura = this.formationMembersWithAura.filter(function(e) { return ents.indexOf(e) == -1; });
+	this.formationMembersWithAura = this.formationMembersWithAura.filter(ent => !ents.includes(ent));
 
 	// If there's nobody left, destroy the formation
 	// unless this is a rename where we can have 0 members temporarily.
-	if (this.members.length < +this.template.RequiredMemberCount && !renamed)
+	if (!renamed && this.members.length < +this.template.RequiredMemberCount)
 	{
 		this.Disband();
 		return;
@@ -440,26 +466,26 @@ Formation.prototype.AddMembers = function(ents)
  */
 Formation.prototype.Disband = function()
 {
-	for (let ent of this.members)
-	{
-		let cmpUnitAI = Engine.QueryInterface(ent, IID_UnitAI);
-		cmpUnitAI.SetFormationController(INVALID_ENTITY);
-	}
+	this.RemoveMembers(this.members);
 
+	// HC-Exodarion: Do you need the block? If not, remove
 	for (let ent of this.formationMembersWithAura)
 	{
 		let cmpAuras = Engine.QueryInterface(ent, IID_Auras);
 		cmpAuras.RemoveFormationAura(this.members);
 	}
-
+	
+	// HC-Exodarion: Same. Remove next 4 lines if the were not from you	
 	this.members = [];
-	this.waitingOnController = [];
+	this.finishedEntities.clear();
 	this.formationMembersWithAura = [];
 	this.offsets = undefined;
 
-	let cmpUnitAI = Engine.QueryInterface(this.entity, IID_UnitAI);
 	// Hack: switch to a clean state to stop timers.
+	const cmpUnitAI = Engine.QueryInterface(this.entity, IID_UnitAI);
 	cmpUnitAI.UnitFsm.SwitchToNextState(cmpUnitAI, "");
+	Engine.QueryInterface(this.entity, IID_Position).MoveOutOfWorld();
+	this.DeleteTwinFormations();
 	Engine.DestroyEntity(this.entity);
 };
 
@@ -478,7 +504,6 @@ Formation.prototype.MoveMembersIntoFormation = function(moveCenter, force, varia
 
 	let active = [];
 	let positions = [];
-	let rotations = 0;
 
 	for (let ent of this.members)
 	{
@@ -490,26 +515,29 @@ Formation.prototype.MoveMembersIntoFormation = function(moveCenter, force, varia
 		// Query the 2D position as the exact height calculation isn't needed,
 		// but bring the position to the correct coordinates.
 		positions.push(cmpPosition.GetPosition2D());
-		rotations += cmpPosition.GetRotation().y;
 	}
 
-	let avgpos = Vector2D.average(positions);
-
-	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
+	const cmpFormationUnitAI = Engine.QueryInterface(this.entity, IID_UnitAI);
+	const cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
 	// Reposition the formation if we're told to or if we don't already have a position.
-	if (moveCenter || (cmpPosition && !cmpPosition.IsInWorld()))
-		this.SetupPositionAndHandleRotation(avgpos.x, avgpos.y, rotations / active.length);
-
-	this.lastOrderVariant = variant;
-	// Switch between column and box if necessary.
-	let cmpFormationUnitAI = Engine.QueryInterface(this.entity, IID_UnitAI);
-	let walkingDistance = cmpFormationUnitAI.ComputeWalkingDistance();
-	let columnar = walkingDistance > g_ColumnDistanceThreshold;
-	if (columnar != this.columnar)
+	if (cmpPosition && (moveCenter || !cmpPosition.IsInWorld()))
 	{
-		this.columnar = columnar;
-		this.offsets = undefined;
+		const avgpos = Vector2D.average(positions);
+		const targetPosition = cmpFormationUnitAI.GetTargetPositions()[0];
+
+		const oldRotation = cmpPosition.GetRotation().y;
+		const newRotation = targetPosition !== undefined && avgpos.distanceToSquared(targetPosition) > g_RotateDistanceThreshold ? avgpos.angleTo(targetPosition) : oldRotation;
+
+		// When we are out of world or the angle difference is big, trigger repositioning.
+		// Do this before setting up the position, because then we will always be in world.
+		if (!cmpPosition.IsInWorld() || !this.DoesAngleDifferenceAllowTurning(newRotation, oldRotation))
+			this.offsets = undefined;
+
+		this.SetupPositionAndHandleRotation(avgpos.x, avgpos.y, newRotation, true);
 	}
+
+	//HC-code, removed columnar code, we don't want to switch to box formation at any time
+	this.lastOrderVariant = variant;
 
 	let offsetsChanged = false;
 	if (!this.offsets)
@@ -524,8 +552,8 @@ Formation.prototype.MoveMembersIntoFormation = function(moveCenter, force, varia
 	let yMin = 0;
 
 	if (force)
-		// Reset waitingOnController as FormationWalk is called.
-		this.ResetWaitingEntities();
+		// Reset finishedEntities as FormationWalk is called.
+		this.ResetFinishedEntities();
 
 	for (let i = 0; i < this.offsets.length; ++i)
 	{
@@ -572,27 +600,32 @@ Formation.prototype.MoveToMembersCenter = function()
 	}
 
 	let avgpos = Vector2D.average(positions);
-	this.SetupPositionAndHandleRotation(avgpos.x, avgpos.y, rotations / positions.length);
+	this.SetupPositionAndHandleRotation(avgpos.x, avgpos.y, rotations / positions.length, false);
 };
 
 /**
-* Set formation position.
-* If formation is not in world at time this is called, set new rotation and flag for range manager.
-*/
-Formation.prototype.SetupPositionAndHandleRotation = function(x, y, rot)
+ * Set formation position.
+ * If formation is not in world at time this is called, set new rotation and flag
+ * for rangeManager. Also set the rotation if it is forced.
+ */
+Formation.prototype.SetupPositionAndHandleRotation = function(x, y, rot, forceRotation)
 {
-	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
+	const cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
 	if (!cmpPosition)
 		return;
-	let wasInWorld = cmpPosition.IsInWorld();
-    cmpPosition.JumpTo(x, y);
+	const wasInWorld = cmpPosition.IsInWorld();
+	cmpPosition.JumpTo(x, y);
 
-	if (wasInWorld)
+	if (!forceRotation && wasInWorld)
 		return;
 
+	// HC-Exodarion: Do you need those 2 lines? If not, remove
 	let cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
 	cmpRangeManager.SetEntityFlag(this.entity, "normal", false);
+
 	cmpPosition.TurnTo(rot);
+	if (!wasInWorld)
+		Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager).SetEntityFlag(this.entity, "normal", false);
 };
 
 Formation.prototype.GetAvgFootprint = function(active)
@@ -695,7 +728,7 @@ Formation.prototype.ComputeFormationOffsets = function(active, positions)
 	}
 
 	// Define special formations here.
-	if (this.template.FormationName == "Scatter")
+	if (this.template.FormationShape == "special" && Engine.QueryInterface(this.entity, IID_Identity).GetGenericName() == "Scatter")
 	{
 		let width = Math.sqrt(count) * (separation.width + separation.depth) * 2.5;
 
@@ -788,16 +821,14 @@ Formation.prototype.ComputeFormationOffsets = function(active, positions)
 		});
 
 	// Query the 2D position of the formation.
-	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
-	let formationPos = cmpPosition.GetPosition2D();
+	const realPositions = this.GetRealOffsetPositions(offsets);
 
 	// Use realistic place assignment,
 	// every soldier searches the closest available place in the formation.
 	let newOffsets = [];
-	let realPositions = this.GetRealOffsetPositions(offsets, formationPos);
-	for (let i = sortingClasses.length; i; --i)
+	for (const i of sortingClasses.reverse())
 	{
-		let t = types[sortingClasses[i - 1]];
+		const t = types[i];
 		if (!t.length)
 			continue;
 		let usedOffsets = offsets.splice(-t.length);
@@ -842,10 +873,14 @@ Formation.prototype.TakeClosestOffset = function(entPos, realPositions, offsets)
 /**
  * Get the world positions for a list of offsets in this formation.
  */
-Formation.prototype.GetRealOffsetPositions = function(offsets, pos)
+Formation.prototype.GetRealOffsetPositions = function(offsets)
 {
+	const cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
+	const pos = cmpPosition.GetPosition2D();
+	const rot = cmpPosition.GetRotation().y;
+	const sin = Math.sin(rot);
+	const cos = Math.cos(rot);
 	let offsetPositions = [];
-	let { sin, cos } = this.GetEstimatedOrientation(pos);
 	// Calculate the world positions.
 	for (let o of offsets)
 		offsetPositions.push(new Vector2D(pos.x + o.y * sin + o.x * cos, pos.y + o.y * cos - o.x * sin));
@@ -854,19 +889,15 @@ Formation.prototype.GetRealOffsetPositions = function(offsets, pos)
 };
 
 /**
- * Calculate the estimated rotation of the formation based on the current rotation.
- * Return the sine and cosine of the angle.
+ * Returns true if the difference between two given angles (in radians)
+ * are smaller than the maximum turning angle of the formation and therfore allow
+ * the formation turn without reassigning positions.
  */
-Formation.prototype.GetEstimatedOrientation = function(pos)
+
+Formation.prototype.DoesAngleDifferenceAllowTurning = function(a1, a2)
 {
-	let r = {};
-	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
-	if (!cmpPosition)
-		return r;
-	let rot = cmpPosition.GetRotation().y;
-	r.sin = Math.sin(rot);
-	r.cos = Math.cos(rot);
-	return r;
+	const d = Math.abs(a1 - a2) % (2 * Math.PI);
+	return d < this.maxTurningAngle || d > 2 * Math.PI - this.maxTurningAngle;
 };
 
 /**
@@ -874,19 +905,37 @@ Formation.prototype.GetEstimatedOrientation = function(pos)
  */
 Formation.prototype.ComputeMotionParameters = function()
 {
-	let maxRadius = 0;
-	let minSpeed = Infinity;
+	if (!this.members.length)
+		return;
 
+	let minSpeed = Infinity;
+	let minAcceleration = Infinity;
+	let maxClearance = 0;
+	let maxPassClass = "default";
+
+	const cmpPathfinder = Engine.QueryInterface(SYSTEM_ENTITY, IID_Pathfinder);
 	for (let ent of this.members)
 	{
-		let cmpUnitMotion = Engine.QueryInterface(ent, IID_UnitMotion);
-		if (cmpUnitMotion)
-			minSpeed = Math.min(minSpeed, cmpUnitMotion.GetWalkSpeed());
+		const cmpUnitMotion = Engine.QueryInterface(ent, IID_UnitMotion);
+		if (!cmpUnitMotion)
+			continue;
+		minSpeed = Math.min(minSpeed, cmpUnitMotion.GetWalkSpeed());
+		minAcceleration = Math.min(minAcceleration, cmpUnitMotion.GetAcceleration());
+
+		const passClass = cmpUnitMotion.GetPassabilityClassName();
+		const clearance = cmpPathfinder.GetClearance(cmpPathfinder.GetPassabilityClass(passClass));
+		if (clearance > maxClearance)
+		{
+			maxClearance = clearance;
+			maxPassClass = passClass;
+		}
 	}
 	minSpeed *= this.GetSpeedMultiplier();
 
-	let cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
+	const cmpUnitMotion = Engine.QueryInterface(this.entity, IID_UnitMotion);
 	cmpUnitMotion.SetSpeedMultiplier(minSpeed / cmpUnitMotion.GetWalkSpeed());
+	cmpUnitMotion.SetAcceleration(minAcceleration);
+	cmpUnitMotion.SetPassabilityClassName(maxPassClass);
 };
 
 Formation.prototype.ShapeUpdate = function()
@@ -926,24 +975,15 @@ Formation.prototype.ShapeUpdate = function()
 
 		// Merge the members from the twin formation into this one
 		// twin formations should always have exactly the same orders.
-		let otherMembers = cmpOtherFormation.members;
+		const otherMembers = cmpOtherFormation.members;
 		cmpOtherFormation.RemoveMembers(otherMembers);
 		this.AddMembers(otherMembers);
-		Engine.DestroyEntity(this.twinFormations[i]);
-		this.twinFormations.splice(i, 1);
 	}
-	// Switch between column and box if necessary.
-	let cmpUnitAI = Engine.QueryInterface(this.entity, IID_UnitAI);
-	let walkingDistance = cmpUnitAI.ComputeWalkingDistance();
-	let columnar = walkingDistance > g_ColumnDistanceThreshold;
-	if (columnar != this.columnar)
-	{
-		this.offsets = undefined;
-		this.columnar = columnar;
-		// Disable moveCenter so we can't get stuck in a loop of switching
-		// shape causing center to change causing shape to switch back.
-		this.MoveMembersIntoFormation(false, true, this.lastOrderVariant);
-	}
+	//HC-code, do not switch between column and box.
+	this.offsets = undefined;
+	// Disable moveCenter so we can't get stuck in a loop of switching
+	// shape causing center to change causing shape to switch back.
+	this.MoveMembersIntoFormation(false, true, this.lastOrderVariant);
 };
 
 Formation.prototype.ResetOrderVariant = function()
@@ -957,6 +997,8 @@ Formation.prototype.OnGlobalOwnershipChanged = function(msg)
 	// controlled by this formation.
 	if (this.members.indexOf(msg.entity) != -1)
 		this.RemoveMembers([msg.entity]);
+	if (msg.entity === this.entity && msg.to !== INVALID_PLAYER)
+		Engine.QueryInterface(this.entity, IID_Visual)?.SetVariant("animationVariant", QueryPlayerIDInterface(msg.to, IID_Identity).GetCiv());
 };
 
 Formation.prototype.OnGlobalEntityRenamed = function(msg)
@@ -964,9 +1006,8 @@ Formation.prototype.OnGlobalEntityRenamed = function(msg)
 	if (this.members.indexOf(msg.entity) === -1)
 		return;
 
-	let waitingIndex = this.waitingOnController.indexOf(msg.entity);
-	if (waitingIndex !== -1)
-		this.waitingOnController.splice(waitingIndex, 1, msg.newentity);
+	if (this.finishedEntities.delete(msg.entity))
+		this.finishedEntities.add(msg.newentity);
 
 	// Save rearranging to temporarily set it to false.
 	let temp = this.rearrange;
@@ -1000,6 +1041,7 @@ Formation.prototype.DeleteTwinFormations = function()
 	this.twinFormations = [];
 };
 
+// HC-Exodarion - This function is much shorter in a26. Did you add something here? If not, thake their version or tell me and I will do it
 Formation.prototype.LoadFormation = function(newTemplate)
 {
 	// Get the old formation info.
@@ -1034,6 +1076,14 @@ Formation.prototype.LoadFormation = function(newTemplate)
 	Engine.PostMessage(this.entity, MT_EntityRenamed, { "entity": this.entity, "newentity": newFormation });
 
 	return cmpNewUnitAI;
+};
+
+
+Formation.prototype.OnEntityRenamed = function(msg)
+{
+	const members = clone(this.members);
+	this.Disband();
+	Engine.QueryInterface(msg.newentity, IID_Formation).SetMembers(members);
 };
 
 Engine.RegisterComponentType(IID_Formation, "Formation", Formation);

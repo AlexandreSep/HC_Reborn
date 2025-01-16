@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/kokiri_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <GenericName>Kokiri</GenericName>
+    <History>Deep in the forests of eastern Hyrule rested a kingdom unlike any other. Under the guidance and lordship of the Great Deku Tree, the childlike Kokiri arrested control of the woodland realm and established a land of peace and isolation. The Great Deku Tree's utopia would not last however, and as wars ravaged the surface of Hyrule time and again, such conflict would bring the Kokiri into the field of battle.</History>
+    <Icon>emblems/emblem_kokiri.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+    <SharedLosTech>culture_naturalistic/cartography</SharedLosTech>
+  </Player>
+</Entity>
+

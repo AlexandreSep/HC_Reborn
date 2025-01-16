@@ -1,7 +1,6 @@
 {
 	"type": "global",
-	"affects": ["Summer"],
-	"modifications": [{"value": "Promotion/RequiredXp", "multiply": -0.0001}],
+	"affects": [],
 	"auraName": "Autumntime",
 	"auraDescription": "It is now Autumntime for the Fairies of Tarm.",
 	"overlayIcon": "art/textures/ui/session/auras/fairy_autumn.dds"

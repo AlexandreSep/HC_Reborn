@@ -16,7 +16,6 @@
         <Fire>40.0</Fire>
         <Water>40.0</Water>
       </Damage>
-      <Delay>0</Delay>
       <Knockback>
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
@@ -50,10 +49,11 @@
         <Horizontal>25</Horizontal>
         <Vertical>25</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>120</BuildTime>
+    <BuildTime>80</BuildTime>
     <Resources>
       <food>2000</food>
       <metal>250</metal>

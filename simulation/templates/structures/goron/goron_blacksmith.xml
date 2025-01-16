@@ -43,14 +43,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      goron/attack_lavaweap
-    goron/armor_magmahide
-    goron/armor_temperedsteel
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -71,4 +63,14 @@
     <Actor>structures/goron/goron_lavasmithyA.xml</Actor>
     <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/attack_lavaweap
+    goron/armor_magmahide
+    goron/armor_temperedsteel
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

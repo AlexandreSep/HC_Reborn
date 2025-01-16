@@ -1,0 +1,13 @@
+{
+	"genericName": "Mido",
+	"description": "Mido",
+	"icon": "kokiri/choosehero_mido.png",
+	"tooltip": "Select Mido, the Kokiri Chief, as your hero of choice.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["KokChief"],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Cavalry Focus", "tooltipText": "Mido focuses on improving Cavalry units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Mido", "tooltipText": "Allows you to summon Mido, a Melee cavalry hero."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Stag Chariot", "tooltipText": "Cavalry unit that can loose Slingshots while on the move."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Mounted Chiefs", "tooltipText": "Chiefs are trained as Mounted Cavalry units and can attach to Cavalry Battalions."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Improved Deer", "tooltipText": "Improves the speed of all Cavalry units."}]
+}

@@ -1,0 +1,13 @@
+{
+	"genericName": "Venom Sacks",
+	"description": "Hive Larva now inflict minor Poison with their attacks.",
+	"cost": {"food": 0, "wood": 250, "stone": 0, "metal": 150},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "gohma/larva_venomsacks.dds",
+	"researchTime": 40,
+	"tooltip": "Hive Larva now inflict minor Poison with their attacks. (+3 Poison Attack - Hive Larva)",
+	"modifications": [{"value": "Attack/Melee/Damage/Forest", "add": 3}],
+	"affects": ["LarvaHive"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

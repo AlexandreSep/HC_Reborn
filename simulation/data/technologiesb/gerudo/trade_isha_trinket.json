@@ -1,0 +1,13 @@
+{
+	"genericName": "Isha's Gem Trinkets",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 100, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/trade_isha_trinket.dds",
+	"researchTime": 40,
+	"tooltip": "Well-crafted gems and jewelry sell for quite a fair price in foreign lands. (+20% Income - Gerudo Trader)",
+	"modifications": [{"value": "Trader/GainMultiplier", "multiply": 1.20}],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

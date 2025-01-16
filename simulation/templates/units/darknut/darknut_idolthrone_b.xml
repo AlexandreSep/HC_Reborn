@@ -4,7 +4,7 @@
   </Auras>
   <Capturable disable="" />
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
       <metal>20</metal>
@@ -65,7 +65,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.4285</RunMultiplier>
-    <WalkSpeed>3.5</WalkSpeed>
+    <WalkSpeed>7</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_idolthrone_b.xml</Actor>

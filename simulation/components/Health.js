@@ -11,12 +11,14 @@ Health.prototype.Schema =
 	"<element name='Max' a:help='Maximum hitpoints'>" +
 		"<ref name='nonNegativeDecimal'/>" +
 	"</element>" +
+	// HC-Code
 	"<optional>" +
 		"<element name='TransformAfterCreation' a:help='Upgrades the structure after X seconds into an other one'>" +
 			"<element name='TemplateToTransformInto' a:help='the template the unit will transform into'><text/></element>" +
 			"<element name='TransformAfterSeconds' a:help='Transform into the given template after X seconds'><ref name='nonNegativeDecimal'/></element>" +
 		"</element>" +
 	"</optional>" +
+	// HC-End
 	"<optional>" +
 		"<element name='Initial' a:help='Initial hitpoints. Default if unspecified is equal to Max'>" +
 			"<ref name='nonNegativeDecimal'/>" +
@@ -53,6 +55,7 @@ Health.prototype.Schema =
 			"<text/>" +
 		"</element>" +
 	"</optional>" +
+    // HC-Code
     "<optional>" +
         "<element name='SpawnMultipleEntitiesOnDeath'>" +
         "<interleave>" +
@@ -80,18 +83,23 @@ Health.prototype.Schema =
     "</optional>" +
     "<optional>" +
         "<element name='SpawnOnInterval'>" +
-        "<interleave>" +
-            "<element name='Template' a:help='the template that will be spawned'><text/></element>" +
-            "<element name='Max' a:help='The max number that can be present with spawning'><data type='nonNegativeInteger'/></element>" +
-            "<element name='StartDelay' a:help='the initial delay until the first interval'><data type='nonNegativeInteger'/></element>" +
-            "<element name='Interval' a:help='the interval time in miliseconds'><data type='positiveInteger'/></element>" +
-            "<element name='SpawnNumber' a:help='The amount spawned per interval'><data type='positiveInteger'/></element>" +
-            "<element name='LinkedDestruction' a:help='whether the destruction of the component holder will result in the death of the spawned units'><data type='boolean'/></element>" +
-			"<optional>" +
-                "<element name='OwnerID' a:help='Which owner it should belong to.'><ref name='nonNegativeDecimal'/></element>" +
-            "</optional>" +	
-        "</interleave>" +
-        "</element>" +
+            "<oneOrMore>" +
+                "<element>" +
+                    "<anyName/>" +
+                    "<interleave>" +
+                        "<element name='Template' a:help='the template that will be spawned'><text/></element>" +
+                        "<element name='Max' a:help='The max number that can be present with spawning'><data type='nonNegativeInteger'/></element>" +
+                        "<element name='StartDelay' a:help='the initial delay until the first interval'><data type='nonNegativeInteger'/></element>" +
+                        "<element name='Interval' a:help='the interval time in miliseconds'><data type='positiveInteger'/></element>" +
+                        "<element name='SpawnNumber' a:help='The amount spawned per interval'><data type='positiveInteger'/></element>" +
+                        "<element name='LinkedDestruction' a:help='whether the destruction of the component holder will result in the death of the spawned units'><data type='boolean'/></element>" +
+						"<optional>" +
+							"<element name='OwnerID' a:help='Which owner it should belong to.'><ref name='nonNegativeDecimal'/></element>" +
+						"</optional>" +	
+                    "</interleave>" +
+                "</element >" +
+            "</oneOrMore>" +
+		"</element >" +	
     "</optional>" +
     "<optional>" +
         "<element name='SpawnGarrison'>" +
@@ -102,6 +110,7 @@ Health.prototype.Schema =
         "</interleave>" +
         "</element>" +
     "</optional>" +
+    // HC-End
 	"<element name='Unhealable' a:help='Indicates that the entity can not be healed by healer units'>" +
 		"<data type='boolean'/>" +
 	"</element>";
@@ -362,10 +371,10 @@ Health.prototype.HandleDeath = function(attacker = null)
 	}
 	
 	//HC-Code
-    this.CheckGarrisonSpawnInvolvement(); // checks for Garrison Spawn involvement and acts accordingly 
+	this.CheckGarrisonSpawnInvolvement(); // checks for Garrison Spawn involvement and acts accordingly 
 	this.CheckIntervalSpawnInvolvement(); // checks for Interval Spawn involvement and acts accordingly 
 	this.CheckProductionSpawningState(); // check if this entity was in the process of producing entities and act accordingly
-    this.UpdateBattalionStatus(); // remove this entity from its battalion if applicable and update the battalion map accordingly
+	this.UpdateBattalionStatus(); // remove this entity from its battalion if applicable and update the battalion map accordingly
 
 	switch (this.template.DeathType)
 	{
@@ -604,15 +613,15 @@ Health.prototype.RegisterHealthChanged = function(from)
 
 	// HC-Code
 	let cmpTrigger = Engine.QueryInterface(SYSTEM_ENTITY, IID_Trigger);
-    cmpTrigger.CallEvent("OnHealthChanged", { entity: this.entity, HP: this.hitpoints }); // make health events possible for map triggers
+	cmpTrigger.CallEvent("OnHealthChanged", { entity: this.entity, HP: this.hitpoints }); //HC-code make health events possible for map triggers
 	
 	Engine.PostMessage(this.entity, MT_HealthChanged, { "from": from, "to": this.hitpoints });
 
 	//HC-Code: Makes the health accessible to the battalion selection UI
-    var cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
-    let cmpEntityPlayer = QueryOwnerInterface(this.entity);
-    let playerID = cmpEntityPlayer.GetPlayerID();
-    cmpGUIInterface.ProcessHealthChanged(playerID, this.entity, this.hitpoints);
+	var cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
+	let cmpEntityPlayer = QueryOwnerInterface(this.entity);
+	let playerID = cmpEntityPlayer.GetPlayerID();
+	cmpGUIInterface.ProcessHealthChanged(playerID, this.entity, this.hitpoints);
 };
 
 function HealthMirage() {}

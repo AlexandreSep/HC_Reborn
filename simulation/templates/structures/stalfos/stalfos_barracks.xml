@@ -35,8 +35,31 @@
   <Obstruction>
     <Static depth="35.0" width="35.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>structures/stalfos/stalfos_defiledA_anc.xml</Actor>
+    <FoundationActor>structures/sheikah/sheikah_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">sheikah/paya_lowprofile
+	   sheikah/purah_hawkeye
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/stalfos/stalfos_poe_b
+		units/stalfos/stalfos_poebig_b
+		units/stalfos/stalfos_poenecro_b
+		units/stalfos/stalfos_phantomrider_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -47,12 +70,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-	<Entities datatype="tokens">
-		units/stalfos/stalfos_poe_b
-		units/stalfos/stalfos_poebig_b
-		units/stalfos/stalfos_poenecro_b
-		units/stalfos/stalfos_phantomrider_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -66,22 +83,5 @@
       <X>0</X>
       <Z>1</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-	   sheikah/paya_lowprofile
-	   sheikah/purah_hawkeye
-    </Technologies>
-  </ProductionQueue>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>75.0</Hack>
-        <Pierce>95.0</Pierce>
-		</Damage>
-    </Entity>
-</Resistance>
-  <VisualActor>
-    <Actor>structures/stalfos/stalfos_defiledA_anc.xml</Actor>
-    <FoundationActor>structures/sheikah/sheikah_scaffoldB.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

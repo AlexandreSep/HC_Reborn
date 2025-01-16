@@ -27,9 +27,6 @@
   <Obstruction>
     <Static depth="34.0" width="34.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -48,4 +45,11 @@
     <Actor>structures/ruins/ruins_zoraA.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

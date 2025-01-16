@@ -1,0 +1,14 @@
+{
+	"genericName": "Valadeku Tracery",
+	"description": "Methods of woodworking lost to time, yet preserved in some Huskus and Deku texts. These fine methods of Tracery allow buildings to be constructed faster and cheaper.",
+	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 550},
+	"requirements": { "all": [{ "entity": { "class": "WoodCarver", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Wood Carver Addon.",
+	"icon": "kokiri/building_tracery.dds",
+	"researchTime": 40,
+	"tooltip": "Methods of woodworking lost to time, yet preserved in some Huskus and Deku texts. These fine methods of Tracery allow buildings to be constructed faster and cheaper. (-10% Material Cost and Build Time - Building)",
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.90 },
+					  { "value": "Cost/Resources/Wood", "multiply": 0.90 }],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

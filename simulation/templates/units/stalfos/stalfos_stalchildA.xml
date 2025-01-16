@@ -32,7 +32,7 @@
   </Identity>
   <Cost>
     <BattalionSlots>0</BattalionSlots>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>100</food>
       <wood>0</wood>

@@ -4,16 +4,6 @@
     <History>Cannons quickly became the siege weapon of choice used by the Regime, and dedicated factories could produce the machines at quite a staggering rate.</History>
     <Icon>structures/labrynna/lab_gunpowderB.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/labrynna/{civ}_cannon
-      units/labrynna/{civ}_organgun
-    </Entities>
-    <Technologies datatype="tokens">
-    labrynna/cannon_highyield
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <Tower>
       <Cost>
@@ -29,4 +19,14 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_powderB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/cannon_highyield
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_cannon
+      units/labrynna/{civ}_organgun</Entities>
+  </Trainer>
 </Entity>

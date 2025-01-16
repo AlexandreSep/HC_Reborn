@@ -1,0 +1,20 @@
+{
+	"pair": "pair_lizgodsB",
+	"genericName": "Worship Dinraal",
+	"specificName": {
+	},
+	"description": ".",
+	"cost": { "food": 0, "wood": 0, "stone": 0, "metal": 300 },
+	"supersedes": "pair_lizgodsA",
+	"replaces": ["pair_lizgodsA"],
+	"icon": "lizalfos/deity_dinraal.dds",
+	"researchTime": 30,
+	"tooltip": "Lizalfos god of war and battle. Dinraal is portrayed as a giant fiery serpent and is also considered the father of all Volvagians.",
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.15, "affects": "CivCentre" },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 7.0, "affects": "Structure" },
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Farosh" },
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Dinraal" }
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

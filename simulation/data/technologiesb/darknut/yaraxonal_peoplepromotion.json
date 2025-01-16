@@ -1,0 +1,14 @@
+{
+	"genericName": "People's Promotion",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [ {"tech": "civ_choices/darknut/choosehero_yaraxonal"}, {"tech": "phase_city"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Requires Yaraxonal and the City Phase.",
+	"icon": "darknut/yaraxonal_peoplepromotion.dds",
+	"researchTime": 40,
+	"tooltip": "Gymnatai, Hoplites, and Peltasts can gain a level.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 100}],
+	"affects": ["Yarapromote"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

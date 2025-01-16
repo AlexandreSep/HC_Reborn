@@ -131,6 +131,7 @@ AIProxy.prototype.OnUnitIdleChanged = function(msg)
 {
 	if (!this.NotifyChange())
 		return;
+	//warn(this.entity + " isIdle " + msg.idle + " : " + Engine.QueryInterface(this.entity, IID_Identity).GetGenericName());
 	this.changes.idle = msg.idle;
 };
 
@@ -159,10 +160,20 @@ AIProxy.prototype.OnProductionQueueChanged = function(msg)
 {
 	if (!this.NotifyChange())
 		return;
-	let cmpProductionQueue = Engine.QueryInterface(this.entity, IID_ProductionQueue);
-    this.changes.trainingQueue = cmpProductionQueue.GetQueue();
-    this.changes.trainableEnts = cmpProductionQueue.GetEntitiesList(); //HC-Code, used by the AI to update trainable entity lists 
+	const cmpTrainer = Engine.QueryInterface(this.entity, IID_Trainer); // HC-code: Using trainer now. Check if it still works
+	const cmpProductionQueue = Engine.QueryInterface(this.entity, IID_ProductionQueue);
+	this.changes.trainingQueue = cmpProductionQueue.GetQueue();  
+	this.changes.trainableEnts = cmpTrainer.GetEntitiesList(); //HC-Code, used by the AI to update trainable entity lists 
 };
+
+//HC-code, used by the AI to receive upgrade progress updates
+AIProxy.prototype.OnUpgradeProgressUpdate = function (msg)
+{
+	if (!this.NotifyChange())
+		return;
+
+    this.changes.upgradeTime = msg.time;
+}
 
 AIProxy.prototype.OnGarrisonedUnitsChanged = function(msg)
 {
@@ -296,8 +307,9 @@ AIProxy.prototype.GetFullRepresentation = function()
 	if (cmpProductionQueue)
 	{
 		// Updated by OnProductionQueueChanged
-        ret.trainingQueue = cmpProductionQueue.GetQueue();
-        ret.trainableEnts = cmpProductionQueue.GetEntitiesList(); //HC-Code, used by the AI to update trainable entity lists 
+		ret.trainingQueue = cmpProductionQueue.GetQueue();
+		const cmpTrainer = Engine.QueryInterface(this.entity, IID_Trainer); // HC-Exo: Using trainer now. Check if it still works
+        ret.trainableEnts = cmpTrainer.GetEntitiesList(); //HC-Code, used by the AI to update trainable entity lists 
 	}
 
 	let cmpFoundation = Engine.QueryInterface(this.entity, IID_Foundation);
@@ -350,6 +362,11 @@ AIProxy.prototype.GetFullRepresentation = function()
 	let cmpCapturable = Engine.QueryInterface(this.entity, IID_Capturable);
 	if (cmpCapturable)
 		ret.capturePoints = cmpCapturable.GetCapturePoints();
+
+	//HC-code, used by the AI to receive upgrade progress updates
+    	let cmpUpgrade = Engine.QueryInterface(this.entity, IID_Upgrade);
+    	if (cmpUpgrade)
+		ret.upgradeTime = cmpUpgrade.GetElapsedTime();
 
 	return ret;
 };

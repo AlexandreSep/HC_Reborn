@@ -1,0 +1,13 @@
+{
+	"genericName": "Mercantile Flight",
+	"description": "",
+	"cost": {"food": 150, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "deku/trade_mer_flight.dds",
+	"researchTime": 40,
+	"tooltip": "Business Scrubs can now fly.",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["BusinessScrub"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

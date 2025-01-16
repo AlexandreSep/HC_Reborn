@@ -35,13 +35,6 @@
   <Population>
     <Bonus>7</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    zora/commune_mandatequarters
-      zora/commune_fishpond
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -55,4 +48,13 @@
     <Actor>structures/zora/zora_communeA.xml</Actor>
     <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">zora/commune_mandatequarters
+      zora/commune_fishpond
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

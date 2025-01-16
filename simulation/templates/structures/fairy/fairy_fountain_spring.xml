@@ -3,15 +3,6 @@
     <Classes datatype="tokens">Spring</Classes>
     <Icon>structures/fairy/fai_fountain_spring.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/fairy/{civ}_stray_spring
-    units/fairy/{civ}_drove_spring
-      units/fairy/{civ}_banshee_spring
-    units/fairy/{civ}_galeboomer_spring
-    </Entities>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_fountain_summer</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -20,4 +11,15 @@
     <Actor>structures/fairy/fairy_fountainA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/fairy/{civ}_stray_spring
+    units/fairy/{civ}_drove_spring
+      units/fairy/{civ}_banshee_spring
+    units/fairy/{civ}_galeboomer_spring</Entities>
+  </Trainer>
 </Entity>

@@ -17,7 +17,7 @@
     <Height>3.0</Height>
   </Footprint>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>9</BuildTime>
     <Resources>
       <food>135</food>
       <metal>0</metal>

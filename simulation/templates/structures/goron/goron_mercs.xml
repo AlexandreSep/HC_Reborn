@@ -39,8 +39,28 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+      <upgraded>interface/complete/building/complete_mercs.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/goron/goron_bazaarA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/merc_favoredshop
+    goron/merc_armsdealer
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/merc_goriya_b
+    units/merc_taros_b
+    units/merc_daira_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -55,11 +75,6 @@
         <Z>20</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/merc_goriya_b
-    units/merc_taros_b
-    units/merc_daira_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -73,20 +88,5 @@
       <X>-3.3</X>
       <Z>-6.5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-      goron/merc_favoredshop
-    goron/merc_armsdealer
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_mercs.xml</constructed>
-      <select>interface/select/building/sel_mercs.xml</select>
-      <upgraded>interface/complete/building/complete_mercs.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/goron/goron_bazaarA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

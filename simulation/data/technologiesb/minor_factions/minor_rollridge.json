@@ -1,0 +1,10 @@
+{
+	"genericName": "Rolling Ridge Embassy",
+	"cost": { "metal": 300 },
+	"icon": "minor_factions/embassy_rollridge.dds",
+	"researchTime": 30,
+	"tooltip": "Allows you to construct Rolling Ridge bases at Camps.",
+	"description": "In the mountain ranges of Labrynna rest the Gorons of Rolling Ridge. Shy, reclusive, and a myth to many in Hyrule, this particular race of rockmen was quite distinct from their mineral-eating, lava-bathing brethren. Although it was quite easy to make friends with the passive fellows, finding them in the first place was a daunting task in itself.",	
+	"modifications": [	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

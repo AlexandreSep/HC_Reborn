@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/gerudo_player_teambonus
+    
+  </Auras>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <GenericName>Gerudo</GenericName>
+    <History>A desert-dwelling race of female warriors, the Gerudo are descended from an ancient and powerful empire that stretched across the western sands of Hyrule for countless centuries. Surrounded on all sides by hostile nations, scarce resources, and a curse that wiped out all the men of their race, the Gerudo have suffered a continuous barrage of brutal hardships, setbacks, and wars without abandon.</History>
+    <Icon>emblems/emblem_gerudo.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+    <SharedLosTech>culture_civilized/postman_network</SharedLosTech>
+  </Player>
+</Entity>
+

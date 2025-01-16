@@ -1,0 +1,18 @@
+{
+	"genericName": "Gor Coron",
+	"description": "Gor Coron",
+	"icon": "goron/choosehero_gorcoron.png",
+	"tooltip": "Select Gor Coron as your hero of choice.",
+	"modifications": [{"value": "Health/Max", "multiply": 1.10, "affects": "CoronBonusA"},
+					  { "value": "UnitMotion/WalkSpeed", "multiply": 1.25 , "affects": "CoronBonusB"},
+					  { "value": "UnitMotion/RunMultiplier", "multiply": 1.25 , "affects": "CoronBonusB"},
+					  { "value": "Cost/Resources/food", "multiply": 0.90 , "affects": "Infantry"},
+					  { "value": "Cost/Resources/wood", "multiply": 0.90 , "affects": "Infantry"},
+					  { "value": "Cost/Resources/stone", "multiply": 0.90 , "affects": "Infantry"},
+					  { "value": "Cost/Resources/metal", "multiply": 0.90 , "affects": "Infantry"}],			  
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Infantry Focus", "tooltipText": "Gor Goron improves several Goron Infantry units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Gor Coron", "tooltipText": "Allows you to summon Gor Coron, a quick Melee hero that attacks enemies with his fists."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Sumo Expert", "tooltipText": "Guardians and Sumos have 10% more HP and can Roll 25% faster."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Cheaper Infantry", "tooltipText": "Infantry units are 10% cheaper."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Sumo Arts", "tooltipText": "Improves the damage of Melee Infantry."}] 
+}

@@ -10,7 +10,7 @@
     <UnhealableClasses datatype="tokens" />
   </Heal>
   <Cost>
-    <BuildTime>120</BuildTime>
+    <BuildTime>80</BuildTime>
     <Resources>
       <food>1430</food>
       <metal>500</metal>

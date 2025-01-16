@@ -3,7 +3,7 @@
   <Cost>
     <BuildTime>50</BuildTime>
     <Resources>
-      <wood>100</wood>
+      
     </Resources>
   </Cost>
   <Footprint>
@@ -22,7 +22,7 @@
     <Icon>structures/field.png</Icon>
   </Identity>
   <Loot>
-    <food>50</food>
+    
   </Loot>
   <Minimap>
     <Color r="119" g="82" b="46"/>
@@ -32,8 +32,12 @@
     <BlockMovement>false</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
   </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
   <ProductionQueue disable=""/>
   <RallyPoint disable=""/>
+  <Researcher disable=""/>
   <Resistance>
     <Entity>
       <Damage>
@@ -43,13 +47,12 @@
       </Damage>
     </Entity>
   </Resistance>
-  <ResourceSupply>
-    <KillBeforeGather>false</KillBeforeGather>
-    <Max>Infinity</Max>
-    <Type>food.grain</Type>
-    <MaxGatherers>1</MaxGatherers>
-    <DiminishingReturns>0.90</DiminishingReturns>
-  </ResourceSupply>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <metal>0</metal>
+    </Rates>
+  </ResourceTrickle>
   <Sound>
     <SoundGroups>
       <select>interface/select/building/sel_field.xml</select>
@@ -62,6 +65,7 @@
   <TerritoryDecay>
     <DecayRate>5.0</DecayRate>
   </TerritoryDecay>
+  <Trainer disable=""/>
   <Vision>
     <Range>0</Range>
   </Vision>

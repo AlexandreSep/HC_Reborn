@@ -16,7 +16,7 @@
   <ResourceSupply>
     <Max>200</Max>
     <KillBeforeGather>false</KillBeforeGather>
-    <MaxGatherers>1</MaxGatherers>
+    <MaxGatherers>3</MaxGatherers>
     <Type>wood.tree</Type>
   </ResourceSupply>
   <Selectable>

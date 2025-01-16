@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>darknut</Civ>
+    <GenericName>Darknut Legion</GenericName>
+    <History>In the murky depths of Hyrule's rivers, lakes, swamps, and oceans one may find a Zola stalking them. These barbaric fish people have long haunted the waters of the land, launching raids against land dwellers time and again. Cousins of the Zora, they are sometimes called "River Zora," though are more often refered to as Zolas because of their connection and use of Zol Slime.</History>
+    <Icon>emblems/emblem_darknut.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+  </Player>
+</Entity>
+

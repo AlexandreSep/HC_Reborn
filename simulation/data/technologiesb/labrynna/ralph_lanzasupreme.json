@@ -1,0 +1,19 @@
+{
+	"genericName": "Lanza Supremecy",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 150, "metal": 150},
+	"requirements": {"all": [ {"tech": "civ_choices/labrynna/choosehero_ralph"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "You must select Ralph as your hero.",
+	"icon": "labrynna/ambi_lanzasupreme.dds",
+	"researchTime": 40,
+	"tooltip": "Lynna Pikes and Tokay Fodder now deal Splash Damage",
+  "modifications": [
+    {
+      "value": "Promotion/RequiredXp",
+      "replace": 0
+    }
+  ],
+	"affects": ["Lanza"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

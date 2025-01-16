@@ -31,17 +31,6 @@
   <Obstruction>
     <Static depth="16.0" width="16.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    moblin/gather_mob_carrymoreA
-    moblin/gather_mob_carrymoreB
-    moblin/gather_mob_carrymoreC
-    moblin/gather_mob_workfasterA
-    moblin/gather_mob_workfasterB
-    moblin/gather_mob_workfasterC
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -75,4 +64,17 @@
     <Actor>structures/moblin/moblin_stockA.xml</Actor>
     <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/gather_mob_carrymoreA
+    moblin/gather_mob_carrymoreB
+    moblin/gather_mob_carrymoreC
+    moblin/gather_mob_workfasterA
+    moblin/gather_mob_workfasterB
+    moblin/gather_mob_workfasterC
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Stable Spinning",
+	"description": "Bomb Throwers practice throwing techniques that prevent Bombs from spinning off-target in midair.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 650},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "goron"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "goron/troop_stablespin.dds",
+	"researchTime": 40,
+	"tooltip": "Bomb Throwers practice throwing techniques that prevent Bombs from spinning off-target in midair. (-20% Ranged Attack Spread - Bomb Thrower)",
+	"modifications": [{"value": "Attack/Ranged/Damage/Spread", "multiply": 0.8}],
+	"affects": ["GorBomber"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

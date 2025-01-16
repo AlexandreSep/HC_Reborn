@@ -1,0 +1,16 @@
+{
+	"genericName": "Nanna's Improved Swordcraft",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
+	"supersedes": "sheikah/attack_she_melee_01",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "sheikah"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "tech_generic.dds",
+	"researchTime": 60,
+	"tooltip": "+20% Melee Attack - Melee Infantry and Melee Cavalry",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.2},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2}],
+	"affects": ["Infantry Melee", "Cavalry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

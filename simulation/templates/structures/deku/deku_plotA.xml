@@ -30,11 +30,6 @@
   <Plots>
     <IsPlot>true</IsPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <StatusBars>
     <BarHeight>0.6</BarHeight>
     <BarWidth>6.0</BarWidth>
@@ -136,7 +131,7 @@
       <Tooltip>Build a Mustering Base on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
     </TowerJ>
-    <TowerL>
+    <TowerK>
       <Cost>
         <wood>400</wood>
       </Cost>
@@ -145,8 +140,8 @@
       <Time>60</Time>
       <Tooltip>Build a Beetle Barn on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
-    </TowerL>
-    <TowerM>
+    </TowerK>
+    <TowerL>
       <Cost>
         <wood>400</wood>
       </Cost>
@@ -155,8 +150,8 @@
       <Time>60</Time>
       <Tooltip>Build a Menagerie on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
-    </TowerM>
-    <TowerN>
+    </TowerL>
+    <TowerM>
       <Cost>
         <metal>100</metal>
         <wood>300</wood>
@@ -166,8 +161,8 @@
       <Time>60</Time>
       <Tooltip>Build a Greenhouse on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
-    </TowerN>
-    <TowerO>
+    </TowerM>
+    <TowerN>
       <Cost>
         <wood>300</wood>
       </Cost>
@@ -176,8 +171,8 @@
       <Time>45</Time>
       <Tooltip>Build a Loggery on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
-    </TowerO>
-    <TowerP>
+    </TowerN>
+    <TowerO>
       <Cost>
         <wood>300</wood>
       </Cost>
@@ -186,8 +181,8 @@
       <Time>45</Time>
       <Tooltip>Build a Nut Carver on this plot.</Tooltip>
       <Variant>upgrading_short</Variant>
-    </TowerP>
-    <TowerQ>
+    </TowerO>
+    <TowerP>
       <Cost>
         <stone>300</stone>
         <wood>400</wood>
@@ -197,9 +192,16 @@
       <Time>60</Time>
       <Tooltip>Build a Blockhouse on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
-    </TowerQ>
+    </TowerP>
   </Upgrade>
   <VisualActor>
     <Actor>structures/deku/deku_plotA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

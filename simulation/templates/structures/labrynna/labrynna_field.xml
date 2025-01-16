@@ -21,16 +21,6 @@
     <Tooltip>Grows food that can be gathered by Worker units.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <TechCostMultiplier>
-      <food>1.0</food>
-      <metal>1.0</metal>
-      <stone>1.0</stone>
-      <time>1.0</time>
-      <wood>1.0</wood>
-    </TechCostMultiplier>
-  </ProductionQueue>
   <ResourceSupply>
     <Max>Infinity</Max>
     <DiminishingReturns>0.90</DiminishingReturns>
@@ -60,4 +50,11 @@
   <VisualActor>
     <Actor>structures/misc/field_labrynnaA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

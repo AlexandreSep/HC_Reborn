@@ -5,7 +5,6 @@
       <Damage>
         <Shadow>75.0</Shadow>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>100.0</MaxRange>
       <MinRange>35.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
@@ -20,6 +19,7 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>3000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Identity>

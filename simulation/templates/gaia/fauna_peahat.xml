@@ -31,7 +31,7 @@
     <Max>50</Max>
     <Type>food.fruit</Type>
 	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

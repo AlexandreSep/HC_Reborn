@@ -19,12 +19,14 @@
     <Max>3000</Max>
     <SpawnEntityOnDeath>rubble/debris_goron_medium</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>gaia/lon_lon_cow_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -53,41 +55,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>25</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>20</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    unlock_shared_los
-      goron/trade_firetunic
-    goron/trade_salapet
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -108,4 +75,39 @@
     <Actor>structures/goron/goron_marketA.xml</Actor>
     <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">unlock_shared_los
+      goron/trade_firetunic
+    goron/trade_salapet
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    gaia/lon_lon_cow_1</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>20</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

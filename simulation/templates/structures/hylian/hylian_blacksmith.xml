@@ -40,19 +40,6 @@
   <Obstruction>
     <Static depth="35.0" width="35.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      hylian/attack_hyl_infantry_melee_01
-      hylian/attack_hyl_infantry_melee_02
-      hylian/attack_hyl_infantry_ranged_01
-      hylian/attack_hyl_infantry_ranged_02
-      hylian/attack_hyl_cavalry_01
-      hylian/attack_hyl_cavalry_02
-      hylian/armor_hyl_all_01
-      hylian/armor_hyl_all_02
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -95,4 +82,19 @@
     <Actor>structures/hylian/hylian_blacksmithA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/attack_hyl_infantry_melee_01
+      hylian/attack_hyl_infantry_melee_02
+      hylian/attack_hyl_infantry_ranged_01
+      hylian/attack_hyl_infantry_ranged_02
+      hylian/attack_hyl_cavalry_01
+      hylian/attack_hyl_cavalry_02
+      hylian/armor_hyl_all_01
+      hylian/armor_hyl_all_02
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

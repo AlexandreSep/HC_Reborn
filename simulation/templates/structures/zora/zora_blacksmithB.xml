@@ -40,15 +40,6 @@
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      zora/building_lostaqueduct
-      zora/building_crystalheart
-      zora/building_coralpure
-      zora/temple_goldengird
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_research.xml</constructed>
@@ -68,4 +59,15 @@
     <Actor>structures/zora/zora_libraryA.xml</Actor>
     <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">zora/building_lostaqueduct
+      zora/building_crystalheart
+      zora/building_coralpure
+      zora/temple_goldengird
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

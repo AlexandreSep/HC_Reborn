@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_entity_full">
   <Battalion>
     <FormationTemplate>special/formations/battle_line</FormationTemplate>
@@ -24,10 +25,7 @@
     <BuildTime>10</BuildTime>
     <Population>0</Population>
     <Resources>
-      <food>0</food>
       <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
     </Resources>
   </Cost>
   <Decay>
@@ -37,20 +35,17 @@
     <SinkRate>3.0</SinkRate>
     <SinkingAnim>false</SinkingAnim>
   </Decay>
-  <Fogging />
-  <Guard />
-  <Health disable="" />
+  <Fogging/>
+  <Guard/>
+  <Health disable=""/>
   <Identity>
     <Civ>gaia</Civ>
-    <Classes datatype="tokens">Structure ConquestCritical</Classes>
+    <Classes datatype="tokens">Structure Node NodeAI</Classes>
     <GenericName>Structure</GenericName>
     <Undeletable>false</Undeletable>
   </Identity>
   <Loot>
-    <food>0</food>
     <metal>0</metal>
-    <stone>0</stone>
-    <wood>10</wood>
     <xp>0</xp>
   </Loot>
   <Minimap>
@@ -65,27 +60,18 @@
     <DeleteUponConstruction>false</DeleteUponConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <Static depth="25.0" width="25.0"/>
   </Obstruction>
-  <OverlayRenderer />
+  <OverlayRenderer/>
   <Plots>
     <CanUpgradeToPlots>true</CanUpgradeToPlots>
   </Plots>
   <Population>
     <Bonus>0</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <TechCostMultiplier>
-      <food>1.0</food>
-      <metal>1.0</metal>
-      <stone>1.0</stone>
-      <time>1.0</time>
-      <wood>1.0</wood>
-    </TechCostMultiplier>
-  </ProductionQueue>
-  <RallyPoint />
+  <RallyPoint/>
   <RallyPointRenderer>
-    <LineDashColor b="15" g="11" r="158" />
+    <LineDashColor b="15" g="11" r="158"/>
     <LineEndCap>round</LineEndCap>
     <LinePassabilityClass>default</LinePassabilityClass>
     <LineStartCap>square</LineStartCap>
@@ -94,11 +80,21 @@
     <LineThickness>0.25</LineThickness>
     <MarkerTemplate>special/rallypoint</MarkerTemplate>
   </RallyPointRenderer>
-  <RangeOverlayManager />
-  <RangeOverlayRenderer />
+  <RangeOverlayManager/>
+  <RangeOverlayRenderer/>
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
+  <ProductionQueue/>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <time>1.0</time>
+    </TechCostMultiplier>
+  </Researcher>
   <Selectable>
     <Overlay>
       <Outline>
@@ -127,6 +123,9 @@
     <DecayRate>20</DecayRate>
     <Territory>enemy</Territory>
   </TerritoryDecay>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <Visibility>
     <AlwaysVisible>false</AlwaysVisible>
     <Corpse>false</Corpse>
@@ -140,7 +139,7 @@
     <Bribable>false</Bribable>
   </VisionSharing>
   <VisualActor>
-    <ConstructionPreview />
+    <ConstructionPreview/>
     <SilhouetteDisplay>false</SilhouetteDisplay>
     <SilhouetteOccluder>true</SilhouetteOccluder>
     <VisibleInAtlasOnly>false</VisibleInAtlasOnly>

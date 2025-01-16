@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <object name="minimapPanel"
 	size="0% 100%-291 15% 100%"
+	sprite="mapPanel"
 	type="image"
-	sprite="mapPanel"	
 >
+
 	<!-- Background image -->
 	<object
 		type="image"
@@ -11,7 +12,7 @@
 		sprite="stretched:session/minimap_circle_modern.png"
 		ghost="true"
 	/>
-	
+
 	<!-- Idle Worker Button -->
 	<object name="idleWorkerButton"
 		type="button"
@@ -22,6 +23,15 @@
 		sprite_over="stretched:session/minimap-idle-highlight.png"
 		sprite_disabled="stretched:session/minimap-idle-disabled.png"
 		mouse_event_mask="texture:session/minimap-idle.png"
+	/>
+
+	<!-- Total number of idle workers -->
+	<object name="totalNumberIdleWorkers"
+		type="text"
+		size="85% 89% 97% 98%"
+		style="totalNumberIdleWorkersCount"
+		text_align="right"
+		text_valign="bottom"
 	/>
 
 	<!-- Diplomacy Colors Button -->
@@ -110,8 +120,10 @@
 		mask="true"
 		flare_texture_count="16"
 		flare_render_size="32"
-		flare_animation_speed="11"
+		flare_animation_speed="10.67"
 		flare_interleave="true"
 		flare_lifetime_seconds="6"
+		flare_start_fade_seconds="0.25"
+		flare_stop_fade_seconds="0.5"
 	/>
 </object>

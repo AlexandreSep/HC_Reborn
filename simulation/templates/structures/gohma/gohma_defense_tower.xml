@@ -43,12 +43,6 @@
   <Obstruction>
     <Static depth="7.5" width="7.5" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    gohma/mido_subpit
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_gohwallA.xml</constructed>
@@ -90,4 +84,12 @@
       <MaxRange>80</MaxRange>
     </CanSpotStealth>
   </Visibility>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/mido_subpit
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

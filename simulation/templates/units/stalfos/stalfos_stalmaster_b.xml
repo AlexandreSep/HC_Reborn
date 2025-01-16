@@ -6,7 +6,6 @@
         <Hack>20</Hack>
         <Pierce>20</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <Knockback>
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
@@ -31,6 +30,7 @@
         <Range>10</Range>
         <Shape>Circular</Shape>
       </Splash>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
@@ -38,7 +38,7 @@
   </Auras>
   <Cost>
     <BattalionSlots>0</BattalionSlots>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>75</food>
       <metal>50</metal>

@@ -1,0 +1,14 @@
+{
+	"genericName": "Palm-Skinning",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 150},
+	"supersedes": "gerudo/gather_wood_zaldorfaxes",
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/gather_wood_palmskin.dds",
+	"researchTime": 40,
+	"tooltip": "Skinning trees beforehand aids in chopping them down for lumber. (+20% Material (Wood) Gather Rate - Worker)" ,
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.2}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

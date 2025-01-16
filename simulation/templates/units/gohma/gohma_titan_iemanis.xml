@@ -7,7 +7,6 @@
         <Hack>20</Hack>
         <Pierce>80.0</Pierce>
       </Damage>
-      <Delay>1</Delay>
       <MaxRange>30</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -38,13 +37,14 @@
         <Horizontal>25</Horizontal>
         <Vertical>25</Vertical>
       </Knockback>
+      <EffectDelay>1</EffectDelay>
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
   units/reallytall_aura_1
   </Auras>
   <Cost>
-    <BuildTime>120</BuildTime>
+    <BuildTime>80</BuildTime>
     <Resources>
       <food>1960</food>
       <metal>250</metal>

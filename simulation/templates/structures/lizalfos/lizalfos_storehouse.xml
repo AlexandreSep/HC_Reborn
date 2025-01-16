@@ -27,19 +27,11 @@
     <Icon>structures/lizalfos/liz_hutches.dds</Icon>
     <Tooltip>Drop off point for gathered Resources.</Tooltip>
     <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
   </Identity>
   <Obstruction>
     <Static depth="15.0" width="15.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    lizalfos/gather_poaching
-    lizalfos/gather_skinritual
-    lizalfos/gather_mountainancestor
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -64,4 +56,14 @@
     <Actor>structures/lizalfos/lizalfos_hutchesA.xml</Actor>
     <FoundationActor>structures/lizalfos/lizalfos_scaffoldD_W.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lizalfos/gather_poaching
+    lizalfos/gather_skinritual
+    lizalfos/gather_mountainancestor
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -4,9 +4,8 @@
       <AttackName>Boulder</AttackName>
       <Damage>
         <Crush>300.0</Crush>
-		<Fire>0.0</Fire>
+        <Fire>0.0</Fire>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>110.0</MaxRange>
       <MinRange>45.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
@@ -21,7 +20,7 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>7500</RepeatTime>
-	  <SpawnEntityOnImpact>
+      <SpawnEntityOnImpact>
         <SpawnNumberMax>1</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>
         <SpawnOnHit>
@@ -32,7 +31,8 @@
           <Chance>0</Chance>
         </SpawnOnImpact>
         <Template>units/ordona/ordona_firepatch</Template>
-      </SpawnEntityOnImpact>	 
+      </SpawnEntityOnImpact>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
 </Entity>

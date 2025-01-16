@@ -43,12 +43,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    lanayru/get_silverexchange
-    </Technologies>
-  </ProductionQueue>
   <Selectable>
     <EditorOnly />
     <Overlay>
@@ -78,4 +72,12 @@
     <Actor>structures/lanayru/lanayru_silverexchangeA.xml</Actor>
     <FoundationActor>structures/lanayru/lanayru_scaffoldL.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/get_silverexchange
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

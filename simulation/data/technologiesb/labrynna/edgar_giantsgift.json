@@ -1,0 +1,18 @@
+{
+	"genericName": "Giant's Gift",
+	"description": "",
+	"cost": {"metal": 400},
+	"requirements": {"all": [ {"tech": "civ_choices/labrynna/choosehero_edgar"}, {"tech": "phase_town"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Requires Edgar and Town Phase.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+20% Attack Damage - Melee Infantry.",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.2},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2},
+		{"value": "Attack/Melee/Damage/TrueDamage", "multiply": 1.2}
+	],
+	"affects": [ "Infantry" ],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

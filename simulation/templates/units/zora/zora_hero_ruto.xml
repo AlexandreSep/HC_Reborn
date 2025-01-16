@@ -12,7 +12,6 @@
         <Pierce>16</Pierce>
         <Water>24.0</Water>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>10.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -36,10 +35,11 @@
       <Knockback>
         <Horizontal>25</Horizontal>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>460</food>
       <metal>100</metal>

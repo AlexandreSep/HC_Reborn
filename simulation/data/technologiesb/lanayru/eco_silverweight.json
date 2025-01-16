@@ -1,0 +1,12 @@
+{
+	"genericName": "Its weight in Silver",
+	"description": "Harvesting from Silver now provieds 100% of its Currency value in Ore",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "lanayru"}]},
+	"icon": "lanayru/eco_silverweight.dds",
+	"researchTime": 40,
+	"tooltip": "(Harvesting from Silver now provieds 100% of its Currency value in Ore)",
+	"modifications": [{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.50}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -39,8 +39,24 @@
   <Obstruction>
     <Static depth="55.0" width="55.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/fairy/complete_gfountain.xml</constructed>
+      <select>interface/select/building/fairy/sel_gfountain.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_greatfountainA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/greatfairy_forgiveness
+    fairy/venus_greatfairysword
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -51,8 +67,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-</Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -66,19 +80,5 @@
       <X>0</X>
       <Z>3</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    fairy/greatfairy_forgiveness
-    fairy/venus_greatfairysword
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/fairy/complete_gfountain.xml</constructed>
-      <select>interface/select/building/fairy/sel_gfountain.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/fairy/fairy_greatfountainA_spring.xml</Actor>
-    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

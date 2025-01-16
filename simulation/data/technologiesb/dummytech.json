@@ -1,0 +1,11 @@
+{
+	"genericName": "DummyTech",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "ordona/apiary_honeyexport.dds",
+	"researchTime": 40,
+	"tooltip": "(If you can see this, it's a bug. Please Report it)",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

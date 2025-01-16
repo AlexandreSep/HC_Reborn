@@ -3,15 +3,6 @@
     <Classes datatype="tokens">Autumn</Classes>
     <Icon>structures/fairy/fai_dolmen_autumn.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/fairy/{civ}_fey_gate
-    </Entities>
-    <Technologies datatype="tokens">
-      fairy/fey_embodiment
-    </Technologies>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_dolmen_winter</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -20,4 +11,13 @@
     <Actor>structures/fairy/fairy_dolemA_autumn.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_autumn.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/fey_embodiment
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/fairy/{civ}_fey_gate</Entities>
+  </Trainer>
 </Entity>

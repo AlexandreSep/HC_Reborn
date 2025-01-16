@@ -1,0 +1,13 @@
+{
+	"genericName": "Fairy's Kiss",
+	"description": "Many mortals have devoted their lives to getting the favor of a Fairy. Such a blessing is said to grant wishes, wealth, and long life. ",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Village Phase.",
+	"icon": "fairy/trade_fairykiss.dds",
+	"researchTime": 40,
+	"tooltip": "The kiss of a Fairy was said to embolden even the most cowardly of men and grant them a mighty endurance the likes which they have never seen before. (Xanas can now give Fairy Kisses. Aura provides allied organic units with +25%HP and +10 Magic Armor)",
+	"modifications": [],
+	"affects": [],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

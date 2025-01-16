@@ -55,9 +55,9 @@ DelayedDamage.prototype.Hit = function(data, lateness)
 			"direction": data.direction,
 			"friendlyFire": data.splash.friendlyFire,
 			//HC-Code
-            "Knockback": data.splash.Knockback,
-            "Stun": data.splash.Knockback,
-            "isSplash": true,
+          		"Knockback": data.splash.Knockback,
+            		"Stun": data.splash.Knockback,
+            		"isSplash": true,
 			//HC-End
 		});
 

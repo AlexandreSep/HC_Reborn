@@ -1,0 +1,23 @@
+{
+	"genericName": "Vigjaro Wicker",
+	"description": "Forage baskets made from fine Vigjaro Wicker.",
+  "cost": {
+    "food": 0,
+    "wood": 100,
+    "stone": 0,
+    "metal": 100
+  },
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "hylian/vigjaro_wicker.dds",
+	"researchTime": 40,
+	"tooltip": "Forage baskets made from fine Vigjaro Wicker. (+50% Food Trickle Rate (Farm))",
+  "modifications": [
+    {
+      "value": "ResourceTrickle/Rates/food",
+      "multiply": 1.5
+    }
+  ],
+  "affects": [ "Field" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

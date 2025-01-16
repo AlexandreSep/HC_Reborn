@@ -1,9 +1,0 @@
-<Entity parent="special/player/player">
-  <Auras datatype="tokens">
-    teambonuses/gerudo_player_teambonus
-    <!-- Missing factionbonus/gerudo_bonus_1 -->
-  </Auras>
-  <Player>
-    <SharedLosTech>culture_civilized/postman_network</SharedLosTech>
-  </Player>
-</Entity>

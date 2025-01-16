@@ -3,11 +3,6 @@
     <Classes datatype="tokens">Spring</Classes>
     <Icon>structures/fairy/fai_meetingspring_spring.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-      units/fairy/{civ}_xana_spring
-    </Entities>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_meeting_summer</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -16,4 +11,11 @@
     <Actor>structures/fairy/fairy_meetingspringA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/fairy/{civ}_xana_spring</Entities>
+  </Trainer>
 </Entity>

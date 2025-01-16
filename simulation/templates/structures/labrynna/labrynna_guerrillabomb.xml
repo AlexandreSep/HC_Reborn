@@ -49,9 +49,6 @@
   <Obstruction>
     <Static depth="2.0" width="2.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -78,4 +75,11 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_guerillabombA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

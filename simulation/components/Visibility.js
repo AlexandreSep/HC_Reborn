@@ -53,7 +53,7 @@ Visibility.prototype.Init = function()
 	this.activated = false;
 
 	if (this.preview || this.corpse)
-        this.SetActivated(true);
+		this.SetActivated(true);
 
     //HC-code
     this.hasStealth = false;

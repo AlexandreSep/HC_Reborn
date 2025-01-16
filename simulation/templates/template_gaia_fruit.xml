@@ -22,7 +22,7 @@
     <KillBeforeGather>false</KillBeforeGather>
     <Max>1</Max>
     <Type>food.fruit</Type>
-    <MaxGatherers>1</MaxGatherers>
+    <MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

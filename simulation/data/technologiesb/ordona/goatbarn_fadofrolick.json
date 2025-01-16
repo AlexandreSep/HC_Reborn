@@ -1,0 +1,13 @@
+{
+	"genericName": "Fado's Frolick",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "ordona/goatbarn_fadofrolick.dds",
+	"researchTime": 40,
+	"tooltip": "(Movement speed of all Goat units is increased by 15%)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.20}],
+	"affects": ["Goat"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

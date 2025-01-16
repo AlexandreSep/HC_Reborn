@@ -18,7 +18,8 @@
   </Health>
   <Identity>
     <Civ>sheikah</Civ>
-    <Classes datatype="tokens"></Classes>
+    <Classes datatype="tokens">
+    </Classes>
     <GenericName>Clan Hall</GenericName>
     <History>A gathering place for the heads of the Sheikah Clans. The Clan Hall directs all Sheikah activity within the region. It serves as a central drop off point for resources and can train new workers.</History>
     <Icon>structures/sheikah/she_clanhall.dds</Icon>
@@ -31,43 +32,6 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>11</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-		units/sheikah/{civ}_shadowfolkA
-		units/sheikah/{civ}_hero_paya
-		units/sheikah/{civ}_hero_purah
-		units/sheikah/{civ}_hero_sheik
-		units/sheikah/{civ}_hero_kohga
-		units/sheikah/{civ}_hero_impa
-		units/sheikah/{civ}_hero_mazkoshia
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>3</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-		sheikah/player_issheikah
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -107,4 +71,41 @@
     <Actor>structures/sheikah/sheikah_civic_centreA.xml</Actor>
     <FoundationActor>structures/sheikah/sheikah_scaffoldA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">sheikah/player_issheikah
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/sheikah/{civ}_shadowfolkA
+		units/sheikah/{civ}_hero_paya
+		units/sheikah/{civ}_hero_purah
+		units/sheikah/{civ}_hero_sheik
+		units/sheikah/{civ}_hero_kohga
+		units/sheikah/{civ}_hero_impa
+		units/sheikah/{civ}_hero_mazkoshia</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>11</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>3</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

@@ -1,0 +1,28 @@
+{
+  "genericName": "Booze Soaked Boulder",
+  "description": ".",
+  "cost": {
+    "food": 200,
+    "wood": 0,
+    "stone": 0,
+    "metal": 350
+  },
+  "requirements": {
+    "all": [
+      { "tech": "phase_city" },
+      { "civ": "ordona" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with City.",
+  "icon": "ordona/carriagebarn_boozeboulder.dds",
+  "researchTime": 40,
+  "tooltip": "(Catapult attack now deals fire damage and ignites anything within radius of impact)",
+  "modifications": [
+    {
+      "value": "Attack/Ranged/Damage/Fire",
+      "add": 10
+    }
+  ],
+  "affects": [ "Catapult" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

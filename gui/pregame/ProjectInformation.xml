@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+
+	<object name="canvas" size="0 0 100% 100%"/>
+	<!-- logo-->
+	<object name="mainMenuLogo" size="50%-158 0 50%+158 100" ghost="true">
+
+		<object size="4 0 100%-4 100%" type="image" style="LogoDarkGoldBack"/>
+		<object size="8 4 100%-8 100%-4" type="image" style="LogoDarkGoldBack"/>
+		<object size="-10 14 100%+10 100%-14" type="image" style="LogoDarkGoldBack"/>
+		<object size="-6 18 100%+6 100%-18" type="image" style="LogoDarkGoldBack"/>
+		<object size="20 4 100%-20 100%-4" type="image" style="LogoDarkBack"/>
+		<object size="17 5 22 100%-5" type="image" style="LogoGoldLinesVert"/>
+		<object size="100%-22 5 100%-17 100%-5" type="image" style="LogoGoldLinesVert"/>
+		<object size="8 17 100%-8 100%-17" type="image" style="LogoDarkBack"/>
+		<object size="4 20 9 100%-20" type="image" style="LogoGoldLinesVert"/>
+		<object size="100%-9 20 100%-4 100%-20" type="image" style="LogoGoldLinesVert"/>
+
+		<object name="productLogo" type="image" ghost="true" size="50%-128 50%-64 50%+128 50%+64"/>
+	</object>
+
+	<object name="mainMenuProductVersion" size="0% 10 0%+420 59" ghost="true">
+		<object name="productDescription" font="sans-16" type="text" textcolor="white" size="0% 0% 100% 50%"/>
+		<object type="text" name="productBuild" textcolor="white" size="0% 50% 100% 100%"/>
+	</object>
+
+	<object name="mainMenuBranding" size="100%-130 10 100%-6 69" ghost="true">
+		<object name="organizationLogo" type="image" ghost="true" size="50%-16 0 50%+16 32"/>
+		<object name="organizationName" type="text" style="MediumTitleText" ghost="true" size="50%-128 32 50%+128 48"/>
+	</object>
+
+</object>
+

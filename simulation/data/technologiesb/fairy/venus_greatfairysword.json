@@ -1,0 +1,14 @@
+{
+	"genericName": "Great Fairy Swords",
+	"description": "An ancient weapon once used by Fairy warriors, this legendary blade seems to have fallen out of favor and become quite rare.",
+	"cost": {"food": 0, "wood":0, "stone": 500, "metal": 350},
+	"requirements": {"all": [ {"tech": "civ_choices/fairy/choosehero_venus"}, {"tech": "fairy/unlock_autumn"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Queen Venus and at least two Seasons unlocked.",
+	"icon": "fairy/dezaia_greatfairysword.dds",
+	"researchTime": 40,
+	"tooltip": "Great Fairies now wield a Great Fairy Sword, giving them 50 additional Hack Damage.",
+	"modifications": [{"value": "Attack/Ranged/Damage/Hack", "add": 50, "affects": "GreatFairy" }
+	],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

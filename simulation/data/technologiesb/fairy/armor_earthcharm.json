@@ -1,0 +1,15 @@
+{
+	"genericName": "Earth Charm",
+	"description": "Through the darkness of earth may death be held at bay for another day.",
+	"cost": {"food": 200, "wood": 200, "stone": 200, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "fairy/armor_earthcharm.dds",
+	"researchTime": 40,
+	"tooltip": "Through the darkness of earth may death be held at bay for another day. (+15% Non Magic Armor for all Fairy Units)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.15},
+					  {"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.15},
+					  {"value": "Resistance/Entity/Damage/Crush", "multiply": 1.25}],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

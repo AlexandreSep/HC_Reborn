@@ -21,7 +21,7 @@
   </Attack>
   <Cost>
     <BattalionSlots>5</BattalionSlots>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>390</food>
       <metal>100</metal>
@@ -63,7 +63,7 @@
         <Water>50.0</Water>
       </Damage>
     </Entity>
-    <KnockbackResistance>100</KnockbackResistance>	
+    <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>

@@ -20,12 +20,14 @@
     <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/debris_stalfos_ruins_des</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>gaia/lon_lon_cow_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -45,45 +47,15 @@
   <Obstruction>
     <Static depth="43.0" width="43.0" />
   </Obstruction>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>3</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    gaia/lon_lon_cow_1
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>0</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
         <Crush>40.0</Crush>
         <Hack>50.0</Hack>
         <Pierce>95.0</Pierce>
-  </Damage>
+      </Damage>
     </Entity>
-</Resistance>
+  </Resistance>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_market.xml</constructed>
@@ -99,4 +71,34 @@
     <Actor>structures/stalfos/stalfos_marketA_anc.xml</Actor>
     <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">gaia/lon_lon_cow_1</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>3</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>0</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

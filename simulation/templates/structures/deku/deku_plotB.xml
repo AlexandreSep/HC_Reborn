@@ -33,11 +33,6 @@
   <Plots>
     <IsPlot>true</IsPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <StatusBars>
     <BarHeight>0.6</BarHeight>
     <BarWidth>6.0</BarWidth>
@@ -67,4 +62,11 @@
   <VisualActor>
     <Actor>structures/deku/deku_plotB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

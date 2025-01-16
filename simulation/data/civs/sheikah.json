@@ -1,9 +1,6 @@
 {
 	"Code": "sheikah",
 	"Culture": "civilized",
-	"Name": "Sheikah Cadre",
-	"Emblem": "session/portraits/emblems/emblem_sheikah.dds",
-	"History": "The Cadre is the ruling body of Hyrule's seven Sheikah Clans. The Cadre's goals are not explicit to outsiders, though it seems in general they wish to direct history and avoid cataclysmic disaster and change. To accomplish this the Sheikah have adopted extremely subversive and secretive methods: Spying, bribing, black mailing, and assassination to change the course of events rather than military or diplomatic might.",
 	"Music": [
 		{
 			"File": "sheikah_theme1.ogg",
@@ -62,7 +59,6 @@
 			"Type": "victory"
 		}
 	],
-
 	"Factions": [
 		{
 			"Name": "",
@@ -113,7 +109,6 @@
 		{
 			"Name": "",
 			"History": "",
-
 			"Description": ""
 		},
 		{

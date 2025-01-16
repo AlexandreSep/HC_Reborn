@@ -13,18 +13,20 @@
   </Health>
   <Identity>
     <GenericName>University</GenericName>
-    <History>Although Universities were open to all citizens of the Empire, only the best and brightest could continue education at these facilities. Some of the Empire&#8217;s greatest scientific breakthroughs originated at these halls of learning and study.</History>
+    <History>Although Universities were open to all citizens of the Empire, only the best and brightest could continue education at these facilities. Some of the Empire’s greatest scientific breakthroughs originated at these halls of learning and study.</History>
     <Icon>structures/labrynna/lab_libraryB.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    labrynna/uni_printingpress
-    labrynna/uni_rigordiet
-    </Technologies>
-  </ProductionQueue>
   <Upgrade disable="" />
   <VisualActor>
     <Actor>structures/labrynna/labrynna_libraryC.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/uni_printingpress
+    labrynna/uni_rigordiet
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -2,7 +2,7 @@
 	"type": "garrison",
 	"affects": ["Palace"],
 	"modifications": [
-		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.75 },
+		{ "value": "Trainer/BatchTimeModifier", "multiply": 0.75 },
 		{ "value": "Armour/Pierce", "add": 5 },
 		{ "value": "Armour/Hack", "add": 5 },
 		{ "value": "Armour/Crush", "add": 5 },

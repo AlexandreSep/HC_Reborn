@@ -39,8 +39,22 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/goron/goron_saladenA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/troop_heatedclutch
+    goron/troop_wagonbrace
+    goron/troop_bombjuice
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/goron/{civ}_salamander_b
+      units/goron/{civ}_salawagon_b
+      units/goron/{civ}_warsalamander_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -51,11 +65,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/goron/{civ}_salamander_b
-      units/goron/{civ}_salawagon_b
-      units/goron/{civ}_warsalamander_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -69,14 +78,5 @@
       <X>0</X>
       <Z>13</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-      goron/troop_heatedclutch
-    goron/troop_wagonbrace
-    goron/troop_bombjuice
-    </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/goron/goron_saladenA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

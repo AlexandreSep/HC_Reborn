@@ -1,0 +1,13 @@
+{
+	"genericName": "Wooden Reinforcement",
+	"description": "Kokiri buildings are created from Deku wood grown in their homelands. While sturdy for homes, they are not known for their resistence to enemy attacks. Extra reinforcement helps minimize this drawback.",
+	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 350},
+	"requirements": {"all": [ {"tech": "phase_city"}, {"civ": "kokiri"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "kokiri/building_reinforce.dds",
+	"researchTime": 40,
+	"tooltip": "Kokiri buildings are created from Deku wood grown in their homelands. While sturdy for homes, they are not known for their resistence to enemy attacks. Extra reinforcement helps minimize this drawback. (+10 Armor vs Crush - Building)",
+	"modifications": [{ "value": "Resistance/Entity/Damage/Crush", "add": 10 }],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

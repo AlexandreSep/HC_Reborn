@@ -1,9 +1,9 @@
 {
 	"type": "range",
-	"radius": 25,
-	"affects": ["Worker"],
-	"modifications": [{ "value": "Health/RegenRate", "add": 1.0 }],
+	"radius": 35,
+	"affects": ["Organic"],
+	"modifications": [{ "value": "Health/RegenRate", "add": 5 }],
 	"auraName": "Lon Lon Milk",
-	"auraDescription": "(Heal 1 health/second)",
+	"auraDescription": "(Heal 5 health/second)",
 	"overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"
 }

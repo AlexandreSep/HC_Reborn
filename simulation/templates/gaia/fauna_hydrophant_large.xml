@@ -1,7 +1,14 @@
-<Entity parent="template_unit_fauna_hunt_defensive_elephant">
+<Entity parent="template_unit_fauna_hunt_passive-defensive_elephant">
+
+  <Capturable>
+    <CapturePoints>10</CapturePoints>
+    <GarrisonRegenRate>1</GarrisonRegenRate>
+    <RegenRate>1</RegenRate>
+  </Capturable>
+
   <Attack>
     <Melee>
-      <AttackName>TBD.</AttackName>
+      <AttackName>Hooves</AttackName>
       <Damage>
         <Crush>40.0</Crush>
       </Damage>
@@ -22,7 +29,7 @@
     <History />
     <Icon>gaia/fauna_hydrophant_generic.dds</Icon>
     <Tooltip>Hydrophants can live for long periods, and the eldest among them serve as the heart of a herd, guiding them between waterways and defending the young.</Tooltip>
-    <VisibleClasses datatype="tokens">-Elephant</VisibleClasses>
+    <VisibleClasses datatype="tokens">-Elephant Cap_hydrophant_large</VisibleClasses>
   </Identity>
   <Loot>
     <xp>50</xp>
@@ -40,7 +47,7 @@
     <Max>750</Max>
     <Type>food.meat</Type>
 	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>8</MaxGatherers>
   </ResourceSupply>
   <VisualActor>
     <Actor>units/wild/wild_hydrophant_hugeA.xml</Actor>

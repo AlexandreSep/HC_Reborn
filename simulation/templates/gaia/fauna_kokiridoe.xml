@@ -17,7 +17,7 @@
     <Max>300</Max>
     <Type>food.meat</Type>
 	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <VisualActor>
     <Actor>units/wild/wild_kokiridoe_b.xml</Actor>

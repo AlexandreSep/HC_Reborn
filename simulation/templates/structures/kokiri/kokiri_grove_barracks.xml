@@ -110,8 +110,37 @@
       </PlotJ>
     </PlotsToSpawn>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <select>interface/select/building/sel_barracks.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_grove_battleA.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldH.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/militiadrills
+    kokiri/training_speed
+      kokiri/training_endurance
+    kokiri/training_battle
+    kokiri/mudmen_maskwar
+      kokiri/mudmen_bagaswarm
+    kokiri/mirora_muddance
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/kokiri/{civ}_minutemen_b
+      units/kokiri/{civ}_slingshotter_b
+    units/kokiri/{civ}_explorer_b
+    units/kokiri/{civ}_grovewatch_b
+      units/kokiri/{civ}_mudjabber_b
+      units/kokiri/{civ}_wolfkiller_b
+    units/kokiri/{civ}_mantlet_b
+      units/kokiri/{civ}_mudram_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -122,16 +151,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/kokiri/{civ}_minutemen_b
-      units/kokiri/{civ}_slingshotter_b
-    units/kokiri/{civ}_explorer_b
-    units/kokiri/{civ}_grovewatch_b
-      units/kokiri/{civ}_mudjabber_b
-      units/kokiri/{civ}_wolfkiller_b
-    units/kokiri/{civ}_mantlet_b
-      units/kokiri/{civ}_mudram_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -145,24 +164,5 @@
       <X>0</X>
       <Z>0</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    kokiri/militiadrills
-    kokiri/training_speed
-      kokiri/training_endurance
-    kokiri/training_battle
-    kokiri/mudmen_maskwar
-      kokiri/mudmen_bagaswarm
-    kokiri/mirora_muddance
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_barracks.xml</constructed>
-      <select>interface/select/building/sel_barracks.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/kokiri/kokiri_grove_battleA.xml</Actor>
-    <FoundationActor>structures/kokiri/kokiri_scaffoldH.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

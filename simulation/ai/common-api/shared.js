@@ -10,10 +10,6 @@ m.SharedScript = function(settings)
 	this._players = Object.keys(settings.players).map(key => settings.players[key]); // TODO SM55 Object.values(settings.players)
 	this._templates = settings.templates;
 
-	this._entityMetadata = {};
-	for (let player of this._players)
-		this._entityMetadata[player] = {};
-
 	// array of entity collections
 	this._entityCollections = new Map();
 	this._entitiesModifications = new Map();	// entities modifications
@@ -31,7 +27,6 @@ m.SharedScript.prototype.Serialize = function()
 		"players": this._players,
 		"templatesModifications": this._templatesModifications,
 		"entitiesModifications": this._entitiesModifications,
-		"metadata": this._entityMetadata
 	};
 };
 
@@ -44,7 +39,6 @@ m.SharedScript.prototype.Deserialize = function(data)
 	this._players = data.players;
 	this._templatesModifications = data.templatesModifications;
 	this._entitiesModifications = data.entitiesModifications;
-	this._entityMetadata = data.metadata;
 
 	this.isDeserialized = true;
 };
@@ -200,37 +194,11 @@ m.SharedScript.prototype.ApplyEntitiesDelta = function(state)
 			entCol.updateEnt(entity);
 	}
 
-	for (let evt of state.events.EntityRenamed)
-	{	// Switch the metadata: TODO entityCollections are updated only because of the owner change. Should be done properly
-		for (let player of this._players)
-		{
-			this._entityMetadata[player][evt.newentity] = this._entityMetadata[player][evt.entity];
-			this._entityMetadata[player][evt.entity] = {};
-		}
-	}
-
-	for (let evt of state.events.TrainingFinished)
-	{	// Apply metadata stored in training queues
-		for (let entId of evt.entities)
-			if (this._entities.has(entId))
-				for (let key in evt.metadata)
-					this.setMetadata(evt.owner, this._entities.get(entId), key, evt.metadata[key]);
-	}
-
 	for (let evt of state.events.ConstructionFinished)
 	{
 		// metada are already moved by EntityRenamed when needed (i.e. construction, not repair)
 		if (evt.entity != evt.newentity)
 			foundationFinished[evt.entity] = true;
-	}
-
-	for (let evt of state.events.AIMetadata)
-	{
-		if (!this._entities.has(evt.id))
-			continue;	// might happen in some rare cases of foundations getting destroyed, perhaps.
-		// Apply metadata (here for buildings for example)
-		for (let key in evt.metadata)
-			this.setMetadata(evt.owner, this._entities.get(evt.id), key, evt.metadata[key]);
 	}
 
 	for (let evt of state.events.Destroy)
@@ -241,12 +209,7 @@ m.SharedScript.prototype.ApplyEntitiesDelta = function(state)
 		if (foundationFinished[evt.entity])
 			evt.SuccessfulFoundation = true;
 
-		// The entity was destroyed but its data may still be useful, so
-		// remember the entity and this AI's metadata concerning it
-		evt.metadata = {};
 		evt.entityObj = this._entities.get(evt.entity);
-		for (let player of this._players)
-			evt.metadata[player] = this._entityMetadata[player][evt.entity];
 
 		let entity = this._entities.get(evt.entity);
 		for (let entCol of this._entityCollections.values())
@@ -255,8 +218,6 @@ m.SharedScript.prototype.ApplyEntitiesDelta = function(state)
 
 		this._entities.delete(evt.entity);
 		this._entitiesModifications.delete(evt.entity);
-		for (let player of this._players)
-			delete this._entityMetadata[player][evt.entity];
 	}
 
 	for (let id in state.entities)
@@ -340,42 +301,6 @@ m.SharedScript.prototype.updateEntityCollections = function(property, ent)
 
 	for (let entCol of this._entityCollectionsByDynProp[property].values())
 		entCol.updateEnt(ent);
-};
-
-m.SharedScript.prototype.setMetadata = function(player, ent, key, value)
-{
-	let metadata = this._entityMetadata[player][ent.id()];
-	if (!metadata)
-	{
-		this._entityMetadata[player][ent.id()] = {};
-		metadata = this._entityMetadata[player][ent.id()];
-	}
-	metadata[key] = value;
-
-	this.updateEntityCollections('metadata', ent);
-	this.updateEntityCollections('metadata.' + key, ent);
-};
-
-m.SharedScript.prototype.getMetadata = function(player, ent, key)
-{
-	let metadata = this._entityMetadata[player][ent.id()];
-
-	if (!metadata || !(key in metadata))
-		return undefined;
-	return metadata[key];
-};
-
-m.SharedScript.prototype.deleteMetadata = function(player, ent, key)
-{
-	let metadata = this._entityMetadata[player][ent.id()];
-
-	if (!metadata || !(key in metadata))
-		return true;
-	metadata[key] = undefined;
-	delete metadata[key];
-	this.updateEntityCollections('metadata', ent);
-	this.updateEntityCollections('metadata.' + key, ent);
-	return true;
 };
 
 m.copyPrototype = function(descendant, parent)

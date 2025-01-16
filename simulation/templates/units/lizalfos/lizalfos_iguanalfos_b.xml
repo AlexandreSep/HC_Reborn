@@ -5,7 +5,6 @@
       <Damage>
         <Forest>20.0</Forest>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>100</MaxRange>
       <MinRange>5.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -18,10 +17,11 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>60</food>
       <metal>25</metal>

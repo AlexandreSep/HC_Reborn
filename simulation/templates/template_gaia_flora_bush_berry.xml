@@ -17,7 +17,7 @@
   <ResourceSupply>
     <Max>200</Max>
     <KillBeforeGather>false</KillBeforeGather>
-    <MaxGatherers>9</MaxGatherers>
+    <MaxGatherers>3</MaxGatherers>
     <Type>food.fruit</Type>
   </ResourceSupply>
   <Selectable>

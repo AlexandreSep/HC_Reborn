@@ -1,0 +1,14 @@
+{
+	"genericName": "In Plain Sight",
+	"description": "",
+	"cost": {"food": 100, "wood": 250, "stone": 100, "metal": 150},
+	"requirements": {"all": [{"tech": "civ_choices/sheikah/choosehero_sheik"},{"tech": "phase_city"}, {"civ": "sheikah"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "sheikah/sheik_plainsight.dds",
+	"researchTime": 45,
+	"tooltip": "Assassins and Saboteurs remain invisible even when attacking.",
+	"modifications": [{"value": "Visibility/Stealth/RevealOnAttackDelay", "multiply": 0}],
+	"affects": ["PlainSight"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

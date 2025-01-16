@@ -63,8 +63,41 @@
       </PlotC>
     </PlotsToSpawn>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <select>interface/select/building/sel_barracks.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_barrackshubA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/barrackshub_volunteers
+    lanayru/barracks_citizenguard
+    lanayru/barracks_snakeeyes
+    lanayru/barracks_honorfallen
+    lanayru/barracks_lostwaves
+    lanayru/barracks_hullmount
+    lanayru/barracks_veterancy
+    lanayru/ralis_homelandsec
+    lanayru/sidon_aquaupgrade
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/lanayru/{civ}_conscript_b
+    units/lanayru/{civ}_sentry_b
+    units/lanayru/{civ}_lancer_b
+      units/lanayru/{civ}_coralarcher_b
+    units/lanayru/{civ}_silverslasher_b
+      units/lanayru/{civ}_wavewarrior_b
+    units/lanayru/{civ}_silverarcher_b
+    units/lanayru/{civ}_aquamarine_b
+      units/lanayru/{civ}_marshal_b
+    units/lanayru/{civ}_tridenteer_b</Entities>
     <DestinationOffset>
       <step1>
         <X>13.5</X>
@@ -79,18 +112,6 @@
         <Z>35</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/lanayru/{civ}_conscript_b
-    units/lanayru/{civ}_sentry_b
-    units/lanayru/{civ}_lancer_b
-      units/lanayru/{civ}_coralarcher_b
-    units/lanayru/{civ}_silverslasher_b
-      units/lanayru/{civ}_wavewarrior_b
-    units/lanayru/{civ}_silverarcher_b
-    units/lanayru/{civ}_aquamarine_b
-      units/lanayru/{civ}_marshal_b
-    units/lanayru/{civ}_tridenteer_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -104,26 +125,5 @@
       <X>10</X>
       <Z>8.5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    lanayru/barrackshub_volunteers
-    lanayru/barracks_citizenguard
-    lanayru/barracks_snakeeyes
-    lanayru/barracks_honorfallen
-    lanayru/barracks_lostwaves
-    lanayru/barracks_hullmount
-    lanayru/barracks_veterancy
-    lanayru/ralis_homelandsec
-    lanayru/sidon_aquaupgrade
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_barracks.xml</constructed>
-      <select>interface/select/building/sel_barracks.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/lanayru/lanayru_barrackshubA.xml</Actor>
-    <FoundationActor>structures/lanayru/lanayru_scaffoldC.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

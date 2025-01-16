@@ -17,7 +17,7 @@
     <BuildTime>15</BuildTime>
     <Population>0</Population>
     <Resources>
-      <food>100</food>
+      
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -34,7 +34,7 @@
     <VisibleClasses datatype="tokens">Dog Melee</VisibleClasses>
   </Identity>
   <Loot>
-    <food>10</food>
+    
     <xp>100</xp>
   </Loot>
   <ResourceGatherer disable="" />

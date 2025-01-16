@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.2 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.2 }
+	],
+	"auraName": "Pegasus Seeds",
+	"auraDescription": "(+20% Walk/Run Speed - Unit)",
+	"overlayIcon": "art/textures/ui/session/auras/pegasus_aura_1.dds"
+}

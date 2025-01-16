@@ -5,14 +5,9 @@
   </Health>
   <Identity>
     <GenericName>Slave Farm</GenericName>
-    <History>Using scores of Tokay labor to replace their civilian workforce, Labrynna&#8217;s farming industry took quite a turn after Ambi&#8217;s campaign of conquest. The food may not be the best quality, but the Tokay are able to produce quite a lot of it for the Empire&#8217;s hungry military.</History>
+    <History>Using scores of Tokay labor to replace their civilian workforce, Labrynna’s farming industry took quite a turn after Ambi’s campaign of conquest. The food may not be the best quality, but the Tokay are able to produce quite a lot of it for the Empire’s hungry military.</History>
     <Icon>structures/labrynna/lab_farmB.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    labrynna/edgar_bipishasoil
-    </Technologies>
-  </ProductionQueue>
   <ResourceDropsite>
     <Sharable>true</Sharable>
     <Types>food</Types>
@@ -35,4 +30,11 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_farmhouseA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/edgar_bipishasoil
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -1,0 +1,14 @@
+{
+	"genericName": "Blast Harvesting",
+	"description": "Deploy bombs as a method of advanced Rupee separation.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 150},
+	"supersedes": "hylian/gather_rupee_separation",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/gather_rupee_blastharvest.dds",
+	"researchTime": 40,
+	"tooltip": "Deploy bombs as a method of advanced Rupee separation. (+20% Currency (Rupees) Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.2}],
+  "affects": [ "FemaleCitizen" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

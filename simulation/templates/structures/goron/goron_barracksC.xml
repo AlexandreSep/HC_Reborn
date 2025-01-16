@@ -39,8 +39,30 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/goron/complete_gladiator.xml</constructed>
+      <select>interface/select/building/goron/sel_gladiator.xml</select>
+      <upgraded>interface/complete/building/goron/complete_gladiator.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/goron/goron_gladringA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/troop_coronroutine
+    goron/troop_rampage
+    goron/troop_lowlyaware
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/goron/{civ}_sumo_b
+      units/goron/{civ}_ram_b
+      units/goron/{civ}_giant_b
+    units/goron/{civ}_shieldbreaker_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -51,12 +73,6 @@
         <Z>40</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/goron/{civ}_sumo_b
-      units/goron/{civ}_ram_b
-      units/goron/{civ}_giant_b
-    units/goron/{civ}_shieldbreaker_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -70,21 +86,5 @@
       <X>0</X>
       <Z>22</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-      goron/troop_coronroutine
-    goron/troop_rampage
-    goron/troop_lowlyaware
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/goron/complete_gladiator.xml</constructed>
-      <select>interface/select/building/goron/sel_gladiator.xml</select>
-      <upgraded>interface/complete/building/goron/complete_gladiator.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/goron/goron_gladringA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <GenericName>Lizalfos</GenericName>
+    <History>Once the lords of the Death Mountain range before a defeat at the hands of the Gorons drove them into exodus, the Lizalfos settled deep in the forests south of their homeland. After decades they had rebuilt their brutal empire and carved their borders all throughout Faron. While many of their kin are content to hunt and dance in their newfound home, some have more ambitions to expand their holdings.</History>
+    <Icon>emblems/emblem_lizalfos.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+  </Player>
+</Entity>
+

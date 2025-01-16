@@ -1,0 +1,13 @@
+{
+	"genericName": "Secured Domain",
+	"description": "Zora troops are taught that the best defense is often a good offense. Should Domain territory ever fall, they will fight to the death to regain it.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 650},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "zora/troop_secureddomain.dds",
+	"researchTime": 40,
+	"tooltip": "Zora troops are taught that the best defense is often a good offense. Should Domain territory ever fall, they will fight to the death to regain it. (+50% Capture Rate - Halberdier, Blademaster, and Shock Trooper)",
+	"modifications": [{"value": "Attack/Capture/Value", "multiply": 1.50}],
+	"affects": ["Secure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

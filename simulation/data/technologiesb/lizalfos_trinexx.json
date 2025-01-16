@@ -1,0 +1,20 @@
+{
+	"pair": "pair_lizgodsC",
+	"genericName": "Worship Trinexx",
+	"specificName": {
+	},
+	"description": ".",
+	"cost": { "food": 0, "wood": 0, "stone": 0, "metal": 500 },
+	"supersedes": "pair_lizgodsB",
+	"replaces": ["pair_lizgodsB"],
+	"icon": "lizalfos/deity_trinexx.dds",
+	"researchTime": 30,
+	"tooltip": " Lizalfos god of mountains. A giant three headed Dodongo snake, Trinexx has been a part of the Lizalfos pantheon for some time, but rose to prominance after their exile from death mountain.",
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.15, "affects": "CivCentre" },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 7.0, "affects": "Structure" },
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Helmking" },
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Trinexx" }
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

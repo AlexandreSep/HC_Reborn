@@ -1,0 +1,15 @@
+{
+	"genericName": "Nuun Architecture Archive",
+	"description": "A recovered series of books on ancient construction. The methods of Nuunian construction were lost to Labrynnians as time went by, but thankfully they have been recovered in this valuable collection.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "labrynna/library_nuunarch.dds",
+	"researchTime": 40,
+	"tooltip": "A recovered series of books on ancient construction. The methods of Nuunian construction were lost to Labrynnians as time went by, but thankfully they have been recovered in this valuable collection. (Building HP increased by 20%)",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.20}
+	],
+  "affects": [ "Building" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

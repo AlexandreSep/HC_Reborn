@@ -1,42 +1,86 @@
 {
 	"Code": "fairy",
 	"Culture": "naturalistic",
-	"Name": "Fairies of Tarm",
-	"Emblem": "session/portraits/emblems/emblem_fairy.dds",
-	"History": "Perhaps one of Hyrule's greatest mysteries, Fairies were mythical and reclusive beings that despite being found in all corners of the world they were rarely if ever seen. Most of the time the Fairies would go about on their own with little unity or guidance, tending to nature or causing mischief when no one was looking. As the land cried out in pain however, these wild principles would gather together and cause a lot more than a little mischief.",
-	"Music":[
-			{"File":"fairy_theme1.ogg", "Type":"peace"},
-			{"File":"fairy_ambient1.ogg", "Type":"peace"},
-			{"File":"fairy_ambient2.ogg", "Type":"peace"},
-			{"File":"fairy_ambient3.ogg", "Type":"peace"},
-			{"File":"fairy_ambient4.ogg", "Type":"peace"},
-			{"File":"fairy_ambient5.ogg", "Type":"peace"},
-			{"File":"fairy_ambient6.ogg", "Type":"peace"},
-			{"File":"fairy_ambient7.ogg", "Type":"peace"},
-			{"File":"fairy_ambient8.ogg", "Type":"peace"},
-			{"File":"fairy_ambient9.ogg", "Type":"peace"},
-			{"File":"fairy_ambient10.ogg", "Type":"peace"},
-			{"File":"fairy_ambient11.ogg", "Type":"peace"},
-			{"File":"fairy_ambient12.ogg", "Type":"peace"},
-			{"File":"fairy_battle1.ogg", "Type":"battle"},
-			{"File":"fairy_battle2.ogg", "Type":"battle"},
-			{"File":"fairy_battle3.ogg", "Type":"battle"},
-			{"File":"fairy_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "fairy_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient10.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient11.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_ambient12.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "fairy_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "fairy_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "fairy_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "fairy_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Sekaia, Fairy of Winds",
 					"Class": "",
@@ -64,30 +108,29 @@
 					"Armament": "Unknown",
 					"Emblem": "",
 					"History": "Little myth remains of the Queen who ruled over the Fairies of Tarm, few even know her true name. It was said that she often assumed a very childlike appearance and mannerisms, both which betrayed her overwhelming intellect and clearly god like powers. To any hero who personally met the Queen of All Fairies, she was described as curious and easily amused, filled with child like glee and wonder at encountering friendly outsiders. One individual saw through her though, he saw countless generations of war, suffering, trauma, and loss that this somber and incredibly ancient being had been a witness to. The Queen of All Fairies is associated with the season of Winter. Her presence is said to freeze all who look on her, and the land itself shivers until she passes on."
-				}  
+				}
 			]
-		} 
+		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Herald of Seasons",
 			"History": "Fairy units change form and function with the four Seasons, which can be altered at the Sundial",
-			"Description": "." 
+			"Description": "."
 		},
 		{
 			"Name": "Those that Dream",
 			"History": "",
-			"Description": "Fairies have no worker units and buildings slowly summon themselves." 
+			"Description": "Fairies have no worker units and buildings slowly summon themselves."
 		},
 		{
 			"Name": "Breath of the Wild",
 			"History": "",
-			"Description": "Wild Animals (with the exception of Bosses) will not attack Fairies of Tarm unless attacked first." 
-		} 
+			"Description": "Wild Animals (with the exception of Bosses) will not attack Fairies of Tarm unless attacked first."
+		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
+		"civ_choices/fairy/choosehero_navi",
 		"civ_choices/fairy/choosehero_ciela",
 		"civ_choices/fairy/choosehero_miff",
 		"civ_choices/fairy/choosehero_sekaia",		
@@ -95,16 +138,14 @@
 		"civ_choices/fairy/choosehero_venus",
 		"civ_choices/fairy/choosehero_valanavi"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "Respite for Friends",
 			"History": "",
 			"Description": "All allied organic units regenerate HP when near Fairy buildings."
-		} 
+		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Unicorn Fountain",
 			"Class": "",
@@ -112,7 +153,7 @@
 			"History": "A mythical fountain still believed to be unreal. Many have searched their entire lives for this fabled wonder, and none have found it. Legend says that only a Fairy may visit the Unicorn Fountain, and she may permit a mortal friend a glimpse in their sleep.",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
+			"Special": ""
 		},
 		{
 			"Name": "Titan: The Maku Tree of Horon",
@@ -121,13 +162,12 @@
 			"History": "One of the legendary Maku Trees and perhaps one of the only left to still live, the guardian of Horon spent much of his time slumbering at the edge of the Tarm Woods being worshiped by the natives of the land. It is not known how long this tree has slumbered, and it is said that only the wish of a Fairy can awaken him. In the ancient myths of Horon it was said that this giant tree did battle alongside his sister Maku Tree and the Fairies of Tarm to defeat the dragons of the east and bring peace to the land.",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
-		} 
+			"Special": ""
+		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
-			"Template": "structures/fairy/fairy_sundial_spring"
+			"Template": "structures/fairy/fairy_sundial"
 		},
 		{
 			"Template": "units/fairy/fairy_stray_spring",
@@ -136,7 +176,7 @@
 		{
 			"Template": "units/fairy/fairy_drove_spring",
 			"Count": 2
-		},		
+		},
 		{
 			"Template": "units/fairy/fairy_drove_spring",
 			"Count": 2

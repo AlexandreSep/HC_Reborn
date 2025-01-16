@@ -1,0 +1,15 @@
+{
+	"genericName": "Foundations in Earth",
+	"description": "The mysterious Fey seemed to be composed of ruinous stone, perhaps from ancient structures that had long fallen apart.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 30},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Village Phase.",
+	"icon": "fairy/fey_foundationearth.dds",
+	"researchTime": 40,
+	"tooltip": "The mysterious Fey seemed to be composed of ruinous stone, perhaps from ancient structures that had long fallen apart. (+25% Non Magic armor for all Fey units)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.25},
+					  {"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.25},
+					  {"value": "Resistance/Entity/Damage/Crush", "multiply": 1.25}],
+	"affects": ["Fey"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

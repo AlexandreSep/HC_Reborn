@@ -17,7 +17,7 @@
   </Auras>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>60</food>
       <metal>20</metal>
@@ -42,7 +42,7 @@
   <Promotion>
     <Entity>units/gerudo/gerudo_ashcap_upg</Entity>
     <RequiredXp>9999</RequiredXp>
-  </Promotion> 
+  </Promotion>
   <Resistance>
     <Entity>
       <Damage>

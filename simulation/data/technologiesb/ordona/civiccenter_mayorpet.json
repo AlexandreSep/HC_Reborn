@@ -1,0 +1,22 @@
+{
+  "genericName": "Mayor's Pet",
+  "description": "DOES NOT WORK!!!",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 0,
+    "metal": 0
+  },
+  "requirements": {
+    "all": [
+      { "tech": "phase_village" },
+      { "civ": "ordona" }
+    ]
+  },
+  "icon": "ordona/civiccenter_mayorpet.dds",
+  "researchTime": 0,
+  "tooltip": "(Manor now always spawns one free Hawk. Does not count towards population limit.)",
+  "modifications": [],
+  "affects": [ "MayorManor" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

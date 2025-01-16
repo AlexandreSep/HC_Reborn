@@ -23,7 +23,7 @@
     <Civ>moblin</Civ>
     <Classes datatype="tokens" />
     <GenericName>Handmedown Armor Place</GenericName>
-    <History>The Hylians they make some stuff for a quick rupee! We though, we are smarter regarding that there thing! When our armor gets all worn down, we put it on the shelf and sell it like new! Half the Blinys don&#8217;t know the difference ahaahahah!</History>
+    <History>The Hylians they make some stuff for a quick rupee! We though, we are smarter regarding that there thing! When our armor gets all worn down, we put it on the shelf and sell it like new! Half the Blinys don’t know the difference ahaahahah!</History>
     <Icon>structures/moblin/mob_handmedown.dds</Icon>
     <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Make the Moblins armor and weapons even better than they already are!</Tooltip>
@@ -36,15 +36,6 @@
   <Obstruction>
     <Static depth="20.0" width="20.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    moblin/attack_pointierA
-    moblin/attack_pointierB
-    moblin/armor_betterarmorA
-    moblin/armor_betterarmorB
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -73,4 +64,15 @@
     <Actor>structures/moblin/moblin_handmedownA.xml</Actor>
     <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/attack_pointierA
+    moblin/attack_pointierB
+    moblin/armor_betterarmorA
+    moblin/armor_betterarmorB
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -35,46 +35,6 @@
   <Obstruction>
     <Static depth="37.0" width="37.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>7</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>11</Z>
-      </step2>
-	  <step3>
-        <X>0</X>
-        <Z>32</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/sheikah/{civ}_trainee_b
-      units/sheikah/{civ}_hawkeye_b
-	  units/sheikah/{civ}_protector_b
-      units/sheikah/{civ}_sidewinder_b
-	  units/sheikah/{civ}_blademaster_b
-      units/sheikah/{civ}_demoncarver_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>5</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -102,4 +62,44 @@
     <Actor>structures/sheikah/sheikah_dojoA.xml</Actor>
     <FoundationActor>structures/sheikah/sheikah_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/sheikah/{civ}_trainee_b
+      units/sheikah/{civ}_hawkeye_b
+	  units/sheikah/{civ}_protector_b
+      units/sheikah/{civ}_sidewinder_b
+	  units/sheikah/{civ}_blademaster_b
+      units/sheikah/{civ}_demoncarver_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>7</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>11</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>32</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>5</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

@@ -1,0 +1,5 @@
+READ THIS BEFORE STARTING A MATCH
+Only Gerudo, Gohma, Gorons, Hylians, Labrynna, and the Zora have proper functioning AI.
+All other factions may display little to no AI behavior and endless strings of Errors if selected for AI players.
+
+

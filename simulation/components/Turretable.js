@@ -77,7 +77,7 @@ Turretable.prototype.OccupyTurret = function(target, turretPointName = "", eject
 	let cmpUnitAI = Engine.QueryInterface(this.entity, IID_UnitAI);
 	if (cmpUnitAI)
 	{
-		cmpUnitAI.SetGarrisoned();
+		cmpUnitAI.SetGarrisoned(); // HC-Exodarion - Do you need this line? Else remove
 		cmpUnitAI.SetTurretStance();
 	}
 
@@ -124,6 +124,7 @@ Turretable.prototype.LeaveTurret = function(forced = false)
 
     //HC-code, Turret units in HC are knocked from the towers rather than teleported downward
     //Also, removed the cmpUnitAI routine that is now done inside the CheckGarrisonSpawnInvolvement function
+// HC-Exodarion - Check a26 code and see if that is still as you need it. Quite a bit from the original code has been removed
 	let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
 	if (cmpPosition)
 		cmpPosition.SetTurretParent(INVALID_ENTITY, new Vector3D());
@@ -171,7 +172,7 @@ Turretable.prototype.OnEntityRenamed = function(msg)
 Turretable.prototype.OnOwnershipChanged = function(msg)
 {
 	if (!this.holder)
-        return;
+		return;
 
 	if (msg.to == INVALID_PLAYER)
 		this.LeaveTurret(true);

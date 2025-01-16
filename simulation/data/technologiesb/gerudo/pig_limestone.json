@@ -1,0 +1,22 @@
+{
+	"genericName": "Limestone Supplements",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/limestone_supps.dds",
+	"researchTime": 40,
+	"tooltip": "Feeding mineral supplements to Swine yields better stock. (-10 second spawn time, +25% Meat Gather Rate - Gerudo Swine)",
+  "modifications": [
+    {
+      "value": "Health/SpawnOnInterval/Interval",
+      "add": -10000
+    },
+    {
+      "value": "ResourceGatherer/Rates/food.meat",
+      "add": 0.1
+    }
+  ],
+  "affects": [ "FemaleCitizen", "PigFarm" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

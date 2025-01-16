@@ -64,12 +64,6 @@
   <Population>
     <Bonus>8</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    lanayru/home_privatequarters
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_house.xml</constructed>
@@ -80,4 +74,12 @@
     <Actor>structures/lanayru/lanayru_homehubA.xml</Actor>
     <FoundationActor>structures/lanayru/lanayru_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/home_privatequarters
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

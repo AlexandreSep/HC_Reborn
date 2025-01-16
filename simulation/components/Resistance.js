@@ -69,22 +69,26 @@ Resistance.prototype.Schema =
 			"</element>" +
 		"</choice>" +
 	"</zeroOrMore>" +
-    "<optional>" +
-        "<element name='DodgeRating' a:help='Dodge chance for units which completely ignores incoming melee damage'><ref name='nonNegativeDecimal'/></element>" +
-    "</optional>" +
-    "<optional>" +
-        "<element name='KnockbackResistance' a:help='Resistance to knockback in percentage'><ref name='nonNegativeDecimal'/></element>" +
-    "</optional>" +
-    "<optional>" +
-        "<element name='StunResistance' a:help='Resistance to knockback in percentage'><ref name='nonNegativeDecimal'/></element>" +
-    "</optional>";
+	// HC-Code
+	"<optional>" +
+		"<element name='DodgeRating' a:help='Dodge chance for units which completely ignores incoming melee damage'><ref name='nonNegativeDecimal'/></element>" +
+	"</optional>" +
+	"<optional>" +
+	"<element name='KnockbackResistance' a:help='Resistance to knockback in percentage'><ref name='nonNegativeDecimal'/></element>" +
+	"</optional>" +
+	"<optional>" +
+		"<element name='StunResistance' a:help='Resistance to knockback in percentage'><ref name='nonNegativeDecimal'/></element>" +
+	"</optional>";
+	// HC-End
 
 Resistance.prototype.Init = function()
 {
 	this.invulnerable = false;
 	this.attackers = new Set();
 
-	this.InitHyrule(); //HC-Code
+	//HC-Code
+	this.InitHyrule(); 
+	Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer).SetTimeout(this.entity, IID_Resistance, "PostInit", 400, {});
 };
 
 Resistance.prototype.IsInvulnerable = function()
@@ -201,9 +205,12 @@ ResistanceMirage.prototype.Init = function(cmpResistance)
 	this.resistanceOfForm = {};
 	for (const entityForm in cmpResistance.template)
 		this.resistanceOfForm[entityForm] = cmpResistance.GetResistanceOfForm(entityForm);
+	this.attackers = new Set();
 };
 
 ResistanceMirage.prototype.IsInvulnerable = Resistance.prototype.IsInvulnerable;
+ResistanceMirage.prototype.AddAttacker = Resistance.prototype.AddAttacker;
+ResistanceMirage.prototype.RemoveAttacker = Resistance.prototype.RemoveAttacker;
 
 ResistanceMirage.prototype.GetEffectiveResistanceAgainst = function(entityForm)
 {
@@ -228,4 +235,5 @@ Resistance.prototype.Mirage = function()
 	mirage.Init(this);
 	return mirage;
 };
+
 Engine.RegisterComponentType(IID_Resistance, "Resistance", Resistance);

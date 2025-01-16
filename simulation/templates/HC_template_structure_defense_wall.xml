@@ -46,7 +46,7 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue disable="" />
+  <ProductionQueue/>
   <RallyPoint disable="" />
   <Repairable>
     <RepairTimeRatio>4.5</RepairTimeRatio>

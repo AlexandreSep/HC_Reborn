@@ -1,0 +1,16 @@
+{
+	"genericName": "Volvagian Legacy",
+	"description": "Volvagians never go down without a fight and will use their last breaths to do whatever damage they can to their killers.",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
+	"requirements": {"all": [ {"tech": "civ_choices/lizalfos/choosehero_talik"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "You must select Talik as your hero.",
+	"icon": "lizalfos/talik_volvagianlegacy.dds",
+	"researchTime": 40,
+	"tooltip": "All non-creature, non-mechanical Lizalfos units deal minor damage to enemies when killed.",
+	"modifications": [
+		{"value": "DeathDamage/Pierce", "add": 15}
+	],
+	"affects": ["Volvamight"],
+	"hideIfTechnologyRequirementIsNotMet": "true",	
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

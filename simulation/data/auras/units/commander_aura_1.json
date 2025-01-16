@@ -6,9 +6,11 @@
 		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.10 },
 		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.10 },
 		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.10 },
+		{ "value": "Attack/Melee/Damage/TrueDamage", "multiply": 1.10 },
 		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.10 },
 		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.10 },
 		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/TrueDamage", "multiply": 1.10 },
 		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
 		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.1 }
 	],

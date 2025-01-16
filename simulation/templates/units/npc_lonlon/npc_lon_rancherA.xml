@@ -6,7 +6,7 @@
     <Rate>1.0</Rate>
   </Builder>
   <Cost>
-    <BuildTime>10</BuildTime>
+    <BuildTime>7</BuildTime>
     <Resources>
       <food>50</food>
     </Resources>

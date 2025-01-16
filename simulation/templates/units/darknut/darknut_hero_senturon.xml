@@ -5,7 +5,6 @@
       <Damage>
         <Hack>25</Hack>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -34,10 +33,11 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>455</food>
       <metal>100</metal>
@@ -101,7 +101,7 @@
   </TrainingRestrictions>
   <UnitMotion>
     <RunMultiplier>1.4285</RunMultiplier>
-    <WalkSpeed>3.5</WalkSpeed>
+    <WalkSpeed>7</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_hero_senturon_b.xml</Actor>

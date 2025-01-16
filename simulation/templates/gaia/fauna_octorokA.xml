@@ -5,7 +5,7 @@
       <Damage>
         <Crush>10</Crush>
       </Damage>
-      <Delay>0</Delay>
+      <EffectDelay>0</EffectDelay>
       <MaxRange>60</MaxRange>
       <MinRange>10.0</MinRange>
       <PrepareTime>1500</PrepareTime>
@@ -24,7 +24,6 @@
     <Square depth="5.0" width="3.0" />
   </Footprint>
   <Health>
-    <DeathType>remain</DeathType>
     <Max>230</Max>
   </Health>
   <Identity>
@@ -45,7 +44,7 @@
   </Resistance>
   <ResourceSupply>
     <Max>50</Max>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>3</MaxGatherers>
     <KillBeforeGather>true</KillBeforeGather>
     <Type>food.meat</Type>
   </ResourceSupply>

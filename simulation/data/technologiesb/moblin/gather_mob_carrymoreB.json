@@ -1,0 +1,19 @@
+{
+	"genericName": "I said Carry More!",
+	"description": "Hey you dumb Dodoblin! Yeah you! When I say carry more, I mean CARRY MORE!",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 200},
+	"supersedes": "moblin/gather_mob_carrymoreA",
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/carrymoreB.dds",
+	"researchTime": 40,
+	"tooltip": "Hey you dumb Dodoblin! Yeah you! When I say carry more, I mean CARRY MORE! (+2 Resource Capacity - Worker)",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 2},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 2},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 2},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 2}
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

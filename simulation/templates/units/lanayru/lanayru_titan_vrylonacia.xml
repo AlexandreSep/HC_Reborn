@@ -7,7 +7,6 @@
         <Spirit>50.0</Spirit>
         <Water>50.0</Water>
       </Damage>
-      <Delay>3</Delay>
       <MaxRange>10</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Structure Infantry</PreferredClasses>
@@ -38,10 +37,11 @@
         <Horizontal>25</Horizontal>
         <Vertical>25</Vertical>
       </Knockback>
+      <EffectDelay>3</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>120</BuildTime>
+    <BuildTime>80</BuildTime>
     <Resources>
       <food>1995</food>
       <metal>250</metal>

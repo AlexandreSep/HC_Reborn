@@ -5,8 +5,6 @@
       <Damage>
         <Pierce>15.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
-      <ElevationBonus>15</ElevationBonus>
       <MaxRange>115.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -16,9 +14,15 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
     </Ranged>
   </Attack>
   <BuildRestrictions>
@@ -186,42 +190,6 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>25</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-	  units/kokiri/{civ}_chief_b
-      units/kokiri/{civ}_bouldershot_b
-	  units/kokiri/{civ}_dekutree_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>5</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-      kokiri/building_reinforce
-	  kokiri/building_emeraldgar
-	  kokiri/bouldersnipe
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <attack>attack/weapon/arrowfly.xml</attack>
@@ -238,4 +206,40 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/building_reinforce
+	  kokiri/building_emeraldgar
+	  kokiri/bouldersnipe
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/kokiri/{civ}_chief_b
+      units/kokiri/{civ}_bouldershot_b
+	  units/kokiri/{civ}_dekutree_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>5</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

@@ -1,0 +1,14 @@
+{
+	"genericName": "Upgrade to Man at Arms",
+	"description": "As a Hylian house and its subordinate houses gained more wealth and prestige, they could afford better armor and weapons for their military.",
+	"cost": {"metal": 300},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/soldier_cavalry.dds",
+	"researchTime": 45,
+	"tooltip": "Improves Levy Cavalry by making them Men at Arms.",
+	"modifications": [{"value": "Trainer/Entities/_string",	"tokens": "units/hylian/{civ}_levy_cavalry>units/hylian/{civ}_soldier_cavalry", "affects": "Structure" },
+					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "LevyCavalry" }
+	],	
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+} 

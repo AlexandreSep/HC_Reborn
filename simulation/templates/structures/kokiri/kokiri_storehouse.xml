@@ -37,11 +37,6 @@
   <Obstruction>
     <Static depth="20.0" width="20.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -77,4 +72,11 @@
     <Actor>structures/kokiri/kokiri_storehouseA.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

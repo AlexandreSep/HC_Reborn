@@ -1,0 +1,30 @@
+{
+	"genericName": "All the Colors",
+	"description": "If riled enough, Fairies of all types and seasons will gather into a massive and angry Drove regardless of what time of the year it is.",
+	"cost": {"food": 300, "wood": 300, "stone": 300, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Village Phase.",
+	"icon": "fairy/drove_allcolors.dds",
+	"researchTime": 40,
+	"tooltip": "If riled enough, Fairies of all types and seasons will gather into a massive and angry Drove regardless of what time of the year it is. (Fairy Droves trained after this point have the benefits of all Seasons at once.)",
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "units/{civ}_drove_spring>units/{civ}_drove_all"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "units/{civ}_drove_summer>units/{civ}_drove_all"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "units/{civ}_drove_autumn>units/{civ}_drove_all"
+		},
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "units/{civ}_drove_winter>units/{civ}_drove_all"
+		}		
+	],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

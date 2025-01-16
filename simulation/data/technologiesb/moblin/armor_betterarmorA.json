@@ -1,0 +1,15 @@
+{
+	"genericName": "Better Armor!",
+	"description": "Whoah what do we have here?! Better armor?! Great, now we can get whacked more times before we die!",
+	"cost": {"food": 0, "wood": 0, "stone": 150, "metal": 150},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/armor_betterarmorA.dds",
+	"researchTime": 40,
+	"tooltip": "Whoah what do we have here?! Better armor?! Great, now we can get whacked more times before we die! (Increases all non-magic armor of soldiers by +2)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 2.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 2.0}],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

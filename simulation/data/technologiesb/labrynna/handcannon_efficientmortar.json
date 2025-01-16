@@ -1,0 +1,17 @@
+{
+	"genericName": "Efficient Mortar Shells",
+	"description": "Better, lighter, and deadlier designs for Hand Cannoneer explosives. These models of shells allowed both faster reloading times and better accuracy.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "labrynna/handcannon_efficientmortar.dds",
+	"researchTime": 40,
+	"tooltip": "Better, lighter, and deadlier designs for Hand Cannoneer explosives. These models of shells allowed both faster reloading times and better accuracy. (Hand Cannoneer fire rate increased by 10% and accuracy increased by 25%)",
+	"modifications": [
+		{"value": "Attack/Ranged/Damage/PrepareTime", "multiply": 0.90},
+		{"value": "Attack/Ranged/Damage/RepeatTime", "multiply": 0.90},
+		{"value": "Attack/Ranged/Damage/Spread", "multiply": 0.5}
+	],
+  "affects": [ "Hand_Cannon" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

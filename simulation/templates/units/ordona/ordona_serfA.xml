@@ -63,7 +63,7 @@
   </ResourceGatherer>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
-    <BuildTime>25</BuildTime>
+    <BuildTime>16</BuildTime>
     <Resources>
       <food>50</food>
       <metal>0</metal>

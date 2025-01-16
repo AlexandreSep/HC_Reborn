@@ -1,0 +1,16 @@
+{
+	"genericName": "Seed of Life",
+	"description": "Life begins anew when birds carry this, the Seed of Life, to new lands.",
+	"cost": {"food": 200, "wood": 200, "stone": 200, "metal": 200},
+	"supersedes": "fairy/essence_06_blowingwind",
+	"requirementsTooltip": "Requires the Blowing Wind.",
+	"icon": "fairy/essence_seedoflife.dds",
+	"researchTime": 40,
+	"tooltip": "Life begins anew when birds carry this, the Seed of Life, to new lands. (Cost of all units reduced by 10%)",
+	"modifications": [{"value": "Cost/Resources/food", "multiply": 0.90},
+					  {"value": "Cost/Resources/wood", "multiply": 0.90},
+					  {"value": "Cost/Resources/stone", "multiply": 0.90},
+					  {"value": "Cost/Resources/metal", "multiply": 0.90}],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

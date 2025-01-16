@@ -35,12 +35,6 @@
   <Plots>
     <CanUpgradeToPlots>true</CanUpgradeToPlots>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    labrynna/gather_slaveroutine
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -73,4 +67,12 @@
     <Actor>structures/labrynna/labrynna_storehouseA.xml</Actor>
     <FoundationActor>structures/labrynna/labrynna_scaffoldG.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/gather_slaveroutine
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -38,6 +38,7 @@
     <Classes datatype="tokens">Structure ConquestCritical</Classes>
     <GenericName>Structure</GenericName>
     <Undeletable>false</Undeletable>
+    <Icon>units/unit_generic.dds</Icon>	
   </Identity>
   <Loot>
     <food>0</food>
@@ -66,16 +67,9 @@
   <Population>
     <Bonus>0</Bonus>
   </Population>
-  <ProductionQueue>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <TechCostMultiplier>
-      <food>1.0</food>
-      <metal>1.0</metal>
-      <stone>1.0</stone>
-      <time>1.0</time>
-      <wood>1.0</wood>
-    </TechCostMultiplier>
-  </ProductionQueue>
+  </Trainer>
   <RallyPoint />
   <RallyPointRenderer>
     <LineDashColor b="15" g="11" r="158" />
@@ -126,6 +120,7 @@
     <Preview>false</Preview>
     <RetainInFog>true</RetainInFog>
   </Visibility>
+  <ProductionQueue/> 
   <Vision>
     <Range>40</Range>
   </Vision>

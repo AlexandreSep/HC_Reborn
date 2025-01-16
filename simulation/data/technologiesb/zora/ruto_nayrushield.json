@@ -1,0 +1,59 @@
+{
+	"genericName": "Shield of Nayru",
+	"description": "These resilient Crystal shields are spun from water by the powerful magic of Zora Mages.",
+	"cost": {"metal": 300},
+	"requirements": {"all": [ {"tech": "civ_choices/zora/choosehero_ruto"}, {"tech": "phase_city"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Requires Princess Ruto and City Phase.",
+	"icon": "zora/ruto_nayrushield.dds",
+	"researchTime": 40,
+	"tooltip": "+10 Armor, Magic Resistance and +10% Health - River Patrol, Shock Trooper, and Nayru's Blessed.",
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Forest",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Fire",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Water",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Spirit",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Light",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Shadow",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Forest",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 10.0
+    },
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 10.0
+    },
+    {
+      "value": "Health/Max",
+      "multiply": 1.1
+    }
+  ],
+  "affects": [ "CrystalShield" ],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

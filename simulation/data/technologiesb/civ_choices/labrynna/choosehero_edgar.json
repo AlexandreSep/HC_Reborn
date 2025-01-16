@@ -1,0 +1,15 @@
+{
+	"genericName": "Edgar the Giant",
+	"description": "Edgar the Giant.",
+	"icon": "labrynna/choosehero_edgar.png",
+	"tooltip": "Select Edgar the Giant as your hero of choice.",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 10},
+					  {"value": "Resistance/Entity/Damage/Pierce", "add": 10},
+		              {"value": "Resistance/Entity/Damage/Crush", "add": 10}],
+	"affects": ["Infantry"],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Armor Focus", "tooltipText": "Edgar focuses on improving the Armor of units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Edgar the Giant", "tooltipText": "Allows you to summon Edgar the Giant, an armored hero weidling a pole-arm."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Campeador", "tooltipText": "Heavy Anti-Creature Knight unit armed with a Halberd."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Protection of Giants", "tooltipText": "Non-Magic Armor values of all Infantry units is increased."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Giant's Gift", "tooltipText": "Improves the Melee damage of all Infantry."}]
+}

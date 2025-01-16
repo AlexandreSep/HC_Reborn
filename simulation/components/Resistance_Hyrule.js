@@ -11,6 +11,12 @@ Resistance.prototype.InitHyrule = function()
     this.registerData = {};
 }
 
+Resistance.prototype.PostInit = function ()
+{
+    let cmpIdentity = Engine.QueryInterface(this.entity, IID_Identity);
+    if(cmpIdentity != undefined && cmpIdentity.HasClass("Civilian")) this.SetInvulnerability(true);
+}
+
 /**
  *
  * @param {*} data - Special data passed by the timer.

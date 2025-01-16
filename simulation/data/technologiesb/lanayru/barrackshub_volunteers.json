@@ -1,0 +1,16 @@
+{
+	"genericName": "Volunteers",
+	"description": "Reduces total Resource cost of all units trained at Conscription Hub Add-ons by 5%",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "lanayru"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "lanayru/barrackshub_volunteers.dds",
+	"researchTime": 40,
+	"tooltip": "Reduces total Resource cost of all units trained at Conscription Hub Add-ons by 5%",
+	"modifications": [{"value": "Cost/Resources/food", "multiply": 0.95},
+					  {"value": "Cost/Resources/wood", "multiply": 0.95},
+					  {"value": "Cost/Resources/stone", "multiply": 0.95},
+					  {"value": "Cost/Resources/metal", "multiply": 0.95}],
+	"affects": ["Volunteers"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

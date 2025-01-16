@@ -1,0 +1,41 @@
+{
+  "genericName": "Kingdom-Issued Carts",
+  "description": "The Royal Family issues carts to Citizens.",
+  "cost": {
+    "food": 0,
+    "wood": 400,
+    "stone": 0,
+    "metal": 400
+  },
+  "supersedes": "hylian/gather_hyl_capacity_wheelbarrow",
+  "requirements": {
+    "all": [
+      { "tech": "phase_city" },
+      { "civ": "hylian" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with City.",
+  "icon": "hylian/gather_capacity_carts.dds",
+  "researchTime": 40,
+  "tooltip": "The Royal Family issues carts to Citizens. (+10 Resource Capacity - Worker)",
+  "modifications": [
+    {
+      "value": "ResourceGatherer/Capacities/food",
+      "add": 10
+    },
+    {
+      "value": "ResourceGatherer/Capacities/wood",
+      "add": 10
+    },
+    {
+      "value": "ResourceGatherer/Capacities/stone",
+      "add": 10
+    },
+    {
+      "value": "ResourceGatherer/Capacities/metal",
+      "add": 10
+    }
+  ],
+  "affects": [ "FemaleCitizen" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,7 +1,7 @@
 // Helper functions to change an entity's template and check if the transformation is possible
 
 // returns the ID of the new entity or INVALID_ENTITY.
-function ChangeEntityTemplate(oldEnt, newTemplate, isPromotion = false)
+function ChangeEntityTemplate(oldEnt, newTemplate, isPromotion = false) // HC-Code: Added "isPromotion"
 {
 	// Done un/packing, copy our parameters to the final entity
 	var newEnt = Engine.AddEntity(newTemplate);
@@ -53,7 +53,7 @@ function ChangeEntityTemplate(oldEnt, newTemplate, isPromotion = false)
 
 	let owner;
 	let cmpTerritoryDecay = Engine.QueryInterface(newEnt, IID_TerritoryDecay);
-	if (cmpTerritoryDecay && cmpTerritoryDecay.HasTerritoryOwnership() && cmpNewPosition)
+	if (cmpTerritoryDecay && cmpTerritoryDecay.HasTerritoryOwnership() && cmpNewPosition )
 	{
 		let pos = cmpNewPosition.GetPosition2D();
 		let cmpTerritoryManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TerritoryManager);
@@ -165,7 +165,7 @@ function ChangeEntityTemplate(oldEnt, newTemplate, isPromotion = false)
 	}
 
 	if (cmpPosition && cmpPosition.IsInWorld())
-        cmpPosition.MoveOutOfWorld();
+		cmpPosition.MoveOutOfWorld();
 
     //HC-code
     //Regulate promotion specific checks

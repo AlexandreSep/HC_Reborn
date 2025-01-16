@@ -7,14 +7,6 @@
     <GenericName>Autumn Sundial</GenericName>
     <Icon>structures/fairy/fai_sundial_autumn.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    fairy/unlock_winter
-    fairy/essence_05_nurturingwarmth
-    fairy/essence_06_blowingwind
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -31,4 +23,14 @@
     <Actor>structures/fairy/fairy_sundialA_autumn.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_autumn.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/unlock_winter
+    fairy/essence_05_nurturingwarmth
+    fairy/essence_06_blowingwind
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>
