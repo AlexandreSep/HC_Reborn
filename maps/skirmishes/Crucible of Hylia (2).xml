@@ -32,9 +32,9 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="1220.28" y="447.611" z="763.036"/>
-		<Rotation angle="-0.023578"/>
-		<Declination angle="0.748332"/>
+		<Position x="943.157" y="333.044" z="-64.1493"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
@@ -20230,20 +20230,6 @@
 			<Position x="1056.54114" z="1105.6941"/>
 			<Orientation y="-2.3293"/>
 			<Actor seed="19490"/>
-		</Entity>
-		<Entity uid="3245">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="538.46857" z="1335.77173"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="15628"/>
-		</Entity>
-		<Entity uid="3246">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="943.29896" z="190.84653"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="5522"/>
 		</Entity>
 		<Entity uid="3247">
 			<Template>gaia/geology_rupees_temperate</Template>

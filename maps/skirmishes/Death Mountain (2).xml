@@ -32,9 +32,9 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="224.618" y="277.962" z="1146.87"/>
-		<Rotation angle="-0.13356"/>
-		<Declination angle="0.686304"/>
+		<Position x="1134.48" y="346.494" z="993.075"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
@@ -10794,13 +10794,6 @@
 			<Position x="1162.82642" z="1389.93055"/>
 			<Orientation y="-1.86176"/>
 			<Actor seed="48706"/>
-		</Entity>
-		<Entity uid="1830">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="928.98444" z="868.9798"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="64542"/>
 		</Entity>
 		<Entity uid="1831">
 			<Template>structures/ruins/ruins_dmA</Template>
