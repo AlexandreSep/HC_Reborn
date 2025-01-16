@@ -43,6 +43,33 @@ var API3 = function(m)
         return this.get("Identity/SpecificName");
     },
 
+	"getUpgradeBuilding": function () {
+        let tower = this.get("Upgrade/Tower/Entity");
+        if (tower)
+            return tower;
+
+        let towerA = this.get("Upgrade/TowerA/Entity");
+        if (towerA)
+            return towerA;
+
+        return false;
+    },
+
+    "getUpgradeBuildings": function () {
+        let alphabet = ["", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+        let allUpgrades = [];
+        for (let letter of alphabet) {
+            let path = this.get("Upgrade/Tower" + letter + "/Entity");
+            if (path)
+                allUpgrades.push(path);
+            else if (letter === "")
+                continue;
+            else
+                break;
+        }
+        return allUpgrades;
+    },
+
     "getUpgradeDataArray": function () {
         let upgradeData = [];
         let data = this.get("Upgrade");
