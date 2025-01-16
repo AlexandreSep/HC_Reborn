@@ -38,8 +38,26 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/goron/goron_battlechambA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/troop_primalhunt
+    goron/troop_goronrage
+    goron/troop_goronbibeats
+    goron/gorgoron_damage
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/goron/{civ}_guardian_b
+      units/goron/{civ}_rocktosser_b
+      units/goron/{civ}_beastmaster_b
+      units/goron/{civ}_battlebro_b
+      units/goron/{civ}_drummer_b
+    units/goron/{civ}_tribalmonk_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -58,14 +76,6 @@
         <Z>30</Z>
       </step4>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/goron/{civ}_guardian_b
-      units/goron/{civ}_rocktosser_b
-      units/goron/{civ}_beastmaster_b
-      units/goron/{civ}_battlebro_b
-      units/goron/{civ}_drummer_b
-    units/goron/{civ}_tribalmonk_b
-  </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -79,15 +89,5 @@
       <X>0</X>
       <Z>-7</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-      goron/troop_primalhunt
-    goron/troop_goronrage
-    goron/troop_goronbibeats
-    goron/gorgoron_damage
-    </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/goron/goron_battlechambA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

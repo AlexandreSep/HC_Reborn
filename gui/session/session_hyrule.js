@@ -6,9 +6,8 @@ function AddAverageGatherRateToResourceCounter(){
 		if (!viewedPlayerState){
 			return;
 		}
-		let averageResourceGatherRate =  viewedPlayerState.averageResourceGatherRates[res];
-		let resourceBufferUpdateTime =  viewedPlayerState.resourceBufferUpdateTime/1000;
-		let resourceBufferGatherRatePerSeconds =  viewedPlayerState.resourceBufferGatherRatePerSeconds;
-		Engine.GetGUIObjectByName("resource[" + r + "]_count").caption = Math.floor(viewedPlayerState.resourceCounts[res]) + " + " + averageResourceGatherRate + "/" + resourceBufferGatherRatePerSeconds + "s";
+		let collectedResourcesLastInterval =  viewedPlayerState.collectedResourcesLastInterval[res];
+		let gatherRateUpdateTime =  viewedPlayerState.gatherRateUpdateTime / 1000;
+		Engine.GetGUIObjectByName("resource[" + r + "]_count").caption = Math.floor(viewedPlayerState.resourceCounts[res]) + " + " + collectedResourcesLastInterval + "/" + gatherRateUpdateTime + "s";
 	}
 }

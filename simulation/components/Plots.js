@@ -96,9 +96,25 @@ Plots.prototype.Init = function ()
     }
 };
 
-Plots.prototype.GetAssociatedPlots = function ()
+Plots.prototype.CheckHubInvulnerabilityStatus = function ()
 {
-    return this.allPlots;
+    let upgradedPlots = [];
+    for(let plot of this.allPlots) //find non-raw plots
+    {
+        let cmpIdentity = Engine.QueryInterface(plot.id, IID_Identity);
+        if(!cmpIdentity.HasClass("Plot") && !cmpIdentity.HasClass("Defense"))
+            upgradedPlots.push(plot.id);
+    }
+
+    let cmpArmour = Engine.QueryInterface(this.entity, IID_Resistance);
+    if(upgradedPlots.length > 0)
+    {
+        if(cmpArmour.IsInvulnerable() == false)
+            cmpArmour.SetInvulnerability(true);
+        return;
+    }
+
+    cmpArmour.SetInvulnerability(false);
 }
 
 // Needed for aqueduct mechanic.
@@ -235,9 +251,7 @@ Plots.prototype.SpawnPlots = function (rot, owner)
     {
         let cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
         let ownPosition = cmpPosition.GetPosition();
-        
-        plot.rot = rot;
-        
+
         // Code to execute if "CheckTemplateBeforeCreation" is set. 
         // a plot shall check if it spawns on a valid place
         // If "AllowRejoin" shall be true, this option must be set
@@ -255,8 +269,10 @@ Plots.prototype.SpawnPlots = function (rot, owner)
         let plotOwnershipCmp = Engine.QueryInterface(spawnedEntity, IID_Ownership);
         let spawnedEntityPlotsCmp = Engine.QueryInterface(spawnedEntity, IID_Plots);
 
+        let tmpOffset = new Vector2D(plot.offset.x, plot.offset.z);
+        tmpOffset.rotate(rot.y);
         //define pos(based on the core building pos + the offset), rot, ownership and the plot id 
-        plotLocationCmp.SetTurretParent(this.entity, plot.offset);
+        plotLocationCmp.JumpTo(ownPosition.x + tmpOffset.x, ownPosition.z + tmpOffset.y);
         plotLocationCmp.SetYRotation(+plot.angle + rot.y);
         plotOwnershipCmp.SetOwner(owner);
         plot.id = spawnedEntity;
@@ -302,7 +318,7 @@ Plots.prototype.SpawnPlots = function (rot, owner)
     this.plotsHaveSpawned = true;
 };
 
-Plots.prototype.SpawnSinglePlot = function (rot, owner, originPlotCmp)
+Plots.prototype.SpawnSinglePlot = function (position, rot, owner, allPlots)
 {
     // same concept as the "SpawnPlots" function, but this time to respawn a destroyed plot with the core building still intact
     let spawnedEntity = Engine.AddEntity(this.plotTemplate);
@@ -311,7 +327,7 @@ Plots.prototype.SpawnSinglePlot = function (rot, owner, originPlotCmp)
     let plotPlotsCmp = Engine.QueryInterface(spawnedEntity, IID_Plots);
 
     // new entity means a new ID, which requires the transfer of all required variables for the data to stay relevant and up to date
-    plotLocationCmp.SetTurretParent(this.originID, this.plotOffset);
+    plotLocationCmp.JumpTo(position.x, position.z);
     plotLocationCmp.SetYRotation(rot.y);
     plotOwnershipCmp.SetOwner(owner);
     plotPlotsCmp.originID = this.originID;
@@ -323,7 +339,7 @@ Plots.prototype.SpawnSinglePlot = function (rot, owner, originPlotCmp)
     cmpArmour.SetInvulnerability(true);
 
     // find the plot that is destroyed and transfer the ID over to keep the data up to date
-    for (let plot of originPlotCmp.allPlots)
+    for (let plot of allPlots)
     {
         if (plot.id == this.entity) {
             plot.id = spawnedEntity;
@@ -421,7 +437,6 @@ Plots.prototype.DestroyPlotsLinkedForDestruction = function ()
         if (plot.linkedDestruction == false)
         {
             let cmpPlots = Engine.QueryInterface(plot.id, IID_Plots);
-            cmpPosition.SetTurretParent(INVALID_ENTITY, new Vector3D());
             // Cache plot template if it is needed later. Used for plot chaining
             cmpPlots.cachedPlotTemplate = cmpPlots.plotTemplate;
             cmpPlots.plotTemplate = null;
@@ -462,7 +477,6 @@ Plots.prototype.DestroyPlotsLinkedForDestruction = function ()
 
 Plots.prototype.CheckPlotInvolvement = function ()
 {
-    // if this entity gets destroyed and has plots, destroy all the plots that are linked for destruction
     this.DestroyPlotsLinkedForDestruction();
     
     let newPlotId = null;
@@ -475,7 +489,8 @@ Plots.prototype.CheckPlotInvolvement = function ()
             return INVALID_ENTITY;
 
         let originPlotCmp = Engine.QueryInterface(this.originID, IID_Plots);
-        newPlotId = this.SpawnSinglePlot(cmpPosition.GetRotation(), originPlotCmp.plotOwner, originPlotCmp);
+        newPlotId = this.SpawnSinglePlot(cmpPosition.GetPosition(), cmpPosition.GetRotation(), originPlotCmp.plotOwner, originPlotCmp.allPlots);
+        originPlotCmp.CheckHubInvulnerabilityStatus();
         
          // Add the new entity to the battalion of the plot before the plot gets deleted
         let cmpBattalion = Engine.QueryInterface(this.entity, IID_Battalion);

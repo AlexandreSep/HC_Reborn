@@ -1,0 +1,13 @@
+{
+	"genericName": "Reanimation",
+	"description": "Darknut Immortals had found many lost secrets in the desert during their long exiles. Dark magic powers, lost civilizations, and as their name implies... a possible secret to eternal life.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "darknut/summon_reanimation.dds",
+	"researchTime": 40,
+	"tooltip": "Darknut Immortals had found many lost secrets in the desert during their long exiles. Dark magic powers, lost civilizations, and as their name implies... a possible secret to eternal life. (Chance that an Immortal will reanimate increases by 25%)",
+	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 15}],
+	"affects": ["Immortal"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

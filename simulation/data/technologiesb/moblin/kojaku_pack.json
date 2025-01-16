@@ -1,0 +1,14 @@
+{
+	"genericName": "Pack Up Faster!",
+	"description": "",
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 150},
+	"requirements": {"all": [ {"tech": "civ_choices/moblin/choosehero_kojaku"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "You must select Kojaku as your hero.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "Gahhh you big fat Upgpugs are too slow! Move it faster or you get no meat for dinner! (Increases movement speed of all packed buildings by 25%)",
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.75 }],
+	"affects": ["Packed"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

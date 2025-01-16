@@ -1,6 +1,6 @@
 <Entity parent="HC_template_unit_auxiliary">
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>150</food>
     </Resources>
@@ -72,7 +72,7 @@
   <UnitMotion>
     <PassabilityClass>large</PassabilityClass>
     <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>6.5</WalkSpeed>
+    <WalkSpeed>7</WalkSpeed>
   </UnitMotion>
   <Vision>
     <Range>50</Range>

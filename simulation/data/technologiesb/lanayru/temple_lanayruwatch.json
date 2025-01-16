@@ -1,0 +1,12 @@
+{
+	"genericName": "The Watch of Lanayru",
+	"description": "Capture Regen Rate of attached Royal Hub increased by 100%",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 350},
+	"requirements": { "all": [{ "entity": { "class": "Effigy", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Effigy.",
+	"icon": "lanayru/temple_lanayruwatch.dds",
+	"researchTime": 40,
+	"tooltip": "Capture Regen Rate of attached Royal Hub increased by 100%",
+	"affects": ["Effigy"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

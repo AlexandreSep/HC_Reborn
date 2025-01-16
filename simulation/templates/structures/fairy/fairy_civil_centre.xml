@@ -4,7 +4,7 @@
   </AutoBuildable>
   <Builder>
     <Entities datatype="tokens">
-	</Entities>
+    </Entities>
     <Rate>1.0</Rate>
   </Builder>
   <Cost>
@@ -42,15 +42,6 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-</Entities>
-    <Technologies datatype="tokens">
-    fairy/valanavi_weirdingpaths
-    fairy/player_isfairy
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/fairy/complete_wishingwell.xml</constructed>
@@ -62,4 +53,13 @@
     <Actor>structures/fairy/fairy_wishingwellA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/valanavi_weirdingpaths
+    fairy/player_isfairy
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -36,11 +36,6 @@
   <Obstruction>
     <Static depth="5.0" width="5.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceTrickle>
     <Interval>2000</Interval>
@@ -69,4 +64,11 @@
     <Actor>structures/fairy/fairy_menhir_mini.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

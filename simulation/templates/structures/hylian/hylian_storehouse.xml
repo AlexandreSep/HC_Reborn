@@ -1,7 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Storehouse</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>35</BuildTime>
@@ -32,23 +32,6 @@
   <Obstruction>
     <Static depth="20.0" width="20.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      hylian/gather_hyl_capacity_basket
-    hylian/gather_hyl_capacity_wheelbarrow
-    hylian/gather_hyl_capacity_carts
-      hylian/gather_wood_ironaxes
-    hylian/gather_wood_strongeraxes
-    hylian/gather_wood_arnaxes
-    hylian/gather_stone_shaft
-      hylian/gather_stone_peasants
-    hylian/gather_stone_prisoners
-      hylian/gather_rupee_chisel
-    hylian/gather_rupee_separation
-    hylian/gather_rupee_blastharvest
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <Resistance>
     <Entity>
@@ -96,4 +79,23 @@
     <Actor>structures/hylian/hylian_storehouseA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_constA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/gather_hyl_capacity_basket
+    hylian/gather_hyl_capacity_wheelbarrow
+    hylian/gather_hyl_capacity_carts
+      hylian/gather_wood_ironaxes
+    hylian/gather_wood_strongeraxes
+    hylian/gather_wood_arnaxes
+    hylian/gather_stone_shaft
+      hylian/gather_stone_peasants
+    hylian/gather_stone_prisoners
+      hylian/gather_rupee_chisel
+    hylian/gather_rupee_separation
+    hylian/gather_rupee_blastharvest
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -5,20 +5,9 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <GenericName>Academy</GenericName>
-    <History>Labrynna&#8217;s soldiers are academically trained before being thrown into the field of battle. The result has given individual soldiers in the Regime&#8217;s government run military a sense of tactics and strategy not found in other foreign powers.</History>
+    <History>Labrynna’s soldiers are academically trained before being thrown into the field of battle. The result has given individual soldiers in the Regime’s government run military a sense of tactics and strategy not found in other foreign powers.</History>
     <Icon>structures/labrynna/lab_barracksB.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/labrynna/{civ}_talusknight_b
-      units/labrynna/{civ}_lynnapike_b
-    </Entities>
-    <Technologies datatype="tokens">
-    labrynna/talusknight_eagledrill
-    labrynna/lynnapike_pikemasters
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <Tower>
       <Cost>
@@ -34,4 +23,15 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_barracksB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/talusknight_eagledrill
+    labrynna/lynnapike_pikemasters
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_talusknight_b
+      units/labrynna/{civ}_lynnapike_b</Entities>
+  </Trainer>
 </Entity>

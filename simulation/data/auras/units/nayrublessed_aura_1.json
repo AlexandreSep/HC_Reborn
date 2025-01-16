@@ -1,35 +1,35 @@
 {
 	"type": "range",
-	"radius": 25,
-	"affects": ["Infantry Melee"],
+	"radius": 40,
+	"affects": ["Unit"],
   "modifications": [
     {
       "value": "Resistance/Entity/Damage/Fire",
-      "add": 25
+      "add": 35
     },
     {
       "value": "Resistance/Entity/Damage/Light",
-      "add": 25
+      "add": 35
     },
     {
       "value": "Resistance/Entity/Damage/Shadow",
-      "add": 25
+      "add": 35
     },
     {
       "value": "Resistance/Entity/Damage/Water",
-      "add": 25
+      "add": 35
     },
     {
       "value": "Resistance/Entity/Damage/Spirit",
-      "add": 25
+      "add": 35
     },
     {
       "value": "Resistance/Entity/Damage/Forest",
-      "add": 25
+      "add": 35
     }
   ],
 	"auraName": "Nayru's Protection",
-	"auraDescription": "(In Formation, +25 Magic Resistance - Melee Infantry)",
-	"stackable" : true ,
+	"auraDescription": "(+35 Magic Resistance)",
+	"stackable" : false ,
 	"overlayIcon": "art/textures/ui/session/auras/nayrublessed_aura_1.dds"
 }

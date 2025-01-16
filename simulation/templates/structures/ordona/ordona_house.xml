@@ -34,13 +34,15 @@
   <Population>
     <Bonus>25</Bonus>
   </Population>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    ordona/serfstead_guestroom
-    </Technologies>
-  </ProductionQueue>
   <VisualActor>
     <Actor>structures/ordona/ordona_houseA.xml</Actor>
     <FoundationActor>structures/ordona/ordona_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/serfstead_guestroom
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

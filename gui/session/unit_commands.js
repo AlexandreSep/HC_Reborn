@@ -10,7 +10,6 @@ var g_unitPanelButtons = {
 	"Barter": 0,
 	"Construction": 0,
 	"Command": 0,
-	//~ "AllyCommand": 0, //HC-Exo: May we remove that? It gives an error if prsent
 	"Stance": 0,
 	"Gate": 0,
 	"Pack": 0,
@@ -89,8 +88,10 @@ function setupUnitPanel(guiName, unitEntStates, playerState)
 			data.button.enabled = true;
 			data.button.tooltip = "";
 			data.button.caption = "";
+
 		}
 
+		
 		if (g_SelectionPanels[guiName].setupButton &&
 		    !g_SelectionPanels[guiName].setupButton(data))
 			continue;
@@ -161,7 +162,6 @@ function updateUnitCommands(entStates, supplementalDetailsPanel, commandsPanel)
 		// TODO if there's a second panel needed for a different player
 		// we should consider adding the players list to g_SelectionPanels
 		setupUnitPanel("Garrison", entStates, playerState);
-		//~ setupUnitPanel("AllyCommand", entStates, playerState);  //HC-Exo: May we remove that? It gives an error if prsent
 
 		supplementalDetailsPanel.hidden = !g_SelectionPanels.Garrison.used;
 
@@ -193,8 +193,12 @@ function getAllTrainableEntities(selection)
 	for (let ent of selection)
 	{
 		let state = GetEntityState(ent);
-		if (state && state.production && state.production.entities.length)
-			trainableEnts = trainableEnts.concat(state.production.entities);
+		if (state?.trainer?.entities?.length)
+		{
+			if (!state.production)
+				warn("Trainer without Production Queue found: " + ent + ".");
+			trainableEnts = trainableEnts.concat(state.trainer.entities);
+		}
 	}
 
 	// Remove duplicates

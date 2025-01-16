@@ -43,39 +43,6 @@
   <Obstruction>
     <Static depth="30.0" width="30.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>16</X>
-        <Z>10</Z>
-      </step1>
-      <step2>
-        <X>16</X>
-        <Z>25</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    units/ordona/{civ}_beekeeper_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>8</X>
-      <Z>1</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    ordona/apiary_honeyexport
-    ordona/apiary_wildhives
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>5000</Interval>
     <Rates>
@@ -95,4 +62,37 @@
     <Actor>structures/ordona/ordona_apiaryA.xml</Actor>
     <FoundationActor>structures/ordona/ordona_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/apiary_honeyexport
+    ordona/apiary_wildhives
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/ordona/{civ}_beekeeper_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>16</X>
+        <Z>10</Z>
+      </step1>
+      <step2>
+        <X>16</X>
+        <Z>25</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>8</X>
+      <Z>1</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

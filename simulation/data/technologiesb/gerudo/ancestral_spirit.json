@@ -1,0 +1,19 @@
+{
+	"genericName": "Ancestral Spirit",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/ancestral_spirit.dds",
+	"researchTime": 40,
+	"tooltip": "Wind Witches invoke their power to summon spirits of the dead as guardians. (+25% Armor vs. Magic - Wind Witch)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Forest", "add": 25.0},
+		{"value": "Resistance/Entity/Damage/Fire", "add": 25.0},
+		{"value": "Resistance/Entity/Damage/Water", "add": 25.0},
+		{"value": "Resistance/Entity/Damage/Spirit", "add": 25.0},
+		{"value": "Resistance/Entity/Damage/Light", "add": 25.0},
+		{"value": "Resistance/Entity/Damage/Shadow", "add": 25.0},
+		{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["WindWitch"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

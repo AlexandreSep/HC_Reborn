@@ -3,7 +3,7 @@ Health.prototype.InitHyrule = function()
 {
     this.freeUnit = false;
 
-    this.intervalSpawnHolderID = null; // the id of the entity that holds the interval spawn component for this particular entity
+    this.intervalSpawnHolder = null; // the id of the entity that holds the interval spawn component for this particular entity
     this.garrisonSpawnHolderID = null; // the id of the entity that holds the garrison spawn component for this particular entity 
     let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
     cmpTimer.SetTimeout(this.entity, IID_Health, "SpawnOnIntervalInit", 1000); // call this as post init to prevent certain components being undefined at this time
@@ -320,37 +320,50 @@ Health.prototype.SpawnOnIntervalInit = function ()
         let cmpFoundation = Engine.QueryInterface(this.entity, IID_Foundation);
         if (cmpFoundation)
             return;
-  
-        this.intervalSpawnInfo =
-        {
-            "template": this.template.SpawnOnInterval.Template,
-            "max": ApplyValueModificationsToEntity("Health/SpawnOnInterval/Max", +this.template.SpawnOnInterval.Max, this.entity),
-            "startDelay": +this.template.SpawnOnInterval.StartDelay,
-            "interval": ApplyValueModificationsToEntity("Health/SpawnOnInterval/Interval", +this.template.SpawnOnInterval.Interval, this.entity),
-            "spawnNumber": ApplyValueModificationsToEntity("Health/SpawnOnInterval/SpawnNumber", +this.template.SpawnOnInterval.SpawnNumber, this.entity),
-            "linkedDestruction": this.template.SpawnOnInterval.LinkedDestruction != "false",
-        };
 
-        if (this.intervalSpawnedEntities == undefined) // if this list is already created (from the upgrade section), dont remake it
-            this.intervalSpawnedEntities = []; // the list that will hold the entities spawned by this entity
-        let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
-        this.IntervalSpawnTimer = cmpTimer.SetInterval(this.entity, IID_Health, "SpawnOnInterval", this.intervalSpawnInfo.startDelay, this.intervalSpawnInfo.interval, null); // call the interval until the entity is destroyed/dead
+        this.intervalSpawnData = {};
+        for (let element in this.template.SpawnOnInterval)
+        {
+            this.intervalSpawnData[element] = {};
+            this.intervalSpawnData[element].entities = [];
+        }
+
+        //set the data for each SpawnOnInterval element provided
+        for (let element in this.template.SpawnOnInterval)
+        {
+            let object = this.template.SpawnOnInterval[element];
+            let intervalSpawnInfo =
+                {
+                    "template": object.Template,
+                    "max": ApplyValueModificationsToEntity("Health/SpawnOnInterval/" + element + "/Max", +object.Max, this.entity),
+                    "startDelay": +object.StartDelay,
+                    "interval": ApplyValueModificationsToEntity("Health/SpawnOnInterval/" + element + "/Interval", +object.Interval, this.entity),
+                    "spawnNumber": ApplyValueModificationsToEntity("Health/SpawnOnInterval/" + element + "/SpawnNumber", +object.SpawnNumber, this.entity),
+                    "linkedDestruction": object.LinkedDestruction != "false"
+                };
+
+            this.intervalSpawnData[element].spawnInfo = intervalSpawnInfo;
+            let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
+            this.intervalSpawnData[element].IntervalSpawnTimer = cmpTimer.SetInterval(this.entity, IID_Health, "SpawnOnInterval", intervalSpawnInfo.startDelay, intervalSpawnInfo.interval, element); // call the interval until the entity is destroyed/dead
+        }
     }
 };
 
 // interval function called from the timer component
-Health.prototype.SpawnOnInterval = function ()
+Health.prototype.SpawnOnInterval = function (element)
 {
-    if (this.intervalSpawnedEntities.length >= this.intervalSpawnInfo.max) // dont spawn if the max has been reached
+    let spawnData = this.intervalSpawnData[element];
+    let spawnInfo = spawnData.spawnInfo;
+    if (spawnData.entities.length >= spawnInfo.max) // dont spawn if the max has been reached
         return;
 
     var cmpOwnership = Engine.QueryInterface(this.entity, IID_Ownership);
     var cmpPosition = Engine.QueryInterface(this.entity, IID_Position);
     var rot = cmpPosition.GetRotation();
 
-    for (let i = 0; i < this.intervalSpawnInfo.spawnNumber; i++) // loop over the number of spawns per interval
+    for (let i = 0; i < spawnInfo.spawnNumber; i++) // loop over the number of spawns per interval
     {
-        var spawnedEntity = Engine.AddEntity(this.intervalSpawnInfo.template);
+        var spawnedEntity = Engine.AddEntity(spawnInfo.template);
         var cmpSpawnedPosition = Engine.QueryInterface(spawnedEntity, IID_Position);
         var cmpFootprint = Engine.QueryInterface(this.entity, IID_Footprint);
         let pos = cmpFootprint.PickSpawnPoint(spawnedEntity); // get the spawn location from this building
@@ -360,57 +373,57 @@ Health.prototype.SpawnOnInterval = function ()
         cmpSpawnedPosition.SetXZRotation(rot.x, rot.z);
 
         // make sure to set the intervalspawn holder before setting the ownership, to prevent the promotion checks to occur before the spawn holder has even been set properly
-        this.intervalSpawnedEntities.push(spawnedEntity); // add the newly spawned entity to the origins list
+        spawnData.entities.push(spawnedEntity); // add the newly spawned entity to the origins list
         let cmpSpawnedHealth = Engine.QueryInterface(spawnedEntity, IID_Health);
-        cmpSpawnedHealth.intervalSpawnHolderID = this.entity; // make sure to let the spawned entity know who created it
+        cmpSpawnedHealth.intervalSpawnHolder = { "id": this.entity, "element": element }; // make sure to let the spawned entity know who created it
 	
 	    cmpSpawnedHealth.freeUnit = true;	// Mark this unit as a "free" unit. So we don't need to subtract a unit from the battalion count if it dies
 
         var cmpSpawnedOwnership = Engine.QueryInterface(spawnedEntity, IID_Ownership);
-		
-		let ownerID = this.template.SpawnOnInterval.OwnerID;
-        if (ownerID != undefined)
-        {
-            if (cmpSpawnedOwnership)
-                cmpSpawnedOwnership.SetOwner(+ownerID);
-        }
-        else
-        {
-            if (cmpOwnership && cmpSpawnedOwnership)
-                cmpSpawnedOwnership.SetOwner(cmpOwnership.GetOwner());
-        }
-		
+        if (cmpOwnership && cmpSpawnedOwnership)
+            cmpSpawnedOwnership.SetOwner(cmpOwnership.GetOwner());
+
+        //promote this entity to the new version if it has a 0 exp requirement
+        let cmpPromotion = Engine.QueryInterface(spawnedEntity, IID_Promotion);
+        if (cmpPromotion && cmpPromotion.GetRequiredXp() < 1)
+            cmpPromotion.IncreaseXp(+0);
+
         QueryOwnerInterface(spawnedEntity).AddBattalion([spawnedEntity]); //add this ent to a battalion so it functions inside the commands department
     }
 };
 
 Health.prototype.CheckIntervalSpawnInvolvement = function ()
 {
-    if (this.intervalSpawnHolderID != null) // if the killed unit has a spawn origin remove it from its holders list
+    if (this.intervalSpawnHolder != null) // if the killed unit has a spawn origin remove it from its holders list
     {
-        let cmpHealth = Engine.QueryInterface(this.intervalSpawnHolderID, IID_Health);
-        for (let i = 0; i < cmpHealth.intervalSpawnedEntities.length; i++)
+        let cmpHealth = Engine.QueryInterface(this.intervalSpawnHolder.id, IID_Health);
+        let entityList = cmpHealth.intervalSpawnData[this.intervalSpawnHolder.element].entities;
+        for (let i = 0; i < entityList.length; i++)
         {
-            if (cmpHealth.intervalSpawnedEntities[i] == this.entity)
+            if (entityList[i] == this.entity)
             {
-                cmpHealth.intervalSpawnedEntities.splice(i, 1);
+                entityList.splice(i, 1);
                 break;
             }
         }
     }
     else
     {
-        if (this.intervalSpawnInfo == undefined) // if the holder itself is destroyed, kill all spawned entities connected to it unless linked destruction is off
+        if (this.intervalSpawnData == undefined) // if the holder itself is destroyed, kill all spawned entities connected to it unless linked destruction is off
             return;
 
-        let linkedDestruction = this.intervalSpawnInfo.linkedDestruction;
-        for (let ent of this.intervalSpawnedEntities)
+        for (let element in this.intervalSpawnData) // potentially kill every linked interval spawned entity to this holder
         {
-            let cmpHealth = Engine.QueryInterface(ent, IID_Health);
-            cmpHealth.intervalSpawnHolderID = null; // make sure to set the connection back to null to avoid null problems with the now destroyed holder
+            let spawnData = this.intervalSpawnData[element];
+            let linkedDestruction = spawnData.spawnInfo.linkedDestruction;
+            for (let ent of spawnData.entities)
+            {
+                let cmpHealth = Engine.QueryInterface(ent, IID_Health);
+                cmpHealth.intervalSpawnHolder = null; // make sure to set the connection back to null to avoid null problems with the now destroyed holder
 
-            if (linkedDestruction == true)
-                cmpHealth.Kill();
+                if (linkedDestruction == true)
+                    cmpHealth.Kill();
+            }
         }
     }
 };
@@ -418,12 +431,12 @@ Health.prototype.CheckIntervalSpawnInvolvement = function ()
 // finish the spawning operations for the units that have already been spawned
 Health.prototype.CheckProductionSpawningState = function ()
 {
-    let cmpProductionQueue = Engine.QueryInterface(this.entity, IID_ProductionQueue);
-    if (cmpProductionQueue && cmpProductionQueue.IsSpawning == true)
+    let cmpTrainer = Engine.QueryInterface(this.entity, IID_Trainer);
+    if (cmpTrainer && cmpTrainer.IsSpawning == true)
     {
-        cmpProductionQueue.IsDestroyed = true;
-        for (let data of cmpProductionQueue.SpawnData.values())
-            cmpProductionQueue.FinishSpawnOperations(data);
+        cmpTrainer.IsDestroyed = true;
+        for (let data of cmpTrainer.AllSpawnData.values())
+            cmpTrainer.FinishSpawnOperations(data);
     }
 };
 
@@ -480,19 +493,24 @@ Health.prototype.OnGlobalResearchFinished = function (msg)
     if (msg.player != cmpOwnership.GetOwner()) // continue if the tech was researched by this player
         return;
 
-    if (this.intervalSpawnInfo != undefined) // apply value changes to the interval spawner if its present
+    if (this.template.SpawnOnInterval == undefined)
+        return;
+
+    for (let element in this.template.SpawnOnInterval)
     {
-        let interval = +this.template.SpawnOnInterval.Interval;
-        let newInterval = ApplyValueModificationsToEntity("Health/SpawnOnInterval/Interval", interval, this.entity);
+        let spawnData = this.intervalSpawnData[element];
+        let spawnInfo = spawnData.spawnInfo;
+        let interval = +this.template.SpawnOnInterval[element].Interval;
+        let newInterval = ApplyValueModificationsToEntity("Health/SpawnOnInterval/" + element + "/Interval", interval, this.entity);
         if (interval != newInterval) // interval time was changed by this tech, so cancel and reset the interval timer
         {
             let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
-            cmpTimer.CancelTimer(this.IntervalSpawnTimer);
-            this.intervalSpawnInfo.interval = newInterval;
-            this.IntervalSpawnTimer = cmpTimer.SetInterval(this.entity, IID_Health, "SpawnOnInterval", this.intervalSpawnInfo.interval, this.intervalSpawnInfo.interval, null); 
+            cmpTimer.CancelTimer(spawnData.IntervalSpawnTimer);
+            spawnInfo.interval = newInterval;
+            spawnData.IntervalSpawnTimer = cmpTimer.SetInterval(this.entity, IID_Health, "SpawnOnInterval", spawnInfo.interval, spawnInfo.interval, element);
         }
-        this.intervalSpawnInfo.max = ApplyValueModificationsToEntity("Health/SpawnOnInterval/Max", +this.template.SpawnOnInterval.Max, this.entity);
-        this.intervalSpawnInfo.spawnNumber = ApplyValueModificationsToEntity("Health/SpawnOnInterval/SpawnNumber", +this.template.SpawnOnInterval.SpawnNumber, this.entity);
+        spawnInfo.max = ApplyValueModificationsToEntity("Health/SpawnOnInterval/" + element + "/Max", +this.template.SpawnOnInterval[element].Max, this.entity);
+        spawnInfo.spawnNumber = ApplyValueModificationsToEntity("Health/SpawnOnInterval/" + element + "/SpawnNumber", +this.template.SpawnOnInterval[element].SpawnNumber, this.entity);
     }
 };
 

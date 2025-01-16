@@ -1,0 +1,16 @@
+{
+	"genericName": "Test of Battle",
+	"description": "The final test of any Kokiri soldier was that of battle itself. By dumping a future warriors into a pit of Deku Babas, the victor would emerge with the skill they needed to fight in a war to defend the forest.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"supersedes": "kokiri/training_endurance",
+	"requirements": { "all": [{ "entity": { "class": "FightYard", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Fighting Yard Addon.",
+	"icon": "kokiri/training_battle.dds",
+	"researchTime": 40,
+	"tooltip": "The final test of any Kokiri soldier was that of battle itself. By dumping a future warriors into a pit of Deku Babas, the victor would emerge with the skill they needed to fight in a war to defend the forest. (+20% Attack Damage for all Melee Soldiers)",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.20},
+					  {"value": "Attack/Melee/Damage/Pierce", "multiply": 1.20},
+					  {"value": "Attack/Melee/Damage/Crush", "multiply": 1.20}],
+	"affects": ["Soldier Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

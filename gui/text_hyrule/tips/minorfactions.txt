@@ -1,0 +1,4 @@
+MINOR FACTIONS
+You can establish an Embassy with a Minor Faction at your market building.
+Minor Factions provide you with their own Camp, units, and additional Hero.
+Some maps are inhabited by hostile Minor Faction bases that can be conquered.

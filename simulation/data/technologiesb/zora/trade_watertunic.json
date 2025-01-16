@@ -1,0 +1,13 @@
+{
+	"genericName": "Water Tunics",
+	"description": "Famous and highly sought-after tunic made by Zora, said to allow non-Zora to breath underwater.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "zora/trade_watertunic.dds",
+	"researchTime": 40,
+	"tooltip": "Famous and highly sought-after tunic made by Zora, said to allow non-Zora to breath underwater. (+100% Income - Vendor)",
+	"modifications": [{"value": "Trader/GainMultiplier", "multiply": 2}],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

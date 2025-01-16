@@ -18,7 +18,7 @@
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>40</food>
       <metal>0</metal>
@@ -71,7 +71,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>6.5</WalkSpeed>
+    <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_hoplite_b.xml</Actor>

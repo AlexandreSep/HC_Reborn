@@ -1,0 +1,12 @@
+{
+	"genericName": "Upgrade Gather Rate",
+	"cost": {"metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "Improves the generation of currency in mines, lumber mills and farms",
+	"modifications": [{"value": "ResourceTrickle/Rates/metal", "add": 1}],
+	"affects": ["Field", "ResourceBuilding"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

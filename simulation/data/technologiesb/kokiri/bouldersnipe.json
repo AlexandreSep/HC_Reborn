@@ -1,0 +1,13 @@
+{
+	"genericName": "Boulder Sniping",
+	"description": "Extended use of Bouldershots have lead some operators to uncover excellent methods for hitting their targets from quite a distance.",
+	"cost": {"food": 0, "wood": 200, "stone": 300, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "kokiri"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "kokiri/bouldersnipe.dds",
+	"researchTime": 40,
+	"tooltip": "Extended use of Bouldershots have lead some operators to uncover excellent methods for hitting their targets from quite a distance. +20% Attack Range for Bouldershots.",
+	"modifications": [{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 1.20}],
+	"affects": ["Boulder"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

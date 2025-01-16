@@ -4,13 +4,6 @@
     <History>These expansed laboratories were provided with the best equipment the Empire could affors to aid the Proffessors in new and powerful breakthroughs.</History>
     <Icon>structures/labrynna/lab_scienceB.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    labrynna/upgrade_footwear
-    labrynna/upgrade_frogeyedrops
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <Tower>
       <Cost>
@@ -26,4 +19,13 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_scienceB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/upgrade_footwear
+    labrynna/upgrade_frogeyedrops
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

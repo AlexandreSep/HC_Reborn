@@ -2,8 +2,8 @@
 	"type": "garrison",
 	"affects": ["Logistics"],
 	"modifications": [
-		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.50 },
-		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.50 }
+		{ "value": "Trainer/BatchTimeModifier", "multiply": 0.50 },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.50 }
 	],
 	"auraName": "Logistics",
 	"auraDescription": "(If Garrisoned, -50% Batch Build Time, -50% Tech Research Time - Swine Farm, Supply Mill, and Barter Outlet)",

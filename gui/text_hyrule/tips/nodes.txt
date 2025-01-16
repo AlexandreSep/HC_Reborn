@@ -1,0 +1,5 @@
+NODES
+Maps are divided into Nodes, which you must capture in order to build new bases.
+You must have at least one unit near a Node in order to capture and use it.
+Nodes come in a large variety of types, such as Outposts, Camps, and Resource Nodes.
+Some factions interact with nodes in unique ways, such as Ordona Province building Plantations on Camp Nodes.

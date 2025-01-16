@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>19.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <Knockback>
         <Horizontal>10</Horizontal>
       </Knockback>
@@ -22,10 +21,11 @@
       </Projectile>
       <RepeatTime>3500</RepeatTime>
       <TrueDamage>14</TrueDamage>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>60</food>
       <metal>30</metal>

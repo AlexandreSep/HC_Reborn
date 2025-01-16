@@ -29,7 +29,7 @@
     <Civ>lanayru</Civ>
     <Classes datatype="tokens">Addon Field Village Shrimpery</Classes>
     <GenericName>Shrimpery</GenericName>
-    <History>Shellfish were abundant on Lanayru&#8217;s Coast and could be easily grown further inland as well; so long as water was part of the mix. Prawns were usually the foundation of any Lanayru Zora&#8217;s diet, and ponds of the creatures dotted their coastal cities.</History>
+    <History>Shellfish were abundant on Lanayru’s Coast and could be easily grown further inland as well; so long as water was part of the mix. Prawns were usually the foundation of any Lanayru Zora’s diet, and ponds of the creatures dotted their coastal cities.</History>
     <Icon>structures/lanayru/lan_shrimpery.dds</Icon>
     <Tooltip>Generates Shrimp that can be harvested for Food.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
@@ -40,12 +40,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    lanayru/get_shrimpery
-    </Technologies>
-  </ProductionQueue>
   <ResourceSupply>
     <Max>Infinity</Max>
     <DiminishingReturns>0.90</DiminishingReturns>
@@ -64,4 +58,12 @@
     <Actor>structures/lanayru/lanayru_shrimperyA.xml</Actor>
     <FoundationActor>structures/lanayru/lanayru_scaffoldH.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/get_shrimpery
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

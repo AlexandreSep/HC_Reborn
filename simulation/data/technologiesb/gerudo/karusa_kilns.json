@@ -1,0 +1,15 @@
+{
+	"genericName": "Karusa Kilns",
+	"description": "",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 200},
+	"requirements": {"all": [ {"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/karusa_kilns.dds",
+	"researchTime": 40,
+	"tooltip": "The Kilns used by the Gerudo of Karusa Valley are quite impressive, able to bake clay to a much sturdier finish. (+10 Armor - Building)",
+	"modifications": [{ "value": "Resistance/Entity/Damage/Pierce", "add": 10 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 10 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 10 }],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

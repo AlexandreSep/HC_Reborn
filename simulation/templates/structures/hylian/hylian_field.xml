@@ -1,7 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Farmstead</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>40</BuildTime>
@@ -35,13 +35,6 @@
   <Population>
     <Bonus>2</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      hylian/gather_vigjaro_wicker
-    hylian/gather_peahat_fertilizer
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -68,7 +61,7 @@
   <ResourceDropsite>
     <Sharable>false</Sharable>
     <Types>food</Types>
-  </ResourceDropsite>  
+  </ResourceDropsite>
   <ResourceSupply>
     <Max>Infinity</Max>
     <KillBeforeGather>false</KillBeforeGather>
@@ -85,4 +78,13 @@
     <Actor>structures/hylian/hylian_farmsteadA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldI.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/gather_vigjaro_wicker
+    hylian/gather_peahat_fertilizer
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

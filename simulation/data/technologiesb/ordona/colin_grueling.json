@@ -1,0 +1,18 @@
+{
+	"genericName": "Grueling Training",
+	"description": "",
+	"cost": {"food": 100, "wood": 0, "stone": 0, "metal": 100},
+	"requirements": {
+    "all": [
+      { "tech": "civ_choices/ordona/choosehero_colin" },
+      { "civ": "ordona" }
+    ]
+	},
+	"requirementsTooltip": "You must select Colin as your hero.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "20% Training time reduction - Melee Infantry",
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.80 , "affects": "Melee Infantry" }],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

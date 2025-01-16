@@ -6,7 +6,6 @@
         <Crush>160</Crush>
         <Spirit>40.0</Spirit>
       </Damage>
-      <Delay>3</Delay>
       <MaxRange>10</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -37,10 +36,11 @@
         <Horizontal>25</Horizontal>
         <Vertical>25</Vertical>
       </Knockback>
+      <EffectDelay>3</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>120</BuildTime>
+    <BuildTime>80</BuildTime>
     <Resources>
       <food>1935</food>
       <metal>250</metal>
@@ -57,12 +57,14 @@
     <Max>7500</Max>
     <RegenRate>1</RegenRate>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>7</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/ordona/ordona_spiritgoat_b</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>7</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/ordona/ordona_spiritgoat_b</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>

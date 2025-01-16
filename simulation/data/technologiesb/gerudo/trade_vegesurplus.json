@@ -1,0 +1,13 @@
+{
+	"genericName": "Vegetable Surplus",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/trade_vegesurplus.dds",
+	"researchTime": 40,
+	"tooltip": "Surplus vegetables from foreign markets are imported to the Gerudo desert. (+1 Food Resource Trickle/1 second - Barter Outlet)",
+	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 1}],
+	"affects": ["BarterMarket"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

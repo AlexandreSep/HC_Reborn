@@ -7,7 +7,7 @@
   </AutoBuildable>
   <BuildRestrictions>
     <Category>Storehouse</Category>
-	<Distance>
+    <Distance>
       <FromClass>Menhir</FromClass>
       <MinDistance>75</MinDistance>
     </Distance>
@@ -41,12 +41,6 @@
   <Obstruction>
     <Static depth="15.0" width="15.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    fairy/menhir_secondarycauses
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDrain>
     <MaxResourceSpotsToDrainSimultaneously>
@@ -97,4 +91,12 @@
     <Actor>structures/fairy/fairy_menhirA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/menhir_secondarycauses
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

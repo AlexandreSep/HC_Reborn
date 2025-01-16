@@ -21,9 +21,7 @@ Promotion.prototype.Init = function()
 
 Promotion.prototype.GetRequiredXp = function()
 {
-    let test = ApplyValueModificationsToEntity("Promotion/RequiredXp", +this.template.RequiredXp, this.entity);
-    //warn("value " + test + "for ent " + this.entity);
-    return test;
+	return ApplyValueModificationsToEntity("Promotion/RequiredXp", +this.template.RequiredXp, this.entity);
 };
 
 Promotion.prototype.GetCurrentXp = function()
@@ -45,10 +43,10 @@ Promotion.prototype.Promote = function(promotedTemplateName)
 		return;
 	}
 
-    ChangeEntityTemplate(this.entity, promotedTemplateName, true);
+	ChangeEntityTemplate(this.entity, promotedTemplateName, true); // HC-code adds true for promotions
 };
 
-//HC-code functions incoming
+//HC-code The next several functions are hyrule functions
 // A function that delays the promotion for set miliseconds and then recalls it
 Promotion.prototype.RePromote = function (promotedTemplateName, lateness) {
     this.Promote(promotedTemplateName);
@@ -56,21 +54,21 @@ Promotion.prototype.RePromote = function (promotedTemplateName, lateness) {
 
 // finish spawn operations if the entity in question was in the process of spawning units
 Promotion.prototype.CheckProductionSpawningState = function (oldEntity) {
-    let cmpProductionQueue = Engine.QueryInterface(oldEntity, IID_ProductionQueue);
-    if (cmpProductionQueue && cmpProductionQueue.IsSpawning == true) {
-        cmpProductionQueue.IsDestroyed = true;
-        for (let data of cmpProductionQueue.SpawnData.values())
-            cmpProductionQueue.FinishSpawnOperations(data);
+    let cmpTrainer = Engine.QueryInterface(oldEntity, IID_Trainer);
+    if (cmpTrainer && cmpTrainer.IsSpawning == true) {
+        cmpTrainer.IsDestroyed = true;
+        for (let data of cmpTrainer.AllSpawnData.values())
+            cmpTrainer.FinishSpawnOperations(data);
     }
 };
 
 Promotion.prototype.CheckIntervalSpawnInvolvement = function (oldEntity, newEntity, oldHealth, newHealth) {
-    if (oldHealth.intervalSpawnHolderID == null) // check if the entity had an interval spawn holder
+    if (oldHealth.intervalSpawnHolder == null) // check if the entity had an interval spawn holder
         return;
 
-    newHealth.intervalSpawnHolderID = oldHealth.intervalSpawnHolderID; // carry over the owner to the newly promoted entity
-    let cmpHolderHealth = Engine.QueryInterface(newHealth.intervalSpawnHolderID, IID_Health);
-    let list = cmpHolderHealth.intervalSpawnedEntities; // get the holders list
+    newHealth.intervalSpawnHolder = oldHealth.intervalSpawnHolder; // carry over the owner to the newly promoted entity
+    let cmpHolderHealth = Engine.QueryInterface(newHealth.intervalSpawnHolder.id, IID_Health);
+    let list = cmpHolderHealth.intervalSpawnData[newHealth.intervalSpawnHolder.element].entities; // get the holders list
     for (let i = 0; i < list.length; i++) {
         if (list[i] == oldEntity)
             list[i] = newEntity; // replace the old entity with the newly promoted entity inside the holders spawn list

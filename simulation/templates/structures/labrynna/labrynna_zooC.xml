@@ -9,17 +9,17 @@
     <Icon>structures/labrynna/lab_zooC.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/labrynna/{civ}_ursawagon_b
-    </Entities>
-    <Technologies datatype="tokens">
-    labrynna/ursawagon_ursatraining
-    </Technologies>
-  </ProductionQueue>
   <Upgrade disable="" />
   <VisualActor>
     <Actor>structures/labrynna/labrynna_zooC.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/ursawagon_ursatraining
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_ursawagon_b</Entities>
+  </Trainer>
 </Entity>

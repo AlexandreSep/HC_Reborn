@@ -5,7 +5,6 @@
       <Damage>
         <Spirit>1.0</Spirit>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>25</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -34,6 +33,7 @@
         <Horizontal>15</Horizontal>
         <Vertical>15</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Auras datatype="tokens">

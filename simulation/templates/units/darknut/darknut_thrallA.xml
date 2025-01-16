@@ -24,7 +24,7 @@
   </Auras>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>50</food>
       <metal>0</metal>
@@ -92,7 +92,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.25</RunMultiplier>
-    <WalkSpeed>8.0</WalkSpeed>
+    <WalkSpeed>8.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_thrallA.xml</Actor>

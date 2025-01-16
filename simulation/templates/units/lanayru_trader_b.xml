@@ -1,6 +1,6 @@
 <Entity parent="template_unit_support_trader">
   <Cost>
-    <BuildTime>15</BuildTime>
+    <BuildTime>10</BuildTime>
   </Cost>
   <Footprint replace="">
     <Height>3.0</Height>

@@ -39,16 +39,6 @@
   <Obstruction>
     <Static depth="35.0" width="35.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    fairy/attack_disharmony
-    fairy/armor_earthcharm
-    fairy/armor_heavencharm
-    fairy/speed_easternwinds
-    fairy/vision_glimpseofnous
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/fairy/complete_waterheaven.xml</constructed>
@@ -67,4 +57,16 @@
     <Actor>structures/fairy/fairy_waterheavenA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/attack_disharmony
+    fairy/armor_earthcharm
+    fairy/armor_heavencharm
+    fairy/speed_easternwinds
+    fairy/vision_glimpseofnous
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

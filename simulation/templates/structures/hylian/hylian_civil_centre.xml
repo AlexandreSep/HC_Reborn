@@ -86,45 +86,6 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>21</X>
-        <Z>11.8</Z>
-      </step1>
-      <step2>
-        <X>13</X>
-        <Z>20</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/hylian/{civ}_citizenA
-    units/hylian/{civ}_hero_krin
-    units/hylian/{civ}_hero_seres
-    units/hylian/{civ}_hero_lana
-    units/hylian/{civ}_hero_zeldaV
-    units/hylian/{civ}_hero_link
-    units/hylian/{civ}_hero_rauru
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>11.7</X>
-      <Z>6.80</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    hylian/levy_bonuses
-      hylian/glass_rupees
-    hylian/player_ishylian
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -163,4 +124,43 @@
     <Actor>structures/hylian/hylian_civic_centreA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/levy_bonuses
+      hylian/glass_rupees
+    hylian/player_ishylian
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/hylian/{civ}_citizenA
+    units/hylian/{civ}_hero_krin
+    units/hylian/{civ}_hero_seres
+    units/hylian/{civ}_hero_lana
+    units/hylian/{civ}_hero_zeldaV
+    units/hylian/{civ}_hero_link
+    units/hylian/{civ}_hero_rauru</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>21</X>
+        <Z>11.8</Z>
+      </step1>
+      <step2>
+        <X>13</X>
+        <Z>20</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>11.7</X>
+      <Z>6.80</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

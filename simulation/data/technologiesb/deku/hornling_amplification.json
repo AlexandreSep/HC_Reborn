@@ -1,0 +1,13 @@
+{
+	"genericName": "Amplification",
+	"description": "Tubalings spend a great deal of time getting the acoustics of their Horns just right. They always sought to make them louder and more obnoxious so that the largest volume of Scrubs could hear their tunes.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "deku/hornling_amplification.dds",
+	"researchTime": 40,
+	"tooltip": "Tubalings spend a great deal of time getting the acoustics of their Horns just right. They always sought to make them louder and more obnoxious so that the largest volume of Scrubs could hear their tunes. (Doubles the Radius of Hornlings)",
+	"modifications": [],
+	"affects": ["Hornling"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

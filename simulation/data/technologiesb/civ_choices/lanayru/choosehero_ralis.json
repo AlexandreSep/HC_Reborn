@@ -1,0 +1,12 @@
+{
+	"genericName": "Prince Ralis",
+	"description": "Prince Ralis",
+	"icon": "lanayru/choosehero_ralis.png",
+	"tooltip": "Select Prince Ralis as your hero of choice.",
+	"modifications": [{"value": "Health/Max", "multiply": 1.10, "affects": "RalisBonus" }],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Early Infantry Focus", "tooltipText": "Ralis focuses on producing soldiers as fast as possible."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Prince Ralis", "tooltipText": "Allows you to summon Prince Ralis, a sword armed Melee Hero."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Mass Conscription", "tooltipText": "Royal Hub spawn and respawn a free Battalion of Conscripts for each phase."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Durable Troops", "tooltipText": "Conscript, Lancer, Shore Sentry, and Coral Archer HP bonus."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Homeland Security", "tooltipText": "Infantry recruitment time is reduced."}]	
+}

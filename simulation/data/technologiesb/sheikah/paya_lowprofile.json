@@ -1,0 +1,15 @@
+{
+	"genericName": "Low Profile",
+	"description": "",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"all": [{"tech": "civ_choices/sheikah/choosehero_paya"},{"tech": "phase_village"}, {"civ": "sheikah"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "sheikah/paya_lowprofile.dds",
+	"researchTime": 40,
+	"tooltip": "Trainees gain Camouflage.",
+	"modifications": [{"value": "Visibility/Camouflage/ActivateDelay", "add": 10000},
+					  {"value": "Visibility/Camouflage/PostDelay", "add": 1000}],
+	"affects": ["Trainee"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

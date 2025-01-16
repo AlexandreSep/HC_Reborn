@@ -1,0 +1,15 @@
+{
+	"genericName": "Cotton Cuirass",
+	"description": ".",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "ordona/smithy_cottoncuirass.dds",
+	"researchTime": 40,
+	"tooltip": "(Leather armor is padded with dense cotton, increases the non-magic armor values of all Citizen units by +1)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 1.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 1.0},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 1.0}],
+	"affects": ["Citizen"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

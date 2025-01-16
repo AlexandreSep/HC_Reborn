@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>15.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>140.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -17,6 +16,7 @@
         <FriendlyFire>false</FriendlyFire>
       </Projectile>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <BuildRestrictions>
@@ -175,20 +175,6 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-	  units/hylian/{civ}_knightofhyrule_b
-	  units/hylian/{civ}_trebuchet_packed
-      units/hylian/{civ}_lightarrow_b
-	  units/hylian/{civ}_championknight_b
-	  units/hylian/{civ}_redlion_b
-	  units/hylian/{civ}_vanguard_b
-    </Entities>
-    <Technologies datatype="tokens">
-      hylian/hylian_gloryofhyrule
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -226,4 +212,18 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/hylian_gloryofhyrule
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/hylian/{civ}_knightofhyrule_b
+	  units/hylian/{civ}_trebuchet_packed
+      units/hylian/{civ}_lightarrow_b
+	  units/hylian/{civ}_championknight_b
+	  units/hylian/{civ}_redlion_b
+	  units/hylian/{civ}_vanguard_b</Entities>
+  </Trainer>
 </Entity>

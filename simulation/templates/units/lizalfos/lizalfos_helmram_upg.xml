@@ -11,8 +11,6 @@
       <Damage>
         <Crush>18.0</Crush>
       </Damage>
-      <Delay>0</Delay>
-      <ElevationBonus>15</ElevationBonus>
       <Knockback>
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
@@ -43,6 +41,12 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
     </Ranged>
   </Attack>
   <Promotion disable="" />

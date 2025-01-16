@@ -5,7 +5,6 @@
       <Damage>
         <Fire>150.0</Fire>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>125</MaxRange>
       <MinRange>35.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
@@ -32,11 +31,12 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
     <BattalionSlots>3</BattalionSlots>
-    <BuildTime>45</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
       <food>385</food>
       <metal>20</metal>

@@ -7,10 +7,12 @@
       <Template>structures/ruins/ruins_dmA</Template>
     </SpawnMultipleEntitiesOnDeath>
   </Health>
-  <ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/armos/armos_dm_b
-    </Entities>
-  </ProductionQueue>
+    <Entities datatype="tokens">units/armos/armos_dm_b</Entities>
+  </Trainer>
 </Entity>

@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>20</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>70</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -23,10 +22,11 @@
         <Time>100</Time>
       </Stun>
       <TrueDamage>20</TrueDamage>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>60</food>
       <metal>0</metal>
@@ -78,7 +78,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>6.5</WalkSpeed>
+    <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_glasswitch_b.xml</Actor>

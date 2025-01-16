@@ -1,0 +1,13 @@
+{
+	"genericName": "Coral Ablation",
+	"description": "Processes to remove Coralmold more carefully from its rock bed result in higher yield.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "zora/economic_coralablation.dds",
+	"researchTime": 40,
+	"tooltip": "Processes to remove Coralmold more carefully from its rock bed result in higher yield. (+1 Gatherer - Coralmold Bed)",
+	"modifications": [{"value": "ResourceSupply/MaxGatherers", "add": 1}],
+	"affects": ["Coralfarm"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

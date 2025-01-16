@@ -64,16 +64,6 @@
   <Population>
     <Bonus>0</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>1.0</BatchTimeModifier>
-    <TechCostMultiplier>
-      <food>1.0</food>
-      <metal>1.0</metal>
-      <stone>1.0</stone>
-      <time>1.0</time>
-      <wood>1.0</wood>
-    </TechCostMultiplier>
-  </ProductionQueue>
   <RallyPoint />
   <RallyPointRenderer>
     <LineDashColor b="15" g="11" r="158" />
@@ -153,4 +143,11 @@
     <SilhouetteOccluder>true</SilhouetteOccluder>
     <VisibleInAtlasOnly>false</VisibleInAtlasOnly>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>1.0</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

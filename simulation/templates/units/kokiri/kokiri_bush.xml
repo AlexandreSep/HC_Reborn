@@ -1,7 +1,7 @@
 <Entity parent="HC_template_unit_infantry">
   <Cost>
     <BattalionSlots>0</BattalionSlots>
-    <BuildTime>12</BuildTime>
+    <BuildTime>9</BuildTime>
     <Resources>
       <food>10</food>
       <metal>0</metal>

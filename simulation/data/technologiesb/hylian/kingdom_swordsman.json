@@ -1,0 +1,15 @@
+{
+	"genericName": "Upgrade to Kingdom Swordsman",
+	"description": "As a Hylian house and its subordinate houses gained more wealth and prestige, they could afford better armor and weapons for their military.",
+	"supersedes": "hylian/soldier_swordsman",
+	"cost": {"metal": 250},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/kingdom_swordsman.dds",
+	"researchTime": 60,
+	"tooltip": "Improves Soldier Swordsman by making them Kingdom Swordsman.",
+	"modifications": [{"value": "Trainer/Entities/_string",	"tokens": "units/hylian/{civ}_soldier_swordsman>units/hylian/{civ}_kingdom_swordsman", "affects": "Structure" },
+					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "SoldierSwordsman" }
+	],	
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+} 

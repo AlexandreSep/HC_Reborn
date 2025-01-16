@@ -1,0 +1,15 @@
+{
+	"genericName": "Eagle's Drill",
+	"description": "The Knights of Talus Peak have long had a secretive regimen of training that was rumored to make such men heartier and tougher to pain.",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "labrynna/talusknight_eagledrill.dds",
+	"researchTime": 40,
+	"tooltip": "The Knights of Talus Peak have long had a secretive regimen of training that was rumored to make such men heartier and tougher to pain. (Talus Knights gain +25% HP)",
+	"modifications": [
+		{"value": "Health/Max", "multiply": 1.25}
+	],
+  "affects": [ "TalusKnight" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

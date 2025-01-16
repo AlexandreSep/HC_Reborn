@@ -1,0 +1,18 @@
+{
+	"genericName": "Molgera Satchels",
+	"description": "The durable and rough flesh of Molgera Grubs could handle a lot of wear and tear from heavy loads, making them ideal to make large bags for carrying many items.",
+	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "darknut/gather_molgerabag.dds",
+	"researchTime": 40,
+	"tooltip": "The durable and rough flesh of Molgera Grubs could handle a lot of wear and tear from heavy loads, making them ideal to make large bags for carrying many items. (Carrying Capacity for all resources is increased by +10)",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 10},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 10},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 10},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 10}
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

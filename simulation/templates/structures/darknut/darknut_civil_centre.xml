@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>12.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>150.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -21,6 +20,7 @@
         <LineThickness>0.175</LineThickness>
       </RangeOverlay>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <BuildingAI>
@@ -225,49 +225,6 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>25</X>
-        <Z>62</Z>
-      </step1>
-      <step2>
-        <X>42</X>
-        <Z>87</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/darknut/{civ}_thrallA
-      units/darknut/{civ}_molgera_b
-      units/darknut/{civ}_patra_b
-	  units/darknut/{civ}_hero_onon
-	  units/darknut/{civ}_hero_militron
-	  units/darknut/{civ}_hero_alros
-	  units/darknut/{civ}_hero_senturon
-	  units/darknut/{civ}_hero_yaraxonal
-	  units/darknut/{civ}_hero_zalunbar
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>19</X>
-      <Z>48</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-		darknut/agora_legionreserves
-		darknut/onon_scoutingtech
-		darknut/militron_militros
-		darknut/player_isdarknut
-		darknut/ruins_isdarknut
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <alert0>interface/alarm/alarm_alert_0.xml</alert0>
@@ -301,4 +258,47 @@
     <Actor>structures/darknut/darknut_civic_centreA.xml</Actor>
     <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/agora_legionreserves
+		darknut/onon_scoutingtech
+		darknut/militron_militros
+		darknut/player_isdarknut
+		darknut/ruins_isdarknut
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/darknut/{civ}_thrallA
+      units/darknut/{civ}_molgera_b
+      units/darknut/{civ}_patra_b
+	  units/darknut/{civ}_hero_onon
+	  units/darknut/{civ}_hero_militron
+	  units/darknut/{civ}_hero_alros
+	  units/darknut/{civ}_hero_senturon
+	  units/darknut/{civ}_hero_yaraxonal
+	  units/darknut/{civ}_hero_zalunbar</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>25</X>
+        <Z>62</Z>
+      </step1>
+      <step2>
+        <X>42</X>
+        <Z>87</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>19</X>
+      <Z>48</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

@@ -63,8 +63,31 @@
       </PlotC>
     </PlotsToSpawn>
   </Plots>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_animalhubA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/animalhub_tamingcoast
+    lanayru/animal_greatmigration
+    lanayru/animal_shellhallows
+    lanayru/animal_digdrills
+    lanayru/animal_riderresponse
+    lanayru/animal_noxious
+    lanayru/animal_tripleheads
+    lanayru/dorephan_endurance
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/lanayru/{civ}_battlecrab_b
+    units/lanayru/{civ}_prawnbowman_b
+    units/lanayru/{civ}_hermitid_b
+    units/lanayru/{civ}_aruroda_b
+    units/lanayru/{civ}_arachdervish_b
+    units/lanayru/{civ}_shoreserpent_b
+    units/lanayru/{civ}_gleeoklingA_2</Entities>
     <DestinationOffset>
       <step1>
         <X>-1</X>
@@ -75,15 +98,6 @@
         <Z>50</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/lanayru/{civ}_battlecrab_b
-    units/lanayru/{civ}_prawnbowman_b
-    units/lanayru/{civ}_hermitid_b
-    units/lanayru/{civ}_aruroda_b
-    units/lanayru/{civ}_arachdervish_b
-    units/lanayru/{civ}_shoreserpent_b
-    units/lanayru/{civ}_gleeoklingA_2
-   </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -97,19 +111,5 @@
       <X>-1</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    lanayru/animalhub_tamingcoast
-    lanayru/animal_greatmigration
-    lanayru/animal_shellhallows
-    lanayru/animal_digdrills
-    lanayru/animal_riderresponse
-    lanayru/animal_noxious
-    lanayru/animal_tripleheads
-    lanayru/dorephan_endurance
-     </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/lanayru/lanayru_animalhubA.xml</Actor>
-    <FoundationActor>structures/lanayru/lanayru_scaffoldD.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

@@ -1,0 +1,10 @@
+{
+	"genericName": "a Berry Seeder Add-on",
+	"description": "Berry Seeder is added on to the Community Grove, unlocking units.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": { "all": [{ "entity": { "class": "BerrySeeder", "number": 1 } }] },
+	"autoResearch": true,
+	"icon": "kokiri/fairy_guardian.dds",
+	"researchTime": 0,
+	"tooltip": "Berry Seeder is added on to the Community Grove, unlocking units."
+}

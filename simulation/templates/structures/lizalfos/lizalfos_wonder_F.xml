@@ -21,40 +21,11 @@
     <Icon>structures/lizalfos/liz_easternpalace.dds</Icon>
     <RequiredTechnology>lizalfos_helmking</RequiredTechnology>
     <Tooltip>The Lizalfos Wonder, allows you to summon the Helmasaur King.</Tooltip>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
   </Identity>
   <Obstruction>
     <Static depth="108.0" width="108.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>55</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>60</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    units/lizalfos/{civ}_titan_helmking
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>50</Z>
-    </SpawnOffset>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/lizalfos/complete_eastpalace.xml</constructed>
@@ -70,4 +41,35 @@
     <Actor>structures/lizalfos/lizalfos_eastpalaceA.xml</Actor>
     <FoundationActor>structures/lizalfos/lizalfos_scaffoldC_S.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/lizalfos/{civ}_titan_helmking</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>55</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>60</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>50</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

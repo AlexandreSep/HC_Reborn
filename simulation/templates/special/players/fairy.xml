@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>fairy</Civ>
+    <GenericName>Fairies of Tarm</GenericName>
+    <History>Perhaps one of Hyrule's greatest mysteries, Fairies were mythical and reclusive beings that despite being found in all corners of the world they were rarely if ever seen. Most of the time the Fairies would go about on their own with little unity or guidance, tending to nature or causing mischief when no one was looking. As the land cried out in pain however, these wild principles would gather together and cause a lot more than a little mischief.</History>
+    <Icon>emblems/emblem_fairy.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+  </Player>
+</Entity>
+

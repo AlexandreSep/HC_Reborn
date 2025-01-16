@@ -44,17 +44,6 @@
   <Obstruction>
     <Static depth="35.0" width="35.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      gerudo/attack_ger_infantry_melee_01
-    gerudo/attack_ger_infantry_melee_02
-    gerudo/attack_ger_infantry_ranged_01
-    gerudo/attack_ger_infantry_ranged_02
-    gerudo/attack_ger_cavalry_01
-    gerudo/riju_rapidbows
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -74,4 +63,17 @@
     <Actor>structures/gerudo/gerudo_cacheA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/attack_ger_infantry_melee_01
+    gerudo/attack_ger_infantry_melee_02
+    gerudo/attack_ger_infantry_ranged_01
+    gerudo/attack_ger_infantry_ranged_02
+    gerudo/attack_ger_cavalry_01
+    gerudo/riju_rapidbows
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

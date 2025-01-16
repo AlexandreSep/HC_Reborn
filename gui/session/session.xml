@@ -81,32 +81,30 @@
 
 	
 			<include directory="gui/session/minimap/"/>
+		
 
-
-		<!-- Supplemental Details Panel (Left of Selection Details) -->
-		<object
+		<!-- Supplemental Details Panel (left). -->
+		<object name="supplementalSelectionDetails"
 			size="88% 100%-324 100% 100%-216"
-			name="supplementalSelectionDetails"
-			type="image"
 			sprite="supplementalDetailsPanel"
+			type="image"
 			z="20"
 		>
 			<include directory="gui/session/selection_panels_left/"/>
 		</object>
 		
-
 		<!-- Selection Details Panel (Middle) -->
-		<!-- Unit Portrait and stuff. Moved to the righ -->
+		<!-- // HC-Code - Unit Portrait and stuff. Moved to the righ -->
 		<object name="selectionDetails"
-			type="image"
-			sprite="selectionDetailsPanel"
 			size="88% 100%-215 100% 100%"
+			sprite="selectionDetailsPanel"
+			type="image"
 			hidden="false"
 		>
 			<include directory="gui/session/selection_panels_middle/"/>
 		</object>
 
-		<!-- Battalion List UI (Middle) -->
+		<!-- HC-Code - Battalion List UI (Middle) -->
 		<!-- Lists all selected Battalions -->
 		<object name="militaryBattalionArea"
 			type="image"
@@ -133,9 +131,9 @@
 		<!-- Commands Panel (Right of Selection Details) -->
 		<!-- Now left of the Selection Details panel -->
 		<object name="unitCommands"
-			type="image"
-			sprite="unitCommandsPanel"
 			size="67% 100%-184 88% 100%"
+			sprite="unitCommandsPanel"
+			type="image"
 			hidden="false"
 			z="20"
 		>

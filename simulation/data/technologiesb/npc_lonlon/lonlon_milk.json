@@ -1,0 +1,13 @@
+{
+	"genericName": "Lon Lon Milk",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_village"}]},
+	"icon": "npc_lonlon/lonlon_milk.dds",
+	"researchTime": 40,
+	"tooltip": "Many claim this famous Milk from the Cows of Lon Lon Ranch bolsters one's heartiness. (+10% Health and 0.1 Health/second Regen - Worker)",
+	"modifications": [{"value": "Health/RegenRate", "add": 0.1},
+		{"value": "Health/Max", "multiply": 1.10}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

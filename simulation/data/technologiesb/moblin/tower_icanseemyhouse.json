@@ -1,0 +1,13 @@
+{
+	"genericName": "I can see my Housey from here!",
+	"description": "Bugblin treehouse is so cool! We have fun time sleepovers at their house! Treehouse is so cool we can see the Moblin houses from here! and the Dodo houses! And all the houses!",
+	"cost": {"food": 0, "wood": 700, "stone": 0, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/tower_icanseemyhouse.dds",
+	"researchTime": 40,
+	"tooltip": "Bugblin treehouse is so cool! We have fun time sleepovers at their house! Treehouse is so cool we can see the Moblin houses from here! and the Dodo houses! And all the houses! (LoS of Watchin' You Tower increases by 25%)",
+	"modifications": [{ "value": "Vision/Range", "multiply": 1.25 }],
+	"affects": ["Tower"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

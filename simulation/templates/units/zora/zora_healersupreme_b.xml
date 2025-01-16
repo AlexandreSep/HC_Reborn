@@ -6,7 +6,6 @@
         <Hack>13</Hack>
         <Pierce>5.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -19,13 +18,14 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>1400</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
     units/healer_warpair_1
   </Auras>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>95</food>
       <metal>20</metal>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Home on the Move!",
+	"description": "Haha Moblins are smart! One day we were lookin at our fancy houses and thought... wait a minute, We can keep em on the cart and the Ugpug and still use them! Moblin Housey on the move so smart!",
+	"cost": {"food": 0, "wood": 400, "stone": 0, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/house_homeonthemove.dds",
+	"researchTime": 40,
+	"tooltip": "Haha Moblins are smart! One day we were lookin at our fancy houses and thought... wait a minute, We can keep em on the cart and the Ugpug and still use them! Moblin Housey on the move so smart! (Housin Yurt's no longer need to be deployed in order to provide population)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["Yurt"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

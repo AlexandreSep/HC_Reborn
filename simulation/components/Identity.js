@@ -106,19 +106,9 @@ Identity.prototype.Schema =
 			"<text/>" +
 		"</element>" +
 	"</optional>" +
-	"<optional>" +
-		"<element name='Formations' a:help='Optional list of space-separated formations this unit is allowed to use. Choices include: Scatter, Box, ColumnClosed, LineClosed, ColumnOpen, LineOpen, Flank, Skirmish, Wedge, Testudo, Phalanx, Syntagma, BattleLine.'>" +
-			"<attribute name='datatype'>" +
-				"<value>tokens</value>" +
-			"</attribute>" +
-			"<text/>" +
-		"</element>" +
-	"</optional>" +
-	"<optional>" +
-		"<element name='Icon'>" +
-			"<text/>" +
-		"</element>" +
-	"</optional>" +
+	"<element name='Icon'>" +
+		"<text/>" +
+	"</element>" +
 	"<optional>" +
 		"<element name='RequiredTechnology' a:help='Optional name of a technology which must be researched before the entity can be produced.'>" +
 			"<text/>" +
@@ -129,8 +119,8 @@ Identity.prototype.Schema =
 			"<data type='boolean'/>" +
 		"</element>" +
 	"</optional>" +
-	Identity.prototype.AiBuildSchema +
-	Identity.prototype.TechnologyNotMetSchema +
+	Identity.prototype.AiBuildSchema + // HC-Exodarion - Do you need this? Else remove
+	Identity.prototype.TechnologyNotMetSchema + // HC-Exodarion - Do you need this? Else remove
 	"<element name='Undeletable' a:help='Prevent players from deleting this entity.'>" +
 		"<data type='boolean'/>" +
 	"</element>";
@@ -147,6 +137,7 @@ Identity.prototype.Init = function()
 	this.controllable = this.template.Controllable ? this.template.Controllable == "true" : true;
 };
 
+// HC-Exodarion - Do you need this? Else remove
 Identity.prototype.HasSomeFormation = function()
 {
 	return this.GetFormationsList().length > 0;
@@ -185,6 +176,11 @@ Identity.prototype.GetRank = function()
 	return this.template.Rank || "";
 };
 
+Identity.prototype.GetRankTechName = function()
+{
+	return this.template.Rank ? "unit_" + this.template.Rank.toLowerCase() : "";
+};
+
 Identity.prototype.GetClassesList = function()
 {
 	return this.classesList;
@@ -200,6 +196,7 @@ Identity.prototype.HasClass = function(name)
 	return this.GetClassesList().indexOf(name) != -1;
 };
 
+// HC-Exodarion - Do you need this? Else remove
 Identity.prototype.GetFormationsList = function()
 {
 	if (this.template.Formations && this.template.Formations._string)
@@ -207,6 +204,7 @@ Identity.prototype.GetFormationsList = function()
 	return [];
 };
 
+// HC-Exodarion - Do you need this? Else remove
 Identity.prototype.CanUseFormation = function(template)
 {
 	return this.GetFormationsList().indexOf(template) != -1;
@@ -240,6 +238,22 @@ Identity.prototype.SetControllable = function(controllability)
 Identity.prototype.SetPhenotype = function(phenotype)
 {
 	this.phenotype = phenotype;
+};
+
+/**
+ * @param {string} newName -
+ */
+Identity.prototype.SetName = function(newName)
+{
+	this.name = newName;
+};
+
+/**
+ * @return {string} -
+ */
+Identity.prototype.GetName = function()
+{
+	return this.name || this.template.GenericName;
 };
 
 function IdentityMirage() {}

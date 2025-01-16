@@ -36,14 +36,6 @@
   <Obstruction>
     <Static depth="15.0" width="15.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-</Entities>
-    <Technologies datatype="tokens">
-    moblin/totem_killemtheycome
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_civ_center_moblin.xml</constructed>
@@ -68,4 +60,12 @@
     <Actor>structures/moblin/moblin_totemA.xml</Actor>
     <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/totem_killemtheycome
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

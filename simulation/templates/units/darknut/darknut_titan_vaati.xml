@@ -6,7 +6,6 @@
         <Shadow>50.0</Shadow>
         <Spirit>50.0</Spirit>
       </Damage>
-      <Delay>0</Delay>
       <Knockback>
         <Horizontal>30</Horizontal>
         <Vertical>30</Vertical>
@@ -54,10 +53,11 @@
         <Horizontal>25</Horizontal>
         <Vertical>25</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>120</BuildTime>
+    <BuildTime>80</BuildTime>
     <Resources>
       <food>2000</food>
       <metal>250</metal>

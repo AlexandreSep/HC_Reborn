@@ -1,0 +1,15 @@
+{
+	"genericName": "Upgrade to Chevalier",
+	"description": "As a Hylian house and its subordinate houses gained more wealth and prestige, they could afford better armor and weapons for their military.",
+	"supersedes": "hylian/soldier_cavalry",
+	"cost": {"metal": 400},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/kingdom_cavalry.dds",
+	"researchTime": 60,
+	"tooltip": "Improves Men at Arms by making them Chevalier.",
+	"modifications": [{"value": "Trainer/Entities/_string",	"tokens": "units/hylian/{civ}_soldier_cavalry>units/hylian/{civ}_kingdom_cavalry", "affects": "Structure" },
+					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "SoldierCavalry" }
+	],	
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+} 

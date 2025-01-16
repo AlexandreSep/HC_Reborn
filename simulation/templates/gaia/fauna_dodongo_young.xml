@@ -5,7 +5,7 @@
       <Damage>
         <Fire>11.0</Fire>
       </Damage>
-      <Delay>0</Delay>
+      <EffectDelay>0</EffectDelay>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -50,7 +50,7 @@
     <Max>150</Max>
     <Type>food.meat</Type>
 	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

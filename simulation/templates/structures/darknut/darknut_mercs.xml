@@ -39,20 +39,27 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+      <upgraded>interface/complete/building/complete_mercs.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_foreignbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/mercs_legionloyalty
+    darknut/mercs_privatepacts
+    darknut/alros_supermercs
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>25</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>40</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/darknut/{civ}_hypaspist_b
+    <Entities datatype="tokens">units/darknut/{civ}_hypaspist_b
       units/darknut/{civ}_mazura_b
     units/darknut/{civ}_lynel_b
     units/darknut/{civ}_fokkalista_b
@@ -67,8 +74,17 @@
     units/merc_wosu_b
     units/merc_daira_b
     units/merc_mago_b
-    units/merc_meteo_b
-    </Entities>
+    units/merc_meteo_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>40</Z>
+      </step2>
+    </DestinationOffset>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -82,21 +98,5 @@
       <X>0</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    darknut/mercs_legionloyalty
-    darknut/mercs_privatepacts
-    darknut/alros_supermercs
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_mercs.xml</constructed>
-      <select>interface/select/building/sel_mercs.xml</select>
-      <upgraded>interface/complete/building/complete_mercs.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_foreignbaseA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

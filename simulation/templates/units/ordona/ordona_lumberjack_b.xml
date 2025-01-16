@@ -12,7 +12,7 @@
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>9</BuildTime>
     <Resources>
       <food>25</food>
       <metal>0</metal>
@@ -31,7 +31,7 @@
 	  structures/ordonna/ordona_defense_tower
 	  structures/ordonna/ordona_fortress
     </Entities>
-  </Builder>  
+  </Builder>
   <Identity>
     <Civ>ordona</Civ>
     <Classes datatype="tokens">Medium BasicSoldier</Classes>
@@ -78,7 +78,7 @@
   <VisualActor>
     <Actor>units/ordona/ordona_lumberjack_b.xml</Actor>
   </VisualActor>
-   <ResourceGatherer>
+  <ResourceGatherer>
     <MaxDistance>2.0</MaxDistance>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>
@@ -86,17 +86,17 @@
       <metal>10</metal>
       <stone>10</stone>
       <wood>10</wood>
-    </Capacities>	
+    </Capacities>
     <Rates>
       <food.fruit>0.5</food.fruit>
       <food.grain>0.25</food.grain>
       <food.meat>0.5</food.meat>
       <wood.tree>1</wood.tree>
-	  <wood.rock>0.15</wood.rock>
+      <wood.rock>0.15</wood.rock>
       <wood.ruins>0.3</wood.ruins>
       <stone.ore>0.15</stone.ore>
       <stone.ruins>1</stone.ruins>
       <metal.rupees>0.15</metal.rupees>
     </Rates>
-  </ResourceGatherer> 
+  </ResourceGatherer>
 </Entity>

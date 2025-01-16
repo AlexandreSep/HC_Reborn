@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <object name="civChoicesDialogPanel"
-	size="17% 10% 83% 75%"
-	type="image"
-	hidden="true"
-	sprite="stretched:session/portraits/technologies/heroselect_backgroundA.png"
+    size="10% 7% 75% 100%"
+    type="image"
+    hidden="true"
 >
+<object name="civChoicesDialogPanelBackground"
+    size="0% 0% 100% 100%"
+    type="image"
+    hidden="false"
+    sprite="stretched:session/portraits/technologies/heroselect_backgroundA.png"
+/>
+
 	<repeat count="6" var="n">
 		<object name="civChoice[n]" size="10% 10% 20% 20%" type="button" style="StoneButton" hidden="true">
-			<object name="civChoiceIcon[n]" size="0% 0% 100% 100%" type="image" ghost="true" hidden="false"/>
+			<object name="civChoiceIcon[n]" size="-15% 0% 115% 100%" type="image" ghost="true" hidden="false"/>
 			<object name="civChoiceIconSelectionOverlay[n]" size="0% 0% 100% 100%" type="image" sprite="stretched:battalionUI_selection_highlight.png" ghost="true" hidden="true"/>
 		</object>
 			
 	</repeat>
 	
 	<repeat count="6" var="n">
-		<object name="heroDescriptionArea[n]" size="68% 5% 95% 70%" type="image" tooltip_style="sessionToolTip" sprite="stretched:session/portraits/technologies/heroselect_backgroundA.png" hidden="false">
+		<object name="heroDescriptionArea[n]" size="69% 5% 110% 50%" type="image" tooltip_style="sessionToolTip" sprite="stretched:session/portraits/technologies/heroselect_detailsA.png" hidden="false">
 			<repeat count="5" var="m">
-				<object name="heroDescriptionElement[n][m]" size="10% 10% 90% 30%" type="button" tooltip_style="sessionToolTip" sprite="stretched:session/portraits/technologies/heroselect_backgroundA.png" hidden="true">
-						<object name="heroDescriptionIcon[n][m]" size="0% 0% 27% 100%" type="image" tooltip_style="sessionToolTip" ghost="true" hidden="false"/>
-					<object name="heroDescriptionShortText[n][m]" size="32% 0% 100% 100%" type="text" style="HeroDescriptionShortText" ghost="true" hidden="false"/>
+				<object name="heroDescriptionElement[n][m]" size="7% 5% 65% 100%" type="button" tooltip_style="sessionToolTip" sprite="stretched:session/portraits/technologies/heroselect_descriptionA.png" hidden="true">
+						<object name="heroDescriptionIcon[n][m]" size="0% 0% 25% 100%" type="image" tooltip_style="sessionToolTip" ghost="true" hidden="false"/>
+					<object name="heroDescriptionShortText[n][m]" size="25% 0% 100% 100%" type="text" style="HeroDescriptionShortText" ghost="true" hidden="false"/>
 				</object>
 			</repeat>
 		</object>
 	</repeat>
 	
-	<object name="heroSelectionSelectedHeroesCount" size="69% 73% 80% 95%" type="text" style="heroSelectionScreenHeroCountDisplayFont" ghost="true" hidden="false"/>
+	<object name="heroSelectionSelectedHeroesCount" size="72% 17% 80% 95%" type="text" style="heroSelectionScreenHeroCountDisplayFont" ghost="true" hidden="false"/>
 	
-	<object name="heroConfirmButton" size="82% 75% 95% 95%" type="button" style="StoneButton" hidden="false">
+	<object name="heroConfirmButton" size="85% 51% 95% 63%" type="button" style="StoneButton" hidden="false">
 		<object name="heroConfirm" size="0% 0% 100% 100%" type="button" style="StoneButton" hidden="false"/>
 		<object name="heroConfirmIcon" size="0% 0% 100% 100%" type="image" ghost="true" hidden="false"/>
 	</object>

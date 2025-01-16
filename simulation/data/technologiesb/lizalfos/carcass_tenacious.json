@@ -1,0 +1,13 @@
+{
+	"genericName": "Tenacious Infection",
+	"description": "To draw their prey out from fortifications, the Lizalfos crafted some of the deadliest diseases Hyrule has ever known.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a second deity.",
+	"icon": "lizalfos/carcass_tenacious.dds",
+	"researchTime": 40,
+	"tooltip": "Radius of Carcass' Disease aura increased by 50%",
+	"modifications": [],
+	"affects": ["CowCarcass"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

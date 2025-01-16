@@ -172,6 +172,34 @@
 		text_align="right"
 	/>
 
+	<style name="devCommandsDropDown"
+		dropdown_buffer="0"
+		font="sans-12"
+		textcolor="white"
+		text_align="left"
+		text_valign="top"
+		button_width="20"
+		sprite_disabled="ModernDarkBoxDisabled"
+		sprite_overlay_disabled="ModernDarkBoxGoldBorderDisabled"
+		sprite2="ModernDropDownArrow"
+		sprite2_disabled="ModernDropDownArrowDisabled"
+		sprite2_pressed="ModernDropDownArrowHighlight"
+		buffer_zone="8"
+		dropdown_size="225"
+		minimum_visible_items="3"
+		sprite_list="GrayBackground"
+		sprite_list_overlay="BlackBorder"
+		sprite_selectarea="ModernDarkBox"
+		sprite_selectarea_overlay="ModernDarkBoxWhiteBorder"
+		textcolor_selected="white"
+		textcolor_disabled="140 140 140 255"
+		scrollbar="true"
+		scrollbar_style="ModernScrollBar"
+		sound_opened="audio/interface/ui/ui_button_click.ogg"
+		sound_closed="audio/interface/ui/ui_button_click.ogg"
+		sound_selected="audio/interface/ui/ui_button_click.ogg"
+	/>
+
 	<style name="resourceText"
 		textcolor="white"
 		font="sans-bold-stroke-18"
@@ -186,6 +214,14 @@
 		ghost="true"
 		text_align="right"
 		text_valign="bottom"
+	/>
+
+	<style name="totalNumberIdleWorkersCount"
+		textcolor="200 200 200"
+		font="sans-bold-stroke-14"
+		ghost="true"
+		text_align="center"
+		text_valign="center"
 	/>
 
 	<style name="StatsTextLeft"

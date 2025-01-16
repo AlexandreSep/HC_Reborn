@@ -17,7 +17,7 @@
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
       <metal>100</metal>
@@ -28,12 +28,14 @@
   <Health>
     <Max>380</Max>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>5</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/sheikah/sheikah_deadarm_b</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>5</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/sheikah/sheikah_deadarm_b</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>

@@ -1,0 +1,14 @@
+{
+	"genericName": "Malon's Horse Training",
+	"description": "",
+	"cost": {"food": 450, "wood": 0, "stone": 0, "metal": 450},
+	"requirements": {"all": [{"tech": "phase_town"}]},
+	"requirementsTooltip": "Unlocked with Town Phase.",
+	"icon": "npc_lonlon/malon_horsetrain.dds",
+	"researchTime": 40,
+	"tooltip": "Malon is well-known for her her techniques of training horses both as mounts for sport and battle. (+10% Walk Speed, +20% Health - Cavalry)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.10},
+		{"value": "Health/Max", "multiply": 1.20}],
+	"affects": ["Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

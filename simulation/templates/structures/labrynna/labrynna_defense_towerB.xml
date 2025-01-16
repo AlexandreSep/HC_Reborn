@@ -6,8 +6,6 @@
         <Fire>100.0</Fire>
         <Pierce>15</Pierce>
       </Damage>
-      <Delay>0</Delay>
-	  <ElevationBonus>15</ElevationBonus>
       <MaxRange>125</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -16,8 +14,8 @@
         <Gravity>9.81</Gravity>
         <Speed>200.0</Speed>
         <Spread>1.8</Spread>
-		<FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>8000</RepeatTime>
       <Splash>
@@ -30,6 +28,12 @@
         <Shape>Linear</Shape>
       </Splash>
       <TrueDamage>30</TrueDamage>
+      <EffectDelay>0</EffectDelay>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
     </Ranged>
   </Attack>
   <Identity>

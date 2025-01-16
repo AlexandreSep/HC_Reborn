@@ -2,7 +2,7 @@
 	"type": "garrison",
 	"affects": ["Crafting"],
 	"modifications": [
-		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.75 }
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.75 }
 	],
 	"auraName": "Son of the Smithy",
 	"auraDescription": "(If Garrisoned, -25% Tech Research Time - Crafting Grove)",

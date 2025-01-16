@@ -98,8 +98,28 @@
   <Obstruction>
     <Static depth="37.0" width="37.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_brothelA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/merc_geru_b
+	  units/merc_goriya_b 
+	  units/merc_tinsuit_b
+	  units/merc_taros_b
+	  units/merc_wosu_b
+	  units/merc_daira_b</Entities>
     <DestinationOffset>
       <step1>
         <X>2</X>
@@ -114,14 +134,6 @@
         <Z>22</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">  
-	  units/merc_geru_b
-	  units/merc_goriya_b 
-	  units/merc_tinsuit_b
-	  units/merc_taros_b
-	  units/merc_wosu_b
-	  units/merc_daira_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -135,15 +147,5 @@
       <X>2</X>
       <Z>9</Z>
     </SpawnOffset>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_mercs.xml</constructed>
-      <select>interface/select/building/sel_mercs.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/gerudo/gerudo_brothelA.xml</Actor>
-    <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

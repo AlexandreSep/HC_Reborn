@@ -1,0 +1,13 @@
+{
+	"genericName": "Okakusha the Green",
+	"description": "Okakusha the Green.",
+	"icon": "lizalfos/choosehero_okakusha.png",
+	"tooltip": "Select Okakusha the Green as your hero of choice.",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.sacrifices", "add": 1}],
+	"affects": ["Peon"],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Stealth Focus", "tooltipText": "Okakusha focuses on hidding her forces from the enemy."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Okakusha", "tooltipText": "Allows you to summon Okakusha, a sneaky and stealthy hero with poison attacks."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Iguanalfos", "tooltipText": "Ranged unit that spits venom at its targets."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Ancestral Worship", "tooltipText": "Worshipping Peons generate more food at Altars."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "The Patient Hunter", "tooltipText": "Treehoppers or Predators gain Camouflage."}]
+}

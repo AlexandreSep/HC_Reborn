@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<object
-	name="unitGroupPanel"
-	size="47% 82% 100% 100%"
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="unitGroupPanel"
+	size="-470% 82% 100% 100%"
 >
 	<repeat count="10">
 		<object name="unitGroupButton[n]" size="0 0 36 36" type="button" hidden="false" style="iconButton" tooltip_style="sessionToolTipBottomBold">

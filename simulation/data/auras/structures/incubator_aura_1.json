@@ -3,7 +3,7 @@
 	"radius": 100,
 	"affects": ["Structure"],
 	"modifications": [
-		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.90 }
+		{ "value": "Trainer/BatchTimeModifier", "multiply": 0.90 }
 	],
 	"auraName": "Incubation",
 	"auraDescription": "(-10% Batch Build Time - Building)",

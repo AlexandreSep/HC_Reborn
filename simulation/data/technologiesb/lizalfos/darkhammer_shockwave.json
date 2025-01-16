@@ -1,0 +1,16 @@
+{
+	"genericName": "Stunning Shockwave",
+	"description": "The mighty Darkhammer's ball and chain was an impressive weapon that could knock enemies senseless. After mastering the weapon they could stun their foes from the tremendous shockwave from impact.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a third deity.",
+	"icon": "lizalfos/darkhammer_shockwave.dds",
+	"researchTime": 40,
+	"tooltip": "Darkhammer splash damage radius and Stun time now doubled.",
+	"modifications": [
+		{"value": "Attack/Ranged/Damage/Splash/Range", "multiply": 2},
+		{"value": "Attack/Ranged/Damage/Splash/Stun/Time", "multiply": 2}
+	],
+	"affects": ["Darkhammer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

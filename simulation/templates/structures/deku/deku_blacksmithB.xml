@@ -46,14 +46,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    deku/attack_nuts_01
-    deku/armor_dek_all_01
-    deku/armor_dek_all_02
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -72,4 +64,14 @@
   <VisualActor>
     <Actor>structures/deku/deku_nutcarversA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/attack_nuts_01
+    deku/armor_dek_all_01
+    deku/armor_dek_all_02
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

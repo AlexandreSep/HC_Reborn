@@ -9,8 +9,7 @@
 	],
 	"auraName": "Chosen of the Goddesses",
 	"auraDescription": "(-10% Walk/Run Speed - Enemy Unit)",
-	"overlayIcon": "art/textures/ui/session/auras/deacon_chosen.dds",
-	"requiredTechnology": "hylian/deacon_chosen",	
+	"overlayIcon": "art/textures/ui/session/auras/deacon_chosen.dds",	
 	"rangeOverlay" : {
 		"lineTexture": "outline_border.png",
 		"lineTextureMask": "outline_border_mask.png",

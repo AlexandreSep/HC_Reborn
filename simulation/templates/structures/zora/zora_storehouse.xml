@@ -31,14 +31,6 @@
   <Obstruction>
     <Static depth="20.0" width="20.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    zora/gather_capacity_reefletcasing
-    zora/economic_algalcleanse
-    zora/economic_coralablation
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -63,4 +55,14 @@
     <Actor>structures/zora/zora_depositoryA.xml</Actor>
     <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">zora/gather_capacity_reefletcasing
+    zora/economic_algalcleanse
+    zora/economic_coralablation
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

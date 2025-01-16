@@ -59,7 +59,4 @@
     <Actor>structures/ordona/ordona_wildhiveA.xml</Actor>
 	<FoundationActor>structures/ordona/ordona_wildhiveA.xml</FoundationActor>
   </VisualActor>
-  <SetOwnerID>
-	<OwnerID>0</OwnerID>
-  </SetOwnerID>
 </Entity>

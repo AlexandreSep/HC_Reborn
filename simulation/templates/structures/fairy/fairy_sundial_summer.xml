@@ -7,14 +7,6 @@
     <GenericName>Summer Sundial</GenericName>
     <Icon>structures/fairy/fai_sundial_summer.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    fairy/unlock_autumn
-    fairy/essence_03_brightsun
-    fairy/essence_04_soothingrain
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -31,4 +23,14 @@
     <Actor>structures/fairy/fairy_sundialA_summer.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_summer.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/unlock_autumn
+    fairy/essence_03_brightsun
+    fairy/essence_04_soothingrain
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

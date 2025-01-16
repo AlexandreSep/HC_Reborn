@@ -1,38 +1,70 @@
 {
 	"Code": "zora",
 	"Culture": "civilized",
-	"Name": "Zora Dominion",
-	"Emblem": "session/portraits/emblems/emblem_zora.dds",
-	"History": "The fish-men and women of Hyrule's waters have long dominated the submerged realms. With a focus on the ideal of beauty and grace, they have crafted an Empire bent on shaping others to their extraordinary standards... A goal that has made them quite prideful and arrogant in the eyes of their land-dwelling neighbors. When convincing others fails, the Dominion has both military and magic might on their side.",
-	"Music":[
-			{"File":"zora_theme1.ogg", "Type":"peace"},
-			{"File":"zora_ambient1.ogg", "Type":"peace"},
-			{"File":"zora_ambient2.ogg", "Type":"peace"},
-			{"File":"zora_ambient3.ogg", "Type":"peace"},
-			{"File":"zora_ambient4.ogg", "Type":"peace"},
-			{"File":"zora_ambient5.ogg", "Type":"peace"},
-			{"File":"zora_ambient6.ogg", "Type":"peace"},
-			{"File":"zora_ambient7.ogg", "Type":"peace"},
-			{"File":"zora_ambient8.ogg", "Type":"peace"},
-			{"File":"zora_battle1.ogg", "Type":"battle"},
-			{"File":"zora_battle2.ogg", "Type":"battle"},
-			{"File":"zora_battle3.ogg", "Type":"battle"},
-			{"File":"zora_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "zora_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zora_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "zora_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "zora_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "zora_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Fruit, Meat, Fish, Stone, Metal, Coralmold, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "King Zora De Bon XVI",
 					"Class": "",
@@ -60,30 +92,28 @@
 					"Armament": "Healing Magic",
 					"Emblem": "",
 					"History": "Initially trained as a Mage, Telara left the Communion in order to live a less hostile life. She eventually married Zaleen and became a librarian in Domain Prime, assembling historial documents and compiling much of the information that would be later used in Midna’s Hyrule Historia Tome. Telara’s personality is known as quiet and bashful. She is rather introverted and avoids appearing in public unless in the company of Zaleen or her library."
-				}  
+				}
 			]
-		} 
+		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Aquatic",
 			"History": "",
-			"Description": "All land units can move through deep water." 
+			"Description": "All land units can move through deep water."
 		},
 		{
 			"Name": "Beacon of Culture",
 			"History": "",
-			"Description": "All Civilized Culture Techs are researched for free when the appropriate building is constructed." 
+			"Description": "All Civilized Culture Techs are researched for free when the appropriate building is constructed."
 		},
 		{
 			"Name": "Gift of Healing",
 			"History": "",
-			"Description": "All garrisoned buildings can slowly heal units." 
-		}  
+			"Description": "All garrisoned buildings can slowly heal units."
+		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/zora/choosehero_zaleen",
 		"civ_choices/zora/choosehero_telara",
 		"civ_choices/zora/choosehero_jabun",
@@ -91,16 +121,14 @@
 		"civ_choices/zora/choosehero_ruto",
 		"civ_choices/zora/choosehero_laruto"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "Zora Medicine",
 			"History": "",
 			"Description": "Ally Civic Centers can slowly heal garrisoned units."
-		} 
+		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Shrine of Jabu",
 			"Class": "",
@@ -108,7 +136,7 @@
 			"History": "One of the most sacred spaces in the Zora Dominion, this quiet lagoon in the Jabun Reservoir serves as a pilgrimage site and resting place of Jabu-Jabu, Sage of Water and founder of the Dominion. (In Aura, +5 Attack (Magic)- Units and Buildings, 50% Territory Influence)",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
+			"Special": ""
 		},
 		{
 			"Name": "Titan: Lord Jabu Jabu",
@@ -117,11 +145,10 @@
 			"History": "Jabun, more commonly known as Lord Jabu Jabu, is the second Sage of Water of Hyrule and the founder of the Zora Dominion. Jabun is known for his vanity and over-bloated ego. He refuses to speak to anyone other than his servants or worshipers. He has an insatiable appetite and is also known for his gluttony and laziness. As an ancient Oshunite, he wields tremendous magical powers, in particular that of healing flesh. Many spending time near Lord Jabu Jabu have had wounds and sicknesses cured in short order.",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
-		} 
+			"Special": ""
+		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/zora/zora_civil_centre"
 		},
@@ -132,7 +159,7 @@
 		{
 			"Template": "units/zora/zora_riverpatrol_b",
 			"Count": 2
-		},		
+		},
 		{
 			"Template": "units/zora/zora_infiltrator_b"
 		}

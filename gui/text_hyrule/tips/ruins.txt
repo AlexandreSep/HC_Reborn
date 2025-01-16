@@ -1,6 +1,6 @@
 ANCIENT RUINS
 Many Ancient Ruins dot the landscape of Hyrule.
 Ruins can be captured by your Units to generate Rupees. They are the main source of Rupees on most maps.
-Ruins generate a small amount of Territory and can train various Armos Units.
-The type of Ruins, and Armos that they can train, varies from region to region.
+Several factions (such as the Lizalfos and Stalfos), construct all of their bases on captured Ruins.
+The type of Ruins varies from region to region.
 

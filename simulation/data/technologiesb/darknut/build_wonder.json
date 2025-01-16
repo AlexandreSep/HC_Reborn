@@ -1,0 +1,13 @@
+{
+	"genericName": "Build the Tower of Hera",
+	"description": "Construct the Tower of Hera on top of this Agora.",
+	"cost": {"food": 1000, "wood": 1000, "stone": 1000, "metal": 1000},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "darknut/dar_towerhera.dds",
+	"researchTime": 40,
+	"tooltip": "Construct the Tower of Hera on top of this Agora. (Upgrade Agora into Darknut Wonder)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["MainAgora"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

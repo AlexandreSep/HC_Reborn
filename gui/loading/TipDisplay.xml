@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+	<object size="0% 0% 50% 100%">
+		<object size="2% 50%-386 2%+772 50%+386">
+			<object name="tipImage" size="4 4 772 772" type="image">
+				<object name="tipImageCover" type="image" sprite="LoadingTipImageCover">
+					<object type="image" size="0% 0% 100% 580" sprite="LoadingTipImage"/>
+				</object>
+			</object>
+		</object>
+	</object>
+
+	<object size="2%+780 0 100% 100%">
+		<object name="tipTitle" size="0% 50%-386 100% 50%-336" type="text" style="LoadingTipTitleText"/>
+		<object name="tipText" size="0% 50%-336 100% 100%" type="text" style="LoadingTipText"/>
+	</object>
+</object>

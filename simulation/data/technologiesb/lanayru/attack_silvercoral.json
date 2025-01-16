@@ -1,0 +1,15 @@
+{
+	"genericName": "Silverstream Coralmold",
+	"description": "All units with Silver weapons gain +25% relevant Non Magic damage.",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
+	"requirements": { "all": [{ "entity": { "class": "SilverExchange", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Silver Exchange.",
+	"icon": "lanayru/attack_silvercoral.dds",
+	"researchTime": 40,
+	"tooltip": "All units with Silver weapons gain +3 relevant Non Magic damage.)",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "add": 3},
+		{"value": "Attack/Melee/Damage/Pierce", "add": 3},
+		{"value": "Attack/Melee/Damage/Crush", "add": 3}],
+	"affects": ["SilverWeapon"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

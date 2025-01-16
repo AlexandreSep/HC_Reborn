@@ -294,22 +294,27 @@ var g_NotificationsTypes =
 
 		global.music.setLocked(notification.lock);
 	},
-    "map-flare": function (notification, player) {
-        // Don't display for the player that did the flare because they will see it immediately
-        if (player != Engine.GetPlayerID() && g_Players[player].isMutualAlly[Engine.GetPlayerID()]) {
-            let now = Date.now();
-            if (g_FlareRateLimitLastTimes.length) {
-                g_FlareRateLimitLastTimes = g_FlareRateLimitLastTimes.filter(t => now - t < g_FlareRateLimitScope * 1000);
-                if (g_FlareRateLimitLastTimes.length >= g_FlareRateLimitMaximumFlares) {
-                    warn("Received too many flares. Dropping a flare request by '" + g_Players[player].name + "'.");
-                    return;
-                }
-            }
-            g_FlareRateLimitLastTimes.push(now);
-            displayFlare(notification.target, player);
-            Engine.PlayUISound(g_FlareSound, false);
-        }
-    },
+	"map-flare": function(notification, player)
+	{
+		// Don't display for the player that did the flare because they will see it immediately
+		if (player != Engine.GetPlayerID() && g_Players[player].isMutualAlly[Engine.GetPlayerID()])
+		{
+			let now = Date.now();
+			if (g_FlareRateLimitLastTimes.length)
+			{
+				g_FlareRateLimitLastTimes = g_FlareRateLimitLastTimes.filter(t => now - t < g_FlareRateLimitScope * 1000);
+				if (g_FlareRateLimitLastTimes.length >= g_FlareRateLimitMaximumFlares)
+				{
+					warn("Received too many flares. Dropping a flare request by '" + g_Players[player].name + "'.");
+					return;
+				}
+			}
+			g_FlareRateLimitLastTimes.push(now);
+
+			displayFlare(notification.target, player);
+			Engine.PlayUISound(g_FlareSound, false);
+		}
+	},
     ////////////////
     // HC MESSAGES
     ////////////////
@@ -440,7 +445,7 @@ function updateTutorial(notification)
 		{
 			Engine.GetGUIObjectByName("tutorialWarning").caption = translate("Click to quit this tutorial.");
 			Engine.GetGUIObjectByName("tutorialReady").caption = translate("Quit");
-			Engine.GetGUIObjectByName("tutorialReady").onPress = endGame;
+			Engine.GetGUIObjectByName("tutorialReady").onPress = () => { endGame(true); };
 		}
 		else
 			Engine.GetGUIObjectByName("tutorialWarning").caption = translate("Click when ready.");
@@ -645,7 +650,7 @@ function openDialog(dialogName, data, player)
 }
 
 ///////////////////
-// HC MESSAGE FUNCTIONALITY
+// HC-code MESSAGE FUNCTIONALITY
 //////////////////
 /**
  * displays the defeat and victory screen for the campaign

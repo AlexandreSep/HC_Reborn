@@ -1,0 +1,6 @@
+{
+	"genericName": "Spring",
+	"top": "fairy/unlock_spring",
+	"bottom": "fairy/unlock_springB",
+	"requirements": { "civ": "fairy" }
+}

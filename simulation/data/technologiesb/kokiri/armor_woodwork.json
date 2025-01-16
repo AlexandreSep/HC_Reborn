@@ -1,0 +1,14 @@
+{
+	"genericName": "Faron Woodworking",
+	"description": "Ancient manuscripts uncovered from Faron present techniques for drying and lightening the wood used in Kokiri armors.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 550},
+	"supersedes": "kokiri/armor_dekugouge",
+	"requirements": { "all": [{ "entity": { "class": "WoodCarver", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Wood Carver Addon.",
+	"icon": "kokiri/armor_woodwork.dds",
+	"researchTime": 40,
+	"tooltip": "Ancient manuscripts uncovered from Faron present techniques for drying and lightening the wood used in Kokiri armors. (+20% Walk Speed - Grove Watcher, Buck Rider, Doe Trotter, Emerald Archer, and Chief)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.20}],
+	"affects": ["WoodArmor"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -9,7 +9,7 @@
   </Obstruction>
   <ResourceSupply>
     <Max>20000</Max>
-    <MaxGatherers>3</MaxGatherers>
+    <MaxGatherers>15</MaxGatherers>
   </ResourceSupply>
   <StatusBars>
     <BarWidth>5.0</BarWidth>

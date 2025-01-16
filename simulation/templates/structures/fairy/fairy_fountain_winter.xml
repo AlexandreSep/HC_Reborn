@@ -3,15 +3,6 @@
     <Classes datatype="tokens">Winter</Classes>
     <Icon>structures/fairy/fai_fountain_winter.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/fairy/{civ}_stray_winter
-    units/fairy/{civ}_drove_winter
-      units/fairy/{civ}_banshee_winter
-    units/fairy/{civ}_galeboomer_winter
-    </Entities>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_fountain_spring</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -20,4 +11,15 @@
     <Actor>structures/fairy/fairy_fountainA_winter.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/fairy/{civ}_stray_winter
+    units/fairy/{civ}_drove_winter
+      units/fairy/{civ}_banshee_winter
+    units/fairy/{civ}_galeboomer_winter</Entities>
+  </Trainer>
 </Entity>

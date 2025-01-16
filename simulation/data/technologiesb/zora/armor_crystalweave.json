@@ -1,0 +1,15 @@
+{
+	"genericName": "Crystalweaved Suits",
+	"description": "Crystals spun from water by Zora Mages are added into woven coralmold fillaments, offering a good deal of protection to Zora clothing.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "zora/armor_crystalweave.dds",
+	"researchTime": 40,
+	"tooltip": "Crystals spun from water by Zora Mages are added into woven coralmold fillaments, offering a good deal of protection to Zora clothing. (+7 Armor, All Units)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 5},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 5}],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

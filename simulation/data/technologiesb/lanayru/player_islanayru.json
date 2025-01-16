@@ -1,0 +1,11 @@
+{
+	"genericName": "Is playing as Lanayru Province",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "lanayru"}]},
+	"autoResearch": true,
+	"researchTime": 0,
+	"tooltip": "You are Lanayru Province, if you can see this tooltip then report this as a bug!",
+	"modifications": [],
+	"affects": []
+}

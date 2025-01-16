@@ -41,7 +41,7 @@
     <Max>150</Max>
     <Type>food.meat</Type>
 	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

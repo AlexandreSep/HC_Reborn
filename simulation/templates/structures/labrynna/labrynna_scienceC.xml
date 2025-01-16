@@ -7,15 +7,17 @@
     <History>It was the Chemist that provided Labrynna with its first gunpowder, and these halls continue to provide new improvements to the weaponry.</History>
     <Icon>structures/labrynna/lab_scienceC.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    labrynna/upgrade_aerosulfur
-    labrynna/upgrade_witchbane
-    </Technologies>
-  </ProductionQueue>
   <Upgrade disable="" />
   <VisualActor>
     <Actor>structures/labrynna/labrynna_scienceC.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/upgrade_aerosulfur
+    labrynna/upgrade_witchbane
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

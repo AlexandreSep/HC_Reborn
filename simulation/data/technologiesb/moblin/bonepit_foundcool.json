@@ -1,0 +1,16 @@
+{
+	"genericName": "Found Cool Junk!",
+	"description": "Sometimes we Moblins find the best junk ever! Shiny Rupees, Handy Metal, sometimes even a few scrap of week old meat!",
+	"cost": {"food": 200, "wood": 200, "stone": 200, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/bonepit_foundcool.dds",
+	"researchTime": 40,
+	"tooltip": "Sometimes we Moblins find the best junk ever! Shiny Rupees, Handy Metal, sometimes even a few scrap of week old meat! (Big Bone Pits periodically generate a load of Material, Ore, or Rupees instead of spawning a Scrap Pile)",
+	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 0.5},
+					  {"value": "ResourceTrickle/Rates/wood", "add": 0.5},
+					  {"value": "ResourceTrickle/Rates/stone", "add": 0.5},
+					  {"value": "ResourceTrickle/Rates/metal", "add": 0.5}],
+	"affects": ["Bigbonepit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -10,7 +10,7 @@
     units/heroes/kokiri_hero_fado_songstorm2
   </Auras>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>260</food>
       <metal>200</metal>

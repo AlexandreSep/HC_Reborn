@@ -1,51 +1,49 @@
 function Cheat(input)
 {
-	var cmpPlayerManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager);
-	if (!cmpPlayerManager || input.player < 0)
-		return;
-	var playerEnt = cmpPlayerManager.GetPlayerByID(input.player);
-	if (playerEnt == INVALID_ENTITY)
-		return;
-	var cmpPlayer = Engine.QueryInterface(playerEnt, IID_Player);
-	if (!cmpPlayer)
+	if (input.player < 0)
 		return;
 
-	var cmpGuiInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
-	if (!cmpPlayer.GetCheatsEnabled())
+	const cmpPlayerManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager);
+	const playerEnt = cmpPlayerManager.GetPlayerByID(input.player);
+	if (playerEnt == INVALID_ENTITY)
 		return;
+	const cmpPlayer = Engine.QueryInterface(playerEnt, IID_Player);
+	if (!cmpPlayer?.GetCheatsEnabled())
+		return;
+
+	const cmpGuiInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
 
 	switch(input.action)
 	{
 	case "addresource":
+		if (isNaN(input.parameter))
+			return;
 		cmpPlayer.AddResource(input.text, input.parameter);
 		return;
 	case "revealmap":
-		var cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
-		cmpRangeManager.SetLosRevealAll(-1, true);
+		Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager).SetLosRevealAll(-1, true);
 		return;
 	case "maxpopulation":
 		cmpPlayer.SetPopulationBonuses((cmpPlayerManager.GetMaxWorldPopulation() || cmpPlayer.GetMaxPopulation()) + 500);
 		return;
 	case "changemaxpopulation":
 	{
-		let cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
-		cmpModifiersManager.AddModifiers("cheat/maxpopulation", {
+		Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager).AddModifiers("cheat/maxpopulation", {
 			"Player/MaxPopulation": [{ "affects": ["Player"], "add": 500 }],
 		}, playerEnt);
 		return;
 	}
 	case "convertunit":
-		for (let ent of input.selected)
-		{
-			let cmpOwnership = Engine.QueryInterface(ent, IID_Ownership);
-			if (cmpOwnership)
-				cmpOwnership.SetOwner(cmpPlayer.GetPlayerID());
-		}
+		if (isNaN(input.parameter))
+			return;
+		const playerID = (input.parameter > -1 && QueryPlayerIDInterface(input.parameter) || cmpPlayer).GetPlayerID();
+		for (const ent of input.selected)
+			Engine.QueryInterface(ent, IID_Ownership)?.SetOwner(playerID);
 		return;
 	case "killunits":
-		for (let ent of input.selected)
+		for (const ent of input.selected)
 		{
-			let cmpHealth = Engine.QueryInterface(ent, IID_Health);
+			const cmpHealth = Engine.QueryInterface(ent, IID_Health);
 			if (cmpHealth)
 				cmpHealth.Kill();
 			else
@@ -53,13 +51,19 @@ function Cheat(input)
 		}
 		return;
 	case "defeatplayer":
-		cmpPlayer = QueryPlayerIDInterface(input.parameter);
-		if (cmpPlayer)
-			cmpPlayer.SetState("defeated", markForTranslation("%(player)s has been defeated (cheat)."));
+		if (isNaN(input.parameter))
+			return;
+		QueryPlayerIDInterface(input.parameter)?.SetState("defeated",
+			markForTranslation("%(player)s has been defeated (cheat).")
+		);
 		return;
 	case "createunits":
-		var cmpProductionQueue = input.selected.length && Engine.QueryInterface(input.selected[0], IID_ProductionQueue);
-		if (!cmpProductionQueue)
+	{
+		if (isNaN(input.player) || isNaN(input.parameter))
+			return;
+
+		const cmpTrainer = input.selected.length && Engine.QueryInterface(input.selected[0], IID_Trainer);
+		if (!cmpTrainer)
 		{
 			cmpGuiInterface.PushNotification({
 				"type": "text",
@@ -71,20 +75,21 @@ function Cheat(input)
 		}
 
 		let owner = input.player;
-		let cmpOwnership = Engine.QueryInterface(input.selected[0], IID_Ownership);
+		const cmpOwnership = Engine.QueryInterface(input.selected[0], IID_Ownership);
 		if (cmpOwnership)
 			owner = cmpOwnership.GetOwner();
 		for (let i = 0; i < Math.min(input.parameter, cmpPlayer.GetMaxPopulation() - cmpPlayer.GetPopulationCount()); ++i)
-			cmpProductionQueue.SpawnUnits({
-				"count": 1,
-				"player": owner,
-				"metadata": null,
-				"unitTemplate": input.templates[i % input.templates.length]
-			});
+		{
+			const batch = new cmpTrainer.Item(input.templates[i % input.templates.length], 1, input.selected[0], null);
+			batch.player = owner;
+			batch.Finish();
+			// ToDo: If not able to spawn, cancel the batch.
+		}
 		return;
+	}
 	case "fastactions":
 	{
-		let cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
+		const cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
 		if (cmpModifiersManager.HasAnyModifier("cheat/fastactions", playerEnt))
 			cmpModifiersManager.RemoveAllModifiers("cheat/fastactions", playerEnt);
 		else
@@ -93,17 +98,18 @@ function Cheat(input)
 				"ResourceGatherer/BaseSpeed": [{ "affects": [["Structure"], ["Unit"]], "multiply": 1000 }],
 				"Pack/Time": [{ "affects": [["Structure"], ["Unit"]], "multiply": 0.01 }],
 				"Upgrade/Time": [{ "affects": [["Structure"], ["Unit"]], "multiply": 0.01 }],
-				"ProductionQueue/TechCostMultiplier/time": [{ "affects": [["Structure"], ["Unit"]], "multiply": 0.01 }]
+				"Researcher/TechCostMultiplier/time": [{ "affects": [["Structure"], ["Unit"]], "multiply": 0.01 }]
 			}, playerEnt);
 		return;
 	}
 	case "changephase":
-		var cmpTechnologyManager = Engine.QueryInterface(playerEnt, IID_TechnologyManager);
+	{
+		const cmpTechnologyManager = Engine.QueryInterface(playerEnt, IID_TechnologyManager);
 		if (!cmpTechnologyManager)
 			return;
 
 		// store the phase we want in the next input parameter
-		var parameter;
+		let parameter;
 		if (!cmpTechnologyManager.IsTechnologyResearched("phase_town"))
 			parameter = "phase_town";
 		else if (!cmpTechnologyManager.IsTechnologyResearched("phase_city"))
@@ -111,41 +117,46 @@ function Cheat(input)
 		else
 			return;
 
-		if (TechnologyTemplates.Has(parameter + "_" + cmpPlayer.civ))
-			parameter += "_" + cmpPlayer.civ;
-		else
-			parameter += "_generic";
+		const civ = Engine.QueryInterface(playerEnt, IID_Identity).GetCiv();
+		parameter += TechnologyTemplates.Has(parameter + "_" + civ) ? "_" + civ : "_generic";
 
-		Cheat({ "player": input.player, "action": "researchTechnology", "parameter": parameter, "selected": input.selected });
+		Cheat({
+			"player": input.player,
+			"action": "researchTechnology",
+			"parameter": parameter,
+			"selected": input.selected
+		});
 		return;
+	}
 	case "researchTechnology":
+	{
 		if (!input.parameter.length)
 			return;
 
-		var techname = input.parameter;
-		var cmpTechnologyManager = Engine.QueryInterface(playerEnt, IID_TechnologyManager);
+		let techname = input.parameter;
+		const cmpTechnologyManager = Engine.QueryInterface(playerEnt, IID_TechnologyManager);
 		if (!cmpTechnologyManager)
 			return;
 
 		// check, if building is selected
 		if (input.selected[0])
 		{
-			var cmpProductionQueue = Engine.QueryInterface(input.selected[0], IID_ProductionQueue);
-			if (cmpProductionQueue)
+			const cmpResearcher = Engine.QueryInterface(input.selected[0], IID_Researcher);
+			if (cmpResearcher)
 			{
 				// try to spilt the input
-				var tmp = input.parameter.split(/\s+/);
-				var number = +tmp[0];
-				var pair = tmp.length > 1 && (tmp[1] == "top" || tmp[1] == "bottom") ? tmp[1] : "top"; // use top as default value
+				const tmp = input.parameter.split(/\s+/);
+				const number = +tmp[0];
+				const pair = tmp.length > 1 && (tmp[1] == "top" || tmp[1] == "bottom") ? tmp[1] : "top"; // use top as default value
 
 				// check, if valid number was parsed.
-				if (number || number === 0)
+				if (!isNaN(number))
 				{
 					// get name of tech
-					var techs = cmpProductionQueue.GetTechnologiesList();
+					const techs = cmpResearcher.GetTechnologiesList();
 					if (number > 0 && number <= techs.length)
 					{
-						var tech = techs[number-1];
+						const tech = techs[number-1];
 						if (!tech)
 							return;
 
@@ -161,22 +172,22 @@ function Cheat(input)
 			}
 		}
 
-		if (TechnologyTemplates.Has(techname) &&
-		    !cmpTechnologyManager.IsTechnologyResearched(techname))
+		if (TechnologyTemplates.Has(techname))
 			cmpTechnologyManager.ResearchTechnology(techname);
 		return;
+	}
 	case "metaCheat":
-		for (let resource of Resources.GetCodes())
+		for (const resource of Resources.GetCodes())
 			Cheat({ "player": input.player, "action": "addresource", "text": resource, "parameter": input.parameter });
 		Cheat({ "player": input.player, "action": "maxpopulation" });
 		Cheat({ "player": input.player, "action": "changemaxpopulation" });
         Cheat({ "player": input.player, "action": "fastactions" });
-        Cheat({ "player": input.player, "action": "revealmap" });
-		for (let i=0; i<2; ++i)
+        Cheat({ "player": input.player, "action": "revealmap" }); // HC-Code
+	for (let i = 0; i < 2; ++i)
 			Cheat({ "player": input.player, "action": "changephase", "selected": input.selected });
 		return;
 	case "playRetro":
-		let play = input.parameter.toLowerCase() != "off";
+		const play = input.parameter.toLowerCase() != "off";
 		cmpGuiInterface.PushNotification({
 			"type": "play-tracks",
 			"tracks": play && input.parameter.split(" "),

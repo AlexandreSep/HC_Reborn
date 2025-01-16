@@ -5,7 +5,6 @@
       <Damage>
         <Crush>20.0</Crush>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>12.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -30,10 +29,11 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>150</food>
       <metal>0</metal>
@@ -48,12 +48,14 @@
   <Health>
     <Max>450</Max>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>false</LinkedDestruction>
-      <Max>4</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/lizalfos/lizalfos_helmbaby_b</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>false</LinkedDestruction>
+        <Max>4</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/lizalfos/lizalfos_helmbaby_b</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>

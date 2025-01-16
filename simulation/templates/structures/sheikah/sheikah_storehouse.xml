@@ -32,11 +32,6 @@
   <Obstruction>
     <Static depth="20.0" width="20.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <Resistance>
     <Entity>
@@ -84,4 +79,11 @@
     <Actor>structures/sheikah/sheikah_kitchenA.xml</Actor>
     <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

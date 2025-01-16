@@ -3,7 +3,7 @@
     units/cowcart_aura_1
   </Auras>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
       <metal>20</metal>

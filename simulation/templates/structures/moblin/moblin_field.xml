@@ -19,19 +19,21 @@
     <Max>400</Max>
     <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>5000</Interval>
-      <LinkedDestruction>false</LinkedDestruction>
-      <Max>5</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>3000</StartDelay>
-      <Template>gaia/moblin_lilugpug_1</Template>
+      <one>
+        <Interval>5000</Interval>
+        <LinkedDestruction>false</LinkedDestruction>
+        <Max>5</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>3000</StartDelay>
+        <Template>gaia/moblin_lilugpug_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
     <Civ>moblin</Civ>
     <Classes datatype="tokens">Field PigFarm</Classes>
     <GenericName>Prey Breedin' Place</GenericName>
-    <History>One pretty smart Moblin one day thought to himself, &#8221;Hey now, what if we breed the prey like the neighbors breed the cows and the goats and the horseys?!&#8221; So we Moblins did just that and now we gots lots of food running around!</History>
+    <History>One pretty smart Moblin one day thought to himself, ”Hey now, what if we breed the prey like the neighbors breed the cows and the goats and the horseys?!” So we Moblins did just that and now we gots lots of food running around!</History>
     <Icon>structures/moblin/mob_preybreedin.dds</Icon>
     <Tooltip>Makes the Ugpug Pigs that we can kill for Food!</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>

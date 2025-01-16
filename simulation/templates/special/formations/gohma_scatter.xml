@@ -1,9 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_formation">
   <Formation>
     <CenterGap>0</CenterGap>
-    <FormationName>Battle Line</FormationName>
     <FormationShape>square</FormationShape>
-    <Icon>formations/battle_line.png</Icon>
     <MaxColumns>8</MaxColumns>
     <MaxRows>4</MaxRows>
     <MinColumns>3</MinColumns>
@@ -15,4 +14,9 @@
     <UnitSeparationWidthMultiplier>1.5</UnitSeparationWidthMultiplier>
     <WidthDepthRatio>1</WidthDepthRatio>
   </Formation>
+  <Identity>
+    <GenericName>Battle Line</GenericName>
+    <Icon>formations/battle_line.png</Icon>
+  </Identity>
 </Entity>
+

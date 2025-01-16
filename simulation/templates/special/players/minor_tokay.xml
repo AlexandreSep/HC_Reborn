@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>minor_tokay</Civ>
+    <GenericName>Tokay</GenericName>
+    <History>Hailing from Crescent Island just south of Labrynna, the Tokay were at first glance a tribal and primitive collection of people. Their odd manner of speaking, awkward behavior, and obsession with mundane items such as clothing rather than rupees gave them a reputaion of being backwards and outright stupid. Despite their quirky demenour, the Tokay proved to be more than a pushover tribe of spear wielding reptile barbarians.</History>
+    <Icon>emblems/emblem_npc_tokay.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+  </Player>
+</Entity>
+

@@ -1,12 +1,12 @@
 {
 	"type": "range",
-	"radius": 25,
+	"radius": 40,
 	"affects": ["Unit"],
 	"modifications": [
-		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
-		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.1 }
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.2 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.2 }
 	],
 	"auraName": "Drum Beats",
-	"auraDescription": "(+10% Walk/Run Speed - Unit)",
+	"auraDescription": "(+20% Walk/Run Speed - Unit)",
 	"overlayIcon": "art/textures/ui/session/auras/drummer_aura_1.dds"
 }

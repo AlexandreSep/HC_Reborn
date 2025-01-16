@@ -1,0 +1,23 @@
+{
+	"genericName": "Kingdom-Issued Baskets",
+	"description": "The Royal Family issues baskets to Citizens.",
+  "cost": {
+    "food": 0,
+    "wood": 200,
+    "stone": 0,
+    "metal": 200
+  },
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "hylian/gather_capacity_basket.dds",
+	"researchTime": 40,
+	"tooltip": "The Royal Family issues baskets to Citizens. (+5 Resource Capacity - Worker)",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 5},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 5},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 5},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 5}
+	],
+  "affects": [ "FemaleCitizen" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

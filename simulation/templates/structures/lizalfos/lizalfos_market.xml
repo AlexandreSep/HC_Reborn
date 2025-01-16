@@ -19,12 +19,14 @@
     <Max>3000</Max>
     <SpawnEntityOnDeath>rubble/debris_lizalfos_mediumB</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>gaia/lon_lon_cow_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -36,7 +38,7 @@
     <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
@@ -45,7 +47,23 @@
   <Obstruction>
     <Static depth="30.0" width="30.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_market.xml</constructed>
+      <select>interface/select/building/sel_market.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_marketA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_W.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    gaia/lon_lon_cow_1</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -56,10 +74,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -73,17 +87,5 @@
       <X>0</X>
       <Z>5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_market.xml</constructed>
-      <select>interface/select/building/sel_market.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_marketA.xml</Actor>
-    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_W.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/goron_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>goron</Civ>
+    <GenericName>Gorons</GenericName>
+    <History>Mighty rock-men hailing from the peaks of Death Mountain, the Gorons are a people of warriors, miners and boisterous party-goers. Hyrule's mightiest weapons are crafted by their hands, and the outcome of many wars has rested on their involvement. Their tenacity for battle is legendary and has earned them a place in the vast history of the land.</History>
+    <Icon>emblems/emblem_goron.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+    <SharedLosTech>culture_civilized/postman_network</SharedLosTech>
+  </Player>
+</Entity>
+

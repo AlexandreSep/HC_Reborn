@@ -1,4 +1,4 @@
-<Entity parent="template_unit_fauna_herd_horse">
+<Entity parent="template_unit_fauna_herd_domestic">
   <Cost>
     <BuildTime>25</BuildTime>
     <Resources>
@@ -43,7 +43,7 @@
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed>4.0</WalkSpeed>
+    <WalkSpeed>8.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/gerudo/gerudo_swine_b.xml</Actor>

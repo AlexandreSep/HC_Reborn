@@ -5,7 +5,6 @@
       <Damage>
         <Shadow>10.0</Shadow>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>90.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -21,6 +20,7 @@
         <LineThickness>0.175</LineThickness>
       </RangeOverlay>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
@@ -42,14 +42,6 @@
   <Health>
     <Max>6000</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
-    <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/gohma/gohma_larva_sterile_b</Template>
-    </SpawnOnInterval>
   </Health>
   <Identity>
     <Civ>gohma</Civ>
@@ -65,45 +57,6 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>25</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-		units/gohma/{civ}_harvesterA
-		units/gohma/{civ}_hero_agitha
-		units/gohma/{civ}_hero_mido
-		units/gohma/{civ}_hero_queenbaga
-		units/gohma/{civ}_hero_praetorian
-		units/gohma/{civ}_hero_matriarch
-		units/gohma/{civ}_hero_sulkaris
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>16</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-		gohma/hive_projection
-		gohma/praetorian_regen
-		gohma/player_isgohma
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>1000</Interval>
     <Rates>
@@ -127,4 +80,43 @@
     <Actor>structures/gohma/gohma_hivecore.xml</Actor>
     <FoundationActor>structures/gohma/gohma_cacoonA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/hive_projection
+		gohma/praetorian_regen
+		gohma/player_isgohma
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/gohma/{civ}_harvesterA
+		units/gohma/{civ}_hero_agitha
+		units/gohma/{civ}_hero_mido
+		units/gohma/{civ}_hero_queenbaga
+		units/gohma/{civ}_hero_praetorian
+		units/gohma/{civ}_hero_matriarch
+		units/gohma/{civ}_hero_sulkaris</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>16</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

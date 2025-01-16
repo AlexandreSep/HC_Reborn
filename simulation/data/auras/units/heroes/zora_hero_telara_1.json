@@ -3,7 +3,7 @@
 	"radius": 50,
 	"affects": ["Structure"],
 	"modifications": [
-		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.90 }
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.90 }
 	],
 	"auraName": "Archive Overseer",
 	"auraDescription": "(-10% Tech Research Time - Building)",

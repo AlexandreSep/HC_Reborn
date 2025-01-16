@@ -19,12 +19,14 @@
     <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>false</LinkedDestruction>
-      <Max>3</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/darknut/darknut_supplycart_b</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>false</LinkedDestruction>
+        <Max>3</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/darknut/darknut_supplycart_b</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -42,16 +44,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    darknut/gather_warriormeal
-    darknut/gather_cliffstone
-    darknut/gather_cliffmetal
-    darknut/gather_molgerabag
-    darknut/gather_trainedhaulers
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -71,4 +63,16 @@
     <Actor>structures/darknut/darknut_horreumbaseA.xml</Actor>
     <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/gather_warriormeal
+    darknut/gather_cliffstone
+    darknut/gather_cliffmetal
+    darknut/gather_molgerabag
+    darknut/gather_trainedhaulers
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

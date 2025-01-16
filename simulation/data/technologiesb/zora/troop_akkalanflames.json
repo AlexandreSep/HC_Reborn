@@ -1,0 +1,28 @@
+{
+  "genericName": "Akkalan Flames",
+  "description": "Enhanced by secret techniques dating back to the time of the Ancient Hylians, this Blue Fire burns with a deeper icy power.",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 0,
+    "metal": 500
+  },
+  "requirements": {
+    "all": [
+      { "tech": "phase_town" },
+      { "civ": "zora" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with Town.",
+  "icon": "zora/troop_akkalanflames.dds",
+  "researchTime": 40,
+  "tooltip": "Enhanced by secret techniques dating back to the time of the Ancient Hylians, this Blue Fire burns with a deeper icy power. (+20% Base Damage, Also start dealing Splash Damage equal to 50% of base damage - Sapphire Warden)",
+  "modifications": [
+    {
+      "value": "Promotion/RequiredXp",
+      "replace": 0
+    }
+  ],
+  "affects": [ "SapWarden" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

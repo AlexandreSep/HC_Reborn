@@ -1,0 +1,16 @@
+{
+	"genericName": "Heart of the Beast",
+	"description": "The slaying of mighty beasts was said to appease the wild gods... best to kill them with a bolt to the heart.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 200},
+	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a third deity.",
+	"icon": "lizalfos/poisonspear_heartofbeast.dds",
+	"researchTime": 40,
+	"tooltip": "Poison Spear Launcher now does Truedamage",
+	"modifications": [
+		{"value": "Attack/Ranged/Damage/Truedamage", "add": 100},
+		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 0}
+	],
+	"affects": ["Poisonspear"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

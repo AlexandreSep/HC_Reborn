@@ -1,0 +1,21 @@
+{
+  "genericName": "Silver Craftsmanship",
+  "description": "Sells Silver Weapons and Armor at the market.",
+  "requirements": {
+    "all": [
+      { "tech": "lanayru/trade_silvercraft" },
+      { "civ": "lanayru" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with City.",
+  "icon": "lanayru/trade_silvercraft.dds",
+  "tooltip": "(Increases Trade Yields by 50%, Mercenary attack damage by +20%, Mercanary Non-magic armor by +2, and Mercenary magic armor by +1)",
+  "modifications": [
+    {
+      "value": "Trader/GainMultiplier",
+      "multiply": 1.5
+    }
+  ],
+  "affects": [ "Trader" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -5,7 +5,6 @@
       <Damage>
         <Fire>25.0</Fire>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>70.0</MaxRange>
       <MinRange>35.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -26,6 +25,7 @@
         <Range>10</Range>
         <Shape>Circular</Shape>
       </Splash>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Heal>

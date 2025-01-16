@@ -34,11 +34,11 @@ function initCivChoicesDialog()
 	
 	// Percentage size values for each button
 	let buttonWidth = 17;
-	let buttonHeight = 40;
-	let buttonSpacingVertical = 4;
-	let buttonSpacingHorizontal = 10;
+	let buttonHeight = 27;
+	let buttonSpacingVertical = 1;
+	let buttonSpacingHorizontal = 3;
 	let borderTop = 5;
-	let borderLeft = 5;
+	let borderLeft = 12;
 
 	// Must be done here to correctly initialise the battalion helth bars
 	Engine.GuiInterfaceCall("ApplyInitBattalions");

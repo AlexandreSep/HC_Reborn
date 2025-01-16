@@ -34,39 +34,6 @@
   <Obstruction>
     <Static depth="67.0" width="67.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>7</Z>
-      </step1>
-	  <step2>
-        <X>0</X>
-        <Z>10</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>31</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    units/sheikah/{civ}_titan_bongobongo
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>5</Z>
-    </SpawnOffset>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -105,4 +72,39 @@
     <Actor>structures/sheikah/sheikah_wonder.xml</Actor>
     <FoundationActor>structures/sheikah/sheikah_scaffoldA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/sheikah/{civ}_titan_bongobongo</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>7</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>10</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>31</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>5</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

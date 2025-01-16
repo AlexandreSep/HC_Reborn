@@ -1,0 +1,13 @@
+{
+	"genericName": "Coral Divers",
+	"description": "Coralmold harvesting rate increased by 100%.",
+	"cost": {"food": 250, "wood": 0, "stone": 100, "metal": 50},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "lanayru"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "lanayru/eco_coraldiver.dds",
+	"researchTime": 40,
+	"tooltip": "Coralmold harvesting rate increased by 100%)",
+	"modifications": [{"value": "ResourceGatherer/Rates/stone.coralmold", "multiply": 2.00}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

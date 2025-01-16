@@ -20,7 +20,7 @@
   <Capturable disable="" />
   <Cost>
     <BattalionSlots>2</BattalionSlots>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>100</food>
       <metal>0</metal>

@@ -7,8 +7,8 @@
 function loadCivFiles(selectableOnly)
 {
 	let propertyNames = [
-		"Code", "Culture", "Name", "Emblem", "History", "Music", "CivBonuses", "StartEntities",
-		"Formations", "AINames", "SkirmishReplacements", "SelectableInGameSetup"];
+		"Code", "Culture", "Music", "CivBonuses", "StartEntities",
+		"AINames", "SkirmishReplacements", "SelectableInGameSetup"];
 
 	let civData = {};
 
@@ -20,8 +20,15 @@ function loadCivFiles(selectableOnly)
 			if (data[prop] === undefined)
 				throw new Error(filename + " doesn't contain " + prop);
 
-		if (!selectableOnly || data.SelectableInGameSetup)
-			civData[data.Code] = data;
+		if (selectableOnly && !data.SelectableInGameSetup)
+			continue;
+
+		const template = Engine.GetTemplate("special/players/" + data.Code);
+		data.Name = template.Identity.GenericName;
+		data.Emblem = "session/portraits/" + template.Identity.Icon;
+		data.History = template.Identity.History;
+
+		civData[data.Code] = data;
 	}
 
 	return civData;
@@ -100,13 +107,14 @@ function MatchesClassList(classes, match)
  *
  * @param {Object} template - A valid template as returned from a template loader.
  * @param {string} value_path - Route to value within the xml template structure.
+ * @param {number} default_value - A value to use if one is not specified in the template.
  * @return {number}
  */
-function GetBaseTemplateDataValue(template, value_path)
+function GetBaseTemplateDataValue(template, value_path, default_value)
 {
 	let current_value = template;
 	for (let property of value_path.split("/"))
-		current_value = current_value[property] || 0;
+		current_value = current_value[property] || default_value;
 	return +current_value;
 }
 
@@ -119,11 +127,12 @@ function GetBaseTemplateDataValue(template, value_path)
  * @param {number} player - Optional player id.
  * @param {Object} modifiers - Value modifiers from auto-researched techs, unit upgrades,
  *                             etc. Optional as only used if no player id provided.
+ * @param {number} default_value - A value to use if one is not specified in the template.
  * @return {number} Modifier altered value.
  */
-function GetModifiedTemplateDataValue(template, value_path, mod_key, player, modifiers={})
+function GetModifiedTemplateDataValue(template, value_path, mod_key, player, modifiers={}, default_value)
 {
-	let current_value = GetBaseTemplateDataValue(template, value_path);
+	let current_value = GetBaseTemplateDataValue(template, value_path, default_value);
 	mod_key = mod_key || value_path;
 
 	if (player)
@@ -145,17 +154,19 @@ function GetModifiedTemplateDataValue(template, value_path, mod_key, player, mod
  * @param {number} player - An optional player id to get the technology modifications
  *                          of properties.
  * @param {Object} auraTemplates - In the form of { key: { "auraName": "", "auraDescription": "" } }.
+ * @param {Object} resources - An instance of the Resources class.
  * @param {Object} modifiers - Modifications from auto-researched techs, unit upgrades
  *                             etc. Optional as only used if there's no player
  *                             id provided.
  */
-function GetTemplateDataHelper(template, player, auraTemplates, modifiers = {})
+function GetTemplateDataHelper(template, player, auraTemplates, resources, modifiers = {})
 {
 	// Return data either from template (in tech tree) or sim state (ingame).
 	// @param {string} value_path - Route to the value within the template.
 	// @param {string} mod_key - Modification key, if not the same as the value_path.
-	let getEntityValue = function(value_path, mod_key) {
-		return GetModifiedTemplateDataValue(template, value_path, mod_key, player, modifiers);
+	// @param {number} default_value - A value to use if one is not specified in the template.
+	const getEntityValue = function(value_path, mod_key, default_value = 0) {
+		return GetModifiedTemplateDataValue(template, value_path, mod_key, player, modifiers, default_value);
 	};
 
 	let ret = {};
@@ -220,11 +231,11 @@ function GetTemplateDataHelper(template, player, auraTemplates, modifiers = {})
 				},
 				"minRange": getAttackStat("MinRange"),
 				"maxRange": getAttackStat("MaxRange"),
-				"elevationBonus": getAttackStat("ElevationBonus")
+				"yOrigin": getAttackStat("Origin/Y")
 			};
 
 			ret.attack[type].elevationAdaptedRange = Math.sqrt(ret.attack[type].maxRange *
-				(2 * ret.attack[type].elevationBonus + ret.attack[type].maxRange));
+				(2 * ret.attack[type].yOrigin + ret.attack[type].maxRange));
 
 			ret.attack[type].repeatTime = getAttackStat("RepeatTime");
 			if (template.Attack[type].Projectile)
@@ -243,6 +254,7 @@ function GetTemplateDataHelper(template, player, auraTemplates, modifiers = {})
 		}
 	}
 
+	//HC-Code
 	if (template.Battalion){
 		ret.battalion = {};
 		ret.battalion.size = template.Battalion.Size;
@@ -320,7 +332,7 @@ function GetTemplateDataHelper(template, player, auraTemplates, modifiers = {})
 		if (template.Cost.BuildTime)
 			ret.cost.time = getEntityValue("Cost/BuildTime");
 	}
-	
+
 	if (template.Footprint)
 	{
 		ret.footprint = { "height": template.Footprint.Height };
@@ -446,10 +458,12 @@ function GetTemplateDataHelper(template, player, auraTemplates, modifiers = {})
 
 	if (template.UnitMotion)
 	{
+		const walkSpeed = getEntityValue("UnitMotion/WalkSpeed");
 		ret.speed = {
-			"walk": getEntityValue("UnitMotion/WalkSpeed"),
+			"walk": walkSpeed,
+			"run": walkSpeed,
+			"acceleration": getEntityValue("UnitMotion/Acceleration")
 		};
-		ret.speed.run = getEntityValue("UnitMotion/WalkSpeed");
 		if (template.UnitMotion.RunMultiplier)
 			ret.speed.run *= getEntityValue("UnitMotion/RunMultiplier");
 	}
@@ -478,11 +492,11 @@ function GetTemplateDataHelper(template, player, auraTemplates, modifiers = {})
 		}
 	}
 
-	if (template.ProductionQueue)
+	if (template.Researcher)
 	{
 		ret.techCostMultiplier = {};
-		for (let res in template.ProductionQueue.TechCostMultiplier)
-			ret.techCostMultiplier[res] = getEntityValue("ProductionQueue/TechCostMultiplier/" + res);
+		for (const res of resources.GetCodes().concat(["time"]))
+			ret.techCostMultiplier[res] = getEntityValue("Researcher/TechCostMultiplier/" + res, null, 1);
 	}
 
 	if (template.Trader)
@@ -570,6 +584,7 @@ function GetTechnologyBasicDataHelper(template, civ)
  * Get information about a technology template.
  * @param {Object} template - A valid template as obtained by loading the tech JSON file.
  * @param {string} civ - Civilization for which the specific name and tech requirements should be returned.
+ * @param {Object} resources - An instance of the Resources class.
  */
 function GetTechnologyDataHelper(template, civ, resources)
 {

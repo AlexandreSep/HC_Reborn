@@ -76,14 +76,6 @@
   <Obstruction>
     <Static depth="81.0" width="85.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      gerudo/tourney_wounds
-	  gerudo/tourney_sparring
-	  gerudo/tourney_bets
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -103,4 +95,14 @@
     <Actor>structures/gerudo/gerudo_tourneyA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldD.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/tourney_wounds
+	  gerudo/tourney_sparring
+	  gerudo/tourney_bets
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

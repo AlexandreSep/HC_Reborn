@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+	<script directory="gui/common/"/>
+	<script directory="gui/loading/"/>
+
+	<object type="image" style="ModernWindow">
+
+		<object size="10% 4 90% 36">
+			<include file="gui/loading/ProgressBar.xml"/>
+		</object>
+
+		<object size="10% 36 90% 120">
+			<include file="gui/loading/TitleDisplay.xml"/>
+		</object>
+
+		<object size="0%+20 0%+220 100%-20 100%">
+			<include file="gui/loading/TipDisplay.xml"/>
+		</object>
+
+	</object>
+
+</objects>

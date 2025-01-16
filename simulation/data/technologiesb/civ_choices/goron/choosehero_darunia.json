@@ -1,0 +1,15 @@
+{
+	"genericName": "King Darunia, Sage of Fire",
+	"description": "King Darunia, Sage of Fire.",
+	"icon": "goron/choosehero_darunia.png",
+	"tooltip": "Select King Darunia, Sage of Fire, as your hero of choice.",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 10},
+					  {"value": "Resistance/Entity/Damage/Pierce", "add": 10},
+					  {"value": "Resistance/Entity/Damage/Crush", "add": 10}],
+	"affects": ["Infantry"],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Armor Focus", "tooltipText": "Darunia focuses on improving the armor of many Goron units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Darunia", "tooltipText": "Allows you to summon Darunia, a powerful Melee warrior carrying a hammer and fire attacks."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Berserker", "tooltipText": "Simple Melee unit that gains power as it deals damage, eventually igniting into flames."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Durable Armor", "tooltipText": "Infantry gain 10% non-magic armor."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Ruby Armor", "tooltipText": "Ruby Guards and Fire Warriors gain improved resistance to all damage types."}] 
+}

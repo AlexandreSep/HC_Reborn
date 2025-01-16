@@ -46,8 +46,31 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_stables.xml</constructed>
+      <select>interface/select/building/sel_stables.xml</select>
+      <upgraded>interface/complete/building/complete_stables.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/deku/deku_beetlebarnA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/orhat_beetletraining
+    deku/orhatgiant_platform
+    deku/orhat_superexo
+    deku/kado_mountengine
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/deku/{civ}_orhat_b
+		units/deku/{civ}_orhatgiant_b
+		units/deku/{civ}_orhatgiant_upgA		
+		units/deku/{civ}_orhatgiant_upgB</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -62,12 +85,6 @@
         <Z>30</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-		units/deku/{civ}_orhat_b
-		units/deku/{civ}_orhatgiant_b
-		units/deku/{civ}_orhatgiant_upgA		
-		units/deku/{civ}_orhatgiant_upgB
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -81,22 +98,5 @@
       <X>0</X>
       <Z>5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    deku/orhat_beetletraining
-    deku/orhatgiant_platform
-    deku/orhat_superexo
-    deku/kado_mountengine
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_stables.xml</constructed>
-      <select>interface/select/building/sel_stables.xml</select>
-      <upgraded>interface/complete/building/complete_stables.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/deku/deku_beetlebarnA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

@@ -5,7 +5,6 @@
       <Damage>
         <Crush>100</Crush>
       </Damage>
-      <Delay>3</Delay>
       <MaxRange>20</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Structure</PreferredClasses>
@@ -48,11 +47,12 @@
         </SpawnOnImpact>
         <Template>units/stalfos/stalfos_staltroop_b</Template>
       </SpawnEntityOnImpact>
+      <EffectDelay>3</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
     <BattalionSlots>0</BattalionSlots>
-    <BuildTime>120</BuildTime>
+    <BuildTime>80</BuildTime>
     <Resources>
       <food>1935</food>
       <metal>250</metal>

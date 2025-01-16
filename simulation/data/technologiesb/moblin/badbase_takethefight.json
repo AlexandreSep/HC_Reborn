@@ -1,0 +1,13 @@
+{
+	"genericName": "Take the Fight to em!",
+	"description": "Why we waiting here in the Big Bad Battle Base and not over there fighting the baddies?! Wait I got an idea, take the Big Bad Battle Base into the Baddy Base!",
+	"cost": {"food": 0, "wood": 400, "stone": 0, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/badbase_takethefight.dds",
+	"researchTime": 40,
+	"tooltip": "Why we waiting here in the Big Bad Battle Base and not over there fighting the baddies?! Wait I got an idea, take the Big Bad Battle Base into the Baddy Base! (Big Bad Battle Base can now unpack in enemy territory)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["BadBase"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

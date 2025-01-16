@@ -33,11 +33,6 @@
   <Plots>
     <IsPlot>true</IsPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/lizalfos/lizalfos_deity_farosh</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -55,4 +50,11 @@
   <VisualActor>
     <Actor>structures/goron/goron_plot_smallA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

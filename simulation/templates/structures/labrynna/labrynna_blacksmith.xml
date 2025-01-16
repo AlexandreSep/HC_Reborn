@@ -36,45 +36,6 @@
   <Obstruction>
     <Static depth="38.0" width="38.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>9</X>
-        <Z>-8</Z>
-      </step1>
-	  <step2>
-        <X>11</X>
-        <Z>-8</Z>
-      </step2>
-      <step3>
-        <X>30</X>
-        <Z>-7</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/labrynna/{civ}_handcannon_b
-      units/labrynna/{civ}_conqueror_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>-3</X>
-      <Z>-7</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    labrynna/handcannon_efficientmortar
-    labrynna/conqueror_reloadingdrills
-    labrynna/ambi_sharpshooting
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -98,4 +59,43 @@
     <Actor>structures/labrynna/labrynna_powderA.xml</Actor>
     <FoundationActor>structures/labrynna/labrynna_scaffoldD.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/handcannon_efficientmortar
+    labrynna/conqueror_reloadingdrills
+    labrynna/ambi_sharpshooting
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_handcannon_b
+      units/labrynna/{civ}_conqueror_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>9</X>
+        <Z>-8</Z>
+      </step1>
+      <step2>
+        <X>11</X>
+        <Z>-8</Z>
+      </step2>
+      <step3>
+        <X>30</X>
+        <Z>-7</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-3</X>
+      <Z>-7</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

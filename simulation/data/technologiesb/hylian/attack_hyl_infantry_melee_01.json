@@ -1,0 +1,35 @@
+{
+	"genericName": "Iron Refinement",
+	"description": "Hylians have developed numerous methods to refine iron and rid it of imperfections. Increases the attack of all melee units by 10%",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 250,
+    "metal": 250
+  },
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/attack_iron_refinment.dds",
+	"researchTime": 50,
+	"tooltip": "Hylians have developed numerous methods to refine iron and rid it of imperfections. Increases the attack of all melee infantry and cavalry. (+10% Melee Attack - Melee Infantry and Melee Cavalry)",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/Pierce",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/TrueDamage",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/Crush",
+      "multiply": 1.1
+    }
+  ],
+	"affects": ["Infantry Melee", "Cavalry Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -99,10 +99,8 @@ ResourceSupply.prototype.Schema =
 
 ResourceSupply.prototype.Init = function()
 {
-	// Current resource amount (non-negative)
-	//~ this.amount = this.GetMaxAmount();
 	this.amount = +(this.template.Initial || this.template.Max);
-	
+
 	// List of IDs for each player
 	// HC-Code: We use Map and Set instead of Arrays
 	this.gatherers = new Map(); // key: battalionID, value: Set of units in the battalion that are gathering
@@ -140,7 +138,8 @@ ResourceSupply.prototype.GetCurrentAmount = function()
 
 ResourceSupply.prototype.GetMaxGatherers = function()
 {
-    return ApplyValueModificationsToEntity("ResourceSupply/MaxGatherers", +this.template.MaxGatherers, this.entity);
+	// HC-Code - Allow modification via technology
+	return ApplyValueModificationsToEntity("ResourceSupply/MaxGatherers", +this.template.MaxGatherers, this.entity);
 };
 
 ResourceSupply.prototype.GetNumGatherers = function()
@@ -280,6 +279,9 @@ ResourceSupply.prototype.Change = function(change)
  */
 ResourceSupply.prototype.SetAmount = function(newValue)
 {
+	// We currently don't support changing to or from Infinity.
+	if (this.IsInfinite() || newValue === Infinity)
+		return;
 	this.Change(newValue - this.amount);
 };
 

@@ -11,7 +11,6 @@
       <Damage>
         <Crush>100</Crush>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>120</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
@@ -42,10 +41,11 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>255</food>
       <metal>0</metal>

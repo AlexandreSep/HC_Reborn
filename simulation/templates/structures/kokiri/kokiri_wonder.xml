@@ -23,35 +23,6 @@
   <Obstruction>
     <Static depth="53.0" width="53.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>25</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    units/kokiri/{civ}_titan_gdt
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>20</Z>
-    </SpawnOffset>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_wonder.xml</constructed>
@@ -67,4 +38,35 @@
     <Actor>structures/kokiri/kokiri_wonder.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldI.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/kokiri/{civ}_titan_gdt</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>20</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

@@ -2,23 +2,23 @@
   <Identity>
     <RequiredTechnology>lizalfos_doda</RequiredTechnology>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/lizalfos/{civ}_predator_b
-      units/lizalfos/{civ}_helmtracker_b
-    units/lizalfos/{civ}_butcher_b
-    units/lizalfos/{civ}_monitor_b
-    </Entities>
-    <Technologies datatype="tokens">
-    lizalfos/predator_superiorfooting
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_hunterclutchB.xml</Actor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lizalfos/predator_superiorfooting
     lizalfos/treehopper_treeleap
     lizalfos/helmtracker_helmmight
     lizalfos/monitor_wardance
     lizalfos/okakusha_patienthunter
-    </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_hunterclutchB.xml</Actor>
-  </VisualActor>
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/lizalfos/{civ}_predator_b
+      units/lizalfos/{civ}_helmtracker_b
+    units/lizalfos/{civ}_butcher_b
+    units/lizalfos/{civ}_monitor_b</Entities>
+  </Trainer>
 </Entity>

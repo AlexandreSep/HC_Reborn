@@ -43,12 +43,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    kokiri/get_woodcarvers
-    </Technologies>
-  </ProductionQueue>
   <Selectable>
     <EditorOnly />
     <Overlay>
@@ -74,4 +68,12 @@
     <Actor>structures/kokiri/kokiri_armorcraftA.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/get_woodcarvers
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

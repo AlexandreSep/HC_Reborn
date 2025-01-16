@@ -41,14 +41,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    deku/gather_capacity_buckethead
-    deku/gather_specialsnout
-    deku/decci_megaloads
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -73,4 +65,14 @@
     <Actor>structures/deku/deku_supplystoreA.xml</Actor>
     <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/gather_capacity_buckethead
+    deku/gather_specialsnout
+    deku/decci_megaloads
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

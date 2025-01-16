@@ -1,0 +1,14 @@
+{
+	"genericName": "Haste of the Fey",
+	"description": "Though typically lumbering, during the Summer heat the Fey can sometimes be active and hasty in all their movements.",
+	"cost": {"food": 0, "wood": 100, "stone": 250, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Village Phase.",
+	"icon": "fairy/fey_haste.dds",
+	"researchTime": 40,
+	"tooltip": "Though typically lumbering, during the Summer heat the Fey can sometimes be active and hasty in all their movements. (+25% Increased Movement Speed for Fey Striders)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.25},
+					  {"value": "UnitMotion/RunMultiplier", "multiply": 1.25}],
+	"affects": ["FeyStrider"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

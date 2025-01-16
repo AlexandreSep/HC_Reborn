@@ -34,15 +34,13 @@
   <Population>
     <Bonus>5</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      gaia/fauna_aracha
-    gaia/fauna_aruroda
-    gaia/fauna_arach
-    </Entities>
-  </ProductionQueue>
   <VisualActor>
     <Actor>structures/wild/cave_arachA.xml</Actor>
   </VisualActor>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">gaia/fauna_aracha
+    gaia/fauna_aruroda
+    gaia/fauna_arach</Entities>
+  </Trainer>
 </Entity>

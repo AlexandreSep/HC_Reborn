@@ -1,6 +1,6 @@
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>45</BuildTime>
@@ -31,13 +31,6 @@
   <Obstruction>
     <Static depth="12.0" width="12.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    ordona/gather_food_heartypumpkins
-    ordona/gather_food_lordshare
-    </Technologies>
-  </ProductionQueue>
   <ResourceDropsite>
     <Sharable>true</Sharable>
     <Types>food</Types>
@@ -57,4 +50,13 @@
     <Actor>structures/ordona/ordona_plantationA.xml</Actor>
     <FoundationActor>structures/ordona/ordona_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/gather_food_heartypumpkins
+    ordona/gather_food_lordshare
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

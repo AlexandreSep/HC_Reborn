@@ -5,14 +5,9 @@
   <Identity>
     <Classes datatype="tokens">MachineFarm DropsiteFood</Classes>
     <GenericName>Machine Farm</GenericName>
-    <History>Adding in machinery to the farming process has allowed farmers and Tokay slaves to speed up the process of creating food, as well as increasing the sheer volume of food produced. Unfortunate that it&#8217;s left a bit of a bad after taste in all the vegetables.</History>
+    <History>Adding in machinery to the farming process has allowed farmers and Tokay slaves to speed up the process of creating food, as well as increasing the sheer volume of food produced. Unfortunate that it’s left a bit of a bad after taste in all the vegetables.</History>
     <Icon>structures/labrynna/lab_farmC.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    labrynna/gather_autofarming
-    </Technologies>
-  </ProductionQueue>
   <ResourceDropsite>
     <Sharable>true</Sharable>
     <Types>food</Types>
@@ -30,4 +25,11 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_farmhouseB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/gather_autofarming
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

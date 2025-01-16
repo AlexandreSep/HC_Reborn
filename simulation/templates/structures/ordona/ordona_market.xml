@@ -19,12 +19,14 @@
     <Max>3000</Max>
     <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>gaia/lon_lon_cow_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -44,7 +46,25 @@
   <Obstruction>
     <Static depth="43.0" width="43.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_market.xml</constructed>
+      <select>interface/select/building/sel_market.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_swapmeetA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/trade_haggle_artists
+    ordona/trade_goat_caravan
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    gaia/lon_lon_cow_1</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -55,10 +75,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -72,19 +88,5 @@
       <X>0</X>
       <Z>20</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    ordona/trade_haggle_artists
-    ordona/trade_goat_caravan
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_market.xml</constructed>
-      <select>interface/select/building/sel_market.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/ordona/ordona_swapmeetA.xml</Actor>
-    <FoundationActor>structures/ordona/ordona_scaffoldE.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

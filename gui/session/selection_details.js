@@ -80,9 +80,10 @@ function displaySingle(entState)
 	// Rank
 	if (entState.identity && entState.identity.rank && entState.identity.classes)
 	{
+		const rankObj = GetTechnologyData(entState.identity.rankTechName, playerState.civ);
 		Engine.GetGUIObjectByName("rankIcon").tooltip = sprintf(translate("%(rank)s Rank"), {
 			"rank": translateWithContext("Rank", entState.identity.rank)
-		});
+		}) + (rankObj ? "\n" + rankObj.tooltip : "");
 		Engine.GetGUIObjectByName("rankIcon").sprite = "stretched:session/icons/ranks/" + entState.identity.rank + ".png";
 		Engine.GetGUIObjectByName("rankIcon").hidden = false;
 	}
@@ -194,14 +195,14 @@ function displaySingle(entState)
 	{
 		let experienceBar = Engine.GetGUIObjectByName("experienceBar");
 		let experienceSize = experienceBar.size;
-		experienceSize.rtop = 100 - (100 * Math.max(0, Math.min(1, 1.0 * +entState.promotion.curr / +entState.promotion.req)));
+		experienceSize.rtop = 100 - (100 * Math.max(0, Math.min(1, 1.0 * +entState.promotion.curr / (+entState.promotion.req || 1))));
 		experienceBar.size = experienceSize;
 
 		if (entState.promotion.curr < entState.promotion.req)
 			Engine.GetGUIObjectByName("experience").tooltip = sprintf(translate("%(experience)s %(current)s / %(required)s"), {
 				"experience": "[font=\"sans-bold-13\"]" + translate("Experience:") + "[/font]",
 				"current": Math.floor(entState.promotion.curr),
-				"required": entState.promotion.req
+				"required": Math.ceil(entState.promotion.req)
 			});
 		else
 			Engine.GetGUIObjectByName("experience").tooltip = sprintf(translate("%(experience)s %(current)s"), {
@@ -301,11 +302,20 @@ function displaySingle(entState)
 	Engine.GetGUIObjectByName("playerColorBackground").sprite =
 		"color:" + g_DiplomacyColors.getPlayerColor(entState.player, 128);
 
-	Engine.GetGUIObjectByName("primary").caption = primaryName;
-	Engine.GetGUIObjectByName("secondary").caption = !secondaryName || primaryName == secondaryName ? "" :
+	const hideSecondary = !secondaryName || primaryName == secondaryName;
+
+	const primaryObject = Engine.GetGUIObjectByName("primary");
+	primaryObject.caption = primaryName;
+	const primaryObjectSize = primaryObject.size;
+	primaryObjectSize.rbottom = hideSecondary ? 100 : 50;
+	primaryObject.size = primaryObjectSize;
+
+	const secondaryObject = Engine.GetGUIObjectByName("secondary");
+	secondaryObject.caption = hideSecondary ? "" :
 		sprintf(translate("(%(secondaryName)s)"), {
 			"secondaryName": secondaryName
 		});
+	secondaryObject.hidden = hideSecondary;
 
 	let isGaia = playerState.civ == "gaia";
 	Engine.GetGUIObjectByName("playerCivIcon").sprite = isGaia ? "" : "cropped:1.0, 0.15625 center:grayscale:" + civEmblem;

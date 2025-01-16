@@ -1,0 +1,12 @@
+{
+	"genericName": "Captured Aracha",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"researchTime": 1,	
+	"requirements": { "all": [{ "entity": { "class": "Cap_Aracha", "number": 1 } }] },	
+	"autoResearch": true,
+	"icon": "fairy/unlock_spring.dds",	
+	"tooltip": "You have captured an Aracha.",
+	"modifications": [],
+	"affects": []
+}

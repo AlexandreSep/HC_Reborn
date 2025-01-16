@@ -175,19 +175,35 @@ function EntitySelection()
 	// Public properties:
 	this.dirty = false; // set whenever the selection has changed
 	this.groups = new EntityGroups();
+
+	this.UpdateFormationSelectionBehaviour();
+	registerConfigChangeHandler(changes => {
+		if (changes.has("gui.session.selectformationasone"))
+			this.UpdateFormationSelectionBehaviour();
+	});
+}
+
+EntitySelection.prototype.UpdateFormationSelectionBehaviour = function()
+{
+	this.SelectFormationAsOne = Engine.ConfigDB_GetValue("user", "gui.session.selectformationasone") == "true";
 }
 
 /**
- * Deselect everything but entities of the chosen type if inverse is true otherwise deselect just the chosen entity
+ * Deselect everything but entities of the chosen type.
  */
-EntitySelection.prototype.makePrimarySelection = function(key, inverse)
+EntitySelection.prototype.makePrimarySelection = function(key)
 {
-	let ents = inverse ?
-		this.groups.getEntsByKeyInverse(key) :
-		this.groups.getEntsByKey(key);
-
+	const ents = this.groups.getEntsByKey(key);
 	this.reset();
-	this.addList(ents);
+	this.addList(ents, false, false, false);
+};
+
+/**
+ * Deselect entities of the chosen type.
+ */
+EntitySelection.prototype.removeGroupFromSelection = function(key)
+{
+	this.removeList(this.groups.getEntsByKey(key), false);
 };
 
 /**
@@ -195,11 +211,10 @@ EntitySelection.prototype.makePrimarySelection = function(key, inverse)
  */
 EntitySelection.prototype.getTemplateNames = function()
 {
-	var templateNames = [];
-
-	for (let ent in this.selected)
+	const templateNames = [];
+	for (const ent of this.selected)
 	{
-		let entState = GetEntityState(+ent);
+		const entState = GetEntityState(ent);
 		if (entState)
 			templateNames.push(entState.template);
 	}
@@ -267,7 +282,7 @@ EntitySelection.prototype.checkRenamedEntities = function()
 
 		// Reconstruct the selection if at least one entity has been renamed.
 		for (let renamedEntity of renamedEntities)
-			if (this.selected[renamedEntity.entity])
+			if (this.selected.has(renamedEntity.entity))
 			{
 				this.rebuildSelection(renamedLookup);
 				return;
@@ -279,21 +294,22 @@ EntitySelection.prototype.checkRenamedEntities = function()
  * Add entities to selection. Play selection sound unless quiet is true
  */
 // HC-code: Add argument addedViaUi. That argument is set to true, when the player does click on th UI to select a battalion instead of clocking on the battalion directly
-EntitySelection.prototype.addList = function(ents, quiet, force = false, addedViaUi = false)
+EntitySelection.prototype.addList = function(ents, quiet, force = false, addFormationMembers = true, addedViaUi = false)
 {
+	force = force || g_SimState.players[g_ViewedPlayer]?.controlsAll;
 	// If someone else's player is the sole selected unit, don't allow adding to the selection.
 	const firstEntState = this.selected.size == 1 && GetEntityState(this.getFirstSelected());
 	if (firstEntState && firstEntState.player != g_ViewedPlayer && !force)
 		return;
 
-	let added = [];
+	const added = [];
 
 	// HC-Code Makes the whole battalion selected if one ore more entities of it is selected
 	if (!addedViaUi){
 		ents = this.AddAllEntsOfSelectedBattalions(ents);
 	}
 
-	for (const ent of ents)
+	for (const ent of addFormationMembers ? this.addFormationMembers(ents) : ents)
 	{
 		if (this.selected.size >= g_MaxSelectionSize)
 			break;
@@ -331,11 +347,15 @@ EntitySelection.prototype.addList = function(ents, quiet, force = false, addedVi
 	this.onChange();
 };
 
-EntitySelection.prototype.removeList = function(ents)
+/**
+ * @param {number[]} ents - The entities to remove.
+ * @param {boolean} addFormationMembers - If true we need to add formation members.
+ */
+EntitySelection.prototype.removeList = function(ents, addFormationMembers = true)
 {
-	var removed = [];
+	const removed = [];
 
-	for (let ent of ents)
+	for (const ent of addFormationMembers ? this.addFormationMembers(ents) : ents)
 		if (this.selected.has(ent))
 		{
 			this.groups.removeEnt(ent);
@@ -419,9 +439,10 @@ EntitySelection.prototype.filter = function(condition)
 	return result;
 };
 
-EntitySelection.prototype.setHighlightList = function(ents)
+EntitySelection.prototype.setHighlightList = function(entities)
 {
 	const highlighted = new Set();
+	const ents = this.addFormationMembers(entities);
 	for (const ent of ents)
 		highlighted.add(ent);
 
@@ -472,6 +493,28 @@ EntitySelection.prototype.selectAndMoveTo = function(entityID)
 
 	Engine.CameraMoveTo(entState.position.x, entState.position.z);
 }
+
+/**
+ * Adds the formation members of a selected entities to the selection.
+ * @param {number[]} entities - The entity IDs of selected entities.
+ * @return {number[]} - Some more entity IDs if part of a formation was selected.
+ */
+EntitySelection.prototype.addFormationMembers = function(entities)
+{
+	if (!entities.length || !this.SelectFormationAsOne || Engine.HotkeyIsPressed("selection.singleselection"))
+		return entities;
+
+	const result = new Set(entities);
+	for (const entity of entities)
+	{
+		const entState = GetEntityState(+entity);
+		if (entState?.unitAI?.formation)
+			for (const member of GetEntityState(+entState.unitAI.formation).formation.members)
+				result.add(member);
+	}
+
+	return result;
+};
 
 /**
  * Cache some quantities which depends only on selection

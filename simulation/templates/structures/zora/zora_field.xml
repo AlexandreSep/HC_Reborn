@@ -31,9 +31,6 @@
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <ResourceSupply>
     <Max>Infinity</Max>
     <KillBeforeGather>false</KillBeforeGather>
@@ -50,4 +47,11 @@
     <Actor>structures/zora/zora_fisheryA.xml</Actor>
     <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

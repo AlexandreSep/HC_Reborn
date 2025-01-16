@@ -3,16 +3,6 @@
     <Classes datatype="tokens">Spring</Classes>
     <Icon>structures/fairy/fai_greatfountain_spring.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/fairy/{civ}_great_spring
-    units/fairy/{civ}_godmother_spring
-    units/fairy/{civ}_madmystic_spring
-      units/fairy/{civ}_bounded_spring
-    units/fairy/{civ}_mistwalker_spring
-    </Entities>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_greatfountain_summer</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -21,4 +11,16 @@
     <Actor>structures/fairy/fairy_greatfountainA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/fairy/{civ}_great_spring
+    units/fairy/{civ}_godmother_spring
+    units/fairy/{civ}_madmystic_spring
+      units/fairy/{civ}_bounded_spring
+    units/fairy/{civ}_mistwalker_spring</Entities>
+  </Trainer>
 </Entity>

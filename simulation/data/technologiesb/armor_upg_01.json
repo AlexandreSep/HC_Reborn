@@ -1,0 +1,25 @@
+{
+	"genericName": "Upgrade Armor",
+	"cost": {"metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "Improves Non-Magic armor of all units. (+5 Armor)",
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 5
+    }
+  ],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

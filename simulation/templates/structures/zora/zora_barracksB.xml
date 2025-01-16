@@ -35,8 +35,42 @@
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/magic/magic_lightningbolt.xml</attack_ranged>
+      <constructed>interface/complete/building/zora/complete_magechamber.xml</constructed>
+      <select>interface/select/building/zora/sel_magechamber.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/zora/zora_barracksB.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">zora/healer_battleprep
+    zora/healer_zodobon
+      zora/troop_rutalancrystal
+    zora/troop_akkalanflames
+    zora/troop_ulriawaves
+    zora/troop_overchargedcore
+      zora/troop_cephlasecret
+    zora/troop_coredivision
+    zora/laruto_fasting
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/zora/{civ}_healer_b
+      units/zora/{civ}_sparkmage_b
+      units/zora/{civ}_sapwarden_b
+      units/zora/{civ}_floodmaster_b
+      units/zora/{civ}_magecannon_b
+      units/zora/{civ}_kyamaster_b
+      units/zora/{civ}_morphite_b
+      units/zora/{civ}_nayrublessed_b
+      units/zora/{civ}_stormbolter_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -47,17 +81,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/zora/{civ}_healer_b
-      units/zora/{civ}_sparkmage_b
-      units/zora/{civ}_sapwarden_b
-      units/zora/{civ}_floodmaster_b
-      units/zora/{civ}_magecannon_b
-      units/zora/{civ}_kyamaster_b
-      units/zora/{civ}_morphite_b
-      units/zora/{civ}_nayrublessed_b
-      units/zora/{civ}_stormbolter_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -71,28 +94,5 @@
       <X>0</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    zora/healer_battleprep
-    zora/healer_zodobon
-      zora/troop_rutalancrystal
-    zora/troop_akkalanflames
-    zora/troop_ulriawaves
-    zora/troop_overchargedcore
-      zora/troop_cephlasecret
-    zora/troop_coredivision
-    zora/laruto_fasting
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
-      <attack_ranged>attack/magic/magic_lightningbolt.xml</attack_ranged>
-      <constructed>interface/complete/building/zora/complete_magechamber.xml</constructed>
-      <select>interface/select/building/zora/sel_magechamber.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/zora/zora_barracksB.xml</Actor>
-    <FoundationActor>structures/zora/zora_scaffoldA.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

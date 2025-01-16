@@ -1,0 +1,43 @@
+{
+	"genericName": "Glory to Hyrule",
+	"description": "Inspires Hylian knights with promises of power by the Royal Family.",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 500,
+    "metal": 500
+  },
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/glory_to_hyrule.dds",
+	"researchTime": 40,
+	"tooltip": "Inspires Hylian knights with promises of power by the Royal Family. (+10% Melee Attack, +15% Movement Speed, +10% Max HP - Melee Infantry)",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/Pierce",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/Crush",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/TrueDamage",
+      "multiply": 1.1
+    },
+    {
+      "value": "UnitMotion/WalkSpeed",
+      "multiply": 1.15
+    },
+    {
+      "value": "Health/Max",
+      "multiply": 1.1
+    }
+  ],
+  "affects": [ "HylianShield" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

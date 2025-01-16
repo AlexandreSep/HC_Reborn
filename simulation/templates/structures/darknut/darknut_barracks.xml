@@ -27,7 +27,7 @@
     <Civ>darknut</Civ>
     <Classes datatype="tokens">Village</Classes>
     <GenericName>Gymnasia</GenericName>
-    <History>Most Darknut cities maintained standing armies outside the Legion&#8217;s code of Honor. Often these were civilians or individuals who hoped to later be adopted into the Legion. The Gymnasia was a public location from which anyone could be trained to fight and defend.</History>
+    <History>Most Darknut cities maintained standing armies outside the Legion’s code of Honor. Often these were civilians or individuals who hoped to later be adopted into the Legion. The Gymnasia was a public location from which anyone could be trained to fight and defend.</History>
     <Icon>structures/darknut/dar_gymnasia.dds</Icon>
     <Tooltip>Trains basic Darknut units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
@@ -38,8 +38,23 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_gymnasiabaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/gymnasia_honorbound
+    darknut/gymnasia_enduringsun
+    darknut/yaraxonal_peoplepromotion
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/darknut/{civ}_gymnatai_b
+      units/darknut/{civ}_hoplite_b
+    units/darknut/{civ}_peltast_b
+    units/darknut/{civ}_aries_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -50,12 +65,6 @@
         <Z>40</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/darknut/{civ}_gymnatai_b
-      units/darknut/{civ}_hoplite_b
-    units/darknut/{civ}_peltast_b
-    units/darknut/{civ}_aries_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -69,14 +78,5 @@
       <X>0</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    darknut/gymnasia_honorbound
-    darknut/gymnasia_enduringsun
-    darknut/yaraxonal_peoplepromotion
-    </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_gymnasiabaseA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

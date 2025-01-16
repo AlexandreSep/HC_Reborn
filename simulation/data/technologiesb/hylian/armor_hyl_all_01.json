@@ -1,0 +1,26 @@
+{
+	"genericName": "Vigjaro Leather",
+	"description": "Quilted linen or leather body armor, using techniques from Poalo of Vigjaro.",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/armor_vigjaro_leather.dds",
+	"researchTime": 40,
+	"tooltip": "Quilted linen or leather body armor, using techniques from Poalo of Vigjaro. (+5 Armor - Infantry)",
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 5
+    },
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 5
+    }
+  ],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

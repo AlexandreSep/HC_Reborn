@@ -8,7 +8,7 @@
     <SpawnEntityOnDeath>rubble/debris_hylian_tiny</SpawnEntityOnDeath>
   </Health>
   <Cost>
-      <BattalionSlots>0</BattalionSlots>
+    <BattalionSlots>0</BattalionSlots>
   </Cost>
   <Identity>
     <Classes datatype="tokens">Plot</Classes>
@@ -22,9 +22,6 @@
   <Plots>
     <IsPlot>true</IsPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>1.0</BatchTimeModifier>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -71,4 +68,11 @@
   <VisualActor>
     <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>1.0</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

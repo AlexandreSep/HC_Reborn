@@ -1,7 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>25</BuildTime>
@@ -37,9 +37,6 @@
   <Obstruction>
     <Static depth="6.0" width="10.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-  </ProductionQueue>
   <TerritoryInfluence>
     <Radius>10</Radius>
     <Root>true</Root>
@@ -49,4 +46,11 @@
     <Actor>structures/hylian/hylian_marketstallA.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

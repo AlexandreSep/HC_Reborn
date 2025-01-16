@@ -1,0 +1,13 @@
+{
+	"genericName": "Faith in Farore",
+	"description": "Worship of the Goddess Farore was not prominent amongst the Kokiri, likely due to their relationship with the Great Deku Tree. Still some where quite devoted to the Goddess of Courage and could inspire other Kokiri to continue fighting when usually they would fall in battle.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": { "all": [{ "entity": { "class": "ForestShrine", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Forest Shrine Addon.",
+	"icon": "kokiri/temple_faithfarore.dds",
+	"researchTime": 40,
+	"tooltip": "Worship of the Goddess Farore was not prominent amongst the Kokiri, likely due to their relationship with the Great Deku Tree. Still some where quite devoted to the Goddess of Courage and could inspire other Kokiri to continue fighting when usually they would fall in battle. (Shrine of Courage now slowly heals adjacent units.)",
+	"modifications": [],
+	"affects": ["CourageShrine"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

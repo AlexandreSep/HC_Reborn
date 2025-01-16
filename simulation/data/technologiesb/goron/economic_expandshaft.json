@@ -1,0 +1,18 @@
+{
+	"genericName": "Expanded Shafts",
+	"description": "Expanding the Shafts of Rock Sirloin mines allows more workers to mine the tasty ore.",
+	"cost": {"food": 0, "wood": 300, "stone": 100, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "undefined"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "goron/economic_expandshaft.dds",
+	"researchTime": 40,
+	"tooltip": "Expanding the Shafts of Rock Sirloin mines allows more workers to mine the tasty ore. (+1 Worker - Rock Sirloin Mine)",
+  "modifications": [
+    {
+      "value": "ResourceSupply/MaxGatherers",
+      "add": 1.0
+    }
+  ],
+	"affects": ["SirloinMine"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

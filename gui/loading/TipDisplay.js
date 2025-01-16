@@ -51,7 +51,7 @@ class TipDisplay
 /**
  * Directory storing txt files containing the gameplay tips.
  */
-TipDisplay.prototype.TextPath = "gui/text_hyrule/tips/";
+TipDisplay.prototype.TextPath = "gui/text_hyrule/tips/"; // HC-code
 
 /**
  * Directory storing the PNG images with filenames corresponding to the tip text files.

@@ -1,0 +1,13 @@
+{
+	"genericName": "Revenge of the Gods",
+	"description": "The wild Gods demand blood, and if they are fed they will seek their revenge.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a third deity.",
+	"icon": "lizalfos/shaman_revengeofgods.dds",
+	"researchTime": 40,
+	"tooltip": "Peons or Aeralfos Peons within the Shaman's aura now generate more resources when praying at Altars",
+	"modifications": [],
+	"affects": ["Shaman"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

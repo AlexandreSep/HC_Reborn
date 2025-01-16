@@ -67,54 +67,6 @@
       </PlotC>
     </PlotsToSpawn>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>17</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>35</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    units/{civ}_trader_b
-    units/lanayru/merc_geru_b
-    units/lanayru/merc_tinsuit_b
-    units/lanayru/merc_wosu_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>8.5</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    lanayru/eco_wealthspotter
-    lanayru/eco_silverweight
-    lanayru/eco_coraldiver
-    culture_civilized/postman_network
-    lanayru/trade_chillfin
-    lanayru/trade_silvercraft
-    lanayru/mercs_happyhour
-    lanayru/armor_glittersilver
-    lanayru/attack_silvercoral
-    lanayru/building_silvercoat
-    </Technologies>
-  </ProductionQueue>
   <ResourceDropsite>
     <Sharable>true</Sharable>
     <Types>food wood stone metal</Types>
@@ -130,4 +82,52 @@
     <Actor>structures/lanayru/lanayru_ecohubA.xml</Actor>
     <FoundationActor>structures/lanayru/lanayru_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/eco_wealthspotter
+    lanayru/eco_silverweight
+    lanayru/eco_coraldiver
+    culture_civilized/postman_network
+    lanayru/trade_chillfin
+    lanayru/trade_silvercraft
+    lanayru/mercs_happyhour
+    lanayru/armor_glittersilver
+    lanayru/attack_silvercoral
+    lanayru/building_silvercoat
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    units/lanayru/merc_geru_b
+    units/lanayru/merc_tinsuit_b
+    units/lanayru/merc_wosu_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>17</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>35</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>8.5</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

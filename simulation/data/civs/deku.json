@@ -1,40 +1,78 @@
 {
 	"Code": "deku",
 	"Culture": "naturalistic",
-	"Name": "Deku Scrubs",
-	"Emblem": "session/portraits/emblems/emblem_deku.dds",
-	"History": "The Kingdom of the Deku Scrubs were a loose collection of feudal territories deep within the eastern reaches of the Kokiri Forest. Known for their irrational bursts of anger and their perpetual short-man's complex, large gatherings of these normally comical forest dwellers could result in terrifying destruction and chaos when unleashed on Hyrule.",
-	"Music":[
-			{"File":"deku_theme1.ogg", "Type":"peace"},
-			{"File":"deku_ambient1.ogg", "Type":"peace"},
-			{"File":"deku_ambient2.ogg", "Type":"peace"},
-			{"File":"deku_ambient3.ogg", "Type":"peace"},
-			{"File":"deku_ambient4.ogg", "Type":"peace"},
-			{"File":"deku_ambient5.ogg", "Type":"peace"},
-			{"File":"deku_ambient6.ogg", "Type":"peace"},
-			{"File":"deku_ambient7.ogg", "Type":"peace"},
-			{"File":"deku_ambient8.ogg", "Type":"peace"},
-			{"File":"deku_ambient9.ogg", "Type":"peace"},
-			{"File":"deku_ambient10.ogg", "Type":"peace"},
-			{"File":"deku_battle1.ogg", "Type":"battle"},
-			{"File":"deku_battle2.ogg", "Type":"battle"},
-			{"File":"deku_battle3.ogg", "Type":"battle"},
-			{"File":"deku_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "deku_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_ambient10.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "deku_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "deku_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "deku_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "deku_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Farms, Fruit, Wood, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "King Kud-Loh-Kan",
 					"Class": "",
@@ -66,8 +104,7 @@
 			]
 		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Mad Blight Disease",
 			"History": "",
@@ -76,7 +113,6 @@
 		{
 			"Name": "Menagerie Stocks",
 			"History": "",
-
 			"Description": "Captured Livestock reduces the Food cost of training Creature units."
 		},
 		{
@@ -85,26 +121,22 @@
 			"Description": "All non-mechanical Deku Scrub units can walk through Thick Forests."
 		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/deku/choosehero_decci",
 		"civ_choices/deku/choosehero_deppi",
 		"civ_choices/deku/choosehero_kado",
 		"civ_choices/deku/choosehero_butler",
 		"civ_choices/deku/choosehero_dekuprincess",
 		"civ_choices/deku/choosehero_dekuking"
-		
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "Partner Networks",
 			"History": "",
 			"Description": "25% land trade route bonus."
 		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Wooded Temple",
 			"Class": "",
@@ -124,8 +156,7 @@
 			"Special": ""
 		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/deku/deku_civil_centre"
 		},

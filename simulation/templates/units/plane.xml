@@ -6,7 +6,6 @@
         <Light>250.0</Light>
         <Pierce>150.0</Pierce>
       </Damage>
-      <Delay>3</Delay>
       <MaxRange>200</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Structure Human</PreferredClasses>
@@ -34,6 +33,7 @@
         <Horizontal>15</Horizontal>
         <Vertical>15</Vertical>
       </Knockback>
+      <EffectDelay>3</EffectDelay>
     </Ranged>
   </Attack>
   <BuildingAI>

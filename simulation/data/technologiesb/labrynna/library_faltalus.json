@@ -1,0 +1,15 @@
+{
+	"genericName": "Fal Talus Records",
+	"description": "Old tome of Arcadian training guides thought lost to time. These books, while quite outdated, still have valuable information on how to train warriors faster than even modern Labrynna classes can.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "labrynna/library_faltalus.dds",
+	"researchTime": 40,
+	"tooltip": "Old tome of Arcadian training guides thought lost to time. These books, while quite outdated, still have valuable information on how to train warriors faster than even modern Labrynna classes can. (Reduces the training time of all Melee units by 15%)",
+	"modifications": [
+		{"value": "Cost/BuildTime", "multiply": 0.85}
+	],
+  "affects": [ "Melee" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -3,7 +3,7 @@
 	"Data": {
 		"Action": "addresource",
 		"Type": "food",
-		"DefaultParameter": 1000,
+		"DefaultParameter": 10000,
 		"isNumeric": true
 	}
 }

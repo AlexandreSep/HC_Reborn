@@ -88,10 +88,14 @@ Attack.prototype.Schema =
 			"</Damage>" +
 			"<MaxRange>44.0</MaxRange>" +
 			"<MinRange>20.0</MinRange>" +
-			"<ElevationBonus>15.0</ElevationBonus>" +
+			"<Origin>" +
+				"<X>0</X>" +
+				"<Y>10.0</Y>" +
+				"<Z>0</Z>" +
+			"</Origin>" +
 			"<PrepareTime>800</PrepareTime>" +
 			"<RepeatTime>1600</RepeatTime>" +
-			"<Delay>1000</Delay>" +
+			"<EffectDelay>1000</EffectDelay>" +
 			"<Bonuses>" +
 				"<Bonus1>" +
 					"<Classes>Cavalry</Classes>" +
@@ -141,6 +145,7 @@ Attack.prototype.Schema =
 					"<text/>" +
 				"</element>" +
 				AttackHelper.BuildAttackEffectsSchema() +
+		// HC-Code
                 "<optional>" +
 		            "<element name='SpawnEntityOnImpact'>" +
                         "<interleave>" +
@@ -168,12 +173,25 @@ Attack.prototype.Schema =
                         "</interleave>" +
 		            "</element>" +
 	            "</optional>" +
+		// HC-End
 				"<element name='MaxRange' a:help='Maximum attack range (in metres)'><ref name='nonNegativeDecimal'/></element>" +
 				"<optional>" +
 					"<element name='MinRange' a:help='Minimum attack range (in metres). Defaults to 0.'><ref name='nonNegativeDecimal'/></element>" +
 				"</optional>" +
 				"<optional>"+
-					"<element name='ElevationBonus' a:help='The offset height from which the attack occurs, relative to the entity position. Defaults to 0.'><ref name='nonNegativeDecimal'/></element>" +
+					"<element name='Origin' a:help='The offset from which the attack occurs, relative to the entity position. Defaults to {0,0,0}.'>" +
+						"<interleave>" +
+							"<element name='X'>" +
+								"<ref name='nonNegativeDecimal'/>" +
+							"</element>" +
+							"<element name='Y'>" +
+								"<ref name='nonNegativeDecimal'/>" +
+							"</element>" +
+							"<element name='Z'>" +
+								"<ref name='nonNegativeDecimal'/>" +
+							"</element>" +
+						"</interleave>" +
+					"</element>" +
 				"</optional>" +
 				"<optional>" +
 					"<element name='RangeOverlay'>" +
@@ -193,7 +211,7 @@ Attack.prototype.Schema =
 					"<data type='positiveInteger'/>" +
 				"</element>" +
 				"<optional>" +
-					"<element name='Delay' a:help='Delay of applying the effects in milliseconds after the attack has landed. Defaults to 0.'><ref name='nonNegativeDecimal'/></element>" +
+					"<element name='EffectDelay' a:help='Delay of applying the effects, in milliseconds after the attack has landed. Defaults to 0.'><ref name='nonNegativeDecimal'/></element>" +
 				"</optional>" +
 				"<optional>" +
 					"<element name='Splash'>" +
@@ -296,7 +314,7 @@ Attack.prototype.CanAttack = function(target, wantedTypes)
 
 	const cmpResistance = QueryMiragedInterface(target, IID_Resistance);
 	if (!cmpResistance)
-        return false;
+		return false;
 
     //HC-code invulnerable units can not be attacked
     if (cmpResistance.IsInvulnerable() == true)
@@ -309,7 +327,7 @@ Attack.prototype.CanAttack = function(target, wantedTypes)
 
     //HC-code, Un-Controllable units exiting from buildings cannot be attacked
 	const cmpIdentity = QueryMiragedInterface(target, IID_Identity);
-    if (!cmpIdentity || cmpIdentity.IsControllable() == false)
+	if (!cmpIdentity)
 		return false;
 
 	const cmpHealth = QueryMiragedInterface(target, IID_Health);
@@ -489,16 +507,16 @@ Attack.prototype.GetTimers = function(type)
 
 Attack.prototype.GetSplashData = function(type)
 {
-    if (!this.template[type].Splash)
+	if (!this.template[type].Splash)
 		return undefined;
 
 	return {
 		"attackData": this.GetAttackEffectsData(type, true),
 		"friendlyFire": this.template[type].Splash.FriendlyFire == "true",
 		"radius": ApplyValueModificationsToEntity("Attack/" + type + "/Splash/Range", +this.template[type].Splash.Range, this.entity),
-        "shape": this.template[type].Splash.Shape,
-        "Knockback": this.GetKnockback(type, true),
-        "Stun": this.GetStun(type, true)
+		"shape": this.template[type].Splash.Shape,
+		"Knockback": this.GetKnockback(type, true), // HC-Code
+		"Stun": this.GetStun(type, true) // HC-Code
 	};
 };
 
@@ -513,10 +531,14 @@ Attack.prototype.GetRange = function(type)
 	let min = +(this.template[type].MinRange || 0);
 	min = ApplyValueModificationsToEntity("Attack/" + type + "/MinRange", min, this.entity);
 
-	let elevationBonus = +(this.template[type].ElevationBonus || 0);
-	elevationBonus = ApplyValueModificationsToEntity("Attack/" + type + "/ElevationBonus", elevationBonus, this.entity);
+	return { "max": max, "min": min };
+};
 
-	return { "max": max, "min": min, "elevationBonus": elevationBonus };
+Attack.prototype.GetAttackYOrigin = function(type)
+{
+	if (!this.template[type].Origin)
+		return 0;
+	return ApplyValueModificationsToEntity("Attack/" + type + "/Origin/Y", +this.template[type].Origin.Y, this.entity);
 };
 
 /**
@@ -534,7 +556,7 @@ Attack.prototype.StartAttacking = function(target, type, callerIID)
 	if (!this.CanAttack(target, [type]))
 		return false;
 
-	let cmpResistance = Engine.QueryInterface(target, IID_Resistance);
+	const cmpResistance = QueryMiragedInterface(target, IID_Resistance);
 	if (!cmpResistance || !cmpResistance.AddAttacker(this.entity))
 		return false;
 
@@ -579,19 +601,20 @@ Attack.prototype.StopAttacking = function(reason)
 	cmpTimer.CancelTimer(this.timer);
 	delete this.timer;
 
-	let cmpResistance = Engine.QueryInterface(this.target, IID_Resistance);
+	const cmpResistance = QueryMiragedInterface(this.target, IID_Resistance);
 	if (cmpResistance)
 		cmpResistance.RemoveAttacker(this.entity);
 
 	delete this.target;
 
     //HC-code, stunned or airborne units should not be receiving animation updates
-    cmpResistance = Engine.QueryInterface(this.entity, IID_Resistance);
-    if (cmpResistance && cmpResistance.isStunned == false)
+    const cmpResistanceThis = Engine.QueryInterface(this.entity, IID_Resistance);
+    if (cmpResistanceThis && cmpResistanceThis.isStunned == false)
     {
         let cmpVisual = Engine.QueryInterface(this.entity, IID_Visual);
-        if (cmpVisual)
+        if (cmpVisual){
             cmpVisual.SelectAnimation("idle", false, 1.0);
+		}
     }
     //HC-end
 
@@ -694,14 +717,14 @@ Attack.prototype.PerformAttack = function(type, target)
         "Stun": this.GetStun(type, isSplash)
 		//HC-End
 	};
-	
+
 	//HC-Code
 	let EntityOnImpact = this.GetEntityOnImpact(type);
 	if (EntityOnImpact != false)
 		data.EntityOnImpact = EntityOnImpact;
 	//HC-End
 	
-	let delay = +(this.template[type].Delay || 0);
+	let delay = +(this.template[type].EffectDelay || 0);
 
 	if (this.template[type].Projectile)
 	{
@@ -816,28 +839,14 @@ Attack.prototype.PerformAttack = function(type, target)
  */
 Attack.prototype.IsTargetInRange = function(target, type)
 {
-	let range = this.GetRange(type);
-	if (type == "Ranged")
-	{
-		let cmpPositionTarget = Engine.QueryInterface(target, IID_Position);
-		if (!cmpPositionTarget || !cmpPositionTarget.IsInWorld())
-			return false;
-
-		let cmpPositionSelf = Engine.QueryInterface(this.entity, IID_Position);
-		if (!cmpPositionSelf || !cmpPositionSelf.IsInWorld())
-			return false;
-
-		let positionSelf = cmpPositionSelf.GetPosition();
-		let positionTarget = cmpPositionTarget.GetPosition();
-
-		let heightDifference = positionSelf.y + range.elevationBonus - positionTarget.y;
-		range.max = Math.sqrt(Math.square(range.max) + 2 * range.max * heightDifference);
-
-		if (range.max < 0)
-			return false;
-	}
-	let cmpObstructionManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ObstructionManager);
-	return cmpObstructionManager.IsInTargetRange(this.entity, target, range.min, range.max, false);
+	const range = this.GetRange(type);
+	return Engine.QueryInterface(SYSTEM_ENTITY, IID_ObstructionManager).IsInTargetParabolicRange(
+		this.entity,
+		target,
+		range.min,
+		range.max,
+		this.GetAttackYOrigin(type),
+		false);
 };
 
 Attack.prototype.OnValueModification = function(msg)

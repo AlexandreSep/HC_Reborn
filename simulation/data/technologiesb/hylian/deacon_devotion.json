@@ -1,0 +1,13 @@
+{
+	"genericName": "Religious Devotion",
+	"description": "Deacons call upon the Kingdom's commonfolk and soldiers to work harder for the glory of the faith.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/deacon_devotion.dds",
+	"researchTime": 40,
+	"tooltip": "Deacons call upon the Kingdom's commonfolk and soldiers to work harder for the glory of the faith. (Activates 'Religious Devotion' Aura)",
+	"modifications": [],
+	"affects": ["Priest"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

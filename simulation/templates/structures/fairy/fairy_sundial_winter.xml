@@ -7,14 +7,6 @@
     <GenericName>Winter Sundial</GenericName>
     <Icon>structures/fairy/fai_sundial_winter.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    fairy/unlock_spring
-    fairy/essence_07_seedoflife
-    fairy/essence_08_changingseasons
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -31,4 +23,14 @@
     <Actor>structures/fairy/fairy_sundialA_winter.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/unlock_spring
+    fairy/essence_07_seedoflife
+    fairy/essence_08_changingseasons
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

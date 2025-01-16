@@ -5,7 +5,6 @@
       <Damage>
         <Crush>50</Crush>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -34,11 +33,12 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
     <BattalionSlots>3</BattalionSlots>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>130</food>
       <metal>0</metal>

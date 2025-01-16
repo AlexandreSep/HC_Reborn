@@ -28,7 +28,6 @@
     <Height>7.0</Height>
   </Footprint>
   <Health>
-    <DeathType>remain</DeathType>
     <Max>360</Max>
   </Health>
   <Identity>
@@ -53,7 +52,7 @@
   </Resistance>
   <ResourceSupply>
     <Max>300</Max>
-	<MaxGatherers>1</MaxGatherers>
+	<MaxGatherers>10</MaxGatherers>
     <KillBeforeGather>true</KillBeforeGather>
     <Type>food.meat</Type>
   </ResourceSupply>

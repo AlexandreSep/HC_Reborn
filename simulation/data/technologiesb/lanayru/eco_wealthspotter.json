@@ -1,0 +1,12 @@
+{
+	"genericName": "Wealth Spotters",
+	"description": "Increases the mining rate of all forms of Currency by 50%",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "lanayru"}]},
+	"icon": "lanayru/eco_wealthspotter.dds",
+	"researchTime": 40,
+	"tooltip": "(Increases the mining rate of all forms of Currency by 50%)",
+	"modifications": [{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.50}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

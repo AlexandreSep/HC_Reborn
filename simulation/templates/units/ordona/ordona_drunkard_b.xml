@@ -6,7 +6,6 @@
         <Fire>3.0</Fire>
         <Water>3.0</Water>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>50</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Structure Infantry</PreferredClasses>
@@ -29,13 +28,14 @@
         <Range>7</Range>
         <Shape>Circular</Shape>
       </Splash>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Auras datatype="tokens">
     units/ordona_drunkard_masterbrew
   </Auras>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>65</food>
       <metal>0</metal>

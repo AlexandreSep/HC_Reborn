@@ -23,10 +23,10 @@
     <Civ>moblin</Civ>
     <Classes datatype="tokens" />
     <GenericName>Smart Science Makers</GenericName>
-    <History>We not afraid to say that Moblins not the smartest... but sometimes we are! The smart ones know how to read, and they read from the Olden Timey books and make super awersome weapons and armor for all the Blins! They the best!&#8221;</History>
+    <History>We not afraid to say that Moblins not the smartest... but sometimes we are! The smart ones know how to read, and they read from the Olden Timey books and make super awersome weapons and armor for all the Blins! They the best!”</History>
     <Icon>structures/moblin/mob_smartscience.dds</Icon>
     <RequiredTechnology>phase_village</RequiredTechnology>
-    <Tooltip>Smart Moblins make new upgrades for all our stuff!&#8221;</Tooltip>
+    <Tooltip>Smart Moblins make new upgrades for all our stuff!”</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
   </Identity>
   <Loot>
@@ -36,15 +36,6 @@
   <Obstruction>
     <Static depth="26.0" width="26.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    moblin/building_ugpugfaster
-    moblin/building_extraholdy
-    moblin/building_saddleupwag
-    moblin/unit_trynottrip
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_research.xml</constructed>
@@ -73,4 +64,15 @@
     <Actor>structures/moblin/moblin_smartscienceA.xml</Actor>
     <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/building_ugpugfaster
+    moblin/building_extraholdy
+    moblin/building_saddleupwag
+    moblin/unit_trynottrip
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -11,7 +11,6 @@
       <Damage>
         <Spirit>30.0</Spirit>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>70.0</MaxRange>
       <MinRange>35.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -40,10 +39,11 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>460</food>
       <metal>100</metal>

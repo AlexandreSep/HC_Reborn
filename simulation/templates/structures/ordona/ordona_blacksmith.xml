@@ -36,16 +36,6 @@
   <Obstruction>
     <Static depth="25.0" width="25.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      ordona/smithy_cottoncuirass
-      ordona/smithy_ramscrown
-      ordona/smithy_apprenticeship
-      ordona/smithy_isonarrow
-      ordona/rusl_academycraft
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -65,4 +55,16 @@
     <Actor>structures/ordona/ordona_smithyA.xml</Actor>
     <FoundationActor>structures/ordona/ordona_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/smithy_cottoncuirass
+      ordona/smithy_ramscrown
+      ordona/smithy_apprenticeship
+      ordona/smithy_isonarrow
+      ordona/rusl_academycraft
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

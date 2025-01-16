@@ -1,0 +1,15 @@
+{
+	"genericName": "Rapid Drawstrings",
+	"description": "",
+	"cost": {"metal": 300},
+	"requirements": {"all": [{"tech": "civ_choices/gerudo/choosehero_riju"}, {"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Unlocked with Riju and the Town Phase.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+15% Ranged Attack Rate - All Archer Units)",
+	"modifications": [{"value": "Attack/Ranged/PrepareTime", "multiply": 0.85},
+					  {"value": "Attack/Ranged/RepeatTime", "multiply": 0.85}],
+	"affects": ["Infantry Missile", "Cavalry Missile"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>12.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>150.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -21,6 +20,7 @@
         <LineThickness>0.175</LineThickness>
       </RangeOverlay>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <BuildingAI>
@@ -120,43 +120,6 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>20</X>
-        <Z>20</Z>
-      </step1>
-      <step2>
-        <X>45</X>
-        <Z>45</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/darknut/{civ}_thrallA
-      units/darknut/{civ}_molgera_b
-      units/darknut/{civ}_patra_b
-	  units/darknut/{civ}_hero_zalunbar
-	  units/darknut/{civ}_hero_yaraxonal
-	  units/darknut/{civ}_hero_senturon
-	  units/darknut/{civ}_hero_alros
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>15</X>
-      <Z>15</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-		darknut/agora_legionreserves
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -183,4 +146,41 @@
     <Actor>structures/darknut/darknut_ruin_centerA.xml</Actor>
     <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/agora_legionreserves
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/darknut/{civ}_thrallA
+      units/darknut/{civ}_molgera_b
+      units/darknut/{civ}_patra_b
+	  units/darknut/{civ}_hero_zalunbar
+	  units/darknut/{civ}_hero_yaraxonal
+	  units/darknut/{civ}_hero_senturon
+	  units/darknut/{civ}_hero_alros</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>20</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>45</X>
+        <Z>45</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>15</X>
+      <Z>15</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

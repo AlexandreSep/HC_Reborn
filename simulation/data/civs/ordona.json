@@ -1,39 +1,74 @@
 {
 	"Code": "ordona",
 	"Culture": "naturalistic",
-	"Name": "Ordona Province",
-	"Emblem": "session/portraits/emblems/emblem_ordona.dds",
-	"History": "Established as a vassal state of the Kingdom of Hyrule, Ordona Province grew to become the most powerful agrarian nation in all of history. What they lacked in military might they made up for with a powerful economy fued by crops, livestock, and some of the finest brew this side of Lake Hylia. Motivated by hard work and having a good time, the people of Ordona Province were nonetheless some of the toughest folks around.",
-	"Music":[
-			{"File":"ordona_theme1.ogg", "Type":"peace"},
-			{"File":"ordona_ambient1.ogg", "Type":"peace"},
-			{"File":"ordona_ambient2.ogg", "Type":"peace"},
-			{"File":"ordona_ambient3.ogg", "Type":"peace"},
-			{"File":"ordona_ambient4.ogg", "Type":"peace"},
-			{"File":"ordona_ambient5.ogg", "Type":"peace"},
-			{"File":"ordona_ambient6.ogg", "Type":"peace"},
-			{"File":"ordona_ambient7.ogg", "Type":"peace"},
-			{"File":"ordona_ambient8.ogg", "Type":"peace"},
-			{"File":"ordona_ambient9.ogg", "Type":"peace"},
-			{"File":"ordona_ambient10.ogg", "Type":"peace"},
-			{"File":"ordona_battle1.ogg", "Type":"battle"},
-			{"File":"ordona_battle2.ogg", "Type":"battle"},
-			{"File":"ordona_battle3.ogg", "Type":"battle"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "ordona_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_ambient10.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ordona_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "ordona_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "ordona_battle3.ogg",
+			"Type": "battle"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Food: Farms, Fruit, Meat, Fish, Material: Wood, Stone, Ore: Metal, Currency: Rupees, Gold, Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Mayor Bo",
 					"Class": "",
@@ -65,8 +100,7 @@
 			]
 		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Battle Hardened Peasantry",
 			"History": "",
@@ -83,8 +117,7 @@
 			"Description": "Plantations and Fields extend territory as a Civic Center or Religious building do."
 		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/ordona/choosehero_beth",
 		"civ_choices/ordona/choosehero_colin",
 		"civ_choices/ordona/choosehero_ilia",
@@ -92,16 +125,14 @@
 		"civ_choices/ordona/choosehero_rusl",
 		"civ_choices/ordona/choosehero_mayorbo"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": " Breadbasket of Hyrule",
 			"History": "",
 			"Description": "Allies gain a slow trickle of Food Resources."
 		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Ordon Spring",
 			"Class": "",
@@ -121,8 +152,7 @@
 			"Special": "An ancient and perhaps primordial Spirit, Latoan was worshiped as a deity by the ancient pagan tribes of Ordona Province before the Hylians converted their people to worship of the Goddesses. Latoan's iconography and influence never left the Ordonians however, and even to this day he serves as somewhat of patron saint or deity of Ordona Province. Legend says that Latoan fell into a deep sleep beneath the Ordon Spring as he and his kind were no longer needed to spiritually guide the Ordonian people. When he was active in the world, legend said that Latoan would grow vast crops in the blink of an eye, bring a healing rain forth from the sky, and summon a flock of ghostly goats to protect the borders of his land from enemies."
 		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/ordona/ordona_civil_centre"
 		},

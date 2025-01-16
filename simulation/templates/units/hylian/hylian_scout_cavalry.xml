@@ -13,7 +13,7 @@
   </Attack>
   <Cost>
     <BattalionSlots>3</BattalionSlots>
-    <BuildTime>40</BuildTime>
+    <BuildTime>25</BuildTime>
     <Resources>
       <food>150</food>
       <metal>0</metal>

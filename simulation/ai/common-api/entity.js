@@ -2,82 +2,101 @@ var API3 = function(m)
 {
 
 // defines a template.
-m.Template = m.Class({
+    m.Template = m.Class({
 
-	"_init": function(sharedAI, templateName, template)
-	{
-		this._templateName = templateName;
-		this._template = template;
-		// save a reference to the template tech modifications
-		if (!sharedAI._templatesModifications[this._templateName])
-			sharedAI._templatesModifications[this._templateName] = {};
-		this._templateModif = sharedAI._templatesModifications[this._templateName];
+    "_init": function (sharedAI, templateName, template) {
+        this._templateName = templateName;
+        this._template = template;
+        // save a reference to the template tech modifications
+        if (!sharedAI._templatesModifications[this._templateName])
+            sharedAI._templatesModifications[this._templateName] = {};
+        this._templateModif = sharedAI._templatesModifications[this._templateName];
         this._tpCache = new Map();
         this.setRemove = {}; // HC-code, used to collect data for this entity should it be deleted by itself and other players, either due to ownership change or death.
-	},
+    },
 
-	// Helper function to return a template value, adjusting for tech.
-	"get": function(string)
-	{
-		if (this._entityModif && this._entityModif.has(string))
-			return this._entityModif.get(string);
-		else if (this._templateModif)
-		{
-			let owner = this._entity ? this._entity.owner : PlayerID;
-			if (this._templateModif[owner] && this._templateModif[owner].has(string))
-				return this._templateModif[owner].get(string);
-		}
+    // Helper function to return a template value, adjusting for tech.
+    "get": function (string) {
+        if (this._entityModif && this._entityModif.has(string))
+            return this._entityModif.get(string);
+        else if (this._templateModif) {
+            let owner = this._entity ? this._entity.owner : PlayerID;
+            if (this._templateModif[owner] && this._templateModif[owner].has(string))
+                return this._templateModif[owner].get(string);
+        }
 
-		if (!this._tpCache.has(string))
-		{
-			let value = this._template;
-			let args = string.split("/");
-			for (let arg of args)
-			{
-				value = value[arg];
-				if (value == undefined)
-					break;
-			}
-			this._tpCache.set(string, value);
-		}
-		return this._tpCache.get(string);
-	},
+        if (!this._tpCache.has(string)) {
+            let value = this._template;
+            let args = string.split("/");
+            for (let arg of args) {
+                value = value[arg];
+                if (value == undefined)
+                    break;
+            }
+            this._tpCache.set(string, value);
+        }
+        return this._tpCache.get(string);
+    },
 
     //HC-code data related to HC AI specific elements
     "specificName": function () {
         return this.get("Identity/SpecificName");
     },
 
-    "getUpgradeBuilding": function () {
-        let tower = this.get("Upgrade/Tower/Entity");
-        if (tower)
-            return tower;
+    "getUpgradeDataArray": function () {
+        let upgradeData = [];
+        let data = this.get("Upgrade");
+        for (let element in data)
+            upgradeData.push(data[element]);
 
-        let towerA = this.get("Upgrade/TowerA/Entity");
-        if (towerA)
-            return towerA;
-
-        return false;
+        return upgradeData;
     },
 
-    "getUpgradeBuildings": function () {
-        let alphabet = ["", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
-        let allUpgrades = [];
-        for (let letter of alphabet) {
-            let path = this.get("Upgrade/Tower" + letter + "/Entity");
-            if (path)
-                allUpgrades.push(path);
-            else if (letter === "")
-                continue;
-            else
-                break;
-        }
-        return allUpgrades;
+    "hasUpgrade": function () {
+        return this.get("Upgrade") == undefined ? false : true;
     },
 
     "BattalionSize": function () {
         return this.get("Battalion/Size");
     },
+
+    "AIBuildData": function () {
+        let aiBuildData = [];
+        let data = this.get("Identity/AIBuild");
+        for (let element in data)
+            aiBuildData.push(data[element]);
+
+        if (aiBuildData.length > 0)
+            return aiBuildData;
+        else
+            return undefined;
+    },
+
+    "hasResourceDrain": function ()
+    {
+        let resourceDrainData = this.get("ResourceDrain");
+		if(resourceDrainData == undefined) return false;
+
+		for(let element in resourceDrainData["ResourcesPerTick"]){
+			if(resourceDrainData["ResourcesPerTick"][element] > 0) return true;
+		}
+		return false;
+    },
+
+	"hasSiegeDamage": function ()
+    {
+		if (this.get("Attack") == undefined) return false;
+
+		for(let type of ["Melee", "Ranged"]) {
+			if(this.get("Attack/" + type + "/Damage/Siege") != undefined ||
+			   this.get("Attack/" + type + "Splash/Damage/Siege") != undefined) { 
+				return true;
+			}
+		}	
+
+		return false;
+    },
+	
 
     "AIMinPop": function () {
         return this.get("Identity/AIBuild/MinPop");
@@ -93,7 +112,7 @@ m.Template = m.Class({
 
     "AIMaxCopiesPerBase": function () {
         return this.get("Identity/AIBuild/MaxCopiesPerBase");
-    },
+    },	
     //HC-end
 
 	"templateName": function() { return this._templateName; },
@@ -152,7 +171,7 @@ m.Template = m.Class({
 		return 0;
 	},
 
-	"cost": function(productionQueue) {
+	"cost": function() {
 		if (!this.get("Cost"))
 			return {};
 
@@ -173,7 +192,7 @@ m.Template = m.Class({
 	},
 
 	"techCostMultiplier": function(type) {
-		return +(this.get("ProductionQueue/TechCostMultiplier/"+type) || 1);
+		return +(this.get("Researcher/TechCostMultiplier/"+type) || 1);
 	},
 
 	/**
@@ -394,14 +413,14 @@ m.Template = m.Class({
 	},
 
 	"trainableEntities": function(civ) {
-		let templates = this.get("ProductionQueue/Entities/_string");
+		const templates = this.get("Trainer/Entities/_string");
 		if (!templates)
 			return undefined;
 		return templates.replace(/\{native\}/g, this.civ()).replace(/\{civ\}/g, civ).split(/\s+/);
 	},
 
 	"researchableTechs": function(gameState, civ) {
-		let templates = this.get("ProductionQueue/Technologies/_string");
+		const templates = this.get("Researcher/Technologies/_string");
 		if (!templates)
 			return undefined;
 		let techs = templates.split(/\s+/);
@@ -506,10 +525,10 @@ m.Template = m.Class({
 
 	"trainingCategory": function() { return this.get("TrainingRestrictions/Category"); },
 
-	"buildTime": function(productionQueue) {
+	"buildTime": function(researcher) {
 		let time = +this.get("Cost/BuildTime");
-		if (productionQueue)
-			time *= productionQueue.techCostMultiplier("time");
+		if (researcher)
+			time *= researcher.techCostMultiplier("time");
 		return time;
 	},
 
@@ -644,6 +663,8 @@ m.Entity = m.Class({
 		this._entityModif = sharedAI._entitiesModifications.get(entity.id);
 	},
 
+	"queryInterface": function(iid) { return SimEngine.QueryInterface(this.id(), iid) },
+
 	"toString": function() { return "[Entity " + this.id() + " " + this.templateName() + "]"; },
 
 	"id": function() { return this._entity.id; },
@@ -698,6 +719,11 @@ m.Entity = m.Class({
         return trainableEnts;
     },
 
+    //HC-code holds the upgrade time
+    "GetUpgradeTime": function () {
+        return this._entity.upgradeTime;
+    },
+
 	"trainingQueueTime": function() {
 		let queue = this._entity.trainingQueue;
 		if (!queue)
@@ -739,24 +765,25 @@ m.Entity = m.Class({
 	},
 
 	"resourceSupplyAmount": function() {
-		return this._entity.resourceSupplyAmount;
+		return this.queryInterface(Sim.IID_ResourceSupply)?.GetCurrentAmount();
 	},
 
 	"resourceSupplyNumGatherers": function()
 	{
-		return this._entity.resourceSupplyNumGatherers;
+		return this.queryInterface(Sim.IID_ResourceSupply)?.GetNumGatherers();
 	},
 
 	"isFull": function()
 	{
-		if (this._entity.resourceSupplyNumGatherers !== undefined)
-			return this.maxGatherers() === this._entity.resourceSupplyNumGatherers;
+		let numGatherers = this.resourceSupplyNumGatherers();
+		if (numGatherers)
+			return this.maxGatherers() === numGatherers;
 
 		return undefined;
 	},
 
 	"resourceCarrying": function() {
-		return this._entity.resourceCarrying;
+		return this.queryInterface(Sim.IID_ResourceGatherer)?.GetCarryingStatus();
 	},
 
 	"currentGatherRate": function() {
@@ -874,10 +901,10 @@ m.Entity = m.Class({
 	},
 
 	// violent, aggressive, defensive, passive, standground
-	"setStance": function(stance, queued = false, pushFront = false) {
+	"setStance": function(stance) {
 		if (this.getStance() === undefined)
 			return undefined;
-		Engine.PostCommand(PlayerID, { "type": "stance", "entities": [this.id()], "name": stance, "queued": queued, "pushFront": pushFront });
+		Engine.PostCommand(PlayerID, { "type": "stance", "entities": [this.id()], "name": stance});
 		return this;
 	},
 
@@ -984,6 +1011,12 @@ m.Entity = m.Class({
 		return this;
 	},
 
+    //HC-code
+    "upgrade": function (template) {
+        Engine.PostCommand(PlayerID, { "type": "upgrade", "entities": [this.id()], "template": template });
+        return this;
+    },
+
 	"tradeRoute": function(target, source) {
 		Engine.PostCommand(PlayerID, { "type": "setup-trade-route", "entities": [this.id()], "target": target.id(), "source": source.id(), "route": undefined, "queued": false, "pushFront": false });
 		return this;
@@ -1000,7 +1033,7 @@ m.Entity = m.Class({
 		return this;
 	},
 
-	"train": function(civ, type, count, metadata, promotedTypes)
+	"train": function(civ, type, count, metadata, pushFront = false)
 	{
 		let trainable = this.trainableEntities(civ);
 		if (!trainable)
@@ -1020,20 +1053,20 @@ m.Entity = m.Class({
 			"template": type,
 			"count": count,
 			"metadata": metadata,
-			"promoted": promotedTypes
+			"pushFront": pushFront
 		});
 		return this;
 	},
 
     //HC-code
-    "trainHC": function (type, count, metadata, promotedTypes) {
+    "trainHC": function (type, count, metadata, pushFront = false) {
         Engine.PostCommand(PlayerID, {
             "type": "train",
             "entities": [this.id()],
             "template": type,
             "count": count,
             "metadata": metadata,
-            "promoted": promotedTypes
+            "pushFront": pushFront
         });
         return this;
     },
@@ -1059,8 +1092,13 @@ m.Entity = m.Class({
 		return this;
 	},
 
-	"research": function(template) {
-		Engine.PostCommand(PlayerID, { "type": "research", "entity": this.id(), "template": template });
+	"research": function(template, pushFront = false) {
+		Engine.PostCommand(PlayerID, {
+			"type": "research",
+			"entity": this.id(),
+			"template": template,
+			"pushFront": pushFront
+		});
 		return this;
 	},
 

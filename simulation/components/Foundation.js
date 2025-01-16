@@ -52,7 +52,7 @@ Foundation.prototype.InitialiseConstruction = function(template)
 		error("A foundation, from " + template + ", must have a cost component to know the build time");
 
 	this.costs = cmpCost.GetResourceCosts();
-	
+
 	// HC-Code
 	let cmpPlayer = QueryOwnerInterface(this.entity);
 	this.batalionSlotsCost = cmpCost.GetBattalionSlots();
@@ -375,7 +375,7 @@ Foundation.prototype.Build = function(builderEnt, work)
 		let owner = cmpFoundationOwnership.GetOwner();
 		let cmpBuildingPlots = Engine.QueryInterface(building, IID_Plots);
 		
-        if (cmpBuildingPlots) {
+        	if (cmpBuildingPlots) {
 			cmpBuildingPlots.SpawnPlots(rot, owner);
 		}
 		// HC-End

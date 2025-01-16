@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_entity_full">
   <Battalion>
     <FormationTemplate>special/formations/HC_standard</FormationTemplate>
@@ -10,10 +11,7 @@
     <BuildTime>1</BuildTime>
     <Population>0</Population>
     <Resources>
-      <food>0</food>
       <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
     </Resources>
   </Cost>
   <Decay>
@@ -24,13 +22,13 @@
     <SinkingAnim>false</SinkingAnim>
   </Decay>
   <Footprint>
-    <Circle radius="1.5" />
+    <Circle radius="1.5"/>
     <Height>2.5</Height>
   </Footprint>
   <Garrisonable>
     <Size>1</Size>
   </Garrisonable>
-  <Guard />
+  <Guard/>
   <Health>
     <DeathType>corpse</DeathType>
     <IdleRegenRate>0.05</IdleRegenRate>
@@ -41,17 +39,9 @@
   <Identity>
     <Civ>gaia</Civ>
     <Classes datatype="tokens">Unit ConquestCritical</Classes>
-    <Formations datatype="tokens">
-      special/formations/null
-      special/formations/HC_standard
-      special/formations/hylian_close
-      special/formations/gohma_scatter
-      special/formations/gerudo_medium
-      special/formations/kokiri_scatter
-      special/formations/moblin_wide
-    </Formations>
     <GenericName>Unit</GenericName>
     <Undeletable>false</Undeletable>
+    <Icon>units/unit_generic.dds</Icon>	
   </Identity>
   <Loot>
     <xp>1</xp>
@@ -68,34 +58,35 @@
     <DeleteUponConstruction>false</DeleteUponConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
-    <Unit />
+    <Unit/>
   </Obstruction>
-  <OverlayRenderer />
+  <OverlayRenderer/>
   <Population>
     <Bonus>0</Bonus>
   </Population>
-  <RangeOverlayManager />
-  <RangeOverlayRenderer />
+  <RangeOverlayManager/>
+  <RangeOverlayRenderer/>
   <Resistance>
     <Entity>
       <Damage>
         <Crush>15.0</Crush>
         <Hack>1.0</Hack>
         <Pierce>1.0</Pierce>
-		<Forest>1.0</Forest>
-		<Fire>1.0</Fire>
-		<Water>1.0</Water>
-		<Shadow>1.0</Shadow>
-		<Spirit>1.0</Spirit>
-		<Light>1.0</Light>
-		<Siege>1.0</Siege>
-		<TrueDamage>1.0</TrueDamage>
+        <Forest>1.0</Forest>
+        <Fire>1.0</Fire>
+        <Water>1.0</Water>
+        <Shadow>1.0</Shadow>
+        <Spirit>1.0</Spirit>
+        <Light>1.0</Light>
+        <Siege>100.0</Siege>
+        <Poison>1.0</Poison>
+        <TrueDamage>0</TrueDamage>
       </Damage>
     </Entity>
+    <DodgeRating>0</DodgeRating>
+    <KnockbackResistance>0</KnockbackResistance>
+    <StunResistance>0</StunResistance>
   </Resistance>
-  <TreasureCollector>
-    <MaxDistance>2</MaxDistance>
-  </TreasureCollector>
   <Selectable>
     <Overlay>
       <Texture>
@@ -115,6 +106,10 @@
     <BarWidth>2.0</BarWidth>
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
+  <StatusEffectsReceiver/>
+  <TreasureCollector>
+    <MaxDistance>2</MaxDistance>
+  </TreasureCollector>
   <UnitAI>
     <CanGuard>false</CanGuard>
     <CanPatrol>false</CanPatrol>
@@ -123,11 +118,25 @@
     <FleeDistance>12.0</FleeDistance>
     <FormationController>false</FormationController>
     <PatrolWaitTime>1</PatrolWaitTime>
+    <Formations datatype="tokens">
+      special/formations/null
+      special/formations/HC_standard
+      special/formations/hylian_close
+      special/formations/gohma_scatter
+      special/formations/gerudo_medium
+      special/formations/kokiri_scatter
+      special/formations/moblin_wide
+      special/formations/goron_6
+      special/formations/goron_8
+    </Formations>
   </UnitAI>
   <UnitMotion>
     <FormationController>false</FormationController>
     <PassabilityClass>default</PassabilityClass>
     <RunMultiplier>1.6666</RunMultiplier>
+    <InstantTurnAngle>1.5</InstantTurnAngle>
+    <Acceleration>35</Acceleration>
+    <Weight>10</Weight>
     <WalkSpeed>9.0</WalkSpeed>
   </UnitMotion>
   <Visibility>

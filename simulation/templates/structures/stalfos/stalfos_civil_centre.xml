@@ -23,7 +23,8 @@
   </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens"></Classes>
+    <Classes datatype="tokens">
+    </Classes>
     <GenericName>Crypt</GenericName>
     <History>.</History>
     <Icon>structures/stalfos/sta_cc_ancA.dds</Icon>
@@ -36,59 +37,15 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>1</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>11</Z>
-      </step2>
-	  <step3>
-        <X>0</X>
-        <Z>31</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-		units/stalfos/stalfos_stalchildA
-		units/stalfos/stalfos_stalkin_b
-		units/stalfos/stalfos_staltroop_b
-		units/stalfos/stalfos_stalgiant_b
-		units/stalfos/stalfos_hero_dampe
-		units/stalfos/stalfos_hero_gabora
-		units/stalfos/stalfos_hero_meg
-		units/stalfos/stalfos_hero_irene
-		units/stalfos/stalfos_hero_blind
-		units/stalfos/stalfos_hero_deathsword
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>3</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-		stalfos/player_isstalfos
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
         <Crush>50.0</Crush>
         <Hack>85.0</Hack>
         <Pierce>95.0</Pierce>
-  </Damage>
+      </Damage>
     </Entity>
-</Resistance>
+  </Resistance>
   <Sound>
     <SoundGroups>
       <alert0>interface/alarm/alarm_alert_0.xml</alert0>
@@ -114,4 +71,48 @@
       <wood>0.0</wood>
     </Rates>
   </ResourceTrickle>
+  <Researcher>
+    <Technologies datatype="tokens">stalfos/player_isstalfos
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/stalfos/stalfos_stalchildA
+		units/stalfos/stalfos_stalkin_b
+		units/stalfos/stalfos_staltroop_b
+		units/stalfos/stalfos_stalgiant_b
+		units/stalfos/stalfos_hero_dampe
+		units/stalfos/stalfos_hero_gabora
+		units/stalfos/stalfos_hero_meg
+		units/stalfos/stalfos_hero_irene
+		units/stalfos/stalfos_hero_blind
+		units/stalfos/stalfos_hero_deathsword</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>1</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>11</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>31</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>3</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

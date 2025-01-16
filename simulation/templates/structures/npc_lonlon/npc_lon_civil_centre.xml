@@ -40,7 +40,25 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/npc_lonlon/npc_lon_civiccenterA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">npc_lonlon/lonlon_milk
+    npc_lonlon/lonlon_cows
+    npc_lonlon/malon_horsetrain
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/npc_lonlon/npc_lon_rancherA
+      units/npc_lonlon/npc_lon_hand_b
+      units/npc_lonlon/npc_lon_watch_b
+    units/npc_lonlon/npc_lon_riders_b
+    units/npc_lonlon/npc_lon_cowgirl_b
+    units/npc_lonlon/npc_lon_cowcart_b
+    units/npc_lonlon/npc_lon_hero_malon</Entities>
     <DestinationOffset>
       <step1>
         <X>-7</X>
@@ -55,15 +73,6 @@
         <Z>30</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/npc_lonlon/npc_lon_rancherA
-      units/npc_lonlon/npc_lon_hand_b
-      units/npc_lonlon/npc_lon_watch_b
-    units/npc_lonlon/npc_lon_riders_b
-    units/npc_lonlon/npc_lon_cowgirl_b
-    units/npc_lonlon/npc_lon_cowcart_b
-    units/npc_lonlon/npc_lon_hero_malon
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -77,14 +86,5 @@
       <X>-1</X>
       <Z>-11</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    npc_lonlon/lonlon_milk
-    npc_lonlon/lonlon_cows
-    npc_lonlon/malon_horsetrain
-  </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/npc_lonlon/npc_lon_civiccenterA.xml</Actor>
-    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

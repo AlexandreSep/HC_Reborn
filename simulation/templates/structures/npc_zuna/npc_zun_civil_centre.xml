@@ -37,7 +37,25 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/npc_zuna/npc_zun_civiccenterA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">npc_zuna/zuna_craftsmanship
+    npc_zuna/zuna_merchantguild
+    npc_zuna/zuna_zunayustax
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/npc_zuna/npc_zun_craftsmanA
+      units/npc_zuna/npc_zun_merchantman_b
+      units/npc_zuna/npc_zun_tridenteer_b
+    units/npc_zuna/npc_zun_tribowman_b
+    units/npc_zuna/npc_zun_triballista_b
+    units/npc_zuna/npc_zun_siegetower_b
+    units/npc_zuna/npc_zun_hero_vorday</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -52,15 +70,6 @@
         <Z>30</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/npc_zuna/npc_zun_craftsmanA
-      units/npc_zuna/npc_zun_merchantman_b
-      units/npc_zuna/npc_zun_tridenteer_b
-    units/npc_zuna/npc_zun_tribowman_b
-    units/npc_zuna/npc_zun_triballista_b
-    units/npc_zuna/npc_zun_siegetower_b
-    units/npc_zuna/npc_zun_hero_vorday
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -74,14 +83,5 @@
       <X>0</X>
       <Z>5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    npc_zuna/zuna_craftsmanship
-    npc_zuna/zuna_merchantguild
-    npc_zuna/zuna_zunayustax
-    </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/npc_zuna/npc_zun_civiccenterA.xml</Actor>
-    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

@@ -1,0 +1,11 @@
+{
+	"genericName": "Valanavi",
+	"description": "Valanavi",
+	"icon": "fairy/choosehero_valanavi.png",
+	"tooltip": "Select Valanavi, Queen of All Fairies, as your hero of choice.",
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Stealth Focus", "tooltipText": "Queen Valfi focuses on granting Stealth to units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Valfi", "tooltipText": "Allows you to summon Queen Valfi, am invisible Mage hero that attacks with freezing magic."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Mistwalker", "tooltipText": "Stealth Mage unit with a ranged magical attack."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Hidden Spirits", "tooltipText": "Fairy Droves gain Stealth."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Obscuring Mist", "tooltipText": "Great Crystal Fairies gain Camouflage."}]
+}

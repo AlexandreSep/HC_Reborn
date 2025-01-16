@@ -1,0 +1,16 @@
+{
+	"genericName": "Leever Tooth Bodkins",
+	"description": "",
+	"cost": {"food": 0, "wood": 250, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "gerudo/attack_leever_bodkin.dds",
+	"researchTime": 40,
+	"tooltip": "Small and light, yet durable and sharp - perfect for arrowheads. (+15% Ranged Attack - Ranged Infantry and Ranged Cavalry)",
+	"modifications": [{"value": "Attack/Ranged/Damage/Hack", "multiply": 1.15},
+			{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15},
+			{"value": "Attack/Ranged/Damage/TrueDamage", "multiply": 1.15},
+		{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.15}],
+	"affects": ["Infantry Missile", "Cavalry Missile"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

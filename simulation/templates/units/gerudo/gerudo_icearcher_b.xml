@@ -12,7 +12,6 @@
         <Pierce>15</Pierce>
         <Water>10.0</Water>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>80</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -37,10 +36,11 @@
         </SpawnOnImpact>
         <Template>units/gerudo/gerudo_icepatch</Template>
       </SpawnEntityOnImpact>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>60</food>
       <metal>0</metal>

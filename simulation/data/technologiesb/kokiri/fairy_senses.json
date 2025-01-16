@@ -1,0 +1,23 @@
+{
+	"genericName": "Fairy Senses",
+	"description": "Fairies were very handy at helping their partner target an enemy and aim, as well as react quickly to incoming attacks.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 350},
+	"supersedes": "kokiri/fairy_guardian",
+	"requirements": { "all": [{ "entity": { "class": "ForestShrine", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Forest Shrine Addon.",
+	"icon": "kokiri/fairy_senses.dds",
+	"researchTime": 40,
+	"tooltip": "Fairies were very handy at helping their partner target an enemy and aim, as well as react quickly to incoming attacks. +20% Attack Range and +20% Accuracy for Slingshotters and Emerald Archers",
+  "modifications": [
+    {
+      "value": "Attack/Ranged/Damage/MaxRange",
+      "multiply": 1.2
+    },
+    {
+      "value": "Attack/Ranged/Damage/Spread",
+      "multiply": 0.8
+    }
+  ],
+	"affects": ["FairySense"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

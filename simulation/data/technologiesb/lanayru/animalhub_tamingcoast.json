@@ -1,0 +1,13 @@
+{
+	"genericName": "Taming of the Coasts",
+	"description": "All Lanayru units gain a +10% damage bonus against Creature units.",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "lanayru"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "lanayru/animalhub_tamingcoast.dds",
+	"researchTime": 40,
+	"tooltip": "All Lanayru units gain a +10% damage bonus against Creature units.)",
+	"modifications": [{"value": "Attack/Bonuses/BonusCavMelee/Multiplier", "multiply": 1.10}],
+	"affects": ["Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

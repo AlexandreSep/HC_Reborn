@@ -230,7 +230,7 @@ GuiInterface.prototype.IsBattalionACivilianBattalion = function (battalionEntiti
 	if (cmpIdentity){
 		let entityClasses = cmpIdentity.GetClassesList();
 
-		if (MatchesClassList(entityClasses, "Worker Trader House Economic")){
+		if (MatchesClassList(entityClasses, "Structure")){
 			return true;
 		}
 	}
@@ -376,10 +376,4 @@ GuiInterface.prototype.GetEntityTemplate = function(player, ent)
 	let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
 	let template = cmpTemplateManager.GetCurrentTemplateName(ent);
 	return template;
-}
-
-GuiInterface.prototype.UpdateCurrentFairySeason = function(player, season)
-{
-	let cmpPlayer = QueryPlayerIDInterface(player, IID_Player);
-	cmpPlayer.fairySeasonCurrent = season;
 }

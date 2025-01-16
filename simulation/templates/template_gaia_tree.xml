@@ -22,7 +22,7 @@
     <KillBeforeGather>false</KillBeforeGather>
     <Max>75</Max>
     <Type>wood.tree</Type>
-    <MaxGatherers>1</MaxGatherers>
+    <MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <Selectable>
     <Overlay>

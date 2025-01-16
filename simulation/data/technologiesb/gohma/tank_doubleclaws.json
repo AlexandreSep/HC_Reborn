@@ -1,0 +1,22 @@
+{
+	"genericName": "Double Jointed Claws",
+	"description": "Tank Gohma can now bend their claws in more waysm giving them greater reach and articulation.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "gohma/tank_doubleclaws.dds",
+	"researchTime": 40,
+	"tooltip": "Tank Gohma can now bend their claws in more ways, giving them greater reach and articulation. (+20% Attack Speed for Tank Gohma.)",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/PrepareTime",
+      "multiply": 0.8
+    },
+    {
+      "value": "Attack/Melee/Damage/RepeatTime",
+      "multiply": 0.8
+    }
+  ],
+	"affects": ["GohTank"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

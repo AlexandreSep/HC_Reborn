@@ -1,0 +1,13 @@
+{
+	"genericName": "Savage Upbringing",
+	"description": "",
+	"cost": {"metal": 400},
+	"requirements": {"all": [ {"tech": "civ_choices/labrynna/choosehero_onox"}, {"tech": "phase_city"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Requires General Onox and City Phase.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "-25% reduction to training time - All Creatures.",
+	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.75, "affects": "Creature"}
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

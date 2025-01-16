@@ -43,43 +43,6 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>25</X>
-        <Z>62</Z>
-      </step1>
-      <step2>
-        <X>42</X>
-        <Z>87</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/darknut/{civ}_thrallA
-      units/darknut/{civ}_molgera_b
-      units/darknut/{civ}_patra_b
-    units/darknut/{civ}_hero_zalunbar
-    units/darknut/{civ}_hero_yaraxonal
-    units/darknut/{civ}_hero_senturon
-    units/darknut/{civ}_hero_alros
-    units/darknut/{civ}_titan_vaati
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>19</X>
-      <Z>48</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -105,4 +68,41 @@
     <Actor>structures/darknut/darknut_wonderA.xml</Actor>
     <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/darknut/{civ}_thrallA
+      units/darknut/{civ}_molgera_b
+      units/darknut/{civ}_patra_b
+    units/darknut/{civ}_hero_zalunbar
+    units/darknut/{civ}_hero_yaraxonal
+    units/darknut/{civ}_hero_senturon
+    units/darknut/{civ}_hero_alros
+    units/darknut/{civ}_titan_vaati</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>25</X>
+        <Z>62</Z>
+      </step1>
+      <step2>
+        <X>42</X>
+        <Z>87</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>19</X>
+      <Z>48</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

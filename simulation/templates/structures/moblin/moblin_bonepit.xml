@@ -36,12 +36,6 @@
   <Obstruction>
     <Static depth="24.0" width="24.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    moblin/bonepit_foundcool
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -70,4 +64,12 @@
     <Actor>structures/moblin/moblin_bigbonepitA.xml</Actor>
     <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/bonepit_foundcool
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

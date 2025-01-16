@@ -1,0 +1,13 @@
+{
+	"genericName": "Labor Instinct",
+	"description": "Tokay were born to work, even in the wild they are an unusually busy group of people. Many could learn from their work ethic.",
+	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_village"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "npc_tokay/tokay_labor.dds",
+	"researchTime": 40,
+	"tooltip": "Tokay were born to work, even in the wild they are an unusually busy group of people. Many could learn from their work ethic. (10% Reduced construction time for all buildings)",
+	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.90}],
+	"affects": ["Structure"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -34,11 +34,6 @@
   <Population>
     <Bonus>25</Bonus>
   </Population>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    moblin/house_homeonthemove
-    </Technologies>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/moblin/moblin_house_upg</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -56,4 +51,11 @@
     <Actor>structures/moblin/moblin_yurtsA.xml</Actor>
     <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/house_homeonthemove
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

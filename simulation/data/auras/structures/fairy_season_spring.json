@@ -1,7 +1,6 @@
 {
 	"type": "global",
-	"affects": ["Winter"],
-	"modifications": [{"value": "Promotion/RequiredXp", "multiply": -0.0001}],
+	"affects": [],
 	"auraName": "Springtime",
 	"auraDescription": "It is now Springtime for the Fairies of Tarm.",
 	"overlayIcon": "art/textures/ui/session/auras/fairy_spring.dds"

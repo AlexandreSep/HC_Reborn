@@ -1,0 +1,16 @@
+{
+	"genericName": "Queen's Guard",
+	"description": "A Gohma Queen was quite a monster to fight, but they were far from invulnerable. Particularly numerous hives would assure she was guarded at all times.",
+	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "gohma/queen_queenguard.dds",
+	"researchTime": 40,
+	"tooltip": "A Gohma Queen was quite a monster to fight, but they were far from invulnerable. Particularly numerous hives would assure she was guarded at all times. (Gohma Queens are now followed by a host of Soldier Larva, boosting all of her stats)",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.1},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.1},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.1},
+		{"value": "Health/Max", "multiply": 1.1 }],
+	"affects": ["GohQueen"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,15 @@
+{
+	"genericName": "Jabun, Spawn of Lord Jabu Jabu",
+	"description": "Jabun",
+	"icon": "zora/choosehero_jabun.png",
+	"tooltip": "Select Jabun as your hero of choice.",
+	"modifications": [{ "value": "Cost/Resources/food", "multiply": 0.75 , "affects": "CivilCentre"},
+					  { "value": "Cost/Resources/wood", "multiply": 0.75 , "affects": "CivilCentre"},
+					  { "value": "Cost/Resources/stone", "multiply": 0.75 , "affects": "CivilCentre"},
+					  { "value": "Cost/Resources/metal", "multiply": 0.75 , "affects": "CivilCentre"}],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Expansion Focus", "tooltipText": "Jabun focuses on expanding territory."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Jabun", "tooltipText": "Allows you to summon Jabun, a hovering Mage hero."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Jabun Fries", "tooltipText": "Small Creature Navy unit that attacks with Fire."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Improved Ministry", "tooltipText": "Ministries are 25% cheaper to build."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Oshite Aqueducts", "tooltipText": "Improves Aqueduct territory generation by 25%."}]
+}

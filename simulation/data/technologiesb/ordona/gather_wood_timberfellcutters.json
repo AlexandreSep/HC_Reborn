@@ -1,0 +1,13 @@
+{
+	"genericName": "Timberfell Cutters",
+	"description": "Issue Hylian lumberjacks sturdy Iron axeheads.",
+	"cost": {"food": 0, "wood": 0, "stone": 150, "metal": 50},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "ordona/gather_wood_timberfellcutters.dds",
+	"researchTime": 40,
+	"tooltip": "(Lumberjacks collect Wood from Trees 10% faster, +5% for all other Citizen units)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.10}],
+	"affects": ["Citizen"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

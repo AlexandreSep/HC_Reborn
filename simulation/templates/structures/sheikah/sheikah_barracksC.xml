@@ -29,53 +29,13 @@
     <GenericName>Hideout</GenericName>
     <History>A hidden sanctuary where the most elite of Sheikah live and train for their craft.</History>
     <Icon>structures/sheikah/she_hideout.dds</Icon>
-	<RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Trains a selection of elite Sheikah units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>
   <Obstruction>
     <Static depth="37.0" width="37.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>-3</Z>
-      </step1>
-	  <step2>
-        <X>0</X>
-        <Z>11</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>30</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/sheikah/{civ}_spy_b
-      units/sheikah/{civ}_needler_b
-	  units/sheikah/{civ}_smokescreener_b
-      units/sheikah/{civ}_assassin_b
-	  units/sheikah/{civ}_saboteur_b
-      units/sheikah/{civ}_executioner_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>-5</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -103,4 +63,44 @@
     <Actor>structures/sheikah/sheikah_hideoutA.xml</Actor>
     <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/sheikah/{civ}_spy_b
+      units/sheikah/{civ}_needler_b
+	  units/sheikah/{civ}_smokescreener_b
+      units/sheikah/{civ}_assassin_b
+	  units/sheikah/{civ}_saboteur_b
+      units/sheikah/{civ}_executioner_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-3</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>11</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

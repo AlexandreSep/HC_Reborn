@@ -1,0 +1,32 @@
+{
+	"Title": "Special Thanks",
+	"Content": [
+	{
+		"Content": [
+		{
+			"Subtitle": "Old Team Members",
+			"List": [
+				{"nick": "Odysseus"},
+				{"nick": "Rolf Dew"},
+				{"nick": "Ironwolf AKA Telreyne"}				
+			]
+		},
+		{
+			"Subtitle": "Hyrule Conquest Community Contributors",
+			"List": [
+				{"nick": "Codeman"},
+				{"nick": "ChrisANG"},
+				{"nick": "darkinterloper AKA Loopy"},
+				{"nick": "Zolrolt"},
+				{"nick": "Viyers"}
+			]
+		},
+		{
+			"Subtitle": "0AD/Wildfire Games Support",
+			"List": [
+				{"nick": "Stan"},
+				{"nick": "Silier"}
+			]
+		}
+	]}
+]}

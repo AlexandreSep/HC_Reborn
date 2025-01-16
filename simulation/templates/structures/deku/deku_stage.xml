@@ -45,8 +45,27 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+      <upgraded>interface/complete/building/complete_temple.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/deku/deku_stageA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/hornling_bwaamp
+    deku/hornling_amplification
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/deku/{civ}_hornling_b
+    units/deku/{civ}_tiffer_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -65,10 +84,6 @@
         <Z>30</Z>
       </step4>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/deku/{civ}_hornling_b
-    units/deku/{civ}_tiffer_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -82,20 +97,5 @@
       <X>0</X>
       <Z>-10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    deku/hornling_bwaamp
-    deku/hornling_amplification
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_temple.xml</constructed>
-      <select>interface/select/building/sel_temple.xml</select>
-      <upgraded>interface/complete/building/complete_temple.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/deku/deku_stageA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

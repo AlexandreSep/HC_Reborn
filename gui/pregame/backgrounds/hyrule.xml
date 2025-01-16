@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprites>
+	<sprite name="background-hyrule-1">
+		<image
+			texture="pregame/backgrounds/hyrule-1.dds"
+			fixed_h_aspect_ratio="2"
+			round_coordinates="true"
+		/>
+	</sprite>
+	
+	<sprite name="background-hyrule-2">
+		<image
+			texture="pregame/backgrounds/hyrule-2.dds"
+			fixed_h_aspect_ratio="2"
+			round_coordinates="true"
+		/>
+	</sprite>
+	
+	<sprite name="background-hyrule-3">
+		<image
+			texture="pregame/backgrounds/hyrule-3.dds"
+			fixed_h_aspect_ratio="2"
+			round_coordinates="true"
+		/>
+	</sprite>
+	
+	<sprite name="background-hyrule-4">
+		<image
+			texture="pregame/backgrounds/hyrule-4.dds"
+			fixed_h_aspect_ratio="2"
+			round_coordinates="true"
+		/>
+	</sprite>	
+	
+</sprites>

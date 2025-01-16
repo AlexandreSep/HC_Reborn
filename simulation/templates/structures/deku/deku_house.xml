@@ -48,12 +48,14 @@
   <Population>
     <Bonus>25</Bonus>
   </Population>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    deku/deku_crammed
-    </Technologies>
-  </ProductionQueue>
   <VisualActor>
     <Actor>structures/deku/deku_slumsA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/deku_crammed
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

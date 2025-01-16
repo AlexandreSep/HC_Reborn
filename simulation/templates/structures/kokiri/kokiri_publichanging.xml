@@ -42,11 +42,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <Selectable>
     <EditorOnly />
     <Overlay>
@@ -68,4 +63,11 @@
     <Actor>structures/kokiri/kokiri_publichangA.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

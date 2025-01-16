@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 15,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.50 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 0.50 }
+	],
+	"auraName": "Webbing",
+	"auraDescription": "(-50% Movement Speed)",
+	"overlayIcon": "art/textures/ui/session/auras/webbing1.dds"
+}

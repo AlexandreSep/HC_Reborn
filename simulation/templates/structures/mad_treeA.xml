@@ -19,12 +19,14 @@
   <Health>
     <Max>1000</Max>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>8</Max>
-      <SpawnNumber>2</SpawnNumber>
-      <StartDelay>3000</StartDelay>
-      <Template>units/mad/mad_scrubling_b</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>8</Max>
+        <SpawnNumber>2</SpawnNumber>
+        <StartDelay>3000</StartDelay>
+        <Template>units/mad/mad_scrubling_b</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -42,15 +44,17 @@
   <Population>
     <Bonus>5</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/mad/mad_scrubling_b
-    units/mad/mad_guardling_b
-    units/mad/mad_megascrub_b
-    </Entities>
-  </ProductionQueue>
   <VisualActor>
     <Actor>flora/forest/mad_treeA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/mad/mad_scrubling_b
+    units/mad/mad_guardling_b
+    units/mad/mad_megascrub_b</Entities>
+  </Trainer>
 </Entity>

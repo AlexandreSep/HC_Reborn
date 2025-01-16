@@ -5,7 +5,6 @@
       <Damage>
         <Hack>7</Hack>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -26,10 +25,11 @@
         <Range>5</Range>
         <Shape>Circular</Shape>
       </Splash>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>9</BuildTime>
     <Resources>
       <food>35</food>
       <metal>25</metal>
@@ -47,12 +47,14 @@
       <Template>units/mad/mad_peahatmama</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>4</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/deku/deku_peahat</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>4</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/deku/deku_peahat</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>

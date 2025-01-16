@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity>
   <AIProxy/>
-<Battalion>
+  <Battalion>
     <Size>1</Size>
     <SameActorSeed>false</SameActorSeed>
     <FormationTemplate>special/formations/battle_line</FormationTemplate>
-	<SpawnDeltaTime>500</SpawnDeltaTime>
-  </Battalion> 			   
+    <SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
     <Territory>own</Territory>
@@ -17,15 +17,15 @@
     <RegenRate>0.5</RegenRate>
     <GarrisonRegenRate>5.0</GarrisonRegenRate>
   </Capturable>
-  <Cost>		  
+  <Cost>
     <Population>0</Population>
-    <BattalionSlots>0</BattalionSlots>								
+    <BattalionSlots>0</BattalionSlots>
     <BuildTime>10</BuildTime>
     <Resources>
+      <metal>0</metal>
       <food>0</food>
       <wood>0</wood>
       <stone>0</stone>
-      <metal>0</metal>
     </Resources>
   </Cost>
   <Decay>
@@ -55,9 +55,6 @@
     <Undeletable>false</Undeletable>
   </Identity>
   <Loot>
-    <food>0</food>
-    <wood>0</wood>
-    <stone>0</stone>
     <metal>0</metal>
     <xp>0</xp>
   </Loot>
@@ -84,16 +81,7 @@
     <FloatDepth>0</FloatDepth>
     <TurnRate>6</TurnRate>
   </Position>
-  <ProductionQueue>
-    <BatchTimeModifier>1.0</BatchTimeModifier>
-    <TechCostMultiplier>
-      <food>1.0</food>
-      <wood>1.0</wood>
-      <stone>1.0</stone>
-      <metal>1.0</metal>
-      <time>1.0</time>
-    </TechCostMultiplier>
-  </ProductionQueue>
+  <ProductionQueue/>
   <RallyPoint/>
   <RallyPointRenderer>
     <MarkerTemplate>special/rallypoint</MarkerTemplate>
@@ -110,6 +98,15 @@
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <time>1.0</time>
+    </TechCostMultiplier>
+  </Researcher>
   <Resistance>
     <Entity>
       <ApplyStatus>
@@ -119,17 +116,17 @@
         </Poisoned>
       </ApplyStatus>
       <Damage>
-        <Hack>1</Hack>
-        <Pierce>10</Pierce>
-        <Crush>1</Crush>
-		    <Forest>1</Forest>
-		    <Fire>1</Fire>
-		    <Water>1</Water>
-		    <Shadow>1</Shadow>
-		    <Spirit>1</Spirit>
-		    <Light>1</Light>
-        <Siege>1.0</Siege>
-        <TrueDamage>85.0</TrueDamage>
+        <Hack>75</Hack>
+        <Pierce>85</Pierce>
+        <Crush>75</Crush>
+        <Forest>50</Forest>
+        <Fire>50</Fire>
+        <Water>50</Water>
+        <Shadow>50</Shadow>
+        <Spirit>50</Spirit>
+        <Light>50</Light>
+        <Siege>0</Siege>
+        <TrueDamage>75.0</TrueDamage>
       </Damage>
     </Entity>
     <Foundation>
@@ -143,6 +140,14 @@
         <Hack>1</Hack>
         <Pierce>10</Pierce>
         <Crush>1</Crush>
+        <Forest>1</Forest>
+        <Fire>1</Fire>
+        <Water>1</Water>
+        <Shadow>1</Shadow>
+        <Spirit>1</Spirit>
+        <Light>1</Light>
+        <Siege>1.0</Siege>
+        <TrueDamage>1.0</TrueDamage>
       </Damage>
     </Foundation>
   </Resistance>
@@ -160,7 +165,7 @@
       <select>interface/select/building/sel_universal.xml</select>
       <constructed>interface/complete/building/complete_universal.xml</constructed>
       <death>attack/destruction/building_collapse_large.xml</death>
-	  <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
       <attack_impact_ranged>attack/impact/arrow_metal.xml</attack_impact_ranged>
       <attacked>interface/alarm/alarm_attackplayer.xml</attacked>
       <attacked_gaia>interface/alarm/alarm_attacked_gaia.xml</attacked_gaia>
@@ -178,6 +183,9 @@
     <DecayRate>20</DecayRate>
     <Territory>neutral enemy</Territory>
   </TerritoryDecay>
+  <Trainer>
+    <BatchTimeModifier>1.0</BatchTimeModifier>
+  </Trainer>
   <Visibility>
     <RetainInFog>true</RetainInFog>
     <AlwaysVisible>false</AlwaysVisible>

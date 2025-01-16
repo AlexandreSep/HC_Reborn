@@ -3,12 +3,6 @@
     <Classes datatype="tokens">Winter</Classes>
     <Icon>structures/fairy/fai_misthenge_winter.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    fairy/season_darksolstice
-    </Technologies>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_misthenge_spring</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -17,4 +11,12 @@
     <Actor>structures/fairy/fairy_misthengeA_winter.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/season_darksolstice
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Final Fragmentation",
+	"description": "If fragmented enough, there is a point in which the Faries can no long regain their power. In such a case they take down everything they can with themselves.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Village Phase.",
+	"icon": "fairy/stray_finalfragment.dds",
+	"researchTime": 40,
+	"tooltip": "If fragmented enough, there is a point in which the Faries can no long regain their power. In such a case they take down everything they can with themselves. (Stray Fairies now explode on death, dealing 10 Forest Damage)",
+	"modifications": [{"value": "DeathDamage/Forest", "add": 10}],
+	"affects": ["StrayFairy"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

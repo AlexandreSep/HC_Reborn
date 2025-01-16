@@ -1,0 +1,18 @@
+{
+	"genericName": "Veran, Sorceress of Shadows",
+	"description": "Veran, Sorceress of Shadows.",
+	"icon": "labrynna/choosehero_veran.png",
+	"tooltip": "Select Veran, Sorceress of Shadows, as your hero of choice.",
+	"modifications": [{"value": "Resistance/Entity/Damage/Forest", "add": 10},
+					  {"value": "Resistance/Entity/Damage/Fire", "add": 10},
+		              {"value": "Resistance/Entity/Damage/Water", "add": 10},
+					  {"value": "Resistance/Entity/Damage/Shadow", "add": 10},
+					  {"value": "Resistance/Entity/Damage/Spirit", "add": 10},
+		              {"value": "Resistance/Entity/Damage/Light", "add": 10}],
+	"affects": ["Unit"],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Magic Focus", "tooltipText": "Veran focuses on protecting her forces from Magic and Mages."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Veran", "tooltipText": "Allows you to summon Veran, a large Mage hero who attacks with her whip."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Agunima", "tooltipText": "Shadow Mage unit that can blind enemy forces and boost the armor of friendly units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Sorceress Protection", "tooltipText": "All units gain minor Magic Resistance"},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Dark Blessing", "tooltipText": "Improves the Magic Armor values of all Non-Creature, Non-Mechanical units."}]
+}

@@ -1,0 +1,29 @@
+{
+	"genericName": "Upgrade Ranged Weapons",
+  "cost": {"metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "Increases the damage of all Ranged weapons. (+10% Ranged Attack.)",
+  "modifications": [
+    {
+      "value": "Attack/Ranged/Damage/Pierce",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Ranged/Damage/Hack",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Ranged/Damage/Crush",
+      "multiply": 1.1
+    },	
+    {
+      "value": "Attack/Ranged/Damage/TrueDamage",
+      "multiply": 1.1
+    }
+  ],
+	"affects": ["Missile"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

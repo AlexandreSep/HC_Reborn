@@ -39,15 +39,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    darknut/treatise_cliffarch
-    darknut/treatise_baralstand
-    darknut/treatise_domatech
-    darknut/treatise_ahkraspush
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_research.xml</constructed>
@@ -66,4 +57,15 @@
   <VisualActor>
     <Actor>structures/darknut/darknut_auditoriumbaseA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/treatise_cliffarch
+    darknut/treatise_baralstand
+    darknut/treatise_domatech
+    darknut/treatise_ahkraspush
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

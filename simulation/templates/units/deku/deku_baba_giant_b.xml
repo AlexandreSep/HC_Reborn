@@ -6,7 +6,6 @@
         <Hack>14</Hack>
         <Pierce>8</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <Knockback>
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
@@ -45,10 +44,11 @@
         </SpawnOnImpact>
         <Template>units/deku/deku_baba_b</Template>
       </SpawnEntityOnImpact>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>9</BuildTime>
     <Resources>
       <food>100</food>
       <metal>0</metal>

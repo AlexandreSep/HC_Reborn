@@ -5,7 +5,6 @@
       <Damage>
         <Crush>4</Crush>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>55</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -18,6 +17,7 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>1100</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Health>

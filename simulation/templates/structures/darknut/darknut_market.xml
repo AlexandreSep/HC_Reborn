@@ -19,19 +19,21 @@
     <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>gaia/lon_lon_cow_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
     <Classes datatype="tokens">Market Village Barter BarterMarket</Classes>
     <GenericName>Public Forums</GenericName>
-    <History>Allowing foreign people and powers to set up shops and goods within the Public Forum brought forth many goods and services to the Legion&#8217;s people, not to mention Rupees.</History>
+    <History>Allowing foreign people and powers to set up shops and goods within the Public Forum brought forth many goods and services to the Legion’s people, not to mention Rupees.</History>
     <Icon>structures/darknut/dar_publicforum.dds</Icon>
     <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
@@ -47,7 +49,25 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_market.xml</constructed>
+      <select>interface/select/building/sel_market.xml</select>
+      <upgraded>interface/complete/building/complete_market.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_publicforumbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/trade_sellswords
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    gaia/lon_lon_cow_1</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -58,10 +78,6 @@
         <Z>40</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -75,19 +91,5 @@
       <X>0</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    darknut/trade_sellswords
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_market.xml</constructed>
-      <select>interface/select/building/sel_market.xml</select>
-      <upgraded>interface/complete/building/complete_market.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_publicforumbaseA.xml</Actor>
-    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

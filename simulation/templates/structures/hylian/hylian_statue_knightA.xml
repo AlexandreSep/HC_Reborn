@@ -4,7 +4,7 @@
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>60</BuildTime>
@@ -35,10 +35,14 @@
   <Obstruction>
     <Static depth="5.0" width="5.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <VisualActor>
     <Actor>structures/hylian/hylian_statue_knightA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_entity_full">
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
@@ -12,10 +13,7 @@
     <BuildTime>10</BuildTime>
     <Population>0</Population>
     <Resources>
-      <food>0</food>
       <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
     </Resources>
   </Cost>
   <Decay>
@@ -25,8 +23,8 @@
     <SinkRate>3.0</SinkRate>
     <SinkingAnim>false</SinkingAnim>
   </Decay>
-  <Fogging />
-  <Guard />
+  <Fogging/>
+  <Guard/>
   <Health>
     <DamageVariants>
       <heavydamage>0.35</heavydamage>
@@ -39,15 +37,12 @@
     <Unhealable>true</Unhealable>
   </Health>
   <Identity>
-    <Classes datatype="tokens">Structure ConquestCritical</Classes>
+    <Classes datatype="tokens">Structure GaiaTarget</Classes>
     <GenericName>Structure</GenericName>
     <Undeletable>false</Undeletable>
   </Identity>
   <Loot>
-    <food>0</food>
     <metal>0</metal>
-    <stone>0</stone>
-    <wood>0</wood>
     <xp>0</xp>
   </Loot>
   <Minimap>
@@ -63,23 +58,13 @@
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
   </Obstruction>
-  <OverlayRenderer />
+  <OverlayRenderer/>
   <Population>
     <Bonus>0</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <TechCostMultiplier>
-      <food>1.0</food>
-      <metal>1.0</metal>
-      <stone>1.0</stone>
-      <time>1.0</time>
-      <wood>1.0</wood>
-    </TechCostMultiplier>
-  </ProductionQueue>
-  <RallyPoint />
+  <RallyPoint/>
   <RallyPointRenderer>
-    <LineDashColor b="15" g="11" r="158" />
+    <LineDashColor b="15" g="11" r="158"/>
     <LineEndCap>round</LineEndCap>
     <LinePassabilityClass>default</LinePassabilityClass>
     <LineStartCap>square</LineStartCap>
@@ -88,31 +73,61 @@
     <LineThickness>0.25</LineThickness>
     <MarkerTemplate>special/rallypoint</MarkerTemplate>
   </RallyPointRenderer>
-  <RangeOverlayManager />
-  <RangeOverlayRenderer />
+  <RangeOverlayManager/>
+  <RangeOverlayRenderer/>
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
+  <Researcher>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <time>1.0</time>
+    </TechCostMultiplier>  
+  </Researcher>
   <Resistance>
     <Entity>
+      <ApplyStatus>
+        <Poisoned>
+          <Duration>0.0</Duration>
+          <BlockChance>1</BlockChance>
+        </Poisoned>
+      </ApplyStatus>
       <Damage>
-        <Crush>5.0</Crush>
-        <Hack>70.0</Hack>
-        <Pierce>85.0</Pierce>
+        <Hack>75</Hack>
+        <Pierce>85</Pierce>
+        <Crush>75</Crush>
+        <Forest>50</Forest>
+        <Fire>50</Fire>
+        <Water>50</Water>
+        <Shadow>50</Shadow>
+        <Spirit>50</Spirit>
+        <Light>50</Light>
+        <Siege>0</Siege>
+        <TrueDamage>75.0</TrueDamage>
       </Damage>
     </Entity>
     <Foundation>
+      <ApplyStatus>
+        <Poisoned>
+          <Duration>0.0</Duration>
+          <BlockChance>1</BlockChance>
+        </Poisoned>
+      </ApplyStatus>
       <Damage>
-        <Crush>1</Crush>
-        <Fire>0.0</Fire>
-        <Forest>0.0</Forest>
         <Hack>1</Hack>
-        <Light>0.0</Light>
-        <Pierce>1</Pierce>
-        <Shadow>0.0</Shadow>
-        <Siege>0.0</Siege>
-        <Spirit>0.0</Spirit>
-        <Water>0.0</Water>
+        <Pierce>10</Pierce>
+        <Crush>1</Crush>
+        <Forest>1</Forest>
+        <Fire>1</Fire>
+        <Water>1</Water>
+        <Shadow>1</Shadow>
+        <Spirit>1</Spirit>
+        <Light>1</Light>
+        <Siege>1.0</Siege>
+        <TrueDamage>1.0</TrueDamage>
       </Damage>
     </Foundation>
   </Resistance>
@@ -140,6 +155,9 @@
     <BarWidth>6.0</BarWidth>
     <HeightOffset>12.0</HeightOffset>
   </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+  </Trainer>
   <Visibility>
     <AlwaysVisible>false</AlwaysVisible>
     <Corpse>false</Corpse>
@@ -153,7 +171,7 @@
     <Bribable>false</Bribable>
   </VisionSharing>
   <VisualActor>
-    <ConstructionPreview />
+    <ConstructionPreview/>
     <SilhouetteDisplay>false</SilhouetteDisplay>
     <SilhouetteOccluder>true</SilhouetteOccluder>
     <VisibleInAtlasOnly>false</VisibleInAtlasOnly>

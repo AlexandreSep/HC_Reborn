@@ -1,0 +1,13 @@
+{
+	"genericName": "Woodland Reaches",
+	"description": "The reach of Farore gradually replaced veneration of the Great Deku Tree as time passed on. The clergy of this religion made bolder territorial claims for the Forest when their idols entered a new region.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": { "all": [{ "entity": { "class": "ForestShrine", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Forest Shrine Addon.",
+	"icon": "kokiri/temple_woodlandreach.dds",
+	"researchTime": 40,
+	"tooltip": "The reach of Farore gradually replaced veneration of the Great Deku Tree as time passed on. The clergy of this religion made bolder territorial claims for the Forest when their idols entered a new region. (+50% Territory Range - Shrine of Courage)",
+	"modifications": [{"value": "TerritoryInfluence/Radius", "multiply": 1.5}],
+	"affects": ["CourageShrine"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

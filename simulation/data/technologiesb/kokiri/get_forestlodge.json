@@ -1,0 +1,10 @@
+{
+	"genericName": "a Forest Lodge Add-on",
+	"description": "Forest Lodge is added on to the Market Grove, unlocking units.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": { "all": [{ "entity": { "class": "ForestLodge", "number": 1 } }] },
+	"autoResearch": true,
+	"icon": "kokiri/fairy_guardian.dds",
+	"researchTime": 0,
+	"tooltip": "Forest Lodge is added on to the Market Grove, unlocking units."
+}

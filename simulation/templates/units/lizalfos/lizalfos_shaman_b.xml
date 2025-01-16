@@ -15,7 +15,7 @@
     units/shaman_aura_1
   </Auras>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>40</food>
       <metal>0</metal>

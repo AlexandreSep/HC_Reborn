@@ -1,0 +1,18 @@
+{
+	"genericName": "Drifting Dongo",
+	"description": "Aquadongos could be specially trained to drift silent through the waters as if they were but a harmless log.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "labrynna/aquadongo_driftingdongo.dds",
+	"researchTime": 40,
+	"tooltip": "Aquadongos could be specially trained to drift silent through the waters as if they were but a harmless log. (Aquadongos gain Stealth when in bodies of water)",
+  "modifications": [
+    {
+      "value": "Promotion/RequiredXp",
+      "replace": 0
+    }
+  ],
+  "affects": [ "Aquadongo" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
