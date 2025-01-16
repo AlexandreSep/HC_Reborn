@@ -5,17 +5,13 @@ Player.prototype.InitHyrule = function()
     this.resourceGatherersBattalions = {}; // Contains Maps of Sets. {resourceType: {battalionID:{gathererID_1, gethererID_2, ...} } }
     this.allSpottedEntities = {};
     this.currentBattalionIndex = 0;
-    this.fairySeasonCurrent = "spring";
     this.heroSettings = new Object();
 
     // We store a ring buffer that stores the amount of resources collected during the last X seconds
     // That way we can make a rough estimation about the acquisation rate of the amount of resources we get
-    this.resourceBufferIndex = 0;
-    this.resourceBufferIntervals = 40; // How many past time frames are stored
-    this.resourceBufferUpdateTime = 1000; // In milliseconds
-    this.resourceBufferGatherRatePerSeconds = 5; // If this is 5 the UI displays the average gather rate per 5 seconds
-    this.recentlyCollectedResources = new Array();
-    this.averageResourceGatherRates = new Array();
+    this.gatherRateUpdateTime = 2000; // In milliseconds
+    this.collectedResourcesThisInterval = new Array(); // Accumulates all the resources which were collected during the current time interval
+    this.collectedResourcesLastInterval = new Array(); // Holds how many resources were collected during the last time interval. Will be displayed in the UI for the player
 
     // Initial Resources
     let resCodes = Resources.GetCodes();
@@ -24,18 +20,19 @@ Player.prototype.InitHyrule = function()
 	// We need to count battalions instead of individual troops
 	this.resourceGatherersBattalions[res] = new Map;
 
-	// We need this to estimate the average resource gain
-	this.recentlyCollectedResources[res] = new Array();
-	this.averageResourceGatherRates[res] = 0;
-	for (let j = 0; j < this.resourceBufferIntervals; j++){
-		this.recentlyCollectedResources[res][j] = 0;
-	}
+	// Init the resouce counter
+	this.collectedResourcesThisInterval[res] = 0;
+	this.collectedResourcesLastInterval[res] = 0;
     }
 
     let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
-    cmpTimer.SetInterval(this.entity, IID_Player, "UpdateResourceBuffer", 1000, this.resourceBufferUpdateTime, null);
-    cmpTimer.SetInterval(this.entity, IID_Player, "CalculateAverageResourceGatherRates", 1000, 5000, null);
+    cmpTimer.SetInterval(this.entity, IID_Player, "UpdateAverageGatherRate", 1000, this.gatherRateUpdateTime, null); 
     cmpTimer.SetInterval(this.entity, IID_Player, "SendBattalionOrdersToGuiInterface", 1000, 500, null);
+}
+
+Player.prototype.GetCiv = function ()
+{
+    return Engine.QueryInterface(this.entity, IID_Identity).GetCiv();
 }
 
 /**
@@ -297,48 +294,15 @@ Player.prototype.GetBattalion = function (index)
     return this.allBattalions.get(index);
 };
 
-Player.prototype.UpdateResourceBuffer = function ()
+Player.prototype.UpdateAverageGatherRate = function ()
 {
 	let resCodes = Resources.GetCodes();
-	//~ this.CalculateAverageResourceGatherRates();
 
-	this.resourceBufferIndex = (this.resourceBufferIndex + 1) % this.resourceBufferIntervals;
-	//~ warn("this.resourceBufferIndex: " + this.resourceBufferIndex);
 	for (let i in resCodes)
 	{
 		let res = resCodes[i];
-		this.recentlyCollectedResources[res][this.resourceBufferIndex] = 0;
-	}
-}
-
-Player.prototype.CalculateAverageResourceGatherRates = function ()
-{
-	let resCodes = Resources.GetCodes();
-	//~ warn("playerID: " + this.playerID);
-	//~ warn("resCodes: " + JSON.stringify(resCodes));
-	for (let i in resCodes)
-	{
-		let resourceCollectedDuringInterval = 0;
-		let res = resCodes[i];
-		//~ warn("res: " + res);
-		//~ warn("this.recentlyCollectedResources[res]: " + JSON.stringify(this.recentlyCollectedResources[res]));
-		for(let amount of this.recentlyCollectedResources[res]){
-			resourceCollectedDuringInterval += +amount;
-		}
-
-		let amountLastFiveSeconds = 0;
-		for (let j = 0; j < 5; j++){
-			let resourceBuffer = this.recentlyCollectedResources[res];
-			let resourceBufferLength = resourceBuffer.length;
-			//~ warn("resourceBufferLength: " + resourceBufferLength);
-			//~ warn("(this.resourceBufferIndex + ((resourceBufferLength -j) % resourceBufferLength): " + (this.resourceBufferIndex + ((resourceBufferLength -j) % resourceBufferLength))% resourceBufferLength);
-			let indexToAdd =  (this.resourceBufferIndex + ((resourceBufferLength -j) % resourceBufferLength))% resourceBufferLength;
-			amountLastFiveSeconds += +(this.recentlyCollectedResources[res][ indexToAdd])
-		}
-		//~ warn("amountLastFiveSeconds: " + amountLastFiveSeconds);
-
-		this.averageResourceGatherRates[res] = +(resourceCollectedDuringInterval/(this.resourceBufferIntervals/this.resourceBufferGatherRatePerSeconds)).toFixed(1);
-		//~ warn("this.averageResourceGatherRates[res]: " + this.averageResourceGatherRates[res]);
+		this.collectedResourcesLastInterval[res] = this.collectedResourcesThisInterval[res]
+		this.collectedResourcesThisInterval[res] = 0;
 	}
 }
 
@@ -379,11 +343,3 @@ Player.prototype.TransformEntity = function (entityToTransform, templateToTransf
 		this.ReplenishBattalionToFull(battalionID);
 	}
 }
-
-Player.prototype.GetCurrentFairySeason = function()
-{
-	if (this.civ == "fairy"){
-		return this.fairySeasonCurrent;
-	}
-	return undefined;
-};

@@ -5,8 +5,6 @@
       <Damage>
         <Fire>20.0</Fire>
       </Damage>
-      <Delay>0</Delay>
-      <ElevationBonus>15</ElevationBonus>
       <MaxRange>110.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -18,7 +16,7 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>5000</RepeatTime>
       <Splash>
@@ -29,6 +27,12 @@
         <Range>10</Range>
         <Shape>Circular</Shape>
       </Splash>
+      <EffectDelay>0</EffectDelay>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
     </Ranged>
   </Attack>
   <BuildRestrictions>
@@ -120,17 +124,6 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      goron/building_explresist
-	  goron/building_mountaindef
-	  goron/building_medingorock
-	  goron/building_superlava
-	  goron/building_archoles
-	  goron/medigoron_biggoronbricks
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/goron_bomb_impact.xml</attack_impact_ranged>
@@ -180,4 +173,17 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
+  <Researcher>
+    <Technologies datatype="tokens">goron/building_explresist
+	  goron/building_mountaindef
+	  goron/building_medingorock
+	  goron/building_superlava
+	  goron/building_archoles
+	  goron/medigoron_biggoronbricks
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -16,7 +16,7 @@
   units/batlebro_aura_2
   </Auras>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>60</food>
       <metal>10</metal>

@@ -5,7 +5,6 @@
       <Damage>
         <Crush>150</Crush>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>10</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Structure Infantry</PreferredClasses>
@@ -36,11 +35,12 @@
         <Horizontal>25</Horizontal>
         <Vertical>25</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
     <BattalionSlots>5</BattalionSlots>
-    <BuildTime>120</BuildTime>
+    <BuildTime>80</BuildTime>
     <Resources>
       <food>2770</food>
       <metal>250</metal>

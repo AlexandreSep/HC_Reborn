@@ -4,7 +4,7 @@
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>50</BuildTime>
@@ -40,8 +40,28 @@
   <Obstruction>
     <Static depth="21.0" width="34.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/hylian/hylian_religionA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/priestess
+      hylian/rauru_resistant
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/hylian/{civ}_deacon_b
+    units/hylian/{civ}_acolyte_b
+    units/hylian/{civ}_magecaptain_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -52,11 +72,6 @@
         <Z>25</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/hylian/{civ}_deacon_b
-    units/hylian/{civ}_acolyte_b
-    units/hylian/{civ}_magecaptain_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -70,20 +85,5 @@
       <X>0</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-      hylian/priestess
-      hylian/rauru_resistant
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_temple.xml</constructed>
-      <select>interface/select/building/sel_temple.xml</select>
-    </SoundGroups>
-  </Sound>
-  <Upgrade disable="" />
-  <VisualActor>
-    <Actor>structures/hylian/hylian_religionA.xml</Actor>
-    <FoundationActor>structures/hylian/hylian_scaffoldE.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

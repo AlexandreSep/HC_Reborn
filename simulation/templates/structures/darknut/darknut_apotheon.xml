@@ -38,8 +38,28 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/darknut/complete_apotheon.xml</constructed>
+      <select>interface/select/building/darknut/sel_apotheon.xml</select>
+      <upgraded>interface/complete/building/darknut/complete_apotheon.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_apotheonbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/apoth_leadbyexample
+    darknut/apoth_lemons
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/darknut/{civ}_dux_b
+      units/darknut/{civ}_idolthrone_b
+    units/darknut/{civ}_legatus_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -50,11 +70,6 @@
         <Z>40</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/darknut/{civ}_dux_b
-      units/darknut/{civ}_idolthrone_b
-    units/darknut/{civ}_legatus_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -68,20 +83,5 @@
       <X>0</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    darknut/apoth_leadbyexample
-    darknut/apoth_lemons
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/darknut/complete_apotheon.xml</constructed>
-      <select>interface/select/building/darknut/sel_apotheon.xml</select>
-      <upgraded>interface/complete/building/darknut/complete_apotheon.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_apotheonbaseA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

@@ -3,16 +3,6 @@
     <Classes datatype="tokens">Winter</Classes>
     <Icon>structures/fairy/fai_greatfountain_winter.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/fairy/{civ}_great_winter
-    units/fairy/{civ}_godmother_winter
-    units/fairy/{civ}_madmystic_winter
-      units/fairy/{civ}_bounded_winter
-    units/fairy/{civ}_mistwalker_winter
-    </Entities>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_greatfountain_spring</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -21,4 +11,16 @@
     <Actor>structures/fairy/fairy_greatfountainA_winter.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/fairy/{civ}_great_winter
+    units/fairy/{civ}_godmother_winter
+    units/fairy/{civ}_madmystic_winter
+      units/fairy/{civ}_bounded_winter
+    units/fairy/{civ}_mistwalker_winter</Entities>
+  </Trainer>
 </Entity>

@@ -68,22 +68,6 @@
   <Obstruction>
     <Static depth="30.0" width="30.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      gerudo/gather_wood_zaldorfaxes
-	  gerudo/gather_wood_palmskin
-	  gerudo/gather_wood_endgrain
-	  gerudo/gather_stone_artificer
-      gerudo/gather_stone_bulkwork
-	  gerudo/gather_stone_manslaves
-      gerudo/gather_rupee_leevertooth
-	  gerudo/gather_rupee_ishafinder
-	  gerudo/gather_rupee_ruvaraexec
-      gerudo/gather_ger_capacity_gadura
-	  gerudo/gather_ger_capacity_pokey
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <Resistance>
     <Entity>
@@ -124,4 +108,22 @@
     <Actor>structures/gerudo/gerudo_millA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/gather_wood_zaldorfaxes
+	  gerudo/gather_wood_palmskin
+	  gerudo/gather_wood_endgrain
+	  gerudo/gather_stone_artificer
+      gerudo/gather_stone_bulkwork
+	  gerudo/gather_stone_manslaves
+      gerudo/gather_rupee_leevertooth
+	  gerudo/gather_rupee_ishafinder
+	  gerudo/gather_rupee_ruvaraexec
+      gerudo/gather_ger_capacity_gadura
+	  gerudo/gather_ger_capacity_pokey
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

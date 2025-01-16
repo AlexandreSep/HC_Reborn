@@ -1,0 +1,12 @@
+{
+	"genericName": "Autumn",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"researchTime": 1,
+	"requirements": { "all": [{ "entity": { "class": "AutumnSundial", "number": 1 } }] },	
+	"autoResearch": true,
+	"icon": "fairy/unlock_autumn.dds",	
+	"tooltip": "Unlock the power of Autumn! Allows you to summon Autumntime Fairies and Ruins.",
+	"modifications": [],
+	"affects": []
+}

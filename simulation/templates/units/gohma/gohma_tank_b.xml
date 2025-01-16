@@ -23,7 +23,7 @@
   </Attack>
   <Capture disable="" />
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>125</food>
       <metal>0</metal>

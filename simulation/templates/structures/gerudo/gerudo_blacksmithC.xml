@@ -84,7 +84,7 @@
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">City</Classes>
     <GenericName>Masonry</GenericName>
-    <History>The clay of the Desert is a secret to many outside its borders, but for the Gerudo it&#8217;s the foundation of all their cities. These Masons can work the Clay to improve their buildings in a variety of ways.</History>
+    <History>The clay of the Desert is a secret to many outside its borders, but for the Gerudo it’s the foundation of all their cities. These Masons can work the Clay to improve their buildings in a variety of ways.</History>
     <Icon>structures/gerudo/ger_mason.dds</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Improves Gerudo buildings.</Tooltip>
@@ -97,17 +97,6 @@
   <Obstruction>
     <Static depth="35.0" width="35.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    </Entities>
-    <Technologies datatype="tokens">
-      gerudo/toruma_clay
-	  gerudo/palu_const
-	  gerudo/karusa_kilns
-	  gerudo/adobe_roof_plans
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -143,4 +132,15 @@
     <Actor>structures/gerudo/gerudo_masonA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/toruma_clay
+	  gerudo/palu_const
+	  gerudo/karusa_kilns
+	  gerudo/adobe_roof_plans
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

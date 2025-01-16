@@ -4,7 +4,6 @@
       <Damage>
         <Light>225.0</Light>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>150.0</MaxRange>
       <MinRange>45.0</MinRange>
       <PrepareTime>9000</PrepareTime>
@@ -21,6 +20,7 @@
         <Range>15</Range>
         <Shape>Circular</Shape>
       </Splash>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Promotion disable="" />

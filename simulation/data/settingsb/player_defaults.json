@@ -1,0 +1,68 @@
+{
+	"PlayerData":
+	[
+		{
+			"Name": "Hyrule",
+			"Civ": "gaia",
+			"Color": { "r": 255, "g": 255, "b": 255 },
+			"AI": "",
+			"AIDiff": 3
+		},
+		{
+			"Name": "Player 1",
+			"Civ": "hylian",
+			"Color": { "r": 162, "g": 0, "b": 255 },
+			"AI": "ConquestAI",
+			"AIDiff": 3
+		},
+		{
+			"Name": "Player 2",
+			"Civ": "gerudo",
+			"Color": { "r": 255, "g": 138, "b": 0 },
+			"AI": "ConquestAI",
+			"AIDiff": 3
+		},
+		{
+			"Name": "Player 3",
+			"Civ": "goron",
+			"Color": { "r": 255 , "g": 0, "b": 0 },
+			"AI": "ConquestAI",
+			"AIDiff": 3
+		},
+		{
+			"Name": "Player 4",
+			"Civ": "zora",
+			"Color": { "r": 0, "g": 54, "b": 255 },
+			"AI": "ConquestAI",
+			"AIDiff": 3
+		},
+		{
+			"Name": "Player 5",
+			"Civ": "kokiri",
+			"Color": { "r": 10, "g": 200, "b": 0 },
+			"AI": "ConquestAI",
+			"AIDiff": 3
+		},
+		{
+			"Name": "Player 6",
+			"Civ": "gohma",
+			"Color": { "r": 0, "g": 255, "b": 255 },
+			"AI": "ConquestAI",
+			"AIDiff": 3
+		},
+		{
+			"Name": "Player 7",
+			"Civ": "ordona",
+			"Color": { "r": 220, "g": 190, "b": 135 },
+			"AI": "ConquestAI",
+			"AIDiff": 3
+		},
+		{
+			"Name": "Player 8",
+			"Civ": "lanayru",
+			"Color": { "r": 45, "g": 95, "b": 150 },
+			"AI": "ConquestAI",
+			"AIDiff": 3
+		}
+	]
+}

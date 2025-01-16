@@ -115,53 +115,6 @@
       </PlotJ>
     </PlotsToSpawn>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>2</X>
-        <Z>18</Z>
-      </step1>
-      <step2>
-        <X>2</X>
-        <Z>30</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>35</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/kokiri/{civ}_fiddler_songwind
-      units/{civ}_trader_b
-    units/kokiri/merc_forestthief_b
-    units/kokiri/merc_pikku_b
-    units/kokiri/merc_mago_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>2</X>
-      <Z>17</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-      kokiri/gather_capacity_belt
-    kokiri/gather_capacity_backpack
-    kokiri/gather_wood_planned
-    kokiri/gather_wood_cultigen
-    kokiri/gather_rupee_uprooting
-    kokiri/cartography
-      kokiri/trade_knowitallnuts
-      kokiri/fado_festival
-    </Technologies>
-  </ProductionQueue>
   <ResourceDropsite>
     <Sharable>true</Sharable>
     <Types>food wood stone metal</Types>
@@ -180,4 +133,51 @@
     <Actor>structures/kokiri/kokiri_grove_marketA.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldH.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/gather_capacity_belt
+    kokiri/gather_capacity_backpack
+    kokiri/gather_wood_planned
+    kokiri/gather_wood_cultigen
+    kokiri/gather_rupee_uprooting
+    kokiri/cartography
+      kokiri/trade_knowitallnuts
+      kokiri/fado_festival
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/kokiri/{civ}_fiddler_songwind
+      units/{civ}_trader_b
+    units/kokiri/merc_forestthief_b
+    units/kokiri/merc_pikku_b
+    units/kokiri/merc_mago_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>2</X>
+        <Z>18</Z>
+      </step1>
+      <step2>
+        <X>2</X>
+        <Z>30</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>35</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>2</X>
+      <Z>17</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

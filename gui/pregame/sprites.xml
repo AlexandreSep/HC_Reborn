@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sprites>
+
+	<sprite name="WhiteLine">
+		<image backcolor="255 255 255 50" size="0 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="GoldenLine">
+		<image backcolor="156 113 55 255" size="0 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="BackLight">
+		<image backcolor="0 0 0 150" size="0 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="BackDarker">
+		<image backcolor="12 18 22 230" size="0 0 100% 100%"/>
+	</sprite>
+
+	<sprite name = "MenuBackCloud">
+		<!-- <effect add_color="42 42 42 0"/> -->
+		<image texture = "pregame/shell/menu/menu-background.png"
+			size = "0 0 100% 100%"
+			texture_size = "0 0 1024 80"
+		/>
+	</sprite>
+
+	<sprite name = "MainMenuGradient">
+		<image texture = "global/modern/shadow-high.png"
+			size = "0 0 100% 100%"
+		/>
+	</sprite>
+
+	<sprite name = "MainMenuGradientLight">
+		<image texture = "global/modern/shadow-high-light.png"
+			size = "0 0 100% 100%"
+		/>
+	</sprite>
+
+
+	<sprite name="LogoDarkGoldBack">
+		<image texture = "pregame/shell/menu/menu-background.png"
+			size = "0 0 100% 100%"
+			texture_size = "0 0 1024 80"
+		/>
+		<image backcolor="156 113 55 255" size="0 0 100% 1"/>
+		<image backcolor="156 113 55 255" size="0 100%-1 100% 100%"/>
+		<image backcolor="156 113 55 255" size="0 0 1 100%"/>
+		<image backcolor="156 113 55 255" size="100%-1 0 100% 100%"/>
+	</sprite>
+
+
+	<sprite name="CenterMenuButtons">
+		<image
+			texture="loading/gradient_tips.png"
+			real_texture_placement="0 0 512 383"
+			size="0 0 100% 100%"
+		/>
+		<image
+			texture="loading/gradient_tips.png"
+			real_texture_placement="0 0 512 383"
+			size="0 0 100% 100%"
+		/>
+		<image texture="pregame/shading/menu_panel_background_shading.png"
+			texture_size="0 0 100% 100%"
+			size="0 0 100% 100%"
+		/>
+		<image backcolor="176 133 75 255" size="0 0 100% 1"/>
+		<image backcolor="176 133 75 255" size="0 100%-1 100% 100%"/>
+		<image backcolor="176 133 75 255" size="0 0 1 100%"/>
+		<image backcolor="176 133 75 255" size="100%-1 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="CenterMenuButtonsOver">
+		<image texture="global/button/button_shiny_selected.png"
+			real_texture_placement="0 0 256 28"
+			size="0 0 100% 100%"
+		/>
+		<image backcolor="176 133 75 255" size="0 0 100% 1"/>
+		<image backcolor="176 133 75 255" size="0 100%-1 100% 100%"/>
+		<image backcolor="176 133 75 255" size="0 0 1 100%"/>
+		<image backcolor="176 133 75 255" size="100%-1 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="LogoDarkBack">
+		<image backcolor="30 30 30 230" size="2 2 100%-2 100%-2"/>
+	</sprite>
+
+	<sprite name="CenterMenu">
+		<image texture = "pregame/shell/menu/menu-background.png"
+			size = "2 2 100%-2 100%-2"
+		/>
+		<image backcolor="156 113 55 255" size="0 0 100% 2"/>
+		<image backcolor="156 113 55 255" size="0 100%-2 100% 100%"/>
+		<image backcolor="156 113 55 255" size="0 0 2 100%"/>
+		<image backcolor="156 113 55 255" size="100%-2 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="LogoGoldLinesVert">
+		<image backcolor="156 113 55 255" size="0 0 1 100%"/>
+		<image backcolor="156 113 55 255" size="100%-1 0 100% 100%"/>
+	</sprite>
+
+	<sprite name="pgUserReportBox">
+		<image backcolor="0 0 0 220"
+			size="0 0 100% 100%"
+		/>
+		<image backcolor="200 200 200" size="0 0 100% 1"/>
+		<image backcolor="200 200 200" size="0 100%-1 100% 100%"/>
+		<image backcolor="200 200 200" size="0 0 1 100%"/>
+		<image backcolor="200 200 200" size="100%-1 0 100% 100%"/>
+	</sprite>
+
+</sprites>

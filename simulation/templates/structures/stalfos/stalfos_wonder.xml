@@ -22,44 +22,12 @@
     <GenericName>Arbiter's Grounds</GenericName>
     <Icon>structures/stalfos/sta_arbitersground.dds</Icon>
     <RequiredTechnology>phase_village</RequiredTechnology>
-    <Tooltip></Tooltip>
+    <Tooltip>
+    </Tooltip>
   </Identity>
   <Obstruction>
     <Static depth="64.0" width="64.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>20</X>
-        <Z>25</Z>
-      </step1>
-      <step2>
-        <X>30</X>
-        <Z>35</Z>
-      </step2>
-	  <step3>
-        <X>40</X>
-        <Z>45</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    units/stalfos/{civ}_titan_stallord
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>10</X>
-      <Z>10</Z>
-    </SpawnOffset>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/moblin/complete_ganoncastle.xml</constructed>
@@ -75,4 +43,39 @@
     <Actor>structures/stalfos/stalfos_wonderA_anc.xml</Actor>
     <FoundationActor>structures/stalfos/stalfos_summonW.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/stalfos/{civ}_titan_stallord</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>20</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>30</X>
+        <Z>35</Z>
+      </step2>
+      <step3>
+        <X>40</X>
+        <Z>45</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>10</X>
+      <Z>10</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

@@ -1,6 +1,6 @@
 <Entity parent="HC_template_unit_auxiliary">
   <Cost>
-    <BuildTime>10</BuildTime>
+    <BuildTime>7</BuildTime>
     <Resources>
       <food>50</food>
     </Resources>

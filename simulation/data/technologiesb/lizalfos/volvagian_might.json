@@ -1,0 +1,15 @@
+{
+	"genericName": "Volvagian Might",
+	"description": "The Lizalfos looked up to Volvagians as gods, their entire culture and philosophy was shaped by the infernal dragons.",
+	"cost": {"food": 300, "wood": 300, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "lizalfos_doda"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Unlocked with Dodalagon.",
+	"icon": "lizalfos/volvagian_might.dds",
+	"researchTime": 40,
+	"tooltip": "All non-creature, non mechanical units gain +50% Resitance to Fire damage.",
+	"modifications": [
+		{"value": "Resistance/Entity/Damage/Fire", "add": 50}
+	],
+	"affects": ["Volvamight"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

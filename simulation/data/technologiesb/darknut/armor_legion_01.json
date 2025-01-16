@@ -1,0 +1,15 @@
+{
+	"genericName": "Greatarmors",
+	"description": "Few things terrify a soldier in Hyrule more than the clanking armor of an approaching Darknut warrior. Their impressive armor, while created by the Zuna people, combines several designs and techniques from unrelated cultures to create an impressive suit.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 450},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "darknut/armor_greatarmors.dds",
+	"researchTime": 40,
+	"tooltip": "Few things terrify a soldier in Hyrule more than the clanking armor of an approaching Darknut warrior. Their impressive armor, while created by the Zuna people, combines several designs and techniques from unrelated cultures to create an impressive suit. (+3 Non Magic Armor for Legion units)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 3.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 3.0},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 3.0}],
+	"affects": ["Legion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

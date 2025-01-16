@@ -1,0 +1,13 @@
+{
+	"genericName": "Warrior Pairings",
+	"description": "Warriors that worked exceptionally well together were paired within shared quarters to minimize infighting.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 450},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "darknut/domus_warriorpairings.dds",
+	"researchTime": 40,
+	"tooltip": "Warriors that worked exceptionally well together were paired within shared quarters to minimize infighting. (Domus provides an additional +5 population)",
+	"modifications": [{"value": "Cost/PopulationBonus", "add": 5}],
+	"affects": ["House"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -6,7 +6,6 @@
         <Crush>10.0</Crush>
         <Pierce>50.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>110.0</MaxRange>
       <MinRange>45.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Structure</PreferredClasses>
@@ -33,10 +32,11 @@
         </SpawnOnImpact>
         <Template>units/deku/deku_baba_b</Template>
       </SpawnEntityOnImpact>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>45</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
       <food>0</food>
       <metal>50</metal>

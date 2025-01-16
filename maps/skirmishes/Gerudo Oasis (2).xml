@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="312.074" y="323.824" z="353.027"/>
+		<Position x="583.858" y="387.902" z="131.328"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -3558,20 +3558,6 @@
 			<Position x="1006.40326" z="615.40632"/>
 			<Orientation y="-1.46097"/>
 			<Actor seed="43646"/>
-		</Entity>
-		<Entity uid="552">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="659.49616" z="228.09238"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="54754"/>
-		</Entity>
-		<Entity uid="553">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="594.45551" z="1006.93476"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="16750"/>
 		</Entity>
 		<Entity uid="554">
 			<Template>gaia/fruit/berry_05</Template>

@@ -1,0 +1,13 @@
+{
+	"genericName": "Zunayus Tax",
+	"description": "In exchange for supplying markets with the finest of Zuna weapons, armor, and products, Markets were required to pay an additional tax to those in charge of the supplies at Zunayus.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_village"}]},
+	"requirementsTooltip": "Requires Town Phase.",
+	"icon": "npc_zuna/zuna_zunayustax.dds",
+	"researchTime": 40,
+	"tooltip": "In exchange for supplying markets with the finest of Zuna weapons, armor, and products, Markets were required to pay an additional tax to those in charge of the supplies at Zunayus. (+1 Rupee Resource Trickle/1 second - Market Structure)",
+	"modifications": [{"value": "ResourceTrickle/Rates/metal", "add": 1}],
+	"affects": ["BarterMarket"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

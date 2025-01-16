@@ -19,12 +19,14 @@
     <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>gaia/lon_lon_cow_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -44,43 +46,6 @@
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>-5</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>10</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>30</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>-7</X>
-      <Z>-5</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    moblin/unit_takedead
-    moblin/trade_cheat
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_market.xml</constructed>
@@ -100,4 +65,41 @@
     <Actor>structures/moblin/moblin_meetnmeatA.xml</Actor>
     <FoundationActor>structures/moblin/moblin_scaffoldD.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/unit_takedead
+    moblin/trade_cheat
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    gaia/lon_lon_cow_1</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-5</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>10</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-7</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

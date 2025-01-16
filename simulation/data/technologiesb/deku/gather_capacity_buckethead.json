@@ -1,0 +1,17 @@
+{
+	"genericName": "Buckethead",
+	"description": "Underlings were not the best workers in the land, being quite limited by their bodies. Scrubs solved some of these issues by sticking buckets on their heads.",
+	"cost": {"food": 0, "wood": 250, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "deku/gather_capacity_buckethead.dds",
+	"researchTime": 40,
+	"tooltip": "+5 Carrying Capacity - Underling.",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 5},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 5},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 5},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 5}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

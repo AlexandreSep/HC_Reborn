@@ -1,0 +1,12 @@
+{
+	"genericName": "Spring",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"researchTime": 1,
+	"requirements": { "all": [{ "entity": { "class": "SpringSundial", "number": 1 } }] },	
+	"autoResearch": true,
+	"icon": "fairy/unlock_spring.dds",	
+	"tooltip": "Unlock the power of Spring! Allows you to summon Springtime Fairies and Ruins.",
+	"modifications": [],
+	"affects": []
+}

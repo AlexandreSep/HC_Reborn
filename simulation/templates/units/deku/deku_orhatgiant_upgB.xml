@@ -1,6 +1,6 @@
 <Entity parent="units/deku/deku_orhatgiant_b">
   <Cost>
-   <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>250</food>
       <metal>0</metal>
@@ -17,18 +17,18 @@
       </Archer1>
     </TurretPoints>
   </TurretHolder>
-  <Health>    
-	<SpawnGarrison>
-		<Template>units/deku/deku_dekupult_orhat</Template>
-		<SpawnNumber>1</SpawnNumber>
-		<LinkedDestruction>true</LinkedDestruction>
-	</SpawnGarrison>
+  <Health>
+    <SpawnGarrison>
+      <Template>units/deku/deku_dekupult_orhat</Template>
+      <SpawnNumber>1</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
   </Health>
   <Identity>
     <GenericName>Giant Orhat (Engine Mount)</GenericName>
-	<RequiredTechnology>deku/kado_mountengine</RequiredTechnology>	
+    <RequiredTechnology>deku/kado_mountengine</RequiredTechnology>
   </Identity>
-  <Upgrade disable="" />  
+  <Upgrade disable="" />
   <VisualActor>
     <Actor>units/deku/deku_orhat_giant_upg.xml</Actor>
   </VisualActor>

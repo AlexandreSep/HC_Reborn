@@ -39,8 +39,25 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/goron/goron_hallwarriorA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/troop_rubyshield
+    goron/troop_megatonsteel
+    goron/troop_elderhide
+    goron/darunia_rubyarmor
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/goron/{civ}_rubyguard_b
+      units/goron/{civ}_firewarrior_b
+      units/goron/{civ}_patriarch_b
+    units/goron/{civ}_berserker_b
+    units/goron/{civ}_brotheratarms_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -51,13 +68,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/goron/{civ}_rubyguard_b
-      units/goron/{civ}_firewarrior_b
-      units/goron/{civ}_patriarch_b
-    units/goron/{civ}_berserker_b
-    units/goron/{civ}_brotheratarms_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -71,15 +81,5 @@
       <X>0</X>
       <Z>17.5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-      goron/troop_rubyshield
-    goron/troop_megatonsteel
-    goron/troop_elderhide
-    goron/darunia_rubyarmor
-    </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/goron/goron_hallwarriorA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

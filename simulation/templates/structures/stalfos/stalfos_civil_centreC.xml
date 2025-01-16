@@ -8,9 +8,11 @@
   <Identity>
     <Icon>structures/stalfos/sta_cc_ancC.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-		stalfos/stalfos_getmausoleum
-    </Technologies>
-  </ProductionQueue>
+  <Researcher>
+    <Technologies datatype="tokens">stalfos/stalfos_getmausoleum
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

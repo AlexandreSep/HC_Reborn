@@ -1,0 +1,15 @@
+{
+	"genericName": "Bug Bashin!",
+	"description": "",
+	"cost": {"food": 250, "wood": 0, "stone": 0, "metal": 250},
+	"requirements": {"all": [ {"tech": "civ_choices/moblin/choosehero_glutko"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "You must select Glutko as your hero.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "Bugblin Battlers gain +25% HP and a 25% survival rate when thrown by Tallblins.",
+	"modifications": [{"value": "Attack/SpawnEntityOnImpact/SpawnOnHit/Chance", "multiply": 1.25, "affects": "Tallblin" },
+					  {"value": "Attack/SpawnEntityOnImpact/SpawnOnImpact/Chance", "multiply": 1.25, "affects": "Tallblin" },
+					  {"value": "Health/Max", "multiply": 1.25, "affects": "BugBattler" }],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

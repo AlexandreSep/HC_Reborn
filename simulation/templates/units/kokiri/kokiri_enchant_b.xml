@@ -5,7 +5,6 @@
       <Damage>
         <Spirit>20.0</Spirit>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>60</MaxRange>
       <MinRange>25.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -18,10 +17,11 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>1800</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>40</food>
       <metal>0</metal>

@@ -158,9 +158,9 @@ var g_Commands = {
     // HC-code, positions given are based upon the battalion system
 	"walk": function(player, cmd, data)
 	{
+		if(data.entities.length < 1) { return; } // sometimes the data filter itself doesn't have the entity, maybe dead unit by that point?
         let startPos = Engine.QueryInterface(data.entities[0], IID_Position).GetPosition2D();
         let initialDestination = new Vector2D(cmd.x, cmd.z);
-        let facingDirection = Vector2D.sub(initialDestination, startPos).normalize();
         let battalionIndices = GetBattalionIndices(data.entities);
         let allBattalions = data.cmpPlayer.allBattalions;
 
@@ -171,7 +171,6 @@ var g_Commands = {
             let currentDestination = battalionDestinations[i];
             let battalionEnts = allBattalions.get(battalionIndices[i]);
             GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                //cmpUnitAI.formationControllerTarget = Vector2D.add(facingDirection, currentDestination);
                 cmpUnitAI.Walk(currentDestination.x, currentDestination.y, cmd.queued, cmd.pushFront);
             });
         }
@@ -204,7 +203,6 @@ var g_Commands = {
         let allowCapture = cmd.allowCapture || cmd.allowCapture == null;
         let startPos = Engine.QueryInterface(data.entities[0], IID_Position).GetPosition2D();
         let initialDestination = new Vector2D(cmd.x, cmd.z);
-        let facingDirection = Vector2D.sub(initialDestination, startPos).normalize();
         let battalionIndices = GetBattalionIndices(data.entities);
         let allBattalions = data.cmpPlayer.allBattalions;
 
@@ -214,7 +212,6 @@ var g_Commands = {
             let battalionEnts = allBattalions.get(battalionIndices[i]);
             let currentDestination = battalionDestinations[i];
             GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                //cmpUnitAI.formationControllerTarget = Vector2D.add(facingDirection, currentDestination);
                 cmpUnitAI.WalkAndFight(currentDestination.x, currentDestination.y, cmd.targetClasses, allowCapture, cmd.queued, cmd.pushFront);
             });
         }
@@ -351,7 +348,7 @@ var g_Commands = {
         for (let entity of allEntities) {
             let cmpIdentity = Engine.QueryInterface(entity, IID_Identity);
             if (cmpIdentity && cmpIdentity.HasClass("CivilCentre")){
-                Engine.QueryInterface(entity, IID_ProductionQueue).CalculateEntitiesMap();
+                Engine.QueryInterface(entity, IID_Trainer).CalculateEntitiesMap();
 			}
         }
     },
@@ -362,9 +359,36 @@ var g_Commands = {
 		for (let ent of data.entities)
 		{
 			var cmpUnitAI = Engine.QueryInterface(ent, IID_UnitAI);
-			if(!cmpUnitAI || !cmpUnitAI.BackToWork())
+			if(!cmpUnitAI || !cmpUnitAI.BackToWork())	
 				notifyBackToWorkFailure(player);
 		}
+	},
+	
+	"call-to-arms": function(player, cmd, data)
+	{
+		const unitsToMove = data.entities.filter(ent =>
+			MatchesClassList(Engine.QueryInterface(ent, IID_Identity).GetClassesList(),
+				["Soldier", "Warship", "Siege", "Healer"])
+		);
+		// HC-Code
+		// HC-Exodarion - Is that correct so?
+		for (let index of GetBattalionIndices(unitsToMove)) {
+            		let battalionEnts = data.cmpPlayer.allBattalions.get(index);
+			GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
+				const target = cmd.target;
+				if (cmd.pushFront)
+				{
+					cmpUnitAI.WalkAndFight(target.x, target.z, cmd.targetClasses, cmd.allowCapture, false, cmd.pushFront);
+					cmpUnitAI.DropAtNearestDropSite(false, cmd.pushFront);
+				}
+				else
+				{
+					cmpUnitAI.DropAtNearestDropSite(cmd.queued, false)
+					cmpUnitAI.WalkAndFight(target.x, target.z, cmd.targetClasses, cmd.allowCapture, true, false);
+				}
+			});
+		}
+		// HC-End
 	},
 
 	"remove-guard": function(player, cmd, data)
@@ -420,29 +444,19 @@ var g_Commands = {
 				continue;
 			}
 
-			var queue = Engine.QueryInterface(ent, IID_ProductionQueue);
+			const cmpTrainer = Engine.QueryInterface(ent, IID_Trainer);
+			if (!cmpTrainer)
+				continue;
+
+			let templateName = cmd.template;
 			// Check if the building can train the unit
 			// TODO: the AI API does not take promotion technologies into account for the list
 			// of trainable units (taken directly from the unit template). Here is a temporary fix.
-			if (queue && data.cmpPlayer.IsAI())
-			{
-				var list = queue.GetEntitiesList();
-				if (list.indexOf(cmd.template) === -1 && cmd.promoted)
-				{
-					for (var promoted of cmd.promoted)
-					{
-						if (list.indexOf(promoted) === -1)
-							continue;
-						cmd.template = promoted;
-						break;
-					}
-				}
-			}
-			if (queue && queue.GetEntitiesList().indexOf(cmd.template) != -1)
-				if ("metadata" in cmd)
-					queue.AddItem(cmd.template, "unit", +cmd.count, cmd.metadata);
-				else
-					queue.AddItem(cmd.template, "unit", +cmd.count);
+			if (data.cmpPlayer.IsAI())
+				templateName = cmpTrainer.GetUpgradedTemplate(cmd.template);
+
+			if (cmpTrainer.CanTrain(templateName))
+				Engine.QueryInterface(ent, IID_ProductionQueue)?.AddItem(templateName, "unit", +cmd.count, cmd.metadata, cmd.pushFront);
 		}
 	},
 
@@ -458,7 +472,7 @@ var g_Commands = {
 
 		var queue = Engine.QueryInterface(cmd.entity, IID_ProductionQueue);
 		if (queue)
-			queue.AddItem(cmd.template, "technology");
+			queue.AddItem(cmd.template, "technology", undefined, cmd.metadata, cmd.pushFront);
 	},
 
 	"stop-production": function(player, cmd, data)
@@ -994,7 +1008,7 @@ var g_Commands = {
 			if (cmpProductionQueue)
 				cmpProductionQueue.DisableAutoQueue();
 		}
-    },
+	},
 
     //HC-code, HC specific commands related to the ConquestAI and campaign operations
     "ChooseHero": function (player, cmd, data) {
@@ -1003,46 +1017,39 @@ var g_Commands = {
 
         if (cmd.name) // choose the specific hero specified 
         {
-            let playerName = cmd.name.split(" ")[0];
+            let playerName = cmd.name.split(" ");
             for (let techPath of civTechs) {
                 let template = TechnologyTemplates.Get(techPath);
+				let nameIndex = 0;
+				if(template.nameIndex)
+					nameIndex = template.nameIndex;
                 // if the player name and the tech name align, research that hero
                 // split at the space because two identical names will place a II behind the AI name
                 // If no PlayerName was specified
-                if (template.genericName.split(" ")[0] != playerName)
+                if (template.genericName.split(" ")[nameIndex] != playerName[nameIndex])
                     continue;
 
                 cmpTechnologyManager.ResearchTechnology(techPath);
-                break;
-            }
-        }
-        else // choose a random hero 
-        {
-            let paths = [];
-            for (let techPath of civTechs) // clone the paths list
-                paths.push(techPath);
-
-            for (let i = 0; i < civTechs.length; i++) {
-                let randIndex = randIntExclusive(+0, +paths.length); // get a random index from the paths list
-                let path = paths[randIndex]; // get the random value index that we still need to check for the trainable units list
-                paths.splice(randIndex, 1); //after the random index has been used for assignment, splice it from the potential path list so it wont be checked again
-
-                if (cmpTechnologyManager.IsTechnologyResearched(path) == true) // we already have this hero, try another
-                    continue;
-
-                cmpTechnologyManager.ResearchTechnology(path); // found an unresearched hero, research it and break
-                break;
+                return;
             }
         }
 
-        // after researching a hero, let all the civil centres know that they need to update the production queue with the new heroes
-        let cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
-        let allEntities = cmpRangeManager.GetEntitiesByPlayer(player);
-        for (let entity of allEntities) {
-            let cmpIdentity = Engine.QueryInterface(entity, IID_Identity);
-            if (cmpIdentity && cmpIdentity.HasClass("CivilCentre"))
-                Engine.QueryInterface(entity, IID_ProductionQueue).CalculateEntitiesList();
-        }
+        // choose a random hero 
+		let paths = [];
+		for (let techPath of civTechs) // clone the paths list
+			paths.push(techPath);
+
+		for (let i = 0; i < civTechs.length; i++) {
+			let randIndex = randIntExclusive(+0, +paths.length); // get a random index from the paths list
+			let path = paths[randIndex]; // get the random value index that we still need to check for the trainable units list
+			paths.splice(randIndex, 1); //after the random index has been used for assignment, splice it from the potential path list so it wont be checked again
+
+			if (cmpTechnologyManager.IsTechnologyResearched(path) == true) // we already have this hero, try another
+				continue;
+
+			cmpTechnologyManager.ResearchTechnology(path); // found an unresearched hero, research it and break
+			break;
+		}
     },
 
     // Receives whether yes or no was pressed for the most recent UI campaign call (yes = true, no = false)
@@ -1132,9 +1139,9 @@ function notifyOrderFailure(entity, player)
 	cmpGUIInterface.PushNotification({
 		"type": "text",
 		"players": [player],
-		"message": sprintf(markForTranslation("%(unit)s can't be controlled."), {
-			"unit": cmpIdentity.GetGenericName()
-		}),
+		"message": markForTranslation("%(unit)s can't be controlled."),
+		"parameters": { "unit": cmpIdentity.GetGenericName() },
+		"translateParameters": ["unit"],
 		"translateMessage": true
 	});
 }
@@ -1766,12 +1773,11 @@ function GetFormationUnitAIs(ents, player, cmd, formationTemplate, forceTemplate
 		if (!cmpUnitAI || !cmpPosition || !cmpPosition.IsInWorld())
 			continue;
 
-		let cmpIdentity = Engine.QueryInterface(ent, IID_Identity);
 		// TODO: We only check if the formation is usable by some units
 		// if we move them to it. We should check if we can use formations
 		// for the other cases.
 		let nullFormation = (formationTemplate || cmpUnitAI.GetFormationTemplate()) == NULL_FORMATION;
-		if (nullFormation || !cmpIdentity || !cmpIdentity.CanUseFormation(formationTemplate || NULL_FORMATION))
+		if (nullFormation || !cmpUnitAI.CanUseFormation(formationTemplate || NULL_FORMATION))
 		{
 			if (nullFormation && cmpUnitAI.GetFormationController())
 				cmpUnitAI.LeaveFormation(cmd.queued || false);
@@ -1913,19 +1919,14 @@ function CanMoveEntsIntoFormation(ents, formationTemplate)
 	// TODO: should check the player's civ is allowed to use this formation
 	// See simulation/components/Player.js GetFormations() for a list of all allowed formations
 
-	var requirements = GetFormationRequirements(formationTemplate);
+	const requirements = GetFormationRequirements(formationTemplate);
 	if (!requirements)
 		return false;
 
-	var count = 0;
-	for (let ent of ents)
-	{
-		var cmpIdentity = Engine.QueryInterface(ent, IID_Identity);
-		if (!cmpIdentity || !cmpIdentity.CanUseFormation(formationTemplate))
-			continue;
-
-		++count;
-	}
+	let count = 0;
+	for (const ent of ents)
+		if (Engine.QueryInterface(ent, IID_UnitAI)?.CanUseFormation(formationTemplate))
+			++count;
 
 	return count >= requirements.minCount;
 }

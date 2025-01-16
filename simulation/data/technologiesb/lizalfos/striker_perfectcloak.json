@@ -1,0 +1,16 @@
+{
+	"genericName": "Perfect Cloak",
+	"description": "The ability for Chameleofos to blend into their surroundings was useful and impressive, but somewhat hindered by clothing and armor. Chameleofos Strikers have found many techniques to aid in their hiding even while suited in armor.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a third deity.",
+	"icon": "lizalfos/striker_perfectcloak.dds",
+	"researchTime": 40,
+	"tooltip": "Chameleofos Striker gains Stealth",
+	"modifications": [
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.25},
+		{"value": "UnitMotion/RunMultiplier", "multiply": 1.25}
+	],
+	"affects": ["Striker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

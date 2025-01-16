@@ -1,0 +1,13 @@
+{
+	"genericName": "Insurance",
+	"description": "Labrynna protected their system of merchants with an elaborate insurance policy, damaged goods could be paid for with an upfront cost.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "labrynna/trade_insurance.dds",
+	"researchTime": 40,
+	"tooltip": "Labrynna protected their system of merchants with an elaborate insurance policy, damaged goods could be paid for with an upfront cost. (Comerciantes refund you their cost in Rupees if they are killed)",
+	"modifications": [	],
+  "affects": [ "Trader" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

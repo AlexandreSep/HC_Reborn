@@ -67,12 +67,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    darknut/vineyard_heatvines
-    darknut/vineyard_baralferment
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>5000</Interval>
     <Rates>
@@ -93,4 +87,12 @@
     <Actor>structures/darknut/darknut_vineyardbaseA.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/vineyard_heatvines
+    darknut/vineyard_baralferment
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

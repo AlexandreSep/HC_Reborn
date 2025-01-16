@@ -1,0 +1,13 @@
+{
+	"genericName": "Terrestrial Upbringing",
+	"description": "When raised from youth on land, Hydrophants are far less clumsy out of water.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "zora/troop_terrupbring.dds",
+	"researchTime": 40,
+	"tooltip": "When raised from youth on land, Hydrophants are far less clumsy out of water. (+20% Walk Speed - Hydrophant Lancer, Hydrophant Demolisher, and Hydrophant Canopy)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.20}],
+	"affects": ["Hydrophant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

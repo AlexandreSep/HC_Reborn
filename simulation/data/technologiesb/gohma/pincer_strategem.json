@@ -1,0 +1,14 @@
+{
+	"genericName": "Pincer Strategem",
+	"description": "Pincergohma were quite adept at working in pairs. With proper alterations they could attack together in quick pincer movements against single targets.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "gohma/pincer_strategem.dds",
+	"researchTime": 40,
+	"tooltip": "Pincergohma were quite adept at working in pairs. With proper alterations they could attack together in quick pincer movements against single targets. (Pincergohma attack rate increased by 20%)",
+	"modifications": [{"value": "Attack/Melee/Damage/PrepareTime", "multiply": 0.8},
+					  {"value": "Attack/Melee/Damage/RepeatTime", "multiply": 0.8}],
+	"affects": ["Pincergohma"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

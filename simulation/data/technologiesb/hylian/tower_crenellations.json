@@ -1,0 +1,26 @@
+{
+	"genericName": "Crenellations",
+	"description": "Installing Crenellations on the Battlements allow defender a wider range of fire.",
+	"cost": {"food": 0, "wood": 250, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/hyl_crenellations.dds",
+	"researchTime": 40,
+	"tooltip": "Installing Crenellations on the Battlements allow defender a wider range of fire. (+10 MaxRange, +20% Attack Speed, +20% Accuracy - Garrison Archer)",
+  "modifications": [
+    {
+      "value": "Attack/Ranged/MaxRange",
+      "add": 10
+    },
+    {
+      "value": "Attack/Ranged/Projectile/Spread",
+      "multiply": 0.8
+    },
+    {
+      "value": "Attack/Ranged/RepeatTime",
+      "multiply": 0.8
+    }
+  ],
+  "affects": [ "GarrisonArcher" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

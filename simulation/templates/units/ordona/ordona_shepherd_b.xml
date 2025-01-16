@@ -1,6 +1,6 @@
 <Entity parent="HC_template_unit_auxiliary">
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>25</food>
       <metal>40</metal>
@@ -11,12 +11,14 @@
   <Health>
     <Max>200</Max>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>false</LinkedDestruction>
-      <Max>5</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/ordona/ordona_attackgoat_b</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>false</LinkedDestruction>
+        <Max>5</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/ordona/ordona_attackgoat_b</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>

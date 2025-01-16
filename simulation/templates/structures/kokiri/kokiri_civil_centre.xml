@@ -107,7 +107,40 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <alert0>interface/alarm/alarm_alert_0.xml</alert0>
+      <alert1>interface/alarm/alarm_alert_1.xml</alert1>
+      <alert2>interface/alarm/alarm_alert_2.xml</alert2>
+      <attack_ranged>attack/weapon/slingshot.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_civ_center_kokiri.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_civ_center_kokiri.xml</select>
+      <upgraded>interface/complete/building/complete_civ_center_kokiri.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_grove_commA.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/gather_food_dekubasket
+    kokiri/gather_food_perennialization
+    kokiri/domiso_spikedwalls
+    kokiri/fadola_workethic
+    kokiri/fairy_guardian_saria
+    kokiri/player_iskokiri
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/kokiri/{civ}_laborerA
+    units/kokiri/{civ}_hero_domiso
+    units/kokiri/{civ}_hero_fadola
+    units/kokiri/{civ}_hero_fado_songwind
+    units/kokiri/{civ}_hero_mirora
+    units/kokiri/{civ}_hero_saria
+    units/kokiri/{civ}_hero_gulley</Entities>
     <DestinationOffset>
       <step1>
         <X>-9.7</X>
@@ -126,15 +159,6 @@
         <Z>30</Z>
       </step4>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/kokiri/{civ}_laborerA
-    units/kokiri/{civ}_hero_domiso
-    units/kokiri/{civ}_hero_fadola
-    units/kokiri/{civ}_hero_fado_songwind
-    units/kokiri/{civ}_hero_mirora
-    units/kokiri/{civ}_hero_saria
-    units/kokiri/{civ}_hero_gulley
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -148,29 +172,5 @@
       <X>-16.5</X>
       <Z>-5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    kokiri/gather_food_dekubasket
-    kokiri/gather_food_perennialization
-    kokiri/domiso_spikedwalls
-    kokiri/fadola_workethic
-    kokiri/fairy_guardian_saria
-    kokiri/player_iskokiri
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <alert0>interface/alarm/alarm_alert_0.xml</alert0>
-      <alert1>interface/alarm/alarm_alert_1.xml</alert1>
-      <alert2>interface/alarm/alarm_alert_2.xml</alert2>
-      <attack_ranged>attack/weapon/slingshot.xml</attack_ranged>
-      <constructed>interface/complete/building/complete_civ_center_kokiri.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_civ_center_kokiri.xml</select>
-      <upgraded>interface/complete/building/complete_civ_center_kokiri.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/kokiri/kokiri_grove_commA.xml</Actor>
-    <FoundationActor>structures/kokiri/kokiri_scaffoldA.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

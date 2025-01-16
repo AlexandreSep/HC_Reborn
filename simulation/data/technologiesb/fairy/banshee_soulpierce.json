@@ -1,0 +1,13 @@
+{
+	"genericName": "Soul Pierce",
+	"description": "It was said that scorning a Fairy was a curse on anyone. Breaking their heart was a death sentence.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Village Phase.",
+	"icon": "fairy/banshee_soulpierce.dds",
+	"researchTime": 40,
+	"tooltip": "It was said that scorning a Fairy was a curse on anyone. Breaking their heart was a death sentence. (Banshees now deal Pierce Damage)",
+	"modifications": [{"value": "Attack/Melee/Damage/Pierce", "add": 20}],
+	"affects": ["Banshee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

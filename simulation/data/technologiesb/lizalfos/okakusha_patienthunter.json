@@ -1,0 +1,17 @@
+{
+	"genericName": "The Patient Hunter",
+	"description": "The Patient Hunter gets the prey...",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
+	"requirements": {"all": [ {"tech": "civ_choices/lizalfos/choosehero_okakusha"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "You must select Okakusha as your hero.",
+	"icon": "lizalfos/hidden_hunter.dds",
+	"researchTime": 40,
+	"tooltip": "Treehoppers or Predators gain Camouflage.",
+	"modifications": [
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.25},
+		{"value": "UnitMotion/RunMultiplier", "multiply": 1.25}
+	],
+	"affects": ["PatientHunter"],
+	"hideIfTechnologyRequirementIsNotMet": "true",	
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

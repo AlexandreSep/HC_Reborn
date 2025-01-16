@@ -27,12 +27,14 @@
     <Max>500</Max>
     <SpawnEntityOnDeath>rubble/debris_gerudo_small</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>5000</Interval>
-      <LinkedDestruction>false</LinkedDestruction>
-      <Max>5</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>3000</StartDelay>
-      <Template>gaia/gerudo_swine_1</Template>
+      <one>
+        <Interval>5000</Interval>
+        <LinkedDestruction>false</LinkedDestruction>
+        <Max>5</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>3000</StartDelay>
+        <Template>gaia/gerudo_swine_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -47,12 +49,6 @@
   <Obstruction>
     <Static depth="30.0" width="30.0" />
   </Obstruction>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-      gerudo/pig_limestone
-    gerudo/pig_chocalate
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -95,4 +91,12 @@
     <Actor>structures/gerudo/gerudo_pigfarmA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/pig_limestone
+    gerudo/pig_chocalate
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

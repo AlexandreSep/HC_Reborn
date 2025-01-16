@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>12</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>60</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -19,10 +18,11 @@
       </Projectile>
       <RepeatTime>1700</RepeatTime>
       <TrueDamage>12</TrueDamage>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
       <metal>50</metal>

@@ -1,0 +1,29 @@
+{
+	"genericName": "Upgrade Melee Weapons",
+  "cost": {"metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "Increases the damage of all Melee weapons. (+10% Melee Attack.)",
+  "modifications": [
+    {
+      "value": "Attack/Melee/Damage/Hack",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/Pierce",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/TrueDamage",
+      "multiply": 1.1
+    },
+    {
+      "value": "Attack/Melee/Damage/Crush",
+      "multiply": 1.1
+    }
+  ],
+	"affects": ["Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

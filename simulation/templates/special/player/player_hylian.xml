@@ -1,8 +1,0 @@
-<Entity parent="special/player/player">
-  <Auras datatype="tokens">
-    teambonuses/hylian_player_teambonus
-  </Auras>
-  <Player>
-    <SharedLosTech>culture_civilized/postman_network</SharedLosTech>
-  </Player>
-</Entity>

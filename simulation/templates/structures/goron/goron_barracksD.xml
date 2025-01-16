@@ -39,8 +39,29 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
+      <select>interface/select/building/sel_siegeworks.xml</select>
+      <upgraded>interface/complete/building/complete_siegeworks.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/goron/goron_explfoundryA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/troop_stablespin
+    goron/troop_darboil
+    goron/troop_golobomb
+    goron/dangoro_refinedkegs
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/goron/{civ}_bombthrower_b
+      units/goron/{civ}_powderkegl</Entities>
     <DestinationOffset>
       <step1>
         <X>10</X>
@@ -51,10 +72,6 @@
         <Z>40</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/goron/{civ}_bombthrower_b
-      units/goron/{civ}_powderkegl
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -68,22 +85,5 @@
       <X>0</X>
       <Z>15</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-      goron/troop_stablespin
-    goron/troop_darboil
-    goron/troop_golobomb
-    goron/dangoro_refinedkegs
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
-      <select>interface/select/building/sel_siegeworks.xml</select>
-      <upgraded>interface/complete/building/complete_siegeworks.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/goron/goron_explfoundryA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

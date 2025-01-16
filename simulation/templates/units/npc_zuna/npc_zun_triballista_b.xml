@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>100.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>110.0</MaxRange>
       <MinRange>45.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
@@ -29,10 +28,11 @@
         <Shape>Circular</Shape>
       </Splash>
       <TrueDamage>100</TrueDamage>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>45</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>

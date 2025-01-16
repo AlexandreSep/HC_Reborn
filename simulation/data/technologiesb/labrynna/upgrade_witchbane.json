@@ -1,0 +1,16 @@
+{
+	"genericName": "Witchbane Blackpowder",
+	"description": "An extremly potent and explosive Gunpowder to come from the Chemists of Labrynna. Named for its successful field test against a coven of Witches.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "labrynna/upgrade_witchbane.dds",
+	"researchTime": 40,
+	"tooltip": "An extremly potent and explosive Gunpowder to come from the Chemists of Labrynna. Named for its successful field test against a coven of Witches. (Increases the damage of all Gunpowder units by 10%)",
+	"modifications": [
+		{"value": "Attack/Ranged/Damage/Fire", "multiply": 1.10},
+		{"value": "Attack/Ranged/Damage/Splash/Fire", "multiply": 1.10}
+	],
+  "affects": [ "Gunpowder" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

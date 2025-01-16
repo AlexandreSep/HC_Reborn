@@ -1,0 +1,14 @@
+{
+	"genericName": "Layman's Fervor",
+	"description": "Deacons whip up the masses into a holy fervor, calling them to work for the Goddess' blessing.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/deacon_fervor.dds",
+	"researchTime": 40,
+	"tooltip": "Deacons whip up the masses into a holy fervor, calling them to work for the Goddess' blessing. (Activates 'Layman's Fervor' Aura)",
+	"modifications": [],
+	"affects": ["Priest"],
+	"requiredTechnology": "hylian/deacon_devotion",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

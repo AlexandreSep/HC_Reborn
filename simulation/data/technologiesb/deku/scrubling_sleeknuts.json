@@ -1,0 +1,13 @@
+{
+	"genericName": "Sleek Nuts",
+	"description": "With some minor adjustments, Deku Nuts could be altered to be more aerodynamic, allowing them to fly further before falling back to the earth.",
+	"cost": {"food": 0, "wood": 250, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "deku/scrubling_sleeknuts.dds",
+	"researchTime": 40,
+	"tooltip": "With some minor adjustments, Deku Nuts could be altered to be more aerodynamic, allowing them to fly further before falling back to the earth. (Scrubling attack range is doubled)",
+	"modifications": [{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 2}],
+	"affects": ["Scrubling"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

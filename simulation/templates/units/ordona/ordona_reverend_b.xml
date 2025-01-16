@@ -6,7 +6,7 @@
   units/deacon_chant_4
   </Auras>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>25</food>
       <metal>30</metal>
@@ -59,5 +59,5 @@
   <Promotion>
     <Entity>units/ordona/ordona_reverend_upg</Entity>
     <RequiredXp>9999</RequiredXp>
-  </Promotion>   
+  </Promotion>
 </Entity>

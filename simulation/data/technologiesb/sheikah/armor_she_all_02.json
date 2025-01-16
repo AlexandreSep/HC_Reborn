@@ -1,0 +1,16 @@
+{
+	"genericName": "Claree's Master Armor",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
+	"supersedes": "sheikah/armor_she_all_01",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "sheikah"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "tech_generic.dds",
+	"researchTime": 50,
+	"tooltip": "+15% Non-Magic armor - Infantry)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.15},
+		{"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.15},
+		{"value": "Resistance/Entity/Damage/Crush", "multiply": 1.15}],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

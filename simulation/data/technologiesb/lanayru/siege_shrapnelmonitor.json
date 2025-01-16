@@ -1,0 +1,13 @@
+{
+	"genericName": "Shrapnel Step Monitoring",
+	"description": "Friendly fire damage from Shrapnel Flinger's shard debris is reduced by 75%",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "lanayru"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "lanayru/siege_shrapnelmonitor.dds",
+	"researchTime": 40,
+	"tooltip": "Friendly fire damage from Shrapnel Flinger's shard debris is reduced by 75%",
+	"modifications": [],
+	"affects": ["ShrapnelFlinger"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

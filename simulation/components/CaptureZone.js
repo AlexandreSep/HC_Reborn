@@ -61,7 +61,17 @@ CaptureZone.prototype.CheckEntitiesInCaptureZone = function()
     this.UpdateTimeSinglePlayerInCaptureZoneIfAllowed (currentPlayersInCaptureZone);
     
     this.playersInCaptureZone = currentPlayersInCaptureZone;
-    
+
+    // send capturezoneUpdate update message for the AI
+    let tempArray = [];
+    let it = currentPlayersInCaptureZone.values();
+    for (let i = 0; i < currentPlayersInCaptureZone.size; i++)
+        tempArray.push(it.next().value);
+
+    Engine.PostMessage(this.entity, MT_CaptureZoneUpdate, { "holder": this.entity, "players": tempArray });
+	let cmpTrigger = Engine.QueryInterface(SYSTEM_ENTITY, IID_Trigger);
+    cmpTrigger.CallEvent("OnCaptureZoneUpdate", { "holder": this.entity, "players": tempArray }); // make capture zone events possible for map triggers
+
     if (this.capturePointsForPlayer == 0){
         this.MakeCaptureZoneNeutralIfAllowed();
     }

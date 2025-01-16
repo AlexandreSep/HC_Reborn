@@ -22,7 +22,7 @@
     <Max>6000</Max>
     <RegenRate>0.0</RegenRate>
     <Unhealable>false</Unhealable>
-  </Health>  
+  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Barracks Ruins HiveNest</Classes>
@@ -35,9 +35,6 @@
   <Obstruction>
     <Static depth="34.0" width="34.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/natural/gohma_acid_impact.xml</attack_impact_ranged>
@@ -66,4 +63,11 @@
     <Actor>structures/gohma/gohma_hivecore_buried.xml</Actor>
     <FoundationActor>structures/gohma/gohma_cacoonA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

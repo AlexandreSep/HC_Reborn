@@ -10,7 +10,7 @@
   </BuildRestrictions>
   <Capturable disable="" />
   <Cost>
-      <BattalionSlots>0</BattalionSlots>
+    <BattalionSlots>0</BattalionSlots>
   </Cost>
   <Health>
     <Max>800</Max>
@@ -26,9 +26,6 @@
   <Obstruction>
     <Static depth="23.0" width="23.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>1.0</BatchTimeModifier>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -80,4 +77,11 @@
   <VisualActor>
     <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>1.0</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

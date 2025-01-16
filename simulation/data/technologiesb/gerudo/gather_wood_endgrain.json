@@ -1,0 +1,14 @@
+{
+	"genericName": "End-Graining",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 400, "metal": 100},
+	"supersedes": "gerudo/gather_wood_palmskin",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/gather_wood_endgrain.dds",
+	"researchTime": 40,
+	"tooltip": "A fine polish to axeheads, courtesy of Gerudo artistry. (+20% Material (Wood) Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.2}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

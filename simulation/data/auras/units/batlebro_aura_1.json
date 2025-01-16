@@ -3,9 +3,14 @@
 	"radius": 25,
 	"affects": ["Infantry Melee"],
 	"modifications": [
-		{ "value": "Resistance/Entity/Damage/Pierce", "multiply": 1.10 },
-		{ "value": "Resistance/Entity/Damage/Hack", "multiply": 1.10 },
-		{ "value": "Resistance/Entity/Damage/Crush", "multiply": 1.10 }
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.05 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.05 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.05 },
+		{ "value": "Attack/Melee/Damage/TrueDamage", "multiply": 1.05 },
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.05 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.05 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.05 },
+		{ "value": "Attack/Ranged/Damage/TrueDamage", "multiply": 1.05 }
 	],
 	"auraName": "Brotherly Command",
 	"auraDescription": "{In Formation, +10% Armor - Melee Infantry)",

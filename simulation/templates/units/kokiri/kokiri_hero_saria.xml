@@ -6,7 +6,6 @@
         <Forest>40.0</Forest>
         <Pierce>30</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>90.0</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -19,10 +18,11 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2500</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>420</food>
       <metal>100</metal>

@@ -6,6 +6,7 @@
     <Civ>gaia</Civ>
     <GenericName>Gaia</GenericName>
     <Undeletable>true</Undeletable>
+    <Icon>units/unit_generic.dds</Icon>	
   </Identity>
   <Obstruction>
     <Active>true</Active>

@@ -27,7 +27,7 @@
     <Civ>labrynna</Civ>
     <Classes datatype="tokens" />
     <GenericName>Drill Hall</GenericName>
-    <History>Labrynna&#8217;s future soldiers were put through the best training possible under the policies of the Empire. From these halls both the Homeguards and Borderguards were educated and released to defend the Empire.</History>
+    <History>Labrynna’s future soldiers were put through the best training possible under the policies of the Empire. From these halls both the Homeguards and Borderguards were educated and released to defend the Empire.</History>
     <Icon>structures/labrynna/lab_barracksA.dds</Icon>
     <Tooltip>Trains a variety of Labrynnian units.</Tooltip>
     <VisibleClasses datatype="tokens" />
@@ -35,45 +35,6 @@
   <Obstruction>
     <Static depth="34.0" width="34.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>-0.25</X>
-        <Z>5</Z>
-      </step1>
-      <step2>
-        <X>-0.25</X>
-        <Z>25</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>30</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/labrynna/{civ}_homeguard_b
-      units/labrynna/{civ}_borderguard_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>-0.25</X>
-      <Z>-7</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    labrynna/homeguard_policestate
-    labrynna/borderguard_camocape
-    labrynna/edgar_giantsgift
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <Tower>
       <Cost>
@@ -90,4 +51,43 @@
     <Actor>structures/labrynna/labrynna_barracksA.xml</Actor>
     <FoundationActor>structures/labrynna/labrynna_scaffoldD.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/homeguard_policestate
+    labrynna/borderguard_camocape
+    labrynna/edgar_giantsgift
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_homeguard_b
+      units/labrynna/{civ}_borderguard_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>-0.25</X>
+        <Z>5</Z>
+      </step1>
+      <step2>
+        <X>-0.25</X>
+        <Z>25</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-0.25</X>
+      <Z>-7</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

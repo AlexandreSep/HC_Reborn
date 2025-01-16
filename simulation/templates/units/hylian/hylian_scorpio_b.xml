@@ -6,7 +6,6 @@
         <Pierce>10</Pierce>
         <TrueDamage>30</TrueDamage>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>100</MaxRange>
       <MinRange>25.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -28,10 +27,11 @@
         <Range>20</Range>
         <Shape>Linear</Shape>
       </Splash>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>35</BuildTime>
+    <BuildTime>24</BuildTime>
     <Resources>
       <food>0</food>
       <metal>150</metal>

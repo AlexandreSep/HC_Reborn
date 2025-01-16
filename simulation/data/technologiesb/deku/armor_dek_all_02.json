@@ -1,0 +1,16 @@
+{
+	"genericName": "Thick Bark Skin",
+	"description": "Accumulating layers of bark on Deku Scrub skins seemed to server them well. With enough growth it made them more durable against attacks, as well as gave them some resistance against fire.",
+	"cost": {"food": 0, "wood": 0, "stone": 700, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "deku"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "deku/dek_thickbarkskin.dds",
+	"researchTime": 40,
+	"tooltip": "Accumulating layers of bark on Deku Scrub skins seemed to server them well. With enough growth it made them more durable against attacks, as well as gave them some resistance against fire. (Non-magic armor values of non-creature units increased by 25%)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.25},
+					  {"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.25},
+					  {"value": "Resistance/Entity/Damage/Crush", "multiply": 1.25},
+					  {"value": "Resistance/Entity/Damage/Fire", "add": 15}],
+	"affects": ["ScrubUnit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

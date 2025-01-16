@@ -1,0 +1,18 @@
+{
+	"genericName": "City Phase",
+	"specificName": {	},
+	"description": "Advances from a bustling town to a veritable metropolis, full of the wonders of modern technology.",
+	"cost": { "food": 675, "wood": 315, "stone": 315, "metal": 315 },
+	"requirementsTooltip": "Requires 3 Town Phase Buildings.",
+    "supersedes": "phase_town_telara",
+	"replaces": ["phase_city"],
+	"icon": "city_phase.png",
+	"researchTime": 162,
+	"tooltip": "+15% Territory - Civic Center; - Worker; +9 Capture Regen Rate - Building",
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.2, "affects": "CivilCentre" },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 9.0, "affects": "Structure" }
+	],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_phase.xml" 
+}

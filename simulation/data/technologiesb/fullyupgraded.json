@@ -1,0 +1,11 @@
+{
+	"genericName": "that this building not be fully upgraded",
+	"specificName": {
+	},
+	"description": ".",
+	"icon": "town_phase.png",
+	"researchTime": 30,
+	"tooltip": "",
+	"modifications": [	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

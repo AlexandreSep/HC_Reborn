@@ -21,5 +21,6 @@ Trigger.prototype.eventNames =
 	"OnTreasureCollected",
     "OnUpgradeFinished",
     "OnEntityDeath",
-    "OnHealthChanged"
+    "OnHealthChanged",
+	"OnCaptureZoneUpdate"
 ];

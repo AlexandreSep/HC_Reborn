@@ -40,8 +40,24 @@
   <Obstruction>
     <Static depth="21.0" width="34.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/sheikah/sheikah_monasteryA.xml</Actor>
+    <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/sheikah/{civ}_nirvatamonk_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -52,9 +68,6 @@
         <Z>25</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/sheikah/{civ}_nirvatamonk_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -68,18 +81,5 @@
       <X>0</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_temple.xml</constructed>
-      <select>interface/select/building/sel_temple.xml</select>
-    </SoundGroups>
-  </Sound>
-  <Upgrade disable="" />
-  <VisualActor>
-    <Actor>structures/sheikah/sheikah_monasteryA.xml</Actor>
-    <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

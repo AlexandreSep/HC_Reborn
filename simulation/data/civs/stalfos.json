@@ -1,36 +1,62 @@
 {
 	"Code": "stalfos",
 	"Culture": "shadow",
-	"Name": "Stalfos",
-	"Emblem": "session/portraits/emblems/emblem_stalfos.dds",
-	"History": "The creation of horrifying magic that was outlawed and sealed away in Hyrule’s ancient past, the Stalfos are a vast ever growing army of animated corpses. Headed by a collection of warring and elite Necromancers, the modern incarnation of Hyrule’s undead seek to fill its ranks with mindless followers and to establish a kingdom of immortality that can stand against the supernatural forces of Hyrule.",
-	"Music":[
-			{"File":"stalfos_theme1.ogg", "Type":"peace"},
-			{"File":"stalfos_ambient1.ogg", "Type":"peace"},
-			{"File":"stalfos_ambient2.ogg", "Type":"peace"},
-			{"File":"stalfos_ambient3.ogg", "Type":"peace"},
-			{"File":"stalfos_ambient4.ogg", "Type":"peace"},
-			{"File":"stalfos_ambient5.ogg", "Type":"peace"},
-			{"File":"stalfos_ambient6.ogg", "Type":"peace"},
-			{"File":"stalfos_battle1.ogg", "Type":"battle"},
-			{"File":"stalfos_battle2.ogg", "Type":"battle"},
-			{"File":"stalfos_battle3.ogg", "Type":"battle"},
-			{"File":"stalfos_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "stalfos_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "stalfos_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "stalfos_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "stalfos_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "stalfos_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "stalfos_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "stalfos_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "stalfos_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "stalfos_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "stalfos_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "stalfos_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Bones, Meat, Stone, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Meg",
 					"Class": "",
@@ -58,31 +84,28 @@
 					"Armament": "Death Sword",
 					"Emblem": "",
 					"History": "."
-				}  
+				}
 			]
-		} 
+		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "",
 			"History": "",
-			"Description": "" 
+			"Description": ""
 		},
 		{
 			"Name": "",
 			"History": "",
-
-			"Description": "" 
+			"Description": ""
 		},
 		{
 			"Name": "",
 			"History": "",
-			"Description": "" 
-		}  
+			"Description": ""
+		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/stalfos/choosehero_dampe",
 		"civ_choices/stalfos/choosehero_gabora",
 		"civ_choices/stalfos/choosehero_meg",
@@ -90,16 +113,14 @@
 		"civ_choices/stalfos/choosehero_blind",
 		"civ_choices/stalfos/choosehero_deathsword"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "",
 			"History": "",
 			"Description": ""
-		} 
+		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Arbiter's Grounds",
 			"Class": "",
@@ -107,7 +128,7 @@
 			"History": ".",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
+			"Special": ""
 		},
 		{
 			"Name": "Titan: Stallord",
@@ -116,11 +137,10 @@
 			"History": ".",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
-		} 
+			"Special": ""
+		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/stalfos/stalfos_civil_centre"
 		},
@@ -131,7 +151,7 @@
 		{
 			"Template": "units/stalfos/stalfos_stalkin_b",
 			"Count": 2
-		},		
+		},
 		{
 			"Template": "units/stalfos/stalfos_bubble_b",
 			"Count": 2

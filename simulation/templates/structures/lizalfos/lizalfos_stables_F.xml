@@ -2,18 +2,18 @@
   <Identity>
     <RequiredTechnology>lizalfos_helmking</RequiredTechnology>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/lizalfos/{civ}_helmram_b
-      units/lizalfos/{civ}_helmqueen_b
-    </Entities>
-    <Technologies datatype="tokens">
-    lizalfos/helmram_broadskulls
-    lizalfos/helmqueen_maternalrevenge
-    </Technologies>
-  </ProductionQueue>
   <VisualActor>
     <Actor>structures/lizalfos/lizalfos_monstermoundA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lizalfos/helmram_broadskulls
+    lizalfos/helmqueen_maternalrevenge
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/lizalfos/{civ}_helmram_b
+      units/lizalfos/{civ}_helmqueen_b</Entities>
+  </Trainer>
 </Entity>

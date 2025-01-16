@@ -1,7 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Storehouse</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>40</BuildTime>
@@ -32,14 +32,6 @@
   <Obstruction>
     <Static depth="15.0" width="15.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      hylian/gather_wood_ironaxes
-    hylian/gather_wood_strongeraxes
-    hylian/gather_wood_arnaxes
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <Resistance>
     <Entity>
@@ -87,4 +79,14 @@
     <Actor>structures/hylian/hylian_lumbermillA.xml</Actor>
     <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/gather_wood_ironaxes
+    hylian/gather_wood_strongeraxes
+    hylian/gather_wood_arnaxes
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

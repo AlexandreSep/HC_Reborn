@@ -5,7 +5,6 @@
       <Damage>
         <Fire>30.0</Fire>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>70.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -18,11 +17,12 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
     <BattalionSlots>0</BattalionSlots>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>460</food>
       <metal>100</metal>

@@ -5,8 +5,6 @@
       <Damage>
         <Light>24.0</Light>
       </Damage>
-      <Delay>0</Delay>
-      <ElevationBonus>15</ElevationBonus>
       <MaxRange>115.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -16,9 +14,15 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>4000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
     </Ranged>
   </Attack>
   <BuildRestrictions>
@@ -107,34 +111,6 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>45</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>50</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>40</Z>
-    </SpawnOffset>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
@@ -152,4 +128,34 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>45</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>50</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>40</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

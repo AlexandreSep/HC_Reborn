@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure">
   <AlertRaiser>
     <EndOfAlertRange>190</EndOfAlertRange>
@@ -11,7 +12,7 @@
       <Damage>
         <Pierce>24.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
+      <EffectDelay>0</EffectDelay>
       <MaxRange>90.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -41,7 +42,8 @@
   </BuildRestrictions>
   <BuildingAI>
     <DefaultArrowCount>10</DefaultArrowCount>
-    <GarrisonArrowClasses></GarrisonArrowClasses>
+    <GarrisonArrowClasses>
+    </GarrisonArrowClasses>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
   </BuildingAI>
   <Capturable disable="" />
@@ -53,7 +55,7 @@
       <stone>500</stone>
       <wood>500</wood>
     </Resources>
-	<BattalionSlots>0</BattalionSlots>
+    <BattalionSlots>0</BattalionSlots>
   </Cost>
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
@@ -68,11 +70,11 @@
     <SpawnEntityOnDeath>rubble/rubble_stone_6x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
-    <Classes datatype="tokens">CivilCentre Construct</Classes>
+    <Classes datatype="tokens">CivilCentre ConquestCritical Construct</Classes>
     <GenericName>Civic Center</GenericName>
     <Icon>structures/civic_centre.png</Icon>
     <Tooltip>Build to acquire large tracts of territory. Train Workers.</Tooltip>
-    <VisibleClasses datatype="tokens" />
+    <VisibleClasses datatype="tokens"/>
   </Identity>
   <Loot>
     <food>0</food>
@@ -82,18 +84,11 @@
     <xp>200</xp>
   </Loot>
   <Obstruction>
-    <Static depth="30.0" width="30.0" />
+    <Static depth="30.0" width="30.0"/>
   </Obstruction>
   <Population>
     <Bonus>20</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      phase_town_generic
-      phase_city_generic
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -146,4 +141,10 @@
   <VisualActor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+	  phase_town_generic
+      phase_city_generic
+	</Technologies>
+  </Researcher>
 </Entity>

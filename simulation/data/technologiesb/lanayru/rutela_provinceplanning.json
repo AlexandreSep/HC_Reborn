@@ -1,0 +1,14 @@
+{
+	"genericName": "Provincial Planning",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 300},
+	"requirements": {"all": [ {"tech": "civ_choices/lanayru/choosehero_rutela"}, { "tech": "phase_city" }, {"civ": "lanayru"}]},
+	"requirementsTooltip": "Requires Queen Rutela and the City Phase.",
+	"icon": "lanayru/rutela_provinceplanning.dds",
+	"researchTime": 0,
+	"tooltip": "All Rupee Costs are reduced by 25%",
+	"modifications": [{"value": "Cost/Resources/metal", "multiply": 0.75}],
+	"affects": ["Unit", "Structure"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

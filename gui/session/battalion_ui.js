@@ -6,11 +6,6 @@ let MAX_NUMBER_OF_ICONS = 120;
 let g_gattalionUIElementsCached = false;
 let g_battalionUIInitDone = false;
 
-
-// Needed for Fairies to change UI depending on the season
-let g_fairySeasonCurrent = new Array();;
-let FAIRY_SEASONS = ["spring", "summer", "autumn", "winter"];
-
 // List of all battalions
 var g_battalionList = new Array();
 var g_civiliansList = new Array();
@@ -204,11 +199,6 @@ function InitBattalionUi ()
         g_civiliansList[i] = new Array();
         g_structuresMilitaryList[i] = new Array();
         g_structuresCivilList[i] = new Array();
-    }
-    
-    // We start with spring for all fairies.
-    for (let i = 0; i < g_Players.length; i++){
-        g_fairySeasonCurrent[i] = "spring";
     }
     
     g_mainUIContainer.military = Engine.GetGUIObjectByName("militaryBattalions");
@@ -433,12 +423,23 @@ function AddBattalions (battalionsToAdd)
             battalion.template = entityState.template;
             battalion.selected = false;
             battalion.groupID = 100;
-            
-            if (battalion.isStructure && !battalion.isCivilian){
-                AddBattalionToList (battalion, playerID, g_structuresMilitaryList[playerID]);
-            }else if (battalion.isStructure && battalion.isCivilian){
+
+            // Old ordering Separating buildings and units, military and civilians
+            //~ if (battalion.isStructure && !battalion.isCivilian){
+                //~ AddBattalionToList (battalion, playerID, g_structuresMilitaryList[playerID]);
+            //~ }else if (battalion.isStructure && battalion.isCivilian){
+                //~ AddBattalionToList (battalion, playerID, g_structuresCivilList[playerID]);
+            //~ }else if(battalion.isCivilian){
+                //~ AddBattalionToList (battalion, playerID, g_civiliansList[playerID]);
+            //~ }else{
+                //~ AddBattalionToList (battalion, playerID, g_battalionList[playerID]);
+            //~ }
+
+            if (battalion.isStructure && battalion.isCenterNode){
                 AddBattalionToList (battalion, playerID, g_structuresCivilList[playerID]);
-            }else if(battalion.isCivilian){
+            }else if (battalion.isStructure && !battalion.isCenterNode && battalion.trainsUnits){
+                AddBattalionToList (battalion, playerID, g_structuresMilitaryList[playerID]);
+            }else if(battalion.isStructure){
                 AddBattalionToList (battalion, playerID, g_civiliansList[playerID]);
             }else{
                 AddBattalionToList (battalion, playerID, g_battalionList[playerID]);
@@ -449,6 +450,11 @@ function AddBattalions (battalionsToAdd)
 
 function AddBattalionToList (battalion, playerID, battalionList, groupID = 100)
 {
+    if(battalionList == undefined) {
+        warn("battalionList undefined for " + battalion.template);
+        return;
+    }
+
     // This check is needed to not add units twice if they are already in the List
     // That can happen if a unit gets promoted while spawning from base (Hylians for example)
     // In that case a battalion is in both lists: Add and Update list and update is processed before addind
@@ -1025,11 +1031,11 @@ function DefineButtonActions (button, playerID, indexOfButtonInList, battalionTy
             let buttonMultiSelect = Engine.HotkeyIsPressed("HC.battalionUI.multiSelect"); // SHIFT
             
             // Klick without SHIFT or CTRL
-            // Selects one battalion and deselects al other
+            // Selects one battalion and deselects all other
             if (!buttonMultiSelect && !buttonAddSelection){
                 g_Selection.reset();
                 MarkAllBattalionsUnselected(playerID);
-                g_Selection.addList(entitiesToSelect, false, false, true);
+                g_Selection.addList(entitiesToSelect, false, false, false, true);
                 MarkBattalionSelected (playerID, listIndex, battalionType);
                 g_lastBattalionSelected[playerID].set(battalionType, listIndex);
             }
@@ -1050,7 +1056,7 @@ function DefineButtonActions (button, playerID, indexOfButtonInList, battalionTy
                     g_Selection.removeList(entitiesToSelect);
                     MarkBattalionUnselected (playerID, listIndex, battalionType);
                 } else{
-                    g_Selection.addList(entitiesToSelect, false, false, true);
+                    g_Selection.addList(entitiesToSelect, false, false, false, true);
                     MarkBattalionSelected (playerID, listIndex, battalionType);
                     g_lastBattalionSelected[playerID].set(battalionType, listIndex);
                 }
@@ -1062,7 +1068,7 @@ function DefineButtonActions (button, playerID, indexOfButtonInList, battalionTy
         button.onDoublePress = (function(playerID, listIndex) { return function() {
             let entitiesToSelect = entityListOfPlayer[listIndex].entities;
 			g_Selection.selectAndMoveTo(entitiesToSelect[0], false);
-            g_Selection.addList(entitiesToSelect, false, false, true);
+            g_Selection.addList(entitiesToSelect, false, false, false, true);
 		}})(playerID, indexOfButtonInList)
         
         
@@ -1103,7 +1109,7 @@ function AddAllBattalionsBetweenTwoIndicesToSelection (playerID, indexA, indexB,
             entitiesToAdd = g_structuresCivilList[playerID][i].entities;
         }
         
-        g_Selection.addList(entitiesToAdd, false, false, true);
+        g_Selection.addList(entitiesToAdd, false, false, false, true);
         MarkBattalionSelected (playerID, i, battalionType)
     }
 }
@@ -1137,31 +1143,47 @@ function UpdateBattalions (battalionsToUpdate)
         
         let playerBattalions = undefined;
         for (let newBattalionData of battalionsToUpdateForPlayer){
-            if (!newBattalionData.isStructure && newBattalionData.isCivilian){ // Civil Unit
+            // Old sorting separating civilians and military units as well as structures and units
+            //~ if (!newBattalionData.isStructure && newBattalionData.isCivilian){ // Civil Unit
+                //~ playerBattalions = g_civiliansList[playerID];
+                //~ battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_CIVIL);
+                //~ battalionList = g_civiliansList[playerID];
+            //~ } else if (!newBattalionData.isStructure && !newBattalionData.isCivilian){ // Military Unit
+                //~ playerBattalions = g_battalionList[playerID];
+                //~ battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_MILITARY);
+                //~ battalionList = g_battalionList[playerID];
+            //~ } else if (newBattalionData.isStructure && newBattalionData.isCivilian){ // Civil Structure
+                //~ playerBattalions = g_structuresCivilList[playerID];
+                //~ battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_CIVIL);
+                //~ battalionList = g_structuresCivilList[playerID];
+            //~ } else if (newBattalionData.isStructure && !newBattalionData.isCivilian){ // Military Structure
+                //~ playerBattalions = g_structuresMilitaryList[playerID];
+                //~ battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_MILITARY);
+                //~ battalionList = g_structuresMilitaryList[playerID];
+            //~ }
+
+            if (!newBattalionData.isStructure && newBattalionData.isCenterNode){ // Center Node
                 playerBattalions = g_civiliansList[playerID];
                 battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_CIVIL);
                 battalionList = g_civiliansList[playerID];
-            } else if (!newBattalionData.isStructure && !newBattalionData.isCivilian){ // Military Unit
-                playerBattalions = g_battalionList[playerID];
-                battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_MILITARY);
-                battalionList = g_battalionList[playerID];
-            } else if (newBattalionData.isStructure && newBattalionData.isCivilian){ // Civil Structure
+            } else if (newBattalionData.isStructure && !newBattalionData.isCenterNode && newBattalionData.trainsUnits){ // Trains Units
                 playerBattalions = g_structuresCivilList[playerID];
                 battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_CIVIL);
                 battalionList = g_structuresCivilList[playerID];
-            } else if (newBattalionData.isStructure && !newBattalionData.isCivilian){ // Military Structure
+            } else if (newBattalionData.isStructure){ // Other Structures
                 playerBattalions = g_structuresMilitaryList[playerID];
                 battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_MILITARY);
                 battalionList = g_structuresMilitaryList[playerID];
+            } else if (!newBattalionData.isStructure && !newBattalionData.isCivilian){ // Unit
+                playerBattalions = g_battalionList[playerID];
+                battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_MILITARY);
+                battalionList = g_battalionList[playerID];
             }
                 
             let newTemplate = Engine.GuiInterfaceCall("GetEntityTemplate", newBattalionData.entities[0]);
             if (newTemplate){
                 newBattalionData.template = newTemplate;
                 let playerCiv = Engine.GuiInterfaceCall("GetPlayerCiv");
-                if (playerCiv == "fairy"){
-                    UpdateFairySeasonAndUIIfNeeded(newTemplate);
-                }
             }
 
             if (battalionWasRemovedFromAnOtherList){
@@ -1825,7 +1847,7 @@ function SetGroupSelectionButton (playerID, scalingLevel, listIndex, battalionTy
         if (!buttonMultiSelect && !buttonAddSelection){
             g_Selection.reset();
             MarkAllBattalionsUnselected(playerID);
-            g_Selection.addList(entitiesToSelect, false, false, true);
+            g_Selection.addList(entitiesToSelect, false, false, true, true);
             for (let battalionIndexToSelect of battalionsToSelect){
                 MarkBattalionSelected (playerID, battalionIndexToSelect, battalionType);
                 g_lastBattalionSelected[playerID].set(battalionType, battalionIndexToSelect);
@@ -1843,7 +1865,7 @@ function SetGroupSelectionButton (playerID, scalingLevel, listIndex, battalionTy
                         MarkBattalionUnselected (playerID, battalionIndexToSelect, battalionType);
                     }
                 } else{
-                    g_Selection.addList(entitiesToSelect, false, false, true);
+                    g_Selection.addList(entitiesToSelect, false, false, false, true);
                     for (let battalionIndexToSelect of battalionsToSelect){
                         MarkBattalionSelected (playerID, battalionIndexToSelect, battalionType);
                         g_lastBattalionSelected[playerID].set(battalionType, battalionIndexToSelect);
@@ -2036,69 +2058,37 @@ function SetUIBackgroundTexture()
         playerCiv = "hylian";
     }
 
-    let fairySeason = "";
-    let fairySeasonString = "";
-    if (playerCiv == "fairy"){
-        fairySeason = g_fairySeasonCurrent[thisPlayer];
-        fairySeasonString = "_" + fairySeason;
-    }
-
     // HC Military and Civil Battalions area
-    let militaryBattalionsPanelSprite = "militaryBattalionsPanel_" + playerCiv + fairySeasonString;
+    let militaryBattalionsPanelSprite = "militaryBattalionsPanel_" + playerCiv;
     Engine.GetGUIObjectByName("militaryBattalionArea").sprite = militaryBattalionsPanelSprite;
     
-    let civilBattalionsPanelSprite = "civilBattalionsPanel_" + playerCiv + fairySeasonString;
+    let civilBattalionsPanelSprite = "civilBattalionsPanel_" + playerCiv;
     Engine.GetGUIObjectByName("civilBattalionArea").sprite = civilBattalionsPanelSprite;
 
     // 0 a.d. UI elements
-    let supplementalSelectionDetailsSprite = "supplementalDetailsPanel_" + playerCiv + fairySeasonString;
+    let supplementalSelectionDetailsSprite = "supplementalDetailsPanel_" + playerCiv;
     Engine.GetGUIObjectByName("supplementalSelectionDetails").sprite = supplementalSelectionDetailsSprite;
 
-    let selectionDetailsPanelSprite = "selectionDetailsPanel_" + playerCiv + fairySeasonString;
+    let selectionDetailsPanelSprite = "selectionDetailsPanel_" + playerCiv;
     Engine.GetGUIObjectByName("selectionDetails").sprite = selectionDetailsPanelSprite;
 
-    let unitCommandsPanelSprite = "unitCommandsPanel_" + playerCiv + fairySeasonString;
+    let unitCommandsPanelSprite = "unitCommandsPanel_" + playerCiv;
     Engine.GetGUIObjectByName("unitCommands").sprite = unitCommandsPanelSprite;
 
     // Mini map
-    let minimapPanelOverlaySprite = "minimapPanelOverlay_" + playerCiv + fairySeasonString;
+    let minimapPanelOverlaySprite = "minimapPanelOverlay_" + playerCiv;
     Engine.GetGUIObjectByName("mimimapPanelOverlay").sprite = minimapPanelOverlaySprite;
     
     // Top panel
-    let topPanelSprite = "topPanel_" + playerCiv + fairySeasonString;
+    let topPanelSprite = "topPanel_" + playerCiv;
     Engine.GetGUIObjectByName("topPanel").sprite = topPanelSprite;
 
-    // DISABLED: I can not find the new name for the population icon
     // Population cap icons
     let populationIconSprite = "stretched:session/factions/" + playerCiv + "/resource_population.png"
-    Engine.GetGUIObjectByName("resource[4]_icon").sprite = populationIconSprite;
-
-    // Resource icons
-    //~ Engine.GetGUIObjectByName("resource[" + i + "]_icon").sprite = supplementalSelectionDetailsSprite;
-    //~ for (let i = 0; i < 4; ++i){
-        //~ warn(Engine.GetGUIObjectByName("resource[" + i + "]_icon").sprite);
-    //~ }
+  //  Engine.GetGUIObjectByName("resource[2]_icon").sprite = populationIconSprite;
 
     // Toggle Structures and  Buildings panel icon
     let toggleUnitsAndStructuresButtonIcon = "stretched:session/factions/" + playerCiv + "/resource_population.png"
     Engine.GetGUIObjectByName("toggleUnitsAndStructuresButtonIcon").sprite = populationIconSprite;
     
-}
-
-// Only called if the player is Fairy.
-// We need to detect the season and change the UI if the season changes
-function UpdateFairySeasonAndUIIfNeeded(template)
-{
-    let thisPlayer = Engine.GetPlayerID();
-    let templateString = JSON.stringify(template);
-    
-    for(let season of FAIRY_SEASONS){
-        if (-1 != templateString.indexOf(season) ){
-            g_fairySeasonCurrent[thisPlayer] = season;
-            Engine.GuiInterfaceCall("UpdateCurrentFairySeason", season);
-            break;
-        }
-    }
-
-    SetUIBackgroundTexture();
 }

@@ -5,7 +5,6 @@
       <Damage>
         <Crush>4</Crush>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>55</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -22,10 +21,11 @@
         <Chance>1</Chance>
         <Time>500</Time>
       </Stun>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>30</food>
       <metal>0</metal>

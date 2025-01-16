@@ -1,0 +1,13 @@
+{
+	"genericName": "Tower Sentries",
+	"description": "Assign watchmen to patrol the walls and survey the broad plains of Hyrule Field for danger.",
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "hylian/hyl_sentries.dds",
+	"researchTime": 40,
+	"tooltip": "Assign watchmen to patrol the walls and survey the broad plains of Hyrule Field for danger. (+15 Meters Line of Sight - Watch Tower)",
+	"modifications": [{ "value": "Vision/Range","add": 15 }],
+	"affects": ["Sentries"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

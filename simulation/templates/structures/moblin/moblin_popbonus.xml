@@ -26,6 +26,7 @@
     <Classes datatype="tokens">Misc HiddenUI</Classes>
     <GenericName>Moblin Population Bonus</GenericName>
     <Undeletable>false</Undeletable>
+    <Icon>units/unit_generic.dds</Icon>		
   </Identity>
   <Population>
     <Bonus>10</Bonus>

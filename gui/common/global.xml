@@ -22,7 +22,7 @@
 			ghost="true"
 			z="199"
 			size="100%-110 40 100%-110 40"
-			font="mono-stroke-14"
+			font="mono-stroke-10"
 			textcolor="255 219 77"
 			text_align="center"
 			text_valign="top"
@@ -39,7 +39,7 @@
 			type="text"
 			ghost="true"
 			z="199"
-			size="100%-100 40 100%-5 54"
+			size="100%-100 70 100%-2 84"
 			font="mono-10"
 			textcolor="white"
 			text_align="right"
@@ -48,23 +48,6 @@
 		>
 			<action on="Load">
 				g_OverlayCounterManager = new OverlayCounterManager(this);
-			</action>
-		</object>
-
-		<!--
-		==========================================
-		- TIME COUNTER
-		==========================================
-		-->
-
-		<object name="timeCounter"
-			type="text"
-			ghost="true"
-			hidden="true"
-			hotkey="realtime.toggle"
-		>
-			<action on="Press">
-				Engine.ConfigDB_CreateValue("user", "overlay.realtime", ""+(Engine.ConfigDB_GetValue("user", "overlay.realtime") !== "true"));
 			</action>
 		</object>
 
@@ -85,13 +68,13 @@
 
 			<object name="glbWaterMarkProductLogo"
 				type="image"
-				size="0 100%-88 190 100%"
+				size="0 100%-96 192 100%"
 				sprite="watermarkProduct"
 			/>
 
 			<object name="glbWaterMarkCompanyLogo"
 				type="image"
-				size="100%-207 100%-28 100% 100%"
+				size="100%-192 100%-24 100% 100%"
 				sprite="watermarkCompany"
 			/>
 		</object>

@@ -1,40 +1,78 @@
 {
 	"Code": "labrynna",
 	"Culture": "civilized",
-	"Name": "Empire of Labrynna",
-	"Emblem": "session/portraits/emblems/emblem_labrynna.dds",
-	"History": "Once a shining beacon of civilization in the east, Labrynna beheld a rapid advance in science and machinery seemingly from nowhere. In truth the Great Fairy Veran had managed to poison the mind of their Queen, advancing the technology of their military might by an entire generation overnight. Now the Empire seeks to expand and conquer, using their new tools to steamroll those of Hyrule.",
-	"Music":[
-			{"File":"labrynna_theme1.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient1.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient2.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient3.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient4.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient5.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient6.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient7.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient8.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient9.ogg", "Type":"peace"},
-			{"File":"labrynna_ambient10.ogg", "Type":"peace"},
-			{"File":"labrynna_battle1.ogg", "Type":"battle"},
-			{"File":"labrynna_battle2.ogg", "Type":"battle"},
-			{"File":"labrynna_battle3.ogg", "Type":"battle"},
-			{"File":"labrynna_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "labrynna_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_ambient10.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "labrynna_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "labrynna_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "labrynna_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "labrynna_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Queen Solado Ambi",
 					"Class": "",
@@ -62,31 +100,28 @@
 					"Armament": "Star Glaive",
 					"Emblem": "",
 					"History": "A man of towering stature, Edgar earned his nickname for both his height and incredible strength. He earned his place as a General not for his physical prowess however, but for his battlefield strategy. Initially Homeguard to Labrynna, the Empire's expansion has seen him leading troops on frontlines, and instead of fighting off Lynels he has found himself conquering them. In recent times he has found himself supervising the young and arrogant Ralph on behalf of the Queen just as much as he has been ordered to march out further north."
-				}  
+				}
 			]
-		} 
+		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Technocratic",
 			"History": "",
-			"Description": "All un-upgraded buildings (but not units) are available to build in the village phase." 
+			"Description": "All un-upgraded buildings (but not units) are available to build in the village phase."
 		},
 		{
 			"Name": "Annexation",
 			"History": "",
-
-			"Description": "All units have a 50% damage bonus to Minor Faction units and a 50% increase in Minor Faction capture rate." 
+			"Description": "All units have a 50% damage bonus to Minor Faction units and a 50% increase in Minor Faction capture rate."
 		},
 		{
 			"Name": "Secularism",
 			"History": "",
-			"Description": "Labrynna territory is 50% more resistant to enemy territory push." 
-		}  
+			"Description": "Labrynna territory is 50% more resistant to enemy territory push."
+		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/labrynna/choosehero_ralph",
 		"civ_choices/labrynna/choosehero_vire",
 		"civ_choices/labrynna/choosehero_edgar",
@@ -94,16 +129,14 @@
 		"civ_choices/labrynna/choosehero_veran",
 		"civ_choices/labrynna/choosehero_onox"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "Scientific Method",
 			"History": "",
 			"Description": "10% time reduction to all ally research times."
-		} 
+		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: The Black Tower",
 			"Class": "",
@@ -111,7 +144,7 @@
 			"History": "A giant and imposing tower orchestrated by Veran as the new throne of Queen Ambi. The staggering amount of resources Labrynna obtained to construct this massive structure has been fueled by their aggressive expansion into all neighboring lands. In truth, there is more to the Black Tower's purpose then a mere show of ego.",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
+			"Special": ""
 		},
 		{
 			"Name": "Titan: The Maku Tree of Labrynna",
@@ -120,11 +153,10 @@
 			"History": "Once a powerful force of nature that watched over the land of Labrynna, upon Veran’s arrival the personality of the Maku Tree seemed to have dramatically changed. The being’s visual appearance has changed to reflect the shift as well. Now fueled with power from Labrynna’s might, the Maku Tree’s once kind and gentle demeanor has warped into that of a bloodthirsty and battle ready beast. Whatever the truth behind her transformation, it’s clear that the Maku Tree is now out to conquer the land rather than guard it from invaders.",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
-		} 
+			"Special": ""
+		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/labrynna/labrynna_civil_centre"
 		},
@@ -135,7 +167,7 @@
 		{
 			"Template": "units/labrynna/labrynna_tokayfodder_b",
 			"Count": 2
-		},		
+		},
 		{
 			"Template": "units/labrynna/labrynna_homeguard_b",
 			"Count": 2

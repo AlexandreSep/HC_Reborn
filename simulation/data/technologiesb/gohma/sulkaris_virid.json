@@ -1,0 +1,23 @@
+{
+	"genericName": "Crystalline Armor",
+	"description": "Using what power from the Forest Medallion that she could still gleam, Sulkaris was able to force selected Gohma to grow into twisted crystalline forms. These monsterous Gohma could wreck havoc with their glowing emerald claws.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 800},
+	"requirements": {"all": [{"tech": "civ_choices/gohma/choosehero_sulkaris"}, {"tech": "phase_city"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Requires Sulkaris and City Phase.",
+	"icon": "gohma/sulkaris_virid.dds",
+	"researchTime": 40,
+	"tooltip": "All Soldier Caste Gohma grow Emerald Crystals on their carapace, giving them a +10 of all armor types, as well as dealing passive damage to any enemy that engages them in melee.",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 10.0},
+					  {"value": "Resistance/Entity/Damage/Pierce", "add": 10.0},
+					  {"value": "Resistance/Entity/Damage/Crush", "add": 10.0},
+					  {"value": "Resistance/Entity/Damage/Forest", "add": 10.0},
+					  {"value": "Resistance/Entity/Damage/Fire", "add": 10.0},
+					  {"value": "Resistance/Entity/Damage/Water", "add": 10.0},
+					  {"value": "Resistance/Entity/Damage/Spirit", "add": 10.0},
+					  {"value": "Resistance/Entity/Damage/Shadow", "add": 10.0},
+					  {"value": "Resistance/Entity/Damage/Light", "add": 10.0},
+					  {"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["CasteSoldier"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

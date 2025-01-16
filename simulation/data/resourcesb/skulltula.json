@@ -1,0 +1,12 @@
+{
+	"code": "goldskull",
+	"name": "Gold Skulltula",
+	"description": "Used to make rare purchases.",
+	"order": 2,
+	"subtypes": {
+		"goldskull": "Gold Skulltula"
+	},
+	"properties": ["barterable", "tradable", "tributable"],
+	"truePrice": 100,
+	"aiAnalysisInfluenceGroup": "sparse"
+}

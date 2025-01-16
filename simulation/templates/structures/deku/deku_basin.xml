@@ -48,14 +48,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    deku/mad_pacify
-    deku/mad_drench
-    deku/kadakana_sonata
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/deku/complete_basin.xml</constructed>
@@ -66,4 +58,14 @@
   <VisualActor>
     <Actor>structures/deku/deku_basinA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/mad_pacify
+    deku/mad_drench
+    deku/kadakana_sonata
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

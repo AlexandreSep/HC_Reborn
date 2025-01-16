@@ -18,7 +18,7 @@
   </Auras>
   <Capture disable="" />
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>65</food>
       <metal>30</metal>

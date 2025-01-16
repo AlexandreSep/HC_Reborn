@@ -26,12 +26,14 @@
       <Template>units/deku/deku_scrubling_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>gaia/lon_lon_cow_1</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -54,48 +56,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>0</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>15</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>20</Z>
-      </step3>
-      <step4>
-        <X>0</X>
-        <Z>30</Z>
-      </step4>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>9.5</X>
-      <Z>-9.5</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    unlock_shared_los
-    deku/trade_mer_flight
-    deku/butler_bounty
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -116,4 +76,46 @@
     <Actor>structures/deku/deku_martA.xml</Actor>
     <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">unlock_shared_los
+    deku/trade_mer_flight
+    deku/butler_bounty
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    gaia/lon_lon_cow_1</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>0</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>15</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>20</Z>
+      </step3>
+      <step4>
+        <X>0</X>
+        <Z>30</Z>
+      </step4>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>9.5</X>
+      <Z>-9.5</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

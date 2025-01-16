@@ -1,0 +1,185 @@
+{
+	"Code": "zola",
+	"Culture": "barbaric",
+	"Music": [
+		{
+			"File": "zola_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "zola_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "zola_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "zola_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "zola_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies": [
+				{
+					"Name": "Fruit, Meat, Fish, Stone, Metal, Coralmold, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": ""
+				},
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": ""
+				},
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": ""
+				},
+				{
+					"Name": "",
+					"Class": "",
+					"Armament": "",
+					"Emblem": "",
+					"History": ""
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Aquatic",
+			"History": "",
+			"Description": "All land units can move through deep water."
+		},
+		{
+			"Name": "Walking Cities",
+			"History": "",
+			"Description": "Most Zola buildings are capable of walking."
+		},
+		{
+			"Name": "Shore Vision",
+			"History": "",
+			"Description": "Zolas have direct line of sight of all coastlines so long as they control an Octocave."
+		}
+	],
+	"CivChoices": [
+		"civ_choices/zola/choosehero_barudakan",
+		"civ_choices/zola/choosehero_maiamai",
+		"civ_choices/zola/choosehero_krel",
+		"civ_choices/zola/choosehero_jellyf",
+		"civ_choices/zola/choosehero_oren",
+		"civ_choices/zola/choosehero_zaro"
+	],
+	"TeamBonuses": [
+		{
+			"Name": "",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"Structures": [
+		{
+			"Name": "",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		},
+		{
+			"Name": "Titan: Aquamentus",
+			"Class": "",
+			"Emblem": "",
+			"History": "",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/zola/zola_civil_centre"
+		},
+		{
+			"Template": "units/zora/zora_servantA",
+			"Count": 4
+		},
+		{
+			"Template": "units/zora/zora_riverpatrol_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/zora/zora_infiltrator_b"
+		}
+	],
+	"AINames": [
+		"Queen Oren",
+		"King Zaro",
+		"Krell",
+		"Barudakan",
+		"Jellyf",
+		"Maiamai"
+	],
+	"SkirmishReplacements": {
+		"skirmish/structures/default_civil_centre": "structures/zola/zola_civil_centre",
+		"skirmish/units/default_scout_b": "units/zola/zola_octoballoon_b",
+		"skirmish/units/default_battalion_b": "units/zola/zola_drudge_b"
+	},
+	"SelectableInGameSetup": false
+}

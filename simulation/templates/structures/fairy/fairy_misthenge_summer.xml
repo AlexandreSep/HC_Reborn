@@ -3,12 +3,6 @@
     <Classes datatype="tokens">Summer</Classes>
     <Icon>structures/fairy/fai_misthenge_summer.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    fairy/season_dogdays
-    </Technologies>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_misthenge_autumn</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -17,4 +11,12 @@
     <Actor>structures/fairy/fairy_misthengeA_summer.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_summer.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/season_dogdays
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

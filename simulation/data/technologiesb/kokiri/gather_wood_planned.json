@@ -1,0 +1,13 @@
+{
+	"genericName": "Planned Forestation",
+	"description": "Wood was used in massive amounts to create the Kokiri cities and thus every tree needed to be carefully Forested and replaced. Reforestation operations were pretty complex and large affairs for Kokiri city planners.",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 50},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "kokiri"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "kokiri/gather_wood_planned.dds",
+	"researchTime": 40,
+	"tooltip": "Wood was used in massive amounts to create the Kokiri cities and thus every tree needed to be carefully Forested and replaced. Reforestation operations were pretty complex and large affairs for Kokiri city planners. (+15% Material (Wood) Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.15}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

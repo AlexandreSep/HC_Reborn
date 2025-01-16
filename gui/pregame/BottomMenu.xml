@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+
+	<object name="bottomMenuButtons" size="50%-510 100%-50 50%+510 100%">
+		<repeat count="10">
+			<object type="button" style="LightButton" tooltip_style="shinyTooltipAbove" hidden="true"/>
+		</repeat>
+	</object>
+
+	<object name="ShaddowMainMenuGradient" style="MainMenuGradient" type="image" ghost="true" size = "0% 100%-140 100% 100%"/>
+
+</object>

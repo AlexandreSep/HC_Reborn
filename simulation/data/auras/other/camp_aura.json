@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 125,
+	"affects": [],
+	"modifications": [],
+	"auraName": "Gathering Radius",
+	"auraDescription": "(Radius that this Outpost can gather resources.)",
+	"overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"
+}

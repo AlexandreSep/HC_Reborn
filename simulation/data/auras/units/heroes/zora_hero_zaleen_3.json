@@ -3,8 +3,8 @@
 	"affects": ["Healgallery"],
 	"affectedPlayers": ["MutualAlly"],
 	"modifications": [
-		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.50 },
-		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.50 }
+		{ "value": "Trainer/BatchTimeModifier", "multiply": 0.50 },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.50 }
 	],
 	"auraName": "Rapid Healer Response",
 	"auraDescription": "(If Garrisoned, -50% Batch Build Time and Tech Research Time - Healing Gallery)",

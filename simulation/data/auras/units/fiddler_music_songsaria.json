@@ -4,11 +4,11 @@
   "affects": [ "Structure" ],
   "modifications": [
     {
-      "value": "ProductionQueue/BatchTimeModifier",
+      "value": "Trainer/BatchTimeModifier",
       "multiply": 0.9
     },
     {
-      "value": "ProductionQueue/TechCostMultiplier/time",
+      "value": "Researcher/TechCostMultiplier/time",
       "multiply": 0.9
     }
   ],

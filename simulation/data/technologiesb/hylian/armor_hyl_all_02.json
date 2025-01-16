@@ -1,0 +1,27 @@
+{
+	"genericName": "Malkariko Chainmail",
+	"description": "Made famous by the blacksmiths of Malkariko, this unique Chainmail is more durable than past Hylian designs.",
+	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
+	"supersedes": "hylian/armor_hyl_all_01",
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/armor_malkariko_chainmail.dds",
+	"researchTime": 50,
+	"tooltip": "Made famous by the blacksmiths of Malkariko, this unique Chainmail is more durable than past Hylian designs. (+10 Armor - Infantry)",
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 10
+    },
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 10
+    },
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 10
+    }
+  ],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

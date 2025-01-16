@@ -6,7 +6,6 @@
         <Light>40.0</Light>
         <Pierce>0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>90.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -22,6 +21,7 @@
         <LineThickness>0.175</LineThickness>
       </RangeOverlay>
       <RepeatTime>4000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <BuildingAI>
@@ -59,51 +59,6 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>20</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/zora/{civ}_servantA
-	  units/zora/{civ}_hero_zaleen
-	  units/zora/{civ}_hero_telara
-	  units/zora/{civ}_hero_jabun
-	  units/zora/{civ}_hero_debon
-	  units/zora/{civ}_hero_ruto
-	  units/zora/{civ}_hero_laruto
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>12</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    -phase_town_generic
-    -phase_city_generic
-	  phase_town_telara
-	  phase_city_telara
-	  zora/armor_coralloom
-	  zora/zaleen_supreme
-	  zora/telara_armblade
-	  zora/jabun_aqueducts
-	  zora/player_iszora
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <alert0>interface/alarm/alarm_alert_0.xml</alert0>
@@ -121,4 +76,49 @@
     <Actor>structures/zora/zora_civic_centreA.xml</Actor>
     <FoundationActor>structures/zora/zora_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">-phase_town_generic
+    -phase_city_generic
+	  phase_town_telara
+	  phase_city_telara
+	  zora/armor_coralloom
+	  zora/zaleen_supreme
+	  zora/telara_armblade
+	  zora/jabun_aqueducts
+	  zora/player_iszora
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/zora/{civ}_servantA
+	  units/zora/{civ}_hero_zaleen
+	  units/zora/{civ}_hero_telara
+	  units/zora/{civ}_hero_jabun
+	  units/zora/{civ}_hero_debon
+	  units/zora/{civ}_hero_ruto
+	  units/zora/{civ}_hero_laruto</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>12</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

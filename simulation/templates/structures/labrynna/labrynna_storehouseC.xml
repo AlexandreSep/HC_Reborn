@@ -67,13 +67,15 @@
       </PlotH>
     </PlotsToSpawn>
   </Plots>
-  <ProductionQueue>
-    <Technologies datatype="tokens">
-    labrynna/gather_stripmining
-    </Technologies>
-  </ProductionQueue>
   <Upgrade disable="" />
   <VisualActor>
     <Actor>structures/labrynna/labrynna_storehouseC.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/gather_stripmining
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

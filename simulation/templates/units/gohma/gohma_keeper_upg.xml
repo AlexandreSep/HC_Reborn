@@ -6,7 +6,6 @@
         <Crush>1</Crush>
         <Pierce>3.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>90</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -31,6 +30,7 @@
         </SpawnOnImpact>
         <Template>units/gohma_webweaver_b</Template>
       </SpawnEntityOnImpact>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Identity>

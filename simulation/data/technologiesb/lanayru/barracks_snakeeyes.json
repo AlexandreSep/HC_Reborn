@@ -1,0 +1,13 @@
+{
+	"genericName": "Snake Eyes",
+	"description": "Increases the Coral Archer's chance to deal Truedamage by 50%",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
+	"requirements": { "all": [{ "entity": { "class": "VolunteerPost", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Volunteer Post.",
+	"icon": "lanayru/barracks_snakeeyes.dds",
+	"researchTime": 40,
+	"tooltip": "Increases the Coral Archer's chance to deal Truedamage by 50%)",
+	"modifications": [{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.5}],
+	"affects": ["CoralArcher"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

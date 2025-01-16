@@ -39,43 +39,6 @@
   <Obstruction>
     <Static depth="39.5" width="39.5" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>20</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>25</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/gerudo/{civ}_windwitch_b
-    units/gerudo/{civ}_ironknuckle_b
-    units/gerudo/{civ}_serpentkeep_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>13</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-      gerudo/wind_of_death
-    gerudo/ancestral_spirit
-    gerudo/gerudo_mirrorshield
-    gerudo/nabooru_kovaloogift
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -109,4 +72,41 @@
     <Actor>structures/gerudo/gerudo_religionB.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/wind_of_death
+    gerudo/ancestral_spirit
+    gerudo/gerudo_mirrorshield
+    gerudo/nabooru_kovaloogift
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/gerudo/{civ}_windwitch_b
+    units/gerudo/{civ}_ironknuckle_b
+    units/gerudo/{civ}_serpentkeep_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>25</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>13</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

@@ -34,7 +34,7 @@
     <Rate>2.0</Rate>
   </Builder>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>335</food>
       <metal>100</metal>

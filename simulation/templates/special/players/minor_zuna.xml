@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>minor_zuna</Civ>
+    <GenericName>Zuna</GenericName>
+    <History>Perhaps one of the oldest races native to the Gerudo Desert, the Zuna are an isolated culture of reptilian builders and weapon crafters. Though they seem fairly cordial with the Darknut Legion, the Zuna will rarely make contact with any other empire or race outside of weapon dealings. The skill with which the Zuna make their weapons is legendary, so legendary that the Darknut Legion employs them to create incredibly ornate swords for their soldiers. Despite their famous profession, the Zuna rarely ever engage in warfare and their public army usually only operates out of defense.</History>
+    <Icon>emblems/emblem_npc_zuna.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+  </Player>
+</Entity>
+

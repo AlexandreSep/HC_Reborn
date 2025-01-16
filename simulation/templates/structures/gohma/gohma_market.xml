@@ -26,12 +26,14 @@
       <Template>units/gohma/gohma_larva_sterile_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/gohma/gohma_larva_sterile_b</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/gohma/gohma_larva_sterile_b</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -51,13 +53,6 @@
   <Obstruction>
     <Static depth="40.0" width="40.0" />
   </Obstruction>
-  <ProductionQueue>
-    <Entities datatype="tokens">
-    gaia/lon_lon_cow_1
-    </Entities>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_gohA.xml</constructed>
@@ -68,4 +63,11 @@
     <Actor>structures/gohma/gohma_recycler.xml</Actor>
     <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">gaia/lon_lon_cow_1</Entities>
+  </Trainer>
 </Entity>

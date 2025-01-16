@@ -1,0 +1,13 @@
+{
+	"genericName": "Battlefield Preparations",
+	"description": "Healers are trained for combat conditions during their schooling.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zora"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "zora/healer_battleprep.dds",
+	"researchTime": 40,
+	"tooltip": "Healers are trained for combat conditions during their schooling. (+20% Health - Healer and Healer Supreme)",
+	"modifications": [{"value": "Health/Max", "multiply": 1.2}],
+	"affects": ["ZorHealer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

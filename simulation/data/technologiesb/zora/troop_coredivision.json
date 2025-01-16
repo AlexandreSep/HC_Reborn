@@ -1,0 +1,28 @@
+{
+  "genericName": "Core Division",
+  "description": "The cores of Morphites are the source of their magical life. With enough focus, a Master can force the core of her creation to divide into new life.",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 0,
+    "metal": 300
+  },
+  "requirements": {
+    "all": [
+      { "tech": "phase_town" },
+      { "civ": "zora" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with Town.",
+  "icon": "zora/troop_coredivision.dds",
+  "researchTime": 40,
+  "tooltip": "The cores of Morphites are the source of their magical life. With enough focus, a Master can force the core of her creation to divide into new life. (Has a 50% chance of spawning +1 Kyameron Battalion on Death - Morphite)",
+  "modifications": [
+    {
+      "value": "Health/SpawnMultipleEntitiesOnDeath/SpawnNumberMax",
+      "add": 1
+    }
+  ],
+  "affects": [ "Morphite" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

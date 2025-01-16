@@ -1,0 +1,13 @@
+{
+	"genericName": "Ashinon's Test",
+	"description": "",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirementsTooltip": "Requires City Phase.",
+	"icon": "gerudo/ashinons_test.dds",
+	"researchTime": 40,
+	"tooltip": "These grueling trials and tests yield some impressive Gerudo commanders. (+10 Meter Aura Range, +5% to all stats in aura range - Ashinon Captain)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["AshCap"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

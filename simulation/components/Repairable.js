@@ -142,7 +142,7 @@ Repairable.prototype.Repair = function(builderEnt, rate)
 
 	// If we repaired all the damage, send a message to entities to stop repairing this building
 	if (amount >= damage)
-    {
+	{
         //HC-code, added Repaired to let the AI know that this call came from the Repairable component
 		Engine.PostMessage(this.entity, MT_ConstructionFinished, { "entity": this.entity, "newentity": this.entity, "Repaired": true });
 

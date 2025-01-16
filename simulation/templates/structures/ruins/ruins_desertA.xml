@@ -8,12 +8,6 @@
     <Icon>structures/ruins/ruins_desertA.dds</Icon>
     <Tooltip>The long-abandoned remnants of a past culture.</Tooltip>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/armos/armos_fsa_b
-    </Entities>
-  </ProductionQueue>
   <Upgrade>
     <ADarknut>
       <Cost>
@@ -25,9 +19,9 @@
       <RequiredTechnology>darknut/ruins_isdarknut</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Restore these ruins into a Darknut Agora.</Tooltip>
-	  <Variant>upgrading_darknut</Variant>
+      <Variant>upgrading_darknut</Variant>
     </ADarknut>
-	<AStalfos>
+    <AStalfos>
       <Cost>
         <stone>500</stone>
         <wood>500</wood>
@@ -37,11 +31,19 @@
       <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Convert ruins into a Crypt.</Tooltip>
-	  <Variant>upg_stalfos</Variant>
+      <Variant>upg_stalfos</Variant>
     </AStalfos>
   </Upgrade>
   <VisualActor>
     <Actor>structures/ruins/ruins_desertA.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/armos/armos_fsa_b</Entities>
+  </Trainer>
 </Entity>

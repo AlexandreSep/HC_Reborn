@@ -28,7 +28,7 @@
     <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Upgrades Lizalfos armor and weapons.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
   </Identity>
   <Loot>
     <metal>25</metal>
@@ -37,11 +37,6 @@
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -61,4 +56,11 @@
     <Actor>structures/lizalfos/lizalfos_weaponshackA.xml</Actor>
     <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_W.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

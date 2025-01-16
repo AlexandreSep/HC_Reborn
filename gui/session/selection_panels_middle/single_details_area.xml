@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Unit details for Single Unit -->
-<object size="50%-112 0 50%+112 100%" name="detailsAreaSingle">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Details panel for a single entity. -->
+<object name="detailsAreaSingle"
+	size="50%-112 0 50%+112 100%"
+>
 
 	<!-- Names and civilization emblem etc. (This must come before the attack and resistance icon to avoid clipping issues.) -->
 	<object size="0 92 100% 100%" name="statsArea" type="image" sprite="edgedPanelShader">
@@ -21,7 +23,7 @@
 			<object size="0 17 100% 37" name="secondary" ghost="true" type="text" style="SecondaryNameCentered"/>
 		</object>
 	</object>
-	
+
 	<!-- Stats Bars -->
 	<object size= "2 0 100%-2 98" type="image" tooltip_style="sessionToolTip">
 
@@ -111,6 +113,4 @@
 			</object>
 		</object>
 	</object>
-
 </object>
-

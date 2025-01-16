@@ -1,20 +1,19 @@
 {
 	"type": "range",
 	"radius": 40,
-	"affects": ["Infantry"],
-	"supersedes": "units/ashinon_aura_1",
+	"affects": ["Unit"],
 	"modifications": [
-		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.10 },
-		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.10 },
-		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.10 },
-		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.10 },
-		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.10 },
-		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.10 },
-		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
-		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.1 }
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.15 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.15 },
+		{ "value": "Attack/Melee/Damage/TrueDamage", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.15 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.15 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.15 }
 	],
 	"auraName": "Desert Captain",
-	"auraDescription": "(Requires 'Ashinon's Test' researched. +10% Melee Attack, +10% Ranged Attack, +10% Walk/Run Speed - Infantry)",
-	"requiredTechnology": "gerudo/ashinons_test",	
-	"overlayIcon": "art/textures/ui/session/auras/ashinon_aura1.dds"
+	"auraDescription": "(+15% Melee Attack, +15% Ranged Attack, +15% Walk/Run Speed - Infantry)",
+	"overlayIcon": "art/textures/ui/session/auras/arbiter_aura1.dds"
 }

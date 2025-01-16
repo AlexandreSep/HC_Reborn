@@ -1,0 +1,18 @@
+{
+	"genericName": "Hysterics",
+	"description": "",
+	"cost": {"food": 0, "wood":0, "stone": 250, "metal": 250},
+	"requirements": {"all": [ {"tech": "civ_choices/fairy/choosehero_dezaia"}, {"tech": "fairy/unlock_summer"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "Requires Dezaia and at least one Season unlocked.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+25% increase to Attack Damage - All Units",
+	"modifications": [{ "value": "Attack/Melee/Damage/PrepareTime", "multiply": 1.25 },
+					  { "value": "Attack/Melee/Damage/RepeatTime", "multiply": 1.25 },
+					  { "value": "Attack/Ranged/Damage/PrepareTime", "multiply": 1.25 },
+					  { "value": "Attack/Ranged/Damage/RepeatTime", "multiply": 1.25 }
+	],
+	"affects": ["Unit"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

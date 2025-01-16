@@ -37,7 +37,7 @@
     <GenericName>Gohma Egg</GenericName>
     <History>The genesis of all Gohma units, these eggs can morph into one of the four Gohma Larva or Harvesters. They are precious to the Gohma and are laid by their reproductive Queens.</History>
     <Icon>units/gohma/goh_larva_soldier.dds</Icon>
-    <Tooltip>Hatches into Gohma Larva.&#65279;</Tooltip>
+    <Tooltip>Hatches into Gohma Larva.﻿</Tooltip>
     <VisibleClasses datatype="tokens">Egg</VisibleClasses>
   </Identity>
   <Obstruction>
@@ -45,9 +45,6 @@
     <BlockPathfinding>false</BlockPathfinding>
     <Static depth="3.0" width="3.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_eggA.xml</constructed>
@@ -63,4 +60,11 @@
   <VisualActor>
     <Actor>structures/gohma/gohma_egg.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

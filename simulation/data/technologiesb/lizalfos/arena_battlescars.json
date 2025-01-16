@@ -1,0 +1,14 @@
+{
+	"genericName": "Battle Scars",
+	"description": "Lizalfos do not see scars are defomities, but as proof of their skill and valor fo survival.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "lizalfos_doda"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Unlocked with Dodalagon.",
+	"icon": "lizalfos/arena_battlescars.dds",
+	"researchTime": 40,
+	"tooltip": "Predators and Monitors gain slow health regeneration while idle",
+	"modifications": [{"value": "Health/IdleRegenRate", "add": 0.5 }
+	],
+	"affects": ["Battlescar"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

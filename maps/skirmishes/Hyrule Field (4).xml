@@ -32,9 +32,9 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="514.575" y="400.055" z="1084.85"/>
-		<Rotation angle="0.50227"/>
-		<Declination angle="0.853498"/>
+		<Position x="264.661" y="296.442" z="749.195"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
@@ -19570,34 +19570,6 @@
 			<Position x="759.32306" z="1556.12012"/>
 			<Orientation y="2.68879"/>
 			<Actor seed="43288"/>
-		</Entity>
-		<Entity uid="3755">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="820.6438" z="1542.86963"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="59846"/>
-		</Entity>
-		<Entity uid="3756">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="831.03486" z="226.57099"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="20036"/>
-		</Entity>
-		<Entity uid="3758">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="1535.45691" z="574.17914"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="4516"/>
-		</Entity>
-		<Entity uid="3759">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="231.58161" z="1171.02076"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="28952"/>
 		</Entity>
 		<Entity uid="3761">
 			<Template>skirmish/structures/default_ruin_start_anc</Template>

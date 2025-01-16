@@ -6,7 +6,6 @@
         <Hack>7</Hack>
         <Pierce>4</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>75</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -19,6 +18,7 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>4000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Identity>

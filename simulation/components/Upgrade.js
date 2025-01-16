@@ -10,11 +10,13 @@ Upgrade.prototype.Schema =
 				"<element name='Entity' a:help='Entity to upgrade to'>" +
 					"<text/>" +
 				"</element>" +
+				// Hc-Code
 				"<optional>" +
 					"<element name='HideIfTechnologyRequirementIsNotMet' a:help='If set to true, upgrades will not be displayed in the UI if their required technology is not researched'>" +
 						"<data type='boolean'/>" +
 					"</element>" +
 				"</optional>" +
+				// HC-End
 				"<optional>" +
 					"<element name='Icon' a:help='Icon to show in the GUI'>" +
 						"<text/>" +
@@ -81,12 +83,15 @@ Upgrade.prototype.Schema =
 
 Upgrade.prototype.Init = function()
 {
+	// HC-Exodarion - Do you need the next 3 lines? Else remove
 	this.upgrading = false;
 	this.completed = false;
-	this.elapsedTime = 0;
 	this.timer = undefined;
+	
+	this.elapsedTime = 0;
 	this.expendedResources = {};
 
+	// Do you need this and the for loop? If not, remove both
 	this.upgradeTemplates = {};
 
 	for (let choice in this.template)
@@ -108,7 +113,32 @@ Upgrade.prototype.OnOwnershipChanged = function(msg)
 		this.CancelUpgrade(msg.from);
 
 	if (msg.to != INVALID_PLAYER)
+	{
 		this.owner = msg.to;
+		this.DetermineUpgrades();
+	}
+};
+
+Upgrade.prototype.DetermineUpgrades = function()
+{
+	this.upgradeTemplates = {};
+
+	for (const choice in this.template)
+	{
+		const nativeCiv = Engine.QueryInterface(this.entity, IID_Identity).GetCiv();
+		const playerCiv = QueryPlayerIDInterface(this.owner, IID_Identity).GetCiv();
+		const name = this.template[choice].Entity.
+			replace(/\{native\}/g, nativeCiv).
+			replace(/\{civ\}/g, playerCiv);
+
+		if (!Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager).TemplateExists(name))
+			continue;
+
+		if (this.upgradeTemplates[name])
+			warn("Upgrade Component: entity " + this.entity + " has two upgrades to the same entity, only the last will be used.");
+
+		this.upgradeTemplates[name] = choice;
+	}
 };
 
 Upgrade.prototype.ChangeUpgradedEntityCount = function(amount)
@@ -153,18 +183,15 @@ Upgrade.prototype.GetUpgrades = function()
 {
 	let ret = [];
 
-	let cmpIdentity = Engine.QueryInterface(this.entity, IID_Identity);
-
-	for (let option in this.template)
+	for (const option in this.upgradeTemplates)
 	{
-		let choice = this.template[option];
-		let templateName = cmpIdentity ? choice.Entity.replace(/\{civ\}/g, cmpIdentity.GetCiv()) : choice.Entity;
+		const choice = this.template[this.upgradeTemplates[option]];
 
 		let cost = {};
 		if (choice.Cost)
-			cost = this.GetResourceCosts(templateName);
+			cost = this.GetResourceCosts(option);
 		if (choice.Time)
-			cost.time = this.GetUpgradeTime(templateName);
+			cost.time = this.GetUpgradeTime(option);
 
 		let hasCost = choice.Cost || choice.Time;
 		
@@ -173,7 +200,7 @@ Upgrade.prototype.GetUpgrades = function()
 			continue;
 			
 		ret.push({
-			"entity": templateName,
+			"entity": option,
 			"icon": choice.Icon || undefined,
 			"cost": hasCost ? cost : undefined,
 			"tooltip": choice.Tooltip || undefined,
@@ -191,7 +218,7 @@ Upgrade.prototype.CancelTimer = function()
 
 	let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
 	cmpTimer.CancelTimer(this.timer);
-	this.timer = undefined;
+	delete this.timer;
 };
 
 Upgrade.prototype.IsUpgrading = function()
@@ -283,7 +310,6 @@ Upgrade.prototype.Upgrade = function(template, upgradeCostsResources = true, upg
 	}
 
 	this.expendedResources = this.GetResourceCosts(template);
-	// HC-Code
 	// HC-Todo
 	// ToDo: Hyrule check you actually need 'upgradeCostsResources' this, template should tell you there is no cost.
 	if (upgradeCostsResources && (!cmpPlayer || !cmpPlayer.TrySubtractResources(this.expendedResources)))
@@ -335,7 +361,7 @@ Upgrade.prototype.CancelUpgrade = function(owner)
 			cmpVisual.SelectAnimation("idle", false, 1.0);
 	}
 
-	this.upgrading = false;
+	delete this.upgrading;
 	this.CancelTimer();
 	this.SetElapsedTime(0);
 };
@@ -369,7 +395,7 @@ Upgrade.prototype.GetProgress = function()
 Upgrade.prototype.SetElapsedTime = function(time)
 {
 	this.elapsedTime = time;
-	Engine.PostMessage(this.entity, MT_UpgradeProgressUpdate, null);
+    Engine.PostMessage(this.entity, MT_UpgradeProgressUpdate, { "time": time }); // HC-Code: Added last argument: { "time": time }
 };
 
 Upgrade.prototype.SetUpgradeAnimationVariant = function()

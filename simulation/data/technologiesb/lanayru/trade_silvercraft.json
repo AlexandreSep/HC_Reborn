@@ -1,0 +1,26 @@
+{
+	"genericName": "Silver Craftsmanship",
+	"description": "Sells Silver Weapons and Armor at the market.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": { "all": [{ "entity": { "class": "Emporium", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Emporium.",
+	"icon": "lanayru/trade_silvercraft.dds",
+	"researchTime": 40,
+	"tooltip": "(Increases Trade Yields by 50%, Mercenary attack damage by +20%, Mercenary Non-magic armor by +2, and Mercenary magic armor by +1)",
+	"modifications": [
+	{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2},
+	{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.2},
+	{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2},
+	{"value": "Resistance/Entity/Damage/Hack", "add": 2.0},
+	{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
+	{"value": "Resistance/Entity/Damage/Crush", "add": 2.0},
+	{"value": "Resistance/Entity/Damage/Forest", "add": 1.0},
+	{"value": "Resistance/Entity/Damage/Fire", "add": 1.0},
+	{"value": "Resistance/Entity/Damage/Water", "add": 1.0},
+	{"value": "Resistance/Entity/Damage/Spirit", "add": 1.0},
+	{"value": "Resistance/Entity/Damage/Light", "add": 1.0},
+	{"value": "Resistance/Entity/Damage/Shadow", "add": 1.0}
+	],
+	"affects": ["Trader" , "Mercenary"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

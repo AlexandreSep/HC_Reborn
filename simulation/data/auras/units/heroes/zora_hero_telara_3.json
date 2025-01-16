@@ -2,7 +2,7 @@
 	"type": "garrison",
 	"affects": ["Library"],
 	"modifications": [
-		{ "value": "ProductionQueue/TechCostMultiplier/time", "multiply": 0.75 }
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.75 }
 	],
 	"auraName": "Scrolls of Hyrule",
 	"auraDescription": "(If Garrisoned, -25% Tech Research Time - Library)",

@@ -1,0 +1,13 @@
+{
+	"genericName": "Ciela",
+	"description": "Ciela",
+	"icon": "fairy/choosehero_ciela.png",
+	"tooltip": "Select Ciela as your hero of choice.",
+	"modifications": [{ "value": "Health/IdleRegenRate", "add": 0.25 , "affects": "Organic" },
+					  { "value": "Health/RegenRate", "add": 0.25 , "affects": "Organic" }],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Health and Healing Focus", "tooltipText": "Ciela focuses on the healing rate and longevity of Fairies."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Ciela", "tooltipText": "Allows you to summon Ciela, a tiny hero that can be attached to other units and Heroes."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "One Free Wish", "tooltipText": "Fairy Droves now have a small chance to respawn each time one is slain."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Fairy Bulking", "tooltipText": "HP of all units is increased by 10%."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Magic Rest", "tooltipText": "Regeneration Rate of all Fairy units is slightly increased."}]
+}

@@ -1,0 +1,13 @@
+{
+	"genericName": "Gotta Get Up Now!",
+	"description": "Come on Bulblins! Just cause you fall off big poundin Bullbo onto the ground and got run over doesn't give ya excuse to die! Get up and go whack em!",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/bulb_getupnow.dds",
+	"researchTime": 40,
+	"tooltip": "Come on Bulblins! Just cause you fall off big poundin Bullbo onto the ground and got run over doesn't give ya excuse to die! Get up and go whack em! (Chance that a Bulblin Thug will spawn from a Bullbo Rider increases by 25%)",
+	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "multiply": 1.25}],
+	"affects": ["BullboRider"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

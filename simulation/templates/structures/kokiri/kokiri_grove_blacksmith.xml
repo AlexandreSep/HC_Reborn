@@ -116,18 +116,6 @@
       </PlotJ>
     </PlotsToSpawn>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    kokiri/gulley_blacksmith
-    kokiri/armor_dekugouge
-      kokiri/armor_woodwork
-    kokiri/building_tracery
-    kokiri/ranged_squareoff
-      kokiri/ranged_driedseeds
-    kokiri/ranged_quickdraw
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -147,4 +135,18 @@
     <Actor>structures/kokiri/kokiri_grove_craftA.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldH.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/gulley_blacksmith
+    kokiri/armor_dekugouge
+      kokiri/armor_woodwork
+    kokiri/building_tracery
+    kokiri/ranged_squareoff
+      kokiri/ranged_driedseeds
+    kokiri/ranged_quickdraw
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

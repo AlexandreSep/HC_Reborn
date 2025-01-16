@@ -8,11 +8,15 @@
     <GenericName>Stronghold (Double Layer)</GenericName>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <Upgrade disable="" />
   <VisualActor>
     <Actor>structures/goron/goron_strongholdB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

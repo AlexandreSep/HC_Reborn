@@ -1,0 +1,18 @@
+{
+	"pair": "pair_lizgodsA",
+	"genericName": "Worship Dodalagon",
+	"specificName": {
+	},
+	"description": ".",
+	"cost": { "food": 0, "wood": 0, "stone": 0, "metal": 150 },
+	"icon": "lizalfos/deity_dodalagon.dds",
+	"researchTime": 30,
+	"tooltip": "Lizalfos god of the hunt. Dodalagon is portrayed much like a Volvagian, and was most likely one of the tyrants that ruled over the Lizalfos in ages past.",
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.15, "affects": "CivCentre" },
+		{ "value": "Capturable/GarrisonRegenRate", "add": 7.0, "affects": "Structure" },
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Okra" },
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Doda" }
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

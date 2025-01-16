@@ -1,0 +1,14 @@
+{
+	"genericName": "Metal Infused Exoskeletons ",
+	"description": "The Gohma could augment their exoskeletons with various metal forms. Such alteration helped make the arachnids all the more durable.",
+	"cost": {"food": 0, "wood": 0, "stone": 600, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "gohma/armor_metalinfuse.dds",
+	"researchTime": 40,
+	"tooltip": "The Gohma could augment their exoskeletons with various metal forms. Such alteration helped make the arachnids all the more durable. (+5 Armor vs Hack and Pierce for all Gohma Units)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0}],
+  "affects": [ "Human" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

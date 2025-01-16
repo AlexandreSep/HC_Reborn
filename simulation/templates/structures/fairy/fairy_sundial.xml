@@ -42,23 +42,6 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/fairy/{civ}_hero_ciela
-    units/fairy/{civ}_hero_miff
-    units/fairy/{civ}_hero_sekaia
-    units/fairy/{civ}_hero_venus
-      units/fairy/{civ}_hero_dezaia
-    units/fairy/{civ}_hero_valanavi
-    </Entities>
-    <Technologies datatype="tokens">
-    fairy/ciela_thegathering
-    fairy/miff_seasonharmony
-    fairy/sekaia_yearwinds
-    fairy/dezaia_hysterics
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/fairy/complete_sundial.xml</constructed>
@@ -70,4 +53,21 @@
     <Actor>structures/fairy/fairy_sundialA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/ciela_thegathering
+    fairy/miff_seasonharmony
+    fairy/sekaia_yearwinds
+    fairy/dezaia_hysterics
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/fairy/{civ}_hero_ciela
+    units/fairy/{civ}_hero_miff
+    units/fairy/{civ}_hero_sekaia
+    units/fairy/{civ}_hero_venus
+      units/fairy/{civ}_hero_dezaia
+    units/fairy/{civ}_hero_valanavi</Entities>
+  </Trainer>
 </Entity>

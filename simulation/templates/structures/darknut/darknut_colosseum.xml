@@ -27,7 +27,7 @@
     <Civ>darknut</Civ>
     <Classes datatype="tokens">Town</Classes>
     <GenericName>Colosseum</GenericName>
-    <History>These giant arenas often served as a Legion soldier&#8217;s final training and testing ground. The best Darknut warriors were pitted against each other, sometimes solo and sometimes squad on squad.</History>
+    <History>These giant arenas often served as a Legion soldier’s final training and testing ground. The best Darknut warriors were pitted against each other, sometimes solo and sometimes squad on squad.</History>
     <Icon>structures/darknut/dar_colosseum.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Darknut units slowly gain experience points from here.</Tooltip>
@@ -39,12 +39,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    darknut/colosseum_sponsors
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/darknut/complete_colosseum.xml</constructed>
@@ -56,4 +50,12 @@
     <Actor>structures/darknut/darknut_colosseumbaseA.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/colosseum_sponsors
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

@@ -134,6 +134,7 @@ var API3 = function (m) {
         return this.templates[type] ? new m.Template(this.sharedScript, type, this.templates[type]) : null;
     };
 
+    //HC-code
     //send an AI dialog message to specified players with appropriate portrait
     m.GameState.prototype.SendAIDialog = function (players, dialogueType, AIDialogData, delay = 0, metaData = {})
     {
@@ -154,6 +155,7 @@ var API3 = function (m) {
             "metaData": metaData
         });
     };
+    //HC-end
 
     /** Return the template of the structure built from this foundation */
     m.GameState.prototype.getBuiltTemplate = function (foundationName) {
@@ -207,73 +209,44 @@ var API3 = function (m) {
         return entityReqs;
     };
 
-    m.GameState.prototype.isResearched = function (template) {
+    m.GameState.prototype.isResearched = function(template)
+    {
         return this.playerData.researchedTechs.has(template);
     };
-
-    /** true if started or queued */
-    m.GameState.prototype.isResearching = function (template) {
-        return this.playerData.researchStarted.has(template) ||
-            this.playerData.researchQueued.has(template);
+    
+    m.GameState.prototype.isResearching = function(template)
+    {
+        return this.playerData.researchQueued.has(template);
     };
-
+    
     /** this is an "in-absolute" check that doesn't check if we have a building to research from. */
-    m.GameState.prototype.canResearch = function (techTemplateName, noRequirementCheck) {
+    m.GameState.prototype.canResearch = function(techTemplateName, noRequirementCheck)
+    {
         if (this.playerData.disabledTechnologies[techTemplateName])
             return false;
-
+    
         let template = this.getTemplate(techTemplateName);
         if (!template)
             return false;
-
-        // researching or already researched: NOO.
+    
         if (this.playerData.researchQueued.has(techTemplateName) ||
-            this.playerData.researchStarted.has(techTemplateName) ||
             this.playerData.researchedTechs.has(techTemplateName))
             return false;
-
+    
         if (noRequirementCheck)
             return true;
-
+    
         // if this is a pair, we must check that the pair tech is not being researched
-        if (template.pair()) {
+        if (template.pair())
+        {
             let other = template.pairedWith();
             if (this.playerData.researchQueued.has(other) ||
-                this.playerData.researchStarted.has(other) ||
                 this.playerData.researchedTechs.has(other))
                 return false;
         }
-
+    
         return this.checkTechRequirements(template.requirements(this.playerData.civ));
     };
-
-    // HC-code, specific function that only checks if it has the tech requirement
-    m.GameState.prototype.checkRequiredTechOnly = function (techTemplateName)
-    {
-        let template = this.getTemplate(techTemplateName);
-        if (!template)
-            return false;
-
-        let reqs = template.requirements(this.playerData.civ);
-        if (!reqs)
-            return false;
-
-        warn("reqs " + reqs);
-        if (!reqs.length)
-            return true;
-
-        return reqs.some(req => {
-            return Object.keys(req).every(type => {
-                if (type == "techs")
-                {
-                    warn("req[type] " + req[type]);
-                    return req[type].every(tech => this.playerData.researchedTechs.has(tech));
-                }
-                else
-                    return false;
-            });
-        });
-    }
 
     /**
      * Private function for checking a set of requirements is met.

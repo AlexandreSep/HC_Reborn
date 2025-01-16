@@ -32,7 +32,7 @@
     <History>Allows Lanayru Province to hire Mercenary units.</History>
     <Icon>structures/lanayru/lan_bordello.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Lanayru Province was perhaps most well known for their loose policy on relationships between races, it&#8217;s what lead to their hybrid nature in the first place. Bordellos werepublic locations full of young single individuals seeking reproductive partners. Despite the benign intent, these hubs would sometimes end up devolving into debauchery and outright prostitution.</Tooltip>
+    <Tooltip>Lanayru Province was perhaps most well known for their loose policy on relationships between races, it’s what lead to their hybrid nature in the first place. Bordellos werepublic locations full of young single individuals seeking reproductive partners. Despite the benign intent, these hubs would sometimes end up devolving into debauchery and outright prostitution.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>
   <Obstruction>
@@ -41,37 +41,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>35</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>40</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-</Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>30</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    lanayru/get_bordello
-    </Technologies>
-  </ProductionQueue>
   <Selectable>
     <EditorOnly />
     <Overlay>
@@ -93,4 +62,35 @@
     <Actor>structures/lanayru/lanayru_bordelloA.xml</Actor>
     <FoundationActor>structures/lanayru/lanayru_scaffoldJ.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/get_bordello
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>35</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>40</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>30</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

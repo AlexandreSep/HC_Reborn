@@ -44,8 +44,28 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/deku/complete_babapatch.xml</constructed>
+      <select>interface/select/building/deku/sel_babapatch.xml</select>
+      <upgraded>interface/complete/building/deku/complete_babapatch.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/deku/deku_babapatchA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/baba_projectileteeth
+    deku/baba_venomteeth
+    deku/baba_thorncoat
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/deku/{civ}_babacrawler_b
+      units/deku/{civ}_baballista_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -60,10 +80,6 @@
         <Z>30</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/deku/{civ}_babacrawler_b
-      units/deku/{civ}_baballista_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -77,21 +93,5 @@
       <X>0</X>
       <Z>5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    deku/baba_projectileteeth
-    deku/baba_venomteeth
-    deku/baba_thorncoat
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/deku/complete_babapatch.xml</constructed>
-      <select>interface/select/building/deku/sel_babapatch.xml</select>
-      <upgraded>interface/complete/building/deku/complete_babapatch.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/deku/deku_babapatchA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

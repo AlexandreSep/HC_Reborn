@@ -1,0 +1,13 @@
+{
+	"genericName": "Hydraulic Joint",
+	"description": "Gohma Long Legs were quite quick despite their size. With proper alterations, their legs could be warped to funtion more like a true spider's legs, giving them quite a frightning boost to their leaps.",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gohma"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "gohma/longlegs_hydrajoints.dds",
+	"researchTime": 40,
+	"tooltip": "Gohma Long Legs were quite quick despite their size. With proper alterations, their legs could be warped to funtion more like a true spider's legs, giving them quite a frightning boost to their leaps. (+10% Movement Speed for Gohma Long Legs.)",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.10}],
+	"affects": ["GohLonglegs"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

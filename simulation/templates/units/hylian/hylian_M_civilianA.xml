@@ -1,6 +1,6 @@
 <Entity parent="units/hylian/hylian_citizenA">
   <Cost>
-    <BuildTime>10</BuildTime>
+    <BuildTime>7</BuildTime>
     <Resources>
       <food>50</food>
     </Resources>

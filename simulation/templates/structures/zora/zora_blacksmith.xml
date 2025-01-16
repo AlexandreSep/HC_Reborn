@@ -40,15 +40,6 @@
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    zora/attack_coralboundsteel
-      zora/armor_crystalweave
-    zora/attack_shatterback
-    zora/building_kenozooid
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -68,4 +59,15 @@
     <Actor>structures/zora/zora_coralcraftA.xml</Actor>
     <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">zora/attack_coralboundsteel
+      zora/armor_crystalweave
+    zora/attack_shatterback
+    zora/building_kenozooid
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

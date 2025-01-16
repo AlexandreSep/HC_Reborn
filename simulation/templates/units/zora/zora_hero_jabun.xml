@@ -6,7 +6,7 @@
         <Fire>24.0</Fire>
         <Water>24.0</Water>
       </Damage>
-      <Delay>0</Delay>
+      <EffectDelay>0</EffectDelay>
       <MaxRange>10.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -22,7 +22,7 @@
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>500</food>
       <metal>200</metal>

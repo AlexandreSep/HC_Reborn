@@ -1,0 +1,13 @@
+{
+	"genericName": "Golo Bomb Flowers",
+	"description": "The Bomb Flowers from the Golo region are notably volatile, resulting in a more destructive explosive.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 750},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "goron"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "goron/troop_golobomb.dds",
+	"researchTime": 40,
+	"tooltip": "The Bomb Flowers from the Golo region are notably volatile, resulting in a more destructive explosive. (+25% Circular Splash Area-of-Effect - Bomb Thrower and Powder Keg Launcher)",
+	"modifications": [{"value": "Attack/Ranged/Damage/Splash/Range", "multiply": 1.25}],
+	"affects": ["Bombs"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

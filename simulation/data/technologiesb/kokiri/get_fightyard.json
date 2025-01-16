@@ -1,0 +1,10 @@
+{
+	"genericName": "a Fighting Yard Add-on",
+	"description": "Fighting Yard is added on to the Battle Grove, unlocking units.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": { "all": [{ "entity": { "class": "FightYard", "number": 1 } }] },
+	"autoResearch": true,
+	"icon": "kokiri/fairy_guardian.dds",
+	"researchTime": 0,
+	"tooltip": "Fighting Yard is added on to the Battle Grove, unlocking units."
+}

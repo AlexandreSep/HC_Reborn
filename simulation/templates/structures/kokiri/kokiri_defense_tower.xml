@@ -5,8 +5,6 @@
       <Damage>
         <Pierce>12.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
-      <ElevationBonus>15</ElevationBonus>
       <MaxRange>90.0</MaxRange>
       <MinRange>10.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -15,10 +13,16 @@
         <Gravity>9.81</Gravity>
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
-		<FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
     </Ranged>
   </Attack>
   <BuildRestrictions>
@@ -50,7 +54,7 @@
     <List datatype="tokens">Medium Small LargeGarrison</List>
     <Max>5</Max>
   </GarrisonHolder>
-      <TurretHolder>
+  <TurretHolder>
     <TurretPoints>
       <Archer1>
         <X>-1.5</X>
@@ -78,7 +82,7 @@
         <Z>-3</Z>
       </Archer5>
     </TurretPoints>
-    </TurretHolder>
+  </TurretHolder>
   <Health>
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/debris_kokiri_small</SpawnEntityOnDeath>

@@ -24,11 +24,12 @@ AIInterface.prototype.EventNames = [
 	"AttackRequest",
 	"CeasefireEnded",
 	"DiplomacyRequest",
-    "TributeRequest",
-    //HC Added
+	"TributeRequest",
+    //HC-code Added
     "ResearchFinished",
     "BattalionAdded",
-    "BattalionUpdate"
+    "BattalionUpdate",
+    "CaptureZoneUpdate"
 ];
 
 AIInterface.prototype.Init = function()
@@ -89,12 +90,13 @@ AIInterface.prototype.Disable = function()
 	this.OnGlobalEntityRenamed = nop;
 	this.OnGlobalTributeExchanged = nop;
 	this.OnTemplateModification = nop;
-    this.OnGlobalValueModification = nop;
+	this.OnGlobalValueModification = nop;
 
-    //HC added
+    //HC-code added
     this.OnGlobalResearchFinished = nop;
     this.OnGlobalBattalionAdded = nop;
     this.OnGlobalBattalionUpdate = nop;
+    this.OnGlobalCaptureZoneUpdate = nop;
 };
 
 AIInterface.prototype.GetNonEntityRepresentation = function()
@@ -215,7 +217,7 @@ AIInterface.prototype.OnCeasefireEnded = function(msg)
 	this.events.CeasefireEnded.push(msg);
 };
 
-//HC added
+//HC-code added
 AIInterface.prototype.OnGlobalResearchFinished = function (msg) {
     this.events.ResearchFinished.push(msg);
 };
@@ -226,6 +228,10 @@ AIInterface.prototype.OnGlobalBattalionAdded = function (msg) {
 
 AIInterface.prototype.OnGlobalBattalionUpdate = function (msg) {
     this.events.BattalionUpdate.push(msg);
+};
+
+AIInterface.prototype.OnGlobalCaptureZoneUpdate = function (msg) {
+    this.events.CaptureZoneUpdate.push(msg);
 };
 
 /**

@@ -169,14 +169,17 @@ AttackHelper.prototype.GetTotalAttackEffects = function(target, effectData, effe
 
 	let resistanceStrengths = cmpResistance ? cmpResistance.GetEffectiveResistanceAgainst(effectType) : {};
 
-	
-	
 	if (effectType == "Damage"){
-		for (let type in effectData.Damage){ // HC-code, Damage is decreased per point of armour in that category
-	        if (resistanceStrengths.Damage[type] == null){ // HC-Code: Added a check for missing damage types to warn the programmer
+        for (let type in effectData.Damage)
+        { // HC-code, Damage is decreased per point of armour in that category
+            let resistanceValue = resistanceStrengths.Damage[type]
+            if (resistanceValue == null){ // HC-Code: Added a check for missing damage types to warn the programmer
 				error("Entity: " + target + " misses resistance of type " + type + ". Damage calculation skips that damage type. This might result in attacks dealing no damage.");
-			}
-            total += effectData.Damage[type] - (effectData.Damage[type] * (resistanceStrengths.Damage[type] * 0.01));
+            }
+            if (resistanceValue > 98) // HC-code, prevent healing and full immunity to a resistance value
+                resistanceValue = 98;
+
+            total += effectData.Damage[type] - (effectData.Damage[type] * (resistanceValue * 0.01));
 		}
     }
 	else if (effectType == "Capture")
@@ -498,7 +501,8 @@ AttackHelper.prototype.HandleAttackEffects = function(target, data, bonusMultipl
 
     if (cmpResistance.IsInvulnerable())
         return false;
-
+	
+    // HC-Code
     // check whether this unit has dodged the "Melee" attack
     if (cmpResistance.HasDodged(data.type) == true)
         return false;

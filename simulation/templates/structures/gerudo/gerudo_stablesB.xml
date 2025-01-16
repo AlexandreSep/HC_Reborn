@@ -65,7 +65,7 @@
   <Health>
     <Max>3000</Max>
     <SpawnEntityOnDeath>rubble/debris_gerudo_medium</SpawnEntityOnDeath>
-	<SpawnGarrison>
+    <SpawnGarrison>
       <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
       <SpawnNumber>6</SpawnNumber>
       <LinkedDestruction>true</LinkedDestruction>
@@ -88,45 +88,6 @@
   <Obstruction>
     <Static depth="45.0" width="45.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>-5</X>
-        <Z>10.4</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>10.4</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>30</Z>
-      </step3>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/gerudo/{civ}_dunewalker_b
-	  units/gerudo/{civ}_sealplower_b
-	  units/gerudo/{civ}_dustsentinel_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>-17.5</X>
-      <Z>10.4</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-      gerudo/seal_shabonne_saddles
-	  gerudo/seal_tali_horn	  
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -153,4 +114,43 @@
     <Actor>structures/gerudo/gerudo_stablesB.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldE.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/seal_shabonne_saddles
+	  gerudo/seal_tali_horn
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/gerudo/{civ}_dunewalker_b
+	  units/gerudo/{civ}_sealplower_b
+	  units/gerudo/{civ}_dustsentinel_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>-5</X>
+        <Z>10.4</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>10.4</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-17.5</X>
+      <Z>10.4</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

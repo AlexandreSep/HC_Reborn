@@ -1,0 +1,14 @@
+{
+	"genericName": "Upgrade to Priestess",
+	"description": "With time and money the Clergy of Hyrule orthodoxy could afford to train and distribute Preistesses across the land.",
+	"cost": {"metal": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "hylian/priestess.dds",
+	"researchTime": 40,
+	"tooltip": "Improves Deacons by making them Priestesses.",
+	"modifications": [{"value": "Trainer/Entities/_string",	"tokens": "units/hylian/{civ}_deacon_b>units/hylian/{civ}_priestess_b", "affects": "Structure" },
+					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "HylianDeacon" }
+	],	
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

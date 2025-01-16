@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>12.0</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>150.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -21,6 +20,7 @@
         <LineThickness>0.175</LineThickness>
       </RangeOverlay>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <BuildingAI>
@@ -60,37 +60,6 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>20</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>25</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/darknut/{civ}_thrallA
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>10</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-		darknut/agora_legionreserves
-    </Technologies>
-  </ProductionQueue>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -117,4 +86,35 @@
     <Actor>structures/darknut/darknut_ruin_centerB.xml</Actor>
     <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/agora_legionreserves
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/darknut/{civ}_thrallA</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>20</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>25</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>10</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

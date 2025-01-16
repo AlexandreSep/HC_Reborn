@@ -3,7 +3,7 @@
     <SpawnDeltaTime>700</SpawnDeltaTime>
   </Battalion>
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>
@@ -19,10 +19,7 @@
     <Max>270</Max>
   </Health>
   <Identity>
-    <Classes datatype="tokens">Organic Cavalry</Classes>
-    <Formations datatype="tokens">
-      special/formations/wedge
-    </Formations>
+    <Classes datatype="tokens">Organic</Classes>
     <GenericName>Cavalry</GenericName>
     <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
   </Identity>

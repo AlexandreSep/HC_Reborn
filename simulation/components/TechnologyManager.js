@@ -3,16 +3,208 @@ function TechnologyManager() {}
 TechnologyManager.prototype.Schema =
 	"<empty/>";
 
+// HC-TODO
+// This whole component might be broken, as it was heavily modified
+
 //HC-Code	
 TechnologyManager.prototype.transformationList = new Array ();
 TechnologyManager.prototype.transformationTimerID = undefined;
+
+/**
+ * This object represents a technology under research.
+ * @param {string} templateName - The name of the template to research.
+ * @param {number} player - The player ID researching.
+ * @param {number} researcher - The entity ID researching.
+ */
+TechnologyManager.prototype.Technology = function(templateName, player, researcher)
+{
+	this.player = player;
+	this.researcher = researcher;
+	this.templateName = templateName;
+};
+
+/**
+ * Prepare for the queue.
+ * @param {Object} techCostMultiplier - The multipliers to use when calculating costs.
+ * @return {boolean} - Whether the technology was successfully initiated.
+ */
+TechnologyManager.prototype.Technology.prototype.Queue = function(techCostMultiplier)
+{
+	const template = TechnologyTemplates.Get(this.templateName);
+	if (!template)
+		return false;
+
+	this.resources = {};
+	if (template.cost)
+		for (const res in template.cost)
+			this.resources[res] = Math.floor(techCostMultiplier[res] * template.cost[res]);
+
+	// ToDo: Subtract resources here or in cmpResearcher?
+	const cmpPlayer = Engine.QueryInterface(this.player, IID_Player);
+	// TrySubtractResources should report error to player (they ran out of resources).
+	if (!cmpPlayer?.TrySubtractResources(this.resources))
+		return false;
+
+	const time = techCostMultiplier.time * (template.researchTime || 0) * 1000;
+	this.timeRemaining = time;
+	this.timeTotal = time;
+
+	const playerID = cmpPlayer.GetPlayerID();
+	Engine.QueryInterface(SYSTEM_ENTITY, IID_Trigger).CallEvent("OnResearchQueued", {
+		"playerid": playerID,
+		"technologyTemplate": this.templateName,
+		"researcherEntity": this.researcher
+	});
+
+	return true;
+};
+
+TechnologyManager.prototype.Technology.prototype.Stop = function()
+{
+	const cmpPlayer = Engine.QueryInterface(this.player, IID_Player);
+	cmpPlayer?.RefundResources(this.resources);
+	delete this.resources;
+
+	if (this.started && this.templateName.startsWith("phase"))
+		Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface).PushNotification({
+			"type": "phase",
+			"players": [cmpPlayer.GetPlayerID()],
+			"phaseName": this.templateName,
+			"phaseState": "aborted"
+		});
+};
+
+/**
+ * Called when the first work is performed.
+ */
+TechnologyManager.prototype.Technology.prototype.Start = function()
+{
+	this.started = true;
+	if (!this.templateName.startsWith("phase"))
+		return;
+
+	const cmpPlayer = Engine.QueryInterface(this.player, IID_Player);
+	Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface).PushNotification({
+		"type": "phase",
+		"players": [cmpPlayer.GetPlayerID()],
+		"phaseName": this.templateName,
+		"phaseState": "started"
+	});
+};
+
+TechnologyManager.prototype.Technology.prototype.Finish = function()
+{
+	this.finished = true;
+
+	const template = TechnologyTemplates.Get(this.templateName);
+	if (template.soundComplete)
+		Engine.QueryInterface(SYSTEM_ENTITY, IID_SoundManager)?.PlaySoundGroup(template.soundComplete, this.researcher);
+
+	if (template.modifications)
+	{
+		const cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
+		cmpModifiersManager.AddModifiers("tech/" + this.templateName, DeriveModificationsFromTech(template), this.player);
+	}
+
+	const cmpEntityLimits = Engine.QueryInterface(this.player, IID_EntityLimits);
+	const cmpTechnologyManager = Engine.QueryInterface(this.player, IID_TechnologyManager);
+	if (template.replaces && template.replaces.length > 0)
+		for (const i of template.replaces)
+		{
+			cmpTechnologyManager.MarkTechnologyAsResearched(i);
+			cmpEntityLimits?.UpdateLimitsFromTech(i);
+		}
+
+	cmpTechnologyManager.MarkTechnologyAsResearched(this.templateName);
+
+	// ToDo: Move to EntityLimits.js.
+	cmpEntityLimits?.UpdateLimitsFromTech(this.templateName);
+
+	const playerID = Engine.QueryInterface(this.player, IID_Player).GetPlayerID();
+	Engine.PostMessage(this.player, MT_ResearchFinished, { "player": playerID, "template": template, "tech": this.templateName }); // HC-code, template added
+
+	if (this.templateName.startsWith("phase") && !template.autoResearch)
+		Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface).PushNotification({
+			"type": "phase",
+			"players": [playerID],
+			"phaseName": this.templateName,
+			"phaseState": "completed"
+		});
+};
+
+/**
+ * @param {number} allocatedTime - The time allocated to this item.
+ * @return {number} - The time used for this item.
+ */
+TechnologyManager.prototype.Technology.prototype.Progress = function(allocatedTime)
+{
+	if (!this.started)
+		this.Start();
+	if (this.paused)
+		this.Unpause();
+	if (this.timeRemaining > allocatedTime)
+	{
+		this.timeRemaining -= allocatedTime;
+		return allocatedTime;
+	}
+	this.Finish();
+	return this.timeRemaining;
+};
+
+TechnologyManager.prototype.Technology.prototype.Pause = function()
+{
+	this.paused = true;
+};
+
+TechnologyManager.prototype.Technology.prototype.Unpause = function()
+{
+	delete this.paused;
+};
+
+TechnologyManager.prototype.Technology.prototype.GetBasicInfo = function()
+{
+	return {
+		"paused": this.paused,
+		"progress": 1 - (this.timeRemaining / (this.timeTotal || 1)),
+		"researcher": this.researcher,
+		"templateName": this.templateName,
+		"timeRemaining": this.timeRemaining
+	};
+};
+
+TechnologyManager.prototype.Technology.prototype.SerializableAttributes = [
+	"paused",
+	"player",
+	"researcher",
+	"resources",
+	"started",
+	"templateName",
+	"timeRemaining",
+	"timeTotal"
+];
+
+TechnologyManager.prototype.Technology.prototype.Serialize = function()
+{
+	const result = {};
+	for (const att of this.SerializableAttributes)
+		if (this.hasOwnProperty(att))
+			result[att] = this[att];
+	return result;
+};
+
+TechnologyManager.prototype.Technology.prototype.Deserialize = function(data)
+{
+	for (const att of this.SerializableAttributes)
+		if (att in data)
+			this[att] = data[att];
+};
 
 TechnologyManager.prototype.Init = function()
 {
 	// Holds names of technologies that have been researched.
 	this.researchedTechs = new Set();
 
-	// Maps from technolgy name to the entityID of the researcher.
+	// Maps from technolgy name to the technology object.
 	this.researchQueued = new Map();
 
 	// Holds technologies which are being researched currently (non-queued).
@@ -40,17 +232,58 @@ TechnologyManager.prototype.Init = function()
 	for (let key in allTechs)
 		if (allTechs[key].autoResearch || allTechs[key].top)
 			this.unresearchedAutoResearchTechs.add(key);
-	
-	
-	// A temporary list used for automatic upgrades
-	this.upgradeList = new Array();
+
+	// HC-Code
+	// Stores informations about technology groups
+	// Only a set amouhnt of technologies of one group can be researched at once
+	this.technologyGroups = TechnologyTemplates.Get("00_technology_groups");
+	this.technologyGroupsMap = new Map();
+	for (let groupName in this.technologyGroups){
+	    this.technologyGroupsMap.set(groupName, false);
+	}
+	// HC-End
+};
+
+TechnologyManager.prototype.SerializableAttributes = [
+	"researchedTechs",
+	"classCounts",
+	"typeCountsByClass",
+	"unresearchedAutoResearchTechs"
+];
+
+TechnologyManager.prototype.Serialize = function()
+{
+	const result = {};
+	for (const att of this.SerializableAttributes)
+		if (this.hasOwnProperty(att))
+			result[att] = this[att];
+
+	result.researchQueued = [];
+	for (const [techName, techObject] of this.researchQueued)
+		result.researchQueued.push(techObject.Serialize());
+
+	return result;
+};
+
+TechnologyManager.prototype.Deserialize = function(data)
+{
+	for (const att of this.SerializableAttributes)
+		if (att in data)
+			this[att] = data[att];
+
+	this.researchQueued = new Map();
+	for (const tech of data.researchQueued)
+	{
+		const newTech = new this.Technology();
+		newTech.Deserialize(tech);
+		this.researchQueued.set(tech.templateName, newTech);
+	}
 };
 
 TechnologyManager.prototype.OnUpdate = function()
 {
 	this.UpdateAutoResearch();
 };
-
 
 // This function checks if the requirements of any autoresearch techs are met and if they are it researches them
 TechnologyManager.prototype.UpdateAutoResearch = function()
@@ -90,6 +323,7 @@ TechnologyManager.prototype.IsTechnologyResearched = function(tech)
 	return this.researchedTechs.has(tech);
 };
 
+// HC-code
 TechnologyManager.prototype.IsTechnologyStarted = function(tech)
 {
 	return this.researchStarted.has(tech);
@@ -119,7 +353,7 @@ TechnologyManager.prototype.CanResearch = function(tech)
 	if (this.IsTechnologyResearched(tech))
 		return false;
 
-	return this.CheckTechnologyRequirements(DeriveTechnologyRequirements(template, Engine.QueryInterface(this.entity, IID_Player).GetCiv()));
+	return this.CheckTechnologyRequirements(DeriveTechnologyRequirements(template, Engine.QueryInterface(this.entity, IID_Identity).GetCiv()));
 };
 
 /**
@@ -198,31 +432,6 @@ TechnologyManager.prototype.OnGlobalOwnershipChanged = function(msg)
 				this.typeCountsByClass[cls][template] += 1;
 			}
 		}
-
-		// Newly created entity, check if any researched techs might apply
-		// (only do this for new entities because even if an entity is converted or captured,
-		//	we want it to maintain whatever technologies previously applied)
-		if (msg.from == INVALID_PLAYER)
-		{
-			var modifiedComponents = {};
-			for (var name in this.modifications)
-			{
-				// We only need to find one one tech per component for a match
-				var modifications = this.modifications[name];
-				var component = name.split("/")[0];
-				for (let modif of modifications)
- 					if (DoesModificationApply(modif, classes))
-					{
-						if (!modifiedComponents[component])
-							modifiedComponents[component] = [];
-						modifiedComponents[component].push(name);
-					}
-			}
-
-			// Send mesage(s) to the entity so it knows about researched techs
-			for (var component in modifiedComponents)
-				Engine.PostMessage(msg.entity, MT_ValueModification, { "entities": [msg.entity], "component": component, "valueNames": modifiedComponents[component] });
-		}
 	}
 	if (msg.from == playerID)
 	{
@@ -252,135 +461,97 @@ TechnologyManager.prototype.OnGlobalOwnershipChanged = function(msg)
 };
 
 /**
- * Marks a technology as researched.
- * Note that this does not verify that the requirements are met.
- *
- * @param {string} tech - The technology to mark as researched.
+ * This does neither apply effects nor verify requirements.
+ * @param {string} tech - The name of the technology to mark as researched.
  */
-TechnologyManager.prototype.ResearchTechnology = function(tech)
+TechnologyManager.prototype.MarkTechnologyAsResearched = function(tech)
 {
-	this.StoppedResearch(tech, false);
-
-	let modifiedComponents = {};
 	this.researchedTechs.add(tech);
-	// Sore the modifications in an easy to access structure
-	let template = TechnologyTemplates.Get(tech);
-	if (template.modifications)
-	{
-		let cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
-		cmpModifiersManager.AddModifiers("tech/" + tech, DeriveModificationsFromTech(template), this.entity);
-	}
-
-	if (template.replaces && template.replaces.length > 0)
-	{
-		for (let i of template.replaces)
-		{
-			if (!i || this.IsTechnologyResearched(i))
-				continue;
-
-			this.researchedTechs.add(i);
-
-			// Change the EntityLimit if any.
-			let cmpPlayer = Engine.QueryInterface(this.entity, IID_Player);
-			if (cmpPlayer && cmpPlayer.GetPlayerID() !== undefined)
-			{
-				let playerID = cmpPlayer.GetPlayerID();
-				let cmpPlayerEntityLimits = QueryPlayerIDInterface(playerID, IID_EntityLimits);
-				if (cmpPlayerEntityLimits)
-					cmpPlayerEntityLimits.UpdateLimitsFromTech(i);
-			}
-		}
-	}
-
 	this.UpdateAutoResearch();
+};
+
+/**
+ * Note that this does not verify whether the requirements are met.
+ * @param {string} tech - The technology to research.
+ * @param {number} researcher - Optionally the entity to couple with the research.
+ */
+TechnologyManager.prototype.ResearchTechnology = function(tech, researcher = INVALID_ENTITY)
+{
+	if (this.IsTechnologyQueued(tech) || this.IsTechnologyResearched(tech))
+		return;
+	const technology = new this.Technology(tech, this.entity, researcher);
 	
+
+	// HC-TODO - Verify this, as that whole component got heavily modified 
 	// HC-Code
+	let template = TechnologyTemplates.Get(tech);
 	this.DoUpgradesIfSpecified(template);
 
-	let cmpPlayer = Engine.QueryInterface(this.entity, IID_Player);
-	if (!cmpPlayer || cmpPlayer.GetPlayerID() === undefined)
-		return;
-	let playerID = cmpPlayer.GetPlayerID();
-	var cmpRangeManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager);
-	var ents = cmpRangeManager.GetEntitiesByPlayer(playerID);
-	ents.push(this.entity);
-	
-	// Code if the technology contains "Transformations" entries
-	this.DoTransformationsIfSpecified(template);
-
-	// Change the EntityLimit if any.
-	let cmpPlayerEntityLimits = QueryPlayerIDInterface(playerID, IID_EntityLimits);
-	if (cmpPlayerEntityLimits)
-		cmpPlayerEntityLimits.UpdateLimitsFromTech(tech);
-
-	// Always send research finished message.
-    Engine.PostMessage(this.entity, MT_ResearchFinished, { "player": playerID, "tech": tech, "template": template }); // HC-code, added the 'template' data for the AI research checks
-
-	for (var component in modifiedComponents)
-	{
-        Engine.PostMessage(SYSTEM_ENTITY, MT_TemplateModification, { "player": playerID, "component": component, "valueNames": modifiedComponents[component] });
-		Engine.BroadcastMessage(MT_ValueModification, { "entities": ents, "component": component, "valueNames": modifiedComponents[component]});
-	}
-
-	if (tech.startsWith("phase") && !template.autoResearch)
-	{
-		let cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
-		cmpGUIInterface.PushNotification({
-			"type": "phase",
-			"players": [playerID],
-			"phaseName": tech,
-			"phaseState": "completed"
-		});
-	}
 	// HC-Code
 	this.ResearchTechnologWithMultipleDependencies(template);
+
+
+	technology.Finish();
 };
 
 /**
  * Marks a technology as being queued for research at the given entityID.
+ * @param {string} tech - The technology to queue.
+ * @param {number} researcher - The entity ID of the entity researching this technology.
+ * @param {Object} techCostMultiplier - The multipliers used when calculating the costs.
+ *
+ * @return {boolean} - Whether we successfully have queued the technology.
  */
-TechnologyManager.prototype.QueuedResearch = function(tech, researcher)
+TechnologyManager.prototype.QueuedResearch = function(tech, researcher, techCostMultiplier)
 {
-	this.researchQueued.set(tech, researcher);
-};
-
-// Marks a technology as actively being researched
-TechnologyManager.prototype.StartedResearch = function(tech, notification)
-{
-	this.researchStarted.add(tech);
-
-	if (notification && tech.startsWith("phase"))
-	{
-		let cmpPlayer = Engine.QueryInterface(this.entity, IID_Player);
-		let cmpGuiInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
-		cmpGuiInterface.PushNotification({
-			"type": "phase",
-			"players": [cmpPlayer.GetPlayerID()],
-			"phaseName": tech,
-			"phaseState": "started"
-		});
-	}
+	// ToDo: Check whether the technology is researched already?
+	const technology = new this.Technology(tech, this.entity, researcher);
+	if (!technology.Queue(techCostMultiplier))
+		return false;
+	this.researchQueued.set(tech, technology);
+	return true;
 };
 
 /**
- *  Marks a technology as not being currently researched and optionally sends a GUI notification.
+ * Marks a technology as not being currently researched and optionally sends a GUI notification.
+ * @param {string} tech - The name of the technology to stop.
+ * @param {boolean} notification - Whether a GUI notification ought to be sent.
  */
-TechnologyManager.prototype.StoppedResearch = function(tech, notification)
+TechnologyManager.prototype.StoppedResearch = function(tech)
 {
-	if (notification && tech.startsWith("phase") && this.researchStarted.has(tech))
-	{
-		let cmpPlayer = Engine.QueryInterface(this.entity, IID_Player);
-		let cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
-		cmpGUIInterface.PushNotification({
-			"type": "phase",
-			"players": [cmpPlayer.GetPlayerID()],
-			"phaseName": tech,
-			"phaseState": "aborted"
-		});
-	}
-
+	this.researchQueued.get(tech).Stop();
 	this.researchQueued.delete(tech);
-	this.researchStarted.delete(tech);
+};
+
+/**
+ * @param {string} tech -
+ */
+TechnologyManager.prototype.Pause = function(tech)
+{
+	this.researchQueued.get(tech).Pause();
+};
+
+/**
+ * @param {string} tech - The technology to advance.
+ * @param {number} allocatedTime - The time allocated to the technology.
+ * @return {number} - The time we've actually used.
+ */
+TechnologyManager.prototype.Progress = function(techName, allocatedTime)
+{
+	const technology = this.researchQueued.get(techName);
+	const usedTime = technology.Progress(allocatedTime);
+	if (technology.finished)
+		this.researchQueued.delete(techName);
+	return usedTime;
+};
+
+/**
+ * @param {string} tech - The technology name to retreive some basic information for.
+ * @return {Object} - Some basic information about the technology under research.
+ */
+TechnologyManager.prototype.GetBasicInfo = function(tech)
+{
+	return this.researchQueued.get(tech).GetBasicInfo();
 };
 
 /**
@@ -391,20 +562,13 @@ TechnologyManager.prototype.IsInProgress = function(tech)
 	return this.researchQueued.has(tech);
 };
 
-/**
- * Returns the names of technologies that are currently being researched (non-queued).
- */
-TechnologyManager.prototype.GetStartedTechs = function()
+TechnologyManager.prototype.GetBasicInfoOfStartedTechs = function()
 {
-	return this.researchStarted;
-};
-
-/**
- *  Gets the entity currently researching the technology.
- */
-TechnologyManager.prototype.GetResearcher = function(tech)
-{
-	return this.researchQueued.get(tech);
+	const result = {};
+	for (const [techName, tech] of this.researchQueued)
+		if (tech.started)
+			result[techName] = tech.GetBasicInfo();
+	return result;
 };
 
 /**

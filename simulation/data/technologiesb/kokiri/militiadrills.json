@@ -1,0 +1,13 @@
+{
+	"genericName": "Militia Drills",
+	"description": "The Kokiri Forest is full of many dangers, and the Kokiri people cannot sit ignorant in their wooden cities and hope to be safe. Every Kokiri is taught basic fighting techniques with simple weapons, be it knives or ever kitchen utensils. When their cities come under fire they must be ready to react at a moment's notice.",
+	"cost": { "food": 300, "wood": 0, "stone": 0, "metal": 200 },
+	"requirements": {"all": [ {"tech": "phase_village"}, {"civ": "kokiri"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "kokiri/militiadrills.dds",
+	"researchTime": 40,
+	"tooltip": "The Kokiri Forest is full of many dangers, and the Kokiri people cannot sit ignorant in their wooden cities and hope to be safe. Every Kokiri is taught basic fighting techniques with simple weapons, be it knives or ever kitchen utensils. When their cities come under fire they must be ready to react at a moment's notice. (-25% Build Time - Minutemen)",
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.75 }],
+	"affects": ["MinuteMen"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

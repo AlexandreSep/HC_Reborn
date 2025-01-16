@@ -77,11 +77,15 @@
   <Obstruction>
     <Static depth="23.0" width="23.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-  </ProductionQueue>
   <VisualActor>
     <Actor>structures/gerudo/gerudo_barA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

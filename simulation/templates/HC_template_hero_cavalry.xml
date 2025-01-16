@@ -1,6 +1,6 @@
 <Entity parent="HC_template_hero">
   <Cost>
-    <BuildTime>50</BuildTime>
+    <BuildTime>25</BuildTime>
     <Resources>
       <food>300</food>
       <metal>250</metal>
@@ -15,9 +15,6 @@
     <Max>1000</Max>
   </Health>
   <Identity>
-    <Formations datatype="tokens">
-      special/formations/wedge
-    </Formations>
     <GenericName>Hero Cavalry</GenericName>
     <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
   </Identity>

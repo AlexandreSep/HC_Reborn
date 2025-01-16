@@ -17,16 +17,6 @@
   </Cost>
   <Identity>
     <Classes datatype="tokens">Weather</Classes>
-    <Formations datatype="tokens">
-      special/formations/null
-      special/formations/box
-      special/formations/column_closed
-      special/formations/line_closed
-      special/formations/column_open
-      special/formations/line_open
-      special/formations/flank
-      special/formations/battle_line
-    </Formations>
     <GenericName>Weather</GenericName>
     <Undeletable>false</Undeletable>
   </Identity>
@@ -57,6 +47,9 @@
     <PassabilityClass>default</PassabilityClass>
     <RunMultiplier>1.6666</RunMultiplier>
     <WalkSpeed>9.0</WalkSpeed>
+    <InstantTurnAngle>1.5</InstantTurnAngle>
+    <Acceleration>35</Acceleration>
+    <Weight>10</Weight>	
   </UnitMotion>
   <Visibility>
     <AlwaysVisible>true</AlwaysVisible>

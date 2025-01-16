@@ -5,21 +5,10 @@
       <MinPop>50</MinPop>
     </AIBuild>
     <GenericName>Foreign Species Enclosures</GenericName>
-    <History>Labrynna has very few native fauna compared to that of other lands. Labrynna&#8217;s citizens are more than willing to pay a pretty Rupee to see specimens brought back from the foreign lands conquered by the Empire. Everything from Eastern Kanagroo to Aquadongos could turn up in these enclosures.</History>
+    <History>Labrynna has very few native fauna compared to that of other lands. Labrynna’s citizens are more than willing to pay a pretty Rupee to see specimens brought back from the foreign lands conquered by the Empire. Everything from Eastern Kanagroo to Aquadongos could turn up in these enclosures.</History>
     <Icon>structures/labrynna/lab_zooB.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/labrynna/{civ}_aquadongo_b
-    units/labrynna/{civ}_blainoboxer_b
-    </Entities>
-    <Technologies datatype="tokens">
-    labrynna/aquadongo_driftingdongo
-    labrynna/blainoboxer_smackdown
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <Tower>
       <Cost>
@@ -35,4 +24,15 @@
   <VisualActor>
     <Actor>structures/labrynna/labrynna_zooB.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/aquadongo_driftingdongo
+    labrynna/blainoboxer_smackdown
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_aquadongo_b
+    units/labrynna/{civ}_blainoboxer_b</Entities>
+  </Trainer>
 </Entity>

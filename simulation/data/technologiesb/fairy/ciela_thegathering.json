@@ -1,0 +1,14 @@
+{
+	"genericName": "The Gathering",
+	"description": "",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [ {"tech": "civ_choices/fairy/choosehero_ciela"}, {"civ": "fairy"}]},
+	"requirementsTooltip": "You must select Ciela as your hero.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "-10% training time reduction - All Units",
+	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.90, "affects": "Unit" }
+	],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

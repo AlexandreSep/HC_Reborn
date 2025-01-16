@@ -37,9 +37,6 @@
   <Population>
     <Bonus>3</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>1.0</BatchTimeModifier>
-  </ProductionQueue>
   <Selectable>
     <EditorOnly />
     <Overlay>
@@ -61,4 +58,11 @@
     <Actor>structures/lanayru/lanayru_homeA.xml</Actor>
     <FoundationActor>structures/lanayru/lanayru_scaffoldH.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>1.0</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

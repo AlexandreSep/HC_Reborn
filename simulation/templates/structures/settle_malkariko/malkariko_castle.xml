@@ -116,20 +116,6 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/hylian/{civ}_citizenA
-      units/hylian/{civ}_scout_cavalry
-      units/hylian/{civ}_levy_swordsman
-      units/hylian/{civ}_levy_spearman
-      units/hylian/{civ}_levy_maceman
-    units/hylian/{civ}_crossbowman_b
-      units/hylian/{civ}_knightofhyrule_b
-    </Entities>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </ProductionQueue>
   <TriggerPoint>
     <Reference>malkarikoCastle</Reference>
   </TriggerPoint>
@@ -140,4 +126,18 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/hylian/{civ}_citizenA
+      units/hylian/{civ}_scout_cavalry
+      units/hylian/{civ}_levy_swordsman
+      units/hylian/{civ}_levy_spearman
+      units/hylian/{civ}_levy_maceman
+    units/hylian/{civ}_crossbowman_b
+      units/hylian/{civ}_knightofhyrule_b</Entities>
+  </Trainer>
 </Entity>

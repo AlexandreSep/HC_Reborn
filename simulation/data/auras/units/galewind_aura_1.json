@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 5,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.50 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 0.50 }
+	],
+	"auraName": "Gale Winds",
+	"auraDescription": "(-50% Movement Speed)",
+	"overlayIcon": "art/textures/ui/session/auras/gale_winds1.dds"
+}

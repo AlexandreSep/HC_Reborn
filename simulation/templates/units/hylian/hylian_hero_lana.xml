@@ -6,12 +6,10 @@
         <Crush>15</Crush>
         <Light>7.0</Light>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>10</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1100</PrepareTime>
-      <ElevationBonus>15.0</ElevationBonus>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/byrna_explosion.xml</ImpactActorName>
@@ -35,10 +33,16 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
+      <Origin>
+        <X>0</X>
+        <Y>15.0</Y>
+        <Z>0</Z>
+      </Origin>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>250</food>
       <metal>150</metal>

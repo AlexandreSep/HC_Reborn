@@ -92,19 +92,6 @@
       </PlotG>
     </PlotsToSpawn>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Technologies datatype="tokens">
-      goron/economic_gorkotunnel
-    goron/economic_expandshaft
-    goron/gather_gortramaxe
-    goron/gather_drillshafts
-    goron/gather_capacity_baggoron
-    goron/gather_capacity_bagstomach
-    goron/gather_capacity_bagdodhide
-    goron/gorebizo_minerupg
-    </Technologies>
-  </ProductionQueue>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -130,4 +117,19 @@
     <Actor>structures/goron/goron_quarryA.xml</Actor>
     <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/economic_gorkotunnel
+    goron/economic_expandshaft
+    goron/gather_gortramaxe
+    goron/gather_drillshafts
+    goron/gather_capacity_baggoron
+    goron/gather_capacity_bagstomach
+    goron/gather_capacity_bagdodhide
+    goron/gorebizo_minerupg
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

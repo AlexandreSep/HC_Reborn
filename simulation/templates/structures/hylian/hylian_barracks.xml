@@ -35,47 +35,6 @@
   <Obstruction>
     <Static depth="37.0" width="37.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>12</X>
-        <Z>15</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>25</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/hylian/{civ}_levy_swordsman
-      units/hylian/{civ}_levy_spearman
-    units/hylian/{civ}_levy_maceman
-    units/hylian/{civ}_captain_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>12</X>
-      <Z>0</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    hylian/soldier_swordsman
-    hylian/kingdom_swordsman
-    hylian/soldier_spearman
-    hylian/kingdom_spearman
-    hylian/soldier_maceman
-    hylian/kingdom_maceman
-    hylian/krin_damage_upgrade
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -103,4 +62,45 @@
     <Actor>structures/hylian/hylian_barracksA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/soldier_swordsman
+    hylian/kingdom_swordsman
+    hylian/soldier_spearman
+    hylian/kingdom_spearman
+    hylian/soldier_maceman
+    hylian/kingdom_maceman
+    hylian/krin_damage_upgrade
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/hylian/{civ}_levy_swordsman
+      units/hylian/{civ}_levy_spearman
+    units/hylian/{civ}_levy_maceman
+    units/hylian/{civ}_captain_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>12</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>25</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>12</X>
+      <Z>0</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

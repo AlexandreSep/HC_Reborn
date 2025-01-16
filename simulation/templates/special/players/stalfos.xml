@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>stalfos</Civ>
+    <GenericName>Stalfos</GenericName>
+    <History>The creation of horrifying magic that was outlawed and sealed away in Hyrule’s ancient past, the Stalfos are a vast ever growing army of animated corpses. Headed by a collection of warring and elite Necromancers, the modern incarnation of Hyrule’s undead seek to fill its ranks with mindless followers and to establish a kingdom of immortality that can stand against the supernatural forces of Hyrule.</History>
+    <Icon>emblems/emblem_stalfos.dds</Icon>
+  </Identity>
+  <Player>
+    <Formations>special/formations/null special/formations/box special/formations/column_closed special/formations/line_closed special/formations/column_open special/formations/line_open special/formations/flank special/formations/skirmish special/formations/wedge special/formations/battle_line</Formations>
+  </Player>
+</Entity>
+

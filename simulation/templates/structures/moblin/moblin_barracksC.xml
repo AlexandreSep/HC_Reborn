@@ -35,8 +35,33 @@
   <Obstruction>
     <Static depth="42.0" width="42.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracksC_packed</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>30</Time>
+      <Tooltip>Pack up this Moblin Base n' Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_mobA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldD.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/mob_joinmobby
+    moblin/mob_traininghard
+    moblin/mob_bigmuscle
+    moblin/ghirahim_demonblighty
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/moblin/{civ}_mob_b
+      units/moblin/{civ}_grunt_b
+    units/moblin/{civ}_warlord_b
+    units/moblin/{civ}_demonblight_b</Entities>
     <DestinationOffset>
       <step1>
         <X>-1</X>
@@ -51,12 +76,6 @@
         <Z>30</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/moblin/{civ}_mob_b
-      units/moblin/{civ}_grunt_b
-    units/moblin/{civ}_warlord_b
-    units/moblin/{civ}_demonblight_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -70,24 +89,5 @@
       <X>-2</X>
       <Z>-3</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    moblin/mob_joinmobby
-    moblin/mob_traininghard
-    moblin/mob_bigmuscle
-    moblin/ghirahim_demonblighty
-    </Technologies>
-  </ProductionQueue>
-  <Upgrade>
-    <Tower>
-      <Entity>units/moblin/moblin_barracksC_packed</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
-      <Time>30</Time>
-      <Tooltip>Pack up this Moblin Base n' Camp.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/moblin/moblin_camp_mobA.xml</Actor>
-    <FoundationActor>structures/moblin/moblin_scaffoldD.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

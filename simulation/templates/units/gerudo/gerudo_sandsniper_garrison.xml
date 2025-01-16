@@ -5,7 +5,6 @@
       <Damage>
         <Pierce>12</Pierce>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>90</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -18,11 +17,12 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Turretable />
   <Cost>
-    <BuildTime>40</BuildTime>
+    <BuildTime>25</BuildTime>
     <Resources>
       <food>120</food>
       <metal>80</metal>

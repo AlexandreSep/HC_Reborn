@@ -1,6 +1,6 @@
 <Entity parent="template_unit">
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>

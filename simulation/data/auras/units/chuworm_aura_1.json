@@ -1,0 +1,20 @@
+{
+	"type": "range",
+	"radius": 10,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },	
+		{ "value": "Resistance/Entity/Damage/Forest", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Fire", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Water", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Shadow", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Spirit", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Light", "add": 1 }
+	],
+	"auraName": "Shell Jelly",
+	"auraDescription": "(+1 to all Armor types. Stacks.)",
+    "stackable" : true ,
+	"overlayIcon": "art/textures/ui/session/auras/bubble_aura_1.dds"
+}

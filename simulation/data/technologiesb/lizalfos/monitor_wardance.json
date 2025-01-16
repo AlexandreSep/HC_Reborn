@@ -1,0 +1,13 @@
+{
+	"genericName": "War Dance",
+	"description": "When the time for the Hunt had come, the Monitor could bring his soldiers into a rushing fury.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a second deity.",
+	"icon": "lizalfos/monitor_wardance.dds",
+	"researchTime": 40,
+	"tooltip": "Monitor aura now increases the movement speed of nearby units",
+	"modifications": [],
+	"affects": ["Monitor"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

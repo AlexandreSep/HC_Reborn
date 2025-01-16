@@ -1,0 +1,16 @@
+{
+	"genericName": "Reloading Drills",
+	"description": "Despite the superior power of Gunpowder, reloading their rifles left Conquerors vulnerable to charges and quick attacks. Many of these soldiers constantly performed reloading drills to assure they wasted no time in between shots.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "labrynna"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "labrynna/conqueror_reloadingdrills.dds",
+	"researchTime": 40,
+	"tooltip": "Despite the superior power of Gunpowder, reloading their rifles left Conquerors vulnerable to charges and quick attacks. Many of these soldiers constantly performed reloading drills to assure they wasted no time in between shots. Conqueror reload time reduced by 15%)",
+	"modifications": [
+		{"value": "Attack/Ranged/Damage/PrepareTime", "multiply": 0.85},
+		{"value": "Attack/Ranged/Damage/RepeatTime", "multiply": 0.85}
+	],
+  "affects": [ "Conqueror" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

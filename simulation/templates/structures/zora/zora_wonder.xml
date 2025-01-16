@@ -25,8 +25,21 @@
   <Obstruction>
     <Static depth="60.0" width="60.0" />
   </Obstruction>
-  <ProductionQueue>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/zora/zora_wonder.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/zora/{civ}_titan_jabujabu</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -37,9 +50,6 @@
         <Z>50</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/zora/{civ}_titan_jabujabu
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -53,13 +63,5 @@
       <X>0</X>
       <Z>40</Z>
     </SpawnOffset>
-  </ProductionQueue>
-  <TerritoryInfluence>
-    <Radius>52</Radius>
-    <Root>false</Root>
-  </TerritoryInfluence>
-  <VisualActor>
-    <Actor>structures/zora/zora_wonder.xml</Actor>
-    <FoundationActor>structures/zora/zora_scaffoldE.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

@@ -1,0 +1,8 @@
+{
+    "minor_factions":{
+        "maxAllowed": 2,
+        "members": ["minor_factions/minor_lonlon", "minor_factions/minor_rollridge", "minor_factions/minor_tokay", "minor_factions/minor_wizzrobe", "minor_factions/minor_zuna" ]
+    }
+}
+
+

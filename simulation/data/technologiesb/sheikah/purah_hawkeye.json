@@ -1,0 +1,15 @@
+{
+	"genericName": "Cado's Bowcraft",
+	"description": "",
+	"cost": {"food": 100, "wood": 250, "stone": 100, "metal": 150},
+	"requirements": {"all": [{"tech": "civ_choices/sheikah/choosehero_purah"},{"tech": "phase_town"}, {"civ": "sheikah"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "sheikah/purah_hawkeye.dds",
+	"researchTime": 45,
+	"tooltip": "Upgrades the Hawkeye unit, doubling its range and increasing its attack damage.",
+	"modifications": [{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 2.0},
+					  {"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.1}],
+	"affects": ["Hawkeye"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

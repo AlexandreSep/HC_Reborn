@@ -32,13 +32,28 @@
     <RequiredTechnology>pair_lizgodsC</RequiredTechnology>
     <Tooltip>Trains many higher tier Lizalfos units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
   </Identity>
   <Obstruction>
     <Static depth="47.0" width="47.0" />
   </Obstruction>
-  <ProductionQueue>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_crestA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldA_S.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">lizalfos/aeralfos_flightoverfaron
+    lizalfos/talik_volvagianlegacy
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/lizalfos/{civ}_aeralfos_b
+      units/lizalfos/{civ}_songsayer_b
+    units/lizalfos/{civ}_aeralfire_b
+    units/lizalfos/{civ}_matron_b
+    units/lizalfos/{civ}_iguanalfos_b</Entities>
     <DestinationOffset>
       <step1>
         <X>14.5</X>
@@ -49,13 +64,6 @@
         <Z>30</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/lizalfos/{civ}_aeralfos_b
-      units/lizalfos/{civ}_songsayer_b
-    units/lizalfos/{civ}_aeralfire_b
-    units/lizalfos/{civ}_matron_b
-    units/lizalfos/{civ}_iguanalfos_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -69,13 +77,5 @@
       <X>14.5</X>
       <Z>14.5</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    lizalfos/aeralfos_flightoverfaron
-    lizalfos/talik_volvagianlegacy
-    </Technologies>
-  </ProductionQueue>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_crestA.xml</Actor>
-    <FoundationActor>structures/lizalfos/lizalfos_scaffoldA_S.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

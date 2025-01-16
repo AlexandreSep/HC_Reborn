@@ -1,40 +1,78 @@
 {
 	"Code": "darknut",
 	"Culture": "ancient",
-	"Name": "Darknut Legion",
-	"Emblem": "session/portraits/emblems/emblem_darknut.dds",
-	"History": "Perhaps the most ancient civilization still standing in Hyrule, the Darknut people nearly exterminated themselves in a massive civil war nearly four thousand years past. Banning all practice of magic and dishonorable forms of combat and warfare, a strict code of honor and ethics was mandated and their society was brutally restructured in order to avoid such a fate.",
-	"Music":[
-			{"File":"darknut_theme1.ogg", "Type":"peace"},
-			{"File":"darknut_ambient1.ogg", "Type":"peace"},
-			{"File":"darknut_ambient2.ogg", "Type":"peace"},
-			{"File":"darknut_ambient3.ogg", "Type":"peace"},
-			{"File":"darknut_ambient4.ogg", "Type":"peace"},
-			{"File":"darknut_ambient5.ogg", "Type":"peace"},
-			{"File":"darknut_ambient6.ogg", "Type":"peace"},
-			{"File":"darknut_ambient7.ogg", "Type":"peace"},
-			{"File":"darknut_ambient8.ogg", "Type":"peace"},
-			{"File":"darknut_ambient9.ogg", "Type":"peace"},
-			{"File":"darknut_ambient10.ogg", "Type":"peace"},
-			{"File":"darknut_battle1.ogg", "Type":"battle"},
-			{"File":"darknut_battle2.ogg", "Type":"battle"},
-			{"File":"darknut_battle3.ogg", "Type":"battle"},
-			{"File":"darknut_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "darknut_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_ambient10.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "darknut_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "darknut_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "darknut_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "darknut_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Farms, Fruit, Meat, Fish, Stone, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Zalunbar",
 					"Class": "",
@@ -66,8 +104,7 @@
 			]
 		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Legendary Warriors",
 			"History": "",
@@ -76,7 +113,6 @@
 		{
 			"Name": "Megalopolis",
 			"History": "",
-
 			"Description": "Darknuts have a single Civil Center and cannot build a new one or replace it."
 		},
 		{
@@ -85,8 +121,7 @@
 			"Description": "Darknuts can hire Mercenaries from every culture."
 		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/darknut/choosehero_onon",
 		"civ_choices/darknut/choosehero_militron",
 		"civ_choices/darknut/choosehero_alros",
@@ -94,16 +129,14 @@
 		"civ_choices/darknut/choosehero_yaraxonal",
 		"civ_choices/darknut/choosehero_zalunbar"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "Mercenary Connections",
 			"History": "",
 			"Description": "Allies can train all Mercs as the Darknuts do, except for Legion specific Mercs."
 		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Tower of Hera",
 			"Class": "",
@@ -123,8 +156,7 @@
 			"Special": ""
 		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/darknut/darknut_civil_centre"
 		},

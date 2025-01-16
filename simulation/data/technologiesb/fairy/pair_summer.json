@@ -1,0 +1,6 @@
+{
+	"genericName": "Summer",
+	"top": "fairy/unlock_summer",
+	"bottom": "fairy/unlock_summerB",
+	"requirements": { "civ": "fairy" }
+}

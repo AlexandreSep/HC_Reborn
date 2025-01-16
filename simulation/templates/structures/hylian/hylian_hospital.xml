@@ -4,7 +4,7 @@
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>170</BuildTime>
@@ -40,15 +40,6 @@
   <Obstruction>
     <Static depth="20.0" width="20.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    hylian/bimaristan_open_foyer
-      hylian/bimaristan_potion_markets
-    hylian/bimaristan_siege_shelters
-    hylian/bimaristan_nurse_dispatch
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/hylian/complete_bimaristan.xml</constructed>
@@ -59,4 +50,15 @@
     <Actor>structures/hylian/hylian_hospitalA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldG.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/bimaristan_open_foyer
+      hylian/bimaristan_potion_markets
+    hylian/bimaristan_siege_shelters
+    hylian/bimaristan_nurse_dispatch
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

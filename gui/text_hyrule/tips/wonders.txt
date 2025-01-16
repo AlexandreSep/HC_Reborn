@@ -1,5 +1,5 @@
 WONDERS
 Wonders are breathtaking buildings unique to a Faction.
 In Wonder Victory games, completing a Wonder begins a countdown timer to a Victory.
-Each Wonder is different, and provides a powerful Unique Bonus, as well as being able to summon your Faction's Titan unit.
+You must capture a Wonder Node in order to construct one of these buildings.
 

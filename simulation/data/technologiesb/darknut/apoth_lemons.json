@@ -1,0 +1,13 @@
+{
+	"genericName": "When a Deity Gives you Lemons",
+	"description": "The Legion was known for short but powerful and frequent societal collapses when one of their living idols was slain or died of old age. Only a new and more powerful warrior would hope to restore order, and thus the cycle continued on.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 400},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "darknut"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "darknut/apoth_lemons.dds",
+	"researchTime": 40,
+	"tooltip": "The Legion was known for short but powerful and frequent societal collapses when one of their living idols was slain or died of old age. Only a new and more powerful warrior would hope to restore order, and thus the cycle continued on. (Penalty for a slain Idol Throne is reduced by 50%)",
+	"modifications": [],
+	"affects": ["Idolthrone"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

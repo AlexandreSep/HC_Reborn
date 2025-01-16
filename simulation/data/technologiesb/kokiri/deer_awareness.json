@@ -1,0 +1,13 @@
+{
+	"genericName": "Heightened Awareness",
+	"description": "Kokiri Deer were quite natural at being aware of their environment, likely to survive the numerous monsterous predators of their homeland. The Kokiri could train and use this ability to their advantage.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": { "all": [{ "entity": { "class": "Seclude", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Forest Seclude Addon.",
+	"icon": "kokiri/deer_awareness.dds",
+	"researchTime": 40,
+	"tooltip": "Kokiri Deer were quite natural at being aware of their environment, likely to survive the numerous monsterous predators of their homeland. The Kokiri could train and use this ability to their advantage. +15 Line of Sight increase for Buck Riders, Doe Trotters, and Stag Chariots",
+	"modifications": [{"value": "Vision/Range", "multiply": 1.15}],
+	"affects": ["Deer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

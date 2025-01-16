@@ -35,8 +35,24 @@
   <Obstruction>
     <Static depth="25.0" width="25.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_chapelA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/chapel_latoanmarker
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/ordona/{civ}_reverend_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -47,9 +63,6 @@
         <Z>25</Z>
       </step2>
     </DestinationOffset>
-    <Entities datatype="tokens">
-    units/ordona/{civ}_reverend_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -63,18 +76,5 @@
       <X>0</X>
       <Z>10</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    ordona/chapel_latoanmarker
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_temple.xml</constructed>
-      <select>interface/select/building/sel_temple.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/ordona/ordona_chapelA.xml</Actor>
-    <FoundationActor>structures/ordona/ordona_scaffoldB.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

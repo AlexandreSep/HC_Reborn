@@ -5,7 +5,6 @@
       <Damage>
         <Fire>40.0</Fire>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>90.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -31,6 +30,7 @@
         <Range>10</Range>
         <Shape>Circular</Shape>
       </Splash>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Capturable disable="" />
@@ -174,45 +174,6 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>25</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/goron/{civ}_minerA
-	  units/goron/{civ}_hero_gorcoron
-	  units/goron/{civ}_hero_gorebizo
-	  units/goron/{civ}_hero_medigoron
-	  units/goron/{civ}_hero_daruk
-	  units/goron/{civ}_hero_darunia
-	  units/goron/{civ}_hero_dangoro
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>18</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-      goron/troop_powerbracelet
-	  goron/daruk_heartyhides
-	  goron/player_isgoron
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <alert0>interface/alarm/alarm_alert_0.xml</alert0>
@@ -230,4 +191,43 @@
     <Actor>structures/goron/goron_civic_centreA.xml</Actor>
     <FoundationActor>structures/goron/goron_scaffoldA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">goron/troop_powerbracelet
+	  goron/daruk_heartyhides
+	  goron/player_isgoron
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/goron/{civ}_minerA
+	  units/goron/{civ}_hero_gorcoron
+	  units/goron/{civ}_hero_gorebizo
+	  units/goron/{civ}_hero_medigoron
+	  units/goron/{civ}_hero_daruk
+	  units/goron/{civ}_hero_darunia
+	  units/goron/{civ}_hero_dangoro</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>25</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>18</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

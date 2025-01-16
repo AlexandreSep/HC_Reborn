@@ -1,0 +1,13 @@
+{
+	"genericName": "Goat Caravan",
+	"description": ".",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "ordona/trade_goat_caravan.dds",
+	"researchTime": 40,
+	"tooltip": "(Salesmen are upgraded into Goat Caravans, which double in movement speed and resource yield)",
+	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

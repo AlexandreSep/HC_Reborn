@@ -1,0 +1,11 @@
+{
+	"genericName": "Honey Brand Export",
+	"description": ".",
+	"cost": {"food": 150, "wood": 0, "stone": 0, "metal": 75},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "ordona"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "ordona/apiary_honeyexport.dds",
+	"researchTime": 40,
+	"tooltip": "(Beekeepers now generate a trickle of Ruppes when garrisoned in Apiary)",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -3,7 +3,7 @@
 	"radius": 80,
 	"affects": ["Structure"],
 	"modifications": [{ "value": "Health/Max", "multiply": 1.1 },
-					  { "value": "ProductionQueue/BatchTimeModifier", "multiply": 1.1 }
+					  { "value": "Trainer/BatchTimeModifier", "multiply": 1.1 }
 	],
 	"auraName": "Water System",
 	"auraDescription": "(Improves the production rate of Darknut bases and structural integrity by 10%)",

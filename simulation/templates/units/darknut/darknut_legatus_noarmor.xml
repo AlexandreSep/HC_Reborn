@@ -5,7 +5,6 @@
       <Damage>
         <Hack>17</Hack>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -22,10 +21,11 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>50</food>
       <metal>50</metal>
@@ -75,7 +75,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>6.5</WalkSpeed>
+    <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <Upgrade>
     <Armorfix>

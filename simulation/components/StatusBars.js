@@ -30,15 +30,15 @@ StatusBars.prototype.Sprites = [
 	"AuraIcons",
 	"RankIcon",
 	// HC-Code
-    "CaptureZoneBar",
-    "StealthIcon"
+	"CaptureZoneBar",
+	"StealthIcon"
 ];
 
 StatusBars.prototype.Init = function()
 {
 	this.enabled = false;
 	this.showRank = false;
-	this.showExperience = false;						 
+	this.showExperience = false;
 
 	// Whether the status bars used the player colors anywhere (e.g. in the capture bar)
 	this.usedPlayerColors = false;

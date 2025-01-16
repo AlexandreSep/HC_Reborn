@@ -35,44 +35,6 @@
   <Obstruction>
     <Static depth="30.0" width="30.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>10</X>
-        <Z>15</Z>
-      </step1>
-      <step2>
-        <X>10</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/moblin/{civ}_bugblin_b
-      units/moblin/{civ}_baddyram_b
-    units/moblin/{civ}_tallblin_b
-    units/moblin/{civ}_bokonox_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>10</X>
-      <Z>0</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    moblin/bug_buyembetter
-    moblin/bug_fullrun
-    moblin/bug_tossemwhoop
-    moblin/glutko_bugbashin
-    </Technologies>
-  </ProductionQueue>
   <Upgrade>
     <Tower>
       <Entity>units/moblin/moblin_barracksA_packed</Entity>
@@ -86,4 +48,42 @@
     <Actor>structures/moblin/moblin_camp_bugA.xml</Actor>
     <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">moblin/bug_buyembetter
+    moblin/bug_fullrun
+    moblin/bug_tossemwhoop
+    moblin/glutko_bugbashin
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/moblin/{civ}_bugblin_b
+      units/moblin/{civ}_baddyram_b
+    units/moblin/{civ}_tallblin_b
+    units/moblin/{civ}_bokonox_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>10</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>10</X>
+        <Z>30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>10</X>
+      <Z>0</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

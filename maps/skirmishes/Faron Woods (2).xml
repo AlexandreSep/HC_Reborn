@@ -32,9 +32,9 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="488.7" y="502.714" z="771.869"/>
-		<Rotation angle="-0.0332857"/>
-		<Declination angle="0.886069"/>
+		<Position x="1013.93" y="460.001" z="4.53998"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
@@ -18841,20 +18841,6 @@
 			<Position x="927.86634" z="1410.45289"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51436"/>
-		</Entity>
-		<Entity uid="2897">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="1373.88196" z="771.98572"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="21466"/>
-		</Entity>
-		<Entity uid="2898">
-			<Template>structures/node_civcenterA</Template>
-			<Player>0</Player>
-			<Position x="157.94437" z="767.82001"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="63726"/>
 		</Entity>
 		<Entity uid="2899">
 			<Template>skirmish/structures/default_ruin_start_anc</Template>

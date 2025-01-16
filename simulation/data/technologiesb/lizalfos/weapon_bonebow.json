@@ -1,0 +1,15 @@
+{
+	"genericName": "Bone Bows",
+	"description": "Made from the bones of long slain beasts, Lizalfos Bows were very light and durable, able to handle just about any arrow.",
+	"cost": {"food": 0, "wood": 250, "stone": 250, "metal": 250},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a second deity.",
+	"icon": "lizalfos/weapon_bonebow.dds",
+	"researchTime": 40,
+	"tooltip": "+20% Ranged Attack - Ranged Infantry",
+	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2},
+	{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2},
+	{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.2}],
+	"affects": ["Infantry Ranged"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

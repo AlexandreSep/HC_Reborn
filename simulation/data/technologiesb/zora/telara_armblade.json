@@ -1,0 +1,34 @@
+{
+  "genericName": "Armblade Replacements",
+  "description": "Replaces Infiltrator fins with Coralmold Armblades.",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 150,
+    "metal": 150
+  },
+  "requirements": {
+    "all": [
+      { "tech": "civ_choices/zora/choosehero_telara" },
+      { "civ": "zora" }
+    ]
+  },
+  "requirementsTooltip": "Requires Telara.",
+  "icon": "zora/attack_armblade.dds",
+  "researchTime": 40,
+  "tooltip": "+13 Hack Attack and +15 Max Health -Infiltrator.",
+  "modifications": [
+    {
+      "value": "Trainer/Entities/_string",
+      "tokens": "units/zora/{civ}_infiltrator_b>units/zora/{civ}_infiltrator_upg",
+      "affects": "Structure"
+    },
+    {
+      "value": "Promotion/RequiredXp",
+      "replace": 0,
+      "affects": "Infiltrator"
+    }
+  ],
+  "hideIfTechnologyRequirementIsNotMet": "true",
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

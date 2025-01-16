@@ -44,44 +44,6 @@
   <Obstruction>
     <Static depth="34.0" width="34.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>1</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>20</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    units/gerudo/{civ}_tombguard_b
-      units/gerudo/{civ}_icearcher_b
-    units/gerudo/{civ}_ashcap_b
-    units/gerudo/{civ}_goldenglad_b
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>-10</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-      gerudo/spirit_trials
-    gerudo/mystathi_lore
-    gerudo/ashinons_test
-    gerudo/urbosa_goldenarmor
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -109,4 +71,42 @@
     <Actor>structures/gerudo/gerudo_trainingA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/spirit_trials
+    gerudo/mystathi_lore
+    gerudo/ashinons_test
+    gerudo/urbosa_goldenarmor
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/gerudo/{civ}_tombguard_b
+      units/gerudo/{civ}_icearcher_b
+    units/gerudo/{civ}_ashcap_b
+    units/gerudo/{civ}_goldenglad_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>1</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>20</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-10</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

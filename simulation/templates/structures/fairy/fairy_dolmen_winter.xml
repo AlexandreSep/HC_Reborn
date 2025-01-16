@@ -3,15 +3,6 @@
     <Classes datatype="tokens">Winter</Classes>
     <Icon>structures/fairy/fai_dolmen_winter.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-    units/fairy/{civ}_fey_wisp
-    </Entities>
-    <Technologies datatype="tokens">
-    fairy/fey_haltingspirit
-    </Technologies>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_dolmen_spring</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -20,4 +11,13 @@
     <Actor>structures/fairy/fairy_dolemA_winter.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/fey_haltingspirit
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/fairy/{civ}_fey_wisp</Entities>
+  </Trainer>
 </Entity>

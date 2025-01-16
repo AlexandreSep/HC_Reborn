@@ -1,7 +1,6 @@
 {
 	"type": "global",
-	"affects": ["Spring"],
-	"modifications": [{"value": "Promotion/RequiredXp", "multiply": -0.0001}],
+	"affects": [],
 	"auraName": "Summertime",
 	"auraDescription": "It is now Summertime for the Fairies of Tarm.",
 	"overlayIcon": "art/textures/ui/session/auras/fairy_summer.dds"

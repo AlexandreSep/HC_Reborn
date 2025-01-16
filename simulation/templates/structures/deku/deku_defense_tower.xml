@@ -5,8 +5,6 @@
       <Damage>
         <Crush>7.0</Crush>
       </Damage>
-      <Delay>0</Delay>
-      <ElevationBonus>15</ElevationBonus>
       <MaxRange>90.0</MaxRange>
       <MinRange>10.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -16,9 +14,15 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2000</RepeatTime>
+      <EffectDelay>0</EffectDelay>
+      <Origin>
+        <X>0</X>
+        <Y>15</Y>
+        <Z>0</Z>
+      </Origin>
     </Ranged>
   </Attack>
   <BuildRestrictions>
@@ -51,7 +55,7 @@
     <Max>4</Max>
   </GarrisonHolder>
   <TurretHolder>
-      <TurretPoints>
+    <TurretPoints>
       <Archer1>
         <X>0</X>
         <Y>16.8</Y>
@@ -101,11 +105,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/natural/dekuscrub_spit.xml</attack_ranged>
@@ -129,4 +128,11 @@
       <MaxRange>80</MaxRange>
     </CanSpotStealth>
   </Visibility>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

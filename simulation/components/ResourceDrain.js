@@ -1,14 +1,7 @@
 function ResourceDrain() {}
 
 ResourceDrain.prototype.Schema =
-	"<a:help>Provides a supply of one particular type of resource.</a:help>" +
-	"<a:example>" +
-		"<Amount>1000</Amount>" +
-		"<Type>food.meat</Type>" +
-		"<KillBeforeGather>false</KillBeforeGather>" +
-		"<MaxGatherers>25</MaxGatherers>" +
-		"<DiminishingReturns>0.8</DiminishingReturns>" +
-	"</a:example>" +
+	"<a:help>Drains nearby resources.</a:help>" +
 	"<element name='Radius' a:help='The radius we want to check for resources'>" +
 		"<data type='positiveInteger'/>" +
 	"</element>"+
@@ -18,21 +11,21 @@ ResourceDrain.prototype.Schema =
 	"<element name='TickRate' a:help='The radius we want to check for resources'>" +
 		"<data type='positiveInteger'/>" +
 	"</element>"+
-	"<element name='DepleteResource' a:help='If set to true, the affected resources will be depleted'>" +
-		"<data type='boolean'/>" +
-	"</element>"+
+    "<element name='DepleteResource' a:help='Deplete resource or not'>" +
+		Resources.BuildSchema("boolean", [], true) +
+	"</element>" +
     "<element name='MaxResourceSpotsToDrainSimultaneously' a:help='Trickle Rates'>" +
-		Resources.BuildSchema("integer") +
+		Resources.BuildSchema("nonNegativeDecimal", [], true) +
 	"</element>" +
     "<element name='ResourcesPerTick' a:help='Trickle Rates'>" +
-		Resources.BuildSchema("nonNegativeDecimal") +
+		Resources.BuildSchema("nonNegativeDecimal", [], true) +
 	"</element>";
 
 ResourceDrain.prototype.Init = function()
 {
     let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
 
-    this.depleteResource = (this.template.DepleteResource == "true");
+    this.depleteResource = (this.template.DepleteResource);
     this.tickRate = +this.template.TickRate;
     this.visualEffectDuration = +this.template.VisualEffectDuration;
     this.timer = cmpTimer.SetInterval(this.entity, IID_ResourceDrain, "DrainResourcesInReach", 0, this.tickRate, null);
@@ -46,50 +39,48 @@ ResourceDrain.prototype.DrainResourcesInReach = function()
 
     let radius = ApplyValueModificationsToEntity("ResourceDrain/Radius", +this.template.Radius, this.entity);
     let resourcesPerTick = new Array();
-    resourcesPerTick["food"] = ApplyValueModificationsToEntity("ResourceDrain/ResourcesPerTick/food", +this.template.ResourcesPerTick.food, this.entity);
-    resourcesPerTick["wood"] = ApplyValueModificationsToEntity("ResourceDrain/ResourcesPerTick/wood", +this.template.ResourcesPerTick.wood, this.entity);
-    resourcesPerTick["stone"] = ApplyValueModificationsToEntity("ResourceDrain/ResourcesPerTick/stone", +this.template.ResourcesPerTick.stone, this.entity);
-    resourcesPerTick["metal"] = ApplyValueModificationsToEntity("ResourceDrain/ResourcesPerTick/metal", +this.template.ResourcesPerTick.metal, this.entity);
-    
     let maxResourceSpotsToDrainSimultaneously = new Array();
-    maxResourceSpotsToDrainSimultaneously["food"] = ApplyValueModificationsToEntity("ResourceDrain/MaxResourceSpotsToDrainSimultaneously/food", +this.template.MaxResourceSpotsToDrainSimultaneously.food, this.entity);
-    maxResourceSpotsToDrainSimultaneously["wood"] = ApplyValueModificationsToEntity("ResourceDrain/MaxResourceSpotsToDrainSimultaneously/wood", +this.template.MaxResourceSpotsToDrainSimultaneously.wood, this.entity);
-    maxResourceSpotsToDrainSimultaneously["stone"] = ApplyValueModificationsToEntity("ResourceDrain/MaxResourceSpotsToDrainSimultaneously/stone", +this.template.MaxResourceSpotsToDrainSimultaneously.stone, this.entity);
-    maxResourceSpotsToDrainSimultaneously["metal"] = ApplyValueModificationsToEntity("ResourceDrain/MaxResourceSpotsToDrainSimultaneously/metal", +this.template.MaxResourceSpotsToDrainSimultaneously.metal, this.entity);
 
-    let currentlyDraining = new Array(); // Stores how many or each type we drain ant the moment
-    currentlyDraining["food"]  = 0; 
-    currentlyDraining["wood"]  = 0;
-    currentlyDraining["stone"] = 0;
-    currentlyDraining["metal"] = 0;
+    // Calculate drain rate and how many resources may be drained simulatneously
+    for (let resource in this.template.ResourcesPerTick){
+	resourcesPerTick[resource] = ApplyValueModificationsToEntity("ResourceDrain/ResourcesPerTick/" + resource, +this.template.ResourcesPerTick[resource], this.entity);
+	maxResourceSpotsToDrainSimultaneously[resource] = ApplyValueModificationsToEntity("ResourceDrain/MaxResourceSpotsToDrainSimultaneously/" + resource, +this.template.MaxResourceSpotsToDrainSimultaneously[resource], this.entity);
+    }
     
+    let currentlyDraining = new Array(); // Stores how many or each type we drain ant the moment
     let currentResourcesInReach = cmpRangeManager.ExecuteQuery(this.entity, 0, radius, this.players, IID_ResourceSupply);
 
     // Now drain each resource in reach if allowed
-    for(let resource of currentResourcesInReach){
-        let name = Engine.QueryInterface(resource, IID_Identity).GetGenericName();
+    for(let resourceEntity of currentResourcesInReach){
+        let name = Engine.QueryInterface(resourceEntity, IID_Identity).GetGenericName();
 
-        let cmpResourceSupply = Engine.QueryInterface(resource, IID_ResourceSupply);
+        let cmpResourceSupply = Engine.QueryInterface(resourceEntity, IID_ResourceSupply);
         
         let resourceType = cmpResourceSupply.GetType();
         let resourceTypeGeneric = resourceType.generic;
         let resourceTypeSpecific = resourceType.specific;
         let resourceAmountAvailable = cmpResourceSupply.GetCurrentAmount();
-        
-        // If we have reached the limit fir that resource type, do not drain that resoruce
-        if ( !(currentlyDraining[resourceTypeGeneric] < maxResourceSpotsToDrainSimultaneously[resourceTypeGeneric]) ){
+	let resource = resourceTypeGeneric + "." + resourceTypeSpecific;
+
+	if (!currentlyDraining[resource]){
+	    currentlyDraining[resource] = 0;
+	}
+	
+	
+        // If we have reached the limit for that resource type, do not drain that resoruce
+        if ( !(currentlyDraining[resource] < maxResourceSpotsToDrainSimultaneously[resource]) ){
             continue;
         }
 
-        ++currentlyDraining[resourceTypeGeneric];
+        ++currentlyDraining[resource];
 
 	let amountResourceTaken = {};
 	amountResourceTaken.amount = 0;
 
-	if (this.depleteResource){
-	    amountResourceTaken = cmpResourceSupply.TakeResources(resourcesPerTick[resourceTypeGeneric]);
+	if (this.depleteResource[resource].startsWith("t")){
+	    amountResourceTaken = cmpResourceSupply.TakeResources(resourcesPerTick[resource]);
 	} else {
-	    amountResourceTaken.amount = resourcesPerTick[resourceTypeGeneric];
+	    amountResourceTaken.amount = resourcesPerTick[resource];
 	}
 
         let cmpPlayer = QueryOwnerInterface(this.entity);

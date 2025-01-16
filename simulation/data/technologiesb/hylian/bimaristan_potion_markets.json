@@ -1,0 +1,13 @@
+{
+	"genericName": "Potion Markets",
+	"description": "Stock the Bimaristan with popular potions from around Hyrule.",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "hylian/potion_market.dds",
+	"researchTime": 40,
+	"tooltip": "Stock the Bimaristan with popular potions from around Hyrule. (Garrison Heal 3 health/second - Bimaristan)",
+	"modifications": [{"value": "GarrisonHolder/BuffHeal", "add": 3.0}],
+	"affects": ["Hospital"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

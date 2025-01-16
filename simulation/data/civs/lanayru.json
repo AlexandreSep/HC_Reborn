@@ -1,39 +1,74 @@
 {
 	"Code": "lanayru",
 	"Culture": "civilized",
-	"Name": "Lanayru Province",
-	"Emblem": "session/portraits/emblems/emblem_lanayru.dds",
-	"History": "Originally established as a small vassal state through the union of Hylian and Zora marriages, Lanayru Province quickly grew to become an economic juggernaut that financially rivalled the larger empires of the world. The bountiful resources of their homeland allowed for rapid wealth, but made the small and young nation a prime target for constant invasions at the hands of greedy and hungry forces.",
-	"Music":[
-			{"File":"lanayru_theme1.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient1.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient2.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient3.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient4.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient5.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient6.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient7.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient8.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient9.ogg", "Type":"peace"},
-			{"File":"lanayru_ambient10.ogg", "Type":"peace"},
-			{"File":"lanayru_battle1.ogg", "Type":"battle"},
-			{"File":"lanayru_battle2.ogg", "Type":"battle"},
-			{"File":"lanayru_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "lanayru_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_ambient10.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "lanayru_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "lanayru_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "lanayru_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Food: Farms, Fruit, Meat, Fish, Material: Stone Ore: Metal, Coralmold Currency: Rupees, Gold, Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Queen Rutela",
 					"Class": "",
@@ -65,8 +100,7 @@
 			]
 		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Aquatic",
 			"History": "",
@@ -83,8 +117,7 @@
 			"Description": "All Currency harvested from Precious Metal sources also provide 50% of their value in Ore, 75% if it's from a Silver source."
 		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/lanayru/choosehero_ralis",
 		"civ_choices/lanayru/choosehero_sidon",
 		"civ_choices/lanayru/choosehero_aydia",
@@ -92,16 +125,14 @@
 		"civ_choices/lanayru/choosehero_rutela",
 		"civ_choices/lanayru/choosehero_dorephan"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "International Banking",
 			"History": "",
 			"Description": "Allies gain a slow trickle of Currency Resources."
 		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Rutala Dam",
 			"Class": "",
@@ -121,8 +152,7 @@
 			"Special": "A primordial Spirit from which Lanayru Province is named after, Vrylonacia was likely worshiped as a pagan deity by ancient Zora before the Akkalans arrived? in the area and introduced worship of the Goddesses. Legend says that Vrylonacia fled the coast and into the south and slumbers somewhere beneath Hyrule's waters. While no longer active ?in the world, Vrylonacia's influence and symbols can be found throughout all of the Province's architecture and culture."
 		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/lanayru/lanayru_civil_centre"
 		},

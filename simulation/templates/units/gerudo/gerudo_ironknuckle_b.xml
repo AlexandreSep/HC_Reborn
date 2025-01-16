@@ -7,7 +7,6 @@
         <Hack>10.0</Hack>
         <TrueDamage>35</TrueDamage>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>7.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -36,11 +35,12 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
     <BattalionSlots>3</BattalionSlots>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>

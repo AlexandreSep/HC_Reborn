@@ -1,14 +1,20 @@
 {
 	"type": "range",
-	"radius": 5,
+	"radius": 30,
 	"affects": ["Unit"],
 	"affectedPlayers": ["Enemy"],
 	"modifications": [
-		{ "value": "Health/RegenRate", "add": -0.8 }
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 0.9 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 0.9 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 0.9 },
+		{ "value": "Attack/Melee/Damage/TrueDamage", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/Damage/TrueDamage", "multiply": 0.9 }
 	],
 	"auraName": "Goron Rage",
-	"auraDescription": "(Requires 'Goron Rage' researched. -0.8 Health/second - Enemy Unit)",
-	"requiredTechnology": "goron/troop_goronrage",
+	"auraDescription": "The enemy cowers before the rage of the battle bro - -10% attack damage to all enemy units within range)",
 	"overlayIcon": "art/textures/ui/session/auras/battlebro_aura_2.dds"
 	
 }

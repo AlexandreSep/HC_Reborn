@@ -1,0 +1,23 @@
+{
+	"genericName": "Work Harder!",
+	"description": "You dumb Dodos got to work harder then that! If you are not in horrible, horrible pain, you are not working hard enough! Get to it!",
+	"cost": {"food": 0, "wood": 300, "stone": 0, "metal": 300},
+	"supersedes": "moblin/gather_mob_workfasterA",
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/workfasterB.dds",
+	"researchTime": 40,
+	"tooltip": "You dumb Dodos got to work harder then that! If you are not in horrible, horrible pain, you are not working hard enough! Get to it! (+25% Resource Gathering Speed - Worker)",
+	"modifications": [
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/metal.gold", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/metal.forcegems", "multiply": 1.25}
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

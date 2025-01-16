@@ -1,0 +1,83 @@
+{
+	"Code": "minor_tokay",
+	"Culture": "barbaric",
+	"Music": [
+		{
+			"File": "hylian_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_battle4.ogg",
+			"Type": "battle"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies": [
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Tokay Big Boss Otaylo",
+					"Class": "",
+					"Armament": "Tokay Spear",
+					"Emblem": "",
+					"History": "Otaylo became Boss of the Tokay not because of power, intellect, or bloodlines... but because she bought a blue shirt to wear from Labrynna. Her actions inadvertedly lead to Labrynna duping most of her people into slavery, something she’s not all that proud of."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"TeamBonuses": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"Structures": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/npc_tok_civil_centre"
+		},
+		{
+			"Template": "units/npc_tok_noshirtA",
+			"Count": 4
+		},
+		{
+			"Template": "units/npc_tok_hunter_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/npc_tok_slinger_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/npc_tok_bonker_b"
+		}
+	],
+	"AINames": [
+		"Malon"
+	],
+	"SkirmishReplacements": {
+		"skirmish/structures/default_civil_centre": "structures/npc_tokay/npc_tok_civil_centre",
+		"skirmish/units/default_scout_b": "units/npc_tokay/npc_tok_bonker_b"
+	},
+	"SelectableInGameSetup": false
+}

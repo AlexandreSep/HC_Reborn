@@ -29,7 +29,7 @@ Cost.prototype.Schema =
 
 Cost.prototype.Init = function()
 {
-    this.populationCost = +this.template.Population;
+	this.populationCost = +this.template.Population;
 
     // HC-Code
     if (this.template.BattalionSlots) {

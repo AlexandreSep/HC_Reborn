@@ -60,12 +60,6 @@
   <Obstruction>
     <Static depth="7.5" width="7.5" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    hylian/tower_sentries
-    </Technologies>
-  </ProductionQueue>
   <StatusBars>
     <BarHeight>0.6</BarHeight>
     <BarWidth>6.0</BarWidth>
@@ -75,4 +69,12 @@
     <Actor>structures/hylian/hylian_towerA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldI.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/tower_sentries
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

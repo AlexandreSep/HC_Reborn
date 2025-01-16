@@ -1,0 +1,35 @@
+{
+  "genericName": "Offerings",
+  "description": "The Effigy slowly generates a trickle of resources.",
+  "cost": {
+    "food": 0,
+    "wood": 0,
+    "stone": 0,
+    "metal": 400
+  },
+	"requirements": { "all": [{ "entity": { "class": "Effigy", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Effigy.",
+  "icon": "lanayru/temple_offerings.dds",
+  "researchTime": 40,
+  "tooltip": "The Effigy slowly generates a trickle of resources.",
+  "modifications": [
+    {
+      "value": "ResourceTrickle/Rates/food",
+      "add": 1
+    },
+    {
+      "value": "ResourceTrickle/Rates/wood",
+      "add": 1
+    },
+    {
+      "value": "ResourceTrickle/Rates/stone",
+      "add": 1
+    },
+    {
+      "value": "ResourceTrickle/Rates/metal",
+      "add": 1
+    }
+  ],
+  "affects": [ "Effigy" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -31,43 +31,6 @@
   <Obstruction>
     <Static depth="97.0" width="56.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>17</Z>
-      </step1>
-	  <step2>
-        <X>0</X>
-        <Z>19</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>25</Z>
-      </step3>
-      <step4>
-        <X>0</X>
-        <Z>55</Z>
-      </step4>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-    units/hylian/{civ}_titan_fi
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>15</Z>
-    </SpawnOffset>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -106,4 +69,43 @@
     <Actor>structures/hylian/hylian_wonder.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldF.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/hylian/{civ}_titan_fi</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>17</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>19</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>25</Z>
+      </step3>
+      <step4>
+        <X>0</X>
+        <Z>55</Z>
+      </step4>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>15</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

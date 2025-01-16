@@ -20,12 +20,14 @@
     <Max>1800</Max>
     <SpawnEntityOnDeath>rubble/debris_kokiri_small</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>5</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/kokiri/kokiri_bush</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>5</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/kokiri/kokiri_bush</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -47,12 +49,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    kokiri/get_berryseeder
-    </Technologies>
-  </ProductionQueue>
   <ResourceSupply>
     <Max>Infinity</Max>
     <DiminishingReturns>0.90</DiminishingReturns>
@@ -90,4 +86,12 @@
     <Actor>structures/kokiri/kokiri_berryfarmA.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/get_berryseeder
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

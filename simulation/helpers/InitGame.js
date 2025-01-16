@@ -44,9 +44,9 @@ function InitGame(settings)
 	// Sandbox, Very Easy, Easy, Medium, Hard, Very Hard
 	// rate apply on resource stockpiling as gathering and trading
 	// time apply on building, upgrading, packing, training and technologies
-	//let rate = [ 0.42, 0.56, 0.75, 1.00, 1.25, 1.56 ];
-	//let time = [ 1.40, 1.25, 1.10, 1.00, 1.00, 1.00 ];
-	//let cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
+	let rate = [ 0.42, 0.56, 0.75, 1.00, 1.25, 1.56 ];
+	let time = [ 1.40, 1.25, 1.10, 1.00, 1.00, 1.00 ];
+	let cmpModifiersManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_ModifiersManager);
 	let cmpAIManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_AIManager);
 	for (let i = 0; i < settings.PlayerData.length; ++i)
 	{
@@ -58,17 +58,22 @@ function InitGame(settings)
 			let AIDiff = +settings.PlayerData[i].AIDiff;
 			cmpAIManager.AddPlayer(settings.PlayerData[i].AI, i, AIDiff, settings.PlayerData[i].AIBehavior || "random");
             cmpPlayer.SetAI(true);
-            //HC-code, we dont want the AI to cheat with modifiers, the difficulty is handlded by decision making speed
-			//AIDiff = Math.min(AIDiff, rate.length - 1);
-			//cmpModifiersManager.AddModifiers("AI Bonus", {
-			//	"ResourceGatherer/BaseSpeed": [{ "affects": ["Unit", "Structure"], "multiply": rate[AIDiff] }],
-			//	"Trader/GainMultiplier": [{ "affects": ["Unit", "Structure"], "multiply": rate[AIDiff] }],
-			//	"Cost/BuildTime": [{ "affects": ["Unit", "Structure"], "multiply": time[AIDiff] }],
-			//}, cmpPlayer.entity);
+
+            //HC-code, Modifiers for Legendary Difficulty
+			if(AIDiff == 6) {
+				cmpModifiersManager.AddModifiers("AI Bonus", {
+					"Cost/BuildTime": [{ "affects": ["Unit", "Structure"], "multiply": 0.5 }],
+					"Cost/Resources/metal": [{ "affects": ["Unit", "Structure"], "multiply": 0.5 }],
+					"Researcher/TechCostMultiplier/metal": [{ "affects": ["Unit", "Structure"], "multiply": 0.5 }]
+				}, cmpPlayer.entity);
+			}
 		}
 
 		if (settings.PopulationCap)
 			cmpPlayer.SetMaxPopulation(settings.PopulationCap);
+
+		if (settings.AllyView)
+			Engine.QueryInterface(cmpPlayer.entity, IID_TechnologyManager)?.ResearchTechnology(cmpPlayer.template.SharedLosTech);
 	}
 	if (settings.WorldPopulationCap)
 		Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager).SetMaxWorldPopulation(settings.WorldPopulationCap);

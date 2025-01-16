@@ -1,13 +1,24 @@
 {
-	"type": "formation",
-	"affects": ["MixedTeams"],
-	"modifications": [
-		{ "value": "Attack/Ranged/Damage/Hack", "add": 1 },
-		{ "value": "Attack/Melee/Damage/Pierce", "add": 1 }
-	],
-	"auraName": "Mixed Teams",
-	"auraDescription": "(Requires 'Mixed Teams' researched. In Formation, +1 Melee Attack - Blademaster and Halberdier)",
+	"type": "range",
+	"radius": 30,
+	"affects": ["Unit"],
+  	"modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 10
+    },
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 10
+    },
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 10
+    }
+  ],
+	"auraName": "Shocktroop Aura",
+	"auraDescription": "+10 armor to all units within range",
 	"requiredTechnology": "zora/troop_mixedteam",
-	"stackable" : true ,
+	"stackable" : false ,
 	"overlayIcon": "art/textures/ui/session/auras/shocktroop_aura_1.dds"
 }

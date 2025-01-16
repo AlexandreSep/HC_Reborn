@@ -24,7 +24,7 @@
     <Civ>ordona</Civ>
     <Classes datatype="tokens">City</Classes>
     <GenericName>Carriage Barn</GenericName>
-    <History>Periodically Ordona Province would launch counter attacks against Moblins and Lizalfos, bringing the fight to their enemies&#8217; villages and cities. Ordonians were more than happy to assemble their Catapults to help take down any fortifications halting their advance.</History>
+    <History>Periodically Ordona Province would launch counter attacks against Moblins and Lizalfos, bringing the fight to their enemies’ villages and cities. Ordonians were more than happy to assemble their Catapults to help take down any fortifications halting their advance.</History>
     <Icon>structures/ordona/ord_carriagebarn.dds</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Builds and trains various mechanical engines used by Ordona.</Tooltip>
@@ -33,8 +33,28 @@
   <Obstruction>
     <Static depth="28.0" width="28.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
+      <select>interface/select/building/sel_siegeworks.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/ordona/ordona_carriagebarnA.xml</Actor>
+    <FoundationActor>structures/ordona/ordona_scaffoldE.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/carriagebarn_sideseats
+    ordona/carriagebarn_timberram
+    ordona/carriagebarn_boozeboulder
+
+</Technologies>
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/ordona/{civ}_warwagon_b
+    units/ordona/{civ}_siegeram_b
+    units/ordona/{civ}_catapult_b</Entities>
     <DestinationOffset>
       <step1>
         <X>14</X>
@@ -49,11 +69,6 @@
         <Z>35</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-      units/ordona/{civ}_warwagon_b
-    units/ordona/{civ}_siegeram_b
-    units/ordona/{civ}_catapult_b
-    </Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -67,20 +82,5 @@
       <X>6</X>
       <Z>-2</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-    ordona/carriagebarn_sideseats
-    ordona/carriagebarn_timberram
-    ordona/carriagebarn_boozeboulder
-    </Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
-      <select>interface/select/building/sel_siegeworks.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/ordona/ordona_carriagebarnA.xml</Actor>
-    <FoundationActor>structures/ordona/ordona_scaffoldE.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_entity_full">
   <Armour>
     <Hack>70</Hack>
@@ -26,8 +26,8 @@
     <Size>1</Size>
     <SameActorSeed>false</SameActorSeed>
     <FormationTemplate>special/formations/battle_line</FormationTemplate>
-	<SpawnDeltaTime>500</SpawnDeltaTime>
-  </Battalion> 
+    <SpawnDeltaTime>500</SpawnDeltaTime>
+  </Battalion>
   <BuildingAI>
     <DefaultArrowCount>0</DefaultArrowCount>
     <GarrisonArrowMultiplier>0</GarrisonArrowMultiplier>
@@ -61,8 +61,8 @@
     <SinkRate>3.0</SinkRate>
     <SinkAccel>9.8</SinkAccel>
   </Decay>
-  <Fogging/>
-  <Guard/>
+  <Fogging />
+  <Guard />
   <Health>
     <DamageVariants>
       <lightdamage>0.85</lightdamage>
@@ -99,29 +99,20 @@
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
     <DeleteUponConstruction>false</DeleteUponConstruction>
   </Obstruction>
-  <OverlayRenderer/>
-  <ProductionQueue>
-    <TechCostMultiplier>
-      <food>1.0</food>
-      <wood>1.0</wood>
-      <stone>1.0</stone>
-      <metal>1.0</metal>
-      <time>1.0</time>
-    </TechCostMultiplier>
-  </ProductionQueue>
-  <RallyPoint/>
+  <OverlayRenderer />
+  <RallyPoint />
   <RallyPointRenderer>
     <MarkerTemplate>special/rallypoint</MarkerTemplate>
     <LineTexture>art/textures/misc/rallypoint_line.png</LineTexture>
     <LineTextureMask>art/textures/misc/rallypoint_line_mask.png</LineTextureMask>
     <LineThickness>0.25</LineThickness>
-    <LineDashColor r="158" g="11" b="15"/>
+    <LineDashColor r="158" g="11" b="15" />
     <LineStartCap>square</LineStartCap>
     <LineEndCap>round</LineEndCap>
     <LinePassabilityClass>default</LinePassabilityClass>
   </RallyPointRenderer>
-  <RangeOverlayManager/>
-  <RangeOverlayRenderer/>
+  <RangeOverlayManager />
+  <RangeOverlayRenderer />
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
@@ -165,9 +156,15 @@
     <Bribable>false</Bribable>
   </VisionSharing>
   <VisualActor>
-    <ConstructionPreview/>
+    <ConstructionPreview />
     <SilhouetteDisplay>false</SilhouetteDisplay>
     <SilhouetteOccluder>true</SilhouetteOccluder>
     <VisibleInAtlasOnly>false</VisibleInAtlasOnly>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

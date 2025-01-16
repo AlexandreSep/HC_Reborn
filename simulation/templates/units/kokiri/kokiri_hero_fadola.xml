@@ -6,7 +6,6 @@
         <Crush>20.0</Crush>
         <Forest>40.0</Forest>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>90.0</MaxRange>
       <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -23,10 +22,11 @@
         <Chance>1</Chance>
         <Time>500</Time>
       </Stun>
+      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>60</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>200</food>
       <metal>100</metal>

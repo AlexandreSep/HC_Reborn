@@ -1,0 +1,13 @@
+{
+	"genericName": "Oshite Aqueducts",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"requirements": {  "all": [{ "tech": "civ_choices/zora/choosehero_jabun" }, {"tech": "phase_town"}, { "civ": "zora" }]  },
+	"requirementsTooltip": "Requires Jabun and Town Phase.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+25% Territory Generation - Aqueducts.",
+	"modifications": [{ "value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "Aqueduct" }],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

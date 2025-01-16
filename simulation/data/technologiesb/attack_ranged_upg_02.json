@@ -1,0 +1,30 @@
+{
+	"genericName": "Upgrade Ranged Weapons",
+  "cost": {"metal": 750},
+	"supersedes": "attack_ranged_upg_01",
+	"requirements": {"all": [{"tech": "phase_city"}]},
+	"requirementsTooltip": "Unlocked with City.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "Guay feathers were commonly used by the Hylians as fletching for crossbow bolts. (+15% Ranged Attack - Ranged Infantry)",
+  "modifications": [
+    {
+      "value": "Attack/Ranged/Damage/Pierce",
+      "multiply": 1.15
+    },
+    {
+      "value": "Attack/Ranged/Damage/Hack",
+      "multiply": 1.15
+    },
+    {
+      "value": "Attack/Ranged/Damage/Crush",
+      "multiply": 1.15
+    },	
+    {
+      "value": "Attack/Ranged/Damage/TrueDamage",
+      "multiply": 1.15
+    }
+  ],
+  "affects": [ "Missile" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

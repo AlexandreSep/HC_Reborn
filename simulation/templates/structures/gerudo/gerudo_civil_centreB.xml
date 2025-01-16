@@ -34,34 +34,6 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>15</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>20</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/gerudo/{civ}_artisanA
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>10</Z>
-    </SpawnOffset>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -100,4 +72,34 @@
     <Actor>structures/gerudo/gerudo_oasisA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/gerudo/{civ}_artisanA</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>20</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>10</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

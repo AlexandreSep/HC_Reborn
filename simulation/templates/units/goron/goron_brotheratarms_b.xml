@@ -6,7 +6,6 @@
         <Hack>30</Hack>
         <Pierce>10.0</Pierce>
       </Damage>
-      <Delay>1</Delay>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -27,11 +26,12 @@
         <Range>5</Range>
         <Shape>Circular</Shape>
       </Splash>
+      <EffectDelay>1</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
     <BattalionSlots>4</BattalionSlots>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>105</food>
       <metal>20</metal>

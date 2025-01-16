@@ -1,7 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
-    <Territory>own neutral</Territory>
+    <Territory>own</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>40</BuildTime>
@@ -19,14 +19,6 @@
   <Health>
     <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/debris_hylian_marketA</SpawnEntityOnDeath>
-    <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>gaia/lon_lon_cow_1</Template>
-    </SpawnOnInterval>
   </Health>
   <Identity>
     <Civ>hylian</Civ>
@@ -45,40 +37,6 @@
   <Obstruction>
     <Static depth="43.0" width="43.0" />
   </Obstruction>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>-15</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>-30</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/{civ}_trader_b
-    gaia/lon_lon_cow_1
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>0</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-    culture_civilized/postman_network
-      hylian/trade_hateno_dyes
-    hylian/trade_malo_mart
-    </Technologies>
-  </ProductionQueue>
   <Resistance>
     <Entity>
       <Damage>
@@ -117,4 +75,38 @@
     <Actor>structures/hylian/hylian_marketA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_constA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">culture_civilized/postman_network
+      hylian/trade_hateno_dyes
+    hylian/trade_malo_mart
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/{civ}_trader_b
+    gaia/lon_lon_cow_1</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-15</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>-30</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>0</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

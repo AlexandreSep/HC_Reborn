@@ -39,16 +39,6 @@
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    darknut/attack_legion_01
-    darknut/attack_legion_02
-    darknut/armor_legion_01
-    darknut/armor_legion_02
-    darknut/armor_generational
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -67,4 +57,16 @@
   <VisualActor>
     <Actor>structures/darknut/darknut_armorumbaseA.xml</Actor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/attack_legion_01
+    darknut/attack_legion_02
+    darknut/armor_legion_01
+    darknut/armor_legion_02
+    darknut/armor_generational
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

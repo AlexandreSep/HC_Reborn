@@ -1,0 +1,33 @@
+{
+	"genericName": "Villein Status",
+	"description": "",
+	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 100},
+	"requirements": {
+    "all": [
+      { "tech": "civ_choices/ordona/choosehero_beth" },
+      { "civ": "ordona" }
+    ]
+	},
+	"requirementsTooltip": "You must select Beth as your hero.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+10% Build and Repair, +3 Resource Capacity, +10% Gather Rate for all Resources - Serf",
+	"modifications": [
+		{"value": "ResourceGatherer/Capacities/food", "add": 3},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 3},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 3},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 3},
+		{"value": "Builder/Rate", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/food.fruit", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/wood.ruins", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/stone.ruins", "multiply": 1.10},
+		{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.10}],
+	"affects": ["OrdSerf"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

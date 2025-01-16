@@ -1,6 +1,6 @@
 <Entity parent="HC_template_hero">
   <Cost>
-    <BuildTime>40</BuildTime>
+    <BuildTime>25</BuildTime>
     <Resources>
       <food>200</food>
       <metal>150</metal>

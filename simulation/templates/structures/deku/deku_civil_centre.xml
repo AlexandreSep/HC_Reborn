@@ -23,12 +23,14 @@
     <Max>3000</Max>
     <SpawnEntityOnDeath>rubble/debris_deku_huge</SpawnEntityOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>false</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/deku/deku_underlingA</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>false</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/deku/deku_underlingA</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -78,45 +80,6 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-  <ProductionQueue>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>45</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>50</Z>
-      </step2>
-    </DestinationOffset>
-    <Entities datatype="tokens">
-      units/deku/{civ}_underlingA
-      units/deku/{civ}_peahatdrift_b
-    units/deku/{civ}_hero_decci
-    units/deku/{civ}_hero_deppi
-    units/deku/{civ}_hero_kado
-    units/deku/{civ}_hero_butler
-    units/deku/{civ}_hero_dekuking
-    units/deku/{civ}_hero_dekuprincess
-    </Entities>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>25</Z>
-    </SpawnOffset>
-    <Technologies datatype="tokens">
-      deku/deppi_sunsap
-    deku/player_isdeku
-    </Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <alert0>interface/alarm/alarm_alert_0.xml</alert0>
@@ -133,4 +96,43 @@
     <Actor>structures/deku/deku_civic_centreA.xml</Actor>
     <FoundationActor>structures/deku/deku_scaffoldA.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">deku/deppi_sunsap
+    deku/player_isdeku
+
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <Entities datatype="tokens">units/deku/{civ}_underlingA
+      units/deku/{civ}_peahatdrift_b
+    units/deku/{civ}_hero_decci
+    units/deku/{civ}_hero_deppi
+    units/deku/{civ}_hero_kado
+    units/deku/{civ}_hero_butler
+    units/deku/{civ}_hero_dekuking
+    units/deku/{civ}_hero_dekuprincess</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>45</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>50</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>25</Z>
+    </SpawnOffset>
+  </Trainer>
 </Entity>

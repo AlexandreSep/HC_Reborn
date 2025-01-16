@@ -1,0 +1,14 @@
+{
+	"genericName": "Test of Endurance",
+	"description": "The forest was a harsh place, and a Kokiri needed to be ready to handle extreme conditions at a moment's notice. The Test of Endurance involved being tossed into a throny bramble, the Kokiri believed it would make one more resistant to nature.",
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
+	"supersedes": "kokiri/training_speed",
+	"requirements": { "all": [{ "entity": { "class": "FightYard", "number": 1 } }] },
+	"requirementsTooltip": "Unlocked with Fighting Yard Addon.",
+	"icon": "kokiri/training_endurance.dds",
+	"researchTime": 40,
+	"tooltip": "The forest was a harsh place, and a Kokiri needed to be ready to handle extreme conditions at a moment's notice. The Test of Endurance involved being tossed into a throny bramble, the Kokiri believed it would make one more resistant to nature. (+10% Health for all Melee Soldiers.)",
+	"modifications": [{"value": "Health/Max", "multiply": 1.10}],
+	"affects": ["Soldier Melee"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

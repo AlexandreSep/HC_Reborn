@@ -36,16 +36,11 @@
     <RequiredTechnology>pair_lizgodsB</RequiredTechnology>
     <Tooltip>Improves the rate that units are trained at nearby structures.</Tooltip>
     <VisibleClasses datatype="tokens">Special</VisibleClasses>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
   </Identity>
   <Obstruction>
     <Static depth="28.0" width="28.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/lizalfos/complete_clutch.xml</constructed>
@@ -56,4 +51,11 @@
     <Actor>structures/lizalfos/lizalfos_commclutchA.xml</Actor>
     <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_S.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

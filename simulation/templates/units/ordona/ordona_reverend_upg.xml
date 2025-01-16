@@ -13,7 +13,7 @@
   units/deacon_chant_4
   </Auras>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
       <food>25</food>
       <metal>30</metal>
@@ -62,5 +62,5 @@
   </Sound>
   <VisualActor>
     <Actor>units/ordona/ordona_reverend_b.xml</Actor>
-  </VisualActor> 
+  </VisualActor>
 </Entity>

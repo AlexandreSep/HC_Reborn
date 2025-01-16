@@ -26,12 +26,14 @@
       <Template>units/gohma/gohma_larva_sterile_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
-      <Interval>10000</Interval>
-      <LinkedDestruction>true</LinkedDestruction>
-      <Max>0</Max>
-      <SpawnNumber>1</SpawnNumber>
-      <StartDelay>5000</StartDelay>
-      <Template>units/gohma/gohma_larva_sterile_b</Template>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>0</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/gohma/gohma_larva_sterile_b</Template>
+      </one>
     </SpawnOnInterval>
   </Health>
   <Identity>
@@ -46,14 +48,7 @@
   <Obstruction>
     <Static depth="12.0" width="12.0" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    gohma/gather_corpseextract
-    gohma/gather_webbingnets
-    </Technologies>
-  </ProductionQueue>
-    <ResourceDrain>
+  <ResourceDrain>
     <MaxResourceSpotsToDrainSimultaneously>
       <food>3</food>
       <metal>0</metal>
@@ -68,7 +63,12 @@
       <wood>0</wood>
     </ResourcesPerTick>
     <TickRate>2000</TickRate>
-    <DepleteResource>true</DepleteResource>
+    <DepleteResource>
+	  <food>true</food>
+      <metal>true</metal>
+      <stone>true</stone>
+      <wood>true</wood>
+	</DepleteResource>
     <VisualEffectDuration>1000</VisualEffectDuration>
   </ResourceDrain>
   <Sound>
@@ -81,4 +81,13 @@
     <Actor>structures/gohma/gohma_extractor.xml</Actor>
     <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/gather_corpseextract
+    gohma/gather_webbingnets
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

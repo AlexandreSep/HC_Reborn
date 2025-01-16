@@ -1,8 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_formation">
   <Formation>
-    <FormationName>HC Standard</FormationName>
     <FormationShape>square</FormationShape>
-    <Icon>formations/battle_line.png</Icon>
     <MaxColumns>8</MaxColumns>
     <MaxRows>4</MaxRows>
     <MinColumns>5</MinColumns>
@@ -14,4 +13,9 @@
     <UnitSeparationWidthMultiplier>1</UnitSeparationWidthMultiplier>
     <WidthDepthRatio>1</WidthDepthRatio>
   </Formation>
+  <Identity>
+    <GenericName>HC Standard</GenericName>
+    <Icon>formations/battle_line.png</Icon>
+  </Identity>
 </Entity>
+

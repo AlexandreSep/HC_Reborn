@@ -1,0 +1,13 @@
+{
+	"genericName": "Hahaha Take Dead Blin Goods!",
+	"description": "Even smarter, we Moblins take stuff off the dead Blins and sell it for real cheap now! Those stupid Hylians, the dead keep all their stuff when they bury them! What a big fat waste! Hylians are dumb!",
+	"cost": {"food": 0, "wood": 400, "stone": 400, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Does not require Phases.",
+	"icon": "moblin/unit_takedead.dds",
+	"researchTime": 40,
+	"tooltip": "Even smarter, we Moblins take stuff off the dead Blins and sell it for real cheap now! Those stupid Hylians, the dead keep all their stuff when they bury them! What a big fat waste! Hylians are dumb! (All units now refund 5% of their cost when killed in battle)",
+	"modifications": [],
+	"affects": [""],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

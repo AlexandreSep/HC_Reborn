@@ -1,0 +1,87 @@
+{
+	"Code": "minor_zuna",
+	"Culture": "civilized",
+	"Music": [
+		{
+			"File": "hylian_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_battle4.ogg",
+			"Type": "battle"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies": [
+				{
+					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Master Vorday",
+					"Class": "",
+					"Armament": "Zuna Trident",
+					"Emblem": "",
+					"History": "The wealthiest and most powerful Zuna to have lived, Master Vorday amassed his assests by being a suck-up and yes-man to the various empires of the Gerudo Desert. While he may be seen as a total coward by outsiders, his habit of selling out to foreigners has lead to the Zuna becoming a giant merchant empire and biggest arms dealer in all of Hyrule."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"TeamBonuses": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"Structures": [
+		{
+			"Name": "None",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/npc_zun_civil_centre"
+		},
+		{
+			"Template": "units/npc_zun_crafstmanA",
+			"Count": 4
+		},
+		{
+			"Template": "units/npc_zun_tridenteer_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/npc_zun_tribowman_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/npc_zun_triballista_b"
+		}
+	],
+	"AINames": [
+		"Malon"
+	],
+	"SkirmishReplacements": {
+		"skirmish/structures/default_civil_centre": "structures/npc_zuna/npc_zun_civil_centre",
+		"skirmish/units/default_support_female_citizen": "units/npc_zuna/npc_zun_craftsmanA",
+		"skirmish/units/default_cavalry": "units/npc_zuna/npc_zun_triballista_b",
+		"skirmish/units/default_infantry_melee_b": "units/npc_zuna/npc_zun_craftsmanA",
+		"skirmish/units/default_infantry_ranged_b": "units/npc_zuna/npc_zun_craftsmanA",
+		"skirmish/structures/default_house_10": "structures/npc_zuna/npc_zuna_house"
+	},
+	"SelectableInGameSetup": false
+}

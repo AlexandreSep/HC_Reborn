@@ -3,12 +3,6 @@
     <Classes datatype="tokens">Autumn</Classes>
     <Icon>structures/fairy/fai_misthenge_autumn.dds</Icon>
   </Identity>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    fairy/season_beavermoon
-    </Technologies>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/fairy/fairy_misthenge_winter</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -17,4 +11,12 @@
     <Actor>structures/fairy/fairy_misthengeA_autumn.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_autumn.xml</FoundationActor>
   </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/season_beavermoon
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

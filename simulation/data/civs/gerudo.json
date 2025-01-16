@@ -1,40 +1,78 @@
 {
 	"Code": "gerudo",
 	"Culture": "desert",
-	"Name": "Gerudo",
-	"Emblem": "session/portraits/emblems/emblem_gerudo.dds",
-	"History": "A desert-dwelling race of female warriors, the Gerudo are descended from an ancient and powerful empire that stretched across the western sands of Hyrule for countless centuries. Surrounded on all sides by hostile nations, scarce resources, and a curse that wiped out all the men of their race, the Gerudo have suffered a continuous barrage of brutal hardships, setbacks, and wars without abandon.",
-	"Music":[
-			{"File":"gerudo_theme1.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient1.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient2.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient3.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient4.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient5.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient6.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient7.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient8.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient9.ogg", "Type":"peace"},
-			{"File":"gerudo_ambient10.ogg", "Type":"peace"},
-			{"File":"gerudo_battle1.ogg", "Type":"battle"},
-			{"File":"gerudo_battle2.ogg", "Type":"battle"},
-			{"File":"gerudo_battle3.ogg", "Type":"battle"},
-			{"File":"gerudo_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "gerudo_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient8.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient9.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_ambient10.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "gerudo_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "gerudo_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "gerudo_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "gerudo_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Emperor Ganondorf",
 					"Class": "",
@@ -62,30 +100,28 @@
 					"Armament": "Golden Bow",
 					"Emblem": "",
 					"History": "The daughter of Ganondorf and Nabooru, Riju is the only heir to the Gerudo throne. Because of her youth, she tends to be shunned from events in Hyrule, and usually spends her time raising the Sandseals of the Desert. However, as the actions of her father tear Hyrule apart, the young princess is drawn closer to action. Riju believes that the survival of the Gerudo people is through reaching out to other cultures, and not through the conquest her father seeks. Many Gerudo see such ideas as naive, and certain to doom their people."
-				}  
+				}
 			]
-		} 
+		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Desert Raiders",
 			"History": "",
-			"Description": "Attacking enemy workers and resource-drop off buildings generates a trickle of Rupees." 
-		},			
+			"Description": "Attacking enemy workers and resource-drop off buildings generates a trickle of Rupees."
+		},
 		{
 			"Name": "Battle Ready",
 			"History": "",
-			"Description": "All Buildings are garrisonable, and most can fire arrows at enemy units." 
+			"Description": "All Buildings are garrisonable, and most can fire arrows at enemy units."
 		},
 		{
 			"Name": "Ransack",
 			"History": "",
-			"Description": "+20% loot from enemy units and buildings." 
-		}  
+			"Description": "+20% loot from enemy units and buildings."
+		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/gerudo/choosehero_aveil",
 		"civ_choices/gerudo/choosehero_buliara",
 		"civ_choices/gerudo/choosehero_urbosa",
@@ -93,16 +129,14 @@
 		"civ_choices/gerudo/choosehero_ganondorf",
 		"civ_choices/gerudo/choosehero_nabooru"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "Spoils of War",
 			"History": "",
 			"Description": "Allies gain +10% Loot"
-		} 
+		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Desert Colossus",
 			"Class": "",
@@ -110,7 +144,7 @@
 			"History": "Standing tall and defiant against the harsh winds of the Haunted Wasteland, the Desert Colossus is a true beacon of Gerudo masonry and engineering. Built in the likeness of the First Sage of Spirits, Kovaloo, the Desert Colossus guards the entrance to the Spirit Temple: a place of meditation, reflection, and communion with the souls of the deceased. (In Aura, +2 Attack Internal per Garrison Unit - Buildings, +50% Territory Influence)",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
+			"Special": ""
 		},
 		{
 			"Name": "Titan: Twinrova, the Sorceress Sisters",
@@ -119,11 +153,10 @@
 			"History": "The surrogate mothers of Ganondorf, the twin sisters Koume and Kotake are capable of magically merging into a powerful and malevolent entity known as Twinrova. When combined, the witches are capable of unleashing devastating fire and ice magic against enemies.",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
-		} 
+			"Special": ""
+		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/gerudo/gerudo_civil_centre"
 		},
@@ -134,7 +167,7 @@
 		{
 			"Template": "units/gerudo/gerudo_glaivegrunt_b",
 			"Count": 2
-		},		
+		},
 		{
 			"Template": "units/gerudo/gerudo_marauder_b",
 			"Count": 2

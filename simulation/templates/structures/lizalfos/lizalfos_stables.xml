@@ -31,13 +31,27 @@
     <Icon>structures/lizalfos/liz_monstermound.dds</Icon>
     <Tooltip>Trains Creature units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
   </Identity>
   <Obstruction>
     <Static depth="33.0" width="33.0" />
   </Obstruction>
-  <ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_stables.xml</constructed>
+      <select>interface/select/building/sel_stables.xml</select>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_monstermoundA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_S.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+  <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -52,8 +66,6 @@
         <Z>30</Z>
       </step3>
     </DestinationOffset>
-    <Entities datatype="tokens">
-</Entities>
     <LineupOffset>
       <MaxThresholdOffset>
         <Threshold>5</Threshold>
@@ -67,17 +79,5 @@
       <X>0</X>
       <Z>1</Z>
     </SpawnOffset>
-    <Technologies datatype="tokens">
-</Technologies>
-  </ProductionQueue>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_stables.xml</constructed>
-      <select>interface/select/building/sel_stables.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_monstermoundA.xml</Actor>
-    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_S.xml</FoundationActor>
-  </VisualActor>
+  </Trainer>
 </Entity>

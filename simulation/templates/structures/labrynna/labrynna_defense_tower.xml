@@ -40,12 +40,6 @@
   <Obstruction>
     <Static depth="15.5" width="15.5" />
   </Obstruction>
-  <ProductionQueue>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Technologies datatype="tokens">
-    labrynna/tower_issuerifles
-    </Technologies>
-  </ProductionQueue>
   <Promotion>
     <Entity>structures/labrynna/labrynna_defense_towerB</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -73,4 +67,12 @@
       <MaxRange>80</MaxRange>
     </CanSpotStealth>
   </Visibility>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/tower_issuerifles
+</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
 </Entity>

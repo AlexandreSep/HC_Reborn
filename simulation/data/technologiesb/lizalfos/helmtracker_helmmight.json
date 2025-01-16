@@ -1,0 +1,15 @@
+{
+	"genericName": "Helmasaur Shock",
+	"description": "The short and stocky Helmasaurs may have been smaller than most cavlary, but their huge skulls could lead to quite a deadly impact.",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
+	"requirementsTooltip": "Requires a second deity.",
+	"icon": "lizalfos/helmtracker_helmmight.dds",
+	"researchTime": 40,
+	"tooltip": "Helmasaur Trackers now have a chance to stun enemy units",
+	"modifications": [
+		{"value": "Attack/Melee/Damage/Stun/Chance", "add": 25}
+	],
+	"affects": ["Helmtracker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

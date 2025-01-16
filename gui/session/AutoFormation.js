@@ -64,7 +64,7 @@ class AutoFormation
 	 */
 	getNull()
 	{
-        let walkOnly = false; // HC-Code: This is set to false because it would nullify or reset formations on certain orders, which we dont want with the battalion system
+		let walkOnly = false; // HC-Code: This is set to false because it would nullify or reset formations on certain orders, which we dont want with the battalion system
 		return walkOnly ? NULL_FORMATION : undefined;
 	}
 }

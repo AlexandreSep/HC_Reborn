@@ -1,6 +1,6 @@
 <Entity parent="template_unit">
   <Cost>
-    <BuildTime>300</BuildTime>
+    <BuildTime>250</BuildTime>
     <Resources>
       <food>1000</food>
       <metal>1000</metal>
@@ -14,9 +14,6 @@
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
-    <Formations datatype="tokens">
-      special/formations/skirmish
-    </Formations>
     <GenericName>Titan</GenericName>
     <VisibleClasses datatype="tokens">Titan</VisibleClasses>
   </Identity>

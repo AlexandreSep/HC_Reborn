@@ -1,38 +1,70 @@
 {
 	"Code": "hylian",
 	"Culture": "civilized",
-	"Name": "Kingdom of Hyrule",
-	"Emblem": "session/portraits/emblems/emblem_hylian.dds",
-	"History": "The imperial monarchy known as the Kingdom of Hyrule is one of the longest-lived and most powerful empires to have existed. For nearly three-thousand years the Hylian people have rallied behind the banner of the winged Triforce, creating one of the largest and most successful armies the land has ever known.",
-	"Music":[
-			{"File":"hylian_theme1.ogg", "Type":"peace"},
-			{"File":"hylian_ambient1.ogg", "Type":"peace"},
-			{"File":"hylian_ambient2.ogg", "Type":"peace"},
-			{"File":"hylian_ambient3.ogg", "Type":"peace"},
-			{"File":"hylian_ambient4.ogg", "Type":"peace"},
-			{"File":"hylian_ambient5.ogg", "Type":"peace"},
-			{"File":"hylian_ambient6.ogg", "Type":"peace"},
-			{"File":"hylian_ambient7.ogg", "Type":"peace"},
-			{"File":"hylian_battle1.ogg", "Type":"battle"},
-			{"File":"hylian_battle2.ogg", "Type":"battle"},
-			{"File":"hylian_battle3.ogg", "Type":"battle"},
-			{"File":"hylian_battle4.ogg", "Type":"battle"},
-			{"File":"hylian_victory1.ogg", "Type":"victory"}
-		],
-
-	"Factions":
-	[
+	"Music": [
+		{
+			"File": "hylian_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_ambient2.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_ambient3.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_ambient4.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_ambient5.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_ambient6.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_ambient7.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hylian_battle1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "hylian_battle2.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "hylian_battle3.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "hylian_battle4.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "hylian_victory1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
 		{
 			"Name": "",
 			"Description": "",
-			"Technologies":
-			[
+			"Technologies": [
 				{
 					"Name": "Farms, Fruit, Meat, Fish, Wood, Stone, Metal, Rupees, Gold, and Force Gems"
 				}
 			],
-			"Heroes":
-			[
+			"Heroes": [
 				{
 					"Name": "Princess Tetralyna Zelda V",
 					"Class": "",
@@ -60,31 +92,28 @@
 					"Armament": "Holy Mace",
 					"Emblem": "",
 					"History": "Ascended to an immortal and ageless Sage, Rauru has served the Kingdom of Hyrule for several centuries. He has participated in several of its greatest wars, notably Ganon's first invasion of Hyrule and later the Gerudo Wars. Rauru later oversaw the construction of the Temple of Time with the ancient Oocca. He spends most of his later years preaching the word of the Goddesses and guarding over the gate that houses the Triforce."
-				}  
+				}
 			]
-		} 
+		}
 	],
-	"CivBonuses":
-	[
+	"CivBonuses": [
 		{
 			"Name": "Dominant Power",
 			"History": "",
-			"Description": "25% Territory influence for all Town Halls." 
+			"Description": "25% Territory influence for all Town Halls."
 		},
 		{
 			"Name": "Center of Hyrule",
 			"History": "",
-
-			"Description": "Markets generate Territory Rings." 
+			"Description": "Markets generate Territory Rings."
 		},
 		{
 			"Name": "City Creators",
 			"History": "",
-			"Description": "Can build non-military Buildings in neutral Territory adjacent to territory ring." 
-		}  
+			"Description": "Can build non-military Buildings in neutral Territory adjacent to territory ring."
+		}
 	],
-	"CivChoices":
-	[
+	"CivChoices": [
 		"civ_choices/hylian/choosehero_krin",
 		"civ_choices/hylian/choosehero_seres",
 		"civ_choices/hylian/choosehero_zeldaV",
@@ -92,16 +121,14 @@
 		"civ_choices/hylian/choosehero_link",
 		"civ_choices/hylian/choosehero_rauru"
 	],
-	"TeamBonuses":
-	[
+	"TeamBonuses": [
 		{
 			"Name": "Vassals",
 			"History": "",
 			"Description": "Allied Civil Centers gain +10% Territory Influence."
-		} 
+		}
 	],
-	"Structures":
-	[
+	"Structures": [
 		{
 			"Name": "Wonder: Temple of Time",
 			"Class": "",
@@ -109,7 +136,7 @@
 			"History": "The Temple of Time, a marvel of architecture commissioned by the Oocca and designed by Rauru, the Sage of Light. Acting as a Church and housing the holy Triforce deep within its recesses, the Temple of Time is a shining wonder and revered structure across all of Hyrule. (Garrison and Heal up to 30 Units. +50% Territory Influence)",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
+			"Special": ""
 		},
 		{
 			"Name": "Titan: Fi, Spirit of the Master Sword",
@@ -118,11 +145,10 @@
 			"History": "A powerful spirit of the world that was bound against her will within the Master Sword. Now freed from her prison, Fi exhibits tremendous power and can bring animated swords against enemies of the Kingdom.",
 			"Requirements": "",
 			"Phase": "",
-			"Special": "" 
-		} 
+			"Special": ""
+		}
 	],
-	"StartEntities":
-	[
+	"StartEntities": [
 		{
 			"Template": "structures/hylian/hylian_civil_centre"
 		},
@@ -133,7 +159,7 @@
 		{
 			"Template": "units/hylian/hylian_levy_spearman",
 			"Count": 2
-		},		
+		},
 		{
 			"Template": "units/hylian/hylian_levy_archer",
 			"Count": 2
@@ -159,9 +185,9 @@
 	[
 		"Princess Tetralyna Zelda V",
 		"Link, Heir of King Gustaf",
-    "Lana",
-    "Captain Krin",
-    "Seres",
+		"Lana",
+		"Captain Krin",
+		"Seres",
 		"Rauru, Sage of Light"
 	],
   "SkirmishReplacements": {
