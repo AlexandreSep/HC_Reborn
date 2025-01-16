@@ -269,7 +269,6 @@
   </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/darknut/{civ}_thrallA
-      units/darknut/{civ}_molgera_b
       units/darknut/{civ}_patra_b
 	  units/darknut/{civ}_hero_onon
 	  units/darknut/{civ}_hero_militron

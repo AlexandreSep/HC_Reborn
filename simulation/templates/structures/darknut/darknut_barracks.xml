@@ -54,7 +54,8 @@
     <Entities datatype="tokens">units/darknut/{civ}_gymnatai_b
       units/darknut/{civ}_hoplite_b
     units/darknut/{civ}_peltast_b
-    units/darknut/{civ}_aries_b</Entities>
+    units/darknut/{civ}_aries_b
+	units/darknut/{civ}_molgera_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
