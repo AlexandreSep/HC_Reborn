@@ -23,12 +23,12 @@
   </Auras>
   <Builder>
     <Entities datatype="tokens">
-	    structures/lanayru/lanayru_civil_center
+	structures/lanayru/lanayru_civil_centre
     structures/lanayru/lanayru_hub_house
     structures/lanayru/lanayru_hub_economy
     structures/lanayru/lanayru_hub_barracks
     structures/lanayru/lanayru_hub_animal
-      structures/lanayru/lanayru_wallset
+    structures/lanayru/lanayru_wallset
     structures/lanayru/lanayru_defense_tower
     structures/lanayru/lanayru_fortress
     structures/lanayru/lanayru_wonder
