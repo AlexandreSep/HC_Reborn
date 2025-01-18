@@ -9,7 +9,7 @@
         </Bonus1>
       </Bonuses>
       <Damage>
-        <Crush>50.0</Crush>
+        <Crush>200.0</Crush>
       </Damage>
       <MaxRange>120.0</MaxRange>
       <MinRange>45.0</MinRange>

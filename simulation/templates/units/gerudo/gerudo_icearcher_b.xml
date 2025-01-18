@@ -24,18 +24,6 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2000</RepeatTime>
-      <SpawnEntityOnImpact>
-        <SpawnNumberMax>1</SpawnNumberMax>
-        <SpawnNumberMin>1</SpawnNumberMin>
-        <SpawnOnHit>
-          <Chance>100</Chance>
-          <SpawnAtTarget>true</SpawnAtTarget>
-        </SpawnOnHit>
-        <SpawnOnImpact>
-          <Chance>100</Chance>
-        </SpawnOnImpact>
-        <Template>units/gerudo/gerudo_icepatch</Template>
-      </SpawnEntityOnImpact>
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
@@ -53,7 +41,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Class90 WaterElement IceArcher Archer Human</Classes>
+    <Classes datatype="tokens">Medium WaterElement IceArcher Archer Human</Classes>
     <GenericName>Ice Archer</GenericName>
     <History>After years of arduous training, Gerudo women are given the chance to enter the infamous Gerudo Training Grounds. Should they survive, they emerge victorious. with Ice Arrows in hand. These ancient magical weapons can fire a deadly arrow coated in frost. On contact. they explode and instantly freeze anything near their impact.</History>
     <Icon>units/gerudo/ger_icearcher.dds</Icon>
@@ -89,7 +77,6 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.4545</RunMultiplier>
     <WalkSpeed>11.0</WalkSpeed>
   </UnitMotion>
   <Vision>

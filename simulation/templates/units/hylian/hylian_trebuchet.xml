@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Hurled Stone</AttackName>
       <Damage>
-        <Crush>200.0</Crush>
+        <Crush>300.0</Crush>
       </Damage>
       <MaxRange>130.0</MaxRange>
       <MinRange>60.0</MinRange>

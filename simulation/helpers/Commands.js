@@ -2111,6 +2111,12 @@ function GetBattalionDestinations(destination, startLocation, battalionIndices, 
     return destinations;
 }
 
+function LogStack() {
+	let stack = new Error().stack.trimRight().replace(/^/mg, '  '); // indent each line
+	warn("logging stack " + stack);
+}
+
+Engine.RegisterGlobal("LogStack", LogStack);
 Engine.RegisterGlobal("GetBattalionIndices", GetBattalionIndices);
 Engine.RegisterGlobal("GetBattalionDestinations", GetBattalionDestinations);
 // HC-end
