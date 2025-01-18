@@ -4,42 +4,7 @@ var CONQUESTAI = function (m) {
      */
 
     m.HQ.prototype.gameAnalysis = function (gameState) {
-        // Analysis of the terrain and the different access regions
-       //if (!this.regionAnalysis(gameState))
-            //return;
-
-        //this.attackManager.init(gameState);
-        this.buildManager.init(gameState);
-        //this.navalManager.init(gameState);
-        //this.tradeManager.init(gameState);
-        //this.diplomacyManager.init(gameState);
-        
-        // Let's get our initial situation here.
         this.updateTerritories(gameState);
-
-        // Assign entities and resources in the different bases
-        //this.assignStartingEntities(gameState);
-
-
-        // Sandbox difficulty should not try to expand
-        //this.canExpand = this.Config.difficulty != 0;
-        //// If no base yet, check if we can construct one. If not, dispatch our units to possible tasks/attacks
-        //this.canBuildUnits = true;
-        //if (!gameState.getOwnStructures().filter(API3.Filters.byClass("CivCentre")).hasEntities()) {
-        //    let template = gameState.applyCiv("structures/{civ}_civil_centre");
-        //    if (!gameState.isTemplateAvailable(template) || !gameState.getTemplate(template).available(gameState)) {
-        //        if (this.Config.debug > 1)
-        //            API3.warn(" this AI is unable to produce any units");
-        //        this.canBuildUnits = false;
-        //        this.dispatchUnits(gameState);
-        //    }
-        //    else
-        //        this.buildFirstBase(gameState);
-        //}
-
-        //// configure our first base strategy
-        //if (this.baseManagers.length > 1)
-        //    this.configFirstBase(gameState);
     };
 
     /**

@@ -253,17 +253,18 @@ var CONQUESTAI = function (m) {
         }
 
         this.RefreshResourceLists(gameState);
+        this.currentPhase = gameState.currentPhase();
+    };
 
+    m.HQ.prototype.PostInit = function (gameState) {
         // select the hero according to the AI name first, then select 2 random ones
         Engine.PostCommand(PlayerID, { "type": "ChooseHero", "civ": gameState.getPlayerCiv(), "name": gameState.getPlayerName() });
         Engine.PostCommand(PlayerID, { "type": "ChooseHero", "civ": gameState.getPlayerCiv() });
         Engine.PostCommand(PlayerID, { "type": "ChooseHero", "civ": gameState.getPlayerCiv() });
 
-        gameState.SendAIDialog(gameState.ai.HQ.allAllies, "IntroAlly", this.AIDialogData, 4000);
-        gameState.SendAIDialog(gameState.ai.HQ.allEnemies, "IntroEnemy", this.AIDialogData, 5000);
-
-        this.currentPhase = gameState.currentPhase();
-    };
+        gameState.SendAIDialog(gameState.ai.HQ.allAllies, "IntroAlly", this.AIDialogData, 30000);
+        gameState.SendAIDialog(gameState.ai.HQ.allEnemies, "IntroEnemy", this.AIDialogData, 31000);
+    }
 
     //  #############################################################
     //  GATHERERS AND BUILDERS BEHAVIOUR
@@ -1668,6 +1669,22 @@ var CONQUESTAI = function (m) {
             }
         }
         Engine.PostCommand(PlayerID, { "type": "set-trading-goods", "tradingGoods": tradingGoods });
+    }
+
+    m.HQ.prototype.DifficultyResourceTrickle = function () {
+        if (this.Config.difficulty >= 4)
+        {
+            let amount = 0;
+            if (this.Config.difficulty == 4) amount = this.Config.resourceBonusTrickle["hard"]
+            else if (this.Config.difficulty == 5) amount = this.Config.resourceBonusTrickle["very_hard"]
+            else if (this.Config.difficulty == 6) amount = this.Config.resourceBonusTrickle["legendary"]
+
+            warn("add trickle " + amount);
+            Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "food", "amount": amount });
+            Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "wood", "amount": amount });
+            Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "stone", "amount": amount });
+            Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "metal", "amount": amount });
+        }
     }
 
     //  #############################################################
@@ -3980,6 +3997,7 @@ var CONQUESTAI = function (m) {
         this.territoryMap = m.createTerritoryMap(gameState);
         let result = 0;
 
+        if(gameState.ai.playedTurn == 1) this.PostInit(gameState); // Might want to do this via an event later, instead of running this in the update
         this.checkEvents(gameState, events);
 
         //if (gameState.ai.playedTurn % 4 == 0) {
@@ -4169,33 +4187,9 @@ var CONQUESTAI = function (m) {
 
         result = gameState.ai.playedTurn % (20 * this.difficultyRatio);
         switch (result) {
-            //if (this.Config.difficulty >= 4)
-            //{
-            //    let food, material, metal, rupees = 0;
-
-            //    if (this.Config.difficulty == 4) {
-            //        food = this.Config.ResourceHard.food;
-            //        material = this.Config.ResourceHard.material;
-            //        metal = this.Config.ResourceHard.metal;
-            //        rupees = this.Config.ResourceHard.rupees;
-            //    }
-            //    else if (this.Config.difficulty == 5) {
-            //        food = this.Config.ResourceVeryHard.food;
-            //        material = this.Config.ResourceVeryHard.material;
-            //        metal = this.Config.ResourceVeryHard.metal;
-            //        rupees = this.Config.ResourceVeryHard.rupees;
-            //    }
-
-            //    Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "food", "amount": food });
-            //    Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "wood", "amount": material });
-            //    Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "stone", "amount": metal });
-            //    Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "metal", "amount": rupees });
-            //}
-
-            // check the difference with total resources and ban resources that are above a certain total percentage using the ban system
-
             // barter first
             case 0:
+                this.DifficultyResourceTrickle();
                 this.BarterResources(gameState, this.GetResourceData(gameState));
                 break;
             // bartering was now updated by the resource data, run resource operations
