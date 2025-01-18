@@ -3293,7 +3293,7 @@ var CONQUESTAI = function (m) {
     m.HQ.prototype.TrainUnits = function (gameState)
     {
         let resources = this.GetResourceData(gameState);    
-        let batchTrain = 1;
+        let maxBatchTrain = 5;
 
         let chosenTrainable = null;
         let chosenTemplate = null; 
@@ -3350,7 +3350,7 @@ var CONQUESTAI = function (m) {
                 }
                 if (!unitList || !max || battalionList < max) // make sure this trainable unit doesnt exceed the max copy limit if it exists
                 {
-                    if (this.CanAfford(resources, chosenTemplate, batchTrain))
+                    if (this.CanAfford(resources, chosenTemplate))
                         break; // found affordable and usable training data, attempt to train down below
                 }
             }
@@ -3392,8 +3392,12 @@ var CONQUESTAI = function (m) {
             if (limit < (1 * this.difficultyRatio)) // the total resources need to be at least 100% * the difficulty ratio of the resources currently used in training 
                 return;
         }
-
-        chosenBuilding.trainHC(chosenTrainable["path"], batchTrain);
+        
+        for(let i = maxBatchTrain; i > 1; i--) {
+            if (!this.CanAfford(resources, chosenTemplate, i)) continue;
+            chosenBuilding.trainHC(chosenTrainable["path"], i);
+            break;
+        }
     };
 
     //  #############################################################
@@ -4141,7 +4145,7 @@ var CONQUESTAI = function (m) {
                             break;
                         }
 
-                        if (this.GetBattalionCount(this.allSoldiers) < 5) // dont bother attacking another target when own battalion size is below 5
+                        if (this.GetBattalionCount(this.allSoldiers) < 20) // dont bother attacking another target when own battalion size is below 20
                             break;
                         
                         this.attackTarget = this.UpdateSingle(this.attackTarget, this.targetedEnemyID);
