@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_hero_infantry">
   <Attack>
     <Ranged>
       <AttackName>Sword</AttackName>
@@ -38,7 +38,7 @@
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Legion Large Class70 UniqueUnit</Classes>
+    <Classes datatype="tokens">Legion Large UniqueUnit</Classes>
     <GenericName>Legatus</GenericName>
     <History>Once high ranking generals in the Legion's army, the training of Legatus vanished from the ranks of their forces after Zalunbar's takeover. A fair number of these powerful warriors can still be found hidden in retirement or isolation of ruins across the desert, waiting only for the Legion to request their services once again.</History>
     <Icon>units/darknut/dar_legatus.dds</Icon>
@@ -74,8 +74,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
+    <RunMultiplier>1.4285</RunMultiplier>
+    <WalkSpeed>10</WalkSpeed>
   </UnitMotion>
   <Upgrade>
     <Armorfix>
@@ -87,6 +87,9 @@
       <Tooltip>Repair the Legatus' broken armor.</Tooltip>
     </Armorfix>
   </Upgrade>
+  <TrainingRestrictions>
+    <Category>HeroResistence</Category>
+  </TrainingRestrictions>
   <VisualActor>
     <Actor>units/darknut/darknut_legatus_noarmor.xml</Actor>
   </VisualActor>

@@ -29,12 +29,12 @@
   </BuildingAI>
   <Capturable disable="" />
   <Cost>
-    <BuildTime>500</BuildTime>
+    <BuildTime>0</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>500</metal>
-      <stone>250</stone>
-      <wood>250</wood>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>0</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -47,7 +47,7 @@
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens">Civic AgoraMain</Classes>
     <GenericName>Agora</GenericName>
     <History>The public center of any Darknut city, the Agora was a gathering place for Citizens, Soldiers, and Politicians throughout the Darknut lands to discuss and work towards the agenda of the Legion. In addition it provided the structural foundation for many expansions as well as basic defenses, Thrall training, and storerooms for resources.</History>
     <Icon>structures/darknut/dar_agora.dds</Icon>
@@ -88,11 +88,18 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">darknut/agora_legionreserves
-
 </Technologies>
   </Researcher>
   <Trainer>
-    <Entities datatype="tokens">units/darknut/{civ}_thrallA</Entities>
+    <Entities datatype="tokens">units/darknut/{civ}_thrallA
+	  units/darknut/{civ}_molgera_b
+      units/darknut/{civ}_patra_b
+	  units/darknut/{civ}_hero_onon
+	  units/darknut/{civ}_hero_militron
+	  units/darknut/{civ}_hero_alros
+	  units/darknut/{civ}_hero_senturon
+	  units/darknut/{civ}_hero_yaraxonal
+	  units/darknut/{civ}_hero_zalunbar</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>

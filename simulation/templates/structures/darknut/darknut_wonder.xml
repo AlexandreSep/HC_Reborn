@@ -26,7 +26,7 @@
       <MinPop>150</MinPop>
     </AIBuild>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"> AgoraMain </Classes>
     <GenericName>Tower of Hera</GenericName>
     <History>One of the oldest structures in Hyrule, the Tower of Hera has long stood in the mountains of the Gerudo Desert, visible from many locations below. It has been abandoned by the Darknut people many times throughout history, only to be reconquered and repurposed. The original purpose of the tower is lost to history, though many believe it once served as an Apotheon for Darknut Kings and Queens. During their various reconquests of the ancient tower, it has also served as a prison, a lair for captured beasts and monsters, and a general temple of worship. In more modern times it serves as powerful Fortress and command center for those truely in power over the Legion.</History>
     <Icon>structures/darknut/dar_towerhera.dds</Icon>
@@ -76,6 +76,8 @@
     <Entities datatype="tokens">units/darknut/{civ}_thrallA
       units/darknut/{civ}_molgera_b
       units/darknut/{civ}_patra_b
+	  units/darknut/{civ}_hero_onon
+	  units/darknut/{civ}_hero_militron
     units/darknut/{civ}_hero_zalunbar
     units/darknut/{civ}_hero_yaraxonal
     units/darknut/{civ}_hero_senturon
