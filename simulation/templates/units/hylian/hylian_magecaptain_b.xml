@@ -50,7 +50,6 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_lana</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_magecaptin_b</SelectionGroupName>
     <Tooltip>Commander unit that can attack with magic from a distance so long as she has full health.</Tooltip>
-    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
   </Identity>
   <Position>
     <Floating>false</Floating>

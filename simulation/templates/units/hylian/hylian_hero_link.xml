@@ -8,11 +8,11 @@
           <Multiplier>2</Multiplier>
         </Bonus1>
         <Bonus2>
-          <Classes>Commander</Classes>
+          <Classes>Buffer</Classes>
           <Multiplier>2</Multiplier>
         </Bonus2>
         <Bonus3>
-          <Classes>Huge</Classes>
+          <Classes>Monster</Classes>
           <Multiplier>2</Multiplier>
         </Bonus3>
       </Bonuses>

@@ -12,7 +12,7 @@
     </Melee>
   </Attack>
   <Identity>
-    <Classes datatype="tokens">Assassin</Classes>
-    <VisibleClasses datatype="tokens">Assassin</VisibleClasses>
+    <Classes datatype="tokens">Melee Assassin</Classes>
+    <VisibleClasses datatype="tokens">Melee Assassin</VisibleClasses>
   </Identity>
 </Entity>

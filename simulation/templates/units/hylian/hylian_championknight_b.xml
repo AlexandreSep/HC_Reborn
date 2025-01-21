@@ -4,7 +4,7 @@
       <AttackName>Sword</AttackName>
       <Bonuses>
         <Bonus1>
-          <Classes>Commander</Classes>
+          <Classes>Buffer</Classes>
           <Multiplier>2</Multiplier>
         </Bonus1>
         <Bonus2>
@@ -12,7 +12,7 @@
           <Multiplier>2</Multiplier>
         </Bonus2>
         <Bonus3>
-          <Classes>Huge</Classes>
+          <Classes>Monster</Classes>
           <Multiplier>2</Multiplier>
         </Bonus3>
       </Bonuses>
@@ -21,7 +21,7 @@
         <Pierce>15</Pierce>
       </Damage>
       <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PreferredClasses datatype="tokens">Infantry Monster Hero</PreferredClasses>
       <PrepareTime>1100</PrepareTime>
       <RepeatTime>1200</RepeatTime>
     </Melee>
@@ -50,7 +50,6 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_link</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_championknight_b</SelectionGroupName>
     <Tooltip>Link's Unique Unit. Extremely powerful infantry unit that is immune to Knockback and inflicts bonus damage against large creature units and commanders.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

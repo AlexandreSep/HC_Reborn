@@ -33,7 +33,6 @@
     <Lang>hylian</Lang>
     <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
     <Tooltip>Heavily armored infantry unit. Very resistant to non-magic damage and Knockback. A powerful all-round late game unit.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

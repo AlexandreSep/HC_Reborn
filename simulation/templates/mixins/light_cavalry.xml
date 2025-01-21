@@ -11,4 +11,7 @@
 	  <PreferredClasses datatype="tokens">Light_Infantry Siege</PreferredClasses>
     </Melee>
   </Attack>
+  <Identity>
+    <Classes datatype="tokens">Melee</Classes>
+  </Identity>  
 </Entity>

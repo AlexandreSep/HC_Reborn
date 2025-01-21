@@ -33,7 +33,6 @@
     <Lang>hylian</Lang>
     <SelectionGroupName>units/hylian/hylian_soldier_macemen</SelectionGroupName>
     <Tooltip>Light unit armed with a mace and shield. Deals Crushing damage.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_soldier_maceman</Entity>

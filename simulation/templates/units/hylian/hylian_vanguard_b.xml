@@ -44,7 +44,6 @@
     <SelectionGroupName>units/hylian/hylian_vanguard_b</SelectionGroupName>
     <SpecificName>Triforce Vanguard</SpecificName>
     <Tooltip>Rauru's Unique Unit. Slow moving infantry unit armed with a Mace. Has very high resistance to all forms of Magic damage, and is immune to knockback and gains bonus armor when in friendly territory.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

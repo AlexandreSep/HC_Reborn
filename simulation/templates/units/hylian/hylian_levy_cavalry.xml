@@ -34,7 +34,6 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_levy_cavalry</SelectionGroupName>
     <Tooltip>Lightly armored cavalry unit armed with a mace.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_soldier_cavalry</Entity>

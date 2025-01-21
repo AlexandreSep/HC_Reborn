@@ -12,6 +12,8 @@
     </Melee>
   </Attack>
   <Identity>
+    <Classes datatype="tokens">Melee</Classes>
     <VisibleClasses datatype="tokens">AntiCav</VisibleClasses>
   </Identity>  
+
 </Entity>

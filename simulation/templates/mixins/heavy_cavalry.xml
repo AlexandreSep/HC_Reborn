@@ -11,4 +11,7 @@
 	  <PreferredClasses datatype="tokens">Light_Infantry Beast</PreferredClasses>
     </Melee>
   </Attack>
+  <Identity>
+    <Classes datatype="tokens">Melee</Classes>
+  </Identity>  
 </Entity>

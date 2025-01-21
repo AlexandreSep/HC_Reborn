@@ -13,4 +13,7 @@
 	  <PreferredClasses datatype="tokens">Light_Infantry Flying Beast</PreferredClasses>
     </Ranged>
   </Attack>
+  <Identity>
+    <Classes datatype="tokens">Ranged</Classes>
+  </Identity>  
 </Entity>
