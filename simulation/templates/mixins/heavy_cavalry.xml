@@ -4,11 +4,11 @@
     <Melee>
       <Bonuses>
         <BonusCavMelee>
-          <Classes>Light_Infantry Beast</Classes>
+          <Classes>Light_Infantry Siege Beast</Classes>
           <Multiplier>2</Multiplier>
         </BonusCavMelee>
       </Bonuses>
-	  <PreferredClasses datatype="tokens">Light_Infantry Beast</PreferredClasses>
+	  <PreferredClasses datatype="tokens">Light_Infantry Siege Beast</PreferredClasses>
     </Melee>
   </Attack>
   <Identity>
