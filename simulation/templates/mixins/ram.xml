@@ -9,6 +9,7 @@
         </Bonus1>
       </Bonuses>
 	  <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+	  <RestrictedClasses datatype="tokens">Cavalry Infantry Beast Monster</RestrictedClasses> 
     </Melee>
   </Attack>
    <Identity>
