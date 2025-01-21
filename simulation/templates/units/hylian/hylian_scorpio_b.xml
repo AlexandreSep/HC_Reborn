@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_siege">
   <Attack>
     <Ranged>
       <AttackName>Bolts</AttackName>
@@ -44,13 +44,13 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Large HylianScorpio</Classes>
+    <Classes datatype="tokens">Large HylianScorpio Scorpion</Classes>
     <GenericName>Scorpio</GenericName>
     <History>These ingenious contraptions can be loaded with a magazine of large crossbow bolts and then fired in rapid succession at enemy formations. Their bolts are launched with such force that they can impale almost a dozen men at a time and pierce all but the strongest of gates.</History>
     <Icon>units/hylian/hyl_scorpio.dds</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Large and slow moving ranged unit that deals Piercing linear Splash Damage. Takes a few moments to unpack and repack.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+    <VisibleClasses datatype="tokens">Missile Scorpion</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

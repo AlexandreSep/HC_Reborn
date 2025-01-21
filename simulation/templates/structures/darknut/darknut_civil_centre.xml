@@ -47,7 +47,7 @@
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Civic MainAgora</Classes>
+    <Classes datatype="tokens">Civic AgoraMain</Classes>
     <GenericName>Agora</GenericName>
     <History>The public center of any Darknut city, the Agora was a gathering place for Citizens, Soldiers, and Politicians throughout the Darknut lands to discuss and work towards the agenda of the Legion. In addition it provided the structural foundation for many expansions as well as basic defenses, Thrall training, and storerooms for resources.</History>
     <Icon>structures/darknut/dar_agora.dds</Icon>
@@ -225,6 +225,15 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
+    <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>0.0</food>
+      <metal>0.0</metal>
+      <stone>0.0</stone>
+      <wood>0.0</wood>
+    </Rates>
+  </ResourceTrickle>
   <Sound>
     <SoundGroups>
       <alert0>interface/alarm/alarm_alert_0.xml</alert0>
@@ -269,6 +278,7 @@
   </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/darknut/{civ}_thrallA
+	  units/darknut/{civ}_molgera_b
       units/darknut/{civ}_patra_b
 	  units/darknut/{civ}_hero_onon
 	  units/darknut/{civ}_hero_militron

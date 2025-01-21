@@ -713,7 +713,7 @@ Attack.prototype.PerformAttack = function(type, target)
 		"attackerOwner": attackerOwner,
 		"target": target,
 		//HC-Code
-        "Knockback": this.GetKnockback(type, isSplash),
+        "Knockback": this.GetKnockback(type, false),
         "Stun": this.GetStun(type, isSplash)
 		//HC-End
 	};

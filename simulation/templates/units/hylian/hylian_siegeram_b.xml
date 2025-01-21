@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siege">
   <Attack>
     <Melee>
       <AttackName>Ram</AttackName>
@@ -36,13 +36,13 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">-Organic Construct Class40</Classes>
+    <Classes datatype="tokens">-Organic Construct Class40 Ram</Classes>
     <GenericName>Siege Ram</GenericName>
     <History>When waiting out their enemies yielded no results, Hylians would often turn to their battering rams to break down walls and storm their targets. Their Siege Rams were capped and could protect its crew from projectiles.</History>
     <Icon>units/hylian/hyl_siegeram.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Close combar Siege unit that can batter down enemy structures.</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+    <VisibleClasses datatype="tokens">Ram</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

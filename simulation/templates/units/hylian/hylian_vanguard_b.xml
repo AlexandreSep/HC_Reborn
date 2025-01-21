@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_heavy_infantry|heavy_infantry">
   <Attack>
     <Melee>
       <AttackName>Holy Mace</AttackName>

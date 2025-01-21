@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Buffer Hero</Classes>
+          <Multiplier>3</Multiplier>
+        </Bonus1>
+      </Bonuses>
+	  <PreferredClasses datatype="tokens">Buffer Hero</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Classes datatype="tokens">Assassin</Classes>
+    <VisibleClasses datatype="tokens">Assassin</VisibleClasses>
+  </Identity>
+</Entity>

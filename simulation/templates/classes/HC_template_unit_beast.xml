@@ -1,0 +1,7 @@
+<Entity parent="HC_template_unit_creature">
+  <Identity>
+    <Classes datatype="tokens">Beast</Classes>
+    <GenericName>Beast</GenericName>
+    <VisibleClasses datatype="tokens">Beast</VisibleClasses>
+  </Identity>
+</Entity>

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_heavy_infantry|buffer|heavy_infantry">
   <Attack>
     <Melee>
       <AttackName>Sword</AttackName>
@@ -41,7 +41,6 @@
     <Lang>hylian</Lang>
     <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
     <Tooltip>Heavily armored Infantry Commander unit. Leads other Hylians into battle.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_magecaptain_b</Entity>

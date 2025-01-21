@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Identity>
+    <Classes datatype="tokens">Shield</Classes>
+    <VisibleClasses datatype="tokens">Shield</VisibleClasses>
+  </Identity>
+</Entity>

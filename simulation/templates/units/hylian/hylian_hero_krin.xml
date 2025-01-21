@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="HC_template_hero_infantry|hero_melee">
   <Attack>
     <Melee>
       <AttackName>Sword</AttackName>
@@ -31,7 +31,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">HeroKrin Hero5 Medium Hero</Classes>
+    <Classes datatype="tokens">HeroKrin Hero5 Medium Hero Infantry Light_Infantry</Classes>
     <GenericName>Royal Captain</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Hailing from the house of Arcad, Captain Krin has long served Rauru as bodyguard on his pilgrimages and later Princess Zelda after her ascent to the throne. In truth he followed Rauru to converse with his Deacon, Seres.</History>
@@ -40,7 +40,7 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_krin</RequiredTechnology>
     <SpecificName>Captain Krin</SpecificName>
     <Tooltip>Melee Hero that participates with fellow soldiers and boosts their performance.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Hero Light Infantry</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

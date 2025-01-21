@@ -56,7 +56,7 @@
     <Static depth="23.0" width="23.0" />
   </Obstruction>
   <Population>
-    <Bonus>5</Bonus>
+    <Bonus>10</Bonus>
   </Population>
   <Resistance>
     <Entity>

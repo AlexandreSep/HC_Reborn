@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="HC_template_hero_infantry|hero_melee|shield|light_infantry">
   <Attack>
     <Melee>
       <AttackName>Master Sword</AttackName>
@@ -45,7 +45,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">HeroLink Hero3 HylianShield Knight Medium Hero</Classes>
+    <Classes datatype="tokens">HeroLink Hero3 HylianShield Knight Medium Light_Infantry Infantry Light</Classes>
     <GenericName>Heir of King Gustaf</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The last surviving member of the First King of Hyrule's bloodline, Link was raised as a warrior amongst the Order of the Wizzrobe. With knowledge of both martial skill and arcane powers, he trains and leads Hyrule's Knights into battle.</History>
@@ -54,7 +54,7 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_link</RequiredTechnology>
     <SpecificName>Link</SpecificName>
     <Tooltip>Swift and powerful Melee Hero that attacks with his sword and defends with his shield. Effective against Heroes, Commanders, Monsters in particular.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Light Infantry Hero Shield</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry">
   <Attack>
     <Melee>
       <AttackName>Spear</AttackName>
@@ -7,7 +7,6 @@
         <TrueDamage>12</TrueDamage>
       </Damage>
       <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
       <PrepareTime>1400</PrepareTime>
       <RepeatTime>1600</RepeatTime>
     </Melee>

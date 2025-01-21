@@ -1,9 +1,9 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siege">
   <Attack>
     <Ranged>
       <AttackName>Hurled Stone</AttackName>
       <Damage>
-        <Crush>200.0</Crush>
+        <Crush>300.0</Crush>
       </Damage>
       <MaxRange>130.0</MaxRange>
       <MinRange>60.0</MinRange>
@@ -49,12 +49,12 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Large Class40 HylianTrebuchet</Classes>
+    <Classes datatype="tokens">Large Class40 HylianTrebuchet Catapult</Classes>
     <GenericName>Trebuchet</GenericName>
     <History>These towering siege weapons are deployed by the Kingdom of Hyrule during invasions of enemy cities. They can hurl giant flaming boulders with tremendous force, and knock down the most sturdy of fortifications. Any enemy soldiers unlucky enough to be near the impact of these projectiles will usually crushed or burned in the resulting shockwave.</History>
     <Icon>units/hylian/hyl_trebuchet.dds</Icon>
     <Tooltip>Powerful and long ranged siege unit. Must take several moments to pack and unpack.</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+    <VisibleClasses datatype="tokens">Catapult</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

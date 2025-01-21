@@ -1,8 +1,9 @@
 var CONQUESTAI = function (m) {
 
     m.Config = function (difficulty, behavior) {
-        // 0 is sandbox, 1 is very easy, 2 is easy, 3 is medium, 4 is hard and 5 is very hard.
+        // 0 is sandbox, 1 is very easy, 2 is easy, 3 is medium, 4 is hard, 5 is very hard, 6 is legendary.
         this.difficulty = difficulty !== undefined ? difficulty : 3;
+        this.resourceBonusTrickle =  { "hard": 50, "very_hard": 100, "legendary": 250 }
 
         // for instance "balanced", "aggressive" or "defensive"
         this.behavior = behavior || "random";
@@ -556,8 +557,8 @@ var CONQUESTAI = function (m) {
 
             // The min battalion pop required to phase up (first element = town phase, second element = city phase)
             "PhaseUpMinPop": {
-                "hylian": [25, 40],
-                "gerudo": [25, 40],
+                "hylian": [40, 80],
+                "gerudo": [40, 80],
                 "goron": [50, 80],
                 "zora": [25, 40],
                 "kokiri": [50, 80],
@@ -592,8 +593,8 @@ var CONQUESTAI = function (m) {
 
             // first value: the percentage of citizens the AI wants in comparison to the limit pop (0.2 = 20%), second value: min number of battalions wanted, third value: max number of battalions considered
             "CitizenPercentage": {
-                "hylian": [0.35, 10, 16],
-                "gerudo": [0.35, 10, 16],
+                "hylian": [0.35, 15, 35],
+                "gerudo": [0.35, 15, 35],
                 "goron": [0.23],
                 "zora": [0.35, 10, 16],
                 "kokiri": [0.23],
@@ -610,8 +611,8 @@ var CONQUESTAI = function (m) {
 
             // first value: the min battalion pop required for the AI to consider training their first selected hero, second value: min pop second hero, third value: min pop third hero
             "HeroMinPop": {
-                "hylian": [30, 45, 60],
-                "gerudo": [30, 45, 60],
+                "hylian": [50, 80, 100],
+                "gerudo": [50, 80, 100],
                 "goron": [75],
                 "zora": [30, 45, 60],
                 "kokiri": [75],

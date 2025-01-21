@@ -20,7 +20,7 @@
   </Attack>
   <Builder>
     <Entities datatype="tokens">
-    structures/lizalfos/lizalfos_civil_center	
+    structures/lizalfos/lizalfos_civil_centre	
     structures/lizalfos/lizalfos_house
     structures/lizalfos/lizalfos_field
     structures/lizalfos/lizalfos_storehouse

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="HC_template_hero_infantry|hero_melee|heavy_infantry">
   <Attack>
     <Melee>
       <AttackName>Holy Mace</AttackName>
@@ -38,7 +38,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">HeroRauru Hero2 Medium LightElement</Classes>
+    <Classes datatype="tokens">HeroRauru Hero2 Medium LightElement Heavy_Infantry Heavy Infantry</Classes>
     <GenericName>Sage of Light</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The immortal Sage of Light and architect of the Temple of Time, Rauru is centuries old and has long defended the Kingdom of Hyrule. An adviser to Princess Zelda, he is entrusted with detecting and forewarning of supernatural threats against the Kingdom.</History>
@@ -47,7 +47,7 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_rauru</RequiredTechnology>
     <SpecificName>Rauru</SpecificName>
     <Tooltip>Durable and Defensive Melee Hero armed with a helm crushing Mace. Resistant to all forms of Magic Damage.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Hero Heavy Infantry</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

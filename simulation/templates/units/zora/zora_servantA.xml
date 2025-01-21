@@ -20,7 +20,7 @@
   </Attack>
   <Builder>
     <Entities datatype="tokens">
-    structures/zora/zora_civil_center	
+    structures/zora/zora_civil_centre	
     structures/zora/zora_aqueset
     structures/zora/zora_house
     structures/zora/zora_field

@@ -70,7 +70,6 @@
     <CanPatrol>false</CanPatrol>
   </UnitAI>
   <UnitMotion>
-    <PassabilityClass>large</PassabilityClass>
     <RunMultiplier>1.2307</RunMultiplier>
     <WalkSpeed>7</WalkSpeed>
   </UnitMotion>

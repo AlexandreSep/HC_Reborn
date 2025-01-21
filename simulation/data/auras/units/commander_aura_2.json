@@ -1,0 +1,20 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.10 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.10 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.10 },
+		{ "value": "Attack/Melee/Damage/TrueDamage", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.10 },
+		{ "value": "Attack/Ranged/Damage/TrueDamage", "multiply": 1.10 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 1.1 }
+	],
+	"auraName": "Commander Aura",
+	"auraDescription": "This unit is under the guidance of a Commander; they perform better in all respects. (+10% to all Attack Damage and Movement Speed)",
+	"overlayIcon": "art/textures/ui/session/auras/commander_aura_1.dds"
+}

@@ -13,8 +13,6 @@ Resistance.prototype.InitHyrule = function()
 
 Resistance.prototype.PostInit = function ()
 {
-    let cmpIdentity = Engine.QueryInterface(this.entity, IID_Identity);
-    if(cmpIdentity != undefined && cmpIdentity.HasClass("Civilian")) this.SetInvulnerability(true);
 }
 
 /**

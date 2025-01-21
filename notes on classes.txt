@@ -1,0 +1,40 @@
+Light_Cavalry
+Heavy_Cavalry
+Light_Infantry
+Heavy_Infantry
+Light_Archer
+Heavy_Archer
+
+(Cavalry, Infantry, Archer, Light, Heavy)
+
+Mage
+Civilian
+Siege
+
+//Spearman//
+
+//Assassin//
+Buffer
+Hero
+Monster
+Beast
+
+Flying
+Civilian
+
+
+====
+
+
+Light_Cavalry x2 => Light_Infantry Siege
+Heavy_Infantry x2 => Light_Infantry, Beast
+Spearman x3 => Cavalry 
+Siege x2 => Structures(?) Monster
+Assassin x3 => Buffer Hero
+Hero x2 => Monster
+Light Archer x1.2 => Light_Infantry, Beast, Flying
+
+Heavy_Archer x3 => Heavy_Infantry, Heavy_Cavalry, Light_Archer, Flying
+
+Light_Infantry
+

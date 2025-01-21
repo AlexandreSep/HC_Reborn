@@ -2,15 +2,16 @@
 	"genericName": "Legion Reserves",
 	"description": "The Darknut Legion had large caches of supplies built up and stored at their cities for times of drought and need. When such times arose, they would summon their supplies for use in their war efforts.",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
-	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "darknut"}]},
+	"requirements": {"all": [{"tech": "civ_choices/darknut/choosehero_senturon"},{"tech": "phase_town"}, {"civ": "darknut"}]},
 	"requirementsTooltip": "Requires Town Phase.",
 	"icon": "darknut/agora_legionreserves.dds",
 	"researchTime": 40,
-	"tooltip": "The Darknut Legion had large caches of supplies built up and stored at their cities for times of drought and need. When such times arose, they would summon their supplies for use in their war efforts. (When no sources of a particular resource are within your territory, Agora generates a trickle of that resource)",
+	"tooltip": "The Darknut Legion had large caches of supplies built up and stored at their cities for times of drought and need. When such times arose, they would summon their supplies for use in their war efforts. (Agora generates a trickle of that resource)",
 	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 0.5},
 					  {"value": "ResourceTrickle/Rates/wood", "add": 0.5},
 					  {"value": "ResourceTrickle/Rates/stone", "add": 0.5},
 					  {"value": "ResourceTrickle/Rates/metal", "add": 0.5}],
 	"affects": ["AgoraMain"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

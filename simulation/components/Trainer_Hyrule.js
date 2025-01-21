@@ -29,7 +29,6 @@ Trainer.prototype.Item.prototype.InitiateHyruleSpawn = function ()
     // could use templateManager, but this also works fine
     this.entities.push(Engine.AddEntity(this.templateName));
     let cmpBattalion = Engine.QueryInterface(this.entities[0], IID_Battalion);
-    this.count = 1; // set to 1 to nullify batch count
     this.count *= cmpBattalion.GetBattalionSize();
 
     for (let i = 0; i < this.count - 1; ++i)
