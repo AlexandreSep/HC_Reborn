@@ -703,9 +703,9 @@ var CONQUESTAI = function (m) {
                     continue;
             }
 
-            //ban gathering resource types that exceed 32% of the total resources and are above 1000 resources
+            //ban gathering resource types that exceed 32% of the total resources
             let percentage = (resourceData[resourceType] / resourceData.total) * 100;
-            if (percentage >= 32 && resourceData[resourceType] > 1000) {
+            if (percentage >= 32) {
                 banData[resourceType] = true;
                 forceResetTypes.push(resourceType); // resource status has been set to banned, force reset gatherers with this type later
             }
@@ -1084,11 +1084,7 @@ var CONQUESTAI = function (m) {
             if (currentPop < this.configData["PopPerExpansion"][0] * this.allCivilCentres.length)
                 return false;
         }
-        let path = null;
-        if (this.configData["civilCentreTemplates"].length > 0)
-            path = this.configData["civilCentreTemplates"][0];
-        else
-            path = gameState.applyCiv("structures/{civ}/{civ}_civil_centre");
+        const path = gameState.applyCiv("structures/{civ}/{civ}_civil_centre");
 
         let template = gameState.getTemplate(path);
         let resources = this.GetResourceData(gameState);
@@ -1668,6 +1664,21 @@ var CONQUESTAI = function (m) {
             }
         }
         Engine.PostCommand(PlayerID, { "type": "set-trading-goods", "tradingGoods": tradingGoods });
+    }
+
+    m.HQ.prototype.DifficultyResourceTrickle = function () {
+        if (this.Config.difficulty >= 4)
+        {
+            let amount = 0;
+            if (this.Config.difficulty == 4) amount = this.Config.resourceBonusTrickle["hard"]
+            else if (this.Config.difficulty == 5) amount = this.Config.resourceBonusTrickle["very_hard"]
+            else if (this.Config.difficulty == 6) amount = this.Config.resourceBonusTrickle["legendary"]
+
+            Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "food", "amount": amount });
+            Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "wood", "amount": amount });
+            Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "stone", "amount": amount });
+            Engine.PostCommand(PlayerID, { "type": "AddResource", "resourceType": "metal", "amount": amount });
+        }
     }
 
     //  #############################################################
@@ -3998,7 +4009,7 @@ var CONQUESTAI = function (m) {
                 this.ConstructFromStartStrategy(gameState, startData);
             else if (!path) // if we have a building queued, dont attempt to build anything else until this one has been attempted
             {
-                result = gameState.ai.playedTurn % (6 * this.difficultyRatio);
+                result = gameState.ai.playedTurn % (7 * this.difficultyRatio);
                 switch (result) // divide the workload using the ai turn result 
                 {
                     case 0:
@@ -4022,13 +4033,15 @@ var CONQUESTAI = function (m) {
                     case 5:
                         this.ConstructTower(gameState);
                         break;
+                    case 6:
+                        this.ConstructCivilCenter(gameState);
                     default:
                         break;
                 }
             }
             else // queued building present
             {
-                if (result < 5) // only run if the result is lower than the supposed max result (lower difficulty should ignore function calls for numerous turns)
+                if (result < 7) // only run if the result is lower than the supposed max result (lower difficulty should ignore function calls for numerous turns)
                 {
                     // if the queued building could not be constructed, try to build either a market, house or field
                     if(this.ConstructQueuedBuilding(gameState, path, this.queuedBuilding["template"]) == "NaN")
@@ -4042,23 +4055,21 @@ var CONQUESTAI = function (m) {
         }
 
         // unit training
-        result = gameState.ai.playedTurn % (4 * this.difficultyRatio);
+        result = gameState.ai.playedTurn % (3 * this.difficultyRatio);
         switch (result)
         {
             case 0:
                 this.TrainCitizens(gameState);
+                this.TrainTraders(gameState);
                 break;
             case 1:
-                this.TrainTraders(gameState);
+                this.TrainUnits(gameState);
                 break;
             case 2:
                 let resources = this.GetResourceData(gameState);
                 if (this.CanPhaseUp(gameState) == false) // we dont want to train any soldier/hero esque units when we should phase up first
                     if (this.TrainHero(gameState, resources) == false) // if the AI trained a hero this turn, dont try to train a titan as well
                         this.TrainTitan(resources);
-                break;
-            case 3:
-                    this.TrainUnits(gameState); 
                 break;
             default:
                 break;

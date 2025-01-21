@@ -383,6 +383,10 @@ Health.prototype.HandleDeath = function(attacker = null)
 		// Limitter and death blow animation
 		let corpse = this.CreateCorpse(attacker);
 		let cmpPlayer = QueryOwnerInterface(corpse);
+
+		let cmpIdentity = Engine.QueryInterface(corpse, IID_Identity);
+		if(cmpIdentity.HasClass("LiveStock")) break;
+		
 		cmpPlayer.corpses.push(corpse); // add this corpse to the list
 		cmpPlayer.CheckDestroyCorpse(); // attempt to destroy the oldest corpse
 		break;

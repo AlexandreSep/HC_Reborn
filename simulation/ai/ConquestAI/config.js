@@ -538,8 +538,8 @@ var CONQUESTAI = function (m) {
 
             // The min battalion pop required per extra expansion for the AI to consider building a new civil center
             "PopPerExpansion": {
-                "hylian": [160],
-                "gerudo": [160],
+                "hylian": [60],
+                "gerudo": [60],
                 "goron": [150],
                 "zora": [100],
                 "kokiri": [100],
