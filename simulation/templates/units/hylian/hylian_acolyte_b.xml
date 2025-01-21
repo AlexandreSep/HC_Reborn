@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_light_infantry|mage">
+<Entity parent="classes/HC_template_unit_light_infantry|mage|shield">
   <Attack>
     <Ranged>
       <AttackName>Magic Sword</AttackName>
