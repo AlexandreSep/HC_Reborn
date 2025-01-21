@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Civilian</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+	  <PreferredClasses datatype="tokens">Civilian</PreferredClasses>
+    </Melee>
+  </Attack>
+</Entity>

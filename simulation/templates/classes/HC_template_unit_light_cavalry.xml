@@ -1,0 +1,7 @@
+<Entity parent="HC_template_unit_cavalry">
+  <Identity>
+    <Classes datatype="tokens">Light Light_Cavalry</Classes>
+    <GenericName>Light Cavalry</GenericName>
+    <VisibleClasses datatype="tokens">Light Cavalry</VisibleClasses>
+  </Identity>
+</Entity>

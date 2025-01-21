@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Attack>
+    <Ranged>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Light_Infantry Flying Beast</Classes>
+          <Multiplier>1.2</Multiplier>
+		  <Classes>Shield</Classes>
+          <Multiplier>0.5</Multiplier>
+        </Bonus1>
+      </Bonuses>
+	  <PreferredClasses datatype="tokens">Light_Infantry Flying Beast</PreferredClasses>
+    </Ranged>
+  </Attack>
+</Entity>

@@ -2,12 +2,6 @@
   <Attack>
     <Melee>
       <AttackName>Spear</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
       <Damage>
         <Pierce>8.0</Pierce>
         <TrueDamage>8.0</TrueDamage>

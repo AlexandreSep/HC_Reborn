@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="HC_template_hero_infantry|mage|hero_ranged">
   <Attack>
     <Ranged>
       <AttackName>Cane of Byrna</AttackName>
@@ -59,7 +59,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">HeroLana Hero4 Medium</Classes>
+    <Classes datatype="tokens">HeroLana Hero4 Medium Infantry Light_Infantry</Classes>
     <GenericName>The White Mage</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A young woman who's parentage can be traced back to Calatia, Lana was trained as a Deacon under Rauru. Feeling unfullfilled with her humble clergy role, Lana studied more esoteric magics in secret with the help of the shady Wizzrobes in Byrna. Though her loyaties to the crown and Hyrule are not in question, many including Rauru feel her immense powers are more than enough for her to control.</History>
@@ -68,7 +68,7 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_lana</RequiredTechnology>
     <SpecificName>Lana</SpecificName>
     <Tooltip>Melee Mage Hero that can push enemies with her cane and summon protective magics.</Tooltip>
-    <VisibleClasses datatype="tokens">Mage Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Mage Light Infantry Hero</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

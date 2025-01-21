@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_cavalry">
+<Entity parent="HC_template_hero_cavalry|heavy_cavalry|hero_melee">
   <Attack>
     <Melee>
       <AttackName>Lance</AttackName>
@@ -35,7 +35,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">HeroKazakk Hero4 HorseArmor Knight Large Hero</Classes>
+    <Classes datatype="tokens">HeroKazakk Hero4 HorseArmor Knight Large Hero Cavalry Heavy_Cavalry</Classes>
     <GenericName>King of Hyrule</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Once one of Hyrule's greatest generals, Kazakk married into royalty and fathered the fifth Princess Zelda. In his advancing age, he has prepared to hand over his Kingdom to his daughter, but he still has quite a bit of fight left in him.</History>
@@ -44,7 +44,7 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_kazakk</RequiredTechnology>
     <SpecificName>Daphnes Kazakk Nohansen</SpecificName>
     <Tooltip>Heavily armored Cavalry Melee Hero armed with a dismounting Lance.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Hero Heavy Cavalry</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

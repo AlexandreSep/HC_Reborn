@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="HC_template_hero_infantry|hero_melee|light_infantry">
   <Attack>
     <Melee>
       <AttackName>Royal Estoc</AttackName>
@@ -35,7 +35,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">HeroZeldaV Hero1 Medium</Classes>
+    <Classes datatype="tokens">HeroZeldaV Hero1 Medium Light_Infantry Infantry Light</Classes>
     <GenericName>Princess of Hyrule</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The crown Princess of Hyrule and the fifth woman to bear the name Zelda. Gifted with the power of Prophecy, the Princess can foresee events both small and large in her dreams.</History>
@@ -43,8 +43,8 @@
     <Lang>hylian</Lang>
     <RequiredTechnology>civ_choices/hylian/choosehero_zeldaV</RequiredTechnology>
     <SpecificName>Tetralyna Zelda V</SpecificName>
-    <Tooltip>A strong Missile Hero armed with a Bow and Light Arrows. She can defend herself with two Rapiers if forced into close combat.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+    <Tooltip>A strong Missile Hero armed with two rapiers</Tooltip>
+    <VisibleClasses datatype="tokens">Hero Light Infantry </VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

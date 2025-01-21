@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_heavy_cavalry|heavy_cavalry">
   <Attack>
     <Melee>
       <AttackName>Lance</AttackName>

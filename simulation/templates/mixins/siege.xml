@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Structure Monster</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+	  <PreferredClasses datatype="tokens">Structure Monster</PreferredClasses>
+    </Melee>
+  </Attack>
+</Entity>

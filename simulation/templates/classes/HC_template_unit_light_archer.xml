@@ -1,0 +1,7 @@
+<Entity parent="classes/HC_template_unit_light_infantry">
+  <Identity>
+    <Classes datatype="tokens">Light_Archer</Classes>
+    <GenericName>Light Archer</GenericName>
+    <VisibleClasses datatype="tokens">Light Archer</VisibleClasses>
+  </Identity>
+</Entity>

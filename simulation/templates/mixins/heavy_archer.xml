@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Attack>
+    <Ranged>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Heavy_Infantry Heavy_Cavalry Light_Archer Flying</Classes>
+          <Multiplier>3</Multiplier>
+        </Bonus1>
+      </Bonuses>
+	  <PreferredClasses datatype="tokens">Heavy_Infantry Heavy_Cavalry Light_Archer Flying</PreferredClasses>
+    </Ranged>
+  </Attack>
+</Entity>

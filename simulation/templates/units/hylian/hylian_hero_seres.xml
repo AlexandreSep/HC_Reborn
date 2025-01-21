@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="HC_template_hero_infantry|mage">
   <Cost>
     <BuildTime>40</BuildTime>
     <Resources>
@@ -24,7 +24,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">HeroSeres Hero6 Medium</Classes>
+    <Classes datatype="tokens">HeroSeres Hero6 Medium Light_Infantry Infantry Light</Classes>
     <GenericName>Deacon</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A Deacon who grew up north of Hyrule Castle Town, Seres has long served Rauru and has been his favorite pupil. Seres was trained in healing, though she has devoted much of her time to collecting tomes and historical documents for archiving.</History>
@@ -33,7 +33,7 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_seres</RequiredTechnology>
     <SpecificName>Seres</SpecificName>
     <Tooltip>Support Hero that can heal the injuries of fellow allies.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Hero Light Infantry Mage</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>
