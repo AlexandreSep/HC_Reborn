@@ -2,7 +2,7 @@
   <Attack>
     <Ranged>
       <Damage>
-        <Light>225.0</Light>
+        <Magic>225</Magic>
       </Damage>
       <MaxRange>150.0</MaxRange>
       <MinRange>45.0</MinRange>

@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Powder Keg</AttackName>
       <Damage>
-        <Fire>130.0</Fire>
+        <Magic>130</Magic>
       </Damage>
       <MaxRange>100.0</MaxRange>
       <MinRange>35.0</MinRange>

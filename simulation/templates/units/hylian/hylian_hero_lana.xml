@@ -4,7 +4,7 @@
       <AttackName>Cane of Byrna</AttackName>
       <Damage>
         <Crush>15</Crush>
-        <Light>7.0</Light>
+        <Magic>7</Magic>
       </Damage>
       <MaxRange>10</MaxRange>
       <MinRange>0.0</MinRange>
@@ -74,14 +74,9 @@
     <Entity>
       <Damage>
         <Crush>40.0</Crush>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
         <Hack>20.0</Hack>
-        <Light>10.0</Light>
         <Pierce>20.0</Pierce>
-        <Shadow>10.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
   </Resistance>

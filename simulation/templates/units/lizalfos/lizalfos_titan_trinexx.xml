@@ -13,8 +13,7 @@
         </Bonus2>
       </Bonuses>
       <Damage>
-        <Fire>72.0</Fire>
-        <Water>72.0</Water>
+        <Magic>72</Magic>
       </Damage>
       <Knockback>
         <Horizontal>10</Horizontal>
@@ -90,14 +89,9 @@
     <Entity>
       <Damage>
         <Crush>60.0</Crush>
-        <Fire>20.0</Fire>
-        <Forest>20.0</Forest>
         <Hack>25.0</Hack>
-        <Light>20.0</Light>
         <Pierce>40.0</Pierce>
-        <Shadow>20.0</Shadow>
-        <Spirit>20.0</Spirit>
-        <Water>20.0</Water>
+        <Magic>20</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

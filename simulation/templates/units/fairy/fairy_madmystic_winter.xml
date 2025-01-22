@@ -4,7 +4,7 @@
       <AttackName>Fairy Magic</AttackName>
       <Damage>
         <Crush>15.0</Crush>
-        <Spirit>40.0</Spirit>
+        <Magic>40</Magic>
       </Damage>
       <MaxRange>30.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>

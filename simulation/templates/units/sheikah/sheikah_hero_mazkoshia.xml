@@ -4,7 +4,7 @@
       <AttackName>Lightning Sword</AttackName>
       <Damage>
         <Crush>30</Crush>
-        <Light>8.0</Light>
+        <Magic>8</Magic>
       </Damage>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
@@ -58,14 +58,9 @@
     <Entity>
       <Damage>
         <Crush>40.0</Crush>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
         <Hack>20.0</Hack>
-        <Light>10.0</Light>
         <Pierce>20.0</Pierce>
-        <Shadow>10.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
   </Resistance>

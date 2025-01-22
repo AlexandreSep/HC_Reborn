@@ -49,9 +49,9 @@
     <Entity>
       <Damage>
         <Crush>3.0</Crush>
-        <Forest>1.0</Forest>
         <Hack>5.0</Hack>
         <Pierce>5.0</Pierce>
+        <Magic>1</Magic>
       </Damage>
     </Entity>
   </Resistance>

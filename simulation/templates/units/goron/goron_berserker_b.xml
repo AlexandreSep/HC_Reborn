@@ -10,7 +10,7 @@
       </Bonuses>
       <Damage>
         <Crush>30.0</Crush>
-        <Fire>10.0</Fire>
+        <Magic>10</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>

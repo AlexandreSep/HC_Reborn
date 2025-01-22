@@ -10,7 +10,7 @@
       </Bonuses>
       <Damage>
         <Crush>7</Crush>
-        <Water>15.0</Water>
+        <Magic>15</Magic>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>

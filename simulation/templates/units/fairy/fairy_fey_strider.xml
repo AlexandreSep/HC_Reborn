@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Fairy Magic</AttackName>
       <Damage>
-        <Shadow>75.0</Shadow>
+        <Magic>75</Magic>
       </Damage>
       <MaxRange>100.0</MaxRange>
       <MinRange>35.0</MinRange>

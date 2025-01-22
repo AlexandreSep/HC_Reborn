@@ -3,7 +3,7 @@
     <Melee>
       <AttackName>Lantern</AttackName>
       <Damage>
-        <Fire>35.0</Fire>
+        <Magic>35</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>

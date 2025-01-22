@@ -10,8 +10,8 @@
       </Bonuses>
       <Damage>
         <Crush>30.0</Crush>
-        <Light>15.0</Light>
         <TrueDamage>40</TrueDamage>
+        <Magic>15</Magic>
       </Damage>
       <MaxRange>6.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -53,14 +53,9 @@
     <Entity>
       <Damage>
         <Crush>50.0</Crush>
-        <Fire>50.0</Fire>
-        <Forest>50.0</Forest>
         <Hack>30.0</Hack>
-        <Light>50.0</Light>
         <Pierce>30.0</Pierce>
-        <Shadow>50.0</Shadow>
-        <Spirit>50.0</Spirit>
-        <Water>50.0</Water>
+        <Magic>50</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

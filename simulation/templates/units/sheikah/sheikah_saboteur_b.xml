@@ -3,8 +3,8 @@
     <Ranged>
       <AttackName>Bombs</AttackName>
       <Damage>
-        <Fire>25.0</Fire>
         <Pierce>25.0</Pierce>
+        <Magic>25</Magic>
       </Damage>
       <MaxRange>50.0</MaxRange>
       <MinRange>25.0</MinRange>

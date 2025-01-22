@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Poison Breath</AttackName>
       <Damage>
-        <Forest>20.0</Forest>
+        <Magic>20</Magic>
       </Damage>
       <MaxRange>100</MaxRange>
       <MinRange>5.0</MinRange>

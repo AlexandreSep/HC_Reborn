@@ -4,7 +4,7 @@
       <AttackName>Stormbolter</AttackName>
       <Damage>
         <Crush>12</Crush>
-        <Light>8.0</Light>
+        <Magic>8</Magic>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>

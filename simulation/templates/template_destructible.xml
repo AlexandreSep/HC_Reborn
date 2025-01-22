@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_entity_full">
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
@@ -23,8 +23,8 @@
     <SinkRate>3.0</SinkRate>
     <SinkingAnim>false</SinkingAnim>
   </Decay>
-  <Fogging/>
-  <Guard/>
+  <Fogging />
+  <Guard />
   <Health>
     <DamageVariants>
       <heavydamage>0.35</heavydamage>
@@ -58,13 +58,13 @@
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
   </Obstruction>
-  <OverlayRenderer/>
+  <OverlayRenderer />
   <Population>
     <Bonus>0</Bonus>
   </Population>
-  <RallyPoint/>
+  <RallyPoint />
   <RallyPointRenderer>
-    <LineDashColor b="15" g="11" r="158"/>
+    <LineDashColor b="15" g="11" r="158" />
     <LineEndCap>round</LineEndCap>
     <LinePassabilityClass>default</LinePassabilityClass>
     <LineStartCap>square</LineStartCap>
@@ -73,8 +73,8 @@
     <LineThickness>0.25</LineThickness>
     <MarkerTemplate>special/rallypoint</MarkerTemplate>
   </RallyPointRenderer>
-  <RangeOverlayManager/>
-  <RangeOverlayRenderer/>
+  <RangeOverlayManager />
+  <RangeOverlayRenderer />
   <Repairable>
     <RepairTimeRatio>2.0</RepairTimeRatio>
   </Repairable>
@@ -85,7 +85,7 @@
       <stone>1.0</stone>
       <metal>1.0</metal>
       <time>1.0</time>
-    </TechCostMultiplier>  
+    </TechCostMultiplier>
   </Researcher>
   <Resistance>
     <Entity>
@@ -99,14 +99,9 @@
         <Hack>75</Hack>
         <Pierce>85</Pierce>
         <Crush>75</Crush>
-        <Forest>50</Forest>
-        <Fire>50</Fire>
-        <Water>50</Water>
-        <Shadow>50</Shadow>
-        <Spirit>50</Spirit>
-        <Light>50</Light>
         <Siege>0</Siege>
         <TrueDamage>75.0</TrueDamage>
+        <Magic>50</Magic>
       </Damage>
     </Entity>
     <Foundation>
@@ -171,7 +166,7 @@
     <Bribable>false</Bribable>
   </VisionSharing>
   <VisualActor>
-    <ConstructionPreview/>
+    <ConstructionPreview />
     <SilhouetteDisplay>false</SilhouetteDisplay>
     <SilhouetteOccluder>true</SilhouetteOccluder>
     <VisibleInAtlasOnly>false</VisibleInAtlasOnly>

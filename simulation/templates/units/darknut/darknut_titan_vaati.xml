@@ -3,8 +3,7 @@
     <Ranged>
       <AttackName>Tornados</AttackName>
       <Damage>
-        <Shadow>50.0</Shadow>
-        <Spirit>50.0</Spirit>
+        <Magic>50</Magic>
       </Damage>
       <Knockback>
         <Horizontal>30</Horizontal>
@@ -96,14 +95,9 @@
     <Entity>
       <Damage>
         <Crush>60.0</Crush>
-        <Fire>20.0</Fire>
-        <Forest>20.0</Forest>
         <Hack>25.0</Hack>
-        <Light>20.0</Light>
         <Pierce>40.0</Pierce>
-        <Shadow>20.0</Shadow>
-        <Spirit>20.0</Spirit>
-        <Water>20.0</Water>
+        <Magic>20</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

@@ -3,7 +3,7 @@
     <Melee>
       <AttackName>Torch</AttackName>
       <Damage>
-        <Fire>30.0</Fire>
+        <Magic>30</Magic>
       </Damage>
       <Delay>0</Delay>
       <MaxRange>10.0</MaxRange>
@@ -46,14 +46,9 @@
     <Entity>
       <Damage>
         <Crush>50.0</Crush>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
         <Hack>15.0</Hack>
-        <Light>10.0</Light>
         <Pierce>25.0</Pierce>
-        <Shadow>10.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
   </Resistance>

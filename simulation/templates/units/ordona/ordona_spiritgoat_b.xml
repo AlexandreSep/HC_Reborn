@@ -3,8 +3,7 @@
     <Melee>
       <AttackName>Horn</AttackName>
       <Damage>
-        <Forest>10.0</Forest>
-        <Spirit>10.0</Spirit>
+        <Magic>10</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -41,7 +40,7 @@
         <Crush>10.0</Crush>
         <Hack>60.0</Hack>
         <Pierce>20.0</Pierce>
-        <Spirit>10.0</Spirit>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

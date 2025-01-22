@@ -9,7 +9,7 @@
         </Bonus1>
       </Bonuses>
       <Damage>
-        <Water>25.0</Water>
+        <Magic>25</Magic>
       </Damage>
       <MaxRange>70.0</MaxRange>
       <MinRange>35.0</MinRange>

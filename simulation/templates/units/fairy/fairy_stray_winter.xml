@@ -16,14 +16,9 @@
     <Entity>
       <Damage>
         <Crush>25.0</Crush>
-        <Fire>3.0</Fire>
-        <Forest>3.0</Forest>
         <Hack>25.0</Hack>
-        <Light>3.0</Light>
         <Pierce>25.0</Pierce>
-        <Shadow>3.0</Shadow>
-        <Spirit>3.0</Spirit>
-        <Water>3.0</Water>
+        <Magic>3</Magic>
       </Damage>
     </Entity>
   </Resistance>

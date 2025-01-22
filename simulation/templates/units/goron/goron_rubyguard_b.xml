@@ -43,9 +43,9 @@
     <Entity>
       <Damage>
         <Crush>20.0</Crush>
-        <Fire>50.0</Fire>
         <Hack>45.0</Hack>
         <Pierce>60.0</Pierce>
+        <Magic>50</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>50</KnockbackResistance>

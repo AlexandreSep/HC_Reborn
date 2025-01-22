@@ -4,7 +4,7 @@
       <AttackName>Fairy Whip</AttackName>
       <Damage>
         <Pierce>15.0</Pierce>
-        <Shadow>25.0</Shadow>
+        <Magic>25</Magic>
       </Damage>
       <Knockback>
         <Horizontal>10</Horizontal>
@@ -71,14 +71,9 @@
     <Entity>
       <Damage>
         <Crush>30.0</Crush>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
         <Hack>30.0</Hack>
-        <Light>10.0</Light>
         <Pierce>35.0</Pierce>
-        <Shadow>30.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>30</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

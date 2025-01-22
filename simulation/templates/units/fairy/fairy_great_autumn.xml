@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Fairy Magic</AttackName>
       <Damage>
-        <Spirit>25.0</Spirit>
+        <Magic>25</Magic>
       </Damage>
       <Knockback>
         <Horizontal>10</Horizontal>

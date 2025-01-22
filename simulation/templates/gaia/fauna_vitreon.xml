@@ -3,10 +3,10 @@
     <Ranged>
       <AttackName>TBD.</AttackName>
       <Damage>
-        <Light>15.0</Light>
+        <Magic>15</Magic>
       </Damage>
       <Delay>0</Delay>
-	  <ElevationBonus>15</ElevationBonus>
+      <ElevationBonus>15</ElevationBonus>
       <MaxRange>33</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
@@ -15,8 +15,8 @@
         <Gravity>9.81</Gravity>
         <Speed>75.0</Speed>
         <Spread>1.8</Spread>
-		<FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3"/>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>1500</RepeatTime>
     </Ranged>

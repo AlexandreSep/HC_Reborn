@@ -2,8 +2,7 @@
   <Attack>
     <Ranged>
       <Damage>
-        <Fire>18.0</Fire>
-        <Water>18.0</Water>
+        <Magic>18</Magic>
       </Damage>
       <Splash>
         <Damage>

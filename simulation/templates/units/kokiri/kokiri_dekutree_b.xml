@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Roots</AttackName>
       <Damage>
-        <Forest>30.0</Forest>
+        <Magic>30</Magic>
       </Damage>
       <MaxRange>12.0</MaxRange>
       <MinRange>0.0</MinRange>

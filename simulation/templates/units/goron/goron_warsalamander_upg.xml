@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Fire Breath</AttackName>
       <Damage>
-        <Fire>25.0</Fire>
+        <Magic>25</Magic>
       </Damage>
       <Splash>
         <Damage>

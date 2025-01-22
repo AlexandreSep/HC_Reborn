@@ -9,7 +9,7 @@
         </Bonus1>
       </Bonuses>
       <Damage>
-        <Fire>20.0</Fire>
+        <Magic>20</Magic>
       </Damage>
       <MaxRange>20</MaxRange>
       <MinRange>0.0</MinRange>

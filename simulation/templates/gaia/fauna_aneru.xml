@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>TBD.</AttackName>
       <Damage>
-        <Fire>10.0</Fire>
+        <Magic>10</Magic>
       </Damage>
       <Delay>0</Delay>
       <MaxRange>50</MaxRange>
@@ -48,8 +48,8 @@
   <ResourceSupply>
     <Max>50</Max>
     <Type>food.meat</Type>
-	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>3</MaxGatherers>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

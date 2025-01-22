@@ -9,9 +9,9 @@
         </Bonus1>
       </Bonuses>
       <Damage>
-        <Light>15.0</Light>
         <Pierce>10</Pierce>
         <TrueDamage>10</TrueDamage>
+        <Magic>15</Magic>
       </Damage>
       <MaxRange>100</MaxRange>
       <MinRange>15.0</MinRange>

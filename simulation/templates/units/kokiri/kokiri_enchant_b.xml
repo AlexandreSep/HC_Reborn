@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Guardian Fairy</AttackName>
       <Damage>
-        <Spirit>20.0</Spirit>
+        <Magic>20</Magic>
       </Damage>
       <MaxRange>60</MaxRange>
       <MinRange>25.0</MinRange>
@@ -53,14 +53,9 @@
     <Entity>
       <Damage>
         <Crush>35.0</Crush>
-        <Fire>30.0</Fire>
-        <Forest>30.0</Forest>
         <Hack>5.0</Hack>
-        <Light>30.0</Light>
         <Pierce>20.0</Pierce>
-        <Shadow>30.0</Shadow>
-        <Spirit>30.0</Spirit>
-        <Water>30.0</Water>
+        <Magic>30</Magic>
       </Damage>
     </Entity>
   </Resistance>
