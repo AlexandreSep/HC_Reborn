@@ -6,12 +6,7 @@
 		{ "value": "Resistance/Entity/Damage/Crush", "add": 1 },
 		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
 		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },	
-		{ "value": "Resistance/Entity/Damage/Forest", "add": 1 },
-		{ "value": "Resistance/Entity/Damage/Fire", "add": 1 },
-		{ "value": "Resistance/Entity/Damage/Water", "add": 1 },
-		{ "value": "Resistance/Entity/Damage/Shadow", "add": 1 },
-		{ "value": "Resistance/Entity/Damage/Spirit", "add": 1 },
-		{ "value": "Resistance/Entity/Damage/Light", "add": 1 }
+		{ "value": "Resistance/Entity/Damage/Magic", "add": 1 }
 	],
 	"auraName": "Shell Jelly",
 	"auraDescription": "(+1 to all Armor types. Stacks.)",
