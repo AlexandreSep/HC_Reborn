@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/armor_exposure.dds",
 	"researchTime": 40,
-	"tooltip": "+25% Forest armor for all Lizalfos units.)",
-	"modifications": [{"value": "Resistance/Entity/Damage/Forest", "add": 25}],
+	"tooltip": "+40% Magic armor for all Lizalfos units.)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Magic", "add": 40}],
 	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
