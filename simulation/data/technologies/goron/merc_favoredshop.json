@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/merc_favoredshop.dds",
 	"researchTime": 40,
-	"tooltip": "Goron Bazaars strive to attract repeat customers by offering the finest weapons and armor. (-10% Currency and Food Cost - Mercenary)",
+	"tooltip": "Goron Bazaars strive to attract repeat customers by offering the finest weapons and armor. (-10% Currency - Mercenary)",
   "modifications": [
     {
       "value": "Cost/Resources/metal",

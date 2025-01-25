@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/troop_wagonbrace.dds",
 	"researchTime": 40,
-	"tooltip": "Adding metal bracing to a Wagon's structure offers more protection for its passengers. (+15% Health,-25% Damage to Garrison - Salamander Wagon)",
+	"tooltip": "Adding metal bracing to a Wagon's structure offers more protection for its passengers. (+15% Health - Salamander Wagon)",
 	"modifications": [{"value": "Health/Max", "multiply": 1.15}],
 	"affects": ["Wagon"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

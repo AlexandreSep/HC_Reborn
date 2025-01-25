@@ -7,7 +7,7 @@
 	"icon": "goron/troop_lowlyaware.dds",
 	"researchTime": 40,
 	"tooltip": "Goron Giants are not the brightest lot, and will often not even notice those beneath their feet. (0 Ranged Attack Minimum Range - Goron Giant)",
-	"modifications": [{"value": "Attack/Ranged/Damage/MinRange", "replace": 0}],
+	"modifications": [{"value": "Attack/Ranged/MinRange", "replace": 0}],
 	"affects": ["GorGiant"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -37,7 +37,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Salamander Wagon Large Class40 GarrisonClass SalaWagon</Classes>
+    <Classes datatype="tokens">Salamander Wagon Large GarrisonClass SalaWagon</Classes>
     <GenericName>Salamander Wagon</GenericName>
     <History>Larger Salamanders are used by Gorons are beasts of burden, useful for hauling carts and supplies around the craggy terrain of their homeland. These wagons can also be used as platforms for up to four Goron ranged units in battle. </History>
     <Icon>units/goron/gor_salawagon.dds</Icon>

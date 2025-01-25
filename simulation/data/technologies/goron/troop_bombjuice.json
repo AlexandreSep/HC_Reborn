@@ -18,11 +18,11 @@
   "researchTime": 40,
   "tooltip": "Salamander Warbeasts are regularly fed volatile Bomb Flower juice to increase the potency of their fire breath. (+15% Ranged Attack, +6 Splash Damage, +2 Splash Range - Salamander Warbeast)",
   "modifications": [
-    {
-      "value": "Promotion/RequiredXp",
-      "replace": 0
-    }
+					 {"value": "Attack/Ranged/Damage/Magic", "multiply": 1.15},
+					 {"value": "Attack/Ranged/Splash/Damage/Magic", "add": 6},
+					 {"value": "Attack/Ranged/Splash/Damage/Range", "add": 2}
+    
   ],
-  "affects": [ "SalamanderWar" ],
+  "affects": [ "WarSalamander" ],
   "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

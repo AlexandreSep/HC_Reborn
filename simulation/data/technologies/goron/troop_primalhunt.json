@@ -8,11 +8,8 @@
 	"researchTime": 40,
 	"tooltip": "Beastmasters hone their skills in elaborate hunts of Death Mountain's vicious wildlife.(+20% Melee Attack, + 100% Melee Attack Range and + 0.5 multiplier vs Cavalry - Beastmaster)",
 	"modifications": [{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.2},
-		{"value": "Attack/Melee/Damage/MaxRange", "multiply": 2},
-    {
-      "value": "Attack/Melee/Damage/Bonuses/BonusCavMelee/Multiplier",
-      "add": 0.5
-    }],
+		{"value": "Attack/Melee/MaxRange", "multiply": 2},
+		{"value": "Attack/Melee/Damage/Bonuses/BonusCavMelee/Multiplier", "add": 0.5}],
 	"affects": ["Beastmaster"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
