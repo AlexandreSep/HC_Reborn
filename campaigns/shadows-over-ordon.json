@@ -1,0 +1,42 @@
+{
+	"Name": "Shadows Over Ordon",
+	"Description": "Play through a campaign as the Ordonians",
+	"Preview": "session/icons/mappreview/Introductory_Tutorial.png",
+	"Levels": {
+		"0": {
+			"Map": "skirmishes/Crucible of Hylia (2).xml",
+			"MapType": "skirmish",
+			"useGameSetup": true
+		},
+		"1": {
+			"Name": "Unfettered Fury",
+			"Map": "tutorials/introductory_tutorial.xml",
+			"MapType": "scenario",
+			"Description": "Rusl & his son Colin are escorting one of their caravans back to Nal Ordona after making a trip north to Hyrule. Little do they know what awaits them.",
+			"Preview": "session/icons/mappreview/Introductory_Tutorial.png"
+		},
+		"2": {
+			"Name": "Fields of Resistance",
+			"Map": "tutorials/starting_economy_walkthrough.xml",
+			"MapType": "scenario",
+			"Description": "Curious as to what the Gerudo are doing this far across the mountains, Rusl & Colin continue their journey south.",
+			"Requires": "1"
+		},
+		"3": {
+			"Name": "Unmasking the Threat",
+			"Map": "tutorials/starting_economy_walkthrough.xml",
+			"MapType": "scenario",
+			"Description": "Rusl, Ashei and Colin decide to head to the highlands and see what is happening on the border.",
+			"Requires": "2"
+		},
+		"4": {
+			"Name": "A Common Enemy",
+			"Map": "tutorials/starting_economy_walkthrough.xml",
+			"MapType": "scenario",
+			"Description": "With the bandit fortress taken, peace should return to Ordona, or should it?",
+			"Requires": "3"
+		}
+	},
+	"Order": ["0", "1", "2", "3", "4"],
+	"ShowUnavailable": false
+}

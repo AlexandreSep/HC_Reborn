@@ -35,17 +35,25 @@ var g_CenterMenuItems = [
 		"submenuSize": "33.3% 0% 66.6% 100%",
 		"submenu": [
 			{
-				"caption": translate("Hyrule Historia (Campaign)"),
+				"caption": translate("Hyrule Historia"),
 				"tooltip": translate("Start a new campaign mission."),
 				"size": "0% 0% 100% 0%+45",
 				"onPress": () => {
-					Engine.SwitchGuiPage("page_gamesetup.xml");
+					Engine.SwitchGuiPage("campaigns/setup/page.xml");
+				}
+			},
+			{
+				"caption": translate("Load Campaign"),
+				"tooltip": translate("Start a new campaign mission."),
+				"size": "0% 0%+45 100% 0%+90",
+				"onPress": () => {
+					Engine.SwitchGuiPage("campaigns/load_modal/page.xml");
 				}
 			},
 			{
 				"caption": translate("Skirmish"),
 				"tooltip": translate("Start a new single-player game."),
-				"size": "0% 0%+45 100% 0%+90",
+				"size": "0% 0%+90 100% 0%+135",
 				"onPress": () => {
 					Engine.SwitchGuiPage("page_gamesetup.xml");
 				}
@@ -53,7 +61,7 @@ var g_CenterMenuItems = [
 			{
 				"caption": translate("Load Game"),
 				"tooltip": translate("Load a saved game."),
-				"size": "0% 0%+90 100% 0%+135",
+				"size": "0% 0%+135 100% 0%+180",
 				"onPress": () => {
 					Engine.PushGuiPage("page_loadgame.xml");
 				}
@@ -61,7 +69,7 @@ var g_CenterMenuItems = [
 			{
 				"caption": translate("Replays"),
 				"tooltip": translate("Playback previous games."),
-				"size": "0% 0%+135 100% 0%+180",
+				"size": "0% 0%+180 100% 0%+225",
 				"onPress": () => {
 					Engine.SwitchGuiPage("page_replaymenu.xml", {
 						"replaySelectionData": {
