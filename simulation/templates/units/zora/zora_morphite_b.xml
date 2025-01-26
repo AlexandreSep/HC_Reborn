@@ -42,9 +42,8 @@
   <Health>
     <Max>400</Max>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>10</BattalionSize>
       <Chance>100</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMax>5</SpawnNumberMax>
       <SpawnNumberMin>1</SpawnNumberMin>
       <Template>units/zora/zora_kyameron_b</Template>
     </SpawnMultipleEntitiesOnDeath>
