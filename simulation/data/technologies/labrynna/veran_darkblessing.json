@@ -7,12 +7,8 @@
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
 	"tooltip": "+10 Magic Armor - All Non-Creature, Non-Mechanical units.",
-	"modifications": [{"value": "Resistance/Entity/Damage/Forest", "add": 10, "affects": "Darkblessing"},
-					  {"value": "Resistance/Entity/Damage/Fire", "add": 10, "affects": "Darkblessing"},
-		              {"value": "Resistance/Entity/Damage/Water", "add": 10, "affects": "Darkblessing"},
-					  {"value": "Resistance/Entity/Damage/Shadow", "add": 10, "affects": "Darkblessing"},
-					  {"value": "Resistance/Entity/Damage/Spirit", "add": 10, "affects": "Darkblessing"},
-		              {"value": "Resistance/Entity/Damage/Light", "add": 10, "affects": "Darkblessing"}
+	"modifications": [
+	{"value": "Resistance/Entity/Damage/Magic", "add": 10, "affects": "Darkblessing"}
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

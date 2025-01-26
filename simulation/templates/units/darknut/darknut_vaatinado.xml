@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Tornado</AttackName>
       <Damage>
-        <Spirit>1.0</Spirit>
+        <Magic>1</Magic>
       </Damage>
       <MaxRange>25</MaxRange>
       <MinRange>0.0</MinRange>

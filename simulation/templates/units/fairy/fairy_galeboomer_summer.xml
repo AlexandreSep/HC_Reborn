@@ -3,8 +3,8 @@
     <Melee>
       <AttackName>Boomerang</AttackName>
       <Damage>
-        <Fire>15.0</Fire>
         <Hack>15.0</Hack>
+        <Magic>15</Magic>
       </Damage>
       <MaxRange>6.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>

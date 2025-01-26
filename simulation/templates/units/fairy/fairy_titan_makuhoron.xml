@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Fairy Burst</AttackName>
       <Damage>
-        <Forest>10.0</Forest>
+        <Magic>10</Magic>
       </Damage>
       <MaxRange>50</MaxRange>
       <MinRange>0.0</MinRange>
@@ -90,14 +90,9 @@
     <Entity>
       <Damage>
         <Crush>60.0</Crush>
-        <Fire>15.0</Fire>
-        <Forest>20.0</Forest>
         <Hack>50.0</Hack>
-        <Light>20.0</Light>
         <Pierce>75.0</Pierce>
-        <Shadow>20.0</Shadow>
-        <Spirit>20.0</Spirit>
-        <Water>25.0</Water>
+        <Magic>25</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

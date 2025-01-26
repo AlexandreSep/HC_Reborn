@@ -40,7 +40,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Large Class90 GoronRam</Classes>
+    <Classes datatype="tokens">Large GorRam</Classes>
     <GenericName>Ram</GenericName>
     <History>These massive, hulking behemoths are practically living siege weapons. Goron Rams can headbutt and punch a man-sized target clear across a room and smash just about anything into a bloody pulp. Their reckless power and inability to slow themselves down makes them exceptionally good at charging into enemies.</History>
     <Icon>units/goron/gor_gorram.dds</Icon>

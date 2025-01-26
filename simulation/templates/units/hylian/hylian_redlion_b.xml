@@ -41,7 +41,6 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_kazakk</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_redlion_b</SelectionGroupName>
     <Tooltip>King Daphnes' Unique Unit. Heavily armored cavalry unit armed with a rider downing lance.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Witch's Wind</AttackName>
       <Damage>
-        <Spirit>15.0</Spirit>
+        <Magic>15</Magic>
       </Damage>
       <Knockback>
         <Horizontal>10</Horizontal>

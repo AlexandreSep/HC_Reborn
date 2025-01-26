@@ -1,9 +1,9 @@
-<Entity parent="classes/HC_template_unit_light_infantry|mage">
+<Entity parent="classes/HC_template_unit_light_infantry|mage|shield">
   <Attack>
     <Ranged>
       <AttackName>Magic Sword</AttackName>
       <Damage>
-        <Light>20.0</Light>
+        <Magic>20</Magic>
       </Damage>
       <MaxRange>60</MaxRange>
       <MinRange>1.0</MinRange>
@@ -43,7 +43,6 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_lana</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_acolyte_b</SelectionGroupName>
     <Tooltip>Melee Mage unit that can attack with magic from a distance so long as she has full health.</Tooltip>
-    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
   </Identity>
   <Position>
     <Floating>false</Floating>
@@ -52,14 +51,9 @@
     <Entity>
       <Damage>
         <Crush>15.0</Crush>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
         <Hack>30.0</Hack>
-        <Light>10.0</Light>
         <Pierce>30.0</Pierce>
-        <Shadow>10.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
   </Resistance>

@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>TBD.</AttackName>
       <Damage>
-        <Fire>11.0</Fire>
+        <Magic>11</Magic>
       </Damage>
       <EffectDelay>0</EffectDelay>
       <MaxRange>5</MaxRange>
@@ -15,7 +15,7 @@
         <FriendlyFire>false</FriendlyFire>
         <Speed>75.0</Speed>
         <Spread>1.8</Spread>
-		<LaunchPoint y="3"/>
+        <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>1500</RepeatTime>
     </Ranged>
@@ -49,8 +49,8 @@
   <ResourceSupply>
     <Max>150</Max>
     <Type>food.meat</Type>
-	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>3</MaxGatherers>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

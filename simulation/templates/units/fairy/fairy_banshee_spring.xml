@@ -3,7 +3,7 @@
     <Melee>
       <AttackName>Magic Wand</AttackName>
       <Damage>
-        <Forest>15.0</Forest>
+        <Magic>15</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>

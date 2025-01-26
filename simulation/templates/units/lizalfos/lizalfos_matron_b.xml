@@ -3,8 +3,8 @@
     <Melee>
       <AttackName>Fire Sword</AttackName>
       <Damage>
-        <Fire>10.0</Fire>
         <Hack>10.0</Hack>
+        <Magic>10</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>

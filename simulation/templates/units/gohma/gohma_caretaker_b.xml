@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Acid</AttackName>
       <Damage>
-        <Forest>11.0</Forest>
+        <Magic>11</Magic>
       </Damage>
       <MaxRange>55</MaxRange>
       <MinRange>0.0</MinRange>

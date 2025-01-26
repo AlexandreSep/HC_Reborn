@@ -34,7 +34,6 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_scout_cavalry</SelectionGroupName>
     <Tooltip>Light and fast cavalry unit with excellent vision range. Can detect Camouflaged and Stealthed units.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_light_cavalry</Entity>

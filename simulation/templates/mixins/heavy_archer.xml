@@ -11,4 +11,7 @@
 	  <PreferredClasses datatype="tokens">Heavy_Infantry Heavy_Cavalry Light_Archer Flying</PreferredClasses>
     </Ranged>
   </Attack>
+  <Identity>
+    <Classes datatype="tokens">Ranged</Classes>
+  </Identity> 
 </Entity>

@@ -3,8 +3,8 @@
     <Ranged>
       <AttackName>Arrows</AttackName>
       <Damage>
-        <Forest>40.0</Forest>
         <Pierce>30</Pierce>
+        <Magic>40</Magic>
       </Damage>
       <MaxRange>90.0</MaxRange>
       <MinRange>15.0</MinRange>

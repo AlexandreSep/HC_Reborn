@@ -4,7 +4,7 @@
       <AttackName>TBD.</AttackName>
       <Damage>
         <Pierce>14</Pierce>
-        <Shadow>5.0</Shadow>
+        <Magic>5</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
@@ -53,14 +53,9 @@
     <Entity>
       <Damage>
         <Crush>15.0</Crush>
-        <Fire>5.0</Fire>
-        <Forest>5.0</Forest>
         <Hack>50.0</Hack>
-        <Light>5.0</Light>
         <Pierce>70.0</Pierce>
-        <Shadow>5.0</Shadow>
-        <Spirit>5.0</Spirit>
-        <Water>5.0</Water>
+        <Magic>5</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

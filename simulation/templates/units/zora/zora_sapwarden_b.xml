@@ -3,8 +3,7 @@
     <Ranged>
       <AttackName>Blue Fire</AttackName>
       <Damage>
-        <Fire>15.0</Fire>
-        <Water>15.0</Water>
+        <Magic>15</Magic>
       </Damage>
       <MaxRange>50</MaxRange>
       <MinRange>25.0</MinRange>

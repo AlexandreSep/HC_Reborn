@@ -1,22 +1,17 @@
 {
 	"genericName": "Silver Coating",
-	"description": "Lanayru Buildings gain +3 Non Magic armor and +1 Magic armor",
+	"description": "Lanayru Buildings gain +5 Non Magic armor and +10 Magic armor",
 	"cost": {"food": 0, "wood": 0, "stone": 100, "metal": 500},
 	"requirements": { "all": [{ "entity": { "class": "SilverExchange", "number": 1 } }] },
 	"requirementsTooltip": "Unlocked with Silver Exchange.",
 	"icon": "lanayru/building_silvercoat.dds",
 	"researchTime": 40,
-	"tooltip": "Lanayru Buildings gain +3 Non Magic armor and +1 Magic armor",
+	"tooltip": "Lanayru Buildings gain +5 Non Magic armor and +10 Magic armor",
 	"modifications": [
-	{"value": "Resistance/Entity/Damage/Hack", "add": 3.0},
-	{"value": "Resistance/Entity/Damage/Pierce", "add": 3.0},
-	{"value": "Resistance/Entity/Damage/Crush", "add": 3.0},
-	{"value": "Resistance/Entity/Damage/Forest", "add": 1.0},
-	{"value": "Resistance/Entity/Damage/Fire", "add": 1.0},
-	{"value": "Resistance/Entity/Damage/Water", "add": 1.0},
-	{"value": "Resistance/Entity/Damage/Spirit", "add": 1.0},
-	{"value": "Resistance/Entity/Damage/Light", "add": 1.0},
-	{"value": "Resistance/Entity/Damage/Shadow", "add": 1.0}
+	{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
+	{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0},
+	{"value": "Resistance/Entity/Damage/Crush", "add": 5.0},
+	{"value": "Resistance/Entity/Damage/Magic", "add": 1.0}
 	],
 	"affects": ["Structure"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

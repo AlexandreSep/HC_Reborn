@@ -31,7 +31,6 @@
     <Lang>hylian</Lang>
     <SelectionGroupName>units/hylian/hylian_levy_spearman</SelectionGroupName>
     <Tooltip>Light unit armed with a spear and shield. Deals Piercing damage.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_soldier_spearman</Entity>

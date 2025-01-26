@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Fire Stream</AttackName>
       <Damage>
-        <Fire>27.0</Fire>
+        <Magic>27</Magic>
       </Damage>
       <MaxRange>70.0</MaxRange>
       <MinRange>15.0</MinRange>

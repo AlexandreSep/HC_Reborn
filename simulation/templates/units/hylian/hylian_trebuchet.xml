@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_siege">
+<Entity parent="classes/HC_template_unit_siege|siege">
   <Attack>
     <Ranged>
       <AttackName>Hurled Stone</AttackName>

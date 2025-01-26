@@ -15,14 +15,9 @@
       <Damage>
         <Crush>15.0</Crush>
         <DodgeRating>25.0</DodgeRating>
-        <Fire>6.0</Fire>
-        <Forest>6.0</Forest>
         <Hack>15.0</Hack>
-        <Light>6.0</Light>
         <Pierce>15.0</Pierce>
-        <Shadow>6.0</Shadow>
-        <Spirit>6.0</Spirit>
-        <Water>6.0</Water>
+        <Magic>6</Magic>
       </Damage>
     </Entity>
   </Resistance>

@@ -4,7 +4,7 @@
       <AttackName>Deku Seeds</AttackName>
       <Damage>
         <Crush>20.0</Crush>
-        <Forest>40.0</Forest>
+        <Magic>40</Magic>
       </Damage>
       <MaxRange>90.0</MaxRange>
       <MinRange>15.0</MinRange>

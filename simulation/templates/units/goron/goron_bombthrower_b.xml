@@ -3,8 +3,8 @@
     <Ranged>
       <AttackName>Bombs</AttackName>
       <Damage>
-        <Fire>25.0</Fire>
         <Pierce>25.0</Pierce>
+        <Magic>25</Magic>
       </Damage>
       <MaxRange>50.0</MaxRange>
       <MinRange>25.0</MinRange>
@@ -22,7 +22,7 @@
       <RepeatTime>2000</RepeatTime>
       <Splash>
         <Damage>
-          <Fire>40.0</Fire>
+          <Magic>40.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -50,7 +50,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Bombs GorBomber Medium Class100 CanGarrison</Classes>
+    <Classes datatype="tokens">Bombs GorBomber Medium CanGarrison</Classes>
     <GenericName>Bomb Thrower</GenericName>
     <History>The infamous Bomb Flowers native to Death Mountain have long been cultivated and harvested by the Gorons for use as explosive weaponry in battle. Bomb Throwers bring terrifying firepower to a warzone, decimating groups of enemy units in an incinerating blast of fire.</History>
     <Icon>units/goron/gor_bombthrower.dds</Icon>

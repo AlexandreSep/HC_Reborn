@@ -9,7 +9,7 @@
         </Bonus1>
       </Bonuses>
       <Damage>
-        <Water>3.0</Water>
+        <Magic>3</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>

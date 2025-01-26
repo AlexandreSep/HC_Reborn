@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Powder Keg</AttackName>
       <Damage>
-        <Fire>130.0</Fire>
+        <Magic>130</Magic>
       </Damage>
       <MaxRange>100.0</MaxRange>
       <MinRange>35.0</MinRange>
@@ -21,7 +21,7 @@
       <RepeatTime>9000</RepeatTime>
       <Splash>
         <Damage>
-          <Fire>130.0</Fire>
+          <Magic>130.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>15</Range>

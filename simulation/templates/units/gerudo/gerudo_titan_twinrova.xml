@@ -13,8 +13,7 @@
         </Bonus2>
       </Bonuses>
       <Damage>
-        <Fire>40.0</Fire>
-        <Water>40.0</Water>
+        <Magic>40</Magic>
       </Damage>
       <Knockback>
         <Horizontal>10</Horizontal>
@@ -91,10 +90,9 @@
     <Entity>
       <Damage>
         <Crush>50.0</Crush>
-        <Fire>25.0</Fire>
         <Hack>15.0</Hack>
         <Pierce>15.0</Pierce>
-        <Water>25.0</Water>
+        <Magic>25</Magic>
       </Damage>
     </Entity>
     <DodgeRating>30.0</DodgeRating>

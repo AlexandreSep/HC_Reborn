@@ -35,7 +35,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Beastmaster Medium Class100</Classes>
+    <Classes datatype="tokens">Beastmaster Medium</Classes>
     <GenericName>Beastmaster</GenericName>
     <History>The Death Mountain range was home to a vast array of brutal predators, and the Gorons frequently had to deal with packs of Dodongos and other strong monsters. Beastmasters were dedicated hunters of all manner of creatures, and were exceptionally adept at fighting any creature unit they came across.</History>
     <Icon>units/goron/gor_beastmaster.dds</Icon>

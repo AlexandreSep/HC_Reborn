@@ -3,12 +3,15 @@
   <Attack>
     <Melee>
       <Bonuses>
-        <Bonus1>
+        <BonusCavMelee>
           <Classes>Light_Infantry Siege</Classes>
           <Multiplier>2</Multiplier>
-        </Bonus1>
+        </BonusCavMelee>
       </Bonuses>
 	  <PreferredClasses datatype="tokens">Light_Infantry Siege</PreferredClasses>
     </Melee>
   </Attack>
+  <Identity>
+    <Classes datatype="tokens">Melee</Classes>
+  </Identity>  
 </Entity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Entity>
   <Attack>
-    <Melee>
+    <Ranged>
       <Bonuses>
         <Bonus1>
           <Classes>Structure Monster</Classes>
@@ -9,6 +9,9 @@
         </Bonus1>
       </Bonuses>
 	  <PreferredClasses datatype="tokens">Structure Monster</PreferredClasses>
-    </Melee>
+    </Ranged>
   </Attack>
+  <Identity>
+    <Classes datatype="tokens">Ranged</Classes>
+  </Identity>  
 </Entity>

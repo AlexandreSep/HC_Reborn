@@ -8,7 +8,10 @@
           <Multiplier>2</Multiplier>
         </Bonus1>
       </Bonuses>
-	  <PreferredClasses datatype="tokens">Civilian</PreferredClasses>
+	  <PreferredClasses datatype="tokens">Light_Infantry Beast</PreferredClasses>
     </Melee>
   </Attack>
+  <Identity>
+    <Classes datatype="tokens">Melee</Classes>
+  </Identity>  
 </Entity>

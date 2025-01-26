@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Cannonball</AttackName>
       <Damage>
-        <Fire>150.0</Fire>
+        <Magic>150</Magic>
       </Damage>
       <MaxRange>125</MaxRange>
       <MinRange>35.0</MinRange>

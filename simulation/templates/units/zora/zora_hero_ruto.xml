@@ -10,7 +10,7 @@
       </Bonuses>
       <Damage>
         <Pierce>16</Pierce>
-        <Water>24.0</Water>
+        <Magic>24</Magic>
       </Damage>
       <MaxRange>10.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -74,14 +74,9 @@
     <Entity>
       <Damage>
         <Crush>50.0</Crush>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
         <Hack>30.0</Hack>
-        <Light>10.0</Light>
         <Pierce>25.0</Pierce>
-        <Shadow>10.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

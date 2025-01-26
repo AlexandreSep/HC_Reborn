@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_entity_full">
   <Battalion>
     <FormationTemplate>special/formations/HC_standard</FormationTemplate>
@@ -22,13 +22,13 @@
     <SinkingAnim>false</SinkingAnim>
   </Decay>
   <Footprint>
-    <Circle radius="1.5"/>
+    <Circle radius="1.5" />
     <Height>2.5</Height>
   </Footprint>
   <Garrisonable>
     <Size>1</Size>
   </Garrisonable>
-  <Guard/>
+  <Guard />
   <Health>
     <DeathType>corpse</DeathType>
     <IdleRegenRate>0.05</IdleRegenRate>
@@ -41,7 +41,7 @@
     <Classes datatype="tokens">Unit ConquestCritical</Classes>
     <GenericName>Unit</GenericName>
     <Undeletable>false</Undeletable>
-    <Icon>units/unit_generic.dds</Icon>	
+    <Icon>units/unit_generic.dds</Icon>
   </Identity>
   <Loot>
     <xp>1</xp>
@@ -58,29 +58,24 @@
     <DeleteUponConstruction>false</DeleteUponConstruction>
     <DisableBlockMovement>false</DisableBlockMovement>
     <DisableBlockPathfinding>false</DisableBlockPathfinding>
-    <Unit/>
+    <Unit />
   </Obstruction>
-  <OverlayRenderer/>
+  <OverlayRenderer />
   <Population>
     <Bonus>0</Bonus>
   </Population>
-  <RangeOverlayManager/>
-  <RangeOverlayRenderer/>
+  <RangeOverlayManager />
+  <RangeOverlayRenderer />
   <Resistance>
     <Entity>
       <Damage>
         <Crush>15.0</Crush>
         <Hack>1.0</Hack>
         <Pierce>1.0</Pierce>
-        <Forest>1.0</Forest>
-        <Fire>1.0</Fire>
-        <Water>1.0</Water>
-        <Shadow>1.0</Shadow>
-        <Spirit>1.0</Spirit>
-        <Light>1.0</Light>
         <Siege>100.0</Siege>
         <Poison>1.0</Poison>
         <TrueDamage>0</TrueDamage>
+        <Magic>1</Magic>
       </Damage>
     </Entity>
     <DodgeRating>0</DodgeRating>
@@ -106,7 +101,7 @@
     <BarWidth>2.0</BarWidth>
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
-  <StatusEffectsReceiver/>
+  <StatusEffectsReceiver />
   <TreasureCollector>
     <MaxDistance>2</MaxDistance>
   </TreasureCollector>

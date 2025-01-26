@@ -3,7 +3,7 @@
     <Melee>
       <AttackName>Lantern</AttackName>
       <Damage>
-        <Fire>50.0</Fire>
+        <Magic>50</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -50,13 +50,8 @@
         <Hack>45.0</Hack>
         <Pierce>45.0</Pierce>
         <Crush>45.0</Crush>
-        <Fire>3.0</Fire>
-        <Forest>3.0</Forest>
         <Hack>25.0</Hack>
-        <Light>3.0</Light>
-        <Shadow>3.0</Shadow>
-        <Spirit>3.0</Spirit>
-        <Water>3.0</Water>
+        <Magic>3</Magic>
       </Damage>
     </Entity>
   </Resistance>

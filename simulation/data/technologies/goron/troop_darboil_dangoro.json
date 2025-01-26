@@ -10,8 +10,8 @@
 	"tooltip": "Powder Kegs are lubricated with rare Darb Oil, enabling them to be moved and fired more efficently. (+10% Walk/Run Speed and Ranged Attack Rate - Powder Keg Launcher)",
 	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.10},
 					  {"value": "UnitMotion/RunMultiplier", "multiply": 1.10},
-					  {"value": "Attack/Ranged/Damage/PrepareTime", "multiply": 0.90},
-					  {"value": "Attack/Ranged/Damage/RepeatTime", "multiply": 0.90}],
+					  {"value": "Attack/Ranged/PrepareTime", "multiply": 0.90},
+					  {"value": "Attack/Ranged/RepeatTime", "multiply": 0.90}],
 	"affects": ["PowderKeg"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

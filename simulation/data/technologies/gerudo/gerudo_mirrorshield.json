@@ -7,12 +7,7 @@
 	"icon": "gerudo/mirror_shield.dds",
 	"researchTime": 40,
 	"tooltip": "A magical shield that can resist and even deflect magic back at itself. (+10 Magic Armor - Tomb Guard and Serpent Slayer)",
-	"modifications": [{"value": "Resistance/Entity/Damage/Forest", "add": 50.0},
-		{"value": "Resistance/Entity/Damage/Fire", "add": 50.0},
-		{"value": "Resistance/Entity/Damage/Water", "add": 50.0},
-		{"value": "Resistance/Entity/Damage/Shadow", "add": 50.0},
-		{"value": "Resistance/Entity/Damage/Spirit", "add": 50.0},
-		{"value": "Resistance/Entity/Damage/Light", "add": 50.0},
+	"modifications": [{"value": "Resistance/Entity/Damage/Magic", "add": 50.0},
 		{"value": "Promotion/RequiredXp", "replace": 0}],
 	"affects": ["MirrorShield"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

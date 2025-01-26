@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Fireball</AttackName>
       <Damage>
-        <Fire>25.0</Fire>
+        <Magic>25</Magic>
       </Damage>
       <MaxRange>100</MaxRange>
       <MinRange>25.0</MinRange>

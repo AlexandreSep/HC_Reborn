@@ -8,11 +8,11 @@
           <Multiplier>2</Multiplier>
         </Bonus1>
         <Bonus2>
-          <Classes>Commander</Classes>
+          <Classes>Buffer</Classes>
           <Multiplier>2</Multiplier>
         </Bonus2>
         <Bonus3>
-          <Classes>Huge</Classes>
+          <Classes>Monster</Classes>
           <Multiplier>2</Multiplier>
         </Bonus3>
       </Bonuses>
@@ -60,14 +60,9 @@
     <Entity>
       <Damage>
         <Crush>30.0</Crush>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
         <Hack>40.0</Hack>
-        <Light>10.0</Light>
         <Pierce>40.0</Pierce>
-        <Shadow>10.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

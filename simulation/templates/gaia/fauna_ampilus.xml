@@ -4,7 +4,7 @@
       <AttackName>TBD.</AttackName>
       <Damage>
         <Crush>6.0</Crush>
-        <Light>8.0</Light>
+        <Magic>8</Magic>
       </Damage>
       <MaxRange>6.0</MaxRange>
       <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
@@ -32,8 +32,8 @@
   <ResourceSupply>
     <Max>150</Max>
     <Type>food.meat</Type>
-	<KillBeforeGather>true</KillBeforeGather>
-	<MaxGatherers>3</MaxGatherers>
+    <KillBeforeGather>true</KillBeforeGather>
+    <MaxGatherers>3</MaxGatherers>
   </ResourceSupply>
   <Sound>
     <SoundGroups>

@@ -4,8 +4,8 @@
       <AttackName>Spear</AttackName>
       <Damage>
         <Crush>10.0</Crush>
-        <Light>7.0</Light>
         <Pierce>7.0</Pierce>
+        <Magic>7</Magic>
       </Damage>
       <MaxRange>6.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -70,14 +70,9 @@
     <Entity>
       <Damage>
         <Crush>30.0</Crush>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
         <Hack>40.0</Hack>
-        <Light>10.0</Light>
         <Pierce>60.0</Pierce>
-        <Shadow>10.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>50</KnockbackResistance>

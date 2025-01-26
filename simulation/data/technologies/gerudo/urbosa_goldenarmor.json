@@ -7,12 +7,7 @@
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
 	"tooltip": "+50% Magic Armor - Marauders and Tomb Guards.",
-	"modifications": [{"value": "Resistance/Entity/Damage/Forest", "add": 25},
-		{"value": "Resistance/Entity/Damage/Fire", "add": 25},
-		{"value": "Resistance/Entity/Damage/Water", "add": 25},
-		{"value": "Resistance/Entity/Damage/Spirit", "add": 25},
-		{"value": "Resistance/Entity/Damage/Light", "add": 25},
-		{"value": "Resistance/Entity/Damage/Shadow", "add": 25}],
+	"modifications": [{"value": "Resistance/Entity/Damage/Magic", "add": 25}],
 	"affects": ["Unit"],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

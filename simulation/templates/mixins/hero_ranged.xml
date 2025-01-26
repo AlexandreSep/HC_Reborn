@@ -11,4 +11,7 @@
 	  <PreferredClasses datatype="tokens">Monster</PreferredClasses>
     </Ranged>
   </Attack>
+  <Identity>
+    <Classes datatype="tokens">Ranged</Classes>
+  </Identity>  
 </Entity>

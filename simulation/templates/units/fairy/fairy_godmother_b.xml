@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Fairy Magic</AttackName>
       <Damage>
-        <Spirit>50.0</Spirit>
+        <Magic>50</Magic>
       </Damage>
       <MaxRange>50.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -63,14 +63,9 @@
     <Entity>
       <Damage>
         <Crush>15.0</Crush>
-        <Fire>7.0</Fire>
-        <Forest>7.0</Forest>
         <Hack>15.0</Hack>
-        <Light>7.0</Light>
         <Pierce>15.0</Pierce>
-        <Shadow>7.0</Shadow>
-        <Spirit>7.0</Spirit>
-        <Water>7.0</Water>
+        <Magic>7</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

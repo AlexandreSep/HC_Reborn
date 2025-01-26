@@ -3,8 +3,7 @@
     <Ranged>
       <AttackName>Booze</AttackName>
       <Damage>
-        <Fire>3.0</Fire>
-        <Water>3.0</Water>
+        <Magic>3</Magic>
       </Damage>
       <MaxRange>50</MaxRange>
       <MinRange>15.0</MinRange>

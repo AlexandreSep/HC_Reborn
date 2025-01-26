@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/troop_rampage.dds",
 	"researchTime": 40,
-	"tooltip": "Rams are infamously hot-headed, and when in the heat of battle have been known to smash smaller foes to a pulp. (+15% Melee Attack, +10% Walk/Run Speed, (Chance to instantly kill smaller units) - Ram)",
+	"tooltip": "Rams are infamously hot-headed, and when in the heat of battle have been known to smash smaller foes to a pulp. (+15% Melee Attack, +10% Walk/Run Speed - Ram)",
 	"modifications": [{"value": "Attack/Melee/Damage/Crush", "multiply": 1.15},
 		{"value": "UnitMotion/WalkSpeed", "multiply": 1.10},
 		{"value": "UnitMotion/RunMultiplier", "multiply": 1.10}],

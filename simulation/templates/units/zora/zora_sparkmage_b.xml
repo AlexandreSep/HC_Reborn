@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Lightning</AttackName>
       <Damage>
-        <Light>25.0</Light>
+        <Magic>25</Magic>
       </Damage>
       <MaxRange>70</MaxRange>
       <MinRange>25.0</MinRange>

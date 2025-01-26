@@ -9,8 +9,7 @@
 	"tooltip": "These golden bracelets are said to magically increase the strength of the wearer. (+20% Melee Attack - Goron Guardian; +20% Ranged Attack and Ranged Attack Range - Rock Tosser)",
 	"modifications": [{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2},
 		{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.2},
-		{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 1.2},
-		{"value": "Promotion/RequiredXp", "replace": 0}],
+		{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 1.2}],
 	"affects": ["PowerBracelet"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -8,12 +8,7 @@
 	"researchTime": 40,
 	"tooltip": "+25% Magic Armor - All units.",
 	"modifications": [
-		{"value": "Resistance/Entity/Damage/Forest", "add": 25},
-		{"value": "Resistance/Entity/Damage/Fire", "add": 25},
-		{"value": "Resistance/Entity/Damage/Water", "add": 25},
-		{"value": "Resistance/Entity/Damage/Spirit", "add": 25},
-		{"value": "Resistance/Entity/Damage/Light", "add": 25},
-		{"value": "Resistance/Entity/Damage/Shadow", "add": 25}],
+		{"value": "Resistance/Entity/Damage/Magic", "add": 25}],
 	"affects": ["Unit"],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

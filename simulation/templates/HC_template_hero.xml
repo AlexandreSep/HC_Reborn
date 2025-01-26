@@ -42,12 +42,7 @@
         <Crush>15.0</Crush>
         <Hack>10.0</Hack>
         <Pierce>20.0</Pierce>
-        <Fire>10.0</Fire>
-        <Forest>10.0</Forest>
-        <Light>10.0</Light>
-        <Shadow>10.0</Shadow>
-        <Spirit>10.0</Spirit>
-        <Water>10.0</Water>
+        <Magic>10</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

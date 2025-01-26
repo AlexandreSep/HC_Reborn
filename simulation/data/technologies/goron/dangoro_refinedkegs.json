@@ -7,8 +7,8 @@
 	"icon": "goron/dangoro_refinedkegs.dds",
 	"researchTime": 40,
 	"tooltip": "25% Damage - Explosive Units and Buildings",
-	"modifications": [{"value": "Attack/Ranged/Damage/Fire", "multiply": 1.25},
-					  {"value": "Attack/Ranged/Damage/Splash/Fire", "multiply": 1.25}],
+	"modifications": [{"value": "Attack/Ranged/Damage/Magic", "multiply": 1.25},
+					  {"value": "Attack/Ranged/Splash/Damage/Magic", "multiply": 1.25}],
 	"affects": ["Bombs"],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

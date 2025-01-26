@@ -10,5 +10,8 @@
       </Bonuses>
 	  <PreferredClasses datatype="tokens">Monster</PreferredClasses>
     </Melee>
-  </Attack>
+  </Attack>  
+  <Identity>
+    <Classes datatype="tokens">Melee</Classes>
+  </Identity>  
 </Entity>

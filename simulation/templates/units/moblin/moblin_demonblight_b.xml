@@ -3,9 +3,8 @@
     <Ranged>
       <AttackName>Sword</AttackName>
       <Damage>
-        <Fire>20.0</Fire>
         <Hack>30.0</Hack>
-        <Shadow>20.0</Shadow>
+        <Magic>20</Magic>
       </Damage>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>

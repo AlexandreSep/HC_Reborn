@@ -9,7 +9,10 @@
 	"tooltip": "Sell improved weaponry to visiting Mercenaries. (+20% Melee Attack - Mercenary)",
 	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2},
 		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.2},
-		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2}],
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2},
+		{"value": "Attack/Ranged/Damage/Hack", "multiply": 1.2},
+		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2},
+		{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.2}],
 	"affects": ["Mercenary"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

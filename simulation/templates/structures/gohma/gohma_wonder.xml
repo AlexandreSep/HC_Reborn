@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>TBD.</AttackName>
       <Damage>
-        <Light>12.0</Light>
+        <Magic>12</Magic>
       </Damage>
       <MaxRange>100.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -79,7 +79,7 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">
-</Technologies>
+    </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
