@@ -1111,14 +1111,16 @@ var CONQUESTAI = function (m) {
         {
             for (let supply of this.LargeSupplies.outside[resourceType])
             {
-                if (supply.distToInfluence[PlayerID] < lowest) // also make sure its above 200 * 200 for the civil center distance
+                let distToStartCentre = API3.SquareVectorDistance(supply.position(), this.allCivilCentres[0].position());
+                if (distToStartCentre < lowest) // also make sure its above 200 * 200 for the civil center distance
                 {
-                    lowest = supply.distToInfluence[PlayerID];
+                    lowest = distToStartCentre;
                     nearestSupply = supply;
                 }
             }
         }
 
+        warn("nearestSupply " + nearestSupply);
         // return if there is no supply outside at all
         if (nearestSupply == null)
             return;
@@ -1133,21 +1135,6 @@ var CONQUESTAI = function (m) {
                 continue;
 
             let mapPos = this.GetMapPos(freeTileData.freeCell, obstructions);
-            let tooCloseToCivilCentre = false;
-
-            // check if this tile is too close to a civil centre and try the next tile if true
-            for (let civilCentre of this.allCivilCentres)
-            {
-                let distToCivilCentre = API3.SquareVectorDistance(mapPos, civilCentre.position());
-                if (distToCivilCentre < 200 * 200)
-                {
-                    tooCloseToCivilCentre = true;
-                    break;
-                }
-            }
-
-            if (tooCloseToCivilCentre == true)
-                continue;
 
             // construct the civil centre
             this.allBuilders[0].construct(path, mapPos[0], mapPos[1], 0);
@@ -1908,7 +1895,7 @@ var CONQUESTAI = function (m) {
     m.HQ.prototype.GetTileRangeList = function (constructingRadius, refRadius)
     {
         let startRange = Math.round((refRadius * 0.125)); // the radius of the referenced building * a factor based around the cellsize
-        let endRange = Math.ceil(startRange + ((constructingRadius * 1.25) * 0.125)); // startrange + the radius of the entity that is about to be constructed * a factor ceiled to get some extra leeway 
+        let endRange = Math.ceil(startRange + ((constructingRadius * 1.25) * 0.125)) * 2; // startrange + the radius of the entity that is about to be constructed * a factor ceiled to get some extra leeway 
         let rangeList = [];
         for (let i = startRange; i < endRange + 1; i++) // add the range of numbers into the list 
             rangeList.push(i);
@@ -2223,7 +2210,12 @@ var CONQUESTAI = function (m) {
             this.UpdateList(this.allDropsites[resourceType]); // update the dropsite list per type
             for (let resource of gameState.getResourceSupplies(resourceType).values())
             {
-                if (this.IsInOwnTerritory(resource) == false) // only add if it is inside ones territory
+                if (this.IsInNeutralTerritory(resource)) {
+                    if (resource.resourceSupplyMax() > 4000) 
+                        this.LargeSupplies.outside[resourceType].push(resource);
+                }
+
+                if (this.IsInOwnTerritory(resource) == false)
                     continue;
 
                 let specificType = resource.get("ResourceSupply/Type");
@@ -3493,6 +3485,20 @@ var CONQUESTAI = function (m) {
         return sumResult; // return the result
     }
 
+    m.HQ.prototype.IsInNeutralTerritory = function (ent)
+    {
+        let tile = this.GetTileNumber(ent.position(), this.territoryMap); 
+        let tileOwner = this.TileOwners.get(tile); 
+
+        if (tileOwner == undefined) 
+            return false;
+
+        if (tileOwner == 0)
+            return true;
+
+        return false; 
+    }
+
     // return whether this unit is located inside enemy territory
     m.HQ.prototype.IsInEnemyTerritory = function (ent, withGaia = true)
     {
@@ -4182,21 +4188,25 @@ var CONQUESTAI = function (m) {
 
         result = gameState.ai.playedTurn % (20 * this.difficultyRatio);
         switch (result) {
-            // barter first
             case 0:
                 this.DifficultyResourceTrickle();
                 this.BarterResources(gameState, this.GetResourceData(gameState));
                 break;
-            // bartering was now updated by the resource data, run resource operations
             case 1:
                 let resourceData = this.GetResourceData(gameState);
-                this.SetResourceTypesBan(resourceData);
                 this.SetTradingRates(gameState, resourceData);
                 this.RefreshResourcePriorityList(resourceData);
                 break;
             default:
                 break;
-        }     
+        }
+
+        result = gameState.ai.playedTurn % (500 * this.difficultyRatio);
+        switch(result) {
+            case 0:
+                this.SetResourceTypesBan(this.GetResourceData(gameState));
+                break;
+        }
 
         Engine.ProfileStop();
     };
