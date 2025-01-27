@@ -14,7 +14,7 @@ class NewCampaignModal
 		Engine.GetGUIObjectByName("campaignImage").sprite = "stretched:" + this.template.FactionImage;
 		Engine.GetGUIObjectByName('title').caption = translateWithContext("Campaign Template", this.template.Name);
 		Engine.GetGUIObjectByName('description').caption = translateWithContext("Campaign Template", this.template.Description);
-		Engine.GetGUIObjectByName('runDescription').caption = translateWithContext("Campaign Template", "HC: " + this.template.Name);
+		Engine.GetGUIObjectByName('runDescription').caption = translateWithContext("Campaign Template", "Main Run");
 		Engine.GetGUIObjectByName('runDescription').onTextEdit = () => {
 			Engine.GetGUIObjectByName('startButton').enabled = Engine.GetGUIObjectByName('runDescription').caption.length > 0;
 		};

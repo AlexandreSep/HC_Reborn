@@ -22,7 +22,7 @@
 		</object>
 
         <object type="image" sprite="ModernDarkBoxGold" size="5 100%-135 100%-5 100%-75">
-            <object name="runDescription" font="sans-24" size="20% 15 80%-5 100%-15" type="input" style="ModernInput"></object>
+            <object name="runDescription" font="sans-24" size="35% 15 65%-5 100%-15" type="input" style="ModernInput"></object>
         </object>
 
         <object name="cancelButton" type="button" size="0%+25 100%-60 33%+10 100%-32" style="StoneButton" hotkey="cancel">
