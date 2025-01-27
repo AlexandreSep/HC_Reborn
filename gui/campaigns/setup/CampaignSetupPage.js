@@ -58,6 +58,8 @@ class CampaignSetupPage extends AutoWatcher
 		this.displayCampaignDetails();
 
 		Engine.GetGUIObjectByName("campaignSelection").list_name = this.templates.map((camp) => translateWithContext("Campaign Template", camp.Name));
+		Engine.GetGUIObjectByName("campaignSelection").list_time = this.templates.map((camp) => translateWithContext("Campaign Template", camp.TimePeriod));
+		Engine.GetGUIObjectByName("campaignSelection").list_missions = this.templates.map((camp) => translateWithContext("Campaign Template", camp.Order.length));
 		// COList needs these changed last or crashes.
 		Engine.GetGUIObjectByName("campaignSelection").list = this.templates.map((camp) => camp.identifier) || [];
 		Engine.GetGUIObjectByName("campaignSelection").list_data = this.templates.map((camp) => camp.identifier) || [];

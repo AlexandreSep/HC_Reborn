@@ -6,10 +6,10 @@
     <!-- Add a translucent black background to fade out the page -->
     <object type="image" z="0" sprite="ModernFade"/>
 
-    <object type="image" style="ModernDialog" size="50%-350 50%-300 50%+350 50%+300">
+    <object type="image" style="ModernDialog" size="50%-350 50%-325 50%+350 50%+325">
         <object type="image" z="0" sprite="ModernFade"/>
 
-		<object type="image" sprite="ModernDarkBoxGold" size="5 20 100%-5 100%-130"></object>
+		<object type="image" sprite="ModernDarkBoxGold" size="5 20 100%-5 100%-150"></object>
 
 		<object name="campaignImage" type="image" sprite="" size="50%-384 30 50%+384 384+30"></object>
         
@@ -17,16 +17,13 @@
             <translatableAttribute id="caption"></translatableAttribute>
         </object>
 
-		<object name="description" type="text" style="ModernLabelText" font="sans-bold-16" text_align="center" size="24 325 100%-24 100%-140">
+		<object name="description" type="text" style="ModernLabelText" font="sans-bold-16" text_align="center" size="24 300 100%-24 100%-140">
 			<translatableAttribute id="caption"></translatableAttribute>
 		</object>
 
-        <object type="text" style="ModernLabelText" text_align="center" size="24 100%-120 100%-24 100%-100">
-			<translatableAttribute id="caption">Please enter the name of your new campaign run:</translatableAttribute>
-		</object>
-
-		<object name="runDescription" size="24 100%-96 100%-24 100%-72" type="input" style="ModernInput">
-		</object>
+        <object type="image" sprite="ModernDarkBoxGold" size="5 100%-135 100%-5 100%-75">
+            <object name="runDescription" font="sans-24" size="20% 15 80%-5 100%-15" type="input" style="ModernInput"></object>
+        </object>
 
         <object name="cancelButton" type="button" size="0%+25 100%-60 33%+10 100%-32" style="StoneButton" hotkey="cancel">
             <translatableAttribute id="caption">Cancel</translatableAttribute>

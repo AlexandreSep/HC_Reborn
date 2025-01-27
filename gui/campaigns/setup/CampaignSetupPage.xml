@@ -10,7 +10,7 @@
 			<translatableAttribute id="caption">Campaigns</translatableAttribute>
 		</object>
 
-		<object name="leftPanel" size="30 50 30% 100%-80">
+		<object name="leftPanel" size="30 50 35% 100%-80">
 			<!-- List of campaigns -->
 			<object name="campaignSelection"
 				size="0 0 100% 100%"
@@ -23,13 +23,21 @@
 				text_align="center"
 				>
 
-				<column id="name" color="172 172 212" width="99%">
+				<column id="name" color="172 172 212" width="50%">
 					<translatableAttribute id="heading" context="campaignsetup">Name</translatableAttribute>
+				</column>
+
+				<column id="time" color="172 172 212" width="25%">
+					<translatableAttribute id="heading" context="campaignLevelList">Time Period</translatableAttribute>
+				</column>
+
+				<column id="missions" color="172 172 212" width="25%">
+					<translatableAttribute id="heading" context="campaignsetup">Missions</translatableAttribute>
 				</column>
 			</object>
 		</object>
 
-		<object type="image" sprite="ModernDarkBoxGold" size="30% 50 100%-25 100%-80">
+		<object type="image" sprite="ModernDarkBoxGold" size="35% 50 100%-25 100%-80">
 			<object name="campaignImage" type="image" sprite="" size="1 1 100%-1 100%-1"></object>
 			<object name="logoImage" type="image" sprite="" size="100%-266 100%-266 100%-10 100%-10"></object>
 		</object>
