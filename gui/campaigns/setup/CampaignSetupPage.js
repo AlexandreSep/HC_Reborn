@@ -37,18 +37,20 @@ class CampaignSetupPage extends AutoWatcher
 
 		if (!this.selectedTemplate)
 		{
-			Engine.GetGUIObjectByName("campaignTitle").caption = translate("No campaign selected.");
-			Engine.GetGUIObjectByName("campaignDesc").caption = "";
 			Engine.GetGUIObjectByName("campaignImage").sprite = "cropped:" + 400/512 + "," + 300/512 + ":session/icons/mappreview/nopreview.png";
+			Engine.GetGUIObjectByName("logoImage").sprite = "";
 			return;
 		}
 
-		Engine.GetGUIObjectByName("campaignTitle").caption = translateWithContext("Campaign Template", this.selectedTemplate.Name);
-		Engine.GetGUIObjectByName("campaignDesc").caption = translateWithContext("Campaign Template", this.selectedTemplate.Description);
-		if ('Image' in this.selectedTemplate)
-			Engine.GetGUIObjectByName("campaignImage").sprite = "cropped:" + 400/512 + "," + 300/512 + ":" + this.selectedTemplate.Image;
-		else
+		if ('Image' in this.selectedTemplate) {
+			Engine.GetGUIObjectByName("campaignImage").sprite = "cropped:" + 100/100 + "," + 100/100 + ":" + this.selectedTemplate.Image;
+			Engine.GetGUIObjectByName("logoImage").sprite = "cropped:" + 100/100 + "," + 100/100 + ":" + this.selectedTemplate.Logo;
+		}
+		else {
 			Engine.GetGUIObjectByName("campaignImage").sprite = "cropped:" + 400/512 + "," + 300/512 + ":session/icons/mappreview/nopreview.png";
+			Engine.GetGUIObjectByName("logoImage").sprite = "";
+		}
+		
 	}
 
 	render()
