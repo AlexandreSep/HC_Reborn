@@ -1,7 +1,7 @@
 {
 	"Name": "Shadows Over Ordon",
 	"Description": "Play through a campaign as the Ordonians",
-	"Preview": "session/icons/mappreview/Introductory_Tutorial.png",
+	"Image": "session/icons/mappreview/Introductory_Tutorial.png",
 	"Levels": {
 		"0": {
 			"Map": "skirmishes/Crucible of Hylia (2).xml",

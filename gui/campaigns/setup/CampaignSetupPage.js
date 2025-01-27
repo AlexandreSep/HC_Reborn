@@ -46,7 +46,7 @@ class CampaignSetupPage extends AutoWatcher
 		Engine.GetGUIObjectByName("campaignTitle").caption = translateWithContext("Campaign Template", this.selectedTemplate.Name);
 		Engine.GetGUIObjectByName("campaignDesc").caption = translateWithContext("Campaign Template", this.selectedTemplate.Description);
 		if ('Image' in this.selectedTemplate)
-			Engine.GetGUIObjectByName("campaignImage").sprite = "stretched:" + this.selectedTemplate.Image;
+			Engine.GetGUIObjectByName("campaignImage").sprite = "cropped:" + 400/512 + "," + 300/512 + ":" + this.selectedTemplate.Image;
 		else
 			Engine.GetGUIObjectByName("campaignImage").sprite = "cropped:" + 400/512 + "," + 300/512 + ":session/icons/mappreview/nopreview.png";
 	}
