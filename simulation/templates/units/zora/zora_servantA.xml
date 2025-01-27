@@ -52,7 +52,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>45</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
     <Civ>zora</Civ>
@@ -87,15 +87,15 @@
     </Capacities>
     <MaxDistance>2.0</MaxDistance>
     <Rates>
-      <food.fish>0.50</food.fish>
-      <food.fruit>0.40</food.fruit>
-      <food.grain>0.30</food.grain>
-      <food.meat>0.40</food.meat>
-      <metal.rupees>0.35</metal.rupees>
-      <stone.coralmold>0.50</stone.coralmold>
-      <stone.ore>0.30</stone.ore>
+      <food.fish>1.0</food.fish>
+      <food.fruit>1.0</food.fruit>
+      <food.grain>0.75</food.grain>
+      <food.meat>1.0</food.meat>
+      <metal.rupees>0.6</metal.rupees>
+      <stone.coralmold>0.60</stone.coralmold>
+      <stone.ore>0.60</stone.ore>
       <stone.ruins>0.35</stone.ruins>
-      <wood.rock>0.40</wood.rock>
+      <wood.rock>0.60</wood.rock>
       <wood.ruins>0.40</wood.ruins>
     </Rates>
   </ResourceGatherer>
@@ -125,8 +125,8 @@
   </UnitAI>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.6666</RunMultiplier>
-    <WalkSpeed>9.0</WalkSpeed>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>8.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_servantA.xml</Actor>

@@ -20,16 +20,16 @@
   </Attack>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
-    <BuildTime>7</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>50</food>
+      <food>25</food>
       <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>50</Max>
+    <Max>30</Max>
   </Health>
   <Identity>
     <Civ>gohma</Civ>
@@ -52,14 +52,14 @@
     <MaxDistance>2.0</MaxDistance>
     <Rates>
       <food.fruit>1</food.fruit>
-      <food.grain>0.6</food.grain>
+      <food.grain>0.5</food.grain>
       <food.meat>1</food.meat>
-      <metal.rupees>0.35</metal.rupees>
-      <stone.ore>0.35</stone.ore>
+      <metal.rupees>0.5</metal.rupees>
+      <stone.ore>0.5</stone.ore>
       <stone.ruins>2</stone.ruins>
-      <wood.rock>0.15</wood.rock>
+      <wood.rock>0.5</wood.rock>
       <wood.ruins>5</wood.ruins>
-      <wood.tree>0.7</wood.tree>
+      <wood.tree>0.75</wood.tree>
     </Rates>
   </ResourceGatherer>
   <Sound>
@@ -90,8 +90,8 @@
     <DefaultStance>passive</DefaultStance>
   </UnitAI>
   <UnitMotion>
-    <RunMultiplier>1.3076</RunMultiplier>
-    <WalkSpeed>13.0</WalkSpeed>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/gohma/gohma_harvester_b.xml</Actor>

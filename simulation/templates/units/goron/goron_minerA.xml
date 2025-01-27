@@ -29,13 +29,13 @@
     structures/goron/goron_fortress
     structures/goron/goron_wonder
     </Entities>
-    <Rate>1.0</Rate>
+    <Rate>1.2</Rate>
   </Builder>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
-    <BuildTime>20</BuildTime>
+    <BuildTime>25</BuildTime>
     <Resources>
-      <food>50</food>
+      <food>75</food>
       <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
@@ -75,11 +75,11 @@
     </Capacities>
     <MaxDistance>2.0</MaxDistance>
     <Rates>
-      <food.rocksirloin>0.55</food.rocksirloin>
-      <metal.rupees>0.55</metal.rupees>
-      <stone.ore>0.55</stone.ore>
-      <stone.ruins>0.55</stone.ruins>
-      <wood.rock>0.55</wood.rock>
+      <food.rocksirloin>1.2</food.rocksirloin>
+      <metal.rupees>0.75</metal.rupees>
+      <stone.ore>0.75</stone.ore>
+      <stone.ruins>0.75</stone.ruins>
+      <wood.rock>0.75</wood.rock>
       <wood.ruins>5</wood.ruins>
     </Rates>
   </ResourceGatherer>
@@ -106,8 +106,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.75</RunMultiplier>
-    <WalkSpeed>8.0</WalkSpeed>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>8.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/goron/goron_miner_b.xml</Actor>

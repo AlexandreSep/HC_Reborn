@@ -41,20 +41,20 @@
     structures/moblin/moblin_fortress
     structures/moblin/moblin_wonder
     </Entities>
-    <Rate>1.0</Rate>
+    <Rate>0.8</Rate>
   </Builder>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>50</food>
+      <food>25</food>
       <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>50</Max>
+    <Max>30</Max>
   </Health>
   <Identity>
     <Civ>moblin</Civ>
@@ -78,11 +78,11 @@
     <MaxDistance>5.0</MaxDistance>
     <Rates>
       <food.meat>1</food.meat>
-      <metal.rupees>0.35</metal.rupees>
-      <stone.ore>0.35</stone.ore>
+      <metal.rupees>0.5</metal.rupees>
+      <stone.ore>0.5</stone.ore>
       <stone.ruins>2</stone.ruins>
       <wood.ruins>5</wood.ruins>
-      <wood.tree>0.7</wood.tree>
+      <wood.tree>0.75</wood.tree>
     </Rates>
   </ResourceGatherer>
   <Sound>
@@ -107,6 +107,10 @@
       <trained>interface/alarm/alarm_create_worker.xml</trained>
     </SoundGroups>
   </Sound>
+    <UnitMotion>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
   <Vision>
     <Range>80</Range>
   </Vision>
