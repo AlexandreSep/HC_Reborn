@@ -36,7 +36,7 @@ var g_CenterMenuItems = [
 		"submenu": [
 			{
 				"caption": translate("Hyrule Historia"),
-				"tooltip": translate("Start a new campaign mission."),
+				"tooltip": translate("Start a new campaign"),
 				"size": "0% 0% 100% 0%+45",
 				"onPress": () => {
 					Engine.SwitchGuiPage("campaigns/setup/page.xml");
@@ -44,7 +44,7 @@ var g_CenterMenuItems = [
 			},
 			{
 				"caption": translate("Load Campaign"),
-				"tooltip": translate("Start a new campaign mission."),
+				"tooltip": translate("Load an existing campaign"),
 				"size": "0% 0%+45 100% 0%+90",
 				"onPress": () => {
 					Engine.SwitchGuiPage("campaigns/load_modal/page.xml");
