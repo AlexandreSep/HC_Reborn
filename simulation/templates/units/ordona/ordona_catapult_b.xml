@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siege|siege">
   <Attack>
     <Ranged>
       <AttackName>Boulder</AttackName>
@@ -7,7 +7,6 @@
       </Damage>
       <MaxRange>110.0</MaxRange>
       <MinRange>45.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
       <PrepareTime>5000</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>

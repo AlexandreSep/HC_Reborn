@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry">
   <Attack>
     <Melee>
       <AttackName>Spear</AttackName>
@@ -39,7 +39,7 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/ordona/ordona_yeoman_b</SelectionGroupName>
     <Tooltip>Light Melee Cavalry unit armed with a spear, ideal for attacking other Cavalry units.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Melee AntiCav</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

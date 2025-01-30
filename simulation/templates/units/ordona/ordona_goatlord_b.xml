@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_heavy_cavalry|heavy_cavalry">
   <Attack>
     <Melee>
       <AttackName>Lance</AttackName>
@@ -10,6 +10,12 @@
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
+	<Bonuses>
+	<Bonus1>
+		<Classes>Cavalry</Classes>
+		<Multiplier>2</Multiplier>
+		</Bonus1>
+	</Bonuses>	  
       <MaxRange>6.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1100</PrepareTime>
@@ -39,7 +45,7 @@
     <RequiredTechnology>civ_choices/ordona/choosehero_mayorbo</RequiredTechnology>
     <SelectionGroupName>units/ordona_goatlord_b</SelectionGroupName>
     <Tooltip>Heavy Cavalry Commander unit armed with a large lance that improves other Cavalry units.</Tooltip>
-    <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Commander Melee AntiCav</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

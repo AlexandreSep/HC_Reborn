@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_light_archer|light_archer">
   <Attack>
     <Ranged>
       <AttackName>Arrows</AttackName>
@@ -7,7 +7,6 @@
       </Damage>
       <MaxRange>90</MaxRange>
       <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1500</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
@@ -34,7 +33,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Sandsniper Archer Human</Classes>
+    <Classes datatype="tokens">Medium Sandsniper Human</Classes>
     <GenericName>Sand Sniper</GenericName>
     <History>The Gerudo Sand Snipers represent some of the best archers in all the desert. Trained from a very young age in the art of the bow, Sand Snipers are infamous for their ability to hit their targets dead-on from extremely long ranges. There are few individuals in Hyrule who can best them from a distance. </History>
     <Icon>units/gerudo/ger_sandsniper.dds</Icon>

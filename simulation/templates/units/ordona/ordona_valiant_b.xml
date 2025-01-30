@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_heavy-infantry|heavy_infantry|shield">
   <Attack>
     <Melee>
       <AttackName>Sword</AttackName>
@@ -7,7 +7,6 @@
         <Pierce>2</Pierce>
       </Damage>
       <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1000</PrepareTime>
       <RepeatTime>1300</RepeatTime>
     </Melee>
