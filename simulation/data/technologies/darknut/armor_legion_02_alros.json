@@ -6,12 +6,7 @@
 	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
 		{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0},
 		{"value": "Resistance/Entity/Damage/Crush", "add": 5.0},
-		{"value": "Resistance/Entity/Damage/Forest", "add": 10},
-		{"value": "Resistance/Entity/Damage/Fire", "add": 10},
-		{"value": "Resistance/Entity/Damage/Water", "add": 10},
-		{"value": "Resistance/Entity/Damage/Shadow", "add": 10},
-		{"value": "Resistance/Entity/Damage/Spirit", "add": 10},
-		{"value": "Resistance/Entity/Damage/Light", "add": 10}],
+		{"value": "Resistance/Entity/Damage/Magic", "add": 10}],
 	"affects": ["Mercenary","Alrospromote"],
 	"soundComplete": ""
 }

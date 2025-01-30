@@ -1,5 +1,5 @@
 <Entity parent="HC_template_unit_auxiliary">
-  <Attack>
+ <Attack>
     <Ranged>
       <AttackName>Dung</AttackName>
       <Damage>
@@ -57,7 +57,7 @@
   </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">-Organic Construct Large Class40</Classes>
+    <Classes datatype="tokens">-Organic Construct Large</Classes>
     <GenericName>Dungflinger</GenericName>
     <History>The best that the smart science makers of all blinkind could make! Behold the Dungflinger! Such a smart idea I don't know why I didn't think of it! So ya put the dung in the cart and you let it all go and man oh man it sure does make the baddies confused! They dance around all smelly while we go in an whack em all dead! Thanks smart science makers!</History>
     <Icon>units/moblin/mob_dungflinger.dds</Icon>

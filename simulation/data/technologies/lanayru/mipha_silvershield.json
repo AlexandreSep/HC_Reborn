@@ -11,12 +11,7 @@
 	{"value": "Resistance/Entity/Damage/Hack", "add": 20.0},
 	{"value": "Resistance/Entity/Damage/Pierce", "add": 20.0},
 	{"value": "Resistance/Entity/Damage/Crush", "add": 20.0},
-	{"value": "Resistance/Entity/Damage/Forest", "add": 10.0},
-	{"value": "Resistance/Entity/Damage/Fire", "add": 10.0},
-	{"value": "Resistance/Entity/Damage/Water", "add": 10.0},
-	{"value": "Resistance/Entity/Damage/Spirit", "add": 10.0},
-	{"value": "Resistance/Entity/Damage/Light", "add": 10.0},
-	{"value": "Resistance/Entity/Damage/Shadow", "add": 10.0}
+	{"value": "Resistance/Entity/Damage/Magic", "add": 10.0}
 	],
 	"affects": ["SilverShield"],
 	"hideIfTechnologyRequirementIsNotMet": "true",

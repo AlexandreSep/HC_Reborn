@@ -6,9 +6,9 @@
 	"requirementsTooltip": "Unlocked with Dodalagon.",
 	"icon": "lizalfos/volvagian_might.dds",
 	"researchTime": 40,
-	"tooltip": "All non-creature, non mechanical units gain +50% Resitance to Fire damage.",
+	"tooltip": "All non-creature, non mechanical units gain +20% Resitance to Magic damage.",
 	"modifications": [
-		{"value": "Resistance/Entity/Damage/Fire", "add": 50}
+		{"value": "Resistance/Entity/Damage/Magic", "add": 20}
 	],
 	"affects": ["Volvamight"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

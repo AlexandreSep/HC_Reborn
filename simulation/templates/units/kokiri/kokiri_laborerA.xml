@@ -31,13 +31,13 @@
     structures/kokiri/kokiri_fortress
     structures/kokiri/kokiri_wonder
     </Entities>
-    <Rate>0.75</Rate>
+    <Rate>0.8</Rate>
   </Builder>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
-    <BuildTime>6</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>50</food>
+      <food>25</food>
       <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
@@ -80,15 +80,15 @@
     </Capacities>
     <MaxDistance>2.0</MaxDistance>
     <Rates>
-      <food.fruit>0.45</food.fruit>
-      <food.grain>0.40</food.grain>
-      <food.meat>0.30</food.meat>
-      <metal.rupees>0.30</metal.rupees>
-      <stone.ore>0.20</stone.ore>
+      <food.fruit>1.0</food.fruit>
+      <food.grain>0.50</food.grain>
+      <food.meat>1.0</food.meat>
+      <metal.rupees>0.50</metal.rupees>
+      <stone.ore>0.50</stone.ore>
       <stone.ruins>0.20</stone.ruins>
-      <wood.rock>0.20</wood.rock>
+      <wood.rock>0.6</wood.rock>
       <wood.ruins>0.45</wood.ruins>
-      <wood.tree>0.45</wood.tree>
+      <wood.tree>0.75</wood.tree>
     </Rates>
   </ResourceGatherer>
   <Sound>
@@ -114,8 +114,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.4545</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
   </UnitMotion>
   <Vision>
     <Range>70</Range>

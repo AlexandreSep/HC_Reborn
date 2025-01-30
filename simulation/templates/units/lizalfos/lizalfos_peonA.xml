@@ -60,7 +60,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>65</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
     <Civ>lizalfos</Civ>
@@ -89,13 +89,13 @@
     <MaxDistance>2.0</MaxDistance>
     <Rates>
       <food.meat>1</food.meat>
-      <food.sacrifices>0.5</food.sacrifices>
-      <metal.rupees>0.35</metal.rupees>
-      <stone.ore>0.35</stone.ore>
+      <food.sacrifices>0.75</food.sacrifices>
+      <metal.rupees>0.6</metal.rupees>
+      <stone.ore>0.6</stone.ore>
       <stone.ruins>2</stone.ruins>
-      <wood.rock>0.15</wood.rock>
+      <wood.rock>0.6</wood.rock>
       <wood.ruins>5</wood.ruins>
-      <wood.tree>0.7</wood.tree>
+      <wood.tree>0.75</wood.tree>
     </Rates>
   </ResourceGatherer>
   <Sound>
@@ -120,6 +120,10 @@
       <trained>interface/alarm/alarm_create_worker.xml</trained>
     </SoundGroups>
   </Sound>
+    <UnitMotion>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_peonA.xml</Actor>
   </VisualActor>
