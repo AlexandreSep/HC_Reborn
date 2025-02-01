@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_heavy-infantry|heavy_infantry|shield">
+<Entity parent="classes/HC_template_unit_heavy_infantry|heavy_infantry|shield">
   <Attack>
     <Melee>
       <AttackName>Sword</AttackName>
