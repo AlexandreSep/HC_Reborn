@@ -19,7 +19,7 @@
     <UnhealableClasses datatype="tokens" />
   </Heal>
   <Health>
-    <Max>250</Max>
+    <Max>350</Max>
   </Health>
   <Identity>
     <AIBuild>

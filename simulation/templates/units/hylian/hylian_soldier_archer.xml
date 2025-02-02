@@ -30,7 +30,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>70</Max>
+    <Max>210</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">-LevyArcher SoldierArcher</Classes>

@@ -26,7 +26,7 @@
     <Square depth="12.0" width="8.0" />
   </Footprint>
   <Health>
-    <Max>450</Max>
+    <Max>550</Max>
   </Health>
   <Identity>
     <Civ>hylian</Civ>

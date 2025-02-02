@@ -3,7 +3,8 @@
     <Ranged>
       <AttackName>Arrows</AttackName>
       <Damage>
-        <Pierce>40</Pierce>
+        <Pierce>5</Pierce>
+		<TrueDamage>15</TrueDamage>
       </Damage>
       <MaxRange>80</MaxRange>
       <MinRange>15.0</MinRange>
@@ -17,7 +18,6 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>4000</RepeatTime>
-      <TrueDamage>40</TrueDamage>
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>

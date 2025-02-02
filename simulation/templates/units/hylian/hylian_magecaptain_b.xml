@@ -34,7 +34,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>100</Max>
+    <Max>250</Max>
   </Health>
   <Identity>
     <AIBuild>

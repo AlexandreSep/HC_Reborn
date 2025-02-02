@@ -50,7 +50,7 @@
     <Square depth="10.0" width="10.0" />
   </Footprint>
   <Health>
-    <Max>400</Max>
+    <Max>750</Max>
   </Health>
   <Identity>
     <Civ>hylian</Civ>

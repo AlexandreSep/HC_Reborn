@@ -13,7 +13,7 @@
     </Melee>
   </Attack>
   <Health>
-    <Max>70</Max>
+    <Max>225</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">-LevySwordsman SoldierSwordsman</Classes>

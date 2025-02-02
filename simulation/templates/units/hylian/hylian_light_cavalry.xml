@@ -22,7 +22,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>120</Max>
+    <Max>250</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">-ScoutCavalry LightCavalry</Classes>

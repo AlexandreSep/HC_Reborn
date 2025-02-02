@@ -12,7 +12,7 @@
     </Melee>
   </Attack>
   <Health>
-    <Max>100</Max>
+    <Max>250</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">KingdomSpearman</Classes>
