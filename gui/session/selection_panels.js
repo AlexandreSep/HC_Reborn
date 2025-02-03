@@ -1290,7 +1290,7 @@ let g_PanelsOrder = [
 	"Barter", // Must always be visible on markets
 	"Garrison", // More important than Formation, as you want to see the garrisoned units in ships
 	"Alert",
-	//"Formation", //HC-Code - Remove Formation
+	"Formation",
 	"Stance", // Normal together with formation
 
 	// RIGHT PANE

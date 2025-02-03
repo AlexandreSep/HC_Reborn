@@ -155,31 +155,15 @@ var g_Commands = {
 		cmpRangeManager.SetLosRevealAll(-1, cmd.enable);
 	},
 
-    // HC-code, positions given are based upon the battalion system
 	"walk": function(player, cmd, data)
 	{
-		if(data.entities.length < 1) { return; } // sometimes the data filter itself doesn't have the entity, maybe dead unit by that point?
-        let startPos = Engine.QueryInterface(data.entities[0], IID_Position).GetPosition2D();
-        let initialDestination = new Vector2D(cmd.x, cmd.z);
-        let battalionIndices = GetBattalionIndices(data.entities);
-        let allBattalions = data.cmpPlayer.allBattalions;
-
-        let battalionDestinations = GetBattalionDestinations(initialDestination, startPos, battalionIndices, allBattalions);
-
-        for (let i = 0; i < battalionIndices.length; i++)
-        {
-            let currentDestination = battalionDestinations[i];
-            let battalionEnts = allBattalions.get(battalionIndices[i]);
-            GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                cmpUnitAI.Walk(currentDestination.x, currentDestination.y, cmd.queued, cmd.pushFront);
-            });
-        }
+		GetFormationUnitAIs(data.entities, player, cmd, data.formation).forEach(cmpUnitAI => {
+			cmpUnitAI.Walk(cmd.x, cmd.z, cmd.queued, cmd.pushFront);
+		});
 	},
-    // HC-end
 
 	"walk-custom": function(player, cmd, data)
-    {
-        return; // HC-code, could simply return because it screws up formations or takes the first position given instead
+	{
 		for (let ent in data.entities)
 			GetFormationUnitAIs([data.entities[ent]], player, cmd, data.formation).forEach(cmpUnitAI => {
 				cmpUnitAI.Walk(cmd.targetPositions[ent].x, cmd.targetPositions[ent].y, cmd.queued, cmd.pushFront);
@@ -197,30 +181,16 @@ var g_Commands = {
 		}
 	},
 
-    // HC-code, positions given are based upon the battalion system
 	"attack-walk": function(player, cmd, data)
 	{
         let allowCapture = cmd.allowCapture || cmd.allowCapture == null;
-        let startPos = Engine.QueryInterface(data.entities[0], IID_Position).GetPosition2D();
-        let initialDestination = new Vector2D(cmd.x, cmd.z);
-        let battalionIndices = GetBattalionIndices(data.entities);
-        let allBattalions = data.cmpPlayer.allBattalions;
-
-        let battalionDestinations = GetBattalionDestinations(initialDestination, startPos, battalionIndices, allBattalions);
-
-        for (let i = 0; i < battalionIndices.length; i++) {
-            let battalionEnts = allBattalions.get(battalionIndices[i]);
-            let currentDestination = battalionDestinations[i];
-            GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                cmpUnitAI.WalkAndFight(currentDestination.x, currentDestination.y, cmd.targetClasses, allowCapture, cmd.queued, cmd.pushFront);
-            });
-        }
+        GetFormationUnitAIs(data.entities, player, cmd, data.formation).forEach(cmpUnitAI => {
+			cmpUnitAI.WalkAndFight(cmd.x, cmd.z, cmd.targetClasses, allowCapture, cmd.queued, cmd.pushFront);
+		});
     },
-    // HC-end
 
 	"attack-walk-custom": function(player, cmd, data)
-    {
-        return; // HC-code, could simply return because it screws up formations or takes the first position given instead
+	{
 		let allowCapture = cmd.allowCapture || cmd.allowCapture == null;
 		for (let ent in data.entities)
 			GetFormationUnitAIs([data.entities[ent]], player, cmd, data.formation).forEach(cmpUnitAI => {
@@ -236,16 +206,9 @@ var g_Commands = {
 		   !(IsOwnedByEnemyOfPlayer(player, cmd.target) || IsOwnedByNeutralOfPlayer(player, cmd.target)))
 			warn("Invalid command: attack target is not owned by enemy of player "+player+": "+uneval(cmd));
 
-        // HC-code
-        let allBattalions = data.cmpPlayer.allBattalions;
-        for (let index of GetBattalionIndices(data.entities))
-        {
-            let battalionEnts = allBattalions.get(index);
-            GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                cmpUnitAI.Attack(cmd.target, allowCapture, cmd.queued, cmd.pushFront);
-            });
-        }
-        // HC-end
+		GetFormationUnitAIs(data.entities, player, cmd, data.formation).forEach(cmpUnitAI => {
+			cmpUnitAI.Attack(cmd.target, allowCapture, cmd.queued, cmd.pushFront);
+		});
 	},
 
 	"patrol": function(player, cmd, data)
@@ -268,14 +231,9 @@ var g_Commands = {
 		if (g_DebugCommands && !(IsOwnedByPlayer(player, cmd.target) || IsOwnedByAllyOfPlayer(player, cmd.target)))
 			warn("Invalid command: heal target is not owned by player "+player+" or their ally: "+uneval(cmd));
 
-        // HC-code
-        for (let index of GetBattalionIndices(data.entities)) {
-            let battalionEnts = data.cmpPlayer.allBattalions.get(index);
-            GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                cmpUnitAI.Heal(cmd.target, cmd.queued, cmd.pushFront);
-            });
-        }
-        // HC-end
+		GetFormationUnitAIs(data.entities, player, cmd, data.formation).forEach(cmpUnitAI => {
+			cmpUnitAI.Heal(cmd.target, cmd.queued, cmd.pushFront);
+		});
 	},
 
 	"repair": function(player, cmd, data)
@@ -284,14 +242,9 @@ var g_Commands = {
 		if (g_DebugCommands && !IsOwnedByAllyOfPlayer(player, cmd.target))
 			warn("Invalid command: repair target is not owned by ally of player "+player+": "+uneval(cmd));
 
-        // HC-code
-        for (let index of GetBattalionIndices(data.entities)) {
-            let battalionEnts = data.cmpPlayer.allBattalions.get(index);
-            GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                cmpUnitAI.Repair(cmd.target, cmd.autocontinue, cmd.queued, cmd.pushFront);
-            });
-        }
-        // HC-end
+		GetFormationUnitAIs(data.entities, player, cmd, data.formation).forEach(cmpUnitAI => {
+			cmpUnitAI.Repair(cmd.target, cmd.autocontinue, cmd.queued, cmd.pushFront);
+		});
 	},
 
 	"gather": function(player, cmd, data)
@@ -299,26 +252,16 @@ var g_Commands = {
 		if (g_DebugCommands && !(IsOwnedByPlayer(player, cmd.target) || IsOwnedByGaia(cmd.target)))
 			warn("Invalid command: resource is not owned by gaia or player "+player+": "+uneval(cmd));
 
-        // HC-code
-        for (let index of GetBattalionIndices(data.entities)) {
-            let battalionEnts = data.cmpPlayer.allBattalions.get(index);
-            GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                cmpUnitAI.Gather(cmd.target, cmd.queued, cmd.pushFront);
-            });
-        }
-        // HC-end
+		GetFormationUnitAIs(data.entities, player, cmd, data.formation).forEach(cmpUnitAI => {
+			cmpUnitAI.Gather(cmd.target, cmd.queued, cmd.pushFront);
+		});
 	},
 
 	"gather-near-position": function(player, cmd, data)
-    {
-        // HC-code
-        for (let index of GetBattalionIndices(data.entities)) {
-            let battalionEnts = data.cmpPlayer.allBattalions.get(index);
-            GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                cmpUnitAI.GatherNearPosition(cmd.x, cmd.z, cmd.resourceType, cmd.resourceTemplate, cmd.queued, cmd.pushFront);
-            });
-        }
-        // HC-end
+	{
+		GetFormationUnitAIs(data.entities, player, cmd, data.formation).forEach(cmpUnitAI => {
+			cmpUnitAI.GatherNearPosition(cmd.x, cmd.z, cmd.resourceType, cmd.resourceTemplate, cmd.queued, cmd.pushFront);
+		});
 	},
 
 	"returnresource": function(player, cmd, data)
@@ -326,15 +269,10 @@ var g_Commands = {
 		if (g_DebugCommands && !IsOwnedByPlayer(player, cmd.target))
 			warn("Invalid command: dropsite is not owned by player "+player+": "+uneval(cmd));
 
-        // HC-code
-        for (let index of GetBattalionIndices(data.entities)) {
-            let battalionEnts = data.cmpPlayer.allBattalions.get(index);
-            GetFormationUnitAIs(battalionEnts, player, cmd, data.formation).forEach(cmpUnitAI => {
-                cmpUnitAI.ReturnResource(cmd.target, cmd.queued, cmd.pushFront);
-            });
-        }
-        // HC-end
-    },
+		GetFormationUnitAIs(data.entities, player, cmd, data.formation).forEach(cmpUnitAI => {
+			cmpUnitAI.ReturnResource(cmd.target, cmd.queued, cmd.pushFront);
+		});
+	},
 
     // HC-code, researches the techs related to the hero selection 
     "civ-choice": function (player, cmd, data)

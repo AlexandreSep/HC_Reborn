@@ -115,6 +115,7 @@
     <PatrolWaitTime>1</PatrolWaitTime>
     <Formations datatype="tokens">
       special/formations/null
+      special/formations/box
       special/formations/HC_standard
       special/formations/hylian_close
       special/formations/gohma_scatter
