@@ -4,6 +4,7 @@
       <AttackName>Spear Bolts</AttackName>
       <Damage>
         <Pierce>100.0</Pierce>
+		<TrueDamage>0.0</TrueDamage>
       </Damage>
       <Knockback>
         <Horizontal>30</Horizontal>
