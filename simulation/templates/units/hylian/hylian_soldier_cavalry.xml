@@ -13,7 +13,7 @@
     </Melee>
   </Attack>
   <Health>
-    <Max>140</Max>
+    <Max>350</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">-LevyCavalry SoldierCavalry</Classes>

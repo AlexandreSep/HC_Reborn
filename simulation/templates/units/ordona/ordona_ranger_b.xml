@@ -1,9 +1,10 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_heavy_archer|heavy_archer">
   <Attack>
     <Ranged>
       <AttackName>Arrows</AttackName>
       <Damage>
-        <Pierce>40</Pierce>
+        <Pierce>5</Pierce>
+		<TrueDamage>15</TrueDamage>
       </Damage>
       <MaxRange>80</MaxRange>
       <MinRange>15.0</MinRange>
@@ -17,7 +18,6 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>4000</RepeatTime>
-      <TrueDamage>40</TrueDamage>
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
@@ -37,7 +37,7 @@
     <Civ>ordona</Civ>
     <Classes datatype="tokens">Medium Class80 CanGarrison Ranger</Classes>
     <GenericName>Ranger</GenericName>
-    <History>Ordonian Rangers were those dedicated to protecting the wild borders of the Province from encroachment. Initially established on the western border to watch and warn of incoming Moblin invasions, Rangers can now be found on all edges of Ordona, from Faron to the haunted canyons of Ikana. These stealthy soldiers know how to survive in the wilderness and take out almost any foe before they knew what hit them. They can snipe enemies with their Ranger Crossbows as well as switch to using battle axes in a melee.</History>
+    <History>Ordonian Rangers were those dedicated to protecting the wild borders of the Province from encroachment. Initially established on the western border to watch and warn of incoming Moblin invasions, Rangers can now be found on all edges of Ordona, from Faron to the haunted canyons of Ikana. These stealthy soldiers know how to survive in the wilderness and take out almost any foe before they knew what hit them. They can snipe enemies with their Ranger Crossbows.</History>
     <Icon>units/ordona/ord_ranger.dds</Icon>
     <Lang>ordona</Lang>
     <SelectionGroupName>units/ordona/ordona_ranger_b</SelectionGroupName>

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beast|flying">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>

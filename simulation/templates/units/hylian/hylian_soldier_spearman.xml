@@ -28,7 +28,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>70</Max>
+    <Max>225</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">-LevySpearman SoldierSpearman</Classes>

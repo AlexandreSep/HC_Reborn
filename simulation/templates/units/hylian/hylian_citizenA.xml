@@ -84,15 +84,15 @@
     </Capacities>
     <MaxDistance>2.0</MaxDistance>
     <Rates>
-      <food.fruit>0.40</food.fruit>
-      <food.grain>0.40</food.grain>
-      <food.meat>0.40</food.meat>
-      <metal.rupees>0.40</metal.rupees>
-      <stone.ore>0.40</stone.ore>
-      <stone.ruins>0.40</stone.ruins>
-      <wood.rock>0.40</wood.rock>
-      <wood.ruins>0.40</wood.ruins>
-      <wood.tree>0.40</wood.tree>
+      <food.fruit>1.0</food.fruit>
+      <food.grain>0.75</food.grain>
+      <food.meat>1.0</food.meat>
+      <metal.rupees>0.60</metal.rupees>
+      <stone.ore>0.60</stone.ore>
+      <stone.ruins>0.60</stone.ruins>
+      <wood.rock>0.60</wood.rock>
+      <wood.ruins>0.60</wood.ruins>
+      <wood.tree>0.60</wood.tree>
     </Rates>
   </ResourceGatherer>
   <Sound>
@@ -121,8 +121,8 @@
     <DefaultStance>passive</DefaultStance>
   </UnitAI>
   <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>8.5</WalkSpeed>
   </UnitMotion>
   <Vision>
     <Range>80</Range>

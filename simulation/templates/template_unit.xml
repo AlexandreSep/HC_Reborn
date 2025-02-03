@@ -75,7 +75,8 @@
         <Siege>100.0</Siege>
         <Poison>1.0</Poison>
         <TrueDamage>0</TrueDamage>
-        <Magic>1</Magic>
+        <Magic>1.0</Magic>
+		<Fire>1.0</Fire>
       </Damage>
     </Entity>
     <DodgeRating>0</DodgeRating>

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_light_infantry|buffer">
   <Auras datatype="tokens">
     units/deacon_chant_1
   units/deacon_chant_2

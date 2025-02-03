@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_auxiliary">
+<Entity parent="HC_template_hero_auxiliary|hero_ranged">
   <Attack>
     <Ranged>
       <AttackName>Cannonball</AttackName>

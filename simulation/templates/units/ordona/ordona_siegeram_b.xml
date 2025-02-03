@@ -1,15 +1,9 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siege|ram">
   <Attack>
     <Melee>
       <AttackName>Ram</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Structure</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
       <Damage>
-        <Crush>150.0</Crush>
+		<Crush>10.0</Crush>
       </Damage>
       <MaxRange>7.0</MaxRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>

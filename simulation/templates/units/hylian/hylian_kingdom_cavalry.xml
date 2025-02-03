@@ -12,7 +12,7 @@
     </Melee>
   </Attack>
   <Health>
-    <Max>180</Max>
+    <Max>400</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">KingdomCavalry</Classes>

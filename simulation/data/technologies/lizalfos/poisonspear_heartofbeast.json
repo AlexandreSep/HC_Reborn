@@ -8,8 +8,8 @@
 	"researchTime": 40,
 	"tooltip": "Poison Spear Launcher now does Truedamage",
 	"modifications": [
-		{"value": "Attack/Ranged/Damage/Truedamage", "add": 100},
-		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 0}
+		{"value": "Attack/Ranged/Damage/TrueDamage", "add": 100},
+		{"value": "Attack/Ranged/Damage/Pierce", "replace": 0.0}
 	],
 	"affects": ["Poisonspear"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_cavalry">
+<Entity parent="HC_template_hero_cavalry|hero_melee|heavy_infantry">
   <Attack>
     <Ranged>
       <AttackName>Bolts</AttackName>

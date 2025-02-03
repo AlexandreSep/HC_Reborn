@@ -40,7 +40,7 @@
     <History>So one day a dumb Hinox and a Dumb Bugblin decided to make a baby! So gross! But look at what they made! Big dummy Bokonox! They are slow yeah that's true, but they are pretty good at takin the big bad beating from the baddies! Send em in first to get hit and we all come in after to hit back!</History>
     <Icon>units/moblin/mob_bokonox.dds</Icon>
     <Lang>moblin</Lang>
-    <RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_glutko</RequiredTechnology>
     <SelectionGroupName>units/moblin/moblin_bokonox_b</SelectionGroupName>
     <Tooltip>Only cool boss Glutko can make these guys! Big bad Creature unit can take seriously lots of hits before he goes down!</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

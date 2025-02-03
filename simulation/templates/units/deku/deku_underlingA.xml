@@ -25,13 +25,13 @@
 	  structures/deku/deku_wallset
 	  structures/deku/deku_wonder 
     </Entities>
-    <Rate>1.0</Rate>
+    <Rate>0.8</Rate>
   </Builder>
   <Cost>
     <BattalionSlots>1</BattalionSlots>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>50</food>
+      <food>25</food>
       <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
@@ -87,11 +87,11 @@
     <Rates>
       <food.fruit>1</food.fruit>
       <food.grain>0.5</food.grain>
-      <metal.rupees>0.35</metal.rupees>
+      <metal.rupees>0.5</metal.rupees>
       <stone.meganut>0.5</stone.meganut>
       <stone.ruins>2</stone.ruins>
       <wood.ruins>5</wood.ruins>
-      <wood.tree>0.7</wood.tree>
+      <wood.tree>0.75</wood.tree>
     </Rates>
   </ResourceGatherer>
   <Sound>
@@ -118,6 +118,10 @@
       <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
     </SoundGroups>
   </Sound>
+    <UnitMotion>
+    <RunMultiplier>1.25</RunMultiplier>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/deku/deku_underlingA.xml</Actor>
   </VisualActor>
