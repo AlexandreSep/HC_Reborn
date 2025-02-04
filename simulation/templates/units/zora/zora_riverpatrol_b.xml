@@ -43,6 +43,10 @@
   <Position>
     <Floating>false</Floating>
   </Position>
+      <Promotion>
+    <Entity>units/zora/zora_halberdier_b</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
   <Resistance>
     <Entity>
       <Damage>

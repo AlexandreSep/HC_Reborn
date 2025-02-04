@@ -40,7 +40,7 @@
     <Floating>false</Floating>
   </Position>
   <Promotion>
-    <Entity>units/zora/zora_blademaster_upg</Entity>
+    <Entity>units/zora/zora_shocktroop_b</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <Resistance>
