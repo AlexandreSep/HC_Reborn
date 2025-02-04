@@ -25,9 +25,21 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2500</RepeatTime>
+	  <SpawnEntityOnImpact>
+        <SpawnNumberMax>3</SpawnNumberMax>
+        <SpawnNumberMin>1</SpawnNumberMin>
+        <SpawnOnHit>
+          <Chance>100</Chance>
+          <SpawnAtTarget>true</SpawnAtTarget>
+        </SpawnOnHit>
+        <SpawnOnImpact>
+          <Chance>100</Chance>
+        </SpawnOnImpact>
+        <Template>units/zora/zora_kyameron_b</Template>
+      </SpawnEntityOnImpact>
       <Splash>
         <Damage>
-          <Water>15.0</Water>
+          <Magic>15.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -59,7 +71,7 @@
   </Health>
   <Identity>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">FloodMaster ZoraFemale Medium Class80 WaterElement</Classes>
+    <Classes datatype="tokens">FloodMaster ZoraFemale Medium WaterElement</Classes>
     <GenericName>Floodmaster</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Floodmasters represent some of the most powerful Mages in not only the Dominion, but the entire land of Hyrule. Though it takes a lifetime to master, their abilities to warp and control water rival that of the Sage of Water herself. A lone Floodmaster can summon forth a surge of rushing water, knocking back enemies much larger than the mage quite a distance.</History>
