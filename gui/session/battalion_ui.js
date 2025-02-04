@@ -425,25 +425,25 @@ function AddBattalions (battalionsToAdd)
             battalion.groupID = 100;
 
             // Old ordering Separating buildings and units, military and civilians
-            //~ if (battalion.isStructure && !battalion.isCivilian){
-                //~ AddBattalionToList (battalion, playerID, g_structuresMilitaryList[playerID]);
-            //~ }else if (battalion.isStructure && battalion.isCivilian){
-                //~ AddBattalionToList (battalion, playerID, g_structuresCivilList[playerID]);
-            //~ }else if(battalion.isCivilian){
-                //~ AddBattalionToList (battalion, playerID, g_civiliansList[playerID]);
-            //~ }else{
-                //~ AddBattalionToList (battalion, playerID, g_battalionList[playerID]);
-            //~ }
-
-            if (battalion.isStructure && battalion.isCenterNode){
-                AddBattalionToList (battalion, playerID, g_structuresCivilList[playerID]);
-            }else if (battalion.isStructure && !battalion.isCenterNode && battalion.trainsUnits){
+            if (battalion.isStructure && !battalion.isCivilian){
                 AddBattalionToList (battalion, playerID, g_structuresMilitaryList[playerID]);
-            }else if(battalion.isStructure){
+            }else if (battalion.isStructure && battalion.isCivilian){
+                AddBattalionToList (battalion, playerID, g_structuresCivilList[playerID]);
+            }else if(battalion.isCivilian){
                 AddBattalionToList (battalion, playerID, g_civiliansList[playerID]);
             }else{
                 AddBattalionToList (battalion, playerID, g_battalionList[playerID]);
             }
+
+            // if (battalion.isStructure && battalion.isCenterNode){
+            //     AddBattalionToList (battalion, playerID, g_structuresCivilList[playerID]);
+            // }else if (battalion.isStructure && !battalion.isCenterNode && battalion.trainsUnits){
+            //     AddBattalionToList (battalion, playerID, g_structuresMilitaryList[playerID]);
+            // }else if(battalion.isStructure){
+            //     AddBattalionToList (battalion, playerID, g_civiliansList[playerID]);
+            // }else{
+            //     AddBattalionToList (battalion, playerID, g_battalionList[playerID]);
+            // }
         }
     }
 }

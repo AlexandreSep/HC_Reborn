@@ -230,7 +230,7 @@ GuiInterface.prototype.IsBattalionACivilianBattalion = function (battalionEntiti
 	if (cmpIdentity){
 		let entityClasses = cmpIdentity.GetClassesList();
 
-		if (MatchesClassList(entityClasses, "Structure")){
+		if (MatchesClassList(entityClasses, "Civilian")){
 			return true;
 		}
 	}
