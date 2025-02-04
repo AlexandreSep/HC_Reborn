@@ -59,12 +59,15 @@ function InitGame(settings)
 			cmpAIManager.AddPlayer(settings.PlayerData[i].AI, i, AIDiff, settings.PlayerData[i].AIBehavior || "random");
             cmpPlayer.SetAI(true);
 
-            //HC-code, Modifiers for Legendary Difficulty
-			if(AIDiff == 6) {
+            //HC-code, Modifiers
+			if(AIDiff == 5) {
+				cmpModifiersManager.AddModifiers("AI Bonus", {
+					"Cost/BuildTime": [{ "affects": ["Unit", "Structure"], "multiply": 0.8 }],
+				}, cmpPlayer.entity);
+			}
+			else if(AIDiff == 6) {
 				cmpModifiersManager.AddModifiers("AI Bonus", {
 					"Cost/BuildTime": [{ "affects": ["Unit", "Structure"], "multiply": 0.5 }],
-					"Cost/Resources/metal": [{ "affects": ["Unit", "Structure"], "multiply": 0.5 }],
-					"Researcher/TechCostMultiplier/metal": [{ "affects": ["Unit", "Structure"], "multiply": 0.5 }]
 				}, cmpPlayer.entity);
 			}
 		}

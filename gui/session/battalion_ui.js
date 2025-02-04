@@ -1144,41 +1144,41 @@ function UpdateBattalions (battalionsToUpdate)
         let playerBattalions = undefined;
         for (let newBattalionData of battalionsToUpdateForPlayer){
             // Old sorting separating civilians and military units as well as structures and units
-            //~ if (!newBattalionData.isStructure && newBattalionData.isCivilian){ // Civil Unit
-                //~ playerBattalions = g_civiliansList[playerID];
-                //~ battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_CIVIL);
-                //~ battalionList = g_civiliansList[playerID];
-            //~ } else if (!newBattalionData.isStructure && !newBattalionData.isCivilian){ // Military Unit
-                //~ playerBattalions = g_battalionList[playerID];
-                //~ battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_MILITARY);
-                //~ battalionList = g_battalionList[playerID];
-            //~ } else if (newBattalionData.isStructure && newBattalionData.isCivilian){ // Civil Structure
-                //~ playerBattalions = g_structuresCivilList[playerID];
-                //~ battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_CIVIL);
-                //~ battalionList = g_structuresCivilList[playerID];
-            //~ } else if (newBattalionData.isStructure && !newBattalionData.isCivilian){ // Military Structure
-                //~ playerBattalions = g_structuresMilitaryList[playerID];
-                //~ battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_MILITARY);
-                //~ battalionList = g_structuresMilitaryList[playerID];
-            //~ }
-
-            if (!newBattalionData.isStructure && newBattalionData.isCenterNode){ // Center Node
+            if (!newBattalionData.isStructure && newBattalionData.isCivilian){ // Civil Unit
                 playerBattalions = g_civiliansList[playerID];
                 battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_CIVIL);
                 battalionList = g_civiliansList[playerID];
-            } else if (newBattalionData.isStructure && !newBattalionData.isCenterNode && newBattalionData.trainsUnits){ // Trains Units
-                playerBattalions = g_structuresCivilList[playerID];
-                battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_CIVIL);
-                battalionList = g_structuresCivilList[playerID];
-            } else if (newBattalionData.isStructure){ // Other Structures
-                playerBattalions = g_structuresMilitaryList[playerID];
-                battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_MILITARY);
-                battalionList = g_structuresMilitaryList[playerID];
-            } else if (!newBattalionData.isStructure && !newBattalionData.isCivilian){ // Unit
+            } else if (!newBattalionData.isStructure && !newBattalionData.isCivilian){ // Military Unit
                 playerBattalions = g_battalionList[playerID];
                 battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_MILITARY);
                 battalionList = g_battalionList[playerID];
+            } else if (newBattalionData.isStructure && newBattalionData.isCivilian){ // Civil Structure
+                playerBattalions = g_structuresCivilList[playerID];
+                battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_CIVIL);
+                battalionList = g_structuresCivilList[playerID];
+            } else if (newBattalionData.isStructure && !newBattalionData.isCivilian){ // Military Structure
+                playerBattalions = g_structuresMilitaryList[playerID];
+                battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_MILITARY);
+                battalionList = g_structuresMilitaryList[playerID];
             }
+
+            // if (!newBattalionData.isStructure && newBattalionData.isCenterNode){ // Center Node
+            //     playerBattalions = g_civiliansList[playerID];
+            //     battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_CIVIL);
+            //     battalionList = g_civiliansList[playerID];
+            // } else if (newBattalionData.isStructure && !newBattalionData.isCenterNode && newBattalionData.trainsUnits){ // Trains Units
+            //     playerBattalions = g_structuresCivilList[playerID];
+            //     battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_CIVIL);
+            //     battalionList = g_structuresCivilList[playerID];
+            // } else if (newBattalionData.isStructure){ // Other Structures
+            //     playerBattalions = g_structuresMilitaryList[playerID];
+            //     battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_STRUCTURE_MILITARY);
+            //     battalionList = g_structuresMilitaryList[playerID];
+            // } else if (!newBattalionData.isStructure && !newBattalionData.isCivilian){ // Unit
+            //     playerBattalions = g_battalionList[playerID];
+            //     battalionWasRemovedFromAnOtherList = RemoveBattalionFromAnOtherListIfPresent (newBattalionData.battalionID, playerID, BATTALION_TYPE_UNIT_MILITARY);
+            //     battalionList = g_battalionList[playerID];
+            // }
                 
             let newTemplate = Engine.GuiInterfaceCall("GetEntityTemplate", newBattalionData.entities[0]);
             if (newTemplate){
