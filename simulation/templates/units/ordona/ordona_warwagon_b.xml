@@ -8,55 +8,40 @@
       <wood>105</wood>
     </Resources>
   </Cost>
-  <Footprint>
-    <Circle radius="7.0" />
-    <Height>7.0</Height>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="40.0" width="18.0" />
   </Footprint>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
-        <X>0.5</X>
+        <X>0</X>
         <Y>3.7</Y>
         <Z>-7</Z>
       </Archer1>
       <Archer2>
-        <X>0.5</X>
+        <X>0</X>
         <Y>3.7</Y>
         <Z>-8.9</Z>
       </Archer2>
       <Archer3>
-        <X>0.5</X>
+        <X>0</X>
         <Y>3.7</Y>
         <Z>-10.9</Z>
       </Archer3>
-      <Archer4>
-        <X>-0.5</X>
-        <Y>3.7</Y>
-        <Z>-7</Z>
-      </Archer4>
-      <Archer5>
-        <X>-0.5</X>
-        <Y>3.7</Y>
-        <Z>-8.9</Z>
-      </Archer5>
-      <Archer6>
-        <X>-0.5</X>
-        <Y>3.7</Y>
-        <Z>-10.9</Z>
-      </Archer6>
     </TurretPoints>
   </TurretHolder>
   <Health>
     <Max>610</Max>
     <SpawnGarrison>
       <Template>units/ordona/ordona_parcher_garrisoned</Template>
-      <SpawnNumber>6</SpawnNumber>
+      <SpawnNumber>3</SpawnNumber>
       <LinkedDestruction>true</LinkedDestruction>
     </SpawnGarrison>
   </Health>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Wagon Large Class40 GarrisonClass Warwagon</Classes>
+    <Classes datatype="tokens">Wagon Large Warwagon</Classes>
     <GenericName>War Wagon</GenericName>
     <History>Most often these Coaches served as transports, both for people and goods, but during a time of war they are converted to carriers that ship soldiers across the vast plains of Ordona. War Wagons can hold up to six soldiers and bring them across large stretches of land very quickly, making them ideal for charging armies past towers and defenses in order to drop off their combat load. Ranged units can also attack from the windows of the carriage, allowing War Wagons to become mobile attack platforms.</History>
     <Icon>units/ordona/ord_warwagon.dds</Icon>
@@ -93,7 +78,8 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.1666</RunMultiplier>
-    <WalkSpeed>12</WalkSpeed>
+    <WalkSpeed>13</WalkSpeed>
+    <PassabilityClass>large</PassabilityClass>
   </UnitMotion>
   <VisualActor>
     <Actor>units/ordona/ordona_warwagon_b.xml</Actor>

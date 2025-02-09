@@ -1,19 +1,14 @@
 {
-	"Name": "Shadows Over Ordon",
+	"Name": "Ordona Under Siege",
 	"TimePeriod": "100-101 AD",
-	"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	"Description": "Storm clouds gather over the rural fields of Ordona Province, a shadow lurks in the dark that cannot be named. \n\n It's up to the Ordonian warrior Rusl and his son Colin to figure out why Gerudo forces are running rampant across their homeland.",
 	"Image": "session/portraits/campaigns/shadows-over-ordon.png",
 	"Logo": "session/portraits/emblems/emblem_ordona.dds",
 	"FactionImage": "session/portraits/civsel/ordona.png",
 	"Levels": {
-		"0": {
-			"Map": "skirmishes/Crucible of Hylia (2).xml",
-			"MapType": "skirmish",
-			"useGameSetup": true
-		},
 		"1": {
 			"Name": "Unfettered Fury",
-			"Map": "tutorials/introductory_tutorial.xml",
+			"Map": "scenarios/ordona_1.xml",
 			"MapType": "scenario",
 			"Description": "Rusl & his son Colin are escorting one of their caravans back to Nal Ordona after making a trip north to Hyrule. Little do they know what awaits them.",
 			"Preview": "session/icons/mappreview/Introductory_Tutorial.png"
@@ -40,6 +35,6 @@
 			"Requires": "3"
 		}
 	},
-	"Order": ["0", "1", "2", "3", "4"],
+	"Order": ["1", "2", "3", "4"],
 	"ShowUnavailable": false
 }

@@ -1,30 +1,14 @@
 <Entity parent="units/ordona/ordona_parcher_b">
   <Attack>
     <Ranged>
-      <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>9</Pierce>
-      </Damage>
-      <MaxRange>76</MaxRange>
-      <MinRange>0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
+      <MaxRange>85</MaxRange>
     </Ranged>
   </Attack>
   <Turretable />
   <Identity>
     <Classes datatype="tokens">HiddenUI</Classes>
   </Identity>
-  <VisualActor>
-    <Actor>units/ordona/ordona_parcher_b.xml</Actor>
-  </VisualActor>
+  <Selectable>
+    <EditorOnly />
+  </Selectable>
 </Entity>

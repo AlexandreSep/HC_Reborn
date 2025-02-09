@@ -7,8 +7,8 @@
     <MinColumns>5</MinColumns>
     <ShiftRows>false</ShiftRows>
     <Sloppiness>0</Sloppiness>
-    <SortingClasses>Melee</SortingClasses>
-    <SortingOrder>fillFromTheSides</SortingOrder>
+    <SortingClasses>Cavalry Melee Archer</SortingClasses>
+    <SortingOrder>fillToTheCenter</SortingOrder>
     <UnitSeparationDepthMultiplier>1</UnitSeparationDepthMultiplier>
     <UnitSeparationWidthMultiplier>1</UnitSeparationWidthMultiplier>
     <WidthDepthRatio>1</WidthDepthRatio>

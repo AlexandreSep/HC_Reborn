@@ -15,11 +15,11 @@ class AutoFormation
 {
 	constructor()
 	{
-		this.defaultFormation = Engine.ConfigDB_GetValue("user", "gui.session.defaultformation");
+		this.defaultFormation = "special/formations/HC_standard";
 		if (!this.defaultFormation)
 			this.setDefault(NULL_FORMATION);
 		this.lastDefault = this.defaultFormation === NULL_FORMATION ?
-			"special/formations/box" : this.defaultFormation;
+			"special/formations/HC_standard" : this.defaultFormation;
 		Engine.SetGlobalHotkey("session.toggledefaultformation", "Press", () => {
 			if (this.defaultFormation === NULL_FORMATION)
 				this.setDefault(this.lastDefault);

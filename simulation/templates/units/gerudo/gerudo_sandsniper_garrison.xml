@@ -1,83 +1,15 @@
-<Entity parent="classes/HC_template_unit_light_archer|light_archer">
+<Entity parent="units/gerudo/gerudo_sandsniper_b">
   <Attack>
     <Ranged>
-      <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>12</Pierce>
-      </Damage>
       <MaxRange>90</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Turretable />
-  <Cost>
-    <BuildTime>25</BuildTime>
-    <Resources>
-      <food>120</food>
-      <metal>80</metal>
-      <stone>0</stone>
-      <wood>150</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>80</Max>
-  </Health>
   <Identity>
-    <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Sandsniper HiddenUI</Classes>
+    <Classes datatype="tokens">HiddenUI</Classes>
     <GenericName>Garrison Sniper</GenericName>
-    <History>The Gerudo Sand Snipers represent some of the best archers in all the desert. Trained from a very young age in the art of the bow, Sand Snipers are infamous for their ability to hit their targets dead-on from extremely long ranges. There are few individuals in Hyrule who can best them from a distance. </History>
-    <Icon>units/gerudo/ger_sandsniper.dds</Icon>
-    <Lang>gerudo</Lang>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <SelectionGroupName>units/gerudo/gerudo_sandsniper_b</SelectionGroupName>
-    <Tooltip>Long ranged Infantry Missile unit that has Camouflage.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-    <DodgeRating>20.0</DodgeRating>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
-      <death>voice/gerudo/gerudo_deathA.xml</death>
-      <order_attack>voice/gerudo/sandsniper/sandsniper_attack.xml</order_attack>
-      <order_garrison>voice/gerudo/sandsniper/sandsniper_garrison.xml</order_garrison>
-      <order_gather>voice/gerudo/sandsniper/sandsniper_gather.xml</order_gather>
-      <order_repair>voice/gerudo/sandsniper/sandsniper_repair.xml</order_repair>
-      <order_walk>voice/gerudo/sandsniper/sandsniper_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/gerudo/sandsniper/sandsniper_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3333</RunMultiplier>
-    <WalkSpeed>12.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
-  <VisualActor>
-    <Actor>units/gerudo/gerudo_sandsniper_b.xml</Actor>
-  </VisualActor>
+  <Selectable>
+    <EditorOnly />
+  </Selectable>
 </Entity>

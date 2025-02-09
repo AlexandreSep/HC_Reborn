@@ -1,57 +1,15 @@
-<Entity parent="units/hylian/hylian_levy_archer">
+<Entity parent="units/hylian/hylian_soldier_archer">
   <Attack>
     <Ranged>
-      <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>10</Pierce>
-      </Damage>
       <MaxRange>90</MaxRange>
-      <MinRange>0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2300</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Turretable />
-  <Cost>
-    <BuildTime>24</BuildTime>
-    <Resources>
-      <food>150</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>100</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>210</Max>
-  </Health>
   <Identity>
-    <Classes datatype="tokens">-LevyArcher GarrisonArcher HiddenUI</Classes>
+    <Classes datatype="tokens">HiddenUI</Classes>
     <GenericName>Garrison Archer</GenericName>
-    <History>Woodland hunters, rangers, and guides, during wartime Town Lookouts are called to served as perimeter guards and lookouts of Hyrule's outermost cities. Armed with a bow and arrow, these fast citizens can attack enemies from afar and make good use of their hunting skills to provide food to armies.</History>
-    <Icon>units/hylian/hyl_soldierarcher.dds</Icon>
-    <SelectionGroupName>units/hylian/hylian_soldier_archer</SelectionGroupName>
-    <Tooltip>Medium Archer unit armed with a bow and arrows. Deals moderate Piercing damage, but is more survivable compared to Archer units from most other factions.</Tooltip>
   </Identity>
-  <Promotion disable="" />
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <VisualActor>
-    <Actor>units/hylian/hylian_soldier_archer_b.xml</Actor>
-  </VisualActor>
+  <Selectable>
+    <EditorOnly />
+  </Selectable>
 </Entity>
