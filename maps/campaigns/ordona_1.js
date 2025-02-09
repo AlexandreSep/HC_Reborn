@@ -1,75 +1,44 @@
 {
     var cmpTrigger = Engine.QueryInterface(SYSTEM_ENTITY, IID_Trigger);
-    var cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
     var cmpCinemaManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_CinemaManager);
-    var cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
 
-    cmpTrigger.DoAfterDelay(1000, "PostInit", {});
+    cmpTrigger.playerArmy = TriggerHelper.GetPlayerEntitiesByClass(1, "Unit");
+
+    cmpTrigger.DoAfterDelay(200, "Intro", {});
     // cmpTrigger.DoAfterDelay(5000, "VictoryPlayer", {});
 }
 
-Trigger.prototype.PostInit = function ()
+Trigger.prototype.Intro = function ()
 {
-    this.PlayMusic({ track: "gohma_victory1.ogg", resetDelay: 5000 });
-}
-
-Trigger.prototype.VictoryPlayer = function ()
-{
-    let cmpPlayer = QueryPlayerIDInterface(1, IID_Player);
-    cmpPlayer.SetState("won", "You have succesfully completed the mission.");
-    this.PlayMusic({ track: "gohma_victory1.ogg", resetDelay: 0 }); // play victory music
-    // this.CampaignEndUI({ image: "gohma_victoryA" }); // show victory screen
-}
-
-Trigger.prototype.DefeatPlayer = function ()
-{
-    let cmpPlayer = QueryPlayerIDInterface(1, IID_Player);
-    cmpPlayer.SetState("defeated", "One of your heroes has perished in the assault on Malkariko, or you have lost your first base.");
-    // this.CampaignEndUI({ image: "gohma_defeatA" });
-}
-
-Trigger.prototype.PlayMusic = function (data)
-{
-    if (this.musicTimer != 0) // if a music reset is still pending, cancel that reset before initiating a new music track
-    {
-        cmpTimer.CancelTimer(this.musicTimer);
-        this.musicTimer = 0;
-    }
-
-    cmpGUIInterface.PushNotification({
-        "type": "play-custom-track",
-        "players": [1],
-        "track": data.track
+    this.PlayMusic({ track: "ordona_ambient4.ogg" });
+    this.WalkCommand(1300, 750, this.playerArmy, 1, false);
+    cmpTrigger.DoAfterDelay(500, "DialogueWindow", {
+        character: "Rusl",
+        dialogue: "Hey ||Colin||255 0 0||, I'm testing the mission!",
+        soundIndex: 2,
+        portraitSuffix: "_"
     });
 
-    if (data.resetDelay > 0) // music plays in real time only and is not influenced by game speed, while the ingame delays are, so have to base this timer on Date.now() instead
-        this.musicTimer = cmpTrigger.DoAfterDelay(1000, "ResetMusic", {"threshold": Date.now() + data.resetDelay });
-}
-
-Trigger.prototype.ResetMusic = function (data)
-{
-    if (data.threshold) // check if music can be cancelled if there is a threshold time set for it
-    {
-        if (Date.now() < data.threshold)
-        {
-            cmpTrigger.DoAfterDelay(1000, "ResetMusic", { "threshold": data.threshold }); // recall this function until the threshold has been reached to reset the music
-            return; // also make sure to return before we loop the unlock function constantly
-        }
-    }
-
-    cmpGUIInterface.PushNotification({
-        "type": "unlockMusic",
-        "players": [1]
+    cmpTrigger.DoAfterDelay(5500, "DialogueWindow", {
+        character: "Colin",
+        dialogue: "Don't you think its a little odd that we haven't met any farmer thus far ||Dad||0 100 255||?",
+        soundIndex: 3,
+        portraitSuffix: "_"
     });
 
-    this.musicTimer = 0; // reset music timer to 0 since we just reset the music
-}
-
-Trigger.prototype.CampaignEndUI = function (data) // push dialogue with sound and imagery to the window
-{
-    cmpGUIInterface.PushNotification({
-        "type": "campaignEnd",
-        "players": [1],
-        "image": data.image
+    cmpTrigger.DoAfterDelay(10500, "DialogueWindow", {
+        character: "Rusl",
+        dialogue: "You're correct, the ||Ordonian Fields||255 255 0|| do seem awfully forsaken...",
+        soundIndex: 4,
+        portraitSuffix: "_"
     });
-};
+
+    cmpTrigger.DoAfterDelay(15500, "DialogueWindow", {
+        character: "Colin",
+        dialogue: "Now I'm on guard!",
+        soundIndex: 2,
+        portraitSuffix: "_"
+    });
+
+    cmpTrigger.DoAfterDelay(22000, "CloseDialogueWindow", {});
+}

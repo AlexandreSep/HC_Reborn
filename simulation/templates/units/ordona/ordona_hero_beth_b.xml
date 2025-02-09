@@ -45,7 +45,7 @@
     <Icon>units/ordona/ord_hero_beth.dds</Icon>
     <Lang>ordona</Lang>
     <RequiredTechnology>civ_choices/ordona/choosehero_beth</RequiredTechnology>
-    <SpecificName>Ashei</SpecificName>
+    <SpecificName>Beth</SpecificName>
     <Tooltip>Ranged Hero carrying a bow and arrow.</Tooltip>
     <VisibleClasses datatype="tokens">Missile Worker</VisibleClasses>
   </Identity>

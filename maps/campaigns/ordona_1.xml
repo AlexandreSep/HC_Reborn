@@ -44,7 +44,7 @@
   "PlayerData": [
     null,
     {
-      "Civ": "hylian"
+      "Civ": "ordona"
     },
     {
       "Civ": "gerudo"
@@ -70,6 +70,7 @@
   ],
   "TriggerScripts": [
     "scripts/TriggerHelper.js",
+    "campaigns/HC_helper.js",
     "campaigns/ordona_1.js"
   ],
   "VictoryConditions": [

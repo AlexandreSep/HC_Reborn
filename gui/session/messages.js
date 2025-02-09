@@ -346,6 +346,7 @@ var g_NotificationsTypes =
     },
     "AIDialog": function (data, player) { // The main dialog functionality used for the AI players
         //add queue data for every targeted player and run the dialog functionality
+		warn(uneval(data))
         for (let targetplayer of data.targetPlayers) {
             g_AIDialogQueue[targetplayer].push(data); // add data to the queue for this player
             if (g_AIDialogQueue[targetplayer].length == 1) // if this newly added data is the only one at the moment for this player, manually run the dialog functionality
