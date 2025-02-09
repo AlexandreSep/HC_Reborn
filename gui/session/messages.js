@@ -318,9 +318,16 @@ var g_NotificationsTypes =
     ////////////////
     // HC MESSAGES
     ////////////////
+	"play-custom-track": function(notification, player)
+	{
+		global.music.tracks.CUSTOM = [];
+		global.music.tracks.CUSTOM.push(notification.track);
+		global.music.setState(global.music.states.CUSTOM);
+		global.music.setLocked(true);
+	},
     "unlockMusic": function (notification, player) {
         global.music.setLocked(false);
-        global.music.startPlayList(shuffleArray(global.music.tracks.PEACE), 2.0, true);
+        global.music.setState(global.music.states.PEACE);
     },
     "UISound": function (notification, player) { // Used in Campaign only for playing 2d sounds
         Engine.PlayUISound(notification.path, false);
@@ -670,7 +677,7 @@ function CampaignEnd(data) {
         window.hidden = true;
         resumeGame();
     }
-    leaveButton.onPress = leaveGame;
+    leaveButton.onPress = endgame(true);
 }
 
 /**

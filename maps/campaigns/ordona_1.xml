@@ -68,6 +68,10 @@
       "Civ": "lanayru"
     }
   ],
+  "TriggerScripts": [
+    "scripts/TriggerHelper.js",
+    "campaigns/ordona_1.js"
+  ],
   "VictoryConditions": [
     "conquest"
   ]

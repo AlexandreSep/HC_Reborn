@@ -8,7 +8,7 @@
 	"Levels": {
 		"1": {
 			"Name": "Unfettered Fury",
-			"Map": "scenarios/ordona_1.xml",
+			"Map": "campaigns/ordona_1.xml",
 			"MapType": "scenario",
 			"Description": "Rusl & his son Colin are escorting one of their caravans back to Nal Ordona after making a trip north to Hyrule. Little do they know what awaits them.",
 			"Preview": "session/icons/mappreview/Introductory_Tutorial.png"
