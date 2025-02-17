@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_light_infantry|light_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry">
   <Attack>
     <Ranged>
       <AttackName>Beehives</AttackName>
