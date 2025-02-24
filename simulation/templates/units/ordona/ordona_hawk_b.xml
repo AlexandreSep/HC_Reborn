@@ -66,6 +66,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>1.1515</RunMultiplier>
+    <WalkSpeed>16.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/ordona/ordona_hawk_holder.xml</Actor>

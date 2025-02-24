@@ -1,26 +1,34 @@
 <Entity parent="HC_template_unit_infantry">
   <Attack>
-    <Melee>
+	<Ranged>
       <AttackName>Stormbolter</AttackName>
       <Damage>
-        <Crush>12</Crush>
-        <Magic>8</Magic>
+        <Magic>25</Magic>
       </Damage>
-      <MaxRange>5</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
+      <MaxRange>70</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>2000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>2500</RepeatTime>
       <Stun>
-        <Chance>10</Chance>
+        <Chance>20</Chance>
         <Time>1500</Time>
       </Stun>
-    </Melee>
+      <EffectDelay>0</EffectDelay>
+    </Ranged>
   </Attack>
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>110</food>
-      <metal>20</metal>
+      <food>60</food>
+      <metal>0</metal>
       <stone>15</stone>
       <wood>0</wood>
     </Resources>
@@ -32,12 +40,12 @@
     <Civ>zora</Civ>
     <Classes datatype="tokens">ZoraFemale Electric Medium Stormbolter</Classes>
     <GenericName>Stormbolter</GenericName>
-    <History>Though not true mages, Stormbolters wield rods that have been charged with powerful electric magic. These rods can be used as a club in a melee, electrifying and stunning enemy units hit. They are decent for crowd control, with compliments of melee soldiers moving in behind them to attack stupefied enemies.</History>
+    <History>Stormbolters wield rods that have been charged with powerful electric magic. These rods can be used as a club in a melee, electrifying and stunning enemy units hit. They are decent for crowd control, with compliments of melee soldiers moving in behind them to attack stupefied enemies.</History>
     <Icon>units/zora/zor_stormbolter.dds</Icon>
     <Lang>zora</Lang>
     <SelectionGroupName>units/zora/zora_stormbolter_b</SelectionGroupName>
     <Tooltip>Zora Melee unit that attacks with an electric shock, briefly stunning units. Partially cover the role of an early game swordman unit, which the Dominion lacks</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
   </Identity>
   <Position>
     <Floating>false</Floating>

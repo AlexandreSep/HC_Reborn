@@ -23,6 +23,6 @@
       "replace": 0
     }
   ],
-  "affects": [ "SapWarden" ],
+  "affects": [ "NayruBlessed" ],
   "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

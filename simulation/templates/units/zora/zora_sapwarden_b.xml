@@ -1,4 +1,7 @@
 <Entity parent="HC_template_unit_infantry">
+  <Auras datatype="tokens">
+    units/nayrublessed_aura_1
+  </Auras>
   <Attack>
     <Ranged>
       <AttackName>Blue Fire</AttackName>
@@ -16,6 +19,14 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
+	  <Splash>
+        <Damage>
+          <Magic>9.0</Magic> 
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
       <RepeatTime>2300</RepeatTime>
       <EffectDelay>0</EffectDelay>
     </Ranged>
@@ -23,14 +34,14 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>85</food>
-      <metal>0</metal>
-      <stone>5</stone>
+      <food>45</food>
+      <metal>40</metal>
+      <stone>10</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>75</Max>
+    <Max>200</Max>
   </Health>
   <Identity>
     <Civ>zora</Civ>
@@ -46,10 +57,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Promotion>
-    <Entity>units/zora/zora_sapwarden_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
   <Resistance>
     <Entity>
       <Damage>

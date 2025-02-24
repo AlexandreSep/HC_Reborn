@@ -1,0 +1,24 @@
+{
+  "genericName": "Stormbolter",
+  "description": "",
+  "cost": {
+    "food": 300,
+    "wood": 0,
+    "stone": 0,
+    "metal": 150
+  },
+  "requirements": {
+    "all": [
+      { "tech": "phase_town" },
+      { "civ": "zora" }
+    ]
+  },
+  "requirementsTooltip": "Unlocked with town.",
+  "icon": "tech_generic.dds",
+  "researchTime": 40,
+  "tooltip": "Sparkmages promote into Stormbolters. THey gain the ability to fight in melee and stun longer",
+  "modifications": [  {	   "value": "ProductionQueue/Entities/_string",	"tokens": "units/zora/{civ}_sparkmage_b>units/zora/{civ}_stormbolter_b", "affects": "Structure" },
+					  {      "value": "Promotion/RequiredXp",   "replace": 0, "affects": "SparkMage"} ],
+  "hideIfTechnologyRequirementIsNotMet": "true",
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
