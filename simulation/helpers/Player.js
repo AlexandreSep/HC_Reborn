@@ -116,8 +116,10 @@ function LoadPlayerSettings(settings, newPlayers)
 		}
 
 		//HC-Code: Settings we use for the hero selection window (civ_choises)
-		const campaignScript = settings.TriggerScripts.find(script => script.startsWith("campaign"));
-		if(campaignScript != undefined) cmpPlayer.heroSettings.disableHeroes = true;
+		if(settings.TriggerScripts != undefined) {
+			const campaignScript = settings.TriggerScripts.find(script => script.startsWith("campaign"));
+			if(campaignScript != undefined) cmpPlayer.heroSettings.disableHeroes = true;
+		}
 
 		if (settings.DisableHeroes) {
 			cmpPlayer.heroSettings.disableHeroes = settings.DisableHeroes;

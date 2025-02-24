@@ -19,26 +19,26 @@ Trigger.prototype.Intro = function ()
         portraitSuffix: "_"
     });
 
-    cmpTrigger.DoAfterDelay(5500, "DialogueWindow", {
+    cmpTrigger.DoAfterDelay(3000, "DialogueWindow", {
         character: "Colin",
         dialogue: "Don't you think its a little odd that we haven't met any farmer thus far ||Dad||0 100 255||?",
         soundIndex: 3,
         portraitSuffix: "_"
     });
 
-    cmpTrigger.DoAfterDelay(10500, "DialogueWindow", {
+    cmpTrigger.DoAfterDelay(6000, "DialogueWindow", {
         character: "Rusl",
         dialogue: "You're correct, the ||Ordonian Fields||255 255 0|| do seem awfully forsaken...",
         soundIndex: 4,
         portraitSuffix: "_"
     });
 
-    cmpTrigger.DoAfterDelay(15500, "DialogueWindow", {
+    cmpTrigger.DoAfterDelay(9000, "DialogueWindow", {
         character: "Colin",
         dialogue: "Now I'm on guard!",
         soundIndex: 2,
         portraitSuffix: "_"
     });
 
-    cmpTrigger.DoAfterDelay(22000, "CloseDialogueWindow", {});
+    cmpTrigger.DoAfterDelay(12000, "CloseDialogueWindow", {});
 }
