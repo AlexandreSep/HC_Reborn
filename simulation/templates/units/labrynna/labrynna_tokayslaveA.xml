@@ -108,8 +108,10 @@
       <trained>interface/alarm/alarm_create_worker.xml</trained>
     </SoundGroups>
   </Sound>
-  <UnitAI>
-    <CanPatrol>false</CanPatrol>
+    <UnitAI>
+    <DefaultStance>passive</DefaultStance>
+	<CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
   </UnitAI>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>

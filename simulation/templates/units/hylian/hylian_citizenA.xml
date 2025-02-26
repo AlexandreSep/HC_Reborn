@@ -117,8 +117,10 @@
       <trained>interface/alarm/alarm_create_worker.xml</trained>
     </SoundGroups>
   </Sound>
-  <UnitAI>
+    <UnitAI>
     <DefaultStance>passive</DefaultStance>
+	<CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
   </UnitAI>
   <UnitMotion>
     <RunMultiplier>1.25</RunMultiplier>

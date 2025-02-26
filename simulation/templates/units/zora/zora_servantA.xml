@@ -122,6 +122,8 @@
   </Sound>
   <UnitAI>
     <DefaultStance>passive</DefaultStance>
+	<CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
   </UnitAI>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>

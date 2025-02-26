@@ -117,7 +117,12 @@
       <trained>interface/alarm/alarm_create_worker.xml</trained>
       <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
     </SoundGroups>
-  </Sound>
+  </Sound>  
+  <UnitAI>
+    <DefaultStance>passive</DefaultStance>
+	<CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
+  </UnitAI>
     <UnitMotion>
     <RunMultiplier>1.25</RunMultiplier>
     <WalkSpeed>10.0</WalkSpeed>
