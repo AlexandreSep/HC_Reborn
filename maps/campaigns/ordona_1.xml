@@ -32,28 +32,48 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="-312.063" y="724.034" z="304.063"/>
-		<Rotation angle="1.16028"/>
-		<Declination angle="0.610866"/>
+		<Position x="1439.98" y="293.587" z="568.075"/>
+		<Rotation angle="-0.406808"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "CircularMap": true,
   "Description": "Give an interesting description of your map.",
-  "Name": "Ordona Under Siege 1",
+  "Name": "Unfettered Fury",
   "PlayerData": [
     null,
     {
-      "Civ": "ordona"
+      "Civ": "ordona",
+      "Color": {
+        "b": 255,
+        "g": 0,
+        "r": 0
+      }
     },
     {
-      "Civ": "gerudo"
+      "Civ": "ordona",
+      "Color": {
+        "b": 64,
+        "g": 255,
+        "r": 0
+      }
     },
     {
-      "Civ": "goron"
+      "Civ": "moblin",
+      "Color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      }
     },
     {
-      "Civ": "zora"
+      "Civ": "gerudo",
+      "Color": {
+        "b": 0,
+        "g": 128,
+        "r": 255
+      }
     },
     {
       "Civ": "kokiri"
@@ -103,60 +123,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="15091"/>
 		</Entity>
-		<Entity uid="123">
-			<Template>actor|structures/ordona/ordona_field_pumpkin.xml</Template>
-			<Position x="153.40094" z="574.14625"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="22136"/>
-		</Entity>
-		<Entity uid="124">
-			<Template>actor|structures/ordona/ordona_field_pumpkin.xml</Template>
-			<Position x="176.56205" z="551.1225"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="56416"/>
-		</Entity>
-		<Entity uid="130">
-			<Template>actor|structures/ordona/ordona_houseA.xml</Template>
-			<Position x="245.96985" z="374.30387"/>
-			<Orientation y="-0.1798"/>
-			<Actor seed="40361"/>
-		</Entity>
-		<Entity uid="131">
-			<Template>actor|structures/ordona/ordona_houseA.xml</Template>
-			<Position x="195.31724" z="565.15473"/>
-			<Orientation y="-1.47767"/>
-			<Actor seed="4354"/>
-		</Entity>
-		<Entity uid="132">
-			<Template>actor|structures/ordona/ordona_houseA.xml</Template>
-			<Position x="141.08652" z="543.34772"/>
-			<Orientation y="0.94413"/>
-			<Actor seed="59537"/>
-		</Entity>
-		<Entity uid="135">
-			<Template>actor|structures/ordona/ordona_houseA.xml</Template>
-			<Position x="232.64579" z="336.92798"/>
-			<Orientation y="-0.03122"/>
-			<Actor seed="41647"/>
-		</Entity>
-		<Entity uid="139">
-			<Template>actor|structures/ordona/ordona_towerA.xml</Template>
-			<Position x="206.52189" z="328.78473"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="48399"/>
-		</Entity>
-		<Entity uid="140">
-			<Template>actor|structures/ordona/ordona_scaffoldI.xml</Template>
-			<Position x="159.25239" z="533.15253"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="47233"/>
-		</Entity>
-		<Entity uid="142">
-			<Template>actor|structures/ordona/ordona_frameI.xml</Template>
-			<Position x="158.8136" z="526.34272"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="16003"/>
-		</Entity>
 		<Entity uid="146">
 			<Template>actor|props/structures/ordona/ordona_housefences.xml</Template>
 			<Position x="189.02356" z="353.8567"/>
@@ -189,35 +155,35 @@
 		</Entity>
 		<Entity uid="175">
 			<Template>structures/fence_long</Template>
-			<Player>0</Player>
+			<Player>4</Player>
 			<Position x="978.65564" z="198.58417"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43913"/>
 		</Entity>
 		<Entity uid="176">
 			<Template>structures/fence_long</Template>
-			<Player>0</Player>
+			<Player>4</Player>
 			<Position x="958.38538" z="210.4308"/>
 			<Orientation y="-1.68084"/>
 			<Actor seed="213"/>
 		</Entity>
 		<Entity uid="179">
 			<Template>structures/fence_long</Template>
-			<Player>0</Player>
+			<Player>4</Player>
 			<Position x="894.4015" z="156.84202"/>
 			<Orientation y="0.09852"/>
 			<Actor seed="22589"/>
 		</Entity>
 		<Entity uid="180">
 			<Template>structures/fence_long</Template>
-			<Player>0</Player>
+			<Player>4</Player>
 			<Position x="932.91474" z="206.64466"/>
 			<Orientation y="-1.94533"/>
 			<Actor seed="54800"/>
 		</Entity>
 		<Entity uid="182">
 			<Template>structures/fence_long</Template>
-			<Player>0</Player>
+			<Player>4</Player>
 			<Position x="911.12433" z="182.52085"/>
 			<Orientation y="0.73403"/>
 			<Actor seed="53029"/>
@@ -240,168 +206,156 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="17744"/>
 		</Entity>
-		<Entity uid="200">
-			<Template>actor|structures/gerudo/gerudo_towerA.xml</Template>
-			<Position x="908.1814" z="164.98752"/>
-			<Orientation y="-1.25283"/>
-			<Actor seed="17732"/>
-		</Entity>
-		<Entity uid="201">
-			<Template>actor|structures/gerudo/gerudo_towerA.xml</Template>
-			<Position x="947.83118" z="202.79203"/>
-			<Orientation y="-0.22902"/>
-			<Actor seed="45609"/>
-		</Entity>
 		<Entity uid="203">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="935.00116" z="203.68995"/>
 			<Orientation y="5.42959"/>
 			<Actor seed="59764"/>
 		</Entity>
 		<Entity uid="204">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="960.84491" z="206.3983"/>
 			<Orientation y="-0.59092"/>
 			<Actor seed="34633"/>
 		</Entity>
 		<Entity uid="208">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="899.20173" z="159.82013"/>
 			<Orientation y="-1.04583"/>
 			<Actor seed="35329"/>
 		</Entity>
 		<Entity uid="210">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="896.17548" z="151.6407"/>
 			<Orientation y="1.86985"/>
 			<Actor seed="56453"/>
 		</Entity>
 		<Entity uid="214">
 			<Template>units/gerudo/gerudo_trailblazer_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="934.43073" z="193.44822"/>
 			<Orientation y="-0.31525"/>
 			<Actor seed="5584"/>
 		</Entity>
 		<Entity uid="215">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="908.60047" z="136.8115"/>
 			<Orientation y="4.87282"/>
 			<Actor seed="51075"/>
 		</Entity>
 		<Entity uid="216">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="915.31067" z="125.69196"/>
 			<Orientation y="4.5572"/>
 			<Actor seed="10534"/>
 		</Entity>
 		<Entity uid="217">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="943.13611" z="179.30796"/>
 			<Orientation y="4.6706"/>
 			<Actor seed="2599"/>
 		</Entity>
 		<Entity uid="218">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="928.50812" z="186.04996"/>
 			<Orientation y="5.75448"/>
 			<Actor seed="29420"/>
 		</Entity>
 		<Entity uid="220">
 			<Template>units/gerudo/gerudo_arbiter_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="929.59485" z="158.06705"/>
 			<Orientation y="-0.50005"/>
 			<Actor seed="27911"/>
 		</Entity>
 		<Entity uid="221">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="907.53632" z="148.35459"/>
 			<Orientation y="5.287"/>
 			<Actor seed="39929"/>
 		</Entity>
 		<Entity uid="222">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="920.70215" z="144.12821"/>
 			<Orientation y="4.61994"/>
 			<Actor seed="46337"/>
 		</Entity>
 		<Entity uid="223">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="941.01001" z="186.1197"/>
 			<Orientation y="5.78843"/>
 			<Actor seed="61848"/>
 		</Entity>
 		<Entity uid="224">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="913.71436" z="179.26258"/>
 			<Orientation y="11.71283"/>
 			<Actor seed="57053"/>
 		</Entity>
 		<Entity uid="225">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="944.32782" z="186.03281"/>
 			<Orientation y="5.56516"/>
 			<Actor seed="57053"/>
 		</Entity>
 		<Entity uid="226">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="917.65885" z="179.78125"/>
 			<Orientation y="11.53953"/>
 			<Actor seed="27426"/>
 		</Entity>
 		<Entity uid="227">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="916.81984" z="176.47715"/>
 			<Orientation y="11.65699"/>
 			<Actor seed="13347"/>
 		</Entity>
 		<Entity uid="228">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="947.93897" z="184.44712"/>
 			<Orientation y="5.47435"/>
 			<Actor seed="7812"/>
 		</Entity>
 		<Entity uid="229">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="967.34235" z="196.49305"/>
 			<Orientation y="-0.8188"/>
 			<Actor seed="44786"/>
 		</Entity>
 		<Entity uid="230">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="967.78431" z="192.54334"/>
 			<Orientation y="-0.59432"/>
 			<Actor seed="44786"/>
 		</Entity>
 		<Entity uid="231">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="964.31543" z="192.81406"/>
 			<Orientation y="-0.37595"/>
 			<Actor seed="57399"/>
 		</Entity>
 		<Entity uid="232">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="897.01636" z="138.80134"/>
 			<Orientation y="11.87806"/>
 			<Actor seed="39186"/>
@@ -1218,57 +1172,57 @@
 		</Entity>
 		<Entity uid="417">
 			<Template>structures/hylian/hylian_wood_wall_long</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="902.50019" z="189.42597"/>
 			<Orientation y="-0.75666"/>
 			<Actor seed="58510"/>
 		</Entity>
 		<Entity uid="418">
 			<Template>structures/hylian/hylian_wood_wall_long</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="880.09064" z="154.03226"/>
 			<Orientation y="-1.3599"/>
 			<Actor seed="62207"/>
 		</Entity>
 		<Entity uid="421">
 			<Template>structures/hylian/hylian_wood_wall_long</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="938.54493" z="215.73899"/>
 			<Orientation y="-0.40575"/>
 			<Actor seed="41853"/>
 		</Entity>
 		<Entity uid="423">
 			<Template>structures/hylian/hylian_wood_wall_long</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="977.08222" z="210.90561"/>
 			<Orientation y="-2.4488"/>
 			<Actor seed="57016"/>
 		</Entity>
 		<Entity uid="428">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
-			<Position x="196.67112" z="394.05326"/>
+			<Player>2</Player>
+			<Position x="196.77637" z="394.06128"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8342"/>
 		</Entity>
 		<Entity uid="429">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="196.95475" z="351.51728"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59810"/>
 		</Entity>
 		<Entity uid="430">
 			<Template>structures/ordona/ordona_field_upg</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="174.98444" z="372.92792"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44538"/>
 		</Entity>
 		<Entity uid="431">
 			<Template>structures/ordona/ordona_field_upg</Template>
-			<Player>0</Player>
-			<Position x="217.51978" z="371.18903"/>
+			<Player>2</Player>
+			<Position x="217.6019" z="371.25046"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25421"/>
 		</Entity>
@@ -2175,7 +2129,7 @@
 		<Entity uid="587">
 			<Template>units/ordona/ordona_hero_rusl_b</Template>
 			<Player>1</Player>
-			<Position x="1462.27405" z="736.995"/>
+			<Position x="1462.22962" z="736.6496"/>
 			<Orientation y="-1.38051"/>
 			<Actor seed="36420"/>
 		</Entity>
@@ -2238,8 +2192,8 @@
 		<Entity uid="603">
 			<Template>units/ordona/ordona_parcher_b</Template>
 			<Player>1</Player>
-			<Position x="1481.09156" z="737.18519"/>
-			<Orientation y="-1.28801"/>
+			<Position x="1482.42481" z="736.73591"/>
+			<Orientation y="-1.73331"/>
 			<Actor seed="2370"/>
 		</Entity>
 		<Entity uid="604">
@@ -2314,137 +2268,105 @@
 		</Entity>
 		<Entity uid="624">
 			<Template>units/npc_lonlon/npc_lon_hero_malon</Template>
-			<Player>4</Player>
-			<Position x="385.43363" z="607.31965"/>
-			<Orientation y="-1.10193"/>
+			<Player>2</Player>
+			<Position x="384.61124" z="605.11219"/>
+			<Orientation y="-1.09881"/>
 			<Actor seed="9553"/>
-		</Entity>
-		<Entity uid="626">
-			<Template>actor|units/ordona/ordona_warwagon_b.xml</Template>
-			<Position x="373.84888" z="621.99201"/>
-			<Orientation y="-1.50847"/>
-			<Actor seed="30417"/>
-		</Entity>
-		<Entity uid="627">
-			<Template>actor|units/ordona/ordona_warwagon_b.xml</Template>
-			<Position x="401.5673" z="597.3429"/>
-			<Orientation y="2.9972"/>
-			<Actor seed="57809"/>
-		</Entity>
-		<Entity uid="628">
-			<Template>actor|units/ordona/ordona_warwagon_b.xml</Template>
-			<Position x="377.89206" z="589.84577"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="1568"/>
-		</Entity>
-		<Entity uid="632">
-			<Template>units/npc_lonlon/npc_lon_rancherA</Template>
-			<Player>4</Player>
-			<Position x="379.08735" z="613.29084"/>
-			<Orientation y="-1.66744"/>
-			<Actor seed="20909"/>
-		</Entity>
-		<Entity uid="633">
-			<Template>units/npc_lonlon/npc_lon_rancherA</Template>
-			<Player>4</Player>
-			<Position x="391.29657" z="602.87049"/>
-			<Orientation y="-2.48978"/>
-			<Actor seed="62259"/>
 		</Entity>
 		<Entity uid="635">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>4</Player>
-			<Position x="379.58277" z="601.43677"/>
+			<Player>2</Player>
+			<Position x="379.83777" z="600.66163"/>
 			<Orientation y="-2.54815"/>
 			<Actor seed="7172"/>
 		</Entity>
 		<Entity uid="636">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="392.83762" z="610.00556"/>
 			<Orientation y="1.66503"/>
 			<Actor seed="1996"/>
 		</Entity>
 		<Entity uid="637">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="386.36261" z="613.17975"/>
 			<Orientation y="-0.14185"/>
 			<Actor seed="40126"/>
 		</Entity>
 		<Entity uid="638">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>4</Player>
-			<Position x="383.235" z="597.75971"/>
+			<Player>2</Player>
+			<Position x="387.01679" z="598.98157"/>
 			<Orientation y="-2.52062"/>
 			<Actor seed="64481"/>
 		</Entity>
 		<Entity uid="640">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>4</Player>
-			<Position x="378.32255" z="606.81843"/>
+			<Player>2</Player>
+			<Position x="377.61866" z="610.71821"/>
 			<Orientation y="-1.83346"/>
 			<Actor seed="35971"/>
 		</Entity>
 		<Entity uid="641">
 			<Template>units/ordona/ordona_militia_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="386.25788" z="586.36921"/>
 			<Orientation y="-3.02619"/>
 			<Actor seed="28241"/>
 		</Entity>
 		<Entity uid="642">
 			<Template>units/ordona/ordona_militia_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="395.72803" z="590.81037"/>
 			<Orientation y="-3.04537"/>
 			<Actor seed="7282"/>
 		</Entity>
 		<Entity uid="643">
 			<Template>units/ordona/ordona_militia_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="365.61811" z="604.6623"/>
 			<Orientation y="-1.48684"/>
 			<Actor seed="52174"/>
 		</Entity>
 		<Entity uid="644">
 			<Template>units/ordona/ordona_militia_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="367.99817" z="615.48682"/>
 			<Orientation y="-1.26001"/>
 			<Actor seed="40557"/>
 		</Entity>
 		<Entity uid="646">
 			<Template>units/ordona/ordona_militia_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="394.82984" z="624.43281"/>
 			<Orientation y="0.38788"/>
 			<Actor seed="38282"/>
 		</Entity>
 		<Entity uid="647">
 			<Template>units/ordona/ordona_militia_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="401.2627" z="619.34314"/>
 			<Orientation y="1.49262"/>
 			<Actor seed="46582"/>
 		</Entity>
 		<Entity uid="648">
 			<Template>units/ordona/ordona_parcher_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="392.96732" z="616.88392"/>
 			<Orientation y="0.93966"/>
 			<Actor seed="13570"/>
 		</Entity>
 		<Entity uid="649">
 			<Template>units/ordona/ordona_parcher_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="372.13923" z="609.52155"/>
 			<Orientation y="-1.53077"/>
 			<Actor seed="29189"/>
 		</Entity>
 		<Entity uid="650">
 			<Template>units/ordona/ordona_parcher_b</Template>
-			<Player>4</Player>
+			<Player>2</Player>
 			<Position x="390.20304" z="593.80085"/>
 			<Orientation y="2.98484"/>
 			<Actor seed="11703"/>
@@ -4104,7 +4026,7 @@
 		<Entity uid="899">
 			<Template>gaia/flora_tree_ordonpineA</Template>
 			<Player>0</Player>
-			<Position x="1426.06788" z="793.01807"/>
+			<Position x="1425.14051" z="777.38227"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16408"/>
 		</Entity>
@@ -4125,7 +4047,7 @@
 		<Entity uid="902">
 			<Template>gaia/flora_tree_ordonpineA</Template>
 			<Player>0</Player>
-			<Position x="1010.2079" z="745.75092"/>
+			<Position x="1010.46967" z="745.93226"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6461"/>
 		</Entity>
@@ -5217,7 +5139,7 @@
 		<Entity uid="1062">
 			<Template>gaia/flora_tree_ordonpineA</Template>
 			<Player>0</Player>
-			<Position x="1012.65809" z="772.3191"/>
+			<Position x="1013.69819" z="766.60816"/>
 			<Orientation y="-1.27707"/>
 			<Actor seed="35113"/>
 		</Entity>
@@ -5951,7 +5873,7 @@
 		</Entity>
 		<Entity uid="1167">
 			<Template>gaia/flora_tree_ordonA</Template>
-			<Player>0</Player>
+			<Player>4</Player>
 			<Position x="1050.15821" z="289.02631"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13746"/>
@@ -7050,148 +6972,120 @@
 		</Entity>
 		<Entity uid="1334">
 			<Template>structures/ordona/ordona_blacksmith</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="506.45942" z="952.82337"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2240"/>
 		</Entity>
 		<Entity uid="1335">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="539.04291" z="967.55463"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45190"/>
 		</Entity>
 		<Entity uid="1336">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="559.5605" z="987.53614"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13614"/>
 		</Entity>
 		<Entity uid="1337">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="580.08082" z="965.10511"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54175"/>
 		</Entity>
 		<Entity uid="1338">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="560.72413" z="945.50623"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37704"/>
 		</Entity>
 		<Entity uid="1339">
 			<Template>structures/ordona/ordona_house</Template>
-			<Player>0</Player>
-			<Position x="513.38135" z="984.52576"/>
+			<Player>2</Player>
+			<Position x="517.08222" z="989.57618"/>
 			<Orientation y="-2.16497"/>
 			<Actor seed="15769"/>
 		</Entity>
 		<Entity uid="1340">
 			<Template>structures/ordona/ordona_house</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="91.92054" z="1038.60645"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17181"/>
 		</Entity>
 		<Entity uid="1341">
 			<Template>structures/ordona/ordona_house</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="127.61908" z="967.89667"/>
 			<Orientation y="-0.16384"/>
 			<Actor seed="65050"/>
 		</Entity>
 		<Entity uid="1342">
 			<Template>structures/ordona/ordona_house</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="80.39634" z="1004.66163"/>
 			<Orientation y="2.2953"/>
 			<Actor seed="52780"/>
 		</Entity>
 		<Entity uid="1343">
 			<Template>structures/ordona/ordona_field</Template>
-			<Player>0</Player>
-			<Position x="111.68046" z="1017.90674"/>
+			<Player>2</Player>
+			<Position x="117.27308" z="1017.54029"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8573"/>
 		</Entity>
 		<Entity uid="1344">
 			<Template>structures/ordona/ordona_mercs</Template>
-			<Player>0</Player>
-			<Position x="986.42902" z="822.41596"/>
+			<Player>2</Player>
+			<Position x="992.25806" z="825.7063"/>
 			<Orientation y="3.02044"/>
 			<Actor seed="24617"/>
 		</Entity>
 		<Entity uid="1345">
 			<Template>units/ordona_trader_b</Template>
-			<Player>0</Player>
-			<Position x="1009.35651" z="804.29206"/>
+			<Player>2</Player>
+			<Position x="1010.02967" z="802.42127"/>
 			<Orientation y="-1.7089"/>
 			<Actor seed="51170"/>
 		</Entity>
 		<Entity uid="1346">
 			<Template>units/ordona_trader_upg</Template>
-			<Player>0</Player>
-			<Position x="1007.21369" z="808.10224"/>
+			<Player>2</Player>
+			<Position x="1007.88685" z="806.23145"/>
 			<Orientation y="-2.55585"/>
 			<Actor seed="40620"/>
 		</Entity>
 		<Entity uid="1347">
 			<Template>units/ordona_trader_upg</Template>
-			<Player>0</Player>
-			<Position x="1001.65387" z="804.63556"/>
+			<Player>2</Player>
+			<Position x="1002.26001" z="803.59815"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39623"/>
 		</Entity>
-		<Entity uid="1351">
-			<Template>gaia/fauna_horse_ord</Template>
-			<Player>0</Player>
-			<Position x="986.07502" z="803.43598"/>
-			<Orientation y="0.01427"/>
-			<Actor seed="47295"/>
-		</Entity>
-		<Entity uid="1352">
-			<Template>gaia/fauna_horse_ord</Template>
-			<Player>0</Player>
-			<Position x="1007.75275" z="790.99671"/>
-			<Orientation y="1.09623"/>
-			<Actor seed="1910"/>
-		</Entity>
-		<Entity uid="1353">
-			<Template>gaia/fauna_horse_ord</Template>
-			<Player>0</Player>
-			<Position x="979.0926" z="805.28901"/>
-			<Orientation y="0.31141"/>
-			<Actor seed="35338"/>
-		</Entity>
-		<Entity uid="1354">
-			<Template>gaia/fauna_horse_ord</Template>
-			<Player>0</Player>
-			<Position x="1007.77515" z="785.10816"/>
-			<Orientation y="1.78286"/>
-			<Actor seed="27243"/>
-		</Entity>
 		<Entity uid="1355">
 			<Template>units/ordona/ordona_reverend_b</Template>
-			<Player>0</Player>
-			<Position x="1008.54816" z="799.82441"/>
-			<Orientation y="-0.91582"/>
+			<Player>2</Player>
+			<Position x="1005.88587" z="797.97632"/>
+			<Orientation y="-0.0122"/>
 			<Actor seed="4563"/>
 		</Entity>
 		<Entity uid="1358">
 			<Template>structures/ordona/ordona_civil_centre</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="996.52088" z="1281.81397"/>
 			<Orientation y="-1.86896"/>
 			<Actor seed="33554"/>
 		</Entity>
 		<Entity uid="1359">
 			<Template>structures/ordona/ordona_civil_centre</Template>
-			<Player>2</Player>
-			<Position x="891.49115" z="96.32839"/>
+			<Player>4</Player>
+			<Position x="890.27076" z="96.21726"/>
 			<Orientation y="0.20142"/>
 			<Actor seed="41155"/>
 		</Entity>
@@ -7253,315 +7147,315 @@
 		</Entity>
 		<Entity uid="1370">
 			<Template>structures/moblin/moblin_defense_tower</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="324.57178" z="1215.0492"/>
 			<Orientation y="3.44477"/>
 			<Actor seed="48591"/>
 		</Entity>
 		<Entity uid="1371">
 			<Template>structures/moblin/moblin_defense_tower</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="425.04578" z="1202.78125"/>
 			<Orientation y="2.58664"/>
 			<Actor seed="46369"/>
 		</Entity>
 		<Entity uid="1372">
 			<Template>structures/moblin/moblin_totem</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="386.71366" z="1251.33692"/>
 			<Orientation y="-3.07601"/>
 			<Actor seed="57465"/>
 		</Entity>
 		<Entity uid="1375">
 			<Template>structures/moblin/moblin_defense_tower</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="375.22376" z="1171.21924"/>
 			<Orientation y="3.2701"/>
 			<Actor seed="37295"/>
 		</Entity>
 		<Entity uid="1377">
 			<Template>structures/moblin/moblin_bonepit</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="329.98295" z="1160.77369"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59335"/>
 		</Entity>
 		<Entity uid="1378">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="342.87034" z="1182.87525"/>
 			<Orientation y="2.74677"/>
 			<Actor seed="39006"/>
 		</Entity>
 		<Entity uid="1379">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="352.94709" z="1176.99061"/>
 			<Orientation y="-2.98513"/>
 			<Actor seed="29707"/>
 		</Entity>
 		<Entity uid="1380">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="408.27103" z="1189.62574"/>
 			<Orientation y="-2.58259"/>
 			<Actor seed="4121"/>
 		</Entity>
 		<Entity uid="1381">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="399.3011" z="1175.94605"/>
 			<Orientation y="2.57857"/>
 			<Actor seed="12797"/>
 		</Entity>
 		<Entity uid="1382">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="417.15784" z="1181.00623"/>
 			<Orientation y="-2.43377"/>
 			<Actor seed="12797"/>
 		</Entity>
 		<Entity uid="1383">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="407.95917" z="1238.77308"/>
 			<Orientation y="-3.08643"/>
 			<Actor seed="57846"/>
 		</Entity>
 		<Entity uid="1384">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="412.57587" z="1226.82544"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59735"/>
 		</Entity>
 		<Entity uid="1385">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="417.85859" z="1235.57862"/>
 			<Orientation y="-2.95981"/>
 			<Actor seed="59735"/>
 		</Entity>
 		<Entity uid="1386">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="344.46647" z="1228.15662"/>
 			<Orientation y="-2.8276"/>
 			<Actor seed="38733"/>
 		</Entity>
 		<Entity uid="1387">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="347.77973" z="1204.47266"/>
 			<Orientation y="2.85944"/>
 			<Actor seed="35377"/>
 		</Entity>
 		<Entity uid="1388">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="327.11802" z="1186.03333"/>
 			<Orientation y="-1.816"/>
 			<Actor seed="7306"/>
 		</Entity>
 		<Entity uid="1389">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="311.30271" z="1171.95655"/>
 			<Orientation y="-1.87053"/>
 			<Actor seed="7306"/>
 		</Entity>
 		<Entity uid="1390">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="294.74347" z="1174.8147"/>
 			<Orientation y="2.38117"/>
 			<Actor seed="504"/>
 		</Entity>
 		<Entity uid="1391">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="354.89939" z="1160.95862"/>
 			<Orientation y="2.16477"/>
 			<Actor seed="504"/>
 		</Entity>
 		<Entity uid="1392">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="369.70475" z="1153.78333"/>
 			<Orientation y="2.35659"/>
 			<Actor seed="52916"/>
 		</Entity>
 		<Entity uid="1394">
 			<Template>units/moblin/moblin_bullboram_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="372.67277" z="1256.61304"/>
 			<Orientation y="-2.51862"/>
 			<Actor seed="8967"/>
 		</Entity>
 		<Entity uid="1395">
 			<Template>units/moblin/moblin_bullboram_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="400.92185" z="1251.44617"/>
 			<Orientation y="3.0252"/>
 			<Actor seed="6031"/>
 		</Entity>
 		<Entity uid="1396">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="356.70087" z="1238.7798"/>
 			<Orientation y="-2.7619"/>
 			<Actor seed="46622"/>
 		</Entity>
 		<Entity uid="1401">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="345.65769" z="1148.45887"/>
 			<Orientation y="-2.91503"/>
 			<Actor seed="53430"/>
 		</Entity>
 		<Entity uid="1402">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="357.11301" z="1150.91822"/>
 			<Orientation y="2.66334"/>
 			<Actor seed="34460"/>
 		</Entity>
 		<Entity uid="1403">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="348.43198" z="1192.39026"/>
 			<Orientation y="-2.83756"/>
 			<Actor seed="34460"/>
 		</Entity>
 		<Entity uid="1404">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="330.30552" z="1190.61597"/>
 			<Orientation y="2.54055"/>
 			<Actor seed="17631"/>
 		</Entity>
 		<Entity uid="1405">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="321.9459" z="1196.19288"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46283"/>
 		</Entity>
 		<Entity uid="1406">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="338.55018" z="1219.55408"/>
 			<Orientation y="2.77623"/>
 			<Actor seed="46283"/>
 		</Entity>
 		<Entity uid="1407">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="350.95078" z="1231.2638"/>
 			<Orientation y="1.91463"/>
 			<Actor seed="15738"/>
 		</Entity>
 		<Entity uid="1408">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="363.62995" z="1244.85084"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15738"/>
 		</Entity>
 		<Entity uid="1409">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="396.69306" z="1239.9253"/>
 			<Orientation y="-2.41898"/>
 			<Actor seed="29978"/>
 		</Entity>
 		<Entity uid="1410">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="412.87391" z="1223.63794"/>
 			<Orientation y="-2.83826"/>
 			<Actor seed="29978"/>
 		</Entity>
 		<Entity uid="1411">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="414.15241" z="1208.57984"/>
 			<Orientation y="-2.5653"/>
 			<Actor seed="29978"/>
 		</Entity>
 		<Entity uid="1412">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="400.28891" z="1183.97181"/>
 			<Orientation y="-2.58353"/>
 			<Actor seed="35658"/>
 		</Entity>
 		<Entity uid="1413">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="390.04322" z="1176.94117"/>
 			<Orientation y="0.57621"/>
 			<Actor seed="35658"/>
 		</Entity>
 		<Entity uid="1414">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="404.71845" z="1190.724"/>
 			<Orientation y="0.44777"/>
 			<Actor seed="35658"/>
 		</Entity>
 		<Entity uid="1415">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="410.68482" z="1204.66834"/>
 			<Orientation y="0.72532"/>
 			<Actor seed="35658"/>
 		</Entity>
 		<Entity uid="1416">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="421.96116" z="1229.7649"/>
 			<Orientation y="2.81322"/>
 			<Actor seed="6750"/>
 		</Entity>
 		<Entity uid="1417">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="415.5723" z="1254.26722"/>
 			<Orientation y="3.11893"/>
 			<Actor seed="6750"/>
 		</Entity>
 		<Entity uid="1418">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="363.8306" z="1144.66382"/>
 			<Orientation y="-3.0574"/>
 			<Actor seed="6750"/>
 		</Entity>
 		<Entity uid="1419">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="352.66651" z="1144.04627"/>
 			<Orientation y="3.13666"/>
 			<Actor seed="60512"/>
 		</Entity>
 		<Entity uid="1420">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="343.49265" z="1138.26038"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60512"/>
 		</Entity>
 		<Entity uid="1421">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="302.1056" z="1159.98072"/>
 			<Orientation y="3.0963"/>
 			<Actor seed="60512"/>
 		</Entity>
 		<Entity uid="1422">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>8</Player>
+			<Player>3</Player>
 			<Position x="307.10288" z="1149.75452"/>
 			<Orientation y="2.64364"/>
 			<Actor seed="57479"/>
@@ -8359,119 +8253,119 @@
 		</Entity>
 		<Entity uid="1548">
 			<Template>structures/ordona/ordona_fortress</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="876.08796" z="1263.00428"/>
 			<Orientation y="-2.69433"/>
 			<Actor seed="10555"/>
 		</Entity>
 		<Entity uid="1549">
 			<Template>structures/ordona/ordona_storehouse</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="875.6117" z="1356.17505"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25908"/>
 		</Entity>
 		<Entity uid="1550">
 			<Template>structures/ordona/ordona_tower_beth</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="1062.3838" z="1253.33216"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56758"/>
 		</Entity>
 		<Entity uid="1551">
 			<Template>structures/ordona/ordona_tower_beth</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="897.90992" z="1166.40406"/>
 			<Orientation y="-0.47205"/>
 			<Actor seed="31912"/>
 		</Entity>
 		<Entity uid="1552">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="886.83765" z="1218.90638"/>
 			<Orientation y="-1.85891"/>
 			<Actor seed="10822"/>
 		</Entity>
 		<Entity uid="1554">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>7</Player>
-			<Position x="902.77356" z="1191.63733"/>
+			<Player>4</Player>
+			<Position x="902.81623" z="1191.68006"/>
 			<Orientation y="1.43578"/>
 			<Actor seed="43521"/>
 		</Entity>
 		<Entity uid="1555">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>7</Player>
-			<Position x="919.87323" z="1194.13331"/>
+			<Player>4</Player>
+			<Position x="919.9159" z="1194.17603"/>
 			<Orientation y="-3.04192"/>
 			<Actor seed="43521"/>
 		</Entity>
 		<Entity uid="1558">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="944.42872" z="1177.45765"/>
 			<Orientation y="-2.41291"/>
 			<Actor seed="61948"/>
 		</Entity>
 		<Entity uid="1559">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>7</Player>
-			<Position x="923.47284" z="1203.5121"/>
+			<Player>4</Player>
+			<Position x="923.51551" z="1203.55481"/>
 			<Orientation y="-2.52575"/>
 			<Actor seed="61948"/>
 		</Entity>
 		<Entity uid="1564">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="906.52265" z="1339.08326"/>
 			<Orientation y="-1.30208"/>
 			<Actor seed="21893"/>
 		</Entity>
 		<Entity uid="1567">
 			<Template>units/gerudo/gerudo_sandsniper_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="952.22413" z="1353.89917"/>
 			<Orientation y="-0.65406"/>
 			<Actor seed="28688"/>
 		</Entity>
 		<Entity uid="1568">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="892.08307" z="1229.41712"/>
 			<Orientation y="-2.10903"/>
 			<Actor seed="28327"/>
 		</Entity>
 		<Entity uid="1569">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="878.65625" z="1215.51697"/>
 			<Orientation y="-1.69364"/>
 			<Actor seed="20957"/>
 		</Entity>
 		<Entity uid="1570">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
-			<Position x="881.70551" z="1199.06873"/>
+			<Player>4</Player>
+			<Position x="881.74817" z="1199.11146"/>
 			<Orientation y="-2.95607"/>
 			<Actor seed="6697"/>
 		</Entity>
 		<Entity uid="1571">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
-			<Position x="886.34998" z="1192.39563"/>
+			<Player>4</Player>
+			<Position x="886.39264" z="1192.43836"/>
 			<Orientation y="-2.21581"/>
 			<Actor seed="6697"/>
 		</Entity>
 		<Entity uid="1572">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
-			<Position x="893.003" z="1184.08448"/>
+			<Player>4</Player>
+			<Position x="893.04566" z="1184.1272"/>
 			<Orientation y="-2.60845"/>
 			<Actor seed="6697"/>
 		</Entity>
 		<Entity uid="1573">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="930.07215" z="1186.29371"/>
 			<Orientation y="-2.82197"/>
 			<Actor seed="28713"/>
@@ -8492,147 +8386,147 @@
 		</Entity>
 		<Entity uid="1576">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="970.08301" z="1181.20008"/>
 			<Orientation y="-2.47126"/>
 			<Actor seed="35083"/>
 		</Entity>
 		<Entity uid="1577">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="977.92774" z="1197.43738"/>
 			<Orientation y="-2.41243"/>
 			<Actor seed="35083"/>
 		</Entity>
 		<Entity uid="1578">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="956.29719" z="1174.86207"/>
 			<Orientation y="-2.34417"/>
 			<Actor seed="35083"/>
 		</Entity>
 		<Entity uid="1579">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="967.01026" z="1200.82801"/>
 			<Orientation y="-2.54886"/>
 			<Actor seed="35083"/>
 		</Entity>
 		<Entity uid="1580">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="888.14423" z="1326.81446"/>
 			<Orientation y="-1.42641"/>
 			<Actor seed="1620"/>
 		</Entity>
 		<Entity uid="1582">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="900.15772" z="1292.25928"/>
 			<Orientation y="-1.1502"/>
 			<Actor seed="51041"/>
 		</Entity>
 		<Entity uid="1584">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="854.61634" z="1298.36182"/>
 			<Orientation y="-1.7983"/>
 			<Actor seed="57189"/>
 		</Entity>
 		<Entity uid="1585">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="849.11982" z="1285.61194"/>
 			<Orientation y="-1.88538"/>
 			<Actor seed="18317"/>
 		</Entity>
 		<Entity uid="1586">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="865.04572" z="1228.8761"/>
 			<Orientation y="-2.14205"/>
 			<Actor seed="18317"/>
 		</Entity>
 		<Entity uid="1587">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="858.21698" z="1233.3584"/>
 			<Orientation y="-2.19964"/>
 			<Actor seed="23155"/>
 		</Entity>
 		<Entity uid="1588">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="841.46698" z="1264.07056"/>
 			<Orientation y="-2.09601"/>
 			<Actor seed="23155"/>
 		</Entity>
 		<Entity uid="1589">
 			<Template>units/gerudo/gerudo_ashcap_b</Template>
-			<Player>7</Player>
-			<Position x="933.29755" z="1197.50355"/>
+			<Player>4</Player>
+			<Position x="933.34021" z="1197.54627"/>
 			<Orientation y="-2.36219"/>
 			<Actor seed="56505"/>
 		</Entity>
 		<Entity uid="1591">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="913.40931" z="1247.61255"/>
 			<Orientation y="-2.02639"/>
 			<Actor seed="38348"/>
 		</Entity>
 		<Entity uid="1592">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="928.34919" z="1234.31202"/>
 			<Orientation y="-2.44883"/>
 			<Actor seed="45104"/>
 		</Entity>
 		<Entity uid="1594">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="852.85846" z="1312.08472"/>
 			<Orientation y="-1.20958"/>
 			<Actor seed="13003"/>
 		</Entity>
 		<Entity uid="1595">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="867.3863" z="1299.03772"/>
 			<Orientation y="-1.1968"/>
 			<Actor seed="13003"/>
 		</Entity>
 		<Entity uid="1596">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="893.92713" z="1374.40931"/>
 			<Orientation y="-0.56968"/>
 			<Actor seed="13003"/>
 		</Entity>
 		<Entity uid="1597">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
-			<Position x="893.5962" z="1391.93067"/>
+			<Player>4</Player>
+			<Position x="893.70044" z="1392.08631"/>
 			<Orientation y="-0.84321"/>
 			<Actor seed="24993"/>
 		</Entity>
 		<Entity uid="1598">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="940.4867" z="1346.9657"/>
 			<Orientation y="-0.92367"/>
 			<Actor seed="24993"/>
 		</Entity>
 		<Entity uid="1599">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="929.47913" z="1307.11866"/>
 			<Orientation y="-1.3248"/>
 			<Actor seed="35441"/>
 		</Entity>
 		<Entity uid="1601">
 			<Template>units/gerudo/gerudo_marauder_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="934.30237" z="1215.39441"/>
 			<Orientation y="-2.26719"/>
 			<Actor seed="13041"/>
@@ -8646,49 +8540,49 @@
 		</Entity>
 		<Entity uid="1607">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="900.76972" z="1344.38575"/>
 			<Orientation y="-1.68137"/>
 			<Actor seed="31832"/>
 		</Entity>
 		<Entity uid="1609">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="920.68946" z="1177.46277"/>
 			<Orientation y="-2.656"/>
 			<Actor seed="29345"/>
 		</Entity>
 		<Entity uid="1610">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="941.87983" z="1158.64991"/>
 			<Orientation y="-2.76761"/>
 			<Actor seed="30602"/>
 		</Entity>
 		<Entity uid="1612">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="930.01246" z="1275.11646"/>
 			<Orientation y="-2.17345"/>
 			<Actor seed="39443"/>
 		</Entity>
 		<Entity uid="1614">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="940.8437" z="1261.92786"/>
 			<Orientation y="-2.37377"/>
 			<Actor seed="40841"/>
 		</Entity>
 		<Entity uid="1616">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="980.60438" z="1244.49952"/>
 			<Orientation y="-2.53145"/>
 			<Actor seed="55666"/>
 		</Entity>
 		<Entity uid="1617">
 			<Template>units/gerudo/gerudo_vagrudanon_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="930.76874" z="1321.35511"/>
 			<Orientation y="-0.48751"/>
 			<Actor seed="55666"/>
@@ -8730,434 +8624,427 @@
 		</Entity>
 		<Entity uid="1623">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="977.65699" z="1340.98438"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26906"/>
 		</Entity>
 		<Entity uid="1624">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="985.068" z="1340.82776"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15000"/>
 		</Entity>
 		<Entity uid="1626">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="980.94813" z="1338.48414"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53767"/>
 		</Entity>
 		<Entity uid="1627">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="975.96473" z="1333.4369"/>
 			<Orientation y="2.6425"/>
 			<Actor seed="18640"/>
 		</Entity>
 		<Entity uid="1628">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="979.23908" z="1329.20936"/>
 			<Orientation y="0.68094"/>
 			<Actor seed="18640"/>
 		</Entity>
 		<Entity uid="1629">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="988.7245" z="1337.92371"/>
 			<Orientation y="-2.12682"/>
 			<Actor seed="61666"/>
 		</Entity>
 		<Entity uid="1630">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="983.70533" z="1335.04847"/>
 			<Orientation y="2.93746"/>
 			<Actor seed="61666"/>
 		</Entity>
 		<Entity uid="1631">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="990.54316" z="1334.00513"/>
 			<Orientation y="-2.63938"/>
 			<Actor seed="61666"/>
 		</Entity>
 		<Entity uid="1632">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="992.59162" z="1330.24134"/>
 			<Orientation y="-2.23942"/>
 			<Actor seed="4244"/>
 		</Entity>
 		<Entity uid="1633">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="985.34034" z="1324.32374"/>
 			<Orientation y="-1.93606"/>
 			<Actor seed="4244"/>
 		</Entity>
 		<Entity uid="1634">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="985.9463" z="1331.65896"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4244"/>
 		</Entity>
 		<Entity uid="1635">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="988.5669" z="1329.41088"/>
 			<Orientation y="-2.03112"/>
 			<Actor seed="41650"/>
 		</Entity>
 		<Entity uid="1636">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="981.9275" z="1326.45142"/>
 			<Orientation y="1.92255"/>
 			<Actor seed="41650"/>
 		</Entity>
 		<Entity uid="1637">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="924.72345" z="1345.16565"/>
 			<Orientation y="-1.21389"/>
 			<Actor seed="63356"/>
 		</Entity>
 		<Entity uid="1638">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="913.76423" z="1350.95765"/>
 			<Orientation y="-0.9807"/>
 			<Actor seed="63553"/>
 		</Entity>
 		<Entity uid="1639">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="878.73993" z="1323.52479"/>
 			<Orientation y="-1.44442"/>
 			<Actor seed="63553"/>
 		</Entity>
 		<Entity uid="1640">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="867.71174" z="1326.31641"/>
 			<Orientation y="-1.3952"/>
 			<Actor seed="14082"/>
 		</Entity>
 		<Entity uid="1641">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="877.91681" z="1311.66797"/>
 			<Orientation y="1.73336"/>
 			<Actor seed="14082"/>
 		</Entity>
 		<Entity uid="1642">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="918.6219" z="1298.02771"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14082"/>
 		</Entity>
 		<Entity uid="1643">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="927.06348" z="1286.30335"/>
 			<Orientation y="-1.50586"/>
 			<Actor seed="14082"/>
 		</Entity>
 		<Entity uid="1644">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="901.1756" z="1300.29932"/>
 			<Orientation y="-0.99512"/>
 			<Actor seed="14150"/>
 		</Entity>
 		<Entity uid="1645">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="884.31965" z="1307.40577"/>
 			<Orientation y="-1.8279"/>
 			<Actor seed="14150"/>
 		</Entity>
 		<Entity uid="1646">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
-			<Position x="859.66242" z="1301.94068"/>
+			<Player>3</Player>
+			<Position x="862.95771" z="1304.6078"/>
 			<Orientation y="-1.72194"/>
 			<Actor seed="14150"/>
 		</Entity>
 		<Entity uid="1647">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="835.34296" z="1274.75037"/>
 			<Orientation y="-1.85865"/>
 			<Actor seed="14150"/>
 		</Entity>
 		<Entity uid="1648">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="854.77448" z="1321.18897"/>
 			<Orientation y="-0.88369"/>
 			<Actor seed="14150"/>
 		</Entity>
 		<Entity uid="1649">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="885.15137" z="1378.92396"/>
 			<Orientation y="-0.40107"/>
 			<Actor seed="63546"/>
 		</Entity>
 		<Entity uid="1650">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="845.66553" z="1298.24244"/>
 			<Orientation y="-1.73758"/>
 			<Actor seed="23897"/>
 		</Entity>
 		<Entity uid="1651">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="841.69898" z="1286.15613"/>
 			<Orientation y="-1.87877"/>
 			<Actor seed="11334"/>
 		</Entity>
 		<Entity uid="1652">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
-			<Position x="906.38624" z="1206.71741"/>
+			<Player>3</Player>
+			<Position x="906.4289" z="1206.76014"/>
 			<Orientation y="2.35938"/>
 			<Actor seed="11334"/>
 		</Entity>
 		<Entity uid="1653">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
-			<Position x="902.11261" z="1199.90235"/>
+			<Player>3</Player>
+			<Position x="902.15528" z="1199.94507"/>
 			<Orientation y="-1.39872"/>
 			<Actor seed="9037"/>
 		</Entity>
 		<Entity uid="1654">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
-			<Position x="894.99433" z="1201.59241"/>
+			<Player>3</Player>
+			<Position x="895.037" z="1201.63514"/>
 			<Orientation y="-0.77224"/>
 			<Actor seed="11447"/>
 		</Entity>
 		<Entity uid="1655">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
-			<Position x="883.56165" z="1206.93604"/>
+			<Player>3</Player>
+			<Position x="883.60431" z="1206.97876"/>
 			<Orientation y="-1.566"/>
 			<Actor seed="11447"/>
 		</Entity>
 		<Entity uid="1656">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
-			<Position x="891.14948" z="1213.11414"/>
+			<Player>3</Player>
+			<Position x="891.19214" z="1213.15687"/>
 			<Orientation y="-2.02602"/>
 			<Actor seed="11447"/>
 		</Entity>
 		<Entity uid="1657">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="878.71479" z="1210.22718"/>
 			<Orientation y="-0.9045"/>
 			<Actor seed="11447"/>
 		</Entity>
 		<Entity uid="1658">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
-			<Position x="898.5334" z="1213.56373"/>
+			<Player>3</Player>
+			<Position x="898.57605" z="1213.60645"/>
 			<Orientation y="-1.17112"/>
 			<Actor seed="11447"/>
 		</Entity>
 		<Entity uid="1659">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="967.32471" z="1226.76075"/>
 			<Orientation y="-1.66977"/>
 			<Actor seed="11447"/>
 		</Entity>
 		<Entity uid="1660">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="949.96155" z="1237.5016"/>
 			<Orientation y="-2.3166"/>
 			<Actor seed="10668"/>
 		</Entity>
 		<Entity uid="1661">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="1000.9037" z="1204.34595"/>
 			<Orientation y="-1.79688"/>
 			<Actor seed="10668"/>
 		</Entity>
 		<Entity uid="1662">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="975.91584" z="1215.44764"/>
 			<Orientation y="-1.82473"/>
 			<Actor seed="29923"/>
 		</Entity>
 		<Entity uid="1663">
 			<Template>units/moblin/moblin_thug_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="941.2392" z="1225.03357"/>
 			<Orientation y="-1.98661"/>
 			<Actor seed="29923"/>
 		</Entity>
 		<Entity uid="1664">
 			<Template>units/moblin/moblin_bullboram_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="963.25483" z="1248.11744"/>
 			<Orientation y="-2.07932"/>
 			<Actor seed="14634"/>
 		</Entity>
 		<Entity uid="1665">
 			<Template>units/moblin/moblin_bullboram_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="926.05866" z="1253.14576"/>
 			<Orientation y="3.54377"/>
 			<Actor seed="19415"/>
 		</Entity>
 		<Entity uid="1666">
 			<Template>units/moblin/moblin_bullboram_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="954.67823" z="1303.7096"/>
 			<Orientation y="-1.26413"/>
 			<Actor seed="19415"/>
 		</Entity>
 		<Entity uid="1667">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="889.16346" z="1315.36963"/>
 			<Orientation y="-1.49477"/>
 			<Actor seed="7691"/>
 		</Entity>
 		<Entity uid="1668">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="863.56543" z="1313.62842"/>
 			<Orientation y="-1.66723"/>
 			<Actor seed="28141"/>
 		</Entity>
 		<Entity uid="1669">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="880.0282" z="1225.21448"/>
 			<Orientation y="-1.8393"/>
 			<Actor seed="28141"/>
 		</Entity>
 		<Entity uid="1670">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>7</Player>
-			<Position x="913.90931" z="1186.4911"/>
+			<Player>3</Player>
+			<Position x="913.95197" z="1186.53382"/>
 			<Orientation y="-2.21801"/>
 			<Actor seed="23968"/>
 		</Entity>
 		<Entity uid="1671">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="940.82526" z="1294.4048"/>
 			<Orientation y="-1.22188"/>
 			<Actor seed="59555"/>
 		</Entity>
 		<Entity uid="1672">
 			<Template>units/moblin/moblin_bullborider_b</Template>
-			<Player>7</Player>
+			<Player>3</Player>
 			<Position x="961.45606" z="1346.10352"/>
 			<Orientation y="-1.73873"/>
 			<Actor seed="14562"/>
 		</Entity>
 		<Entity uid="1673">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="513.31244" z="232.09345"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="795"/>
 		</Entity>
 		<Entity uid="1674">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="534.29554" z="211.1037"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11291"/>
 		</Entity>
 		<Entity uid="1675">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="516.15052" z="193.47767"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34813"/>
 		</Entity>
 		<Entity uid="1676">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="494.84626" z="213.6926"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62469"/>
 		</Entity>
 		<Entity uid="1677">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="554.65741" z="191.25306"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51641"/>
 		</Entity>
 		<Entity uid="1678">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="534.42182" z="173.27756"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29646"/>
 		</Entity>
 		<Entity uid="1679">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="475.78376" z="196.14237"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29646"/>
 		</Entity>
 		<Entity uid="1680">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="495.21796" z="176.31101"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62306"/>
 		</Entity>
 		<Entity uid="1681">
 			<Template>structures/ordona/ordona_fieldB</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="514.96265" z="154.41208"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62306"/>
 		</Entity>
 		<Entity uid="1683">
 			<Template>structures/hylian/hylian_stablesmall</Template>
-			<Player>0</Player>
-			<Position x="1017.61756" z="794.42408"/>
+			<Player>2</Player>
+			<Position x="1016.55988" z="792.21009"/>
 			<Orientation y="-1.4752"/>
 			<Actor seed="34629"/>
 		</Entity>
-		<Entity uid="1685">
-			<Template>structures/hylian/hylian_statue_ironcladA</Template>
-			<Player>0</Player>
-			<Position x="991.60053" z="787.54395"/>
-			<Orientation y="-2.48755"/>
-			<Actor seed="61709"/>
-		</Entity>
 		<Entity uid="1686">
 			<Template>structures/hylian/hylian_lumbermill</Template>
-			<Player>0</Player>
-			<Position x="960.36738" z="820.56952"/>
-			<Orientation y="-2.18866"/>
+			<Player>2</Player>
+			<Position x="964.12555" z="828.30951"/>
+			<Orientation y="-8.9377"/>
 			<Actor seed="22632"/>
 		</Entity>
 		<Entity uid="1687">
 			<Template>structures/ordona/ordona_house</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="535.08667" z="246.11658"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15611"/>
@@ -9199,7 +9086,7 @@
 		</Entity>
 		<Entity uid="1704">
 			<Template>structures/ordona/ordona_temple</Template>
-			<Player>0</Player>
+			<Player>2</Player>
 			<Position x="157.0287" z="1023.53675"/>
 			<Orientation y="-1.69655"/>
 			<Actor seed="18435"/>
@@ -9381,98 +9268,98 @@
 		</Entity>
 		<Entity uid="1733">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="968.797" z="153.874"/>
 			<Orientation y="-1.30013"/>
 			<Actor seed="30301"/>
 		</Entity>
 		<Entity uid="1734">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="961.82276" z="153.32636"/>
 			<Orientation y="-1.61054"/>
 			<Actor seed="63399"/>
 		</Entity>
 		<Entity uid="1735">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="955.44764" z="154.28965"/>
 			<Orientation y="-0.47791"/>
 			<Actor seed="63399"/>
 		</Entity>
 		<Entity uid="1736">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="953.37739" z="162.40024"/>
 			<Orientation y="0.80748"/>
 			<Actor seed="63399"/>
 		</Entity>
 		<Entity uid="1737">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="962.042" z="164.16355"/>
 			<Orientation y="2.02352"/>
 			<Actor seed="62476"/>
 		</Entity>
 		<Entity uid="1738">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="960.41187" z="159.24479"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62476"/>
 		</Entity>
 		<Entity uid="1742">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="967.2956" z="158.16306"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14476"/>
 		</Entity>
 		<Entity uid="1743">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="968.84809" z="161.6052"/>
 			<Orientation y="0.70809"/>
 			<Actor seed="5892"/>
 		</Entity>
 		<Entity uid="1744">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="967.24897" z="166.75947"/>
 			<Orientation y="-1.21915"/>
 			<Actor seed="17448"/>
 		</Entity>
 		<Entity uid="1745">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="958.98011" z="168.84638"/>
 			<Orientation y="-1.06312"/>
 			<Actor seed="17448"/>
 		</Entity>
 		<Entity uid="1746">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
-			<Position x="953.23035" z="166.93683"/>
+			<Player>4</Player>
+			<Position x="953.38416" z="166.77143"/>
 			<Orientation y="-1.10975"/>
 			<Actor seed="17448"/>
 		</Entity>
 		<Entity uid="1747">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="948.34882" z="162.58948"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17448"/>
 		</Entity>
 		<Entity uid="1748">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="954.42011" z="159.37113"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13143"/>
 		</Entity>
 		<Entity uid="1749">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>2</Player>
+			<Player>4</Player>
 			<Position x="964.73224" z="170.86963"/>
 			<Orientation y="4.296"/>
 			<Actor seed="13143"/>
@@ -9805,6 +9692,97 @@
 			<Position x="1336.69214" z="845.86377"/>
 			<Orientation y="0.98603"/>
 			<Actor seed="40231"/>
+		</Entity>
+		<Entity uid="1806">
+			<Template>structures/gerudo/gerudo_sentry_tower</Template>
+			<Player>4</Player>
+			<Position x="907.53718" z="166.42344"/>
+			<Orientation y="-1.13462"/>
+			<Actor seed="61132"/>
+		</Entity>
+		<Entity uid="1807">
+			<Template>structures/gerudo/gerudo_sentry_tower</Template>
+			<Player>4</Player>
+			<Position x="950.67566" z="196.25022"/>
+			<Orientation y="-0.22039"/>
+			<Actor seed="32062"/>
+		</Entity>
+		<Entity uid="1810">
+			<Template>structures/ordona/ordona_house</Template>
+			<Player>2</Player>
+			<Position x="157.99793" z="601.88147"/>
+			<Orientation y="3.44619"/>
+			<Actor seed="23238"/>
+		</Entity>
+		<Entity uid="1811">
+			<Template>structures/ordona/ordona_house</Template>
+			<Player>2</Player>
+			<Position x="194.80491" z="567.02948"/>
+			<Orientation y="-0.12835"/>
+			<Actor seed="54631"/>
+		</Entity>
+		<Entity uid="1812">
+			<Template>structures/ordona/ordona_field</Template>
+			<Player>2</Player>
+			<Position x="151.19074" z="571.28669"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5987"/>
+		</Entity>
+		<Entity uid="1813">
+			<Template>structures/ordona/ordona_field</Template>
+			<Player>2</Player>
+			<Position x="173.38602" z="549.14197"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="36233"/>
+		</Entity>
+		<Entity uid="1814">
+			<Template>structures/ordona/ordona_sentry_tower</Template>
+			<Player>2</Player>
+			<Position x="205.49357" z="328.9037"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="24174"/>
+		</Entity>
+		<Entity uid="1815">
+			<Template>structures/ordona/ordona_house</Template>
+			<Player>2</Player>
+			<Position x="238.33909" z="341.47355"/>
+			<Orientation y="-0.97458"/>
+			<Actor seed="40954"/>
+		</Entity>
+		<Entity uid="1816">
+			<Template>structures/ordona/ordona_house</Template>
+			<Player>2</Player>
+			<Position x="222.61692" z="411.05372"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="33977"/>
+		</Entity>
+		<Entity uid="1817">
+			<Template>structures/ordona/ordona_house</Template>
+			<Player>2</Player>
+			<Position x="253.05536" z="382.22028"/>
+			<Orientation y="-1.00881"/>
+			<Actor seed="10398"/>
+		</Entity>
+		<Entity uid="1818">
+			<Template>units/ordona/ordona_warwagon_b</Template>
+			<Player>2</Player>
+			<Position x="376.11591" z="620.08997"/>
+			<Orientation y="-1.8099"/>
+			<Actor seed="47665"/>
+		</Entity>
+		<Entity uid="1819">
+			<Template>units/ordona/ordona_warwagon_b</Template>
+			<Player>2</Player>
+			<Position x="399.10944" z="599.74457"/>
+			<Orientation y="-2.87102"/>
+			<Actor seed="6891"/>
+		</Entity>
+		<Entity uid="1820">
+			<Template>units/ordona/ordona_warwagon_b</Template>
+			<Player>2</Player>
+			<Position x="377.02012" z="589.83362"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="57501"/>
 		</Entity>
 	</Entities>
 	<Paths/>
