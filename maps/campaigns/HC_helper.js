@@ -251,6 +251,25 @@ Trigger.prototype.SetInvulnerability = function (ent, state)
     cmpArmour.SetInvulnerability(state);
 }
 
+Trigger.prototype.ResetSpeedMultiplier = function(ent)
+{
+	let cmpUnitMotion = Engine.QueryInterface(ent, IID_UnitMotion);
+	if (cmpUnitMotion)
+		cmpUnitMotion.SetSpeedMultiplier(1);
+};
+
+Trigger.prototype.SetSpeedMultiplier = function(ent, speed)
+{
+	let cmpUnitMotion = Engine.QueryInterface(ent, IID_UnitMotion);
+	if (cmpUnitMotion)
+		cmpUnitMotion.SetSpeedMultiplier(speed);
+};
+
+Trigger.prototype.RemoveEntitiesByClass = function(entities, classes)
+{
+    return entities.filter(ent => !TriggerHelper.EntityMatchesClassList(ent, classes))
+};
+
 Trigger.prototype.WalkCommand = function (x, z, entities, playerID, queue, type = "walk")
 {
     let cmd = {};
@@ -301,6 +320,7 @@ Trigger.prototype.ConstructCommand = function (x, z, angle, template, playerID, 
 
 Trigger.prototype.DialogueWindow = function (data) // push dialogue with sound and imagery to the window
 {
+    const runtime = data.runtime != undefined ? data.runtime : 10000;
     cmpGUIInterface.PushNotification({
         "type": "AIDialog",
         "players": [1],
@@ -309,7 +329,8 @@ Trigger.prototype.DialogueWindow = function (data) // push dialogue with sound a
         "character": data.character,
         "dialogue": data.dialogue,
         "soundIndex": data.soundIndex, // represents the index of the played character sound ( -1 = no sound, 0 = random sound of the total, 1-x = specific sound with that index)
-        "portraitSuffix": data.portraitSuffix // _annoyed, _angry, _defeated, _neutral, _sad, _victorious, _happy
+        "portraitSuffix": data.portraitSuffix, // _annoyed, _angry, _defeated, _neutral, _sad, _victorious, _happy
+        "runtime": runtime
     });
 };
 

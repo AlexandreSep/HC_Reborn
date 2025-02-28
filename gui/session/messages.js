@@ -838,7 +838,7 @@ function updateAIDialog(data, origin) {
             Engine.PlayUISound("audio/dialog/" + g_Players[data.sender].civ + "/" + character + "/" + portraitSuffix + index + ".ogg", false);
     }
 
-    setTimeout(updateAIDialogQueue, 10000); // after the procedures have been ran, delete this element from the queue and run the next element if applicable 
+    setTimeout(updateAIDialogQueue, data.runtime); // after the procedures have been ran, delete this element from the queue and run the next element if applicable 
 }
 
 /**

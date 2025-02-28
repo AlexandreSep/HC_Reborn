@@ -26,7 +26,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Large Class100 RoughRider</Classes>
+    <Classes datatype="tokens">Large RoughRider</Classes>
     <GenericName>Rough Rider</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A special battalion of horse riding raiders formed by Ilia shortly after Labrynna's invasion of Ordona Province. The Rough Riders push speed over anything else in hopes to being difficult targets for Labrynna's gunpowder. They are the single fastest cavalry in the known world, and nothing can hope to keep up pace with them. While not particularly durable, they swing a ferocious axe in a fight and can deal some serious damage. When things are too tough they can easily retreat before it's too late.</History>
