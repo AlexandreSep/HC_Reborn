@@ -4,17 +4,18 @@
     var cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
 }
 
-Trigger.prototype.VictoryPlayer = function (data)
+Trigger.prototype.VictoryPlayer = function ()
 {
     let cmpPlayer = QueryPlayerIDInterface(1, IID_Player);
+    this.PlayMusic({ tracks: ["campaign_victory.ogg"] })
     cmpPlayer.SetState("won", "You have succesfully completed the mission.");
-    this.PlayMusic({ track: data.track });
     // this.CampaignEndUI({ image: "gohma_victoryA" }); 
 }
 
 Trigger.prototype.DefeatPlayer = function ()
 {
     let cmpPlayer = QueryPlayerIDInterface(1, IID_Player);
+    this.PlayMusic({ tracks: ["campaign_lose.ogg"] })
     cmpPlayer.SetState("defeated", "You have lost the mission");
     // this.CampaignEndUI({ image: "gohma_defeatA" });
 }
@@ -30,7 +31,7 @@ Trigger.prototype.PlayMusic = function (data)
     cmpGUIInterface.PushNotification({
         "type": "play-custom-track",
         "players": [1],
-        "track": data.track
+        "tracks": data.tracks,
     });
 
     if (data.resetDelay && data.resetDelay > 0) // music plays in real time only and is not influenced by game speed, while the ingame delays are, so have to base this timer on Date.now() instead
@@ -151,7 +152,7 @@ Trigger.prototype.RemoveIndices = function (removedIndices, originList)
 // spawns (and potentially destroys) a vision object for a player at a specific location
 Trigger.prototype.SpawnVision = function (data)
 {
-    let ent = Engine.AddEntity("structures/map_revealer_" + data.size); // small, medium or large
+    let ent = Engine.AddEntity("other/map_revealer_" + data.size); // small, medium or large
     let cmpEntPosition = Engine.QueryInterface(ent, IID_Position);
     if (!cmpEntPosition) {
         Engine.DestroyEntity(ent);
@@ -197,6 +198,11 @@ Trigger.prototype.SpawnBuilding = function (data)
     }
 
     return ent;
+}
+
+Trigger.prototype.InitGarrison = function (ent) {
+    const cmpHealth = Engine.QueryInterface(ent, IID_Health);
+    if(cmpHealth != undefined && cmpHealth.template.SpawnGarrison) cmpHealth.SpawnGarrisonUnits();
 }
 
 Trigger.prototype.GetEntsInsideSquare = function (list, minX, maxX, minZ, maxZ)

@@ -60,7 +60,7 @@ Music.prototype.resetTracks = function()
 		])),
         "PEACE": [],
 		"BATTLE": [	  ],
-		"VICTORY" : ["Victory1.ogg"],
+		"VICTORY" : ["fairy_defeat1.ogg", "fairy_defeat1.ogg"],
         "DEFEAT": ["fairy_defeat1.ogg"],
         "CUSTOM": []
 	};

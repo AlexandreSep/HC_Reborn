@@ -32,24 +32,29 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="1439.98" y="293.587" z="568.075"/>
-		<Rotation angle="-0.406808"/>
+		<Position x="1238.57" y="283.521" z="549.698"/>
+		<Rotation angle="0.061394"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
+  "AISeed": 0,
+  "AllyView": false,
   "CircularMap": true,
   "Description": "Give an interesting description of your map.",
+  "Keywords": [],
+  "LockTeams": true,
   "Name": "Unfettered Fury",
   "PlayerData": [
-    null,
     {
       "Civ": "ordona",
       "Color": {
         "b": 255,
         "g": 0,
         "r": 0
-      }
+      },
+      "Name": "Ordonian Caravan",
+      "Team": 0
     },
     {
       "Civ": "ordona",
@@ -57,7 +62,9 @@
         "b": 64,
         "g": 255,
         "r": 0
-      }
+      },
+      "Name": "Ordona",
+      "Team": 0
     },
     {
       "Civ": "moblin",
@@ -65,7 +72,9 @@
         "b": 0,
         "g": 0,
         "r": 255
-      }
+      },
+      "Name": "Moblin Invaders",
+      "Team": 1
     },
     {
       "Civ": "gerudo",
@@ -73,23 +82,19 @@
         "b": 0,
         "g": 128,
         "r": 255
-      }
-    },
-    {
-      "Civ": "kokiri"
-    },
-    {
-      "Civ": "gohma"
+      },
+      "Name": "Gerudo Invaders",
+      "Team": 1
     }
   ],
+  "Preview": "",
+  "RevealMap": false,
   "TriggerScripts": [
     "scripts/TriggerHelper.js",
     "campaigns/HC_helper.js",
     "campaigns/ordona_1.js"
   ],
-  "VictoryConditions": [
-    "conquest"
-  ]
+  "VictoryConditions": []
 }
 ]]></ScriptSettings>
 	<Entities>
@@ -7085,56 +7090,56 @@
 		</Entity>
 		<Entity uid="1361">
 			<Template>rubble/debris_ordona_plantationA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="290.74671" z="1248.45923"/>
 			<Orientation y="0.74296"/>
 			<Actor seed="36069"/>
 		</Entity>
 		<Entity uid="1362">
 			<Template>rubble/debris_ordona_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="284.4145" z="1208.85938"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30628"/>
 		</Entity>
 		<Entity uid="1363">
 			<Template>rubble/debris_ordona_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="285.13859" z="1190.55372"/>
 			<Orientation y="-0.24706"/>
 			<Actor seed="30628"/>
 		</Entity>
 		<Entity uid="1364">
 			<Template>rubble/debris_ordona_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="282.63831" z="1208.02771"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46479"/>
 		</Entity>
 		<Entity uid="1365">
 			<Template>rubble/debris_ordona_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="276.30658" z="1214.745"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46479"/>
 		</Entity>
 		<Entity uid="1366">
 			<Template>rubble/debris_ordona_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="280.90186" z="1194.49683"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46479"/>
 		</Entity>
 		<Entity uid="1367">
 			<Template>rubble/debris_ordona_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="304.75602" z="1192.9369"/>
 			<Orientation y="-1.11556"/>
 			<Actor seed="60139"/>
 		</Entity>
 		<Entity uid="1368">
 			<Template>rubble/debris_ordona_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="295.17154" z="1198.34607"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25486"/>
@@ -7456,791 +7461,791 @@
 		</Entity>
 		<Entity uid="1424">
 			<Template>structures/fence_long</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="398.79859" z="1275.26453"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17301"/>
 		</Entity>
 		<Entity uid="1425">
 			<Template>structures/fence_long</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="395.73615" z="1263.61951"/>
 			<Orientation y="-1.89141"/>
 			<Actor seed="447"/>
 		</Entity>
 		<Entity uid="1426">
 			<Template>structures/fence_long</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="385.56257" z="1271.2859"/>
 			<Orientation y="-2.91968"/>
 			<Actor seed="9021"/>
 		</Entity>
 		<Entity uid="1438">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="391.95923" z="1276.38868"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23866"/>
 		</Entity>
 		<Entity uid="1439">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="388.79145" z="1273.66602"/>
 			<Orientation y="-2.78277"/>
 			<Actor seed="38636"/>
 		</Entity>
 		<Entity uid="1440">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="395.24048" z="1273.3224"/>
 			<Orientation y="-3.04328"/>
 			<Actor seed="30556"/>
 		</Entity>
 		<Entity uid="1441">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="398.48435" z="1270.13196"/>
 			<Orientation y="-2.50498"/>
 			<Actor seed="56376"/>
 		</Entity>
 		<Entity uid="1442">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="397.1601" z="1266.5558"/>
 			<Orientation y="-1.30452"/>
 			<Actor seed="56376"/>
 		</Entity>
 		<Entity uid="1443">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="393.73487" z="1269.90406"/>
 			<Orientation y="-2.99823"/>
 			<Actor seed="2409"/>
 		</Entity>
 		<Entity uid="1444">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="387.59635" z="1269.58704"/>
 			<Orientation y="2.96641"/>
 			<Actor seed="2409"/>
 		</Entity>
 		<Entity uid="1445">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="391.86686" z="1266.5105"/>
 			<Orientation y="-2.44297"/>
 			<Actor seed="2652"/>
 		</Entity>
 		<Entity uid="1446">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="388.80042" z="1265.35486"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2652"/>
 		</Entity>
 		<Entity uid="1447">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="247.0488" z="1112.42872"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5645"/>
 		</Entity>
 		<Entity uid="1448">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="247.77735" z="1117.4944"/>
 			<Orientation y="-1.75921"/>
 			<Actor seed="5645"/>
 		</Entity>
 		<Entity uid="1449">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="214.21183" z="1104.38306"/>
 			<Orientation y="-2.30375"/>
 			<Actor seed="5645"/>
 		</Entity>
 		<Entity uid="1450">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="206.30982" z="1058.16614"/>
 			<Orientation y="2.5672"/>
 			<Actor seed="5645"/>
 		</Entity>
 		<Entity uid="1451">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="250.94388" z="1026.2085"/>
 			<Orientation y="1.10436"/>
 			<Actor seed="39719"/>
 		</Entity>
 		<Entity uid="1452">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="284.097" z="1041.98365"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39719"/>
 		</Entity>
 		<Entity uid="1453">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="282.16315" z="1072.71949"/>
 			<Orientation y="-1.27282"/>
 			<Actor seed="39719"/>
 		</Entity>
 		<Entity uid="1454">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="248.35206" z="1072.12623"/>
 			<Orientation y="-2.33606"/>
 			<Actor seed="39719"/>
 		</Entity>
 		<Entity uid="1455">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="220.70273" z="1026.23462"/>
 			<Orientation y="-2.71773"/>
 			<Actor seed="39719"/>
 		</Entity>
 		<Entity uid="1456">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="211.9726" z="1019.25318"/>
 			<Orientation y="2.20527"/>
 			<Actor seed="39719"/>
 		</Entity>
 		<Entity uid="1457">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="305.87256" z="994.02143"/>
 			<Orientation y="0.33567"/>
 			<Actor seed="33156"/>
 		</Entity>
 		<Entity uid="1458">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="293.53992" z="1046.28199"/>
 			<Orientation y="-2.26453"/>
 			<Actor seed="33156"/>
 		</Entity>
 		<Entity uid="1459">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="269.18213" z="1004.29883"/>
 			<Orientation y="-1.8818"/>
 			<Actor seed="33156"/>
 		</Entity>
 		<Entity uid="1460">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="248.12662" z="1017.34614"/>
 			<Orientation y="-0.54166"/>
 			<Actor seed="33156"/>
 		</Entity>
 		<Entity uid="1461">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="209.27555" z="1109.5398"/>
 			<Orientation y="-0.41123"/>
 			<Actor seed="33156"/>
 		</Entity>
 		<Entity uid="1462">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="210.13306" z="1073.21033"/>
 			<Orientation y="2.06371"/>
 			<Actor seed="33156"/>
 		</Entity>
 		<Entity uid="1463">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="760.07166" z="1279.08887"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29991"/>
 		</Entity>
 		<Entity uid="1464">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="758.20868" z="1260.8219"/>
 			<Orientation y="2.85586"/>
 			<Actor seed="45873"/>
 		</Entity>
 		<Entity uid="1465">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="771.4198" z="1192.17725"/>
 			<Orientation y="-2.90021"/>
 			<Actor seed="45873"/>
 		</Entity>
 		<Entity uid="1466">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="758.79871" z="1182.04542"/>
 			<Orientation y="0.00795"/>
 			<Actor seed="45873"/>
 		</Entity>
 		<Entity uid="1467">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="753.15485" z="1232.12037"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45873"/>
 		</Entity>
 		<Entity uid="1468">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="749.16108" z="1198.64747"/>
 			<Orientation y="2.84676"/>
 			<Actor seed="40326"/>
 		</Entity>
 		<Entity uid="1469">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="796.9856" z="1132.83326"/>
 			<Orientation y="2.53682"/>
 			<Actor seed="40326"/>
 		</Entity>
 		<Entity uid="1470">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="814.7555" z="1119.64515"/>
 			<Orientation y="-0.05112"/>
 			<Actor seed="40326"/>
 		</Entity>
 		<Entity uid="1471">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="803.5542" z="1169.49891"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40326"/>
 		</Entity>
 		<Entity uid="1472">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="824.34705" z="1144.61353"/>
 			<Orientation y="-1.44576"/>
 			<Actor seed="40326"/>
 		</Entity>
 		<Entity uid="1473">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="760.1742" z="1159.11451"/>
 			<Orientation y="-2.07558"/>
 			<Actor seed="40326"/>
 		</Entity>
 		<Entity uid="1474">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="761.5301" z="1115.16419"/>
 			<Orientation y="2.5203"/>
 			<Actor seed="56107"/>
 		</Entity>
 		<Entity uid="1475">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="765.36951" z="1094.65931"/>
 			<Orientation y="-1.88891"/>
 			<Actor seed="56107"/>
 		</Entity>
 		<Entity uid="1476">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="709.52564" z="1100.3556"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56107"/>
 		</Entity>
 		<Entity uid="1477">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="682.56855" z="1104.18616"/>
 			<Orientation y="3.00309"/>
 			<Actor seed="56107"/>
 		</Entity>
 		<Entity uid="1478">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="691.17182" z="1063.22376"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12240"/>
 		</Entity>
 		<Entity uid="1479">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="604.06434" z="1099.2948"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12240"/>
 		</Entity>
 		<Entity uid="1480">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="625.521" z="1253.03553"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12240"/>
 		</Entity>
 		<Entity uid="1481">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="622.06934" z="1205.05518"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12240"/>
 		</Entity>
 		<Entity uid="1482">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="543.61109" z="1070.90296"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51079"/>
 		</Entity>
 		<Entity uid="1483">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="537.23523" z="1160.30665"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51079"/>
 		</Entity>
 		<Entity uid="1484">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="491.80774" z="1123.79688"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51079"/>
 		</Entity>
 		<Entity uid="1485">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="557.87891" z="1209.76343"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52291"/>
 		</Entity>
 		<Entity uid="1486">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="520.6803" z="1275.9275"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52291"/>
 		</Entity>
 		<Entity uid="1487">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="538.88605" z="1306.98633"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52291"/>
 		</Entity>
 		<Entity uid="1488">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="625.75812" z="1346.50745"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62065"/>
 		</Entity>
 		<Entity uid="1489">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="690.77204" z="1339.89393"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62065"/>
 		</Entity>
 		<Entity uid="1490">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="711.14515" z="1477.1803"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62065"/>
 		</Entity>
 		<Entity uid="1491">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="734.46143" z="1441.56202"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62065"/>
 		</Entity>
 		<Entity uid="1492">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="795.6532" z="1318.09961"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9581"/>
 		</Entity>
 		<Entity uid="1493">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="811.16858" z="1227.54957"/>
 			<Orientation y="-2.05393"/>
 			<Actor seed="41533"/>
 		</Entity>
 		<Entity uid="1494">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="874.02143" z="1120.86634"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41533"/>
 		</Entity>
 		<Entity uid="1495">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="829.2107" z="1177.13367"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16156"/>
 		</Entity>
 		<Entity uid="1496">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="873.75239" z="1465.97815"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16156"/>
 		</Entity>
 		<Entity uid="1497">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="867.04316" z="1458.33948"/>
 			<Orientation y="1.39921"/>
 			<Actor seed="21350"/>
 		</Entity>
 		<Entity uid="1498">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="949.0586" z="1472.24354"/>
 			<Orientation y="1.28394"/>
 			<Actor seed="21350"/>
 		</Entity>
 		<Entity uid="1499">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="981.27662" z="1480.64942"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21350"/>
 		</Entity>
 		<Entity uid="1500">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1060.5459" z="1453.07923"/>
 			<Orientation y="2.0546"/>
 			<Actor seed="21350"/>
 		</Entity>
 		<Entity uid="1501">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1151.08716" z="1401.73511"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18064"/>
 		</Entity>
 		<Entity uid="1502">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1213.12427" z="1363.63001"/>
 			<Orientation y="-2.6808"/>
 			<Actor seed="18064"/>
 		</Entity>
 		<Entity uid="1503">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1201.32496" z="1302.53174"/>
 			<Orientation y="0.0846"/>
 			<Actor seed="18064"/>
 		</Entity>
 		<Entity uid="1504">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1213.12427" z="1363.63001"/>
 			<Orientation y="-0.75219"/>
 			<Actor seed="18064"/>
 		</Entity>
 		<Entity uid="1505">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1151.70411" z="1412.05384"/>
 			<Orientation y="-1.28179"/>
 			<Actor seed="18064"/>
 		</Entity>
 		<Entity uid="1506">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1061.56641" z="1443.22266"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18064"/>
 		</Entity>
 		<Entity uid="1507">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1051.39051" z="1439.91321"/>
 			<Orientation y="2.1889"/>
 			<Actor seed="7311"/>
 		</Entity>
 		<Entity uid="1508">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1146.9015" z="1367.5492"/>
 			<Orientation y="2.39542"/>
 			<Actor seed="7311"/>
 		</Entity>
 		<Entity uid="1509">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1245.87232" z="1299.42518"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7311"/>
 		</Entity>
 		<Entity uid="1510">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1249.97132" z="1319.74561"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7311"/>
 		</Entity>
 		<Entity uid="1511">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1145.17762" z="1311.06507"/>
 			<Orientation y="2.83056"/>
 			<Actor seed="8784"/>
 		</Entity>
 		<Entity uid="1512">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1165.03846" z="1242.30152"/>
 			<Orientation y="-3.1303"/>
 			<Actor seed="8784"/>
 		</Entity>
 		<Entity uid="1513">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1165.63636" z="1212.00806"/>
 			<Orientation y="1.31441"/>
 			<Actor seed="8784"/>
 		</Entity>
 		<Entity uid="1514">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1240.89405" z="1245.41431"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8784"/>
 		</Entity>
 		<Entity uid="1515">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1262.48316" z="1223.76612"/>
 			<Orientation y="2.22452"/>
 			<Actor seed="8784"/>
 		</Entity>
 		<Entity uid="1516">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1341.31275" z="1162.61646"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8784"/>
 		</Entity>
 		<Entity uid="1517">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1280.83765" z="1192.00416"/>
 			<Orientation y="-1.37484"/>
 			<Actor seed="40388"/>
 		</Entity>
 		<Entity uid="1518">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1218.7511" z="1178.25684"/>
 			<Orientation y="-2.03498"/>
 			<Actor seed="40388"/>
 		</Entity>
 		<Entity uid="1519">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1212.42688" z="1131.93702"/>
 			<Orientation y="2.47237"/>
 			<Actor seed="40388"/>
 		</Entity>
 		<Entity uid="1520">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1274.43152" z="1071.7566"/>
 			<Orientation y="-2.69143"/>
 			<Actor seed="40388"/>
 		</Entity>
 		<Entity uid="1521">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1225.44141" z="1025.80799"/>
 			<Orientation y="-1.19474"/>
 			<Actor seed="40388"/>
 		</Entity>
 		<Entity uid="1522">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1239.16822" z="1065.66553"/>
 			<Orientation y="1.7269"/>
 			<Actor seed="37449"/>
 		</Entity>
 		<Entity uid="1523">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1508.01343" z="935.64826"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37449"/>
 		</Entity>
 		<Entity uid="1524">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1515.87598" z="910.7729"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37449"/>
 		</Entity>
 		<Entity uid="1525">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1457.88563" z="969.20752"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37449"/>
 		</Entity>
 		<Entity uid="1526">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1448.72376" z="965.02991"/>
 			<Orientation y="-2.67618"/>
 			<Actor seed="37449"/>
 		</Entity>
 		<Entity uid="1527">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1440.98804" z="845.90229"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23983"/>
 		</Entity>
 		<Entity uid="1528">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1422.41297" z="824.75379"/>
 			<Orientation y="0.32384"/>
 			<Actor seed="23983"/>
 		</Entity>
 		<Entity uid="1529">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1419.57508" z="986.87757"/>
 			<Orientation y="0.11706"/>
 			<Actor seed="23983"/>
 		</Entity>
 		<Entity uid="1530">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1345.10938" z="1186.28357"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23983"/>
 		</Entity>
 		<Entity uid="1531">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1191.54358" z="1155.79468"/>
 			<Orientation y="-1.78446"/>
 			<Actor seed="23983"/>
 		</Entity>
 		<Entity uid="1532">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1036.70154" z="1092.36133"/>
 			<Orientation y="-2.08684"/>
 			<Actor seed="51584"/>
 		</Entity>
 		<Entity uid="1533">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="967.07679" z="1094.19459"/>
 			<Orientation y="-1.22861"/>
 			<Actor seed="51584"/>
 		</Entity>
 		<Entity uid="1534">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="883.30756" z="1140.9485"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51584"/>
 		</Entity>
 		<Entity uid="1535">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="885.50251" z="1137.26941"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31128"/>
 		</Entity>
 		<Entity uid="1536">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="848.15174" z="1205.76771"/>
 			<Orientation y="-0.59784"/>
 			<Actor seed="31128"/>
 		</Entity>
 		<Entity uid="1537">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="807.21753" z="1277.6714"/>
 			<Orientation y="0.17627"/>
 			<Actor seed="31128"/>
 		</Entity>
 		<Entity uid="1538">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="819.70759" z="1331.89588"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31128"/>
 		</Entity>
 		<Entity uid="1539">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="789.69282" z="1440.6432"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31128"/>
 		</Entity>
 		<Entity uid="1540">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="716.15064" z="1433.59327"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27040"/>
 		</Entity>
 		<Entity uid="1541">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="693.3509" z="1434.8617"/>
 			<Orientation y="-1.08997"/>
 			<Actor seed="27040"/>
 		</Entity>
 		<Entity uid="1542">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="636.97266" z="1474.40503"/>
 			<Orientation y="-1.4515"/>
 			<Actor seed="698"/>
 		</Entity>
 		<Entity uid="1543">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="568.83246" z="1464.90491"/>
 			<Orientation y="-1.54879"/>
 			<Actor seed="698"/>
 		</Entity>
 		<Entity uid="1544">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="553.34791" z="1456.25062"/>
 			<Orientation y="2.04011"/>
 			<Actor seed="698"/>
 		</Entity>
 		<Entity uid="1545">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="646.33216" z="1409.16077"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="698"/>
 		</Entity>
 		<Entity uid="1546">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="679.71668" z="1422.67054"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="698"/>
 		</Entity>
 		<Entity uid="1547">
 			<Template>gaia/flora_tree_ordonpineA</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="621.36573" z="1481.15589"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="698"/>
@@ -8366,14 +8371,14 @@
 		</Entity>
 		<Entity uid="1574">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="935.59412" z="1171.72144"/>
 			<Orientation y="-2.64864"/>
 			<Actor seed="19486"/>
 		</Entity>
 		<Entity uid="1575">
 			<Template>units/gerudo/gerudo_glaivegrunt_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="953.88697" z="1163.57142"/>
 			<Orientation y="-2.67182"/>
 			<Actor seed="19486"/>
@@ -8527,7 +8532,7 @@
 		</Entity>
 		<Entity uid="1604">
 			<Template>units/gerudo/gerudo_arbiter_b</Template>
-			<Player>7</Player>
+			<Player>4</Player>
 			<Position x="954.0752" z="1186.65076"/>
 			<Orientation y="-2.65043"/>
 			<Actor seed="55182"/>
@@ -8583,35 +8588,35 @@
 		</Entity>
 		<Entity uid="1618">
 			<Template>structures/fence_long</Template>
-			<Player>7</Player>
+			<Player>0</Player>
 			<Position x="993.64496" z="1338.97522"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31287"/>
 		</Entity>
 		<Entity uid="1619">
 			<Template>structures/fence_long</Template>
-			<Player>7</Player>
+			<Player>0</Player>
 			<Position x="981.82099" z="1345.28272"/>
 			<Orientation y="-1.49062"/>
 			<Actor seed="30565"/>
 		</Entity>
 		<Entity uid="1620">
 			<Template>structures/fence_long</Template>
-			<Player>7</Player>
+			<Player>0</Player>
 			<Position x="973.50251" z="1335.91785"/>
 			<Orientation y="-3.06539"/>
 			<Actor seed="29072"/>
 		</Entity>
 		<Entity uid="1621">
 			<Template>structures/fence_long</Template>
-			<Player>7</Player>
+			<Player>0</Player>
 			<Position x="990.805" z="1325.3069"/>
 			<Orientation y="-2.3171"/>
 			<Actor seed="1606"/>
 		</Entity>
 		<Entity uid="1622">
 			<Template>structures/fence_long</Template>
-			<Player>7</Player>
+			<Player>0</Player>
 			<Position x="979.04853" z="1323.2096"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2733"/>

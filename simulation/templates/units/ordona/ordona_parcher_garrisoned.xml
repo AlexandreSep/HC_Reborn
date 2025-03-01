@@ -1,6 +1,7 @@
 <Entity parent="units/ordona/ordona_parcher_b">
   <Attack>
     <Ranged>
+      <MinRange>0</MinRange>
       <MaxRange>85</MaxRange>
     </Ranged>
   </Attack>

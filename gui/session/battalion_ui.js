@@ -790,7 +790,7 @@ function MarkBattalionSelectedViaBattalionID (battalionID, playerID)
 
 function MarkAllBattalionsUnselected (playerID)
 {
-    if (playerID <= 0){
+    if (playerID <= 0 || !g_battalionList[playerID]){
         return;
     }
     for (let i = 0; i < g_battalionList[playerID].length; i++){

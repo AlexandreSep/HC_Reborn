@@ -30,7 +30,7 @@
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Class80 AshCap Human</Classes>
+    <Classes datatype="tokens">Medium AshCap Human</Classes>
     <GenericName>Ashinon Captain</GenericName>
     <History>Ashinon Captains are some of the best-trained soldiers in the history of the Gerudo Empire. Incredibly athletic and acrobatic, they are able to weave and parry their way to the throats of even the most heavily-armored enemies. They are perhaps most notable for their ability to command other women in battle.</History>
     <Icon>units/gerudo/ger_ashcap.dds</Icon>

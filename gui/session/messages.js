@@ -321,8 +321,8 @@ var g_NotificationsTypes =
 	"play-custom-track": function(notification, player)
 	{
 		global.music.tracks.CUSTOM = [];
-		global.music.tracks.CUSTOM.push(notification.track);
-		global.music.setState(global.music.states.CUSTOM);
+		for(let track of notification.tracks) global.music.tracks.CUSTOM.push(track);
+		global.music.startPlayList(global.music.tracks.CUSTOM, 0, false);
 		global.music.setLocked(true);
 	},
     "unlockMusic": function (notification, player) {
