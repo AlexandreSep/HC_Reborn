@@ -3,16 +3,51 @@
     var cmpCinemaManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_CinemaManager);
 
     cmpTrigger.playerArmy = TriggerHelper.GetPlayerEntitiesByClass(1, "Unit");
+    cmpTrigger.rusl = 587
+    cmpTrigger.colin = 589
+
+    cmpTrigger.RegisterTrigger("OnEntityDeath", "EntityDeathAction", { "enabled": true });
+
+    cmpTrigger.RegisterTrigger("OnRange", "OnStableReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("A"), players: [1], minRange: 0, maxRange: 50, requiredComponent: IID_UnitAI }); 
 
     cmpTrigger.DoAfterDelay(200, "IntroStart", {});
     // cmpTrigger.DoAfterDelay(2000, "VictoryPlayer");
+}
+
+Trigger.prototype.EntityDeathAction = function (data) {
+    let entity = data.ent;
+    if(entity != this.rusl && entity != this.colin) return
+
+    if (entity == this.rusl) {
+        this.DialogueWindow({
+            character: "Colin",
+            dialogue: `Oh no! Dad! This can't be happening!`,
+            soundIndex: 7,
+            portraitSuffix: "_",
+            runtime: 10000,
+            clear: true
+        });
+    }
+    else {
+        this.DialogueWindow({
+            character: "Rusl",
+            dialogue: `Colin! My poor boy! This can't be happening!`,
+            soundIndex: 7,
+            portraitSuffix: "_",
+            runtime: 10000,
+            clear: true
+        });
+    }
+
+    this.DoAfterDelay(2000, "DefeatPlayer", {});
+    cmpTrigger.DisableTrigger("OnEntityDeath", "EntityDeathAction");
 }
 
 Trigger.prototype.IntroStart = function ()
 {
     this.PlayMusic({ tracks: ["ordona_ambient4.ogg"] });
 
-    // this.SpawnVision({ x: 1300, z: 750, resetDelay: 20000, owner: 1, size: "medium" })
+    this.SpawnVision({ x: 1300, z: 750, resetDelay: 15000, owner: 1, size: "medium" })
     // this.RevealMap({ state: true });
 
     const wagons = TriggerHelper.MatchEntitiesByClass(this.playerArmy, "Wagon");
@@ -171,5 +206,42 @@ Trigger.prototype.CheckAmbushArmyDefeated = function ()
 Trigger.prototype.AmbushDefeated = function ()
 {
     this.PlayMusic({ tracks: ["ordona_ambient4.ogg"] });
-    warn("this.ambushArmy defeated");
+
+    this.DialogueWindow({
+        character: "Colin",
+        dialogue: `What in the goddess' name could Gerudo be doing this far east?!`,
+        soundIndex: 6,
+        portraitSuffix: "_",
+        runtime: 4000,
+    });
+
+    this.DialogueWindow({
+        character: "Colin",
+        dialogue: `Their thieves never journey this far from the ||Gerudo Highlands||230 145 56||!`,
+        soundIndex: 2,
+        portraitSuffix: "_",
+        runtime: 4000,
+    });
+
+    this.DialogueWindow({
+        character: "Rusl",
+        dialogue: `I'm not sure, but I fear the main reason is far more troubling than meets the eye.`,
+        soundIndex: 4,
+        portraitSuffix: "_",
+        runtime: 4000,
+    });
+
+    this.DialogueWindow({
+        character: "Rusl",
+        dialogue: `We must follow this road to ||Nal Ordona||127 96 0|| and alert the militias my son!`,
+        soundIndex: 6,
+        portraitSuffix: "_",
+        runtime: 8000,
+    });
+}
+
+Trigger.prototype.OnStableReached = function (data) {
+    if (data.currentCollection.find(ent => ent == this.rusl || ent == this.colin) == undefined) return;
+    warn("Rusl and/or Colin reached stable")
+    cmpTrigger.DisableTrigger("OnRange", "OnStableReached");
 }

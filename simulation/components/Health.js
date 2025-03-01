@@ -352,6 +352,10 @@ Health.prototype.HandleDeath = function(attacker = null)
 		cmpDeathDamage.CauseDeathDamage();
 	PlaySound("death", this.entity);
 
+	//HC-code make death events possible for map triggers
+	let cmpTrigger = Engine.QueryInterface(SYSTEM_ENTITY, IID_Trigger);
+	cmpTrigger.CallEvent("OnEntityDeath", { ent: this.entity });
+
 	if (this.template.SpawnEntityOnDeath){
 		//HC-Code. We need to store the corpse to limit corpse numbers on the field
 		let corpse = this.CreateDeathSpawnedEntity();

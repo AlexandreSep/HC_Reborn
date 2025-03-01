@@ -336,7 +336,8 @@ Trigger.prototype.DialogueWindow = function (data) // push dialogue with sound a
         "dialogue": data.dialogue,
         "soundIndex": data.soundIndex, // represents the index of the played character sound ( -1 = no sound, 0 = random sound of the total, 1-x = specific sound with that index)
         "portraitSuffix": data.portraitSuffix, // _annoyed, _angry, _defeated, _neutral, _sad, _victorious, _happy
-        "runtime": runtime
+        "runtime": runtime,
+        "clear": data.clear != undefined ? true : false
     });
 };
 

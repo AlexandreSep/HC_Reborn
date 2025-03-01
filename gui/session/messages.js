@@ -58,6 +58,12 @@ var g_NetworkOutOfSyncHandlers = new Set();
  */
 var g_AIDialogQueue = {};
 
+// HC-code
+/**
+ * currently running update timer id after the runtime finished for a piece of dialog
+ */
+var g_runtimeTimer = {};
+
 /**
  * Handle all netmessage types that can occur.
  */
@@ -347,6 +353,11 @@ var g_NotificationsTypes =
     "AIDialog": function (data, player) { // The main dialog functionality used for the AI players
         //add queue data for every targeted player and run the dialog functionality
         for (let targetplayer of data.targetPlayers) {
+			if(data.clear) { 
+				g_AIDialogQueue[targetplayer] = [];
+				clearTimeout(g_runtimeTimer[targetplayer])
+			}
+
             g_AIDialogQueue[targetplayer].push(data); // add data to the queue for this player
             if (g_AIDialogQueue[targetplayer].length == 1) // if this newly added data is the only one at the moment for this player, manually run the dialog functionality
                 updateAIDialog(data, targetplayer);
@@ -838,7 +849,7 @@ function updateAIDialog(data, origin) {
             Engine.PlayUISound("audio/dialog/" + g_Players[data.sender].civ + "/" + character + "/" + portraitSuffix + index + ".ogg", false);
     }
 
-    setTimeout(updateAIDialogQueue, data.runtime); // after the procedures have been ran, delete this element from the queue and run the next element if applicable 
+    g_runtimeTimer[playerID] = setTimeout(updateAIDialogQueue, data.runtime);
 }
 
 /**

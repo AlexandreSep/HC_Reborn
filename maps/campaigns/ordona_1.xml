@@ -32,8 +32,8 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="1238.57" y="283.521" z="549.698"/>
-		<Rotation angle="0.061394"/>
+		<Position x="377.924" y="311.387" z="278.321"/>
+		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
@@ -46,6 +46,7 @@
   "LockTeams": true,
   "Name": "Unfettered Fury",
   "PlayerData": [
+    null,
     {
       "Civ": "ordona",
       "Color": {
@@ -9782,6 +9783,48 @@
 			<Position x="377.02012" z="589.83362"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57501"/>
+		</Entity>
+		<Entity uid="1821">
+			<Template>trigger/trigger_point_A</Template>
+			<Player>0</Player>
+			<Position x="991.24756" z="799.74195"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="10730"/>
+		</Entity>
+		<Entity uid="1822">
+			<Template>trigger/trigger_point_B</Template>
+			<Player>0</Player>
+			<Position x="204.54722" z="373.59058"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="53533"/>
+		</Entity>
+		<Entity uid="1823">
+			<Template>trigger/trigger_point_C</Template>
+			<Player>0</Player>
+			<Position x="170.07874" z="568.65052"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="16195"/>
+		</Entity>
+		<Entity uid="1824">
+			<Template>trigger/trigger_point_D</Template>
+			<Player>0</Player>
+			<Position x="516.12092" z="969.03296"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="62758"/>
+		</Entity>
+		<Entity uid="1825">
+			<Template>trigger/trigger_point_E</Template>
+			<Player>0</Player>
+			<Position x="112.26526" z="1004.8996"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="27970"/>
+		</Entity>
+		<Entity uid="1826">
+			<Template>trigger/trigger_point_F</Template>
+			<Player>0</Player>
+			<Position x="517.17133" z="195.73813"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="5374"/>
 		</Entity>
 	</Entities>
 	<Paths/>

@@ -26,6 +26,7 @@
     <Classes datatype="tokens">Misc</Classes>
     <GenericName>Map Revealer - Large</GenericName>
     <Undeletable>false</Undeletable>
+    <Icon>units/unit_generic.dds</Icon>
   </Identity>
   <Population>
     <Bonus>0</Bonus>
