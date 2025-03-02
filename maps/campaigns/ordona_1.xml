@@ -7483,63 +7483,63 @@
 		</Entity>
 		<Entity uid="1438">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="391.95923" z="1276.38868"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23866"/>
 		</Entity>
 		<Entity uid="1439">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="388.79145" z="1273.66602"/>
 			<Orientation y="-2.78277"/>
 			<Actor seed="38636"/>
 		</Entity>
 		<Entity uid="1440">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="395.24048" z="1273.3224"/>
 			<Orientation y="-3.04328"/>
 			<Actor seed="30556"/>
 		</Entity>
 		<Entity uid="1441">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="398.48435" z="1270.13196"/>
 			<Orientation y="-2.50498"/>
 			<Actor seed="56376"/>
 		</Entity>
 		<Entity uid="1442">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="397.1601" z="1266.5558"/>
 			<Orientation y="-1.30452"/>
 			<Actor seed="56376"/>
 		</Entity>
 		<Entity uid="1443">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="393.73487" z="1269.90406"/>
 			<Orientation y="-2.99823"/>
 			<Actor seed="2409"/>
 		</Entity>
 		<Entity uid="1444">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="387.59635" z="1269.58704"/>
 			<Orientation y="2.96641"/>
 			<Actor seed="2409"/>
 		</Entity>
 		<Entity uid="1445">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="391.86686" z="1266.5105"/>
 			<Orientation y="-2.44297"/>
 			<Actor seed="2652"/>
 		</Entity>
 		<Entity uid="1446">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>0</Player>
+			<Player>3</Player>
 			<Position x="388.80042" z="1265.35486"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2652"/>

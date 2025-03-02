@@ -1,7 +1,4 @@
 {
-    var cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
-    var cmpTrigger = Engine.QueryInterface(SYSTEM_ENTITY, IID_Trigger);
-    var cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
 }
 
 Trigger.prototype.VictoryPlayer = function ()
@@ -24,10 +21,12 @@ Trigger.prototype.PlayMusic = function (data)
 {
     if (this.musicTimer != 0) // if a music reset is still pending, cancel that reset before initiating a new music track
     {
+        const cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
         cmpTimer.CancelTimer(this.musicTimer);
         this.musicTimer = 0;
     }
 
+    const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
     cmpGUIInterface.PushNotification({
         "type": "play-custom-track",
         "players": [1],
@@ -35,7 +34,7 @@ Trigger.prototype.PlayMusic = function (data)
     });
 
     if (data.resetDelay && data.resetDelay > 0) // music plays in real time only and is not influenced by game speed, while the ingame delays are, so have to base this timer on Date.now() instead
-        this.musicTimer = cmpTrigger.DoAfterDelay(1000, "ResetMusic", {"threshold": Date.now() + data.resetDelay });
+        this.musicTimer = this.DoAfterDelay(1000, "ResetMusic", {"threshold": Date.now() + data.resetDelay });
 }
 
 Trigger.prototype.ResetMusic = function (data)
@@ -44,11 +43,12 @@ Trigger.prototype.ResetMusic = function (data)
     {
         if (Date.now() < data.threshold)
         {
-            cmpTrigger.DoAfterDelay(1000, "ResetMusic", { "threshold": data.threshold }); // recall this function until the threshold has been reached to reset the music
+            this.DoAfterDelay(1000, "ResetMusic", { "threshold": data.threshold }); // recall this function until the threshold has been reached to reset the music
             return; // also make sure to return before we loop the unlock function constantly
         }
     }
 
+    const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
     cmpGUIInterface.PushNotification({
         "type": "unlockMusic",
         "players": [1]
@@ -59,6 +59,7 @@ Trigger.prototype.ResetMusic = function (data)
 
 Trigger.prototype.CampaignEndUI = function (data) // push dialogue with sound and imagery to the window
 {
+    const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
     cmpGUIInterface.PushNotification({
         "type": "campaignEnd",
         "players": [1],
@@ -117,7 +118,7 @@ Trigger.prototype.RemoveAtFleeLocation = function (data)
 
     let updatedList = this.RemoveIndices(indices, list);
     if (updatedList.length > 0)
-        cmpTrigger.DoAfterDelay(500, "RemoveAtFleeLocation", { list: updatedList, x: data.x, z: data.z, threshold: data.threshold }); // recall removal check until the list is empty
+        this.DoAfterDelay(500, "RemoveAtFleeLocation", { list: updatedList, x: data.x, z: data.z, threshold: data.threshold }); // recall removal check until the list is empty
 }
 
 Trigger.prototype.UpdateList = function (list)
@@ -166,7 +167,7 @@ Trigger.prototype.SpawnVision = function (data)
     cmpEntPosition.JumpTo(data.x, data.z);
 
     if (data.resetDelay > 0)
-        cmpTrigger.DoAfterDelay(data.resetDelay, "DestroyEnt", ent);
+        this.DoAfterDelay(data.resetDelay, "DestroyEnt", ent);
 
     return ent;
 }
@@ -232,6 +233,9 @@ Trigger.prototype.SpawnUnit = function (data) {
     cmpEntPosition.JumpTo(data.x, data.z);
     cmpEntPosition.SetYRotation(data.angle);
 
+    let cmpPlayer = QueryPlayerIDInterface(data.owner, IID_Player);
+    cmpPlayer.AddBattalion([ent])
+
     return ent;
 }
 
@@ -251,10 +255,10 @@ Trigger.prototype.DestroyEnt = function (ent)
 
 Trigger.prototype.SetInvulnerability = function (ent, state)
 {
-    let cmpArmour = Engine.QueryInterface(ent, IID_DamageReceiver);
-    if (!cmpArmour)
+    let cmpResistance = Engine.QueryInterface(ent, IID_Resistance);
+    if (!cmpResistance)
         return;
-    cmpArmour.SetInvulnerability(state);
+    cmpResistance.SetInvulnerability(state);
 }
 
 Trigger.prototype.ResetSpeedMultiplier = function(ent)
@@ -326,6 +330,7 @@ Trigger.prototype.ConstructCommand = function (x, z, angle, template, playerID, 
 
 Trigger.prototype.DialogueWindow = function (data) // push dialogue with sound and imagery to the window
 {
+    const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
     const runtime = data.runtime != undefined ? data.runtime : 10000;
     cmpGUIInterface.PushNotification({
         "type": "AIDialog",
@@ -343,6 +348,7 @@ Trigger.prototype.DialogueWindow = function (data) // push dialogue with sound a
 
 Trigger.prototype.CloseDialogueWindow = function ()
 {
+    const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
     cmpGUIInterface.PushNotification({
         "type": "AIDialog",
         "players": [1],
@@ -354,6 +360,7 @@ Trigger.prototype.CloseDialogueWindow = function ()
 
 Trigger.prototype.SendGenericRequest = function (data)
 {
+    const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
     cmpGUIInterface.PushNotification({
         "type": "genericCampaign",
         "players": [1],
@@ -361,6 +368,16 @@ Trigger.prototype.SendGenericRequest = function (data)
         "functionTrue": data.functionTrue, // which function to call when yes was pressed
         "functionFalse": data.functionFalse, // which function to call when no was pressed
         "delay": data.delay
+    });
+}
+
+Trigger.prototype.PlayUISound = function (path)
+{
+    const cmpGUIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_GuiInterface);
+    cmpGUIInterface.PushNotification({
+        "type": "UISound",
+        "players": [1],
+        "path": path, // the path of the audio file
     });
 }
 
