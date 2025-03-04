@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Arrows</AttackName>
       <Damage>
-        <Pierce>75</Pierce>
+        <Pierce>60</Pierce>
       </Damage>
       <MaxRange>120.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -20,6 +20,9 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
+  <Health>
+    <Max>2000</Max>
+  </Health>
   <Footprint>
     <Circle radius="5.0" />
     <Height>5.0</Height>
@@ -43,7 +46,6 @@
         <Pierce>15.0</Pierce>
       </Damage>
     </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>

@@ -1,16 +1,18 @@
 <Entity parent="units/moblin/moblin_picket_b">
+  <Attack>
+    <Ranged>
+      <MaxRange>90</MaxRange>
+    </Ranged>
+  </Attack>
   <Turretable />
   <Cost>
     <BattalionSlots>0</BattalionSlots>
   </Cost>
-  <Health>
-    <Max>100</Max>
-  </Health>
   <Identity>
     <Classes datatype="tokens">HiddenUI</Classes>
+    <GenericName>Garrison Picket</GenericName>
   </Identity>
-  <Promotion disable="" />
-  <VisualActor>
-    <Actor>units/moblin/moblin_picket_rider.xml</Actor>
-  </VisualActor>
+  <Selectable>
+    <EditorOnly />
+  </Selectable>
 </Entity>

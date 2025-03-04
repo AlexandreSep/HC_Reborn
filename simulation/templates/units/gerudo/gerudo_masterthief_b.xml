@@ -78,10 +78,4 @@
   <VisualActor>
     <Actor>units/gerudo/gerudo_masterthief_b.xml</Actor>
   </VisualActor>
-  <Visibility>
-    <Camouflage>
-      <ActivateDelay>3000</ActivateDelay>
-      <PostDelay>3000</PostDelay>
-    </Camouflage>
-  </Visibility>
 </Entity>

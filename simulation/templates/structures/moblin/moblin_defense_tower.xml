@@ -51,6 +51,11 @@
   <Health>
     <Max>700</Max>
     <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
+    <SpawnGarrison>
+      <Template>units/moblin/moblin_picket_garrison</Template>
+      <SpawnNumber>5</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
   </Health>
   <Identity>
     <Civ>moblin</Civ>

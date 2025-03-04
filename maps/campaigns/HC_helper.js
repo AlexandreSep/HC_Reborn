@@ -206,6 +206,14 @@ Trigger.prototype.InitGarrison = function (ent) {
     if(cmpHealth != undefined && cmpHealth.template.SpawnGarrison) cmpHealth.SpawnGarrisonUnits();
 }
 
+Trigger.prototype.AttackYell = function (army, initialDelay) {
+    let delay = 25;
+    for (let ent of army) {
+        this.DoAfterDelay(initialDelay + delay, "PlayUnitSound", { entity: ent, name: "order_attack" });
+        delay += 25;
+    }
+}
+
 Trigger.prototype.GetEntsInsideSquare = function (list, minX, maxX, minZ, maxZ)
 {
     let newList = [];
@@ -237,6 +245,12 @@ Trigger.prototype.SpawnUnit = function (data) {
     cmpPlayer.AddBattalion([ent])
 
     return ent;
+}
+
+Trigger.prototype.SetEntOwner = function (data) {
+    let cmpEntOwnership = Engine.QueryInterface(data.ent, IID_Ownership);
+    if (cmpEntOwnership)
+        cmpEntOwnership.SetOwner(data.owner);
 }
 
 Trigger.prototype.PlayUnitSound = function (data)

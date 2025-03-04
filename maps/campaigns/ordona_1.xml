@@ -32,9 +32,9 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="377.924" y="311.387" z="278.321"/>
-		<Rotation angle="0"/>
-		<Declination angle="0.610865"/>
+		<Position x="305.707" y="283.429" z="466.542"/>
+		<Rotation angle="0.763609"/>
+		<Declination angle="0.610866"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
@@ -7022,7 +7022,7 @@
 		<Entity uid="1341">
 			<Template>structures/ordona/ordona_house</Template>
 			<Player>2</Player>
-			<Position x="127.61908" z="967.89667"/>
+			<Position x="128.57303" z="967.39167"/>
 			<Orientation y="-0.16384"/>
 			<Actor seed="65050"/>
 		</Entity>
@@ -7483,63 +7483,63 @@
 		</Entity>
 		<Entity uid="1438">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="391.95923" z="1276.38868"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23866"/>
 		</Entity>
 		<Entity uid="1439">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="388.79145" z="1273.66602"/>
 			<Orientation y="-2.78277"/>
 			<Actor seed="38636"/>
 		</Entity>
 		<Entity uid="1440">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="395.24048" z="1273.3224"/>
 			<Orientation y="-3.04328"/>
 			<Actor seed="30556"/>
 		</Entity>
 		<Entity uid="1441">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="398.48435" z="1270.13196"/>
 			<Orientation y="-2.50498"/>
 			<Actor seed="56376"/>
 		</Entity>
 		<Entity uid="1442">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="397.1601" z="1266.5558"/>
 			<Orientation y="-1.30452"/>
 			<Actor seed="56376"/>
 		</Entity>
 		<Entity uid="1443">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="393.73487" z="1269.90406"/>
 			<Orientation y="-2.99823"/>
 			<Actor seed="2409"/>
 		</Entity>
 		<Entity uid="1444">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="387.59635" z="1269.58704"/>
 			<Orientation y="2.96641"/>
 			<Actor seed="2409"/>
 		</Entity>
 		<Entity uid="1445">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="391.86686" z="1266.5105"/>
 			<Orientation y="-2.44297"/>
 			<Actor seed="2652"/>
 		</Entity>
 		<Entity uid="1446">
 			<Template>units/ordona/ordona_serfA</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="388.80042" z="1265.35486"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2652"/>
@@ -9825,6 +9825,13 @@
 			<Position x="517.17133" z="195.73813"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5374"/>
+		</Entity>
+		<Entity uid="1831">
+			<Template>trigger/trigger_point_G</Template>
+			<Player>0</Player>
+			<Position x="384.4133" z="605.56836"/>
+			<Orientation y="2.35621"/>
+			<Actor seed="20754"/>
 		</Entity>
 	</Entities>
 	<Paths/>
