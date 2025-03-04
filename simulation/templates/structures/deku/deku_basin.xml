@@ -2,15 +2,6 @@
   <BuildRestrictions>
     <Category>Temple</Category>
   </BuildRestrictions>
-  <Cost>
-    <BuildTime>60</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>200</metal>
-      <stone>0</stone>
-      <wood>300</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Height>8.0</Height>
     <Square depth="41.0" width="41.0" />
@@ -19,10 +10,9 @@
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/debris_deku_medium</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>5</BattalionSize>
       <Chance>0</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
+      <SpawnNumberMax>5</SpawnNumberMax>
+      <SpawnNumberMin>5</SpawnNumberMin>
       <Template>units/deku/deku_scrubling_b</Template>
     </SpawnMultipleEntitiesOnDeath>
   </Health>

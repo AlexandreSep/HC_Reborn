@@ -2,15 +2,6 @@
   <BuildRestrictions>
     <Category>Farmstead</Category>
   </BuildRestrictions>
-  <Cost>
-    <BuildTime>45</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>150</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Height>8.0</Height>
     <Square depth="31.0" width="31.0" />
@@ -19,7 +10,6 @@
     <Max>1800</Max>
     <SpawnEntityOnDeath>rubble/debris_deku_medium</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>1</BattalionSize>
       <Chance>0</Chance>
       <SpawnNumberMax>5</SpawnNumberMax>
       <SpawnNumberMin>5</SpawnNumberMin>
