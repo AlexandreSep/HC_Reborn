@@ -19,7 +19,9 @@
     cmpTrigger.RegisterTrigger("OnEntityDeath", "EntityDeathAction", { "enabled": true });
 
     cmpTrigger.RegisterTrigger("OnRange", "OnStableReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("A"), players: [1], minRange: 0, maxRange: 25, requiredComponent: IID_UnitAI }); 
-    cmpTrigger.RegisterTrigger("OnRange", "OnCremiaReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("G"), players: [1], minRange: 0, maxRange: 150, requiredComponent: IID_UnitAI }); 
+    cmpTrigger.RegisterTrigger("OnRange", "OnSerfSteadReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("B"), players: [1], minRange: 0, maxRange: 50, requiredComponent: IID_UnitAI }); 
+    cmpTrigger.RegisterTrigger("OnRange", "OnFarmsReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("C"), players: [1], minRange: 0, maxRange: 50, requiredComponent: IID_UnitAI }); 
+    cmpTrigger.RegisterTrigger("OnRange", "OnCremiaReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("G"), players: [1], minRange: 0, maxRange: 125, requiredComponent: IID_UnitAI }); 
 
     cmpTrigger.DoAfterDelay(200, "PostInit", {});
     cmpTrigger.DoAfterDelay(400, "IntroStart", {});
@@ -68,6 +70,11 @@ Trigger.prototype.EntityDeathAction = function (data) {
 }
 
 Trigger.prototype.PostInit = function () {
+    this.AddResource({ resourceType: "food", amount: 400, playerID: 1 })
+    this.AddResource({ resourceType: "wood", amount: 400, playerID: 1 })
+    this.AddResource({ resourceType: "stone", amount: 400, playerID: 1 })
+    this.AddResource({ resourceType: "metal", amount: 400, playerID: 1 })
+
     for(let serf of this.serfs1) this.SetInvulnerability(serf, true);
     for(let serf of this.serfs2) this.SetInvulnerability(serf, true);
     for(let serf of this.serfs3) this.SetInvulnerability(serf, true);
@@ -296,7 +303,7 @@ Trigger.prototype.AmbushDefeated = function ()
 }
 
 Trigger.prototype.OnStableReached = function (data) {
-    if (data.currentCollection.find(ent => ent == this.rusl || ent == this.colin) == undefined) return;
+    if (data.currentCollection.find(ent => ent == this.rusl || ent == this.colin || ent == this.cremia) == undefined) return;
 
     const reverend = [1355];
     this.UpdateList(reverend)
@@ -341,6 +348,71 @@ Trigger.prototype.SpawnStableUnits = function () {
     });
 }
 
+Trigger.prototype.OnSerfSteadReached = function (data)
+{
+    if (data.currentCollection.find(ent => ent == this.rusl || ent == this.colin || ent == this.cremia) == undefined) return;
+
+    for(let i = 0; i < 8; i++) {
+        const serf = this.SpawnUnit({ x: 180 + i * 5, z: 375, angle: 0, template: "units/campaign/ordona_under_siege/ordona_serf_1", owner: 1 })
+        this.PlayUnitSound({ entity: serf, name: "select" })
+        this.WalkCommand(300, 375, [serf], 1, false);
+    }
+
+    this.DialogueWindow({
+        character: "Serf",
+        dialogue: `Ordonians?! Thank goodness! We've been in hiding since the raids started happening.`,
+        soundIndex: -1,
+        portraitSuffix: "_",
+        runtime: 4000,
+        clear: true
+    });
+
+    this.PlayUISound("audio/voice/ordona/peasantF/peasantF_move_01.ogg");
+    this.DoAfterDelay(4000, "DialogueWindow", {
+        character: "Serf",
+        dialogue: `We're glad that some of our residences are still standing.`,
+        soundIndex: -1,
+        portraitSuffix: "_",
+        runtime: 4000,
+        clear: true
+    });
+
+    this.DisableTrigger("OnRange", "OnSerfSteadReached");
+}
+
+Trigger.prototype.OnFarmsReached = function (data)
+{
+    if (data.currentCollection.find(ent => ent == this.rusl || ent == this.colin || ent == this.cremia) == undefined) return;
+
+    this.DialogueWindow({
+        character: "Colin",
+        dialogue: `It seems this place has been abandoned.`,
+        soundIndex: 2,
+        portraitSuffix: "_",
+        runtime: 3000,
+        clear: true
+    });
+    this.DoAfterDelay(3000, "DialogueWindow", {
+        character: "Cremia",
+        dialogue: `Its likely the invaders have looted and captured the owners, or they've fled further west.`,
+        soundIndex: 5,
+        portraitSuffix: "_",
+        runtime: 4000,
+        clear: true
+    });
+
+    for(let i = 1810; i <= 1813; i++) this.DoAfterDelay(7000, "SetEntOwner", { ent: i, owner: 1 })
+    this.DoAfterDelay(7000, "DialogueWindow", {
+        character: "Rusl",
+        dialogue: `We shall have to put those farms and houses to good use for the time being.`,
+        soundIndex: 2,
+        portraitSuffix: "_",
+        runtime: 6000,
+        clear: true
+    });
+    this.DisableTrigger("OnRange", "OnFarmsReached");
+}
+
 Trigger.prototype.OnCremiaReached = function (data) {
     if (data.currentCollection.length < 1) return;
 
@@ -356,8 +428,6 @@ Trigger.prototype.OnCremiaReached = function (data) {
     this.ambushArmy = [];
     this.ambushArmy.push(this.SpawnUnit({ x: 380, z: 680, angle: 0, template: "units/gerudo/gerudo_ashcap_b", owner: 4 }))
     this.ambushArmy.push(this.SpawnUnit({ x: 380, z: 520, angle: 0, template: "units/gerudo/gerudo_ashcap_b", owner: 4 }))
-    this.ambushArmy.push(this.SpawnUnit({ x: 380, z: 520, angle: 0, template: "units/gerudo/gerudo_masterthief_b", owner: 4 }))
-    this.ambushArmy.push(this.SpawnUnit({ x: 380, z: 520, angle: 0, template: "units/gerudo/gerudo_masterthief_b", owner: 4 }))
     for (let i = 0; i < 5; i++) {
         this.ambushArmy.push(this.SpawnUnit({ x: 350 + i * 5, z: 680, angle: 0, template: "units/gerudo/gerudo_marauder_b", owner: 4 }))
         this.ambushArmy.push(this.SpawnUnit({ x: 350 + i * 5, z: 520, angle: 0, template: "units/gerudo/gerudo_marauder_b", owner: 4 }))
@@ -602,4 +672,5 @@ Trigger.prototype.AmbushDefeatedCremia = function ()
         clear: true
     });
 }
+
 

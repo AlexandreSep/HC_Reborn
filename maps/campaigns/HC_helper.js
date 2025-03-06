@@ -294,6 +294,15 @@ Trigger.prototype.RemoveEntitiesByClass = function(entities, classes)
     return entities.filter(ent => !TriggerHelper.EntityMatchesClassList(ent, classes))
 };
 
+Trigger.prototype.AddResource = function (data)
+{
+    let cmd = {};
+    cmd.type = "AddResource";
+    cmd.resourceType = data.resourceType;
+    cmd.amount = data.amount;
+    ProcessCommand(data.playerID, cmd);
+}
+
 Trigger.prototype.WalkCommand = function (x, z, entities, playerID, queue, type = "walk")
 {
     let cmd = {};

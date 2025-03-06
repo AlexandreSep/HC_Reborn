@@ -1,0 +1,23 @@
+<Entity parent="units/ordona/ordona_serfA">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/ordona/ordona_civil_centre	
+      structures/ordona/ordona_house
+      structures/ordona/ordona_farmstead
+      structures/ordona/ordona_field
+      structures/ordona/ordona_storehouse
+      -structures/ordona/ordona_market
+      -structures/ordona/ordona_mercs
+      -structures/ordona/ordona_temple
+      -structures/ordona/ordona_apiary
+      structures/ordona/ordona_barracks
+      -structures/ordona/ordona_stables
+      -structures/ordona/ordona_siegeworks
+      -structures/ordona/ordona_blacksmith
+      -structures/ordona/ordona_wallset
+      -structures/ordona/ordona_defense_tower
+      -structures/ordona/ordona_fortress
+      -structures/ordona/ordona_wonder
+    </Entities>
+  </Builder>
+</Entity>
