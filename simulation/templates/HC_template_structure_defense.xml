@@ -46,15 +46,11 @@
     <Foundation>
       <Damage>
         <Crush>1.0</Crush>
-        <Fire>0.0</Fire>
         <Forest>0.0</Forest>
         <Hack>1.0</Hack>
-        <Light>0.0</Light>
         <Pierce>95.0</Pierce>
-        <Shadow>0.0</Shadow>
         <Siege>0.0</Siege>
-        <Spirit>0.0</Spirit>
-        <Water>0.0</Water>
+	<Magic>0.0</Magic>
       </Damage>
     </Foundation>
   </Resistance>

@@ -10,9 +10,9 @@
   </BuildingAI>
   <Capturable disable="" />
   <Cost>
-    <BuildTime>50</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <stone>50</stone>
+      <wood>5</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -37,7 +37,6 @@
     <VisibleClasses datatype="tokens">Wall</VisibleClasses>
   </Identity>
   <Loot>
-    <stone>0</stone>
     <wood>25</wood>
   </Loot>
   <Obstruction>

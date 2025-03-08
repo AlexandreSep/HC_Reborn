@@ -5,7 +5,7 @@
     <GenericName>Wooden Wall</GenericName>
     <History>A sturdy wooden wall built to protect Lizalfos settlements.</History>
     <Icon>structures/lizalfos/liz_woodwall.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>lizalfos_farosh</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
 	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
   </Identity>

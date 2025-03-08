@@ -7,7 +7,7 @@
   </VisualActor>
 <Visibility>
     <Stealth>
-      <RevealOnAttackDelay>9999</RevealOnAttackDelay>
+      <RevealOnAttackDelay>1000</RevealOnAttackDelay>
     </Stealth>
     <CanSpotStealth>
       <MinRange>0</MinRange>

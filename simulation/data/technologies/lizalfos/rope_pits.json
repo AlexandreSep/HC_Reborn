@@ -8,7 +8,6 @@
 	"researchTime": 40,
 	"tooltip": "Wooden Walls spawn defending Ropes and additional Ropes when destroyed.",
 	"modifications": [
-		{"value": "Health/SpawnOnInterval/Max", "add": 1},
 		{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 100}
 	],
 	"affects": ["RopeWalls"],
