@@ -73,4 +73,7 @@
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens" />
   </Trainer>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
 </Entity>
