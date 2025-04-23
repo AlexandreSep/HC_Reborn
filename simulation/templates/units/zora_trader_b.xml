@@ -1,17 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>100</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="8.0" width="4.0" />
-  </Footprint>
+<Entity parent="HC_template_unit_trader">
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Medium Trader</Classes>
@@ -37,19 +24,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>4</GainMultiplier>
-  </Trader>
-  <UnitAI>
-    <CanGuard>false</CanGuard>
-    <CanPatrol>false</CanPatrol>
-  </UnitAI>
-  <UnitMotion>
-    <WalkSpeed>8.5</WalkSpeed>
-  </UnitMotion>
-  <VisionSharing>
-    <Bribable>true</Bribable>
-  </VisionSharing>
   <VisualActor>
     <Actor>units/zora/zora_vendor_b.xml</Actor>
   </VisualActor>

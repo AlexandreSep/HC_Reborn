@@ -1,8 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="8.0" width="4.0" />
-  </Footprint>
+<Entity parent="HC_template_unit_trader">
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Large Trader</Classes>
@@ -32,9 +28,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>6</GainMultiplier>
-  </Trader>
   <UnitMotion>
     <WalkSpeed>12</WalkSpeed>
   </UnitMotion>

@@ -1,17 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>100</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="8.0" width="4.0" />
-  </Footprint>
+<Entity parent="HC_template_unit_trader">
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Medium Trader</Classes>
@@ -42,12 +29,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>4</GainMultiplier>
-  </Trader>
-  <UnitMotion>
-    <WalkSpeed>9</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/gerudo/gerudo_trader_b.xml</Actor>
   </VisualActor>
