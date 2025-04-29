@@ -3,16 +3,16 @@
 	"specificName": {
 	},
 	"description": ".",
-	"cost": { "food": 500, "wood": 250, "stone": 250, "metal": 250 },
+	"cost": { "food": 500, "wood": 500, "stone": 0, "metal": 0 },
 	"requirements": { "all": [{ "entity": { "class": "Village", "number": 3 } }] },
 	"requirementsTooltip": "Requires 3 Village Phase Buildings.",
 	"supersedes": "phase_village",
 	"replaces": ["phase_town"],
 	"icon": "town_phase.png",
-	"researchTime": 120,
+	"researchTime": 45,
 	"tooltip": "Advances from a small village to a bustling town, ready to expand rapidly. (+15% Territory - Civic Center; +7 Capture Regen Rate - all Buildings)",
 	"modifications": [
-		{ "value": "TerritoryInfluence/Radius", "multiply": 1.2, "affects": "CivilCentre" },
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.15, "affects": "CivilCentre" },
 		{ "value": "Capturable/GarrisonRegenRate", "add": 7.0, "affects": "Structure" },
 		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "CivCentre" }
 	],
