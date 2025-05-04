@@ -1,7 +1,7 @@
 <Entity parent="units/ordona_trader_b">
   <Promotion disable="" />
   <UnitMotion>
-    <WalkSpeed>17</WalkSpeed>
+    <WalkSpeed>12</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/ordona/ordona_salesman.xml</Actor>

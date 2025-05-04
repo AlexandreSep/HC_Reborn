@@ -8,9 +8,9 @@
     <SpawnEntityOnDeath>rubble/debris_lizalfos_tinyB</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>0</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
-      <Template>units/lizalfos/lizalfos_rope</Template>
+      <SpawnNumberMax>10</SpawnNumberMax>
+      <SpawnNumberMin>10</SpawnNumberMin>
+      <Template>units/lizalfos/lizalfos_rope_b</Template>
     </SpawnMultipleEntitiesOnDeath>
   </Health>
   <Identity>

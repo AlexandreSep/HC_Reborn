@@ -42,8 +42,8 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>175</stone>
-      <wood>75</wood>
+      <stone>125</stone>
+      <wood>125</wood>
     </Resources>
   </Cost>
   <Footprint>

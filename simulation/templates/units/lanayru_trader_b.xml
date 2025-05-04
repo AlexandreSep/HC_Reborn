@@ -1,11 +1,4 @@
-<Entity parent="template_unit_support_trader">
-  <Cost>
-    <BuildTime>10</BuildTime>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="8.0" width="4.0" />
-  </Footprint>
+<Entity parent="HC_template_unit_trader">
   <Identity>
     <Civ>lanayru</Civ>
     <Classes datatype="tokens">Medium Trader</Classes>
@@ -30,19 +23,6 @@
       <trained>interface/alarm/alarm_create_female.xml</trained>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>0.75</GainMultiplier>
-  </Trader>
-  <UnitAI>
-    <CanGuard>false</CanGuard>
-    <CanPatrol>false</CanPatrol>
-  </UnitAI>
-  <UnitMotion>
-    <WalkSpeed>8.5</WalkSpeed>
-  </UnitMotion>
-  <VisionSharing>
-    <Bribable>true</Bribable>
-  </VisionSharing>
   <VisualActor>
     <Actor>units/lanayru/lanayru_broker_b.xml</Actor>
   </VisualActor>

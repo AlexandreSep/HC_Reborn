@@ -1,8 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
-  <Footprint>
-    <Circle radius="2.0" />
-    <Height>2.0</Height>
-  </Footprint>
+<Entity parent="HC_template_unit_trader">
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Medium Trader</Classes>
@@ -35,19 +31,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>0.75</GainMultiplier>
-  </Trader>
-  <UnitAI>
-    <CanGuard>false</CanGuard>
-    <CanPatrol>false</CanPatrol>
-  </UnitAI>
-  <UnitMotion>
-    <WalkSpeed>8.5</WalkSpeed>
-  </UnitMotion>
-  <VisionSharing>
-    <Bribable>true</Bribable>
-  </VisionSharing>
   <VisualActor>
     <Actor>units/goron/goron_retailer_b.xml</Actor>
   </VisualActor>

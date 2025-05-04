@@ -1,11 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
-  <Cost>
-    <BuildTime>10</BuildTime>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="8.0" width="4.0" />
-  </Footprint>
+<Entity parent="HC_template_unit_trader">
   <Identity>
     <Civ>darknut</Civ>
     <Classes datatype="tokens">Large Trader</Classes>
@@ -28,19 +21,6 @@
       <trained>interface/alarm/alarm_create_infantry.xml</trained>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>0.75</GainMultiplier>
-  </Trader>
-  <UnitAI>
-    <CanGuard>false</CanGuard>
-    <CanPatrol>false</CanPatrol>
-  </UnitAI>
-  <UnitMotion>
-    <WalkSpeed>8.5</WalkSpeed>
-  </UnitMotion>
-  <VisionSharing>
-    <Bribable>true</Bribable>
-  </VisionSharing>
   <VisualActor>
     <Actor>units/darknut/darknut_dealer_b.xml</Actor>
   </VisualActor>

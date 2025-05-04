@@ -1,11 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
-  <Cost>
-    <BuildTime>10</BuildTime>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="8.0" width="4.0" />
-  </Footprint>
+<Entity parent="HC_template_unit_trader">
   <Identity>
     <Civ>deku</Civ>
     <Classes datatype="tokens">ButlerBounty BusinessScrub Small Trader</Classes>
@@ -35,19 +28,6 @@
       <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>0.75</GainMultiplier>
-  </Trader>
-  <UnitAI>
-    <CanGuard>false</CanGuard>
-    <CanPatrol>false</CanPatrol>
-  </UnitAI>
-  <UnitMotion>
-    <WalkSpeed>6.5</WalkSpeed>
-  </UnitMotion>
-  <VisionSharing>
-    <Bribable>true</Bribable>
-  </VisionSharing>
   <VisualActor>
     <Actor>units/deku/deku_businessscrub_b.xml</Actor>
   </VisualActor>

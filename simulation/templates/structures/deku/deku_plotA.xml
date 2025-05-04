@@ -38,7 +38,7 @@
   <Upgrade>
     <TowerA>
       <Cost>
-        <wood>75</wood>
+        <wood>50</wood>
       </Cost>
       <Entity>structures/deku/deku_expander</Entity>
       <Time>30</Time>
@@ -83,7 +83,7 @@
     </TowerE>
     <TowerF>
       <Cost>
-        <wood>150</wood>
+        <wood>200</wood>
       </Cost>
       <Entity>structures/deku/deku_farmstead</Entity>
       <Time>45</Time>
@@ -92,7 +92,8 @@
     </TowerF>
     <TowerG>
       <Cost>
-        <wood>400</wood>
+        <metal>100</metal>
+        <wood>150</wood>
       </Cost>
       <Entity>structures/deku/deku_mercs</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -102,8 +103,8 @@
     </TowerG>
     <TowerH>
       <Cost>
-        <metal>200</metal>
-        <wood>200</wood>
+        <metal>100</metal>
+        <wood>150</wood>
       </Cost>
       <Entity>structures/deku/deku_stage</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -124,7 +125,7 @@
     </TowerI>
     <TowerJ>
       <Cost>
-        <wood>350</wood>
+        <wood>200</wood>
       </Cost>
       <Entity>structures/deku/deku_barracks</Entity>
       <Time>60</Time>
@@ -133,7 +134,7 @@
     </TowerJ>
     <TowerK>
       <Cost>
-        <wood>400</wood>
+        <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_stables</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -143,7 +144,7 @@
     </TowerK>
     <TowerL>
       <Cost>
-        <wood>400</wood>
+        <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_stablesB</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -154,7 +155,7 @@
     <TowerM>
       <Cost>
         <metal>100</metal>
-        <wood>300</wood>
+        <wood>200</wood>
       </Cost>
       <Entity>structures/deku/deku_greenhouse</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -174,7 +175,8 @@
     </TowerN>
     <TowerO>
       <Cost>
-        <wood>300</wood>
+        <wood>100</wood>
+		<stone>200</stone>
       </Cost>
       <Entity>structures/deku/deku_blacksmithB</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -184,8 +186,8 @@
     </TowerO>
     <TowerP>
       <Cost>
-        <stone>300</stone>
-        <wood>400</wood>
+        <stone>200</stone>
+        <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_fortress</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>

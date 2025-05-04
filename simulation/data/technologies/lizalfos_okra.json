@@ -9,7 +9,7 @@
 	"researchTime": 30,
 	"tooltip": "Lizalfos god of poison, disease, and death. Ok Ra is portrayed by the Lizalfos as a serpent with the skull of a Lizalfos on its head.",
 	"modifications": [
-		{ "value": "TerritoryInfluence/Radius", "multiply": 1.15, "affects": "CivCentre" },
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.1, "affects": "CivCentre" },
 		{ "value": "Capturable/GarrisonRegenRate", "add": 7.0, "affects": "Structure" },
 		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "Okra" }
 	],

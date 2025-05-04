@@ -5,4 +5,13 @@
   <VisualActor>
     <Actor>structures/lizalfos/lizalfos_towerA.xml</Actor>
   </VisualActor>
+<Visibility>
+    <Stealth>
+      <RevealOnAttackDelay>1000</RevealOnAttackDelay>
+    </Stealth>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
 </Entity>

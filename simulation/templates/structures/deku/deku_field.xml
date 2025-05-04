@@ -1,18 +1,8 @@
 <Entity parent="template_structure_resource_field">
-  <Cost>
-    <BuildTime>45</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>150</wood>
-    </Resources>
-  </Cost>
   <Health>
     <Max>500</Max>
     <SpawnEntityOnDeath>rubble/debris_deku_small</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>1</BattalionSize>
       <Chance>0</Chance>
       <SpawnNumberMax>5</SpawnNumberMax>
       <SpawnNumberMin>5</SpawnNumberMin>

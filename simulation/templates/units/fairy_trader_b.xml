@@ -1,14 +1,7 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="HC_template_unit_trader">
   <Auras datatype="tokens">
     units/fairykiss_aura_1
   </Auras>
-  <Cost>
-    <BuildTime>10</BuildTime>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="8.0" width="4.0" />
-  </Footprint>
   <Identity>
     <Civ>fairy</Civ>
     <Classes datatype="tokens">Medium Trader</Classes>
@@ -34,19 +27,6 @@
       <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>0.75</GainMultiplier>
-  </Trader>
-  <UnitAI>
-    <CanGuard>false</CanGuard>
-    <CanPatrol>false</CanPatrol>
-  </UnitAI>
-  <UnitMotion>
-    <WalkSpeed>8.5</WalkSpeed>
-  </UnitMotion>
-  <VisionSharing>
-    <Bribable>true</Bribable>
-  </VisionSharing>
   <VisualActor>
     <Actor>units/fairy/fairy_xana_spring.xml</Actor>
   </VisualActor>
