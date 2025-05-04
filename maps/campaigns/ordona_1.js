@@ -21,6 +21,9 @@
     cmpTrigger.RegisterTrigger("OnRange", "OnStableReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("A"), players: [1], minRange: 0, maxRange: 25, requiredComponent: IID_UnitAI }); 
     cmpTrigger.RegisterTrigger("OnRange", "OnSerfSteadReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("B"), players: [1], minRange: 0, maxRange: 50, requiredComponent: IID_UnitAI }); 
     cmpTrigger.RegisterTrigger("OnRange", "OnFarmsReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("C"), players: [1], minRange: 0, maxRange: 50, requiredComponent: IID_UnitAI }); 
+    cmpTrigger.RegisterTrigger("OnRange", "OnBlacksmithReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("D"), players: [1], minRange: 0, maxRange: 50, requiredComponent: IID_UnitAI }); 
+    cmpTrigger.RegisterTrigger("OnRange", "OnChurchReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("E"), players: [1], minRange: 0, maxRange: 50, requiredComponent: IID_UnitAI }); 
+    cmpTrigger.RegisterTrigger("OnRange", "OnLoneHouseReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("F"), players: [1], minRange: 0, maxRange: 30, requiredComponent: IID_UnitAI }); 
     cmpTrigger.RegisterTrigger("OnRange", "OnCremiaReached", { "enabled": true, entities: cmpTrigger.GetTriggerPoints("G"), players: [1], minRange: 0, maxRange: 125, requiredComponent: IID_UnitAI }); 
 
     cmpTrigger.DoAfterDelay(200, "PostInit", {});
@@ -411,6 +414,89 @@ Trigger.prototype.OnFarmsReached = function (data)
         clear: true
     });
     this.DisableTrigger("OnRange", "OnFarmsReached");
+}
+
+Trigger.prototype.OnBlacksmithReached = function (data)
+{
+    if (data.currentCollection.find(ent => ent == this.rusl || ent == this.colin || ent == this.cremia) == undefined) return;
+
+    this.SetEntOwner({ ent: 1334, owner: 1 })
+    this.SetEntOwner({ ent: 1339, owner: 1 })
+    this.DialogueWindow({
+        character: "Rusl",
+        dialogue: `The blacksmith building still seems to be intact.`,
+        soundIndex: 3,
+        portraitSuffix: "_",
+        runtime: 3000,
+        clear: true
+    });
+    this.DoAfterDelay(3000, "DialogueWindow", {
+        character: "Rusl",
+        dialogue: `With the owner captured or absconded we'll have to make use of it by upgrading our weapons and armor.`,
+        soundIndex: -1,
+        portraitSuffix: "_",
+        runtime: 5000,
+        clear: true
+    });
+    this.DisableTrigger("OnRange", "OnBlacksmithReached");
+}
+
+Trigger.prototype.OnChurchReached = function (data)
+{
+    if (data.currentCollection.find(ent => ent == this.rusl || ent == this.colin || ent == this.cremia) == undefined) return;
+
+    this.DialogueWindow({
+        character: "Cremia",
+        dialogue: `A church. Perhaps some of our people have taken refuge in there?`,
+        soundIndex: 4,
+        portraitSuffix: "_",
+        runtime: 4000,
+        clear: true
+    });
+
+    this.DoAfterDelay(4000, "ChurchSpawn", {});
+    this.DoAfterDelay(4000, "PlayUISound", "audio/voice/ordona/reverend/reverend_attack_02.ogg");
+    this.DoAfterDelay(4000, "DialogueWindow", {
+        character: "Reverend",
+        dialogue: `Its so good to finally see some familiar faces!`,
+        soundIndex: -1,
+        portraitSuffix: "_",
+        runtime: 4000,
+        clear: true
+    });
+    this.DoAfterDelay(8000, "PlayUISound", "audio/voice/ordona/reverend/reverend_attack_03.ogg");
+    this.DoAfterDelay(8000, "DialogueWindow", {
+        character: "Reverend",
+        dialogue: `Come my children, let us not be led astray by cowardice. Now is the time to stand up in protest against the interlopers.`,
+        soundIndex: -1,
+        portraitSuffix: "_",
+        runtime: 6000,
+        clear: true
+    });
+    this.DisableTrigger("OnRange", "OnChurchReached");
+}
+
+Trigger.prototype.ChurchSpawn = function (data) {
+    let churchArmy = [];
+    churchArmy.push(this.SpawnUnit({ x: 100, z: 1000, angle: 0, template: "units/ordona/ordona_reverend_b", owner: 1 }))
+    for(let i = 0; i < 5; i++) { 
+        churchArmy.push(this.SpawnUnit({ x: 90 + i * 5, z: 985, angle: 0, template: "units/ordona/ordona_militia_b", owner: 1 }))
+        churchArmy.push(this.SpawnUnit({ x: 90 + i * 5, z: 1015, angle: 0, template: "units/ordona/ordona_parcher_b", owner: 1 }))
+    }
+    this.AttackYell(churchArmy, 6000)
+}
+
+Trigger.prototype.OnLoneHouseReached = function (data)
+{
+    //spawn ranger
+    this.DialogueWindow({
+        character: "Cremia",
+        dialogue: `A church. Perhaps some of our people have taken refuge in there?`,
+        soundIndex: 4,
+        portraitSuffix: "_",
+        runtime: 4000,
+        clear: true
+    });
 }
 
 Trigger.prototype.OnCremiaReached = function (data) {

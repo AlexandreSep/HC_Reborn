@@ -6,10 +6,10 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "ordona/smithy_ramscrown.dds",
 	"researchTime": 40,
-	"tooltip": "(Helmed units gain +2 non-magic armor.)",
-	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 2.0},
-		{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
-		{"value": "Resistance/Entity/Damage/Crush", "add": 2.0}],
+	"tooltip": "(Helmed units gain +10% non-magic armor.)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 10.0},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 10.0},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 10.0}],
 	"affects": ["Helmed"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

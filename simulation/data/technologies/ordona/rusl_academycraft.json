@@ -1,7 +1,7 @@
 {
 	"genericName": "Academy Weaponcraft",
 	"description": "",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 300},
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
 	"requirements": {"all": [ {"tech": "civ_choices/ordona/choosehero_rusl"}, { "tech": "phase_city" }, {"civ": "ordona"}]},
 	"requirementsTooltip": "Requires Rusl and the City Phase.",
 	"icon": "ordona/rusl_academytactica.dds",
@@ -21,6 +21,10 @@
       "multiply": 1.2
     },
     {
+      "value": "Attack/Melee/Damage/TrueDamage",
+      "multiply": 1.2
+    },
+    {
       "value": "Attack/Ranged/Damage/Hack",
       "multiply": 1.2
     },
@@ -30,6 +34,14 @@
     },
     {
       "value": "Attack/Ranged/Damage/Crush",
+      "multiply": 1.2
+    },
+    {
+      "value": "Attack/Ranged/Damage/Crush",
+      "multiply": 1.2
+    },
+    {
+      "value": "Attack/Ranged/Damage/TrueDamage",
       "multiply": 1.2
     }
   ],

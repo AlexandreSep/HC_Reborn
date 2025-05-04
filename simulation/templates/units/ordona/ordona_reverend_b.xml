@@ -1,9 +1,6 @@
 <Entity parent="classes/HC_template_unit_light_infantry|buffer">
   <Auras datatype="tokens">
     units/deacon_chant_1
-  units/deacon_chant_2
-  units/deacon_chant_3
-  units/deacon_chant_4
   </Auras>
   <Cost>
     <BuildTime>12</BuildTime>
@@ -15,11 +12,18 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>200</Max>
+    <Max>250</Max>
   </Health>
+  <Heal>
+    <HealableClasses datatype="tokens">Organic</HealableClasses>
+    <Health>4</Health>
+    <Range>20</Range>
+    <Interval>200</Interval>
+    <UnhealableClasses datatype="tokens" />
+  </Heal>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Class40 Priest Medium Reverend</Classes>
+    <Classes datatype="tokens">Priest Medium Reverend</Classes>
     <GenericName>Reverend</GenericName>
     <History>While Ordona Province is not as dogmatic as the Hylian’s religious establishment, the nation has bred a more passionate and expressive line of priests to spread the Book of Mudora and knowledge of the Goddesses to all of Hyrule. These Reverends will preach in just about any land, be they welcoming or hostile to their intent.</History>
     <Icon>units/ordona/ord_reverend.dds</Icon>

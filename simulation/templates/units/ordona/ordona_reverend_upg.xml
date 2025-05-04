@@ -26,7 +26,7 @@
   </Health>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Class40 Priest Medium Reverend</Classes>
+    <Classes datatype="tokens">Priest Medium Reverend</Classes>
     <GenericName>Reverend</GenericName>
     <History>While Ordona Province is not as dogmatic as the Hylian’s religious establishment, the nation has bred a more passionate and expressive line of priests to spread the Book of Mudora and knowledge of the Goddesses to all of Hyrule. These Reverends will preach in just about any land, be they welcoming or hostile to their intent.</History>
     <Icon>units/ordona/ord_reverend.dds</Icon>

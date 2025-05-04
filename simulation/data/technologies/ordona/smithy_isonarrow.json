@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "ordona/smithy_isonarrow.dds",
 	"researchTime": 40,
-	"tooltip": "(Tipped with the cursed metal of the Ison Valley, all Archer units deal +3 Pierce Damage)",
-	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "add": 3.0}],
-	"affects": ["Infantry", "Ranged"],
+	"tooltip": "(Tipped with the cursed metal of the Ison Valley, all Archer units deal +15% Pierce Damage)",
+	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15}],
+	"affects": ["Ranged"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
