@@ -42,7 +42,7 @@
   <Upgrade>
     <WallB>
       <Cost>
-        <stone>60</stone>
+        <stone>3</stone>
       </Cost>
       <Entity>structures/goron/goron_metal_wall_mediumB</Entity>
       <Time>10</Time>
@@ -51,7 +51,7 @@
     </WallB>
     <WallC>
       <Cost>
-        <stone>60</stone>
+        <stone>3</stone>
       </Cost>
       <Entity>structures/goron/goron_metal_wall_mediumC</Entity>
       <Time>10</Time>
@@ -60,7 +60,7 @@
     </WallC>
     <WallD>
       <Cost>
-        <stone>60</stone>
+        <stone>3</stone>
       </Cost>
       <Entity>structures/goron/goron_metal_wall_mediumD</Entity>
       <Time>10</Time>

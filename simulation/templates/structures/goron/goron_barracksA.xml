@@ -7,7 +7,7 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>250</stone>
+      <stone>100</stone>
       <wood>100</wood>
     </Resources>
   </Cost>

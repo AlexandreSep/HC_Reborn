@@ -39,17 +39,16 @@
   <Upgrade>
     <TowerA>
       <Cost>
-        <stone>75</stone>
+        <stone>25</stone>
         <wood>75</wood>
       </Cost>
       <Entity>structures/goron/goron_field</Entity>
-      <Time>45</Time>
+      <Time>30</Time>
       <Tooltip>Build a Rock Sirloin Mine on this plot.</Tooltip>
       <Variant>upgrading</Variant>
     </TowerA>
     <TowerB>
       <Cost>
-        <stone>200</stone>
         <wood>200</wood>
       </Cost>
       <Entity>structures/goron/goron_mercs</Entity>
@@ -60,9 +59,8 @@
     </TowerB>
     <TowerC>
       <Cost>
-        <metal>200</metal>
-        <stone>200</stone>
-        <wood>200</wood>
+        <metal>100</metal>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_hotspring</Entity>
       <Time>60</Time>
@@ -71,8 +69,7 @@
     </TowerC>
     <TowerD>
       <Cost>
-        <stone>100</stone>
-        <wood>100</wood>
+        <wood>200</wood>
       </Cost>
       <Entity>structures/goron/goron_barracks</Entity>
       <Time>60</Time>

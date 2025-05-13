@@ -58,7 +58,7 @@
   <Upgrade>
     <Gate>
       <Cost>
-        <stone>60</stone>
+        <stone>10</stone>
       </Cost>
       <Entity>structures/goron/goron_metal_wall_gateA</Entity>
       <Time>10</Time>

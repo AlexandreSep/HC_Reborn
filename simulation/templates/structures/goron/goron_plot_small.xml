@@ -49,12 +49,12 @@
     </TowerA>
     <TowerB>
       <Cost>
-        <stone>175</stone>
+        <stone>75</stone>
         <wood>75</wood>
       </Cost>
       <Entity>structures/goron/goron_defense_tower</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>75</Time>
+      <Time>60</Time>
       <Tooltip>Build Bomb Tower on this plot.</Tooltip>
       <Variant>upgrading</Variant>
     </TowerB>

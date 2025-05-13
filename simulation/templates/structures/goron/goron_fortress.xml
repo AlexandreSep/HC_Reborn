@@ -136,31 +136,34 @@
   <Upgrade>
     <StrongholdB>
       <Cost>
-        <stone>300</stone>
+        <stone>100</stone>
+      <wood>200</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressB</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
-      <Time>113</Time>
+      <Time>90</Time>
       <Tooltip>Upgrade with Double Layer.</Tooltip>
       <Variant>upgrading</Variant>
     </StrongholdB>
     <StrongholdC>
       <Cost>
-        <stone>300</stone>
+        <stone>150</stone>
+      <wood>150</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
-      <Time>113</Time>
+      <Time>90</Time>
       <Tooltip>Upgrade with Lava Moat.</Tooltip>
       <Variant>upgrading</Variant>
     </StrongholdC>
     <StrongholdD>
       <Cost>
-        <stone>300</stone>
+        <stone>200</stone>
+      <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressD</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
-      <Time>113</Time>
+      <Time>90</Time>
       <Tooltip>Upgrade with Bulwark.</Tooltip>
       <Variant>upgrading</Variant>
     </StrongholdD>

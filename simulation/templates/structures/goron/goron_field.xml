@@ -7,7 +7,7 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>75</stone>
+      <stone>25</stone>
       <wood>75</wood>
     </Resources>
   </Cost>
@@ -20,7 +20,7 @@
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
     <EjectHealth>0.1</EjectHealth>
     <List datatype="tokens">Gorminer</List>
-    <LoadingRange>2</LoadingRange>
+    <LoadingRange>3</LoadingRange>
     <Max>4</Max>
   </GarrisonHolder>
   <Health>
@@ -49,7 +49,7 @@
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
   <ResourceTrickle>
-    <Interval>5000</Interval>
+    <Interval>4000</Interval>
     <Rates>
       <food>1.0</food>
       <metal>0.0</metal>

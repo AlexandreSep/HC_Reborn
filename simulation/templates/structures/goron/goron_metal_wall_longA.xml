@@ -53,7 +53,7 @@
   <Upgrade>
     <Gate>
       <Cost>
-        <stone>60</stone>
+        <stone>10</stone>
       </Cost>
       <Entity>structures/goron/goron_metal_wall_gateA</Entity>
       <Time>10</Time>
@@ -62,7 +62,7 @@
     </Gate>
     <WallB>
       <Cost>
-        <stone>60</stone>
+        <stone>5</stone>
       </Cost>
       <Entity>structures/goron/goron_metal_wall_longB</Entity>
       <Time>10</Time>
@@ -71,7 +71,7 @@
     </WallB>
     <WallC>
       <Cost>
-        <stone>60</stone>
+        <stone>5</stone>
       </Cost>
       <Entity>structures/goron/goron_metal_wall_longC</Entity>
       <Time>10</Time>
@@ -80,7 +80,7 @@
     </WallC>
     <WallD>
       <Cost>
-        <stone>60</stone>
+        <stone>5</stone>
       </Cost>
       <Entity>structures/goron/goron_metal_wall_longD</Entity>
       <Time>10</Time>
