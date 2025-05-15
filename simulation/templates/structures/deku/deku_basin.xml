@@ -6,6 +6,14 @@
     <Height>8.0</Height>
     <Square depth="41.0" width="41.0" />
   </Footprint>
+    <GarrisonHolder>
+    <Max>20</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry</List>
+    <BuffHeal>3</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
   <Health>
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/debris_deku_medium</SpawnEntityOnDeath>

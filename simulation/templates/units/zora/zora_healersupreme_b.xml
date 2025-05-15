@@ -1,10 +1,9 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_auxiliary">
   <Attack>
     <Ranged>
       <AttackName>Sword</AttackName>
       <Damage>
-        <Hack>13</Hack>
-        <Pierce>5.0</Pierce>
+        <Hack>5</Hack>
       </Damage>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
@@ -24,24 +23,15 @@
   <Auras datatype="tokens">
     units/healer_warpair_1
   </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>95</food>
-      <metal>20</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Heal>
     <HealableClasses datatype="tokens">Organic</HealableClasses>
-    <Health>3</Health>
+    <Health>10</Health>
     <Range>35</Range>
-    <Interval>200</Interval>
+    <Interval>100</Interval>
     <UnhealableClasses datatype="tokens" />
   </Heal>
   <Health>
-    <Max>100</Max>
+    <Max>125</Max>
   </Health>
   <Identity>
     <Civ>zora</Civ>
@@ -54,15 +44,6 @@
     <Tooltip>Zaleen's Unique Unit. Melee unit that can also heal wounded units.</Tooltip>
     <VisibleClasses datatype="tokens">Support Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -78,13 +59,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5789</RunMultiplier>
-    <WalkSpeed>9.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/zora/zora_healsupreme_b.xml</Actor>
   </VisualActor>
