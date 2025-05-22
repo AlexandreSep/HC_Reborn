@@ -5,7 +5,7 @@
  * However, when given other tasks (such as e.g. gather), they will be removed
  * from any formation they are in, as those orders don't work very well with formations.
  *
- * Set the default formation to the null formation to disable this entirely.
+ * Set the default formation to the null formation to disable this entirely. return with special/formations/HC_standard
  *
  * TODO: it would be nice to let players choose default formations for different orders,
  * but that would be neater if orders where defined somewhere unique,
@@ -15,7 +15,7 @@ class AutoFormation
 {
 	constructor()
 	{
-		this.defaultFormation = "special/formations/HC_standard";
+		this.defaultFormation = "NULL_FORMATION";
 		if (!this.defaultFormation)
 			this.setDefault(NULL_FORMATION);
 		this.lastDefault = this.defaultFormation === NULL_FORMATION ?
