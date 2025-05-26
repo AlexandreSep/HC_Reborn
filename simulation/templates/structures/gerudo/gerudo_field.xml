@@ -28,9 +28,9 @@
     <SpawnEntityOnDeath>rubble/debris_gerudo_small</SpawnEntityOnDeath>
     <SpawnOnInterval>
       <one>
-        <Interval>5000</Interval>
+        <Interval>10000</Interval>
         <LinkedDestruction>false</LinkedDestruction>
-        <Max>5</Max>
+        <Max>3</Max>
         <SpawnNumber>1</SpawnNumber>
         <StartDelay>3000</StartDelay>
         <Template>gaia/gerudo_swine_1</Template>

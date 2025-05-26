@@ -26,7 +26,7 @@
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <ResourceSupply replace="">
-    <Max>200</Max>
+    <Max>100</Max>
     <KillBeforeGather>true</KillBeforeGather>
     <MaxGatherers>3</MaxGatherers>
     <Type>food.meat</Type>
@@ -43,7 +43,7 @@
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
   <UnitMotion>
-    <WalkSpeed>8.0</WalkSpeed>
+    <WalkSpeed>3.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/gerudo/gerudo_swine_b.xml</Actor>

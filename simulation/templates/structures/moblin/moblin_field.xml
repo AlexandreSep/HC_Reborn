@@ -20,9 +20,9 @@
     <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
     <SpawnOnInterval>
       <one>
-        <Interval>5000</Interval>
+        <Interval>10000</Interval>
         <LinkedDestruction>false</LinkedDestruction>
-        <Max>5</Max>
+        <Max>3</Max>
         <SpawnNumber>1</SpawnNumber>
         <StartDelay>3000</StartDelay>
         <Template>gaia/moblin_lilugpug_1</Template>
