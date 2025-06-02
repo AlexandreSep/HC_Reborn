@@ -52,8 +52,8 @@
     <Resources>
       <food>0</food>
       <metal>500</metal>
-      <stone>500</stone>
-      <wood>500</wood>
+      <stone>250</stone>
+      <wood>250</wood>
     </Resources>
     <BattalionSlots>0</BattalionSlots>
   </Cost>
@@ -131,7 +131,7 @@
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
-    <Radius>175</Radius>
+    <Radius>100</Radius>
     <Root>true</Root>
     <Weight>10000</Weight>
   </TerritoryInfluence>

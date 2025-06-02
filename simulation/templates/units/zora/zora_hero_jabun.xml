@@ -44,7 +44,7 @@
     <History>The only surviving offspring of Lord Jabu Jabu, the young Jabun serves as one of Princess Ruto's only loyal friends. Jabun spends most of his time in the Great Sea, but heeds any summon to the Domain when needed.</History>
     <Icon>units/zora/zor_hero_jabun.dds</Icon>
     <Lang>zora</Lang>
-    <RequiredTechnology>civ_choices/zora/choosehero_jabun</RequiredTechnology>
+    <RequiredTechnology>civ_choices/zora/choosehero_laruto</RequiredTechnology>
     <SpecificName>Jabun</SpecificName>
     <Tooltip>Flying Mage Hero that can attack with burning fireballs.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>

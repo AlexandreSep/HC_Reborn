@@ -72,7 +72,7 @@
     <History>The latest in a long line of monarchs of the Dominion, King Zora Farkos is a rather undignified ruler who abuses his station of power. He has been responsible for several unnecessary expansion campaigns, one of which lead to a full invasion of Death Mountain. King Farkos is known as quite a selfish individual who shuns tradition. He unlawfully married the half-breed Zora, Rutela, only to divorce her and thereby pollute the royal bloodline, and splinter the Dominion into two empires.</History>
     <Icon>units/zora/zor_hero_debon.dds</Icon>
     <Lang>zora</Lang>
-    <RequiredTechnology>civ_choices/zora/choosehero_debon</RequiredTechnology>
+    <RequiredTechnology>civ_choices/zora/choosehero_ruto</RequiredTechnology>
     <SpecificName>Zora Farkos De Bon XVI</SpecificName>
     <Tooltip>Melee Cavalry Hero that attacks enemies with two dangerous claws.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

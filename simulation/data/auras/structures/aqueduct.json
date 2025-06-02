@@ -1,8 +1,12 @@
 {
 	"type": "range",
 	"radius": 65,
-	"affects": [],
-	"modifications": [],
+	"affects": ["Structure"],
+"modifications": [{"value": "Cost/BuildTime", "multiply": 0.80},
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.8 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.8 },
+		{"value": "Resistance/Entity/Damage/Magic", "add": 25}
+	],
 	"auraName": "Aqueduct Water",
 	"auraDescription": "Area with which Aqueducts provide water for Dominion buildings.",
 	"overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"

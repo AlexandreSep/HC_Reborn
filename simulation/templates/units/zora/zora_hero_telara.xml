@@ -40,7 +40,7 @@
     <History>Initially trained as a Mage, Telara left the Communion in order to live a less hostile life. She eventually married Zaleen and became a librarian in Domain Prime, assembling historial documents and compiling much of the information that would be later used in Midna’s Hyrule Historia Tome. Telara’s personality is known as quiet and bashful. She is rather introverted and avoids appearing in public unless in the company of Zaleen or her library.</History>
     <Icon>units/zora/zor_hero_telara.dds</Icon>
     <Lang>zora</Lang>
-    <RequiredTechnology>civ_choices/zora/choosehero_telara</RequiredTechnology>
+    <RequiredTechnology>civ_choices/zora/choosehero_zaleen</RequiredTechnology>
     <SpecificName>Telara</SpecificName>
     <Tooltip>Melee Hero that can shock and Stun enemies with her attacks.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

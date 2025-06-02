@@ -21,19 +21,17 @@
   <Builder>
     <Entities datatype="tokens">
     structures/zora/zora_civil_centre	
-    structures/zora/zora_aqueset
+    structures/zora/zora_aquatower
     structures/zora/zora_house
     structures/zora/zora_field
     structures/zora/zora_farmstead
     structures/zora/zora_storehouse
     structures/zora/zora_market
-    structures/zora/zora_theater
     structures/zora/zora_mercs
       structures/zora/zora_barracks
     structures/zora/zora_barracksB
     structures/zora/zora_stables
     structures/zora/zora_blacksmith
-    structures/zora/zora_blacksmithB
       structures/zora/zora_wallset
     structures/zora/zora_defense_tower
     structures/zora/zora_fortress

@@ -46,12 +46,12 @@
   </BuildingAI>
   <Capturable disable="" />
   <Cost>
-    <BuildTime>510</BuildTime>
+    <BuildTime>120</BuildTime>
     <Resources>
       <food>0</food>
       <metal>500</metal>
-      <stone>500</stone>
-      <wood>500</wood>
+      <stone>250</stone>
+      <wood>250</wood>
     </Resources>
     <BattalionSlots>0</BattalionSlots>
   </Cost>

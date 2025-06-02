@@ -2,7 +2,7 @@ GameSettings.prototype.Attributes.HeroCount = class HeroCount extends GameSettin
 {
 	init()
 	{
-		this.nbHeroes = 3;
+		this.nbHeroes = 1;
 		this.settings.map.watch(() => this.onMapChange(), ["map"]);
 	}
 
@@ -34,6 +34,6 @@ GameSettings.prototype.Attributes.HeroCount = class HeroCount extends GameSettin
 
 	setNbHeroes(nb)
 	{
-		this.nbHeroes = Math.max(0, Math.min(6, nb));
+		this.nbHeroes = Math.max(0, Math.min(1, nb));
 	}
 };

@@ -115,9 +115,6 @@
 	],
 	"CivChoices": [
 		"civ_choices/zora/choosehero_zaleen",
-		"civ_choices/zora/choosehero_telara",
-		"civ_choices/zora/choosehero_jabun",
-		"civ_choices/zora/choosehero_debon",
 		"civ_choices/zora/choosehero_ruto",
 		"civ_choices/zora/choosehero_laruto"
 	],

@@ -1,0 +1,67 @@
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/aqueduct
+  </Auras>
+  <BuildRestrictions>
+    <Category>Aqueduct</Category>
+    <Distance>
+      <FromClass>Aqueduct</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+	<PlacementType>land-shore</PlacementType>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>125</metal>
+      <stone>0</stone>
+      <wood>125</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="15.0" />
+    <Height>10.0</Height>
+  </Footprint>
+  <GarrisonHolder disable="" />
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/debris_zora_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zora</Civ>
+    <Classes datatype="tokens">Aqueduct</Classes>
+    <GenericName>Aqueduct</GenericName>
+    <History>The Zora require near-constant contact with water to live, and thus pump water to all of their structures via an elaborate network of Aqueducts and Pools.</History>
+    <Icon>structures/zora/zor_aqueduct.dds</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Extends Dominion Territory And Provides Buildings With Various Buffs</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+  </Identity>
+  <Obstruction>
+    <Static depth="10.0" width="10.0" />
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/zora/complete_aqueduct.xml</constructed>
+      <select>interface/select/building/zora/sel_aqueduct.xml</select>
+    </SoundGroups>
+  </Sound>
+<VisualActor>
+    <Actor>structures/zora/zora_reservoirA.xml</Actor>
+    <FoundationActor>structures/zora/zora_scaffoldF.xml</FoundationActor>
+  </VisualActor>
+  <Researcher>
+    <Technologies datatype="tokens" />
+  </Researcher>
+    <TerritoryInfluence>
+    <Radius>75</Radius>
+    <Root>true</Root>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens" />
+  </Trainer>
+</Entity>
