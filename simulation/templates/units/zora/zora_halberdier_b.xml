@@ -29,6 +29,9 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_halberdier_b.xml</Actor>
   </VisualActor>

@@ -3,7 +3,7 @@
   <Melee>
       <AttackName>Sword</AttackName>
       <Damage>
-        <Hack>6</Hack>
+        <Hack>4</Hack>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -21,14 +21,14 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>70</food>
+      <food>80</food>
       <metal>0</metal>
-      <stone>10</stone>
+      <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>200</Max>
+    <Max>150</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
@@ -39,8 +39,8 @@
     <Entity>
       <Damage>
         <Crush>10</Crush>
-        <Hack>20</Hack>
-        <Pierce>20</Pierce>
+        <Hack>10</Hack>
+        <Pierce>10</Pierce>
       </Damage>
     </Entity>
   </Resistance>
@@ -68,10 +68,16 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>2</RunMultiplier>
-    <WalkSpeed>10</WalkSpeed>
+    <RunMultiplier>3</RunMultiplier>
+    <WalkSpeed>12</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>60</Range>
+    <Range>90</Range>
   </Vision>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>90</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
 </Entity>

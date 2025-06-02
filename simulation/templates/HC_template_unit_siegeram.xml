@@ -1,0 +1,25 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="8.0" width="4.0" />
+  </Footprint>
+	<Identity>
+    <Classes datatype="tokens">Organic</Classes>
+    <GenericName>Auxiliary</GenericName>
+    <Tooltip>Support unit that can continue to trade between your Marketplace and an ally's.</Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Trader>
+    <GainMultiplier>2</GainMultiplier>
+  </Trader>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
+</Entity>

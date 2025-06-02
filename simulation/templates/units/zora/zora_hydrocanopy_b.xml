@@ -1,23 +1,9 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="HC_template_unit_beastrambig">
   <Attack>
     <Melee>
-      <AttackName>Hooves</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Structure</Classes>
-          <Multiplier>5.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Crush>40.0</Crush>
-      </Damage>
-      <MaxRange>12.0</MaxRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>1800</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>15.0</Crush>
+          <Crush>5.0</Crush>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>8</Range>
@@ -29,19 +15,6 @@
       </Knockback>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>210</food>
-      <metal>20</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="12.0" />
-    <Height>20.0</Height>
-  </Footprint>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -57,7 +30,6 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>1250</Max>
     <SpawnGarrison>
       <Template>units/zora/zora_sparkmage_garrisoned</Template>
       <SpawnNumber>2</SpawnNumber>
@@ -72,7 +44,7 @@
     <History>These massive Hydrophants are outfitted with canopies on their backs that can carry a variety of Zora units. Ranged units such as Mages can easily attack from on top of the canopy, and enjoy some defense from ranged attacks in return. The Hydrophant itself can attack and crush enemies in melee, though it has a difficult time against large mobs surrounding it.</History>
     <Icon>units/zora/zor_hydrocanopy.dds</Icon>
     <Lang>zora</Lang>
-    <RequiredTechnology>civ_choices/zora/choosehero_debon</RequiredTechnology>
+    <RequiredTechnology>civ_choices/zora/choosehero_ruto</RequiredTechnology>
     <SelectionGroupName>units/zora/zora_hydrocanopy_b</SelectionGroupName>
     <Tooltip>King Du Bon's Unique Unit. A large Creature unit that can outfit its canopy on their back with a variety of Zora units. Spark Mages can fire at enemies from a safe distance, while a Floodmaster can help protect the Hydrophant's sides from enemy melee units. Finally, a Kyameron Master can help summon small Hydrophants to increase the Hydrophant's offensive and disruptive capabilities. The Hydrophant itself can attack and crush enemies in melee as well, dealing both Knockback and Splash Damage.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
@@ -80,16 +52,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/siege/ram_attack.xml</attack_ranged>
@@ -107,8 +69,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.4285</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_hydrocanopy_b.xml</Actor>

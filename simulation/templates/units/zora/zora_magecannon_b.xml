@@ -1,8 +1,9 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="HC_template_unit_siegecannon">
   <Attack>
     <Ranged>
       <AttackName>Lightning</AttackName>
       <Damage>
+		<Crush>0</Crush>
         <Magic>150</Magic>
       </Damage>
       <MaxRange>120.0</MaxRange>
@@ -21,7 +22,8 @@
       <RepeatTime>9000</RepeatTime>
       <Splash>
         <Damage>
-          <Light>75.0</Light>
+		<Crush>0</Crush>
+          <Magic>5.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -39,8 +41,8 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>40</stone>
-      <wood>285</wood>
+      <stone>50</stone>
+      <wood>250</wood>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -52,26 +54,13 @@
   </Health>
   <Identity>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">-Organic Construct Electric MageCannon Large</Classes>
+    <Classes datatype="tokens">Construct Electric MageCannon Large</Classes>
     <GenericName>Mage Cannon</GenericName>
     <History>Created by breaking a shard off of the powerful Mage Crystals and laying it in a mobile chassis, these cannons can be pushed around by Zora magic users and overloaded with power. When reaching capacity, a Mage Cannon will explode with tremendous force and unleash a powerful electrical bolt that can incinerate just about anything it hits.</History>
     <Icon>units/zora/zor_magecannon.dds</Icon>
     <Tooltip>Very long ranged Siege unit that blasts and stuns enemies with bolts of electricity.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Position>
-    <Floating>false</Floating>
-  </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Promotion>
     <Entity>units/zora/zora_magecannon_upg</Entity>
     <RequiredXp>9999</RequiredXp>
@@ -94,8 +83,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.1666</RunMultiplier>
-    <WalkSpeed>9.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_magecannon_b.xml</Actor>

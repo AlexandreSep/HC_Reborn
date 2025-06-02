@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_precise_spearman">
   <Attack>
     <Melee>
       <AttackName>Spear</AttackName>
@@ -8,27 +8,8 @@
           <Multiplier>2</Multiplier>
         </Bonus1>
       </Bonuses>
-      <Damage>
-        <Pierce>10.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Creature Cavalry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>55</Max>
-  </Health>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">CrystalShield Shatterback Medium RiverPatrol</Classes>
@@ -47,15 +28,6 @@
     <Entity>units/zora/zora_halberdier_b</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -80,11 +52,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <WalkSpeed>11</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/zora/zora_rivpatrol_b.xml</Actor>
   </VisualActor>

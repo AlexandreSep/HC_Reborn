@@ -1,11 +1,11 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_precise_archer">
   <Attack>
     <Ranged>
       <AttackName>Boomerang</AttackName>
       <Damage>
-        <Hack>10.0</Hack>
+        <Hack>4.0</Hack>
       </Damage>
-      <MaxRange>25.0</MaxRange>
+      <MaxRange>30.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
@@ -19,7 +19,7 @@
       <RepeatTime>1400</RepeatTime>
       <Splash>
         <Damage>
-          <Hack>5.0</Hack>
+          <Hack>1.0</Hack>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>5</Range>
@@ -28,18 +28,6 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>55</Max>
-  </Health>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Medium Boomeranger</Classes>
@@ -54,15 +42,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/boomerang.xml</attack_ranged>
@@ -80,12 +59,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.5789</RunMultiplier>
-    <WalkSpeed>9.5</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/zora/zora_boomeranger_b.xml</Actor>
   </VisualActor>

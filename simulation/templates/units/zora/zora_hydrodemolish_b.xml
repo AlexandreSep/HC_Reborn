@@ -1,41 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Hooves</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Structure</Classes>
-          <Multiplier>3.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Crush>35.0</Crush>
-      </Damage>
-      <Knockback>
-        <Horizontal>15</Horizontal>
-      </Knockback>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>1800</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>85</food>
-      <metal>0</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="10.0" />
-    <Height>10.0</Height>
-  </Footprint>
-  <Health>
-    <Max>1000</Max>
-  </Health>
+<Entity parent="HC_template_unit_beastramsmall">
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Hydrophant Large HydroDemolish</Classes>
@@ -50,16 +13,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -77,8 +30,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.4285</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_hydrodemolish_b.xml</Actor>

@@ -1,28 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Knife</AttackName>
-      <Damage>
-        <Hack>7.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>55</Max>
-  </Health>
+<Entity parent="HC_template_unit_precise_scout">
   <Identity>
     <AIBuild>
       <MaxCopies>1</MaxCopies>
@@ -45,15 +21,6 @@
     <Entity>units/zora/zora_infiltrator_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/arrowfly.xml</attack_melee>
@@ -71,12 +38,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.0967</RunMultiplier>
-    <WalkSpeed>15.5</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/zora/zora_infiltrator_b.xml</Actor>
   </VisualActor>
@@ -85,9 +47,5 @@
       <ActivateDelay>3000</ActivateDelay>
       <PostDelay>3000</PostDelay>
     </Camouflage>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
   </Visibility>
 </Entity>

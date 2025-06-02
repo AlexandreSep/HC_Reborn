@@ -1,32 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_precise_Knight">
   <Attack>
     <Melee>
       <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>20</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
     </Melee>
   </Attack>
   <Auras datatype="tokens">
     units/shocktroop_aura_1
   </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>75</Max>
-  </Health>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">CrystalShield Falchion Secure MixedTeams Medium ShockTrooper</Classes>
@@ -43,13 +23,6 @@
     <Floating>false</Floating>
   </Position>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>50</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -69,12 +42,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.5789</RunMultiplier>
-    <WalkSpeed>9.5</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/zora/zora_shocktroop_b.xml</Actor>
   </VisualActor>

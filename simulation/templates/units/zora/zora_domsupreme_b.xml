@@ -1,32 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>30</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>80</food>
-      <metal>20</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>125</Max>
-  </Health>
+<Entity parent="HC_template_unit_precise_commander">
   <Identity>
     <AIBuild>
       <MaxCopies>2</MaxCopies>
@@ -45,15 +17,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/sword.xml</attack_ranged>
@@ -71,12 +34,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.5789</RunMultiplier>
-    <WalkSpeed>9.5</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/zora/zora_domsupreme_b.xml</Actor>
   </VisualActor>

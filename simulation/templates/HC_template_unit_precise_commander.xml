@@ -3,7 +3,7 @@
   <Melee>
       <AttackName>Sword</AttackName>
       <Damage>
-        <Hack>6</Hack>
+        <Hack>12</Hack>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -18,17 +18,20 @@
       <RestrictedClasses datatype="tokens">Field Palisade SiegeWall StoneWall</RestrictedClasses>
     </Capture>
   </Attack>
+  <Auras datatype="tokens">
+    units/commander_aura_1
+  </Auras>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
-      <food>70</food>
-      <metal>0</metal>
-      <stone>10</stone>
+      <food>200</food>
+      <metal>100</metal>
+      <stone>100</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>200</Max>
+    <Max>800</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
@@ -38,9 +41,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>10</Crush>
-        <Hack>20</Hack>
-        <Pierce>20</Pierce>
+        <Crush>40.0</Crush>
+        <Hack>40.0</Hack>
+        <Pierce>40.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>
@@ -69,9 +72,9 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>2</RunMultiplier>
-    <WalkSpeed>10</WalkSpeed>
+    <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>60</Range>
+    <Range>80</Range>
   </Vision>
 </Entity>

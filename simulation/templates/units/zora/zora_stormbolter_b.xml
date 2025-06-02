@@ -1,41 +1,18 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_precise_swordsman">
   <Attack>
-	<Ranged>
+	<Melee>
       <AttackName>Stormbolter</AttackName>
       <Damage>
-        <Magic>25</Magic>
+		<Hack>0</Hack>
+        <Magic>5</Magic>
       </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>2000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2500</RepeatTime>
       <Stun>
         <Chance>20</Chance>
         <Time>1500</Time>
       </Stun>
       <EffectDelay>0</EffectDelay>
-    </Ranged>
+    </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>55</Max>
-  </Health>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">ZoraFemale Electric Medium Stormbolter</Classes>
@@ -50,15 +27,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/magic/magic_stormbolter.xml</attack_ranged>
@@ -76,12 +44,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.5789</RunMultiplier>
-    <WalkSpeed>9.5</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/zora/zora_stormbolter_b.xml</Actor>
   </VisualActor>
