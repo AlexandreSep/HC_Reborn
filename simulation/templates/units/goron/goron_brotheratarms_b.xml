@@ -44,13 +44,13 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Medium Class100 Unique Unit BrotherAtArms</Classes>
+    <Classes datatype="tokens">Medium Unique Unit BrotherAtArms</Classes>
     <GenericName>Brother-at-Arms</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Carrying the famous blades of the smithy Biggoron, Brothers-at-Arms are loyal defenders of Death Mountain and fearless in the face of battle. Their long blades have a very huge attack arc, allowing them to cut through multiple foes with one swing.</History>
     <Icon>units/goron/gor_brotheratarms.dds</Icon>
     <Lang>goron</Lang>
-    <RequiredTechnology>civ_choices/goron/choosehero_medigoron</RequiredTechnology>
+    <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
     <SelectionGroupName>units/goron/goron_brotheratarms_b</SelectionGroupName>
     <Tooltip>Medigoron's Unique Unit. Swift Melee unit that deals a wide area of Splash Damage.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

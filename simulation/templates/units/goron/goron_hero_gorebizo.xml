@@ -53,7 +53,7 @@
     <History>One of two remaining elders of Death Mountain. Gor Ebizo was often seen as silent and absent by his bretheren, but in truth he is perhaps the greatest mastermind of the Goron people. His leadership saw success against the Zora Dominion during the Gorons' many wars with their people.</History>
     <Icon>units/goron/gor_hero_gorebizo.dds</Icon>
     <Lang>goron</Lang>
-    <RequiredTechnology>civ_choices/goron/choosehero_gorebizo</RequiredTechnology>
+    <RequiredTechnology>civ_choices/goron/choosehero_daruk</RequiredTechnology>
     <SpecificName>Gor Ebizo</SpecificName>
     <Tooltip>Economic Goron Hero that starts out weak, but can ride a Salamander Warbeast as he levels up, boosting his combat prowess.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

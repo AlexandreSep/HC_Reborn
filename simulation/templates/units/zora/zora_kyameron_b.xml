@@ -2,14 +2,8 @@
   <Attack>
     <Melee>
       <AttackName>Water Mass</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>FireElement</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
       <Damage>
-        <Magic>3</Magic>
+        <Magic>1</Magic>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -48,9 +42,10 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>90.0</Crush>
-        <Hack>90.0</Hack>
-        <Pierce>90.0</Pierce>
+		<Magic>50.0</Magic>
+		<Crush>0.0</Crush>
+		<Hack>0.0</Hack>
+		<Pierce>0.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>
@@ -72,7 +67,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.1111</RunMultiplier>
+    <RunMultiplier>3</RunMultiplier>
     <WalkSpeed>9.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>

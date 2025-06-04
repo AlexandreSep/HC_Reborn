@@ -35,7 +35,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Medium Class100 UniqueUnit TribalMonk</Classes>
+    <Classes datatype="tokens">Medium UniqueUnit TribalMonk</Classes>
     <GenericName>Tribal Monk</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Tribal Monks are an isolationist sect of Gorons that have retreated to secluded monasteries hidden in the Death Mountain Range. When the Gorons at large are threatened by war, they unearth themselves in droves to defend their mountain homelands. Armed with a metal spade, Tribal Monks have a very long reach for their size. Years of meditation have given them the ability to regenerate health.</History>

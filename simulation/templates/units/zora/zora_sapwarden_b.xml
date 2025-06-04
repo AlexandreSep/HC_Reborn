@@ -1,48 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_precise_mage_heavy">
   <Auras datatype="tokens">
     units/nayrublessed_aura_1
   </Auras>
   <Attack>
     <Ranged>
       <AttackName>Blue Fire</AttackName>
-      <Damage>
-        <Magic>15</Magic>
-      </Damage>
-      <MaxRange>50</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1800</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-	  <Splash>
-        <Damage>
-          <Magic>9.0</Magic> 
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-      <RepeatTime>2300</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>45</food>
-      <metal>40</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">SapWarden Medium ZoraFemale</Classes>
@@ -50,6 +14,7 @@
     <History>Zora Mages that have long been in study of magic, Sapphire Wardens can alter water and ice to the point of creating Blue Fire, a chilling flame that can then be used as a deadly weapon. Their attacks can dramatically slow the movement of approaching enemies, and the cold flames can persist for some time after landing on the ground.</History>
     <Icon>units/zora/zor_sapwarden.dds</Icon>
     <Lang>zora</Lang>
+	<RequiredTechnology>phase_city</RequiredTechnology>
     <SelectionGroupName>units/zora/zora_sapwarden_b</SelectionGroupName>
     <Tooltip>Ranged Mage unit that can burn enemies with their Blue Fire attack.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>
@@ -57,15 +22,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/magic/magic_bluefire.xml</attack_ranged>
@@ -83,8 +39,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.0526</RunMultiplier>
-    <WalkSpeed>9.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_sapwarden_b.xml</Actor>

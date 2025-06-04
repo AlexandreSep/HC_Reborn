@@ -1,38 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Lance</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>20.0</Pierce>
-      </Damage>
-      <MaxRange>7.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="5.0" />
-    <Height>7.0</Height>
-  </Footprint>
-  <Health>
-    <Max>425</Max>
-  </Health>
+<Entity parent="HC_template_unit_precise_cavalryanti_heavy">
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Hydrophant Shatterback Large HydroLancer</Classes>
@@ -48,13 +14,6 @@
     <Floating>false</Floating>
   </Position>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>

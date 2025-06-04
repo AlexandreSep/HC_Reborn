@@ -6,28 +6,11 @@
 		<Crush>0</Crush>
         <Magic>150</Magic>
       </Damage>
-      <MaxRange>120.0</MaxRange>
-      <MinRange>45.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>7000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/electric_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
-        <Speed>100.0</Speed>
-        <Spread>2.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>9000</RepeatTime>
       <Splash>
         <Damage>
 		<Crush>0</Crush>
-          <Magic>5.0</Magic>
+        <Magic>5.0</Magic>
         </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
       </Splash>
       <Stun>
         <Time>1000</Time>
@@ -36,22 +19,6 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>250</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="12.0" width="8.0" />
-  </Footprint>
-  <Health>
-    <Max>300</Max>
-  </Health>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Construct Electric MageCannon Large</Classes>

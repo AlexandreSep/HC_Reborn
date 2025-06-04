@@ -1,15 +1,4 @@
 <Entity parent="HC_template_unit_precise_spearman">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
-    </Melee>
-  </Attack>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">CrystalShield Shatterback Medium RiverPatrol</Classes>

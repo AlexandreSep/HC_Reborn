@@ -1,14 +1,22 @@
 <Entity parent="template_unit">
   <Attack>
   <Melee>
-      <AttackName>Sword</AttackName>
+      <AttackName>Brute Force</AttackName>
       <Damage>
-        <Hack>15</Hack>
+        <Crush>50</Crush>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
       <RepeatTime>1400</RepeatTime>
+	  	<Splash>
+        <Damage>
+          <Crush>5.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
     </Melee>
     <Capture>
       <AttackName>Capture</AttackName>
@@ -18,40 +26,37 @@
       <RestrictedClasses datatype="tokens">Field Palisade SiegeWall StoneWall</RestrictedClasses>
     </Capture>
   </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
-      <food>200</food>
-      <metal>100</metal>
-      <stone>100</stone>
-      <wood>0</wood>
+      <food>300</food>
+      <metal>150</metal>
+      <stone>0</stone>
+      <wood>150</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>800</Max>
+    <Max>1000</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
-    <GenericName>Infantry</GenericName>
-    <VisibleClasses datatype="tokens">Infantry</VisibleClasses>
+    <GenericName>Creature</GenericName>
+    <VisibleClasses datatype="tokens">Creature</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>40.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
+        <Crush>50</Crush>
+        <Hack>50</Hack>
+        <Pierce>50</Pierce>
       </Damage>
     </Entity>
   </Resistance>
   <Selectable>
     <Overlay>
       <Texture>
-        <MainTexture>infantry/128x128.dds</MainTexture>
-        <MainTextureMask>infantry/128x128_mask.dds</MainTextureMask>
+        <MainTexture>creature/128x128.dds</MainTexture>
+        <MainTextureMask>creature/128x128_mask.dds</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
@@ -75,6 +80,6 @@
     <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>80</Range>
+    <Range>84</Range>
   </Vision>
 </Entity>

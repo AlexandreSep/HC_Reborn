@@ -9,6 +9,14 @@
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
       <RepeatTime>1400</RepeatTime>
+	  	  <Splash>
+        <Damage>
+          <Hack>3.0</Hack>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
     </Melee>
     <Capture>
       <AttackName>Capture</AttackName>
@@ -21,9 +29,9 @@
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>0</food>
+      <food>150</food>
       <metal>0</metal>
-      <stone>0</stone>
+      <stone>75</stone>
       <wood>0</wood>
     </Resources>
   </Cost>

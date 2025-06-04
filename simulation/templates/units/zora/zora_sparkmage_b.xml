@@ -1,22 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_precise_mage">
   <Attack>
     <Ranged>
       <AttackName>Lightning</AttackName>
-      <Damage>
-        <Magic>25</Magic>
-      </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>2000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2500</RepeatTime>
       <Stun>
         <Chance>20</Chance>
         <Time>1000</Time>
@@ -24,18 +9,6 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>55</Max>
-  </Health>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Electric SparkMage ZoraFemale Medium CanGarrison</Classes>
@@ -54,15 +27,6 @@
     <Entity>units/zora/zora_stormbolter_b</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/magic/magic_spark_impact.xml</attack_impact_ranged>
@@ -81,8 +45,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.1111</RunMultiplier>
-    <WalkSpeed>9.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_mage_b.xml</Actor>

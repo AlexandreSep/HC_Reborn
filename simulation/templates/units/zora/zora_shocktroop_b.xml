@@ -1,9 +1,4 @@
 <Entity parent="HC_template_unit_precise_Knight">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-    </Melee>
-  </Attack>
   <Auras datatype="tokens">
     units/shocktroop_aura_1
   </Auras>

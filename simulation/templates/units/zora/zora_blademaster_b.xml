@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_precise_swordsman">
+<Entity parent="HC_template_unit_precise_swordsman_heavy">
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Secure Falchion MixedTeams Medium Blademaster</Classes>

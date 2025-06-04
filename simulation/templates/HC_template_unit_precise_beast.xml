@@ -1,9 +1,9 @@
 <Entity parent="template_unit">
-  <Attack>
+    <Attack>
   <Melee>
-      <AttackName>Sword</AttackName>
+      <AttackName>Attack</AttackName>
       <Damage>
-        <Hack>15</Hack>
+        <Hack>4</Hack>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -18,40 +18,38 @@
       <RestrictedClasses datatype="tokens">Field Palisade SiegeWall StoneWall</RestrictedClasses>
     </Capture>
   </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>10</BuildTime>
     <Resources>
-      <food>200</food>
-      <metal>100</metal>
-      <stone>100</stone>
-      <wood>0</wood>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>15</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>800</Max>
+    <Max>100</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
-    <GenericName>Infantry</GenericName>
-    <VisibleClasses datatype="tokens">Infantry</VisibleClasses>
+    <GenericName>Creature</GenericName>
+    <VisibleClasses datatype="tokens">Creature</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>40.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
+        <Crush>5.0</Crush>
+        <DodgeRating>8.0</DodgeRating>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>
   <Selectable>
     <Overlay>
       <Texture>
-        <MainTexture>infantry/128x128.dds</MainTexture>
-        <MainTextureMask>infantry/128x128_mask.dds</MainTextureMask>
+        <MainTexture>creature/128x128.dds</MainTexture>
+        <MainTextureMask>creature/128x128_mask.dds</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
@@ -72,9 +70,9 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>2</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
+    <WalkSpeed>14</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>80</Range>
+    <Range>90</Range>
   </Vision>
 </Entity>

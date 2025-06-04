@@ -36,7 +36,7 @@
     <History>One of two remaining elders of Death Mountain. Gor Coron was the youngest of the four elders and by far the most loved. Gor Coron oversaw much of the Goron's military during his younger days, though he now prefers to spend his time fighting in sport against other Gorons.</History>
     <Icon>units/goron/gor_hero_gorcoron.dds</Icon>
     <Lang>goron</Lang>
-    <RequiredTechnology>civ_choices/goron/choosehero_gorcoron</RequiredTechnology>
+    <RequiredTechnology>civ_choices/goron/choosehero_dangoro</RequiredTechnology>
     <SpecificName>Gor Coron</SpecificName>
     <Tooltip>Faster Melee Goron Hero that has excellent parry skills.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

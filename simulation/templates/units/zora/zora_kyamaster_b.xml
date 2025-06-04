@@ -1,66 +1,21 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="HC_template_unit_precise_mage">
   <Attack>
     <Ranged>
       <AttackName>Water Blast</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>FireElement</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
-      <Damage>
-        <Magic>10</Magic>
-      </Damage>
-      <MaxRange>60</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/water_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
-        <Speed>50.0</Speed>
-        <Spread>1.7</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2500</RepeatTime>
 	  <SpawnEntityOnImpact>
-        <SpawnNumberMax>3</SpawnNumberMax>
+        <SpawnNumberMax>1</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>
         <SpawnOnHit>
-          <Chance>50</Chance>
+          <Chance>10</Chance>
           <SpawnAtTarget>true</SpawnAtTarget>
         </SpawnOnHit>
         <SpawnOnImpact>
-          <Chance>50</Chance>
+          <Chance>10</Chance>
         </SpawnOnImpact>
         <Template>units/zora/zora_kyameron_b</Template>
       </SpawnEntityOnImpact>
-      <Knockback>
-        <Horizontal>5</Horizontal>
-        <Vertical>5</Vertical>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
-      <Origin>
-        <X>0</X>
-        <Y>15</Y>
-        <Z>0</Z>
-      </Origin>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-     <food>80</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>125</Max>
-  </Health>
   <Identity>
     <AIBuild>
       <MaxCopies>0</MaxCopies>
@@ -85,15 +40,6 @@
     <Entity>units/zora/zora_floodmaster_b</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -112,8 +58,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.1111</RunMultiplier>
-    <WalkSpeed>9.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_kyamaster_b.xml</Actor>

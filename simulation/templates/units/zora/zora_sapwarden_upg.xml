@@ -6,8 +6,7 @@
       </Damage>
       <Splash>
         <Damage>
-          <Fire>9.0</Fire>
-          <Water>9.0</Water>
+          <Magic>8</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>

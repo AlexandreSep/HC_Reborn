@@ -58,7 +58,7 @@
     <History>The younger brother of the legendary Biggoron, Medigoron may only be about half his size, but he still is quite large even for a Goron. He lacks the creative skill of his brother, but certainly knows how to use the weapons that Biggoron creates to great effect.</History>
     <Icon>units/goron/gor_hero_medigoron.dds</Icon>
     <Lang>goron</Lang>
-    <RequiredTechnology>civ_choices/goron/choosehero_medigoron</RequiredTechnology>
+    <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
     <SpecificName>Medigoron</SpecificName>
     <Tooltip>Melee Goron Hero with decent speed and very wide Splash Damage.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

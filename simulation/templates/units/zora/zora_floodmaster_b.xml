@@ -1,74 +1,26 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_precise_mage_heavy">
   <Attack>
     <Ranged>
       <AttackName>Water Blast</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>FireElement</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
-      <Damage>
-        <Magic>50</Magic>
-      </Damage>
-      <MaxRange>60</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/water_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
-        <Speed>50.0</Speed>
-        <Spread>1.7</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2500</RepeatTime>
 	  <SpawnEntityOnImpact>
         <SpawnNumberMax>3</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>
         <SpawnOnHit>
-          <Chance>100</Chance>
+          <Chance>25</Chance>
           <SpawnAtTarget>true</SpawnAtTarget>
         </SpawnOnHit>
         <SpawnOnImpact>
-          <Chance>100</Chance>
+          <Chance>25</Chance>
         </SpawnOnImpact>
         <Template>units/zora/zora_kyameron_b</Template>
       </SpawnEntityOnImpact>
-      <Splash>
-        <Damage>
-          <Magic>15.0</Magic>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-      </Splash>
       <Knockback>
         <Horizontal>20</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
       <EffectDelay>0</EffectDelay>
-      <Origin>
-        <X>0</X>
-        <Y>15</Y>
-        <Z>0</Z>
-      </Origin>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>80</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>400</Max>
-  </Health>
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">FloodMaster ZoraFemale Medium WaterElement</Classes>
@@ -77,7 +29,7 @@
     <History>Floodmasters represent some of the most powerful Mages in not only the Dominion, but the entire land of Hyrule. Though it takes a lifetime to master, their abilities to warp and control water rival that of the Sage of Water herself. A lone Floodmaster can summon forth a surge of rushing water, knocking back enemies much larger than the mage quite a distance.</History>
     <Icon>units/zora/zor_floodmaster.dds</Icon>
     <Lang>zora</Lang>
-    <RequiredTechnology>civ_choices/zora/choosehero_laruto</RequiredTechnology>
+    <RequiredTechnology>phase_city</RequiredTechnology>
     <SelectionGroupName>units/zora/zora_floodmaster_b</SelectionGroupName>
     <Tooltip>Powerful Mage unit that knocks enemies around with waves of water.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>
@@ -89,15 +41,6 @@
     <Entity>units/zora/zora_floodmaster_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/magic/magic_floodburst.xml</attack_ranged>
@@ -115,8 +58,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.1111</RunMultiplier>
-    <WalkSpeed>9.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/zora/zora_floodmaster_b.xml</Actor>

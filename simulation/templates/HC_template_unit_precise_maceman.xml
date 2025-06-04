@@ -1,14 +1,19 @@
 <Entity parent="template_unit">
   <Attack>
   <Melee>
-      <AttackName>Sword</AttackName>
+      <AttackName>Mace</AttackName>
       <Damage>
-        <Hack>15</Hack>
+        <Crush>5</Crush>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
       <RepeatTime>1400</RepeatTime>
+	  	<Stun>
+        <Chance>34</Chance>
+        <Time>1500</Time>
+      </Stun>
+	  <EffectDelay>0</EffectDelay>
     </Melee>
     <Capture>
       <AttackName>Capture</AttackName>
@@ -18,20 +23,17 @@
       <RestrictedClasses datatype="tokens">Field Palisade SiegeWall StoneWall</RestrictedClasses>
     </Capture>
   </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
-      <food>200</food>
-      <metal>100</metal>
-      <stone>100</stone>
+      <food>60</food>
+      <metal>0</metal>
+      <stone>30</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>800</Max>
+    <Max>200</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
@@ -41,9 +43,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>40.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
+        <Crush>10</Crush>
+        <Hack>20</Hack>
+        <Pierce>20</Pierce>
       </Damage>
     </Entity>
   </Resistance>
@@ -72,9 +74,9 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>2</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
+    <WalkSpeed>10</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>80</Range>
+    <Range>60</Range>
   </Vision>
 </Entity>

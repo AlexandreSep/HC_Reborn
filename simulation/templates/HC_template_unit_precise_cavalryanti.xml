@@ -1,74 +1,86 @@
 <Entity parent="template_unit">
-  <Attack>
+<Attack>
     <Melee>
-      <AttackName>Halberd</AttackName>
+      <AttackName>Lance</AttackName>
       <Bonuses>
         <BonusCavMelee>
-          <Classes>Creature</Classes>
-          <Multiplier>3.0</Multiplier>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
         </BonusCavMelee>
       </Bonuses>
       <Damage>
-        <Pierce>4</Pierce>
+        <Pierce>10.0</Pierce>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <MaxRange>7.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
       <RepeatTime>1400</RepeatTime>
     </Melee>
   </Attack>
+  <Battalion>
+    <SpawnDeltaTime>700</SpawnDeltaTime>
+  </Battalion>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>60</food>
+      <food>90</food>
       <metal>0</metal>
-      <stone>10</stone>
+      <stone>40</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
+  <Footprint>
+    <Circle radius="2.5" />
+    <Height>5.0</Height>
+  </Footprint>
   <Health>
     <Max>200</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
-    <GenericName>Infantry</GenericName>
-    <VisibleClasses datatype="tokens">Infantry</VisibleClasses>
+    <GenericName>Cavalry</GenericName>
+    <VisibleClasses datatype="tokens">Cavalry</VisibleClasses>
   </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>10</Crush>
-        <Hack>20</Hack>
-        <Pierce>20</Pierce>
+        <Crush>10.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>20.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>
   <Selectable>
     <Overlay>
       <Texture>
-        <MainTexture>infantry/128x128.dds</MainTexture>
-        <MainTextureMask>infantry/128x128_mask.dds</MainTextureMask>
+        <MainTexture>cavalry/128x128.dds</MainTexture>
+        <MainTextureMask>cavalry/128x128_mask.dds</MainTextureMask>
       </Texture>
     </Overlay>
   </Selectable>
   <Sound>
     <SoundGroups>
       <attack>attack/weapon/sword.xml</attack>
-      <death>actor/human/death/{phenotype}_death.xml</death>
+      <death>actor/fauna/death/death_horse.xml</death>
       <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
       <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
       <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
-      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
       <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
+      <run>actor/mounted/movement/walk.xml</run>
       <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
+      <trained>interface/alarm/alarm_create_cav.xml</trained>
+      <walk>actor/mounted/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
+  <StatusBars>
+    <HeightOffset>6.5</HeightOffset>
+  </StatusBars>
   <UnitMotion>
-    <RunMultiplier>2</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
+    <RunMultiplier>3</RunMultiplier>
+    <WalkSpeed>16</WalkSpeed>
   </UnitMotion>
   <Vision>
     <Range>60</Range>

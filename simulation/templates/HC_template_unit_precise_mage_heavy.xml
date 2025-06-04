@@ -1,37 +1,43 @@
 <Entity parent="template_unit">
   <Attack>
-  <Melee>
-      <AttackName>Sword</AttackName>
+    <Ranged>
+      <AttackName>Magic Attack</AttackName>
       <Damage>
-        <Hack>15</Hack>
+        <Magic>15</Magic>
       </Damage>
-      <MaxRange>5</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <MaxRange>40</MaxRange>
+      <MinRange>10</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-    <Capture>
-      <AttackName>Capture</AttackName>
-      <Capture>2</Capture>
-      <MaxRange>4</MaxRange>
-      <RepeatTime>1000</RepeatTime>
-      <RestrictedClasses datatype="tokens">Field Palisade SiegeWall StoneWall</RestrictedClasses>
-    </Capture>
+	  <RepeatTime>1400</RepeatTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+	  <Splash>
+        <Damage>
+          <Magic>3.0</Magic>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
   </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>200</food>
-      <metal>100</metal>
-      <stone>100</stone>
+      <food>130</food>
+      <metal>50</metal>
+      <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>800</Max>
+    <Max>250</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
@@ -41,9 +47,10 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>40.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
+		<Magic>50</Magic>
+        <Crush>10</Crush>
+        <Hack>10</Hack>
+        <Pierce>10</Pierce>
       </Damage>
     </Entity>
   </Resistance>
@@ -75,6 +82,6 @@
     <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <Vision>
-    <Range>80</Range>
+    <Range>60</Range>
   </Vision>
 </Entity>

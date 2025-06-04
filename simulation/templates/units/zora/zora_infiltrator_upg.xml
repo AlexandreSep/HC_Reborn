@@ -15,7 +15,4 @@
   <VisualActor>
     <Actor>units/zora/zora_infiltrator_upg.xml</Actor>
   </VisualActor>
-  <Health>
-    <Max>70</Max>
-  </Health>
 </Entity>

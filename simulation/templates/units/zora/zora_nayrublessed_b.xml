@@ -1,40 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="HC_template_unit_precise_mage">
   <Auras datatype="tokens">
     units/nayrublessed_aura_1
   </Auras>
-  <Attack>
-    <Ranged>
-      <AttackName>Blue Fire</AttackName>
-      <Damage>
-        <Magic>15</Magic>
-      </Damage>
-      <MaxRange>50</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1800</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2300</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>45</food>
-      <metal>40</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>75</Max>
-  </Health>
   <Identity>
     <AIBuild>
       <MaxCopies>0</MaxCopies>
@@ -47,8 +14,8 @@
     <History>Nayru's Blessed wield an extremely rare magic that can create crystalline barriers from their staffs. These mages can use such an ability to create defenses around themselves and their brethren in battle.</History>
     <Icon>units/zora/zor_nayrublessed.dds</Icon>
     <Lang>zora</Lang>
+	<RequiredTechnology>phase_town</RequiredTechnology>
     <Rank>Basic</Rank>
-    <RequiredTechnology>civ_choices/zora/choosehero_ruto</RequiredTechnology>
     <SelectionGroupName>units/zora/zora_nayrublessed_b</SelectionGroupName>
     <Tooltip>Princess Ruto's Unique Unit. Support Mage unit that increases both the non-magic and magic armor of units.</Tooltip>
     <VisibleClasses datatype="tokens">Support Mage</VisibleClasses>
@@ -60,15 +27,6 @@
     <Entity>units/zora/zora_sapwarden_b</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
