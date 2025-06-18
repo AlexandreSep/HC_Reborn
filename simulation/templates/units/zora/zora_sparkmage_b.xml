@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_precise_mage">
+<Entity parent="classes/HC_template_unit_mage">
   <Attack>
     <Ranged>
       <AttackName>Lightning</AttackName>

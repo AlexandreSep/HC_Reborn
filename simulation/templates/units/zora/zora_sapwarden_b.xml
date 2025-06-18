@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_precise_mage_heavy">
+<Entity parent="classes/HC_template_unit_mage_heavy">
   <Auras datatype="tokens">
     units/nayrublessed_aura_1
   </Auras>

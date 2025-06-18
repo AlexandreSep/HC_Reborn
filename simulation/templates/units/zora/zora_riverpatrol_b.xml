@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_precise_spearman">
+<Entity parent="classes/HC_template_unit_spearman">
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">CrystalShield Shatterback Medium RiverPatrol</Classes>

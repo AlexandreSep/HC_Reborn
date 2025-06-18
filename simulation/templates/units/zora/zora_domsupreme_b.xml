@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_precise_commander">
+<Entity parent="classes/HC_template_unit_commander">
   <Identity>
     <AIBuild>
       <MaxCopies>2</MaxCopies>

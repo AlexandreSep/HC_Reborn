@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_beastramsmall">
+<Entity parent="classes/HC_template_unit_beastramsmall">
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Hydrophant Large HydroDemolish</Classes>

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_precise_spearman_heavy">
+<Entity parent="classes/HC_template_unit_spearman_heavy">
   <Identity>
     <Civ>zora</Civ>
     <Classes datatype="tokens">Secure MixedTeams Shatterback Medium ZoraHalberdier</Classes>

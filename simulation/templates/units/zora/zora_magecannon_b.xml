@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_siegecannon">
+<Entity parent="classes/HC_template_unit_siegecannon">
   <Attack>
     <Ranged>
       <AttackName>Lightning</AttackName>
