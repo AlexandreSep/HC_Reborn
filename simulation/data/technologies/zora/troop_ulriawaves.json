@@ -16,11 +16,11 @@
   "requirementsTooltip": "Unlocked with Town.",
   "icon": "zora/troop_ulriawaves.dds",
   "researchTime": 40,
-  "tooltip": "The Floodmaster Ulria discovered that by honing her focus, a Mage could produce much stronger waves. (Kyameronmasters promote into Floodmasters)",
+  "tooltip": "The Floodmaster Ulria discovered that by honing her focus, a Mage could produce much stronger waves. (Kyameronmasters  and Floodmasters now have a higher chance to spawn Kyameron on Hits)",
   "modifications": [
     {
-      "value": "Promotion/RequiredXp",
-      "replace": 0
+	  "value": "Attack/Ranged/SpawnEntityOnImpact/SpawnOnHit/Chance",
+      "add": 8
     }
   ],
   "affects": [ "KyaMaster" ],

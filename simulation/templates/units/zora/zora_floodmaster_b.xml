@@ -23,7 +23,7 @@
   </Attack>
   <Identity>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">FloodMaster ZoraFemale Medium WaterElement</Classes>
+    <Classes datatype="tokens">FloodMaster KyaMaster ZoraFemale Medium WaterElement</Classes>
     <GenericName>Floodmaster</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Floodmasters represent some of the most powerful Mages in not only the Dominion, but the entire land of Hyrule. Though it takes a lifetime to master, their abilities to warp and control water rival that of the Sage of Water herself. A lone Floodmaster can summon forth a surge of rushing water, knocking back enemies much larger than the mage quite a distance.</History>

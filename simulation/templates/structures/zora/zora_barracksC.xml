@@ -42,13 +42,14 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">zora/troop_cephlasecret
+	zora/troop_ulriawaves
     zora/troop_coredivision
-
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/zora/{civ}_kyamaster_b
+	units/zora/{civ}_floodmaster_b
       units/zora/{civ}_morphite_b</Entities>
     <DestinationOffset>
       <step1>

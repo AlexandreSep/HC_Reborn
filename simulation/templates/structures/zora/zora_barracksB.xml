@@ -52,12 +52,8 @@
     zora/healer_zodobon
       zora/troop_rutalancrystal
     zora/troop_akkalanflames
-    zora/troop_ulriawaves
     zora/troop_overchargedcore
-      zora/troop_cephlasecret
-    zora/troop_coredivision
     zora/laruto_fasting
-	zora/unit_stormbolter
 </Technologies>
   </Researcher>
   <Trainer>
@@ -65,9 +61,9 @@
     <Entities datatype="tokens">units/zora/{civ}_healer_b
       units/zora/{civ}_sparkmage_b
 	  units/zora/{civ}_nayrublessed_b
-	  units/zora/{civ}_kyamaster_b
+	  units/zora/{civ}_stormbolter_b
+	  units/zora/{civ}_sapwarden_b
       units/zora/{civ}_magecannon_b
-      units/zora/{civ}_morphite_b
       </Entities>
     <DestinationOffset>
       <step1>

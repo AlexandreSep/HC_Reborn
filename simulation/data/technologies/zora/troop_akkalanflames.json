@@ -16,11 +16,15 @@
   "requirementsTooltip": "Unlocked with Town.",
   "icon": "zora/troop_akkalanflames.dds",
   "researchTime": 40,
-  "tooltip": "Enhanced by secret techniques dating back to the time of the Ancient Hylians, this Blue Fire burns with a deeper icy power. (+20% Base Damage, Also start dealing Splash Damage equal to 50% of base damage - Sapphire Warden)",
+  "tooltip": "Enhanced by secret techniques dating back to the time of the Ancient Hylians, this Blue Fire burns with a deeper icy power. (+20% Base Damage, Also start dealing more Splash Damage - Nayrus Blessed and Sapphire Warden)",
   "modifications": [
     {
-      "value": "Promotion/RequiredXp",
-      "replace": 0
+     "value": "Attack/Ranged/Damage/Magic",
+      "multiply": 1.2
+    },
+	{
+     "value": "Attack/Ranged/Splash/Damage/Magic",
+      "add": 1
     }
   ],
   "affects": [ "NayruBlessed" ],

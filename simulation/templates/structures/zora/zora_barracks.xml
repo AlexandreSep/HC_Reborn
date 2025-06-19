@@ -45,17 +45,17 @@
     zora/troop_lutoboomerang
     zora/troop_mixedteam
     zora/ruto_nayrushield
-	zora/unit_shocktrooper
-	zora/unit_halberdier
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/zora/{civ}_riverpatrol_b
-      units/zora/{civ}_blademaster_b
-    units/zora/{civ}_boomeranger_b
-    units/zora/{civ}_infiltrator_b
-    units/zora/{civ}_domsupreme_b</Entities>
+	units/zora/{civ}_infiltrator_b
+	units/zora/{civ}_boomeranger_b
+	units/zora/{civ}_halberdier_b
+	units/zora/{civ}_blademaster_b
+	units/zora/{civ}_shocktroop_b
+	units/zora/{civ}_domsupreme_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>

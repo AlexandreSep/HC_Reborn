@@ -9,7 +9,7 @@
   </Attack>
   <Identity>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">SapWarden Medium ZoraFemale</Classes>
+    <Classes datatype="tokens">SapWarden NayruBlessed Medium ZoraFemale</Classes>
     <GenericName>Sapphire Warden</GenericName>
     <History>Zora Mages that have long been in study of magic, Sapphire Wardens can alter water and ice to the point of creating Blue Fire, a chilling flame that can then be used as a deadly weapon. Their attacks can dramatically slow the movement of approaching enemies, and the cold flames can persist for some time after landing on the ground.</History>
     <Icon>units/zora/zor_sapwarden.dds</Icon>
