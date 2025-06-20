@@ -1,17 +1,7 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry|hero_melee|assassin_melee">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Hero</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-        <Bonus2>
-          <Classes>Commander</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus2>
-      </Bonuses>
       <Damage>
         <Hack>70</Hack>
       </Damage>
@@ -36,7 +26,7 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>600</Max>
+    <Max>1800</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>

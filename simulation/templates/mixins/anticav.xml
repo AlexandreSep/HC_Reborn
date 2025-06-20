@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Entity>
+  <Attack>
+    <Melee>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>
+	  <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Classes datatype="tokens">Melee</Classes>
+    <VisibleClasses datatype="tokens">AntiCav</VisibleClasses>
+  </Identity>  
+
+</Entity>

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_light_cavalry|light_archer">
   <Attack>
     <Ranged>
       <AttackName>Arrows</AttackName>
@@ -7,7 +7,6 @@
       </Damage>
       <MaxRange>70</MaxRange>
       <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1500</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
@@ -30,7 +29,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>90</Max>
+    <Max>270</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>

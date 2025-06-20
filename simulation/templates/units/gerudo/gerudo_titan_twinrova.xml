@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_titan">
+<Entity parent="HC_template_unit_titan|mage">
   <Attack>
     <Ranged>
       <AttackName>Fire and Ice Magic</AttackName>
@@ -66,7 +66,7 @@
   </Footprint>
   <Health>
     <IdleRegenRate>2</IdleRegenRate>
-    <Max>2500</Max>
+    <Max>3500</Max>
     <RegenRate>1</RegenRate>
   </Health>
   <Identity>

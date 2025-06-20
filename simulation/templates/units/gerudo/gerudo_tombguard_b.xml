@@ -1,13 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_heavy_infantry|spearman">
   <Attack>
     <Melee>
       <AttackName>Trident</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
       <Damage>
         <Pierce>18.0</Pierce>
       </Damage>
@@ -27,7 +21,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>80</Max>
+    <Max>250</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -38,7 +32,6 @@
     <Lang>gerudo</Lang>
     <SelectionGroupName>units/gerudo/gerudo_tombguard_b</SelectionGroupName>
     <Tooltip>Strong defensive Infantry unit armed with a spear and shield.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/gerudo/gerudo_tombguard_upg</Entity>

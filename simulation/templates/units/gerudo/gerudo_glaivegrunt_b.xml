@@ -1,19 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry|spearman">
   <Attack>
     <Melee>
       <AttackName>Glaive</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
       <Damage>
         <Hack>6.0</Hack>
         <Pierce>4.0</Pierce>
       </Damage>
       <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
       <PrepareTime>1300</PrepareTime>
       <RepeatTime>1500</RepeatTime>
     </Melee>
@@ -28,7 +21,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>60</Max>
+    <Max>180</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -39,7 +32,6 @@
     <Lang>gerudo</Lang>
     <SelectionGroupName>units/gerudo/gerudo_glaivegrunt_b</SelectionGroupName>
     <Tooltip>Light Melee unit armed with a spear.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

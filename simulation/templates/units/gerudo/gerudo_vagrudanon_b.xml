@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
@@ -6,7 +6,6 @@
         <Hack>14.0</Hack>
       </Damage>
       <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
       <RepeatTime>1300</RepeatTime>
     </Melee>
@@ -21,7 +20,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>100</Max>
+    <Max>350</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -33,7 +32,6 @@
     <RequiredTechnology>phase_village</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_vagrudanon_b</SelectionGroupName>
     <Tooltip>Fast and Light Cavalry unit geared towards raiding enemy targets.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

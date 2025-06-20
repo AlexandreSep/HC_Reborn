@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_light_archer|light_archer">
   <Attack>
     <Ranged>
       <AttackName>Ice Arrows</AttackName>
@@ -37,7 +37,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>90</Max>
+    <Max>270</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -49,7 +49,6 @@
     <RequiredTechnology>phase_city</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_icearcher_b</SelectionGroupName>
     <Tooltip>Gerudo Missile unit that can slow enemy targets with her ranged Ice Arrows.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

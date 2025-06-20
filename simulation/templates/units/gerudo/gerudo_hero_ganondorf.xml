@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_cavalry">
+<Entity parent="classes/HC_template_unit_heavy_cavalry|hero_melee|heavy_cavalry">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
@@ -30,7 +30,7 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>900</Max>
+    <Max>2800</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -43,7 +43,6 @@
     <RequiredTechnology>civ_choices/gerudo/choosehero_ganondorf</RequiredTechnology>
     <SpecificName>Ganondorf</SpecificName>
     <Tooltip>Powerful Cavalry Hero that tramples enemies and attacks with his scimitar.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

@@ -1,13 +1,7 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry|hero_melee">
   <Attack>
     <Melee>
       <AttackName>Scimitars</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Infantry</Classes>
-          <Multiplier>1.5</Multiplier>
-        </Bonus1>
-      </Bonuses>
       <Damage>
         <Hack>30</Hack>
       </Damage>
@@ -32,7 +26,7 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>300</Max>
+    <Max>900</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -45,7 +39,6 @@
     <RequiredTechnology>civ_choices/gerudo/choosehero_aveil</RequiredTechnology>
     <SpecificName>Aveil</SpecificName>
     <Tooltip>Fast and underhanded Melee Hero armed with two scimitars.</Tooltip>
-    <VisibleClasses datatype="tokens" />
   </Identity>
   <Resistance>
     <Entity>

@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_infantry">
+<Entity parent="classes/HC_template_unit_heavy_infantry|shield|hero_melee|heavy_infantry">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
@@ -26,7 +26,7 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>800</Max>
+    <Max>2500</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>

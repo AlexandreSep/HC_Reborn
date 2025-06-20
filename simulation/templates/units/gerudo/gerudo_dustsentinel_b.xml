@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_heavy_cavalry|light_archer">
   <Attack>
     <Ranged>
       <AttackName>Arrows</AttackName>
@@ -31,7 +31,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>350</Max>
+    <Max>550</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -44,7 +44,6 @@
     <RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_dustsentinel_b</SelectionGroupName>
     <Tooltip>Princess Riju's Unique Unit. Mounted Missile Cavalry that can attack from afar and cloak nearbye units in a Sandstorm</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>

@@ -29,7 +29,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>80</Max>
+    <Max>240</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -41,7 +41,6 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_sandsniper_b</SelectionGroupName>
     <Tooltip>Long ranged Infantry Missile unit that has Camouflage.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

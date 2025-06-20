@@ -1,23 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry|assassin_melee|light_infantry">
   <Attack>
     <Melee>
       <AttackName>Katars</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Commander</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-        <Bonus2>
-          <Classes>Hero</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus2>
-      </Bonuses>
       <Damage>
         <Pierce>5.0</Pierce>
         <TrueDamage>15</TrueDamage>
       </Damage>
       <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Hero Commander</PreferredClasses>
       <PrepareTime>1100</PrepareTime>
       <RepeatTime>1200</RepeatTime>
     </Melee>
@@ -32,7 +21,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>90</Max>
+    <Max>270</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -44,7 +33,6 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_gerudadorf_b</SelectionGroupName>
     <Tooltip>Fast Melee unit with Camouflage, has a chance to deal Critical Hits to enemies.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

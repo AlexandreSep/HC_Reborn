@@ -1,4 +1,4 @@
-<Entity parent="HC_template_hero_cavalry">
+<Entity parent="classes/HC_template_unit_heavy_cavalry|hero_ranged|light_archer">
   <Attack>
     <Ranged>
       <AttackName>Arrows</AttackName>
@@ -7,7 +7,6 @@
       </Damage>
       <MaxRange>80.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1000</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
@@ -35,7 +34,7 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>1000</Max>
+    <Max>3000</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -48,7 +47,6 @@
     <RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
     <SpecificName>Makeela Riju</SpecificName>
     <Tooltip>Mounted Calvary Missile Hero who can snipe enemies from afar with her bow and arrows.</Tooltip>
-    <VisibleClasses datatype="tokens">Creature Cavalry Ranged Archer Bow</VisibleClasses>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>

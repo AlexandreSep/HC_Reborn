@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry|mage">
   <Attack>
     <Ranged>
       <AttackName>Witch's Wind</AttackName>
@@ -46,7 +46,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>125</Max>
+    <Max>300</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -58,7 +58,6 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_windwitch_b</SelectionGroupName>
     <Tooltip>Mage unit with powerful Wind attack that deals Knockback damage.</Tooltip>
-    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/gerudo/gerudo_windwitch_upg</Entity>

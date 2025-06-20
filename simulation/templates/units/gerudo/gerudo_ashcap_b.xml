@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry|buffer|light_infantry">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
@@ -26,7 +26,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>120</Max>
+    <Max>360</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -37,7 +37,6 @@
     <Lang>gerudo</Lang>
     <SelectionGroupName>units/gerudo/gerudo_ashcap_b</SelectionGroupName>
     <Tooltip>Melee Commander unit that bolsters other Gerudo troops in battle.</Tooltip>
-    <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/gerudo/gerudo_ashcap_upg</Entity>

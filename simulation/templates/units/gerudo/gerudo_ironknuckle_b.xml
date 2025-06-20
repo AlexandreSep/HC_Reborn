@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_heavy_infantry">
   <Attack>
     <Ranged>
       <AttackName>Axe</AttackName>
@@ -7,9 +7,14 @@
         <Hack>10.0</Hack>
         <TrueDamage>35</TrueDamage>
       </Damage>
+      <Bonuses>
+        <Bonus1>
+          <Classes>Light_Infantry Beast</Classes>
+          <Multiplier>2</Multiplier>
+        </Bonus1>
+      </Bonuses>	  
       <MaxRange>7.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1500</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
@@ -49,11 +54,11 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>450</Max>
+    <Max>1000</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">-Organic Construct Large IronKnuckle</Classes>
+    <Classes datatype="tokens">-Organic Construct Large IronKnuckle Melee</Classes>
     <GenericName>Iron Knuckle</GenericName>
     <History>Animated suits of heavy armor, Iron Knuckles are bound with the spirits of dead Gerudo Kings, returned to the world of the living to wage war against the enemies of the Empire. These massive and durable constructs wield huge Gerudo War Axes into battle. Having already died in the distant past, they know absolutely no fear and will engage even the most terrifying enemy head-on.</History>
     <Icon>units/gerudo/ger_ironknuckle.dds</Icon>
@@ -61,7 +66,6 @@
     <RequiredTechnology>phase_city</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_ironknuckle_b</SelectionGroupName>
     <Tooltip>Powerful but extremely slow moving Infantry Melee unit that deals Splash and Knockback damage.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Position>
     <Anchor>pitch</Anchor>

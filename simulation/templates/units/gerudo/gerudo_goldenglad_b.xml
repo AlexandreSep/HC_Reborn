@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry|heavy_infantry">
   <Attack>
     <Melee>
       <AttackName>Claymore</AttackName>
@@ -22,7 +22,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>100</Max>
+    <Max>300</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>

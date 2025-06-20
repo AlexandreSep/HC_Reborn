@@ -1,11 +1,11 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_light_infantry|assassin_melee|light_infantry">
   <Attack>
     <Melee>
       <AttackName>Scimitars</AttackName>
       <Bonuses>
         <Bonus1>
           <Classes>Infantry</Classes>
-          <Multiplier>2</Multiplier>
+          <Multiplier>1.5</Multiplier>
         </Bonus1>
       </Bonuses>
       <Damage>
@@ -28,7 +28,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>150</Max>
+    <Max>300</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -41,7 +41,6 @@
     <RequiredTechnology>civ_choices/gerudo/choosehero_nabooru</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_masterthief_b</SelectionGroupName>
     <Tooltip>Swift Melee unit that is Stealthed.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

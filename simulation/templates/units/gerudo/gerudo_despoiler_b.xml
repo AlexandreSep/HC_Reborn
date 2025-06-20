@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_light_cavalry|shield|anticav">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
@@ -7,10 +7,6 @@
           <Classes>Structures</Classes>
           <Multiplier>1.5</Multiplier>
         </Bonus2>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2</Multiplier>
-        </BonusCavMelee>
       </Bonuses>
       <Damage>
         <Hack>18.0</Hack>
@@ -31,11 +27,11 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>125</Max>
+    <Max>375</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Large Class100 GanondorfCav Despoiler</Classes>
+    <Classes datatype="tokens">Large Class100 GanondorfCav Despoiler Melee AntiCav</Classes>
     <GenericName>Despoiler</GenericName>
     <History>Mounted on the backs of the rare Gerudo Camels, Despoilers are a loose band of warriors that survived by raiding and pillaging settlements along the borders of the Empire. Armed with a curved Moonlight Scimitar and durable shield, they are feared by civilians across the desert. During times of war, they answer to Emperor Ganondorf and serve him without question.</History>
     <Icon>units/gerudo/ger_despoiler.dds</Icon>
@@ -43,7 +39,6 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_despoiler_b</SelectionGroupName>
     <Tooltip>Cavalry Melee unit that excels at fighting other Cavalry and burning enemy buildings.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>

@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_heavy_cavalry">
+<Entity parent="classes/HC_template_unit_heavy_cavalry|ram">
   <Attack>
     <Melee>
       <AttackName>Horn</AttackName>
@@ -32,7 +32,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>375</Max>
+    <Max>1150</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>

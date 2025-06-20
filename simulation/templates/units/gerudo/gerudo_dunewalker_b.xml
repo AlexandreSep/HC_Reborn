@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_heavy_cavalry|light_archer">
   <Attack>
     <Ranged>
       <AttackName>Arrows</AttackName>
@@ -31,7 +31,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>325</Max>
+    <Max>500</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>

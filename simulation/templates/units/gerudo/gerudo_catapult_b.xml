@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siege|siege">
   <Attack>
     <Ranged>
       <AttackName>Boulder</AttackName>
@@ -43,7 +43,7 @@
     <Square depth="12.0" width="8.0" />
   </Footprint>
   <Health>
-    <Max>200</Max>
+    <Max>700</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -52,7 +52,6 @@
     <History>The Gerudo have long used Catapults to attack enemy cities: it has remained their most reliable siege weapon for centuries. Made from the wood of Desert Palms, they are very easy to construct and maintain. The boulders launched by these engines can take down just about any stationary target, be it walls, gates, or enemy towers.</History>
     <Icon>units/gerudo/ger_catapult.dds</Icon>
     <Tooltip>Cheap but effective Siege unit with a ranged attack.</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>
