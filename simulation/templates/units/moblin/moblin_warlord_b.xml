@@ -1,37 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_commander">
   <Attack>
     <Melee>
       <AttackName>Axe</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
       <Damage>
-        <Hack>25.0</Hack>
+        <Hack>20.0</Hack>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
     </Melee>
   </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>115</food>
-      <metal>20</metal>
-      <stone>75</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>550</Max>
-  </Health>
   <Identity>
     <Civ>moblin</Civ>
     <Classes datatype="tokens">Large Class60 MoblinWarlord BlightedMob</Classes>
@@ -48,13 +23,6 @@
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>70.0</Hack>
-        <Pierce>80.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <ResourceGatherer>

@@ -1,23 +1,55 @@
 <Entity parent="HC_template_unit_auxiliary">
-  <Footprint replace="">
+<Attack>
+    <Melee>
+      <AttackName>Ram</AttackName>
+      <Damage>
+        <Crush>10.0</Crush>
+	<Siege>100.0</Siege>
+      </Damage>
+      <MaxRange>8.0</MaxRange>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <PrepareTime>2500</PrepareTime>
+      <RepeatTime>3000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>200</wood>
+    </Resources>
+  </Cost>  
+<Footprint replace="">
     <Height>3.0</Height>
-    <Square depth="8.0" width="4.0" />
+    <Square depth="12.0" width="8.0" />
   </Footprint>
-	<Identity>
-    <Classes datatype="tokens">Organic</Classes>
-    <GenericName>Auxiliary</GenericName>
-    <Tooltip>Support unit that can continue to trade between your Marketplace and an ally's.</Tooltip>
-    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+<Health>
+    <Max>300</Max>
+  </Health>
+<Identity>
+    <Classes datatype="tokens">-Organic Construct</Classes>
+    <GenericName>Ram</GenericName>
+    <Tooltip>Ram.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Trader>
-    <GainMultiplier>2</GainMultiplier>
-  </Trader>
-  <UnitAI>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+ <UnitAI>
     <CanGuard>false</CanGuard>
     <CanPatrol>false</CanPatrol>
   </UnitAI>
   <UnitMotion>
-    <WalkSpeed>8.5</WalkSpeed>
+    <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <VisionSharing>
     <Bribable>true</Bribable>

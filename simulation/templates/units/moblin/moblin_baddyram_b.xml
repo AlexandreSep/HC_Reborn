@@ -1,32 +1,5 @@
-<Entity parent="HC_template_unit_auxiliary">
-  <Attack>
-    <Melee>
-      <AttackName>Ram</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Structure</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Crush>100.0</Crush>
-      </Damage>
-      <MaxRange>6.5</MaxRange>
-      <PreferredClasses datatype="tokens">Gates Structure</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_siegeram"> 
   <Capturable disable="" />
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>50</wood>
-    </Resources>
-  </Cost>
   <Decay>
     <Active>false</Active>
     <DelayTime>80.0</DelayTime>
@@ -34,12 +7,9 @@
     <SinkRate>0.01</SinkRate>
     <SinkingAnim>false</SinkingAnim>
   </Decay>
-  <Health>
-    <Max>300</Max>
-  </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">-Organic Construct Ram Class40 Baddyram Bugblin</Classes>
+    <Classes datatype="tokens">-Organic Construct Ram  Baddyram Bugblin</Classes>
     <GenericName>Bugblin Baddy Ram</GenericName>
     <History>Crafty little Bugblins they made a pretty cool big stick to knock down the gates! Get one of these beauty sticks out and take down them walls and houses!</History>
     <Icon>units/moblin/mob_baddyram.dds</Icon>
@@ -47,16 +17,6 @@
     <Tooltip>Bangin Melee Siege unit goes a banging on the enemy doors to knock em down!</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/siege/ram_attack.xml</attack_melee>

@@ -1,28 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Club</AttackName>
-      <Damage>
-        <Crush>15.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>380</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_maceman">
   <Identity>
     <Civ>moblin</Civ>
     <Classes datatype="tokens">Medium Class70 MoblinMob BlightedMob</Classes>
@@ -38,15 +14,6 @@
     <Entity>units/moblin/moblin_mob_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>

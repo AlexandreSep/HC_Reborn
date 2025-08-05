@@ -1,30 +1,9 @@
 <Entity parent="units/moblin/moblin_grunt_b">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>23.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
   <Promotion disable="" />
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>30.0</Crush>
-        <Hack>60.0</Hack>
-        <Pierce>75.0</Pierce>
-        <Magic>10</Magic>
+        <Magic>50</Magic>
       </Damage>
     </Entity>
   </Resistance>

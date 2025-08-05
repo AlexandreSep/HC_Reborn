@@ -1,9 +1,19 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
+  <Melee>
+      <Damage>
+        <Crush>0</Crush>
+      </Damage>
+	  	<Splash>
+        <Damage>
+        <Crush>0</Crush>
+        </Damage>
+      </Splash>
+    </Melee>
     <Ranged>
       <AttackName>Ball and Chain</AttackName>
       <Damage>
-        <Crush>18</Crush>
+        <Crush>30</Crush>
       </Damage>
       <MaxRange>35</MaxRange>
       <MinRange>0.0</MinRange>
@@ -18,7 +28,7 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>2700</RepeatTime>
+      <RepeatTime>1400</RepeatTime>
       <Splash>
         <Damage>
           <Crush>7.0</Crush>
@@ -40,12 +50,11 @@
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>75</food>
+      <food>200</food>
       <metal>0</metal>
-      <stone>55</stone>
-      <wood>0</wood>
+      <stone>0</stone>
+      <wood>200</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -53,11 +62,11 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>350</Max>
+    <Max>600</Max>
   </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Large Class100 Gooma Giantblin</Classes>
+    <Classes datatype="tokens">Large Gooma Giantblin</Classes>
     <GenericName>Gooma</GenericName>
     <History>Good old Goody Gooma! He's like the strange cousin you have over at your half birthday! Swinging around his biggo ball on a chain! Pretty great at crushing the baddies with that! Just keep in mind he's nice and slow!</History>
     <Icon>units/moblin/mob_gooma.dds</Icon>
@@ -67,13 +76,6 @@
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>55.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>

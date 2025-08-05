@@ -1,34 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>13.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>40</food>
-      <metal>0</metal>
-      <stone>40</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>310</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_spearman_heavy">
   <Identity>
     <Civ>moblin</Civ>
     <Classes datatype="tokens">Medium Class90 MoblinGrunt BlightedMob</Classes>
@@ -44,15 +14,6 @@
     <Entity>units/moblin/moblin_grunt_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>55.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>

@@ -1,25 +1,13 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry">
   <Attack>
     <Melee>
       <AttackName>Club</AttackName>
       <Damage>
-        <Pierce>14.0</Pierce>
+	    <Hack>0</Hack>
+        <Crush>12.0</Crush>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>35</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -30,7 +18,6 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>290</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>25</Chance>
       <SpawnNumberMax>1</SpawnNumberMax>
@@ -45,7 +32,7 @@
   </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Large Class100 BullboRider</Classes>
+    <Classes datatype="tokens">Large BullboRider</Classes>
     <GenericName>Bullbo Rider</GenericName>
     <History>Those smarty little Bulblins they tamed then piggy Bullbos! Now we gots some nice four legs to go against the horses! Send these fast guys in to trample the baddies and load em up with an extra Thug to let them know Blins are the best!</History>
     <Icon>units/moblin/mob_bullborider.dds</Icon>
@@ -59,13 +46,6 @@
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>45.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -83,10 +63,6 @@
       <walk>actor/movement/boar/boar_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1333</RunMultiplier>
-    <WalkSpeed>15.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/moblin/moblin_bullbo_b.xml</Actor>
   </VisualActor>

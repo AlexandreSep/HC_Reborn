@@ -4,8 +4,8 @@
     <Entity>
       <Damage>
         <Crush>25.0</Crush>
-        <Hack>55.0</Hack>
-        <Pierce>45.0</Pierce>
+        <Hack>35.0</Hack>
+        <Pierce>35.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

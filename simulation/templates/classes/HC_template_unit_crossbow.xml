@@ -30,10 +30,10 @@
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>0</food>
+      <food>100</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>0</wood>
+      <wood>60</wood>
     </Resources>
   </Cost>
   <Health>

@@ -1,9 +1,19 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
+  <Melee>
+      <Damage>
+        <Crush>0</Crush>
+      </Damage>
+	  	<Splash>
+        <Damage>
+        <Crush>0</Crush>
+        </Damage>
+      </Splash>
+    </Melee>
     <Ranged>
       <AttackName>Club</AttackName>
       <Damage>
-        <Crush>18</Crush>
+        <Crush>50</Crush>
       </Damage>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
@@ -21,42 +31,26 @@
       <RepeatTime>1700</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>7.0</Crush>
+          <Crush>5.0</Crush>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>5</Range>
         <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
       </Splash>
       <Knockback>
         <Horizontal>20</Horizontal>
-        <Vertical>20</Vertical>
+        <Vertical>2</Vertical>
       </Knockback>
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>0</metal>
-      <stone>55</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="7" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>350</Max>
-  </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Huge Class100 Bigblin Giantblin</Classes>
+    <Classes datatype="tokens">Huge Bigblin Giantblin</Classes>
     <GenericName>Bigblin</GenericName>
     <History>Biggy badass fun time Blin, cousin of the Moblins! The Bigblins are the biggest and the best! When a Bigblin comes out for the fun we all have fun! One Bigblin makes all the baddies go flying around all over, we get the biggest laugh outta that!</History>
     <Icon>units/moblin/mob_bigblin.dds</Icon>
@@ -65,16 +59,6 @@
     <Tooltip>Big Creature with even bigger club to hit the baddies on the head!</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>55.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/impact_generic.xml</attack_impact_ranged>
@@ -91,10 +75,6 @@
       <walk>actor/movement/giantA/giantA_walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4</RunMultiplier>
-    <WalkSpeed>7.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/moblin/moblin_bigblin_b.xml</Actor>
   </VisualActor>

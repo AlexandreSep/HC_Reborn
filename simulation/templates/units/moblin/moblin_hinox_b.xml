@@ -1,14 +1,8 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_mage_heavy">
   <Attack>
     <Ranged>
       <AttackName>Bombs</AttackName>
-      <Damage>
-        <Magic>15</Magic>
-      </Damage>
-      <MaxRange>70.0</MaxRange>
-      <MinRange>5.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
+      <MaxRange>50.0</MaxRange>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
@@ -18,18 +12,9 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>1700</RepeatTime>
-      <Splash>
-        <Damage>
-          <Fire>15.0</Fire>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>8</Range>
-        <Shape>Circular</Shape>
-      </Splash>
       <Knockback>
         <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
+        <Vertical>2</Vertical>
       </Knockback>
       <EffectDelay>0</EffectDelay>
       <Origin>
@@ -39,21 +24,9 @@
       </Origin>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>110</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>180</Max>
-  </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Bombs Huge Class100 Hinox Giantblin</Classes>
+    <Classes datatype="tokens">Bombs Huge Hinox Giantblin</Classes>
     <GenericName>Hinox</GenericName>
     <History>Whoah boy we don't know where these big weirdos came from! Some stupid people lie and say they are part Moblin, part Hylian! That's just silly! Hylians are stupid and the Hinox are cool! They throw big boom bombs at the baddies and make everything go on fire! So fun! Hinox are the best!</History>
     <Icon>units/moblin/mob_hinox.dds</Icon>
@@ -63,13 +36,6 @@
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -95,10 +61,6 @@
       <walk>actor/movement/giantA/giantA_walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4</RunMultiplier>
-    <WalkSpeed>7.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/moblin/moblin_hinox_b.xml</Actor>
   </VisualActor>

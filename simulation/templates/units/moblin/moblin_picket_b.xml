@@ -1,36 +1,23 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
-      <AttackName>Arrows</AttackName>
       <Damage>
-        <Pierce>7</Pierce>
+        <Magic>0</Magic>
+		<Siege>0</Siege>
       </Damage>
-      <MaxRange>76</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
     <BuildTime>9</BuildTime>
     <Resources>
-      <food>30</food>
+      <food>40</food>
       <metal>0</metal>
-      <stone>5</stone>
-      <wood>0</wood>
+      <stone>0</stone>
+      <wood>10</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>100</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
     <Civ>moblin</Civ>
@@ -46,15 +33,6 @@
     <Entity>units/moblin/moblin_picket_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>
@@ -90,10 +68,4 @@
   <VisualActor>
     <Actor>units/moblin/moblin_picket_b.xml</Actor>
   </VisualActor>
-  <Visibility>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
-  </Visibility>
 </Entity>

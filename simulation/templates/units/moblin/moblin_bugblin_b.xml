@@ -1,27 +1,15 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Various</AttackName>
-      <Damage>
-        <Crush>4.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_maceman">
   <Cost>
     <BuildTime>9</BuildTime>
     <Resources>
-      <food>15</food>
+      <food>30</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>0</wood>
+      <wood>20</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>90</Max>
+    <Max>100</Max>
   </Health>
   <Identity>
     <Civ>moblin</Civ>
@@ -38,15 +26,6 @@
     <Entity>units/moblin/moblin_bugblin_upg</Entity>
     <RequiredXp>10</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>3.0</Crush>
-        <Hack>3.0</Hack>
-        <Pierce>3.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>

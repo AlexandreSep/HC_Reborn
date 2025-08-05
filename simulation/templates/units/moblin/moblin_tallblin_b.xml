@@ -1,24 +1,19 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_crossbow">
   <Attack>
     <Ranged>
       <AttackName>Bugblins</AttackName>
       <Damage>
-        <Crush>15.0</Crush>
+	    <Pierce>0</Pierce>
+        <Crush>20</Crush>
       </Damage>
-      <MaxRange>90</MaxRange>
-      <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>2300</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/small_dust_explosion.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.25</ImpactAnimationLifetime>
-        <Speed>50.0</Speed>
-        <Spread>2.0</Spread>
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>3200</RepeatTime>
       <SpawnEntityOnImpact>
         <SpawnNumberMax>1</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>
@@ -40,12 +35,8 @@
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
     <Resources>
-      <food>215</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
+      <food>200</food>
     </Resources>
   </Cost>
   <Footprint>
@@ -53,11 +44,11 @@
     <Height>10.0</Height>
   </Footprint>
   <Health>
-    <Max>300</Max>
+    <Max>200</Max>
   </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Large Class90 Tallblin Bugblin</Classes>
+    <Classes datatype="tokens">Large Tallblin Bugblin</Classes>
     <GenericName>Tallblin Tosser</GenericName>
     <History>So sometimes a Bugb﻿lin gets nice and tall and we call him a Tallblin! Clever na﻿me! These guys throw the little bugblins at the baddies, nice and far and over the walls! Get a few of these guys and we can get past any nasty gate﻿﻿!</History>
     <Icon>units/moblin/mob_tallblin.dds</Icon>
@@ -67,13 +58,6 @@
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>

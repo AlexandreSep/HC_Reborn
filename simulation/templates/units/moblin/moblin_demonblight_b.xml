@@ -1,5 +1,16 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
+  <Melee>
+      <AttackName>Brute Force</AttackName>
+      <Damage>
+        <Crush>0</Crush>
+      </Damage>
+	  	<Splash>
+        <Damage>
+          <Crush>0</Crush>
+        </Damage>
+      </Splash>
+    </Melee>
     <Ranged>
       <AttackName>Sword</AttackName>
       <Damage>
@@ -40,25 +51,13 @@
       </Origin>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>0</metal>
-      <stone>55</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="7" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>350</Max>
-  </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Huge Class100</Classes>
+    <Classes datatype="tokens">Huge </Classes>
     <GenericName>Heavy Assault Unit</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Big dark scary magic makes big dark scary Moblin! Demonblight taller then all the Blins, stronger than all the Blins, scarier than all the blins in the whole world! One Demonblighty guy can take on fifty, no, one hundred shiny Hylian knights! That's right, one hundred!</History>
@@ -73,9 +72,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>15.0</Crush>
-        <Hack>55.0</Hack>
-        <Pierce>65.0</Pierce>
+        <Magic>50</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>
@@ -96,11 +93,6 @@
       <walk>actor/movement/demonblight/demonblight_walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>1.3076</RunMultiplier>
-    <WalkSpeed>6.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/moblin/moblin_demonblight_b.xml</Actor>
   </VisualActor>

@@ -1,40 +1,14 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fists</AttackName>
-      <Damage>
-        <Crush>15.0</Crush>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>80</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_monster">
   <Footprint>
     <Circle radius="5.0" />
     <Height>5.0</Height>
   </Footprint>
   <Health>
     <IdleRegenRate>1</IdleRegenRate>
-    <Max>450</Max>
   </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Large Class80 Bugblin</Classes>
+    <Classes datatype="tokens">Large Bugblin</Classes>
     <GenericName>Bokonox</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>So one day a dumb Hinox and a Dumb Bugblin decided to make a baby! So gross! But look at what they made! Big dummy Bokonox! They are slow yeah that's true, but they are pretty good at takin the big bad beating from the baddies! Send em in first to get hit and we all come in after to hit back!</History>
@@ -45,16 +19,6 @@
     <Tooltip>Only cool boss Glutko can make these guys! Big bad Creature unit can take seriously lots of hits before he goes down!</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/bash_generic.xml</attack_melee>
@@ -71,9 +35,7 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>1.2857</RunMultiplier>
-    <WalkSpeed>3.5</WalkSpeed>
+    <PassabilityClass>aquatic</PassabilityClass>
   </UnitMotion>
   <VisualActor>
     <Actor>units/moblin/moblin_bokonox_b.xml</Actor>

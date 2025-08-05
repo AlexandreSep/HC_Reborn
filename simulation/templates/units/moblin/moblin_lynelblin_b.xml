@@ -1,32 +1,8 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear.</AttackName>
-      <Damage>
-        <Pierce>17</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>90</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_cavalryanti_heavy">
   <Footprint>
     <Circle radius="4" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>400</Max>
-  </Health>
   <Identity>
     <Civ>moblin</Civ>
     <Classes datatype="tokens">Large Class90 UniqueUnit Giantblin</Classes>
@@ -41,13 +17,6 @@
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>60.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <ResourceGatherer>

@@ -3,9 +3,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>6.0</Crush>
-        <Hack>6.0</Hack>
-        <Pierce>6.0</Pierce>
+        <Crush>20</Crush>
+        <Hack>25</Hack>
+        <Pierce>25</Pierce>
       </Damage>
     </Entity>
   </Resistance>
