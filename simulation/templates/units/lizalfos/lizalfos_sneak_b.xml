@@ -1,29 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Dagger</AttackName>
-      <Damage>
-        <Hack>2.0</Hack>
-        <Pierce>5</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>150</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_scout">
   <Identity>
     <AIBuild>
       <MaxCopies>3</MaxCopies>
@@ -40,15 +15,6 @@
     <Tooltip>Stealthed Scout unit that can detect other Stealthed and Camouflaged units.</Tooltip>
     <VisibleClasses datatype="tokens">Scout</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -71,9 +37,5 @@
     <Stealth>
       <RevealOnAttackDelay>3000</RevealOnAttackDelay>
     </Stealth>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
   </Visibility>
 </Entity>

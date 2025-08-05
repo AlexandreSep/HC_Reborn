@@ -1,32 +1,22 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_Knight">
   <Attack>
     <Melee>
       <AttackName>Fire Sword</AttackName>
       <Damage>
-        <Hack>10.0</Hack>
-        <Magic>10</Magic>
+        <Hack>6.0</Hack>
+        <Magic>6.0</Magic>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
+	  <Splash>
+	    <Damage>
+         <Hack>2.0</Hack>
+         <Magic>2.0</Magic>
+		</Damage>
+       </Splash>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>380</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class70 Volvamight Lizarmored</Classes>
+    <Classes datatype="tokens">Medium Volvamight Lizarmored</Classes>
     <GenericName>Unique Unit</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Matrons were the head mothers of a given Clutch and thus owned all labor and soldiers belonging to their family line. When threatened by any enemy the Matron would bring a powerful flaming sword with her into battle, igniting anything she attacked on fire.</History>
@@ -38,15 +28,6 @@
     <Tooltip>Talik's Unique Unit. Poweful Melee unit armed with a flaming sword.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

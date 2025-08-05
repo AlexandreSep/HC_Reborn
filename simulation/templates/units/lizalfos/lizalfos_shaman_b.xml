@@ -15,20 +15,20 @@
     units/shaman_aura_1
   </Auras>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>40</food>
-      <metal>0</metal>
-      <stone>40</stone>
+      <food>200</food>
+      <metal>50</metal>
+      <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>310</Max>
+    <Max>300</Max>
   </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class90 Volvamight</Classes>
+    <Classes datatype="tokens">Medium Volvamight</Classes>
     <GenericName>Shaman</GenericName>
     <History>After settling in the Faron Woods these Shamans became the dominant sect in Lizalfos religion. Day in and out they go about chanting and dancing, encouraging tithes and sacrifices in order to appease the various gods and prevent disaster.</History>
     <Icon>units/lizalfos/liz_shaman.dds</Icon>
@@ -41,9 +41,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>5.0</Crush>
+        <Crush>20.0</Crush>
         <Hack>20.0</Hack>
-        <Pierce>25.0</Pierce>
+        <Pierce>20.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>75</KnockbackResistance>

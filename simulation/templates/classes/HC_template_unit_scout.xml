@@ -1,7 +1,7 @@
 <Entity parent="template_unit">
   <Attack>
   <Melee>
-      <AttackName>Sword</AttackName>
+      <AttackName>Sidearm</AttackName>
       <Damage>
         <Hack>4</Hack>
       </Damage>

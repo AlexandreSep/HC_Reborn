@@ -1,31 +1,7 @@
 <Entity parent="HC_template_unit_auxiliary">
-  <Attack>
-    <Melee>
-      <AttackName>Dagger</AttackName>
-      <Damage>
-        <Hack>17.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>55</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>250</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class100 Volvamight Lizarmored UniqueUnit</Classes>
+    <Classes datatype="tokens">Medium Volvamight Lizarmored UniqueUnit</Classes>
     <GenericName>Songsayer</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Song Sayers were female Lizalfos destined to take command of their male counterparts. Still quite young, the Song Sayers practiced their infamous technique to control Lizalfos men: the Whisper Song. When backed into a corner they could kill their assailant with a wicked dagger.</History>
@@ -36,16 +12,6 @@
     <Tooltip>Nardu's Unique Unit. Support unit that can briefly turn enemy units against their masters.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <DodgeRating>25.0</DodgeRating>
-        <Hack>10.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

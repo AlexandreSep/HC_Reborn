@@ -1,9 +1,20 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
+  <Melee>
+      <Damage>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>0</MaxRange>
+      <Splash>
+        <Damage>
+          <Crush>0</Crush>
+        </Damage>
+      </Splash>
+  </Melee>
     <Ranged>
       <AttackName>Fangs</AttackName>
       <Damage>
-        <Crush>20.0</Crush>
+        <Crush>50.0</Crush>
       </Damage>
       <MaxRange>12.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -32,21 +43,11 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>150</food>
-      <metal>0</metal>
-      <stone>100</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="12.0" />
     <Height>20.0</Height>
   </Footprint>
   <Health>
-    <Max>450</Max>
     <SpawnOnInterval>
       <one>
         <Interval>10000</Interval>
@@ -60,7 +61,7 @@
   </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Huge Class40 Helmqueen</Classes>
+    <Classes datatype="tokens">Huge Helmqueen</Classes>
     <GenericName>Helmasaur Queen</GenericName>
     <History>One of the many females in the harem of the Helmasaur King, these members of the wicked Helmasaurs were in charge of laying clutches of eggs and teaching the newborns to hunt. A Helmasaur Queen was large and slow, but she could spawn baby Helmasaurs to follow her around in battle.</History>
     <Icon>units/lizalfos/liz_helmqueen.dds</Icon>
@@ -71,13 +72,6 @@
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>65.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -95,10 +89,6 @@
       <walk>actor/movement/giant/giant_walkB.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.8461</RunMultiplier>
-    <WalkSpeed>6.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_helmasaurqueen_b.xml</Actor>
   </VisualActor>

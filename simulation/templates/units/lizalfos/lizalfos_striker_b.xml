@@ -1,31 +1,14 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
+<Entity parent="classes/HC_template_unit_spearman_heavy">
+<Attack>
+    <Melee>    
       <Damage>
-        <Pierce>13.0</Pierce>
+        <Hack>0</Hack>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>40</food>
-      <metal>0</metal>
-      <stone>40</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>310</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class90 Volvamight Striker Lizarmored Axetails</Classes>
+    <Classes datatype="tokens">Medium Volvamight Striker Lizarmored Axetails</Classes>
     <GenericName>Chameleofos Striker</GenericName>
     <History>A warrior class of the Faron Chameleofos, the Striker was suited in armor and carried a spear into battle. Their natural camouflage allowed them to hide and ambush enemies.</History>
     <Icon>units/lizalfos/liz_striker.dds</Icon>
@@ -40,13 +23,6 @@
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>55.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>

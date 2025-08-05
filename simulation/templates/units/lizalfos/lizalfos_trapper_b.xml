@@ -1,37 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>11</Pierce>
-      </Damage>
-      <MaxRange>76</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>180</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_archer">
   <Identity>
     <Civ>lizalfos</Civ>
     <Classes datatype="tokens">Medium BasicSoldier Volvamight Okrablood_trap Trapper</Classes>
@@ -43,15 +10,6 @@
     <Tooltip>Missile unit armed with a bow and poison arrows.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/bow_lizalfos_fire.xml</attack_ranged>
@@ -67,10 +25,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5384</RunMultiplier>
-    <WalkSpeed>13.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_trapper_b.xml</Actor>
   </VisualActor>

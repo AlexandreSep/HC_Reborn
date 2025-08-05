@@ -1,24 +1,13 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siegecannon">
   <Attack>
     <Ranged>
       <AttackName>Cow Corpse</AttackName>
-      <Damage>
-        <Crush>300.0</Crush>
-      </Damage>
-      <MaxRange>110.0</MaxRange>
-      <MinRange>45.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>4000</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/small_dust_explosion.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.25</ImpactAnimationLifetime>
-        <Speed>37.5</Speed>
-        <Spread>3.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>4500</RepeatTime>
       <SpawnEntityOnImpact>
         <SpawnNumberMax>1</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>
@@ -34,25 +23,9 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>190</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="12.0" width="8.0" />
-  </Footprint>
-  <Health>
-    <Max>600</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">-Organic Construct Large Class40</Classes>
+    <Classes datatype="tokens"> Construct Large </Classes>
     <GenericName>Carcass Launcher</GenericName>
     <History>Although Lizalfos were more than eager to tear down enemy walls, they often took pleasure in drawing the enemy out of their defenses. To accomplish such a task they would lob the diseased corpses of cows and other animals into enemy cities and fortifications. </History>
     <Icon>units/lizalfos/liz_carcasslauncher.dds</Icon>
@@ -61,13 +34,6 @@
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>5.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>

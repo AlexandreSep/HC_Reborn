@@ -1,35 +1,16 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
     <Melee>
       <AttackName>Shell</AttackName>
-      <Damage>
-        <Crush>7.0</Crush>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>85</food>
-      <metal>0</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="10.0" />
     <Height>10.0</Height>
   </Footprint>
-  <Health>
-    <Max>550</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Large Class90 Heatoise</Classes>
+    <Classes datatype="tokens">Large Heatoise</Classes>
     <GenericName>Heatoise</GenericName>
     <History>Once a native to Turtle Rock on Death Mountain, the Heatoise suffered a similar fate to the rest of the Lizalfos and was driven from their homelands by the Gorons. A Heatoise has the invaluable trait of being able to survive extremely hot conditions and is immune to all fire. They also are decent, if clumsy, swimmers.</History>
     <Icon>units/lizalfos/liz_heatoise.dds</Icon>
@@ -42,9 +23,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>70.0</Crush>
-        <Hack>45.0</Hack>
-        <Pierce>70.0</Pierce>
+        <Crush>70</Crush>
+        <Hack>70</Hack>
+        <Pierce>70</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>
@@ -66,8 +47,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.7777</RunMultiplier>
-    <WalkSpeed>4.5</WalkSpeed>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>6</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_heatoise_b.xml</Actor>

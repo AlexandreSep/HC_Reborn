@@ -1,40 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Poison Breath</AttackName>
-      <Damage>
-        <Magic>20</Magic>
-      </Damage>
-      <MaxRange>100</MaxRange>
-      <MinRange>5.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1700</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>25</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>180</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_mage">
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class80 Volvamight</Classes>
+    <Classes datatype="tokens">Medium Volvamight</Classes>
     <GenericName>Iguanalfos</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The Iguanalfos are one of the more recent breeds of Lizalfos to surface in Hyrule. Believed to be the products of Lizalfos and Dinolfos mating with venomous reptiles native to Faron, the Iguanalfos can hurl a poisonous vat of venom from a fair distance at their targets. Unfortunate victims would often become fatally ill hours after being soaked by their toxic spray.</History>
@@ -49,8 +16,8 @@
     <Entity>
       <Damage>
         <Crush>20.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>35.0</Pierce>
+        <Hack>20</Hack>
+        <Pierce>20</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>75</KnockbackResistance>
@@ -70,10 +37,6 @@
       <walk>actor/movement/immortal/immortal_hover.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2</RunMultiplier>
-    <WalkSpeed>7.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_iguanalfos_b.xml</Actor>
   </VisualActor>

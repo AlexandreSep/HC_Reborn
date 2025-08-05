@@ -1,32 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>13.0</Hack>
-        <Pierce>3</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>380</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class70 Volvamight Dinofootman Lizarmored Axetails</Classes>
+    <Classes datatype="tokens">Medium Volvamight Dinofootman Lizarmored Axetails</Classes>
     <GenericName>Dinolfos Footman</GenericName>
     <History>Wearing a suit of armor based on the old Volvagian designs, Dinolfos Footmen were the last remnants of the Lizalfos’ ancient Death Mountain empire. Though but a shadow of their ancestors, they were still deadly warriors in battle and posed a much more durable threat than their unarmored kin.</History>
     <Icon>units/lizalfos/liz_footman.dds</Icon>
@@ -41,13 +16,6 @@
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>0</KnockbackResistance>
   </Resistance>
   <Sound>

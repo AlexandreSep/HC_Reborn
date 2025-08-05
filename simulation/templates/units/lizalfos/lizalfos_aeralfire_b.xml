@@ -1,44 +1,16 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_mage">
   <Attack>
     <Ranged>
       <AttackName>Fire Breath</AttackName>
-      <Damage>
-        <Magic>20</Magic>
-      </Damage>
-      <MaxRange>100</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1700</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>25</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="3.0" />
     <Height>10.0</Height>
   </Footprint>
-  <Health>
-    <Max>180</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class80 Volvamight Flying UniqueUnit</Classes>
+    <Classes datatype="tokens">Medium Volvamight Flying UniqueUnit</Classes>
     <GenericName>Fiery Aeralfos</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A special Aeralfos that could breath and spew fireballs from its mouth. A Fiery Aeralfos could attack and bombard enemies from a distance, making them extremely difficult to catch and kill without the proper ranged weaponry.</History>
@@ -55,13 +27,6 @@
     <Floating>true</Floating>
   </Position>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -81,8 +46,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
-    <RunMultiplier>1.1428</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
+    <RunMultiplier>2</RunMultiplier>
+    <WalkSpeed>10</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_aeral_fiery_b.xml</Actor>

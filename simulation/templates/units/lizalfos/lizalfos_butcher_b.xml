@@ -1,32 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Attack>
     <Melee>
       <AttackName>Axe</AttackName>
-      <Damage>
-        <Hack>10.0</Hack>
-        <Pierce>2</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>260</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class100 Volvamight Butcher Axetails</Classes>
+    <Classes datatype="tokens">Medium Volvamight Butcher Axetails</Classes>
     <GenericName>Dinolfos Butcher</GenericName>
     <History>The Dinolfos were a larger breed of Lizalfos that claimed to have Volvagian ancestry in their blood. There may have been some truth to this, seeing as they could spew fireballs from their mouths and felt perfectly comfortable in extreme heat. In battle the Butchers would cleave their targets apart with axes, assuming they failed to toast their victim with fire breath.</History>
     <Icon>units/lizalfos/liz_butcher.dds</Icon>
@@ -40,15 +20,6 @@
     <Entity>units/lizalfos/lizalfos_butcher_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>45.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

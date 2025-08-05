@@ -21,7 +21,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>260</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
     <Civ>lizalfos</Civ>
@@ -39,9 +39,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>50.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>40.0</Pierce>
+        <Crush>20.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>20.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>

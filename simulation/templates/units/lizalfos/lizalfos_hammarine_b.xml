@@ -1,32 +1,13 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_maceman_heavy">
   <Attack>
     <Melee>
       <AttackName>Hammer</AttackName>
-      <Damage>
-        <Crush>25.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>0</metal>
-      <stone>55</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="5" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>350</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
     <Classes datatype="tokens">Medium Class100 Volvamight Hammarine Lizarmored</Classes>
@@ -44,13 +25,6 @@
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>55.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>50</KnockbackResistance>
   </Resistance>
   <Sound>

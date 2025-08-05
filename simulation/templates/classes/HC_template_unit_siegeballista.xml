@@ -1,0 +1,82 @@
+<Entity parent="HC_template_unit_auxiliary">
+  <Attack>
+    <Ranged>
+	<AttackName>Spear Bolts</AttackName>
+      <Damage>
+        <Pierce>50</Pierce>
+		<Siege>50</Siege>
+      </Damage>
+	  <Knockback>
+        <Horizontal>30</Horizontal>
+      </Knockback>
+      <MaxRange>80</MaxRange>
+      <MinRange>20</MinRange>
+      <PreferredClasses datatype="tokens">Structure Creature</PreferredClasses>
+      <PrepareTime>2000</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+         <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+        <Speed>120.0</Speed>
+        <Spread>1.5</Spread>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3" />
+      </Projectile>
+      <RepeatTime>4000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>5.0</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Linear</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+    <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>0</food>
+      <metal>0</metal>
+      <stone>100</stone>
+      <wood>150</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="12.0" width="8.0" />
+  </Footprint>
+    <Health>
+    <Max>400</Max>
+  </Health>
+	<Identity>
+    <Classes datatype="tokens">-Organic Construct</Classes>
+    <GenericName>Auxiliary</GenericName>
+    <Tooltip></Tooltip>
+    <VisibleClasses datatype="tokens">Support</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>20.0</Hack>
+        <Pierce>20.0</Pierce>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+  </UnitAI>
+  <UnitMotion>
+	<RunMultiplier>1.5</RunMultiplier>
+	<WalkSpeed>6.0</WalkSpeed>
+  </UnitMotion>
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
+</Entity>

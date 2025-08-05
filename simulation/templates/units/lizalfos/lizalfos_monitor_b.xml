@@ -1,35 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>13.0</Hack>
-        <Pierce>3.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>20</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>350</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_commander">
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Class80 Volvamight Battlescar Monitor</Classes>
+    <Classes datatype="tokens">Medium Volvamight Battlescar Monitor</Classes>
     <GenericName>Monitor</GenericName>
     <History>Lizalfos Monitors were assigned to watch over and assure that all other soldiers were performing their orders in battle. With a large and colorful display of feathers signifying their rank, a Monitor was never questioned by those under his command.</History>
     <Icon>units/lizalfos/liz_monitor.dds</Icon>
@@ -39,15 +11,6 @@
     <Tooltip>Commander unit that improves the performance of other Lizalfos.</Tooltip>
     <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

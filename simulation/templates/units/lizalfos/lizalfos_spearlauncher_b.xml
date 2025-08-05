@@ -1,50 +1,18 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siegeballista">
   <Attack>
     <Ranged>
-      <AttackName>Spear Bolts</AttackName>
       <Damage>
-        <Pierce>100.0</Pierce>
 		<TrueDamage>0.0</TrueDamage>
       </Damage>
-      <Knockback>
-        <Horizontal>30</Horizontal>
-      </Knockback>
-      <MaxRange>110.0</MaxRange>
-      <MinRange>45.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>2000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
-        <Speed>120.5</Speed>
-        <Spread>3.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>5000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
+	 </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>190</wood>
-    </Resources>
-  </Cost>
   <Footprint replace="">
     <Height>3.0</Height>
     <Square depth="12.0" width="8.0" />
   </Footprint>
-  <Health>
-    <Max>450</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">-Organic Construct Large Class40 Poisonspear</Classes>
+    <Classes datatype="tokens"> Construct Large Poisonspear</Classes>
     <GenericName>Poison Spear Launcher</GenericName>
     <History>A quick and easily deployed weapon, the Poison Spear Launcher was a favorite tool of the Lizalfos. A spear from this small ballista could puncture through large creatures, monsters, and even buildings well enough.</History>
     <Icon>units/lizalfos/liz_spearlauncher.dds</Icon>
@@ -52,16 +20,6 @@
     <Tooltip>Siege engine that launches large poison bolts at its targets.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>5.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>

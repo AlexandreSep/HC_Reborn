@@ -1,6 +1,19 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_Knight">
   <Attack>
-    <Ranged>
+	<Melee>
+      <AttackName>Sword</AttackName>
+      <Damage>
+        <Hack>0</Hack>
+      </Damage>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+	  	  <Splash>
+        <Damage>
+          <Hack>0</Hack>
+        </Damage>      
+        <Range>0</Range>
+      </Splash>
+    </Melee>
+	<Ranged>
       <AttackName>Ball and Chain</AttackName>
       <Damage>
         <Crush>18</Crush>
@@ -38,9 +51,9 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>75</food>
+      <food>200</food>
       <metal>0</metal>
-      <stone>55</stone>
+      <stone>100</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
@@ -49,11 +62,11 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>350</Max>
+    <Max>500</Max>
   </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Large Class100 Volvamight Darkhammer Lizarmored</Classes>
+    <Classes datatype="tokens">Large Volvamight Darkhammer Lizarmored</Classes>
     <GenericName>Darkhammer</GenericName>
     <History>Stocky and bulky breeds of Dinolfos, the Darkhammers may not have been as fast as their brothers but they were brutal monsters in battle. Wielding a giant Ball and Chain, a lone Darkhammer can smash and rupture enemy armor with one mighty swing as well as knock down the foundations of structures with ease.</History>
     <Icon>units/lizalfos/liz_darkhammer.dds</Icon>
@@ -64,13 +77,6 @@
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>55.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -90,8 +96,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>1.1818</RunMultiplier>
-    <WalkSpeed>5.5</WalkSpeed>
+    <RunMultiplier>1.5</RunMultiplier>
+    <WalkSpeed>7</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_darkhammer_b.xml</Actor>

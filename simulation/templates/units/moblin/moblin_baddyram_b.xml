@@ -9,7 +9,7 @@
   </Decay>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">-Organic Construct Ram  Baddyram Bugblin</Classes>
+    <Classes datatype="tokens"> Construct Ram  Baddyram Bugblin</Classes>
     <GenericName>Bugblin Baddy Ram</GenericName>
     <History>Crafty little Bugblins they made a pretty cool big stick to knock down the gates! Get one of these beauty sticks out and take down them walls and houses!</History>
     <Icon>units/moblin/mob_baddyram.dds</Icon>

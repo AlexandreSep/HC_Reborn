@@ -1,31 +1,16 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beast">
   <Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
       <Damage>
-        <Pierce>7.0</Pierce>
+	    <Hack>0.0</Hack>
+        <Pierce>4.0</Pierce>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>7</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>75</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Small Class100 Okrablood_rope Rope</Classes>
+    <Classes datatype="tokens">Small Okrablood_rope Rope</Classes>
     <GenericName>Rope</GenericName>
     <History>A small snake like creature, Ropes were very fragile but could be bred in huge swarms. Their ability to traverse any terrain made them a very nasty surprise for enemies ambushed by them in unexpected locations.</History>
     <Icon>units/lizalfos/liz_rope.dds</Icon>
@@ -35,15 +20,6 @@
     <Tooltip>Small Melee Creature who can move over any terrain.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/rope_bite.xml</attack_melee>
@@ -59,10 +35,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2</RunMultiplier>
-    <WalkSpeed>7.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_rope_b.xml</Actor>
   </VisualActor>

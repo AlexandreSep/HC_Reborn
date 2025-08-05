@@ -1,32 +1,13 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry">
   <Attack>
     <Melee>
       <AttackName>Axe</AttackName>
-      <Damage>
-        <Pierce>14.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
       <Stun>
         <Chance>0</Chance>
         <Time>1000</Time>
       </Stun>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>35</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>290</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
     <Classes datatype="tokens">Large Class100 Helmtracker</Classes>
@@ -40,13 +21,6 @@
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>45.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -64,10 +38,6 @@
       <walk>actor/movement/boar/boar_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3076</RunMultiplier>
-    <WalkSpeed>13.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/lizalfos/lizalfos_helmasaur_b.xml</Actor>
   </VisualActor>

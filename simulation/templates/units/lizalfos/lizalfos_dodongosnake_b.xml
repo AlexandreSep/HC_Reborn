@@ -1,41 +1,11 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fangs</AttackName>
-      <Bonuses>
-        <BonusSmall>
-          <Classes>Small</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusSmall>
-      </Bonuses>
-      <Damage>
-        <Crush>25.0</Crush>
-      </Damage>
-      <MaxRange>7.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1375</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_beastramsmall">
   <Footprint>
     <Circle radius="10.0" />
     <Height>10.0</Height>
   </Footprint>
-  <Health>
-    <Max>380</Max>
-  </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Large Class90 Dodongosnake</Classes>
+    <Classes datatype="tokens">Large Dodongosnake</Classes>
     <GenericName>Dodongo Snake</GenericName>
     <History>The larval form of Trinexx, Dodongo Snakes spent most of their young lives harmlessly digging deep in the earth and eating rocks. As they got larger, the Lizalfos could train them to eat more than just rocks.</History>
     <Icon>units/lizalfos/liz_dodongosnake.dds</Icon>
@@ -46,12 +16,6 @@
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>

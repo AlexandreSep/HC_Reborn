@@ -1,42 +1,35 @@
 <Entity parent="template_unit">
   <Attack>
-  <Melee>
-      <AttackName>Sword</AttackName>
+    <Melee>
+      <AttackName>Dagger</AttackName>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Commander Hero</Classes>
+          <Multiplier>10.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
       <Damage>
-        <Hack>12</Hack>
+        <Crush>0</Crush>
+        <Hack>8</Hack>
+        <Pierce>0</Pierce>
       </Damage>
-      <MaxRange>5</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-	  	  <Splash>
-        <Damage>
-          <Hack>3.0</Hack>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>5</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-    </Melee>
-    <Capture>
-      <AttackName>Capture</AttackName>
-      <Capture>2</Capture>
-      <MaxRange>4</MaxRange>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-      <RestrictedClasses datatype="tokens">Field Palisade SiegeWall StoneWall</RestrictedClasses>
-    </Capture>
+    </Melee>
   </Attack>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>30</BuildTime>
     <Resources>
-      <food>150</food>
-      <metal>0</metal>
-      <stone>75</stone>
+      <food>100</food>
+      <metal>75</metal>
+      <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>400</Max>
+    <Max>250</Max>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>
@@ -46,9 +39,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>20</Crush>
-        <Hack>50</Hack>
-        <Pierce>50</Pierce>
+        <Crush>25</Crush>
+        <Hack>25</Hack>
+        <Pierce>25</Pierce>
       </Damage>
     </Entity>
   </Resistance>
@@ -77,7 +70,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>2</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
+    <WalkSpeed>10</WalkSpeed>
   </UnitMotion>
   <Vision>
     <Range>60</Range>
