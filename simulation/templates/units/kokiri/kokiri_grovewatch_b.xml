@@ -1,32 +1,21 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Attack>
     <Melee>
       <AttackName>Axe</AttackName>
-      <Damage>
-        <Hack>8.0</Hack>
-        <Pierce>2</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>30</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>10</wood>
+      <food>70</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>70</Max>
+    <Max>170</Max>
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small WoodArmor FairyGuard Class100 GroveWatcher</Classes>
+    <Classes datatype="tokens">Small WoodArmor FairyGuard GroveWatcher</Classes>
     <GenericName>Grove Watcher</GenericName>
     <History>A dedicated soldier wielding their iconic Kokiri Sword and Deku Shield. These warriors are trained from their creation to guard the Groves of the forest. Unlike most of their kind, their bravery is unmatched and they will fight to the death to protect the forest from invaders.</History>
     <Icon>units/kokiri/kok_grovewatch.dds</Icon>
@@ -40,16 +29,6 @@
     <Entity>units/kokiri/kokiri_grovewatch_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>25</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -65,13 +44,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>70</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_grovewatch_b.xml</Actor>
   </VisualActor>

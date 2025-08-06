@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_swordsman">
   <Attack>
     <Melee>
       <AttackName>Mantis Blades</AttackName>
@@ -8,30 +8,19 @@
           <Multiplier>2.0</Multiplier>
         </BonusCreatureMelee>
       </Bonuses>
-      <Damage>
-        <Hack>7.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Creature</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>10</wood>
+      <food>35</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>45</Max>
+    <Max>100</Max>
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small FairyGuard Mudman Class100 Wolfkiller Muddodge</Classes>
+    <Classes datatype="tokens">Small FairyGuard Mudman Wolfkiller Muddodge</Classes>
     <GenericName>Mudman Wolfkiller</GenericName>
     <History>A particularly violent hunter of the Mudmen Tribe that carries Mantis blades, they are excellent at fighting and slaying Creature units. They are quite well off being out in the wild, and in fact prefer it over the comfort of civilization.</History>
     <Icon>units/kokiri/kok_wolfkiller.dds</Icon>
@@ -48,10 +37,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>20.0</Crush>
         <DodgeRating>20.0</DodgeRating>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>25</KnockbackResistance>
@@ -71,13 +57,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>70</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_mudkiller_b.xml</Actor>
   </VisualActor>

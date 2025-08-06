@@ -1,42 +1,8 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Javelin</AttackName>
-      <Damage>
-        <Pierce>20</Pierce>
-      </Damage>
-      <MaxRange>60</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>3000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>30</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>70</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_crossbow">
   <Footprint>
     <Circle radius="2.0" />
     <Height>3.0</Height>
   </Footprint>
-  <Health>
-    <Max>100</Max>
-  </Health>
   <Identity>
     <Civ>kokiri</Civ>
     <Classes datatype="tokens">Medium FairyGuard Mudman Mantlet</Classes>
@@ -54,13 +20,6 @@
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>75.0</Pierce>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -78,10 +37,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.0476</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/kokiri/kokiri_mantlet_b.xml</Actor>
   </VisualActor>

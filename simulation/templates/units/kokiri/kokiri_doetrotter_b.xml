@@ -1,37 +1,7 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>10.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>70</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>10</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>80</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_cavalryanti">
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Large WoodArmor Deer FairyGuard Class100 DoeTrotter</Classes>
+    <Classes datatype="tokens">Large WoodArmor Deer FairyGuard DoeTrotter</Classes>
     <GenericName>Doe Trotter</GenericName>
     <History>A very fast moving cavalry unit armed with a spear. They excell at intercepting and stopping other enemy cavalry, but are not particularly durable in combat with other unit types. Like their male counterparts they are masters at slipping away from battle and fleeing into the shadows.</History>
     <Icon>units/kokiri/kok_doetrotter.dds</Icon>
@@ -45,16 +15,6 @@
     <Entity>units/kokiri/kokiri_doetrotter_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>50</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -70,13 +30,6 @@
       <walk>actor/movement/horse/horse_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4054</RunMultiplier>
-    <WalkSpeed>18.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_doe_b.xml</Actor>
   </VisualActor>

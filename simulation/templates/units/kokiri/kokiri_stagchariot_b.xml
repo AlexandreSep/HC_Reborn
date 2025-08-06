@@ -1,10 +1,11 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry_heavy">
   <Attack>
     <Melee>
       <AttackName>Ram</AttackName>
       <Damage>
         <Crush>10.0</Crush>
         <Pierce>10.0</Pierce>
+		<Hack>0</Hack>
       </Damage>
       <MaxRange>6.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -12,16 +13,6 @@
       <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>20</metal>
-      <stone>30</stone>
-      <wood>20</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="5.0" />
     <Height>7.0</Height>
@@ -41,7 +32,6 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>100</Max>
     <SpawnGarrison>
       <Template>units/kokiri/kokiri_slingshotter_garrison</Template>
       <SpawnNumber>2</SpawnNumber>
@@ -50,7 +40,7 @@
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Large Deer FairyGuard Class100 GarrisonClass StagChariot</Classes>
+    <Classes datatype="tokens">Large Deer FairyGuard GarrisonClass StagChariot</Classes>
     <GenericName>Stag Chariot</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A light and fast chariot, perhaps inspired by those used by the Hylian Bandits that became the first Kokiri. The Kokiri would occasionally use these chariots to transports supplies, but during a time of war they instead carried soldiers to the battlefield. They were not particularly strong but could be garrisoned with a pair of ranged units to boost their damage output.</History>
@@ -61,16 +51,6 @@
     <Tooltip>Gulley's Unique Unit. Fast Cavalry Support Unit that can garrison other units inside.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -86,13 +66,6 @@
       <walk>actor/movement/cart/cart_move.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2758</RunMultiplier>
-    <WalkSpeed>14.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_stagchariot_b.xml</Actor>
   </VisualActor>

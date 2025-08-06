@@ -6,9 +6,9 @@
     <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>20</metal>
+      <metal>50</metal>
       <stone>0</stone>
-      <wood>85</wood>
+      <wood>200</wood>
     </Resources>
   </Cost>
   <Footprint>

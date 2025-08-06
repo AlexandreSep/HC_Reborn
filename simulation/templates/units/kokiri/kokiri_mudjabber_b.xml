@@ -1,37 +1,16 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>6.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_spearman">
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>40</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>15</wood>
+      <food>30</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>45</Max>
+    <Max>100</Max>
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small FairyGuard Mudman Class100 MudJabber Muddodge</Classes>
+    <Classes datatype="tokens">Small FairyGuard Mudman MudJabber Muddodge</Classes>
     <GenericName>Mudman Jabber</GenericName>
     <History>A member of the Mudmen Tribe of Faron. These hostile and feral children bring pointy spears to the fray and are quick on their feet. Unlike most Kokiri, the Mudmen love to fight and are more than willing to get their hands a bit bloody.</History>
     <Icon>units/kokiri/kok_mudjabber.dds</Icon>
@@ -45,16 +24,6 @@
     <Entity>units/kokiri/kokiri_mudjabber_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>25</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -70,13 +39,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>70</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_mudspear_b.xml</Actor>
   </VisualActor>

@@ -1,40 +1,20 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_mage_heavy">
   <Attack>
     <Ranged>
       <AttackName>Guardian Fairy</AttackName>
-      <Damage>
-        <Magic>20</Magic>
-      </Damage>
-      <MaxRange>60</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1700</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1800</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>40</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>10</wood>
+      <food>65</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>170</Max>
+    <Max>150</Max>
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small FairyGuard Class100</Classes>
+    <Classes datatype="tokens">Small FairyGuard </Classes>
     <GenericName>Enchantress</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A rare Kokiri magic user who has befriended a pair of rogue Fairies. An Enchantress is often quite old for a Kokiri and they tend to display a mischievous (and sometimes downright mean-spirited) sense of humor. The Enchantress can confuse enemies and deflect ranged attacks back at their attackers.</History>
@@ -49,16 +29,6 @@
     <Entity>units/kokiri/kokiri_enchant_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>20.0</Pierce>
-        <Magic>30</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/magic/witch_wind.xml</attack_ranged>

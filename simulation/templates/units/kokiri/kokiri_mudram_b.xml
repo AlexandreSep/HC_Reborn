@@ -1,31 +1,18 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_siegeram">
   <Attack>
     <Melee>
       <AttackName>Ram</AttackName>
-      <Bonuses>
-        <BonusStructureMelee>
-          <Classes>Structure</Classes>
-          <Multiplier>20.0</Multiplier>
-        </BonusStructureMelee>
-      </Bonuses>
       <Damage>
-        <Crush>5.0</Crush>
+	    <Siege>50.0</Siege>
+        <Crush>5</Crush>
       </Damage>
-      <MaxRange>6.5</MaxRange>
-      <PreferredClasses datatype="tokens">Gates Structure</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2500</RepeatTime>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
     </Melee>
   </Attack>
   <Capturable disable="" />
   <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>20</BuildTime>
     <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>40</wood>
+      <wood>75</wood>
     </Resources>
   </Cost>
   <Decay>
@@ -40,7 +27,7 @@
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">MudRam FairyGuard Mudman Class40</Classes>
+    <Classes datatype="tokens">MudRam FairyGuard Mudman Organic</Classes>
     <History>They may not pack the punch of most siege weapons, but this pair of Mudmen can move quickly and batter down gates with ease. They are quite vulnerable to attacks however and lack any form of armor.</History>
     <Icon>units/kokiri/kok_mudram.dds</Icon>
     <RequiredTechnology>kokiri/get_mudcolony</RequiredTechnology>
@@ -52,16 +39,6 @@
     <Entity>units/kokiri/kokiri_mudram_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>75.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/siege/ram_attack.xml</attack_melee>
@@ -72,13 +49,6 @@
       <trained>attack/siege/ram_trained.xml</trained>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.0476</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>70</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_mudram_b.xml</Actor>
   </VisualActor>

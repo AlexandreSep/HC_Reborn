@@ -1,39 +1,7 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fangs and Claws</AttackName>
-      <Damage>
-        <Hack>7.0</Hack>
-      </Damage>
-      <MaxRange>4.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
-    </Melee>
-    <Slaughter>
-      <RepeatTime>1000</RepeatTime>
-      <AttackName>TBD.</AttackName>
-      <Damage>
-        <Hack>15.0</Hack>
-      </Damage>
-      <MaxRange>4.0</MaxRange>
-    </Slaughter>
-  </Attack>
-  <Cost>
-    <BuildTime>7</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>25</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_beast">
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small Class100 HuntingFox</Classes>
+    <Classes datatype="tokens">Small HuntingFox</Classes>
     <GenericName>Hunting Fox</GenericName>
     <History>A light and fast creature unit employed by the Kokiri to go on hunts. These small foxes can hunt and kill wildlife, gathering food from their kills and bringing it back to storehouses. A mossy green color grows on their backsides, allowing them to hide in the underbrush and ambush their prey.</History>
     <Icon>units/kokiri/kok_huntingfox.dds</Icon>
@@ -42,15 +10,6 @@
     <Tooltip>Quick Creature unit that can hunt for meat.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <BaseSpeed>1.0</BaseSpeed>
     <MaxDistance>2.0</MaxDistance>
@@ -76,13 +35,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2222</RunMultiplier>
-    <WalkSpeed>18.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_huntingfox_b.xml</Actor>
   </VisualActor>

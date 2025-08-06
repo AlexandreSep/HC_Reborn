@@ -1,10 +1,9 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
-      <AttackName>Arrows</AttackName>
       <Damage>
-        <Pierce>5.0</Pierce>
-        <Magic>15</Magic>
+        <Pierce>3.0</Pierce>
+        <Magic>3</Magic>
       </Damage>
       <MaxRange>90</MaxRange>
       <MinRange>15.0</MinRange>
@@ -26,16 +25,16 @@
     <Resources>
       <food>35</food>
       <metal>0</metal>
-      <stone>10</stone>
-      <wood>10</wood>
+      <stone>0</stone>
+      <wood>30</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>70</Max>
+    <Max>60</Max>
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small WoodArmor FairyGuard FairySense EmArcher Class100 CanGarrison</Classes>
+    <Classes datatype="tokens">Small WoodArmor FairyGuard FairySense EmArcher CanGarrison</Classes>
     <GenericName>Emerald Archer</GenericName>
     <History>Emerald Archers represented some of the longest-lived Kokiri, those nearly ready for the transition into a Korok. Armed with a trusty Forest Bow and a keen eye, Emerald Archers could snipe enemies from a very long distance, as well as retreat to safe ground should the enemy close the gap.</History>
     <Icon>units/kokiri/kok_emarcher.dds</Icon>
@@ -52,9 +51,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>40.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
+		<Magic>20</Magic>
       </Damage>
     </Entity>
   </Resistance>
@@ -73,13 +70,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_emarcher_b.xml</Actor>
   </VisualActor>

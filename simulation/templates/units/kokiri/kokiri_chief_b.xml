@@ -1,40 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_commander">
   <Attack>
     <Melee>
       <AttackName>Axe</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Hack>25.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>20</metal>
-      <stone>20</stone>
-      <wood>10</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>100</Max>
-  </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small WoodArmor FairyGuard Class100 KokChief</Classes>
+    <Classes datatype="tokens">Small WoodArmor FairyGuard KokChief</Classes>
     <GenericName>Kokiri Chief</GenericName>
     <History>Chiefs were the leaders of Kokiri villages and armies, bossing around other Kokiri and sending out orders from the Great Deku Tree. When an elder Korok was not around to do the leading, a Chief would fill in for them. Chiefs would carry around an axe and shield into battle and were capable of getting their underlings to run into a fight much faster.</History>
     <Icon>units/kokiri/kok_chief.dds</Icon>
@@ -48,16 +20,6 @@
     <Entity>units/kokiri/kokiri_chief_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>25</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -73,13 +35,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>70</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_chief_b.xml</Actor>
   </VisualActor>

@@ -1,44 +1,30 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
       <AttackName>Deku Seeds</AttackName>
       <Damage>
-        <Crush>4</Crush>
+        <Crush>3</Crush>
       </Damage>
-      <MaxRange>55</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1100</RepeatTime>
       <Stun>
         <Chance>1</Chance>
         <Time>500</Time>
       </Stun>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>30</food>
+      <food>25</food>
       <metal>0</metal>
-      <stone>5</stone>
-      <wood>5</wood>
+      <stone>0</stone>
+      <wood>15</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>35</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small FairyGuard FairySense Sling Class100 CanGarrison Slingshotter</Classes>
+    <Classes datatype="tokens">Small FairyGuard FairySense Sling CanGarrison Slingshotter</Classes>
     <GenericName>Slingshotter</GenericName>
     <History>A short ranged attacker wielding the signature Kokiri Slingshots, they can stun enemies with their attack. Slingshotters might not pack much of a punch but a cluster of them can send enemies spinning in circles.</History>
     <Icon>units/kokiri/kok_slingshotter.dds</Icon>
@@ -51,15 +37,6 @@
     <Entity>units/kokiri/kokiri_slingshotter_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/slingshot.xml</attack_ranged>
@@ -83,13 +60,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>70</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_slingshotter_b.xml</Actor>
   </VisualActor>

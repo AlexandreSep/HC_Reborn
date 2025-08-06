@@ -1,27 +1,23 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_scout">
   <Attack>
     <Melee>
       <AttackName>Deku Stick</AttackName>
       <Damage>
-        <Crush>5.0</Crush>
+	    <Hack>0</Hack>
+        <Crush>4.0</Crush>
       </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>9</BuildTime>
     <Resources>
-      <food>20</food>
+      <food>40</food>
       <metal>0</metal>
       <stone>0</stone>
       <wood>5</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>35</Max>
+    <Max>75</Max>
   </Health>
   <Identity>
     <Civ>kokiri</Civ>
@@ -35,15 +31,6 @@
     <Tooltip>A fast moving Scout unit that can climb over any terrain and Camouflage. Can also detect hidden units.</Tooltip>
     <VisibleClasses datatype="tokens">Scout</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -59,20 +46,7 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1333</RunMultiplier>
-    <WalkSpeed>15.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_explorer_b.xml</Actor>
   </VisualActor>
-  <Visibility>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
-  </Visibility>
 </Entity>

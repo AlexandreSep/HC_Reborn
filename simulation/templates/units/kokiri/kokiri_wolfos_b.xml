@@ -1,32 +1,7 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Claws and Fangs</AttackName>
-      <Damage>
-        <Hack>40.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>20</metal>
-      <stone>30</stone>
-      <wood>30</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>160</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_creature">
   <Identity>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Medium Class100 Wolfos</Classes>
+    <Classes datatype="tokens">Medium Wolfos</Classes>
     <GenericName>Wolfos</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The Wolfos are a very violent and bloodthirsty creature native to the Kokiri Forest. They typically operate on their own and will attack anything outside of their pack, even other Wolfos groups. Only a particularly powerful and brave warrior can hope to win their respect and aid in battle.</History>
@@ -40,10 +15,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>30.0</Crush>
         <DodgeRating>40.0</DodgeRating>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>50</KnockbackResistance>
@@ -63,13 +35,6 @@
       <walk>actor/movement/boar/boar_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2571</RunMultiplier>
-    <WalkSpeed>17.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/kokiri/kokiri_wolfos_b.xml</Actor>
   </VisualActor>
