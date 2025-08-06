@@ -1,10 +1,7 @@
-<Entity parent="classes/HC_template_unit_monster">
- <Attack>
+<Entity parent="classes/HC_template_unit_creature">
+<Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
-      <Damage>
-        <Crush>30</Crush>
-      </Damage>
     </Melee>
   </Attack>
   <Footprint>
@@ -12,7 +9,7 @@
     <Height>7.0</Height>
   </Footprint>
   <Health>
-    <Max>500</Max>
+    <Max>150</Max>
   </Health>
   <Identity>
     <Civ>lanayru</Civ>

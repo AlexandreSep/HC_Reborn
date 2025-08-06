@@ -1,14 +1,23 @@
-<Entity parent="classes/HC_template_unit_monster">
-<Attack>
+<Entity parent="classes/HC_template_unit_creature">
+  <Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
-      <Damage>
-        <Crush>60</Crush>
-      </Damage>
+	  <Splash>
+        <Damage>
+          <Hack>3</Hack>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>5</Range>
+        <Shape>Circular</Shape>
+      </Splash>
     </Melee>
   </Attack>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>7.0</Height>
+  </Footprint>
   <Health>
-    <Max>500</Max>
+    <Max>150</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>100</Chance>
       <SameBattalion>true</SameBattalion>

@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_beastrambig">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>
@@ -14,14 +14,11 @@
     <EjectHealth>0.075</EjectHealth>
     <List datatype="tokens">CanGarrison Infantry</List>
     <LoadingRange>6</LoadingRange>
-    <Max>3</Max>
+    <Max>10</Max>
   </GarrisonHolder>
-  <Health>
-    <Max>1000</Max>
-  </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">Hermitid Prawn Huge Class60 GarrisonClass</Classes>
+    <Classes datatype="tokens">Hermitid Prawn Huge GarrisonClass</Classes>
     <GenericName>Hermitid</GenericName>
     <History>A very large creature possibly related to the Praddle Prawns, the Hermitid is a slow moving monster with a very durable and giant shell. All but the most powerful of blunt weaponry and magic can break through the creature's thick armor. The slow moving speed of the Hermitid makes it a poor combatant, but a group of soldiers can ride inside its shell protected from enemy attacks.</History>
     <Icon>units/lanayru/lan_hermitid.dds</Icon>
@@ -34,15 +31,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>60.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>60.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/siege/ram_attack.xml</attack_ranged>

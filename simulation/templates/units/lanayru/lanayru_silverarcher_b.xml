@@ -2,8 +2,8 @@
   <Attack>
     <Ranged>
       <AttackName>Silver Arrows</AttackName>
-      <TrueDamage>30</TrueDamage>
 	  <Damage>
+	<TrueDamage>6</TrueDamage>
         <Pierce>0</Pierce>
       </Damage>
     </Ranged>
