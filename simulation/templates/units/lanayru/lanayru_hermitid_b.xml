@@ -1,29 +1,9 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beastrambig">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>
-      <Damage>
-        <Crush>16.0</Crush>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>145</food>
-      <metal>0</metal>
-      <stone>60</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="12.0" />
     <Height>20.0</Height>
@@ -37,7 +17,7 @@
     <Max>3</Max>
   </GarrisonHolder>
   <Health>
-    <Max>840</Max>
+    <Max>1000</Max>
   </Health>
   <Identity>
     <Civ>lanayru</Civ>
@@ -59,10 +39,9 @@
       <Damage>
         <Crush>60.0</Crush>
         <Hack>20.0</Hack>
-        <Pierce>80.0</Pierce>
+        <Pierce>60.0</Pierce>
       </Damage>
     </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>
@@ -81,8 +60,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.2727</RunMultiplier>
-    <WalkSpeed>5.5</WalkSpeed>
+    <WalkSpeed>6</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/lanayru/lanayru_hermitid_b.xml</Actor>

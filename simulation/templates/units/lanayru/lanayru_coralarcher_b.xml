@@ -1,41 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>6</Pierce>
-      </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2300</RepeatTime>
-      <TrueDamage>10</TrueDamage>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>280</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_archer">
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">CoralArcher Volunteers Medium Class100 RalisBonus HarrowBolt</Classes>
+    <Classes datatype="tokens">CoralArcher Volunteers Medium RalisBonus HarrowBolt</Classes>
     <GenericName>Coral Archer</GenericName>
     <History>Armed with infamous coralmold tipped arrows, Lanayru’s Coral Archers were a cheap counter to heavily armored units. In most cases they could level the playing field by softening up heavy armor for Lanayru’s lighter forces to deal with.</History>
     <Icon>units/lanayru/lan_coralarcher.dds</Icon>
@@ -48,15 +14,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/bow_TP_fire.xml</attack_ranged>

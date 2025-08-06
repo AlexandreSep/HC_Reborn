@@ -1,35 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>12.0</Hack>
-        <Pierce>3.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>70</food>
-      <metal>20</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>350</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_commander">
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">Marshal Volunteers SilverShield Medium Class100</Classes>
+    <Classes datatype="tokens">Marshal Volunteers SilverShield Medium </Classes>
     <GenericName>Marshal</GenericName>
     <History>Marshals were soldiers of Lanayru who had actual academic and field experience in battle. With such a large and unprofessional army they were invaluable for guiding troops and directing them in engagements.</History>
     <Icon>units/lanayru/lan_marshal.dds</Icon>
@@ -42,15 +14,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/sword.xml</attack_ranged>

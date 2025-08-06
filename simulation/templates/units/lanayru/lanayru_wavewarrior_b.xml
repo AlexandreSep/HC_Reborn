@@ -1,32 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>17</Hack>
-        <Pierce>4</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>300</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">SilverArmor SilverWeapon WaveWarrior Volunteers Medium Class100</Classes>
+    <Classes datatype="tokens">SilverArmor SilverWeapon WaveWarrior Volunteers Medium </Classes>
     <GenericName>Wave Warrior</GenericName>
     <History>Outfitted with Silverscale mail and armed with a Silver Falcion, the Wave Warriors were Lanayru Province's chief battle unit. They could go toe to toe with their enemies and quickly retreat back to the waters if need be.</History>
     <Icon>units/lanayru/lan_wavewarrior.dds</Icon>
@@ -39,15 +14,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/sword.xml</attack_ranged>

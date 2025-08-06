@@ -1,38 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_spearman_heavy">
   <Attack>
     <Melee>
       <AttackName>Crescent Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Hack>8.0</Hack>
-        <Pierce>8.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>350</Max>
-  </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">SilverArmor SilverWeapon SilverscaleSlasher Volunteers SilverShield Medium Class100</Classes>
+    <Classes datatype="tokens">SilverArmor SilverWeapon SilverscaleSlasher Volunteers SilverShield Medium </Classes>
     <GenericName>Silverscale Slasher</GenericName>
     <History>Carrying a ceremonial crescent and wearing a coat of Silver armor, the Silverscale Slashers were more for show than practical use. They often were used to guard the Throne of Airu or other important locations. Since the ceremonial crescent was originally intended for hunting and sacrificing small animals and was not practical against armored enemies, a spear tip was added to the other end of their elegant weapons to fight off invaders.</History>
     <Icon>units/lanayru/lan_silverslasher.dds</Icon>
@@ -45,15 +19,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

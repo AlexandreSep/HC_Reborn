@@ -1,41 +1,25 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
       <AttackName>Silver Arrows</AttackName>
-      <Damage>
-        <Pierce>10</Pierce>
-      </Damage>
-      <MaxRange>80</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>3000</RepeatTime>
       <TrueDamage>30</TrueDamage>
-      <EffectDelay>0</EffectDelay>
+	  <Damage>
+        <Pierce>0</Pierce>
+      </Damage>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>110</food>
-      <metal>20</metal>
-      <stone>25</stone>
-      <wood>0</wood>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>30</stone>
+      <wood>30</wood>
     </Resources>
   </Cost>
-  <Health>
-    <Max>450</Max>
-  </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">SilverArmor SilverWeapon Volunteers Medium Class100 UniqueUnit HarrowBolt</Classes>
+    <Classes datatype="tokens">SilverArmor SilverWeapon Volunteers Medium  UniqueUnit HarrowBolt</Classes>
     <GenericName>Silver Archer</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History> Hunters of massive and titanic beasts across Hyrule, the secret of the Silver Archer lies in their arrows. A single Silver Arrow could wound many of the giant monsters across Hyrule, usually the larger they were the harder they would fall. As such, the Silver Archer's attack scaled in power with the size of its target. Regardless of size, a Silver Arrow could puncture through all but Magic armor.</History>
@@ -52,9 +36,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>25.0</Pierce>
+        <Crush>20</Crush>
+        <Hack>30</Hack>
+        <Pierce>30</Pierce>
       </Damage>
     </Entity>
   </Resistance>

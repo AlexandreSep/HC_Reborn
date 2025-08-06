@@ -1,36 +1,14 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
+<Entity parent="classes/HC_template_unit_monster">
+<Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
       <Damage>
-        <Hack>8</Hack>
-        <Pierce>15.0</Pierce>
+        <Crush>60</Crush>
       </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="5.0" />
-    <Height>7.0</Height>
-  </Footprint>
   <Health>
-    <Max>350</Max>
+    <Max>500</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>100</Chance>
       <SameBattalion>true</SameBattalion>

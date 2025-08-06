@@ -1,36 +1,10 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fangs</AttackName>
-      <Damage>
-        <Hack>8</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>120</food>
-      <metal>0</metal>
-      <stone>40</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_monster">
   <Footprint>
     <Circle radius="5.0" />
     <Height>7.0</Height>
   </Footprint>
   <Health>
-    <Max>350</Max>
+  <Max>500</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>100</Chance>
       <SameBattalion>true</SameBattalion>
@@ -41,7 +15,7 @@
   </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">Large Class100 Gleeockling_base</Classes>
+    <Classes datatype="tokens">Large Gleeockling_base</Classes>
     <GenericName>Gleeokling</GenericName>
     <History>Offspring of the legendary Gleeok Dragon, these semi-aquatic creatures are some of the only dragons left in Hyrule. Lanayru Province has gone through great efforts to tame these beasts and use their power to aid their military. A Gleeokling has multiple heads on its body which will continually regenerate if one is lost. A Gleeokling can survive and heal any injury so long as one of its heads remains attached to its body; thus the only way to slay this creature is to decapitate all of its heads.</History>
     <Icon>units/lanayru/lan_gleeockling_2.dds</Icon>
@@ -58,16 +32,6 @@
     <Entity>units/lanayru/lanayru_gleeoklingB_3</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -83,8 +47,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.2</RunMultiplier>
-    <WalkSpeed>7.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/lanayru/lanayru_gleeockling2_b.xml</Actor>

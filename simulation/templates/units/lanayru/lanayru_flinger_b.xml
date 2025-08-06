@@ -1,15 +1,21 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siegecannon">
   <Attack>
     <Ranged>
       <AttackName>Shrapnel</AttackName>
       <Damage>
-        <Crush>300.0</Crush>
+        <Crush>0</Crush>
       </Damage>
-      <MaxRange>110.0</MaxRange>
-      <MinRange>45.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>7000</PrepareTime>
-      <Projectile>
+	  <Splash>
+        <Damage>
+          <Crush>0</Crush>
+		  <Pierce>50</Pierce>
+        </Damage>
+        <FriendlyFire>true</FriendlyFire>
+        <Range>20</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+	  <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
@@ -18,7 +24,6 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>7500</RepeatTime>
       <SpawnEntityOnImpact>
         <SpawnNumberMax>1</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>
@@ -34,25 +39,9 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>190</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="12.0" width="8.0" />
-  </Footprint>
-  <Health>
-    <Max>600</Max>
-  </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">-Organic Construct ShrapnelFlinger Large Class40</Classes>
+    <Classes datatype="tokens"> Construct ShrapnelFlinger Large </Classes>
     <GenericName>Shrapnel Flinger</GenericName>
     <History>Shrapnel Flingers were perhaps the Province’s most infamous weapon, even amongst their own ranks. The catapult would indiscriminately unleash countless jagged shards of razor sharp coralmold, potentially slicing up a dozen soldiers in one volley. Even if the attack completely missed, soldiers could still accidentally step on the resting shards and slice their feet in half.</History>
     <Icon>units/lanayru/lan_flinger.dds</Icon>
@@ -62,16 +51,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>5.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>

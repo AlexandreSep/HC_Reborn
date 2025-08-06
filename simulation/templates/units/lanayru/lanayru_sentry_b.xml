@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_scout">
   <Attack>
     <Melee>
       <AttackName>Spear</AttackName>
@@ -8,28 +8,10 @@
           <Multiplier>2.0</Multiplier>
         </BonusCavMelee>
       </Bonuses>
-      <Damage>
-        <Hack>5.0</Hack>
-        <Pierce>2</Pierce>
-      </Damage>
       <MaxRange>6.0</MaxRange>
       <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>160</Max>
-  </Health>
   <Identity>
     <Civ>lanayru</Civ>
     <Classes datatype="tokens">SilverSpear Medium RalisBonus</Classes>
@@ -49,15 +31,6 @@
     <Entity>units/lanayru/lanayru_sentry_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/arrowfly.xml</attack_melee>
@@ -75,16 +48,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.0967</RunMultiplier>
-    <WalkSpeed>15.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/lanayru/lanayru_shoresentry_b.xml</Actor>
   </VisualActor>
-  <Visibility>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
-  </Visibility>
 </Entity>

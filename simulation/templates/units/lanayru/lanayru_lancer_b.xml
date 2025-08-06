@@ -1,38 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Hack>7.0</Hack>
-        <Pierce>7.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>270</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_spearman">
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">CoralLancer Volunteers SilverSpear Medium Class100 RalisBonus</Classes>
+    <Classes datatype="tokens">CoralLancer Volunteers SilverSpear Medium RalisBonus</Classes>
     <GenericName>Coral Lancer</GenericName>
     <History>Coral Lancers were the Province’s baseline soldier; serving as both a police force and quick response unit to invasions. Armed with a spiky coralmold pole-arm, they were a cheap counter to cavalry and other larger units that their enemies often threw in their direction.</History>
     <Icon>units/lanayru/lan_lancer.dds</Icon>
@@ -49,15 +18,6 @@
     <Entity>units/lanayru/lanayru_lancer_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

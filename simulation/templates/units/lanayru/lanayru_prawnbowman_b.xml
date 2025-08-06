@@ -1,14 +1,21 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry">
   <Attack>
+  <Melee>
+      <Damage>
+        <Hack>0</Hack>
+      </Damage>
+    </Melee>
     <Ranged>
       <AttackName>Arrows</AttackName>
+	  <TrueDamage>0</TrueDamage>
       <Damage>
         <Pierce>6</Pierce>
       </Damage>
-      <MaxRange>76</MaxRange>
-      <MinRange>0</MinRange>
+      <MaxRange>60</MaxRange>
+      <MinRange>10</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1500</PrepareTime>
+	  <RepeatTime>2300</RepeatTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <Speed>75.0</Speed>
@@ -16,26 +23,23 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>2300</RepeatTime>
-      <TrueDamage>10</TrueDamage>
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>16</BuildTime>
     <Resources>
-      <food>70</food>
+	  <food>120</food>
       <metal>0</metal>
-      <stone>40</stone>
-      <wood>0</wood>
-    </Resources>
+      <stone>0</stone>
+      <wood>30</wood>
+	</Resources>
   </Cost>
   <Health>
-    <Max>400</Max>
+    <Max>200</Max>
   </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">PrawnBowman Prawn Large Class100</Classes>
+    <Classes datatype="tokens">PrawnBowman Prawn Large </Classes>
     <GenericName>Prawn Bowman</GenericName>
     <History>The slow moving Praddle Prawns can be found in the shallow waters of the Great Sea, though they migrate across the land every year in large trails. The Zora of Lanayru would capture and domesticate these slow creatures and use them as beasts of burden. While they are quite slow and not ideal for direct combat, their ability to climb rocky inclines and cliffs make them excellent platforms for archers.</History>
     <Icon>units/lanayru/lan_prawnbowman.dds</Icon>
@@ -76,8 +80,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>2.0588</RunMultiplier>
-    <WalkSpeed>8.5</WalkSpeed>
+    <RunMultiplier>2</RunMultiplier>
+    <WalkSpeed>12</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/lanayru/lanayru_prawn_b.xml</Actor>

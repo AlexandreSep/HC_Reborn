@@ -1,32 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Fin Blades</AttackName>
-      <Damage>
-        <Hack>12</Hack>
-        <Pierce>4.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>95</food>
-      <metal>20</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>500</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_Knight">
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">Volunteers Medium Class100</Classes>
+    <Classes datatype="tokens">Volunteers Medium </Classes>
     <GenericName>Guardian Maiden</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Guardian Maidens were Zora woman who dedicated their lives to protecting the Province, in particular the royal bloodline. Forgoing all material possessions, relationships, and any form of personal lives, they did nothing but their job until the day they died; hopefully in battle. So long as a Guardian Maiden was in formation with a Commander or Hero, the Guardian Maiden would receive all damage instead of that Commander or Hero until she was slain.</History>
@@ -40,15 +15,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

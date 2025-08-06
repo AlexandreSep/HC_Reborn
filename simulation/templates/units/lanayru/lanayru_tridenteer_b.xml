@@ -1,38 +1,24 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_Knight">
   <Attack>
     <Melee>
+	<Damage>
+        <Hack>0</Hack>
+        <Pierce>10</Pierce>
+      </Damage>
       <AttackName>Trident</AttackName>
       <Bonuses>
         <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
+          <Classes>Creature</Classes>
+		   <Multiplier>6.0</Multiplier>
         </BonusCavMelee>
       </Bonuses>
-      <Damage>
-        <Hack>8.0</Hack>
-        <Pierce>11.0</Pierce>
-      </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Creature Cavalry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>20</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>500</Max>
-  </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">SilverArmor Volunteers Medium Class100 UniqueUnit Tridenteer</Classes>
+    <Classes datatype="tokens">SilverArmor Volunteers Medium UniqueUnit Tridenteer</Classes>
     <GenericName>Lightscale Tridenteer</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Hunters of all manner of sea beast, from the Gyorgs of the Great Sea to the Bigoctos of the west, Lightscale Tridenteers were powerful warriors when in the waters. They were exceptionally adept at killing creature units with their tridents, and when not in combat they could slowly heal their injuries.</History>
@@ -49,10 +35,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>25.0</Crush>
         <DodgeRating>20.0</DodgeRating>
-        <Hack>15.0</Hack>
-        <Pierce>35.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>

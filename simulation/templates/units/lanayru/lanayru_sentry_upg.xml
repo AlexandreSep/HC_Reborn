@@ -8,14 +8,6 @@
           <Multiplier>4.0</Multiplier>
         </BonusCavMelee>
       </Bonuses>
-      <Damage>
-        <Hack>5.0</Hack>
-        <Pierce>5</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
   <Promotion disable="" />

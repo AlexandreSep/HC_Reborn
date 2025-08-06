@@ -1,33 +1,13 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_assassin">
   <Attack>
     <Melee>
       <AttackName>Fin Blades</AttackName>
-      <Damage>
-        <Hack>5</Hack>
-        <Pierce>2.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
       <TrueDamage>4</TrueDamage>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>290</Max>
-  </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">Aquamarine Volunteers Medium Class100</Classes>
+    <Classes datatype="tokens">Aquamarine Volunteers Medium </Classes>
     <GenericName>Aquamarine</GenericName>
     <History>Wearing durable but light and highly flexible Lanayru Armor, Aquamarines were the Province’s main assault force for bringing the fight to their enemies. Armed with wickedly sharp coralmold gauntlets, an Aquamarine could pry off all manner of armor with ease. The nature of their armor allowed them to move just as fast in water as on land.</History>
     <Icon>units/lanayru/lan_aquamarine.dds</Icon>
@@ -43,10 +23,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>25.0</Crush>
         <DodgeRating>15.0</DodgeRating>
-        <Hack>10.0</Hack>
-        <Pierce>20.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>

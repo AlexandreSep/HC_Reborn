@@ -1,36 +1,20 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_creature">
   <Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
       <Damage>
         <Hack>5</Hack>
-        <Pierce>15.0</Pierce>
+        <Pierce>5</Pierce>
       </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>16</BuildTime>
-    <Resources>
-      <food>80</food>
-      <metal>0</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="5.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>430</Max>
-  </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">ShoreSerpent Medium Class100</Classes>
+    <Classes datatype="tokens">ShoreSerpent Medium </Classes>
     <GenericName>Shore Serpent</GenericName>
     <History>Aquatic snakes that live off the coasts of Airu, the Shore Serpent in the wild is a very aggressive and hostile creature with a powerful bite. Domesticated variations of the beast are used by the Zora of Lanayru as pets and circus attractions, though they also make a frightening opponent when spread into their army.</History>
     <Icon>units/lanayru/lan_shoreserpent.dds</Icon>
@@ -43,16 +27,6 @@
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -68,8 +42,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.3333</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/lanayru/lanayru_shoreserpent_b.xml</Actor>
