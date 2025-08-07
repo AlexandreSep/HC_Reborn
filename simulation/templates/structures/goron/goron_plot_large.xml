@@ -47,24 +47,12 @@
       <Tooltip>Build a Market Plaza on this plot.</Tooltip>
       <Variant>upg_market</Variant>
     </TowerA>
-    <TowerB>
-      <Cost>
-        <stone>100</stone>
-        <wood>100</wood>
-      </Cost>
-      <Entity>structures/goron/goron_barracksA</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Build a Hall of Warriors on this plot.</Tooltip>
-      <Variant>upgrading</Variant>
-    </TowerB>
     <TowerC>
       <Cost>
         <metal>50</metal>
         <wood>200</wood>
       </Cost>
       <Entity>structures/goron/goron_barracksB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Salamander Den on this plot.</Tooltip>
       <Variant>upgrading</Variant>
@@ -80,13 +68,24 @@
       <Tooltip>Build a Gladiator Ring on this plot.</Tooltip>
       <Variant>upgrading</Variant>
     </TowerD>
+	<TowerB>
+      <Cost>
+        <stone>100</stone>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/goron/goron_barracksA</Entity>
+      <RequiredTechnology>goron/hero_town_darunia</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Hall of Warriors on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerB>
     <TowerE>
       <Cost>
         <metal>150</metal>
         <wood>300</wood>
       </Cost>
       <Entity>structures/goron/goron_barracksD</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>goron/hero_town_dangoro</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build an Explosive Foundary on this plot.</Tooltip>
       <Variant>upgrading</Variant>

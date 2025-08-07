@@ -61,8 +61,9 @@
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/goron/{civ}_sumo_b
       units/goron/{civ}_ram_b
+	  units/goron/{civ}_patriarch_b
       units/goron/{civ}_giant_b
-    units/goron/{civ}_shieldbreaker_b</Entities>
+    </Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>

@@ -3,10 +3,10 @@
     <BattalionSlots>3</BattalionSlots>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>40</food>
+      <food>200</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>70</wood>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Footprint>

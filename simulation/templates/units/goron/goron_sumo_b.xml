@@ -1,24 +1,17 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_assassin">
   <Attack>
     <Melee>
       <AttackName>Fists</AttackName>
-      <Damage>
-        <Crush>40.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
+	  <Damage>
+        <Crush>8</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		</Damage>
     </Melee>
   </Attack>
   <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>85</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
+      <food>175</food>
     </Resources>
   </Cost>
   <Footprint>
@@ -30,7 +23,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Large Class80 LargeGarrison Sumo CoronBonusA</Classes>
+    <Classes datatype="tokens">Large LargeGarrison Sumo CoronBonusA</Classes>
     <GenericName>Sumo</GenericName>
     <History>Champions of the Gorons' favourite sport of wrestling, Sumos are giant hulking beasts that can bring their skill to the frontlines of battle. Unexpectedly swift for their huge size, they can catch enemies off guard with all manners of parries and grapples. Since they lack any heavy armor or weapons, Sumos are able to curl up and roll at very fast speeds.</History>
     <Icon>units/goron/gor_sumo.dds</Icon>
@@ -42,13 +35,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>25.0</Crush>
         <DodgeRating>20.0</DodgeRating>
-        <Hack>35.0</Hack>
-        <Pierce>50.0</Pierce>
       </Damage>
     </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>
@@ -65,11 +54,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>1.7647</RunMultiplier>
-    <WalkSpeed>8.5</WalkSpeed>
-  </UnitMotion>
   <Upgrade>
     <Tower>
       <Cost>

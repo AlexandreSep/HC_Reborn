@@ -3,9 +3,6 @@
   <Cost>
     <BattalionSlots>0</BattalionSlots>
   </Cost>
-  <Health>
-    <Max>100</Max>
-  </Health>
   <Identity>
     <Classes datatype="tokens">HiddenUI</Classes>
   </Identity>

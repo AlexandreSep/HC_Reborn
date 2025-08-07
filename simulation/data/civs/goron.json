@@ -106,9 +106,6 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/goron/choosehero_gorcoron",
-		"civ_choices/goron/choosehero_gorebizo",
-		"civ_choices/goron/choosehero_medigoron",
 		"civ_choices/goron/choosehero_daruk",
 		"civ_choices/goron/choosehero_darunia",
 		"civ_choices/goron/choosehero_dangoro"

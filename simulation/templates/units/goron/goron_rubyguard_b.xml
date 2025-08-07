@@ -1,24 +1,14 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_maceman_heavy">
   <Attack>
     <Melee>
       <AttackName>Hammer</AttackName>
-      <Damage>
-        <Crush>25.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
     <BattalionSlots>2</BattalionSlots>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>70</food>
-      <metal>0</metal>
-      <stone>40</stone>
-      <wood>0</wood>
+      <stone>80</stone>
     </Resources>
   </Cost>
   <Health>
@@ -26,7 +16,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">RubyShield RubyArmor Medium Class100 RubyGuard</Classes>
+    <Classes datatype="tokens">RubyShield RubyArmor Medium RubyGuard</Classes>
     <GenericName>Ruby Guard</GenericName>
     <History>Wielding a hammer and durable shield in hand, Ruby Guards defend Goron settlements from enemy invasions. Despite their small size and slow speed by Goron standards, they are extremely durable and can take many blows from enemy weapons before falling in battle.</History>
     <Icon>units/goron/gor_rubyguard.dds</Icon>
@@ -43,12 +33,11 @@
     <Entity>
       <Damage>
         <Crush>20.0</Crush>
-        <Hack>45.0</Hack>
-        <Pierce>60.0</Pierce>
-        <Magic>50</Magic>
+        <Hack>50</Hack>
+        <Pierce>50</Pierce>
+        <Magic>20</Magic>
       </Damage>
     </Entity>
-    <KnockbackResistance>50</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>

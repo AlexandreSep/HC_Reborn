@@ -1,50 +1,8 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Ranged>
-      <AttackName>Fire Breath</AttackName>
-      <Damage>
-        <Magic>40</Magic>
-      </Damage>
-      <MaxRange>60.0</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>2500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>3000</RepeatTime>
-      <Splash>
-        <Damage>
-          <Magic>10.0</Magic>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>3</Range>
-        <Shape>Linear</Shape>
-      </Splash>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BattalionSlots>12</BattalionSlots>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>170</food>
-      <metal>0</metal>
-      <stone>40</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_mage_heavy">
   <Footprint>
     <Circle radius="7.0" />
     <Height>3.0</Height>
   </Footprint>
-  <Health>
-    <Max>650</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Salamander Large WarSalamander</Classes>
@@ -57,16 +15,6 @@
     <Tooltip>Large Creature unit with a ranged Fire attack.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/natural/salamander_big_breath.xml</attack_ranged>
@@ -82,12 +30,13 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/goron/goron_warsalamander_b.xml</Actor>
   </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
 </Entity>

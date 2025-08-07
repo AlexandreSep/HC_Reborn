@@ -1,39 +1,19 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
     <Melee>
       <AttackName>Fists</AttackName>
-      <Damage>
-        <Crush>30.0</Crush>
-      </Damage>
       <Knockback>
         <Horizontal>50</Horizontal>
       </Knockback>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>120</food>
-      <metal>20</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="7.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>600</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Large Class100 UniqueUnit Shieldbreaker</Classes>
+    <Classes datatype="tokens">Large  UniqueUnit Shieldbreaker</Classes>
     <GenericName>Shieldbreaker</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Wearing a suit of armor and two powerful gauntlets, Shieldbreakers can build up and unleash a frightening level of force in a single punch. Their attack rate is quite slow, but a single punch can shatter just about any armor, and send enemies flying.</History>
@@ -44,16 +24,6 @@
     <Tooltip>Dangoro's Unique Unit. Slow moving and powerful Melee unit that can send enemies flying and deal damage through armor.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>45.0</Crush>
-        <Hack>45.0</Hack>
-        <Pierce>45.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/goron_hammer.xml</attack_melee>

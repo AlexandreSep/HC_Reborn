@@ -1,38 +1,10 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-        <BonusCreature>
-          <Classes>Creature</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCreature>
-      </Bonuses>
-      <Damage>
-        <Pierce>18</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Creature Cavalry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_spearman">
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>55</food>
-      <metal>0</metal>
       <stone>20</stone>
-      <wood>0</wood>
     </Resources>
   </Cost>
-  <Health>
-    <Max>120</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Beastmaster Medium</Classes>
@@ -48,8 +20,8 @@
     <Entity>
       <Damage>
         <Crush>20.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>55.0</Pierce>
+        <Hack>25</Hack>
+        <Pierce>25</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>75</KnockbackResistance>

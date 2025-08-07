@@ -1,46 +1,7 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Ranged>
-      <AttackName>Fire Breath</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Infantry</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
-      <Damage>
-        <Magic>10</Magic>
-      </Damage>
-      <MaxRange>45.0</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>45</food>
-      <metal>0</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>50</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_mage">
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Salamander HeatedClutch Small Class100 GoronSalamander</Classes>
+    <Classes datatype="tokens">Salamander HeatedClutch Small GoronSalamander</Classes>
     <GenericName>Salamander</GenericName>
     <History>A smaller and more docile breed of Dodongo, the Gorons have been able to tame these reptilian beasts over a long period of time. Much like guard dogs, Gorons use Salamanders to guard homes or other low-priority locations from enemies. Salamanders can breath a small burst of fire at close range against their enemies.</History>
     <Icon>units/goron/gor_salamander.dds</Icon>
@@ -48,17 +9,8 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/goron/goron_salamander_b</SelectionGroupName>
     <Tooltip>Small Melee Creature unit that deals Fire damage to enemies.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+    <VisibleClasses datatype="tokens">Melee Scout</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/natural/salamander_bite.xml</attack_ranged>
@@ -74,10 +26,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3333</RunMultiplier>
-    <WalkSpeed>15.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/goron/goron_salamander_b.xml</Actor>
   </VisualActor>

@@ -6,8 +6,8 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>30</food>
-      <metal>10</metal>
+      <food>200</food>
+      <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
@@ -17,7 +17,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">GoronDrummer Medium Class40</Classes>
+    <Classes datatype="tokens">GoronDrummer Medium </Classes>
     <GenericName>Drummer</GenericName>
     <History>Gorons are famous drummers and dancers, and some of their most talented players will direct soldiers to battle with their beats. These drummers can keep Gorons in marching order and morale high as they enter into a warzone.</History>
     <Icon>units/goron/gor_drummer.dds</Icon>

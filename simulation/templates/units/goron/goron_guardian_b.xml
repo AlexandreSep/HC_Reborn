@@ -1,28 +1,14 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_maceman">
   <Attack>
     <Melee>
       <AttackName>Fists</AttackName>
-      <Damage>
-        <Crush>18.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>9</BuildTime>
     <Resources>
-      <food>30</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
+      <stone>40</stone>
     </Resources>
   </Cost>
-  <Health>
-    <Max>120</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">PowerBracelet Medium BasicSoldier GoronGuardian CoronBonusA</Classes>
@@ -37,12 +23,10 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>15.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>50.0</Pierce>
+        <Hack>25.0</Hack>
+        <Pierce>25.0</Pierce>
       </Damage>
     </Entity>
-    <KnockbackResistance>25</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>
@@ -66,10 +50,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>2.0</RunMultiplier>
-    <WalkSpeed>7.5</WalkSpeed>
-  </UnitMotion>
   <Upgrade>
     <Tower>
       <Cost>

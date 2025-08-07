@@ -1,14 +1,24 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_Knight">
   <Attack>
+  <Melee>
+      <Damage>
+        <Hack>0</Hack>
+      </Damage>     
+	 <Splash>
+        <Damage>
+          <Hack>0</Hack>
+        </Damage>
+      </Splash>
+    </Melee>
     <Ranged>
       <AttackName>Hammer</AttackName>
       <Damage>
-        <Crush>50</Crush>
+        <Crush>15</Crush>
       </Damage>
       <MaxRange>5</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>2000</PrepareTime>
+      <PrepareTime>1200</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <Speed>75.0</Speed>
@@ -16,18 +26,14 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>2500</RepeatTime>
+      <RepeatTime>1400</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>20.0</Crush>
+          <Crush>5.0</Crush>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>5</Range>
         <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
       </Splash>
       <Knockback>
         <Horizontal>10</Horizontal>
@@ -37,13 +43,9 @@
     </Ranged>
   </Attack>
   <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>130</food>
-      <metal>0</metal>
-      <stone>95</stone>
-      <wood>0</wood>
+      <food>200</food> 
+      <stone>100</stone>
     </Resources>
   </Cost>
   <Footprint>
@@ -51,11 +53,11 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>400</Max>
+    <Max>600</Max>
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Large RubyShield RubyArmor Class100 LargeGarrison Firewarrior</Classes>
+    <Classes datatype="tokens">Large RubyShield RubyArmor LargeGarrison Firewarrior</Classes>
     <GenericName>Fire Warrior</GenericName>
     <History>Wielding a mighty Megaton Hammer and decked from head-to-toe in red-tinted armor, Fire Warriors are the ultimate Goron soldiers. One swing from their hammer can send groups of soldiers flying, and none but the most powerful weaponry in Hyrule can crack their armor.</History>
     <Icon>units/goron/gor_firewarrior.dds</Icon>
@@ -71,10 +73,10 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>25.0</Crush>
-        <Hack>70.0</Hack>
-        <Pierce>75.0</Pierce>
-        <Magic>75</Magic>
+        <Crush>30</Crush>
+        <Hack>60</Hack>
+        <Pierce>60</Pierce>
+        <Magic>25</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>
@@ -96,7 +98,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>1.5714</RunMultiplier>
     <WalkSpeed>7.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>

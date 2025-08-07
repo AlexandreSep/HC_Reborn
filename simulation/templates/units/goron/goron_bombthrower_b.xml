@@ -1,31 +1,21 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_crossbow">
   <Attack>
     <Ranged>
       <AttackName>Bombs</AttackName>
       <Damage>
-        <Pierce>25.0</Pierce>
-        <Magic>25</Magic>
+        <Pierce>15</Pierce>
       </Damage>
-      <MaxRange>50.0</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.1</ImpactAnimationLifetime>
-        <Speed>50.5</Speed>
-        <Spread>1.8</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>2000</RepeatTime>
       <Splash>
         <Damage>
-          <Magic>40.0</Magic>
+          <Magic>5</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
+        <Range>5</Range>
         <Shape>Circular</Shape>
       </Splash>
       <Knockback>
@@ -35,19 +25,6 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>110</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>110</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Bombs GorBomber Medium CanGarrison</Classes>
@@ -59,16 +36,6 @@
     <Tooltip>Powerful Missile unit that tosses explosive Bombs.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>25</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/goron_bomb_impact.xml</attack_impact_ranged>
@@ -92,10 +59,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>2.0</RunMultiplier>
-    <WalkSpeed>7.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/goron/goron_bombthrower_b.xml</Actor>
   </VisualActor>

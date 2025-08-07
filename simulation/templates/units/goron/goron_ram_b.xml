@@ -1,43 +1,8 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Head</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Structure</Classes>
-          <Multiplier>2.2</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Crush>26.0</Crush>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_beastrambig">
   <Footprint>
     <Circle radius="7.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>540</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Large GorRam</Classes>
@@ -49,16 +14,6 @@
     <Tooltip>Large Infantry Siege unit that can pulverize enemy buildings as well as engage units on the field.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>65.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/goron_hammer.xml</attack_melee>

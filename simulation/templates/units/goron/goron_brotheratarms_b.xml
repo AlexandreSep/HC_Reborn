@@ -1,47 +1,9 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>30</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <Splash>
-        <Damage>
-          <Hack>10.0</Hack>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>5</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-      <EffectDelay>1</EffectDelay>
-    </Ranged>
-  </Attack>
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Cost>
-    <BattalionSlots>4</BattalionSlots>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>105</food>
-      <metal>20</metal>
-      <stone>55</stone>
-      <wood>0</wood>
+      <stone>40</stone>
     </Resources>
   </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Medium Unique Unit BrotherAtArms</Classes>
@@ -58,12 +20,10 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>30.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>50.0</Pierce>
+        <Hack>40</Hack>
+        <Pierce>40.0</Pierce>
       </Damage>
     </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>
@@ -80,10 +40,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.875</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/goron/goron_brotheratarms_b.xml</Actor>
   </VisualActor>

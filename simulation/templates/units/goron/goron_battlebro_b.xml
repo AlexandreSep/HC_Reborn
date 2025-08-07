@@ -1,35 +1,20 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_commander">
   <Attack>
     <Melee>
       <AttackName>Fists</AttackName>
       <Damage>
+	    <Hack>0</Hack>
         <Crush>20.0</Crush>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
     </Melee>
   </Attack>
   <Auras datatype="tokens">
     units/batlebro_aura_1
   units/batlebro_aura_2
   </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>10</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Battlebro Medium Class90</Classes>
+    <Classes datatype="tokens">Battlebro Medium </Classes>
     <GenericName>Battle Brother</GenericName>
     <History>Skilled in commanding Goron soldiers, Battle Brothers head Goron armies as captains to guide them into battle.</History>
     <Icon>units/goron/gor_battlebro.dds</Icon>
@@ -38,16 +23,6 @@
     <Tooltip>Commander unit that aids Gorons in battle.</Tooltip>
     <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>55.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>50</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/goron_fist_light.xml</attack_melee>
@@ -70,10 +45,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.75</RunMultiplier>
-    <WalkSpeed>8.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/goron/goron_battlebro_b.xml</Actor>
   </VisualActor>

@@ -55,8 +55,6 @@
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/goron/{civ}_rubyguard_b
       units/goron/{civ}_firewarrior_b
-      units/goron/{civ}_patriarch_b
-    units/goron/{civ}_berserker_b
     units/goron/{civ}_brotheratarms_b</Entities>
     <DestinationOffset>
       <step1>

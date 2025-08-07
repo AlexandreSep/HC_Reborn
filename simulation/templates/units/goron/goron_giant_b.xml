@@ -11,7 +11,7 @@
       <Damage>
         <Crush>100</Crush>
       </Damage>
-      <MaxRange>120</MaxRange>
+      <MaxRange>100</MaxRange>
       <MinRange>35.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
       <PrepareTime>2500</PrepareTime>
@@ -27,7 +27,7 @@
       <RepeatTime>4500</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>50</Crush>
+          <Crush>5</Crush>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -47,10 +47,10 @@
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>255</food>
+      <food>250</food>
       <metal>0</metal>
-      <stone>65</stone>
-      <wood>0</wood>
+      <stone>0</stone>
+      <wood>70</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -58,7 +58,7 @@
     <Height>20.0</Height>
   </Footprint>
   <Health>
-    <Max>1500</Max>
+    <Max>500</Max>
   </Health>
   <Identity>
     <Civ>goron</Civ>
@@ -76,8 +76,8 @@
     <Entity>
       <Damage>
         <Crush>25.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>60.0</Pierce>
+        <Hack>25.0</Hack>
+        <Pierce>25.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

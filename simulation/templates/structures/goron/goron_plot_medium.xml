@@ -19,6 +19,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
+	<Classes datatype="tokens">Plot</Classes>
     <GenericName>Medium Construction Plot</GenericName>
     <History>Goron structures tended to be made from large hills and mountains. They would carve and build specialized areas to meet their needs.</History>
     <Icon>structures/goron/gor_plot.dds</Icon>
@@ -47,7 +48,16 @@
       <Tooltip>Build a Rock Sirloin Mine on this plot.</Tooltip>
       <Variant>upgrading</Variant>
     </TowerA>
-    <TowerB>
+	<TowerB>
+      <Cost>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/goron/goron_barracks</Entity>
+      <Time>60</Time>
+      <Tooltip>Build Battle Chambers on this plot.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerB>
+    <TowerC>
       <Cost>
         <wood>200</wood>
       </Cost>
@@ -56,24 +66,16 @@
       <Time>60</Time>
       <Tooltip>Build a Bazaar on this plot.</Tooltip>
       <Variant>upgrading</Variant>
-    </TowerB>
-    <TowerC>
+    </TowerC>
+    <TowerD>
       <Cost>
         <metal>100</metal>
         <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_hotspring</Entity>
+	  <RequiredTechnology>goron/hero_town_daruk</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Hot Spring on this plot.</Tooltip>
-      <Variant>upgrading</Variant>
-    </TowerC>
-    <TowerD>
-      <Cost>
-        <wood>200</wood>
-      </Cost>
-      <Entity>structures/goron/goron_barracks</Entity>
-      <Time>60</Time>
-      <Tooltip>Build Battle Chambers on this plot.</Tooltip>
       <Variant>upgrading</Variant>
     </TowerD>
     <TowerE>

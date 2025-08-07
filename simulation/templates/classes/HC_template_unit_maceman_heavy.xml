@@ -48,6 +48,7 @@
         <Pierce>40</Pierce>
       </Damage>
     </Entity>
+    <KnockbackResistance>50</KnockbackResistance>
   </Resistance>
   <Selectable>
     <Overlay>

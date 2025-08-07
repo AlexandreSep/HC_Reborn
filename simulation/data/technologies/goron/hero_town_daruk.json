@@ -1,0 +1,9 @@
+{
+	"genericName": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 0},
+	"requirements": {"all": [{"tech": "civ_choices/goron/choosehero_daruk"}, {"tech": "phase_town"}, {"civ": "goron"}]},
+	"autoResearch": true,
+	"researchTime": 0,
+	"soundComplete": ""
+}
+
