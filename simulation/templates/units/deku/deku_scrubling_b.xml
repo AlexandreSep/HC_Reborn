@@ -1,32 +1,19 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
       <AttackName>Deku Nuts</AttackName>
       <Damage>
-        <Crush>5</Crush>
+        <Crush>4</Crush>
+		<Pierce>0</Pierce>
       </Damage>
-      <MaxRange>35</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
+      <MaxRange>30</MaxRange>
     </Ranged>
   </Attack>
   <Cost>
     <BuildTime>9</BuildTime>
     <Resources>
-      <food>30</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
+      <food>25</food>
+      <wood>15</wood>
     </Resources>
   </Cost>
   <GarrisonHolder>
@@ -47,7 +34,7 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>75</Max>
+    <Max>50</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <OwnerID>0</OwnerID>
@@ -66,15 +53,6 @@
     <Tooltip>Tiny Missile unit that spots out Deku Nuts at their targets.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>7.0</Crush>
-        <Hack>2.0</Hack>
-        <Pierce>2.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/natural/dekuscrub_spit.xml</attack_ranged>
@@ -97,10 +75,6 @@
       <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5384</RunMultiplier>
-    <WalkSpeed>13.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/deku/deku_scrubling_b.xml</Actor>
   </VisualActor>

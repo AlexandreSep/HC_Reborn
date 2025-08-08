@@ -6,8 +6,8 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>30</food>
-      <metal>10</metal>
+      <food>200</food>
+      <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
@@ -41,7 +41,7 @@
   </Health>
   <Identity>
     <Civ>deku</Civ>
-    <Classes datatype="tokens">Hornling ScrubUnit BeetleRider Small Class40 DeppiBonus</Classes>
+    <Classes datatype="tokens">Hornling ScrubUnit BeetleRider Small DeppiBonus</Classes>
     <GenericName>Hornling</GenericName>
     <History>The musical chirps and sounds of the Scrub’s language served them well on the battlefield. Hornlings brought a large Deku Horn with them to loudly and clearly give commands to the soldiers under their commands. Although the horns sounded confusing and obnoxious to outsiders, its bass utterance carried with it the unfolding plans of a Scrub army.</History>
     <Icon>units/deku/dek_hornling.dds</Icon>

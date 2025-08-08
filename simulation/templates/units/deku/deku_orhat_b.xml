@@ -1,26 +1,9 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beast">
   <Attack>
     <Melee>
       <AttackName>Mandibles</AttackName>
-      <Damage>
-        <Pierce>7.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
+	  </Melee>
   </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>70</food>
-      <metal>0</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="5.0" />
     <Height>20.0</Height>
@@ -34,12 +17,9 @@
       </Archer1>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>500</Max>
-  </Health>
   <Identity>
     <Civ>deku</Civ>
-    <Classes datatype="tokens">Orhat Beetle Medium Class100</Classes>
+    <Classes datatype="tokens">Orhat Beetle Medium </Classes>
     <GenericName>Orhat Beetle</GenericName>
     <History>The Beetle-like Orhats were one of the few creatures the Scrubs managed to domesticate, although even that is a bit of a stretch considering the hard time they had riding them. In battle the Orhats could skitter by enemies with frighting speed, and could be mounted a large variety of Deku Scrubs and Babas on their backs.</History>
     <Icon>units/deku/dek_orhat.dds</Icon>
@@ -48,15 +28,6 @@
     <Tooltip>Quick moving Melee Creature unit that can be mounted by a Deku Scrub rider.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>32.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>23.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/orhat_bite.xml</attack_melee>
@@ -72,10 +43,6 @@
       <walk>actor/movement/orhat/orhat_skitter.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1666</RunMultiplier>
-    <WalkSpeed>15</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/deku/deku_orhat_b.xml</Actor>
   </VisualActor>

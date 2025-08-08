@@ -1,26 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Fists</AttackName>
-      <Damage>
-        <Crush>11.0</Crush>
-        <Hack>11.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_maceman_heavy">
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
@@ -39,7 +17,6 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>300</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <OwnerID>0</OwnerID>
@@ -50,7 +27,7 @@
   </Health>
   <Identity>
     <Civ>deku</Civ>
-    <Classes datatype="tokens">ScrubUnit Megascrub Medium Class70 DeppiBonus Sonata</Classes>
+    <Classes datatype="tokens">ScrubUnit Megascrub Medium DeppiBonus Sonata</Classes>
     <GenericName>Megascrub</GenericName>
     <History>These large Deku Scrubs served little purpose in their culture other than bashing the heads in of their enemies. Although barely taller than the average Hylian, they were some of the largest Scrubs to live and were considered by their people to be the apex of their race. In a battle they would relentlessly maul victims with their two clawed arms.</History>
     <Icon>units/deku/dek_megascrub.dds</Icon>
@@ -59,15 +36,6 @@
     <Tooltip>Large Deku Scrub warrior that attacks enemies with their sharp clawed hands.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/mace.xml</attack_melee>

@@ -1,10 +1,10 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siegeballista">
   <Attack>
     <Ranged>
       <AttackName>Baba Bolts</AttackName>
       <Damage>
-        <Crush>10.0</Crush>
-        <Pierce>50.0</Pierce>
+        <Pierce>25</Pierce>
+		<Siege>25</Siege>
       </Damage>
       <MaxRange>110.0</MaxRange>
       <MinRange>45.0</MinRange>
@@ -24,7 +24,7 @@
         <SpawnNumberMax>4</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>
         <SpawnOnHit>
-          <Chance>10</Chance>
+          <Chance>20</Chance>
           <SpawnAtTarget>true</SpawnAtTarget>
         </SpawnOnHit>
         <SpawnOnImpact>
@@ -38,10 +38,8 @@
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
-      <food>0</food>
-      <metal>50</metal>
       <stone>50</stone>
-      <wood>50</wood>
+      <wood>75</wood>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -49,11 +47,11 @@
     <Square depth="12.0" width="8.0" />
   </Footprint>
   <Health>
-    <Max>400</Max>
+    <Max>200</Max>
   </Health>
   <Identity>
     <Civ>deku</Civ>
-    <Classes datatype="tokens">-Organic Construct OrhatSiege DekuSiege Medium Class40</Classes>
+    <Classes datatype="tokens"> Construct OrhatSiege DekuSiege Medium </Classes>
     <GenericName>Baballista</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The Baballista is a crazy contraption designed by Kado himself. Launching a giant bolt from its small engine, the attack could punch a hole in most targets with ease. Perhaps the nastiest trick of this weapon was the packs of Baba seeds attached to the bolts, which could then hatch and grow into Deku Babas shortly after landing on the mark.</History>
@@ -62,16 +60,6 @@
     <Tooltip>Kado's Unique Unit. Siege unit that fires bolts laced with Deku Babas. Projectiles have a chance to spawn Deku Babas on impact.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>5.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>

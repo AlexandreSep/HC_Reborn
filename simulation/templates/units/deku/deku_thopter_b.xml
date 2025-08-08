@@ -1,28 +1,19 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_crossbow">
   <Attack>
     <Ranged>
       <AttackName>Deku Nut</AttackName>
       <Damage>
-        <Crush>30</Crush>
+	  <Pierce>0</Pierce>
+        <Crush>15</Crush>
       </Damage>
-      <MaxRange>22</MaxRange>
-      <MinRange>1.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>800</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
       <RepeatTime>4000</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>10</Crush>
+          <Crush>5</Crush>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
-        <Range>8</Range>
+        <Range>5</Range>
         <Shape>Circular</Shape>
       </Splash>
       <Stun>
@@ -32,17 +23,7 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>25</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Health>
-    <Max>100</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <OwnerID>0</OwnerID>
@@ -70,16 +51,6 @@
     <Floating>true</Floating>
     <TurnRate>3.5</TurnRate>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/natural/dekunut_impact.xml</attack_impact_ranged>

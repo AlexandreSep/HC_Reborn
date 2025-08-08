@@ -1,35 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-        <BonusCreature>
-          <Classes>Creature</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCreature>
-      </Bonuses>
-      <Damage>
-        <Pierce>6.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>30</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_spearman">
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
@@ -48,7 +17,6 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>100</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <OwnerID>0</OwnerID>
@@ -68,15 +36,6 @@
     <Tooltip>Little Melee unit armed with a pointy stick for a spear.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

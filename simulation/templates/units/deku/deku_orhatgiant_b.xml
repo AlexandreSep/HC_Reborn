@@ -1,9 +1,20 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beastrambig">
   <Attack>
+  <Melee>
+      <Damage>
+        <Crush>0</Crush>
+      </Damage>
+    </Melee>
     <Ranged>
       <AttackName>Horn</AttackName>
+	  <Bonuses>
+        <BonusCavMelee>
+          <Classes>Structure</Classes>
+          <Multiplier>5.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
       <Damage>
-        <Crush>30.0</Crush>
+        <Crush>50.0</Crush>
       </Damage>
       <MaxRange>12.0</MaxRange>
       <MinRange>0.0</MinRange>
@@ -19,7 +30,7 @@
       <RepeatTime>1700</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>7.0</Crush>
+          <Crush>5.0</Crush>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>6</Range>
@@ -29,32 +40,16 @@
           <Vertical>10</Vertical>
         </Knockback>
       </Splash>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>150</food>
-      <metal>0</metal>
-      <stone>100</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="12.0" />
     <Height>20.0</Height>
   </Footprint>
-  <Health>
-    <Max>840</Max>
-  </Health>
   <Identity>
     <Civ>deku</Civ>
-    <Classes datatype="tokens">Beetle GiantOrhat Huge Class40</Classes>
+    <Classes datatype="tokens">Beetle GiantOrhat Huge </Classes>
     <GenericName>Giant Orhat</GenericName>
     <History>When allowed to grow well into adulthood, the Orhat beetles would reach a towering size and develop a thick and hardy exoskeleton. While such an adult was impossible to domesticate in the wild, Deku Scrubs who raised them since youth had no trouble riding and directing the giant insects in battle. Giant Orhats were used as living battering rams and they could be upgraded with a carrying platform on their backs to ferry Deku Scrubs around.</History>
     <Icon>units/deku/dek_orhatgiant.dds</Icon>
@@ -63,16 +58,6 @@
     <Tooltip>Giant Siege Creature that rips apart targets with its huge horn.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>65.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/natural/orhatgiant_impact.xml</attack_impact_ranged>
@@ -89,10 +74,6 @@
       <walk>actor/movement/orhat/orhatgiant_walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.8461</RunMultiplier>
-    <WalkSpeed>6.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/deku/deku_orhat_giant_b.xml</Actor>
   </VisualActor>

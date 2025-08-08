@@ -1,28 +1,13 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_mage">
   <Attack>
     <Ranged>
       <AttackName>Bubble</AttackName>
-      <Damage>
-        <Magic>10</Magic>
-      </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>800</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>4000</RepeatTime>
       <Splash>
         <Damage>
-          <Forest>10.0</Forest>
+          <Magic>1</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
-        <Range>8</Range>
+        <Range>5</Range>
         <Shape>Circular</Shape>
       </Splash>
       <Stun>
@@ -32,15 +17,6 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
@@ -59,7 +35,6 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>100</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <OwnerID>0</OwnerID>
@@ -79,15 +54,6 @@
     <Tooltip>Missile unit that spits explosive bubbles at their enemies.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/natural/dekububble_impact.xml</attack_impact_ranged>
@@ -104,10 +70,6 @@
       <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.6363</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/deku/deku_bubbling_b.xml</Actor>
   </VisualActor>

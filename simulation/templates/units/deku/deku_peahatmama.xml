@@ -1,5 +1,10 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_creature">
   <Attack>
+  <Melee>
+      <Damage>
+        <Hack>0</Hack>
+      </Damage>
+    </Melee>
     <Ranged>
       <AttackName>Blades</AttackName>
       <Damage>
@@ -28,17 +33,7 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>25</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Health>
-    <Max>150</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <OwnerID>0</OwnerID>

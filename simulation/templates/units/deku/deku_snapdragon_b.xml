@@ -1,35 +1,5 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fangs</AttackName>
-      <Bonuses>
-        <BonusInfantryMelee>
-          <Classes>Infantry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusInfantryMelee>
-      </Bonuses>
-      <Damage>
-        <Hack>21.0</Hack>
-        <Pierce>2.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>30</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_creature">
   <Health>
-    <Max>150</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <OwnerID>0</OwnerID>
@@ -40,7 +10,7 @@
   </Health>
   <Identity>
     <Civ>deku</Civ>
-    <Classes datatype="tokens">Snapdragon Medium Class100</Classes>
+    <Classes datatype="tokens">Snapdragon Medium </Classes>
     <GenericName>Snapdragon</GenericName>
     <History>A fast and insanely violent plant-like monster, Snap Dragons were extremely dangerous even to their own Scrub captors. These creatures hopped around with their viney appendages and rapidly gobbled up whatever they could get their two tentacled arms unto.</History>
     <Icon>units/deku/dek_snapdragon.dds</Icon>
@@ -49,16 +19,6 @@
     <Tooltip>Faster moving Melee Creature unit with a rapdi attack rate.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>32.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>23.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>0</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/snapdragon_whip.xml</attack_melee>
@@ -74,10 +34,6 @@
       <walk>actor/movement/dekuscrub/scrub_hopA.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1666</RunMultiplier>
-    <WalkSpeed>15</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/deku/deku_snapdragon_b.xml</Actor>
   </VisualActor>
