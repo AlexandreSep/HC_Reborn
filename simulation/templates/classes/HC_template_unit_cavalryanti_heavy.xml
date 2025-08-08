@@ -9,7 +9,7 @@
         </BonusCavMelee>
       </Bonuses>
       <Damage>
-        <Pierce>12.0</Pierce>
+        <Pierce>15.0</Pierce>
       </Damage>
       <MaxRange>7.0</MaxRange>
       <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>

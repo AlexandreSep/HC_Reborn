@@ -1,37 +1,7 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Mace</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Crush>20.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>35</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>300</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_maceman">
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Alrospromote Large Class100</Classes>
+    <Classes datatype="tokens">Alrospromote Large </Classes>
     <GenericName>Mazura Hippikon</GenericName>
     <History>The angry and stubborn Mazura, much like the Fokka, were highly valued soldiers in the legion because of their speed. While not as fast as the swift Fokka or most other cavalry, a Mazura Hippikon could nonetheless plow into enemy forces and cause havoc with their maces.</History>
     <Icon>units/darknut/dar_mazura.dds</Icon>
@@ -43,18 +13,8 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_mazura_mighty</Entity>
-    <RequiredXp>9999</RequiredXp>
+    <RequiredXp>20</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>45.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/mace.xml</attack_melee>
@@ -71,8 +31,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.1428</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
+    <RunMultiplier>2</RunMultiplier>
+    <WalkSpeed>10</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_mazura_b.xml</Actor>

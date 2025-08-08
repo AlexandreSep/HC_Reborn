@@ -1,53 +1,4 @@
 <Entity parent="units/darknut/darknut_jermafenser_master">
-  <Attack>
-    <Ranged>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>60</Hack>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1700</RepeatTime>
-      <Splash>
-        <Damage>
-          <Hack>60.0</Hack>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
-      </Splash>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>440</Max>
-  </Health>
   <Identity>
     <GenericName>Legendary Jermafenser</GenericName>
   </Identity>
@@ -55,10 +6,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>45.0</Crush>
-        <Hack>80.0</Hack>
-        <Pierce>100.0</Pierce>
-        <Magic>11</Magic>
+        <Magic>70</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

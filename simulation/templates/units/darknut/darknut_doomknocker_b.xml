@@ -1,56 +1,15 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Mace</AttackName>
-      <Damage>
-        <Crush>15</Crush>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1700</RepeatTime>
-      <Splash>
-        <Damage>
-          <Crush>15.0</Crush>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
-      </Splash>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
+<Entity parent="classes/HC_template_unit_maceman_heavy">
+<Cost>
     <Resources>
-      <food>55</food>
-      <metal>0</metal>
-      <stone>40</stone>
-      <wood>0</wood>
+      <food>150</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>330</Max>
+    <Max>375</Max>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Holounit Large Class80</Classes>
+    <Classes datatype="tokens">Holounit Large </Classes>
     <GenericName>Doomknocker</GenericName>
     <History>Doomkockers were large and powerful Darknut warriors, with many years of experience to their name. Wielding a giant mace and durable shield, Doomknockers would slowly and relentlessly march at their targets, shrugging off arrow fire without missing a beat. When in a melee they could pulverize and pummel just about any foe, even those with durable armor.</History>
     <Icon>units/darknut/dar_doomknocker.dds</Icon>
@@ -61,18 +20,8 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_doomknocker_mighty</Entity>
-    <RequiredXp>100</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>60.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/darknut_mace.xml</attack_ranged>
@@ -89,7 +38,7 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.4285</RunMultiplier>
+    <RunMultiplier>1.5</RunMultiplier>
     <WalkSpeed>7</WalkSpeed>
   </UnitMotion>
   <VisualActor>

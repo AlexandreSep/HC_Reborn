@@ -1,60 +1,19 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>20</Hack>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1700</RepeatTime>
-      <Splash>
-        <Damage>
-          <Hack>20.0</Hack>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
-      </Splash>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
+<Entity parent="classes/HC_template_unit_commander">
   <Auras datatype="tokens">
     units/commander_aura_1
   units/dux_aura_2
   </Auras>
   <Cost>
-    <BuildTime>20</BuildTime>
     <Resources>
-      <food>115</food>
-      <metal>20</metal>
-      <stone>75</stone>
-      <wood>0</wood>
+      <food>250</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>550</Max>
+    <Max>1000</Max>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Dux Large Class60</Classes>
+    <Classes datatype="tokens">Dux Large</Classes>
     <GenericName>Dux</GenericName>
     <History>Expert warriors and even better teachers, Dux were commanders that lead by example and raised generations of Darknut warriors. A lone Dux was often attached to scores of soldiers to not only to command them, but to show them how to become even better fighters.</History>
     <Icon>units/darknut/dar_dux.dds</Icon>
@@ -67,16 +26,6 @@
     <Entity>units/darknut/darknut_dux_mighty</Entity>
     <RequiredXp>100</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>70.0</Hack>
-        <Pierce>80.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/darknut_sword.xml</attack_ranged>
@@ -93,7 +42,7 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.4285</RunMultiplier>
+    <RunMultiplier>1.5</RunMultiplier>
     <WalkSpeed>7</WalkSpeed>
   </UnitMotion>
   <VisualActor>

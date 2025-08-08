@@ -1,31 +1,7 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>25.0</Hack>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>90</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>400</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_cavalry_heavy">
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Alrospromote Large Class90</Classes>
+    <Classes datatype="tokens">Alrospromote Large</Classes>
     <GenericName>Lynel Pride</GenericName>
     <History>The notoriously violent and bloodthirsty Lynels have long been tied to the Darknut people. In more modern ages, they were the Legion’s favorite mercenaries. So often were Lynels hired and deployed with Legion forces that many of the Darknut’s enemies assumed they were members of the same empire.</History>
     <Icon>units/darknut/dar_lynel.dds</Icon>
@@ -36,18 +12,8 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_lynel_mighty</Entity>
-    <RequiredXp>9999</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -63,10 +29,6 @@
       <walk>actor/movement/horse/horse_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.0967</RunMultiplier>
-    <WalkSpeed>15.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_lynel_b.xml</Actor>
   </VisualActor>

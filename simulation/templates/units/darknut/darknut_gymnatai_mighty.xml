@@ -1,34 +1,9 @@
 <Entity parent="units/darknut/darknut_gymnatai_b">
-  <Attack>
-    <Melee>
-      <AttackName>Khopesh</AttackName>
-      <Damage>
-        <Hack>16.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Health>
-    <Max>210</Max>
-  </Health>
   <Identity>
     <Classes datatype="tokens">GainedLevel</Classes>
     <GenericName>Mighty Gymnatai</GenericName>
   </Identity>
   <Promotion disable="" />
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <VisualActor>
     <Actor>units/darknut/darknut_gymnatai_mighty.xml</Actor>
   </VisualActor>

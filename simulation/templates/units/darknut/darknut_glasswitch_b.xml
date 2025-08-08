@@ -1,45 +1,24 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
       <AttackName>Glass Shards</AttackName>
       <Damage>
-        <Pierce>20</Pierce>
+        <Pierce>4</Pierce>
+		<TrueDamage>2</TrueDamage>
       </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1800</RepeatTime>
-      <Stun>
-        <Chance>100</Chance>
-        <Time>100</Time>
-      </Stun>
-      <TrueDamage>20</TrueDamage>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
+   <Cost>
     <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
+      <food>65</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>280</Max>
+    <Max>125</Max>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Large Class80</Classes>
+    <Classes datatype="tokens">Large </Classes>
     <GenericName>Glass Witch</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A fringe convent of lady Darknuts known for their unmatched crafting of all manner of jewelry and stained glass. In a battle the Glass Witches toss razor sharp bolts of crystal at their enemies, shredding their armor and knocking them off their feet.</History>
@@ -50,16 +29,6 @@
     <Tooltip>Yaraxonal's Unique Unit. A Missile unit that hurls wicked shards of glass into their enemies.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/greenglass_impact.xml</attack_impact_ranged>
@@ -76,10 +45,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_glasswitch_b.xml</Actor>
   </VisualActor>

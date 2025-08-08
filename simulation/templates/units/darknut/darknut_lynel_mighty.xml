@@ -1,34 +1,9 @@
 <Entity parent="units/darknut/darknut_lynel_b">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>35.0</Hack>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Health>
-    <Max>420</Max>
-  </Health>
   <Identity>
     <Classes datatype="tokens">GainedLevel</Classes>
     <GenericName>Mighty Lynel Pride</GenericName>
   </Identity>
   <Promotion disable="" />
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <VisualActor>
     <Actor>units/darknut/darknut_lynel_mighty.xml</Actor>
   </VisualActor>

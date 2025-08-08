@@ -1,27 +1,16 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_swordsman">
   <Attack>
     <Melee>
       <AttackName>Khopesh</AttackName>
-      <Damage>
-        <Hack>6.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>9</BuildTime>
     <Resources>
-      <food>30</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
+      <food>90</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>190</Max>
+    <Max>250</Max>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
@@ -36,18 +25,8 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_gymnatai_mighty</Entity>
-    <RequiredXp>9999</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -63,10 +42,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_gymnatai_b.xml</Actor>
   </VisualActor>

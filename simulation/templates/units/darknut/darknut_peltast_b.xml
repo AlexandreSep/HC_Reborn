@@ -1,41 +1,11 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Javelin</AttackName>
-      <Damage>
-        <Pierce>15</Pierce>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>70</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>800</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1200</RepeatTime>
-      <TrueDamage>20</TrueDamage>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
+<Entity parent="classes/HC_template_unit_crossbow">
   <Cost>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
+      <food>125</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>280</Max>
+    <Max>125</Max>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
@@ -50,18 +20,8 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_peltast_mighty</Entity>
-    <RequiredXp>9999</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/javelin_impact.xml</attack_impact_ranged>
@@ -78,10 +38,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_peltast_b.xml</Actor>
   </VisualActor>

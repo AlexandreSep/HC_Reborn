@@ -1,33 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>13.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_spearman_heavy">
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>40</food>
-      <metal>0</metal>
-      <stone>40</stone>
-      <wood>0</wood>
+      <food>150</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>310</Max>
+    <Max>375</Max>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
@@ -44,16 +23,6 @@
     <Entity>units/darknut/darknut_hoplite_mighty</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>55.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -69,10 +38,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_hoplite_b.xml</Actor>
   </VisualActor>

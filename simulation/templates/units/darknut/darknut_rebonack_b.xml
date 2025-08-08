@@ -1,56 +1,19 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Ranged>
-      <AttackName>Lance</AttackName>
-      <Damage>
-        <Pierce>30.0</Pierce>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1700</RepeatTime>
-      <Splash>
-        <Damage>
-          <Pierce>30.0</Pierce>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
-      </Splash>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
+<Entity parent="classes/HC_template_unit_cavalryanti_heavy">
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>90</food>
+      <food>225</food>
       <metal>0</metal>
       <stone>50</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>400</Max>
+    <Max>375</Max>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Holounit Large Class90 Legion</Classes>
+    <Classes datatype="tokens">Holounit Large Legion</Classes>
     <GenericName>Rebonack</GenericName>
     <History>Short of Deities, the Rebonack were the most experienced soldiers in the entire Legion and perhaps some of their most terrifying warriors. Rebonacks rode on top of giant black horses that had for centuries been specially bred for size. Armed with a lance in one hand and a sword in the other, Rebonacks could knock down enemy soldiers with ease and lob the heads off of those that survived.</History>
     <Icon>units/darknut/dar_rebonack.dds</Icon>
@@ -61,18 +24,8 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_rebonack_mighty</Entity>
-    <RequiredXp>100</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>60.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/rebonack_lance.xml</attack_ranged>
@@ -88,10 +41,6 @@
       <walk>actor/movement/horse/rebonack_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1764</RunMultiplier>
-    <WalkSpeed>12</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_rebonack_b.xml</Actor>
   </VisualActor>

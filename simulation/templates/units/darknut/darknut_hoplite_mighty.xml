@@ -1,40 +1,9 @@
 <Entity parent="units/darknut/darknut_hoplite_b">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>23.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Health>
-    <Max>330</Max>
-  </Health>
   <Identity>
     <Classes datatype="tokens">GainedLevel</Classes>
     <GenericName>Mighty Hoplite</GenericName>
   </Identity>
   <Promotion disable="" />
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <VisualActor>
     <Actor>units/darknut/darknut_hoplite_mighty.xml</Actor>
   </VisualActor>

@@ -1,31 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>10.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>260</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_swordsman">
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Alrospromote Medium Class100</Classes>
+    <Classes datatype="tokens">Alrospromote Medium</Classes>
     <GenericName>Fokka Hypaspist</GenericName>
     <History>These longtime Legion members that were assimilated into Darknut culture have lended their own breed of soldiers to the fray. The Fokka Hypaspist were extremely fast and could leap staggering distances. They were just as swift in a melee as well, swiping and countering enemy blows almost effortlessly.</History>
     <Icon>units/darknut/dar_hypaspist.dds</Icon>
@@ -36,18 +12,8 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_hypaspist_mighty</Entity>
-    <RequiredXp>9999</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>45.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -63,10 +29,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.12</RunMultiplier>
-    <WalkSpeed>12.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_hypaspist_b.xml</Actor>
   </VisualActor>

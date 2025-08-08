@@ -43,7 +43,7 @@
   </Health>
   <Identity>
     <Civ>deku</Civ>
-    <Classes datatype="tokens"> Construct OrhatSiege SpitDekuNut DekuSiege Medium Class40</Classes>
+    <Classes datatype="tokens"> Construct OrhatSiege SpitDekuNut DekuSiege Medium</Classes>
     <GenericName>Dekupult</GenericName>
     <History>While they are rather small like the Deku Scrubs themselves, these catapults were no less deadly than those used by the other races of Hyrule. Loaded with exceptionally large Deku Nuts, the ammo of these siege engines could explode in a giant flash of light. Such bursts could punch a hole into an enemy gate, or holes into multiple enemy soldiers in the area.</History>
     <RequiredTechnology>phase_town</RequiredTechnology>

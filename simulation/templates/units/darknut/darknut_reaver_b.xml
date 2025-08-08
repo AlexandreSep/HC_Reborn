@@ -1,35 +1,13 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>15.0</Hack>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>800</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Cost>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>0</food>
-      <metal>50</metal>
-      <stone>0</stone>
-      <wood>0</wood>
+      <metal>40</metal>
+	  <stone>0</stone>
     </Resources>
   </Cost>
-  <Health>
-    <Max>220</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Large Class90</Classes>
+    <Classes datatype="tokens">Large</Classes>
     <GenericName>Reaver</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Outcast Darknut warriors that have survived through raiding and theft in the Gerudo Desert. Reavers have abandoned the bulky armor of their brothers and instead rely on their incredible muscles and speed to survive. The Legion is willing to hire these warriors when the need arrises.</History>
@@ -43,13 +21,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>25.0</Crush>
         <DodgeRating>30.0</DodgeRating>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
       </Damage>
     </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>
@@ -67,8 +41,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>climbing</PassabilityClass>
-    <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/darknut/darknut_reaver_b.xml</Actor>

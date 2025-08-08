@@ -1,56 +1,15 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>30</Hack>
-      </Damage>
-      <MaxRange>5</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1700</RepeatTime>
-      <Splash>
-        <Damage>
-          <Hack>30.0</Hack>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
-      </Splash>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
+<Entity parent="classes/HC_template_unit_Knight">
   <Cost>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
+      <food>200</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>380</Max>
+    <Max>500</Max>
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Holounit Legion Large Class70</Classes>
+    <Classes datatype="tokens">Holounit Legion Large</Classes>
     <GenericName>Jermafenser</GenericName>
     <History>Jermafensers were some of the tallest and largest Darknuts in service of the Legion. Standing at nearly ten feet tall, these hulking behemoths slowly mustered their way into combat, effortlessly slicing apart anything smaller than themselves.</History>
     <Icon>units/darknut/dar_jermafenser.dds</Icon>
@@ -66,13 +25,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>15.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>70.0</Pierce>
-        <Magic>5</Magic>
+        <Magic>25</Magic>
       </Damage>
     </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>
@@ -90,7 +45,7 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.4285</RunMultiplier>
+    <RunMultiplier>1.5</RunMultiplier>
     <WalkSpeed>7</WalkSpeed>
   </UnitMotion>
   <VisualActor>
