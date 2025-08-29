@@ -1,56 +1,40 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_mage">
   <Attack>
     <Ranged>
       <AttackName>Acid</AttackName>
-      <Damage>
-        <Magic>11</Magic>
-      </Damage>
-      <MaxRange>55</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1900</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>40</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>240</Max>
-  </Health>
+  <Builder>
+  <Entities datatype="tokens">
+    </Entities>
+    <Rate>0.5</Rate>
+  </Builder>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Small GohCaretaker CasteHive BasicSoldier</Classes>
     <GenericName>Caretaker</GenericName>
-    <History>Caretakers guard the hive and make sure everything is running in perfect order. They can garrison eggs and move them to new locations. A Caretaker can attack by flinging a glob of acid at their targets.</History>
+    <History>Caretakers guard the hive and make sure everything is running in perfect order. Their acid allows them to gather from rocks. A Caretaker can attack by flinging a glob of acid at their targets.</History>
     <Icon>units/gohma/goh_caretaker.dds</Icon>
     <SelectionGroupName>units/gohma/gohma_caretaker_b</SelectionGroupName>
-    <Tooltip>Small Gohma Missile unit that can attack with acid globs from a distance. They can also carry eggs.</Tooltip>
+    <Tooltip>Small Gohma Missile unit that can attack with acid globs from a distance.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
+  <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <metal>8</metal>
+      <stone>8</stone>
+      <wood>8</wood>
+    </Capacities>
+    <MaxDistance>2.0</MaxDistance>
+    <Rates>
+      <metal.rupees>0.4</metal.rupees>
+      <stone.ore>0.4</stone.ore>
+      <stone.ruins>1</stone.ruins>
+      <wood.rock>0.4</wood.rock>
+      <wood.ruins>2</wood.ruins>
+    </Rates>
+  </ResourceGatherer>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/natural/gohma_acid_impact.xml</attack_impact_ranged>

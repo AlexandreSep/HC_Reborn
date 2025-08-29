@@ -5,9 +5,9 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>35</food>
-      <metal>20</metal>
-      <stone>15</stone>
+      <food>200</food>
+      <metal>0</metal>
+      <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
@@ -33,9 +33,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>10.0</Crush>
+        <Crush>25.0</Crush>
         <Hack>25.0</Hack>
-        <Pierce>40.0</Pierce>
+        <Pierce>25.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

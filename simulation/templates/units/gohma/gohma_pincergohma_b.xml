@@ -1,29 +1,9 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>
-      <Damage>
-        <Hack>10.0</Hack>
-        <Pierce>2</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>45</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>260</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Medium Pincergohma CasteSoldier</Classes>
@@ -39,15 +19,6 @@
     <Entity>units/gohma/gohma_pincergohma_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>

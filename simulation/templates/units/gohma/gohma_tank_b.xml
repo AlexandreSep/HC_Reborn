@@ -1,43 +1,14 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beastrambig">
   <Attack>
     <Melee>
       <AttackName>Mandibles</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Structure</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Crush>29.0</Crush>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Structure</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>1800</RepeatTime>
     </Melee>
   </Attack>
   <Capture disable="" />
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>125</food>
-      <metal>0</metal>
-      <stone>60</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="5.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>800</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Ram Huge GohTank CasteGiant</Classes>
@@ -54,16 +25,6 @@
     <Entity>units/gohma/gohma_tank_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_hugeA_bite.xml</attack_melee>
@@ -79,11 +40,6 @@
       <walk>actor/movement/gohma/gohma_crawlE.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>2.0</RunMultiplier>
-    <WalkSpeed>7</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/gohma/gohma_tank_b.xml</Actor>
   </VisualActor>

@@ -1,27 +1,20 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_scout">
   <Attack>
     <Melee>
       <AttackName>Mandibles</AttackName>
-      <Damage>
-        <Pierce>5</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>3</BuildTime>
+    <BuildTime>12</BuildTime>
     <Resources>
-      <food>30</food>
+      <food>40</food>
       <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>180</Max>
+    <Max>75</Max>
   </Health>
   <Identity>
     <Civ>gohma</Civ>
@@ -34,15 +27,6 @@
     <Tooltip>A small but bloated larva that can grow into various reproductive or support forms.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
@@ -58,6 +42,49 @@
       <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
     </SoundGroups>
   </Sound>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <food>100</food>
+		<metal>50</metal>
+      </Cost>
+      <Entity>units/gohma/gohma_queen_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>40</Time>
+      <Tooltip>Create Queen.</Tooltip>
+    </Tower>
+    <TowerA>
+      <Cost>
+        <food>150</food>
+      <metal>75</metal>
+      <stone>75</stone>
+      </Cost>
+      <Entity>units/gohma/gohma_princess_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>40</Time>
+      <Tooltip>Create Princess.</Tooltip>
+    </TowerA>
+	<TowerB>
+      <Cost>
+       <food>100</food>
+      </Cost>
+      <Entity>units/gohma/gohma_ampli_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>40</Time>
+      <Tooltip>Create Amplifier.</Tooltip>
+    </TowerB>
+	<TowerC>
+      <Cost>
+       <food>250</food>
+      <metal>100</metal>
+      <wood>100</wood>
+      </Cost>
+      <Entity>units/gohma/gohma_rocktite_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Create Amplifier.</Tooltip>
+    </TowerC>
+  </Upgrade>
   <VisualActor>
     <Actor>units/gohma/gohma_larva_royal_b.xml</Actor>
   </VisualActor>

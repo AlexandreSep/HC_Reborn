@@ -1,39 +1,9 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_Knight">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Pierce>15.0</Pierce>
-      </Damage>
-      <MaxRange>7.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
     </Melee>
   </Attack>
-  <Builder>
-    <Entities datatype="tokens">
-      structures/gohma/eggs/gohma_egg_gohma_harvesterA
-      structures/gohma/eggs/gohma_egg_gohma_larva_hive_b
-      structures/gohma/eggs/gohma_egg_gohma_larva_soldier_b
-      structures/gohma/eggs/gohma_egg_gohma_larva_giant_b
-      structures/gohma/eggs/gohma_egg_gohma_larva_royal_b
-    </Entities>
-    <Rate>1.0</Rate>
-  </Builder>
-  <Cost>
-    <BuildTime>25</BuildTime>
-    <Resources>
-      <food>95</food>
-      <metal>50</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>600</Max>
-  </Health>
   <Identity>
     <AIBuild>
       <MaxCopies>3</MaxCopies>
@@ -54,16 +24,6 @@
     <Entity>units/gohma/gohma_queen_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
@@ -80,6 +40,13 @@
       <walk>actor/movement/gohma/gohma_crawlD.xml</walk>
     </SoundGroups>
   </Sound>
+   <ProductionQueue/>
+  <Trainer>
+    <BatchTimeModifier>2</BatchTimeModifier>
+    <Entities datatype="tokens">
+		units/gohma/gohma_egg_b
+	</Entities>
+  </Trainer>
   <VisualActor>
     <Actor>units/gohma/gohma_queen_b.xml</Actor>
   </VisualActor>

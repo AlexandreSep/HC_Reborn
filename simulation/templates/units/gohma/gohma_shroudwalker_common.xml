@@ -14,10 +14,10 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>45</food>
-      <metal>40</metal>
-      <stone>20</stone>
-      <wood>0</wood>
+      <food>100</food>
+      <metal>0</metal>
+      <stone>0</stone>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Health>
@@ -61,4 +61,9 @@
       <walk>actor/movement/gohma/gohma_crawlE.xml</walk>
     </SoundGroups>
   </Sound>
+  <TerritoryInfluence>
+    <Radius>60</Radius>
+    <Root>false</Root>
+    <Weight>10000</Weight>
+  </TerritoryInfluence>
 </Entity>

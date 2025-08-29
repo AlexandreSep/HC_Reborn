@@ -1,37 +1,17 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_assassin">
   <Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
-      <Damage>
-        <Hack>4.0</Hack>
-        <Pierce>18.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
       <Stun>
         <Chance>100</Chance>
         <Time>3000</Time>
       </Stun>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>55</food>
-      <metal>10</metal>
-      <stone>40</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint replace="">
     <Circle radius="5.0" />
     <Height>4.5</Height>
   </Footprint>
-  <Health>
-    <Max>500</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Small CasteSoldier UniqueUnit TrapDoorGohma</Classes>

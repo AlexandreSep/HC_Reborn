@@ -1,10 +1,4 @@
 <Entity parent="template_structure">
-  <Battalion>
-    <FormationTemplate>special/formations/battle_line</FormationTemplate>
-    <SameActorSeed>false</SameActorSeed>
-    <Size>1</Size>
-    <SpawnDeltaTime>500</SpawnDeltaTime>
-  </Battalion>
   <BuildRestrictions>
     <Category>Field</Category>
     <Territory>own neutral</Territory>

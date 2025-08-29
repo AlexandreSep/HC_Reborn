@@ -21,7 +21,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>75</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
     <Civ>gohma</Civ>
@@ -37,9 +37,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>3.0</Crush>
-        <Hack>3.0</Hack>
-        <Pierce>3.0</Pierce>
+         <Crush>5.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>

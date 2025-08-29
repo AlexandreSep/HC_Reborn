@@ -1,32 +1,13 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>
-      <Damage>
-        <Crush>12.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>125</food>
-      <metal>0</metal>
-      <stone>150</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint replace="">
     <Circle radius="5.0" />
     <Height>4.5</Height>
   </Footprint>
-  <Health>
-    <Max>500</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Medium</Classes>
@@ -36,19 +17,9 @@
     <Lang>gohma</Lang>
     <RequiredTechnology>civ_choices/gohma/choosehero_praetorian</RequiredTechnology>
     <SelectionGroupName>units/gohma/gohma_shieldgohma_b</SelectionGroupName>
-    <Tooltip>Melee unit with durable armor.</Tooltip>
+    <Tooltip>Monster unit with durable armor. It can summon Burst Gohma to assist in defending itself and sieging</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>85.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
@@ -64,10 +35,13 @@
       <walk>actor/movement/gohma/gohma_crawlC.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.8888</RunMultiplier>
-    <WalkSpeed>4.5</WalkSpeed>
-  </UnitMotion>
+  <ProductionQueue/>
+  <Trainer>
+    <BatchTimeModifier>2</BatchTimeModifier>
+    <Entities datatype="tokens">
+		units/gohma/gohma_burst_b
+	</Entities>
+  </Trainer>
   <VisualActor>
     <Actor>units/gohma/gohma_rocktite_b.xml</Actor>
   </VisualActor>

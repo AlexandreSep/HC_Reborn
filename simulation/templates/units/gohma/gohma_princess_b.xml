@@ -1,4 +1,4 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_commander">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>
@@ -17,22 +17,10 @@
   units/gohprincess_aura_2
   </Auras>
   <Capture disable="" />
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>30</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="7.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>450</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Medium CasteRoyal GohPrincess</Classes>
@@ -49,15 +37,6 @@
     <Entity>units/gohma/gohma_princess_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
@@ -73,10 +52,6 @@
       <walk>actor/movement/gohma/gohma_crawlA.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>2.0</RunMultiplier>
-    <WalkSpeed>7</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/gohma/gohma_princess_b.xml</Actor>
   </VisualActor>

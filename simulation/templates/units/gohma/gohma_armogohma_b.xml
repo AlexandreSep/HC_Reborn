@@ -1,14 +1,11 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_siegecannon">
   <Attack>
     <Ranged>
       <AttackName>Fire Stream</AttackName>
       <Damage>
-        <Magic>27</Magic>
+        <Magic>30</Magic>
       </Damage>
-      <MaxRange>70.0</MaxRange>
-      <MinRange>15.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>1900</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
@@ -21,6 +18,7 @@
       <RepeatTime>2000</RepeatTime>
       <Splash>
         <Damage>
+		  <Crush>0</Crush>
           <Fire>6.0</Fire>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
@@ -31,22 +29,10 @@
     </Ranged>
   </Attack>
   <Capture disable="" />
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>85</food>
-      <metal>0</metal>
-      <stone>35</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint replace="">
     <Circle radius="7.0" />
     <Height>4.5</Height>
   </Footprint>
-  <Health>
-    <Max>400</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Huge GohArmogohma CasteGiant</Classes>
@@ -61,16 +47,6 @@
     <Entity>units/gohma/gohma_armogohma_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/natural/armogohma_blast.xml</attack_ranged>

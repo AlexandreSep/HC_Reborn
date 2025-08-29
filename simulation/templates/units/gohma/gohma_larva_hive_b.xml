@@ -3,7 +3,7 @@
     <Melee>
       <AttackName>Mandibles</AttackName>
       <Damage>
-        <Pierce>7</Pierce>
+        <Pierce>2</Pierce>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -12,23 +12,7 @@
     </Melee>
   </Attack>
   <Builder>
-    <Entities datatype="tokens">
-    structures/gohma/gohma_civil_centre
-    structures/gohma/gohma_temple
-    structures/gohma/gohma_house
-    structures/gohma/gohma_farmstead
-    structures/gohma/gohma_field
-    structures/gohma/gohma_storehouse
-    structures/gohma/gohma_market
-    structures/gohma/gohma_nursery
-    structures/gohma/gohma_blacksmithD
-    structures/gohma/gohma_blacksmith
-    structures/gohma/gohma_blacksmithA
-    structures/gohma/gohma_blacksmithB
-    structures/gohma/gohma_blacksmithC
-    structures/gohma/gohma_barrierset
-    structures/gohma/gohma_sentry_tower
-    structures/gohma/gohma_wonder
+  <Entities datatype="tokens">
     </Entities>
     <Rate>0.25</Rate>
   </Builder>
@@ -42,7 +26,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>140</Max>
+    <Max>25</Max>
   </Health>
   <Identity>
     <Civ>gohma</Civ>
@@ -55,15 +39,26 @@
     <Tooltip>A small and hairy larva that can grow into various non-combat, utility forms. They can aid Harvesters and Hive Keepers with gathering Food and construction duty respectively.</Tooltip>
     <VisibleClasses datatype="tokens">Worker</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
+    <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>4</food>
+      <metal>4</metal>
+      <stone>4</stone>
+      <wood>4</wood>
+    </Capacities>
+    <MaxDistance>2.0</MaxDistance>
+    <Rates>
+      <food.fruit>0.5</food.fruit>
+      <food.meat>0.5</food.meat>
+      <metal.rupees>0.25</metal.rupees>
+      <stone.ore>0.25</stone.ore>
+      <stone.ruins>1</stone.ruins>
+      <wood.rock>0.25</wood.rock>
+      <wood.ruins>2</wood.ruins>
+      <wood.tree>0.4</wood.tree>
+    </Rates>
+  </ResourceGatherer>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
@@ -79,6 +74,46 @@
       <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
     </SoundGroups>
   </Sound>
+    <Upgrade>
+    <Tower>
+      <Cost>
+        <food>100</food>
+		<metal>7</metal>
+      </Cost>
+      <Entity>units/gohma/gohma_caretaker_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>20</Time>
+      <Tooltip>Create caretaker.</Tooltip>
+    </Tower>
+    <TowerA>
+      <Cost>
+        <food>150</food>
+      <stone>40</stone>
+      </Cost>
+      <Entity>units/gohma/gohma_janitor_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>40</Time>
+      <Tooltip>Create Janitor.</Tooltip>
+    </TowerA>
+	<TowerB>
+      <Cost>
+       <food>120</food>
+      </Cost>
+      <Entity>units/gohma/gohma_keeper_b</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>40</Time>
+      <Tooltip>Create Keeper.</Tooltip>
+    </TowerB>
+	<TowerC>
+      <Cost>
+       <food>200</food>
+      </Cost>
+      <Entity>units/gohma/gohma_shroudwalker_packed</Entity>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Create Shroudwalker.</Tooltip>
+    </TowerC>
+  </Upgrade>
   <VisualActor>
     <Actor>units/gohma/gohma_larva_hive_b.xml</Actor>
   </VisualActor>

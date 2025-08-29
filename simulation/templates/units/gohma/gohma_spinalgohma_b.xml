@@ -1,34 +1,9 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_spearman_heavy">
   <Attack>
     <Melee>
       <AttackName>Tongue</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>14.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>55</food>
-      <metal>0</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>270</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Medium Spinalgohma CasteSoldier</Classes>
@@ -44,15 +19,6 @@
     <Entity>units/gohma/gohma_spinalgohma_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>45.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>

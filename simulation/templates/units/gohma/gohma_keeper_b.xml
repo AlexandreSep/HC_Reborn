@@ -18,12 +18,12 @@
     structures/gohma/gohma_sentry_tower
     structures/gohma/gohma_wonder
     </Entities>
-    <Rate>1.0</Rate>
+    <Rate>3.0</Rate>
   </Builder>
   <Cost>
     <BuildTime>9</BuildTime>
     <Resources>
-      <food>50</food>
+      <food>200</food>
     </Resources>
   </Cost>
   <Footprint replace="">

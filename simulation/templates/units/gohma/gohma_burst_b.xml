@@ -22,7 +22,7 @@
   </Cost>
   <DeathDamage>
     <Damage>
-      <Forest>50</Forest>
+      <Magic>50</Magic>
     </Damage>
     <FriendlyFire>false</FriendlyFire>
     <Range>10</Range>

@@ -1,24 +1,17 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_creature">
   <Cost>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>110</food>
-      <metal>20</metal>
-      <stone>0</stone>
-      <wood>0</wood>
+      <food>300</food>
     </Resources>
   </Cost>
   <DeathDamage>
     <Shape>Circular</Shape>
     <FriendlyFire>false</FriendlyFire>
-    <Range>10</Range>
+    <Range>20</Range>
     <Damage>
-      <Forest>258.0</Forest>
+      <Magic>250</Magic>
     </Damage>
   </DeathDamage>
-  <Health>
-    <Max>220</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Huge UniqueUnit AcidSprayer</Classes>

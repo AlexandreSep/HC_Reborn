@@ -1,28 +1,17 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_swordsman">
   <Attack>
     <Melee>
       <AttackName>Mandibles</AttackName>
-      <Damage>
-        <Hack>5.0</Hack>
-        <Pierce>3</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
-    <BuildTime>4</BuildTime>
     <Resources>
       <food>35</food>
-      <metal>0</metal>
       <stone>0</stone>
-      <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>160</Max>
+    <Max>100</Max>
   </Health>
   <Identity>
     <Civ>gohma</Civ>
@@ -39,15 +28,6 @@
     <Entity>units/gohma/gohma_larva_soldier_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
@@ -63,6 +43,48 @@
       <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
     </SoundGroups>
   </Sound>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <food>20</food>
+		<metal>5</metal>
+      </Cost>
+      <Entity>units/gohma/gohma_pincergohma_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>20</Time>
+      <Tooltip>Create Pincergohma.</Tooltip>
+    </Tower>
+    <TowerA>
+      <Cost>
+        <food>10</food>
+		<metal>10</metal>
+      </Cost>
+      <Entity>units/gohma/gohma_spinalgohma_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>20</Time>
+      <Tooltip>Create Spinalgohma.</Tooltip>
+    </TowerA>
+	<TowerB>
+      <Cost>
+		<food>70</food>
+		<metal>30</metal>
+      </Cost>
+      <Entity>units/gohma/gohma_shieldgohma_b</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>40</Time>
+      <Tooltip>Create Shieldgohma.</Tooltip>
+    </TowerB>
+	<TowerC>
+      <Cost>
+       <food>50</food>
+		<metal>50</metal>
+      </Cost>
+      <Entity>units/gohma/gohma_trapdoor</Entity>
+      <RequiredTechnology>phase_village</RequiredTechnology>
+      <Time>40</Time>
+      <Tooltip>Create Trapdoor.</Tooltip>
+    </TowerC>
+  </Upgrade>
   <VisualActor>
     <Actor>units/gohma/gohma_larva_soldier_b.xml</Actor>
   </VisualActor>

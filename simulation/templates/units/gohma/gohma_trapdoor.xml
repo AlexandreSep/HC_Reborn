@@ -1,20 +1,8 @@
-<Entity parent="HC_template_unit_infantry">
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>55</food>
-      <metal>10</metal>
-      <stone>40</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_assassin">
   <Footprint replace="">
     <Circle radius="5.0" />
     <Height>4.5</Height>
   </Footprint>
-  <Health>
-    <Max>500</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Small CasteSoldier UniqueUnit TrapDoorGohma</Classes>

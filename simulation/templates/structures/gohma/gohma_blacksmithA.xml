@@ -105,7 +105,7 @@
     <Entities datatype="tokens">units/gohma/{civ}_larva_soldier_b
     units/gohma/{civ}_pincergohma_b
     units/gohma/{civ}_spinalgohma_b
-    units/gohma/{civ}_burst_b
+    units/gohma/{civ}_shieldgohma_b
     units/gohma/{civ}_trapdoor</Entities>
     <DestinationOffset>
       <step1>

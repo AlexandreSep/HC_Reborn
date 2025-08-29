@@ -1,32 +1,13 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_beastramsmall">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>
-      <Damage>
-        <Crush>16.0</Crush>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint replace="">
     <Circle radius="5.0" />
     <Height>4.5</Height>
   </Footprint>
-  <Health>
-    <Max>210</Max>
-  </Health>
   <Identity>
     <Civ>gohma</Civ>
     <Classes datatype="tokens">Large GohJanitor CasteHive BasicSoldier</Classes>
@@ -38,16 +19,19 @@
     <Tooltip>Large Support unit that can snap trees in half and gather meat from dead corpses.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
+    <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>20</food>
+      <wood>20</wood>
+    </Capacities>
+    <MaxDistance>2.0</MaxDistance>
+    <Rates>
+      <food.fruit>2</food.fruit>
+      <food.meat>2</food.meat>
+      <wood.tree>2</wood.tree>
+    </Rates>
+  </ResourceGatherer>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
@@ -71,8 +55,7 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>2.0</RunMultiplier>
-    <WalkSpeed>3.5</WalkSpeed>
+    <WalkSpeed>5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/gohma/gohma_janitor_b.xml</Actor>
