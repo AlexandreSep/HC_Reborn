@@ -1,44 +1,18 @@
-<Entity parent="classes/HC_template_unit_light_archer|light_archer">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
       <AttackName>Ice Arrows</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>FireElement</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
-      <Damage>
-        <Pierce>15</Pierce>
-        <Magic>10</Magic>
-      </Damage>
-      <MaxRange>80</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
+	  <Damage>
+        <Pierce>3</Pierce>
+        <Magic>3</Magic>
+	  </Damage>
+	<Stun>
+		<Chance>20</Chance>
+		<Time>1500</Time>
+	</Stun>
+	  <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>270</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Medium WaterElement IceArcher Archer Human</Classes>
@@ -50,16 +24,6 @@
     <SelectionGroupName>units/gerudo/gerudo_icearcher_b</SelectionGroupName>
     <Tooltip>Gerudo Missile unit that can slow enemy targets with her ranged Ice Arrows.</Tooltip>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-    <DodgeRating>10.0</DodgeRating>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/magic/arrows_ice.xml</attack_ranged>
@@ -75,12 +39,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_icearcher_b.xml</Actor>
   </VisualActor>

@@ -1,7 +1,7 @@
 <Entity parent="units/gerudo/gerudo_sandsniper_b">
   <Attack>
     <Ranged>
-      <MaxRange>90</MaxRange>
+      <MaxRange>70</MaxRange>
     </Ranged>
   </Attack>
   <Turretable />

@@ -1,28 +1,9 @@
-<Entity parent="classes/HC_template_unit_light_infantry|assassin_melee|light_infantry">
+<Entity parent="classes/HC_template_unit_assassin">
   <Attack>
     <Melee>
       <AttackName>Katars</AttackName>
-      <Damage>
-        <Pierce>5.0</Pierce>
-        <TrueDamage>15</TrueDamage>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>55</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>270</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Medium Gerudadorf Human</Classes>
@@ -34,16 +15,6 @@
     <SelectionGroupName>units/gerudo/gerudo_gerudadorf_b</SelectionGroupName>
     <Tooltip>Fast Melee unit with Camouflage, has a chance to deal Critical Hits to enemies.</Tooltip>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-    <DodgeRating>40.0</DodgeRating>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -59,13 +30,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5833</RunMultiplier>
-    <WalkSpeed>12.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_gerudadorf_b.xml</Actor>
   </VisualActor>

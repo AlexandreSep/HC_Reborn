@@ -1,27 +1,9 @@
-<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
-      <Damage>
-        <Hack>14.0</Hack>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>350</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Large GanondorfCav Vagrudanon</Classes>
@@ -33,16 +15,6 @@
     <SelectionGroupName>units/gerudo/gerudo_vagrudanon_b</SelectionGroupName>
     <Tooltip>Fast and Light Cavalry unit geared towards raiding enemy targets.</Tooltip>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -58,10 +30,6 @@
       <walk>actor/movement/horse/horse_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2631</RunMultiplier>
-    <WalkSpeed>19.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/gerudo/gerudo_vagrudanon_b.xml</Actor>
   </VisualActor>

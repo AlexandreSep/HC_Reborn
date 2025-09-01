@@ -1,20 +1,7 @@
-<Entity parent="classes/HC_template_unit_siege|siege">
+<Entity parent="classes/HC_template_unit_siegecannon">
   <Attack>
     <Ranged>
-      <AttackName>Boulder</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Structure</Classes>
-          <Multiplier>3</Multiplier>
-        </Bonus1>
-      </Bonuses>
-      <Damage>
-        <Crush>200.0</Crush>
-      </Damage>
-      <MaxRange>120.0</MaxRange>
-      <MinRange>45.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>5000</PrepareTime>
+	<AttackName>Boulder</AttackName>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
@@ -24,45 +11,16 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>6000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>190</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="12.0" width="8.0" />
-  </Footprint>
-  <Health>
-    <Max>700</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">-Organic Construct Large Class40 GerudoCatapult</Classes>
+    <Classes datatype="tokens">Construct Large GerudoCatapult</Classes>
     <GenericName>Gerudo Catapult</GenericName>
     <History>The Gerudo have long used Catapults to attack enemy cities: it has remained their most reliable siege weapon for centuries. Made from the wood of Desert Palms, they are very easy to construct and maintain. The boulders launched by these engines can take down just about any stationary target, be it walls, gates, or enemy towers.</History>
     <Icon>units/gerudo/ger_catapult.dds</Icon>
     <Tooltip>Cheap but effective Siege unit with a ranged attack.</Tooltip>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>75.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
@@ -78,13 +36,6 @@
       <walk>actor/movement/cart/cart_move.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1904</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>120</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_catapult_b.xml</Actor>
   </VisualActor>

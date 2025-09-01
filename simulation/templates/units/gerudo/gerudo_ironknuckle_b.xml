@@ -1,18 +1,11 @@
-<Entity parent="classes/HC_template_unit_heavy_infantry">
+<Entity parent="classes/HC_template_unit_Knight">
   <Attack>
+  <Melee disable="" />
     <Ranged>
       <AttackName>Axe</AttackName>
       <Damage>
-        <Crush>10.0</Crush>
-        <Hack>10.0</Hack>
-        <TrueDamage>35</TrueDamage>
+        <Hack>150</Hack>
       </Damage>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Light_Infantry Beast</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>	  
       <MaxRange>7.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PrepareTime>1500</PrepareTime>
@@ -24,17 +17,13 @@
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>2000</RepeatTime>
-      <Splash>
+	  <Splash>
         <Damage>
-          <Crush>30.0</Crush>
+          <Hack>5.0</Hack>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
-        <Range>5</Range>
+        <Range>7</Range>
         <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
       </Splash>
       <Knockback>
         <Horizontal>10</Horizontal>
@@ -44,13 +33,11 @@
     </Ranged>
   </Attack>
   <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>20</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>100</stone>
-      <wood>170</wood>
+      <stone>200</stone>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Health>
@@ -72,18 +59,6 @@
     <Floating>false</Floating>
     <TurnRate>1.35</TurnRate>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>45.0</Crush>
-        <Hack>85.0</Hack>
-        <Pierce>85.0</Pierce>
-        <Magic>10</Magic>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-    <StunResistance>100</StunResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/ironk_axe.xml</attack_ranged>
@@ -101,8 +76,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.3333</RunMultiplier>
-    <WalkSpeed>6</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/gerudo/gerudo_ironknuckle_b.xml</Actor>

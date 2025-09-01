@@ -1,28 +1,9 @@
-<Entity parent="classes/HC_template_unit_light_infantry|light_infantry">
+<Entity parent="classes/HC_template_unit_swordsman">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
-      <Damage>
-        <Hack>12.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>180</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Medium Marauder GoldenArmor Human</Classes>
@@ -34,16 +15,6 @@
     <Tooltip>Light Infantry Melee unit that can raid enemies.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <DodgeRating>10.0</DodgeRating>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -59,13 +30,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5833</RunMultiplier>
-    <WalkSpeed>12.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_marauder_b.xml</Actor>
   </VisualActor>

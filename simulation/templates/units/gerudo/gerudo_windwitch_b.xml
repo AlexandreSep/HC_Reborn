@@ -1,56 +1,16 @@
-<Entity parent="classes/HC_template_unit_light_infantry|mage">
+<Entity parent="classes/HC_template_unit_mage_heavy">
   <Attack>
     <Ranged>
       <AttackName>Witch's Wind</AttackName>
-      <Damage>
-        <Magic>15</Magic>
-      </Damage>
       <Knockback>
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
-      <MaxRange>50</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>2000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2500</RepeatTime>
-      <Splash>
-        <Damage>
-          <Magic>15.0</Magic>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>25</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>300</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium SpiritElement Class80 WindWitch Human</Classes>
+    <Classes datatype="tokens">Medium SpiritElement WindWitch Human</Classes>
     <GenericName>Wind Witch</GenericName>
     <History>Elder Matriarchs of Gerudo society, the Wind Witches took control of the desert Empire after their male kings became extinct. Dark magics of the ancient desert have given them extraordinarily long lives, as well as power over sand and wind. They are feared and revered by all Gerudo.</History>
     <Icon>units/gerudo/ger_windwitch.dds</Icon>
@@ -63,16 +23,6 @@
     <Entity>units/gerudo/gerudo_windwitch_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <DodgeRating>50.0</DodgeRating>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/magic/witch_wind.xml</attack_ranged>
@@ -88,13 +38,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3333</RunMultiplier>
-    <WalkSpeed>15.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_windwitch_b.xml</Actor>
   </VisualActor>

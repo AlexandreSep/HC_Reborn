@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_heavy_infantry|shield|heavy_infantry">
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Attack>
     <Melee>
       <AttackName>Khopesh</AttackName>
@@ -8,28 +8,8 @@
           <Multiplier>2.0</Multiplier>
         </Bonus1>
       </Bonuses>
-      <Damage>
-        <Hack>18.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Mage Infantry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>80</food>
-      <metal>30</metal>
-      <stone>35</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>350</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Medium MirrorShield SerpentSlayer Human</Classes>
@@ -47,17 +27,6 @@
     <Entity>units/gerudo/gerudo_serpentkeep_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>45.0</Pierce>
-        <Magic>10</Magic>
-      </Damage>
-    </Entity>
-    <DodgeRating>10.0</DodgeRating>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -73,13 +42,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>11</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_serpentkeep_b.xml</Actor>
   </VisualActor>

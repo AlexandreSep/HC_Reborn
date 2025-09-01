@@ -1,11 +1,12 @@
-<Entity parent="classes/HC_template_unit_light_cavalry|light_archer">
+<Entity parent="classes/HC_template_unit_cavalry">
   <Attack>
+  <Melee disable="" />
     <Ranged>
       <AttackName>Arrows</AttackName>
       <Damage>
         <Pierce>12</Pierce>
       </Damage>
-      <MaxRange>70</MaxRange>
+      <MaxRange>60</MaxRange>
       <MinRange>15.0</MinRange>
       <PrepareTime>1500</PrepareTime>
       <Projectile>
@@ -20,16 +21,14 @@
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
+	<Resources>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
+      <wood>60</wood>
+	</Resources>
   </Cost>
   <Health>
-    <Max>270</Max>
+    <Max>150</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -43,16 +42,6 @@
     <Tooltip>Fast mounted Scout unit armed with a bow and arrow.</Tooltip>
     <VisibleClasses datatype="tokens">Scout</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
@@ -68,10 +57,6 @@
       <walk>actor/movement/horse/horse_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4871</RunMultiplier>
-    <WalkSpeed>19.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/gerudo/gerudo_trailblazer_upg.xml</Actor>
   </VisualActor>

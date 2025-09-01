@@ -1,30 +1,12 @@
-<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry|buffer">
+<Entity parent="classes/HC_template_unit_commander">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>
-      <Damage>
-        <Hack>40.0</Hack>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
   <Auras datatype="tokens">
     units/arbiter_aura_1
   </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>115</food>
-      <metal>20</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>450</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Large UniqueUnit Arbiter</Classes>
@@ -37,16 +19,14 @@
     <SelectionGroupName>units/gerudo/gerudo_arbiter_b</SelectionGroupName>
     <Tooltip>Ganondorf's Unique Unit. Cavalry Commander unit that improves the performance of other Cavalry units.</Tooltip>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>cavalry/128x128.dds</MainTexture>
+        <MainTextureMask>cavalry/128x128_mask.dds</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -63,8 +43,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.2631</RunMultiplier>
-    <WalkSpeed>19</WalkSpeed>
+    <RunMultiplier>3</RunMultiplier>
+    <WalkSpeed>16</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/gerudo/gerudo_arbiter_b.xml</Actor>

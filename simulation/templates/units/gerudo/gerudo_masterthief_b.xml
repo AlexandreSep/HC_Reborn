@@ -1,35 +1,4 @@
-<Entity parent="classes/HC_template_unit_light_infantry|assassin_melee|light_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Scimitars</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Infantry</Classes>
-          <Multiplier>1.5</Multiplier>
-        </Bonus1>
-      </Bonuses>
-      <Damage>
-        <Hack>35.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>55</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>300</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_assassin">
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Medium MasterThief Human</Classes>
@@ -43,14 +12,7 @@
     <Tooltip>Swift Melee unit that is Stealthed.</Tooltip>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-    <DodgeRating>50.0</DodgeRating>
+    <DodgeRating>25.0</DodgeRating>
   </Resistance>
   <Sound>
     <SoundGroups>
@@ -67,13 +29,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5833</RunMultiplier>
-    <WalkSpeed>12.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_masterthief_b.xml</Actor>
   </VisualActor>

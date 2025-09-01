@@ -1,32 +1,12 @@
-<Entity parent="classes/HC_template_unit_light_infantry|heavy_infantry">
+<Entity parent="classes/HC_template_unit_Knight">
   <Attack>
     <Melee>
       <AttackName>Claymore</AttackName>
-      <Damage>
-        <Hack>20.0</Hack>
-        <TrueDamage>15</TrueDamage>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>90</food>
-      <metal>20</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>300</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Class100 UniqueUnit Goldenglad Human</Classes>
+    <Classes datatype="tokens">Medium UniqueUnit Goldenglad Human</Classes>
     <GenericName>Golden Gladiator</GenericName>
     <History>Wielding a huge two-handed claymore, Golden Gladiators use their impressive strength and speed to overpower lesser enemies. They are swift on their feet, can dodge well in a melee, and their strength and weapon of choice allows them to crack open enemy armor with ease.</History>
     <Icon>units/gerudo/ger_goldenglad.dds</Icon>
@@ -36,17 +16,6 @@
     <Tooltip>Urbosa's Unique Unit. Strong Melee unit that has a very high Dodge rate.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>50</KnockbackResistance>
-    <DodgeRating>20.0</DodgeRating>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -62,13 +31,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4545</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_goldenglad_b.xml</Actor>
   </VisualActor>

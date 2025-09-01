@@ -1,31 +1,12 @@
-<Entity parent="classes/HC_template_unit_heavy_infantry|spearman">
+<Entity parent="classes/HC_template_unit_spearman_heavy">
   <Attack>
     <Melee>
       <AttackName>Trident</AttackName>
-      <Damage>
-        <Pierce>18.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>250</Max>
-  </Health>
   <Identity>
     <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Class100 MirrorShield TombGuard Spearmen GoldenArmor Human</Classes>
+    <Classes datatype="tokens">Medium MirrorShield TombGuard Spearmen GoldenArmor Human</Classes>
     <GenericName>Tomb Guard</GenericName>
     <History>High-ranking soldiers in the Gerudo military, Tomb Guards watch over the graves of long-deceased Gerudo Kings, as well as the Royal Palace and other political centers. Armed with a Trident-Spear and shining Golden Shield, Tomb Guards can stand their ground and hold off almost any foe.</History>
     <Icon>units/gerudo/ger_tombguard.dds</Icon>
@@ -37,16 +18,6 @@
     <Entity>units/gerudo/gerudo_tombguard_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
-    <DodgeRating>10.0</DodgeRating>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -62,13 +33,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>11.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/gerudo/gerudo_tombguard_b.xml</Actor>
   </VisualActor>

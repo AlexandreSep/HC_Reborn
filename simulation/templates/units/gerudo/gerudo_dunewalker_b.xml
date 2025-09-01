@@ -1,11 +1,12 @@
-<Entity parent="classes/HC_template_unit_heavy_cavalry|light_archer">
+<Entity parent="classes/HC_template_unit_heavy_cavalry">
   <Attack>
+     <Melee disable="" />
     <Ranged>
       <AttackName>Arrows</AttackName>
       <Damage>
-        <Pierce>20.0</Pierce>
+        <Pierce>12</Pierce>
       </Damage>
-      <MaxRange>70.0</MaxRange>
+      <MaxRange>50.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1500</PrepareTime>
@@ -21,17 +22,15 @@
     </Ranged>
   </Attack>
   <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
     <Resources>
-      <food>60</food>
+	  <food>240</food>
       <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
+      <stone>0</stone>
+      <wood>60</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>500</Max>
+    <Max>200</Max>
   </Health>
   <Identity>
     <Civ>gerudo</Civ>
@@ -49,16 +48,6 @@
     <Anchor>pitch</Anchor>
     <Floating>true</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -76,8 +65,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.3157</RunMultiplier>
-    <WalkSpeed>9.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/gerudo/gerudo_dunewalker_b.xml</Actor>
