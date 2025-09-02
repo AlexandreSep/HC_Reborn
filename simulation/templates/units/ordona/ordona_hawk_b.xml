@@ -1,29 +1,14 @@
-<Entity parent="classes/HC_template_unit_beast|flying">
+<Entity parent="classes/HC_template_unit_beast">
   <Attack>
     <Melee>
       <AttackName>Claws</AttackName>
       <Damage>
         <Hack>2.0</Hack>
-        <Pierce>5</Pierce>
       </Damage>
       <MaxRange>6.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>150</Max>
-  </Health>
   <Identity>
     <Civ>ordona</Civ>
     <Classes datatype="tokens">Small Flying</Classes>
@@ -39,16 +24,6 @@
     <Floating>true</Floating>
     <TurnRate>3.25</TurnRate>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/hawk_dive.xml</attack_melee>
@@ -66,7 +41,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
-    <RunMultiplier>1.1515</RunMultiplier>
     <WalkSpeed>16.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>

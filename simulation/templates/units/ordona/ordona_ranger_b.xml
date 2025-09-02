@@ -1,41 +1,7 @@
-<Entity parent="classes/HC_template_unit_heavy_archer|heavy_archer">
-  <Attack>
-    <Ranged>
-      <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>5</Pierce>
-		<TrueDamage>15</TrueDamage>
-      </Damage>
-      <MaxRange>80</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>800</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>4000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>105</food>
-      <metal>0</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>380</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_crossbow">
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Medium Class80 CanGarrison Ranger</Classes>
+    <Classes datatype="tokens">Medium CanGarrison Ranger</Classes>
     <GenericName>Ranger</GenericName>
     <History>Ordonian Rangers were those dedicated to protecting the wild borders of the Province from encroachment. Initially established on the western border to watch and warn of incoming Moblin invasions, Rangers can now be found on all edges of Ordona, from Faron to the haunted canyons of Ikana. These stealthy soldiers know how to survive in the wilderness and take out almost any foe before they knew what hit them. They can snipe enemies with their Ranger Crossbows.</History>
     <Icon>units/ordona/ord_ranger.dds</Icon>
@@ -44,15 +10,6 @@
     <Tooltip>Fast moving heavy Missile unit armed with a powerful crossbow.</Tooltip>
     <VisibleClasses datatype="tokens">Missile Worker</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>

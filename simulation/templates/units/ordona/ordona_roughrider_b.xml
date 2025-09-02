@@ -1,32 +1,12 @@
-<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry">
   <Attack>
     <Melee>
       <AttackName>Axe</AttackName>
-      <Damage>
-        <Hack>11.0</Hack>
-        <Pierce>3</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>90</food>
-      <metal>20</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>400</Max>
-  </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Large Class100 RoughRider</Classes>
+    <Classes datatype="tokens">Large RoughRider</Classes>
     <GenericName>Rough Rider</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A special battalion of horse riding raiders formed by Ilia shortly after Labrynna's invasion of Ordona Province. The Rough Riders push speed over anything else in hopes to being difficult targets for Labrynna's gunpowder. They are the single fastest cavalry in the known world, and nothing can hope to keep up pace with them. While not particularly durable, they swing a ferocious axe in a fight and can deal some serious damage. When things are too tough they can easily retreat before it's too late.</History>
@@ -40,9 +20,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>35.0</Crush>
+        <Crush>5.0</Crush>
         <Hack>15.0</Hack>
-        <Pierce>25.0</Pierce>
+        <Pierce>15.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>75</KnockbackResistance>
@@ -63,8 +43,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.4814</RunMultiplier>
-    <WalkSpeed>27.0</WalkSpeed>
+    <RunMultiplier>3</RunMultiplier>
+    <WalkSpeed>20</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/ordona/ordona_roughrider_b.xml</Actor>

@@ -1,9 +1,9 @@
-<Entity parent="classes/HC_template_unit_light_infantry|light_infantry">
+<Entity parent="classes/HC_template_unit_swordsman">
   <Attack>
     <Melee>
       <AttackName>Axe</AttackName>
       <Damage>
-        <Hack>8.0</Hack>
+        <Hack>4.0</Hack>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -14,14 +14,14 @@
   <Cost>
     <BuildTime>9</BuildTime>
     <Resources>
-      <food>25</food>
+      <food>0</food>
       <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
+      <stone>0</stone>
+      <wood>50</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>150</Max>
+    <Max>50</Max>
   </Health>
   <Builder>
     <Rate>0.75</Rate>
@@ -44,15 +44,6 @@
     <Tooltip>Strong Melee unit armed with axes. They also excell at harvesting wood from trees.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Worker</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -91,7 +82,7 @@
       <food.fruit>0.5</food.fruit>
       <food.grain>0.25</food.grain>
       <food.meat>0.5</food.meat>
-      <wood.tree>1</wood.tree>
+      <wood.tree>1.5</wood.tree>
       <wood.rock>0.15</wood.rock>
       <wood.ruins>0.3</wood.ruins>
       <stone.ore>0.15</stone.ore>

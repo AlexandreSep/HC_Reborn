@@ -3,23 +3,8 @@
     <Ranged>
       <AttackName>Boulder</AttackName>
       <Damage>
-        <Crush>300.0</Crush>
         <Fire>0.0</Fire>
       </Damage>
-      <MaxRange>110.0</MaxRange>
-      <MinRange>45.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>5000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
-        <Speed>37.5</Speed>
-        <Spread>3.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>7500</RepeatTime>
       <SpawnEntityOnImpact>
         <SpawnNumberMax>1</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>

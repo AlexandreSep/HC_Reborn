@@ -1,37 +1,4 @@
-<Entity parent="classes/HC_template_unit_light_archer|light_archer">
-  <Attack>
-    <Ranged>
-      <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>9</Pierce>
-      </Damage>
-      <MaxRange>76</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>30</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>180</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_archer">
   <Builder>
     <Rate>0.75</Rate>
     <Entities datatype="tokens">
@@ -51,15 +18,6 @@
     <Tooltip>Cheap light Missile unit that attacks with a bow and arrows.</Tooltip>
     <VisibleClasses datatype="tokens">Missile Worker</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>

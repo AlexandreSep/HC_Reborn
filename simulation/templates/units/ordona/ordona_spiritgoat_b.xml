@@ -3,26 +3,11 @@
     <Melee>
       <AttackName>Horn</AttackName>
       <Damage>
+		<Hack>0</Hack>
         <Magic>10</Magic>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>135</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>500</Max>
-  </Health>
   <Identity>
     <Civ>ordona</Civ>
     <Classes datatype="tokens">Goat Small -Organic Spirit</Classes>
@@ -37,10 +22,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>10.0</Crush>
-        <Hack>60.0</Hack>
-        <Pierce>20.0</Pierce>
-        <Magic>10</Magic>
+        <Magic>50</Magic>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>
@@ -65,8 +47,6 @@
   </TrainingRestrictions>
   <UnitMotion>
     <PassabilityClass>climbing</PassabilityClass>
-    <RunMultiplier>1.4</RunMultiplier>
-    <WalkSpeed>12.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/ordona/ordona_spiritgoat_b.xml</Actor>

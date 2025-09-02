@@ -1,51 +1,13 @@
-<Entity parent="classes/HC_template_unit_siege|ram">
-  <Attack>
-    <Melee>
-      <AttackName>Ram</AttackName>
-      <Damage>
-		<Crush>10.0</Crush>
-      </Damage>
-      <MaxRange>7.0</MaxRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>305</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="12.0" width="8.0" />
-  </Footprint>
-  <Health>
-    <Max>550</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_siegeram">
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">-Organic Construct Class40 Ram</Classes>
+    <Classes datatype="tokens">Construct Ram</Classes>
     <GenericName>Battering Ram</GenericName>
     <History>Made from sturdy Faron wood and capped with a large metal Goat head, the Siege Ram allows the Ordonians to bash their way past walls and gates and into protected areas. Their capped roof makes them quite resistant to ranged attacks, forcing enemies to bombard them with fire or stop them in a melee.</History>
     <Icon>units/ordona/ord_siegeram.dds</Icon>
     <Tooltip>Cheap Melee Siege unit that can bash down walls and gates.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>5.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/siege/ram_attack.xml</attack_melee>
@@ -61,10 +23,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4285</RunMultiplier>
-    <WalkSpeed>7</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/ordona/ordona_siegeram_b.xml</Actor>
   </VisualActor>

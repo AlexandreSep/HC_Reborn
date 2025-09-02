@@ -1,37 +1,7 @@
-<Entity parent="classes/HC_template_unit_light_infantry|spearman">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>11.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>45</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>260</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_spearman">
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Medium Class90 Helmed Sergeant</Classes>
+    <Classes datatype="tokens">Medium Helmed Sergeant</Classes>
     <GenericName>Sergeant</GenericName>
     <History>Hailing from families of middling wealth and prestige, Sergeants were Citizens of Ordona Provice enlisted into military service, trained, and held on standby for army orders. During most of their time they went about their daily lives, but would quickly abandon their tasks to take up arms and armor while filing into ranks. Sergeant training was crude as was usual amongst the Ordonians, and to save time on learning swordplay (as well as to keep costs down), Sergeants were outfitted with easy-to-use spears.</History>
     <Icon>units/ordona/ord_sergeant.dds</Icon>
@@ -40,15 +10,6 @@
     <Tooltip>Melee unit wearing decent armor and armed with a spear.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Worker</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

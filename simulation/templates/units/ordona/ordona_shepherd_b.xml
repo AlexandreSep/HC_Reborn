@@ -1,9 +1,9 @@
-<Entity parent="classes/HC_template_unit_light_infantry">
+<Entity parent="HC_template_unit_auxiliary">
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>25</food>
-      <metal>40</metal>
+      <food>200</food>
+      <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
@@ -27,7 +27,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Medium Class40 Shepherdgoat</Classes>
+    <Classes datatype="tokens">Medium Shepherdgoat</Classes>
     <GenericName>Shepherd</GenericName>
     <History>Shepherds guide and care for Ordona's native goats. Providing meat and milk as well as serving the role of beast of burden and battle mount, Ordonian goats are treasured and nearly sacred to the people of the province. A Shepherd can summon a small flock of Ordonian goats that follow their leader around, attacking any enemies that come near.</History>
     <Icon>units/ordona/ord_shepherd.dds</Icon>
@@ -38,15 +38,6 @@
     <Tooltip>Support unit that summons herds of Attack Goats to swarm their enemies.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

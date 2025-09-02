@@ -1,37 +1,7 @@
-<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>17.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>290</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_cavalryanti">
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Goat Large Class100 Yeoman</Classes>
+    <Classes datatype="tokens">Goat Large Yeoman</Classes>
     <GenericName>Yeoman</GenericName>
     <History>Yeomen were the owners of an Ordonian household, often with several families of farmers below them. Though they were often a bit wealthier than their workers, they still answered to their immediate fief lord and were drafted into mandatory military service. Often Yeomen would ride their family's Goat into battle, bringing with them a spear to match enemy cavalry. Like all of Ordona's goat cavalry, the Yeoman can climb over mountainous terrain.</History>
     <Icon>units/ordona/ord_yeoman.dds</Icon>
@@ -41,16 +11,6 @@
     <Tooltip>Light Melee Cavalry unit armed with a spear, ideal for attacking other Cavalry units.</Tooltip>
     <VisibleClasses datatype="tokens">Melee AntiCav</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -68,8 +28,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>climbing</PassabilityClass>
-    <RunMultiplier>1.4</RunMultiplier>
-    <WalkSpeed>12.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/ordona/ordona_yeoman_b.xml</Actor>

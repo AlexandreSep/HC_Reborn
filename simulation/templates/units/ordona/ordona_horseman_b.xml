@@ -1,32 +1,7 @@
-<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry|shield">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>11.0</Hack>
-        <Pierce>4</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>85</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>370</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_cavalry">
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Large Class100 Horseman</Classes>
+    <Classes datatype="tokens">Large Horseman</Classes>
     <GenericName>Horseman</GenericName>
     <History>Ordona Province has bred some of the finest cavalry in the history of Hyrule, and these scores of mounted warriors displayed that pride in the thick of battle. Armed with a shield and wielding a sword, these swift riders could decapitate just about any foe with a neck.</History>
     <Icon>units/ordona/ord_horseman.dds</Icon>
@@ -36,16 +11,6 @@
     <Tooltip>Fast moving Melee Cavalry unit armed with swords.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

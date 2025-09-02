@@ -1,35 +1,12 @@
-<Entity parent="classes/HC_template_unit_heavy_cavalry|heavy_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry_heavy">
   <Attack>
     <Melee>
       <AttackName>Axe</AttackName>
-      <Damage>
-        <Hack>12.0</Hack>
-        <Pierce>4</Pierce>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>6.0</MaxRange>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>370</Max>
-  </Health>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Large Class100 Goat BillyBat</Classes>
+    <Classes datatype="tokens">Large Goat BillyBat</Classes>
     <GenericName>Billy Battler</GenericName>
     <History>The Billy Battler is the face of the Ordonian army, and perhaps their nation's most numerous military unit. A trained warrior riding on the back of an angry Ordonian goat, these armored cavalry may lack speed but pack quite the buck. After charging into an enemy with their looped horn, the Billy Battler's rider chops and decapitates enemies with their axe. Like all of Ordona's goat cavalry, the Billy Battler can climb over mountainous terrain.</History>
     <Icon>units/ordona/ord_billybat.dds</Icon>
@@ -39,16 +16,6 @@
     <Tooltip>Medium Cavalry unit with a strong melee attack and Knockback damage.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>35.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -66,8 +33,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>climbing</PassabilityClass>
-    <RunMultiplier>1.4</RunMultiplier>
-    <WalkSpeed>12.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/ordona/ordona_billybat_b.xml</Actor>

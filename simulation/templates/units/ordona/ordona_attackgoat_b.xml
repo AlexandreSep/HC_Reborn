@@ -3,29 +3,14 @@
     <Melee>
       <AttackName>Horn</AttackName>
       <Damage>
-        <Crush>7.0</Crush>
+		<Hack>0</Hack>
+		<Crush>4.0</Crush>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>45</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>210</Max>
-  </Health>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Small Class80 Goat Shepherdgoat</Classes>
+    <Classes datatype="tokens">Small Goat Shepherdgoat</Classes>
     <GenericName>Ordonian Goat</GenericName>
     <History>The iconic blue Goats of Ordona are a stock source of meat, wool, and milk throughout much of Hyrule. Domesticated varieties could be traied to attack</History>
     <Icon>units/wild/wild_ordgoat.dds</Icon>
@@ -34,15 +19,6 @@
     <Tooltip>Melee Creature unit with a strong headbutt and kick.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/headbutt.xml</attack_melee>
@@ -60,8 +36,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>climbing</PassabilityClass>
-    <RunMultiplier>1.4</RunMultiplier>
-    <WalkSpeed>12.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/wild/wild_ordgoat.xml</Actor>

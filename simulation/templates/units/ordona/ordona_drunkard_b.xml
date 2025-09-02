@@ -1,27 +1,10 @@
-<Entity parent="classes/HC_template_unit_light_infantry|siege">
+<Entity parent="classes/HC_template_unit_mage">
   <Attack>
     <Ranged>
       <AttackName>Booze</AttackName>
-      <Damage>
-        <Magic>3</Magic>
-      </Damage>
-      <MaxRange>50</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure Infantry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.1</ImpactAnimationLifetime>
-        <Speed>50.0</Speed>
-        <Spread>1.8</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1700</RepeatTime>
       <Splash>
         <Damage>
-          <Magic>5</Magic>
+          <Magic>2</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>7</Range>
@@ -33,21 +16,9 @@
   <Auras datatype="tokens">
     units/ordona_drunkard_masterbrew
   </Auras>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>65</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>260</Max>
-  </Health>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Class90 CanGarrison Medium Drunkard</Classes>
+    <Classes datatype="tokens">CanGarrison Medium Drunkard</Classes>
     <GenericName>Drunkard</GenericName>
     <History>Armed with cheap booze and a bit of flame, the Drunkards toss their explosive bottles at a target to witness the violent results. A crowd of Drunkards can quickly set enemies and buildings aflame and are excellent at crowd control, but an Ordonian commander must be careful: friendly fire is guaranteed without careful coordination.</History>
     <Icon>units/ordona/ord_drunkard.dds</Icon>
@@ -56,15 +27,6 @@
     <Tooltip>Support unit that tosses flaming bottles of booze at their targets.</Tooltip>
     <VisibleClasses datatype="tokens">Support Worker</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>
