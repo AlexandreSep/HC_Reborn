@@ -1,6 +1,6 @@
 <Entity parent="units/hylian/hylian_soldier_cavalry">
   <Identity>
-    <Classes datatype="tokens">KingdomCavalry Kingdom</Classes>
+    <Classes datatype="tokens"> KingdomCavalry Kingdom</Classes>
     <GenericName>Kingdom Cavalry</GenericName>
     <History>These mounted incarnations of the Kingdom Infantry add much-needed speed and range. Armed with a spear, Kingdom Cavalry are light, but swift, and can punch holes into soft enemy formations.</History>
     <Icon>units/hylian/hyl_kingdomcav.dds</Icon>

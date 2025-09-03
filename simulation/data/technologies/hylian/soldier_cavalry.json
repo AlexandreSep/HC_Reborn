@@ -13,6 +13,7 @@
 	"researchTime": 45,
 	"tooltip": "Improves Levy Cavalry by making them Men at Arms.",
 	"modifications": [{"value": "ProductionQueue/Entities/_string",	"tokens": "units/hylian/{civ}_levy_cavalry>units/hylian/{civ}_soldier_cavalry", "affects": "Structure" },
+					  {"value": "Health/Max", "add": 50, "affects": "SoldierCavalry" },
 					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "LevyCavalry" }
 	],	
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -23,6 +23,7 @@
       "tokens": "units/hylian/{civ}_levy_maceman>units/hylian/{civ}_soldier_maceman",
       "affects": "Structure"
     },
+	{"value": "Health/Max", "add": 50, "affects": "SoldierMaceman" },
     {
       "value": "Promotion/RequiredXp",
       "replace": 0,

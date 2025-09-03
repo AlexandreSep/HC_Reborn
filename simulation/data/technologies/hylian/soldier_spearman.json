@@ -13,6 +13,7 @@
 	"researchTime": 45,
 	"tooltip": "Improves Levy Spearman by making them Soldier Spearman.",
 	"modifications": [{"value": "ProductionQueue/Entities/_string",	"tokens": "units/hylian/{civ}_levy_spearman>units/hylian/{civ}_soldier_spearman", "affects": "Structure" },
+					  {"value": "Health/Max", "add": 50, "affects": "SoldierSpearman" },
 					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "LevySpearman" }
 	],	
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -14,6 +14,7 @@
 	"researchTime": 60,
 	"tooltip": "Improves Soldier Maceman by making them Kingdom Maceman.",
 	"modifications": [{"value": "ProductionQueue/Entities/_string",	"tokens": "units/hylian/{civ}_soldier_maceman>units/hylian/{civ}_kingdom_maceman", "affects": "Structure" },
+					  {"value": "Health/Max", "add": 50, "affects": "KingdomMaceman" },
 					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "SoldierMaceman" }
 	],	
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

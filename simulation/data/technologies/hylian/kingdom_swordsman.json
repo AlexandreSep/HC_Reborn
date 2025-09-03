@@ -14,6 +14,7 @@
 	"researchTime": 60,
 	"tooltip": "Improves Soldier Swordsman by making them Kingdom Swordsman.",
 	"modifications": [{"value": "ProductionQueue/Entities/_string",	"tokens": "units/hylian/{civ}_soldier_swordsman>units/hylian/{civ}_kingdom_swordsman", "affects": "Structure" },
+					  {"value": "Health/Max", "add": 50, "affects": "KingdomSwordsman" },
 					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "SoldierSwordsman" }
 	],	
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

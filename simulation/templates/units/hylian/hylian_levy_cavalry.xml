@@ -3,6 +3,7 @@
     <Melee>
       <AttackName>Mace</AttackName>
       <Damage>
+		<Hack>0</Hack>
         <Crush>18.0</Crush>
       </Damage>
     </Melee>

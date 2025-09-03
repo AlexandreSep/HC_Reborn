@@ -23,6 +23,7 @@
       "tokens": "units/hylian/{civ}_levy_archer>units/hylian/{civ}_soldier_archer",
       "affects": "Structure"
     },
+	{"value": "Health/Max", "add": 50, "affects": "SoldierArcher" },
     {
       "value": "Promotion/RequiredXp",
       "replace": 0

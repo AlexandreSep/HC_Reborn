@@ -13,6 +13,7 @@
 	"researchTime": 45,
 	"tooltip": "Improves Levy Swordsman by making them Soldier Swordsman.",
 	"modifications": [{"value": "ProductionQueue/Entities/_string",	"tokens": "units/hylian/{civ}_levy_swordsman>units/hylian/{civ}_soldier_swordsman", "affects": "Structure" },
+					  {"value": "Health/Max", "add": 50, "affects": "SoldierSwordsman" },
 					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "LevySwordsman" }
 	],	
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

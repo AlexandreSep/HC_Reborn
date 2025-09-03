@@ -18,6 +18,7 @@
       "tokens": "units/hylian/{civ}_scout_cavalry>units/hylian/{civ}_light_cavalry",
       "affects": "Structure"
     },
+	{"value": "Health/Max", "add": 50, "affects": "LightCavalry" },
     {
       "value": "Promotion/RequiredXp",
       "replace": 0

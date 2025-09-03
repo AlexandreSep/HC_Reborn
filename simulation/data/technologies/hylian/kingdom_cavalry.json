@@ -14,7 +14,8 @@
 	"researchTime": 60,
 	"tooltip": "Improves Men at Arms by making them Chevalier.",
 	"modifications": [{"value": "ProductionQueue/Entities/_string",	"tokens": "units/hylian/{civ}_soldier_cavalry>units/hylian/{civ}_kingdom_cavalry", "affects": "Structure" },
-					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "SoldierCavalry" }
+					 {"value": "Health/Max", "add": 50, "affects": "KingdomCavalry" },
+					 {"value": "Promotion/RequiredXp", "replace": 0, "affects": "SoldierCavalry" }
 	],	
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 } 
