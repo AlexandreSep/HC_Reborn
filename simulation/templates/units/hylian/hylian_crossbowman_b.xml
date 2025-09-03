@@ -1,41 +1,7 @@
-<Entity parent="classes/HC_template_unit_heavy_archer|heavy_archer">
-  <Attack>
-    <Ranged>
-      <AttackName>Bolts</AttackName>
-      <Damage>
-        <Pierce>5</Pierce>
-        <TrueDamage>10</TrueDamage>
-      </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>4000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>55</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_crossbow">
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Medium HylianCrossbowman</Classes>
+    <Classes datatype="tokens">Medium HylianCrossbowman Soldier</Classes>
     <GenericName>Kingdom Crossbowman</GenericName>
     <History>Although traditional archery has been a popular sport in the Kingdom's history, its military prefers to mass-produce and deploy easy-to-use and deadly crossbows for its ranged arsenal. Much like the Kingdom Infantry, these soldiers are funded by the governmental forces of Hyrule and are provided basic training and gear.</History>
     <Icon>units/hylian/hyl_crossbowman.dds</Icon>
@@ -43,17 +9,8 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_crossbowman_b</SelectionGroupName>
     <Tooltip>Slow firing but powerful armor piercing ranged unit.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+    <VisibleClasses datatype="tokens">Missile Soldier</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
@@ -69,10 +26,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/hylian/hylian_crossbowman_b.xml</Actor>
   </VisualActor>

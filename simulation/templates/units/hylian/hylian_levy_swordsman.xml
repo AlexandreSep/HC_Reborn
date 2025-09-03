@@ -1,52 +1,19 @@
-<Entity parent="classes/HC_template_unit_light_infantry|light_infantry|shield">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>8.0</Hack>
-        <Pierce>2.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_swordsman">
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Medium LevySwordsman HylBarInf HylianShield</Classes>
+    <Classes datatype="tokens">Medium LevySwordsman HylBarInf HylianShield Levy</Classes>
     <GenericName>Levy Swordsman</GenericName>
     <History>Scores of these infantry serve as the primary warrior deployed by the Kingdom of Hyrule. Funded by the Royal family, these soldiers have basic combat training and are provided with standardized armor and weaponry.</History>
     <Icon>units/hylian/hyl_levysword.dds</Icon>
     <Lang>hylian</Lang>
     <SelectionGroupName>units/hylian/hylian_levy_swordsman</SelectionGroupName>
     <Tooltip>Light unit armed with a sword and shield. Deals Hacking damage.</Tooltip>
+	<VisibleClasses datatype="tokens">Levy</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_soldier_swordsman</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -62,13 +29,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/hylian/hylian_levy_swordsman_b.xml</Actor>
   </VisualActor>

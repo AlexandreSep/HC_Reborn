@@ -1,61 +1,28 @@
-<Entity parent="classes/HC_template_unit_heavy_infantry|buffer|heavy_infantry">
+<Entity parent="classes/HC_template_unit_commander">
   <Attack>
     <Melee>
       <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>20.0</Hack>
-        <Pierce>10</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
-  <Cost>
-    <BattalionSlots>1</BattalionSlots>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>25</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>260</Max>
-  </Health>
   <Identity>
     <AIBuild>
       <MaxCopies>2</MaxCopies>
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Knight Medium Class70 HylBarInf HylCaptain</Classes>
+    <Classes datatype="tokens">Knight Medium HylBarInf HylCaptain Kingdom</Classes>
     <GenericName>Captain</GenericName>
     <History>Hylian Captains were Knights that had experience in commanding entire armies on the field of the battle. Their bravery often inspired other soldiers, and their fall in battle was considered a great loss.</History>
     <Icon>units/hylian/hyl_captain.dds</Icon>
     <Lang>hylian</Lang>
     <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
     <Tooltip>Heavily armored Infantry Commander unit. Leads other Hylians into battle.</Tooltip>
+	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_magecaptain_b</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>60.0</Hack>
-        <Pierce>60.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -71,10 +38,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/hylian/hylian_captain_b.xml</Actor>
   </VisualActor>

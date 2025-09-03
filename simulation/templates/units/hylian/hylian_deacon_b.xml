@@ -1,12 +1,12 @@
-<Entity parent="classes/HC_template_unit_light_infantry|buffer">
+<Entity parent="HC_template_unit_auxiliary">
   <Auras datatype="tokens">
     units/deacon_chant_1
   </Auras>
   <Cost>
-    <BuildTime>12</BuildTime>
+    <BuildTime>20</BuildTime>
     <Resources>
-      <food>25</food>
-      <metal>30</metal>
+      <food>200</food>
+      <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
@@ -15,7 +15,7 @@
     <HealableClasses datatype="tokens">Organic</HealableClasses>
     <Health>4</Health>
     <Range>20</Range>
-    <Interval>200</Interval>
+    <Interval>2000</Interval>
     <UnhealableClasses datatype="tokens" />
   </Heal>
   <Health>
@@ -27,7 +27,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Priest Medium HylianDeacon</Classes>
+    <Classes datatype="tokens">Priest Medium HylianDeacon Levy</Classes>
     <GenericName>Goddess Deacon</GenericName>
     <History>Members of Hyrule's clergy, the Goddess Deacons traditionally venture into the border realms of Hyrule to spread the doctrine of the Goddesses. During wartime, they march alongside Hyrule's soldiers to chant various psalms and incantations from among the holy texts, improving the performance of their allies in battle.</History>
     <Icon>units/hylian/hyl_deacon.dds</Icon>

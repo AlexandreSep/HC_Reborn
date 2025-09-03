@@ -1,52 +1,19 @@
-<Entity parent="classes/HC_template_unit_light_infantry|light_infantry|shield">
-  <Attack>
-    <Melee>
-      <AttackName>Mace</AttackName>
-      <Damage>
-        <Crush>2.0</Crush>
-        <TrueDamage>10</TrueDamage>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>25</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>35</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_maceman">
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">LevyMaceman HylBarInf HylianShield</Classes>
+    <Classes datatype="tokens">LevyMaceman HylBarInf HylianShield Levy</Classes>
     <GenericName>Levy Maceman</GenericName>
     <History>Conscripted during times of war from their home villages and towns, these Levies are given cheap maces and shields to protect and bolster the armies of Hyrule. Though they lack experience and notable armor, they can cause quite a dent in enemy armor with their blunt weapons.</History>
     <Icon>units/hylian/hyl_levymace.dds</Icon>
     <Lang>hylian</Lang>
     <SelectionGroupName>units/hylian/hylian_soldier_macemen</SelectionGroupName>
     <Tooltip>Light unit armed with a mace and shield. Deals Crushing damage.</Tooltip>
+	<VisibleClasses datatype="tokens">Levy</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_soldier_maceman</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/mace.xml</attack_melee>
@@ -69,13 +36,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/hylian/hylian_levy_maceman_b.xml</Actor>
   </VisualActor>

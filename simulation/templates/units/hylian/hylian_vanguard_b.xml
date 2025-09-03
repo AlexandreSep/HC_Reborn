@@ -1,40 +1,17 @@
-<Entity parent="classes/HC_template_unit_heavy_infantry|heavy_infantry">
+<Entity parent="classes/HC_template_unit_maceman_heavy">
   <Attack>
     <Melee>
       <AttackName>Holy Mace</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>ShadowElement</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
       <Damage>
-        <Crush>15</Crush>
-        <TrueDamage>20</TrueDamage>
-        <Magic>10</Magic>
+        <Crush>5</Crush>
+        <Magic>5</Magic>
       </Damage>
-      <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Mage Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>125</food>
-      <metal>20</metal>
-      <stone>40</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>400</Max>
-  </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Medium Class100 LightElement UniqueUnit HylianVanguard</Classes>
+    <Classes datatype="tokens">Medium LightElement UniqueUnit HylianVanguard Kingdom</Classes>
     <GenericName>Unique Unit</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>An order of warrior-priests founded by Rauru himself to guard the Triforce from falling into the hands of the Kingdom's enemies. Armed with a powerful mace, these warriors may be slow, but they can smash through most armor, and are quite durable themselves.</History>
@@ -44,17 +21,14 @@
     <SelectionGroupName>units/hylian/hylian_vanguard_b</SelectionGroupName>
     <SpecificName>Triforce Vanguard</SpecificName>
     <Tooltip>Rauru's Unique Unit. Slow moving infantry unit armed with a Mace. Has very high resistance to all forms of Magic damage, and is immune to knockback and gains bonus armor when in friendly territory.</Tooltip>
+	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
   </Identity>
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>40.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
         <Magic>50</Magic>
       </Damage>
     </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
     <SoundGroups>
@@ -71,13 +45,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/hylian/hylian_vanguard_b.xml</Actor>
   </VisualActor>

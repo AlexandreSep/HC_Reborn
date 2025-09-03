@@ -1,14 +1,15 @@
-<Entity parent="classes/HC_template_unit_light_infantry|mage|shield">
+<Entity parent="classes/HC_template_unit_swordsman">
   <Attack>
+    <Melee disable="" />
     <Ranged>
       <AttackName>Magic Sword</AttackName>
       <Damage>
-        <Magic>20</Magic>
+        <Magic>6</Magic>
       </Damage>
-      <MaxRange>60</MaxRange>
-      <MinRange>1.0</MinRange>
+      <MaxRange>15</MaxRange>
+      <MinRange>0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>2000</PrepareTime>
+      <PrepareTime>900</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <Speed>75.0</Speed>
@@ -16,25 +17,13 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>2500</RepeatTime>
+      <RepeatTime>1200</RepeatTime>
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>25</BuildTime>
-    <Resources>
-      <food>125</food>
-      <metal>125</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>320</Max>
-  </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Medium Class100 CanGarrison</Classes>
+    <Classes datatype="tokens">Medium CanGarrison</Classes>
     <GenericName>Acolyte</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Young Mages that have fallen under the tutelage of Lana and the magic she had learned from the Wizzrobe. These soldiers are somewhat reckless, as much like Lana they do not entirely understand the powers their wield. When at their full potential these Acolytes can incinerate enemies with their magic swords.</History>
@@ -50,10 +39,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>15.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-        <Magic>10</Magic>
+        <Magic>50</Magic>
       </Damage>
     </Entity>
   </Resistance>
@@ -72,10 +58,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1111</RunMultiplier>
-    <WalkSpeed>9.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/hylian/hylian_acolyte_b.xml</Actor>
   </VisualActor>

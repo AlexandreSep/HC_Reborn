@@ -1,57 +1,17 @@
 <Entity parent="units/hylian/hylian_levy_spearman">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
-      <Damage>
-        <Hack>2.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>24</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>10</stone>
-      <wood>10</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>225</Max>
-  </Health>
   <Identity>
-    <Classes datatype="tokens">-LevySpearman SoldierSpearman</Classes>
+    <Classes datatype="tokens">-LevySpearman SoldierSpearman Soldier</Classes>
     <GenericName>Soldier Spearman</GenericName>
     <History>A private order of soldiers tasked with protecting Hyrule Castle and other important military bases, Castle Guards are purely defensive infantry armed with tower shields and spears. They are very resistant to cavalry and arrow fire; only if an enemy manages to break their lines will they fall easy.</History>
     <Icon>units/hylian/hyl_soldierspear.dds</Icon>
     <SelectionGroupName>units/hylian/hylian_soldier_spearman</SelectionGroupName>
     <Tooltip>Medium unit armed with a spear and shield. Deals Piercing damage.</Tooltip>
+	<VisibleClasses datatype="tokens">Soldier</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_kingdom_spearman</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>66</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

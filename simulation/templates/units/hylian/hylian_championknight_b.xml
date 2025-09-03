@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_heavy_infantry|heavy_infantry">
+<Entity parent="classes/HC_template_unit_Knight">
   <Attack>
     <Melee>
       <AttackName>Sword</AttackName>
@@ -16,32 +16,12 @@
           <Multiplier>2</Multiplier>
         </Bonus3>
       </Bonuses>
-      <Damage>
-        <Hack>25.0</Hack>
-        <Pierce>15</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Monster Hero</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>150</food>
-      <metal>20</metal>
-      <stone>75</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>380</Max>
-  </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Knight HylianShield UniqueUnit</Classes>
+    <Classes datatype="tokens">Knight HylianShield UniqueUnit Kingdom</Classes>
     <GenericName>Champion Knight</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Trained by the last heir of Gustaf, these knights display the lost techniques of the Ancient Hylians and command great bravery and courage in battle. They dramatically improve the performance of all Infantry under their command.</History>
@@ -50,17 +30,8 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_link</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_championknight_b</SelectionGroupName>
     <Tooltip>Link's Unique Unit. Extremely powerful infantry unit that is immune to Knockback and inflicts bonus damage against large creature units and commanders.</Tooltip>
+	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>35.0</Crush>
-        <Hack>75.0</Hack>
-        <Pierce>75.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -76,10 +47,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5555</RunMultiplier>
-    <WalkSpeed>9.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/hylian/hylian_champknight_b.xml</Actor>
   </VisualActor>

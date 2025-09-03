@@ -1,14 +1,7 @@
-<Entity parent="classes/HC_template_unit_siege|siege">
+<Entity parent="classes/HC_template_unit_siegecannon">
   <Attack>
     <Ranged>
       <AttackName>Hurled Stone</AttackName>
-      <Damage>
-        <Crush>300.0</Crush>
-      </Damage>
-      <MaxRange>130.0</MaxRange>
-      <MinRange>60.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>4000</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
@@ -18,54 +11,17 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>7500</RepeatTime>
-      <Splash>
-        <Damage>
-          <Crush>50.0</Crush>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>6</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>20</food>
-      <metal>0</metal>
-      <stone>100</stone>
-      <wood>225</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>5.0</Height>
-    <Square depth="10.0" width="10.0" />
-  </Footprint>
-  <Health>
-    <Max>750</Max>
-  </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Large Class40 HylianTrebuchet Catapult</Classes>
+    <Classes datatype="tokens">Large HylianTrebuchet Catapult</Classes>
     <GenericName>Trebuchet</GenericName>
     <History>These towering siege weapons are deployed by the Kingdom of Hyrule during invasions of enemy cities. They can hurl giant flaming boulders with tremendous force, and knock down the most sturdy of fortifications. Any enemy soldiers unlucky enough to be near the impact of these projectiles will usually crushed or burned in the resulting shockwave.</History>
     <Icon>units/hylian/hyl_trebuchet.dds</Icon>
     <Tooltip>Powerful and long ranged siege unit. Must take several moments to pack and unpack.</Tooltip>
     <VisibleClasses datatype="tokens">Catapult</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>5.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <order_attack>voice/hylian/civilian_male/civilian_male_attack.xml</order_attack>

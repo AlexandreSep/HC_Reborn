@@ -1,37 +1,14 @@
-<Entity parent="classes/HC_template_unit_heavy_infantry|heavy_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>13.0</Hack>
-        <Pierce>7.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Health>
-    <Max>250</Max>
-  </Health>
+<Entity parent="units/hylian/hylian_soldier_swordsman">
   <Identity>
-    <Classes datatype="tokens">KingdomSwordsman</Classes>
+    <Classes datatype="tokens">KingdomSwordsman Kingdom</Classes>
     <GenericName>Kingdom Swordsman</GenericName>
     <History>Scores of these infantry serve as the primary warrior deployed by the Kingdom of Hyrule. Funded by the Royal family, these soldiers have basic combat training and are provided with standardized armor and weaponry.</History>
     <Icon>units/hylian/hyl_kingdomsword.dds</Icon>
     <SelectionGroupName>units/hylian/hylian_kingdom_swordsman</SelectionGroupName>
     <Tooltip>Heavy unit armed with a sword and shield. Deals Hacking damage.</Tooltip>
+	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
   </Identity>
   <Promotion disable="" />
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <VisualActor>
     <Actor>units/hylian/hylian_kingdom_swordsman_b.xml</Actor>
   </VisualActor>

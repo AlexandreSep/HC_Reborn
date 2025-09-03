@@ -1,49 +1,15 @@
 <Entity parent="units/hylian/hylian_scout_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>12.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>25</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>15</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>250</Max>
-  </Health>
   <Identity>
-    <Classes datatype="tokens">-ScoutCavalry LightCavalry</Classes>
+    <Classes datatype="tokens">-ScoutCavalry LightCavalry Soldier</Classes>
     <GenericName>Light Cavalry</GenericName>
     <History>These mounted incarnations of the Kingdom Infantry add much-needed speed and range. Armed with a spear, Kingdom Cavalry are light, but swift, and can punch holes into soft enemy formations.</History>
     <Icon>units/hylian/hyl_lightcav.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_light_cavalry</SelectionGroupName>
     <Tooltip>Light and fast cavalry unit with excellent vision range. Can detect Camouflaged and Stealthed units.</Tooltip>
+	<VisibleClasses datatype="tokens">Soldier</VisibleClasses>
   </Identity>
   <Promotion disable="" />
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <VisualActor>
     <Actor>units/hylian/hylian_lightcavalry_b.xml</Actor>
   </VisualActor>

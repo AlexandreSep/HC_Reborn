@@ -1,32 +1,15 @@
-<Entity parent="classes/HC_template_unit_light_cavalry|light_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry_heavy">
   <Attack>
     <Melee>
-      <AttackName>Spear</AttackName>
+      <AttackName>Mace</AttackName>
       <Damage>
-        <Crush>10.0</Crush>
-        <TrueDamage>12</TrueDamage>
+        <Crush>18.0</Crush>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>35</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>35</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>300</Max>
-  </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Large LevyCavalry</Classes>
+    <Classes datatype="tokens">Large LevyCavalry Levy</Classes>
     <GenericName>Levy Cavalry</GenericName>
     <History>These mounted incarnations of the Kingdom Infantry add much-needed speed and range. Armed with a spear, Kingdom Cavalry are light, but swift, and can punch holes into soft enemy formations.</History>
     <Icon>units/hylian/hyl_levycav.dds</Icon>
@@ -34,21 +17,12 @@
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_levy_cavalry</SelectionGroupName>
     <Tooltip>Lightly armored cavalry unit armed with a mace.</Tooltip>
+	<VisibleClasses datatype="tokens">Levy</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_soldier_cavalry</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -64,10 +38,6 @@
       <walk>actor/movement/horse/horse_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4705</RunMultiplier>
-    <WalkSpeed>17</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/hylian/hylian_levy_cav_b.xml</Actor>
   </VisualActor>

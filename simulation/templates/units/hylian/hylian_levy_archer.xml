@@ -1,65 +1,18 @@
-<Entity parent="classes/HC_template_unit_light_archer|light_archer">
-  <Attack>
-    <Ranged>
-      <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>8</Pierce>
-      </Damage>
-      <MaxRange>80</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2500</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-      <Origin>
-        <X>0</X>
-        <Y>15</Y>
-        <Z>0</Z>
-      </Origin>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>24</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>25</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>190</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_archer">
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Medium LevyArcher</Classes>
+    <Classes datatype="tokens">Medium LevyArcher Levy</Classes>
     <GenericName>Levy Archer</GenericName>
     <History>Woodland hunters, rangers, and guides, during wartime Town Lookouts are called to served as perimeter guards and lookouts of Hyrule's outermost cities. Armed with a bow and arrow, these fast citizens can attack enemies from afar and make good use of their hunting skills to provide food to armies.</History>
     <Icon>units/hylian/hyl_levyarcher.dds</Icon>
     <SelectionGroupName>units/hylian/hylian_levy_archer</SelectionGroupName>
     <Tooltip>Medium Archer unit armed with a bow and arrows. Deals moderate Piercing damage, but is more survivable compared to Archer units from most other factions.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+    <VisibleClasses datatype="tokens">Missile Levy</VisibleClasses>
   </Identity>
   <Promotion>
     <Entity>units/hylian/hylian_soldier_archer</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
@@ -82,10 +35,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/hylian/hylian_levy_archer_b.xml</Actor>
   </VisualActor>

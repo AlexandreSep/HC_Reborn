@@ -1,47 +1,12 @@
-<Entity parent="classes/HC_template_unit_siege">
+<Entity parent="units/hylian/hylian_crossbowman_b">
   <Attack>
     <Ranged>
       <AttackName>Bolts</AttackName>
       <Damage>
-        <Pierce>10</Pierce>
-        <TrueDamage>30</TrueDamage>
+        <Siege>50</Siege>
       </Damage>
-      <MaxRange>100</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>4000</RepeatTime>
-      <Splash>
-        <Damage>
-          <Pierce>10.0</Pierce>
-          <TrueDamage>15</TrueDamage>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>20</Range>
-        <Shape>Linear</Shape>
-      </Splash>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
+	  </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>24</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>150</metal>
-      <stone>0</stone>
-      <wood>150</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>400</Max>
-  </Health>
   <Identity>
     <Civ>hylian</Civ>
     <Classes datatype="tokens">Large HylianScorpio Scorpion</Classes>
@@ -52,15 +17,6 @@
     <Tooltip>Large and slow moving ranged unit that deals Piercing linear Splash Damage. Takes a few moments to unpack and repack.</Tooltip>
     <VisibleClasses datatype="tokens">Missile Scorpion</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
@@ -76,10 +32,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1111</RunMultiplier>
-    <WalkSpeed>9</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/hylian/hylian_scorpio_b.xml</Actor>
   </VisualActor>
