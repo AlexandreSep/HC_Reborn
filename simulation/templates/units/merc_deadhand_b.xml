@@ -1,15 +1,6 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_creature">
   <Attack>
     <Melee>
-      <AttackName>TBD.</AttackName>
-      <Damage>
-        <Pierce>14</Pierce>
-        <Magic>5</Magic>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
       <Stun>
         <Chance>25</Chance>
         <Time>3000</Time>
@@ -26,7 +17,6 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>380</Max>
     <SpawnOnInterval>
       <one>
         <Interval>10000</Interval>
@@ -40,7 +30,7 @@
   </Health>
   <Identity>
     <Civ>gaia</Civ>
-    <Classes datatype="tokens">-Organic Undead Large Class70</Classes>
+    <Classes datatype="tokens">-Organic Undead Large</Classes>
     <GenericName>Deadhand</GenericName>
     <History>A twisted nightmare created by demons of old, Dead Hands were fortunately rare but no less a terror for that fact. Stuck somewhere between the living and the deceased like a ReDead, it's theorised these monsters were the product of unspeakable psychological trauma during their lifetime.</History>
     <Icon>units/merc/merc_deadhand.dds</Icon>
@@ -50,14 +40,6 @@
     <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>70.0</Pierce>
-        <Magic>5</Magic>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
@@ -76,8 +58,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.2</RunMultiplier>
-    <WalkSpeed>2.5</WalkSpeed>
+    <RunMultiplier>1</RunMultiplier>
+    <WalkSpeed>6</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/merc/merc_deadhand_b.xml</Actor>

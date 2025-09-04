@@ -1,52 +1,13 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>TBD.</AttackName>
-      <Damage>
-        <Pierce>17.0</Pierce>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>5</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Human</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1700</RepeatTime>
-      <Splash>
-        <Damage>
-          <Pierce>17.0</Pierce>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-      <Knockback>
-        <Horizontal>15</Horizontal>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
+<Entity parent="classes/HC_template_unit_spearman_heavy">
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>60</metal>
+      <metal>120</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
-  <Health>
-    <Max>175</Max>
-  </Health>
   <Identity>
     <Civ>gaia</Civ>
     <Classes datatype="tokens">Large</Classes>
@@ -58,16 +19,6 @@
     <Tooltip>Fast charging Melee unit that rams into targets with its trident.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -83,10 +34,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3913</RunMultiplier>
-    <WalkSpeed>11.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/merc/merc_taros_b.xml</Actor>
   </VisualActor>

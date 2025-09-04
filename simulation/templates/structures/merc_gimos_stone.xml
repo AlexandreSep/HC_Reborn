@@ -143,11 +143,4 @@
     <SilhouetteOccluder>true</SilhouetteOccluder>
     <VisibleInAtlasOnly>false</VisibleInAtlasOnly>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>1.0</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

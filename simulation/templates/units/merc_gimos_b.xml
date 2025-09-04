@@ -1,21 +1,9 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>TBD.</AttackName>
-      <Damage>
-        <Pierce>15</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_spearman">
   <Cost>
     <BuildTime>9</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>50</metal>
+      <metal>60</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
@@ -65,6 +53,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
+    <RunMultiplier>3</RunMultiplier>
+    <WalkSpeed>12</WalkSpeed>
   </UnitMotion>
   <Upgrade>
     <Tower>

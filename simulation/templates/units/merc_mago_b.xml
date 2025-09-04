@@ -1,25 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Ranged>
-      <AttackName>TBD.</AttackName>
-      <Damage>
-        <Magic>20</Magic>
-      </Damage>
-      <MaxRange>100</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Human</PreferredClasses>
-      <PrepareTime>1700</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
+<Entity parent="classes/HC_template_unit_mage">
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
@@ -29,12 +8,9 @@
       <wood>0</wood>
     </Resources>
   </Cost>
-  <Health>
-    <Max>180</Max>
-  </Health>
   <Identity>
     <Civ>gaia</Civ>
-    <Classes datatype="tokens">Small Class80</Classes>
+    <Classes datatype="tokens">Small</Classes>
     <GenericName>Mago</GenericName>
     <History>Once a practicing Witch, the Mago went a bit too far with their spells and ended up being shunned by even the outcasts. Many Mago live isolated deep in the forest, most often losing their sanity as they attempt ever deadlier and crazier magics. A fair sum of Rupees might be enough to encourage one to torch your enemies with a fireball.</History>
     <Icon>units/merc/merc_mago.dds</Icon>
@@ -43,15 +19,6 @@
     <Tooltip>Small Mage unit that can hurl fireballs at their targets.</Tooltip>
     <VisibleClasses datatype="tokens">Mage Mercenary</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/magic/immortal_fire_impact.xml</attack_impact_ranged>

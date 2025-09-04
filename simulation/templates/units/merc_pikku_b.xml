@@ -1,22 +1,9 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>TBD.</AttackName>
-      <Damage>
-        <Hack>10.0</Hack>
-        <Pierce>10</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Human Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_swordsman">
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>50</metal>
+      <metal>70</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
@@ -26,7 +13,7 @@
   </Health>
   <Identity>
     <Civ>gaia</Civ>
-    <Classes datatype="tokens">Small Class100</Classes>
+    <Classes datatype="tokens">Small</Classes>
     <GenericName>Pikku</GenericName>
     <History>A nomadic and fox like creature that generally sticks to forested lands, the Pikku are all in it for themselves. They care only for material wealth and fight for nothing greater. For the right price they will be more than happy to aid you in the theft and death of your enemies.</History>
     <Icon>units/merc/merc_pikku.dds</Icon>
@@ -38,10 +25,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>25.0</Crush>
         <DodgeRating>25.0</DodgeRating>
-        <Hack>10.0</Hack>
-        <Pierce>5.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>

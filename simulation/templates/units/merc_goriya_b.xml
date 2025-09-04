@@ -1,13 +1,13 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
-      <AttackName>TBD.</AttackName>
+      <AttackName>Boomerang</AttackName>
       <Damage>
-        <Hack>10.0</Hack>
+        <Hack>4.0</Hack>
       </Damage>
-      <MaxRange>25.0</MaxRange>
+      <MaxRange>30.0</MaxRange>
       <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
       <Projectile>
         <Gravity>9.81</Gravity>
@@ -19,7 +19,7 @@
       <RepeatTime>1400</RepeatTime>
       <Splash>
         <Damage>
-          <Hack>5.0</Hack>
+          <Hack>1.0</Hack>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>5</Range>
@@ -32,14 +32,11 @@
     <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>75</metal>
+      <metal>50</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
-  <Health>
-    <Max>70</Max>
-  </Health>
   <Identity>
     <Civ>gaia</Civ>
     <Classes datatype="tokens">Medium</Classes>
@@ -51,15 +48,6 @@
     <Tooltip>Missile unit that tosses boomerangs at several targets simultaneously.</Tooltip>
     <VisibleClasses datatype="tokens">Missile Mercenary</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/boomerang.xml</attack_ranged>
@@ -75,10 +63,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.8823</RunMultiplier>
-    <WalkSpeed>8.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/merc/merc_goriya_b.xml</Actor>
   </VisualActor>

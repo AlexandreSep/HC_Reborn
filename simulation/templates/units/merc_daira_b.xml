@@ -1,34 +1,18 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Attack>
     <Melee>
-      <AttackName>TBD.</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Infantry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Hack>20.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Human</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
+      <AttackName>Axe</AttackName>
     </Melee>
   </Attack>
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>75</metal>
+      <metal>120</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
-  <Health>
-    <Max>120</Max>
-  </Health>
   <Identity>
     <Civ>gaia</Civ>
     <Classes datatype="tokens">Large</Classes>
@@ -40,15 +24,6 @@
     <Tooltip>Large axe wielding Melee unit that can cross bodies of water.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>55.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -66,8 +41,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.2307</RunMultiplier>
-    <WalkSpeed>9</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/merc/merc_daira_b.xml</Actor>
