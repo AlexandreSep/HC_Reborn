@@ -1,15 +1,6 @@
 <Entity parent="classes/HC_template_unit_Knight">
   <Attack>
-  <Melee>
-      <Damage>
-        <Hack>0</Hack>
-      </Damage>     
-	 <Splash>
-        <Damage>
-          <Hack>0</Hack>
-        </Damage>
-      </Splash>
-    </Melee>
+ <Melee disable="" />
     <Ranged>
       <AttackName>Hammer</AttackName>
       <Damage>

@@ -1,10 +1,6 @@
 <Entity parent="classes/HC_template_unit_beastrambig">
   <Attack>
-  <Melee>
-      <Damage>
-        <Crush>0</Crush>
-      </Damage>
-    </Melee>
+  <Melee disable="" />
     <Ranged>
       <AttackName>Horn</AttackName>
 	  <Bonuses>

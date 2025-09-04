@@ -1,18 +1,6 @@
 <Entity parent="classes/HC_template_unit_Knight">
   <Attack>
-	<Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>0</Hack>
-      </Damage>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-	  	  <Splash>
-        <Damage>
-          <Hack>0</Hack>
-        </Damage>      
-        <Range>0</Range>
-      </Splash>
-    </Melee>
+	<Melee disable="" />
 	<Ranged>
       <AttackName>Ball and Chain</AttackName>
       <Damage>

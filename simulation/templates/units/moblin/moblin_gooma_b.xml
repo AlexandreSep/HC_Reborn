@@ -1,24 +1,22 @@
-<Entity parent="classes/HC_template_unit_monster">
+<Entity parent="classes/HC_template_unit_beastramsmall">
   <Attack>
-  <Melee>
-      <Damage>
-        <Crush>0</Crush>
-      </Damage>
-	  	<Splash>
-        <Damage>
-        <Crush>0</Crush>
-        </Damage>
-      </Splash>
-    </Melee>
+  <Melee disable="" />
     <Ranged>
       <AttackName>Ball and Chain</AttackName>
+	  <Bonuses>
+        <BonusCavMelee>
+          <Classes>Structure</Classes>
+          <Multiplier>3.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
       <Damage>
         <Crush>30</Crush>
       </Damage>
-      <MaxRange>35</MaxRange>
+      <MaxRange>20</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>2400</PrepareTime>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>1800</RepeatTime>
       <Projectile>
         <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/small_dust_explosion.xml</ImpactActorName>
@@ -28,10 +26,9 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>1400</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>7.0</Crush>
+          <Crush>3.0</Crush>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>5</Range>
@@ -49,21 +46,10 @@
       </Origin>
     </Ranged>
   </Attack>
-  <Cost>
-    <Resources>
-      <food>200</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>200</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="7" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>600</Max>
-  </Health>
   <Identity>
     <Civ>moblin</Civ>
     <Classes datatype="tokens">Large Gooma Giantblin</Classes>
@@ -93,11 +79,6 @@
       <walk>actor/movement/gooma/gooma_walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>1.1818</RunMultiplier>
-    <WalkSpeed>5.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/moblin/moblin_gooma_b.xml</Actor>
   </VisualActor>

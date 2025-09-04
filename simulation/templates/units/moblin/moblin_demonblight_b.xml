@@ -1,16 +1,6 @@
 <Entity parent="classes/HC_template_unit_monster">
   <Attack>
-  <Melee>
-      <AttackName>Brute Force</AttackName>
-      <Damage>
-        <Crush>0</Crush>
-      </Damage>
-	  	<Splash>
-        <Damage>
-          <Crush>0</Crush>
-        </Damage>
-      </Splash>
-    </Melee>
+  <Melee disable="" />
     <Ranged>
       <AttackName>Sword</AttackName>
       <Damage>
@@ -33,7 +23,7 @@
       <RepeatTime>2700</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>7.0</Crush>
+          <Magic>7.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>5</Range>
