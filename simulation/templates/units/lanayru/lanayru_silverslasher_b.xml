@@ -1,7 +1,13 @@
 <Entity parent="classes/HC_template_unit_spearman_heavy">
+<Auras datatype="tokens">
+	units/honorfallen
+  </Auras>
   <Attack>
     <Melee>
       <AttackName>Crescent Spear</AttackName>
+	    <Damage>
+		 <TrueDamage>0</TrueDamage>
+      </Damage>
     </Melee>
   </Attack>
   <Identity>

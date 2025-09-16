@@ -11,7 +11,7 @@
 	{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
 	{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0},
 	{"value": "Resistance/Entity/Damage/Crush", "add": 5.0},
-	{"value": "Resistance/Entity/Damage/Magic", "add": 1.0}
+	{"value": "Resistance/Entity/Damage/Magic", "add": 10}
 	],
 	"affects": ["Structure"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

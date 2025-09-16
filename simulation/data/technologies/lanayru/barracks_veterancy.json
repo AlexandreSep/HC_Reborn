@@ -1,13 +1,13 @@
 {
 	"genericName": "Veterancy",
-	"description": "Marshals are now treated as Hero units and can level up.",
+	"description": "Marshals now provide 20% health for units in formation.",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 700},
-	"requirements": { "all": [{ "entity": { "class": "CoastWatch", "number": 1 } }] },
+	"requirements": { "all": [{ "entity": { "class": "CoastWatch", "number": 6 } }] },
 	"requirementsTooltip": "Unlocked with Coast Watch.",
 	"icon": "lanayru/barracks_veterancy.dds",
 	"researchTime": 40,
-	"tooltip": "Marshals are now treated as Hero units and can level up.",
-	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
+	"tooltip": "Marshals now provide 20% extra health for units in formation.",
+	"modifications": [],
 	"affects": ["Marshal"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

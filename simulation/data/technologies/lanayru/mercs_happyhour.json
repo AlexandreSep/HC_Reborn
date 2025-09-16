@@ -1,7 +1,7 @@
 {
 	"genericName": "Happy Hour",
-	"description": "Reduces the Hire time of all mercenaries by 25%",
-	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 500},
+	"description": "Reduces the Hire time of all mercenaries by 5% for every Bordello",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 200},
 	"requirements": { "all": [{ "entity": { "class": "Bordello", "number": 1 } }] },
 	"requirementsTooltip": "Unlocked with Bordello.",
 	"icon": "lanayru/mercs_happyhour.dds",

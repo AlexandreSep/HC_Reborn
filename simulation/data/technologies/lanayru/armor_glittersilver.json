@@ -1,23 +1,11 @@
 {
 	"genericName": "Glittering Silverscale",
-	"description": "All units with Silverscale armor gain +3 Non-Magic armor and +1 Magic armor.",
+	"description": "All units with Silverscale armor gain +2 Non-Magic armor and +4 Magic armor. Stacks.",
 	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 500},
 	"requirements": { "all": [{ "entity": { "class": "SilverExchange", "number": 1 } }] },
 	"requirementsTooltip": "Unlocked with Silver Exchange.",
 	"icon": "lanayru/armor_glittersilver.dds",
 	"researchTime": 40,
-	"tooltip": "(All units with Silverscale armor gain +3 Non-Magic armor and +25 Magic armor.)",
-	"modifications": [
-	{"value": "Resistance/Entity/Damage/Hack", "add": 3.0},
-	{"value": "Resistance/Entity/Damage/Pierce", "add": 3.0},
-	{"value": "Resistance/Entity/Damage/Crush", "add": 3.0},
-	{"value": "Resistance/Entity/Damage/Forest", "add": 25.0},
-	{"value": "Resistance/Entity/Damage/Fire", "add": 25.0},
-	{"value": "Resistance/Entity/Damage/Water", "add": 25.0},
-	{"value": "Resistance/Entity/Damage/Spirit", "add": 25.0},
-	{"value": "Resistance/Entity/Damage/Light", "add": 25.0},
-	{"value": "Resistance/Entity/Damage/Shadow", "add": 25.0}
-	],
-	"affects": ["SilverArmor"],
+	"tooltip": "All units with Silverscale armor gain +2 Non-Magic armor and +4 Magic armor. Stacks.",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

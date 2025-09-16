@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"affects": ["SilverWeapon"],
+	"modifications": [
+	{"value": "Attack/Melee/Damage/TrueDamage", "add": 1},
+	{"value": "Attack/Ranged/Damage/TrueDamage", "add": 1}],
+	"auraName": "Tower Coordination",
+	"auraDescription": " 1 extra true damage for every silverweapon unit",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/attack_silvercoral"
+}

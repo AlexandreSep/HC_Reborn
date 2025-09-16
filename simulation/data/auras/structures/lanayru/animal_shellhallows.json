@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"modifications": [{"value": "GarrisonHolder/Max", "add": 2}],
+	"affects": ["Hermitid"],
+	"auraName": "Tower Coordination",
+	"auraDescription": "+2 Carrying capacity per prawn pond for Hermitid",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/animal_shellhallows"
+}

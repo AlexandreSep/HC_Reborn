@@ -1,12 +1,12 @@
 {
 	"genericName": "Citizen Guard",
-	"description": "Citizen units within the radius of the Coral Lancer now gain +3 Non Magic armor.",
+	"description": "Coral Lancer now provide 5 extra non for basic units in formation.",
 	"cost": {"food": 100, "wood": 0, "stone": 300, "metal": 200},
-	"requirements": { "all": [{ "entity": { "class": "VolunteerPost", "number": 1 } }] },
+	"requirements": { "all": [{ "entity": { "class": "VolunteerPost", "number": 6 } }] },
 	"requirementsTooltip": "Unlocked with Volunteer Post.",
 	"icon": "lanayru/barracks_citizenguard.dds",
 	"researchTime": 40,
-	"tooltip": "Citizen units within the radius of the Coral Lancer now gain +3 Non Magic armor.",
+	"tooltip": "Coral Lancer now provide 5 extra non for basic units in formation.",
 	"modifications": [],
 	"affects": ["CoralLancer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

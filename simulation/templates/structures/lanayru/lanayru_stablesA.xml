@@ -1,4 +1,7 @@
 <Entity parent="HC_template_structure_military">
+<Auras datatype="tokens">
+	structures/lanayru/animal_digdrills
+  </Auras>
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>

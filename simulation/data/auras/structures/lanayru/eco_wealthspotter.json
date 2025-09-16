@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["FemaleCitizen"],
+	"modifications": [{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.2}],
+	"auraName": "wealthspotter",
+	"auraDescription": "20% rupee gathering speed for every economy hub",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/eco_wealthspotter"
+}

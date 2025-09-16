@@ -6,6 +6,7 @@
 	    <Hack>0</Hack>
         <Crush>5</Crush>
         <Pierce>5</Pierce>
+		<Siege>0</Siege>
       </Damage>
     </Melee>
   </Attack>

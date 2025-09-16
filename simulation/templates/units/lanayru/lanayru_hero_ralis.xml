@@ -41,7 +41,7 @@
     <History>The Son of King De Bon and Queen Rutela, Ralis was born shortly after the royal divorce. For most of his life he lacked a father figure and was raised entirely by his mother, perhaps stunting his maturity as a result. Perhaps foolishly he associated bravado and aggressiveness with masculinity, leading to him becoming a somewhat reckless warrior Prince.</History>
     <Icon>units/lanayru/lan_hero_ralis.dds</Icon>
     <Lang>lanayru</Lang>
-    <RequiredTechnology>civ_choices/lanayru/choosehero_ralis</RequiredTechnology>
+    <RequiredTechnology>civ_choices/lanayru/choosehero_rutela</RequiredTechnology>
     <SpecificName>Ralis</SpecificName>
     <Tooltip>Mounted Cavalry Hero that attacks with his mighty Silver Sword.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

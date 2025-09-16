@@ -1,4 +1,7 @@
 <Entity parent="classes/HC_template_unit_spearman">
+<Auras datatype="tokens">
+	units/citizenguard
+  </Auras>
   <Identity>
     <Civ>lanayru</Civ>
     <Classes datatype="tokens">CoralLancer Volunteers SilverSpear Medium RalisBonus</Classes>

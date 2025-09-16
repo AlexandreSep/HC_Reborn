@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"modifications": [	{"value": "Attack/Capture/Value", "multiply": 1.2},
+						{"value": "Attack/Melee/RepeatTime", "multiply": 0.94}],
+	"affects": ["UniqueUnit"],
+	"auraName": "Hullmount",
+	"auraDescription": "+4% attack rate, 20% Capture rate Coastguard Units",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/barracks_hullmount"
+}

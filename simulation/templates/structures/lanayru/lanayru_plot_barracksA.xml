@@ -61,7 +61,7 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_barracksB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
+      <RequiredTechnology>civ_choices/lanayru/choosehero_mipha</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Coast Watch to this building.</Tooltip>
       <Variant>upgrading_K</Variant>

@@ -96,8 +96,9 @@
       units/lanayru/{civ}_wavewarrior_b
     units/lanayru/{civ}_silverarcher_b
     units/lanayru/{civ}_aquamarine_b
+	units/lanayru/{civ}_tridenteer_b
       units/lanayru/{civ}_marshal_b
-    units/lanayru/{civ}_tridenteer_b</Entities>
+    </Entities>
     <DestinationOffset>
       <step1>
         <X>13.5</X>

@@ -1,6 +1,5 @@
 {
-	"type": "range",
-	"radius": 30,
+	"type": "formation",
 	"affects": ["Unit"],
   	"modifications": [
     {

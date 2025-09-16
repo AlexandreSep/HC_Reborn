@@ -7,7 +7,7 @@
   </Attack>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">Aquamarine Volunteers Medium </Classes>
+    <Classes datatype="tokens">Aquamarine Volunteers Medium UniqueUnit</Classes>
     <GenericName>Aquamarine</GenericName>
     <History>Wearing durable but light and highly flexible Lanayru Armor, Aquamarines were the Province’s main assault force for bringing the fight to their enemies. Armed with wickedly sharp coralmold gauntlets, an Aquamarine could pry off all manner of armor with ease. The nature of their armor allowed them to move just as fast in water as on land.</History>
     <Icon>units/lanayru/lan_aquamarine.dds</Icon>

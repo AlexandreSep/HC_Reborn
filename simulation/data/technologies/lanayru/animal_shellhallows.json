@@ -1,13 +1,11 @@
 {
 	"genericName": "Shell Hallows",
-	"description": "Carrying capacity of the Hermitid increased by +2",
+	"description": "Carrying capacity of the Hermitid increased by +2 per Pawn pond",
 	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
 	"requirements": { "all": [{ "entity": { "class": "PrawnPond", "number": 1 } }] },
 	"requirementsTooltip": "Unlocked with Prawn Pond.",
 	"icon": "lanayru/animal_shellhallows.dds",
 	"researchTime": 40,
 	"tooltip": "Carrying capacity of the Hermitid increased by +2)",
-	"modifications": [{"value": "GarrisonHolder/Max", "add": 2}],
-	"affects": ["Hermitid"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

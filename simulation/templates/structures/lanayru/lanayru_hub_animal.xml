@@ -27,7 +27,7 @@
       <MinPopPerCopy>0</MinPopPerCopy>
     </AIBuild>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">Town</Classes>
+    <Classes datatype="tokens">Town AnimalHub</Classes>
     <GenericName>Animal Hub</GenericName>
     <History>Hub structure that could add various animal pens on to itself. Domestic creatures and Cavalry required such a building to be set up.</History>
     <Icon>structures/lanayru/lan_hub_animal.dds</Icon>

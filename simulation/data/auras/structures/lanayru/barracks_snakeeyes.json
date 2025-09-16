@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"modifications": [	{"value": "Attack/Ranged/PrepareTime", "multiply": 0.90},
+						{"value": "Attack/Ranged/RepeatTime", "multiply": 0.95}],
+	"affects": ["CoralArcher"],
+	"auraName": "Snakeeyes",
+	"stackable" : true ,
+	"auraDescription": " 5% Attack speed (10% for the first attack) for Archers",
+	"requiredTechnology": "lanayru/barracks_snakeeyes"
+}

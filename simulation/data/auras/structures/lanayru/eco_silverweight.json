@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["FemaleCitizen"],
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.2}],
+	"auraName": "silverweight",
+	"auraDescription": "20% stone gathering speed for every economy hub",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/silverweight"
+}

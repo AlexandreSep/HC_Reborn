@@ -1,4 +1,7 @@
 <Entity parent="classes/HC_template_unit_commander">
+<Auras datatype="tokens">
+	units/veterancy
+  </Auras>
   <Identity>
     <Civ>lanayru</Civ>
     <Classes datatype="tokens">Marshal Volunteers SilverShield Medium </Classes>
@@ -6,7 +9,7 @@
     <History>Marshals were soldiers of Lanayru who had actual academic and field experience in battle. With such a large and unprofessional army they were invaluable for guiding troops and directing them in engagements.</History>
     <Icon>units/lanayru/lan_marshal.dds</Icon>
     <Lang>lanayru</Lang>
-    <RequiredTechnology>lanayru/get_coastwatch</RequiredTechnology>
+    <RequiredTechnology>lanayru/get_silverarmory</RequiredTechnology>
     <SelectionGroupName>units/lanayru/lanayru_marshal_b</SelectionGroupName>
     <Tooltip>Commander unit that improves the performance of other units.</Tooltip>
     <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>

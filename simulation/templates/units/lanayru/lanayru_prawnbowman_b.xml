@@ -1,10 +1,9 @@
 <Entity parent="classes/HC_template_unit_cavalry">
+<Auras datatype="tokens">
+	units/lanayru_greatmigration
+  </Auras>
   <Attack>
-  <Melee>
-      <Damage>
-        <Hack>0</Hack>
-      </Damage>
-    </Melee>
+  <Melee disable="" />
     <Ranged>
       <AttackName>Arrows</AttackName>
 	  <TrueDamage>0</TrueDamage>

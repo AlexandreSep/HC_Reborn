@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"modifications": [{ "value": "UnitMotion/WalkSpeed", "multiply": 1.03 },
+	{ "value": "Resistance/Knockbackresistance", "add": 20 },
+	{ "value": "Resistance/Stunresistance", "multiply": 20 }],
+	"affects": ["WaveWarrior"],
+	"auraName": "Tower Coordination",
+	"auraDescription": "+5% Health for Silverscale slashers",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/barracks_lostwaves"
+}

@@ -1,0 +1,14 @@
+{
+	"type": "global",
+	"modifications": [
+	{"value": "Attack/Melee/Damage/Hack", "multiply": 1.05},
+	{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.05},
+	{"value": "Attack/Melee/Damage/Crush", "multiply": 1.05},
+	{"value": "Resistance/Entity/Damage/Magic", "add": 4.0}
+	],
+	"affects": ["Mercenary"],
+	"auraName": "Tower Coordination",
+	"auraDescription": "5% Damage and 4 extra magic armour for mercenaries for every smithy",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/trade_silvercraft"
+}

@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"modifications": [{ "value": "UnitMotion/WalkSpeed", "multiply": 1.2 }],
+	"affects": ["PrawnBowman"],
+	"auraName": "Tower Coordination",
+	"auraDescription": "+20% Movmentspeed for Prawn Bowman",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/animal_shellhallows"
+}

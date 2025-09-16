@@ -24,7 +24,7 @@
     <History>Hunters of all manner of sea beast, from the Gyorgs of the Great Sea to the Bigoctos of the west, Lightscale Tridenteers were powerful warriors when in the waters. They were exceptionally adept at killing creature units with their tridents, and when not in combat they could slowly heal their injuries.</History>
     <Icon>units/lanayru/lan_tridenteer.dds</Icon>
     <Lang>lanayru</Lang>
-    <RequiredTechnology>civ_choices/lanayru/choosehero_mipha</RequiredTechnology>
+    <RequiredTechnology>lanayru/get_coastwatch</RequiredTechnology>
     <SelectionGroupName>units/lanayru/lanayru_tridenteer_b</SelectionGroupName>
     <Tooltip>Mipha's Unique Unit. Fast moving Melee unit armed with a long reaching trident. Excells at combat against creatures and aquatic units.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

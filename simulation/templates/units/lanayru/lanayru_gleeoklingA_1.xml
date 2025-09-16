@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beastramsmall">
 <Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
@@ -9,7 +9,7 @@
     <Height>7.0</Height>
   </Footprint>
   <Health>
-    <Max>150</Max>
+    <Max>400</Max>
   </Health>
   <Identity>
     <Civ>lanayru</Civ>

@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Mercenary"],
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.95 }],
+	"auraName": "Tower Coordination",
+	"auraDescription": "mercenary recruitment 5% faster for every bordello",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/mercs_happyhour"
+}

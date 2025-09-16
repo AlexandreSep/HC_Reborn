@@ -1,4 +1,7 @@
 <Entity parent="HC_template_structure_military">
+<Auras datatype="tokens">
+    structures/lanayru/mercs_happyhour
+  </Auras>
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>

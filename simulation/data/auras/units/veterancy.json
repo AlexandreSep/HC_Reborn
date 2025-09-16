@@ -1,0 +1,15 @@
+{
+	"type": "formation",
+	"affects": ["Unit"],
+  	"modifications": [
+    {
+      "value": "Health/Max",
+      "multiply": 1.2
+    }
+  ],
+	"auraName": "Shocktroop Aura",
+	"auraDescription": "+20% Health to all units within formation",
+	"requiredTechnology": "lanayru/barracks_veterancy",
+	"stackable" : false ,
+	"overlayIcon": "art/textures/ui/session/auras/shocktroop_aura_1.dds"
+}

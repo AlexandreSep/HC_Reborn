@@ -224,6 +224,7 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/lanayru/{civ}_guardianmaiden_b
+	units/lanayru/{civ}_silverarcher_b
 		units/lanayru/{civ}_ballista_b
 		units/lanayru/{civ}_flinger_b</Entities>
     <DestinationOffset>

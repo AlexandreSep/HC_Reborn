@@ -1,8 +1,8 @@
 {
 	"genericName": "The Great Migration",
-	"description": "Prawn Bowmen move 100% faster when in formation with another Prawn Bowman, does not stack.",
+	"description": "Prawn Bowmen move 20% faster for every prawn pond.",
 	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 300},
-	"requirements": { "all": [{ "entity": { "class": "PrawnPond", "number": 1 } }] },
+	"requirements": { "all": [{ "entity": { "class": "PrawnPond", "number": 6 } }] },
 	"requirementsTooltip": "Unlocked with Prawn Pond.",
 	"icon": "lanayru/animal_greatmigration.dds",
 	"researchTime": 40,

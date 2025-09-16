@@ -1,0 +1,14 @@
+{
+	"type": "global",
+	"modifications": [
+	{"value": "Resistance/Entity/Damage/Hack", "add": 2.0},
+	{"value": "Resistance/Entity/Damage/Pierce", "add": 2.0},
+	{"value": "Resistance/Entity/Damage/Crush", "add": 2.0},
+	{"value": "Resistance/Entity/Damage/Magic", "add": 4.0}
+	],
+	"affects": ["SilverArmor"],
+	"auraName": "Tower Coordination",
+	"auraDescription": "2 extra Hack/Pierce/Crush and 4 extra magic armour for silver armoured units for every smithy",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/armor_glittersilver"
+}

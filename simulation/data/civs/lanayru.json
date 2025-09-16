@@ -118,9 +118,6 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/lanayru/choosehero_ralis",
-		"civ_choices/lanayru/choosehero_sidon",
-		"civ_choices/lanayru/choosehero_aydia",
 		"civ_choices/lanayru/choosehero_mipha",
 		"civ_choices/lanayru/choosehero_rutela",
 		"civ_choices/lanayru/choosehero_dorephan"

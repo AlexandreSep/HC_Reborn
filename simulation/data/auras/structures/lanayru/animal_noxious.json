@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"modifications": [{"value": "Attack/Stun/Time", "add": 500}],
+	"affects": ["ShoreSerpent"],
+	"auraName": "Tower Coordination",
+	"auraDescription": "+5 Siegedamage for Arach units",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/animal_digdrills"
+}

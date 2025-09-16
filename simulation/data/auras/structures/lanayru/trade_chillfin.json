@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"affects": ["Trader"],
+	"modifications": [
+	{"value": "Trader/GainMultiplier", "multiply": 1.1}	
+	],
+	"auraName": "Tower Coordination",
+	"auraDescription": "Traders gain 10% Production Bonus for every Emporium.",
+	"stackable" : true ,
+	"requiredTechnology": "lanayru/trade_chillfin"
+}

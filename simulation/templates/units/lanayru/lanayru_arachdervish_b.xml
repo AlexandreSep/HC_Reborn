@@ -6,6 +6,7 @@
 	    <Hack>0</Hack>
         <Crush>10.0</Crush>
         <Pierce>10.0</Pierce>
+		<Siege>0</Siege>
       </Damage>
       <Stun>
         <Chance>25</Chance>

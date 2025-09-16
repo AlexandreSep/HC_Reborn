@@ -36,7 +36,7 @@
     <History>Aydia was a long serving Marshal in Lanayru’s army. She was almost entirely responsible for the Province’s conscription program and without it the nation would have likely fell from a lack of military force. She has perhaps participated in more battles than any other Zora of the north, and bears scars from her numerous engagements.</History>
     <Icon>units/lanayru/lan_hero_aydia.dds</Icon>
     <Lang>lanayru</Lang>
-    <RequiredTechnology>civ_choices/lanayru/choosehero_aydia</RequiredTechnology>
+    <RequiredTechnology>civ_choices/lanayru/choosehero_dorephan</RequiredTechnology>
     <SpecificName>Aydia Dorephan</SpecificName>
     <Tooltip>Strong Melee Hero with decent armor and commanding abilities.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

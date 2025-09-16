@@ -25,7 +25,7 @@
     <History> Hunters of massive and titanic beasts across Hyrule, the secret of the Silver Archer lies in their arrows. A single Silver Arrow could wound many of the giant monsters across Hyrule, usually the larger they were the harder they would fall. As such, the Silver Archer's attack scaled in power with the size of its target. Regardless of size, a Silver Arrow could puncture through all but Magic armor.</History>
     <Icon>units/lanayru/lan_silverarcher.dds</Icon>
     <Lang>lanayru</Lang>
-    <RequiredTechnology>civ_choices/lanayru/choosehero_aydia</RequiredTechnology>
+    <RequiredTechnology>lanayru/get_coastwatch</RequiredTechnology>
     <SelectionGroupName>units/lanayru/lanayru_silverarcher_b</SelectionGroupName>
     <Tooltip>Prince Ralis' Unique Unit. Strong Missile unit that deals progressively more damage to larger unit sizes and pierces all forms of armor.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

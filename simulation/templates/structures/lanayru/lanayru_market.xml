@@ -1,7 +1,8 @@
 <Entity parent="HC_template_structure_civilian">
-  <BuildRestrictions>
-    <Category>Market</Category>
-  </BuildRestrictions>
+<Auras datatype="tokens">
+    structures/lanayru/trade_silvercraft
+	structures/lanayru/trade_chillfin
+  </Auras>
   <Cost>
     <BuildTime>150</BuildTime>
     <Resources>

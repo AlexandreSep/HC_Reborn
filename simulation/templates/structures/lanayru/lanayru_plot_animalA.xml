@@ -52,7 +52,7 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_stablesA</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
+      <RequiredTechnology>civ_choices/lanayru/choosehero_rutela</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add am Arach Den to this building.</Tooltip>
       <Variant>upgrading_I</Variant>
@@ -62,7 +62,7 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_stablesB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
+      <RequiredTechnology>civ_choices/lanayru/choosehero_dorephan</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Serpent Burrow to this building.</Tooltip>
       <Variant>upgrading_I</Variant>

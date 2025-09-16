@@ -1,4 +1,9 @@
 <Entity parent="HC_template_structure_civilian">
+<Auras datatype="tokens">
+    structures/lanayru/eco_wealthspotter
+	structures/lanayru/eco_silverweight
+	structures/lanayru/eco_coraldiver
+  </Auras>
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>

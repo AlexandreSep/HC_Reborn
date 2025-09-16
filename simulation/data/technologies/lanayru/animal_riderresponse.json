@@ -1,15 +1,14 @@
 {
 	"genericName": "Rider Response",
-	"description": "Arach Dervish movement speed increased by 20%, turn rate increased by 50%",
+	"description": "Arach Dervish movement and attack speed increased by 25%",
 	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 450},
-	"requirements": { "all": [{ "entity": { "class": "ArachDen", "number": 1 } }] },
+	"requirements": { "all": [{ "entity": { "class": "ArachDen", "number": 6 } }] },
 	"requirementsTooltip": "Unlocked with Arach Den.",
 	"icon": "lanayru/animal_riderresponse.dds",
 	"researchTime": 40,
-	"tooltip": "Arach Dervish movement speed increased by 20%, turn rate increased by 50%",
-	"modifications": [		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.20 },
-							{ "value": "UnitMotion/RunMultiplier", "multiply": 1.20 },
-							{ "value": "Position/TurnRate", "multiply": 0.50 }],
+	"tooltip": "Arach Dervish movement and attack speed increased by 25%",
+	"modifications": [		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.25 },
+							{ "value": "Attack/Melee/RepeatTime", "multiply": 0.75 }],
 	"affects": ["ArachDervish"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
