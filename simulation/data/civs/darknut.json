@@ -122,10 +122,7 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/darknut/choosehero_onon",
-		"civ_choices/darknut/choosehero_militron",
 		"civ_choices/darknut/choosehero_alros",
-		"civ_choices/darknut/choosehero_senturon",
 		"civ_choices/darknut/choosehero_yaraxonal",
 		"civ_choices/darknut/choosehero_zalunbar"
 	],

@@ -60,7 +60,7 @@
     <History>Senturon served as one of Vaati’s enforcers during the ancient age of Hyrule. Seemingly unkillable, rumors began to build around Senturon that he had the power to raise himself from the dead. Regardless, he mercilessly carried out the orders of the Legion and completely drove the Wind Tribe from Hyrule. After nearly three thousand years, the name Senturon has been forgotten and the moniker of Black Knight has faded into legend. Still, there are some words spoken that this grim warrior still walks in the shadows of Hyrule and serves the Legion to this day.</History>
     <Icon>units/darknut/dar_hero_senturon.dds</Icon>
     <Lang>darknut</Lang>
-    <RequiredTechnology>civ_choices/darknut/choosehero_senturon</RequiredTechnology>
+    <RequiredTechnology>civ_choices/darknut/choosehero_yaraxonal</RequiredTechnology>
     <SpecificName>Senturon</SpecificName>
     <Tooltip>Extremely durable Melee Hero with a heavy suit of armor. He can take tremendous punishment before falling in battle.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

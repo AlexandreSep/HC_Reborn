@@ -54,7 +54,6 @@
     <Technologies datatype="tokens">darknut/mercs_legionloyalty
     darknut/mercs_privatepacts
     darknut/alros_supermercs
-
 </Technologies>
   </Researcher>
   <Trainer>
@@ -64,16 +63,16 @@
     units/darknut/{civ}_lynel_b
     units/darknut/{civ}_fokkalista_b
     units/merc_geru_b
+	units/merc_tinsuit_b
+	units/merc_wosu_b
     units/merc_goriya_b
+	units/merc_taros_b
+	units/merc_daira_b
     units/merc_forestthief_b
-    units/merc_polsvoice_b
-    units/merc_tinsuit_b
-    units/merc_taros_b
     units/merc_pikku_b
-    units/merc_gimos_b
-    units/merc_wosu_b
-    units/merc_daira_b
     units/merc_mago_b
+	units/merc_gimos_b
+	units/merc_polsvoice_b
     units/merc_meteo_b</Entities>
     <DestinationOffset>
       <step1>

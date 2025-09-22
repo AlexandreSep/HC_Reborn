@@ -49,7 +49,7 @@
     <History>Known as the Darknut Prime, Onon lead the successful defense of Ontheon and several other cities against the Gerudo. He has become a popular hero figure amongst the Darknut people despite him refusing to join the Legion proper.</History>
     <Icon>units/darknut/dar_hero_onon.dds</Icon>
     <Lang>darknut</Lang>
-    <RequiredTechnology>civ_choices/darknut/choosehero_onon</RequiredTechnology>
+    <RequiredTechnology>civ_choices/darknut/choosehero_alros</RequiredTechnology>
     <SpecificName>Onon</SpecificName>
     <Tooltip>Ranged hero that can impale enemies with his Javelin.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

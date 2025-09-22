@@ -42,17 +42,13 @@
     <Actor>structures/darknut/darknut_summonerebaseA.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">darknut/summon_reanimation
-    darknut/summon_charm
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/darknut/{civ}_immortal_b
-      units/darknut/{civ}_glasswitch_b
-    units/darknut/{civ}_reaver_b</Entities>
+    <Entities datatype="tokens">
+    units/darknut/{civ}_reaver_b
+	units/npc_keaton/npc_kea_marksman_b
+	units/npc_stormzora/npc_stz_viper_b
+	</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>

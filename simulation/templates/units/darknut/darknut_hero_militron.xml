@@ -60,7 +60,7 @@
     <History>A young Darknut commander who lead the reconquest of the southern Mesas. Militron is utterly ruthless and has resorted to tactics that some consider outside the Legion code.</History>
     <Icon>units/darknut/dar_hero_militron.dds</Icon>
     <Lang>darknut</Lang>
-    <RequiredTechnology>civ_choices/darknut/choosehero_militron</RequiredTechnology>
+    <RequiredTechnology>civ_choices/darknut/choosehero_zalunbar</RequiredTechnology>
     <SpecificName>Militron</SpecificName>
     <Tooltip>Melee Hero with decent armor and splash damage.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
