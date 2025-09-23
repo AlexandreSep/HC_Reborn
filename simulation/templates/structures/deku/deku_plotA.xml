@@ -92,89 +92,26 @@
     </TowerF>
     <TowerG>
       <Cost>
-        <metal>100</metal>
-        <wood>150</wood>
-      </Cost>
-      <Entity>structures/deku/deku_mercs</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>45</Time>
-      <Tooltip>Build a Boiling Cauldron on this plot.</Tooltip>
-      <Variant>upgrading_tall</Variant>
-    </TowerG>
-    <TowerH>
-      <Cost>
-        <metal>100</metal>
-        <wood>150</wood>
-      </Cost>
-      <Entity>structures/deku/deku_stage</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>45</Time>
-      <Tooltip>Build a Stage on this plot.</Tooltip>
-      <Variant>upgrading_tall</Variant>
-    </TowerH>
-    <TowerI>
-      <Cost>
-        <metal>200</metal>
-        <wood>300</wood>
-      </Cost>
-      <Entity>structures/deku/deku_basin</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
-      <Time>45</Time>
-      <Tooltip>Build a Cleansing Basin on this plot.</Tooltip>
-      <Variant>upgrading_short</Variant>
-    </TowerI>
-    <TowerJ>
-      <Cost>
         <wood>200</wood>
       </Cost>
       <Entity>structures/deku/deku_barracks</Entity>
       <Time>60</Time>
       <Tooltip>Build a Mustering Base on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
-    </TowerJ>
-    <TowerK>
-      <Cost>
+    </TowerG>
+    <TowerH>
+	 <Cost>
+        <stone>200</stone>
         <wood>300</wood>
       </Cost>
-      <Entity>structures/deku/deku_stables</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Build a Beetle Barn on this plot.</Tooltip>
-      <Variant>upgrading_tall</Variant>
-    </TowerK>
-    <TowerL>
-      <Cost>
-        <wood>300</wood>
-      </Cost>
-      <Entity>structures/deku/deku_stablesB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Build a Menagerie on this plot.</Tooltip>
-      <Variant>upgrading_tall</Variant>
-    </TowerL>
-    <TowerM>
-      <Cost>
-        <metal>100</metal>
-        <wood>200</wood>
-      </Cost>
-      <Entity>structures/deku/deku_greenhouse</Entity>
+      <Entity>structures/deku/deku_barracksB</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
       <Time>60</Time>
-      <Tooltip>Build a Greenhouse on this plot.</Tooltip>
-      <Variant>upgrading_tall</Variant>
-    </TowerM>
-    <TowerN>
-      <Cost>
-        <wood>300</wood>
-      </Cost>
-      <Entity>structures/deku/deku_blacksmith</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>45</Time>
-      <Tooltip>Build a Loggery on this plot.</Tooltip>
-      <Variant>upgrading_tall</Variant>
-    </TowerN>
-    <TowerO>
-      <Cost>
+      <Tooltip>Build a Blockhouse on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>  
+    </TowerH>
+    <TowerI>
+	 <Cost>
         <wood>100</wood>
 		<stone>200</stone>
       </Cost>
@@ -183,18 +120,91 @@
       <Time>45</Time>
       <Tooltip>Build a Nut Carver on this plot.</Tooltip>
       <Variant>upgrading_short</Variant>
-    </TowerO>
-    <TowerP>
-      <Cost>
-        <stone>200</stone>
+    </TowerI>
+    <TowerJ>
+	<Cost>
+        <metal>100</metal>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/deku/deku_mercs</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Boiling Cauldron on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerJ>
+    <TowerK>
+     	<Cost>
+        <metal>100</metal>
+        <wood>200</wood>
+      </Cost>
+      <Entity>structures/deku/deku_greenhouse</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Greenhouse on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerK>
+    <TowerL>
+	<Cost>
+        <metal>200</metal>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_basin</Entity>
+      <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Cleansing Basin on this plot.</Tooltip>
+      <Variant>upgrading_short</Variant> 
+    </TowerL>
+    <TowerM>
+       <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_stables</Entity>
+      <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Beetle Barn on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerM>
+    <TowerN>
+	<Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_stablesB</Entity>
+      <RequiredTechnology>civ_choices/deku/choosehero_dekuking</RequiredTechnology>
+      <Time>60</Time>
+      <Tooltip>Build a Menagerie on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerN>
+	<TowerO>
+	<Cost>
         <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_fortress</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/deku/choosehero_dekuking</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Blockhouse on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
+    </TowerO>
+    <TowerP>
+	 <Cost>
+        <wood>300</wood>
+      </Cost>
+      <Entity>structures/deku/deku_blacksmith</Entity>
+      <RequiredTechnology>civ_choices/deku/choosehero_butler</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Loggery on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
     </TowerP>
+    <TowerQ>
+     <Cost>
+        <metal>100</metal>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/deku/deku_stage</Entity>
+      <RequiredTechnology>civ_choices/deku/choosehero_butler</RequiredTechnology>
+      <Time>45</Time>
+      <Tooltip>Build a Stage on this plot.</Tooltip>
+      <Variant>upgrading_tall</Variant>
+    </TowerQ>
   </Upgrade>
   <VisualActor>
     <Actor>structures/deku/deku_plotA.xml</Actor>

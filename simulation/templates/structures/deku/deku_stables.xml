@@ -26,7 +26,7 @@
     <GenericName>Beetle Barn</GenericName>
     <History>The Orhats of the Deep Woods were one of the only creatures the Scrubs successfully domesticated. They often treated the creatures like adopted cousins, building comfortable walled off barns for them to live in.</History>
     <Icon>structures/deku/dek_beetlebarn.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
     <Tooltip>Trains Orhat Bettle units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>

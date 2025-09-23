@@ -40,7 +40,7 @@
     <History>A royal Scrub that flew around high above the ground with a pair of spinning flowers. What made these flowers work was a mystery even to the Deku Scrubs, and they seemed to only spin when in the hand of a Scrub. Flower Thopters were slow but could drop large Deku Nuts from above on to armies below, causes quite a flash and stunning everyone in the blast. </History>
     <Icon>units/deku/dek_thopter.dds</Icon>
     <Lang>deku</Lang>
-    <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
+    <RequiredTechnology>civ_choices/deku/choosehero_butler</RequiredTechnology>
     <SelectionGroupName>units/deku/deku_thopter_b</SelectionGroupName>
     <Tooltip>Princess Kad-A-Kana's Unique Unit. Flying Missile unit that drops explosive Deku Nuts on their targets.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

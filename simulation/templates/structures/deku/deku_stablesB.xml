@@ -36,7 +36,7 @@
     <GenericName>Menagerie</GenericName>
     <History>Within the confines of these districts the Deku Scrubs would capture and place all manner of monsterous forest creatures. While they were able to acheive some level of domestication, Deku Scrubs’ control over these creatures was limited at best.</History>
     <Icon>structures/deku/dek_menagerie.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/deku/choosehero_dekuking</RequiredTechnology>
     <Tooltip>Trains a variety of Creature units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>
@@ -72,8 +72,6 @@
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/deku/{civ}_pikit_b
     units/deku/{civ}_snapdragon_b
-	units/deku/{civ}_babacrawler_b
-    units/deku/{civ}_manhandla_b
     units/deku/{civ}_peahatmama</Entities>
     <DestinationOffset>
       <step1>

@@ -56,7 +56,7 @@
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The Baballista is a crazy contraption designed by Kado himself. Launching a giant bolt from its small engine, the attack could punch a hole in most targets with ease. Perhaps the nastiest trick of this weapon was the packs of Baba seeds attached to the bolts, which could then hatch and grow into Deku Babas shortly after landing on the mark.</History>
     <Icon>units/deku/dek_baballista.dds</Icon>
-    <RequiredTechnology>civ_choices/deku/choosehero_kado</RequiredTechnology>
+    <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
     <Tooltip>Kado's Unique Unit. Siege unit that fires bolts laced with Deku Babas. Projectiles have a chance to spawn Deku Babas on impact.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>

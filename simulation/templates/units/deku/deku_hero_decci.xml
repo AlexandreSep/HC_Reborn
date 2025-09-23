@@ -51,7 +51,7 @@
     <History>Decci is one of the most famous Deku Scrub Miners; and one of the only Deku Scrub Miners. Decci pioneered the harvesting of Meganuts and has found many creative ways to turn them into weapons and armor for the Deku Scrubs.</History>
     <Icon>units/deku/dek_hero_decci.dds</Icon>
     <Lang>deku</Lang>
-    <RequiredTechnology>civ_choices/deku/choosehero_decci</RequiredTechnology>
+    <RequiredTechnology>civ_choices/deku/choosehero_butler</RequiredTechnology>
     <SpecificName>Decci</SpecificName>
     <Tooltip>Ranged Hero that attacks with Deku Nuts.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

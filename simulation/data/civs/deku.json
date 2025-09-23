@@ -122,9 +122,6 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/deku/choosehero_decci",
-		"civ_choices/deku/choosehero_deppi",
-		"civ_choices/deku/choosehero_kado",
 		"civ_choices/deku/choosehero_butler",
 		"civ_choices/deku/choosehero_dekuprincess",
 		"civ_choices/deku/choosehero_dekuking"

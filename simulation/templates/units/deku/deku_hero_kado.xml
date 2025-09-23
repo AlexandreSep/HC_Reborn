@@ -69,7 +69,7 @@
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A brilliant engineer, the son of Butler Kuh-Do, and the only friend of Princess Kad-A-Kana, Kado was at the forefront of creating siege engines and other contraptions for Scrub kind. He had an endless fascination with watching things fall to the ground... usually as a result of one of his new catapult inventions. Kado was rather small, even for a Deku Scrub, and was often considered a joke most of his life. After compensating with his clearly more exercised brain and ending up in the King’s favor, his lot in life changed quite considerably. He currently serves as an adviser to the Princess, and has grown concerned with her interest in ancient Odolwan rituals.</History>
     <Icon>units/deku/dek_hero_kado.dds</Icon>
-    <RequiredTechnology>civ_choices/deku/choosehero_kado</RequiredTechnology>
+    <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
     <SpecificName>Kado</SpecificName>
     <Tooltip>Siege Hero that attacks enemy targets from a long distance with his Dekupult.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>

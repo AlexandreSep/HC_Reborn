@@ -42,7 +42,7 @@
     <History>A reclusive Deku Scrub that lives away from most Scrub civilization. Deppi spent a lot of time in the woods playing with and befriending many Deku Babas, as a result he has revolutionized breeding the hostile plants for use by all Scrub kind.</History>
     <Icon>units/deku/dek_hero_deppi.dds</Icon>
     <Lang>deku</Lang>
-    <RequiredTechnology>civ_choices/deku/choosehero_deppi</RequiredTechnology>
+    <RequiredTechnology>civ_choices/deku/choosehero_dekuking</RequiredTechnology>
     <SpecificName>Deppi</SpecificName>
     <Tooltip>Melee Hero that attacks with Deku Babas.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

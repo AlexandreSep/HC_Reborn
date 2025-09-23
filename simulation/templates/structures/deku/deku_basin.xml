@@ -36,7 +36,7 @@
     <GenericName>Cleansing Basin</GenericName>
     <History>The spread of Mad Scrub was a constant problem for the Deku Scrubs. Although it was not curable, bathing in the waters of the deep forests seemed to slow down the spread of the disease. It was wise for the Scrubs to build such a place to help prevent an outbreak and heal Scrubs from their injuries.</History>
     <Icon>structures/deku/dek_basin.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
     <Tooltip>Researches abilities related to controlling Mad Scrub Disease.</Tooltip>
     <VisibleClasses datatype="tokens">Special</VisibleClasses>
   </Identity>

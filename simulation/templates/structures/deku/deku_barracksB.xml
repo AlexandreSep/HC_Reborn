@@ -26,6 +26,7 @@
     <GenericName>Baba Patch</GenericName>
     <History>A garden dedicated to growing and cultivating the violent Deku Babas. Scrubs had many uses for these creatures, from guard dog duty to augmenting their war efforts.</History>
     <Icon>structures/deku/dek_babapatch.dds</Icon>
+	<RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Trains Deku Babas and related units.</Tooltip>
   </Identity>
   <Obstruction>
@@ -55,7 +56,8 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/deku/{civ}_babacrawler_b
-      units/deku/{civ}_baballista_b</Entities>
+      units/deku/{civ}_baballista_b
+    units/deku/{civ}_manhandla_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>

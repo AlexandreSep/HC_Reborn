@@ -19,7 +19,7 @@
       <RepeatTime>4000</RepeatTime>
       <Splash>
         <Damage>
-          <Forest>10.0</Forest>
+          <Magic>10.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>8</Range>
