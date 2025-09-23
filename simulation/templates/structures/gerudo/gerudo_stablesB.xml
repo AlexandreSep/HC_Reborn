@@ -81,7 +81,7 @@
     <GenericName>Sandseal Pen</GenericName>
     <History>The Sandseals native to the Gerudo Desert are stubborn animals that many civilizations fail to domesticate. The Gerudo somehow managed to tame the beasts, and house them in specialized stables.</History>
     <Icon>structures/gerudo/ger_stablesB.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
     <Tooltip>Trains Sandseal units for the Gerudo.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>

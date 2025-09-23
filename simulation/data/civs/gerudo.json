@@ -122,12 +122,9 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/gerudo/choosehero_aveil",
-		"civ_choices/gerudo/choosehero_buliara",
 		"civ_choices/gerudo/choosehero_urbosa",
 		"civ_choices/gerudo/choosehero_riju",
-		"civ_choices/gerudo/choosehero_ganondorf",
-		"civ_choices/gerudo/choosehero_nabooru"
+		"civ_choices/gerudo/choosehero_ganondorf"
 	],
 	"TeamBonuses": [
 		{

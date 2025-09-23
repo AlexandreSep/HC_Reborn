@@ -7,7 +7,7 @@
     <History>In the harsh desert, thievery is often the best means of survival, and the Gerudo are the undisputed champions. Master Thieves can sneak into just about any location and pickpocket, steal, murder, and engage in all-out melee.</History>
     <Icon>units/gerudo/ger_masterthief.dds</Icon>
     <Lang>gerudo</Lang>
-    <RequiredTechnology>civ_choices/gerudo/choosehero_nabooru</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_ganondorf</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_masterthief_b</SelectionGroupName>
     <Tooltip>Swift Melee unit that is Stealthed.</Tooltip>
   </Identity>

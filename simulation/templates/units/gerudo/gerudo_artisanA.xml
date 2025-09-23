@@ -27,12 +27,14 @@
     structures/gerudo/gerudo_field
     structures/gerudo/gerudo_market
     structures/gerudo/gerudo_mercs
+	structures/gerudo/gerudo_bar
     structures/gerudo/gerudo_temple
     structures/gerudo/gerudo_barracks
     structures/gerudo/gerudo_barracksB
     structures/gerudo/gerudo_stables
     structures/gerudo/gerudo_stablesB
     structures/gerudo/gerudo_blacksmith
+	structures/gerudo/gerudo_blacksmithB
     structures/gerudo/gerudo_blacksmithC
     structures/gerudo/gerudo_wallset
     structures/gerudo/gerudo_sentry_tower

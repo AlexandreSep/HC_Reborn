@@ -1,5 +1,13 @@
 <Entity parent="structures/gerudo/gerudo_temple">
+<Auras datatype="tokens">
+    structures/religious_territory_1
+	structures/religious_territory_2
+  </Auras>
   <VisualActor>
     <Actor>structures/gerudo/gerudo_religionB.xml</Actor>
   </VisualActor>
+  <Trainer>
+    <Entities datatype="tokens">units/gerudo/{civ}_windwitch_b
+    units/gerudo/{civ}_ironknuckle_b</Entities>
+  </Trainer>
 </Entity>

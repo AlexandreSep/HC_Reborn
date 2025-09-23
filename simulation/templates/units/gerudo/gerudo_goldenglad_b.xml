@@ -11,7 +11,7 @@
     <History>Wielding a huge two-handed claymore, Golden Gladiators use their impressive strength and speed to overpower lesser enemies. They are swift on their feet, can dodge well in a melee, and their strength and weapon of choice allows them to crack open enemy armor with ease.</History>
     <Icon>units/gerudo/ger_goldenglad.dds</Icon>
     <Lang>gerudo</Lang>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_goldenglad_b</SelectionGroupName>
     <Tooltip>Urbosa's Unique Unit. Strong Melee unit that has a very high Dodge rate.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

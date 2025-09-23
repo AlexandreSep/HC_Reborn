@@ -56,6 +56,7 @@
     <GenericName>Border Tower</GenericName>
     <History>Gerudo borders are guarded with care. Many of these towers are built along the mountainous reaches of the Gerudo Desert to keep watch for invaders.</History>
     <Icon>structures/gerudo/ger_sentry_tower.dds</Icon>
+	<RequiredTechnology>civ_choices/gerudo/choosehero_urbosa</RequiredTechnology>
     <Tooltip>Small Tower that can detect Camouflaged and Stealthed units.</Tooltip>
     <VisibleClasses datatype="tokens">Tower</VisibleClasses>
   </Identity>

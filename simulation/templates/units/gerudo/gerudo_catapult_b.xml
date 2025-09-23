@@ -17,8 +17,9 @@
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Construct Large GerudoCatapult</Classes>
     <GenericName>Gerudo Catapult</GenericName>
-    <History>The Gerudo have long used Catapults to attack enemy cities: it has remained their most reliable siege weapon for centuries. Made from the wood of Desert Palms, they are very easy to construct and maintain. The boulders launched by these engines can take down just about any stationary target, be it walls, gates, or enemy towers.</History>
+    <History>The Gerudo have recently used Catapults to attack enemy cities: it has become their most reliable siege weapon in recent years. Made from the wood of Desert Palms, they are very easy to construct and maintain. The boulders launched by these engines can take down just about any stationary target, be it walls, gates, or enemy towers.</History>
     <Icon>units/gerudo/ger_catapult.dds</Icon>
+	<RequiredTechnology>civ_choices/gerudo/choosehero_urbosa</RequiredTechnology>
     <Tooltip>Cheap but effective Siege unit with a ranged attack.</Tooltip>
   </Identity>
   <Sound>

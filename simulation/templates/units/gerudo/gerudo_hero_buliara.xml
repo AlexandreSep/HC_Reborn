@@ -41,7 +41,7 @@
     <History>The latest in a line of Gerudo who have guarded the throne. Buliara served as a personal bodyguard for Ganondorf and later his daughter Riju.</History>
     <Icon>units/gerudo/ger_hero_buliara.dds</Icon>
     <Lang>gerudo</Lang>
-    <RequiredTechnology>civ_choices/gerudo/choosehero_buliara</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
     <SpecificName>Buliara</SpecificName>
     <Tooltip>Strong Infantry Melee Hero that can cleave enemies with her huge sword.</Tooltip>
   </Identity>

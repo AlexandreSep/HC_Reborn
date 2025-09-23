@@ -36,7 +36,7 @@
     <History>The master of the Gerudo Pirates, brought back under the Gerudo banner by Ganondorf. Aveil has long lived without any oversight and plundered many sea fareres across the Great Sea over the years. Now her power and resources have been turned to the Gerudo navy.</History>
     <Icon>units/gerudo/ger_hero_aveil.dds</Icon>
     <Lang>gerudo</Lang>
-    <RequiredTechnology>civ_choices/gerudo/choosehero_aveil</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_urbosa</RequiredTechnology>
     <SpecificName>Aveil</SpecificName>
     <Tooltip>Fast and underhanded Melee Hero armed with two scimitars.</Tooltip>
   </Identity>

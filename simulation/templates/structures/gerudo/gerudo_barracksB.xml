@@ -82,6 +82,7 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/gerudo/{civ}_tombguard_b
+	units/gerudo/{civ}_serpentkeep_b
       units/gerudo/{civ}_icearcher_b
     units/gerudo/{civ}_ashcap_b
     units/gerudo/{civ}_goldenglad_b</Entities>

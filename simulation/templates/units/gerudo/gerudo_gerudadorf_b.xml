@@ -11,7 +11,7 @@
     <History>Armed with a pair of Katars, the Gerudadorf serve as battlefield assassins and ambush masters. Well trained in the art of stealth, Gerudadorf take advantage of both their environment and the chaos of battle to slip through enemy ranks and kill high-priority targets.</History>
     <Icon>units/gerudo/ger_gerudadorf.dds</Icon>
     <Lang>gerudo</Lang>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_urbosa</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_gerudadorf_b</SelectionGroupName>
     <Tooltip>Fast Melee unit with Camouflage, has a chance to deal Critical Hits to enemies.</Tooltip>
   </Identity>

@@ -33,6 +33,7 @@
     <GenericName>Oasis</GenericName>
     <History>Containing refreshing waters from deep within the Gerudo Desert, an Oasis is often set up in forward military bases or small villages. A single Oasis can advance the growth and expansion of the Gerudo.</History>
     <Icon>structures/gerudo/ger_oasis.dds</Icon>
+	<RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
     <Tooltip>Acts as a smaller Civil Center: Extends Territory, trains Worker units and all Resources can be dropped off here.</Tooltip>
     <VisibleClasses datatype="tokens" />
   </Identity>

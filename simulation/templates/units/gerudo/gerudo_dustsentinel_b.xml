@@ -41,7 +41,7 @@
     <History>The reclusive Dust Sentinels are the stoic guardians of the desert borders. Capable of bunkering down, these Sandseal riders create a thick cloud of dust around themselves, which renders them invisible even while attacking, so long as they are stationary.</History>
     <Icon>units/gerudo/ger_dustsentinel.dds</Icon>
     <Lang>gerudo</Lang>
-    <RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
+    <RequiredTechnology>phase_city</RequiredTechnology>
     <SelectionGroupName>units/gerudo/gerudo_dustsentinel_b</SelectionGroupName>
     <Tooltip>Princess Riju's Unique Unit. Mounted Missile Cavalry that can attack from afar and cloak nearbye units in a Sandstorm</Tooltip>
   </Identity>

@@ -69,7 +69,7 @@
     <GenericName>Civilian</GenericName>
     <History>Serving everything from Keaton Cider to Lon Lon Milk, the local Bar was often a hotbed of activity for Gerudo civilians. After a long day's work, a Bar went to great lengths to improve the populace's happiness.</History>
     <Icon>structures/gerudo/ger_bar.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gerudo/choosehero_urbosa</RequiredTechnology>
     <SpecificName>Gerudo Bar</SpecificName>
     <Tooltip>Gerudo Bar that serves drinks to patrons.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
