@@ -6,8 +6,9 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>75</Max>
+    <Max>25</Max>
     <RegenRate>-1</RegenRate>
+	<SpawnMultipleEntitiesOnDeath disable="" />
   </Health>
   <Identity>
     <Civ>deku</Civ>

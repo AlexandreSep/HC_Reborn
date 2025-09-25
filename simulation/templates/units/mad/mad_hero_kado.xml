@@ -2,6 +2,7 @@
   <Health>
     <Max>200</Max>
     <RegenRate>-1</RegenRate>
+	<SpawnMultipleEntitiesOnDeath disable="" />
   </Health>
   <Identity>
     <Classes datatype="tokens">MadScrub</Classes>

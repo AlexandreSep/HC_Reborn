@@ -1,7 +1,8 @@
 <Entity parent="units/deku/deku_manhandla_b">
   <Health>
-    <Max>250</Max>
+    <Max>500</Max>
     <RegenRate>-1</RegenRate>
+	<SpawnMultipleEntitiesOnDeath disable="" />
   </Health>
   <Identity>
     <Classes datatype="tokens">MadScrub</Classes>

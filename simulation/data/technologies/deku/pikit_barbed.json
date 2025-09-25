@@ -7,9 +7,8 @@
 	"icon": "deku/pikit_barbed.dds",
 	"researchTime": 40,
 	"tooltip": "Pikit tongues were covered in very wicked thorns, but certain speciments had some truly monsterous bards. These growths could be encouraged by Deku Scrubs, allowing Pikits to rip through armor and hinder their targets. (Pikit attack now deals Truedamage and has a chance to Stun targets)",
-	"modifications": [{"value": "Attack/Melee/Damage/TrueDamage", "add": 21},
-					  {"value": "Attack/Melee/Damage/Pierce", "multiply": 0},
-					  {"value": "Attack/Melee/Damage/Stun/Chance", "add": 25}],
+	"modifications": [{"value": "Attack/Melee/Damage/TrueDamage", "add": 3},
+					  {"value": "Attack/Melee/Stun/Chance", "add": 25}],
 	"affects": ["Pikit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -1,6 +1,9 @@
 <Entity parent="classes/HC_template_unit_spearman_heavy">
   <Attack>
     <Melee>
+	<Damage>
+        <TrueDamage>0</TrueDamage>
+      </Damage>
       <AttackName>Spiked Tongue</AttackName>
       <MaxRange>25.0</MaxRange>
       <Stun>

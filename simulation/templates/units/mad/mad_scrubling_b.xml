@@ -1,7 +1,8 @@
 <Entity parent="units/deku/deku_scrubling_b">
   <Health>
-    <Max>37</Max>
+    <Max>50</Max>
     <RegenRate>-1</RegenRate>
+	<SpawnMultipleEntitiesOnDeath disable="" />
   </Health>
   <Identity>
     <Classes datatype="tokens">MadScrub</Classes>
