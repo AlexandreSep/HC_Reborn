@@ -70,7 +70,7 @@
 		<metal>30</metal>
       </Cost>
       <Entity>units/gohma/gohma_shieldgohma_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
+      <RequiredTechnology>civ_choices/gohma/choosehero_sulkaris</RequiredTechnology>
       <Time>40</Time>
       <Tooltip>Create Shieldgohma.</Tooltip>
     </TowerB>
@@ -80,7 +80,7 @@
 		<metal>50</metal>
       </Cost>
       <Entity>units/gohma/gohma_trapdoor</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
+      <RequiredTechnology>civ_choices/gohma/choosehero_agitha</RequiredTechnology>
       <Time>40</Time>
       <Tooltip>Create Trapdoor.</Tooltip>
     </TowerC>

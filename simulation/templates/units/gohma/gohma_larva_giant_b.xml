@@ -72,7 +72,7 @@
 		<food>200</food>
       </Cost>
       <Entity>units/gohma/gohma_acidsprayer_b</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/gohma/choosehero_sulkaris</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Create Acidsprayer.</Tooltip>
     </TowerC>

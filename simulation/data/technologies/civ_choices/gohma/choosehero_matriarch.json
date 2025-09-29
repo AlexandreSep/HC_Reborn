@@ -6,7 +6,7 @@
 	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.90, "affects": "Unit"}],
 	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Siege Focus", "tooltipText": "Matriarch focuses on sieging enemy bases."},
 	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Matriarch", "tooltipText": "Allows you to summon Matriarch, a bloated support hero surrounded by swarms of disposable bodyguards."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Janitor", "tooltipText": "Slow and large Gohma creature that self destructs in a ball of flame, dealing massive damage to structures."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Rapid Growth", "tooltipText": "Training time for all units reduced by 5% (Village) 10% (Town) and 15% (City)"},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Tektite and Amplifier", "tooltipText": "Access to a support unit and a large monster unit that can spawn small self destructers ."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Hive and Barrier", "tooltipText": "Access to walls and an upgrade to the tower that allows it to deal damage over time"},
 	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Arachnid Armor Plating", "tooltipText": "Coats Armogohma and Tank Gohma in large armor plates, dramatically boosting their non-magic armor."}]	
 }

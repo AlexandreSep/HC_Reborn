@@ -19,10 +19,9 @@
     <Max>1800</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>5</BattalionSize>
       <Chance>100</Chance>
       <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
+      <SpawnNumberMin>6</SpawnNumberMin>
       <Template>units/gohma/gohma_larva_sterile_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
@@ -42,6 +41,7 @@
     <GenericName>Extractor</GenericName>
     <History>The Extractor's purpose is to strip the flesh off of the Gohma's victims so that it may be stored for future consumption. This creepy and monsterous structure can improve the Gohma's ability to gather, hunt, and grow food.</History>
     <Icon>structures/gohma/goh_extractor.dds</Icon>
+	<RequiredTechnology>civ_choices/gohma/choosehero_sulkaris</RequiredTechnology>
     <Tooltip>Slowly drains Food within its aura.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
   </Identity>

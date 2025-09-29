@@ -19,7 +19,7 @@
       <Splash>
         <Damage>
 		  <Crush>0</Crush>
-          <Fire>6.0</Fire>
+          <Magic>3</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>5</Range>

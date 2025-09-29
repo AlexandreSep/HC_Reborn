@@ -6,6 +6,7 @@
         <Chance>100</Chance>
         <Time>3000</Time>
       </Stun>
+	  <MaxRange>12.0</MaxRange>
     </Melee>
   </Attack>
   <Footprint replace="">
@@ -51,6 +52,12 @@
       <Tooltip>Unburrow. (Trapdoor Gohma can move again but can no longer attack.)</Tooltip>
     </Tower>
   </Upgrade>
+  <Visibility>
+	<Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>10000</PostDelay>
+	</Camouflage>
+  </Visibility>
   <VisualActor>
     <Actor>units/gohma/gohma_trapdoor_b_b.xml</Actor>
   </VisualActor>

@@ -14,6 +14,12 @@
     <RunMultiplier>1.0</RunMultiplier>
     <WalkSpeed>0.001</WalkSpeed>
   </UnitMotion>
+  <Visibility>
+	<Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>10000</PostDelay>
+	</Camouflage>
+  </Visibility>
   <VisualActor>
     <Actor>units/gohma/gohma_shroudwalker_fog.xml</Actor>
   </VisualActor>

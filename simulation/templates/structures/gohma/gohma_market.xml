@@ -19,10 +19,9 @@
     <Max>3000</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>5</BattalionSize>
       <Chance>100</Chance>
       <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
+      <SpawnNumberMin>15</SpawnNumberMin>
       <Template>units/gohma/gohma_larva_sterile_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
@@ -42,7 +41,7 @@
     <GenericName>Recycler</GenericName>
     <History>The Recycler's powerful claws and stomach can destroy and digest various materials, converting them into other resource that the Gohma may then use. The process is not perfect, and some of the value of the original resource is lost in the conversion. Regardless, this structure can save a Hive from doom if there is an abundance of one resource but dry spell of another.</History>
     <Icon>structures/gohma/goh_recycler.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gohma/choosehero_agitha</RequiredTechnology>
     <Tooltip>Structure that can transform one resource into another.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
   </Identity>

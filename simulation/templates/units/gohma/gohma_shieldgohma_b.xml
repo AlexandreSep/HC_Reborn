@@ -18,6 +18,7 @@
     <GenericName>Shield Gohma</GenericName>
     <History>The Shield Gohma has one disproportionately large appendage that forms a rudimentary shield. These Gohma use their durable shields to protect themselves and those in formation with them from ranged attacks.</History>
     <Icon>units/gohma/goh_shield.dds</Icon>
+	<RequiredTechnology>civ_choices/gohma/choosehero_sulkaris</RequiredTechnology>
     <Lang>gohma</Lang>
     <SelectionGroupName>units/gohma/gohma_shieldgohma_b</SelectionGroupName>
     <Tooltip>Defensive Melee unit that is extremely resistant to non-magic projectiles.</Tooltip>

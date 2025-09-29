@@ -69,7 +69,7 @@
        <food>100</food>
       </Cost>
       <Entity>units/gohma/gohma_ampli_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
+      <RequiredTechnology>civ_choices/gohma/choosehero_matriarch</RequiredTechnology>
       <Time>40</Time>
       <Tooltip>Create Amplifier.</Tooltip>
     </TowerB>
@@ -80,7 +80,7 @@
       <wood>100</wood>
       </Cost>
       <Entity>units/gohma/gohma_rocktite_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
+      <RequiredTechnology>civ_choices/gohma/choosehero_matriarch</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Create Amplifier.</Tooltip>
     </TowerC>

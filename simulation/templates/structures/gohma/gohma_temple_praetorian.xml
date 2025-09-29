@@ -27,10 +27,10 @@
     <Max>1600</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>5</BattalionSize>
+      <BattalionSize>1</BattalionSize>
       <Chance>100</Chance>
       <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
+      <SpawnNumberMin>5</SpawnNumberMin>
       <Template>units/gohma/gohma_larva_sterile_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>

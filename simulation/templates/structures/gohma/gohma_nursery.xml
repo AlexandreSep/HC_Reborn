@@ -22,10 +22,9 @@
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>3</BattalionSize>
       <Chance>100</Chance>
       <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
+      <SpawnNumberMin>9</SpawnNumberMin>
       <Template>units/gohma/gohma_larva_sterile_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
@@ -49,6 +48,7 @@
     <GenericName>Solarium Nursery</GenericName>
     <History>Arrayed across the Misery Mire, these giant nests are opened to the sun, a process that seems to increase both the speed of maturation and the strength of Gohma eggs. A Nursery can garrison a Gohma Queen, allowing her to lay eggs in batches as opposed to one at a time.</History>
     <Icon>structures/gohma/goh_nursery.dds</Icon>
+	<RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Nest that can lay Gohma Eggs to hatch into new units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>

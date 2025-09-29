@@ -36,10 +36,9 @@
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>5</BattalionSize>
       <Chance>100</Chance>
       <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
+      <SpawnNumberMin>15</SpawnNumberMin>
       <Template>units/gohma/gohma_larva_sterile_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
@@ -97,7 +96,6 @@
     gohma/pincer_strategem
     gohma/spinal_longtongue
     gohma/shield_did
-
 </Technologies>
   </Researcher>
   <Trainer>

@@ -13,22 +13,6 @@
       <RepeatTime>1600</RepeatTime>
     </Melee>
   </Attack>
-  <Builder>
-    <Entities datatype="tokens">
-      structures/gohma/eggs/gohma_egg_small
-      structures/gohma/eggs/gohma_egg_gohma_harvesterA
-      structures/gohma/eggs/gohma_egg_gohma_larva_hive_b
-      structures/gohma/eggs/gohma_egg_gohma_larva_soldier_b
-      structures/gohma/eggs/gohma_egg_gohma_larva_giant_b
-      structures/gohma/eggs/gohma_egg_gohma_larva_royal_b
-      structures/gohma/eggs/gohma_egg_medium
-      structures/gohma/eggs/gohma_egg_gohma_pincergohma_b
-      structures/gohma/eggs/gohma_egg_gohma_spinalgohma_b
-      structures/gohma/eggs/gohma_egg_gohma_burst_b
-      structures/gohma/eggs/gohma_egg_gohma_gohma_longlegs_b
-    </Entities>
-    <Rate>1.0</Rate>
-  </Builder>
   <Cost>
     <BuildTime>40</BuildTime>
     <Resources>
@@ -53,7 +37,7 @@
     <History>An old Gohma Queen that corrupted and destroyed the Bagu Tree. Though she was successful in this task, the Kokiri Mudmen managed to injure her and drive her out into the east. Queen Bagu harbors resentment and revenage against the Kokiri in particular, and legend says she stalks the borders of their lands at night... always looking for a weakness.</History>
     <Icon>units/gohma/goh_hero_queenbaga.dds</Icon>
     <Lang>Gohma</Lang>
-    <RequiredTechnology>civ_choices/gohma/choosehero_queenbaga</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gohma/choosehero_sulkaris</RequiredTechnology>
     <SpecificName>Queen Baga</SpecificName>
     <Tooltip>A Support Hero that can spawn smaller Gohma behind enemy lines.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
@@ -85,6 +69,13 @@
       <walk>actor/movement/gohma/gohma_crawlD.xml</walk>
     </SoundGroups>
   </Sound>
+  <ProductionQueue/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+		units/gohma/gohma_egg_b
+	</Entities>
+  </Trainer>
   <TrainingRestrictions>
     <Category>Hero6</Category>
   </TrainingRestrictions>

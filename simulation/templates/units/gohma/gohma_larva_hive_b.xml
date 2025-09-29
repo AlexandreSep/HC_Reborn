@@ -109,7 +109,7 @@
        <food>200</food>
       </Cost>
       <Entity>units/gohma/gohma_shroudwalker_packed</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/gohma/choosehero_agitha</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Create Shroudwalker.</Tooltip>
     </TowerC>

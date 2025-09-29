@@ -1,16 +1,4 @@
 <Entity parent="HC_template_unit_auxiliary">
-  <Attack>
-    <Melee>
-      <AttackName>Shroud</AttackName>
-      <Damage>
-        <Pierce>1</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>4900</PrepareTime>
-      <RepeatTime>5000</RepeatTime>
-    </Melee>
-  </Attack>
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
@@ -33,7 +21,7 @@
     <GenericName>Shroud Walker</GenericName>
     <History>These truly massive Gohma are actually completely harmless on their own. Instead they can deploy and become immobile, creating a thick fog of Gohma Shroud around themselves. When deployed the Shroud Walker functions much like a Hive Node, generating territory. Its fog also reduces enemy line of sight and makes ranged attacks much more inaccurate against your units within its aura.</History>
     <Icon>units/gohma/goh_shroudwalker.dds</Icon>
-    <RequiredTechnology>civ_choices/gohma/choosehero_queenbaga</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gohma/choosehero_agitha</RequiredTechnology>
     <Tooltip>Agitha's Unique Unit. Large Support unit that can generate vision impairing clouds and Stealth nearby units..</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>

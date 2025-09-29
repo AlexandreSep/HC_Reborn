@@ -15,7 +15,7 @@
     <History>These rare Gohma are found deep underground and occasionally summoned to the surface. Their rocky exterior makes them particularly resistant to damage.</History>
     <Icon>units/gohma/goh_rocktite.dds</Icon>
     <Lang>gohma</Lang>
-    <RequiredTechnology>civ_choices/gohma/choosehero_praetorian</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gohma/choosehero_matriarch</RequiredTechnology>
     <SelectionGroupName>units/gohma/gohma_shieldgohma_b</SelectionGroupName>
     <Tooltip>Monster unit with durable armor. It can summon Burst Gohma to assist in defending itself and sieging</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

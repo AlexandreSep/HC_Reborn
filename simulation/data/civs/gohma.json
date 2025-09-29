@@ -103,9 +103,6 @@
 	"CivChoices":
 	[
 		"civ_choices/gohma/choosehero_agitha",
-		"civ_choices/gohma/choosehero_mido",
-		"civ_choices/gohma/choosehero_queenbaga",
-		"civ_choices/gohma/choosehero_praetorian",
 		"civ_choices/gohma/choosehero_matriarch",
 		"civ_choices/gohma/choosehero_sulkaris"
 	],

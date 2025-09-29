@@ -46,7 +46,7 @@
     <History>A former Kokiri Chief who was exiled from his people for conspiring with Sulkaris to conquer the Kokiri Forest. He now plots to undermine the Kokiri and destroy his father, the Great Deku Tree. The Gohma see much value in using his knowledge of the forest to one day strike back at the Kokiri and destroy them.</History>
     <Icon>units/gohma/goh_hero_mido.dds</Icon>
     <Lang>gohma</Lang>
-    <RequiredTechnology>civ_choices/gohma/choosehero_mido</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gohma/choosehero_agitha</RequiredTechnology>
     <SpecificName>Mido</SpecificName>
     <Tooltip>A swift Scout Hero that remains Stealthed and attacks with his spear.</Tooltip>
     <VisibleClasses datatype="tokens">Scout</VisibleClasses>

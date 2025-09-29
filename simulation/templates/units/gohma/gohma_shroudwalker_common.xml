@@ -1,16 +1,4 @@
 <Entity parent="HC_template_unit_auxiliary">
-  <Attack>
-    <Melee>
-      <AttackName>Shroud</AttackName>
-      <Damage>
-        <Pierce>1</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>4900</PrepareTime>
-      <RepeatTime>5000</RepeatTime>
-    </Melee>
-  </Attack>
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>

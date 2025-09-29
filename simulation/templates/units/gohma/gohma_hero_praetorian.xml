@@ -45,7 +45,7 @@
     <History>The Chief guard of the Matriarch and Gohma Queens. The Praetorian is summoned when a battle has become too much for the lower Gohma to handle.</History>
     <Icon>units/gohma/goh_hero_praetorian.dds</Icon>
     <Lang>gohma</Lang>
-    <RequiredTechnology>civ_choices/gohma/choosehero_praetorian</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gohma/choosehero_matriarch</RequiredTechnology>
     <Tooltip>Durable Creature Hero that can leap far distances.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>

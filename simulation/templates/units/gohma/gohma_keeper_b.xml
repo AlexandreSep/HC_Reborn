@@ -4,16 +4,15 @@
 	structures/gohma/gohma_civil_centre
     structures/gohma/gohma_temple
     structures/gohma/gohma_house
-    structures/gohma/gohma_farmstead
     structures/gohma/gohma_field
     structures/gohma/gohma_storehouse
-    structures/gohma/gohma_market
-    structures/gohma/gohma_nursery
-    structures/gohma/gohma_blacksmithD
     structures/gohma/gohma_blacksmith
     structures/gohma/gohma_blacksmithA
     structures/gohma/gohma_blacksmithB
     structures/gohma/gohma_blacksmithC
+	structures/gohma/gohma_blacksmithD
+	structures/gohma/gohma_farmstead
+	structures/gohma/gohma_market
     structures/gohma/gohma_barrierset
     structures/gohma/gohma_sentry_tower
     structures/gohma/gohma_wonder

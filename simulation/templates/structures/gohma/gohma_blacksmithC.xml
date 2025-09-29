@@ -36,10 +36,9 @@
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>5</BattalionSize>
       <Chance>100</Chance>
       <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
+      <SpawnNumberMin>15</SpawnNumberMin>
       <Template>units/gohma/gohma_larva_sterile_b</Template>
     </SpawnMultipleEntitiesOnDeath>
     <SpawnOnInterval>
@@ -94,18 +93,17 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">gohma/larva_royaljelly
-    gohma/ampli_mitecluster
-    gohma/princess_empath
     gohma/queen_queenguard
-
+    gohma/princess_empath
+	gohma/ampli_mitecluster
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/gohma/{civ}_larva_royal_b
-    units/gohma/{civ}_ampli_b
-    units/gohma/{civ}_princess_b
     units/gohma/{civ}_queen_b
+    units/gohma/{civ}_princess_b
+	units/gohma/{civ}_ampli_b
     units/gohma/{civ}_rocktite_b</Entities>
     <DestinationOffset>
       <step1>

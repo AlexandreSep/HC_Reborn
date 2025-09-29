@@ -9,7 +9,7 @@
     <GenericName>Trap-door Gohma</GenericName>
     <History>A small and quick Gohma that can dart between locations. A Trap Door Gohma can burrow into the ground, hiding under a rock that it carriers on its back. Enemies that wander near are attacked by the creature, which has a very high chance of dealing a Critical Hit. When burrowed they can only be seen by Scouts and Towers.</History>
     <Icon>units/gohma/goh_trapdoor.dds</Icon>
-    <RequiredTechnology>civ_choices/gohma/choosehero_mido</RequiredTechnology>
+    <RequiredTechnology>civ_choices/gohma/choosehero_agitha</RequiredTechnology>
     <Tooltip>Mido's Unique Unit. Support unit that can burrow into the ground and become Stealthed.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
@@ -41,10 +41,4 @@
   <VisualActor>
     <Actor>units/gohma/gohma_trapdoor_b.xml</Actor>
   </VisualActor>
-  <Visibility>
-    <Camouflage>
-      <ActivateDelay>3000</ActivateDelay>
-      <PostDelay>3000</PostDelay>
-    </Camouflage>
-  </Visibility>
 </Entity>
