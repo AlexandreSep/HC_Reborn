@@ -49,7 +49,7 @@
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
   <ResourceTrickle>
-    <Interval>4000</Interval>
+    <Interval>3000</Interval>
     <Rates>
       <food>1.0</food>
       <metal>0.0</metal>

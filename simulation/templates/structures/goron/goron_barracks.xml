@@ -55,6 +55,7 @@
     <Entities datatype="tokens">units/goron/{civ}_guardian_b
       units/goron/{civ}_rocktosser_b
       units/goron/{civ}_beastmaster_b
+	  units/goron/{civ}_rubyguard_b
       units/goron/{civ}_battlebro_b
       units/goron/{civ}_drummer_b
     units/goron/{civ}_tribalmonk_b</Entities>

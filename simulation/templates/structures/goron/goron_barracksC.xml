@@ -52,16 +52,16 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">goron/troop_coronroutine
+	goron/troop_elderhide
     goron/troop_rampage
     goron/troop_lowlyaware
-
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/goron/{civ}_sumo_b
-      units/goron/{civ}_ram_b
-	  units/goron/{civ}_patriarch_b
+      units/goron/{civ}_patriarch_b
+	  units/goron/{civ}_ram_b
       units/goron/{civ}_giant_b
     </Entities>
     <DestinationOffset>

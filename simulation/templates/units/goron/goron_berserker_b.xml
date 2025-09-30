@@ -9,15 +9,11 @@
     </Melee>
   </Attack>
   <Cost>
-    <BattalionSlots>2</BattalionSlots>
     <BuildTime>12</BuildTime>
     <Resources>
       <stone>75</stone>
     </Resources>
   </Cost>
-  <Health>
-    <Max>120</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Medium FireElement UniqueUnit Berserker</Classes>
@@ -26,7 +22,7 @@
     <History>Berserkers are individuals that have devoted their lives to indulging and mastering control of anger, which the Gorons have long considered a danger due to their tendency to lose control during fits of rage. On the battlefield this is less of a problem, and Berserkers can unleash quite a flurry of punches when worked up into a frenzy.</History>
     <Icon>units/goron/gor_berserker.dds</Icon>
     <Lang>goron</Lang>
-    <RequiredTechnology>civ_choices/goron/choosehero_dangoro</RequiredTechnology>
+    <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
     <SelectionGroupName>units/goron/goron_berserker_b</SelectionGroupName>
     <Tooltip>Darunia's Unique Unit. Fast attack Melee unit that deals both Crushing and Fire Damage to enemy units.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

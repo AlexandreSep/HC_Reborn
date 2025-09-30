@@ -1,13 +1,4 @@
 <Entity parent="units/goron/goron_sumo_b">
-  <Attack>
-    <Melee>
-      <AttackName>Rolling</AttackName>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
   <Footprint>
     <Circle radius="5.0" />
     <Height>5.0</Height>

@@ -40,6 +40,7 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_towerB</Entity>
       <Time>10</Time>
+	  <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
       <Tooltip>Upgrade with Double Layer.</Tooltip>
       <Variant>upgrading</Variant>
     </WallB>
@@ -49,6 +50,7 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_towerC</Entity>
       <Time>10</Time>
+	  <RequiredTechnology>civ_choices/goron/choosehero_daruk</RequiredTechnology>
       <Tooltip>Upgrade with Lava Moat.</Tooltip>
       <Variant>upgrading</Variant>
     </WallC>
@@ -58,6 +60,7 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_towerD</Entity>
       <Time>10</Time>
+	  <RequiredTechnology>civ_choices/goron/choosehero_dangoro</RequiredTechnology>
       <Tooltip>Upgrade with Bulwark.</Tooltip>
       <Variant>upgrading</Variant>
     </WallD>

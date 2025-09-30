@@ -55,15 +55,13 @@
     goron/troop_darboil
     goron/troop_golobomb
     goron/dangoro_refinedkegs
-
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/goron/{civ}_bombthrower_b
-	units/goron/{civ}_berserker_b
 	units/goron/{civ}_shieldbreaker_b
-      units/goron/{civ}_powderkegl</Entities>
+	units/goron/{civ}_powderkegl</Entities>
     <DestinationOffset>
       <step1>
         <X>10</X>

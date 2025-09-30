@@ -140,7 +140,7 @@
       <wood>200</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressB</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
       <Time>90</Time>
       <Tooltip>Upgrade with Double Layer.</Tooltip>
       <Variant>upgrading</Variant>
@@ -151,7 +151,7 @@
       <wood>150</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/goron/choosehero_daruk</RequiredTechnology>
       <Time>90</Time>
       <Tooltip>Upgrade with Lava Moat.</Tooltip>
       <Variant>upgrading</Variant>
@@ -162,7 +162,7 @@
       <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressD</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/goron/choosehero_dangoro</RequiredTechnology>
       <Time>90</Time>
       <Tooltip>Upgrade with Bulwark.</Tooltip>
       <Variant>upgrading</Variant>

@@ -3,12 +3,14 @@
 	"description": "Daruk, Goron Elder.",
 	"icon": "goron/choosehero_daruk.png",
 	"tooltip": "Select Daruk, Goron Elder, as your hero of choice.",
-	"modifications": [{ "value": "UnitMotion/WalkSpeed", "multiply": 0.80 },
-					  { "value": "UnitMotion/RunMultiplier", "multiply": 0.90 }],
-	"affects": ["Infantry"],
+	"modifications": [{"value": "Trainer/Entities/_string", "tokens": "units/goron/goron_salawagon_b"},
+					{"value": "Trainer/Entities/_string", "tokens": "units/goron/goron_warsalamander_b"},
+					{"value": "Researcher/Technologies/_string", "tokens": "goron/troop_wagonbrace"},
+					{"value": "Researcher/Technologies/_string", "tokens": "goron/troop_bombjuice"}],
+	"affects": ["SalaDen"],
 	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Speed and HP Focus", "tooltipText": "Daruk improves the speed and HP of Goron units."},
 	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Daruk", "tooltipText": "Allows you to summon Daruk, a swift Melee hero armed with a sword."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Tribal Monk", "tooltipText": "A fast Melee unit that can regenerate HP when not in battle."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Swift Gorons", "tooltipText": "Infantry move 10% faster."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Hearty Hides", "tooltipText": "Improves the HP of all Goron units."}] 
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Tribal Monk and Salamanders", "tooltipText": "A fast Melee unit that can regenerate HP when not in battle, a transport and a strong magic unit"},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Hot Springs", "tooltipText": "Allows the construction of a hot spring that heals units"},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Lava Moats", "tooltipText": "Defensive Structures can be improved with Lava moats"}] 
 }

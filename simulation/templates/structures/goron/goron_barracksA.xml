@@ -45,16 +45,17 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">goron/troop_rubyshield
-    goron/troop_megatonsteel
-    goron/troop_elderhide
+	goron/troop_megatonsteel
     goron/darunia_rubyarmor
-
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/goron/{civ}_rubyguard_b
-      units/goron/{civ}_firewarrior_b
+    <Entities datatype="tokens">units/goron/{civ}_beastmaster_b
+	units/goron/{civ}_berserker_b
+	units/goron/{civ}_rubyguard_b
+	units/goron/{civ}_battlebro_b
+	units/goron/{civ}_firewarrior_b
     units/goron/{civ}_brotheratarms_b</Entities>
     <DestinationOffset>
       <step1>

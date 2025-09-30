@@ -32,6 +32,7 @@
     <GenericName>Powder Keg Launcher</GenericName>
     <History>The explosive Powder Kegs pack enough power to blow open the side of a cliff. When directed at and fired into an enemy army, the resulting blast creates in all sorts of fiery carnage. A battery of Powder Keg Launchers can reduce any city to smoking rubble with a consistent barrage. </History>
     <Icon>units/goron/gor_powderkegl.dds</Icon>
+	<RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Long ranged Siege unit with a powerful explosive attack that deals lots of Splash Damage.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>

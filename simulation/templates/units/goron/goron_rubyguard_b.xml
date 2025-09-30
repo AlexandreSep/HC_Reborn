@@ -5,21 +5,17 @@
     </Melee>
   </Attack>
   <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
     <Resources>
       <stone>80</stone>
     </Resources>
   </Cost>
-  <Health>
-    <Max>100</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">RubyShield RubyArmor Medium RubyGuard</Classes>
     <GenericName>Ruby Guard</GenericName>
     <History>Wielding a hammer and durable shield in hand, Ruby Guards defend Goron settlements from enemy invasions. Despite their small size and slow speed by Goron standards, they are extremely durable and can take many blows from enemy weapons before falling in battle.</History>
     <Icon>units/goron/gor_rubyguard.dds</Icon>
+	<RequiredTechnology>phase_town</RequiredTechnology>
     <Lang>goron</Lang>
     <SelectionGroupName>units/goron/goron_rubyguard_b</SelectionGroupName>
     <Tooltip>Very durable and defensive Melee unit armed with a skull crushing hammer and shield.</Tooltip>

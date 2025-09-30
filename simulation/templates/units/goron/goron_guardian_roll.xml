@@ -1,13 +1,4 @@
 <Entity parent="units/goron/goron_guardian_b">
-  <Attack>
-    <Melee>
-      <AttackName>Rolling</AttackName>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
   <Identity>
     <Classes datatype="tokens">Rolling CoronBonusB</Classes>
     <GenericName>Rolling</GenericName>

@@ -10,7 +10,7 @@
     <History>These large and angry Salamanders are summoned into thick firefights with enemies of the Gorons. They are capable of breathing a large fireball and firing it from a fair distance at their targets. A group of these creatures can burn down enemy buildings and defensive emplacements.</History>
     <Icon>units/goron/gor_warsalamander.dds</Icon>
     <Lang>goron</Lang>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>phase_city</RequiredTechnology>
     <SelectionGroupName>units/goron/goron_warsalamander_b</SelectionGroupName>
     <Tooltip>Large Creature unit with a ranged Fire attack.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

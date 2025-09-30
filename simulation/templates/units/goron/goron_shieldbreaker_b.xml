@@ -19,7 +19,7 @@
     <History>Wearing a suit of armor and two powerful gauntlets, Shieldbreakers can build up and unleash a frightening level of force in a single punch. Their attack rate is quite slow, but a single punch can shatter just about any armor, and send enemies flying.</History>
     <Icon>units/goron/gor_shieldbreaker.dds</Icon>
     <Lang>goron</Lang>
-    <RequiredTechnology>civ_choices/goron/choosehero_dangoro</RequiredTechnology>
+	<RequiredTechnology>phase_city</RequiredTechnology>
     <SelectionGroupName>units/goron/goron_shieldbreaker_b</SelectionGroupName>
     <Tooltip>Dangoro's Unique Unit. Slow moving and powerful Melee unit that can send enemies flying and deal damage through armor.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

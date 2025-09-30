@@ -1,4 +1,16 @@
 <Entity parent="classes/HC_template_unit_swordsman_heavy">
+<Attack>
+ <Melee>
+      <Splash>
+        <Damage>
+          <Hack>5.0</Hack>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>5</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+ </Melee>
+</Attack>
   <Cost>
     <Resources>
       <stone>40</stone>
