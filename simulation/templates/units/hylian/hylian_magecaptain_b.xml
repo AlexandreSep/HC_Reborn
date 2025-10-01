@@ -32,7 +32,7 @@
     <History>Lana's most poweful and truested soldiers, she used these Captains to replace those of the Hylian army during her brief takeover of the Kingdom.</History>
     <Icon>units/hylian/hyl_magecaptain.dds</Icon>
     <Lang>hylian</Lang>
-    <RequiredTechnology>civ_choices/hylian/choosehero_lana</RequiredTechnology>
+    <RequiredTechnology>civ_choices/hylian/choosehero_rauru</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_magecaptin_b</SelectionGroupName>
     <Tooltip>Commander unit that can attack with magic from a distance so long as she has full health.</Tooltip>
   </Identity>

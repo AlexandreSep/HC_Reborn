@@ -10,5 +10,5 @@
 	],
 	"auraName": "Kingdom General",
 	"auraDescription": "{+10% Melee Attack, +10% Health - Cavalry)",
-	"overlayIcon": "art/textures/ui/session/auras/goldenclad_aura1.dds"
+	"overlayIcon": "art/textures/ui/session/auras/commander_aura_1.dds"
 }

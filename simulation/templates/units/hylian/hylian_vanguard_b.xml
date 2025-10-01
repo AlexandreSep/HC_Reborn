@@ -20,7 +20,7 @@
     <RequiredTechnology>civ_choices/hylian/choosehero_rauru</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_vanguard_b</SelectionGroupName>
     <SpecificName>Triforce Vanguard</SpecificName>
-    <Tooltip>Rauru's Unique Unit. Slow moving infantry unit armed with a Mace. Has very high resistance to all forms of Magic damage, and is immune to knockback and gains bonus armor when in friendly territory.</Tooltip>
+    <Tooltip>Rauru's Unique Unit. Slow moving infantry unit armed with a Mace. Has very high resistance to all forms of Magic damage, and is immune to knockback and camouflaged.</Tooltip>
 	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
   </Identity>
   <Resistance>
@@ -45,6 +45,12 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
+  <Visibility>
+	<Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+	</Camouflage>
+  </Visibility>
   <VisualActor>
     <Actor>units/hylian/hylian_vanguard_b.xml</Actor>
   </VisualActor>

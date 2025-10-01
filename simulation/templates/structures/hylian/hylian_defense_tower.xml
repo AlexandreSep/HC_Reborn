@@ -132,9 +132,10 @@
     </CanSpotStealth>
   </Visibility>
   <Researcher>
-    <Technologies datatype="tokens">hylian/tower_arrowshooters
-	  hylian/tower_crenellations
-	  hylian/tower_meticulations
+    <Technologies datatype="tokens">hylian/tower_sentries
+	hylian/tower_arrowshooters
+	hylian/tower_crenellations
+	hylian/tower_meticulations
 </Technologies>
   </Researcher>
   <Trainer>

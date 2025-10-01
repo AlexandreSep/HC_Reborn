@@ -1,4 +1,19 @@
 <Entity parent="classes/HC_template_unit_cavalryanti_heavy">
+  <Auras datatype="tokens">
+    units/goldenclad_aura_1
+  </Auras>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>300</food>
+      <metal>100</metal>
+      <stone>100</stone>
+      <wood>0</wood>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
   <Identity>
     <Civ>hylian</Civ>
     <Classes datatype="tokens">Knight Large UniqueUnit HylianRedlion Kingdom</Classes>
@@ -7,7 +22,7 @@
     <History>These mounted warriors are perhaps the best tacticians and leaders in the entire Hylian army. Usually they are deployed as lone Generals to command armies, but a line of these soldiers armed with lances can tear through enemy infantry with ease.</History>
     <Icon>units/hylian/hyl_redlion.dds</Icon>
     <Lang>hylian</Lang>
-    <RequiredTechnology>civ_choices/hylian/choosehero_kazakk</RequiredTechnology>
+    <RequiredTechnology>civ_choices/hylian/choosehero_zeldaV</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_redlion_b</SelectionGroupName>
     <Tooltip>King Daphnes' Unique Unit. Heavily armored cavalry unit armed with a rider downing lance.</Tooltip>
 	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>

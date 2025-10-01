@@ -5,7 +5,7 @@
     <GenericName>Siege Ram</GenericName>
     <History>When waiting out their enemies yielded no results, Hylians would often turn to their battering rams to break down walls and storm their targets. Their Siege Rams were capped and could protect its crew from projectiles.</History>
     <Icon>units/hylian/hyl_siegeram.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/hylian/choosehero_link</RequiredTechnology>
     <Tooltip>Close combar Siege unit that can batter down enemy structures.</Tooltip>
     <VisibleClasses datatype="tokens">Ram</VisibleClasses>
   </Identity>

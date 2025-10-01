@@ -32,6 +32,7 @@
     <Tooltip>Link's Unique Unit. Extremely powerful infantry unit that is immune to Knockback and inflicts bonus damage against large creature units and commanders.</Tooltip>
 	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
   </Identity>
+  <Promotion disable="" />
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

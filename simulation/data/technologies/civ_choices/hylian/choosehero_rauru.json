@@ -3,11 +3,12 @@
 	"description": "Rauru, Sage of Light.",
 	"icon": "hylian/choosehero_rauru.png",
 	"tooltip": "Select Rauru, Sage of Light, as your hero of choice.",
-	"modifications": [{ "value": "Health/Max", "multiply": 1.25 }],
-	"affects": ["Structure"],
+	"modifications": [{"value": "Builder/Entities/_string",	"tokens": "structures/hylian/hylian_wallset_wood>structures/hylian/hylian_wallset_stone"},
+	{"value": "Builder/Entities/_string",	"tokens": "structures/hylian/hylian_sentry_tower>structures/hylian/hylian_defense_tower"}],
+	"affects": ["FemaleCitizen"],
 	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Defense Focus", "tooltipText": "Rauru focuses on improving the defensive output of your units and buildings."},
 	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Rauru", "tooltipText": "Allows you to summon Rauru, a defensive hero with powerful magical spells."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Triforce Sentinel", "tooltipText": "Rauru can train Triforce Sentinels, durable melee units that are resistant to magic and can slay Mages."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Improved Building Health", "tooltipText": "Buildings automatically gain 25% more Health and have 10 resistance to Siege Damage."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Divine Protection", "tooltipText": "All units gain more Magic and Non-Magic resistence."}]
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Triforce Sentinel and Priestess", "tooltipText": "Rauru can train Triforce Sentinels, durable melee units that are resistant to magic and Deacon upgrade."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Mage Infantry and Captain", "tooltipText": "Magic Infantry and Commander that can be build at churches"
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Improved Defense Buildings", "tooltipText": "Walls and defense towers are more fortified."}}]
 }

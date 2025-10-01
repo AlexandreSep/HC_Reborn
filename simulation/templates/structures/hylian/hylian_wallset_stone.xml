@@ -4,7 +4,7 @@
     <GenericName>Stone Wall</GenericName>
     <History>The cities on the plains of Hyrule were vulnerable from many sides. The Hylians resorted to building durable stone walls to protect themselves.</History>
     <Icon>structures/hylian/hyl_stonewall.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
   </Identity>
   <WallSet>

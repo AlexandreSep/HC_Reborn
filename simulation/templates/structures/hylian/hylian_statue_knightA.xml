@@ -1,6 +1,6 @@
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
-    structures/religious_territory_1
+    structures/hylian_statue_knight
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
@@ -10,7 +10,7 @@
     <BuildTime>60</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>250</metal>
+      <metal>100</metal>
       <stone>0</stone>
       <wood>200</wood>
     </Resources>
@@ -20,14 +20,14 @@
     <Square depth="5.0" width="5.0" />
   </Footprint>
   <Health>
-    <Max>600</Max>
+    <Max>400</Max>
     <SpawnEntityOnDeath>rubble/debris_hylian_tiny</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <GenericName>&gt;Knight of Hyrule Statue</GenericName>
-    <History>A tall statue of a proud Knight of Hyrule.</History>
-    <Icon>structures/hylian/hyl_statue.dds</Icon>
+    <GenericName>Knight of Hyrule Statue</GenericName>
+    <History>Faster unit batch training in this vicinity</History>
+    <Icon>structures/hylian/hyl_plot.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>A tall statue of a proud Knight of Hyrule.</Tooltip>
     <VisibleClasses datatype="tokens">Culture</VisibleClasses>

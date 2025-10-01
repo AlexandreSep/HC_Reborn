@@ -194,14 +194,12 @@
   <Researcher>
     <Technologies datatype="tokens">hylian/hylian_gloryofhyrule
     hylian/hylian_shields
-
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/hylian/{civ}_knightofhyrule_b
       units/hylian/{civ}_lightarrow_b
-    units/hylian/{civ}_championknight_b
     units/hylian/{civ}_redlion_b
     units/hylian/{civ}_vanguard_b</Entities>
     <DestinationOffset>

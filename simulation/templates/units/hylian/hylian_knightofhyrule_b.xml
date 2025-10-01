@@ -6,15 +6,19 @@
   </Attack>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">HylianShield Knight Kingdom</Classes>
+    <Classes datatype="tokens">HylianShield Knight Soldier</Classes>
     <GenericName>Knight of Hyrule</GenericName>
     <History>Wealthy nobles, rich elites, and skilled warriors from across the land, the Knights of Hyrule, in peacetime, are autonomous warriors who are self-trained and self-funded by their life-long work and education. When war breaks out in Hyrule, they will abandon their armorial achievements and bear the icon of the holy Triforce as they answer the call of the Royal Family.</History>
     <Icon>units/hylian/hyl_knight.dds</Icon>
     <Lang>hylian</Lang>
     <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
     <Tooltip>Heavily armored infantry unit. Very resistant to non-magic damage and Knockback. A powerful all-round late game unit.</Tooltip>
-    <VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
+    <VisibleClasses datatype="tokens">Soldier</VisibleClasses>
   </Identity>
+  <Promotion>
+    <Entity>units/hylian/hylian_championknight_b</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

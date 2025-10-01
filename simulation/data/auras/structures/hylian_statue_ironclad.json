@@ -1,14 +1,14 @@
 {
   "type": "range",
-  "radius": 80,
+  "radius": 120,
   "affects": [ "Unit" ],
   "modifications": [
     {
-      "value": "Resistance/Entity/Damage/Magic",
-      "add": 50
+      "value": "Health/Max",
+      "multiply": 1.2
     }
   ],
   "auraName": "Holy Protection",
-  "auraDescription": "(Gives 50 Magic Armor to anyone nearby)",
+  "auraDescription": "(Gives 20% Health to anyone unit in the area)",
   "overlayIcon": "art/textures/ui/session/auras/lon_lon_milk.dds"
 }

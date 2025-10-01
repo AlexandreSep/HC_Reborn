@@ -26,16 +26,14 @@
     structures/hylian/hylian_storehouse
     structures/hylian/hylian_market
     structures/hylian/hylian_mercs
-    structures/hylian/hylian_hospital
     structures/hylian/hylian_temple
     structures/hylian/hylian_barracks
     structures/hylian/hylian_barracksB
     structures/hylian/hylian_stables
     structures/hylian/hylian_siegeworks
     structures/hylian/hylian_blacksmith
-    structures/hylian/hylian_wallset_wood	
-    structures/hylian/hylian_wallset_stone
-    structures/hylian/hylian_defense_tower
+    structures/hylian/hylian_wallset_wood
+    structures/hylian/hylian_sentry_tower
     structures/hylian/hylian_fortress
     structures/hylian/hylian_wonder
     </Entities>

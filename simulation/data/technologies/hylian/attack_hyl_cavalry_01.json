@@ -9,7 +9,7 @@
   },
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
 	"requirementsTooltip": "Unlocked with Town.",
-	"icon": "hylian/attack_manhala_training.dds",
+	"icon": "hylian/scout_companion.dds",
 	"researchTime": 40,
 	"tooltip": "Advanced training techniques developed by Hylian Knight orders. (+5 Armor, +25% Stun Resistance, +10 Knockback Resistance - Melee Cavalry)",
   "modifications": [

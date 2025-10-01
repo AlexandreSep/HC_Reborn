@@ -3,7 +3,7 @@
 	"description": "As a Hylian house and its subordinate houses gained more wealth and prestige, they could afford better armor and weapons for their military.",
 	"supersedes": "hylian/soldier_cavalry_daphnes",
 	"cost": {"food": 400, "wood": 0, "stone": 450, "metal": 450},
-	"requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_kazakk"}, { "tech": "phase_city" }, {"civ": "hylian"}]},
+	"requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_zeldaV"}, { "tech": "phase_city" }, {"civ": "hylian"}]},
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "hylian/kingdom_cavalry.dds",
 	"researchTime": 60,

@@ -126,9 +126,7 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">hylian/levy_bonuses
-      hylian/glass_rupees
     hylian/player_ishylian
-
 </Technologies>
   </Researcher>
   <Trainer>

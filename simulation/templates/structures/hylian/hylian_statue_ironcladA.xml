@@ -1,6 +1,6 @@
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
-    structures/religious_territory_1
+    structures/hylian_statue_ironclad
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
@@ -10,7 +10,7 @@
     <BuildTime>60</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>250</metal>
+      <metal>200</metal>
       <stone>0</stone>
       <wood>200</wood>
     </Resources>
@@ -20,15 +20,15 @@
     <Square depth="5.0" width="5.0" />
   </Footprint>
   <Health>
-    <Max>600</Max>
+    <Max>400</Max>
     <SpawnEntityOnDeath>rubble/debris_hylian_tiny</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>hylian</Civ>
     <GenericName>Royal Knight Statue</GenericName>
-    <History>A tall statue of a proud Royal Knight.</History>
-    <Icon>structures/hylian/hyl_statue.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <History>50 extra magic defense in this buildings vicinity.</History>
+    <Icon>structures/hylian/hyl_plot.dds</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>A tall statue of a proud Royal Knight.</Tooltip>
     <VisibleClasses datatype="tokens">Culture</VisibleClasses>
   </Identity>

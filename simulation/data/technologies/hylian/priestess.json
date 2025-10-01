@@ -7,7 +7,7 @@
     "stone": 200,
     "metal": 200
   },
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirements": {"all": [{"tech": "phase_city"}, {"tech": "civ_choices/hylian/choosehero_rauru"}, {"civ": "hylian"}]},
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "hylian/priestess.dds",
 	"researchTime": 40,

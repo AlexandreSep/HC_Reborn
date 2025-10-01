@@ -1,18 +1,15 @@
 {
-	"genericName": "Scout Companion",
-	"description": "Hylian Scouts mount horses.",
+	"genericName": "Hyron Horses",
+	"description": "Ancient Codex regarding the use of Cavalry.",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 300},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "hylian"}]},
 	"requirementsTooltip": "Unlocked with Town.",
-	"icon": "hylian/scout_companion.dds",
+	"icon": "hylian/attack_manhala_training.dds",
 	"researchTime": 40,
-	"tooltip": "Hylian Scouts mount horses. (All future Hylian Scouts are trained as Cavalry units)",
-	"modifications": [
-		{
-			"value": "ProductionQueue/Entities/_string",
-			"tokens": "units/{civ}_scout_b>units/{civ}_scout_upg"
-		}
+	"tooltip": "Intial Strike 50%, normal attack rate 10% faster - Cavalry",
+	"modifications": [{"value": "Attack/Melee/PrepareTime", "multiply": 0.5},
+	{"value": "Attack/Melee/RepeatTime", "multiply": 0.9}
 	],
-	"affects": ["Structure"],
+	"affects": ["Cavalry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

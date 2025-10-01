@@ -10,17 +10,17 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Knight Medium HylBarInf HylCaptain Kingdom</Classes>
+    <Classes datatype="tokens">Knight Medium HylBarInf HylCaptain Soldier</Classes>
     <GenericName>Captain</GenericName>
     <History>Hylian Captains were Knights that had experience in commanding entire armies on the field of the battle. Their bravery often inspired other soldiers, and their fall in battle was considered a great loss.</History>
     <Icon>units/hylian/hyl_captain.dds</Icon>
     <Lang>hylian</Lang>
-    <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
+    <SelectionGroupName>units/hylian/hylian_captain_b</SelectionGroupName>
     <Tooltip>Heavily armored Infantry Commander unit. Leads other Hylians into battle.</Tooltip>
-	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
+	<VisibleClasses datatype="tokens">Soldier</VisibleClasses>
   </Identity>
   <Promotion>
-    <Entity>units/hylian/hylian_magecaptain_b</Entity>
+    <Entity>units/hylian/hylian_general_b</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <Sound>

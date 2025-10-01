@@ -8,8 +8,8 @@
     "stone": 250,
     "metal": 250
   },
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
-	"requirementsTooltip": "Unlocked with City.",
+	"requirements": {"all": [{"tech": "phase_city"},{"tech": "civ_choices/hylian/choosehero_link"}, {"civ": "hylian"}]},
+	"requirementsTooltip": "Unlocked with Link and City.",
 	"icon": "hylian/kingdom_maceman.dds",
 	"researchTime": 60,
 	"tooltip": "Improves Soldier Maceman by making them Kingdom Maceman.",

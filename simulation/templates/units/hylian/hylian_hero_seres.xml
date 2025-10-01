@@ -30,7 +30,7 @@
     <History>A Deacon who grew up north of Hyrule Castle Town, Seres has long served Rauru and has been his favorite pupil. Seres was trained in healing, though she has devoted much of her time to collecting tomes and historical documents for archiving.</History>
     <Icon>units/hylian/hyl_hero_seres.dds</Icon>
     <Lang>hylian</Lang>
-    <RequiredTechnology>civ_choices/hylian/choosehero_seres</RequiredTechnology>
+    <RequiredTechnology>civ_choices/hylian/choosehero_rauru</RequiredTechnology>
     <SpecificName>Seres</SpecificName>
     <Tooltip>Support Hero that can heal the injuries of fellow allies.</Tooltip>
     <VisibleClasses datatype="tokens">Hero Light Infantry Mage</VisibleClasses>

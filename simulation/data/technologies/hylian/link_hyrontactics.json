@@ -2,16 +2,16 @@
 	"genericName": "Hyron Tactics",
 	"description": "Ancient codex of fighting tactics and fitness.",
 	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
-	"requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_link"}, {"civ": "hylian"}]},
+	"requirements": {"all": [ {"civ": "hylian"}]},
 	"requirementsTooltip": "You must select Link, Heir of King Gustaf, as your hero.",
 	"icon": "hylian/link_hyrontactics.dds",
 	"researchTime": 40,
-	"tooltip": "Ancient codex of fighting tactics and fitness. (+20% Health, +10% Melee Damage - Melee Infantry)",
-	"modifications": [{"value": "Health/Max", "multiply": 1.2},
+	"tooltip": "Ancient codex of fighting tactics and fitness. (+50 Health, 10% Melee Attack - Kingdom ranked Units)",
+	"modifications": [{"value": "Health/Max", "add": 50},
 		{"value": "Attack/Melee/Damage/Hack", "multiply": 1.1},
 		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.1},
 		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.1}
 		],
-	"affects": ["Infantry Melee"],
+	"affects": ["Kingdom"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

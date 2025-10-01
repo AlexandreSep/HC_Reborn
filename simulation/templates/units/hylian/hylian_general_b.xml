@@ -1,0 +1,24 @@
+<Entity parent="units/hylian/hylian_captain_b">
+<Auras datatype="tokens">
+    units/idolthrone_aura_1
+  </Auras>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>2</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Knight Medium HylBarInf HylCaptain Kingdom</Classes>
+    <GenericName>General</GenericName>
+    <History>Hylian Generals were Knights that had experience in commanding entire armies on the field of the battle. Their bravery often inspired other soldiers, and their fall in battle was considered a great loss.</History>
+    <Icon>units/hylian/hyl_general.dds</Icon>
+    <Lang>hylian</Lang>
+    <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
+    <Tooltip>Heavily armored Infantry Commander unit. Leads other Hylians into battle.</Tooltip>
+	<VisibleClasses datatype="tokens">Kingdom</VisibleClasses>
+  </Identity>
+  <Promotion disable="" />
+  <VisualActor>
+    <Actor>units/hylian/hylian_general_b.xml</Actor>
+  </VisualActor>
+</Entity>

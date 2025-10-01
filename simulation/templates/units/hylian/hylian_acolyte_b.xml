@@ -29,7 +29,7 @@
     <History>Young Mages that have fallen under the tutelage of Lana and the magic she had learned from the Wizzrobe. These soldiers are somewhat reckless, as much like Lana they do not entirely understand the powers their wield. When at their full potential these Acolytes can incinerate enemies with their magic swords.</History>
     <Icon>units/hylian/hyl_acolyte.dds</Icon>
     <Lang>hylian</Lang>
-    <RequiredTechnology>civ_choices/hylian/choosehero_lana</RequiredTechnology>
+    <RequiredTechnology>civ_choices/hylian/choosehero_rauru</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_acolyte_b</SelectionGroupName>
     <Tooltip>Melee Mage unit that can attack with magic from a distance so long as she has full health.</Tooltip>
   </Identity>

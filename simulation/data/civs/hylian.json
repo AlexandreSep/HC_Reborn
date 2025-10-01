@@ -114,10 +114,7 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/hylian/choosehero_krin",
-		"civ_choices/hylian/choosehero_seres",
 		"civ_choices/hylian/choosehero_zeldaV",
-		"civ_choices/hylian/choosehero_lana",
 		"civ_choices/hylian/choosehero_link",
 		"civ_choices/hylian/choosehero_rauru"
 	],

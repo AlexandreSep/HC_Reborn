@@ -25,7 +25,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Town</Classes>
+    <Classes datatype="tokens">Town Barracks</Classes>
     <GenericName>Kingdom Barracks</GenericName>
     <History>An armory stocked with weapons and offering training for new soldier recruits.</History>
     <Icon>structures/hylian/hyl_barracksA.dds</Icon>
@@ -35,6 +35,9 @@
   <Obstruction>
     <Static depth="37.0" width="37.0" />
   </Obstruction>
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
   <Resistance>
     <Entity>
       <Damage>
@@ -69,6 +72,7 @@
     hylian/kingdom_spearman
     hylian/soldier_maceman
     hylian/kingdom_maceman
+	hylian/link_general
     hylian/krin_damage_upgrade
 
 </Technologies>

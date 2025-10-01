@@ -25,7 +25,7 @@
       <MinPop>15</MinPop>
     </AIBuild>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Town</Classes>
+    <Classes datatype="tokens">Town Barracks</Classes>
     <GenericName>Archery Range</GenericName>
     <History>Training ground for archery and the use of other Hylian ranged weapons.</History>
     <Icon>structures/hylian/hyl_barracksB.dds</Icon>
@@ -35,6 +35,9 @@
   <Obstruction>
     <Static depth="34.0" width="34.0" />
   </Obstruction>
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
   <Resistance>
     <Entity>
       <Damage>

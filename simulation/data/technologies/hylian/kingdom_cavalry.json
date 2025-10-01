@@ -8,7 +8,7 @@
     "stone": 250,
     "metal": 250
   },
-	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "hylian"}]},
+	"requirements": {"all": [{"tech": "phase_city"},{"tech": "civ_choices/hylian/choosehero_zeldaV"}, {"civ": "hylian"}]},
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "hylian/kingdom_cavalry.dds",
 	"researchTime": 60,

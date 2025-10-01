@@ -8,7 +8,7 @@
       <food>0</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>300</wood>
+      <wood>400</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -21,7 +21,7 @@
   </Health>
   <Identity>
     <Civ>hylian</Civ>
-    <Classes datatype="tokens">Town</Classes>
+    <Classes datatype="tokens">Town Library</Classes>
     <GenericName>Library</GenericName>
     <History>Hylian Library containing a large selection of books.</History>
     <Icon>structures/hylian/hyl_blacksmithA.dds</Icon>
@@ -36,6 +36,9 @@
   <Obstruction>
     <Static depth="35.0" width="35.0" />
   </Obstruction>
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -55,10 +58,10 @@
     <Actor>structures/hylian/hylian_libraryA.xml</Actor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">hylian/attack_hyl_infantry_melee_01
-    hylian/attack_hyl_infantry_ranged_01
-    hylian/attack_hyl_cavalry_01
-    hylian/armor_hyl_all_01
+    <Technologies datatype="tokens">hylian/academy_dorms
+    hylian/glass_rupees
+    hylian/link_hyrontactics
+    hylian/scout_companion
 </Technologies>
   </Researcher>
   <Trainer>

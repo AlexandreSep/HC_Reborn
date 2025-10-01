@@ -41,7 +41,7 @@
     <History>Once one of Hyrule's greatest generals, Kazakk married into royalty and fathered the fifth Princess Zelda. In his advancing age, he has prepared to hand over his Kingdom to his daughter, but he still has quite a bit of fight left in him.</History>
     <Icon>units/hylian/hyl_hero_kazakk.dds</Icon>
     <Lang>hylian</Lang>
-    <RequiredTechnology>civ_choices/hylian/choosehero_kazakk</RequiredTechnology>
+    <RequiredTechnology>civ_choices/hylian/choosehero_zeldaV</RequiredTechnology>
     <SpecificName>Daphnes Kazakk Nohansen</SpecificName>
     <Tooltip>Heavily armored Cavalry Melee Hero armed with a dismounting Lance.</Tooltip>
     <VisibleClasses datatype="tokens">Hero Heavy Cavalry</VisibleClasses>

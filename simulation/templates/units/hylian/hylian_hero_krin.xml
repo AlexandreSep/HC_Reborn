@@ -37,7 +37,7 @@
     <History>Hailing from the house of Arcad, Captain Krin has long served Rauru as bodyguard on his pilgrimages and later Princess Zelda after her ascent to the throne. In truth he followed Rauru to converse with his Deacon, Seres.</History>
     <Icon>units/hylian/hyl_hero_krin.dds</Icon>
     <Lang>hylian</Lang>
-    <RequiredTechnology>civ_choices/hylian/choosehero_krin</RequiredTechnology>
+    <RequiredTechnology>civ_choices/hylian/choosehero_link</RequiredTechnology>
     <SpecificName>Captain Krin</SpecificName>
     <Tooltip>Melee Hero that participates with fellow soldiers and boosts their performance.</Tooltip>
     <VisibleClasses datatype="tokens">Hero Light Infantry</VisibleClasses>
