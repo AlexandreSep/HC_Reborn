@@ -12,7 +12,7 @@
     <Classes datatype="tokens">Medium Mercenary CanGarrison MinorFaction FemaleCitizen</Classes>
     <GenericName>Keaton Marksman</GenericName>
     <History>Both sneaky and deadly with their crossbows, Keaton Marksmen are reserved for intimidation and ambush, but when used properly, can take down some of the toughest armor with their bolts.</History>
-    <Icon>units/npc_keaton/npc_kea_marksman.dds</Icon>
+    <Icon>units/minor_keaton/kea_marksman.dds</Icon>
     <Lang>keaton</Lang>
     <SelectionGroupName>units/npc_keaton/npc_keaton_marksman_b</SelectionGroupName>
     <Tooltip>Camouflaged Missile unit that can snipe enemies with their crossbows.</Tooltip>

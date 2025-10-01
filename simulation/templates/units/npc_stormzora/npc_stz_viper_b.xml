@@ -17,7 +17,7 @@
     <Classes datatype="tokens">Medium Mercenary MinorFaction</Classes>
     <GenericName>Storm Zora Viper</GenericName>
     <History>Clad in armor made from the carapaces of unknown deep sea creatures, Vipers are terrifying creatures armed with a huge gripping claw in one hand, and a large shield in the other. There are quite hostile, and can rip enemy shields away and pry off armor with their powerful claw, while blocking out attacks with their own.</History>
-    <Icon>units/npc_stormzora/npc_stz_viper.dds</Icon>
+    <Icon>units/minor_stormzora/stz_viper.dds</Icon>
     <Lang>stormzora</Lang>
     <SelectionGroupName>units/npc_stormzora/npc_stz_viper_b</SelectionGroupName>
     <Tooltip>Durable Melee unit that can pry open armor with their razor claws.</Tooltip>

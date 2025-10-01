@@ -6,7 +6,6 @@
     <History>A smaller and more docile breed of Dodongo, the Gorons have been able to tame these reptilian beasts over a long period of time. Much like guard dogs, Gorons use Salamanders to guard homes or other low-priority locations from enemies. Salamanders can breath a small burst of fire at close range against their enemies.</History>
     <Icon>units/goron/gor_salamander.dds</Icon>
     <Lang>goron</Lang>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/goron/goron_salamander_b</SelectionGroupName>
     <Tooltip>Small Melee Creature unit that deals Fire damage to enemies.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Scout</VisibleClasses>
