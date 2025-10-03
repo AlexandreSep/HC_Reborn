@@ -114,7 +114,8 @@
     <GenericName>Big Bad Battle Base</GenericName>
     <History>Yeaaahhhhh Big Bad Battle Base! The Biggest Bestest Baddest Base there ever was! Moblin make Big Bad Battle Base to bring the big battle to the baddies! More Moblins then fingers can count can stand on big battle base and battle the baddies with shooty arrows! So great! When we fast enough we can set up Big Bad Battle Base right at the baddy base! Base Battle times!</History>
     <Icon>structures/moblin/mob_badbase.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ghirahim</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Tooltip>Yeaaahhhhh Big Bad Battle Base! The Biggest Bestest Baddest Base there ever was! Moblin make Big Bad Battle Base to bring the big battle to the baddies! More Moblins then fingers can count can stand on big battle base and battle the baddies with shooty arrows! So great! When we fast enough we can set up Big Bad Battle Base right at the baddy base! Base Battle times!</Tooltip>
     <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
   </Identity>

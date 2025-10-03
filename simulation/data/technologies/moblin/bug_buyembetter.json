@@ -2,12 +2,13 @@
 	"genericName": "Buy Em Better!",
 	"description": "Why waste yer stinking time diggin inthe junk when you can just buy the best?! Because it's funy to dig in the junk that's why!",
 	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
-	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
-	"requirementsTooltip": "Does not require Phases.",
+	"requirements": {"all": [{"tech": "civ_choices/moblin/choosehero_glutko"}, {"civ": "moblin"}]},
+	"requirementsTooltip": "Requires Glutko.",
 	"icon": "moblin/bug_buyembetter.dds",
 	"researchTime": 40,
-	"tooltip": "Why waste yer stinking time diggin inthe junk when you can just buy the best?! Because it's funy to dig in the junk that's why! (Bugblins can now purchase improved weapons instead of Scavenging for them)",
-	"modifications": [],
+	"tooltip": "Why waste yer stinking time diggin inthe junk when you can just buy the best?! Because it's funy to dig in the junk that's why! (Bugblins need 20% less experience to gather)",
+	"modifications": [{"value": "Promotion/RequiredXp", "multiply": 0.8}],
 	"affects": ["Bugblin"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

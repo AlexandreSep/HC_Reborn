@@ -122,9 +122,6 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/moblin/choosehero_kojaku",
-		"civ_choices/moblin/choosehero_ogalon",
-		"civ_choices/moblin/choosehero_kingbulblin",
 		"civ_choices/moblin/choosehero_glutko",
 		"civ_choices/moblin/choosehero_ghirahim",
 		"civ_choices/moblin/choosehero_ganon"

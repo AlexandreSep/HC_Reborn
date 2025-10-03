@@ -3,18 +3,15 @@
     <Circle radius="4" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>380</Max>
-  </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Ram Large Class90</Classes>
-    <GenericName>Bullbo War Ram</GenericName>
+    <Classes datatype="tokens">Ram Large</Classes>
+    <GenericName>Bullbo War Ram</GenericName> 
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Big Bullbo hit his dummy head on the wall and the wall comes falling down nice and fast! Big Bullbo not scared of baddies either, he can take all the hits!</History>
     <Icon>units/moblin/mob_bullboram.dds</Icon>
     <Lang>moblin</Lang>
-    <RequiredTechnology>civ_choices/moblin/choosehero_kingbulblin</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ghirahim</RequiredTechnology>
     <SelectionGroupName>units/moblin/moblin_bullboram_b</SelectionGroupName>
     <Tooltip>Whoah really biiiiig Bullbo! I mean reaaaallly big one! So big that only King Bulblin can make these guys! Siege Creature knock down bad guy buildings with his head!</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>

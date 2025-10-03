@@ -58,8 +58,10 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/moblin/{civ}_bugblin_b
-      units/moblin/{civ}_baddyram_b
+    <Entities datatype="tokens">units/moblin/{civ}_bugblin_club
+	units/moblin/{civ}_bugblin_spear
+	units/moblin/{civ}_bugblin_bow
+	units/moblin/{civ}_baddyram_b
     units/moblin/{civ}_tallblin_b
     units/moblin/{civ}_bokonox_b</Entities>
     <DestinationOffset>

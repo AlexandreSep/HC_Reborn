@@ -1,0 +1,16 @@
+<Entity parent="structures/moblin/moblin_totem">
+  <Health>
+    <Max>500</Max>
+    <SpawnEntityOnDeath>rubble/debris_moblin_tiny</SpawnEntityOnDeath>
+  </Health>
+  <TerritoryInfluence>
+    <Radius>100</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Upgrade disable="" />
+  <VisualActor>
+    <Actor>structures/moblin/moblin_totemB.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldA.xml</FoundationActor>
+  </VisualActor>
+</Entity>

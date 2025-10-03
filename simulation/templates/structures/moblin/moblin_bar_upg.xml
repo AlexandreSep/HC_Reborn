@@ -2,9 +2,9 @@
   <DeathDamage>
     <Shape>Circular</Shape>
     <FriendlyFire>true</FriendlyFire>
-    <Range>20</Range>
+    <Range>30</Range>
     <Damage>
-      <Fire>200.0</Fire>
+      <Magic>200.0</Magic>
     </Damage>
   </DeathDamage>
   <Promotion disable="" />

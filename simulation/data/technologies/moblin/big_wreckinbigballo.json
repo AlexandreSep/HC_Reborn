@@ -2,12 +2,13 @@
 	"genericName": "Wrekin Biggo Ballo!",
 	"description": "Gooma is fun but kind of dumb! He just hits whatever wherever! With right training he can hit all the important parts of the building and make it go boom!",
 	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 100},
-	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
+	"requirements": {"all": [{"tech": "civ_choices/moblin/choosehero_ganon"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "Does not require Phases.",
 	"icon": "moblin/big_wreckinbigballo.dds",
 	"researchTime": 40,
-	"tooltip": "Gooma is fun but kind of dumb! He just hits whatever wherever! With right training he can hit all the important parts of the building and make it go boom! (Gooma attacks now stop the production of unit or techs of target building for several seconds)",
-	"modifications": [],
+	"tooltip": "Gooma is fun but kind of dumb! He just hits whatever wherever! With right training he can hit all the important parts of the building and make it go boom! (Gooma attacks now deal more siege damage)",
+	"modifications": [{"value": "Attack/Melee/Damage/Siege", "add": 100}],
 	"affects": ["Gooma"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

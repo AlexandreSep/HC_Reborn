@@ -36,7 +36,7 @@
     <History>The right hand proper lady of Ganon, Ogalon was a very smarty Blin that made all his great plans work and come true! Wearing nice armor and having a big pointy stick, Ogalon could kill ten whole H﻿ylians all at once! Well maybe not that many, but she was a smart and stro﻿ng fighter and lead Blins to winning﻿﻿!</History>
     <Icon>units/moblin/mob_hero_ogalon.dds</Icon>
     <Lang>moblin</Lang>
-    <RequiredTechnology>civ_choices/moblin/choosehero_ogalon</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
     <SpecificName>Ogalon</SpecificName>
     <Tooltip>Ganon's best Hero lady! She stab the bad guys with her spear and has a big shield!</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

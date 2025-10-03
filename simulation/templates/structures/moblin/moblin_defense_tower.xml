@@ -58,7 +58,8 @@
     <GenericName>Watchin' You Tower</GenericName>
     <History>Stupid Blins, always wanting to do what they want to do! They is too stupid to be free! That’s why we Moblins always gotta watch them and boss them around! With us in charge, we all eat and we all fight the real enemies over the hills! If we was not here, all Blins kill themselves! The world would be a sadder place!</History>
     <Icon>structures/moblin/mob_watchyoutower.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_glutko</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Tooltip>Tower hits the baddies with arrows!</Tooltip>
     <VisibleClasses datatype="tokens">Tower</VisibleClasses>
   </Identity>

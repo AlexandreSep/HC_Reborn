@@ -55,6 +55,17 @@
       <Tooltip>Pack up this Moblin Totem.</Tooltip>
       <Variant>upgrading</Variant>
     </Tower>
+	<TowerA>
+      <Entity>structures/moblin/moblin_totemB</Entity>
+	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <RequiredTechnology>civ_choices/moblin/choosehero_ghirahim</RequiredTechnology>
+      <Time>20</Time>
+	  <Cost>
+        <wood>100</wood>
+      </Cost>
+      <Tooltip>Pack up this Moblin Totem.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerA>
   </Upgrade>
   <VisualActor>
     <Actor>structures/moblin/moblin_totemA.xml</Actor>
@@ -66,6 +77,12 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
+        <Entities datatype="tokens">units/moblin/{civ}_bokoblin_b
+    units/moblin/{civ}_hero_kojaku
+    units/moblin/{civ}_hero_ogalon
+    units/moblin/{civ}_hero_kingbulblin
+    units/moblin/{civ}_hero_glutko
+    units/moblin/{civ}_hero_ganon
+    units/moblin/{civ}_hero_ghirahim</Entities>
   </Trainer>
 </Entity>

@@ -1,0 +1,22 @@
+{
+	"type": "formation",
+	"affects": ["Squaddie", "Dodo", "Durpy"],
+  	"modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Crush",
+      "add": 10
+    },
+    {
+      "value": "Resistance/Entity/Damage/Pierce",
+      "add": 10
+    },
+    {
+      "value": "Resistance/Entity/Damage/Hack",
+      "add": 10
+    }
+  ],
+	"auraName": "Durpy Aura",
+	"auraDescription": "+10 armor to all basic Dodo and Durpy Infantry within formation",
+	"requiredTechnology": "moblin/dumb_helpem",
+	"stackable" : false
+}

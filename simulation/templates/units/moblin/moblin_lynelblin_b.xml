@@ -5,13 +5,13 @@
   </Footprint>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Large Class90 UniqueUnit Giantblin</Classes>
+    <Classes datatype="tokens">Large UniqueUnit Giantblin</Classes>
     <GenericName>Lynelblin</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History> We guess the Lynel was not thinkin straight and babymade with a Moblin and had an oopsie! Preeeettyyyy gross! But Lynelblins are pretty great if you ask me! They can run nice and fast and beat those dead horses!</History>
     <Icon>units/moblin/mob_lynelblin.dds</Icon>
     <Lang>moblin</Lang>
-    <RequiredTechnology>civ_choices/moblin/choosehero_ogalon</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
     <SelectionGroupName>units/moblin_lynelblin_b</SelectionGroupName>
     <Tooltip>Only the Ogalon commander lady can make these guys! Half Moblin Half Lynel that run down the baddies with point spear stick!</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

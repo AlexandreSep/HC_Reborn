@@ -1,0 +1,9 @@
+<Entity parent="classes/HC_template_unit_spearman">
+  <Identity>
+    <Classes datatype="tokens">Small BasicSoldier Bugblin BugBattler PromotedPlus</Classes>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/moblin/moblin_bugblin_spear_c.xml</Actor>
+  </VisualActor>
+</Entity>

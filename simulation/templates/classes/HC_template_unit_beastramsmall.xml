@@ -10,6 +10,7 @@
       </Bonuses>
       <Damage>
         <Crush>35.0</Crush>
+		<Siege>0</Siege>
       </Damage>
       <Knockback>
         <Horizontal>15</Horizontal>

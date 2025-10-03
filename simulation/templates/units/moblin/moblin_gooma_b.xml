@@ -56,6 +56,8 @@
     <GenericName>Gooma</GenericName>
     <History>Good old Goody Gooma! He's like the strange cousin you have over at your half birthday! Swinging around his biggo ball on a chain! Pretty great at crushing the baddies with that! Just keep in mind he's nice and slow!</History>
     <Icon>units/moblin/mob_gooma.dds</Icon>
+	<RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Lang>moblin</Lang>
     <SelectionGroupName>units/moblin/moblin_gooma_b</SelectionGroupName>
     <Tooltip>Big Melee Siege unit with a biggo range!</Tooltip>

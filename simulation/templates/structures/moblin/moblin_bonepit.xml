@@ -29,7 +29,8 @@
     <GenericName>Big Bone Pit</GenericName>
     <History>Makes cool new weapons and junk!</History>
     <Icon>structures/moblin/mob_bonepit.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_glutko</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Tooltip>Moblins find so much stuff that other people throw out as junk! One time I found half eaten ratty in the biggo pile of stink! That was a free meal! Moblins smart we look in all the junk and make great time!</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
   </Identity>

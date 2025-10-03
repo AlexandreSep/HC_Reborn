@@ -13,10 +13,12 @@
   </Health>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Small BasicSoldier</Classes>
+    <Classes datatype="tokens">Small Boko BasicSoldier</Classes>
     <GenericName>Bokoblin Rabble</GenericName>
     <History>Bokoblins may be pretty tiny, but they are really brave! Moblins like sending them into the fight, cause they listen and run right in! Sure they get beat up a lot because they are so small, but we can always find more of them to send in! Go Bokoblins!</History>
     <Icon>units/moblin/mob_bokoblin.dds</Icon>
+	<RequiredTechnology>civ_choices/moblin/choosehero_ghirahim</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Lang>moblin</Lang>
     <SelectionGroupName>units/moblin/moblin_bokoblin_b</SelectionGroupName>
     <Tooltip>Really cheap bunch of little Bokoblins! They got swords and shields!</Tooltip>

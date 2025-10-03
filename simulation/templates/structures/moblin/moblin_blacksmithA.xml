@@ -25,7 +25,8 @@
     <GenericName>Smart Science Makers</GenericName>
     <History>We not afraid to say that Moblins not the smartest... but sometimes we are! The smart ones know how to read, and they read from the Olden Timey books and make super awersome weapons and armor for all the Blins! They the best!”</History>
     <Icon>structures/moblin/mob_smartscience.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Tooltip>Smart Moblins make new upgrades for all our stuff!”</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
   </Identity>

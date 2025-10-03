@@ -1,0 +1,9 @@
+<Entity parent="units/moblin/moblin_bugblin_bow">
+  <Identity>
+    <Classes datatype="tokens">Small BasicSoldier Bugblin BugBattler PromotedPlus</Classes>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/moblin/moblin_bugblin_bow_c.xml</Actor>
+  </VisualActor>
+</Entity>

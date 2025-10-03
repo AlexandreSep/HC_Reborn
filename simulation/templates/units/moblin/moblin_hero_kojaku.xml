@@ -44,7 +44,7 @@
     <History>Kojaku the Bugblin that can't die, what else can be said?! He live longer than all the other Bugblins and even Moblins! Lose in eye in many fights, all his bones broken in many fights! But look he still alive!</History>
     <Icon>units/moblin/mob_hero_kojaku.dds</Icon>
     <Lang>moblin</Lang>
-    <RequiredTechnology>civ_choices/moblin/choosehero_kojaku</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_glutko</RequiredTechnology>
     <SpecificName>Kojaku</SpecificName>
     <Tooltip>This Bugblin he can't die! He live longer than all other Bugblin!</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

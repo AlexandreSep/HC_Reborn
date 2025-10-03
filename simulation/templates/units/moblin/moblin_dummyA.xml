@@ -23,20 +23,21 @@
   </Auras>
   <Builder>
     <Entities datatype="tokens">
-      structures/moblin/moblin_totem
-      structures/moblin/moblin_house
-      structures/moblin/moblin_field
+    structures/moblin/moblin_totem
+    structures/moblin/moblin_house
+    structures/moblin/moblin_field
     structures/moblin/moblin_storehouse
     structures/moblin/moblin_market
-    structures/moblin/moblin_mercs
-    structures/moblin/moblin_bonepit
-      structures/moblin/moblin_barracks
-      structures/moblin/moblin_barracksA
-      structures/moblin/moblin_barracksB
+	structures/moblin/moblin_barracks
+    structures/moblin/moblin_barracksA
+    structures/moblin/moblin_barracksB
     structures/moblin/moblin_barracksC
-      structures/moblin/moblin_barracksD
-      structures/moblin/moblin_blacksmith
+    structures/moblin/moblin_barracksD
+	structures/moblin/moblin_mercs
+    structures/moblin/moblin_blacksmith
     structures/moblin/moblin_blacksmithA
+	structures/moblin/moblin_bar
+	structures/moblin/moblin_bonepit
     structures/moblin/moblin_defense_tower
     structures/moblin/moblin_fortress
     structures/moblin/moblin_wonder

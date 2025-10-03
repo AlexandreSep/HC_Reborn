@@ -17,6 +17,8 @@
     <GenericName>Dodoblin Squaddie</GenericName>
     <History>Moblins we need to always find new people to fight! Sometimes new people are strong though! Sometimes instead of new people we find a dragon! We send the dumb Dodoblins to check out the new place before we go in an wreck it all up! Hahahah they will do any dumb job we tell them to do!</History>
     <Icon>units/moblin/mob_squaddie.dds</Icon>
+	<RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Lang>moblin</Lang>
     <SelectionGroupName>units/moblin/moblin_squaddie_b</SelectionGroupName>
     <Tooltip>Small sumb Dodoblin with a little sword and shield, send em in first to get beat up!</Tooltip>

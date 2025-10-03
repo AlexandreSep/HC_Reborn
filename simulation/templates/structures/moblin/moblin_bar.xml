@@ -32,7 +32,8 @@
     <GenericName>Bestin' Bar n Drinks</GenericName>
     <History>Oh man the Boko juice is the best! We Moblins when we are done fighting we gulp that stuff up real nice like! Makes us happy for the night and ready for more fighting!</History>
     <Icon>structures/moblin/mob_bar.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Tooltip>Makes the Workers work even better!</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
   </Identity>

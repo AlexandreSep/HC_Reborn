@@ -1,10 +1,15 @@
 <Entity parent="classes/HC_template_unit_spearman">
+<Auras datatype="tokens">
+    units/dumb_helpem
+</Auras>
   <Identity>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens">Medium Class100 Durpy Ogabonus</Classes>
+    <Classes datatype="tokens">Medium Durpy Ogabonus</Classes>
     <GenericName>Durpyblin Defender</GenericName>
     <History>The only thing dumber than the Durpyblin is the Dodoblin! Actually these guys might be dumber, they cant even do all the nice work! Instead we give em a big pointy stick and tell em to stay put or run that way!</History>
     <Icon>units/moblin/mob_durpyblin.dds</Icon>
+	<RequiredTechnology>civ_choices/moblin/choosehero_ganon</RequiredTechnology>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <Lang>moblin</Lang>
     <SelectionGroupName>units/moblin/moblin_durpyblin_b</SelectionGroupName>
     <Tooltip>Big fat hard to kill Melee guy with a spear and shield!</Tooltip>

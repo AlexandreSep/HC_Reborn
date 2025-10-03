@@ -16,7 +16,7 @@
     <Height>12.0</Height>
   </Footprint>
   <Health>
-    <Max>200</Max>
+    <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/debris_moblin_tiny</SpawnEntityOnDeath>
   </Health>
   <Identity>
