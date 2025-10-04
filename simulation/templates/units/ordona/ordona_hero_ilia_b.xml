@@ -35,7 +35,7 @@
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Ilia was the daughter of Mayor Bo and trading assistant of Rusl in her youth. Being born into a privileged class, she had the opportunity to try various job paths before settling on breeding and training horses. As a young adult Ilia became quite a business woman in Ordona Province, gaining stock over some of the best horses in Hyrule while simultaneously managing a lumber company to supply the building of stables across Hyrule. She was known for her party loving personality and habit of holding down quite a bit of ale. She has somewhat of a friendly rivalry with Malon of Lon Lon Ranch, and hopes to one day out-compete the famous horse breeder. In battle Ilia rides atop a horse, using a Ranger Crossbow to snipe down anyone who threatens the Province.</History>
     <Icon>units/ordona/ord_hero_ilia.dds</Icon>
-    <RequiredTechnology>civ_choices/ordona/choosehero_ilia</RequiredTechnology>
+    <RequiredTechnology>civ_choices/ordona/choosehero_mayorbo</RequiredTechnology>
     <SpecificName>Ilia</SpecificName>
     <Tooltip>Fast Missile Cavalry Hero armed with an armor piercing Crossbow.</Tooltip>
     <VisibleClasses datatype="tokens">Missile Worker</VisibleClasses>

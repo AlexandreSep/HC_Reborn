@@ -127,10 +127,10 @@
     <Civ>ordona</Civ>
     <Classes datatype="tokens">City</Classes>
     <GenericName>Ranger Garrison</GenericName>
-    <History>The wooden fortresses of the Kokiri Forest protected its border from invaders. A full garrison of Kokiri could man the small castle and siege weapons could be deployed from its halls.</History>
+    <History>The wooden fortresses of the Ordona Province protected its border from invaders. A garrison of Ordonian Rangers could man the small castle and store ressources to last without support.</History>
     <Icon>structures/ordona/ord_rangergarrison.dds</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
-    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory. Can also train Rangers.</Tooltip>
+    <Tooltip>Giant Defense fortification that attacks many enemies, acts as a drop-off site and generates Territory. Can also train Rangers, Valiants and Lumberjacks.</Tooltip>
     <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
   </Identity>
   <Obstruction>
@@ -139,6 +139,10 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
@@ -163,7 +167,9 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/ordona/{civ}_ranger_b</Entities>
+    <Entities datatype="tokens">units/ordona/{civ}_lumberjack_b
+	units/ordona/{civ}_valiant_b
+	units/ordona/{civ}_ranger_b</Entities>
     <DestinationOffset>
       <step1>
         <X>-10</X>

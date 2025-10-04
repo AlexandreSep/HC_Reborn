@@ -44,7 +44,7 @@
     <History>The daughter of Sera and inheritor of Sera's Sundries, Beth runs one of the largest market chains in all of Hyrule. She is tied to Ordona's economic prosperity and foreign trade and hopes to keep the Province one of Hyrule's greatest market powers. While not skilled in fighting, she has enough training with a bow and arrows.</History>
     <Icon>units/ordona/ord_hero_beth.dds</Icon>
     <Lang>ordona</Lang>
-    <RequiredTechnology>civ_choices/ordona/choosehero_beth</RequiredTechnology>
+    <RequiredTechnology>civ_choices/ordona/choosehero_ashei</RequiredTechnology>
     <SpecificName>Beth</SpecificName>
     <Tooltip>Ranged Hero carrying a bow and arrow.</Tooltip>
     <VisibleClasses datatype="tokens">Missile Worker</VisibleClasses>

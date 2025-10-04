@@ -118,9 +118,6 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/ordona/choosehero_beth",
-		"civ_choices/ordona/choosehero_colin",
-		"civ_choices/ordona/choosehero_ilia",
 		"civ_choices/ordona/choosehero_ashei",
 		"civ_choices/ordona/choosehero_rusl",
 		"civ_choices/ordona/choosehero_mayorbo"

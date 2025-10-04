@@ -36,7 +36,7 @@
     <History>The son of Rusl, Colin grew up as a farmhand most of his life. His father instilled in him a love of the sword and was sure to teach him sword, a skill that Colin took on as a profession in his adulthood. He has since become a Squire in hopes of attaining Knighthood.</History>
     <Icon>units/ordona/ord_hero_colin.dds</Icon>
     <Lang>ordona</Lang>
-    <RequiredTechnology>civ_choices/ordona/choosehero_colin</RequiredTechnology>
+    <RequiredTechnology>civ_choices/ordona/choosehero_rusl</RequiredTechnology>
     <SpecificName>Colin</SpecificName>
     <Tooltip>Quick Melee Hero armed with a sword and shield.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Worker</VisibleClasses>

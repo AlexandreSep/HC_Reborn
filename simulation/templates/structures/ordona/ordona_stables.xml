@@ -43,19 +43,6 @@
       <upgraded>interface/complete/building/complete_stables.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <Upgrade>
-    <Tower>
-      <Cost>
-        <stone>100</stone>
-        <wood>300</wood>
-      </Cost>
-      <Entity>structures/ordona/ordona_stablesB</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Upgrade to Ranch.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
   <VisualActor>
     <Actor>structures/ordona/ordona_goatbarnA.xml</Actor>
     <FoundationActor>structures/ordona/ordona_scaffoldF.xml</FoundationActor>
@@ -70,9 +57,9 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/ordona/{civ}_hawk_b
-      units/ordona/{civ}_shepherd_b
     units/ordona/{civ}_yeoman_b
-    units/ordona/{civ}_billybat_b</Entities>
+    units/ordona/{civ}_billybat_b
+	units/ordona/{civ}_horseman_b</Entities>
     <DestinationOffset>
       <step1>
         <X>-2</X>

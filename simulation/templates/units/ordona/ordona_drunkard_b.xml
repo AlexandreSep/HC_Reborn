@@ -20,9 +20,11 @@
     <Civ>ordona</Civ>
     <Classes datatype="tokens">CanGarrison Medium Drunkard</Classes>
     <GenericName>Drunkard</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Armed with cheap booze and a bit of flame, the Drunkards toss their explosive bottles at a target to witness the violent results. A crowd of Drunkards can quickly set enemies and buildings aflame and are excellent at crowd control, but an Ordonian commander must be careful: friendly fire is guaranteed without careful coordination.</History>
     <Icon>units/ordona/ord_drunkard.dds</Icon>
     <Lang>ordona</Lang>
+	<RequiredTechnology>civ_choices/ordona/choosehero_ashei</RequiredTechnology>
     <SelectionGroupName>units/ordona/ordona_drunkard_b</SelectionGroupName>
     <Tooltip>Support unit that tosses flaming bottles of booze at their targets.</Tooltip>
     <VisibleClasses datatype="tokens">Support Worker</VisibleClasses>

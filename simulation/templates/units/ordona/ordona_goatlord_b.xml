@@ -3,11 +3,11 @@
     <Civ>hylian</Civ>
     <Classes datatype="tokens">Goat Large GoatLord</Classes>
     <GenericName>Goat Lord</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <RequiredTechnology>civ_choices/ordona/choosehero_mayorbo</RequiredTechnology>
     <History>A powerful Elder Goat ridden by one of Ordona Province's Mayors, the Goat Lords lead entire populations of Ordonians into battle and on to victory. With a banner in one hand and a mighty lance in the other, a Goat Lord can down enemy cavalry with ease and hold their own in a melee. Like all of Ordona's goat cavalry, the Goat Lord can climb over mountainous terrain.</History>
     <Icon>units/ordona/ord_goatlord.dds</Icon>
     <Lang>hylian</Lang>
-    <RequiredTechnology>civ_choices/ordona/choosehero_mayorbo</RequiredTechnology>
+    <RequiredTechnology>phase_city</RequiredTechnology>
     <SelectionGroupName>units/ordona_goatlord_b</SelectionGroupName>
     <Tooltip>Heavy Cavalry Commander unit armed with a large lance that improves other Cavalry units.</Tooltip>
     <VisibleClasses datatype="tokens">Commander Melee AntiCav</VisibleClasses>

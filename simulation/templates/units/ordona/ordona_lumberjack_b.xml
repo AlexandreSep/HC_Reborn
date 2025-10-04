@@ -39,6 +39,8 @@
     <History>Farmers may have made up most of the Province's workers, but a hearty contingent of Lumberjacks and builders could be found providing lumber and shelter to Ordonians year-round. These men of strength could wield their tree-felling axes into battle, and while not professionally trained in military tactics, their sheer brutality could beat down and scare off most enemies.</History>
     <Icon>units/ordona/ord_lumberjack.dds</Icon>
     <Lang>ordona</Lang>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+	<RequiredTechnology>civ_choices/ordona/choosehero_rusl</RequiredTechnology>
     <SelectionGroupName>units/hylian/hylian_macemen_b</SelectionGroupName>
     <SpecificName>Lumberjack</SpecificName>
     <Tooltip>Strong Melee unit armed with axes. They also excell at harvesting wood from trees.</Tooltip>
