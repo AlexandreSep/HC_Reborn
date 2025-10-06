@@ -7,8 +7,8 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/striker_perfectcloak
+	lizalfos/hammarine_reckless
     lizalfos/shaman_revengeofgods
-    lizalfos/poisonspear_heartofbeast
     lizalfos/nardu_boundB
 
 </Technologies>
@@ -16,8 +16,8 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/lizalfos/{civ}_striker_b
-      units/lizalfos/{civ}_shaman_b
-    units/lizalfos/{civ}_spearlauncher_b
+	units/lizalfos/{civ}_hammarine_b
+	units/lizalfos/{civ}_shaman_b
     units/lizalfos/{civ}_footman_nardu</Entities>
   </Trainer>
 </Entity>

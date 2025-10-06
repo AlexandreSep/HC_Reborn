@@ -1,6 +1,6 @@
 <Entity parent="structures/lizalfos/lizalfos_blacksmith">
   <Identity>
-    <RequiredTechnology>lizalfos_doda</RequiredTechnology>
+    <RequiredTechnology>lizalfos_dinraal</RequiredTechnology>
   </Identity>
   <VisualActor>
     <Actor>structures/lizalfos/lizalfos_weaponshackB.xml</Actor>

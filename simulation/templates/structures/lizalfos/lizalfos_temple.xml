@@ -46,13 +46,6 @@
   <Obstruction>
     <Static depth="20.5" width="20.5" />
   </Obstruction>
-  <ResourceSupply>
-    <Max>Infinity</Max>
-    <DiminishingReturns>0.90</DiminishingReturns>
-    <KillBeforeGather>false</KillBeforeGather>
-    <MaxGatherers>5</MaxGatherers>
-    <Type>food.sacrifices</Type>
-  </ResourceSupply>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_temple.xml</constructed>

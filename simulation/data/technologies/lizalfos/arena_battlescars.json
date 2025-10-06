@@ -2,7 +2,7 @@
 	"genericName": "Battle Scars",
 	"description": "Lizalfos do not see scars are defomities, but as proof of their skill and valor fo survival.",
 	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
-	"requirements": {"all": [{"tech": "lizalfos_doda"}, {"civ": "lizalfos"}]},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
 	"requirementsTooltip": "Unlocked with Dodalagon.",
 	"icon": "lizalfos/arena_battlescars.dds",
 	"researchTime": 40,

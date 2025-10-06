@@ -5,4 +5,10 @@
   <VisualActor>
     <Actor>structures/lizalfos/lizalfos_towerB.xml</Actor>
   </VisualActor>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
 </Entity>

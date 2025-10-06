@@ -7,18 +7,19 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/predator_superiorfooting
-    lizalfos/treehopper_treeleap
+	lizalfos/trapper_weakness
     lizalfos/helmtracker_helmmight
-    lizalfos/monitor_wardance
+	lizalfos/carcass_tenacious
     lizalfos/okakusha_patienthunter
 
-</Technologies>
+	</Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/lizalfos/{civ}_predator_b
-      units/lizalfos/{civ}_helmtracker_b
+	units/lizalfos/{civ}_trapper_b
+	units/lizalfos/{civ}_helmtracker_b
     units/lizalfos/{civ}_butcher_b
-    units/lizalfos/{civ}_monitor_b</Entities>
+    units/lizalfos/{civ}_carcasslauncher_b</Entities>
   </Trainer>
 </Entity>

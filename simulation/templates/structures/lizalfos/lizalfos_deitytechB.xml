@@ -25,7 +25,7 @@
     <GenericName>Arena</GenericName>
     <History>Lizalfos welcomed battle, due in part to the fact that they enjoyed the fight so much. While hunting prey was one thing, testing their might against fellow Lizalfos was a true challenge. All manner of soldiers would compete to prove who was the best fighter.</History>
     <Icon>structures/lizalfos/liz_arena.dds</Icon>
-    <RequiredTechnology>lizalfos_doda</RequiredTechnology>
+    <RequiredTechnology>civ_choices/lizalfos/choosehero_talik</RequiredTechnology>
     <Tooltip>Improves Lizalfos Units.</Tooltip>
     <VisibleClasses datatype="tokens">Special</VisibleClasses>
   </Identity>

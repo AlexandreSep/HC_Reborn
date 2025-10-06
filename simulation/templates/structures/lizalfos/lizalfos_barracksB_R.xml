@@ -7,8 +7,8 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/footman_groundedstance
-    lizalfos/hammarine_reckless
     lizalfos/darkhammer_shockwave
+	lizalfos/monitor_wardance
     lizalfos/nardu_boundA
 
 </Technologies>
@@ -16,8 +16,8 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/lizalfos/{civ}_footman_b
-      units/lizalfos/{civ}_hammarine_b
     units/lizalfos/{civ}_darkhammer_b
+	units/lizalfos/{civ}_monitor_b
     units/lizalfos/{civ}_striker_nardu</Entities>
   </Trainer>
 </Entity>

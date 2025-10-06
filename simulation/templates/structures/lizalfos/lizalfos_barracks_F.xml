@@ -6,19 +6,22 @@
     <Actor>structures/lizalfos/lizalfos_hunterclutchA.xml</Actor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">lizalfos/rope_ropeskulls
+    <Technologies datatype="tokens">lizalfos/predator_superiorfooting
+	lizalfos/trapper_weakness
     lizalfos/treehopper_treeleap
-    lizalfos/trapper_weakness
-    lizalfos/carcass_tenacious
+	lizalfos/rope_ropeskulls
+	lizalfos/poisonspear_heartofbeast
     lizalfos/okakusha_patienthunter
 
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/lizalfos/{civ}_rope_b
-      units/lizalfos/{civ}_treehopper_b
-    units/lizalfos/{civ}_trapper_b
-    units/lizalfos/{civ}_carcasslauncher_b</Entities>
+    <Entities datatype="tokens">
+	units/lizalfos/{civ}_predator_b
+	units/lizalfos/{civ}_trapper_b
+	units/lizalfos/{civ}_rope_b
+	units/lizalfos/{civ}_treehopper_b
+	units/lizalfos/{civ}_spearlauncher_b</Entities>
   </Trainer>
 </Entity>

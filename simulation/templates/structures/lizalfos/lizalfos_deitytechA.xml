@@ -25,7 +25,7 @@
     <GenericName>Toxic Tarn</GenericName>
     <History>The Lizalfos were quite infamous for their knack of mixing and matching chemicals to create some of the most potent toxins in all of Hyrule. They would coat many of their ranged weapons in such poisons to guarantee both prey and enemy died from their wounds.</History>
     <Icon>structures/lizalfos/liz_toxictarn.dds</Icon>
-    <RequiredTechnology>lizalfos_okra</RequiredTechnology>
+    <RequiredTechnology>civ_choices/lizalfos/choosehero_okakusha</RequiredTechnology>
     <Tooltip>Improves Poison related abilities.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
   </Identity>

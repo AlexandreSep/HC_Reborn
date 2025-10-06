@@ -1,0 +1,14 @@
+<Entity parent="structures/lizalfos/lizalfos_mercs">
+  <Identity>
+    <RequiredTechnology>lizalfos_doda</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_treasuretroveB.xml</Actor>
+  </VisualActor>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/merc_polsvoice_b
+    units/merc_gimos_b
+    units/merc_meteo_b</Entities>
+  </Trainer>
+</Entity>

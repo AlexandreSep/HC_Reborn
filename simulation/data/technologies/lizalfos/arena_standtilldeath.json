@@ -2,7 +2,7 @@
 	"genericName": "Stand Until Death",
 	"description": "Scaring a Lizalfos into cowardice is next to impossible; they are a notably brave people that will fight until their last breath.",
 	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
-	"requirements": {"all": [{"tech": "lizalfos_doda"}, {"civ": "lizalfos"}]},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
 	"requirementsTooltip": "Unlocked with Dodalagon.",
 	"icon": "lizalfos/arena_standtilldeath.dds",
 	"researchTime": 40,

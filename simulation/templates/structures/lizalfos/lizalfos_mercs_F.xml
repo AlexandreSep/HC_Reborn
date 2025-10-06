@@ -1,0 +1,14 @@
+<Entity parent="structures/lizalfos/lizalfos_mercs">
+  <Identity>
+    <RequiredTechnology>lizalfos_okra</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_treasuretroveA.xml</Actor>
+  </VisualActor>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/merc_forestthief_b
+    units/merc_pikku_b
+    units/merc_mago_b</Entities>
+  </Trainer>
+</Entity>

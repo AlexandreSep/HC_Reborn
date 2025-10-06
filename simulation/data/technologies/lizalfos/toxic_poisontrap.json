@@ -2,7 +2,7 @@
 	"genericName": "Poison Traps",
 	"description": "Dastardly Lizalfos would rig their watch towers to spew forth a poisonous cloud on those that would try to take over the post.",
 	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
-	"requirements": {"all": [{"tech": "lizalfos_okra"}, {"civ": "lizalfos"}]},
+	"requirements": {"all": [{"tech": "pair_lizgodsB"}, {"civ": "lizalfos"}]},
 	"requirementsTooltip": "Unlocked with Ok Ra.",
 	"icon": "lizalfos/toxic_poisontrap.dds",
 	"researchTime": 40,
