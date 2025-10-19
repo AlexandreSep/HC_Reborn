@@ -1,8 +1,14 @@
-<Entity parent="classes/HC_template_unit_monster">
+<Entity parent="classes/HC_template_unit_beastrambig">
   <Attack>
   <Melee disable="" />
     <Ranged>
-      <AttackName>Roots</AttackName>
+	 <Bonuses>
+        <BonusCavMelee>
+          <Classes>Structure</Classes>
+          <Multiplier>5.0</Multiplier>
+        </BonusCavMelee>
+	 </Bonuses>
+	  <AttackName>Roots</AttackName>
       <Damage>
 	  <Crush>30</Crush>
         <Magic>20</Magic>
@@ -85,7 +91,7 @@
     <Icon>units/kokiri/kok_dekutree.dds</Icon>
     <Lang>kokiri</Lang>
     <SelectionGroupName>units/kokiri/kokiri_dekutree_b</SelectionGroupName>
-    <Tooltip>Saria's Unique Unit. Large lumbering Creature Siege unit that can cross deep bodies of water. Can be garrisoned with infantry units.</Tooltip>
+    <Tooltip>Large lumbering Creature Siege unit that can cross deep bodies of water. Can be garrisoned with infantry units.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
   <Sound>

@@ -28,7 +28,7 @@
     <Icon>units/kokiri/kok_fiddler.dds</Icon>
     <Lang>kokiri</Lang>
     <Rank>Basic</Rank>
-    <RequiredTechnology>civ_choices/kokiri/choosehero_fado</RequiredTechnology>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_saria</RequiredTechnology>
     <SelectionGroupName>units/kokiri/kokiri_fiddler_b</SelectionGroupName>
     <Tooltip>Fado's Unique Unit. Support unit that improves all Kokiri units with his music.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>

@@ -35,6 +35,9 @@
   <Obstruction>
     <Static depth="10.0" width="10.0" />
   </Obstruction>
+    <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
   <Selectable>
     <EditorOnly />
     <Overlay>

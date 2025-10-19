@@ -23,7 +23,7 @@
     <GenericName>Bouldershot</GenericName>
     <History>Essentially a giant Slingshot on wheels, the Bouldershot was the Kokiri's primary siege weapon. These contraptions could fling giant boulders across large distances to take out walls, gates, towers, and even enemy units that happened to be in the way.</History>
     <Icon>units/kokiri/kok_bouldershot.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_gulley</RequiredTechnology>
     <Tooltip>Small Siege unit that can launch boulders at targets. Decent at knocking down walls and buildings but not nearly as powerful as most siege weapons.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>

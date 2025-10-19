@@ -25,7 +25,7 @@
     <History>A particularly violent hunter of the Mudmen Tribe that carries Mantis blades, they are excellent at fighting and slaying Creature units. They are quite well off being out in the wild, and in fact prefer it over the comfort of civilization.</History>
     <Icon>units/kokiri/kok_wolfkiller.dds</Icon>
     <Lang>kokiri</Lang>
-    <RequiredTechnology>kokiri/get_mudcolony</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/kokiri/kokiri_mudkiller_b</SelectionGroupName>
     <Tooltip>Light Melee unit that has decent Dodge rates and an attack bonus against Creature units. Can also Camouflage.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

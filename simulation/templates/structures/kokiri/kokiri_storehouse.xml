@@ -1,7 +1,4 @@
 <Entity parent="HC_template_structure_civilian">
-  <BuildRestrictions>
-    <Category>Storehouse</Category>
-  </BuildRestrictions>
   <Cost>
     <BuildTime>40</BuildTime>
     <Resources>
@@ -37,6 +34,9 @@
   <Obstruction>
     <Static depth="20.0" width="20.0" />
   </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
   <RallyPoint disable="" />
   <ResourceDropsite>
     <Sharable>true</Sharable>
@@ -60,11 +60,6 @@
       <upgraded>interface/complete/building/complete_storehouse.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <TerritoryInfluence>
-    <Radius>20</Radius>
-    <Root>false</Root>
-    <Weight>30000</Weight>
-  </TerritoryInfluence>
   <Vision>
     <Range>20</Range>
   </Vision>

@@ -27,6 +27,7 @@
       <MinPopPerCopy>0</MinPopPerCopy>
     </AIBuild>
     <Civ>kokiri</Civ>
+	<Classes datatype="tokens">BarrackGrove</Classes>
     <GenericName>Battle Grove</GenericName>
     <History>A simple grove dotted with combat dummies, Kokiri would occasionally come here to spar with simple swords, sticks, and kitchen tools so as to be ready to defend their villages from predators.</History>
     <Icon>structures/kokiri/kok_battlegrove.dds</Icon>
@@ -138,9 +139,7 @@
     units/kokiri/{civ}_explorer_b
     units/kokiri/{civ}_grovewatch_b
       units/kokiri/{civ}_mudjabber_b
-      units/kokiri/{civ}_wolfkiller_b
-    units/kokiri/{civ}_mantlet_b
-      units/kokiri/{civ}_mudram_b</Entities>
+      units/kokiri/{civ}_wolfkiller_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>

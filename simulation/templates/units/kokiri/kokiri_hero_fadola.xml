@@ -49,7 +49,7 @@
     <History>Fadola is one of the less social Kokiri, often spending her time in high places that other Kokiri are afraid to climb to. She has a very calm and friendly demeanor to those that know her. Rumor has it that Fadola is the world's greatest Slingshotter, but she lacks the pride to boast and prove if it's true.</History>
     <Icon>units/kokiri/kok_hero_fadola.dds</Icon>
     <Lang>kokiri</Lang>
-    <RequiredTechnology>civ_choices/kokiri/choosehero_fadola</RequiredTechnology>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_mirora</RequiredTechnology>
     <SpecificName>Fadola</SpecificName>
     <Tooltip>Ranged hero that attacks with her Slingshot.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

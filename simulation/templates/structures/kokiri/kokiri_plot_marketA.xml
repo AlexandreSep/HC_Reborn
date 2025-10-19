@@ -56,7 +56,17 @@
       <Tooltip>Add Forest Lodge to this building.</Tooltip>
       <Variant>upgrading</Variant>
     </TowerB>
-    <TowerC>
+	<TowerC>
+      <Cost>
+        <wood>60</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_storehouse</Entity>
+	  <RequiredTechnology>civ_choices/kokiri/choosehero_mirora</RequiredTechnology>
+      <Time>20</Time>
+      <Tooltip>Add a Storehouse to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerC>
+    <TowerD>
       <Cost>
         <wood>60</wood>
       </Cost>
@@ -64,7 +74,7 @@
       <Time>20</Time>
       <Tooltip>Add a Community Home to this building.</Tooltip>
       <Variant>upgrading</Variant>
-    </TowerC>
+    </TowerD>
   </Upgrade>
   <VisualActor>
     <Actor>structures/kokiri/kokiri_plotA.xml</Actor>

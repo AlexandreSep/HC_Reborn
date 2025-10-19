@@ -15,7 +15,7 @@
     <History>A member of the Mudmen Tribe of Faron. These hostile and feral children bring pointy spears to the fray and are quick on their feet. Unlike most Kokiri, the Mudmen love to fight and are more than willing to get their hands a bit bloody.</History>
     <Icon>units/kokiri/kok_mudjabber.dds</Icon>
     <Lang>hylian</Lang>
-    <RequiredTechnology>kokiri/get_mudcolony</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <SelectionGroupName>units/kokiri/kokiri_mudjabber_b</SelectionGroupName>
     <Tooltip>Cheap and fast spear unit that can Camouflage and also has a Dodge Rating. Effective against cavalry.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

@@ -14,12 +14,22 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/kokiri/kokiri_publichanging</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
+      <RequiredTechnology>civ_choices/kokiri/choosehero_gulley</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add Public Hangings to this building.</Tooltip>
       <Variant>upgrading</Variant>
     </TowerB>
     <TowerC>
+      <Cost>
+		<wood>60</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_festivalA</Entity>
+	  <RequiredTechnology>civ_choices/kokiri/choosehero_saria</RequiredTechnology>
+      <Time>20</Time>
+      <Tooltip>Add a Community Home to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerC>
+    <TowerD>
       <Cost>
         <wood>60</wood>
       </Cost>
@@ -27,7 +37,7 @@
       <Time>20</Time>
       <Tooltip>Add a Community Home to this building.</Tooltip>
       <Variant>upgrading</Variant>
-    </TowerC>
+    </TowerD>
   </Upgrade>
   <VisualActor>
     <Actor>structures/kokiri/kokiri_plotA.xml</Actor>

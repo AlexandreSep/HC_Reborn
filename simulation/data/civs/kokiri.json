@@ -130,9 +130,6 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/kokiri/choosehero_domiso",
-		"civ_choices/kokiri/choosehero_fadola",
-		"civ_choices/kokiri/choosehero_fado",
 		"civ_choices/kokiri/choosehero_mirora",
 		"civ_choices/kokiri/choosehero_gulley",
 		"civ_choices/kokiri/choosehero_saria"

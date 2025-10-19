@@ -38,19 +38,19 @@
   </StatusBars>
   <Upgrade>
     <TowerA>
-      <Cost>
+	  <Cost>
         <wood>100</wood>
       </Cost>
       <Entity>structures/kokiri/kokiri_woodcarver</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
+      <RequiredTechnology>phase_city</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add Wood Carvers to this building.</Tooltip>
-      <Variant>upgrading</Variant>
+      <Variant>upgrading</Variant> 
     </TowerA>
     <TowerB>
-      <Cost>
-        <wood>100</wood>
-      </Cost>
+	<Cost>
+		<wood>100</wood>
+	</Cost>
       <Entity>structures/kokiri/kokiri_targetrange</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
       <Time>30</Time>

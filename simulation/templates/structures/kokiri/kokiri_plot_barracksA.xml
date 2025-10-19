@@ -51,11 +51,22 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/kokiri/kokiri_mudcolony</Entity>
+	  <RequiredTechnology>civ_choices/kokiri/choosehero_mirora</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Mudmen Colony to this building.</Tooltip>
       <Variant>upgrading</Variant>
     </TowerB>
-    <TowerC>
+	<TowerC>
+      <Cost>
+        <wood>60</wood>
+      </Cost>
+      <Entity>structures/kokiri/kokiri_obstacle</Entity>
+	  <RequiredTechnology>civ_choices/kokiri/choosehero_gulley</RequiredTechnology>
+      <Time>20</Time>
+      <Tooltip>Add Obstacle Course to this building.</Tooltip>
+      <Variant>upgrading</Variant>
+    </TowerC>
+    <TowerD>
       <Cost>
         <wood>60</wood>
       </Cost>
@@ -63,7 +74,7 @@
       <Time>20</Time>
       <Tooltip>Add a Community Home to this building.</Tooltip>
       <Variant>upgrading</Variant>
-    </TowerC>
+    </TowerD>
   </Upgrade>
   <VisualActor>
     <Actor>structures/kokiri/kokiri_plotA.xml</Actor>

@@ -33,7 +33,7 @@
     <History>Fado was a very talented musician and well loved violinist among the Kokiri. He was a pacifist and refused to attack anything living, an ideology he had great difficulty in upholding. His music seemed to have an almost magical power about it; he was quite able to domesticate feral beasts and monsters by playing the right tune. Fado was a friend of Saria’s and he was deeply fond of her. When she needed an heir to replace her as a Sage he volunteered for the title.</History>
     <Icon>units/kokiri/kok_hero_fado.dds</Icon>
     <Lang>kokiri</Lang>
-    <RequiredTechnology>civ_choices/kokiri/choosehero_fado</RequiredTechnology>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_saria</RequiredTechnology>
     <SpecificName>Fado</SpecificName>
     <Tooltip>Support Hero that can create many powerful global buffs and debuffs.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>

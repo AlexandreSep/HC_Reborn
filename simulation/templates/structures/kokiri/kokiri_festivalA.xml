@@ -1,22 +1,25 @@
-<Entity parent="HC_template_structure_military">
+<Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/hanging_aura
+  </Auras>
   <BuildRestrictions>
-    <Category>Barracks</Category>
+    <Category>Temple</Category>
   </BuildRestrictions>
   <Cost>
     <BuildTime>60</BuildTime>
     <Resources>
       <food>0</food>
-      <metal>0</metal>
+      <metal>250</metal>
       <stone>0</stone>
-      <wood>300</wood>
+      <wood>400</wood>
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="18.0" />
-    <Height>12.0</Height>
+    <Circle radius="11.0" />
+    <Height>10.0</Height>
   </Footprint>
   <Health>
-    <Max>2000</Max>
+    <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/debris_kokiri_small</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -25,22 +28,18 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Town</Classes>
-    <GenericName>Obstacle Course</GenericName>
-    <History>Rigorous training ground for improving the skill of Kokiri warriors.</History>
-    <Icon>structures/kokiri/kok_obstacle.dds</Icon>
+    <Classes datatype="tokens">Addon Town</Classes>
+    <GenericName>Public Hangings</GenericName>
+    <History>Kokiri criminals are rare but they do exist. Kokiri are very easily embarrassed, and to deal with these criminals they hang them publicly by their undergarments for all to point and laugh at. A crude and painful, but very effective means of punishment.</History>
+    <Icon>structures/kokiri/kok_publichanging.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Improves many Kokiri Infantry units.</Tooltip>
-    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Tooltip>Structure that boosts the performance of Kokiri Laborers.</Tooltip>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
   </Identity>
-  <Loot>
-    <metal>25</metal>
-    <wood>50</wood>
-  </Loot>
   <Obstruction>
     <Static depth="10.0" width="10.0" />
   </Obstruction>
-    <Plots>
+  <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
   <Selectable>
@@ -55,17 +54,13 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-      <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_blacksmith.xml</select>
-      <upgraded>interface/complete/building/complete_blacksmith.xml</upgraded>
+      <constructed>interface/complete/building/kokiri/complete_hanging.xml</constructed>
+      <select>interface/select/building/kokiri/sel_hanging.xml</select>
+      <upgraded>interface/complete/building/kokiri/complete_hanging.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <Vision>
-    <Range>32</Range>
-  </Vision>
   <VisualActor>
-    <Actor>structures/kokiri/kokiri_obstacleA.xml</Actor>
+    <Actor>structures/kokiri/kokiri_festivalA.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldB.xml</FoundationActor>
   </VisualActor>
   <Researcher>

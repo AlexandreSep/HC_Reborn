@@ -35,7 +35,7 @@
     <History>The Know-It-All-Brothers are quite famous among the Kokiri, mainly for the trait that no Kokiri can tell the brothers apart. They spend most of their time doing chores around the Deku Tree's Grove, much to their dismay. The leader of the brothers, Domiso, is a bit skilled with a sword and can defend his people if needs be.</History>
     <Icon>units/kokiri/kok_hero_domiso.dds</Icon>
     <Lang>kokiri</Lang>
-    <RequiredTechnology>civ_choices/kokiri/choosehero_domiso</RequiredTechnology>
+    <RequiredTechnology>civ_choices/kokiri/choosehero_gulley</RequiredTechnology>
     <SpecificName>Domiso</SpecificName>
     <Tooltip>Melee Hero that summons his brothers to battle.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
