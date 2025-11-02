@@ -8,8 +8,8 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>70</stone>
-      <wood>70</wood>
+      <stone>75</stone>
+      <wood>25</wood>
     </Resources>
   </Cost>
   <Footprint>
