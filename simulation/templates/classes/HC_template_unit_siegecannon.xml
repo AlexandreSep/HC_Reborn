@@ -1,26 +1,28 @@
 <Entity parent="HC_template_unit_auxiliary">
   <Attack>
     <Ranged>
+	<AttackName>Boulder</AttackName>
       <Damage>
-        <Crush>150</Crush>
+        <Crush>20</Crush>
+		<Siege>150</Siege>
       </Damage>
       <MaxRange>120.0</MaxRange>
       <MinRange>45.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
       <PrepareTime>7000</PrepareTime>
-      <Projectile>
+	  <Projectile>
         <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/electric_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
-        <Speed>100.0</Speed>
-        <Spread>2.5</Spread>
+        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+        <Speed>37.5</Speed>
+        <Spread>3.0</Spread>
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
       <RepeatTime>7000</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>5.0</Crush>
+          <Crush>15.0</Crush>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>

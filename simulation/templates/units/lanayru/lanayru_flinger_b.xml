@@ -9,20 +9,15 @@
 	  <Splash>
         <Damage>
           <Crush>0</Crush>
-		  <Pierce>50</Pierce>
+		  <Pierce>35</Pierce>
         </Damage>
         <FriendlyFire>true</FriendlyFire>
         <Range>20</Range>
         <Shape>Circular</Shape>
       </Splash>
 	  <Projectile>
-        <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
-        <Speed>37.5</Speed>
-        <Spread>3.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
       </Projectile>
       <SpawnEntityOnImpact>
         <SpawnNumberMax>1</SpawnNumberMax>

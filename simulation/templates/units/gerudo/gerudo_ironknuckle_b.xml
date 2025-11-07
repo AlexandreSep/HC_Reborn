@@ -4,7 +4,7 @@
     <Ranged>
       <AttackName>Axe</AttackName>
       <Damage>
-        <Hack>150</Hack>
+        <Hack>15</Hack>
       </Damage>
       <MaxRange>7.0</MaxRange>
       <MinRange>0.0</MinRange>

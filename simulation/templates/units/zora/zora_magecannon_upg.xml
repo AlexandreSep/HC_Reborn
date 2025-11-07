@@ -2,24 +2,29 @@
   <Attack>
     <Ranged>
       <Damage>
-        <Magic>225</Magic>
+        <Magic>30</Magic>
+		<Siege>200</Siege>
       </Damage>
       <MaxRange>150.0</MaxRange>
       <MinRange>45.0</MinRange>
       <PrepareTime>9000</PrepareTime>
       <Projectile>
         <Speed>125.0</Speed>
-        <Spread>3.25</Spread>
+        <Spread>1.5</Spread>
       </Projectile>
       <RepeatTime>11700</RepeatTime>
       <Splash>
         <Damage>
-          <Magic>12.0</Magic>
+          <Magic>20.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>15</Range>
         <Shape>Circular</Shape>
       </Splash>
+	  <Stun>
+        <Time>4000</Time>
+        <Chance>100</Chance>
+      </Stun>
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>

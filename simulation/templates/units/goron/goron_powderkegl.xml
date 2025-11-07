@@ -4,22 +4,22 @@
       <AttackName>Powder Keg</AttackName>
       <Damage>
 	    <Crush>0</Crush>
-        <Magic>100</Magic>
+        <Magic>15</Magic>
       </Damage>     
       <Projectile>
-        <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.3</ImpactAnimationLifetime>
-        <Speed>37.5</Speed>
-        <Spread>3.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>   
+      </Projectile> 	  
       <Knockback>
         <Horizontal>10</Horizontal>
         <Vertical>10</Vertical>
       </Knockback>
       <EffectDelay>0</EffectDelay>
+	  <Splash>
+        <Damage>
+          <Crush>0</Crush>
+        <Magic>15</Magic>
+        </Damage>
+      </Splash>
     </Ranged>
   </Attack>
   <Footprint replace="">

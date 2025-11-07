@@ -1,18 +1,4 @@
 <Entity parent="classes/HC_template_unit_siegecannon">
-  <Attack>
-    <Ranged>
-	<AttackName>Boulder</AttackName>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
-        <Speed>45</Speed>
-        <Spread>3.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-    </Ranged>
-  </Attack>
   <Identity>
     <Civ>gerudo</Civ>
     <Classes datatype="tokens">Construct Large GerudoCatapult</Classes>

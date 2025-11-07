@@ -3,8 +3,7 @@
     <Ranged>
       <AttackName>Cow Corpse</AttackName>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <Projectile>
-        <Gravity>9.81</Gravity>
+	  <Projectile>
         <ImpactActorName>props/units/explosions/small_dust_explosion.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.25</ImpactAnimationLifetime>
       </Projectile>
@@ -33,9 +32,6 @@
     <Tooltip>Support unit that launcher rotting corpses at its targets, spreading poison and disease.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
-  <Resistance>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/dungflinger_impact.xml</attack_impact_ranged>

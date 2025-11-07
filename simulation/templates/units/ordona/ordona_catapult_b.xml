@@ -1,21 +1,7 @@
 <Entity parent="classes/HC_template_unit_siegecannon">
-  <Attack>
-    <Ranged>
-      <AttackName>Boulder</AttackName>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
-        <Speed>37.5</Speed>
-        <Spread>3.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-    </Ranged>
-  </Attack>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Construct Large  Catapult</Classes>
+    <Classes datatype="tokens">Construct Large Catapult</Classes>
     <GenericName>Ordona Catapult</GenericName>
     <History>With enemies on all sides, Ordona was often on the defensive. In the cases where the tables were turned, Catapults served as their big guns for taking out enemy walls and towers. Ordonian catapults could hurl boulders from safe behind their army's lines, busting open gates and taking out large targets with ease.</History>
     <Icon>units/ordona/ord_catapult.dds</Icon>

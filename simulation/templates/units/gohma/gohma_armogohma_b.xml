@@ -3,18 +3,11 @@
     <Ranged>
       <AttackName>Fire Stream</AttackName>
       <Damage>
+	    <Crush>0</Crush>
         <Magic>30</Magic>
-      </Damage>
+		<Siege>50</Siege>
+      </Damage>    
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
-        <Speed>37.5</Speed>
-        <Spread>2.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
       <RepeatTime>2000</RepeatTime>
       <Splash>
         <Damage>

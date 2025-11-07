@@ -4,16 +4,21 @@
       <AttackName>Lightning</AttackName>
       <Damage>
 		<Crush>0</Crush>
-        <Magic>150</Magic>
+        <Magic>15</Magic>
       </Damage>
+	  <Projectile>
+        <ImpactActorName>props/units/explosions/electric_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
+        <Speed>100.0</Speed>
+      </Projectile>
       <Splash>
         <Damage>
 		<Crush>0</Crush>
-        <Magic>5.0</Magic>
+        <Magic>10</Magic>
         </Damage>
       </Splash>
       <Stun>
-        <Time>1000</Time>
+        <Time>2000</Time>
         <Chance>100</Chance>
       </Stun>
       <EffectDelay>0</EffectDelay>
