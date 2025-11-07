@@ -39,8 +39,8 @@
   <Upgrade>
     <TowerA>
       <Cost>
-        <stone>50</stone>
-        <wood>50</wood>
+        <stone>75</stone>
+        <wood>25</wood>
       </Cost>
       <Entity>structures/goron/goron_house</Entity>
       <Time>30</Time>
@@ -49,8 +49,8 @@
     </TowerA>
     <TowerB>
       <Cost>
-        <stone>75</stone>
-        <wood>75</wood>
+        <stone>50</stone>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_defense_tower</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>

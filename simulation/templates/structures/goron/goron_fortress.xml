@@ -114,7 +114,7 @@
     <GenericName>Stronghold</GenericName>
     <History>A giant looming edifice found along the sides of Death Mountain, Goron strongholds are some of the most defensible fortresses to have been erected in Hyrule. A lone Goron Stronghold can do wonders to hold an enemy invasion at bay.</History>
     <Icon>structures/goron/gor_strongholdA.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
     <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
   </Identity>

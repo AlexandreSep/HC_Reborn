@@ -39,8 +39,8 @@
   <Upgrade>
     <TowerA>
       <Cost>
-        <stone>150</stone>
-        <wood>150</wood>
+        <stone>75</stone>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_market</Entity>
       <Time>60</Time>
@@ -50,7 +50,7 @@
     <TowerC>
       <Cost>
         <metal>50</metal>
-        <wood>200</wood>
+        <wood>150</wood>
       </Cost>
       <Entity>structures/goron/goron_barracksB</Entity>
       <Time>60</Time>
@@ -70,8 +70,8 @@
     </TowerD>
 	<TowerB>
       <Cost>
-        <stone>100</stone>
-        <wood>200</wood>
+        <stone>200</stone>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_barracksA</Entity>
       <RequiredTechnology>goron/hero_town_darunia</RequiredTechnology>
