@@ -5,8 +5,8 @@
   <Heal>
     <HealableClasses datatype="tokens">Organic</HealableClasses>
     <Health>15</Health>
-    <Range>40</Range>
-    <Interval>200</Interval>
+    <Range>60</Range>
+    <Interval>2000</Interval>
     <UnhealableClasses datatype="tokens" />
   </Heal>
   <Cost>

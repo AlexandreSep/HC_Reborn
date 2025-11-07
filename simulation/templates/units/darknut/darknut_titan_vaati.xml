@@ -37,8 +37,7 @@
       </SpawnEntityOnImpact>
       <Splash>
         <Damage>
-          <Shadow>50.0</Shadow>
-          <Spirit>50.0</Spirit>
+          <Magic>50.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>30</Range>

@@ -33,8 +33,7 @@
       <RepeatTime>2400</RepeatTime>
       <Splash>
         <Damage>
-          <Fire>20.0</Fire>
-          <Water>20.0</Water>
+          <Magic>40.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>

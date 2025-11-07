@@ -1,6 +1,6 @@
 {
   "type": "range",
-  "radius": 40,
+  "radius": 60,
   "affects": ["Structure"],
 	"modifications": [
 		{ "value": "Trainer/BatchTimeModifier", "multiply": 0.70 }

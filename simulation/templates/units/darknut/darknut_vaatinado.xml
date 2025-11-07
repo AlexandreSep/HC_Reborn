@@ -19,7 +19,7 @@
       <RepeatTime>100</RepeatTime>
       <Splash>
         <Damage>
-          <Spirit>1.0</Spirit>
+          <Magic>1.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>

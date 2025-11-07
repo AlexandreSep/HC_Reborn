@@ -63,9 +63,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>90.0</Crush>
-        <Hack>90.0</Hack>
-        <Pierce>90.0</Pierce>
+        <Crush>50.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>50.0</Pierce>
         <Magic>10</Magic>
       </Damage>
     </Entity>
