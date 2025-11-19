@@ -7,8 +7,8 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>0</stone>
-      <wood>350</wood>
+      <stone>50</stone>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -46,7 +46,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>50</stone>
+		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_blacksmithB</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -60,16 +61,16 @@
     <FoundationActor>structures/labrynna/labrynna_scaffoldD.xml</FoundationActor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">labrynna/handcannon_efficientmortar
+    <Technologies datatype="tokens">
     labrynna/conqueror_reloadingdrills
     labrynna/ambi_sharpshooting
-
+	labrynna/handcannon_efficientmortar
 </Technologies>
   </Researcher>
   <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/labrynna/{civ}_handcannon_b
-      units/labrynna/{civ}_conqueror_b</Entities>
+    <BatchTimeModifier>0.9</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_conqueror_b
+	units/labrynna/{civ}_handcannon_b</Entities>
     <DestinationOffset>
       <step1>
         <X>9</X>

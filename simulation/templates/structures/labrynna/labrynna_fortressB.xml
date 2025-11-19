@@ -1,14 +1,21 @@
 <Entity parent="structures/labrynna/labrynna_fortress">
+  <BuildingAI>
+    <DefaultArrowCount>15</DefaultArrowCount>
+  </BuildingAI>
   <Identity>
     <GenericName>Towered Star Fort</GenericName>
     <History>A large expansion upon the Star Fort, outfitting it with a collection of defensive towers.</History>
     <Icon>structures/labrynna/lab_starfortB.dds</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
+  <GarrisonHolder>
+    <Max>30</Max>
+  </GarrisonHolder>
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>200</stone>
+        <wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_fortressC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>

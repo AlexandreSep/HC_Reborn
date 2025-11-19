@@ -17,7 +17,7 @@
 </Technologies>
   </Researcher>
   <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <BatchTimeModifier>0.5</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_steamtank_b</Entities>
   </Trainer>
 </Entity>

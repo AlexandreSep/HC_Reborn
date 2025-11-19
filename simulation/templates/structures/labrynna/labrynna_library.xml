@@ -42,7 +42,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>100</stone>
+		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_libraryB</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -60,8 +61,4 @@
     labrynna/library_nuunarch
 </Technologies>
   </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

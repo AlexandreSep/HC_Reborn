@@ -8,12 +8,13 @@
     <Shape>Circular</Shape>
     <FriendlyFire>true</FriendlyFire>
     <Damage>
-      <Fire>250.0</Fire>
+      <Magic>100</Magic>
+	  <Siege>500</Siege>
     </Damage>
     <Bonuses>
       <BonusStructure>
         <Classes>Structure</Classes>
-        <Multiplier>10.0</Multiplier>
+        <Multiplier>5.0</Multiplier>
       </BonusStructure>
     </Bonuses>
     <Range>50</Range>

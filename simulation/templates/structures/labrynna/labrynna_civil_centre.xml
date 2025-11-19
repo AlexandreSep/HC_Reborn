@@ -74,7 +74,10 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<food>100</food>
+		<metal>100</metal>
+		<stone>100</stone>
+		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_civil_centreB</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -96,6 +99,7 @@
 </Technologies>
   </Researcher>
   <Trainer>
+	<BatchTimeModifier>0.9</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_tokayslaveA
 	  units/labrynna/{civ}_tokayfodder_b
       units/labrynna/{civ}_pathfinder_b

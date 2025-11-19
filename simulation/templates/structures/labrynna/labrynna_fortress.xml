@@ -31,24 +31,31 @@
       <FromClass>Fortress</FromClass>
       <MinDistance>180</MinDistance>
     </Distance>
+	<Territory>own neutral</Territory>
   </BuildRestrictions>
   <BuildingAI>
     <DefaultArrowCount>10</DefaultArrowCount>
+	<GarrisonArrowClasses>CanGarrison</GarrisonArrowClasses>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
   </BuildingAI>
   <Cost>
     <BuildTime>150</BuildTime>
     <Resources>
-      <stone>0</stone>
-      <wood>750</wood>
+      <stone>250</stone>
+      <wood>500</wood>
     </Resources>
   </Cost>
   <Footprint>
     <Height>12.0</Height>
     <Square depth="70.0" width="70.0" />
   </Footprint>
-  <GarrisonHolder>
-    <Max>20</Max>
+    <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.9</EjectHealth>
+    <List datatype="tokens">Organic</List>
+    <LoadingRange>10</LoadingRange>
+    <Max>40</Max>
   </GarrisonHolder>
   <TurretHolder>
     <TurretPoints>
@@ -185,7 +192,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>200</stone>
+        <wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_fortressB</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>

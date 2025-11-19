@@ -7,7 +7,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>50</stone>
+		<wood>50</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_storehouseC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -16,6 +17,9 @@
       <Variant>upgrading</Variant>
     </Tower>
   </Upgrade>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
   <VisualActor>
     <Actor>structures/labrynna/labrynna_storehouseB.xml</Actor>
   </VisualActor>

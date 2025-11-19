@@ -1,16 +1,4 @@
 <Entity parent="structures/labrynna/labrynna_library">
-  <Cost>
-    <BuildTime>60</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>200</stone>
-      <wood>200</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>2000</Max>
-  </Health>
   <Identity>
     <GenericName>School</GenericName>
     <History>Education became an important part of Labrynna’s culture around the time of the industrial boon. Free public schools became available for all young citizens of the Empire shortly after their construction.</History>
@@ -19,7 +7,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>100</stone>
+		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_libraryC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -36,8 +25,4 @@
     labrynna/school_approvedreading
 </Technologies>
   </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

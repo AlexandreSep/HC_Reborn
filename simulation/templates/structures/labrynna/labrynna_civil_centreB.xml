@@ -3,10 +3,16 @@
     <GenericName>Town Center</GenericName>
     <Icon>structures/labrynna/lab_civcenterB.dds</Icon>
   </Identity>
+  <Trainer>
+  <BatchTimeModifier>0.7</BatchTimeModifier>
+  </Trainer>
   <Upgrade>
-    <Tower>
+	<Tower>
       <Cost>
-        <wood>350</wood>
+		<food>100</food>
+		<metal>100</metal>
+		<stone>100</stone>
+		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_civil_centreC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>

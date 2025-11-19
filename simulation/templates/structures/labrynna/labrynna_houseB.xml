@@ -10,7 +10,7 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>100</wood>
+		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_houseC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>

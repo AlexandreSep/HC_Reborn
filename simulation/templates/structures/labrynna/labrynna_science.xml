@@ -43,7 +43,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>150</stone>
+		<wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_scienceB</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>

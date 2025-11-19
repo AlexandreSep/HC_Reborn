@@ -12,7 +12,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<metal>50</metal>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_zooC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -25,14 +26,14 @@
     <Actor>structures/labrynna/labrynna_zooB.xml</Actor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">labrynna/aquadongo_driftingdongo
+    <Technologies datatype="tokens">
     labrynna/blainoboxer_smackdown
-
+	labrynna/aquadongo_driftingdongo
 </Technologies>
   </Researcher>
   <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/labrynna/{civ}_aquadongo_b
-    units/labrynna/{civ}_blainoboxer_b</Entities>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_blainoboxer_b
+	units/labrynna/{civ}_aquadongo_b</Entities>
   </Trainer>
 </Entity>

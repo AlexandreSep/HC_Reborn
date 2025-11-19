@@ -13,13 +13,14 @@
     <Actor>structures/labrynna/labrynna_barracksC.xml</Actor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">labrynna/brigada_emergencykit
-
+    <Technologies datatype="tokens">
+	labrynna/brigada_emergencykit
 </Technologies>
   </Researcher>
   <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/labrynna/{civ}_brigada_b
-      units/labrynna/{civ}_campeador_b</Entities>
+    <BatchTimeModifier>0.5</BatchTimeModifier>
+    <Entities datatype="tokens">units/labrynna/{civ}_campeador_b
+	units/labrynna/{civ}_brigada_b
+      </Entities>
   </Trainer>
 </Entity>

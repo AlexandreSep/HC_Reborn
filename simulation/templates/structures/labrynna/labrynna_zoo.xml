@@ -8,7 +8,7 @@
       <food>0</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>400</wood>
+      <wood>200</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -46,7 +46,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<metal>50</metal>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_zooB</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -66,7 +67,7 @@
 </Technologies>
   </Researcher>
   <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <BatchTimeModifier>0.9</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_bluecaballero_b</Entities>
     <DestinationOffset>
       <step1>

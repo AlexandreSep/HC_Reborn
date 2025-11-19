@@ -8,7 +8,9 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>100</stone>
+		<wood>100</wood>
+      </Cost>
       </Cost>
       <Entity>structures/labrynna/labrynna_marketC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -25,6 +27,7 @@
 </Technologies>
   </Researcher>
   <Trainer>
+	<BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_trader_b
     gaia/lon_lon_cow_1
     units/merc_geru_b

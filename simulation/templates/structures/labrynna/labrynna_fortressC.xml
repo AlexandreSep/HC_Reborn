@@ -5,8 +5,8 @@
       <Damage>
         <Crush>20</Crush>
       </Damage>
-      <MaxRange>125</MaxRange>
-      <MinRange>15.0</MinRange>
+      <MaxRange>130</MaxRange>
+      <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Human</PreferredClasses>
       <PrepareTime>250</PrepareTime>
       <RepeatTime>8000</RepeatTime>
@@ -18,15 +18,20 @@
         <Range>25</Range>
         <Shape>Linear</Shape>
       </Splash>
-      <TrueDamage>300</TrueDamage>
     </Ranged>
   </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>20</DefaultArrowCount>
+  </BuildingAI>
   <Identity>
     <GenericName>Battery Star Fort</GenericName>
     <History>A fully expanded Star Fort, adding ramparts for Cannons and Gunpowder defenders to garrison on to and fire upon invaders.</History>
     <Icon>structures/labrynna/lab_starfortB.dds</Icon>
     <RequiredTechnology>phase_city</RequiredTechnology>
   </Identity>
+  <GarrisonHolder>
+    <Max>40</Max>
+  </GarrisonHolder>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/bullet_impact.xml</attack_impact_ranged>

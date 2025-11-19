@@ -8,7 +8,7 @@
     <Icon>structures/labrynna/lab_houseC.dds</Icon>
   </Identity>
   <Population>
-    <Bonus>25</Bonus>
+    <Bonus>30</Bonus>
   </Population>
   <Upgrade disable="" />
   <VisualActor>

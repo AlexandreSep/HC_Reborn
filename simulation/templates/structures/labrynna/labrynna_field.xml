@@ -1,11 +1,11 @@
-<Entity parent="template_structure_resource_field">
+<Entity parent="HC_template_structure_civilian">
   <Cost>
     <BuildTime>45</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>150</wood>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Health>
@@ -25,7 +25,7 @@
     <Max>Infinity</Max>
     <DiminishingReturns>0.90</DiminishingReturns>
     <KillBeforeGather>false</KillBeforeGather>
-    <MaxGatherers>1</MaxGatherers>
+    <MaxGatherers>3</MaxGatherers>
     <Type>food.grain</Type>
   </ResourceSupply>
   <Sound>
@@ -38,7 +38,7 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+        <wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_fieldB</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>
@@ -49,12 +49,6 @@
   </Upgrade>
   <VisualActor>
     <Actor>structures/misc/field_labrynnaA.xml</Actor>
+	<FoundationActor>structures/misc/field_labrynnaA.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

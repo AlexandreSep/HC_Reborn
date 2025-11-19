@@ -51,7 +51,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>50</stone>
+		<wood>50</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_storehouseB</Entity>
       <RequiredTechnology>phase_town</RequiredTechnology>

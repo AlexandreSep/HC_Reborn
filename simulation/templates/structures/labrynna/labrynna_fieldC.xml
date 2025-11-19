@@ -12,6 +12,9 @@
     <Sharable>true</Sharable>
     <Types>food</Types>
   </ResourceDropsite>
+  <ResourceSupply>
+    <MaxGatherers>5</MaxGatherers>
+  </ResourceSupply>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -29,7 +32,4 @@
     <Technologies datatype="tokens">labrynna/gather_autofarming
 </Technologies>
   </Researcher>
-  <Trainer>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

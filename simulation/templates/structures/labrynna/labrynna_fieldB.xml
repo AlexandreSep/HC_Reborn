@@ -1,6 +1,5 @@
 <Entity parent="structures/labrynna/labrynna_field">
   <Health>
-    <Max>700</Max>
     <SpawnEntityOnDeath>rubble/debris_labrynna_small</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -13,12 +12,12 @@
     <Types>food</Types>
   </ResourceDropsite>
   <ResourceSupply>
-    <MaxGatherers>3</MaxGatherers>
+    <MaxGatherers>4</MaxGatherers>
   </ResourceSupply>
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+        <wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_fieldC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -34,7 +33,4 @@
     <Technologies datatype="tokens">labrynna/edgar_bipishasoil
 </Technologies>
   </Researcher>
-  <Trainer>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

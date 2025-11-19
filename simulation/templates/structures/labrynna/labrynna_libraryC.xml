@@ -1,16 +1,4 @@
 <Entity parent="structures/labrynna/labrynna_libraryB">
-  <Cost>
-    <BuildTime>60</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>200</stone>
-      <wood>200</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>2000</Max>
-  </Health>
   <Identity>
     <GenericName>University</GenericName>
     <History>Although Universities were open to all citizens of the Empire, only the best and brightest could continue education at these facilities. Some of the Empire’s greatest scientific breakthroughs originated at these halls of learning and study.</History>
@@ -25,8 +13,4 @@
     labrynna/uni_rigordiet
 </Technologies>
   </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

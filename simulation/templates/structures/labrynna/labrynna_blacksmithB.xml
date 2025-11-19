@@ -7,7 +7,8 @@
   <Upgrade>
     <Tower>
       <Cost>
-        <wood>350</wood>
+		<stone>50</stone>
+		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_blacksmithC</Entity>
       <RequiredTechnology>phase_city</RequiredTechnology>
@@ -25,7 +26,7 @@
 </Technologies>
   </Researcher>
   <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_cannon
       units/labrynna/{civ}_organgun</Entities>
   </Trainer>
