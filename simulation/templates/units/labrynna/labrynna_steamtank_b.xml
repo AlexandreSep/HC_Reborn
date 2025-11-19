@@ -1,66 +1,43 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="units/labrynna/labrynna_cannon">
   <Attack>
     <Ranged>
       <AttackName>Cannonball</AttackName>
+	  <Bonuses>
+        <BonusConstruct>
+          <Classes>Construct Large</Classes>
+          <Multiplier>3.0</Multiplier>
+        </BonusConstruct>
+      </Bonuses>
       <Damage>
-        <Crush>250.0</Crush>
+        <Crush>50.0</Crush>
+		<Siege>100.0</Siege>
       </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>125.0</MaxRange>
-      <MinRange>50.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <MaxRange>60.0</MaxRange>
+      <MinRange>5.0</MinRange>
+      <PreferredClasses datatype="tokens">Structure Construct Large</PreferredClasses>
       <PrepareTime>3000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.5</ImpactAnimationLifetime>
-        <Speed>200.0</Speed>
-        <Spread>2.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>6000</RepeatTime>
-      <Splash>
-        <Damage>
-          <Crush>50.0</Crush>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Linear</Shape>
-      </Splash>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <EffectDelay>0</EffectDelay>
+      <RepeatTime>3000</RepeatTime>
     </Ranged>
   </Attack>
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>200</stone>
-      <wood>150</wood>
+      <stone>250</stone>
+      <wood>500</wood>
     </Resources>
   </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="12.0" width="8.0" />
-  </Footprint>
   <Health>
     <Max>1000</Max>
   </Health>
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">-Organic Construct Large Class40 Steamtank</Classes>
+    <Classes datatype="tokens">Construct Large Steamtank Creature</Classes>
     <GenericName>Steam Tank</GenericName>
     <History>The peak of Labrynna engineering and military might, the Steam Tank was a mobile cannon covered by thick plating of armor. To help the crew move such a heavy load, a primitive but functional steam engine pushed the Cannon and armor along at a slow but steady pace. These slow and lumbering machines could usually terrify an enemy into submission without having to fire a single shot, but their slow speed and significant blind spots could be exploited by those who knew better.</History>
     <Icon>units/labrynna/lab_steamtank.dds</Icon>
-    <Tooltip>Powerful and durable but slow moving Siege machine that can wreck enemy defenses from a distance with its cannon.</Tooltip>
+    <Tooltip>Powerful and durable but slow moving Siege machine that can wreck enemy defenses, constructs and monsters from a distance with its cannon.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
   <Position>
@@ -69,9 +46,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>5.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>80.0</Pierce>
+        <Crush>50.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>50.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>
@@ -93,8 +70,8 @@
     </SoundGroups>
   </Sound>
   <UnitMotion>
-    <RunMultiplier>1.4545</RunMultiplier>
-    <WalkSpeed>5.5</WalkSpeed>
+	<RunMultiplier>3</RunMultiplier>
+	<WalkSpeed>5.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/labrynna/labrynna_steamtank_b.xml</Actor>

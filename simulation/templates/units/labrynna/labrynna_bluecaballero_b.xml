@@ -1,38 +1,10 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Claws</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>25.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>0</metal>
-      <stone>100</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_cavalry_heavy">
   <Health>
-    <Max>300</Max>
+    <Max>400</Max>
   </Health>
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Large Class100 BlueCaballero</Classes>
+    <Classes datatype="tokens">Large BlueCaballero</Classes>
     <GenericName>Blue Caballerro</GenericName>
     <History>Mounted on the Blue Bears of the northern highlands between Labrynna and Holodrum, Blue Caballeros fill the cavalry gap that Labrynna lacked for centuries due the absence of horses in their homelands. While the rider poses little threat, enemy soldiers were rightfully more worried about being mauled by the bear itself.</History>
     <Icon>units/labrynna/lab_caballero.dds</Icon>
@@ -42,16 +14,6 @@
     <Tooltip>Aggresive Melee Cavalry unit that can maul enemies with their claws.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/bear_maul.xml</attack_melee>
@@ -67,9 +29,9 @@
       <walk>actor/movement/boar/boar_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.25</RunMultiplier>
-    <WalkSpeed>10</WalkSpeed>
+   <UnitMotion>
+    <RunMultiplier>3</RunMultiplier>
+    <WalkSpeed>12</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/labrynna/labrynna_caballero_b.xml</Actor>

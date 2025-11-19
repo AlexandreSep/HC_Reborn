@@ -1,41 +1,20 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_crossbow">
   <Attack>
     <Ranged>
       <AttackName>Bullets</AttackName>
       <Damage>
-        <Pierce>10</Pierce>
+        <Pierce>5</Pierce>
+		<TrueDamage>10</TrueDamage>
       </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
       <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <Speed>200.0</Speed>
+        <Spread>5</Spread>
       </Projectile>
-      <RepeatTime>6000</RepeatTime>
-      <TrueDamage>20</TrueDamage>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>50</metal>
-      <stone>150</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>70</Max>
-  </Health>
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Medium Class80 Sharpshooters Conqueror Gunpowder Darkblessing</Classes>
+    <Classes datatype="tokens">Medium Sharpshooters Conqueror Gunpowder Darkblessing</Classes>
     <GenericName>Conqueror</GenericName>
     <History>Donning the mask of the ferocious Lynel, Conquerors were the Empire’s primary foot soldiers and instrumental to their rapid expansion. Armed with both a rifle and rapier, Conquerors could devastate enemies with volleys of gunfire and then engage in a melee when things became hectic. </History>
     <Icon>units/labrynna/lab_conqueror.dds</Icon>
@@ -44,15 +23,6 @@
     <Tooltip>Powerful Missile unit that can puncture many armors with their gunpowder rifles. </Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/bullet_impact.xml</attack_impact_ranged>
@@ -69,10 +39,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4761</RunMultiplier>
-    <WalkSpeed>10.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/labrynna/labrynna_conqueror_b.xml</Actor>
   </VisualActor>

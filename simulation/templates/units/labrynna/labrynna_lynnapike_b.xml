@@ -1,31 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Pike</AttackName>
-      <Damage>
-        <Pierce>17.0</Pierce>
-      </Damage>
-      <MaxRange>20.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>150</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>270</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_spearman_heavy">
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Medium Class90 Lanza LynnaPike Darkblessing</Classes>
+    <Classes datatype="tokens">Medium Lanza LynnaPike Darkblessing</Classes>
     <GenericName>Lynna Pike</GenericName>
     <History>Wearing a mask of the Iron Helm Beetle of Rolling Ridge, these men and woman have dedicated their lives to assuring no ground is lost to enemies of the state. Now operating out of Lynna city, the Pikeman bring their pole arms to the fight to hold enemy cavalry at bay.</History>
     <Icon>units/labrynna/lab_lynnapike.dds</Icon>
@@ -38,16 +14,6 @@
     <Entity>units/labrynna/labrynna_lynnapike_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>55.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>0</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

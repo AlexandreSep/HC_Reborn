@@ -1,48 +1,62 @@
 <Entity parent="HC_template_unit_cavalry">
+<Attack>
+    <Ranged>
+      <AttackName>Arrow.</AttackName>
+      <Damage>
+        <Pierce>6</Pierce>
+      </Damage>
+      <EffectDelay>0</EffectDelay>
+      <MaxRange>60.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <Projectile>
+        <Gravity>9.81</Gravity>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+		<FriendlyFire>false</FriendlyFire>
+		<LaunchPoint y="3"/>
+      </Projectile>
+      <RangeOverlay>
+        <LineTexture>outline_border.png</LineTexture>
+        <LineTextureMask>outline_border_mask.png</LineTextureMask>
+        <LineThickness>0.175</LineThickness>
+      </RangeOverlay>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
   <Cost>
-    <BattalionSlots>2</BattalionSlots>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>40</food>
+      <food>100</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>70</wood>
+      <wood>100</wood>
     </Resources>
   </Cost>
-  <Footprint>
-    <Circle radius="7.0" />
-    <Height>7.0</Height>
+  <Footprint replace="">
+    <Height>3.0</Height>
+    <Square depth="20.0" width="18.0" />
   </Footprint>
-  <TurretHolder>
-    <TurretPoints>
-      <Archer1>
-        <X>0</X>
-        <Y>2.6</Y>
-        <Z>-6.8</Z>
-      </Archer1>
-      <Archer2>
-        <X>0</X>
-        <Y>2.6</Y>
-        <Z>-9.5</Z>
-      </Archer2>
-      <Archer3>
-        <X>0</X>
-        <Y>2.6</Y>
-        <Z>-12.1</Z>
-      </Archer3>
-    </TurretPoints>
-  </TurretHolder>
+  <BuildingAI>
+    <DefaultArrowCount>0</DefaultArrowCount>
+    <GarrisonArrowClasses>CanGarrison</GarrisonArrowClasses>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.9</EjectHealth>
+    <List datatype="tokens">Medium</List>
+    <LoadingRange>2</LoadingRange>
+    <Max>10</Max>
+  </GarrisonHolder>
   <Health>
-    <Max>590</Max>
-    <SpawnGarrison>
-      <Template>units/labrynna/labrynna_borderguard_garrison</Template>
-      <SpawnNumber>3</SpawnNumber>
-      <LinkedDestruction>true</LinkedDestruction>
-    </SpawnGarrison>
+    <Max>600</Max>
   </Health>
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Wagon Large Class40 GarrisonClass Ursawagon</Classes>
+    <Classes datatype="tokens">Wagon Large GarrisonClass Ursawagon</Classes>
     <GenericName>Ursa Wagon</GenericName>
     <History>A simple wagon pulled by a Labrynnian Blue Bear, these platforms could be garrisoned by ranged units and used as mobile turrets. They were perhaps most effective being used by gunpowder units, allowing them to reload and fire while on the move.</History>
     <Icon>units/labrynna/lab_ursawagon.dds</Icon>

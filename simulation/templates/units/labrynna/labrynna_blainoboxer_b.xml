@@ -1,30 +1,16 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_creature">
   <Attack>
     <Melee>
-      <AttackName>Fists</AttackName>
-      <Bonuses>
-        <BonusInfantryMelee>
-          <Classes>Infantry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusInfantryMelee>
-      </Bonuses>
+      <AttackName>Claws and Stinger</AttackName>
       <Damage>
-        <Crush>10.0</Crush>
+	    <Hack>0</Hack>
+        <Crush>10</Crush>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>20</BuildTime>
     <Resources>
-      <food>200</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
+      <food>90</food>
     </Resources>
   </Cost>
   <Health>
@@ -32,7 +18,7 @@
   </Health>
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Medium Class100 Blaino</Classes>
+    <Classes datatype="tokens">Medium Blaino</Classes>
     <GenericName>Blaino Boxer</GenericName>
     <History>An exotic creature imported from far east of Mount Dunsel, Blainos were a nickname for these hostile creatures that would pick fights with just about anyone. Labrynna would at times use these strange beasts to beat up enemy forces with their vicious punches and kicks</History>
     <Icon>units/labrynna/lab_blainoboxer.dds</Icon>
@@ -41,15 +27,6 @@
     <Tooltip>Very fast moving Creature unit that beats up enemies with its fists.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>22.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>23.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/blaino_punch.xml</attack_melee>
@@ -65,10 +42,6 @@
       <walk>actor/movement/boar/boar_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2916</RunMultiplier>
-    <WalkSpeed>12</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/labrynna/labrynna_blainoboxer_b.xml</Actor>
   </VisualActor>

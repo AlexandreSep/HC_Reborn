@@ -1,15 +1,7 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_swordsman">
   <Attack>
     <Melee>
-      <AttackName>Bullets</AttackName>
-      <Damage>
-        <Hack>6.0</Hack>
-        <Pierce>3</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
+      <AttackName>Shovel</AttackName>
     </Melee>
   </Attack>
   <Builder>
@@ -17,22 +9,25 @@
     structures/labrynna/labrynna_wallset_sandbag
       structures/labrynna/labrynna_wallset_stone
     structures/labrynna/labrynna_defense_tower
-    structures/labrynna_fortress
+    structures/labrynna/labrynna_fortress
     </Entities>
-    <Rate>1.0</Rate>
+    <Rate>3.0</Rate>
   </Builder>
   <Cost>
-    <BuildTime>9</BuildTime>
     <Resources>
-      <food>150</food>
+      <food>250</food>
       <metal>0</metal>
-      <stone>25</stone>
-      <wood>0</wood>
+      <stone>0</stone>
+      <wood>100</wood>
     </Resources>
   </Cost>
-  <Health>
-    <Max>190</Max>
-  </Health>
+    <Heal>
+    <HealableClasses datatype="tokens">Construct</HealableClasses>
+    <Health>5</Health>
+    <Range>5</Range>
+    <Interval>2000</Interval>
+    <UnhealableClasses datatype="tokens" />
+  </Heal>
   <Identity>
     <Civ>labrynna</Civ>
     <Classes datatype="tokens">Medium BasicSoldier Darkblessing</Classes>
@@ -44,15 +39,6 @@
     <Tooltip>Support unit that can build many defenses and traps outside of controlled territory, as well as repair Labrynnian buildings and engines.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>resource/mining/mining.xml</attack_melee>

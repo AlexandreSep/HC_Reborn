@@ -1,35 +1,11 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fangs</AttackName>
-      <Damage>
-        <Pierce>12.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1400</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>100</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_beastramsmall">
   <Footprint>
     <Circle radius="5.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>300</Max>
-  </Health>
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Large Class100 Aquadongo</Classes>
+    <Classes datatype="tokens">Large Aquadongo</Classes>
     <GenericName>Aquadongo</GenericName>
     <History>An aquatic reptile native to the Crescent Islands, Labrynna initially brought these creatures back to the mainland as exotic zoo attractions. With enough domestication, these beasts could be given orders and serve a place as beasts of burden. The Empire occasionally used Aquadongos to traverse dangerous oceans and attack enemies near bodies of water.</History>
     <Icon>units/labrynna/lab_aquadongo.dds</Icon>
@@ -41,16 +17,6 @@
   <Position>
     <Floating>true</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/aquadongo_bite.xml</attack_melee>
@@ -68,8 +34,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.7142</RunMultiplier>
-    <WalkSpeed>3.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/labrynna/labrynna_aquadongo_b.xml</Actor>

@@ -1,55 +1,31 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_siegecannon">
   <Attack>
     <Ranged>
       <AttackName>Cannonballs</AttackName>
       <Damage>
-        <Crush>50.0</Crush>
+        <Crush>10.0</Crush>
+		<TrueDamage>10</TrueDamage>
+		<Siege>25</Siege>
       </Damage>
-      <MaxRange>120.0</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>3000</PrepareTime>
+      <MaxRange>90.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>2000</PrepareTime>
+	  <RepeatTime>2000</RepeatTime>
       <Projectile>
-        <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
         <Speed>200.0</Speed>
-        <Spread>3.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <Spread>10</Spread>
       </Projectile>
-      <RepeatTime>3500</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>50.0</Crush>
+          <Crush>5</Crush>
         </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>30</Range>
-        <Shape>Circular</Shape>
       </Splash>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BattalionSlots>3</BattalionSlots>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>20</food>
-      <metal>0</metal>
-      <stone>200</stone>
-      <wood>50</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>5.0</Height>
-    <Square depth="10.0" width="10.0" />
-  </Footprint>
-  <Health>
-    <Max>500</Max>
-  </Health>
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Large Class40 Gunpowder UniqueUnit</Classes>
+    <Classes datatype="tokens">Large Gunpowder UniqueUnit</Classes>
     <GenericName>Ribauldequin</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Nicknamed the Organ Gun by their enemies, the Ribauldequin was a battery of lighter cannons linked together. The weapon functioned much differently than its single barreled counterpart however; the Organ Gun would unleash a rapid fire shotgun spray over a large area rather than picking out a target. The resulting volley could indiscriminately shred apart large swaths of enemy soldiers.</History>
@@ -58,16 +34,6 @@
     <Tooltip>Queen Ambi's Unique Unit. Ranged Siege unit with very wide field of fire and Splash Damage.</Tooltip>
     <VisibleClasses datatype="tokens">Siege Ranged</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>5.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/cannon_impact.xml</attack_impact_ranged>

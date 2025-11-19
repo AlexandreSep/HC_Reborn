@@ -1,29 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>6.0</Hack>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>1</BattalionSlots>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>150</food>
-      <metal>0</metal>
-      <stone>30</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>150</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_scout">
   <Identity>
     <AIBuild>
       <MaxCopies>3</MaxCopies>
@@ -36,7 +11,7 @@
     <Icon>units/labrynna/lab_pathfinder.dds</Icon>
     <Lang>labrynna</Lang>
     <SelectionGroupName>units/labrynna/labrynna_pathfinder_b</SelectionGroupName>
-    <Tooltip>A swift Scout unit armed with a sword. Can detect Camouflaged and Stealthed unit.</Tooltip>
+    <Tooltip>A swift Scout unit armed with a sword and relatively good armour. Can detect Camouflaged and Stealthed unit.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>
@@ -63,17 +38,7 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1666</RunMultiplier>
-    <WalkSpeed>15.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/labrynna/labrynna_pathfinder_b.xml</Actor>
   </VisualActor>
-  <Visibility>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
-  </Visibility>
 </Entity>

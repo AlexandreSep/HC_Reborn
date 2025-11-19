@@ -1,33 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>13.0</Hack>
-        <Pierce>5</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>150</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>380</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_Knight">
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Knight Medium Class70 TalusKnight Darkblessing</Classes>
+    <Classes datatype="tokens">Knight Medium  TalusKnight Darkblessing</Classes>
     <GenericName>Talus Knight</GenericName>
     <History>Wealthy soldiers of the upper class, many Knights in Labrynna began to fade away as the Empire rose in power. An order of Knights banded together in Talus and were eventually absorbed into royal fealty by the Ambi family. Donning ornate but heavy armor, as well as a durable shield, the Knights were a powerful melee force and one of the last icons of Labrynna’s pre-empire era.</History>
     <Icon>units/labrynna/lab_talusknight.dds</Icon>
@@ -36,15 +10,6 @@
     <Tooltip>Strong Melee unit with a durable suit of armor. Carries a sword and shield into battle.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

@@ -1,41 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Hack>20.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
-    </Melee>
-  </Attack>
-  <Auras datatype="tokens">
-    units/commander_aura_1
-  </Auras>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>120</food>
-      <metal>20</metal>
-      <stone>75</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>450</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_commander">
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Medium Class60 Brigada Darkblessing</Classes>
+    <Classes datatype="tokens">Medium Brigada Darkblessing</Classes>
     <GenericName>Brigada</GenericName>
     <History>Masked with the face of a Golden Lynel, Brigadas were the supreme commanders of Labrynna's multiple fronts, answering only to the Queen herself. Brigadas had years of academic training, as well as personal experience in multiple skirmishes and campaigns.</History>
     <Icon>units/labrynna/lab_brigada.dds</Icon>
@@ -44,15 +10,6 @@
     <Tooltip>Labrynnian Commander unit who leads other soldiers into battle.</Tooltip>
     <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>80.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
