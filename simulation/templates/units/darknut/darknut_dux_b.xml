@@ -24,7 +24,7 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_dux_mighty</Entity>
-    <RequiredXp>100</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
   <Sound>
     <SoundGroups>
