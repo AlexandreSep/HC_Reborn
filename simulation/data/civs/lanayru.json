@@ -196,7 +196,7 @@
 		"skirmish/units/default_cavalry" :  "units/lanayru/lanayru_sentry_b",
 		"skirmish/units/default_infantry_melee_b": "units/lanayru/lanayru_handmaidenA",
 		"skirmish/units/default_infantry_ranged_b": "units/lanayru/lanayru_handmaidenA",
-		"skirmish/structures/default_house_10" : "structures/lanayru/lanayru_house"
+		"skirmish/units/special_herobonus_unit" : "skirmish/units/special_herobonus_unit_lanayru"
 	},
 	"SelectableInGameSetup": true
 }
