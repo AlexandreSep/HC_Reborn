@@ -18,7 +18,7 @@
         <wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_fortressC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/labrynna/choosehero_onox</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade Star Fort with Cannon Ramparts.</Tooltip>
       <Variant>upgrading</Variant>

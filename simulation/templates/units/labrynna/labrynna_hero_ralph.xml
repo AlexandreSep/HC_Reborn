@@ -20,12 +20,12 @@
       <Splash>
         <Damage>
           <Pierce>70</Pierce>
+		  <TrueDamage>10.0</TrueDamage>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>25</Range>
         <Shape>Linear</Shape>
       </Splash>
-      <TrueDamage>10.0</TrueDamage>
       <EffectDelay>0</EffectDelay>
       <Origin>
         <X>0</X>

@@ -37,7 +37,7 @@
     <History>The latest member of the long lasting Ambi dynasty, Queen Solado Ambi was placed on the throne shortly after her father’s death. Later in her reign she encountered Veran, whom she quickly instated as her personal advisor. Soon after Ambi ushered in a new age of expansion and formerly established the new Empire. Queen Ambi was known as a kind and gentle person during the first part of her reign over Labrynna. Shortly after Veran’s insertion into her court however, Ambi’s attitude began to degenerate. Bouts of depression seemed to overcome her, as well as a great sense of impatience for everything.</History>
     <Icon>units/labrynna/lab_hero_ambi.dds</Icon>
     <Lang>labrynna</Lang>
-    <RequiredTechnology>civ_choices/labrynna/choosehero_ambi</RequiredTechnology>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
     <SpecificName>Solado Ambi</SpecificName>
     <Tooltip>Commanding Hero unit who augments her soldiers with powerful abilities.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

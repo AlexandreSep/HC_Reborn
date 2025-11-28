@@ -44,7 +44,7 @@
     <History>Vire is a mysterious, imp like monster that does the bidding of Veran. Few know what his missions actually detail, as the beast carries out his orders in shadow and darkness. Although Vire is somewhat clownish in attitude and more likely to pull a prank than actually hurt someone, when threatened or ordered to kill he is more than capable of incinerating a victim with fireballs from his throat.</History>
     <Icon>units/labrynna/lab_hero_vire.dds</Icon>
     <Lang>labrynna</Lang>
-    <RequiredTechnology>civ_choices/labrynna/choosehero_vire</RequiredTechnology>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_onox</RequiredTechnology>
     <SelectionGroupName>units/labrynna/labrynna_vire_b</SelectionGroupName>
     <SpecificName>Vire</SpecificName>
     <Tooltip>Secondary Hero unit that attacks with magical fireballs from a distance</Tooltip>

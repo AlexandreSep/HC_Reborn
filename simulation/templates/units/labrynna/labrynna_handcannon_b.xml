@@ -37,16 +37,14 @@
       <wood>0</wood>
     </Resources>
   </Cost>
-  <Footprint>
-    <Circle radius="5.0" />
-    <Height>5.0</Height>
-  </Footprint>
   <Identity>
     <Civ>labrynna</Civ>
     <Classes datatype="tokens">Medium Sharpshooters Gunpowder Darkblessing</Classes>
     <GenericName>Hand Cannoneer</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Carrying a large and powerful handheld cannon, these heavy gunners could shell approaching armies with their explosive payloads. Although rather inaccurate, a large barrage of volley fire often did enough damage to enemy morale to send half their army into retreat.</History>
     <Icon>units/labrynna/lab_handcannon.dds</Icon>
+	<RequiredTechnology>civ_choices/labrynna/choosehero_ralph</RequiredTechnology>
     <SelectionGroupName>units/labrynna/labrynna_handcannon_b</SelectionGroupName>
     <Tooltip>Long ranged Missile unit armed with an explosive portable cannon.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

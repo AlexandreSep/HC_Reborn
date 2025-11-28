@@ -20,6 +20,8 @@
     units/merc_geru_b
     units/merc_tinsuit_b
     units/merc_wosu_b
-    units/labrynna/{civ}_vire_b</Entities>
+    units/merc_gimos_b
+	units/merc_polsvoice_b
+    units/merc_meteo_b</Entities>
   </Trainer>
 </Entity>

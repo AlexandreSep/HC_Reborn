@@ -24,7 +24,7 @@
     <History>A collection of Knights that gathered into a collective order near the rise of Labrynna's Empire, they are one of the few groups that remain somewhat separate of the empire. They are not above pay however, and the crown is more than willing to fill out their ranks with these knights at the expense of food and rupees. The Campeador are noted for their Halberds and displays a golden bear mask and a fur coat skinned from a Blue Bear; personally killing one of these beasts is a requirement to enter into their order.</History>
     <Icon>units/labrynna/lab_campeador.dds</Icon>
     <Lang>labrynna</Lang>
-    <RequiredTechnology>civ_choices/labrynna/choosehero_edgar</RequiredTechnology>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_ralph</RequiredTechnology>
     <SelectionGroupName>units/labrynna/labrynna_campeador_b</SelectionGroupName>
     <Tooltip>Edgar the Giant's Unique Unit. Strong Melee Knight armed with a halberd, excellent at fighting Creature units.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

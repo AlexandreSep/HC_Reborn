@@ -11,9 +11,8 @@
 		<stone>100</stone>
 		<wood>100</wood>
       </Cost>
-      </Cost>
       <Entity>structures/labrynna/labrynna_marketC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/labrynna/choosehero_onox</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Add Carnival to Bodega.</Tooltip>
       <Variant>upgrading</Variant>

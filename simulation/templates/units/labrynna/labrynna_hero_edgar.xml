@@ -62,7 +62,7 @@
     <History>A man of towering stature, Edgar earned his nickname for both his height and incredible strength. He earned his place as a General not for his physical prowess however, but for his battlefield strategy. Initially Homeguard to Labrynna, the Empire's expansion has seen him leading troops on frontlines, and instead of fighting off Lynels he has found himself conquering them. In recent times he has found himself supervising the young and arrogant Ralph on behalf of the Queen just as much as he has been ordered to march out further north.</History>
     <Icon>units/labrynna/lab_hero_edgar.dds</Icon>
     <Lang>labrynna</Lang>
-    <RequiredTechnology>civ_choices/labrynna/choosehero_edgar</RequiredTechnology>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_ralph</RequiredTechnology>
     <SpecificName>Edgar</SpecificName>
     <Tooltip>Towering Melee Hero armed with a long reaching glaive.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

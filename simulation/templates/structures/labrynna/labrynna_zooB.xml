@@ -27,13 +27,11 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">
-    labrynna/blainoboxer_smackdown
 	labrynna/aquadongo_driftingdongo
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
-    <Entities datatype="tokens">units/labrynna/{civ}_blainoboxer_b
-	units/labrynna/{civ}_aquadongo_b</Entities>
+    <Entities datatype="tokens">units/labrynna/{civ}_aquadongo_b</Entities>
   </Trainer>
 </Entity>

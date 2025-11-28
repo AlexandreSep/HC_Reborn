@@ -23,7 +23,7 @@
     <Icon>units/labrynna/lab_guerrilla.dds</Icon>
     <Lang>labrynna</Lang>
     <Rank>Basic</Rank>
-    <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
+	<RequiredTechnology>civ_choices/labrynna/choosehero_ralph</RequiredTechnology>
     <SelectionGroupName>units/labrynna/labrynna_guerrilla_b</SelectionGroupName>
     <Tooltip>Ralph's Unique Unit. A Stealthed Support unit that can place explosive bombs in enemy territory.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>

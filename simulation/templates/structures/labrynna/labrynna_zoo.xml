@@ -61,14 +61,14 @@
     <FoundationActor>structures/labrynna/labrynna_scaffoldE.xml</FoundationActor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">labrynna/bluecaballero_clawfiling
+    <Technologies datatype="tokens">
+	labrynna/blainoboxer_smackdown
     labrynna/onox_savageup
-
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.9</BatchTimeModifier>
-    <Entities datatype="tokens">units/labrynna/{civ}_bluecaballero_b</Entities>
+    <Entities datatype="tokens">units/labrynna/{civ}_blainoboxer_b</Entities>
     <DestinationOffset>
       <step1>
         <X>-3</X>

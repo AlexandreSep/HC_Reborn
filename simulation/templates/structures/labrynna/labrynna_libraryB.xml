@@ -11,7 +11,7 @@
 		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_libraryC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/labrynna/choosehero_ralph</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade School into University.</Tooltip>
       <Variant>upgrading</Variant>

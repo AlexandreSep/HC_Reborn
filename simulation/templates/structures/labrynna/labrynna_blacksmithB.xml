@@ -11,7 +11,7 @@
 		<wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_blacksmithC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade Cannon Foundry with Garage.</Tooltip>
       <Variant>upgrading</Variant>

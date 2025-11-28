@@ -19,22 +19,21 @@
     </Slaughter>
   </Attack>
   <Builder>
-    <Entities datatype="tokens">
-	      structures/labrynna/labrynna_civil_center
-      structures/labrynna/labrynna_house
-      structures/labrynna/labrynna_field
-    structures/labrynna/labrynna_storehouse
-    structures/labrynna/labrynna_market
-    structures/labrynna/labrynna_library
-    structures/labrynna/labrynna_science
-      structures/labrynna/labrynna_barracks
-      structures/labrynna/labrynna_zoo
-      structures/labrynna/labrynna_siegeworks
-    structures/labrynna/labrynna_blacksmith
-      structures/labrynna/labrynna_wallset_stone
-    structures/labrynna/labrynna_defense_tower
-    structures/labrynna/labrynna_fortress
-    structures/labrynna/labrynna_wonder
+    <Entities datatype="tokens">structures/labrynna/labrynna_civil_centre
+		structures/labrynna/labrynna_house
+		structures/labrynna/labrynna_field
+		structures/labrynna/labrynna_storehouse
+		structures/labrynna/labrynna_market
+		structures/labrynna/labrynna_library
+		structures/labrynna/labrynna_science
+		structures/labrynna/labrynna_barracks
+		structures/labrynna/labrynna_zoo
+		structures/labrynna/labrynna_siegeworks
+		structures/labrynna/labrynna_blacksmith
+		structures/labrynna/labrynna_wallset_stone
+		structures/labrynna/labrynna_defense_tower
+		structures/labrynna/labrynna_fortress
+		structures/labrynna/labrynna_wonder
     </Entities>
     <Rate>0.8</Rate>
   </Builder>

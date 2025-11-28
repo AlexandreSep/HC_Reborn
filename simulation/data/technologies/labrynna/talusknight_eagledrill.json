@@ -10,6 +10,6 @@
 	"modifications": [
 		{"value": "Health/Max", "multiply": 1.25}
 	],
-  "affects": [ "TalusKnight" ],
+  "affects": [ "TalusKnight", "Knight" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

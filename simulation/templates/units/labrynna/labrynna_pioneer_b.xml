@@ -32,9 +32,11 @@
     <Civ>labrynna</Civ>
     <Classes datatype="tokens">Medium BasicSoldier Darkblessing</Classes>
     <GenericName>Pioneer</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The backbone and workforce of Labrynna’s army, Pioneers operated much of the Empire’s machinery and maintained supply lines and camps. While not tasked with engaging in combat, Pioneers could construct all manner of defenses and barriers in enemy lands, as well as sapper and undermine enemy structures.</History>
     <Icon>units/labrynna/lab_pioneer.dds</Icon>
     <Lang>labrynna</Lang>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
     <SelectionGroupName>units/labrynna/labrynna_pioneer_b</SelectionGroupName>
     <Tooltip>Support unit that can build many defenses and traps outside of controlled territory, as well as repair Labrynnian buildings and engines.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>

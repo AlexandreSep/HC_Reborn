@@ -123,9 +123,6 @@
 	],
 	"CivChoices": [
 		"civ_choices/labrynna/choosehero_ralph",
-		"civ_choices/labrynna/choosehero_vire",
-		"civ_choices/labrynna/choosehero_edgar",
-		"civ_choices/labrynna/choosehero_ambi",
 		"civ_choices/labrynna/choosehero_veran",
 		"civ_choices/labrynna/choosehero_onox"
 	],
@@ -200,11 +197,11 @@
 	{
 		"skirmish/structures/default_civil_centre" : "structures/labrynna/labrynna_civil_centre",
 		"skirmish/units/default_support_female_citizen" : "units/labrynna/labrynna_tokayslaveA",
-		"skirmish/units/default_cavalry" :  "units/labrynna/labrynna_pathfinder_b",
+		"skirmish/units/default_cavalry" :  "units/labrynna/labrynna_borderguard_b",
 		"skirmish/units/default_infantry_melee_b": "units/labrynna/labrynna_tokayslaveA",
 		"skirmish/units/default_infantry_ranged_b": "units/labrynna/labrynna_tokayslaveA",
 		"skirmish/structures/default_house_10" : "structures/labrynna/labrynna_house",
 		"skirmish/units/special_starting_unit" : "skirmish/units/special_herobonus_unit_labrynna"
 	},
-	"SelectableInGameSetup": false
+	"SelectableInGameSetup": true
 }

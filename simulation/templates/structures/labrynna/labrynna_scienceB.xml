@@ -11,7 +11,7 @@
 		<wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_scienceC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Add Chemist to Science Institute.</Tooltip>
       <Variant>upgrading</Variant>

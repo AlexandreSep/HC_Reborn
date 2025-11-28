@@ -3,8 +3,8 @@
     <Ranged>
       <AttackName>Cannonballs</AttackName>
       <Damage>
-        <Crush>10.0</Crush>
-		<TrueDamage>10</TrueDamage>
+        <Crush>5</Crush>
+		<TrueDamage>5</TrueDamage>
 		<Siege>25</Siege>
       </Damage>
       <MaxRange>90.0</MaxRange>
@@ -18,7 +18,7 @@
       </Projectile>
       <Splash>
         <Damage>
-          <Crush>5</Crush>
+			<TrueDamage>5</TrueDamage>
         </Damage>
       </Splash>
     </Ranged>
@@ -30,7 +30,7 @@
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Nicknamed the Organ Gun by their enemies, the Ribauldequin was a battery of lighter cannons linked together. The weapon functioned much differently than its single barreled counterpart however; the Organ Gun would unleash a rapid fire shotgun spray over a large area rather than picking out a target. The resulting volley could indiscriminately shred apart large swaths of enemy soldiers.</History>
     <Icon>units/labrynna/lab_organgun.dds</Icon>
-    <RequiredTechnology>civ_choices/labrynna/choosehero_ambi</RequiredTechnology>
+    <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
     <Tooltip>Queen Ambi's Unique Unit. Ranged Siege unit with very wide field of fire and Splash Damage.</Tooltip>
     <VisibleClasses datatype="tokens">Siege Ranged</VisibleClasses>
   </Identity>

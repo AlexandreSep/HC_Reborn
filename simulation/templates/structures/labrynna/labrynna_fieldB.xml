@@ -20,7 +20,7 @@
         <wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_fieldC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/labrynna/choosehero_ralph</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade Slave Farm into Machine Farm.</Tooltip>
       <Variant>upgrading</Variant>

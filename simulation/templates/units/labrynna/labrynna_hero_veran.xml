@@ -25,7 +25,7 @@
       <Splash>
         <Damage>
           <Pierce>15.0</Pierce>
-          <Shadow>25.0</Shadow>
+          <Magic>25</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>

@@ -14,12 +14,14 @@
     <Actor>structures/labrynna/labrynna_zooC.xml</Actor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">labrynna/ursawagon_ursatraining
-
-</Technologies>
+    <Technologies datatype="tokens">
+	labrynna/bluecaballero_clawfiling
+	labrynna/ursawagon_ursatraining
+	</Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.5</BatchTimeModifier>
-    <Entities datatype="tokens">units/labrynna/{civ}_ursawagon_b</Entities>
+    <Entities datatype="tokens">units/labrynna/{civ}_bluecaballero_b
+	units/labrynna/{civ}_ursawagon_b</Entities>
   </Trainer>
 </Entity>

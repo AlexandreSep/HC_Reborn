@@ -7,9 +7,11 @@
     <Civ>labrynna</Civ>
     <Classes datatype="tokens">Medium Darkblessing</Classes>
     <GenericName>Pathfinder</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The eyes and ears of Labrynna’s frontiers, Pathfinders relentlessly search for new lands and resources to conquer. They are quite familiar with the lands of Labrynna and are more than prepared to face the challenges of Hyrule’s varied terrain.</History>
     <Icon>units/labrynna/lab_pathfinder.dds</Icon>
     <Lang>labrynna</Lang>
+	<RequiredTechnology>civ_choices/labrynna/choosehero_onox</RequiredTechnology>
     <SelectionGroupName>units/labrynna/labrynna_pathfinder_b</SelectionGroupName>
     <Tooltip>A swift Scout unit armed with a sword and relatively good armour. Can detect Camouflaged and Stealthed unit.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
