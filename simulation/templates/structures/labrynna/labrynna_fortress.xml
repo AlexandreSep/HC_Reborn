@@ -171,7 +171,7 @@
     <GenericName>Star Fort</GenericName>
     <History>The Empire's Star Fort was a powerful fortification from which Labrynna could hold off just about any attack. Its unique shape allowed for a much wider range of fire, a design feature that would later greatly aid their Gunners and Cannons manning the ramparts.</History>
     <Icon>structures/labrynna/lab_starfortA.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
     <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
   </Identity>
