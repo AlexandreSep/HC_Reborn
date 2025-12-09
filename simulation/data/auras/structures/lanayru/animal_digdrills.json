@@ -1,9 +1,9 @@
 {
 	"type": "global",
-	"modifications": [{"value": "Attack/Melee/Damage/Siege", "add": 5}],
+	"modifications": [{"value": "Attack/Melee/Damage/Siege", "add": 3}],
 	"affects": ["Arach"],
 	"auraName": "Tower Coordination",
-	"auraDescription": "+5 Siegedamage for Arach units",
+	"auraDescription": "+3 Siegedamage for Arach units",
 	"stackable" : true ,
 	"requiredTechnology": "lanayru/animal_digdrills"
 }

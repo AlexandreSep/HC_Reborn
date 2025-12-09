@@ -40,7 +40,7 @@
     <History>Mighty scary King Bulblin is, we Blins have legends that say he fell off a bridge and lived... twice! Ridin' on the back of the big old awesome Lord Bullbo, he goes swinging into battle to lop some heads off of the stinking Hylians and anyone who gets in the Moblin way!</History>
     <Icon>units/moblin/mob_hero_kingbulblin.dds</Icon>
     <Lang>moblin</Lang>
-    <RequiredTechnology>civ_choices/moblin/choosehero_girahim</RequiredTechnology>
+    <RequiredTechnology>civ_choices/moblin/choosehero_ghirahim</RequiredTechnology>
     <SpecificName>King Bulblin</SpecificName>
     <Tooltip>Big bad Cavalry Hero who chops up the baddies with his big axe!</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
