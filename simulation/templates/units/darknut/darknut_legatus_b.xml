@@ -63,7 +63,7 @@
     <History>Once high ranking generals in the Legion's army, the training of Legatus vanished from the ranks of their forces after Zalunbar's takeover. A fair number of these powerful warriors can still be found hidden in retirement or isolation of ruins across the desert, waiting only for the Legion to request their services once again.</History>
     <Icon>units/darknut/dar_legatus.dds</Icon>
     <Lang>darknut</Lang>
-    <RequiredTechnology>civ_choices/darknut/choosehero_senturon</RequiredTechnology>
+    <RequiredTechnology>civ_choices/darknut/choosehero_yaraxonal</RequiredTechnology>
     <SelectionGroupName>units/darknut/darknut_legatus_b</SelectionGroupName>
     <Tooltip>Senturon's Unique Unit. Powerful and heavily armored Melee unit that continues to fight as parts of its armor are damaged and broken.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
