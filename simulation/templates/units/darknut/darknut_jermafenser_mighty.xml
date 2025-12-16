@@ -7,13 +7,6 @@
     <Entity>units/darknut/darknut_jermafenser_master</Entity>
     <RequiredXp>15</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Magic>40</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
   <VisualActor>
     <Actor>units/darknut/darknut_jermafenser_mighty.xml</Actor>
   </VisualActor>

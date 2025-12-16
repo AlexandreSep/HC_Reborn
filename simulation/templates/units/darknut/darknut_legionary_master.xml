@@ -1,5 +1,6 @@
 <Entity parent="units/darknut/darknut_legionary_mighty">
   <Identity>
+	<Classes datatype="tokens">GainedLevel2</Classes>
     <GenericName>Master Legionary</GenericName>
   </Identity>
   <Promotion>

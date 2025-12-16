@@ -273,7 +273,9 @@
 		darknut/militron_militros
 		darknut/player_isdarknut
 		darknut/ruins_isdarknut
-
+		darknut/unit_promotion_1
+		darknut/unit_promotion_2
+		darknut/unit_promotion_3
 </Technologies>
   </Researcher>
   <Trainer>

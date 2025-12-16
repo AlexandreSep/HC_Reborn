@@ -1,5 +1,6 @@
 <Entity parent="units/darknut/darknut_rebonack_mighty">
   <Identity>
+	<Classes datatype="tokens">GainedLevel2</Classes>
     <GenericName>Master Rebonack</GenericName>
   </Identity>
   <Promotion>

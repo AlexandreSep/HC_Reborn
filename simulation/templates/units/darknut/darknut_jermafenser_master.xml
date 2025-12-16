@@ -1,18 +1,12 @@
 <Entity parent="units/darknut/darknut_jermafenser_mighty">
   <Identity>
+	<Classes datatype="tokens">GainedLevel2</Classes>
     <GenericName>Master Jermafenser</GenericName>
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_jermafenser_legendary</Entity>
     <RequiredXp>20</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Magic>55</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
   <VisualActor>
     <Actor>units/darknut/darknut_jermafenser_master.xml</Actor>
   </VisualActor>

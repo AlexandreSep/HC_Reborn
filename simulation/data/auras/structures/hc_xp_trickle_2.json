@@ -1,0 +1,10 @@
+{
+	"type": "garrisonedUnits",
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Promotion/TrickleRate", "add": 0.25 }
+	],
+	"auraName": "Rigorous Training",
+	"auraDescription": "Units gain experience while garrisoned inside the building.",
+	"requiredTechnology": "darknut/colosseum_sponsors"
+}

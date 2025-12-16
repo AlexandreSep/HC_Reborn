@@ -1,4 +1,8 @@
 <Entity parent="HC_template_structure_military">
+  <Auras datatype="tokens">
+    structures/hc_xp_trickle_1
+	structures/hc_xp_trickle_2
+  </Auras>
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>
@@ -15,6 +19,14 @@
     <Circle radius="21.0" />
     <Height>12.0</Height>
   </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Holounit</List>
+    <LoadingRange>10</LoadingRange>
+    <Max>6</Max>
+  </GarrisonHolder>
   <Health>
     <Max>1500</Max>
     <SpawnEntityOnDeath>rubble/debris_darknut_medium</SpawnEntityOnDeath>

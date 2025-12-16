@@ -1,5 +1,6 @@
 <Entity parent="units/darknut/darknut_doomknocker_master">
   <Identity>
+	<Classes datatype="tokens">GainedLevel3</Classes>
     <GenericName>Legendary Doomknocker</GenericName>
   </Identity>
   <Promotion disable="" />

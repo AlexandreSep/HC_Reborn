@@ -25,7 +25,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Magic>25</Magic>
+        <Magic>20</Magic>
       </Damage>
     </Entity>
   </Resistance>

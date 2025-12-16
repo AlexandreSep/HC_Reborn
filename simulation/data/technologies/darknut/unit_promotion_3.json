@@ -1,0 +1,25 @@
+{
+	"autoResearch": true,
+	"icon": "upgrade_advanced.png",
+	"tooltip": "Promotion Bonus for Darknut units",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.2, "affects": "Melee" },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.2, "affects": "Melee" },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.2, "affects": "Melee" },
+		{ "value": "Attack/Melee/Damage/TrueDamage", "add": 3, "affects": "Melee" },
+		{ "value": "Attack/Ranged/Damage/TrueDamage", "add": 3, "affects": "Ranged" },
+		{ "value": "Attack/Ranged/Spread", "multiply": 0.8, "affects": "Ranged" },
+		{"value": "Health/IdleRegenRate", "add" : 2 },
+		{ "value": "Health/Max", "multiply": 1.25 },
+		{ "value": "Loot/food", "multiply": 1.2 },
+		{ "value": "Loot/wood", "multiply": 1.2 },
+		{ "value": "Loot/stone", "multiply": 1.2 },
+		{ "value": "Loot/metal", "multiply": 1.2 },
+		{ "value": "Loot/xp", "multiply": 1.2 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 10, "affects": "Melee" },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 10, "affects": "Melee" },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 10, "affects": "Melee" },
+		{ "value": "Resistance/Entity/Damage/Magic", "add": 20, "affects": "Melee" }
+	],
+	"affects": ["GainedLevel3"]
+}

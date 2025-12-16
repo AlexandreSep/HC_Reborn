@@ -1,7 +1,4 @@
 <Entity parent="units/darknut/darknut_doomknocker_mighty">
-  <Health>
-    <Max>370</Max>
-  </Health>
   <Identity>
     <GenericName>Master Doomknocker</GenericName>
   </Identity>

@@ -1,5 +1,6 @@
 <Entity parent="units/darknut/darknut_dux_mighty">
   <Identity>
+	<Classes datatype="tokens">GainedLevel2</Classes>
     <GenericName>Master Dux</GenericName>
   </Identity>
   <Promotion>
