@@ -15,6 +15,14 @@
     <Height>5.0</Height>
     <Square depth="41.0" width="41.0" />
   </Footprint>
+    <GarrisonHolder>
+    <BuffHeal>5</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.075</EjectHealth>
+    <List datatype="tokens">Organic</List>
+    <LoadingRange>6</LoadingRange>
+    <Max>40</Max>
+  </GarrisonHolder>
   <Health>
     <Max>1500</Max>
     <SpawnEntityOnDeath>rubble/debris_sheikah_medium</SpawnEntityOnDeath>
@@ -27,9 +35,10 @@
     <Civ>sheikah</Civ>
     <Classes datatype="tokens">City</Classes>
     <GenericName>Hideout</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A hidden sanctuary where the most elite of Sheikah live and train for their craft.</History>
-    <Icon>structures/sheikah/she_hideout.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+	<Icon>structures/sheikah/she_hideout.dds</Icon>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_impa</RequiredTechnology>
     <Tooltip>Trains a selection of elite Sheikah units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>
@@ -69,11 +78,7 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/sheikah/{civ}_spy_b
-      units/sheikah/{civ}_needler_b
-	  units/sheikah/{civ}_smokescreener_b
-      units/sheikah/{civ}_assassin_b
-	  units/sheikah/{civ}_saboteur_b
+    <Entities datatype="tokens">
       units/sheikah/{civ}_executioner_b</Entities>
     <DestinationOffset>
       <step1>
@@ -103,4 +108,9 @@
       <Z>-5</Z>
     </SpawnOffset>
   </Trainer>
+    <Visibility>
+    <Stealth>
+      <RevealOnAttackDelay>3000</RevealOnAttackDelay>
+    </Stealth>
+  </Visibility>
 </Entity>

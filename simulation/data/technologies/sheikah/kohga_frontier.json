@@ -7,7 +7,7 @@
 	"icon": "sheikah/kohga_frontier.dds",
 	"researchTime": 40,
 	"tooltip": "All non-creature, non-mechanical units gain additional HP.",
-	"modifications": [{"value": "Health/Max", "multiply": 1.15}],
+	"modifications": [{"value": "Health/Max", "multiply": 1.2}],
 	"affects": ["Organic Infantry"],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

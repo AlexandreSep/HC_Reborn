@@ -1,42 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
       <AttackName>Arrows</AttackName>
-      <Damage>
-        <Pierce>12</Pierce>
-      </Damage>
-      <MaxRange>80</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
       <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <Spread>0</Spread>
       </Projectile>
-      <RepeatTime>2500</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-      <Origin>
-        <X>0</X>
-        <Y>15</Y>
-        <Z>0</Z>
-      </Origin>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>24</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>125</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>70</Max>
-  </Health>
   <Identity>
     <Civ>sheikah</Civ>
     <Classes datatype="tokens">Medium</Classes>
@@ -47,15 +17,6 @@
     <Tooltip>Archer unit armed with a bow and arrows. Deals moderate Piercing damage and has 100% accuracy.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>

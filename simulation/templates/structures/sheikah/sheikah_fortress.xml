@@ -41,7 +41,7 @@
     <BuildTime>180</BuildTime>
     <Resources>
       <stone>0</stone>
-      <wood>1000</wood>
+      <wood>500</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -161,7 +161,7 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>8000</Max>
+    <Max>4000</Max>
     <SpawnEntityOnDeath>rubble/debris_sheikah_huge</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -179,7 +179,7 @@
     <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Static depth="60.0" width="60.0" />
+    <Static depth="38.0" width="38.0" />
   </Obstruction>
   <Population>
     <Bonus>10</Bonus>
@@ -210,7 +210,12 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
+    <Entities datatype="tokens">
+	units/sheikah/{civ}_needler_b
+	units/sheikah/{civ}_smokescreener_b
+	units/sheikah/{civ}_assassin_b
+	units/sheikah/{civ}_saboteur_b
+	  </Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>

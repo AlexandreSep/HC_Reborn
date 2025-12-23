@@ -1,39 +1,26 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beast">
   <Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
       <Damage>
-        <Magic>15</Magic>
+		<Hack>2</Hack>
+        <Magic>2</Magic>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>25</food>
-      <metal>25</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="3.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>150</Max>
-  </Health>
   <Identity>
     <Civ>sheikah</Civ>
-    <Classes datatype="tokens">Small Class100</Classes>
+    <Classes datatype="tokens">Small</Classes>
     <GenericName>Moa</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The Moa are believed to be the souls of dead Sheikah that failed to attain mastery over the dark, cursed to wander the underworld. Some Sheikah Monks will use them as familiars or pets to help them see hidden things within the world.</History>
     <Icon>units/sheikah/she_moa.dds</Icon>
     <Lang>sheikah</Lang>
+	<RequiredTechnology>civ_choices/sheikah/choosehero_kogha</RequiredTechnology>
     <SelectionGroupName>units/sheikah/sheikah_moa_b</SelectionGroupName>
     <Tooltip>Floating Mage Creature with Camouflage.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>
@@ -41,10 +28,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>25.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>25.0</Pierce>
-        <Magic>3</Magic>
+        <Magic>80</Magic>
       </Damage>
     </Entity>
   </Resistance>
@@ -63,6 +47,9 @@
       <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
     </SoundGroups>
   </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+  </UnitMotion>
   <VisualActor>
     <Actor>units/sheikah/sheikah_moa_b.xml</Actor>
   </VisualActor>

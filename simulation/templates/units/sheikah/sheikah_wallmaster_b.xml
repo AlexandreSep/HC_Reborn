@@ -1,45 +1,12 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beastramsmall">
   <Attack>
     <Melee>
       <AttackName>Fist</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Structure</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Crush>18.0</Crush>
-      </Damage>
-      <Knockback>
-        <Horizontal>10</Horizontal>
-        <Vertical>10</Vertical>
-      </Knockback>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>135</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="3.0" />
-    <Height>3.0</Height>
-  </Footprint>
-  <Health>
-    <Max>380</Max>
-  </Health>
   <Identity>
     <Civ>sheikah</Civ>
-    <Classes datatype="tokens">Large Class90</Classes>
+    <Classes datatype="tokens">Large</Classes>
     <GenericName>Wallmaster</GenericName>
     <History>A monstrous disembodied hand given life by strange and evil magics, Wallmasters on their own hide in the deepest and most remote places minding their own business. The Cadre sometimes dominates these vile creatures and uses them to their own ends, be it pinning down enemy targets or smashing the walls of buildings.</History>
     <Icon>units/sheikah/she_wallmaster.dds</Icon>
@@ -49,16 +16,6 @@
     <Tooltip>Siege Creature that rips buildings apart with its hand-like body.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/wallmaster_attack.xml</attack_melee>
@@ -74,10 +31,6 @@
       <walk>actor/movement/floormaster/floormaster_crawl.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>5.0</WalkSpeed>
-  </UnitMotion>
   <Visibility>
     <Camouflage>
       <ActivateDelay>3000</ActivateDelay>

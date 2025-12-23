@@ -6,13 +6,8 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "+10% Magic armor - Organic units.",
-	"modifications": [{"value": "Resistance/Entity/Damage/Forest", "add": 3},
-					  {"value": "Resistance/Entity/Damage/Fire", "add": 3},
-					  {"value": "Resistance/Entity/Damage/Water", "add": 3},
-					  {"value": "Resistance/Entity/Damage/Shadow", "add": 3},
-					  {"value": "Resistance/Entity/Damage/Spirit", "add": 3},
-					  {"value": "Resistance/Entity/Damage/Light", "add": 3}],
-	"affects": ["Organic"],
+	"tooltip": "+50 Magic armor - Undead units.",
+	"modifications": [{"value": "Resistance/Entity/Damage/Magic", "add": 50}],
+	"affects": ["Undead"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

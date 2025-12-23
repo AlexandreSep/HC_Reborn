@@ -44,7 +44,7 @@
     <History>The older sister of Impa, long ago Purah discovered the secret of eternal youth. She has never revealed the dark art to any, and despite being well over a century old she still retains her youthful appearance. Despite her advanced age she does not appear to have amassed the wisdom of her younger sister; she has been known to be driven by petty and vain desires. Many other Sheikah find her unbearable to be around, something that Purah seems to approve of since she prefers to live as a hermit alone.</History>
     <Icon>units/sheikah/she_hero_purah.dds</Icon>
     <Lang>sheikah</Lang>
-    <RequiredTechnology>civ_choices/sheikah/choosehero_purah</RequiredTechnology>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_sheik</RequiredTechnology>
     <SpecificName>Purah</SpecificName>
     <Tooltip>Ranged Hero carrying a bow and arrow.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

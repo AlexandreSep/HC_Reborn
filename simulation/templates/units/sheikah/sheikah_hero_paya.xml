@@ -35,7 +35,7 @@
     <History>A young prodigy of Impa's, Paya lives a humble life in Kakariko Village. To others she appears to be a meek and clumsy fool, but it is merely her manner of gathering information and secrets from those that let their guard down around her. She is skilled in the art of drunken monkey and fighting with a quarterstaff.</History>
     <Icon>units/sheikah/she_hero_paya.dds</Icon>
     <Lang>sheikah</Lang>
-    <RequiredTechnology>civ_choices/sheikah/choosehero_paya</RequiredTechnology>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_impa</RequiredTechnology>
     <SpecificName>Paya</SpecificName>
     <Tooltip>Melee Hero with countering abilities.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

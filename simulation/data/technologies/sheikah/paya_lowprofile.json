@@ -2,7 +2,7 @@
 	"genericName": "Low Profile",
 	"description": "",
 	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 300},
-	"requirements": {"all": [{"tech": "civ_choices/sheikah/choosehero_paya"},{"tech": "phase_village"}, {"civ": "sheikah"}]},
+	"requirements": {"all": [{"tech": "civ_choices/sheikah/choosehero_impa"},{"tech": "phase_village"}, {"civ": "sheikah"}]},
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "sheikah/paya_lowprofile.dds",
 	"researchTime": 40,

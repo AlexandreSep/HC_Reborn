@@ -49,7 +49,7 @@
     <History>The eldest of the Nirvata Monks and the most feared sorcerer of the Cadre, Maz Koshia has long lorded over the council of Elders and influenced the Cadre for centuries. With the exception of his brief appearances at the gathering of council, Maz Koshia lives in utter isolation deep under the earth, amassing untold dark powers. He is utterly disconnected from the rest of his kind after centuries of isolation, and none know his true motives.</History>
     <Icon>units/sheikah/she_hero_mazkoshia.dds</Icon>
     <Lang>sheikah</Lang>
-    <RequiredTechnology>civ_choices/sheikah/choosehero_mazkoshia</RequiredTechnology>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_kohga</RequiredTechnology>
     <SpecificName>Maz Koshia</SpecificName>
     <Tooltip>Melee Hero that can shock and Stun enemies with her attacks.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

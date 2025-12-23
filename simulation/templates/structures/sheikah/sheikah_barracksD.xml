@@ -1,0 +1,20 @@
+<Entity parent="structures/sheikah/sheikah_barracksB">
+  <Identity>
+    <GenericName>Dry Cistern</GenericName>
+    <History>A well that descends even deeper into the earth. The crimes and sins of the Sheikah can no longer be washed away. All sorts of dark and shadowy beasts will pour out uncontested from these Cisterns.</History>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/sheikah/sheikah_cisternB.xml</Actor>
+    <FoundationActor>structures/sheikah/sheikah_scaffoldB.xml</FoundationActor>
+  </VisualActor>
+  <Trainer>
+    <BatchTimeModifier>0.4</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/sheikah/{civ}_crowling_b
+	units/sheikah/{civ}_floormaster_b
+	units/sheikah/{civ}_wallmaster_b
+	units/sheikah/{civ}_devoured_b  
+	units/sheikah/{civ}_deadhand_b
+	  </Entities>
+  </Trainer>
+</Entity>

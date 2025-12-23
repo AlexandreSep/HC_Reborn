@@ -32,7 +32,7 @@
     <Classes datatype="tokens">Town</Classes>
     <History>A secluded temple where Sheikah Monks reside when they come from their isolation under the earth. Members of various clans may come here to seek an audience with these monks.</History>
     <Icon>structures/sheikah/she_monastery.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_kohga</RequiredTechnology>
     <SpecificName>Monastery</SpecificName>
     <Tooltip>Religious building that increases the spread of your territory.</Tooltip>
     <VisibleClasses datatype="tokens">Religious</VisibleClasses>

@@ -1,28 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Dagger</AttackName>
-      <Damage>
-        <Pierce>20.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1300</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>60</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_scout">
   <Identity>
     <Civ>sheikah</Civ>
     <Classes datatype="tokens">Medium</Classes>
@@ -34,15 +10,6 @@
     <Tooltip>Scout unit that can detect Camouflaged and Stealthed units. The Spy is stealthed.</Tooltip>
     <VisibleClasses datatype="tokens">Scout</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -58,13 +25,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.0967</RunMultiplier>
-    <WalkSpeed>15.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>90</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/sheikah/sheikah_spy_b.xml</Actor>
   </VisualActor>

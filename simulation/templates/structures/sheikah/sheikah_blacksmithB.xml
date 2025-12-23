@@ -27,9 +27,10 @@
     <Civ>sheikah</Civ>
     <Classes datatype="tokens">Town</Classes>
     <GenericName>Archive</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>.</History>
     <Icon>structures/sheikah/she_archive.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_sheik</RequiredTechnology>
     <Tooltip>Researches and creates new and improved abilities.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
   </Identity>
@@ -83,7 +84,11 @@
     <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens" />
+    <Technologies datatype="tokens">
+	sheikah/lense_of_truth
+	sheikah/sheikah_sight
+	sheikah/symin_protection
+	</Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>

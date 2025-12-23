@@ -1,28 +1,22 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_crossbow">
   <Attack>
     <Ranged>
       <AttackName>Bombs</AttackName>
       <Damage>
-        <Pierce>25.0</Pierce>
-        <Magic>25</Magic>
+        <Pierce>10.0</Pierce>
+        <Magic>10.0</Magic>
+		<Siege>50</Siege>
       </Damage>
-      <MaxRange>50.0</MaxRange>
-      <MinRange>25.0</MinRange>
       <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
       <Projectile>
-        <Gravity>9.81</Gravity>
         <ImpactActorName>props/units/explosions/trebuchet_explosion.xml</ImpactActorName>
         <ImpactAnimationLifetime>0.1</ImpactAnimationLifetime>
         <Speed>50.5</Speed>
         <Spread>1.8</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>2000</RepeatTime>
       <Splash>
         <Damage>
-          <Fire>40.0</Fire>
+          <Magic>4</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -35,21 +29,9 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>50</food>
-      <metal>30</metal>
-      <stone>0</stone>
-      <wood>30</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>80</Max>
-  </Health>
   <Identity>
     <Civ>sheikah</Civ>
-    <Classes datatype="tokens">Bombs Medium Class100</Classes>
+    <Classes datatype="tokens">Bombs Medium </Classes>
     <GenericName>Saboteur</GenericName>
     <History>Sometimes a fortress really is impenetrable and cannot be scaled or sneaked into. Enter the Saboteur; the Sheikah's less subtle answer to breaking and entering. The Saboteur carries with him an explosive contraption that can destroy a building's foundations with ease.</History>
     <Icon>units/sheikah/she_saboteur.dds</Icon>
@@ -58,16 +40,6 @@
     <Tooltip>Siege unit that can plant explosives on buildings.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>35.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>25</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -83,10 +55,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>2.0</RunMultiplier>
-    <WalkSpeed>7.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/sheikah/sheikah_saboteur_b.xml</Actor>
   </VisualActor>

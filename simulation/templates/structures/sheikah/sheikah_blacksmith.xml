@@ -83,7 +83,18 @@
     <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens" />
+    <Technologies datatype="tokens">
+	sheikah/armor_she_all_01
+	sheikah/armor_she_all_02
+	sheikah/attack_she_melee_01
+	sheikah/attack_she_melee_02
+	sheikah/attack_she_ranged_01
+	sheikah/paya_lowprofile
+	sheikah/purah_hawkeye
+	sheikah/sheik_plainsight
+	sheikah/kohga_frontier
+	sheikah/impa_naldarishields
+	</Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>

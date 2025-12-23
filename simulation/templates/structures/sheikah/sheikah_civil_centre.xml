@@ -78,6 +78,7 @@
   </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/sheikah/{civ}_shadowfolkA
+		units/sheikah/{civ}_spy_b
 		units/sheikah/{civ}_hero_paya
 		units/sheikah/{civ}_hero_purah
 		units/sheikah/{civ}_hero_sheik

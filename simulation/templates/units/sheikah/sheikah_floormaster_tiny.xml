@@ -1,31 +1,7 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Claws</AttackName>
-      <Damage>
-        <Hack>7.0</Hack>
-      </Damage>
-      <MaxRange>4.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>16</BuildTime>
-    <Resources>
-      <food>15</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>25</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_beast">
   <Identity>
     <Civ>sheikah</Civ>
-    <Classes datatype="tokens">Small Class100 HiddenUI</Classes>
+    <Classes datatype="tokens">Small HiddenUI</Classes>
     <GenericName>Tiny Floormaster</GenericName>
     <History>A smaller but no less threatening variation of the Wallmaster, the Floormaster skitters around like some kind of arachnid and kills any living creature it happens upon. The Cadre will capture these monsters and use them against their enemies.</History>
     <Icon>units/sheikah/she_floormaster_tiny.dds</Icon>
@@ -34,15 +10,6 @@
     <Tooltip>Tiny Melee Creature unit.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/rat_bite.xml</attack_melee>

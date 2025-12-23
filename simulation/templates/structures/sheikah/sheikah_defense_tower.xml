@@ -62,9 +62,10 @@
     <Civ>sheikah</Civ>
     <Classes datatype="tokens">RangerWatches</Classes>
     <GenericName>Sheikah Watch Tower</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Sheikah Watch Towers often arrayed the borders of their lands and village walls, given them plenty of warning of oncoming attacks.</History>
     <Icon>structures/sheikah/she_watchtower.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_impa</RequiredTechnology>
     <Tooltip>Defensive Tower that attacks enemies with arrows.</Tooltip>
     <VisibleClasses datatype="tokens">Tower</VisibleClasses>
   </Identity>

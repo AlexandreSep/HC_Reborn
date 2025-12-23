@@ -80,10 +80,15 @@
     <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens" />
+    <Technologies datatype="tokens">
+	sheikah/gather_capacity_sheA
+	sheikah/gather_capacity_sheB
+	</Technologies>
   </Researcher>
   <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
+    <BatchTimeModifier>1</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/sheikah/{civ}_ghoulrat_b
+	</Entities>
   </Trainer>
 </Entity>

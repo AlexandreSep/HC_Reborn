@@ -34,17 +34,17 @@
     <BattalionSlots>0</BattalionSlots>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>100</food>
+      <food>25</food>
       <wood>0</wood>
       <stone>0</stone>
       <metal>0</metal>
     </Resources>
   </Cost>
   <Health>
-    <Max>50</Max>
+    <Max>30</Max>
   </Health>
   <VisualActor>
-    <Actor>units/stalfos/stalfos_stalchild_b.xml</Actor>
+    <Actor>units/stalfos/stalfos_bubble_green_b.xml</Actor>
   </VisualActor>
   <Vision>
     <Range>80</Range>
@@ -60,11 +60,11 @@
     <Rates>
       <food.bones>1</food.bones>
       <food.meat>1</food.meat>
-      <wood.rock>0.7</wood.rock>
+      <wood.rock>0.6</wood.rock>
       <wood.ruins>5</wood.ruins>
-      <stone.ore>0.35</stone.ore>
+      <stone.ore>0.5</stone.ore>
       <stone.ruins>2</stone.ruins>
-      <metal.rupees>0.35</metal.rupees>
+      <metal.rupees>0.5</metal.rupees>
     </Rates>
     <Capacities>
       <food>8</food>

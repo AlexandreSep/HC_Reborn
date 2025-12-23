@@ -1,0 +1,27 @@
+<Entity parent="structures/sheikah/sheikah_house">
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <metal>100</metal>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <FriendlyFire>false</FriendlyFire>
+    <Range>30</Range>
+    <Damage>
+      <Magic>200.0</Magic>
+    </Damage>
+  </DeathDamage>
+  <Health>
+    <Max>1600</Max>
+    <SpawnEntityOnDeath>rubble/debris_sheikah_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <RequiredTechnology>civ_choices/sheikah/choosehero_kohga</RequiredTechnology>
+  </Identity>
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
+</Entity>

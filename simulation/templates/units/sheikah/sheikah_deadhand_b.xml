@@ -1,32 +1,21 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_monster">
   <Attack>
     <Melee>
       <AttackName>Fangs</AttackName>
       <Damage>
-        <Pierce>14</Pierce>
-        <Magic>5</Magic>
+        <Pierce>25</Pierce>
+        <Magic>25</Magic>
+		<Crush>0</Crush>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <RepeatTime>2000</RepeatTime>
       <Stun>
         <Chance>25</Chance>
         <Time>3000</Time>
       </Stun>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>100</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Health>
-    <Max>380</Max>
     <SpawnOnInterval>
       <one>
         <Interval>10000</Interval>
@@ -40,7 +29,7 @@
   </Health>
   <Identity>
     <Civ>sheikah</Civ>
-    <Classes datatype="tokens">-Organic Undead Large Class70</Classes>
+    <Classes datatype="tokens">-Organic Undead Large</Classes>
     <GenericName>Deadhand</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>The origin of Dead Hands seem to be shrouded in mystery, though some legends say they are those executed wrongfully by the Cadre who have risen to take revenge. The Dead Hand itself is a patient and slow moving monstrosity that is lacking its hands. They will rip apart their victims with their large mouths, leaving the corpse behind so that a large worm like arm and hand may grow from it.</History>
@@ -51,17 +40,6 @@
     <Tooltip>Large Creature unit that can summon hordes of disembodied arms to attack its targets.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>70.0</Pierce>
-        <Magic>5</Magic>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/natural/deadhand_bite.xml</attack_ranged>
@@ -79,7 +57,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.2</RunMultiplier>
-    <WalkSpeed>2.5</WalkSpeed>
+    <WalkSpeed>5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/sheikah/sheikah_deadhand_b.xml</Actor>

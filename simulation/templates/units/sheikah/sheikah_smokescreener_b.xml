@@ -1,22 +1,14 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
       <AttackName>Deku Nuts</AttackName>
       <Damage>
-        <Crush>7</Crush>
+        <Crush>3</Crush>
+		<Pierce>3</Pierce>
       </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <MaxRange>30</MaxRange>
+      <MinRange>0</MinRange>
       <PrepareTime>1000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>4000</RepeatTime>
       <SpawnEntityOnImpact>
         <SpawnNumberMax>1</SpawnNumberMax>
         <SpawnNumberMin>1</SpawnNumberMin>
@@ -32,18 +24,6 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>25</food>
-      <metal>10</metal>
-      <stone>0</stone>
-      <wood>25</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>70</Max>
-  </Health>
   <Identity>
     <Civ>sheikah</Civ>
     <Classes datatype="tokens">Medium</Classes>
@@ -56,15 +36,6 @@
     <Tooltip>Support unit that disrupts enemy movement and accuracy.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>30.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/natural/dekunut_impact.xml</attack_impact_ranged>
@@ -81,10 +52,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/sheikah/sheikah_smokescreener_b.xml</Actor>
   </VisualActor>

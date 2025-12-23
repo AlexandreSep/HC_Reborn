@@ -118,12 +118,9 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/sheikah/choosehero_paya",
-		"civ_choices/sheikah/choosehero_purah",
 		"civ_choices/sheikah/choosehero_sheik",
 		"civ_choices/sheikah/choosehero_kohga",
-		"civ_choices/sheikah/choosehero_impa",
-		"civ_choices/sheikah/choosehero_mazkoshia"
+		"civ_choices/sheikah/choosehero_impa"
 	],
 	"TeamBonuses": [
 		{
@@ -200,5 +197,5 @@
 		"skirmish/units/default_infantry_ranged_b": "units/sheikah/sheikah_hawkeye_b",
 		"skirmish/structures/default_house_10": "structures/sheikah/sheikah_house"
 	},
-	"SelectableInGameSetup": false
+	"SelectableInGameSetup": true
 }

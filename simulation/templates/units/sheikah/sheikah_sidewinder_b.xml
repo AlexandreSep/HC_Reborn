@@ -1,37 +1,7 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <Bonus1>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2</Multiplier>
-        </Bonus1>
-      </Bonuses>
-      <Damage>
-        <Pierce>18</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>125</food>
-      <metal>0</metal>
-      <stone>100</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>325</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_cavalryanti">
   <Identity>
     <Civ>sheikah</Civ>
-    <Classes datatype="tokens">Large Class100</Classes>
+    <Classes datatype="tokens">Large</Classes>
     <GenericName>Sidewinder</GenericName>
     <History>The legendary Sidewinders serve as horsemen and raiders for their respective clans. Despite the fact they ride on horses, many stories tell of the Sidewinders appearing suddenly without any warning of their approach.</History>
     <Icon>units/sheikah/she_sidewinder.dds</Icon>
@@ -41,16 +11,6 @@
     <Tooltip>Fast moving Melee Cavalry unit armed with crescent spears.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

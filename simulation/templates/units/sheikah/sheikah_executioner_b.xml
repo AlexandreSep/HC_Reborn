@@ -1,33 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>20.0</Hack>
-        <Pierce>10</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>50</metal>
-      <stone>25</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>120</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_Knight">
   <Identity>
     <Civ>sheikah</Civ>
-    <Classes datatype="tokens">Medium Class70</Classes>
+    <Classes datatype="tokens">Medium</Classes>
     <GenericName>Executioner</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Wielding a large butcher's blade, the Executioner plays an important role in Sheikah culture. As their name implies, they execute the criminal individuals of the Cadre that step out of line or fall too far into the darkness. In battle the Executioner can use their two handed sword to damage enemy armors.</History>
@@ -38,16 +12,6 @@
     <Tooltip>Strong Melee unit that ingores and damages enemy armor.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>60.0</Hack>
-        <Pierce>60.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -63,10 +27,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/sheikah/sheikah_executioner_b.xml</Actor>
   </VisualActor>

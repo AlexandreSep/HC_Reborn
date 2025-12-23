@@ -2,7 +2,7 @@
 	"genericName": "Cado's Bowcraft",
 	"description": "",
 	"cost": {"food": 100, "wood": 250, "stone": 100, "metal": 150},
-	"requirements": {"all": [{"tech": "civ_choices/sheikah/choosehero_purah"},{"tech": "phase_town"}, {"civ": "sheikah"}]},
+	"requirements": {"all": [{"tech": "civ_choices/sheikah/choosehero_sheik"},{"tech": "phase_town"}, {"civ": "sheikah"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "sheikah/purah_hawkeye.dds",
 	"researchTime": 45,

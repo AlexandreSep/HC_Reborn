@@ -69,11 +69,10 @@
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/sheikah/{civ}_ghoulrat_b
-      units/sheikah/{civ}_wallmaster_b
-	  units/sheikah/{civ}_floormaster_b
-      units/sheikah/{civ}_crowling_b
-	  units/sheikah/{civ}_devoured_b
-      units/sheikah/{civ}_deadhand_b</Entities>
+	units/sheikah/{civ}_moa_b
+	units/sheikah/{civ}_floormaster_b
+	units/sheikah/{civ}_wallmaster_b
+	units/sheikah/{civ}_devoured_b</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
