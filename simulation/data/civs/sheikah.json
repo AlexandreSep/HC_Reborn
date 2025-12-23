@@ -193,8 +193,8 @@
 		"skirmish/structures/default_civil_centre": "structures/sheikah/sheikah_civil_centre",
 		"skirmish/units/default_support_female_citizen": "units/sheikah/sheikah_shadowfolkA",
 		"skirmish/units/default_cavalry": "units/sheikah/sheikah_spy_b",
-		"skirmish/units/default_infantry_melee_b": "units/sheikah/sheikah_trainee_b",
-		"skirmish/units/default_infantry_ranged_b": "units/sheikah/sheikah_hawkeye_b",
+		"skirmish/units/default_infantry_melee_b": "units/sheikah/sheikah_shadowfolkA",
+		"skirmish/units/default_infantry_ranged_b": "units/sheikah/sheikah_shadowfolkA",
 		"skirmish/structures/default_house_10": "structures/sheikah/sheikah_house"
 	},
 	"SelectableInGameSetup": true

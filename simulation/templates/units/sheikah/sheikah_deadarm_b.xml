@@ -13,6 +13,9 @@
       </Stun>
     </Melee>
   </Attack>
+  <Health>
+    <Max>25</Max>
+  </Health>
   <Identity>
     <Civ>sheikah</Civ>
     <Classes datatype="tokens">Small -Organic Undead HiddenUI</Classes>

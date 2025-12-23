@@ -1,6 +1,7 @@
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
+	<Territory>own neutral</Territory>
   </BuildRestrictions>
   <Cost>
     <BuildTime>50</BuildTime>
