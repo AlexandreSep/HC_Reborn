@@ -13,7 +13,7 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_mazura_mighty</Entity>
-    <RequiredXp>20</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
   <Sound>
     <SoundGroups>

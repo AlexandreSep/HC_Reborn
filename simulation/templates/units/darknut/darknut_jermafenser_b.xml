@@ -20,7 +20,7 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_jermafenser_mighty</Entity>
-    <RequiredXp>100</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
   <Resistance>
     <Entity>

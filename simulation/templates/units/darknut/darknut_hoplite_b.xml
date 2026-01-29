@@ -21,7 +21,7 @@
   </Identity>
   <Promotion>
     <Entity>units/darknut/darknut_hoplite_mighty</Entity>
-    <RequiredXp>9999</RequiredXp>
+    <RequiredXp>10</RequiredXp>
   </Promotion>
   <Sound>
     <SoundGroups>
