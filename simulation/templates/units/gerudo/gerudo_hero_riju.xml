@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_heavy_cavalry|hero_ranged|light_archer">
+<Entity parent="HC_template_hero_cavalry|hero_ranged">
   <Attack>
     <Ranged>
       <AttackName>Arrows</AttackName>

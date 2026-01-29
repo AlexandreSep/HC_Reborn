@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_heavy_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry_heavy">
   <Attack>
     <Melee disable="" />
     <Ranged>

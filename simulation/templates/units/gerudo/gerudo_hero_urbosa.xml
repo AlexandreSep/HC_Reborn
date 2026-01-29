@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_heavy_infantry|shield|hero_melee|heavy_infantry">
+<Entity parent="HC_template_hero_infantry|hero_melee">
   <Attack>
     <Melee>
       <AttackName>Scimitar</AttackName>

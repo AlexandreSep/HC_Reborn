@@ -1,7 +1,0 @@
-<Entity parent="HC_template_unit_auxiliary">
-  <Identity>
-    <Classes datatype="tokens">Siege</Classes>
-    <GenericName>Siege</GenericName>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
-  </Identity>
-</Entity>
