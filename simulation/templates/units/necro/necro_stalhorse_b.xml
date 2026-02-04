@@ -1,0 +1,32 @@
+<Entity parent="classes/HC_template_unit_cavalry">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath disable="" />
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Necro</Classes>
+    <GenericName>Stalhorse</GenericName>
+    <History>Animated mounts of dead horses, these swift running undead carry Stalfos warriors into battle. Their masters often use these beasts to precede their invasions; raiding farmers and smaller targets to leave behind fresh corpses for the army to raise upon arrival.</History>
+    <Icon>units/stalfos/sta_stalhorse.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_stalhorse_b</SelectionGroupName>
+    <Tooltip>Lightly armored cavalry unit armed with a sword.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/stalfos/stalhorse/stalhorse_death.xml</death>
+      <order_attack>voice/stalfos/stalhorse/stalhorse_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/stalhorse/stalhorse_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/stalhorse/stalhorse_gather.xml</order_gather>
+      <order_repair>voice/stalfos/stalhorse/stalhorse_repair.xml</order_repair>
+      <order_walk>voice/stalfos/stalhorse/stalhorse_walk.xml</order_walk>
+      <run>actor/movement/horse/horse_footsteps.xml</run>
+      <select>voice/stalfos/stalhorse/stalhorse_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/horse/horse_footsteps.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_stalhorse_b.xml</Actor>
+  </VisualActor>
+</Entity>

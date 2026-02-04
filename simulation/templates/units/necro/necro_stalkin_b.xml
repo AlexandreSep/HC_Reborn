@@ -1,0 +1,32 @@
+<Entity parent="classes/HC_template_unit_spearman">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath disable="" />
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Necro</Classes>
+    <GenericName>Stalkin</GenericName>
+    <History>Stalkin are the collective name of skeletal warriors raised from the corpses of small sized enemies. While their appearance takes on the form of their original skeleton, Stalkin usually all behave the same way; mindlessly shuffling towards their targets and stabbing them with any sharp instrument they can get their hands on.</History>
+    <Icon>units/stalfos/sta_stalkin.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_stalkin_b</SelectionGroupName>
+    <Tooltip>Small spear unit that is raised from the corpses of Small sized creatures. Effective against cavalry.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/stalfos/undead_small/undeadsmall_death.xml</death>
+      <order_attack>voice/stalfos/undead_small/undeadsmall_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/undead_small/undeadsmall_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/undead_small/undeadsmall_gather.xml</order_gather>
+      <order_repair>voice/stalfos/undead_small/undeadsmall_repair.xml</order_repair>
+      <order_walk>voice/stalfos/undead_small/undeadsmall_walk.xml</order_walk>
+      <run>actor/movement/stalchild/stalchild_step.xml</run>
+      <select>voice/stalfos/undead_small/undeadsmall_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/stalchild/stalchild_step.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_stalkin_generic.xml</Actor>
+  </VisualActor>
+</Entity>

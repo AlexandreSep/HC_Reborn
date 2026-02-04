@@ -35,6 +35,13 @@
   </Footprint>
   <Health>
     <Max>2000</Max>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>0</Chance>
+      <OwnerID>0</OwnerID>
+      <SpawnNumberMax>2</SpawnNumberMax>
+      <SpawnNumberMin>3</SpawnNumberMin>
+      <Template>units/necro/necro_stalgiant_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
   </Health>
 	<Identity>
     <Classes datatype="tokens">Organic</Classes>

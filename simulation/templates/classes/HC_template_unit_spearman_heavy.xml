@@ -28,6 +28,13 @@
   </Cost>
   <Health>
     <Max>300</Max>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>0</Chance>
+      <OwnerID>0</OwnerID>
+      <SpawnNumberMax>2</SpawnNumberMax>
+      <SpawnNumberMin>2</SpawnNumberMin>
+      <Template>units/necro/necro_stalkin_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
   </Health>
   <Identity>
     <Classes datatype="tokens">Organic</Classes>

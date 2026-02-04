@@ -1,0 +1,32 @@
+<Entity parent="classes/HC_template_unit_beast">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath disable="" />
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Necro</Classes>
+    <GenericName>Stalhound</GenericName>
+    <History>Stalhounds are the corpses of canine creatures that once served as guard dogs for their masters in life. The resume their duties even in undeath, guarding graveyards and other locations important to the raising of more dead. Eager to please their masters, Stalhounds are one of the few undead abominations that are able to run swiftly as they did in life.</History>
+    <Icon>units/stalfos/sta_stalhound.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_stalhound_b</SelectionGroupName>
+    <Tooltip>A swift moving creature unit that mauls victims with its claws.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/stalhound_bite.xml</attack_melee>
+      <death>voice/stalfos/stalhound/stalhound_death.xml</death>
+      <order_attack>voice/stalfos/stalhound/stalhound_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/stalhound/stalhound_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/stalhound/stalhound_gather.xml</order_gather>
+      <order_repair>voice/stalfos/stalhound/stalhound_repair.xml</order_repair>
+      <order_walk>voice/stalfos/stalhound/stalhound_walk.xml</order_walk>
+      <run>actor/movement/stalfos_med/stalfosmed_step.xml</run>
+      <select>voice/stalfos/stalhound/stalhound_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/stalfos_med/stalfosmed_step.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_stalhound_b.xml</Actor>
+  </VisualActor>
+</Entity>

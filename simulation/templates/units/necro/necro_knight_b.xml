@@ -1,0 +1,32 @@
+<Entity parent="classes/HC_template_unit_Knight">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath disable="" />
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Necro</Classes>
+    <GenericName>Stalknight</GenericName>
+    <History>Once noble lords and warriors in life, Stalfos Knights are the skeletons of those that abandoned their codes in exchange for immortality. Indeed they received what they sought, though as slaves to their necromantic masters. All should beware the Stalfos Knight in combat: they have had centuries to hone their skills that were already formidable in life.</History>
+    <Icon>units/stalfos/sta_knight.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_knight_b</SelectionGroupName>
+    <Tooltip>Heavily armored infantry unit. Very resistant to non-magic damage and Knockback. A powerful all-round late game unit.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/stalfos/knight/knight_death.xml</death>
+      <order_attack>voice/stalfos/knight/knight_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/knight/knight_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/knight/knight_gather.xml</order_gather>
+      <order_repair>voice/stalfos/knight/knight_repair.xml</order_repair>
+      <order_walk>voice/stalfos/knight/knight_walk.xml</order_walk>
+      <run>actor/movement/stalfos_med/stalfosmed_step.xml</run>
+      <select>voice/stalfos/knight/knight_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/stalfos_med/stalfosmed_step.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_knight_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -37,6 +37,13 @@
   </Cost>
   <Health>
     <Max>1000</Max>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>0</Chance>
+      <OwnerID>0</OwnerID>
+      <SpawnNumberMax>2</SpawnNumberMax>
+      <SpawnNumberMin>2</SpawnNumberMin>
+      <Template>units/necro/necro_stalgiant_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
   </Health>
   <Identity>
     <Classes datatype="tokens">Monster</Classes>

@@ -1,0 +1,32 @@
+<Entity parent="classes/HC_template_unit_commander">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath disable="" />
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Necro</Classes>
+    <GenericName>Stalmaster</GenericName>
+    <History>The pinnacle of undead warriors, the Stalmasters are champions of their necromantic lords. Wielding four weapons in their many hands, Stalmasters have had centuries to perfect their fighting skills with a wide variety of implements. The sight of a Stalmaster can only mean one thing: his large army is about to invade.</History>
+    <Icon>units/stalfos/sta_stalmaster.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_stalmaster_b</SelectionGroupName>
+    <Tooltip>Heavily armored Infantry Commander unit. Leads other Stalfos into battle.</Tooltip>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/stalmaster_attack.xml</attack_melee>
+      <attack_ranged>attack/weapon/stalmaster_attack.xml</attack_ranged>
+      <death>voice/stalfos/stalmaster/stalmaster_death.xml</death>
+      <order_attack>voice/stalfos/stalmaster/stalmaster_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/stalmaster/stalmaster_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/stalmaster/stalmaster_gather.xml</order_gather>
+      <order_repair>voice/stalfos/stalmaster/stalmaster_repair.xml</order_repair>
+      <order_walk>voice/stalfos/stalmaster/stalmaster_walk.xml</order_walk>
+      <run>actor/movement/darknut/darknut_armor_step.xml</run>
+      <select>voice/stalfos/stalmaster/stalmaster_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/darknut/darknut_armor_step.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_stalmaster_b.xml</Actor>
+  </VisualActor>
+</Entity>

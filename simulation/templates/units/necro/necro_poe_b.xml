@@ -1,0 +1,47 @@
+<Entity parent="classes/HC_template_unit_mage">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath disable="" />
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Necro</Classes>
+    <GenericName>Poe</GenericName>
+    <History>The Poe ghosts never left the earthly realm but remained restlessly by their own graves. When the graves were disturbed, the ghosts would appear, swinging their spirit lanterns to attack their living foes. Many dark necromancers would seek out and bind these tortured souls to their causes.</History>
+    <Icon>units/stalfos/sta_poe.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_poe_b</SelectionGroupName>
+    <Tooltip>Floating unit with Camouflage.</Tooltip>
+    <VisibleClasses datatype="tokens">
+    </VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>true</Floating>
+    <TurnRate>3.25</TurnRate>
+  </Position>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/poe_lantern.xml</attack_melee>
+      <attack_ranged>attack/weapon/poe_lantern.xml</attack_ranged>
+      <death>voice/stalfos/poe/poe_death.xml</death>
+      <order_attack>voice/stalfos/poe/poe_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/poe/poe_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/poe/poe_gather.xml</order_gather>
+      <order_repair>voice/stalfos/poe/poe_repair.xml</order_repair>
+      <order_walk>voice/stalfos/poe/poe_walk.xml</order_walk>
+      <run>actor/movement/poe/poe_hover.xml</run>
+      <select>voice/stalfos/poe/poe_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/poe/poe_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+  </UnitMotion>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_poe_b.xml</Actor>
+  </VisualActor>
+</Entity>

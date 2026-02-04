@@ -1,0 +1,47 @@
+<Entity parent="classes/HC_template_unit_mage_heavy">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath disable="" />
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Necro</Classes>
+    <GenericName>Big Poe</GenericName>
+    <History>These large spectral menaces have taken to spreading their misery far beyond their grave and seek to drag the living into Poehood. Like their smaller counterpart, the Big Poes will relentlessly bash attackers with their lanterns. Their victims slain, the Big Poe will drag their spirits from their bodies and bring about more Poes.</History>
+    <Icon>units/stalfos/sta_bigpoe.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_poebig_b</SelectionGroupName>
+    <Tooltip>Floating unit with Camouflage. Can raise Poes from the corpses of fallen enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">
+    </VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>true</Floating>
+    <TurnRate>3.25</TurnRate>
+  </Position>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/poe_lantern.xml</attack_melee>
+      <attack_ranged>attack/weapon/poe_lantern.xml</attack_ranged>
+      <death>voice/stalfos/bigpoe/bigpoe_death.xml</death>
+      <order_attack>voice/stalfos/bigpoe/bigpoe_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/bigpoe/bigpoe_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/bigpoe/bigpoe_gather.xml</order_gather>
+      <order_repair>voice/stalfos/bigpoe/bigpoe_repair.xml</order_repair>
+      <order_walk>voice/stalfos/bigpoe/bigpoe_walk.xml</order_walk>
+      <run>actor/movement/poe/poe_hover.xml</run>
+      <select>voice/stalfos/bigpoe/bigpoe_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/poe/poe_hover.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>hover</PassabilityClass>
+  </UnitMotion>
+  <Visibility>
+    <Camouflage>
+      <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_poebig_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,32 @@
+<Entity parent="classes/HC_template_unit_swordsman">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath disable="" />
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">Necro</Classes>
+    <GenericName>Staltroop</GenericName>
+    <History>Scores of these infantry serve as the primary warrior deployed by the Kingdom of Hyrule. Funded by the Royal family, these soldiers have basic combat training and are provided with standardized armor and weaponry.</History>
+    <Icon>units/stalfos/sta_staltroop.dds</Icon>
+    <SelectionGroupName>units/stalfos/stalfos_staltroop_b</SelectionGroupName>
+    <Tooltip>Light unit armed with a sword and shield. Deals Hacking damage.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/stalfos/undead_medium/undeadmed_death.xml</death>
+      <order_attack>voice/stalfos/undead_medium/undeadmed_attack.xml</order_attack>
+      <order_garrison>voice/stalfos/undead_medium/undeadmed_garrison.xml</order_garrison>
+      <order_gather>voice/stalfos/undead_medium/undeadmed_gather.xml</order_gather>
+      <order_repair>voice/stalfos/undead_medium/undeadmed_repair.xml</order_repair>
+      <order_walk>voice/stalfos/undead_medium/undeadmed_walk.xml</order_walk>
+      <run>actor/movement/stalfos_med/stalfosmed_step.xml</run>
+      <select>voice/stalfos/undead_medium/undeadmed_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/stalfos_med/stalfosmed_step.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_staltroop_generic.xml</Actor>
+  </VisualActor>
+</Entity>
