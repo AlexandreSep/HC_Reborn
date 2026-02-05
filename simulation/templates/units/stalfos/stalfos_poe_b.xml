@@ -1,36 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
+<Entity parent="classes/HC_template_unit_mage">
+   <Attack>
+    <Ranged>
       <AttackName>Lantern</AttackName>
-      <Damage>
-        <Magic>15</Magic>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
+    </Ranged>
   </Attack>
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>75</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="3.0" />
-    <Height>7.0</Height>
-  </Footprint>
-  <Health>
-    <Max>150</Max>
-  </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small Class100</Classes>
+    <Classes datatype="tokens">Small</Classes>
     <GenericName>Poe</GenericName>
     <History>The Poe ghosts never left the earthly realm but remained restlessly by their own graves. When the graves were disturbed, the ghosts would appear, swinging their spirit lanterns to attack their living foes. Many dark necromancers would seek out and bind these tortured souls to their causes.</History>
     <Icon>units/stalfos/sta_poe.dds</Icon>
@@ -43,17 +19,6 @@
     <Floating>true</Floating>
     <TurnRate>3.25</TurnRate>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>25.0</Hack>
-        <Pierce>25.0</Pierce>
-        <Crush>25.0</Crush>
-        <Hack>25.0</Hack>
-        <Magic>3</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/poe_lantern.xml</attack_melee>
@@ -72,8 +37,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
-    <RunMultiplier>1.4285</RunMultiplier>
-    <WalkSpeed>4.5</WalkSpeed>
   </UnitMotion>
   <Visibility>
     <Camouflage>

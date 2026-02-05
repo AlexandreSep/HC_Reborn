@@ -22,14 +22,14 @@
     <BattalionSlots>0</BattalionSlots>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>25</food>
-      <metal>75</metal>
+      <food>200</food>
+      <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
-    <Max>100</Max>
+    <Max>500</Max>
   </Health>
   <Identity>
     <Civ>stalfos</Civ>
@@ -69,7 +69,7 @@
   </Sound>
   <UnitMotion>
     <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>3.0</WalkSpeed>
+    <WalkSpeed>6.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/stalfos/stalfos_redead_b.xml</Actor>

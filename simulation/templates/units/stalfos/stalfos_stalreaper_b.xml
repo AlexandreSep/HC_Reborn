@@ -1,49 +1,17 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_mage_heavy">
   <Attack>
     <Ranged>
       <AttackName>Blue Fire</AttackName>
       <Damage>
-        <Magic>30</Magic>
+        <Siege>50</Siege>
       </Damage>
       <MaxRange>100</MaxRange>
-      <MinRange>25.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1700</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>15.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <Splash>
-        <Damage>
-          <Fire>20</Fire>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>5</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-      <EffectDelay>0</EffectDelay>
+      <PreferredClasses datatype="tokens">Infantry Structures</PreferredClasses>
     </Ranged>
   </Attack>
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>30</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Large Fire Class80</Classes>
+    <Classes datatype="tokens">Large Fire</Classes>
     <GenericName>Stalreaper</GenericName>
     <History>In some cultures these undead mages are known as the Blue Stalfos, but in all myths they play the same role: reaping the souls of the living to add to their growing armies. The Stalreapers seem to be powerful mages with command over Blue Fire, and perhaps were well studied war wizards during their old lifetimes. They can torch just about anything with their burning attacks, as well as defend themselves with their scythes in a melee.</History>
     <Icon>units/stalfos/sta_stalreaper.dds</Icon>
@@ -52,16 +20,6 @@
     <Tooltip>Hovering Mage unit that attacks enemies with blue fireballs from a distance.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/magic/immortal_fire_impact.xml</attack_impact_ranged>
@@ -78,10 +36,6 @@
       <walk>actor/movement/immortal/immortal_hover.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2</RunMultiplier>
-    <WalkSpeed>4.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/stalfos/stalfos_deathstal_b.xml</Actor>
   </VisualActor>

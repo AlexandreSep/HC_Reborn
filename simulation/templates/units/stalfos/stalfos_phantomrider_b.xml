@@ -1,30 +1,9 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_cavalryanti_heavy">
   <Attack>
     <Melee>
       <AttackName>Ghost Lance</AttackName>
-      <Damage>
-        <Pierce>15.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
-      <TrueDamage>16</TrueDamage>
     </Melee>
   </Attack>
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>35</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>100</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>125</Max>
-  </Health>
   <Identity>
     <Classes datatype="tokens">
     </Classes>
@@ -38,16 +17,6 @@
   <Position>
     <Floating>true</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>60.0</Hack>
-        <Pierce>60.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/phantomrider_lance.xml</attack_melee>
@@ -65,8 +34,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
-    <RunMultiplier>1.4705</RunMultiplier>
-    <WalkSpeed>15</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/stalfos/stalfos_phantom_b.xml</Actor>

@@ -1,15 +1,5 @@
-<Entity parent="HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_creature">
   <Attack>
-    <Melee>
-      <AttackName>Fangs</AttackName>
-      <Damage>
-        <Hack>7.0</Hack>
-      </Damage>
-      <MaxRange>4.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
-    </Melee>
     <Slaughter>
       <RepeatTime>1000</RepeatTime>
       <AttackName>TBD.</AttackName>
@@ -19,22 +9,9 @@
       <MaxRange>4.0</MaxRange>
     </Slaughter>
   </Attack>
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>16</BuildTime>
-    <Resources>
-      <food>125</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>25</Max>
-  </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small Class100</Classes>
+    <Classes datatype="tokens">Small</Classes>
     <GenericName>Stalhound</GenericName>
     <History>Stalhounds are the corpses of canine creatures that once served as guard dogs for their masters in life. The resume their duties even in undeath, guarding graveyards and other locations important to the raising of more dead. Eager to please their masters, Stalhounds are one of the few undead abominations that are able to run swiftly as they did in life.</History>
     <Icon>units/stalfos/sta_stalhound.dds</Icon>
@@ -42,15 +19,6 @@
     <Tooltip>A swift moving creature unit that mauls victims with its claws.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/stalhound_bite.xml</attack_melee>
@@ -66,13 +34,17 @@
       <walk>actor/movement/stalfos_med/stalfosmed_step.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.2222</RunMultiplier>
-    <WalkSpeed>12.0</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
+  <ResourceGatherer>
+    <MaxDistance>5.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.bones>0.5</food.bones>
+      <food.meat>1</food.meat>
+    </Rates>
+    <Capacities>
+      <food>12</food>
+    </Capacities>
+  </ResourceGatherer>
   <VisualActor>
     <Actor>units/stalfos/stalfos_stalhound_b.xml</Actor>
   </VisualActor>

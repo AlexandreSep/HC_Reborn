@@ -1,16 +1,4 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fangs</AttackName>
-      <Damage>
-        <Hack>7.0</Hack>
-      </Damage>
-      <MaxRange>4.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_creature">
   <Cost>
     <BattalionSlots>0</BattalionSlots>
     <BuildTime>16</BuildTime>
@@ -26,7 +14,7 @@
   </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small Class100</Classes>
+    <Classes datatype="tokens">Small</Classes>
     <GenericName>Bubble</GenericName>
     <History>Bubbles are small floating skulls of which their complete body has been lost to time. Sprouting wings from the sides of their desiccated heads, Bubbles are able to hover about and will viciously try to bite and tear the flesh from their victims.</History>
     <Icon>units/stalfos/sta_bubble.dds</Icon>
@@ -39,15 +27,6 @@
     <Floating>true</Floating>
     <TurnRate>3.25</TurnRate>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>10.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/bubble_bite.xml</attack_melee>
@@ -65,12 +44,7 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
-    <RunMultiplier>1.2222</RunMultiplier>
-    <WalkSpeed>10.0</WalkSpeed>
   </UnitMotion>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/stalfos/stalfos_bubble_b.xml</Actor>
   </VisualActor>

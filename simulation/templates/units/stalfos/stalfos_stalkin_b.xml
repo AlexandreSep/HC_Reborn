@@ -1,38 +1,7 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <Damage>
-        <Pierce>6.0</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>125</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>75</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>35</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_spearman">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small Class100</Classes>
+    <Classes datatype="tokens">Small</Classes>
     <GenericName>Stalkin</GenericName>
     <History>Stalkin are the collective name of skeletal warriors raised from the corpses of small sized enemies. While their appearance takes on the form of their original skeleton, Stalkin usually all behave the same way; mindlessly shuffling towards their targets and stabbing them with any sharp instrument they can get their hands on.</History>
     <Icon>units/stalfos/sta_stalkin.dds</Icon>
@@ -40,16 +9,6 @@
     <Tooltip>Small spear unit that is raised from the corpses of Small sized creatures. Effective against cavalry.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>25</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -65,13 +24,6 @@
       <walk>actor/movement/stalchild/stalchild_step.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.3636</RunMultiplier>
-    <WalkSpeed>4.5</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>70</Range>
-  </Vision>
   <VisualActor>
     <Actor>units/stalfos/stalfos_stalkin_generic.xml</Actor>
   </VisualActor>

@@ -1,33 +1,7 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>10.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1600</RepeatTime>
-      <TrueDamage>12</TrueDamage>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>35</BuildTime>
-    <Resources>
-      <food>150</food>
-      <metal>0</metal>
-      <stone>100</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>100</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_cavalry">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Large Class100</Classes>
+    <Classes datatype="tokens">Large</Classes>
     <GenericName>Stalhorse</GenericName>
     <History>Animated mounts of dead horses, these swift running undead carry Stalfos warriors into battle. Their masters often use these beasts to precede their invasions; raiding farmers and smaller targets to leave behind fresh corpses for the army to raise upon arrival.</History>
     <Icon>units/stalfos/sta_stalhorse.dds</Icon>
@@ -36,16 +10,6 @@
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
     <RequiredTechnology>stalfos/stalfos_gettomb</RequiredTechnology>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>40.0</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -61,10 +25,6 @@
       <walk>actor/movement/horse/horse_footsteps.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4705</RunMultiplier>
-    <WalkSpeed>17</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/stalfos/stalfos_stalhorse_b.xml</Actor>
   </VisualActor>

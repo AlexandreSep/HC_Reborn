@@ -1,29 +1,4 @@
-<Entity parent="HC_template_unit_infantry">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>17.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>2100</PrepareTime>
-      <RepeatTime>2200</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>150</food>
-      <metal>50</metal>
-      <stone>75</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>100</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Identity>
     <Civ>stalfos</Civ>
     <Classes datatype="tokens">Medium</Classes>
@@ -38,10 +13,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>30.0</Crush>
         <DodgeRating>10.0</DodgeRating>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>
@@ -60,13 +32,6 @@
       <walk>actor/movement/stalfos_slow/stalfos_step.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5833</RunMultiplier>
-    <WalkSpeed>10</WalkSpeed>
-  </UnitMotion>
-  <Vision>
-    <Range>85</Range>
-  </Vision>
   <Visibility>
     <Camouflage>
       <ActivateDelay>3000</ActivateDelay>

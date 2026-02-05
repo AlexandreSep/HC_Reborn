@@ -1,42 +1,7 @@
-<Entity parent="HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fists</AttackName>
-      <Damage>
-        <Crush>18</Crush>
-      </Damage>
-      <Delay>0</Delay>
-      <MaxRange>5</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1400</PrepareTime>
-      <RepeatTime>1700</RepeatTime>
-      <Knockback>
-        <Horizontal>20</Horizontal>
-        <Vertical>20</Vertical>
-      </Knockback>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>75</food>
-      <metal>0</metal>
-      <stone>55</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="7" />
-    <Height>5.0</Height>
-  </Footprint>
-  <Health>
-    <Max>350</Max>
-  </Health>
+<Entity parent="classes/HC_template_unit_beastramsmall">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Huge Class100</Classes>
+    <Classes datatype="tokens">Huge </Classes>
     <GenericName>Stalgiant</GenericName>
     <History>Stalgiants are the collective name of skeletal warriors raised from the corpses of large sized enemies. While their appearance takes on the form of their original skeleton, Stalgiants usually all behave the same way; mindlessly shuffling towards their targets and bashing at them with their large appendages.</History>
     <Icon>units/stalfos/sta_stalgiant.dds</Icon>
@@ -44,16 +9,6 @@
     <Tooltip>Large skeletal creature that bashes enemies with its limbs.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>55.0</Hack>
-        <Pierce>65.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/stalgiant_bash.xml</attack_melee>
@@ -69,10 +24,6 @@
       <walk>actor/movement/giantA/giantA_walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.4</RunMultiplier>
-    <WalkSpeed>5.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/stalfos/stalfos_giant_generic_b.xml</Actor>
   </VisualActor>

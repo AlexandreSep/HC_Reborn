@@ -15,9 +15,6 @@
       </Stun>
     </Melee>
   </Attack>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <GenericName>ReDead Knight</GenericName>
     <Icon>units/stalfos/sta_redeadknight.dds</Icon>
@@ -25,9 +22,9 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>20.0</Crush>
-        <Hack>20.0</Hack>
-        <Pierce>20.0</Pierce>
+        <Crush>50.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>50.0</Pierce>
       </Damage>
     </Entity>
   </Resistance>
@@ -36,10 +33,6 @@
       <attack_melee>attack/weapon/redead_sword.xml</attack_melee>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>3.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/stalfos/stalfos_redeadknight_b.xml</Actor>
   </VisualActor>

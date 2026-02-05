@@ -1,19 +1,12 @@
 <Entity parent="units/stalfos/stalfos_poebig_b">
   <Attack>
-    <Melee>
+    <Ranged>
       <AttackName>Lantern</AttackName>
-      <Damage>
-        <Magic>35</Magic>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
       <Stun>
-        <Chance>100</Chance>
-        <Time>100</Time>
+        <Chance>50</Chance>
+        <Time>1000</Time>
       </Stun>
-    </Melee>
+    </Ranged>
   </Attack>
   <Identity>
     <GenericName>Icy Big Poe</GenericName>

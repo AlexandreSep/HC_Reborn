@@ -1,9 +1,5 @@
 <Entity parent="classes/HC_template_unit_beast">
-  <Auras datatype="tokens">
-    units/jinx_aura_1
-  </Auras>
-  <Health>
-    <Max>50</Max>
+    <Max>25</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <SameBattalion>true</SameBattalion>
@@ -15,19 +11,28 @@
   <Identity>
     <Civ>stalfos</Civ>
     <Classes datatype="tokens">Small</Classes>
-    <GenericName>Blue Bubble</GenericName>
-    <History>Immolated variations of the floating Bubble skulls, these burning blue monsters carry with them a dark curse that they spread to their victims. Those bit by these undead find themselves struggling to hit their targets, as if jinxed with poor aim and reflexes.</History>
+    <GenericName>Green Bubble</GenericName>
+    <History>Immolated variations of the floating Bubble skulls, these burning green monsters carry with them a dark curse that renders them nearly invulnerable to physical weapons.</History>
     <Icon>units/stalfos/sta_bluebubble.dds</Icon>
     <Lang>stalfos</Lang>
-    <SelectionGroupName>units/stalfos/stalfos_bluebubble_b</SelectionGroupName>
+    <SelectionGroupName>units/stalfos/stalfos_greenbubble_b</SelectionGroupName>
     <RequiredTechnology>civ_choices/stalfos/choosehero_irene</RequiredTechnology>
-    <Tooltip>Small flying Creature unit that reduces the damage of enemy units it attacks.</Tooltip>
+    <Tooltip>Small flying Creature unit with high armor.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Position>
     <Floating>true</Floating>
     <TurnRate>3.25</TurnRate>
   </Position>
+    <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>95</Crush>
+        <Hack>95</Hack>
+        <Pierce>95</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/bluebubble_bite.xml</attack_melee>
@@ -47,6 +52,6 @@
     <PassabilityClass>hover</PassabilityClass>
   </UnitMotion>
   <VisualActor>
-    <Actor>units/stalfos/stalfos_bubble_blue_b.xml</Actor>
+    <Actor>units/stalfos/stalfos_bubble_green_b.xml</Actor>
   </VisualActor>
 </Entity>

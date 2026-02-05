@@ -43,12 +43,6 @@
   <Health>
     <Max>30</Max>
   </Health>
-  <VisualActor>
-    <Actor>units/stalfos/stalfos_bubble_green_b.xml</Actor>
-  </VisualActor>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
@@ -96,7 +90,7 @@
       <gather_ruins>resource/mining/mining.xml</gather_ruins>
     </SoundGroups>
   </Sound>
-    <UnitAI>
+  <UnitAI>
     <DefaultStance>passive</DefaultStance>
 	<CanPatrol>false</CanPatrol>
     <Formations disable=""/>
@@ -105,4 +99,10 @@
     <RunMultiplier>1.5</RunMultiplier>
     <WalkSpeed>5.0</WalkSpeed>
   </UnitMotion>
+  <VisualActor>
+    <Actor>units/stalfos/stalfos_bubble_green_b.xml</Actor>
+  </VisualActor>
+  <Vision>
+    <Range>80</Range>
+  </Vision>
 </Entity>
