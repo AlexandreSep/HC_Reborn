@@ -100,7 +100,7 @@
     <WalkSpeed>5.0</WalkSpeed>
   </UnitMotion>
   <VisualActor>
-    <Actor>units/stalfos/stalfos_bubble_green_b.xml</Actor>
+    <Actor>units/stalfos/stalfos_stalchild_b.xml</Actor>
   </VisualActor>
   <Vision>
     <Range>80</Range>

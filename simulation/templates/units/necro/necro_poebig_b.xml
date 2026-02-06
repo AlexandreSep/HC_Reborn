@@ -1,4 +1,9 @@
 <Entity parent="classes/HC_template_unit_mage_heavy">
+  <Capturable>
+    <CapturePoints>50</CapturePoints>
+    <RegenRate>50</RegenRate>
+    <GarrisonRegenRate>5.0</GarrisonRegenRate>
+  </Capturable>
   <Health>
 	<SpawnMultipleEntitiesOnDeath disable="" />
   </Health>

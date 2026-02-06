@@ -1,4 +1,9 @@
 <Entity parent="classes/HC_template_unit_Knight">
+  <Capturable>
+    <CapturePoints>50</CapturePoints>
+    <RegenRate>50</RegenRate>
+    <GarrisonRegenRate>5.0</GarrisonRegenRate>
+  </Capturable>
   <Health>
 	<SpawnMultipleEntitiesOnDeath disable="" />
   </Health>
@@ -26,7 +31,20 @@
       <walk>actor/movement/stalfos_med/stalfosmed_step.xml</walk>
     </SoundGroups>
   </Sound>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <wood>0</wood>
+      </Cost>
+      <Entity>units/necro/necro_knight_upg</Entity>
+      <Time>3</Time>
+      <Tooltip>Total Control</Tooltip>
+	  <RequiredTechnology>stalfos/stalfos_getmausoleum</RequiredTechnology>
+      <Variant>upgrading_short</Variant>
+    </TowerA>
+   </Upgrade>
   <VisualActor>
     <Actor>units/stalfos/stalfos_knight_b.xml</Actor>
   </VisualActor>
 </Entity>
+

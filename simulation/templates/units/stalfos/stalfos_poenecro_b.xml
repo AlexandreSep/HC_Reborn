@@ -8,6 +8,13 @@
       </Damage>
       <MaxRange>5.0</MaxRange>
     </Melee>
+	<Capture>
+      <AttackName>Capture</AttackName>
+      <Capture>60</Capture>
+      <MaxRange>40</MaxRange>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Field Palisade SiegeWall StoneWall</RestrictedClasses>
+    </Capture>
   </Attack>
   <Identity>
     <Civ>stalfos</Civ>

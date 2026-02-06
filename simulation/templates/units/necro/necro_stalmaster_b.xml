@@ -1,4 +1,9 @@
 <Entity parent="classes/HC_template_unit_commander">
+  <Capturable>
+    <CapturePoints>50</CapturePoints>
+    <RegenRate>50</RegenRate>
+    <GarrisonRegenRate>5.0</GarrisonRegenRate>
+  </Capturable>
   <Health>
 	<SpawnMultipleEntitiesOnDeath disable="" />
   </Health>
@@ -26,6 +31,18 @@
       <walk>actor/movement/darknut/darknut_armor_step.xml</walk>
     </SoundGroups>
   </Sound>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <wood>0</wood>
+      </Cost>
+      <Entity>units/stalfos/stalfos_stalmaster_b</Entity>
+      <Time>3</Time>
+      <Tooltip>Total Control</Tooltip>
+	  <RequiredTechnology>stalfos/stalfos_getmausoleum</RequiredTechnology>
+      <Variant>upgrading_short</Variant>
+    </TowerA>
+   </Upgrade>
   <VisualActor>
     <Actor>units/stalfos/stalfos_stalmaster_b.xml</Actor>
   </VisualActor>
