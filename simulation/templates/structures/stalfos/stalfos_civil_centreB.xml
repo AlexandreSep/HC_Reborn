@@ -1,4 +1,7 @@
 <Entity parent="structures/stalfos/stalfos_civil_centre">
+<Auras datatype="tokens">
+    structures/necromancy_2
+</Auras>
   <Identity>
     <GenericName>Tomb</GenericName>
   </Identity>

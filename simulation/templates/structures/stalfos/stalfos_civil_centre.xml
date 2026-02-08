@@ -1,4 +1,7 @@
 <Entity parent="HC_template_structure_civil_centreB">
+<Auras datatype="tokens">
+    structures/necromancy
+</Auras>
   <Cost>
     <BuildTime>120</BuildTime>
     <Resources>

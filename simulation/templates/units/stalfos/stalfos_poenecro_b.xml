@@ -1,4 +1,7 @@
 <Entity parent="classes/HC_template_unit_commander">
+<Auras datatype="tokens">
+    units/necromancer_aura_1
+</Auras>
   <Attack>
     <Melee>
       <AttackName>Lantern</AttackName>

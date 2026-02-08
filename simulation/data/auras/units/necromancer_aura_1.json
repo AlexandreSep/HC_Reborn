@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 50}],
+	"auraName": "Necromancy",
+	"auraDescription": "(+50% for enemies to spawn undead)"
+}
