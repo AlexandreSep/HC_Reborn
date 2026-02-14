@@ -40,6 +40,18 @@
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
   </UnitMotion>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <food>10</food>
+      </Cost>
+      <Entity>units/stalfos/stalfos_poe_b</Entity>
+      <Time>3</Time>
+      <Tooltip>Total Control</Tooltip>
+	  <RequiredTechnology>stalfos/stalfos_getmausoleum</RequiredTechnology>
+      <Variant>upgrading_short</Variant>
+    </TowerA>
+   </Upgrade>
   <Visibility>
     <Camouflage>
       <ActivateDelay>3000</ActivateDelay>

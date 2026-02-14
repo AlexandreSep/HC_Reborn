@@ -34,9 +34,9 @@
   <Upgrade>
     <TowerA>
       <Cost>
-        <wood>0</wood>
+        <food>10</food>
       </Cost>
-      <Entity>units/necro/necro_knight_upg</Entity>
+      <Entity>units/stalfos/stalfos_knight_b</Entity>
       <Time>3</Time>
       <Tooltip>Total Control</Tooltip>
 	  <RequiredTechnology>stalfos/stalfos_getmausoleum</RequiredTechnology>

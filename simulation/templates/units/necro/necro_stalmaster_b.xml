@@ -34,7 +34,7 @@
   <Upgrade>
     <TowerA>
       <Cost>
-        <wood>0</wood>
+        <food>10</food>
       </Cost>
       <Entity>units/stalfos/stalfos_stalmaster_b</Entity>
       <Time>3</Time>
