@@ -15,8 +15,9 @@
   </Identity>
   <Builder>
     <Entities datatype="tokens">
-	 structures/stalfos/stalfos_ruinsA_anc
-     structures/stalfos/stalfos_wonder_anc
+	structures/stalfos/stalfos_ruinsA_anc
+	structures/stalfos/stalfos_ruinsB_anc
+	structures/stalfos/stalfos_wonder_anc
     </Entities>
     <Rate>1.0</Rate>
   </Builder>

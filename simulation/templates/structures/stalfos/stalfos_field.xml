@@ -33,10 +33,10 @@
     <Weight>10000</Weight>
   </TerritoryInfluence>
   <ResourceSupply>
-    <Max>200</Max>
+    <Max>Infinity</Max>
     <DiminishingReturns>0.90</DiminishingReturns>
     <KillBeforeGather>false</KillBeforeGather>
-    <MaxGatherers>1</MaxGatherers>
+    <MaxGatherers>3</MaxGatherers>
     <Type>food.bones</Type>
   </ResourceSupply>  
   <VisualActor>

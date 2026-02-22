@@ -13,11 +13,12 @@
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
-	  structures/stalfos/stalfos_ruinsA_anc
+	structures/stalfos/stalfos_ruinsA_anc
+	structures/stalfos/stalfos_ruinsB_anc
     </Entities>
   </Builder>
   <Identity>
-    <Icon>structures/stalfos/sta_cc_ancsB.dds</Icon>
+    <Icon>structures/stalfos/sta_cc_ancB.dds</Icon>
   </Identity>
   <Upgrade>
     <Tower>
