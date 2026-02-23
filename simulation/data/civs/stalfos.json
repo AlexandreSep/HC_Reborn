@@ -106,10 +106,7 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/stalfos/choosehero_dampe",
-		"civ_choices/stalfos/choosehero_gabora",
 		"civ_choices/stalfos/choosehero_meg",
-		"civ_choices/stalfos/choosehero_irene",
 		"civ_choices/stalfos/choosehero_blind",
 		"civ_choices/stalfos/choosehero_deathsword"
 	],
@@ -191,5 +188,5 @@
 		"skirmish/units/default_infantry_ranged_b": "units/stalfos/stalfos_stalchildA",
 		"skirmish/units/special_starting_unit": "units/stalfos/stalfos_poenecro_b"
 	},
-	"SelectableInGameSetup": true
+	"SelectableInGameSetup": false
 }

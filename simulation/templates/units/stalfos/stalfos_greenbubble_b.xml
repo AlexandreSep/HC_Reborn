@@ -1,6 +1,6 @@
 <Entity parent="classes/HC_template_unit_beast">
   <Health>
-    <Max>25</Max>
+    <Max>50</Max>
     <SpawnMultipleEntitiesOnDeath>
       <Chance>50</Chance>
       <SameBattalion>true</SameBattalion>

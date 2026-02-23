@@ -1,4 +1,4 @@
-<Entity parent="classes/HC_template_unit_creature">
+<Entity parent="classes/HC_template_unit_beast">
   <Cost>
     <BattalionSlots>0</BattalionSlots>
     <BuildTime>16</BuildTime>
@@ -10,7 +10,7 @@
     </Resources>
   </Cost>
   <Health>
-    <Max>25</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
     <Civ>stalfos</Civ>

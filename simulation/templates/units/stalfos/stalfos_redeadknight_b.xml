@@ -1,33 +1,11 @@
-<Entity parent="units/stalfos/stalfos_redead_b">
-  <Attack>
-    <Melee>
-      <AttackName>Sword</AttackName>
-      <Damage>
-        <Hack>30.0</Hack>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>3100</PrepareTime>
-      <RepeatTime>3200</RepeatTime>
-      <Stun>
-        <Chance>100</Chance>
-        <Time>100</Time>
-      </Stun>
-    </Melee>
-  </Attack>
+<Entity parent="classes/HC_template_unit_Knight">
+  <Auras datatype="tokens">
+    units/redead_aura_1
+  </Auras>
   <Identity>
     <GenericName>ReDead Knight</GenericName>
     <Icon>units/stalfos/sta_redeadknight.dds</Icon>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>50.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/redead_sword.xml</attack_melee>

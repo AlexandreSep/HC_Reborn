@@ -35,7 +35,7 @@
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Dampe has gone long unnoticed in Hyrule, serving as an undertaker based in Kakariko Village. While his services have been respected for most of his life, across the decades he has been suspected of and blamed for the increasing appearance of Stalchildren around Hyrule. He denies these accusations... or at least the malevolent intentions implied in them.</History>
     <Icon>units/stalfos/sta_hero_dampe.dds</Icon>
-    <RequiredTechnology>civ_choices/stalfos/choosehero_dampe</RequiredTechnology>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_blind</RequiredTechnology>
     <SpecificName>Dampe</SpecificName>
     <Tooltip>Support Hero that summons swarms of Stalchidren.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>

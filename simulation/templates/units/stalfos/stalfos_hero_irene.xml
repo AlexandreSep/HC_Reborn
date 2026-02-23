@@ -44,7 +44,7 @@
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Irene once served as one of Rauru's three Deacons. After many disagreements with her master, in time she sought out the dark arts of Hyrule's Witches. The path from honored deacon to rebellious witch to an ally of the undead is not yet clear to the annals of history, but this feisty young witch has been found working with the Stalfos and should be treated as such.</History>
     <Icon>units/stalfos/sta_hero_irene.dds</Icon>
-    <RequiredTechnology>civ_choices/stalfos/choosehero_irene</RequiredTechnology>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_meg</RequiredTechnology>
     <SpecificName>Irene</SpecificName>
     <Tooltip>Flying mage unit that can lob fireballs from the sky.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>

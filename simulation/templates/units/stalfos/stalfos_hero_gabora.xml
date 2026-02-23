@@ -39,9 +39,9 @@
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Legend has it that those seeking the perfect sword must venture to the dead and pay tribute to the greatest blacksmith who ever lived. In life Gabora and his partner Zubora had earned that reputation, a reputation that lasted long after the lifetime of these famous blacksmiths. Many warriors have sought the lost knowledge of Gabora; few who did have returned from the dead as themselves.</History>
     <Icon>units/stalfos/sta_hero_gabora.dds</Icon>
-    <RequiredTechnology>civ_choices/stalfos/choosehero_gabora</RequiredTechnology>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_deathsword</RequiredTechnology>
     <SpecificName>Gabora</SpecificName>
-    <Tooltip>Melee Hero with decent armor and splash damage.</Tooltip>
+    <Tooltip>Melee Hero with decent armor and damage.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Resistance>

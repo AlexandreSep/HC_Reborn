@@ -5,7 +5,6 @@
       <Damage>
         <Magic>30</Magic>
       </Damage>
-      <Delay>0</Delay>
       <MaxRange>10.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
