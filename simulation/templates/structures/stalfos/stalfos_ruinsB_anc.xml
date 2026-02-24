@@ -57,10 +57,11 @@
     </ACrypt>
 	<BTemple>
       <Entity>structures/stalfos/stalfos_temple</Entity>
-      <Tooltip>Transform ruins into Dark Reliquary, allowing you to raise magical Stalfos and improve them.</Tooltip>
+      <Tooltip>Transform ruins into Dark Reliquary, allowing you to provide various buff for the Stalfos.</Tooltip>
       <Cost>
-        <wood>150</wood>
-		<stone>150</stone>
+        <wood>200</wood>
+		<stone>200</stone>
+		<metal>200</metal>
       </Cost>
       <Time>30</Time>
 	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
@@ -69,11 +70,11 @@
     </BTemple>
 	<CBiggrave>
       <Entity>structures/stalfos/stalfos_graveyard</Entity>
-      <Tooltip>Transform ruins into Dark Reliquary, allowing you to raise magical Stalfos and improve them.</Tooltip>
+      <Tooltip>Transform ruins into a Graveyard, which contains bones piles of bones that can be gathered by many Stalchildren.</Tooltip>
       <Cost>
-        <wood>200</wood>
+        <wood>400</wood>
       </Cost>
-      <Time>30</Time>
+      <Time>60</Time>
 	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
 	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
 	  <Variant>upg_stalfos</Variant>
