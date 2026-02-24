@@ -5,8 +5,7 @@
     </Melee>
   </Attack>
   <Identity>
-    <Classes datatype="tokens">
-    </Classes>
+    <Classes datatype="tokens">-Organic Undead</Classes>
     <GenericName>Phantom Rider</GenericName>
     <History>A ghostly knight from ages past, these Phantom Riders come from a time lost to history. Now mindless slaves to their masters, Phantom Riders are sent out into the night to cull and reap unsuspecting populations. Normal weapons have little effect; perhaps some kind of magic must be used to banish these specters to the underworld.</History>
     <Icon>units/stalfos/sta_phantomrider.dds</Icon>

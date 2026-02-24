@@ -17,7 +17,7 @@
   </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small </Classes>
+    <Classes datatype="tokens">Small -Organic Undead</Classes>
     <GenericName>Staldra</GenericName>
     <History>The animated remains of a monster that predates all history and myth. These multiheaded creatures are able to attack from any and multiple directions, making it impossible to surround them. They seem to also possess the ability to regenerate, making them very difficult to destroy.</History>
     <Icon>units/stalfos/sta_staldra.dds</Icon>

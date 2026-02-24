@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_commander">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Large</Classes>
+    <Classes datatype="tokens">Large -Organic Undead</Classes>
     <GenericName>Stalmaster</GenericName>
     <History>The pinnacle of undead warriors, the Stalmasters are champions of their necromantic lords. Wielding four weapons in their many hands, Stalmasters have had centuries to perfect their fighting skills with a wide variety of implements. The sight of a Stalmaster can only mean one thing: his large army is about to invade.</History>
     <Icon>units/stalfos/sta_stalmaster.dds</Icon>

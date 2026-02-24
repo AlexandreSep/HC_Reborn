@@ -21,7 +21,7 @@
   </Attack>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Large</Classes>
+    <Classes datatype="tokens">Large -Organic Undead</Classes>
     <GenericName>Poe Necromancer</GenericName>
     <History>The long departed spirits of ancient necromancers, these phantasmal Poes hold the secret to everlasting undeath in their grasp. When the Stalfos roam around and invade to increase their number, the tall and lumbering Poe Necromancers will glide across the battlefield and animate the slain corpses of their victims.</History>
     <Icon>units/stalfos/sta_necromancer.dds</Icon>

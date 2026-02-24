@@ -11,7 +11,7 @@
   </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small</Classes>
+    <Classes datatype="tokens">Small -Organic Undead</Classes>
     <GenericName>Green Bubble</GenericName>
     <History>Immolated variations of the floating Bubble skulls, these burning green monsters carry with them a dark curse that renders them nearly invulnerable to physical weapons.</History>
     <Icon>units/stalfos/sta_bluebubble.dds</Icon>

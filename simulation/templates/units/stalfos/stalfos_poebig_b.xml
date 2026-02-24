@@ -6,7 +6,7 @@
   </Attack>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Large </Classes>
+    <Classes datatype="tokens">Large -Organic Undead</Classes>
     <GenericName>Big Poe</GenericName>
     <History>These large spectral menaces have taken to spreading their misery far beyond their grave and seek to drag the living into Poehood. Like their smaller counterpart, the Big Poes will relentlessly bash attackers with their lanterns. Their victims slain, the Big Poe will drag their spirits from their bodies and bring about more Poes.</History>
     <Icon>units/stalfos/sta_bigpoe.dds</Icon>

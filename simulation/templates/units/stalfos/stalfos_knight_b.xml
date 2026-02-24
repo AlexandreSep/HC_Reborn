@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_Knight">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Knight Medium</Classes>
+    <Classes datatype="tokens">Knight Medium -Organic Undead</Classes>
     <GenericName>Stalknight</GenericName>
     <History>Once noble lords and warriors in life, Stalfos Knights are the skeletons of those that abandoned their codes in exchange for immortality. Indeed they received what they sought, though as slaves to their necromantic masters. All should beware the Stalfos Knight in combat: they have had centuries to hone their skills that were already formidable in life.</History>
     <Icon>units/stalfos/sta_knight.dds</Icon>

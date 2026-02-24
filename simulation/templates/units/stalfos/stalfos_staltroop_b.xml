@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_swordsman">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Medium</Classes>
+    <Classes datatype="tokens">Medium -Organic Undead</Classes>
     <GenericName>Staltroop</GenericName>
     <History>Scores of these infantry serve as the primary warrior deployed by the Kingdom of Hyrule. Funded by the Royal family, these soldiers have basic combat training and are provided with standardized armor and weaponry.</History>
     <Icon>units/stalfos/sta_staltroop.dds</Icon>

@@ -4,7 +4,7 @@
       <AttackName>Lantern</AttackName>
       <Stun>
         <Chance>50</Chance>
-        <Time>1000</Time>
+        <Time>2000</Time>
       </Stun>
     </Ranged>
   </Attack>

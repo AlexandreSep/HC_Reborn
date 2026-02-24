@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_spearman">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small</Classes>
+    <Classes datatype="tokens">Small -Organic Undead</Classes>
     <GenericName>Stalkin</GenericName>
     <History>Stalkin are the collective name of skeletal warriors raised from the corpses of small sized enemies. While their appearance takes on the form of their original skeleton, Stalkin usually all behave the same way; mindlessly shuffling towards their targets and stabbing them with any sharp instrument they can get their hands on.</History>
     <Icon>units/stalfos/sta_stalkin.dds</Icon>

@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_cavalry">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Large</Classes>
+    <Classes datatype="tokens">Large -Organic Undead</Classes>
     <GenericName>Stalhorse</GenericName>
     <History>Animated mounts of dead horses, these swift running undead carry Stalfos warriors into battle. Their masters often use these beasts to precede their invasions; raiding farmers and smaller targets to leave behind fresh corpses for the army to raise upon arrival.</History>
     <Icon>units/stalfos/sta_stalhorse.dds</Icon>

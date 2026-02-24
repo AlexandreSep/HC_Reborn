@@ -14,7 +14,7 @@
   </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small</Classes>
+    <Classes datatype="tokens">Small -Organic Undead</Classes>
     <GenericName>Bubble</GenericName>
     <History>Bubbles are small floating skulls of which their complete body has been lost to time. Sprouting wings from the sides of their desiccated heads, Bubbles are able to hover about and will viciously try to bite and tear the flesh from their victims.</History>
     <Icon>units/stalfos/sta_bubble.dds</Icon>

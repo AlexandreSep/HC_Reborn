@@ -11,7 +11,7 @@
   </Attack>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Large Fire</Classes>
+    <Classes datatype="tokens">Large Fire -Organic Undead</Classes>
     <GenericName>Stalreaper</GenericName>
     <History>In some cultures these undead mages are known as the Blue Stalfos, but in all myths they play the same role: reaping the souls of the living to add to their growing armies. The Stalreapers seem to be powerful mages with command over Blue Fire, and perhaps were well studied war wizards during their old lifetimes. They can torch just about anything with their burning attacks, as well as defend themselves with their scythes in a melee.</History>
     <Icon>units/stalfos/sta_stalreaper.dds</Icon>

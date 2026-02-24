@@ -4,7 +4,7 @@
   </Auras>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Medium ReDead</Classes>
+    <Classes datatype="tokens">Medium -Organic Undead ReDead</Classes>
     <GenericName>ReDead Knight</GenericName>
     <History>A nightmarish skeletal creature that stalks deep beneath the earth, there are many legends as to the origin of the ReDead. Some believe they are the result of failed immortality rituals, others say they were guardians of Sheikah graves twisted into the service of evil necromancers. In the employ of the Stalfos they are sent in to completely demoralize their foes: the visage of a ReDead causes uneasiness in almost all who look upon them... and their ghastly screams can completely paralize even the bravest of warriors.</History>
     <Icon>units/stalfos/sta_redeadknight.dds</Icon>

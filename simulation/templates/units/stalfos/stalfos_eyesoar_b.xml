@@ -20,7 +20,7 @@
   </Health>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small Flying Scout</Classes>
+    <Classes datatype="tokens">Small Flying Scout -Organic Undead</Classes>
     <GenericName>Eyesoar</GenericName>
     <History>Eyesoars are small soaring... eyes of which their complete body has been lost to time. Sprouting wings from the sides of their desiccated eyeballs, eyesoars are able to hover about and are able to detect hidden enemies as well as selflessly throw themselves in harms way of their masters.</History>
     <Icon>units/stalfos/sta_eyesoar.dds</Icon>

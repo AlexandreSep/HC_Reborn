@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Medium</Classes>
+    <Classes datatype="tokens">Medium -Organic Undead</Classes>
     <GenericName>Marauder</GenericName>
     <History>There is little lore on the identity of the people who became these animated corpses. The most common belief is that there were soldiers in the employ of Meg long ago, brought forth from the dead by dark powers deep in the forest. Whomever they were, these Lost Souls wander the dark corners of the forest and challenge anyone they come across. They attack with surprisingly skilled swordplay for an undead creature and are able to parry just about any blow.</History>
     <Icon>units/stalfos/sta_lostsoul.dds</Icon>

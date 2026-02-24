@@ -6,7 +6,7 @@
   </Attack>
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small</Classes>
+    <Classes datatype="tokens">Small -Organic Undead</Classes>
     <GenericName>Poe</GenericName>
     <History>The Poe ghosts never left the earthly realm but remained restlessly by their own graves. When the graves were disturbed, the ghosts would appear, swinging their spirit lanterns to attack their living foes. Many dark necromancers would seek out and bind these tortured souls to their causes.</History>
     <Icon>units/stalfos/sta_poe.dds</Icon>

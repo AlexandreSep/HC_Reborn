@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_maceman_heavy">
   <Identity>
     <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Medium</Classes>
+    <Classes datatype="tokens">Medium -Organic Undead</Classes>
     <GenericName>Battleforged</GenericName>
     <History>The product of twisting and combining the parts of many a warrior, the Battleforged were created in ancient times explicitly to fight and destroy the enemies of their masters. The reputation of these monstrosities is that they are impossible to destroy: smashing them apart would only temporarily halt their advance as they assemble themselves back together.</History>
     <Icon>units/stalfos/sta_battleforged.dds</Icon>
