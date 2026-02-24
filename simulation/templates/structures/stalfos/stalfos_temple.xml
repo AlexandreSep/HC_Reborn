@@ -1,6 +1,8 @@
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/religious_territory_1
+	structures/necromancy_1
+	structures/commclutch_aura_1
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
@@ -25,7 +27,7 @@
     <Icon>structures/stalfos/sta_darkreliquary.dds</Icon>
     <RequiredTechnology>phase_town</RequiredTechnology>
     <SpecificName>Dark Reliquary</SpecificName>
-    <Tooltip>Religious building that increases the spread of your territory.</Tooltip>
+    <Tooltip>Religious building that provides various buffs.</Tooltip>
     <VisibleClasses datatype="tokens">Religious</VisibleClasses>
   </Identity>
   <Obstruction>
@@ -46,33 +48,4 @@
     <Technologies datatype="tokens">
 </Technologies>
   </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/stalfos/stalfos_redead_b
-		units/stalfos/stalfos_stalmaster_b
-		units/stalfos/stalfos_stalreaper_b</Entities>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>20</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>25</Z>
-      </step2>
-    </DestinationOffset>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>3</Z>
-    </SpawnOffset>
-  </Trainer>
 </Entity>

@@ -36,7 +36,7 @@
     <Max>Infinity</Max>
     <DiminishingReturns>0.90</DiminishingReturns>
     <KillBeforeGather>false</KillBeforeGather>
-    <MaxGatherers>3</MaxGatherers>
+    <MaxGatherers>2</MaxGatherers>
     <Type>food.bones</Type>
   </ResourceSupply>  
   <VisualActor>

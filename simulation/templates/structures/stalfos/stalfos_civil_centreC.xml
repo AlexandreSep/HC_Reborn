@@ -16,6 +16,7 @@
 </Technologies>
   </Researcher>
   <Trainer>
+  <BatchTimeModifier>0.6</BatchTimeModifier>
     <Entities datatype="tokens" />
   </Trainer>
 </Entity>

@@ -17,7 +17,7 @@
   </Cost>  
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="38.0" width="38.0" />
+    <Square depth="28.0" width="28.0" />
   </Footprint>
   <Health>
     <Max>500</Max>

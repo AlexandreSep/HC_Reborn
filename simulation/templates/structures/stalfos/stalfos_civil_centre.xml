@@ -81,15 +81,13 @@
   </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/stalfos/stalfos_stalchildA
-		units/stalfos/stalfos_stalkin_b
-		units/stalfos/stalfos_staltroop_b
-		units/stalfos/stalfos_stalgiant_b
-		units/stalfos/stalfos_hero_dampe
-		units/stalfos/stalfos_hero_gabora
-		units/stalfos/stalfos_hero_meg
-		units/stalfos/stalfos_hero_irene
-		units/stalfos/stalfos_hero_blind
-		units/stalfos/stalfos_hero_deathsword</Entities>
+	units/stalfos/stalfos_redead_b
+	units/stalfos/stalfos_hero_dampe
+	units/stalfos/stalfos_hero_gabora
+	units/stalfos/stalfos_hero_meg
+	units/stalfos/stalfos_hero_irene
+	units/stalfos/stalfos_hero_blind
+	units/stalfos/stalfos_hero_deathsword</Entities>
     <DestinationOffset>
       <step1>
         <X>0</X>
