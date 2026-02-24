@@ -183,10 +183,10 @@
 	{
 		"skirmish/structures/default_civil_centre" : "structures/stalfos/stalfos_civil_centre_anc",
 		"skirmish/units/default_support_female_citizen": "units/stalfos/stalfos_stalchildA",
-		"skirmish/units/default_cavalry": "units/stalfos/stalfos_eyesoar_b",
+		"skirmish/units/default_cavalry": "units/stalfos/stalfos_bubble_b",
 		"skirmish/units/default_infantry_melee_b": "units/stalfos/stalfos_stalchildA",
 		"skirmish/units/default_infantry_ranged_b": "units/stalfos/stalfos_stalchildA",
 		"skirmish/units/special_starting_unit": "units/stalfos/stalfos_poenecro_b"
 	},
-	"SelectableInGameSetup": false
+	"SelectableInGameSetup": true
 }
