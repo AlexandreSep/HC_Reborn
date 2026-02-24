@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 10,
+	"affects": ["Commander", "Hero"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 100 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 100 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 100 },	
+		{ "value": "Resistance/Entity/Damage/Magic", "add": 100 }
+	],
+	"auraName": "Sacrifice",
+	"auraDescription": "(+100 to all Armor types for Heroes and Commanders.)",
+	"overlayIcon": "art/textures/ui/session/auras/bubble_aura_1.dds"
+}

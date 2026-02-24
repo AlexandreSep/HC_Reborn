@@ -2,7 +2,8 @@
 	"type": "global",
 	"affects": ["Organic"],
 	"affectedPlayers": ["Enemy"],
-	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 10}],
+	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 15}],
 	"auraName": "Necromantic Roar",
-	"auraDescription": "(+10% for organic enemies to spawn undead)"
+	"auraDescription": "(+15% for organic enemies to spawn undead. Stacks with itself and other versions)"
+	"stackable" : true 
 }

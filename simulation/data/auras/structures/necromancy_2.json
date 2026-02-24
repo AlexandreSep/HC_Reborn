@@ -4,5 +4,6 @@
 	"affectedPlayers": ["Enemy"],
 	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 10}],
 	"auraName": "Necromantic Call",
-	"auraDescription": "(+10% for organic enemies to spawn undead)"
+	"auraDescription": "(+10% for organic enemies to spawn undead. Stacks with itself and other versions)",
+	"stackable" : true 
 }
