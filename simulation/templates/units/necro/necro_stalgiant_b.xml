@@ -12,7 +12,7 @@
     <GenericName>Stalgiant</GenericName>
     <History>Stalgiants are the collective name of skeletal warriors raised from the corpses of large sized enemies. While their appearance takes on the form of their original skeleton, Stalgiants usually all behave the same way; mindlessly shuffling towards their targets and bashing at them with their large appendages.</History>
     <Icon>units/stalfos/sta_stalgiant.dds</Icon>
-    <SelectionGroupName>units/stalfos/stalfos_stalgiant_b</SelectionGroupName>
+    <SelectionGroupName>units/necro/necro_stalgiant_b</SelectionGroupName>
     <Tooltip>Large skeletal creature that bashes enemies with its limbs.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>

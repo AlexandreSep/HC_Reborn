@@ -1,7 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/religious_territory_1
-	structures/necromancy_1
+	structures/necromancy
 	structures/commclutch_aura_1
   </Auras>
   <BuildRestrictions>

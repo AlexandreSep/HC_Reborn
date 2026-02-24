@@ -12,7 +12,7 @@
     <GenericName>Stalhorse</GenericName>
     <History>Animated mounts of dead horses, these swift running undead carry Stalfos warriors into battle. Their masters often use these beasts to precede their invasions; raiding farmers and smaller targets to leave behind fresh corpses for the army to raise upon arrival.</History>
     <Icon>units/stalfos/sta_stalhorse.dds</Icon>
-    <SelectionGroupName>units/stalfos/stalfos_stalhorse_b</SelectionGroupName>
+    <SelectionGroupName>units/necro/necro_stalhorse_b</SelectionGroupName>
     <Tooltip>Lightly armored cavalry unit armed with a sword.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>

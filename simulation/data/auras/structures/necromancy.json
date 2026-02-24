@@ -4,6 +4,6 @@
 	"affectedPlayers": ["Enemy"],
 	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 5}],
 	"auraName": "Necromantic Whisper",
-	"auraDescription": "(+5% for organic enemies to spawn undead. Stacks with itself and other versions.)"
+	"auraDescription": "(+5% for organic enemies to spawn undead. Stacks with itself and other versions.)",
 	"stackable" : true 
 }

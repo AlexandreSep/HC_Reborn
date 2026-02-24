@@ -12,7 +12,7 @@
     <GenericName>Stalkin</GenericName>
     <History>Stalkin are the collective name of skeletal warriors raised from the corpses of small sized enemies. While their appearance takes on the form of their original skeleton, Stalkin usually all behave the same way; mindlessly shuffling towards their targets and stabbing them with any sharp instrument they can get their hands on.</History>
     <Icon>units/stalfos/sta_stalkin.dds</Icon>
-    <SelectionGroupName>units/stalfos/stalfos_stalkin_b</SelectionGroupName>
+    <SelectionGroupName>units/necro/necro_stalkin_b</SelectionGroupName>
     <Tooltip>Small spear unit that is raised from the corpses of Small sized creatures. Effective against cavalry.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>

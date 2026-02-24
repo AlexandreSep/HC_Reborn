@@ -12,7 +12,7 @@
     <GenericName>Stalknight</GenericName>
     <History>Once noble lords and warriors in life, Stalfos Knights are the skeletons of those that abandoned their codes in exchange for immortality. Indeed they received what they sought, though as slaves to their necromantic masters. All should beware the Stalfos Knight in combat: they have had centuries to hone their skills that were already formidable in life.</History>
     <Icon>units/stalfos/sta_knight.dds</Icon>
-    <SelectionGroupName>units/stalfos/stalfos_knight_b</SelectionGroupName>
+    <SelectionGroupName>units/necro/necro_knight_b</SelectionGroupName>
     <Tooltip>Heavily armored infantry unit. Very resistant to non-magic damage and Knockback. A powerful all-round late game unit.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
