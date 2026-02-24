@@ -41,7 +41,7 @@
     </SpawnMultipleEntitiesOnDeath>
   </Health>
   <Identity>
-    <Classes datatype="tokens">Organic</Classes>
+    <Classes datatype="tokens">Organic Commander</Classes>
     <GenericName>Infantry</GenericName>
     <VisibleClasses datatype="tokens">Infantry</VisibleClasses>
   </Identity>

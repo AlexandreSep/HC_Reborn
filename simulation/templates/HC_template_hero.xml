@@ -22,7 +22,7 @@
     <RegenRate>1</RegenRate>
   </Health>
   <Identity>
-    <Classes datatype="tokens">Organic Human</Classes>
+    <Classes datatype="tokens">Organic Human Hero</Classes>
     <GenericName>Hero</GenericName>
     <VisibleClasses datatype="tokens">Hero</VisibleClasses>
   </Identity>
