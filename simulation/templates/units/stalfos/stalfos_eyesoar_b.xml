@@ -1,4 +1,7 @@
 <Entity parent="classes/HC_template_unit_scout">
+  <Auras datatype="tokens">
+    units/eyesoar_aura_1
+  </Auras>
   <Attack>
     <Melee>
       <AttackName>Bash</AttackName>
@@ -12,20 +15,20 @@
       <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
+  <Health>
+    <Max>50</Max>
+  </Health>
   <Identity>
     <Civ>stalfos</Civ>
     <Classes datatype="tokens">Small Flying Scout</Classes>
     <GenericName>Eyesoar</GenericName>
-    <History>Bubbles are small floating skulls of which their complete body has been lost to time. Sprouting wings from the sides of their desiccated heads, Bubbles are able to hover about and will viciously try to bite and tear the flesh from their victims.</History>
+    <History>Eyesoars are small soaring... eyes of which their complete body has been lost to time. Sprouting wings from the sides of their desiccated eyeballs, eyesoars are able to hover about and are able to detect hidden enemies as well as selflessly throw themselves in harms way of their masters.</History>
     <Icon>units/stalfos/sta_eyesoar.dds</Icon>
+	<RequiredTechnology>civ_choices/stalfos/choosehero_blind</RequiredTechnology>
     <SelectionGroupName>units/stalfos/stalfos_eyesoar_b</SelectionGroupName>
-    <Tooltip>Flying Creature Scout unit that can cover much ground and detect Camouflaged and Stealthed units.</Tooltip>
+    <Tooltip>Flying Creature Scout unit that can cover other units as well as ground and detect Camouflaged and Stealthed units.</Tooltip>
     <VisibleClasses datatype="tokens">Scout</VisibleClasses>
   </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>3.25</TurnRate>
-  </Position>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/patra_dive.xml</attack_melee>

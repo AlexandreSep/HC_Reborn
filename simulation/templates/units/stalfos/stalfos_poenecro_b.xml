@@ -31,10 +31,6 @@
     </VisibleClasses>
     <RequiredTechnology>stalfos/stalfos_getmausoleum</RequiredTechnology>
   </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>3.25</TurnRate>
-  </Position>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/poe_lantern.xml</attack_melee>

@@ -23,10 +23,6 @@
     <Tooltip>Small flying Creature unit.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>3.25</TurnRate>
-  </Position>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/bubble_bite.xml</attack_melee>

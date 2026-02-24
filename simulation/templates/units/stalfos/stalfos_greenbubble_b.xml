@@ -17,20 +17,15 @@
     <Icon>units/stalfos/sta_bluebubble.dds</Icon>
     <Lang>stalfos</Lang>
     <SelectionGroupName>units/stalfos/stalfos_greenbubble_b</SelectionGroupName>
-    <RequiredTechnology>civ_choices/stalfos/choosehero_irene</RequiredTechnology>
     <Tooltip>Small flying Creature unit with high armor.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>3.25</TurnRate>
-  </Position>
     <Resistance>
     <Entity>
       <Damage>
-        <Crush>95</Crush>
-        <Hack>95</Hack>
-        <Pierce>95</Pierce>
+        <Crush>80</Crush>
+        <Hack>80</Hack>
+        <Pierce>80</Pierce>
       </Damage>
     </Entity>
   </Resistance>

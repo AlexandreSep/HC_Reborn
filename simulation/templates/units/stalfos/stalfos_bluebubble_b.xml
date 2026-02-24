@@ -20,14 +20,10 @@
     <Icon>units/stalfos/sta_bluebubble.dds</Icon>
     <Lang>stalfos</Lang>
     <SelectionGroupName>units/stalfos/stalfos_bluebubble_b</SelectionGroupName>
-    <RequiredTechnology>civ_choices/stalfos/choosehero_irene</RequiredTechnology>
+    <RequiredTechnology>civ_choices/stalfos/choosehero_meg</RequiredTechnology>
     <Tooltip>Small flying Creature unit that reduces the damage of enemy units it attacks.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>3.25</TurnRate>
-  </Position>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/bluebubble_bite.xml</attack_melee>

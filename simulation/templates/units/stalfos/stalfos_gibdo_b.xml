@@ -1,0 +1,20 @@
+<Entity parent="units/stalfos/stalfos_redead_b">
+  <Identity>
+    <GenericName>Gibdo</GenericName>
+    <History>Gibdos are mummy-like resilient undead created as personal servants by Evaleen. They have since come to be scattered across Hyrule and serve in the armies of necromancers. They are capable for stunning their victims with a terrible screech.</History>
+    <Icon>units/merc/merc_gibdo.dds</Icon>
+    <SelectionGroupName>units/merc/merc_gibdo_b</SelectionGroupName>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>50.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <VisualActor>
+    <Actor>units/merc/merc_gibdo_b.xml</Actor>
+  </VisualActor>
+</Entity>
