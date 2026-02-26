@@ -1,48 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_mage">
   <Attack>
     <Ranged>
       <AttackName>Fairy Magic</AttackName>
-      <Damage>
-        <Magic>20</Magic>
-      </Damage>
-      <MaxRange>50.0</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1500</RepeatTime>
-      <Splash>
-        <Damage>
-          <Spirit>10.0</Spirit>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>25</Range>
-        <Shape>Linear</Shape>
-      </Splash>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>150</food>
-      <metal>75</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <Civ>fairy</Civ>
-    <Classes datatype="tokens">Medium Class80 UniqueUnit</Classes>
+    <Classes datatype="tokens">Medium UniqueUnit</Classes>
     <GenericName>Mistwalker</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Perhaps one of the most mysterious Fairies of legend, Mistwalkers were extremely reclusive even amongst their own kind. Some suspect they held knowledge and secrets so terrible that they could not afford to risk being captured by other powerful wizards and mages. Finding one of these Fairies was actually considered bad luck in the best of circumstances, and a fatal omen in the worst.</History>
@@ -50,19 +14,9 @@
     <Lang>fairy</Lang>
     <RequiredTechnology>civ_choices/fairy/choosehero_valanavi</RequiredTechnology>
     <SelectionGroupName>units/fairy/fairy_mistwalker_b</SelectionGroupName>
-    <Tooltip>Valanavi's Unique Unit. Powerful Mage unit that can attack from a distance.</Tooltip>
+    <Tooltip>Valanavi's Unique Unit. Mage unit that can attack from a distance and debuff enemies.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-        <Magic>7</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/magic/mistwalker_attack.xml</attack_ranged>

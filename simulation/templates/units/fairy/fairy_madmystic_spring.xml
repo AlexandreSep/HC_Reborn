@@ -1,10 +1,6 @@
 <Entity parent="units/fairy/fairy_madmystic_b">
   <Health>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>8</BattalionSize>
-      <Chance>100</Chance>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
       <Template>units/fairy/fairy_stray_spring</Template>
     </SpawnMultipleEntitiesOnDeath>
   </Health>

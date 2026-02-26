@@ -7,11 +7,6 @@
     <Entity>units/fairy/fairy_galeboomer_summer</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <UnitMotion>
-    <PassabilityClass>hover</PassabilityClass>
-    <RunMultiplier>1.125</RunMultiplier>
-    <WalkSpeed>16</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/fairy/fairy_galeboomer_spring.xml</Actor>
   </VisualActor>

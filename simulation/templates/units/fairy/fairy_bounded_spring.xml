@@ -1,12 +1,4 @@
 <Entity parent="units/fairy/fairy_bounded_b">
-  <DeathDamage>
-    <Shape>Circular</Shape>
-    <FriendlyFire>false</FriendlyFire>
-    <Range>10</Range>
-    <Damage>
-      <Forest>35.0</Forest>
-    </Damage>
-  </DeathDamage>
   <Identity>
     <Classes datatype="tokens">Spring</Classes>
     <Icon>units/fairy/fai_bounded_spring.dds</Icon>

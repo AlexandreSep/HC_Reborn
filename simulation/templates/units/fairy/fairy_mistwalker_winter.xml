@@ -1,6 +1,6 @@
 <Entity parent="units/fairy/fairy_mistwalker_b">
   <Auras datatype="tokens">
-    units/mistwalker_aura_1
+    units/mistwalker_aura_winter
   </Auras>
   <Identity>
     <Classes datatype="tokens">Winter</Classes>

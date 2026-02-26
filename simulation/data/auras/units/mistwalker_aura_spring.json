@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Structure"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Crush", "add": -10 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": -10 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": -10 }
+	],
+	"auraName": "Melting Water",
+	"auraDescription": "{-10% Physical Defenses - Enemy Building)",
+	"overlayIcon": "art/textures/ui/session/auras/fairy_spring.dds."
+}

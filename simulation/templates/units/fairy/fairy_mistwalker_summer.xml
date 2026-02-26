@@ -1,11 +1,7 @@
 <Entity parent="units/fairy/fairy_mistwalker_b">
-  <Attack>
-    <Ranged>
-      <AttackName>TBD.</AttackName>
-      <PrepareTime>800</PrepareTime>
-      <RepeatTime>900</RepeatTime>
-    </Ranged>
-  </Attack>
+  <Auras datatype="tokens">
+    units/mistwalker_aura_summer
+  </Auras>
   <Identity>
     <Classes datatype="tokens">Summer</Classes>
     <Icon>units/fairy/fai_mistwalker_summer.dds</Icon>

@@ -1,28 +1,9 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_creature">
   <Attack>
     <Melee>
       <AttackName>Boomerang</AttackName>
-      <Damage>
-        <Hack>15.0</Hack>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>400</PrepareTime>
-      <RepeatTime>400</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>50</metal>
-      <stone>0</stone>
-      <wood>125</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>50</Max>
-  </Health>
   <Identity>
     <Civ>fairy</Civ>
     <Classes datatype="tokens">-Organic Construct Small UniqueUnit</Classes>
@@ -36,17 +17,10 @@
     <Tooltip>Sekaia's Unique Unit. Fast moving Melee unit that can travel over any terrain.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>1.25</TurnRate>
-  </Position>
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>10.0</Crush>
         <DodgeRating>50.0</DodgeRating>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>
@@ -69,8 +43,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>hover</PassabilityClass>
-    <RunMultiplier>1.25</RunMultiplier>
-    <WalkSpeed>8</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/fairy/fairy_galeboomer_spring.xml</Actor>

@@ -1,17 +1,4 @@
 <Entity parent="units/fairy/fairy_galeboomer_b">
-  <Attack>
-    <Melee>
-      <AttackName>Boomerang</AttackName>
-      <Damage>
-        <Hack>15.0</Hack>
-        <Magic>15</Magic>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>400</PrepareTime>
-      <RepeatTime>400</RepeatTime>
-    </Melee>
-  </Attack>
   <Identity>
     <Classes datatype="tokens">Summer</Classes>
     <Icon>units/fairy/fai_galeboomer_summer.dds</Icon>

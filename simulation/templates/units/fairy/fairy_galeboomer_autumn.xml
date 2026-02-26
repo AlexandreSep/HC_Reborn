@@ -7,13 +7,6 @@
     <Entity>units/fairy/fairy_galeboomer_winter</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <DodgeRating>75.0</DodgeRating>
-      </Damage>
-    </Entity>
-  </Resistance>
   <VisualActor>
     <Actor>units/fairy/fairy_galeboomer_autumn.xml</Actor>
   </VisualActor>

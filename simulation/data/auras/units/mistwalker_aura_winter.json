@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 0.7 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.7 },
+		{ "value": "UnitMotion/RunMultiplier", "multiply": 0.7 }
+	],
+	"auraName": "Shroudwalker Fog",
+	"auraDescription": "{-30% Enemy Vision Range, -30% Enemy Movement Speed)",
+	"overlayIcon": "art/textures/ui/session/auras/mistwalker_aura1.dds"
+}
