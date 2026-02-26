@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Spring"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 2 },
+		{ "value": "Attack/Melee/PrepareTime", "multiply": 0.5 },
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.5 }
+	],
+	"auraName": "Spring Growth",
+	"auraDescription": "{100% Vision Range for Spring and Faster Firststrike for Spring units)",
+	"overlayIcon": "art/textures/ui/session/auras/shroudwalker_aura1.dds"
+}

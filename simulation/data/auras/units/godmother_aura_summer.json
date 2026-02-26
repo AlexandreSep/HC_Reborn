@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Summer"],
+	"modifications": [
+    {
+      "value": "Resistance/Entity/Damage/DodgeRate", "add": 20
+    }],
+	"auraName": "Summer Dance",
+	"auraDescription": "{Summer units gain a 20% higher Dodgerate)",
+	"overlayIcon": "art/textures/ui/session/auras/battlebro_aura_1.dds"
+}

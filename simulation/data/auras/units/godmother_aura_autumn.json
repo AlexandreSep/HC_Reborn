@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Attack/Melee/MaxRange", "multiply": 1.2 },
+		{ "value": "Attack/Ranged/MaxRange", "multiply": 1.2 }
+	],
+	"auraName": "Autumn Winds",
+	"auraDescription": "{20% attack range for Autumn Units)",
+	"overlayIcon": "art/textures/ui/session/auras/shroudwalker_aura1.dds"
+}

@@ -2,14 +2,13 @@
   <Attack disable="" />
   <Heal>
     <HealableClasses datatype="tokens">Organic</HealableClasses>
-    <Health>1</Health>
+    <Health>5</Health>
     <Range>15</Range>
     <Interval>200</Interval>
     <UnhealableClasses datatype="tokens" />
   </Heal>
   <Health>
     <SpawnMultipleEntitiesOnDeath>
-      <BattalionSize>2</BattalionSize>
       <Chance>0</Chance>
       <SpawnNumberMax>1</SpawnNumberMax>
       <SpawnNumberMin>1</SpawnNumberMin>

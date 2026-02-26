@@ -1,40 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_mage_heavy">
   <Attack>
     <Ranged>
       <AttackName>Fairy Magic</AttackName>
-      <Damage>
-        <Magic>25</Magic>
-      </Damage>
-      <MaxRange>70.0</MaxRange>
-      <MinRange>35.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1900</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>70</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
   <Identity>
     <Civ>fairy</Civ>
-    <Classes datatype="tokens">Large Class80 GreatFairy</Classes>
+    <Classes datatype="tokens">Large GreatFairy</Classes>
     <GenericName>Great Fairy</GenericName>
     <History>Great Fairies were amongst the most powerful Fairies of legend. Blessed with amazing intellect and an arsenal of tremendous magic, a lone Great Fairy could shape the world around it with nothing but their will power alone. Many stories claim that those who gained the favor of a Great Fairy were granted wishes. Such power tended to make Great Fairies rather egocentric, arrogant, and in worse cases; power hungry. The risk of tyrannical Great Fairies trying to take over their kind was not unheard of. </History>
     <Icon>units/fairy/fai_great_spring.dds</Icon>
@@ -43,17 +15,6 @@
     <Tooltip>Very powerful ranged Mage unit who's method of attack changes its nature with each season.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-        <Magic>7</Magic>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <death>voice/fairy/greatfairy/greatfairy_death.xml</death>

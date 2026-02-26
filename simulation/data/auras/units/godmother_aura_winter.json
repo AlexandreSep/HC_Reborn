@@ -1,0 +1,16 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Winter"],
+  "modifications": [
+    {
+      "value": "Resistance/Entity/Damage/Magic",
+      "add": 25
+    }
+  ],
+	"auraName": "Winter Iceshield",
+	"auraDescription": "(+25 Magic Resistance for Winter units)",
+	"stackable" : false ,
+	"overlayIcon": "art/textures/ui/session/auras/nayrublessed_aura_1.dds"
+}
+

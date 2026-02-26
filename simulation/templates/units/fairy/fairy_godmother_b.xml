@@ -1,11 +1,12 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_commander">
   <Attack>
+  <Melee disable="" />
     <Ranged>
       <AttackName>Fairy Magic</AttackName>
       <Damage>
-        <Magic>50</Magic>
+        <Magic>12</Magic>
       </Damage>
-      <MaxRange>50.0</MaxRange>
+      <MaxRange>40.0</MaxRange>
       <MinRange>0.0</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
@@ -16,18 +17,14 @@
         <FriendlyFire>false</FriendlyFire>
         <LaunchPoint y="3" />
       </Projectile>
-      <RepeatTime>1500</RepeatTime>
+      <RepeatTime>1200</RepeatTime>
       <Splash>
         <Damage>
-          <Spirit>50.0</Spirit>
+          <Magic>5.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>25</Range>
         <Shape>Circular</Shape>
-        <Knockback>
-          <Horizontal>10</Horizontal>
-          <Vertical>10</Vertical>
-        </Knockback>
       </Splash>
       <Knockback>
         <Horizontal>10</Horizontal>
@@ -39,18 +36,15 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>80</food>
-      <metal>10</metal>
-      <stone>20</stone>
-      <wood>0</wood>
+      <food>300</food>
     </Resources>
   </Cost>
   <Health>
-    <Max>450</Max>
+    <Max>1000</Max>
   </Health>
   <Identity>
     <Civ>fairy</Civ>
-    <Classes datatype="tokens">Large Class80</Classes>
+    <Classes datatype="tokens">Large</Classes>
     <GenericName>Godmother</GenericName>
     <History>Beings more powerful than Great Fairies, the Godmothers influence and direct all with their reach. When one is on their good side, a Fairy Godmother may grant your deepest wishes. Make an enemy of the Fairy Godmothers and prepare for fates worse than death.</History>
     <Icon>units/fairy/fai_godmother_spring.dds</Icon>
@@ -60,14 +54,6 @@
     <VisibleClasses datatype="tokens">Commander</VisibleClasses>
   </Identity>
   <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>15.0</Pierce>
-        <Magic>7</Magic>
-      </Damage>
-    </Entity>
     <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Sound>
