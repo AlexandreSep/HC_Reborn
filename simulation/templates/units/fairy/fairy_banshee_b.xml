@@ -1,35 +1,20 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_swordsman_heavy">
   <Attack>
     <Melee>
       <AttackName>Magic Wand</AttackName>
       <Damage>
-        <Magic>15</Magic>
+		<Hack>0</Hack>
+        <Magic>5</Magic>
       </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
     </Melee>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>100</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="3.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>150</Max>
-  </Health>
   <Identity>
     <Civ>fairy</Civ>
-    <Classes datatype="tokens">Medium Class100 Banshee</Classes>
+    <Classes datatype="tokens">Medium Banshee</Classes>
     <GenericName>Banshee</GenericName>
     <History>To those that encountered these humanoid Fairies in the wild, many would find them to be comely women offering gifts, kisses, or playing mischievous tricks. When provoked, the nature of the Banshee would become clear as their pleasant Hylian features fell and those of a gnawing insect took over. Banshees would use their magic wands to attack their assailants, the method of attack would often change with the seasons.</History>
     <Icon>units/fairy/fai_banshee_spring.dds</Icon>
@@ -38,16 +23,6 @@
     <Tooltip>Close combat Mage unit that attacks its enemies with a magic wand.</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>25.0</Pierce>
-        <Magic>3</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/magic/fairy_wand.xml</attack_melee>

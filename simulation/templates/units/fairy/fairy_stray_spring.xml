@@ -1,12 +1,4 @@
 <Entity parent="units/fairy/fairy_stray_b">
-  <DeathDamage>
-    <Damage>
-      <Forest>35.0</Forest>
-    </Damage>
-  </DeathDamage>
-  <Health>
-    <IdleRegenRate>1</IdleRegenRate>
-  </Health>
   <Identity>
     <Classes datatype="tokens">Spring</Classes>
     <Icon>units/fairy/fai_stray_spring.dds</Icon>

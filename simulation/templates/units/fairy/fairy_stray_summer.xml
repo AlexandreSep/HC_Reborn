@@ -1,9 +1,4 @@
 <Entity parent="units/fairy/fairy_stray_b">
-  <DeathDamage>
-    <Damage>
-      <Fire>35.0</Fire>
-    </Damage>
-  </DeathDamage>
   <Identity>
     <Classes datatype="tokens">Summer</Classes>
     <Icon>units/fairy/fai_stray_summer.dds</Icon>

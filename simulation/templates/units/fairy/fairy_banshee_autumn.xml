@@ -1,16 +1,4 @@
 <Entity parent="units/fairy/fairy_banshee_b">
-  <Attack>
-    <Melee>
-      <AttackName>Magic Wand</AttackName>
-      <Damage>
-        <Magic>15</Magic>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1100</PrepareTime>
-      <RepeatTime>1300</RepeatTime>
-    </Melee>
-  </Attack>
   <Identity>
     <Classes datatype="tokens">Autumn</Classes>
     <Icon>units/fairy/fai_banshee_autumn.dds</Icon>

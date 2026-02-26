@@ -1,9 +1,4 @@
 <Entity parent="units/fairy/fairy_stray_b">
-  <DeathDamage>
-    <Damage>
-      <Water>35.0</Water>
-    </Damage>
-  </DeathDamage>
   <Identity>
     <Classes datatype="tokens">Winter</Classes>
     <Icon>units/fairy/fai_stray_winter.dds</Icon>
@@ -18,7 +13,7 @@
         <Crush>25.0</Crush>
         <Hack>25.0</Hack>
         <Pierce>25.0</Pierce>
-        <Magic>3</Magic>
+        <Magic>30.0</Magic>
       </Damage>
     </Entity>
   </Resistance>

@@ -7,10 +7,6 @@
     <Entity>units/fairy/fairy_drove_winter</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <UnitMotion>
-    <RunMultiplier>1.5925</RunMultiplier>
-    <WalkSpeed>13.5</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/fairy/fairy_drove_autumn.xml</Actor>
   </VisualActor>

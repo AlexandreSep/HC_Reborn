@@ -1,20 +1,13 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_scout">
   <Attack>
     <Melee>
       <AttackName>Bash</AttackName>
-      <Damage>
-        <Pierce>5</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
     <BuildTime>9</BuildTime>
     <Resources>
-      <food>100</food>
+      <food>40</food>
       <metal>0</metal>
       <stone>0</stone>
       <wood>0</wood>
@@ -25,7 +18,7 @@
     <Range>10</Range>
     <Shape>Circular</Shape>
     <Damage>
-      <Pierce>0.0</Pierce>
+      <Magic>20.0</Magic>
     </Damage>
   </DeathDamage>
   <Health>
@@ -46,16 +39,6 @@
     <Tooltip>Hovering Scout unit that can detect Camouflaged and Stealthed units.</Tooltip>
     <VisibleClasses datatype="tokens">Scout</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>3.0</Crush>
-        <Hack>3.0</Hack>
-        <Pierce>3.0</Pierce>
-        <Magic>3</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/fairy_boink.xml</attack_melee>
@@ -72,17 +55,7 @@
       <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
     </SoundGroups>
   </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>7.0</WalkSpeed>
-  </UnitMotion>
   <VisualActor>
     <Actor>units/fairy/fairy_stray_spring.xml</Actor>
   </VisualActor>
-  <Visibility>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
-  </Visibility>
 </Entity>

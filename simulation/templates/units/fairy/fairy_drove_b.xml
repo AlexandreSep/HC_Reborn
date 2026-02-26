@@ -1,27 +1,26 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_spearman">
   <Attack>
     <Melee>
       <AttackName>Teeth</AttackName>
-      <Damage>
-        <Pierce>8.0</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
     </Melee>
   </Attack>
   <Cost>
     <BuildTime>9</BuildTime>
     <Resources>
-      <food>100</food>
+      <food>25</food>
       <metal>0</metal>
-      <stone>100</stone>
+      <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
   <Health>
     <Max>100</Max>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>0</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/fairy/fairy_drove_spring</Template>
+    </SpawnMultipleEntitiesOnDeath>
   </Health>
   <Identity>
     <Civ>fairy</Civ>
@@ -37,11 +36,7 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Crush>10.0</Crush>
         <DodgeRating>25.0</DodgeRating>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-        <Magic>3</Magic>
       </Damage>
     </Entity>
   </Resistance>
