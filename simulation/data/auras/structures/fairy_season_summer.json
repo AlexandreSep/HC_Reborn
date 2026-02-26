@@ -1,7 +1,9 @@
 {
 	"type": "global",
-	"affects": [],
+	"modifications": [{"value": "Promotion/RequiredXp", "multiply": -0.0001, "affects": "Spring Structure"},
+	{"value": "Health/Max", "multiply": 1.1 , "affects": "Unit"},
+	{"value": "Health/Max", "multiply": 1.2 , "affects": "Summer"}],
 	"auraName": "Summertime",
-	"auraDescription": "It is now Summertime for the Fairies of Tarm.",
+	"auraDescription": "It is now Summertime for the Fairies of Tarm. Units gain 10% more Health, Summer Units gain an additional 20% more Health",
 	"overlayIcon": "art/textures/ui/session/auras/fairy_summer.dds"
 }

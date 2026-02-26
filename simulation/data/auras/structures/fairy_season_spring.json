@@ -1,7 +1,9 @@
 {
 	"type": "global",
-	"affects": [],
+	"modifications": [{"value": "Promotion/RequiredXp", "multiply": -0.0001, "affects": "Winter Structure"},
+	{"value": "Health/RegenRate", "add": 1.0, "affects": "Unit"},
+	{"value": "Health/RegenRate", "add": 2.0, "affects": "Spring"}],
 	"auraName": "Springtime",
-	"auraDescription": "It is now Springtime for the Fairies of Tarm.",
+	"auraDescription": "It is now Springtime for the Fairies of Tarm. Units regain Health over time, Spring units regain even more Health over time",
 	"overlayIcon": "art/textures/ui/session/auras/fairy_spring.dds"
 }

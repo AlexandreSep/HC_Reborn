@@ -1,7 +1,15 @@
 {
 	"type": "global",
-	"affects": [],
+	"modifications": [{"value": "Promotion/RequiredXp", "multiply": -0.0001, "affects": "Autumn Structure"},
+	{"value": "Resistance/Entity/Damage/Crush", "add": 5  , "affects": "Unit"},
+	{"value": "Resistance/Entity/Damage/Hack", "add": 5  , "affects": "Unit"},
+	{"value": "Resistance/Entity/Damage/Pierce", "add": 5  , "affects": "Unit"},
+	{"value": "Resistance/Entity/Damage/Magic", "add": 5  , "affects": "Unit"},
+	{"value": "Resistance/Entity/Damage/Crush", "add": 10 , "affects": "Winter"},
+	{"value": "Resistance/Entity/Damage/Hack", "add": 10 , "affects": "Winter"},
+	{"value": "Resistance/Entity/Damage/Pierce", "add": 10 , "affects": "Winter"},
+	{"value": "Resistance/Entity/Damage/Magic", "add": 10 , "affects": "Winter"}],
 	"auraName": "Wintertime",
-	"auraDescription": "It is now Wintertime for the Fairies of Tarm.",
+	"auraDescription": "It is now Wintertime for the Fairies of Tarm. Units gain 5% defense in all categories, Winter Units gain an extra 10% defense in all categories",
 	"overlayIcon": "art/textures/ui/session/auras/fairy_winter.dds"
 }
