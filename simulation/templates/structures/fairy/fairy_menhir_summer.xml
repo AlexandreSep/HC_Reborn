@@ -1,4 +1,10 @@
 <Entity parent="structures/fairy/fairy_storehouse">
+<Builder>
+    <Entities datatype="tokens">
+    structures/fairy/fairy_sundial_summer
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
   <Identity>
     <Classes datatype="tokens">Summer</Classes>
     <Icon>structures/fairy/fai_menhir_summer.dds</Icon>
@@ -7,6 +13,11 @@
     <Entity>structures/fairy/fairy_menhir_autumn</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
+  <ResourceTrickle>
+    <Rates>
+      <wood>1.5</wood>
+    </Rates>
+  </ResourceTrickle>
   <VisualActor>
     <Actor>structures/fairy/fairy_menhirA_summer.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonB_summer.xml</FoundationActor>

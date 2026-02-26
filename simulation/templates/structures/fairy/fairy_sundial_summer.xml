@@ -2,6 +2,21 @@
   <Auras datatype="tokens">
     structures/fairy_season_summer
   </Auras>
+  <Builder>
+    <Entities datatype="tokens">
+    structures/fairy/fairy_menhir_summer
+    structures/fairy/fairy_meeting_summer
+    structures/fairy/fairy_fountain_summer
+    structures/fairy/fairy_greatfountain_summer
+    structures/fairy/fairy_dolmen_summer
+    structures/fairy/fairy_waterheaven_summer
+    structures/fairy/fairy_misthenge_summer
+	structures/fairy/fairy_wishingwell_summer
+    structures/fairy/fairy_wallset_summer
+    structures/fairy/fairy_uniwonder_summer
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
   <Identity>
     <Classes datatype="tokens">Summer</Classes>
     <GenericName>Summer Sundial</GenericName>
@@ -24,10 +39,7 @@
     <FoundationActor>structures/fairy/fairy_summonA_summer.xml</FoundationActor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">fairy/unlock_autumn
-    fairy/essence_03_brightsun
-    fairy/essence_04_soothingrain
-</Technologies>
+    <Technologies datatype="tokens">fairy/unlock_autumn</Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>

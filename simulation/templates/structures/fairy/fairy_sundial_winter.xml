@@ -2,6 +2,21 @@
   <Auras datatype="tokens">
     structures/fairy_season_winter
   </Auras>
+  <Builder>
+    <Entities datatype="tokens">
+    structures/fairy/fairy_menhir_winter
+    structures/fairy/fairy_meeting_winter
+    structures/fairy/fairy_fountain_winter
+    structures/fairy/fairy_greatfountain_winter
+    structures/fairy/fairy_dolmen_winter
+    structures/fairy/fairy_waterheaven_winter
+    structures/fairy/fairy_misthenge_winter
+	structures/fairy/fairy_wishingwell_winter
+    structures/fairy/fairy_wallset_winter
+    structures/fairy/fairy_uniwonder_winter
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
   <Identity>
     <Classes datatype="tokens"> Winter</Classes>
     <GenericName>Winter Sundial</GenericName>
@@ -24,10 +39,7 @@
     <FoundationActor>structures/fairy/fairy_summonA_winter.xml</FoundationActor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">fairy/unlock_spring
-    fairy/essence_07_seedoflife
-    fairy/essence_08_changingseasons
-</Technologies>
+    <Technologies datatype="tokens">fairy/unlock_spring</Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>

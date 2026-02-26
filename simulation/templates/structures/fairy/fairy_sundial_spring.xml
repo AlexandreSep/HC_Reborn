@@ -2,6 +2,21 @@
   <Auras datatype="tokens">
     structures/fairy_season_spring
   </Auras>
+  <Builder>
+    <Entities datatype="tokens">
+    structures/fairy/fairy_menhir_spring
+    structures/fairy/fairy_meeting_spring
+    structures/fairy/fairy_fountain_spring
+    structures/fairy/fairy_greatfountain_spring
+    structures/fairy/fairy_dolmen_spring
+    structures/fairy/fairy_waterheaven_spring
+    structures/fairy/fairy_misthenge_spring
+	structures/fairy/fairy_wishingwell_spring
+    structures/fairy/fairy_wallset_spring
+    structures/fairy/fairy_uniwonder_spring
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
   <Identity>
     <Classes datatype="tokens">Spring</Classes>
     <GenericName>Spring Sundial</GenericName>
@@ -24,10 +39,7 @@
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens">fairy/unlock_summer
-    fairy/essence_01_fertilesoil
-    fairy/essence_02_giftoftime
-</Technologies>
+    <Technologies datatype="tokens">fairy/unlock_summer</Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>

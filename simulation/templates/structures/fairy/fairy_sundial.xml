@@ -1,4 +1,4 @@
-<Entity parent="HC_template_structure_civilian">
+<Entity parent="HC_template_structure_civil_centre">
   <AutoBuildable>
     <Rate>1</Rate>
   </AutoBuildable>
@@ -40,7 +40,7 @@
     <Static depth="55.0" width="55.0" />
   </Obstruction>
   <Population>
-    <Bonus>10</Bonus>
+    <Bonus>30</Bonus>
   </Population>
   <Sound>
     <SoundGroups>
@@ -58,7 +58,7 @@
     fairy/miff_seasonharmony
     fairy/sekaia_yearwinds
     fairy/dezaia_hysterics
-
+	fairy/player_isfairy
 </Technologies>
   </Researcher>
   <Trainer>

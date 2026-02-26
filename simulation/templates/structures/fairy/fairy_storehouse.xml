@@ -9,7 +9,7 @@
     <Category>Storehouse</Category>
     <Distance>
       <FromClass>Menhir</FromClass>
-      <MinDistance>75</MinDistance>
+      <MinDistance>50</MinDistance>
     </Distance>
   </BuildRestrictions>
   <Cost>
@@ -18,7 +18,7 @@
       <food>0</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>50</wood>
+      <wood>75</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -49,10 +49,10 @@
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
-      <food>0.0</food>
-      <metal>0.0</metal>
-      <stone>0.0</stone>
-      <wood>0.0</wood>
+      <food>0.25</food>
+      <metal>0.25</metal>
+      <stone>0.25</stone>
+      <wood>0.25</wood>
     </Rates>
   </ResourceTrickle>
   <Sound>
@@ -62,7 +62,7 @@
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
-    <Radius>20</Radius>
+    <Radius>75</Radius>
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>

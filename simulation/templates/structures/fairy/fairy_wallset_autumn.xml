@@ -5,7 +5,7 @@
     <GenericName>Ley Line</GenericName>
     <History>A magical line drawn upon the earth by Fairies. It seems to confuse and halt the passage of enemies.</History>
     <Icon>structures/fairy/fai_leyline_autumn.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
+    <RequiredTechnology>civ_choices/fairy/choosehero_dezaia</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
     <VisibleClasses datatype="tokens" />
   </Identity>

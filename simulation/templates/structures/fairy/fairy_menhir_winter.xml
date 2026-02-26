@@ -1,4 +1,10 @@
 <Entity parent="structures/fairy/fairy_storehouse">
+  <Builder>
+    <Entities datatype="tokens">
+    structures/fairy/fairy_sundial_winter
+    </Entities>
+    <Rate>1.0</Rate>
+  </Builder>
   <Identity>
     <Classes datatype="tokens">Winter</Classes>
     <Icon>structures/fairy/fai_menhir_winter.dds</Icon>
@@ -7,6 +13,11 @@
     <Entity>structures/fairy/fairy_menhir_spring</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
+  <ResourceTrickle>
+    <Rates>
+      <stone>1.0</stone>
+    </Rates>
+  </ResourceTrickle>
   <VisualActor>
     <Actor>structures/fairy/fairy_menhirA_winter.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonB_winter.xml</FoundationActor>
