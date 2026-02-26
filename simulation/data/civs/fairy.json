@@ -130,9 +130,6 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/fairy/choosehero_navi",
-		"civ_choices/fairy/choosehero_ciela",
-		"civ_choices/fairy/choosehero_miff",
 		"civ_choices/fairy/choosehero_sekaia",		
 		"civ_choices/fairy/choosehero_dezaia",
 		"civ_choices/fairy/choosehero_venus",
@@ -207,13 +204,12 @@
 	],
 	"SkirmishReplacements":
 	{
-		"skirmish/structures/default_civil_centre" : "structures/fairy/fairy_wishingwell_spring",
+		"skirmish/structures/default_civil_centre" : "structures/fairy/fairy_sundial_spring",
 		"skirmish/units/default_support_female_citizen" : "units/fairy/fairy_stray_spring",
 		"skirmish/units/default_cavalry" :  "units/fairy/fairy_stray_spring",
-		"skirmish/units/default_infantry_melee_b": "units/fairy/fairy_stray_spring",
-		"skirmish/units/default_infantry_ranged_b": "units/fairy/fairy_stray_spring",
-		"skirmish/structures/default_house_10" : "units/fairy/fairy_stray_spring",
-		"skirmish/units/special_starting_unit" : "structures/fairy/fairy_sundial_spring"
+		"skirmish/units/default_infantry_melee_b": "units/fairy/fairy_drove_spring",
+		"skirmish/units/default_infantry_ranged_b": "units/fairy/fairy_drove_spring",
+		"skirmish/structures/default_house_10" : "units/fairy/fairy_stray_spring"
 	},
-	"SelectableInGameSetup": false
+	"SelectableInGameSetup": true
 }
