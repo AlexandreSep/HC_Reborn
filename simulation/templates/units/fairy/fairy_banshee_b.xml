@@ -3,8 +3,8 @@
     <Melee>
       <AttackName>Magic Wand</AttackName>
       <Damage>
-		<Hack>0</Hack>
-        <Magic>5</Magic>
+	<Hack>0</Hack>
+        <Magic>10</Magic>
       </Damage>
     </Melee>
   </Attack>

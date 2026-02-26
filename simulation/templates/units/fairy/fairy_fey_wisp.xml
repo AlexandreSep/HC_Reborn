@@ -27,4 +27,9 @@
   <VisualActor>
     <Actor>units/fairy/fairy_fey_wisp.xml</Actor>
   </VisualActor>
+  <Visibility>
+    <Stealth>
+      <RevealOnAttackDelay>3000</RevealOnAttackDelay>
+    </Stealth>
+  </Visibility>
 </Entity>

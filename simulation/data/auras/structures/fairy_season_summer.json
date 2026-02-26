@@ -1,9 +1,11 @@
 {
 	"type": "global",
 	"modifications": [{"value": "Promotion/RequiredXp", "multiply": -0.0001, "affects": "Spring Structure"},
-	{"value": "Health/Max", "multiply": 1.1 , "affects": "Unit"},
-	{"value": "Health/Max", "multiply": 1.2 , "affects": "Summer"}],
+	{"value": "Attack/Melee/Damage/Magic", "add": 2 , "affects": "Unit"},
+	{"value": "Attack/Ranged/Damage/Magic", "add": 2 , "affects": "Unit"},
+	{"value": "Attack/Melee/Damage/Magic", "multiply": 1.2 , "affects": "Summer"},
+	{"value": "Attack/Ranged/Damage/Magic", "multiply": 1.2 , "affects": "Summer"}],
 	"auraName": "Summertime",
-	"auraDescription": "It is now Summertime for the Fairies of Tarm. Units gain 10% more Health, Summer Units gain an additional 20% more Health",
+	"auraDescription": "It is now Summertime for the Fairies of Tarm. Magic Units gain +2 Magic Damage, Magic Summer Units gain an additional 20% more Magic Damage",
 	"overlayIcon": "art/textures/ui/session/auras/fairy_summer.dds"
 }

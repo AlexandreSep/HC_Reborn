@@ -17,10 +17,7 @@
     <Entity>units/fairy/fairy_fey_wisp</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <UnitMotion>
-    <RunMultiplier>2.3333</RunMultiplier>
-    <WalkSpeed>1.5</WalkSpeed>
-  </UnitMotion>
+ <ProductionQueue/>
   <VisualActor>
     <Actor>units/fairy/fairy_fey_gate.xml</Actor>
   </VisualActor>
@@ -30,6 +27,6 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/{civ}_drove_autumn</Entities>
+    <Entities datatype="tokens">units/fairy/fairy_drove_autumn</Entities>
   </Trainer>
 </Entity>

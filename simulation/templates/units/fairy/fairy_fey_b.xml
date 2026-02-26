@@ -4,8 +4,8 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>75</stone>
-      <wood>50</wood>
+      <stone>100</stone>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -13,7 +13,7 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>450</Max>
+    <Max>500</Max>
   </Health>
   <Identity>
     <Civ>fairy</Civ>
@@ -54,8 +54,8 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>default</PassabilityClass>
-    <RunMultiplier>1.2857</RunMultiplier>
-    <WalkSpeed>3.5</WalkSpeed>
+    <RunMultiplier>1.2</RunMultiplier>
+    <WalkSpeed>5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/fairy/fairy_fey_golem.xml</Actor>
