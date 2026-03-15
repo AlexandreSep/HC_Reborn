@@ -5,6 +5,7 @@
       <Damage>
         <Crush>25.0</Crush>
         <Hack>25.0</Hack>
+		<TrueDamage>50</TrueDamage>
       </Damage>
       <Knockback>
         <Horizontal>10</Horizontal>
@@ -14,7 +15,6 @@
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1500</PrepareTime>
       <RepeatTime>2000</RepeatTime>
-      <TrueDamage>50</TrueDamage>
     </Melee>
   </Attack>
   <Cost>

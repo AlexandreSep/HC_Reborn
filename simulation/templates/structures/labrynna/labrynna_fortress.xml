@@ -55,7 +55,7 @@
     <EjectHealth>0.9</EjectHealth>
     <List datatype="tokens">Organic</List>
     <LoadingRange>10</LoadingRange>
-    <Max>40</Max>
+    <Max>20</Max>
   </GarrisonHolder>
   <TurretHolder>
     <TurretPoints>

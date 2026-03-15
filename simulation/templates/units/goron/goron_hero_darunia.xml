@@ -26,7 +26,7 @@
       <RepeatTime>2500</RepeatTime>
       <Splash>
         <Damage>
-          <Fire>10.0</Fire>
+          <Magic>10.0</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>7</Range>

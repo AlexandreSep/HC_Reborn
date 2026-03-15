@@ -10,6 +10,7 @@
       </Bonuses>
       <Damage>
         <Crush>50.0</Crush>
+		<TrueDamage>50</TrueDamage>
       </Damage>
       <Knockback>
         <Horizontal>50</Horizontal>
@@ -22,7 +23,6 @@
         <Chance>50</Chance>
         <Time>2000</Time>
       </Stun>
-      <TrueDamage>70</TrueDamage>
     </Melee>
   </Attack>
   <Cost>
