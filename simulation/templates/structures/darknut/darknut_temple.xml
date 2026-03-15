@@ -1,6 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/religious_territory_1
+	structures/fearthelegion
   </Auras>
   <BuildRestrictions>
     <Category>Temple</Category>
@@ -55,15 +56,13 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">darknut/temple_lineinsand
-    darknut/temple_fearlegion
-	darknut/summon_reanimation
-    darknut/summon_charm
+    darknut/temple_fearlegion 
 </Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">
-      units/darknut/{civ}_immortal_b
+      units/darknut/{civ}_patra_b
     </Entities>
     <DestinationOffset>
       <step1>

@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 150,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.9 }
+	],
+	"auraName": "Fear the Legion",
+	"auraDescription": "Attack rate of Units within the radius of a Honor Monument increases by 10%",
+	"requiredTechnology": "darknut/temple_fearlegion"
+}

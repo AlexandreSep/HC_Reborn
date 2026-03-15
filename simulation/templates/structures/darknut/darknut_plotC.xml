@@ -138,7 +138,7 @@
         <wood>300</wood>
       </Cost>
       <Entity>structures/darknut/darknut_colosseumC</Entity>
-      <RequiredTechnology>civ_choices/darknut/choosehero_zalunbar</RequiredTechnology>
+      <RequiredTechnology>civ_choices/darknut/choosehero_yaraxonal</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Colosseum to the Agora.</Tooltip>
       <Variant>upgrading_tall</Variant>
@@ -178,7 +178,7 @@
         <wood>150</wood>
       </Cost>
       <Entity>structures/darknut/darknut_templeC</Entity>
-      <RequiredTechnology>civ_choices/darknut/choosehero_yaraxonal</RequiredTechnology>
+      <RequiredTechnology>civ_choices/darknut/choosehero_zalunbar</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Honor Monument to the Agora.</Tooltip>
       <Variant>upgrading_short</Variant>
