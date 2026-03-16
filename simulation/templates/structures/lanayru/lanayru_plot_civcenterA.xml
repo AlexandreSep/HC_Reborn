@@ -59,9 +59,11 @@
     <TowerC>
       <Cost>
         <wood>100</wood>
+		<metal>100</metal>
+		<stone>100</stone>
       </Cost>
       <Entity>structures/lanayru/lanayru_bank</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
+      <RequiredTechnology>civ_choices/lanayru/choosehero_rutela</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Bank to this building.</Tooltip>
       <Variant>upgrading_H</Variant>

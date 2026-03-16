@@ -50,7 +50,7 @@
     <GenericName>Silver Tower</GenericName>
     <History>The tall and ever watchful Silver Towers kept Lanayru's Coast safe, both from invaders and ther native wildlife. Many Province cities would erect a series of such towers throughout their grounds.</History>
     <Icon>structures/lanayru/lan_guard_tower.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <RequiredTechnology>civ_choices/lanayru/choosehero_mipha</RequiredTechnology>
     <Tooltip>Defensive Tower that attacks enemies with its arrows.</Tooltip>
     <VisibleClasses datatype="tokens">Tower</VisibleClasses>
   </Identity>

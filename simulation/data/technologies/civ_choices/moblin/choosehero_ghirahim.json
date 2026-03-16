@@ -5,9 +5,9 @@
 	"tooltip": "Select Ghirahim as your hero of choice.",
 	"modifications": [],
 	"affects": [],
-	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Moblin Focus", "tooltipText": "Ghirahim focuses on improving Moblin units."},
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Moblin Focus", "tooltipText": "Ghirahim focuses on improving Moblin and Bulblin units."},
 	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Ghirahim", "tooltipText": "Allows you to summon Ghirahim, a powerful Mage hero."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Demonblight", "tooltipText": "Twisted Cavalry units created by Ganon's sorcery."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Totem Corruption!", "tooltipText": "Totems passively damage enemy units within their radius."},
-	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Demonblight Taint!", "tooltipText": "Moblin line units are cursed with Demonblight, increasing their armor and passively damaging Melee attackers."}]
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Bulblin Boars!", "tooltipText": "Summon Bulblin Thug, cheap infantry that can stun enemies, and  battle boars, mighty ram creatures."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Totem Corruption!", "tooltipText": "Access to Ukblinro Totems and Fortresses."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Demonblight Taint!", "tooltipText": "Summon Bokoblins, cheap infantry, and Demonblight Moblins, a mighty monster unit."}]
 }
