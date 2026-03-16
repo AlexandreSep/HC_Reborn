@@ -28,8 +28,10 @@
     <Civ>zora</Civ>
     <Classes datatype="tokens">Construct Electric MageCannon Large</Classes>
     <GenericName>Mage Cannon</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Created by breaking a shard off of the powerful Mage Crystals and laying it in a mobile chassis, these cannons can be pushed around by Zora magic users and overloaded with power. When reaching capacity, a Mage Cannon will explode with tremendous force and unleash a powerful electrical bolt that can incinerate just about anything it hits.</History>
     <Icon>units/zora/zor_magecannon.dds</Icon>
+	<RequiredTechnology>civ_choices/zora/choosehero_zaleen</RequiredTechnology>
     <Tooltip>Very long ranged Siege unit that blasts and stuns enemies with bolts of electricity.</Tooltip>
     <VisibleClasses datatype="tokens">Siege</VisibleClasses>
   </Identity>

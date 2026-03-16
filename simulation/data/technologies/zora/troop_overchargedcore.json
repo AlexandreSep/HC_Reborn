@@ -7,11 +7,12 @@
     "stone": 250,
     "metal": 500
   },
-  "requirements": {
-    "all": [
-      { "tech": "phase_town" },
-      { "civ": "zora" }
-    ]
+	"requirements": {"all": 
+  [ 
+  {"tech": "civ_choices/zora/choosehero_zaleen"},
+  {"tech": "phase_town"},
+  {"civ": "zora"}
+  ]
   },
   "requirementsTooltip": "Unlocked with Town.",
   "icon": "zora/troop_overchargedcore.dds",

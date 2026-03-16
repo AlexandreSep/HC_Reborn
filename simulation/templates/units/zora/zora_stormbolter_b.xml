@@ -12,9 +12,11 @@
     <Civ>zora</Civ>
     <Classes datatype="tokens">ZoraFemale Electric Medium Stormbolter</Classes>
     <GenericName>Stormbolter</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>Stormbolters wield rods that have been charged with powerful electric magic. These rods can be used as a club in a melee, electrifying and stunning enemy units hit. They are decent for crowd control, with compliments of melee soldiers moving in behind them to attack stupefied enemies.</History>
     <Icon>units/zora/zor_stormbolter.dds</Icon>
     <Lang>zora</Lang>
+	<RequiredTechnology>civ_choices/zora/choosehero_zaleen</RequiredTechnology>
     <SelectionGroupName>units/zora/zora_stormbolter_b</SelectionGroupName>
     <Tooltip>Zora Melee unit that attacks with an electric shock, briefly stunning units. Partially cover the role of an early game swordman unit, which the Dominion lacks</Tooltip>
     <VisibleClasses datatype="tokens">Mage</VisibleClasses>

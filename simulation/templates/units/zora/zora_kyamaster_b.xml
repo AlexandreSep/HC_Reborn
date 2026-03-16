@@ -24,6 +24,7 @@
     <Civ>zora</Civ>
     <Classes datatype="tokens">Summoner ZoraFemale Medium KyaMaster</Classes>
     <GenericName>Kyameron Master</GenericName>
+	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
     <History>A rare type of Mage found within the Zora Dominion, Kyameron Masters wield the power of animating and giving life to water. Their methods are kept secret to those outside of cults devoted to Malkorbagia, but they are more than willing to lend military aid to the Dominion during times of war. A Kyameron Master can summon autonomous blobs of living water to go forth and attack enemy forces.</History>
     <Icon>units/zora/zor_kyamaster.dds</Icon>
     <Lang>zora</Lang>

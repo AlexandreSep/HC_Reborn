@@ -14,7 +14,7 @@
     <History>Nayru's Blessed wield an extremely rare magic that can create crystalline barriers from their staffs. These mages can use such an ability to create defenses around themselves and their brethren in battle.</History>
     <Icon>units/zora/zor_nayrublessed.dds</Icon>
     <Lang>zora</Lang>
-	<RequiredTechnology>phase_town</RequiredTechnology>
+	<RequiredTechnology>civ_choices/zora/choosehero_ruto</RequiredTechnology>
     <Rank>Basic</Rank>
     <SelectionGroupName>units/zora/zora_nayrublessed_b</SelectionGroupName>
     <Tooltip>Princess Ruto's Unique Unit. Support Mage unit that increases both the non-magic and magic armor of units.</Tooltip>
