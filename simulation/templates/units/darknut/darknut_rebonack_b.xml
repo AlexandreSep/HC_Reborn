@@ -28,7 +28,7 @@
   </Promotion>
   <Sound>
     <SoundGroups>
-      <attack_ranged>attack/weapon/rebonack_lance.xml</attack_ranged>
+      <attack_melee>attack/weapon/rebonack_lance.xml</attack_melee>
       <death>voice/darknut/armored/armored_death.xml</death>
       <order_attack>voice/darknut/armored/armored_attack.xml</order_attack>
       <order_garrison>voice/darknut/armored/armored_garrison.xml</order_garrison>

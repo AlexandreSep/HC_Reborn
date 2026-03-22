@@ -2,7 +2,8 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>200</food>
+      <food>100</food>
+	  <wood>100</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -36,7 +37,7 @@
       <Damage>
         <Crush>10.0</Crush>
         <Hack>5.0</Hack>
-        <Pierce>8.0</Pierce>
+        <Pierce>5.0</Pierce>
       </Damage>
     </Entity>
     <KnockbackResistance>100</KnockbackResistance>

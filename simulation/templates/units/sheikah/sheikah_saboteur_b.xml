@@ -42,7 +42,7 @@
   </Identity>
   <Sound>
     <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/sword.xml</attack_ranged>
       <death>voice/sheikah/sheikahD/sheikahD_death.xml</death>
       <order_attack>voice/sheikah/sheikahD/sheikahD_attack.xml</order_attack>
       <order_garrison>voice/sheikah/sheikahD/sheikahD_garrison.xml</order_garrison>

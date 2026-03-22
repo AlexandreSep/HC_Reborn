@@ -28,7 +28,7 @@
   </Identity>
   <Sound>
     <SoundGroups>
-      <attack_ranged>attack/natural/staldra_bite.xml</attack_ranged>
+      <attack_melee>attack/natural/staldra_bite.xml</attack_melee>
       <death>voice/stalfos/staldra/staldra_death.xml</death>
       <order_attack>voice/stalfos/staldra/staldra_attack.xml</order_attack>
       <order_garrison>voice/stalfos/staldra/staldra_garrison.xml</order_garrison>

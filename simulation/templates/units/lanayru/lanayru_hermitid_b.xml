@@ -33,7 +33,7 @@
   </Position>
   <Sound>
     <SoundGroups>
-      <attack_ranged>attack/siege/ram_attack.xml</attack_ranged>
+      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
       <death>voice/lanayru/battlecrab/battlecrab_death.xml</death>
       <order_attack>voice/lanayru/battlecrab/battlecrab_attack.xml</order_attack>
       <order_garrison>voice/lanayru/battlecrab/battlecrab_garrison.xml</order_garrison>

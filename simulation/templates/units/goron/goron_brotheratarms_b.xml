@@ -39,7 +39,7 @@
   </Resistance>
   <Sound>
     <SoundGroups>
-      <attack_ranged>attack/weapon/sword.xml</attack_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
       <death>voice/goron/brotheratarms/brotheratarms_death.xml</death>
       <order_attack>voice/goron/brotheratarms/brotheratarms_attack.xml</order_attack>
       <order_garrison>voice/goron/brotheratarms/brotheratarms_garrison.xml</order_garrison>

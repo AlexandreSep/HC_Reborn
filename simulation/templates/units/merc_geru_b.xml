@@ -21,7 +21,7 @@
   </Identity>
   <Sound>
     <SoundGroups>
-      <attack_ranged>attack/weapon/sword.xml</attack_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
       <death>voice/merc/geru/geru_death.xml</death>
       <order_attack>voice/merc/geru/geru_attack.xml</order_attack>
       <order_garrison>voice/merc/geru/geru_garrison.xml</order_garrison>

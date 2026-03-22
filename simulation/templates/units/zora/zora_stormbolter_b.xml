@@ -26,6 +26,7 @@
   </Position>
   <Sound>
     <SoundGroups>
+      <attack_melee>attack/magic/magic_stormbolter.xml</attack_melee>
       <attack_ranged>attack/magic/magic_stormbolter.xml</attack_ranged>
       <death>voice/zora/stormbolter/stormbolter_death.xml</death>
       <order_attack>voice/zora/stormbolter/stormbolter_attack.xml</order_attack>

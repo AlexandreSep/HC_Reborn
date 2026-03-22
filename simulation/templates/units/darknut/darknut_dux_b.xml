@@ -13,7 +13,7 @@
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Dux Large</Classes>
+    <Classes datatype="tokens">Dux Holounit Large</Classes>
     <GenericName>Dux</GenericName>
     <History>Expert warriors and even better teachers, Dux were commanders that lead by example and raised generations of Darknut warriors. A lone Dux was often attached to scores of soldiers to not only to command them, but to show them how to become even better fighters.</History>
     <Icon>units/darknut/dar_dux.dds</Icon>
@@ -28,7 +28,7 @@
   </Promotion>
   <Sound>
     <SoundGroups>
-      <attack_ranged>attack/weapon/darknut_sword.xml</attack_ranged>
+      <attack_melee>attack/weapon/darknut_sword.xml</attack_melee>
       <death>voice/darknut/armored/armored_death.xml</death>
       <order_attack>voice/darknut/armored/armored_attack.xml</order_attack>
       <order_garrison>voice/darknut/armored/armored_garrison.xml</order_garrison>

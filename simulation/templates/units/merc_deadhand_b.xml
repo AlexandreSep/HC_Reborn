@@ -44,7 +44,7 @@
   </Resistance>
   <Sound>
     <SoundGroups>
-      <attack_ranged>attack/natural/deadhand_bite.xml</attack_ranged>
+      <attack_melee>attack/natural/deadhand_bite.xml</attack_melee>
       <death>voice/merc/deadhand/deadhand_death.xml</death>
       <order_attack>voice/merc/deadhand/deadhand_attack.xml</order_attack>
       <order_garrison>voice/merc/deadhand/deadhand_garrison.xml</order_garrison>

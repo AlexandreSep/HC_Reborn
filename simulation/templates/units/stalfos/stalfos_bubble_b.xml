@@ -1,14 +1,4 @@
 <Entity parent="classes/HC_template_unit_beast">
-  <Cost>
-    <BattalionSlots>0</BattalionSlots>
-    <BuildTime>16</BuildTime>
-    <Resources>
-      <food>125</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Health>
     <Max>50</Max>
   </Health>

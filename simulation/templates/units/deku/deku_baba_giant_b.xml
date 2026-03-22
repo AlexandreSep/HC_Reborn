@@ -86,7 +86,7 @@
   </Resistance>
   <Sound>
     <SoundGroups>
-      <attack_melee>attack/natural/dekubaba_bite.xml</attack_melee>
+      <attack_ranged>attack/natural/dekubaba_bite.xml</attack_ranged>
       <death>voice/deku/dekubaba/dekubaba_death.xml</death>
       <order_attack>voice/deku/dekubaba/dekubaba_attack.xml</order_attack>
       <order_garrison>voice/deku/dekubaba/dekubaba_garrison.xml</order_garrison>
