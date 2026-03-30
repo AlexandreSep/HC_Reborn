@@ -3,10 +3,15 @@
       <Ranged>
       <AttackName>Arrows</AttackName>
       <Damage>
+        <Crush>0</Crush>
+        <Hack>0</Hack>
         <Pierce>6</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>60</MaxRange>
-      <MinRange>10</MinRange>
+      <MinRange>5</MinRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
       <PrepareTime>1500</PrepareTime>
 	  <RepeatTime>2300</RepeatTime>
@@ -30,10 +35,10 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>50</food>
+      <food>0</food>
       <metal>0</metal>
-      <stone>0</stone>
-      <wood>30</wood>
+      <stone>20</stone>
+      <wood>50</wood>
     </Resources>
   </Cost>
   <Health>

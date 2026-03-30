@@ -5,13 +5,16 @@
       <Bonuses>
         <BonusCavMelee>
           <Classes>Commander Hero</Classes>
-          <Multiplier>10.0</Multiplier>
+          <Multiplier>5.0</Multiplier>
         </BonusCavMelee>
       </Bonuses>
       <Damage>
-        <Crush>0</Crush>
+		<Crush>0</Crush>
         <Hack>8</Hack>
         <Pierce>0</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -22,7 +25,7 @@
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
-      <food>100</food>
+      <food>200</food>
       <metal>75</metal>
       <stone>0</stone>
       <wood>0</wood>
@@ -50,6 +53,7 @@
         <Hack>25</Hack>
         <Pierce>25</Pierce>
       </Damage>
+	  <DodgeRating>8.0</DodgeRating>
     </Entity>
   </Resistance>
   <Selectable>

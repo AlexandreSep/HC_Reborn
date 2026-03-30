@@ -3,7 +3,12 @@
     <Ranged>
       <AttackName>Magic Attack</AttackName>
       <Damage>
-        <Magic>15</Magic>
+		<Crush>0</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>15</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>40</MaxRange>
       <MinRange>10</MinRange>
@@ -19,7 +24,12 @@
       </Projectile>
 	  <Splash>
         <Damage>
-          <Magic>3.0</Magic>
+          <Crush>0</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>3</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -30,8 +40,8 @@
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>130</food>
-      <metal>50</metal>
+      <food>100</food>
+      <metal>120</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>

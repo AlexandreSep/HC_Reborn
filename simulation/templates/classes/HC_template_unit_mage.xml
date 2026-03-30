@@ -3,7 +3,12 @@
     <Ranged>
       <AttackName>Magic Attack</AttackName>
       <Damage>
-        <Magic>5</Magic>
+		<Crush>0</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>5</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>40</MaxRange>
       <MinRange>10</MinRange>
@@ -23,7 +28,7 @@
     <BuildTime>12</BuildTime>
     <Resources>
       <food>70</food>
-      <metal>10</metal>
+      <metal>60</metal>
       <stone>0</stone>
       <wood>0</wood>
     </Resources>

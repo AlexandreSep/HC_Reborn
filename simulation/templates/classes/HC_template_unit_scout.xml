@@ -3,7 +3,12 @@
   <Melee>
       <AttackName>Sidearm</AttackName>
       <Damage>
+        <Crush>0</Crush>
         <Hack>4</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -49,6 +54,7 @@
         <Hack>10</Hack>
         <Pierce>10</Pierce>
       </Damage>
+	  <DodgeRating>8.0</DodgeRating>
     </Entity>
   </Resistance>
   <Selectable>

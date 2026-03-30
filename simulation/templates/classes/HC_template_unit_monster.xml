@@ -3,7 +3,12 @@
   <Melee>
       <AttackName>Brute Force</AttackName>
       <Damage>
-        <Crush>50</Crush>
+		<Crush>50</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -11,7 +16,12 @@
       <RepeatTime>1400</RepeatTime>
 	  	<Splash>
         <Damage>
-          <Crush>5.0</Crush>
+		<Crush>5</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -57,6 +67,7 @@
         <Hack>50</Hack>
         <Pierce>50</Pierce>
       </Damage>
+	  <KnockbackResistance>100</KnockbackResistance>
     </Entity>
   </Resistance>
   <Selectable>

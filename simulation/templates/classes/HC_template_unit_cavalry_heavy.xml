@@ -3,7 +3,12 @@
     <Melee>
       <AttackName>Weapon</AttackName>
       <Damage>
-        <Hack>20.0</Hack>
+        <Crush>0</Crush>
+        <Hack>20</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>7.0</MaxRange>
       <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
@@ -17,9 +22,9 @@
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>240</food>
+      <food>200</food>
       <metal>0</metal>
-      <stone>40</stone>
+      <stone>200</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
@@ -52,6 +57,7 @@
         <Hack>40.0</Hack>
         <Pierce>40.0</Pierce>
       </Damage>
+	  <KnockbackResistance>75</KnockbackResistance>
     </Entity>
   </Resistance>
   <Selectable>

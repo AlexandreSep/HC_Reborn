@@ -3,7 +3,12 @@
   <Melee>
       <AttackName>Sword</AttackName>
       <Damage>
+		<Crush>0</Crush>
         <Hack>12</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
@@ -21,9 +26,9 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>135</food>
+      <food>50</food>
       <metal>0</metal>
-      <stone>20</stone>
+      <stone>90</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
@@ -49,6 +54,7 @@
         <Hack>30</Hack>
         <Pierce>30</Pierce>
       </Damage>
+	  <KnockbackResistance>50</KnockbackResistance>
     </Entity>
   </Resistance>
   <Selectable>

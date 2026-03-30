@@ -3,14 +3,19 @@
 	<Melee>
       <AttackName>Mace</AttackName>
       <Damage>
-        <Crush>10</Crush>
+		<Crush>10</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>5</MaxRange>
       <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
       <PrepareTime>1200</PrepareTime>
       <RepeatTime>1400</RepeatTime>
 	  <Stun>
-        <Chance>25</Chance>
+        <Chance>20</Chance>
         <Time>1000</Time>
 	</Stun>
 	<EffectDelay>0</EffectDelay>
@@ -26,9 +31,9 @@
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>120</food>
+      <food>60</food>
       <metal>0</metal>
-      <stone>60</stone>
+      <stone>120</stone>
       <wood>0</wood>
     </Resources>
   </Cost>

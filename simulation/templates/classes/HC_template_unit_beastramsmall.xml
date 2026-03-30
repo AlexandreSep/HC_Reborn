@@ -9,8 +9,12 @@
         </BonusCavMelee>
       </Bonuses>
       <Damage>
-        <Crush>35.0</Crush>
+		<Crush>35</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
 		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <Knockback>
         <Horizontal>15</Horizontal>
@@ -25,8 +29,8 @@
     <BuildTime>20</BuildTime>
     <Resources>
       <food>200</food>
-      <metal>0</metal>
-      <stone>50</stone>
+      <metal>50</metal>
+      <stone>0</stone>
       <wood>0</wood>
     </Resources>
   </Cost>
@@ -57,7 +61,7 @@
         <Pierce>30.0</Pierce>
       </Damage>
     </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
+    <KnockbackResistance>75</KnockbackResistance>
   </Resistance>
   <UnitMotion>
     <WalkSpeed>9.0</WalkSpeed>

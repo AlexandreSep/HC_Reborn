@@ -3,8 +3,12 @@
     <Ranged>
 	<AttackName>Spear Bolts</AttackName>
       <Damage>
+        <Crush>0</Crush>
+        <Hack>0</Hack>
         <Pierce>50</Pierce>
+		<Magic>0</Magic>
 		<Siege>50</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
 	  <Knockback>
         <Horizontal>30</Horizontal>
@@ -25,7 +29,12 @@
       <RepeatTime>4000</RepeatTime>
       <Splash>
         <Damage>
-          <Pierce>5.0</Pierce>
+		<Crush>0</Crush>
+        <Hack>0</Hack>
+        <Pierce>5</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -38,7 +47,7 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>100</stone>
+      <stone>200</stone>
       <wood>150</wood>
     </Resources>
   </Cost>

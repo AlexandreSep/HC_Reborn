@@ -9,7 +9,12 @@
         </BonusCavMelee>
       </Bonuses>
       <Damage>
+		<Crush>0</Crush>
+        <Hack>0</Hack>
         <Pierce>4</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>5.0</MaxRange>
       <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
@@ -20,9 +25,9 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>10</stone>
+      <food>40</food>
+      <metal>20</metal>
+      <stone>20</stone>
       <wood>0</wood>
     </Resources>
   </Cost>

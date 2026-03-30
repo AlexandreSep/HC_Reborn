@@ -3,8 +3,12 @@
     <Ranged>
 	<AttackName>Boulder</AttackName>
       <Damage>
-        <Crush>20</Crush>
+		<Crush>20</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
 		<Siege>150</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>120.0</MaxRange>
       <MinRange>45.0</MinRange>
@@ -22,7 +26,12 @@
       <RepeatTime>7000</RepeatTime>
       <Splash>
         <Damage>
-          <Crush>15.0</Crush>
+		<Crush>35</Crush>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -35,7 +44,7 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>50</stone>
+      <stone>200</stone>
       <wood>250</wood>
     </Resources>
   </Cost>

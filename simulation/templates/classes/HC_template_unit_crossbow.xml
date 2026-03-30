@@ -3,7 +3,12 @@
     <Ranged>
       <AttackName>Bolts</AttackName>
       <Damage>
+		<Crush>0</Crush>
+        <Hack>0</Hack>
         <Pierce>20</Pierce>
+		<Magic>0</Magic>
+		<Siege>0</Siege>
+		<TrueDamage>0</TrueDamage>
       </Damage>
       <MaxRange>45</MaxRange>
       <MinRange>0</MinRange>
@@ -30,10 +35,10 @@
   <Cost>
     <BuildTime>20</BuildTime>
     <Resources>
-      <food>100</food>
+      <food>0</food>
       <metal>0</metal>
-      <stone>0</stone>
-      <wood>60</wood>
+      <stone>60</stone>
+      <wood>100</wood>
     </Resources>
   </Cost>
   <Health>
