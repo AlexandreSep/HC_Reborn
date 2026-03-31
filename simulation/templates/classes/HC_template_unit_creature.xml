@@ -54,9 +54,9 @@
         <Hack>30</Hack>
         <Pierce>30</Pierce>
       </Damage>
-	  <DodgeRating>8.0</DodgeRating>
-	  <KnockbackResistance>50</KnockbackResistance>
     </Entity>
+	<DodgeRating>8.0</DodgeRating>
+	<KnockbackResistance>50</KnockbackResistance>
   </Resistance>
   <Selectable>
     <Overlay>

@@ -54,8 +54,8 @@
         <Hack>5.0</Hack>
         <Pierce>5.0</Pierce>
       </Damage>
-	  <DodgeRating>8.0</DodgeRating>
     </Entity>
+	<DodgeRating>8.0</DodgeRating>
   </Resistance>
   <Selectable>
     <Overlay>

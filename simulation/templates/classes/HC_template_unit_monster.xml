@@ -67,8 +67,8 @@
         <Hack>50</Hack>
         <Pierce>50</Pierce>
       </Damage>
-	  <KnockbackResistance>100</KnockbackResistance>
     </Entity>
+	  <KnockbackResistance>100</KnockbackResistance>
   </Resistance>
   <Selectable>
     <Overlay>
