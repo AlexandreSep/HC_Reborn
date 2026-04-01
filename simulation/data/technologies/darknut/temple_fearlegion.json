@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "darknut/temple_fearlegion.dds",
 	"researchTime": 40,
-	"tooltip": "Many rightfully feared sieging against the Darknut Legion. Not only could their mighty walls and towers hold off attackers, but their armies of angry citizens were a match for even seasoned invaders. (Attack rate of Units within the radius of a Honor Monument increases by 10%)",
+	"tooltip": "Attack rate of Units within the radius of a Honor Monument increases by 10% ",
 	"modifications": [],
 	"affects": [],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

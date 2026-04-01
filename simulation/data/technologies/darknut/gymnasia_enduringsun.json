@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "darknut/gymnasia_enduringsun.dds",
 	"researchTime": 40,
-	"tooltip": "Hours of running under the deadly sun of the Gerudo Desert was but a minor nuisance to a true Darknut. (Speed of Gymnasia units is increased by 10%)",
+	"tooltip": "Speed of Gymnasia units is increased by 10%.",
 	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.10},
 					  {"value": "UnitMotion/RunMultiplier", "multiply": 1.10}],
 	"affects": ["Gymunit"],

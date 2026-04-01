@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "darknut/apoth_leadbyexample.dds",
 	"researchTime": 40,
-	"tooltip": "A Darknut military leader would never ask a soldier to do anything that he himself would not do. (Dux's boost to experience gain increased by +1)",
+	"tooltip": "Dux's boost to experience gain increased by +1.",
 	"modifications": [],
 	"affects": ["Dux"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

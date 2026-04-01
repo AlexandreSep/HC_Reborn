@@ -1,12 +1,12 @@
 {
 	"genericName": "Line in the Sand",
 	"description": "Once the Legion had set down a border of territory, there was usually no pushing back against it without impressive force.",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 200},
 	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "darknut"}]},
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "darknut/temple_lineinsand.dds",
 	"researchTime": 40,
-	"tooltip": "Once the Legion had set down a border of territory, there was usually no pushing back against it without impressive force. (+50% Territory Range)",
+	"tooltip": "+50% Territory Range.",
 	"modifications": [{"value": "TerritoryInfluence/Radius", "multiply": 1.5}],
 	"affects": ["Structure"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

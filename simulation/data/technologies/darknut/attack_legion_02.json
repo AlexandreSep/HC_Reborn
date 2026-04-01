@@ -7,7 +7,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "darknut/attack_bladehera.dds",
 	"researchTime": 40,
-	"tooltip": "Ancient and legendary techniques for crafting impressive blades, the swords from the time of Hera eventually made a resurgence within Legion ranks once the lost knowledge was recovered. (+20% Melee Attack - Melee Infantry)",
+	"tooltip": "+20% Melee Attack - Melee Infantry.",
 	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2},
 		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.2},
 		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2},

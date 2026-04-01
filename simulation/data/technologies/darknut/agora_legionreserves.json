@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires Town Phase.",
 	"icon": "darknut/agora_legionreserves.dds",
 	"researchTime": 40,
-	"tooltip": "The Darknut Legion had large caches of supplies built up and stored at their cities for times of drought and need. When such times arose, they would summon their supplies for use in their war efforts. (Agora generates a trickle of that resource)",
+	"tooltip": "Agora generates a trickle of that resource.",
 	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 0.5},
 					  {"value": "ResourceTrickle/Rates/wood", "add": 0.5},
 					  {"value": "ResourceTrickle/Rates/stone", "add": 0.5},

@@ -1,7 +1,7 @@
 {
 	"genericName": "Deity Draft",
 	"description": "Units at the Holosideros are trained as mighties.",
-	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 500},
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 500},
 	"requirements": {"all": [ {"tech": "civ_choices/darknut/choosehero_zalunbar"}, {"tech": "phase_city"}, {"civ": "darknut"}]},
 	"requirementsTooltip": "Requires Zalunbar and the City Phase.",
 	"icon": "darknut/zalunbar_deitydraft.dds",
