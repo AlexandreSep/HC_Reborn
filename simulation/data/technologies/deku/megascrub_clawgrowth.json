@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "deku/megascrub_clawgrowth.dds",
 	"researchTime": 40,
-	"tooltip": "Megascrub Claws could be grown to exceedingly large proportions, allowing them to rip and rend apart their targets with more ease. (Megascrub Hack Damage increased by 50% and they can now deal Critical Hits)",
-	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 2}],
+	"tooltip": "Megascrub now deal 5 Hack Damage",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "add": 5}],
 	"affects": ["Megascrub"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

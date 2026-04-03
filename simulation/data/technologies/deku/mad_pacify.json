@@ -7,7 +7,7 @@
 	"icon": "deku/mad_pacify.dds",
 	"researchTime": 40,
 	"tooltip": "Deku Scrubs came up with a large variety of ways to halt the outbreak of Mad Scrub blight, but these calming waters seemed to do the trick best. Drenching Scrubs before sending them out into the wild had a notible effect on how often they would succumb to Mad Scrub. (Decreases the chance of non-creature Deku Scrub units turning into Mad Scrubs by 25%)",
-	"modifications": [],
+	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": -25}],
 	"affects": ["ScrubUnit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

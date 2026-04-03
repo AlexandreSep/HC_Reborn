@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "deku/dek_puncturenuts.dds",
 	"researchTime": 40,
-	"tooltip": "CNut Carvers would apply their art to giving Deku Nuts sharper points, allowing them to wound their targets better. (Units that attack with Deku Nuts now deal Pierce Damage and their crush damaged is increased by 25%)",
+	"tooltip": "Units that attack with Deku Nuts now deal 5 Pierce Damage and their crush damaged is increased by 25%)",
 	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "add": 5},
 					  {"value": "Attack/Ranged/Damage/Crush", "multiply": 1.25}],
 	"affects": ["SpitDekuNut"],

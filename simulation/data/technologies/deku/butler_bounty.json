@@ -6,11 +6,12 @@
 	"requirementsTooltip": "Requires Kuh-Do and Town Phase.",
 	"icon": "deku/butler_bounty.dds",
 	"researchTime": 40,
-	"tooltip": "Butler Kuh-Do had many assets in his possession and many secret contacts to aid his vast financial network. He was more than willing to call on favors when times were rough. (+0.5 Trickle for all Resources at Deku Marts. Business Scrubs return with 20% more Resources)",
+	"tooltip": "+0.5 Trickle for all Resources at Deku Marts. Business Scrubs return with 20% more Resources",
 	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 0.5, "affects": "DekuMart"},
 					  {"value": "ResourceTrickle/Rates/tree", "add": 0.5, "affects": "DekuMart"},
 					  {"value": "ResourceTrickle/Rates/stone", "add": 0.5, "affects": "DekuMart"},
-					  {"value": "ResourceTrickle/Rates/metal", "add": 0.5, "affects": "DekuMart"}],
+					  {"value": "ResourceTrickle/Rates/metal", "add": 0.5, "affects": "DekuMart"},
+					  {"value": "Trader/GainMultiplier", "multiply": 1.20, "affects": "Trader"}],
 	"hideIfTechnologyRequirementIsNotMet": "true",				  
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

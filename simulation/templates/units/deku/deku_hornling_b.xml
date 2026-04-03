@@ -3,6 +3,36 @@
     units/hornling_aura_1
   units/hornling_aura_2
   </Auras>
+    <Attack>
+    <Melee>
+	<Damage>
+		<TrueDamage>5</TrueDamage>
+		<Magic>1</Magic>
+	</Damage>
+	<Splash>
+        <Damage>
+		<Magic>1</Magic>
+		<TrueDamage>1</TrueDamage>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>15</Range>
+        <Shape>Circular</Shape>
+		<Stun>
+        <Chance>0</Chance>
+        <Time>2000</Time>
+		</Stun>
+	</Splash>
+      <MaxRange>5</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>5000</RepeatTime>
+      <AttackName>Horn</AttackName>
+	  <Knockback>
+        <Horizontal>20</Horizontal>
+		<Vertical>20</Vertical>
+      </Knockback>
+    </Melee>
+  </Attack>
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>

@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "deku/deku_crammed.dds",
 	"researchTime": 40,
-	"tooltip": "When space became an issue, the leaders of the Scrubs set out to solve the problem.... by declaring it a non-issue. (Doubles Population Support of Slums)",
-	"modifications": [{"value": "Cost/PopulationBonus", "add": 10}],
-	"affects": ["House"],
+	"tooltip": "Doubles Population Support of Slums, adds 25% chance for madscrub affliction for non-creature scrub units",
+	"modifications": [{"value": "Cost/PopulationBonus", "add": 10, "affects": "House"},
+	{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 25, "affects": "ScrubUnit" }],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

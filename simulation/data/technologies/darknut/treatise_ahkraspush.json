@@ -6,12 +6,9 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "darknut/treatise_ahkraspush.dds",
 	"researchTime": 120,
-	"tooltip": "Increases the knockback power of all Darknut units by +15.",
-	"modifications": [{"value": "Attack/Ranged/Damage/Knockback/Horizontal", "add": 15},
-					  {"value": "Attack/Ranged/Damage/Knockback/Vertical", "add": 15},
-					  {"value": "Attack/Ranged/Damage/Splash/Knockback/Horizontal", "add": 15},
-					  {"value": "Attack/Ranged/Damage/Splash/Knockback/Vertical", "add": 15}	
-		],
+	"tooltip": "Increases the stun and knockback resitance of all Darknut units by +50.",
+	"modifications": [{"value": "Resistance/KnockbackResistance", "add": 50},
+					  {"value": "Resistance/StunResistance", "add": 50}],
 	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

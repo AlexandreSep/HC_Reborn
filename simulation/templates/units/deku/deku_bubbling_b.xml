@@ -4,7 +4,7 @@
       <AttackName>Bubble</AttackName>
       <Splash>
         <Damage>
-          <Magic>1</Magic>
+          <Magic>2</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>5</Range>

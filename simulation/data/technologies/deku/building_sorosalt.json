@@ -6,9 +6,9 @@
 	"requirementsTooltip": "Requires City Phase.",
 	"icon": "deku/building_sorosalt.dds",
 	"researchTime": 40,
-	"tooltip": "Unique salts that the Deku Scrubs plaster over the wood of their construction. In addition to making their structures harder to bash, the salts seem to retard fire to some degree as well. (Deku Scrub Building Health increased by 15% and they gain minor resistance to Fire damage)",
+	"tooltip": "Deku Scrub Building Health increased by 15% and they gain 50% resistance to Magic damage",
 	"modifications": [{ "value": "Health/Max", "multiply": 1.15 },
-					  { "value": "Resistance/Entity/Damage/Fire", "add": 15 }],
+					  { "value": "Resistance/Entity/Damage/Magic", "add": 50 }],
 	"affects": ["Structure"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

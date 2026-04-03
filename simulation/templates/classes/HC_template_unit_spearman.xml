@@ -4,9 +4,13 @@
       <AttackName>Halberd</AttackName>
       <Bonuses>
         <BonusCavMelee>
-          <Classes>Creature</Classes>
+          <Classes>Cavalry</Classes>
           <Multiplier>3.0</Multiplier>
         </BonusCavMelee>
+		<BonusCreature>
+          <Classes>Creature</Classes>
+          <Multiplier>3.0</Multiplier>
+        </BonusCreature>
       </Bonuses>
       <Damage>
 		<Crush>0</Crush>

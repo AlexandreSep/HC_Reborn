@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "deku/hornling_bwaamp.dds",
 	"researchTime": 40,
-	"tooltip": "Bigger Horns allow for a louder sound, and Tubalings knew just how to send an enemy reeling with an acoustic blast. (Hornlings gain the Bwaamp! ability, allowing them to stun all enemies within their radius)",
-	"modifications": [],
+	"tooltip": "Hornlings gain the ability to stun all enemies within their radius",
+	"modifications": [{"value": "Attack/Melee/Splash/Stun/Chance", "add": 50}],
 	"affects": ["Hornling"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

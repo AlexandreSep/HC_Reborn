@@ -6,8 +6,10 @@
 	"requirementsTooltip": "Requires Kad-A-Kana and City Phase.",
 	"icon": "deku/kadakana_sonata.dds",
 	"researchTime": 40,
-	"tooltip": "+2 Battalion Unit Size - Scrublings, Guardlings, Nutlings, and Megascrubs",
-	"modifications": [{ "value": "Battalion/Size", "add": 2 , "affects": "Sonata" }],
+	"tooltip": "+50% Health, -100% Chance for madscrub affliction - Scrublings, Guardlings, Nutlings, and Megascrubs",
+	"modifications": [{ "value": "Health/Max", "multiply": 1.5 , "affects": "Sonata" },
+	{"value": "Health/SpawnMultipleEntitiesOnDeath/SpawnNumberMax", "add": -1, "affects": "Sonata" },
+	{"value": "Health/SpawnMultipleEntitiesOnDeath/SpawnNumberMin", "add": -1, "affects": "Sonata" }],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

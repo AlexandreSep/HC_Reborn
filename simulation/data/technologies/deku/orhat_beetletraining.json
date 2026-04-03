@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "deku/orhat_beetletraining.dds",
 	"researchTime": 40,
-	"tooltip": "Orhats were extremely difficult to ride, but with the proper training the Deku Scrubs could just about almost manage to stay on half of the time. (Units riding on Orhat Beetles gain a 25% resistance to all damage and no longer dismount when Orhat Beetle is at 25% Health)",
-	"modifications": [{"value": "GarrisonHolder/EjectHealth", "multiply": 0.3}],
+	"tooltip": "Units riding on Orhat Beetles dismount with more Health when thrown off",
+	"modifications": [{"value": "GarrisonHolder/EjectHealth", "add": 0.5}],
 	"affects": ["Orhat"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
