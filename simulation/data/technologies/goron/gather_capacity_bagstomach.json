@@ -1,13 +1,13 @@
 {
 	"genericName": "Dodongo Stomach Bags",
 	"description": "Durable bags made from Dodongo Stomachs.",
-	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 500},
+	"cost": {"food": 0, "wood": 400, "stone": 0, "metal": 400},
 	"supersedes": "goron/gather_capacity_baggoron",
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "goron"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/gather_capacity_bagstomach.dds",
 	"researchTime": 40,
-	"tooltip": "Durable bags made from Dodongo Stomachs. (+5 Resource Capacity - Worker)",
+	"tooltip": "(+5 Resource Capacity - Worker)",
 	"modifications": [
 		{"value": "ResourceGatherer/Capacities/food", "add": 5},
 		{"value": "ResourceGatherer/Capacities/wood", "add": 5},

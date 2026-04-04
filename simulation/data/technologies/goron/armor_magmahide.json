@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/armor_magmahide.dds",
 	"researchTime": 40,
-	"tooltip": "When exposed to Magma, Dodongo hide hardens to be tough as stone. (+5 Armor - Unit)",
+	"tooltip": "(+5 Armor - Unit)",
 	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5},
 		{"value": "Resistance/Entity/Damage/Pierce", "add": 5},
 		{"value": "Resistance/Entity/Damage/Crush", "add": 5}],

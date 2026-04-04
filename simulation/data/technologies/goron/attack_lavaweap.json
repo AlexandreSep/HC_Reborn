@@ -6,31 +6,31 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/attack_lavaweap.dds",
 	"researchTime": 40,
-	"tooltip": "It is a common Goron practice to temper their weapons in searing lava.(+20% Melee Damage - Melee Infantry)",
+	"tooltip": "(+30% Melee Damage - Melee Infantry with Weapons)",
   "modifications": [
     {
       "value": "Attack/Melee/Damage/Hack",
-      "multiply": 1.2
+      "multiply": 1.3
     },
     {
       "value": "Attack/Melee/Damage/Pierce",
-      "multiply": 1.2
+      "multiply": 1.3
     },
     {
       "value": "Attack/Melee/Damage/Pierce",
-      "multiply": 1.2
+      "multiply": 1.3
     },
     {
       "value": "Attack/Ranged/Damage/Hack",
-      "multiply": 1.2
+      "multiply": 1.3
     },
     {
       "value": "Attack/Ranged/Damage/Pierce",
-      "multiply": 1.2
+      "multiply": 1.3
     },
     {
       "value": "Attack/Ranged/Damage/Crush",
-      "multiply": 1.2
+      "multiply": 1.3
     }
   ],
 	"affects": ["Infantry Melee"],

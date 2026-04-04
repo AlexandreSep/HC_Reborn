@@ -7,9 +7,9 @@
 	"icon": "goron/gather_gortramaxe.dds",
 	"researchTime": 40,
 	"tooltip": "Equip Miners with durable Gortram Pickaxes. (+20% Material (Stone), Ore, and Currency (Rupees) Gather Rate - Worker)",
-	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.20},
-					 {"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.20},
-					 {"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.20}],
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.15},
+					 {"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.15},
+					 {"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.15}],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

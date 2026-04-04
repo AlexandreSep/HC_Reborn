@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "goron/trade_firetunic.dds",
 	"researchTime": 40,
-	"tooltip": "A famous and highly-sought-after fire-resistant tunic made by Gorons. (+25% Income - Retailer)",
+	"tooltip": "(+25% Income - Retailer)",
 	"modifications": [{"value": "Trader/GainMultiplier", "multiply": 1.25}],
 	"affects": ["Trader"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/economic_gorkotunnel.dds",
 	"researchTime": 40,
-	"tooltip": "Tunneling processes developed by the Goron Archaeologist Gorko to find ruins have proven useful for speedy mining. (+1 Food Resource Trickle/1 second - Rock Sirloin Mine)",
+	"tooltip": "(+1 Food Resource Trickle/1 second - Rock Sirloin Mine and garrisoned Miners)",
 	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 1.0}],
 	"affects": ["SirloinMine"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

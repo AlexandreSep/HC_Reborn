@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "goron/building_mountaindef.dds",
 	"researchTime": 40,
-	"tooltip": "The Gorons prefer to build their defenses within existing mountains to exploit the natural reinforcement. (+10 Armor vs. Crush - Defense)",
-	"modifications": [{"value": "Resistance/Entity/Damage/Crush", "add": 10.0}],
+	"tooltip": "(+30 Armor vs. Crush - Defense)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Crush", "add": 30.0}],
 	"affects": ["Defense"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

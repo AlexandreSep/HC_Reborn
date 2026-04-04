@@ -20,6 +20,7 @@
   </Attack>
   <Auras datatype="tokens">
     units/miner_sirloin_1
+	units/miner_sirloin_2
   </Auras>
   <Builder>
     <Entities datatype="tokens">

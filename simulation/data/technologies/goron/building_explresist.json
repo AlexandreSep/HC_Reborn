@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "goron/building_explresist.dds",
 	"researchTime": 40,
-	"tooltip": "Reinforcing the defensive foundations against explosives allows Goron defenders to attack invaders at the base of the walls with impunity. (0 Ranged Attack Minimum Range - Defense)",
-	"modifications": [{"value": "Attack/Ranged/Damage/MinRange", "replace": 0}],
+	"tooltip": "(0 Ranged Attack Minimum Range - Defense)",
+	"modifications": [{"value": "Attack/Ranged/MinRange", "replace": 0}],
 	"affects": ["Defense"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

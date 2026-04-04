@@ -6,8 +6,10 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/troop_megatonsteel.dds",
 	"researchTime": 40,
-	"tooltip": "Fire Warriors' Megaton Hammers are replaced with designs made from refined Megaton Steel. (+25% Melee Attack - Fire Warrior)",
-	"modifications": [{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.25}],
+	"tooltip": "(+15% Crush Attack, +3 Truedamage, +10 Siege Damage - Fire Warrior)",
+	"modifications": [{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.15},
+	{"value": "Attack/Ranged/Damage/TrueDamage", "add": 3},
+	{"value": "Attack/Ranged/Damage/Siege", "add": 10}],
 	"affects": ["Firewarrior"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

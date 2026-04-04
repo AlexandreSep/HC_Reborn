@@ -1,7 +1,7 @@
 {
 	"genericName": "Favored Shop",
 	"description": "Goron Bazaars strive to attract repeat customers by offering the finest weapons and armor.",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
+	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "goron"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/merc_favoredshop.dds",

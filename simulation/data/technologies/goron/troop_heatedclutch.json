@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/troop_heatedclutch.dds",
 	"researchTime": 40,
-	"tooltip": "Placing Salamander nests near volcanic vents speeds the hatching of their young. (-15% Build Time - Salamander)",
+	"tooltip": "(-15% Build Time - Salamander)",
 	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.85 }],
 	"affects": ["HeatedClutch"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

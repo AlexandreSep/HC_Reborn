@@ -7,7 +7,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "goron/armor_temperedsteel.dds",
 	"researchTime": 40,
-	"tooltip": "Goron steel is subjected extreme temperature, resulting in a stronger metal. (+5 Armor - Infantry)",
+	"tooltip": "(+5 Armor - Infantry)",
 	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
 		{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0},
 		{"value": "Resistance/Entity/Damage/Crush", "add": 5.0}],

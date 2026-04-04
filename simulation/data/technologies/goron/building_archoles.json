@@ -6,9 +6,9 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/building_archoles.dds",
 	"researchTime": 40,
-	"tooltip": "Arced slots between battlements enable Goron defenders to hurt bombs from safety. (+15 Meters Range - Bulwark Goron Wall and Stronghold)",
+	"tooltip": "(+15 Meters Range - Bulwark Goron Wall and Stronghold)",
 	"modifications": [
-		{ "value": "Attack/Ranged/Damage/MaxRange", "add": 15 }],
+		{ "value": "Attack/Ranged/MaxRange", "add": 15 }],
 	"affects": ["Bulwark"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

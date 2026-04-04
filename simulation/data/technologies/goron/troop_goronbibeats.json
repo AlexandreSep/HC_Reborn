@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/troop_goronbibeats.dds",
 	"researchTime": 40,
-	"tooltip": "The Goron Musician Goronbi developed these beats that are said to increase the vigor of Goron troops. (Activates 'Goronbi Beats' Aura)",
+	"tooltip": "(Activates 'Goronbi Beats' Aura)",
 	"affects": ["Drummer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

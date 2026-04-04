@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/hotspring_mineralbath.dds",
 	"researchTime": 40,
-	"tooltip": "Nothing like a nice sauna in a Goron mineral bath! (+10% Health - Unit)",
-	"modifications": [{"value": "Health/Max", "multiply": 1.10}],
+	"tooltip": "(+15% Health - Unit)",
+	"modifications": [{"value": "Health/Max", "multiply": 1.15}],
 	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

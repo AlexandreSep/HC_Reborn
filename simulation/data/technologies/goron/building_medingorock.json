@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "goron/building_medingorock.dds",
 	"researchTime": 40,
-	"tooltip": "The resilient volcanic rock of the Medingo region is prized for building Goron Double-Layer defenses. (+25% Health - Double Layer Goron Wall and Stronghold)",
+	"tooltip": "(+25% Health - Double Layer Goron Wall and Stronghold)",
 	"modifications": [{"value": "Health/Max", "multiply": 1.25}],
 	"affects": ["DoubleLayer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

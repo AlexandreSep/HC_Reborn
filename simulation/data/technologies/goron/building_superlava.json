@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "goron/building_superlava.dds",
 	"researchTime": 40,
-	"tooltip": "Deep shafts into the Earth draw particularly searing lava up into Goron Moats. (Activates 'Superheated Lava' Aura - Lava Moat Goron Wall and Stronghold)",
+	"tooltip": "(Activates 'Superheated Lava' Aura - Lava Moat Goron Wall and Stronghold)",
 	"modifications": [],
 	"affects": ["LavaMoat"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

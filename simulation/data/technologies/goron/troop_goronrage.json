@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "goron/troop_goronrage.dds",
 	"researchTime": 40,
-	"tooltip": "Woe to those close to an enraged Battle Brother. (Activates 'Goron Rage' Aura)",
+	"tooltip": "(Activates 'Goron Rage' Aura)",
 	"affects": ["Battlebro"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

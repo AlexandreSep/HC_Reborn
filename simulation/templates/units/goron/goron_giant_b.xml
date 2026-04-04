@@ -62,7 +62,7 @@
   </Health>
   <Identity>
     <Civ>goron</Civ>
-    <Classes datatype="tokens">Huge GorGiant</Classes>
+    <Classes datatype="tokens">Huge GorGiant </Classes>
     <GenericName>Goron Giant</GenericName>
     <History>Some of the largest Gorons on record, these Giants were slow to move and even slower to bring to battle. In a fight they preferred to hurl giant boulders from impressive distances, bowling down groups of enemy soldiers or toppling over enemy buildings.</History>
     <Icon>units/goron/gor_giant.dds</Icon>
