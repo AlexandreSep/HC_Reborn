@@ -9,7 +9,7 @@
 	"tooltip": "(+20 Pierce and Crush Defense, +5 TrueDamage - Janitor)",
 	"modifications": [{"value": "Attack/Melee/Damage/Truedamage", "add": 5},
 	{ "value": "Resistance/Entity/Damage/Crush", "add": 20 },
-	{ "value": "Resistance/Entity/Damage/Pierce", "add": 20 }]
+	{ "value": "Resistance/Entity/Damage/Pierce", "add": 20 }],
 	"affects": ["GohJanitor"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
