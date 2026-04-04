@@ -6,9 +6,8 @@
 	"requirementsTooltip": "Requires Queen Venus and at least two Seasons unlocked.",
 	"icon": "fairy/dezaia_greatfairysword.dds",
 	"researchTime": 40,
-	"tooltip": "Great Fairies now wield a Great Fairy Sword, giving them 50 additional Hack Damage.",
-	"modifications": [{"value": "Attack/Ranged/Damage/Hack", "add": 50, "affects": "GreatFairy" }
-	],
+	"tooltip": "Great Fairies now wield a Great Fairy Sword, giving them 10 additional Hack Damage.",
+	"modifications": [{"value": "Attack/Ranged/Damage/Hack", "add": 10, "affects": "GreatFairy" }],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

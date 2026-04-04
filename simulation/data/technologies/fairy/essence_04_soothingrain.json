@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Requires the Bright Sun.",
 	"icon": "fairy/essence_soothingrain.dds",
 	"researchTime": 40,
-	"tooltip": "Bathed in drops of Soothing Rain, shoots grow into saplings. (Movement speed for all units increased by 10%)",
-	"modifications": [{"value": "Cost/BuildTime", "multiply": 1.10}],
+	"tooltip": "Recruitment speed for all units increased by 10%",
+	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.9}],
 	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

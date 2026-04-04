@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires Village Phase.",
 	"icon": "fairy/drove_allcolors.dds",
 	"researchTime": 40,
-	"tooltip": "If riled enough, Fairies of all types and seasons will gather into a massive and angry Drove regardless of what time of the year it is. (Fairy Droves trained after this point have the benefits of all Seasons at once.)",
+	"tooltip": "Fairy Droves trained after this point have the benefits of all Seasons at once.",
 	"modifications": [
 		{
 			"value": "ProductionQueue/Entities/_string",

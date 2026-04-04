@@ -6,11 +6,11 @@
 	"requirementsTooltip": "Requires Dezaia and at least one Season unlocked.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "+25% increase to Attack Damage - All Units",
-	"modifications": [{ "value": "Attack/Melee/Damage/PrepareTime", "multiply": 1.25 },
-					  { "value": "Attack/Melee/Damage/RepeatTime", "multiply": 1.25 },
-					  { "value": "Attack/Ranged/Damage/PrepareTime", "multiply": 1.25 },
-					  { "value": "Attack/Ranged/Damage/RepeatTime", "multiply": 1.25 }
+	"tooltip": "+50% increase to First strikes and 10% to attack speed - All Units",
+	"modifications": [{ "value": "Attack/Melee/Damage/PrepareTime", "multiply": 0.5 },
+					  { "value": "Attack/Melee/Damage/RepeatTime", "multiply": 0.9  },
+					  { "value": "Attack/Ranged/Damage/PrepareTime", "multiply": 0.5  },
+					  { "value": "Attack/Ranged/Damage/RepeatTime", "multiply": 0.9  }
 	],
 	"affects": ["Unit"],
 	"hideIfTechnologyRequirementIsNotMet": "true",

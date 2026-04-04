@@ -6,11 +6,11 @@
 	"requirementsTooltip": "Requires Village Phase.",
 	"icon": "fairy/menhir_secondarycauses.dds",
 	"researchTime": 40,
-	"tooltip": "Through subtle means the invisible can change the worldin real ways. (+0.25 Resource Trickle from Magic Menhirs)",
-	"modifications": [{"value": "ResourceDrain/ResourcesPerTick/food", "add": 1},
-					  {"value": "ResourceDrain/ResourcesPerTick/wood", "add": 1},
-					  {"value": "ResourceDrain/ResourcesPerTick/stone", "add": 1},
-					  {"value": "ResourceDrain/ResourcesPerTick/metal", "add": 1}],
+	"tooltip": "+0.25 Resource Trickle from Magic Menhirs",
+	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 0.25},
+					  {"value": "ResourceTrickle/Rates/wood", "add": 0.25},
+					  {"value": "ResourceTrickle/Rates/stone", "add": 0.25},
+					  {"value": "ResourceTrickle/Rates/metal", "add": 0.25}],
 	"affects": ["Menhir"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

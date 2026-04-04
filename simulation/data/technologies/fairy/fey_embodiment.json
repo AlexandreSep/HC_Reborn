@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Requires Village Phase.",
 	"icon": "fairy/fey_embodiment.dds",
 	"researchTime": 40,
-	"tooltip": "Heaven needs nourishment of the earth to have its body. The Gates of the Fey will grant the spirits what they may need. (Fey Gate batch training time reduced by 75%)",
-	"modifications": [{"value": "ProductionQueue/BatchTimeModifier", "multiply": 0.25}],
+	"tooltip": "Fey Gate batch training time reduced by 75",
+	"modifications": [{"value": "Trainer/BatchTimeModifier", "multiply": 0.25}],
 	"affects": ["FeyGate"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

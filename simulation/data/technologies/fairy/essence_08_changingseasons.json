@@ -6,8 +6,11 @@
 	"requirementsTooltip": "Requires the Seed of Life.",
 	"icon": "fairy/essence_changingseasons.dds",
 	"researchTime": 40,
-	"tooltip": "Scattered seeds sprout in spring, grow in summer, bear fruit in fall and sleep through winter. It is an endless cycle of life... the Changing Seasons. (Reduces time to change Seasons by 25%)",
-	"modifications": [],
+	"tooltip": "Reduces the cost of sundials by 50%",
+	"modifications": [{"value": "Cost/Resources/food", "multiply": 0.50},
+					  {"value": "Cost/Resources/wood", "multiply": 0.50},
+					  {"value": "Cost/Resources/stone", "multiply": 0.50},
+					  {"value": "Cost/Resources/metal", "multiply": 0.50}],
 	"affects": ["Sundial"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

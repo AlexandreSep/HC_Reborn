@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 150,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 0.75 }],
+	"auraName": "Shroudwalker Fog",
+	"auraDescription": "{-25% Enemy Vision Range)",
+	"overlayIcon": "art/textures/ui/session/auras/mistwalker_aura1.dds",
+	"requiredTechnology": "fairy/valanavi_weirdingpaths"
+}

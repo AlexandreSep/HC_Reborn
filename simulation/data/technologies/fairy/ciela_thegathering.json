@@ -7,8 +7,7 @@
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
 	"tooltip": "-10% training time reduction - All Units",
-	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.90, "affects": "Unit" }
-	],
+	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.90, "affects": "Unit" }],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

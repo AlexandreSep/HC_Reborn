@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "fairy/season_dogdays.dds",
 	"researchTime": 40,
-	"tooltip": "The extrodinary heat of some Summers may motivate even the most slothful of spirits into action. (Summer Global Passives are 25% stronger)",
+	"tooltip": "Summer units train 25% faster",
 	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.75, "affects": "Summer Unit" },
 				      {"value": "Cost/BuildTime", "multiply": 0.75, "affects": "Summer Structure" }
 	],

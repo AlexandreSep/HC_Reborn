@@ -34,7 +34,7 @@
     <History>A mysterious ruin believed to somehow be connected to the Fairies' power over the seasons. These giant sundials would glow with different colors reflecting the time and place, though in truth this connection might go the other way around.</History>
     <Icon>structures/fairy/fai_sundial_spring.dds</Icon>
     <Tooltip>Structure that allows the Fairies to change the Season that they operate under.</Tooltip>
-    <VisibleClasses datatype="tokens">-Civilian Special</VisibleClasses>
+    <VisibleClasses datatype="tokens">Special</VisibleClasses>
   </Identity>
   <Obstruction>
     <Static depth="55.0" width="55.0" />

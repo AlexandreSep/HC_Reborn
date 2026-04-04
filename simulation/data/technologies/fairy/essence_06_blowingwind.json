@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires the Nurturing Warmth.",
 	"icon": "fairy/essence_blowingwind.dds",
 	"researchTime": 40,
-	"tooltip": "Sweet fruit is born when pollen is carried by the Blowing Wind. (Resources are generated 10% faster)",
+	"tooltip": "Menhirs generate slightly more Resources.",
 	"modifications": [{"value": "ResourceTrickle/Rates/food", "add": 0.10},
 					  {"value": "ResourceTrickle/Rates/wood", "add": 0.10},
 					  {"value": "ResourceTrickle/Rates/stone", "add": 0.10},

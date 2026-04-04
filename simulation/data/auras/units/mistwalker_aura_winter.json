@@ -1,6 +1,6 @@
 {
 	"type": "range",
-	"radius": 50,
+	"radius": 30,
 	"affects": ["Unit"],
 	"affectedPlayers": ["Enemy"],
 	"modifications": [

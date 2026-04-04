@@ -1,4 +1,7 @@
 <Entity parent="HC_template_structure_civilian">
+  <Auras datatype="tokens">
+    structures/misthenge_aura
+  </Auras>
   <AutoBuildable>
     <Rate>1</Rate>
   </AutoBuildable>

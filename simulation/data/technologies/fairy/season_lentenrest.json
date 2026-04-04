@@ -6,8 +6,7 @@
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "fairy/season_lentenrest.dds",
 	"researchTime": 40,
-	"tooltip": "The gentle rest of Springtime may heal many wounds has suffered in life... both wounds of earth and of heaven. (Spring Global Passives are 25% stronger)",
-	"modifications": [{"value": "Health/RegenRate", "multiply": 1.25, "affects": "Spring Structure" }
-	],
+	"tooltip": "Buildings regenerate in Spring",
+	"modifications": [{"value": "Health/RegenRate", "add": 5, "affects": "Spring Structure" }],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

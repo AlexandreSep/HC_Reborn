@@ -6,7 +6,8 @@
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "fairy/season_tooshort.dds",
 	"researchTime": 30,
-	"tooltip": "Should Tarm be appealed, the Seasons may come and go sooner than one expects. (Time to change Season is reduced by 50%)",
-	"modifications": [],
+	"tooltip": "Time to change Season is reduced by 50%",
+	"modifications": [{"value": "Upgrade/Time", "multiply": 0.50}],
+	"affects": ["Sundial"],
 	"soundComplete": "interface/alarm/alarm_phase.xml"
 }
