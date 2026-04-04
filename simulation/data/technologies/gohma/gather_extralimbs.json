@@ -5,7 +5,7 @@
 	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gohma"}]},
 	"icon": "gohma/gather_extralimbs.dds",
 	"researchTime": 40,
-	"tooltip": "Gohma Harvesters could be tampered with in order to grow extra limbs. With an additionaly pair of claws they could more quickly gather resources. (+30% Gather Rate for all Resources - Harvester)",
+	"tooltip": "(+30% Gather Rate for all Resources - Harvester)",
   "modifications": [
     {
       "value": "ResourceGatherer/Rates/food.fruit",

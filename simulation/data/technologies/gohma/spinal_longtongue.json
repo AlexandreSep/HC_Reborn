@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "gohma/spinal_longtongue.dds",
 	"researchTime": 40,
-	"tooltip": "The prehensile tongue of the Spinalgohma can be grown to great lengths. Such specimens can attack from a staggering distance beyond any average spearman. (Spinalgohma's attack range increased by 60% and attack speed by 10%)",
+	"tooltip": "(Spinalgohma's attack range increased by 60% and attack speed by 10%)",
   "modifications": [
     {
       "value": "Attack/Melee/Damage/MaxRange",

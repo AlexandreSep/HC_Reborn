@@ -6,8 +6,9 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "gohma/longlegs_hydrajoints.dds",
 	"researchTime": 40,
-	"tooltip": "Gohma Long Legs were quite quick despite their size. With proper alterations, their legs could be warped to funtion more like a true spider's legs, giving them quite a frightning boost to their leaps. (+10% Movement Speed for Gohma Long Legs.)",
-	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.10}],
+	"tooltip": "(+20% Movement Speed, 50% faster First Strike - Gohma Long Legs.)",
+	"modifications": [{"value": "Attack/Melee/Damage/PrepareTime", "multiply": 0.5},
+	{"value": "UnitMotion/WalkSpeed", "multiply": 1.20}],
 	"affects": ["GohLonglegs"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

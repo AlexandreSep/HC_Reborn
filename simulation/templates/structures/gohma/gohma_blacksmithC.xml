@@ -19,7 +19,7 @@
     <BuffHeal>0</BuffHeal>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
     <EjectHealth>0.1</EjectHealth>
-    <List datatype="tokens">GohQueen</List>
+    <List datatype="tokens">CasteRoyal</List>
     <LoadingRange>15</LoadingRange>
     <Max>1</Max>
   </GarrisonHolder>

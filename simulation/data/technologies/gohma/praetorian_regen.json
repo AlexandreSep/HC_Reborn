@@ -2,7 +2,7 @@
 	"genericName": "Hive Regeneration",
 	"description": "",
 	"cost": {"food": 100, "wood": 100, "stone": 0, "metal": 100},
-	"requirements": {"all": [{"tech": "civ_choices/gohma/choosehero_praetorian"}, {"tech": "phase_town"}, {"civ": "gohma"}]},
+	"requirements": {"all": [{"tech": "civ_choices/gohma/choosehero_matriarch"}, {"tech": "phase_town"}, {"civ": "gohma"}]},
 	"requirementsTooltip": "Unlocked with Praetorian and Town Phase.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,

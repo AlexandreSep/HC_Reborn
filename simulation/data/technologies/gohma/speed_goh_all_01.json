@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "gohma/speed_synchlegs.dds",
 	"researchTime": 40,
-	"tooltip": "Being creatures with many legs, the Gohma were quite natural at preventing themselves from stumbling over their cumbersome forms. When needed they could create minute changes in the way their legs worked, allowing them to move faster. (+10% Movement Speed for all Gohma units.)",
+	"tooltip": "(+10% Movement Speed for all Gohma units.)",
 	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.10}],
 	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

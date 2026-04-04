@@ -6,10 +6,10 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "gohma/turret_toxicbath.dds",
 	"researchTime": 40,
-	"tooltip": "The Acid Batch hurled very powerful corrosive acid at its victims, though the fluid could be fused with poisons to add a bit of extra venom to the already deadly attack. (Acid Batch now inflicts additional shadow damage)",
+	"tooltip": "(Acid Batch now inflicts additional magic damage)",
   "modifications": [
     {
-      "value": "Attack/Ranged/Damage/Splash/Shadow",
+      "value": "Attack/Ranged/Splash/Damage/Magic",
       "add": 5
     }
   ],

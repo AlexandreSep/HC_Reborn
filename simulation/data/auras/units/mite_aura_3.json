@@ -1,0 +1,13 @@
+{
+	"type": "garrison",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "Health/RegenRate", "add": 5 },
+		{ "value": "Health/Max", "multiply": 1.3 }
+	],
+	"auraName": "Mite Recovery",
+	"auraDescription": "(5 Health/second, 30% extra Health - Buildings)",
+	"requiredTechnology": "gohma/ampli_mitecluster",	
+	"overlayIcon": "art/textures/ui/session/auras/mite_aura_1.dds"
+	
+}

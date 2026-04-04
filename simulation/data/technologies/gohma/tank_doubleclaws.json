@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "gohma/tank_doubleclaws.dds",
 	"researchTime": 40,
-	"tooltip": "Tank Gohma can now bend their claws in more ways, giving them greater reach and articulation. (+20% Attack Speed for Tank Gohma.)",
+	"tooltip": "(+20% Attack Speed for Tank Gohma.)",
   "modifications": [
     {
       "value": "Attack/Melee/Damage/PrepareTime",

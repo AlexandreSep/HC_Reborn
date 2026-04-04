@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires Agitha.",
 	"icon": "gohma/keeper_webfling.dds",
 	"researchTime": 40,
-	"tooltip": "The abdomens of Hive Keepers could launch smaller creatures through the air with enough force. (Hive Keepers can now fling their Webweaver followers from a distance at enemy units)",
+	"tooltip": "(Hive Keepers can now fling their Webweaver followers from a distance at enemy units)",
 	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0}],
 	"affects": ["GohKeeper"],
 	"hideIfTechnologyRequirementIsNotMet": "true",

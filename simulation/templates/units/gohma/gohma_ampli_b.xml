@@ -1,6 +1,7 @@
 <Entity parent="HC_template_unit_auxiliary">
   <Auras datatype="tokens">
     units/mite_aura_1
+	units/mite_aura_3
   </Auras>
   <Cost>
     <BuildTime>12</BuildTime>

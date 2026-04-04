@@ -7,7 +7,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "gohma/armor_rupeeinfuse.dds",
 	"researchTime": 40,
-	"tooltip": "The Gohma could augment their exoskeletons with various metal forms. Such alteration helped make the arachnids all the more durable. (+5 Armor vs Hack and Pierce for all Gohma Units)",
+	"tooltip": "(+5 Armor vs Hack and Pierce for all Gohma Units)",
   "modifications": [
     {
       "value": "Resistance/Entity/Damage/Hack",
@@ -18,6 +18,6 @@
       "add": 5.0
     }
   ],
-	"affects": ["Human"],
+	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
