@@ -26,7 +26,7 @@
     <RequiredXp>9999</RequiredXp>
   </Promotion>
   <ResourceSupply>
-    <Max>250</Max>
+    <Max>150</Max>
     <KillBeforeGather>true</KillBeforeGather>
     <MaxGatherers>3</MaxGatherers>
     <Type>food.meat</Type>

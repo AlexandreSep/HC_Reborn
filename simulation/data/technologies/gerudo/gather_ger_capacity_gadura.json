@@ -1,12 +1,12 @@
 {
 	"genericName": "Gadura Clay",
-	"description": "",
+	"description": "Pots made of sturdy clay from the Gadura Basin.",
 	"cost": {"food": 0, "wood": 400, "stone": 0, "metal": 400},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
 	"requirementsTooltip": "Requires Town Phase.",
 	"icon": "gerudo/gadura_clay.dds",
 	"researchTime": 40,
-	"tooltip": "Pots made of sturdy clay from the Gadura Basin. (+7 Resource Capacity - Worker)",
+	"tooltip": "+7 Resource Capacity - Worker",
 	"modifications": [
 		{"value": "ResourceGatherer/Capacities/food", "add": 7},
 		{"value": "ResourceGatherer/Capacities/wood", "add": 7},

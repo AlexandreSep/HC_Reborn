@@ -49,6 +49,10 @@
   <Obstruction>
     <Static depth="30.0" width="30.0" />
   </Obstruction>
+  <Promotion>
+    <Entity>structures/gerudo/gerudo_field_2</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
   <Resistance>
     <Entity>
       <Damage>

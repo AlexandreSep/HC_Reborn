@@ -1,15 +1,15 @@
 {
 	"genericName": "Moonlight Blades",
-	"description": "",
+	"description": "Crafted in the deepest desert on the darkest nights, these blades possess deadly speed",
 	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 350},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
 	"requirementsTooltip": "Requires Town Phase.",
 	"icon": "gerudo/attack_moonlight_blades.dds",
 	"researchTime": 40,
-	"tooltip": "Crafted in the deepest desert on the darkest nights, these blades possess deadly speed. (+15% Melee Attack - Melee Cavalry)",
-	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.15},
-					{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.15},
-					{"value": "Attack/Melee/Damage/Crush", "multiply": 1.15}],
+	"tooltip": ". (+20% Melee Attack - Melee Cavalry)",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.2},
+					{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.2},
+					{"value": "Attack/Melee/Damage/Crush", "multiply": 1.2}],
 	"affects": ["Cavalry Melee"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

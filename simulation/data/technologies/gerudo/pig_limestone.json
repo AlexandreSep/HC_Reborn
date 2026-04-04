@@ -1,22 +1,18 @@
 {
 	"genericName": "Limestone Supplements",
-	"description": "",
+	"description": "Feeding mineral supplements to Swine yields better stock.",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 350},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "gerudo"}]},
 	"requirementsTooltip": "Requires Town Phase.",
 	"icon": "gerudo/limestone_supps.dds",
 	"researchTime": 40,
-	"tooltip": "Feeding mineral supplements to Swine yields better stock. (+50 Food, +1 Max Spawn - Gerudo Swine)",
+	"tooltip": "(+50 Food, +1 Max Spawn - Gerudo Swine, Gerudo Field)",
   "modifications": [
-    {
-      "value": "Health/SpawnOnInterval/Max",
-      "add": 1
-    },
     {
       "value": "Promotion/RequiredXp",
       "replace": 0
     }
   ],
-  "affects": [ "GerudoPig", "PigFarm" ],
+  "affects": [ "PigFarm" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

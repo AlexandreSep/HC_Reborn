@@ -22,7 +22,7 @@
     <Anchor>pitch</Anchor>
   </Position>
   <ResourceSupply>
-    <Max>300</Max>
+    <Max>250</Max>
     <KillBeforeGather>true</KillBeforeGather>
     <MaxGatherers>3</MaxGatherers>
     <Type>food.meat</Type>

@@ -1,0 +1,14 @@
+<Entity parent="structures/gerudo/gerudo_field">
+  <Health>
+    <SpawnOnInterval>
+      <one>
+        <Interval>8000</Interval>
+        <Template>gaia/gerudo_swine_2</Template>
+      </one>
+    </SpawnOnInterval>
+  </Health>
+  <Promotion>
+    <Entity>structures/gerudo/gerudo_field_3</Entity>
+    <RequiredXp>9999</RequiredXp>
+  </Promotion>
+</Entity>

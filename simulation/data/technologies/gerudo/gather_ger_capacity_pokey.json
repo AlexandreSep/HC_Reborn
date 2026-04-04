@@ -1,13 +1,13 @@
 {
 	"genericName": "Pokey Pots",
-	"description": "",
+	"description": "Pots reinforced with Pokey exoskeletons.",
 	"cost": {"food": 0, "wood": 800, "stone": 0, "metal": 800},
 	"supersedes": "gerudo/gather_ger_capacity_gadura",
 	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "gerudo"}]},
 	"requirementsTooltip": "Requires City Phase.",
 	"icon": "gerudo/pokey_pots.dds",
 	"researchTime": 40,
-	"tooltip": "Pots reinforced with Pokey exoskeletons. (+7 Resource Capacity - Worker)",
+	"tooltip": "+7 Resource Capacity - Worker",
 	"modifications": [
 		{"value": "ResourceGatherer/Capacities/food", "add": 7},
 		{"value": "ResourceGatherer/Capacities/wood", "add": 7},

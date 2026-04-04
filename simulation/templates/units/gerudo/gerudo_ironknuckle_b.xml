@@ -36,10 +36,18 @@
     <Resources>
       <food>0</food>
       <metal>0</metal>
-      <stone>200</stone>
+      <stone>250</stone>
       <wood>100</wood>
     </Resources>
   </Cost>
+  <DeathDamage>
+    <Shape>Circular</Shape>
+    <FriendlyFire>false</FriendlyFire>
+    <Range>20</Range>
+    <Damage>
+      <Magic>50</Magic>
+    </Damage>
+  </DeathDamage>
   <Health>
     <Max>1000</Max>
   </Health>

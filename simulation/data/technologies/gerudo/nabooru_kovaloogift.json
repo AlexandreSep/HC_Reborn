@@ -2,7 +2,7 @@
 	"genericName": "Kovaloo's Gift",
 	"description": "One must run with the Wind of Death, lest they face it.",
 	"cost": {"food": 250, "wood": 0, "stone": 0, "metal": 100},
-	"requirements": {"all": [ {"tech": "civ_choices/gerudo/choosehero_nabooru"}, {"tech": "phase_city"}, {"civ": "gerudo"}]},
+	"requirements": {"all": [ {"tech": "civ_choices/gerudo/choosehero_ganondorf"}, {"tech": "phase_city"}, {"civ": "gerudo"}]},
 	"requirementsTooltip": "Requires Nabooru and City Phase.",
 	"icon": "gerudo/nabooru_kovaloogift.dds",
 	"researchTime": 40,

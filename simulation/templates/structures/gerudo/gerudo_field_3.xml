@@ -1,0 +1,11 @@
+<Entity parent="structures/gerudo/gerudo_field_2">
+  <Health>
+    <SpawnOnInterval>
+      <one>
+        <Max>4</Max>
+        <Template>gaia/gerudo_swine_3</Template>
+      </one>
+    </SpawnOnInterval>
+  </Health>
+	<Promotion disable="" />
+</Entity>
