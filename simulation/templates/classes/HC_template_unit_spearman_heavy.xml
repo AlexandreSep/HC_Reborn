@@ -26,9 +26,9 @@
     <BuildTime>20</BuildTime>
     <Resources>
       <food>40</food>
-      <metal>40</metal>
+      <metal>0</metal>
       <stone>40</stone>
-      <wood>0</wood>
+      <wood>40</wood>
     </Resources>
   </Cost>
   <Health>
