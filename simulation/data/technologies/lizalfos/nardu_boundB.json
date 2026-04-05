@@ -9,5 +9,6 @@
 	"tooltip": "Allows the training of Dinolfos Footman regardless of choses Deity.",
 	"modifications": [],
 	"affects": [],
+	"hideIfTechnologyRequirementIsNotMet": "true",	
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires a second deity.",
 	"icon": "lizalfos/monitor_wardance.dds",
 	"researchTime": 40,
-	"tooltip": "Monitor aura now increases the movement speed of nearby units",
+	"tooltip": "Monitor aura now increases the dodgerate speed of nearby units",
 	"modifications": [],
 	"affects": ["Monitor"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

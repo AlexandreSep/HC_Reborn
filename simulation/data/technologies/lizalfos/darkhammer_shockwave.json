@@ -8,8 +8,8 @@
 	"researchTime": 40,
 	"tooltip": "Darkhammer splash damage radius and Stun time now doubled.",
 	"modifications": [
-		{"value": "Attack/Ranged/Damage/Splash/Range", "multiply": 2},
-		{"value": "Attack/Ranged/Damage/Splash/Stun/Time", "multiply": 2}
+		{"value": "Attack/Ranged/Splash/Damage/Range", "multiply": 2},
+		{"value": "Attack/Ranged/Splash/Stun/Time", "multiply": 2}
 	],
 	"affects": ["Darkhammer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

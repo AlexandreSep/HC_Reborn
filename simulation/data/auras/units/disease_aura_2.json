@@ -10,5 +10,6 @@
 	],
 	"auraName": "Disease",
 	"auraDescription": "{-1.0 HP per second, -25% Movement Speed)",
+	"requiredTechnology": "lizalfos/carcass_tenacious",
 	"overlayIcon": "art/textures/ui/session/auras/disease_aura1.dds"
 }

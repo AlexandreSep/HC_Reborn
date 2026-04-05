@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/mercs_spoilsofhunt.dds",
 	"researchTime": 40,
-	"tooltip": "+0.5 Rupee Resource Trickle/1 second - Treasure Trove",
-	"modifications": [{"value": "ResourceTrickle/Rates/metal", "add": 0.5}],
+	"tooltip": "+1.5 Rupee Resource Trickle/1 second - Treasure Trove",
+	"modifications": [{"value": "ResourceTrickle/Rates/metal", "add": 1.5}],
 	"affects": ["TreasureTrove"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

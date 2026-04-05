@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/heatoise_perfectshell.dds",
 	"researchTime": 40,
-	"tooltip": "Heatoise becomes immune to all non-magical ranged attacks and their non-magic armor is increased by 50%",
+	"tooltip": "Heatoise becomes immune to all non-magical ranged attacks and their non-magic armor is multiplied by 50%",
 	"modifications": [
 		{"value": "Resistance/Entity/Damage/Hack", "multiply": 1.5},
 		{"value": "Resistance/Entity/Damage/Pierce", "multiply": 1.5},

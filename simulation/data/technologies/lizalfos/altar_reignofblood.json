@@ -6,8 +6,14 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/altar_reignofblood.dds",
 	"researchTime": 40,
-	"tooltip": "Units sacrificed at the Altar now refund 60% of their total cost",
-	"modifications": [],
-	"affects": ["Altar"],
+	"tooltip": "All non-creature, non-mechanical Lizalfos units lose 30% Max Health but gain 50% Damage",
+	"modifications": [{"value": "Health/Max", "multiply": 0.7},
+		{"value": "Attack/Melee/Damage/Hack", "multiply": 1.5},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.5},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.5},
+		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.5},
+		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.5},
+		{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.5}],
+	"affects": ["Volvamight"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

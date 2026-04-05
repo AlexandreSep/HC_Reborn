@@ -6,10 +6,9 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/poisonspear_heartofbeast.dds",
 	"researchTime": 40,
-	"tooltip": "Poison Spear Launcher now does Truedamage",
+	"tooltip": "Poison Spear Launcher now deals 15 Truedamage",
 	"modifications": [
-		{"value": "Attack/Ranged/Damage/TrueDamage", "add": 100},
-		{"value": "Attack/Ranged/Damage/Pierce", "replace": 0.0}
+		{"value": "Attack/Ranged/Damage/TrueDamage", "add": 15}
 	],
 	"affects": ["Poisonspear"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

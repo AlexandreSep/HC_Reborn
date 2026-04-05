@@ -1,16 +1,16 @@
-{
+ {
 	"genericName": "Tukital Arrowheads",
 	"description": "An ancient arrowhead uncovered by the Lizalfos upon their colonization of Faron. These wicked tips are extremely deadly to most, and unbearably painful to those that survive.",
-	"cost": {"food": 0, "wood": 350, "stone": 350, "metal": 350},
+	"cost": {"food": 0, "wood": 450, "stone": 450, "metal": 400},
 	"supersedes": "lizalfos/weapon_tukitalarrow",
 	"requirements": {"all": [{"tech": "pair_lizgodsC"}, {"civ": "lizalfos"}]},
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/weapon_tukitalarrow.dds",
 	"researchTime": 40,
-	"tooltip": "+20% Ranged Attack - Ranged Infantry",
-	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2},
-	{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2},
-	{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.2}],
+	"tooltip": "+30% Ranged Attack - Ranged Infantry",
+	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.3},
+	{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.3},
+	{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.3}],
 	"affects": ["Infantry Ranged"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

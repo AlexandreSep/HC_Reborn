@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/striker_perfectcloak.dds",
 	"researchTime": 40,
-	"tooltip": "Chameleofos Striker gains Stealth",
+	"tooltip": "Chameleofos Striker move 25% faster",
 	"modifications": [
 		{"value": "UnitMotion/WalkSpeed", "multiply": 1.25},
 		{"value": "UnitMotion/RunMultiplier", "multiply": 1.25}

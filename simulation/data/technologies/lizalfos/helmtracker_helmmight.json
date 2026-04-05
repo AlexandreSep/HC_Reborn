@@ -6,9 +6,9 @@
 	"requirementsTooltip": "Requires a second deity.",
 	"icon": "lizalfos/helmtracker_helmmight.dds",
 	"researchTime": 40,
-	"tooltip": "Helmasaur Trackers now have a chance to stun enemy units",
+	"tooltip": "Helmasaur Trackers now have a 25% chance to stun enemy units",
 	"modifications": [
-		{"value": "Attack/Melee/Damage/Stun/Chance", "add": 25}
+		{"value": "Attack/Melee/Stun/Chance", "add": 25}
 	],
 	"affects": ["Helmtracker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

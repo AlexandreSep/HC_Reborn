@@ -1,17 +1,17 @@
 {
 	"genericName": "Hidden Hunter",
 	"description": "The god of secrets bestows the means to slay prey unseen.",
-	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
+	"cost": {"food": 0, "wood": 0, "stone": 300, "metal": 300},
 	"requirements": {"all": [{"tech": "lizalfos_farosh"}, {"civ": "lizalfos"}]},
 	"requirementsTooltip": "Unlocked with Farosh.",
 	"icon": "lizalfos/hidden_hunter.dds",
 	"researchTime": 40,
-	"tooltip": "Peons or Aeralfos Peons gain Stealth, Harvest Meat 50% faster, and carry 10% more food.",
+	"tooltip": "Peons or Aeralfos Peons move 10% faster, Harvest Meat 20% faster, and carry 5 more food.",
 	"modifications": [
 		{"value": "UnitMotion/WalkSpeed", "multiply": 1.10},
 		{"value": "UnitMotion/RunMultiplier", "multiply": 1.10},
-		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.50},
-		{"value": "ResourceGatherer/Capacities/food", "multiply": 1.10}
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.2},
+		{"value": "ResourceGatherer/Capacities/food", "add": 5}
 	],
 	"affects": ["Peon"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

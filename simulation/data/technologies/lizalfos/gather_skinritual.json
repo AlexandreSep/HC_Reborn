@@ -6,8 +6,9 @@
 	"requirementsTooltip": "Requires a second deity.",
 	"icon": "lizalfos/gather_skinritual.dds",
 	"researchTime": 40,
-	"tooltip": "Wild animals and Livestock provide 25% more meat.",
-	"modifications": [{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.25}],
+	"tooltip": "Peon or Aeralfos Peon meat gather rate increased by 15%. +10 Food carrying capacity",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.15},
+	{"value": "ResourceGatherer/Capacities/food", "add": 10}],
 	"affects": ["Peon"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

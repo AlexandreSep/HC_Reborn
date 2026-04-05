@@ -6,7 +6,7 @@
 	"requirementsTooltip": "You must select Okakusha as your hero.",
 	"icon": "lizalfos/hidden_hunter.dds",
 	"researchTime": 40,
-	"tooltip": "Treehoppers or Predators gain Camouflage.",
+	"tooltip": "Treehoppers or Predators move 25% faster.",
 	"modifications": [
 		{"value": "UnitMotion/WalkSpeed", "multiply": 1.25},
 		{"value": "UnitMotion/RunMultiplier", "multiply": 1.25}

@@ -1,4 +1,7 @@
 <Entity parent="classes/HC_template_unit_commander">
+  <Auras datatype="tokens">
+    units/monitor_aura_1
+  </Auras>
   <Identity>
     <Civ>lizalfos</Civ>
     <Classes datatype="tokens">Medium Volvamight Battlescar Monitor</Classes>

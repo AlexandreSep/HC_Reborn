@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/helmqueen_maternalrevenge.dds",
 	"researchTime": 40,
-	"tooltip": "Helmasaur Queen's babies gain a permanent increase to speed and damage if their host Queen dies.",
+	"tooltip": "CURRENTLY NOT WORKING. WILL BE REWORKED. Helmasaur Queen's babies gain a permanent increase to speed and damage if their host Queen dies.",
 	"modifications": [],
 	"affects": ["Helmqueen"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

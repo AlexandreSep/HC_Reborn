@@ -6,9 +6,10 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/dodongosnake_diet.dds",
 	"researchTime": 40,
-	"tooltip": "Bonus damage against Small targets increases by 50%",
+	"tooltip": "75% Attackspeed, 15% less Crush damage",
 	"modifications": [
-		{"value": "Attack/Melee/Damage/Bonuses/BonusSmall/Multiplier", "multiply": 1.5}
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 0.65},
+		{"value": "Attack/Melee/RepeatTime", "multiply": 0.75}
 	],
 	"affects": ["Dodongosnake"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

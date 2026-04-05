@@ -7,8 +7,7 @@
 	"icon": "lizalfos/arena_battlescars.dds",
 	"researchTime": 40,
 	"tooltip": "Predators and Monitors gain slow health regeneration while idle",
-	"modifications": [{"value": "Health/IdleRegenRate", "add": 0.5 }
-	],
+	"modifications": [{"value": "Health/IdleRegenRate", "add": 1 }],
 	"affects": ["Battlescar"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

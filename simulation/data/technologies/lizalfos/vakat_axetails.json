@@ -6,9 +6,9 @@
 	"requirementsTooltip": "You must select Vakat as your hero.",
 	"icon": "lizalfos/vakat_axetails.dds",
 	"researchTime": 40,
-	"tooltip": "Treehoppers, Dinolfos Butcher, Chameleofos Striker, and Dinolfos Footman gain axes on their tails, adding +15 Hack damage.",
+	"tooltip": "Treehoppers, Dinolfos Butcher, Chameleofos Striker, and Dinolfos Footman gain axes on their tails, adding +3 Hack damage.",
 	"modifications": [{"value": "Promotion/RequiredXp", "replace": 0},
-				      {"value": "Attack/Melee/Damage/Hack", "add": 15}],
+				      {"value": "Attack/Melee/Damage/Hack", "add": 3}],
 	"affects": ["Axetails"],
 	"hideIfTechnologyRequirementIsNotMet": "true",	
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

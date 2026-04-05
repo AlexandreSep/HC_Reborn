@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/altar_animalsacrifice.dds",
 	"researchTime": 40,
-	"tooltip": "Altars now spawn livestock that can be gathered for food.",
+	"tooltip": ".CURRENTLY NOT WORKING. Altars now spawn livestock that can be gathered for food.",
 	"modifications": [
 		{"value": "Health/SpawnOnInterval/Max", "add": 3}
 	],

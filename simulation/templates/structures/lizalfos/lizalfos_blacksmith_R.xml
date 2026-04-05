@@ -7,7 +7,7 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/weapon_wickedcraft
-    lizalfos/weapon_bitingblades
+	lizalfos/weapon_tukitalarrow
     lizalfos/armor_feralforge
     lizalfos/armor_flamebath
     lizalfos/vakat_axetails

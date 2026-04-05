@@ -6,10 +6,8 @@
 	"requirementsTooltip": "Requires a second deity.",
 	"icon": "lizalfos/predator_superiorfooting.dds",
 	"researchTime": 40,
-	"tooltip": "Predator Dodge rate increased by 25%",
-	"modifications": [
-		{"value": "Resistance/Entity/Damage/DodgeRating", "multiply": 1.25}
-	],
+	"tooltip": "Predator Dodge rate increased by +8%",
+	"modifications": [{"value": "Resistance/DodgeRating", "add": 8}],
 	"affects": ["Predator"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
