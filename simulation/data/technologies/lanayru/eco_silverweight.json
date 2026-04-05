@@ -7,7 +7,7 @@
 	"icon": "lanayru/eco_silverweight.dds",
 	"researchTime": 40,
 	"tooltip": "Rupee harvesting rate increased by 20%, Stone and Metal by 5%)",
-	"modifications": [{"value": "ResourceGatherer/Rates/wood.ore", "multiply": 1.05},
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.05},
 	{"value": "ResourceGatherer/Rates/metal.rupees ", "multiply": 1.2},
 	{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.05}],
 	"affects": ["Worker"],
