@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/armor_vigjaro_leather.dds",
 	"researchTime": 40,
-	"tooltip": "Quilted linen or leather body armor, using techniques from Poalo of Vigjaro. (+5 Armor - Infantry)",
+	"tooltip":  "(+5 Armor - Infantry)",
   "modifications": [
     {
       "value": "Resistance/Entity/Damage/Hack",

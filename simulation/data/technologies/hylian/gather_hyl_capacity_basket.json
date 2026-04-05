@@ -11,7 +11,7 @@
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "hylian/gather_capacity_basket.dds",
 	"researchTime": 40,
-	"tooltip": "The Royal Family issues baskets to Citizens. (+5 Resource Capacity - Worker)",
+	"tooltip": "(+5 Resource Capacity - Worker)",
 	"modifications": [
 		{"value": "ResourceGatherer/Capacities/food", "add": 5},
 		{"value": "ResourceGatherer/Capacities/wood", "add": 5},

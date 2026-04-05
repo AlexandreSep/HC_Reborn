@@ -2,7 +2,7 @@
 	"genericName": "Tithe Donations",
 	"description": "",
 	"cost": {"food": 50, "wood": 0, "stone": 0, "metal": 0},
-    "requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_seres"}, {"civ": "hylian"}]},
+    "requirements": {"all": [ {"tech": "civ_choices/hylian/choosehero_rauru"}, {"civ": "hylian"}]},
     "requirementsTooltip": "Unlocked with Seres.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,

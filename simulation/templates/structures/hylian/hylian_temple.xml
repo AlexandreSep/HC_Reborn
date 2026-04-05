@@ -46,6 +46,12 @@
       <select>interface/select/building/sel_temple.xml</select>
     </SoundGroups>
   </Sound>
+  <ResourceTrickle>
+    <Interval>1000</Interval>
+    <Rates>
+      <metal>0.0</metal>
+    </Rates>
+  </ResourceTrickle>
   <Upgrade disable="" />
   <VisualActor>
     <Actor>structures/hylian/hylian_religionA.xml</Actor>
@@ -54,7 +60,7 @@
   <Researcher>
     <Technologies datatype="tokens">hylian/priestess
       hylian/rauru_resistant
-
+	  hylian/seres_donation
 </Technologies>
   </Researcher>
   <Trainer>

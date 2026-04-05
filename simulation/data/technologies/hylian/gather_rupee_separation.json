@@ -7,8 +7,8 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/gather_rupee_separation.dds",
 	"researchTime": 40,
-	"tooltip": "Employ concentrated methods and tools for separating Rupees by Grade. (+15% Currency (Rupees) Gather Rate - Worker)",
-	"modifications": [{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.15}],
+	"tooltip": "(+5% Currency (Rupees) Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.05}],
   "affects": [ "FemaleCitizen" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

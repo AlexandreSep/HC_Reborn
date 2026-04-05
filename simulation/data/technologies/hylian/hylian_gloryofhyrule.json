@@ -11,23 +11,23 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "hylian/glory_to_hyrule.dds",
 	"researchTime": 40,
-	"tooltip": "Inspires Hylian knights with promises of power by the Royal Family. (+10% Melee Attack, +15% Movement Speed, +10% Max HP - Melee Infantry)",
+	"tooltip": "(+15% Melee Attack, +15% Movement Speed, +15% Max HP - Melee Infantry)",
   "modifications": [
     {
       "value": "Attack/Melee/Damage/Hack",
-      "multiply": 1.1
+      "multiply": 1.15
     },
     {
       "value": "Attack/Melee/Damage/Pierce",
-      "multiply": 1.1
+      "multiply": 1.15
     },
     {
       "value": "Attack/Melee/Damage/Crush",
-      "multiply": 1.1
+      "multiply": 1.15
     },
     {
       "value": "Attack/Melee/Damage/TrueDamage",
-      "multiply": 1.1
+      "multiply": 1.15
     },
     {
       "value": "UnitMotion/WalkSpeed",
@@ -35,7 +35,7 @@
     },
     {
       "value": "Health/Max",
-      "multiply": 1.1
+      "multiply": 1.15
     }
   ],
   "affects": [ "HylianShield" ],

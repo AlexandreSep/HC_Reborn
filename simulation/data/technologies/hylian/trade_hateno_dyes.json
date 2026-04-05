@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/trade_hateno_dyes.dds",
 	"researchTime": 40,
-	"tooltip": "Colorful dyes from the famous but remote village of Hateno that aid in textile production. (-5% Food, Material, Ore, and Currency - Unit )",
+	"tooltip": "(-5% Food, Material, Ore, and Currency - Unit )",
 	"modifications": [{ "value": "Cost/Resources/food", "multiply": 0.95 },
 			{ "value": "Cost/Resources/wood", "multiply": 0.95 },
 			{ "value": "Cost/Resources/stone", "multiply": 0.95 },

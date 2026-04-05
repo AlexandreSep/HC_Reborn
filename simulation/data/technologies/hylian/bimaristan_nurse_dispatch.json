@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/nurse_dispatch.dds",
 	"researchTime": 40,
-	"tooltip": "Dispatches Nurses to conduct on-site Triage. (Garrison Heal 3 health/second - Town Hall, Watch Tower, Kingdom Guard Tower, and Castle)",
+	"tooltip": "(Garrison Heal 3 health/second - Town Hall, Watch Tower, Kingdom Guard Tower, and Castle)",
 	"modifications": [{"value": "GarrisonHolder/BuffHeal", "add": 3.0}],
 	"affects": ["Nurses"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

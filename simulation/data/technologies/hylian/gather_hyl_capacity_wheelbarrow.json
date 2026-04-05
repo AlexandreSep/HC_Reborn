@@ -12,7 +12,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/gather_capacity_wheelbarrow.dds",
 	"researchTime": 40,
-	"tooltip": "The Royal Family issues wheelbarrows to Citizens. (+5 Resource Capacity - Worker)",
+	"tooltip": "(+5 Resource Capacity - Worker)",
 	"modifications": [
 		{"value": "ResourceGatherer/Capacities/food", "add": 5},
 		{"value": "ResourceGatherer/Capacities/wood", "add": 5},

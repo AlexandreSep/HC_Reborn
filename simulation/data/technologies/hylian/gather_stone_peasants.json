@@ -7,9 +7,9 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/gather_stone_peasants.dds",
 	"researchTime": 40,
-	"tooltip": "Employ Peasant garrisons from the outer colonies to help Citizens mine stone. (+20% Material (Stone) and Ore Gather Rate - Worker)",
-	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.2},
-			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.2}],
+	"tooltip": "(+5% Material (Stone) and Ore Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.05},
+			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.05}],
   "affects": [ "FemaleCitizen" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

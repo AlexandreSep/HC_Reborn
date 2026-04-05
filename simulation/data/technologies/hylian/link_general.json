@@ -6,7 +6,7 @@
 	"requirementsTooltip": "You must select Link, Heir of King Gustaf, as your hero.",
 	"icon": "hylian/hylian_shield.dds",
 	"researchTime": 40,
-	"tooltip": "A very durable shield that has become legendary thanks to its use by Link and the Knights of Hyrule. (+15 Crush Armor, +25% Stun Resistance - Melee Infantry)",
+	"tooltip": "(Upgrades Captains into Generals)",
   "modifications": [{"value": "ProductionQueue/Entities/_string",	"tokens": "units/hylian/{civ}_captain_b>units/hylian/{civ}_general_b", "affects": "Structure" },
 					  {"value": "Health/Max", "add": 200, "affects": "HylCaptain Kingdom" },
 					  {"value": "Promotion/RequiredXp", "replace": 0, "affects": "HylCaptain" }

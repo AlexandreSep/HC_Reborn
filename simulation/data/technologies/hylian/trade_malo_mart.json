@@ -11,7 +11,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "hylian/trade_malo_mart.dds",
 	"researchTime": 40,
-	"tooltip": "Originating in Kakariko Village, Malo Mart is now a popular chain of stores that encourages trade in all of Hyrule. (+15% Income - Merchant)",
+	"tooltip": "(+15% Income - Merchant)",
 	"modifications": [{"value": "Trader/GainMultiplier", "multiply": 1.15}],
 	"affects": ["Trader"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

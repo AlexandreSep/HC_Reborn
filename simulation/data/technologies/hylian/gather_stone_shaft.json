@@ -10,9 +10,9 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "hylian"}]},
 	"icon": "hylian/gather_stone_shaft.dds",
 	"researchTime": 40,
-	"tooltip": "Reinforced vertical tunneling aids the Hylians in digging up valuable stone deposits. (+20% Material (Stone) and Ore Gather Rate - Worker)",
-	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.2},
-			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.2}],
+	"tooltip": "(+10% Material (Stone) and Ore Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.1},
+			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.1}],
   "affects": [ "FemaleCitizen" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

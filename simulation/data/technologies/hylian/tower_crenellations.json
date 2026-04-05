@@ -6,14 +6,14 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/hyl_crenellations.dds",
 	"researchTime": 40,
-	"tooltip": "Installing Crenellations on the Battlements allow defender a wider range of fire. (+10 MaxRange, +20% Attack Speed, +20% Accuracy - Garrison Archer)",
+	"tooltip": "(+10 MaxRange, +20% Attack Speed, +20% Accuracy - Garrison Archer)",
   "modifications": [
     {
       "value": "Attack/Ranged/MaxRange",
       "add": 10
     },
     {
-      "value": "Attack/Ranged/Projectile/Spread",
+      "value": "Attack/Ranged/Spread",
       "multiply": 0.8
     },
     {

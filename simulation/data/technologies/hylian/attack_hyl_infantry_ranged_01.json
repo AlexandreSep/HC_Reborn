@@ -11,7 +11,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/attack_bolted_process.dds",
 	"researchTime": 45,
-	"tooltip": "Crossbows have largely replaced standard archery, and Hylians have become quite proficient in creating bolted ammunition. (+10% Ranged Attack - Ranged Infantry)",
+	"tooltip": "Crossbows have largely replaced standard archery, and Hylians have become quite proficient in creating bolted ammunition. (+10% Ranged Attack, +2 Truedamage - Ranged Infantry)",
   "modifications": [
     {
       "value": "Attack/Ranged/Damage/Pierce",
@@ -19,7 +19,7 @@
     },
     {
       "value": "Attack/Ranged/Damage/TrueDamage",
-      "multiply": 1.1
+      "add": 2
     }
   ],
 	"affects": ["Infantry Missile"],

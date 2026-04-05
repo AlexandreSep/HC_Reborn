@@ -11,7 +11,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/attack_iron_refinment.dds",
 	"researchTime": 50,
-	"tooltip": "Hylians have developed numerous methods to refine iron and rid it of imperfections. Increases the attack of all melee infantry and cavalry. (+10% Melee Attack - Melee Infantry and Melee Cavalry)",
+	"tooltip": "(+10% Melee Attack - Melee Infantry and Melee Cavalry)",
   "modifications": [
     {
       "value": "Attack/Melee/Damage/Hack",

@@ -17,23 +17,23 @@
   "requirementsTooltip": "Unlocked with City.",
   "icon": "hylian/gather_capacity_carts.dds",
   "researchTime": 40,
-  "tooltip": "The Royal Family issues carts to Citizens. (+10 Resource Capacity - Worker)",
+  "tooltip": "(+5 Resource Capacity - Worker)",
   "modifications": [
     {
       "value": "ResourceGatherer/Capacities/food",
-      "add": 10
+      "add": 5
     },
     {
       "value": "ResourceGatherer/Capacities/wood",
-      "add": 10
+      "add": 5
     },
     {
       "value": "ResourceGatherer/Capacities/stone",
-      "add": 10
+      "add": 5
     },
     {
       "value": "ResourceGatherer/Capacities/metal",
-      "add": 10
+      "add": 5
     }
   ],
   "affects": [ "FemaleCitizen" ],

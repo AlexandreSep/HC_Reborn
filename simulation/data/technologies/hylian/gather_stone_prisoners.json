@@ -7,9 +7,9 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "hylian/gather_stone_prisoners.dds",
 	"researchTime": 40,
-	"tooltip": "Hylians were known to put prisoners of war to work in their mines. (+20% Material (Stone) and Ore Gather Rate - Worker)",
-	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.20},
-			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.20}],
+	"tooltip": "(+5% Material (Stone) and Ore Gather Rate - Worker)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.05},
+			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.05}],
   "affects": [ "FemaleCitizen" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

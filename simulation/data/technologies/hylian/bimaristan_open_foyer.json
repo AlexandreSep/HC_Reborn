@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "hylian/open_foyer.dds",
 	"researchTime": 40,
-	"tooltip": "Expanding the Foyer allows Nurses to treat more patients at a time.(x2 Garrison Capacity - Bimaristan)",
+	"tooltip": "(+5 Garrison Capacity - Bimaristan)",
 	"modifications": [{"value": "GarrisonHolder/Max", "add": 5.0}],
 	"affects": ["Hospital"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

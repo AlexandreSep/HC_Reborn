@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "hylian/academy_dorms.dds",
 	"researchTime": 40,
-	"tooltip": "Adding in-house living quarters streamlines training. (+5 Population, -10% Batch Build Speed - Library, Kingdom Academy, Archery Range)",
+	"tooltip": "(+5 Population, -10% Batch Build Speed - Library, Kingdom Academy, Archery Range)",
 	"modifications": [{"value": "Population/Bonus", "add": 5.0},
 		{ "value": "ProductionQueue/BatchTimeModifier", "multiply": 0.9}],
 	"affects": ["Library", "Barracks"],
