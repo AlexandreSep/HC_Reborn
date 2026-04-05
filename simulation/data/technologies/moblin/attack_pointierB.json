@@ -6,11 +6,14 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "Does not require Phases.",
 	"icon": "moblin/attack_pointierB.dds",
-	"researchTime": 40,
-	"tooltip": "You call that pointy?! That couldnt even stab a Keese on a stinky peahat pile! Go make em pointyer or else! (Increases the damage of all melee non-mechancial combat units by 15%)",
+	"researchTime": 80,
+	"tooltip": "(Increases the damage of all melee non-mechancial combat units by 15%)",
 	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.15},
 		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.15},
-		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.15}],
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.15},
+		{"value": "Attack/Ranged/Damage/Hack", "multiply": 1.15},
+		{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15},
+		{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.15}],
 	"affects": ["Infantry Melee"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

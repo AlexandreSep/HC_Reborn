@@ -5,10 +5,10 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "Does not require Phases.",
 	"icon": "moblin/bug_tossemwhoop.dds",
-	"researchTime": 40,
-	"tooltip": "Yaaahhhh go Tallblins! Tossen them little Bugblins all at the baddies OH WAIT NO YOU ARE KILLIN THEM! Throw them better like this! (Increases chance of Tallblin Tosser's projectile to survive and spawn a Bugblin by 10%)",
-	"modifications": [{"value": "Attack/SpawnEntityOnImpact/SpawnOnHit/Chance", "multiply": 1.10},
-					  {"value": "Attack/SpawnEntityOnImpact/SpawnOnImpact/Chance", "multiply": 1.10}],
+	"researchTime": 80,
+	"tooltip": "(Increases chance of Tallblin Tosser's projectile to survive and spawn a Bugblin by +10%)",
+	"modifications": [{"value": "Attack/SpawnEntityOnImpact/SpawnOnHit/Chance", "add": 10},
+					  {"value": "Attack/SpawnEntityOnImpact/SpawnOnImpact/Chance", "add": 10}],
 	"affects": ["Tallblin"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

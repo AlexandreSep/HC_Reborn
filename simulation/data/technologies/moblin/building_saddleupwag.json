@@ -5,9 +5,9 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "Does not require Phases.",
 	"icon": "moblin/building_saddleupwag.dds",
-	"researchTime": 40,
-	"tooltip": "Gotta go fast a blue blin once told me! Pack up yer bags and houses and get a moving on, there's baddies to go bashin! (Moblin buildings pack and unpack 25% faster)",
-	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.75 }],
+	"researchTime": 80,
+	"tooltip": "Gotta go fast a blue blin once told me!(Moblin buildings pack and unpack 25% faster)",
+	"modifications": [{ "value": "Upgrade/Time", "multiply": 0.75 }],
 	"affects": ["Packed"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

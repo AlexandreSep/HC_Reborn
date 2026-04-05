@@ -4,6 +4,7 @@
       <AttackName>Arrows</AttackName>
       <Damage>
         <Magic>7</Magic>
+		<Siege>7</Siege>
       </Damage>
       <MaxRange>76</MaxRange>
       <MinRange>15.0</MinRange>

@@ -5,13 +5,13 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "Does not require Phases.",
 	"icon": "moblin/carrymoreA.dds",
-	"researchTime": 40,
-	"tooltip": "You stupid dumb Dodoblins! You got two hands, carry more! (+2 Resource Capacity - Worker)",
+	"researchTime": 80,
+	"tooltip": "(+3 Resource Capacity - Worker)",
 	"modifications": [
-		{"value": "ResourceGatherer/Capacities/food", "add": 2},
-		{"value": "ResourceGatherer/Capacities/wood", "add": 2},
-		{"value": "ResourceGatherer/Capacities/stone", "add": 2},
-		{"value": "ResourceGatherer/Capacities/metal", "add": 2}
+		{"value": "ResourceGatherer/Capacities/food", "add": 3},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 3},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 3},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 3}
 	],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

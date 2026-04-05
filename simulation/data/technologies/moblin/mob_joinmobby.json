@@ -5,8 +5,8 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "Does not require Phases.",
 	"icon": "moblin/mob_joinmobby.dds",
-	"researchTime": 40,
-	"tooltip": "What are ya all afraid?! Moblins are never afraid! Get off your butts and join the big bad mob of Moblins nooowww! (Moblin Mob train 20% faster)",
+	"researchTime": 80,
+	"tooltip": "(Moblin Mob train 20% faster)",
 	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.80 }],
 	"affects": ["MoblinMob"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

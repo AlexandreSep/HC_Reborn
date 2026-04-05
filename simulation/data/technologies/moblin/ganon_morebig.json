@@ -5,7 +5,7 @@
 	"requirements": {"all": [ {"tech": "civ_choices/moblin/choosehero_ganon"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "You must select Ganon as your hero.",
 	"icon": "moblin/ganon_thorwemcareful.dds",
-	"researchTime": 40,
+	"researchTime": 80,
 	"tooltip": "Giantblin unit line training time is reduced by 25%.",
 	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.75}],
 	"affects": ["Giantblin"],

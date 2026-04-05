@@ -6,8 +6,8 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "Does not require Phases.",
 	"icon": "moblin/carrymoreC.dds",
-	"researchTime": 40,
-	"tooltip": "You stupid Dodos! Why can't you just listen and carry more! Oh right, you are big dumb Dodos! (+2 Resource Capacity - Worker)",
+	"researchTime": 80,
+	"tooltip": "(+2 Resource Capacity - Worker)",
 	"modifications": [
 		{"value": "ResourceGatherer/Capacities/food", "add": 2},
 		{"value": "ResourceGatherer/Capacities/wood", "add": 2},

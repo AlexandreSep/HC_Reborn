@@ -5,8 +5,8 @@
 	"requirements": {"all": [{"tech": "civ_choices/moblin/choosehero_ganon"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "Requires Ganon.",
 	"icon": "moblin/dumb_helpem.dds",
-	"researchTime": 40,
-	"tooltip": "Durpyblins are so dumb, they need help from the also dumb Dodoblins to get anything done! That's a lot of dumb! (Durpyblin Defenders buff defense of dodoblins in formation)",
+	"researchTime": 80,
+	"tooltip": "(Durpyblin Defenders buff defense of dodoblins in formation)",
 	"affects": [], 
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
