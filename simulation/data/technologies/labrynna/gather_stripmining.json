@@ -6,9 +6,10 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "labrynna/gather_stripmining.dds",
 	"researchTime": 40,
-	"tooltip": "In order to supply the Black Tower with all of it's construction needs, Labrynna developed a quick process for utterly stripping all available resources from both above and under the earth in any given area. (Stone and Ore gather rate increased by 100%)",
-	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 2},
-			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 2}],
+	"tooltip": "(Stone and Ore gather rate increased by 10%)",
+	"modifications": [{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.1},
+			{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.1},
+			{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.1}],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

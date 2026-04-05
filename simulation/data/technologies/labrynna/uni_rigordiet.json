@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "labrynna/uni_rigordiet.dds",
 	"researchTime": 40,
-	"tooltip": "A seriers of studies in Labrynna's universities have yielded what they consider the ideal diet to keep their soldiers in the best health possible. The Empire mandates such diets, even if their warriors still get away with eating too much meat. (HP of all non-mechanical units increased by 10%)",
+	"tooltip": "(HP of all non-mechanical units increased by 10%)",
 	"modifications": [
 		{"value": "Health/Max", "multiply": 1.10}
 	],

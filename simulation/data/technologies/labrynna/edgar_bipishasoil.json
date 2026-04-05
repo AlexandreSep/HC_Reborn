@@ -1,13 +1,13 @@
 {
 	"genericName": "Bipisha Soils",
-	"description": "Tokay Slave gather rate from farms increased by 20% and Machine Farm yield increased by +1.",
+	"description": "Distant families of profficient farmers had many of the methods they used to grow their bountiful crops adopted and applied to Labrynna's farming system.",
 	"cost": {"food": 0, "wood": 0, "stone": 350, "metal": 350},
 	"requirements": {"all": [ {"tech": "phase_city"}, {"civ": "labrynna"}]},
 	"requirementsTooltip": "Tokay Slave gather rate from farms increased by 20% and Machine Farm yield increased by +1.",
 	"icon": "labrynna/edgar_bipishasoil.dds",
 	"researchTime": 40,
-	"tooltip": "Distant families of profficient farmers had many of the methods they used to grow their bountiful crops adopted and applied to Labrynna's farming system. ((Tokay Slave gather rate from farms increased by 20% and Machine Farm yield increased by +1)",
-	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.2, "affects": "Slave" },
+	"tooltip": "(Tokay Slave gather rate from farms increased by 10% and Machine Farm yield increased by +1)",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.1, "affects": "Slave" },
 					  {"value": "ResourceTrickle/Rates/food", "add": 1, "affects": "MachineFarm" }
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

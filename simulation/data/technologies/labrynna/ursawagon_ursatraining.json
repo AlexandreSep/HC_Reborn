@@ -6,10 +6,10 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "labrynna/ursawagon_ursatraining.dds",
 	"researchTime": 40,
-	"tooltip": "Extensive training with Blue Bears enabled these powerful beasts to pull quite a load; they could run with wagons at impressive speeds. (Wagon movement speed increased by 15%)",
+	"tooltip": "(Wagon movement speed increased by 20%)",
 	"modifications": [
-		{"value": "UnitMotion/WalkSpeed", "multiply": 1.15},
-		{"value": "UnitMotion/RunMultiplier", "multiply": 1.15}
+		{"value": "UnitMotion/WalkSpeed", "multiply": 1.2},
+		{"value": "UnitMotion/RunMultiplier", "multiply": 1.2}
 	],
   "affects": [ "Ursawagon" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

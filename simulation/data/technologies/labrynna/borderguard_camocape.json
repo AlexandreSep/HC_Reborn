@@ -6,13 +6,9 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "labrynna/borderguard_camocape.dds",
 	"researchTime": 40,
-	"tooltip": "Special capes patterned after the local flora to help aid Borderguards in hiding for surprise attacks. (Borderguards now have Camouflage)",
-  "modifications": [
-    {
-      "value": "Promotion/RequiredXp",
-      "replace": 0
-    }
-  ],
+	"tooltip": "(+15 Attackrange and Vision - Borderguards )",
+  "modifications": [{"value": "Vision/Range", "add": 15},
+  {"value": "Attack/Ranged/MaxRange", "add": 5}],
   "affects": [ "Borderguard" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "labrynna/conqueror_reloadingdrills.dds",
 	"researchTime": 40,
-	"tooltip": "Despite the superior power of Gunpowder, reloading their rifles left Conquerors vulnerable to charges and quick attacks. Many of these soldiers constantly performed reloading drills to assure they wasted no time in between shots. Conqueror reload time reduced by 15%)",
+	"tooltip": "{Conqueror reload time reduced by 15%)",
 	"modifications": [
 		{"value": "Attack/Ranged/Damage/PrepareTime", "multiply": 0.85},
 		{"value": "Attack/Ranged/Damage/RepeatTime", "multiply": 0.85}

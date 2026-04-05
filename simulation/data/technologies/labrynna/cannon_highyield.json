@@ -6,10 +6,10 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "labrynna/cannon_highyield.dds",
 	"researchTime": 40,
-	"tooltip": "As time went on the Labrynnians found more and more ways to pack as much firepower into their weapons as possible. The latest version of their Cannonballs proved exceptionally deadly. (Cannon pass-through damage range increased by 150%)",
+	"tooltip": "(Cannon splash damage increased by 50%)",
 	"modifications": [
-		{"value": "Attack/Ranged/Damage/Splash/Range", "multiply": 2.5}
-	],
+		{"value": "Attack/Ranged/Splash/Damage/Crush",  "multiply": 1.5}
+	], 
   "affects": [ "LabCannon" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

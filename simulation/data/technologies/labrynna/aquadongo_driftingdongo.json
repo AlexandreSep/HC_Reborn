@@ -6,13 +6,9 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "labrynna/aquadongo_driftingdongo.dds",
 	"researchTime": 40,
-	"tooltip": "Aquadongos could be specially trained to drift silent through the waters as if they were but a harmless log. (Aquadongos gain Stealth when in bodies of water)",
-  "modifications": [
-    {
-      "value": "Promotion/RequiredXp",
-      "replace": 0
-    }
-  ],
+	"tooltip": "(+2 Regeneration Rate, near instantaneous firststrike - Aquadongos)",
+  "modifications": [{"value": "Health/IdleRegenRate","add" : 2 },
+  {"value": "Attack/Ranged/PrepareTime", "multiply" : 0.1 }],
   "affects": [ "Aquadongo" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

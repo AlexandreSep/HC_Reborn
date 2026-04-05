@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "labrynna/lynnapike_pikemasters.dds",
 	"researchTime": 40,
-	"tooltip": "The Pikemen of Lynna City were the undisputed masters of the pole arm. Centuries of fending off Lynels and all manner of beast has trained their line with many techniques to hold even the deadliest of charges at bay. (Lynna Pikes become immune to Knockback)",
+	"tooltip": "(Lynna Pikes become immune to Knockback)",
 	"modifications": [
 		{"value": "Resistance/Entity/Damage/KnockbackResistance", "add": 100}
 	],

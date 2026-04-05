@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_crossbow">
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens">Medium Class80 Borderguard</Classes>
+    <Classes datatype="tokens">Medium Borderguard</Classes>
     <GenericName>Borderguard</GenericName>
     <History>On the edge of the Empire’s territory, numerous watch towers and outposts dotted the landscape. Borderguards were deployed to such locations to defend against incursions. Armed with a Crossbow these sentinels could ambush and delay invaders long enough to warn the Empire of their intrusion.</History>
     <Icon>units/labrynna/lab_borderguard.dds</Icon>

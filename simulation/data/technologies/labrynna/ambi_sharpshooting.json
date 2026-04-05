@@ -6,9 +6,9 @@
 	"requirementsTooltip": "Requires Queen Ambi and Town Phase.",
 	"icon": "labrynna/ralph_sharpshooting.dds",
 	"researchTime": 40,
-	"tooltip": "Hand Cannoneers and Conquerors have 50% increased accuracy and +10% Range",
-	"modifications": [{"value": "Attack/Ranged/Damage/MaxRange", "multiply": 1.10},
-	{"value": "Attack/Ranged/Damage/Spread", "multiply": 0.5}],
+	"tooltip": "{50% increased accuracy and +10 Range -Conquerors}",
+	"modifications": [{"value": "Attack/Ranged/MaxRange", "add": 10},
+	{"value": "Attack/Ranged/Spread", "multiply": 0.5}],
 	"affects": ["Sharpshooters"],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

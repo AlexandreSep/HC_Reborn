@@ -1,11 +1,15 @@
 <Entity parent="classes/HC_template_unit_creature">
   <Attack>
     <Melee>
-      <AttackName>Claws and Stinger</AttackName>
+      <AttackName>Gloves</AttackName>
       <Damage>
 	    <Hack>0</Hack>
         <Crush>10</Crush>
       </Damage>
+	  <Stun>
+        <Chance>10</Chance>
+        <Time>2000</Time>
+	  </Stun>
     </Melee>
   </Attack>
   <Cost>

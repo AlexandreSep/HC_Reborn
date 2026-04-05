@@ -6,9 +6,9 @@
 	"requirementsTooltip": "Requires Veran and City Phase.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "+10 Magic Armor - All Non-Creature, Non-Mechanical units.",
+	"tooltip": "+15 Magic Armor - All Non-Creature, Non-Mechanical units.",
 	"modifications": [
-	{"value": "Resistance/Entity/Damage/Magic", "add": 10, "affects": "Darkblessing"}
+	{"value": "Resistance/Entity/Damage/Magic", "add": 15, "affects": "Darkblessing"}
 	],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

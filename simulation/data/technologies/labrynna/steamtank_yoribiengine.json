@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "labrynna/steamtank_yoribiengine.dds",
 	"researchTime": 40,
-	"tooltip": "Funded and produced by the wealthy Yoribi family, this new line of Steam Engines allowed Steam Tanks to both move and rotate much faster than their usual lumbering speed. (Increases Steam Tank movement speed by 15% and doubles its turn speed)",
+	"tooltip": "(Increases Steam Tank movement speed by 15% and doubles its turn speed)",
 	"modifications": [
 		{"value": "UnitMotion/WalkSpeed", "multiply": 1.15},
 		{"value": "UnitMotion/RunMultiplier", "multiply": 1.15},

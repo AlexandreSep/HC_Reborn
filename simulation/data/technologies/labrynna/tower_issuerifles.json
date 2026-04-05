@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "labrynna/upgrade_aerosulfur.dds",
 	"researchTime": 40,
-	"tooltip": "Replaces the Crossbows with Rifles.(Increases the damage of all Gunpowder units by 10%)",
+	"tooltip": "(Improved Attack - Defense Tower)",
   "modifications": [
     {
       "value": "Promotion/RequiredXp",

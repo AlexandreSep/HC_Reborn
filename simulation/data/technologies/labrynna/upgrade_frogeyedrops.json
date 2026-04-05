@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "labrynna/upgrade_frogeyedrops.dds",
 	"researchTime": 40,
-	"tooltip": "Medicinal liquid extracted from the eyes of Frogs tested and proven to help the eyesight of most people. (Increases the Line of Sight of all Infantry units by 10%)",
+	"tooltip": "(Increases the Line of Sight of all Infantry units by 10%)",
 	"modifications": [{"value": "Vision/Range", "multiply": 1.10}],
 	"affects": ["Infantry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

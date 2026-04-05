@@ -7,8 +7,7 @@
 	"icon": "deku/dek_puncturenuts.dds",
 	"researchTime": 40,
 	"tooltip": "Units that attack with Deku Nuts now deal 5 Pierce Damage and their crush damaged is increased by 25%)",
-	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "add": 5},
-					  {"value": "Attack/Ranged/Damage/Crush", "multiply": 1.25}],
+	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "add": 5},{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.25}],
 	"affects": ["SpitDekuNut"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

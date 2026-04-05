@@ -6,7 +6,7 @@
 	"requirementsTooltip": "You must select Veran as your hero.",
 	"icon": "labrynna/veran_solengine.dds",
 	"researchTime": 40,
-	"tooltip": "Though they are few in number in Hyrule, Veran was able to heat steam boiler engines perpetually with Sols. The resulting fusion made the manufacturing of heavy machinery faster. (All Mechanical units train 15% faster and Steam Tanks move 10% faster)",
+	"tooltip": "(All Mechanical units train 15% faster and Steam Tanks move 10% faster)",
 	"modifications": [{"value": "Cost/BuildTime", "multiply": 0.85, "affects": "Mechanical" },
 					  {"value": "UnitMotion/WalkSpeed", "multiply": 1.10, "affects": "Steamtank" },
 					   {"value": "UnitMotion/RunMultiplier", "multiply": 1.10, "affects": "Steamtank" }

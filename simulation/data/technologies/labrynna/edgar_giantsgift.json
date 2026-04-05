@@ -6,10 +6,10 @@
 	"requirementsTooltip": "Requires Edgar and Town Phase.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "+75 Attack Damage - Melee Infantry.",
-	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.75},
-		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.75},
-		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.75}
+	"tooltip": "+10% Attack Damage - Melee Infantry.",
+	"modifications": [{"value": "Attack/Melee/Damage/Hack", "multiply": 1.1},
+		{"value": "Attack/Melee/Damage/Pierce", "multiply": 1.1},
+		{"value": "Attack/Melee/Damage/Crush", "multiply": 1.1}
 	],
 	"hideIfTechnologyRequirementIsNotMet": "true",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

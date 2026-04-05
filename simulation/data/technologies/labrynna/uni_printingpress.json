@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "labrynna/uni_printingpress.dds",
 	"researchTime": 40,
-	"tooltip": "An impressive invention that allowed Labrynna to create copies of books much faster than handwriting them... and thus the spread of information could reach farther than ever before. (Territory Generation increased by 25%)",
+	"tooltip": "(Territory Generation increased by 25%)",
 	"modifications": [
 		{"value": "TerritoryInfluence/Radius", "multiply": 1.25}
 	],

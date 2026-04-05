@@ -6,8 +6,9 @@
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "labrynna/trade_insurance.dds",
 	"researchTime": 40,
-	"tooltip": "Labrynna protected their system of merchants with an elaborate insurance policy, damaged goods could be paid for with an upfront cost. (Comerciantes refund you their cost in Rupees if they are killed)",
-	"modifications": [	],
+	"tooltip": "( 10% higher cost, 30% income - Comerciantes)",
+	"modifications": [{"value": "Cost/Resources/metal", "multiply": 1.1},
+	{"value": "Trader/GainMultiplier", "multiply": 1.3}],
   "affects": [ "Trader" ],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
