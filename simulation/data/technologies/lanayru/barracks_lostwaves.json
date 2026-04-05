@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Silver Armory.",
 	"icon": "lanayru/barracks_lostwaves.dds",
 	"researchTime": 40,
-	"tooltip": "Wave Warriors are now immune to Knockback when in water",
+	"tooltip": "Wave Warriors gain 3% speed and 20% Knockback and Stun resistance for every Silverarmaory",
 	"modifications": [],
 	"affects": ["WaveWarrior"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

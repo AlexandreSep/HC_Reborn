@@ -2,7 +2,7 @@
 	"genericName": "Foreign Market Investment",
 	"description": ".",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 500},
-	"requirements": { "all": [{ "entity": { "class": "LanBank", "number": 1 } }] },
+	"requirements": { "all": [{ "entity": { "class": "LanBank", "number": 3 } }] },
 	"requirementsTooltip": "Unlocked with Bank.",
 	"icon": "lanayru/bank_foreignmarket.dds",
 	"researchTime": 40,

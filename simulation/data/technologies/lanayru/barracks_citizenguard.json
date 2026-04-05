@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Volunteer Post.",
 	"icon": "lanayru/barracks_citizenguard.dds",
 	"researchTime": 40,
-	"tooltip": "Coral Lancer now provide 5 extra non for basic units in formation.",
+	"tooltip": "Coral Lancer now provide 5 extra non-magic armour for basic units in formation.",
 	"modifications": [],
 	"affects": ["CoralLancer"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

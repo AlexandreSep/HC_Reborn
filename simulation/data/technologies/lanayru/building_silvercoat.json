@@ -2,16 +2,16 @@
 	"genericName": "Silver Coating",
 	"description": "Lanayru Buildings gain +5 Non Magic armor and +10 Magic armor",
 	"cost": {"food": 0, "wood": 0, "stone": 100, "metal": 500},
-	"requirements": { "all": [{ "entity": { "class": "SilverExchange", "number": 1 } }] },
+	"requirements": { "all": [{ "entity": { "class": "SilverExchange", "number": 6 } }] },
 	"requirementsTooltip": "Unlocked with Silver Exchange.",
 	"icon": "lanayru/building_silvercoat.dds",
 	"researchTime": 40,
-	"tooltip": "Lanayru Buildings gain +5 Non Magic armor and +10 Magic armor",
+	"tooltip": "Lanayru Buildings gain +50 Non Magic and Magic armor",
 	"modifications": [
-	{"value": "Resistance/Entity/Damage/Hack", "add": 5.0},
-	{"value": "Resistance/Entity/Damage/Pierce", "add": 5.0},
-	{"value": "Resistance/Entity/Damage/Crush", "add": 5.0},
-	{"value": "Resistance/Entity/Damage/Magic", "add": 10}
+	{"value": "Resistance/Entity/Damage/Hack", "add": 50},
+	{"value": "Resistance/Entity/Damage/Pierce", "add": 50},
+	{"value": "Resistance/Entity/Damage/Crush", "add": 50},
+	{"value": "Resistance/Entity/Damage/Magic", "add": 50}
 	],
 	"affects": ["Structure"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

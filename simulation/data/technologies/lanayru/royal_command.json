@@ -6,7 +6,11 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "lanayru/royal_command.dds",
 	"researchTime": 40,
-	"tooltip": "Increases the attack rate of the Royal Hub when garrisoned by a Commander or Hero by 50%.",
-	"modifications": [],
+	"tooltip": "Increases the attack rate of the Royal Hub by 50%.",
+	"modifications": [
+		{ "value": "Attack/Ranged/PrepareTime", "multiply": 0.5 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.5 }
+	],
+	"affects": ["EffigyTech"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

@@ -46,7 +46,7 @@
   </Health>
   <Identity>
     <Civ>lanayru</Civ>
-    <Classes datatype="tokens">SilverTower</Classes>
+    <Classes datatype="tokens">SilverTower EffigyTech</Classes>
     <GenericName>Royal Hub</GenericName>
     <History>The Center of any military operation within Lanayru Province, the Royal Hub served as a gathering location and base of operations for both Royalty and Generals. Though not as glorious as the Silver Throne of Airu, these nonetheless decorated structures could field Handmaidens and function as a gathering point for various resources.</History>
     <Icon>structures/lanayru/lan_hub_royal.dds</Icon>

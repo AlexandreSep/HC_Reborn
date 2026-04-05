@@ -6,8 +6,8 @@
 	"requirementsTooltip": "Unlocked with Shrimpery.",
 	"icon": "lanayru/gather_food_prawncluster.dds",
 	"researchTime": 40,
-	"tooltip": "Increases the food harvesting rate from Fish sources by 75%, as well as Food carrying capacity by +5.",
-	"modifications": [{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.75},
+	"tooltip": "Increases the food harvesting rate from Fish sources by 25%, as well as Food carrying capacity by +5.",
+	"modifications": [{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.25},
 					  {"value": "ResourceGatherer/Capacities/food", "add": 5}],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
