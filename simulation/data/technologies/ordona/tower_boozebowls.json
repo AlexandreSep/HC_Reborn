@@ -1,6 +1,6 @@
 {
   "genericName": "Burning Booze Bowls",
-  "description": "DOES NOT WORK!!!",
+  "description": "Units that attack Guard Towers in melee are now occasionally drenched in burning beer, igniting all nearby units",
   "cost": {
     "food": 0,
     "wood": 0,
@@ -16,10 +16,10 @@
   "requirementsTooltip": "Unlocked with Town.",
   "icon": "ordona/tower_boozebowls.dds",
   "researchTime": 0,
-  "tooltip": "(Units that attack Guard Towers in melee are now occasionally drenched in burning beer, igniting all nearby units)",
+  "tooltip": "(Guard Towers deal +3 Magic Damage)",
   "modifications": [
     {
-      "value": "Attack/Ranged/Damage/Fire",
+      "value": "Attack/Ranged/Damage/Magic",
       "add": 3.0
     }
   ],

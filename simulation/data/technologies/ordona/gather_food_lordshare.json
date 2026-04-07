@@ -6,9 +6,9 @@
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "ordona/gather_food_lordshare.dds",
 	"researchTime": 40,
-	"tooltip": "(Serfs collect Food from Fields 10% faster, +5% for all other Citizen units)",
+	"tooltip": "(Serfs collect Food from Fields 20% faster)",
 	"modifications": [
-		{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.10}
+		{"value": "ResourceGatherer/Rates/food.grain", "multiply": 1.20}
 	],
 	"affects": ["Citizen"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

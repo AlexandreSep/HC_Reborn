@@ -16,25 +16,25 @@
   "requirementsTooltip": "Unlocked with Town.",
   "icon": "ordona/civiccenter_allotments.dds",
   "researchTime": 40,
-  "tooltip": "(All Citizen units gain +9 non-magic armor and +4 Crush Damage)",
+  "tooltip": "(All Citizen units gain +5 non-magic armor and +4 Crush Damage)",
   "modifications": [
     {
       "value": "Resistance/Entity/Damage/Hack",
-      "add": 9.0
+      "add": 5.0
     },
     {
       "value": "Resistance/Entity/Damage/Pierce",
-      "add": 9.0
+      "add": 5.0
     },
     {
       "value": "Resistance/Entity/Damage/Crush",
-      "add": 9.0
+      "add": 5.0
     },
     {
       "value": "Attack/Melee/Damage/Crush",
       "add": 4.0
     }
   ],
-  "affects": [ "Worker" ],
+  "affects": [ "Worker", "Infantry" ],
   "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

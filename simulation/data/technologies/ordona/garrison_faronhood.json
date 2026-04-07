@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "ordona/garrison_faronhood.dds",
 	"researchTime": 40,
-	"tooltip": "(Ranger movement speed while Concealment is activated is increased by 100%)",
+	"tooltip": "(Ranger movement speed is increased by 25%)",
 	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.25}],
 	"affects": ["Ranger"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

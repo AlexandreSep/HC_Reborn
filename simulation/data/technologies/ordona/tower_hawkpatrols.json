@@ -6,12 +6,13 @@
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "ordona/tower_hawkpatrols.dds",
 	"researchTime": 40,
-	"tooltip": "(Border Watches gain +25% Line of Sight and an attack Hawk patrols their radius))",
+	"tooltip": "(Border Watches gain +50% Line of Sight and can train Hawks))",
   "modifications": [
     {
       "value": "Vision/Range",
-      "multiply": 1.25
-    }
+      "multiply": 1.5
+    },
+	{"value": "Trainer/Entities/_string",	"tokens": "units/{civ}_hawk_b2>units/{civ}_hawk_b"}
   ],
 	"affects": ["Hawksentry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

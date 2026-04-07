@@ -4,6 +4,8 @@
   units/deacon_chant_2
   units/deacon_chant_3
   units/deacon_chant_4
+  units/reverend_aura_1
+  units/reverend_aura_2
   </Auras>
   <Cost>
     <BuildTime>12</BuildTime>

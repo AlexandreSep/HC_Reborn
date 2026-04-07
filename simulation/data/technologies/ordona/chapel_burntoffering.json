@@ -2,20 +2,20 @@
   "genericName": "Burnt Offering",
   "description": "DOES NOT WORK!!!",
   "cost": {
-    "food": 0,
+    "food": 700,
     "wood": 0,
     "stone": 0,
     "metal": 0
   },
   "requirements": {
     "all": [
-      { "tech": "phase_village" },
+      { "tech": "phase_city" },
       { "civ": "ordona" }
     ]
   },
   "icon": "ordona/chapel_burntoffering.dds",
   "researchTime": 0,
-  "tooltip": "(Goat units refund half their Food cost when slain. Herdable animals provide an immediate 25 Food when slain for gathering.)",
+  "tooltip": "(Reverend decreases the armor of enemy units .)",
   "modifications": [],
   "affects": [ "Goat" ],
   "soundComplete": "interface/alarm/alarm_upgradearmory.xml"

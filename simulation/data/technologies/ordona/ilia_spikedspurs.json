@@ -1,8 +1,8 @@
 {
 	"genericName": "Spiked Spurs",
 	"description": "",
-	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 350},
-	"requirements": {"all": [ {"tech": "civ_choices/ordona/choosehero_ilia"}, { "tech": "phase_town" }, {"civ": "ordona"}]},
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 250},
+	"requirements": {"all": [ {"tech": "civ_choices/ordona/choosehero_mayorbo"}, { "tech": "phase_town" }, {"civ": "ordona"}]},
 	"requirementsTooltip": "Requires Ilia and the Town Phase.",
 	"icon": "ordona/ilia_spikedspurs.dds",
 	"researchTime": 40,

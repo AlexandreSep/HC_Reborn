@@ -7,7 +7,7 @@
 	"icon": "ordona/goatbarn_fadofrolick.dds",
 	"researchTime": 40,
 	"tooltip": "(Movement speed of all Goat units is increased by 15%)",
-	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.20}],
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.15}],
 	"affects": ["Goat"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

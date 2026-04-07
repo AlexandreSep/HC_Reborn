@@ -1,9 +1,9 @@
 {
   "genericName": "Mayor's Pet",
-  "description": "DOES NOT WORK!!!",
+  "description": ".",
   "cost": {
-    "food": 0,
-    "wood": 0,
+    "food": 100,
+    "wood": 100,
     "stone": 0,
     "metal": 0
   },
@@ -14,9 +14,9 @@
     ]
   },
   "icon": "ordona/civiccenter_mayorpet.dds",
-  "researchTime": 0,
-  "tooltip": "(Manor now always spawns one free Hawk. Does not count towards population limit.)",
-  "modifications": [],
-  "affects": [ "MayorManor" ],
+  "researchTime": 40,
+  "tooltip": "(Hawks gain 50% more vision range.)",
+  "modifications": [{"value": "Vision/Range", "multiply": 1.5}],
+  "affects": [ "Flying" ],
   "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

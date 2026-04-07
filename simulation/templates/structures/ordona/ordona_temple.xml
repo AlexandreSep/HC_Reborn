@@ -47,7 +47,8 @@
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">ordona/chapel_latoanmarker
-
+	ordona/chapel_battlepreacher
+	ordona/chapel_burntoffering
 </Technologies>
   </Researcher>
   <Trainer>

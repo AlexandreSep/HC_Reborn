@@ -1,0 +1,16 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["Unit"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Crush", "add": -5 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": -5 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": -5 },	
+		{ "value": "Resistance/Entity/Damage/Magic", "add": -5 }
+	],
+	"auraName": "Burnt Offerings",
+	"auraDescription": "(-5 to all armor types - enemies)",
+    "requiredTechnology": "ordona/chapel_burntoffering",	
+	"overlayIcon": "art/textures/ui/session/auras/bubble_aura_1.dds"
+}

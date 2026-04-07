@@ -6,10 +6,10 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "ordona/smithy_cottoncuirass.dds",
 	"researchTime": 40,
-	"tooltip": "(Leather armor is padded with dense cotton, increases the non-magic armor values of all Citizen units by +1)",
-	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 1.0},
-		{"value": "Resistance/Entity/Damage/Pierce", "add": 1.0},
-		{"value": "Resistance/Entity/Damage/Crush", "add": 1.0}],
+	"tooltip": "(Leather armor is padded with dense cotton, increases the hack and pierce armor values of all Citizen units by +5 and crush armor by +15)",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 5},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 15}],
 	"affects": ["Citizen"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

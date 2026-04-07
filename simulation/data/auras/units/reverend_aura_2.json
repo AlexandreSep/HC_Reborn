@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.9 }],
+	"auraName": "Battle Preachers",
+	"auraDescription": "(10% faster attack speed.)",
+    "requiredTechnology": "ordona/chapel_battlepreacher",	
+	"overlayIcon": "art/textures/ui/session/auras/bubble_aura_1.dds"
+}
