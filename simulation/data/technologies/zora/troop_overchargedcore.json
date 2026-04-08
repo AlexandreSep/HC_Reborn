@@ -17,7 +17,7 @@
   "requirementsTooltip": "Unlocked with Town.",
   "icon": "zora/troop_overchargedcore.dds",
   "researchTime": 40,
-  "tooltip": "Spark Mage crews are fond of overcharging the cores of their weapons to near-shattering to produce a deadlier blast. (+25% Ranged Attack Range, +%50 Area of Effect, Base and Splash Damage, +25% velocity, but -30% Attack Rate and Accuracy - Mage Cannon)",
+  "tooltip": "(+25% Ranged Attack Range, +%50 Area of Effect, Base and Splash Damage, +25% velocity, but -30% Attack Rate and Accuracy - Mage Cannon)",
   "modifications": [
     {
       "value": "Promotion/RequiredXp",

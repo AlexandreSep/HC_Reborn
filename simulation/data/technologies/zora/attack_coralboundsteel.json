@@ -4,26 +4,26 @@
   "cost": {
     "food": 0,
     "wood": 0,
-    "stone": 300,
-    "metal": 300
+    "stone": 600,
+    "metal": 600
   },
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zora"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "zora/attack_coralboundsteel.dds",
 	"researchTime": 40,
-	"tooltip": "Through difficult-to-master techniques, Zora artisans mix coralmold into iron-smelting, resulting in strong, flexible, and wicked-sharp weapons. (+20% Melee Attack - Melee Infantry)",
+	"tooltip": "Through difficult-to-master techniques, Zora artisans mix coralmold into iron-smelting, resulting in strong, flexible, and wicked-sharp weapons. (+25% Melee Attack - Melee Infantry)",
   "modifications": [
     {
       "value": "Attack/Melee/Damage/Hack",
-      "multiply": 1.2
+      "multiply": 1.25
     },
     {
       "value": "Attack/Melee/Damage/Pierce",
-      "multiply": 1.2
+      "multiply": 1.25
     },
     {
       "value": "Attack/Melee/Damage/Crush",
-      "multiply": 1.2
+      "multiply": 1.25
     }
   ],
 	"affects": ["Medium"],

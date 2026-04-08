@@ -2,17 +2,20 @@
 	"genericName": "Reeflet Casing",
 	"description": "Intricate carrying bags made from strong Coralmold Reeflets.",
   "cost": {
-    "food": 125,
-    "wood": 125,
-    "stone": 125,
-    "metal": 125
+    "food": 175,
+    "wood": 175,
+    "stone": 175,
+    "metal": 175
   },
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zora"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "zora/gather_capacity_reefletcasing.dds",
 	"researchTime": 40,
-	"tooltip": "Intricate carrying bags made from strong Coralmold Reeflets. (+10 Resource Capacity - Worker)",
+	"tooltip": "(+10 Resource Capacity,15% Gatherrate Metal,Rock & Rupees - Worker)",
 	"modifications": [
+	{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.15},
+	{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.15},
+	{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.15},
 		{"value": "ResourceGatherer/Capacities/food", "add": 10},
 		{"value": "ResourceGatherer/Capacities/wood", "add": 10},
 		{"value": "ResourceGatherer/Capacities/stone", "add": 10},

@@ -6,7 +6,7 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "zora/building_coralpure.dds",
 	"researchTime": 40,
-	"tooltip": "Ancient Coralmold refinement techniques are discovered amid the collections in Zora Libraries. (-15% Material - Building)",
+	"tooltip": "(-15% Material - Building)",
 	"modifications": [{"value": "Cost/Resources/wood", "multiply": 0.85}],
 	"affects": ["Structure"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

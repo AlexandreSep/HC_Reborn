@@ -2,10 +2,10 @@
   "genericName": "Healer Supremes",
   "description": "",
   "cost": {
-    "food": 100,
+    "food": 500,
     "wood": 0,
-    "stone": 0,
-    "metal": 50
+    "stone": 500,
+    "metal": 0
   },
   "requirements": {
     "all": [

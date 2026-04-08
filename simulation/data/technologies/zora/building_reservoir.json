@@ -6,7 +6,8 @@
 	"requirementsTooltip": "Unlocked with City.",
 	"icon": "zora/building_reservoir.dds",
 	"researchTime": 40,
-	"tooltip": "A redundant Reservoir system allows Zora structures to remain functional should their Aqueduct lifeblood be damaged. (Retain 100% Functionality if connecting Aquaduct is Destroyed - Building)",
+	"tooltip": "(+15 Regeneration - Building)",
+	"modifications": [{"value": "Health/IdleRegenRate","add":15}],
 	"affects": ["Building"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

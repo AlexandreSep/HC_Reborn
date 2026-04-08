@@ -6,11 +6,11 @@
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "zora/healer_zodobon.dds",
 	"researchTime": 40,
-	"tooltip": "The Apothocary Zadobon developed a particularly potent - and expensive - brand of red potion. (+1 Heal per interval - Healer and Healer Supreme)",
+	"tooltip": "The Apothocary Zadobon developed a particularly potent - and expensive - brand of red potion. (+3 Heal per interval - Healer and Healer Supreme)",
   "modifications": [
     {
       "value": "Heal/Health",
-      "add": 1
+      "add": 3
     }
   ],
 	"affects": ["ZorHealer"],

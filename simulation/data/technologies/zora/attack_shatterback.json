@@ -1,20 +1,16 @@
 {
 	"genericName": "Shatterback Forging",
 	"description": "Hardened Coralmold shards are added into polearms during smelting, giving them a wicked and durable point.",
-	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
+	"cost": {"food": 0, "wood": 0, "stone": 650, "metal": 150},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zora"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "zora/attack_shatterback.dds",
 	"researchTime": 40,
-	"tooltip": "Hardened Coralmold shards are added into polearms during smelting, giving them a wicked and durable point. (+20% Melee Attack and x2 Melee Attack Range - River Patrol, Halberdier, and Hydrophant Lancer)",
+	"tooltip": "(+3 TrueDamage and x2 Melee Attack Range - River Patrol, Halberdier, and Hydrophant Lancer)",
   "modifications": [
     {
-      "value": "Attack/Melee/Damage/Hack",
-      "multiply": 1.2
-    },
-    {
-      "value": "Attack/Melee/Damage/Pierce",
-      "multiply": 1.2
+      "value": "Attack/Melee/Damage/TrueDamage",
+      "add": 3
     },
     {
       "value": "Attack/Melee/MaxRange",

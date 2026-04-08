@@ -6,6 +6,6 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "zora/theater_epicplays.dds",
 	"researchTime": 40,
-	"tooltip": "These grandiose pageants of Dominion history and culture are sure to stir the hearts of Zora troops on leave. (Activates 'Epic War Plays' Aura - Theatre)",
+	"tooltip": "(Activates 'Epic War Plays' Aura - Theatre)",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

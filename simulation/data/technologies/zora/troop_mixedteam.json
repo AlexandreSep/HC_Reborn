@@ -6,6 +6,6 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "zora/troop_mixedteam.dds",
 	"researchTime": 40,
-	"tooltip": "Shock Troopers, as designated squad leaders, are trained in effectively commanding groups of Blademasters and Halberdiers to work in tandem. (Activates 'Mixed Teams' Aura - Shock Trooper)",
+	"tooltip": "(Activates 'Mixed Teams' Aura - Shock Trooper)",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

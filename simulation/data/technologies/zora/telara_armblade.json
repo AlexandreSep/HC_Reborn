@@ -2,21 +2,21 @@
   "genericName": "Armblade Replacements",
   "description": "Replaces Infiltrator fins with Coralmold Armblades.",
   "cost": {
-    "food": 0,
+    "food": 200,
     "wood": 0,
     "stone": 150,
-    "metal": 150
+    "metal": 50
   },
   "requirements": {
     "all": [
-      { "tech": "civ_choices/zora/choosehero_telara" },
+      { "tech": "civ_choices/zora/choosehero_zaleen" },
       { "civ": "zora" }
     ]
   },
-  "requirementsTooltip": "Requires Telara.",
+  "requirementsTooltip": "Requires Zaleen.",
   "icon": "zora/attack_armblade.dds",
   "researchTime": 40,
-  "tooltip": "+13 Hack Attack and +15 Max Health -Infiltrator.",
+  "tooltip": "+8 Hack Attack and +50% Max Health - Infiltrator.",
   "modifications": [
     {
       "value": "ProductionQueue/Entities/_string",
@@ -26,6 +26,16 @@
     {
       "value": "Promotion/RequiredXp",
       "replace": 0,
+      "affects": "Infiltrator"
+    },
+	 {
+      "value": "Health/Max",
+      "multiply": 1.5,
+      "affects": "Infiltrator"
+    },
+	 {
+      "value": "Attack/Melee/Damage/Hack",
+      "add": 8,
       "affects": "Infiltrator"
     }
   ],

@@ -6,6 +6,6 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "zora/healer_warpair.dds",
 	"researchTime": 40,
-	"tooltip": "Healers are trained to support one another during battlefield triage.(Activates 'Warzone Pairings' Aura - Healer)",
+	"tooltip": "(Activates 'Warzone Pairings' Aura - Healer)",
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
