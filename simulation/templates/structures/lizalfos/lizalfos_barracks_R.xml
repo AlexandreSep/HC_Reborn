@@ -9,14 +9,16 @@
     <Technologies datatype="tokens">lizalfos/predator_superiorfooting
 	lizalfos/trapper_weakness
     lizalfos/helmtracker_helmmight
+	lizalfos/butcher_butchermight
 	lizalfos/carcass_tenacious
     lizalfos/okakusha_patienthunter
 
-	</Technologies>
+</Technologies>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/lizalfos/{civ}_predator_b
+    <Entities datatype="tokens">
+	units/lizalfos/{civ}_predator_b
 	units/lizalfos/{civ}_trapper_b
 	units/lizalfos/{civ}_helmtracker_b
     units/lizalfos/{civ}_butcher_b
