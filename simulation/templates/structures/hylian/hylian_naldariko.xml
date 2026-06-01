@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -41,7 +42,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="62.0" width="62.0" />
+    <Square depth="62.0" width="62.0"/>
   </Footprint>
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
@@ -51,6 +52,71 @@
     <LoadingRange>6</LoadingRange>
     <Max>20</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>3500</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_huge</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">Nurses City</Classes>
+    <GenericName>Castle</GenericName>
+    <History>The majestic castles of the Hylians are some of the most famous in all of Hyrule. These towering fortifications can protect an entire city and hold off many invaders.</History>
+    <Icon>structures/hylian/hyl_castle.dds</Icon>
+    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory. Can also train a variety of units.</Tooltip>
+    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="90.0" width="60.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/hylian_gloryofhyrule
+
+</Technologies>
+  </Researcher>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>85.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Hack>1</Hack>
+        <Pierce>95</Pierce>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_fortress.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_fortress.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>100</Radius>
+    <Root>true</Root>
+    <Weight>40000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/hylian/{civ}_knightofhyrule_b
+	  units/hylian/{civ}_trebuchet_packed
+      units/hylian/{civ}_lightarrow_b
+	  units/hylian/{civ}_championknight_b
+	  units/hylian/{civ}_redlion_b
+	  units/hylian/{civ}_vanguard_b</Entities>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -155,55 +221,6 @@
       </Archer9>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>3500</Max>
-    <SpawnEntityOnDeath>rubble/debris_hylian_huge</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>hylian</Civ>
-    <Classes datatype="tokens">Nurses City</Classes>
-    <GenericName>Castle</GenericName>
-    <History>The majestic castles of the Hylians are some of the most famous in all of Hyrule. These towering fortifications can protect an entire city and hold off many invaders.</History>
-    <Icon>structures/hylian/hyl_castle.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
-    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory. Can also train a variety of units.</Tooltip>
-    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="90.0" width="60.0" />
-  </Obstruction>
-  <Population>
-    <Bonus>10</Bonus>
-  </Population>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>85.0</Hack>
-        <Pierce>95.0</Pierce>
-      </Damage>
-    </Entity>
-    <Foundation>
-      <Damage>
-        <Crush>1</Crush>
-        <Hack>1</Hack>
-        <Pierce>95</Pierce>
-      </Damage>
-    </Foundation>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>
-      <constructed>interface/complete/building/complete_fortress.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_fortress.xml</select>
-    </SoundGroups>
-  </Sound>
-  <TerritoryInfluence>
-    <Radius>100</Radius>
-    <Root>true</Root>
-    <Weight>40000</Weight>
-  </TerritoryInfluence>
   <VisualActor>
     <Actor>structures/hylian/hylian_castleA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldD.xml</FoundationActor>
@@ -212,18 +229,4 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
-  <Researcher>
-    <Technologies datatype="tokens">hylian/hylian_gloryofhyrule
-
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/hylian/{civ}_knightofhyrule_b
-	  units/hylian/{civ}_trebuchet_packed
-      units/hylian/{civ}_lightarrow_b
-	  units/hylian/{civ}_championknight_b
-	  units/hylian/{civ}_redlion_b
-	  units/hylian/{civ}_vanguard_b</Entities>
-  </Trainer>
 </Entity>

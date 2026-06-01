@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/labrynna/labrynna_market">
   <Identity>
     <GenericName>Clientele</GenericName>
@@ -5,32 +6,34 @@
     <Icon>structures/labrynna/lab_marketB.dds</Icon>
     <Tooltip>Allows the trading of resources on the market or with your allies. Also allows Labrynna to hire Mercenary units.</Tooltip>
   </Identity>
-  <Upgrade>
-    <Tower>
-      <Cost>
-		<stone>100</stone>
-		<wood>100</wood>
-      </Cost>
-      <Entity>structures/labrynna/labrynna_marketC</Entity>
-      <RequiredTechnology>civ_choices/labrynna/choosehero_onox</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Add Carnival to Bodega.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_marketB.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">
 </Technologies>
   </Researcher>
   <Trainer>
-	<BatchTimeModifier>0.8</BatchTimeModifier>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_trader_b
     gaia/lon_lon_cow_1
     units/merc_geru_b
     units/merc_tinsuit_b
     units/merc_wosu_b</Entities>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <stone>100</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_marketC</Entity>
+      <Time>60</Time>
+      <Tooltip>Add Carnival to Bodega.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/labrynna/choosehero_onox</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_marketB.xml</Actor>
+  </VisualActor>
 </Entity>

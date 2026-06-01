@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/hylian_statue_ironclad
@@ -17,7 +18,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="5.0" width="5.0" />
+    <Square depth="5.0" width="5.0"/>
   </Footprint>
   <Health>
     <Max>400</Max>
@@ -28,21 +29,23 @@
     <GenericName>Royal Knight Statue</GenericName>
     <History>50 extra magic defense in this buildings vicinity.</History>
     <Icon>structures/hylian/hyl_plot.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>A tall statue of a proud Royal Knight.</Tooltip>
     <VisibleClasses datatype="tokens">Culture</VisibleClasses>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="5.0" width="5.0" />
+    <Static depth="5.0" width="5.0"/>
   </Obstruction>
-  <VisualActor>
-    <Actor>structures/hylian/hylian_statue_ironcladA.xml</Actor>
-  </VisualActor>
   <Researcher>
-    <Technologies datatype="tokens" />
+    <Technologies datatype="tokens"/>
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
+    <Entities datatype="tokens"/>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_statue_ironcladA.xml</Actor>
+  </VisualActor>
 </Entity>

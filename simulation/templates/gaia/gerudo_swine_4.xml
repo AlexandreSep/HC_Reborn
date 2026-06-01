@@ -38,6 +38,10 @@
   <StatusBars>
     <HeightOffset>5.0</HeightOffset>
   </StatusBars>
+  <UnitAI>
+    <DefaultStance>passive-defensive</DefaultStance>
+    <FleeDistance>1.0</FleeDistance>
+  </UnitAI>
   <UnitMotion>
     <WalkSpeed>8.0</WalkSpeed>
   </UnitMotion>

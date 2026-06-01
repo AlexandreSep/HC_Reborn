@@ -10,12 +10,10 @@ var g_CenterMenuItems = [
 				"tooltip": colorizeHotkey(translate("%(hotkey)s: Learn about the civilizations featured in Hyrule Conquest"), "civinfo"),
 				"size": "0% 0% 100% 0%+45",
 				"hotkey": "civinfo",
-				"onPress": () => {
-					let callback = data => {
-						if (data.nextPage)
-							Engine.PushGuiPage(data.nextPage, { "civ": data.civ }, callback);
-					};
-					Engine.PushGuiPage("page_civinfo.xml", {}, callback);
+				"onPress": async() => {
+					let data = await Engine.OpenChildPage("page_civinfo.xml", {});
+					while (data && data.nextPage)
+						data = await Engine.OpenChildPage(data.nextPage, data.args || { "civ": data.civ });
 				}
 			},
 			{
@@ -23,7 +21,7 @@ var g_CenterMenuItems = [
 				"tooltip": translate("View the different maps featured in Hyrule Conquest"),
 				"size": "0% 0%+45 100% 0%+90",
 				"onPress": () => {
-					Engine.PushGuiPage("page_mapbrowser.xml");
+					Engine.OpenChildPage("page_mapbrowser.xml");
 				},
 			}
 		]
@@ -62,8 +60,29 @@ var g_CenterMenuItems = [
 				"caption": translate("Load Game"),
 				"tooltip": translate("Load a saved game."),
 				"size": "0% 0%+135 100% 0%+180",
-				"onPress": () => {
-					Engine.PushGuiPage("page_loadgame.xml");
+				"onPress": async() => {
+					const gameId = await Engine.OpenChildPage("page_loadgame.xml");
+					if (!gameId)
+						return;
+
+					const metadata = Engine.StartSavedGame(gameId);
+					if (!metadata)
+					{
+						error("Could not load saved game: " + gameId);
+						return;
+					}
+
+					Engine.SwitchGuiPage("page_loading.xml", {
+						"attribs": metadata.initAttributes,
+						"playerAssignments": {
+							"local": {
+								"name": metadata.initAttributes.settings.PlayerData[metadata.playerID]?.Name ??
+									singleplayerName(),
+								"player": metadata.playerID
+							}
+						},
+						"savedGUIData": metadata.gui
+					});
 				}
 			},
 			{
@@ -98,7 +117,7 @@ var g_CenterMenuItems = [
 				"hotkey": "lobby",
 				"onPress": () => {
 					 if (Engine.StartXmppClient)
-						 Engine.PushGuiPage("page_prelobby_entrance.xml");
+						 Engine.OpenChildPage("page_prelobby_entrance.xml");
 				}
 			},
 			{
@@ -107,7 +126,7 @@ var g_CenterMenuItems = [
 				"tooltip": translate("Joining an existing multiplayer game."),
 				"size": "0% 0%+45 100% 0%+90",
 				"onPress": () => {
-					Engine.PushGuiPage("page_gamesetup_mp.xml", {
+					Engine.OpenChildPage("page_gamesetup_mp.xml", {
 						"multiplayerGameType": "join"
 					});
 				}
@@ -117,7 +136,7 @@ var g_CenterMenuItems = [
 				"tooltip": translate("Host a multiplayer game."),
 				"size": "0% 0%+90 100% 0%+135",
 				"onPress": () => {
-					Engine.PushGuiPage("page_gamesetup_mp.xml", {
+					Engine.OpenChildPage("page_gamesetup_mp.xml", {
 						"multiplayerGameType": "host"
 					});
 				}

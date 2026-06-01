@@ -3128,6 +3128,10 @@ UnitAI.prototype.UnitFsmSpec = {
 
 					if (!this.CheckTargetRange(this.order.data.target, IID_Builder))
 					{
+						let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+						warn("[HC_DEBUG_BUILD] UnitAI repair CheckTargetRange false builder=" + this.entity +
+							" target=" + this.order.data.target +
+							" targetTemplate=" + cmpTemplateManager.GetCurrentTemplateName(this.order.data.target));
 						this.ProcessMessage("OutOfRange");
 						return true;
 					}
@@ -3143,6 +3147,10 @@ UnitAI.prototype.UnitFsmSpec = {
 
 					if (!cmpBuilder.StartRepairing(this.order.data.target, IID_UnitAI))
 					{
+						let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+						warn("[HC_DEBUG_BUILD] UnitAI repair StartRepairing false builder=" + this.entity +
+							" target=" + this.order.data.target +
+							" targetTemplate=" + cmpTemplateManager.GetCurrentTemplateName(this.order.data.target));
 						this.ProcessMessage("TargetInvalidated");
 						return true;
 					}
@@ -3867,6 +3875,18 @@ UnitAI.prototype.SetupHealRangeQuery = function(enable = true)
 		return;
 
 	let players = cmpPlayer.GetAllies();
+	if (!players || !players.length)
+	{
+		let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+		let template = cmpTemplateManager.GetCurrentTemplateName(this.entity);
+		let cmpOwnership = Engine.QueryInterface(this.entity, IID_Ownership);
+		let owner = cmpOwnership ? cmpOwnership.GetOwner() : "no Ownership";
+		warn("[HC_DEBUG_RANGE] empty heal players ent=" + this.entity +
+			" owner=" + owner +
+			" template=" + template);
+		return;
+	}
+
 	let range = this.GetQueryRange(IID_Heal);
 
 	// Do not compensate for entity sizes: LOS doesn't, and UnitAI relies on that.

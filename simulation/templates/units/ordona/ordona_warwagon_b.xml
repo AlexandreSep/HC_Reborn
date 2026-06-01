@@ -1,106 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_unit_auxiliary">
-<Attack>
-    <Ranged>
-      <AttackName>Arrow.</AttackName>
-      <Damage>
-        <Pierce>6</Pierce>
-      </Damage>
-      <EffectDelay>0</EffectDelay>
-      <MaxRange>60.0</MaxRange>
-      <MinRange>0.0</MinRange>
-      <PreferredClasses datatype="tokens">Human</PreferredClasses>
-      <PrepareTime>1200</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-		<FriendlyFire>false</FriendlyFire>
-		<LaunchPoint y="3"/>
-      </Projectile>
-      <RangeOverlay>
-        <LineTexture>outline_border.png</LineTexture>
-        <LineTextureMask>outline_border_mask.png</LineTextureMask>
-        <LineThickness>0.175</LineThickness>
-      </RangeOverlay>
-      <RepeatTime>2000</RepeatTime>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>20</BuildTime>
-    <Resources>
-      <food>100</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>100</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="20.0" width="18.0" />
-  </Footprint>
-  <BuildingAI>
-    <DefaultArrowCount>0</DefaultArrowCount>
-    <GarrisonArrowClasses>CanGarrison</GarrisonArrowClasses>
-    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
-  </BuildingAI>
-  <GarrisonHolder>
-    <BuffHeal>0</BuffHeal>
-    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <EjectHealth>0.9</EjectHealth>
-    <List datatype="tokens">Medium</List>
-    <LoadingRange>2</LoadingRange>
-    <Max>10</Max>
-  </GarrisonHolder>
-  <Health>
-    <Max>600</Max>
-  </Health>
-  <Identity>
-    <Civ>ordona</Civ>
-    <Classes datatype="tokens">Wagon Large Warwagon</Classes>
-    <GenericName>War Wagon</GenericName>
-    <History>Most often these Coaches served as transports, both for people and goods, but during a time of war they are converted to carriers that ship soldiers across the vast plains of Ordona. War Wagons can hold up to six soldiers and bring them across large stretches of land very quickly, making them ideal for charging armies past towers and defenses in order to drop off their combat load. Ranged units can also attack from the windows of the carriage, allowing War Wagons to become mobile attack platforms.</History>
-    <Icon>units/ordona/ord_warwagon.dds</Icon>
-    <Lang>ordona</Lang>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <SelectionGroupName>units/ordona/ordona_warwagon_b</SelectionGroupName>
-    <Tooltip>Cavalry Support unit that can transport other units to battle. Ranged units can attack from the Wagon while garrisoned.</Tooltip>
-    <VisibleClasses datatype="tokens">Support</VisibleClasses>
-  </Identity>
+    <Attack>
+        <Ranged>
+            <AttackName>Arrow.</AttackName>
+            <Damage>
+                <Pierce>6</Pierce>
+            </Damage>
+            <EffectDelay>0</EffectDelay>
+            <MaxRange>60.0</MaxRange>
+            <MinRange>0.0</MinRange>
+            <PreferredClasses datatype="tokens">Human</PreferredClasses>
+            <PrepareTime>1200</PrepareTime>
+            <Projectile>
+                <Gravity>9.81</Gravity>
+                <Speed>75.0</Speed>
+                <Spread>1.5</Spread>
+                <FriendlyFire>false</FriendlyFire>
+                <LaunchPoint y="3"/>
+            </Projectile>
+            <RangeOverlay>
+                <LineTexture>outline_border.png</LineTexture>
+                <LineTextureMask>outline_border_mask.png</LineTextureMask>
+                <LineThickness>0.175</LineThickness>
+            </RangeOverlay>
+            <RepeatTime>2000</RepeatTime>
+        </Ranged>
+    </Attack>
+    <BuildingAI>
+        <DefaultArrowCount>0</DefaultArrowCount>
+        <GarrisonArrowClasses>CanGarrison</GarrisonArrowClasses>
+        <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    </BuildingAI>
+    <Cost>
+        <BuildTime>20</BuildTime>
+        <Resources>
+            <food>100</food>
+            <metal>0</metal>
+            <stone>0</stone>
+            <wood>100</wood>
+        </Resources>
+    </Cost>
+    <Footprint replace="">
+        <Height>3.0</Height>
+        <Square depth="20.0" width="18.0"/>
+    </Footprint>
+    <GarrisonHolder>
+        <BuffHeal>0</BuffHeal>
+        <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+        <EjectHealth>0.9</EjectHealth>
+        <List datatype="tokens">Medium</List>
+        <LoadingRange>2</LoadingRange>
+        <Max>10</Max>
+    </GarrisonHolder>
+    <Health>
+        <Max>600</Max>
+    </Health>
+    <Identity>
+        <Civ>ordona</Civ>
+        <Classes datatype="tokens">Wagon Large Warwagon</Classes>
+        <GenericName>War Wagon</GenericName>
+        <History>Most often these Coaches served as transports, both for people and goods, but during a time of war they are converted to carriers that ship soldiers across the vast plains of Ordona. War Wagons can hold up to six soldiers and bring them across large stretches of land very quickly, making them ideal for charging armies past towers and defenses in order to drop off their combat load. Ranged units can also attack from the windows of the carriage, allowing War Wagons to become mobile attack platforms.</History>
+        <Icon>units/ordona/ord_warwagon.dds</Icon>
+        <Lang>ordona</Lang>
+        <SelectionGroupName>units/ordona/ordona_warwagon_b</SelectionGroupName>
+        <Tooltip>Cavalry Support unit that can transport other units to battle. Ranged units can attack from the Wagon while garrisoned.</Tooltip>
+        <VisibleClasses datatype="tokens">Support</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <Crush>5.0</Crush>
+                <Hack>25.0</Hack>
+                <Pierce>70.0</Pierce>
+            </Damage>
+        </Entity>
+        <KnockbackResistance>100</KnockbackResistance>
+    </Resistance>
     <ResourceDropsite>
-    <Sharable>true</Sharable>
-    <Types>food wood stone metal</Types>
-  </ResourceDropsite>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>5.0</Crush>
-        <Hack>25.0</Hack>
-        <Pierce>70.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/ordona/warwagon/warwagon_death.xml</death>
-      <order_attack>voice/ordona/warwagon/warwagon_attack.xml</order_attack>
-      <order_garrison>voice/ordona/warwagon/warwagon_garrison.xml</order_garrison>
-      <order_gather>voice/ordona/warwagon/warwagon_gather.xml</order_gather>
-      <order_repair>voice/ordona/warwagon/warwagon_repair.xml</order_repair>
-      <order_walk>voice/ordona/warwagon/warwagon_walk.xml</order_walk>
-      <run>actor/movement/cart/cart_move.xml</run>
-      <select>voice/ordona/warwagon/warwagon_select.xml</select>
-      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
-      <walk>actor/movement/cart/cart_move.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <RunMultiplier>1.1666</RunMultiplier>
-    <WalkSpeed>13</WalkSpeed>
-    <PassabilityClass>large</PassabilityClass>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/ordona/ordona_warwagon_b.xml</Actor>
-  </VisualActor>
+        <Sharable>true</Sharable>
+        <Types>food wood stone metal</Types>
+    </ResourceDropsite>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/ordona/warwagon/warwagon_death.xml</death>
+            <order_attack>voice/ordona/warwagon/warwagon_attack.xml</order_attack>
+            <order_garrison>voice/ordona/warwagon/warwagon_garrison.xml</order_garrison>
+            <order_gather>voice/ordona/warwagon/warwagon_gather.xml</order_gather>
+            <order_repair>voice/ordona/warwagon/warwagon_repair.xml</order_repair>
+            <order_walk>voice/ordona/warwagon/warwagon_walk.xml</order_walk>
+            <run>actor/movement/cart/cart_move.xml</run>
+            <select>voice/ordona/warwagon/warwagon_select.xml</select>
+            <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+            <walk>actor/movement/cart/cart_move.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <RunMultiplier>1.1666</RunMultiplier>
+        <WalkSpeed>13</WalkSpeed>
+        <PassabilityClass>large</PassabilityClass>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/ordona/ordona_warwagon_b.xml</Actor>
+    </VisualActor>
 </Entity>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_fauna_herd_horse">
   <Capturable>
     <CapturePoints>10</CapturePoints>
@@ -12,7 +13,7 @@
   </Cost>
   <Footprint>
     <Height>1.5</Height>
-    <Square depth="2.8" width="1.4" />
+    <Square depth="2.8" width="1.4"/>
   </Footprint>
   <Identity>
     <Civ>gaia</Civ>
@@ -46,9 +47,11 @@
         <wood>7</wood>
       </Cost>
       <Entity>units/ordona/ordona_horseman_b</Entity>
-      <RequiredTechnology>civ_choices/ordona/choosehero_ilia</RequiredTechnology>
       <Time>1</Time>
       <Tooltip>Find a Horseman to mount this horse.</Tooltip>
+      <Requirements>
+        <Techs>civ_choices/ordona/choosehero_ilia</Techs>
+      </Requirements>
     </Tower>
   </Upgrade>
   <VisualActor>

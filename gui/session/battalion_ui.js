@@ -127,8 +127,6 @@ g_battalionUIGroupSelectionButtonsGroupNumberSmall.civil = new Array();
 g_battalionUIGroupSelectionButtonsGroupNumberSmall.structureMilitary = new Array();
 g_battalionUIGroupSelectionButtonsGroupNumberSmall.structureCivil = new Array();
 
-let g_civilBattalionArea = Engine.GetGUIObjectByName("civilBattalionArea");
-
 /**
  * Initializing all global data structures
  */
@@ -491,7 +489,18 @@ function RefreshBattalionUI (playerID)
     if (playerID <= 0){
         return;
     }
-    let playerBattalionList = g_battalionList[playerID];
+    if (!g_battalionList[playerID]){
+        g_battalionList[playerID] = new Array();
+    }
+    if (!g_civiliansList[playerID]){
+        g_civiliansList[playerID] = new Array();
+    }
+    if (!g_structuresMilitaryList[playerID]){
+        g_structuresMilitaryList[playerID] = new Array();
+    }
+    if (!g_structuresCivilList[playerID]){
+        g_structuresCivilList[playerID] = new Array();
+    }
     
     // Determine how long all the lists are
     let numberOfMilitaryUnitBattalionIcons = g_battalionList[playerID].length; // The UI can only hold a fixed amount of icons. We must make sure to not access elements that do not exist

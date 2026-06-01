@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civil_centre">
   <Attack>
     <Ranged>
@@ -37,7 +38,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="27.0" />
+    <Circle radius="27.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -46,19 +47,27 @@
   </Health>
   <Identity>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Village Center</GenericName>
     <History>The heart from which Labrynna manages all of their establishments. The Village Center provides Batches of slaves and storage for gathered resources; all that the Empire needs to begin expansion and train their forces.</History>
     <Icon>structures/labrynna/lab_civcenterA.dds</Icon>
     <Tooltip>Labrynnian Civil Center: Trains Worker units and all Resources can be dropped off here.</Tooltip>
-    <VisibleClasses datatype="tokens" />
+    <VisibleClasses datatype="tokens"/>
   </Identity>
   <Obstruction>
-    <Static depth="30.0" width="30.0" />
+    <Static depth="30.0" width="30.0"/>
   </Obstruction>
   <Population>
     <Bonus>30</Bonus>
   </Population>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/vire_sightunseen
+		labrynna/ralph_lanzasupreme
+		labrynna/veran_darkblessing
+		labrynna/player_islabrynna
+
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <alert0>interface/alarm/alarm_alert_0.xml</alert0>
@@ -71,35 +80,8 @@
       <upgraded>interface/complete/building/complete_civ_center_labrynna.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <Upgrade>
-    <Tower>
-      <Cost>
-		<food>100</food>
-		<metal>100</metal>
-		<stone>100</stone>
-		<wood>100</wood>
-      </Cost>
-      <Entity>structures/labrynna/labrynna_civil_centreB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Upgrade into Town Hall.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_civic_centreA.xml</Actor>
-    <FoundationActor>structures/labrynna/labrynna_scaffoldA.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">labrynna/vire_sightunseen
-		labrynna/ralph_lanzasupreme
-		labrynna/veran_darkblessing
-		labrynna/player_islabrynna
-
-</Technologies>
-  </Researcher>
   <Trainer>
-	<BatchTimeModifier>0.9</BatchTimeModifier>
+    <BatchTimeModifier>0.9</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_tokayslaveA
 	  units/labrynna/{civ}_tokayfodder_b
       units/labrynna/{civ}_pathfinder_b
@@ -135,4 +117,25 @@
       <Z>10</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <food>100</food>
+        <metal>100</metal>
+        <stone>100</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_civil_centreB</Entity>
+      <Time>60</Time>
+      <Tooltip>Upgrade into Town Hall.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_civic_centreA.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldA.xml</FoundationActor>
+  </VisualActor>
 </Entity>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>8.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -41,20 +42,29 @@
     <GenericName>Deku Mart</GenericName>
     <History>A large collection of shops and stalls, commerce within the forest would boom when the Scrubs managed to set up a Deku Mart. Countless Business Scrubs would buy and sell their wares, and trade with foreign powers brought all manner of trinkets and Rupees.</History>
     <Icon>structures/deku/dek_dekumart.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">unlock_shared_los
+    deku/trade_mer_flight
+    deku/butler_bounty
+
+</Technologies>
+  </Researcher>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -71,17 +81,6 @@
       <upgraded>interface/complete/building/complete_market.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/deku/deku_martA.xml</Actor>
-    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">unlock_shared_los
-    deku/trade_mer_flight
-    deku/butler_bounty
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/{civ}_trader_b
     gaia/lon_lon_cow_1</Entities>
@@ -117,4 +116,8 @@
       <Z>-9.5</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/deku/deku_martA.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
 </Entity>

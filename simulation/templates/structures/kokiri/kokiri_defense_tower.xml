@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -14,7 +15,7 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>2000</RepeatTime>
       <EffectDelay>0</EffectDelay>
@@ -48,12 +49,45 @@
   </Cost>
   <Footprint>
     <Height>15.0</Height>
-    <Square depth="20.0" width="20.0" />
+    <Square depth="20.0" width="20.0"/>
   </Footprint>
   <GarrisonHolder>
     <List datatype="tokens">Medium Small LargeGarrison</List>
     <Max>5</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_kokiri_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>kokiri</Civ>
+    <Classes datatype="tokens">MudmanTower</Classes>
+    <GenericName>Mudman Tower</GenericName>
+    <History>The Mudmen of Faron were known for the network of towers along the border of their Grove. When adopted back into Kokiri society they established these towers across the forest, guarding it from invaders.</History>
+    <Icon>structures/kokiri/kok_mudtower.dds</Icon>
+    <Tooltip>Defensive Tower that hurls javelins at enemies.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5"/>
+  </Obstruction>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/javelin_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/javelin_toss.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_tower.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_tower.xml</select>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -83,45 +117,14 @@
       </Archer5>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/debris_kokiri_small</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>kokiri</Civ>
-    <Classes datatype="tokens">MudmanTower</Classes>
-    <GenericName>Mudman Tower</GenericName>
-    <History>The Mudmen of Faron were known for the network of towers along the border of their Grove. When adopted back into Kokiri society they established these towers across the forest, guarding it from invaders.</History>
-    <Icon>structures/kokiri/kok_mudtower.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Defensive Tower that hurls javelins at enemies.</Tooltip>
-    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="15.5" width="15.5" />
-  </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <attack_impact_ranged>attack/weapon/javelin_impact.xml</attack_impact_ranged>
-      <attack_ranged>attack/weapon/javelin_toss.xml</attack_ranged>
-      <constructed>interface/complete/building/complete_tower.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_tower.xml</select>
-    </SoundGroups>
-  </Sound>
-  <StatusBars>
-    <BarHeight>0.6</BarHeight>
-    <BarWidth>6.0</BarWidth>
-    <HeightOffset>19.0</HeightOffset>
-  </StatusBars>
-  <VisualActor>
-    <Actor>structures/kokiri/kokiri_mudtowerA.xml</Actor>
-    <FoundationActor>structures/kokiri/kokiri_scaffoldF.xml</FoundationActor>
-  </VisualActor>
   <Visibility>
     <CanSpotStealth>
       <MinRange>0</MinRange>
       <MaxRange>80</MaxRange>
     </CanSpotStealth>
   </Visibility>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_mudtowerA.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldF.xml</FoundationActor>
+  </VisualActor>
 </Entity>

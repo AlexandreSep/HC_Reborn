@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="30.0" />
+    <Circle radius="30.0"/>
     <Height>15.0</Height>
   </Footprint>
   <Health>
@@ -41,20 +42,29 @@
     <GenericName>Goron Market Plaza</GenericName>
     <History>A series of shops that sell various goods and services within their host settlement, increasing both its economy and the happiness of people within.</History>
     <Icon>structures/goron/gor_market.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="45.0" width="45.0" />
+    <Static depth="45.0" width="45.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">unlock_shared_los
+      goron/trade_firetunic
+    goron/trade_salapet
+
+</Technologies>
+  </Researcher>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -71,17 +81,6 @@
       <upgraded>interface/complete/building/complete_market.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/goron/goron_marketA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">unlock_shared_los
-      goron/trade_firetunic
-    goron/trade_salapet
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">units/{civ}_trader_b
@@ -110,4 +109,8 @@
       <Z>20</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/goron/goron_marketA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

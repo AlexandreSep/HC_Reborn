@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/religious_territory_1
@@ -16,7 +17,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="39.5" width="39.5" />
+    <Square depth="39.5" width="39.5"/>
   </Footprint>
   <Health>
     <Max>1500</Max>
@@ -32,13 +33,23 @@
     <GenericName>Spirit Altar</GenericName>
     <History>Lost during the ancient days of the Gerudo Empire, Spirit Altars were conduits that allowed Gerudo Kings to plead to Kovaloo to speak with their dead ancestors. The Wind Witches have recently unearthed these secrets. and have begun recreating these shrines.</History>
     <Icon>structures/gerudo/ger_religionA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Religious building that increases the spread of your territory and allows the training of several units.</Tooltip>
     <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="39.5" width="39.5" />
+    <Static depth="39.5" width="39.5"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/wind_of_death
+    gerudo/ancestral_spirit
+    gerudo/gerudo_mirrorshield
+    gerudo/nabooru_kovaloogift
+	gerudo/bounded_essence
+</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage>
@@ -68,18 +79,6 @@
       <select>interface/select/building/sel_temple.xml</select>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/gerudo/gerudo_religionA.xml</Actor>
-    <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gerudo/wind_of_death
-    gerudo/ancestral_spirit
-    gerudo/gerudo_mirrorshield
-    gerudo/nabooru_kovaloogift
-	gerudo/bounded_essence
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/gerudo/{civ}_windwitch_b</Entities>
@@ -107,4 +106,8 @@
       <Z>13</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_religionA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
+  </VisualActor>
 </Entity>

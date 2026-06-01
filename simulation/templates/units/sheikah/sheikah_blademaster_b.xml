@@ -1,36 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_commander">
-  <Identity>
-    <AIBuild>
-      <MaxCopies>2</MaxCopies>
-      <MinPop>0</MinPop>
-    </AIBuild>
-    <Civ>sheikah</Civ>
-    <Classes datatype="tokens">Medium Class70</Classes>
-    <GenericName>Blademaster</GenericName>
-    <History>A Sheikah that has dedicated their century spanning life to martial combat. The Blademaster is unequaled in skill with a sword and their many decades in combat make them unmatched commanders.</History>
-    <Icon>units/sheikah/she_blademaster.dds</Icon>
-    <Lang>sheikah</Lang>
-    <SelectionGroupName>units/sheikah/sheikah_blademaster_b</SelectionGroupName>
-    <RequiredTechnology>phase_city</RequiredTechnology>
-    <Tooltip>Infantry Commander unit. Leads other Sheikah into battle.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/sheikah/sheikahC/sheikahC_death.xml</death>
-      <order_attack>voice/sheikah/sheikahC/sheikahC_attack.xml</order_attack>
-      <order_garrison>voice/sheikah/sheikahC/sheikahC_garrison.xml</order_garrison>
-      <order_gather>voice/sheikah/sheikahC/sheikahC_gather.xml</order_gather>
-      <order_repair>voice/sheikah/sheikahC/sheikahC_repair.xml</order_repair>
-      <order_walk>voice/sheikah/sheikahC/sheikahC_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/sheikah/sheikahC/sheikahC_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/sheikah/sheikah_blademaster_b.xml</Actor>
-  </VisualActor>
+    <Identity>
+        <AIBuild>
+            <MaxCopies>2</MaxCopies>
+            <MinPop>0</MinPop>
+        </AIBuild>
+        <Civ>sheikah</Civ>
+        <Classes datatype="tokens">Medium Class70</Classes>
+        <GenericName>Blademaster</GenericName>
+        <History>A Sheikah that has dedicated their century spanning life to martial combat. The Blademaster is unequaled in skill with a sword and their many decades in combat make them unmatched commanders.</History>
+        <Icon>units/sheikah/she_blademaster.dds</Icon>
+        <Lang>sheikah</Lang>
+        <SelectionGroupName>units/sheikah/sheikah_blademaster_b</SelectionGroupName>
+        <Tooltip>Infantry Commander unit. Leads other Sheikah into battle.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>phase_city</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/sheikah/sheikahC/sheikahC_death.xml</death>
+            <order_attack>voice/sheikah/sheikahC/sheikahC_attack.xml</order_attack>
+            <order_garrison>voice/sheikah/sheikahC/sheikahC_garrison.xml</order_garrison>
+            <order_gather>voice/sheikah/sheikahC/sheikahC_gather.xml</order_gather>
+            <order_repair>voice/sheikah/sheikahC/sheikahC_repair.xml</order_repair>
+            <order_walk>voice/sheikah/sheikahC/sheikahC_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/sheikah/sheikahC/sheikahC_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/sheikah/sheikah_blademaster_b.xml</Actor>
+    </VisualActor>
 </Entity>

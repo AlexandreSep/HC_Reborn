@@ -1,4 +1,43 @@
 {
-	"PopulationCapacities": [150, 225, 300, 400, 10000],
-	"Default": 300
+	"TranslatedKeys": ["Title", "Tooltip", "CapTitle", "CapTooltip", "Appendage"],
+	"Data":
+	[
+		{
+			"Name": "player",
+			"Title": "Player Population",
+			"CapTitle": "Player Population Cap",
+			"Tooltip": "Locked population cap for all players.",
+			"CapTooltip": "Choose the player population cap.",
+			"Appendage": "per player",
+			"Default": true,
+			"Options": {
+				"List": [150, 225, 300, 400, 10000],
+				"Default": 300
+			}
+		},
+		{
+			"Name": "team",
+			"Title": "Team Population",
+			"CapTitle": "Team Population Cap",
+			"Tooltip": "Distributes a team's total population cap evenly over all its living members. Enables the setting 'Locked teams'.",
+			"CapTooltip": "Choose the team population cap.",
+			"Appendage": "per team",
+			"Options": {
+				"List": [300, 400, 600, 800, 10000],
+				"Default": 400
+			}
+		},
+		{
+			"Name": "world",
+			"Title": "World Population",
+			"CapTitle": "World Population Cap",
+			"Tooltip": "Distributes the total population cap evenly over all living players.",
+			"CapTooltip": "Choose the world population cap.",
+			"Appendage": "globally",
+			"Options": {
+				"List": [600, 800, 1200, 1600, 10000],
+				"Default": 600
+			}
+		}
+	]
 }

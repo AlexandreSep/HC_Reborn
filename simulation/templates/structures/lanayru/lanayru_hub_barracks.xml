@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="27.0" />
+    <Circle radius="27.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -31,12 +32,14 @@
     <GenericName>Conscription Hub</GenericName>
     <History>Hub structure that could add various troops training facilities on to itself. Infantry and foot soldiers required such a building to be set up.</History>
     <Icon>structures/lanayru/lan_hub_barracks.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Hub that can add unit training stuctures to itself.</Tooltip>
     <VisibleClasses datatype="tokens">Hub</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="50.0" width="50.0" />
+    <Static depth="50.0" width="50.0"/>
   </Obstruction>
   <Plots>
     <PlotsToSpawn>
@@ -63,16 +66,6 @@
       </PlotC>
     </PlotsToSpawn>
   </Plots>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_barracks.xml</constructed>
-      <select>interface/select/building/sel_barracks.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/lanayru/lanayru_barrackshubA.xml</Actor>
-    <FoundationActor>structures/lanayru/lanayru_scaffoldC.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lanayru/barrackshub_volunteers
     lanayru/barracks_citizenguard
@@ -86,6 +79,12 @@
 
 </Technologies>
   </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <select>interface/select/building/sel_barracks.xml</select>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/lanayru/{civ}_conscript_b
@@ -127,4 +126,8 @@
       <Z>8.5</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_barrackshubA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

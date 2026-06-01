@@ -1,13 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_wallset">
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Stone Wall</GenericName>
     <History>A sturdy wooden wall built to protect Lizalfos settlements.</History>
     <Icon>structures/lizalfos/liz_stonewall.dds</Icon>
-	<RequiredTechnology>lizalfos_dinraal</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <Requirements>
+      <Techs>lizalfos_dinraal</Techs>
+    </Requirements>
   </Identity>
   <WallSet>
     <MaxTowerOverlap>0.80</MaxTowerOverlap>

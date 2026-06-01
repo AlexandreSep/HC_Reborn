@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="60.0" width="60.0" />
+    <Square depth="60.0" width="60.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -29,27 +30,18 @@
     <GenericName>Explosive Foundry</GenericName>
     <History>Test sites devoted to creating some of the most powerful explosive weaponry around, these Foundries are often lit up in a display of fireworks on a daily basis.</History>
     <Icon>structures/goron/gor_explfoundry.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Trains explosive Goron units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.0" width="15.0" />
+    <Static depth="15.0" width="15.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
-      <select>interface/select/building/sel_siegeworks.xml</select>
-      <upgraded>interface/complete/building/complete_siegeworks.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/goron/goron_explfoundryA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">goron/troop_stablespin
     goron/troop_darboil
@@ -57,6 +49,13 @@
     goron/dangoro_refinedkegs
 </Technologies>
   </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
+      <select>interface/select/building/sel_siegeworks.xml</select>
+      <upgraded>interface/complete/building/complete_siegeworks.xml</upgraded>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/goron/{civ}_bombthrower_b
@@ -86,4 +85,8 @@
       <Z>15</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/goron/goron_explfoundryA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

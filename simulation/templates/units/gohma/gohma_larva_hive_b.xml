@@ -1,120 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_unit_auxiliary">
-  <Attack>
-    <Melee>
-      <AttackName>Mandibles</AttackName>
-      <Damage>
-        <Pierce>2</Pierce>
-      </Damage>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
-  <Builder>
-  <Entities datatype="tokens">
+    <Attack>
+        <Melee>
+            <AttackName>Mandibles</AttackName>
+            <Damage>
+                <Pierce>2</Pierce>
+            </Damage>
+            <MaxRange>5.0</MaxRange>
+            <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+            <PrepareTime>1000</PrepareTime>
+            <RepeatTime>1100</RepeatTime>
+        </Melee>
+    </Attack>
+    <Builder>
+        <Entities datatype="tokens">
     </Entities>
-    <Rate>0.25</Rate>
-  </Builder>
-  <Cost>
-    <BuildTime>4</BuildTime>
-    <Resources>
-      <food>30</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>25</Max>
-  </Health>
-  <Identity>
-    <Civ>gohma</Civ>
-    <Classes datatype="tokens">Small Larva LarvaHive CasteHive Upgradeable BasicSoldier</Classes>
-    <GenericName>Hive Larva</GenericName>
-    <History>A secondary workforce for the Gohma, Hive Larva can eventually grow into larger and more useful utility forms. They have very minimal armor and their bites are hardly effective.</History>
-    <Icon>units/gohma/goh_larva_hive.dds</Icon>
-    <Lang>gohma</Lang>
-    <SelectionGroupName>units/gohma/gohma_larva_hive_b</SelectionGroupName>
-    <Tooltip>A small and hairy larva that can grow into various non-combat, utility forms. They can aid Harvesters and Hive Keepers with gathering Food and construction duty respectively.</Tooltip>
-    <VisibleClasses datatype="tokens">Worker</VisibleClasses>
-  </Identity>
+        <Rate>0.25</Rate>
+    </Builder>
+    <Cost>
+        <BuildTime>4</BuildTime>
+        <Resources>
+            <food>30</food>
+            <metal>0</metal>
+            <stone>0</stone>
+            <wood>0</wood>
+        </Resources>
+    </Cost>
+    <Health>
+        <Max>25</Max>
+    </Health>
+    <Identity>
+        <Civ>gohma</Civ>
+        <Classes datatype="tokens">Small Larva LarvaHive CasteHive Upgradeable BasicSoldier</Classes>
+        <GenericName>Hive Larva</GenericName>
+        <History>A secondary workforce for the Gohma, Hive Larva can eventually grow into larger and more useful utility forms. They have very minimal armor and their bites are hardly effective.</History>
+        <Icon>units/gohma/goh_larva_hive.dds</Icon>
+        <Lang>gohma</Lang>
+        <SelectionGroupName>units/gohma/gohma_larva_hive_b</SelectionGroupName>
+        <Tooltip>A small and hairy larva that can grow into various non-combat, utility forms. They can aid Harvesters and Hive Keepers with gathering Food and construction duty respectively.</Tooltip>
+        <VisibleClasses datatype="tokens">Worker</VisibleClasses>
+    </Identity>
     <ResourceGatherer>
-    <BaseSpeed>1.0</BaseSpeed>
-    <Capacities>
-      <food>4</food>
-      <metal>4</metal>
-      <stone>4</stone>
-      <wood>4</wood>
-    </Capacities>
-    <MaxDistance>2.0</MaxDistance>
-    <Rates>
-      <food.fruit>0.5</food.fruit>
-      <food.meat>0.5</food.meat>
-      <metal.rupees>0.25</metal.rupees>
-      <stone.ore>0.25</stone.ore>
-      <stone.ruins>1</stone.ruins>
-      <wood.rock>0.25</wood.rock>
-      <wood.ruins>2</wood.ruins>
-      <wood.tree>0.4</wood.tree>
-    </Rates>
-  </ResourceGatherer>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
-      <death>voice/gohma/gohma_smallA/gohma_smallA_death.xml</death>
-      <order_attack>voice/gohma/gohma_smallA/gohma_smallA_attack.xml</order_attack>
-      <order_garrison>voice/gohma/gohma_smallA/gohma_smallA_garrison.xml</order_garrison>
-      <order_gather>voice/gohma/gohma_smallA/gohma_smallA_gather.xml</order_gather>
-      <order_repair>voice/gohma/gohma_smallA/gohma_smallA_repair.xml</order_repair>
-      <order_walk>voice/gohma/gohma_smallA/gohma_smallA_walk.xml</order_walk>
-      <run>actor/movement/gohma/gohma_crawlB.xml</run>
-      <select>voice/gohma/gohma_smallA/gohma_smallA_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
-    </SoundGroups>
-  </Sound>
+        <BaseSpeed>1.0</BaseSpeed>
+        <Capacities>
+            <food>4</food>
+            <metal>4</metal>
+            <stone>4</stone>
+            <wood>4</wood>
+        </Capacities>
+        <MaxDistance>2.0</MaxDistance>
+        <Rates>
+            <food.fruit>0.5</food.fruit>
+            <food.meat>0.5</food.meat>
+            <metal.rupees>0.25</metal.rupees>
+            <stone.ore>0.25</stone.ore>
+            <stone.ruins>1</stone.ruins>
+            <wood.rock>0.25</wood.rock>
+            <wood.ruins>2</wood.ruins>
+            <wood.tree>0.4</wood.tree>
+        </Rates>
+    </ResourceGatherer>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/gohma_smallA_bite.xml</attack_melee>
+            <death>voice/gohma/gohma_smallA/gohma_smallA_death.xml</death>
+            <order_attack>voice/gohma/gohma_smallA/gohma_smallA_attack.xml</order_attack>
+            <order_garrison>voice/gohma/gohma_smallA/gohma_smallA_garrison.xml</order_garrison>
+            <order_gather>voice/gohma/gohma_smallA/gohma_smallA_gather.xml</order_gather>
+            <order_repair>voice/gohma/gohma_smallA/gohma_smallA_repair.xml</order_repair>
+            <order_walk>voice/gohma/gohma_smallA/gohma_smallA_walk.xml</order_walk>
+            <run>actor/movement/gohma/gohma_crawlB.xml</run>
+            <select>voice/gohma/gohma_smallA/gohma_smallA_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/movement/gohma/gohma_crawlB.xml</walk>
+        </SoundGroups>
+    </Sound>
     <Upgrade>
-    <Tower>
-      <Cost>
-        <food>100</food>
-		<metal>7</metal>
-      </Cost>
-      <Entity>units/gohma/gohma_caretaker_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
-      <Time>20</Time>
-      <Tooltip>Create caretaker.</Tooltip>
-    </Tower>
-    <TowerA>
-      <Cost>
-        <food>150</food>
-      <stone>40</stone>
-      </Cost>
-      <Entity>units/gohma/gohma_janitor_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
-      <Time>40</Time>
-      <Tooltip>Create Janitor.</Tooltip>
-    </TowerA>
-	<TowerB>
-      <Cost>
-       <food>120</food>
-      </Cost>
-      <Entity>units/gohma/gohma_keeper_b</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>40</Time>
-      <Tooltip>Create Keeper.</Tooltip>
-    </TowerB>
-	<TowerC>
-      <Cost>
-       <food>200</food>
-      </Cost>
-      <Entity>units/gohma/gohma_shroudwalker_packed</Entity>
-      <RequiredTechnology>civ_choices/gohma/choosehero_agitha</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Create Shroudwalker.</Tooltip>
-    </TowerC>
-  </Upgrade>
-  <VisualActor>
-    <Actor>units/gohma/gohma_larva_hive_b.xml</Actor>
-  </VisualActor>
+        <Tower>
+            <Cost>
+                <food>100</food>
+                <metal>7</metal>
+            </Cost>
+            <Entity>units/gohma/gohma_caretaker_b</Entity>
+            <Time>20</Time>
+            <Tooltip>Create caretaker.</Tooltip>
+            <Requirements>
+                <Techs>phase_village</Techs>
+            </Requirements>
+        </Tower>
+        <TowerA>
+            <Cost>
+                <food>150</food>
+                <stone>40</stone>
+            </Cost>
+            <Entity>units/gohma/gohma_janitor_b</Entity>
+            <Time>40</Time>
+            <Tooltip>Create Janitor.</Tooltip>
+            <Requirements>
+                <Techs>phase_village</Techs>
+            </Requirements>
+        </TowerA>
+        <TowerB>
+            <Cost>
+                <food>120</food>
+            </Cost>
+            <Entity>units/gohma/gohma_keeper_b</Entity>
+            <Time>40</Time>
+            <Tooltip>Create Keeper.</Tooltip>
+            <Requirements>
+                <Techs>phase_town</Techs>
+            </Requirements>
+        </TowerB>
+        <TowerC>
+            <Cost>
+                <food>200</food>
+            </Cost>
+            <Entity>units/gohma/gohma_shroudwalker_packed</Entity>
+            <Time>60</Time>
+            <Tooltip>Create Shroudwalker.</Tooltip>
+            <Requirements>
+                <Techs>civ_choices/gohma/choosehero_agitha</Techs>
+            </Requirements>
+        </TowerC>
+    </Upgrade>
+    <VisualActor>
+        <Actor>units/gohma/gohma_larva_hive_b.xml</Actor>
+    </VisualActor>
 </Entity>

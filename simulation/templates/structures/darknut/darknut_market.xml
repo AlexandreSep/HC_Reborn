@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -35,20 +36,27 @@
     <GenericName>Public Forums</GenericName>
     <History>Allowing foreign people and powers to set up shops and goods within the Public Forum brought forth many goods and services to the Legion’s people, not to mention Rupees.</History>
     <Icon>structures/darknut/dar_publicforum.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="43.0" width="43.0" />
+    <Static depth="43.0" width="43.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/trade_sellswords
+
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_market.xml</constructed>
@@ -56,15 +64,6 @@
       <upgraded>interface/complete/building/complete_market.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_publicforumbaseA.xml</Actor>
-    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">darknut/trade_sellswords
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/{civ}_trader_b
     gaia/lon_lon_cow_1</Entities>
@@ -92,4 +91,8 @@
       <Z>10</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_publicforumbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
 </Entity>

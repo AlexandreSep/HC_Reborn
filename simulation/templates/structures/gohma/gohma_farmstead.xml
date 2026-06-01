@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Farmstead</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="10.0" />
+    <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -41,13 +42,20 @@
     <GenericName>Extractor</GenericName>
     <History>The Extractor's purpose is to strip the flesh off of the Gohma's victims so that it may be stored for future consumption. This creepy and monsterous structure can improve the Gohma's ability to gather, hunt, and grow food.</History>
     <Icon>structures/gohma/goh_extractor.dds</Icon>
-	<RequiredTechnology>civ_choices/gohma/choosehero_sulkaris</RequiredTechnology>
     <Tooltip>Slowly drains Food within its aura.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/gohma/choosehero_sulkaris</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="12.0" width="12.0" />
+    <Static depth="12.0" width="12.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/gather_corpseextract
+    gohma/gather_webbingnets
+</Technologies>
+  </Researcher>
   <ResourceDrain>
     <MaxResourceSpotsToDrainSimultaneously>
       <food>3</food>
@@ -64,11 +72,11 @@
     </ResourcesPerTick>
     <TickRate>2000</TickRate>
     <DepleteResource>
-	  <food>true</food>
+      <food>true</food>
       <metal>true</metal>
       <stone>true</stone>
       <wood>true</wood>
-	</DepleteResource>
+    </DepleteResource>
     <VisualEffectDuration>1000</VisualEffectDuration>
   </ResourceDrain>
   <Sound>
@@ -77,17 +85,12 @@
       <select>interface/select/building/gohma/sel_gohA.xml</select>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/gohma/gohma_extractor.xml</Actor>
     <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gohma/gather_corpseextract
-    gohma/gather_webbingnets
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

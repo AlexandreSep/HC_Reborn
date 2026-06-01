@@ -1,4 +1,12 @@
 <Entity parent="template_rubble">
+  <Decay>
+    <Active>true</Active>
+    <SinkingAnim>false</SinkingAnim>
+    <SinkProb>1.0</SinkProb>
+    <DelayTime>180.0</DelayTime>
+    <SinkRate>0.05</SinkRate>
+    <SinkAccel>9.8</SinkAccel>
+  </Decay>
   <VisualActor>
     <Actor>structures/debris/debris_kokiri_huge.xml</Actor>
   </VisualActor>

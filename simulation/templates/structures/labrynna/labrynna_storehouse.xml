@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Storehouse</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="15.0" />
+    <Circle radius="15.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -30,12 +31,16 @@
     <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Static depth="15.0" width="15.0" />
+    <Static depth="15.0" width="15.0"/>
   </Obstruction>
   <Plots>
     <CanUpgradeToPlots>true</CanUpgradeToPlots>
   </Plots>
-  <RallyPoint disable="" />
+  <RallyPoint disable=""/>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/gather_slaveroutine
+</Technologies>
+  </Researcher>
   <ResourceDropsite>
     <Sharable>true</Sharable>
     <Types>food wood stone metal</Types>
@@ -48,17 +53,23 @@
       <upgraded>interface/complete/building/complete_storehouse.xml</upgraded>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <Tower>
       <Cost>
-		<stone>50</stone>
-		<wood>50</wood>
+        <stone>50</stone>
+        <wood>50</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_storehouseB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade into Heavy Storehouse.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </Tower>
   </Upgrade>
   <Vision>
@@ -68,12 +79,4 @@
     <Actor>structures/labrynna/labrynna_storehouseA.xml</Actor>
     <FoundationActor>structures/labrynna/labrynna_scaffoldG.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">labrynna/gather_slaveroutine
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

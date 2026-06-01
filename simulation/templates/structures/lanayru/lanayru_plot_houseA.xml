@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_plot">
-  <Capturable disable="" />
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
@@ -10,7 +11,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="15.0" />
+    <Circle radius="15.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -22,20 +23,29 @@
     <GenericName>Hub Addon-On</GenericName>
     <History>Construct Home Hub Add-ons on this space.</History>
     <Icon>structures/lanayru/lan_plotA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Construct Home Hub Add-ons on this space.</Tooltip>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.5" width="15.5" />
+    <Static depth="15.5" width="15.5"/>
   </Obstruction>
   <Plots>
     <IsPlot>true</IsPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <StatusBars>
     <BarHeight>0.6</BarHeight>
     <BarWidth>6.0</BarWidth>
     <HeightOffset>19.0</HeightOffset>
   </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -59,11 +69,4 @@
   <VisualActor>
     <Actor>structures/lanayru/lanayru_plotB.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

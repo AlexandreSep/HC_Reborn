@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/lizalfos/lizalfos_barracksB">
   <Identity>
-    <RequiredTechnology>lizalfos_dinraal</RequiredTechnology>
+    <Requirements>
+      <Techs>lizalfos_dinraal</Techs>
+    </Requirements>
   </Identity>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_warriorclutchB.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/footman_groundedstance
     lizalfos/darkhammer_shockwave
@@ -20,4 +20,7 @@
 	units/lizalfos/{civ}_monitor_b
     units/lizalfos/{civ}_striker_nardu</Entities>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_warriorclutchB.xml</Actor>
+  </VisualActor>
 </Entity>

@@ -1,11 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_wallset">
   <Identity>
     <Civ>deku</Civ>
     <GenericName>Wooden Wall</GenericName>
     <History>A makeshift wooden wall to keep the elements out of Deku territory.</History>
     <Icon>structures/deku/dek_wall.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <WallSet>
     <MaxTowerOverlap>0.80</MaxTowerOverlap>

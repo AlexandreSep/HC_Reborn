@@ -1,19 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/hylian/hylian_levy_cavalry">
-  <Identity>
-    <Classes datatype="tokens">-LevyCavalry SoldierCavalry Soldier</Classes>
-    <GenericName>Soldier Cavalry</GenericName>
-    <History>These mounted incarnations of the Kingdom Infantry add much-needed speed and range. Armed with a spear, Kingdom Cavalry are light, but swift, and can punch holes into soft enemy formations.</History>
-    <Icon>units/hylian/hyl_soldiercav.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <SelectionGroupName>units/hylian/hylian_soldier_cavalry</SelectionGroupName>
-    <Tooltip>Medium armored cavalry unit armed with a mace.</Tooltip>
-	<VisibleClasses datatype="tokens">Soldier</VisibleClasses>
-  </Identity>
-  <Promotion>
-    <Entity>units/hylian/hylian_kingdom_cavalry</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
-  <VisualActor>
-    <Actor>units/hylian/hylian_soldier_cav_b.xml</Actor>
-  </VisualActor>
+    <Identity>
+        <Classes datatype="tokens">-LevyCavalry SoldierCavalry Soldier</Classes>
+        <GenericName>Soldier Cavalry</GenericName>
+        <History>These mounted incarnations of the Kingdom Infantry add much-needed speed and range. Armed with a spear, Kingdom Cavalry are light, but swift, and can punch holes into soft enemy formations.</History>
+        <Icon>units/hylian/hyl_soldiercav.dds</Icon>
+        <SelectionGroupName>units/hylian/hylian_soldier_cavalry</SelectionGroupName>
+        <Tooltip>Medium armored cavalry unit armed with a mace.</Tooltip>
+        <VisibleClasses datatype="tokens">Soldier</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Promotion>
+        <Entity>units/hylian/hylian_kingdom_cavalry</Entity>
+        <RequiredXp>9999</RequiredXp>
+    </Promotion>
+    <VisualActor>
+        <Actor>units/hylian/hylian_soldier_cav_b.xml</Actor>
+    </VisualActor>
 </Entity>

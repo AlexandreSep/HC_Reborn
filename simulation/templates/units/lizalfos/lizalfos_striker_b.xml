@@ -1,46 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_spearman_heavy">
-<Attack>
-    <Melee>    
-      <Damage>
-        <Hack>0</Hack>
-      </Damage>
-    </Melee>
-  </Attack>
-  <Identity>
-    <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Volvamight Striker Lizarmored Axetails</Classes>
-    <GenericName>Chameleofos Striker</GenericName>
-    <History>A warrior class of the Faron Chameleofos, the Striker was suited in armor and carried a spear into battle. Their natural camouflage allowed them to hide and ambush enemies.</History>
-    <Icon>units/lizalfos/liz_striker.dds</Icon>
-    <Lang>lizalfos</Lang>
-    <RequiredTechnology>phase_village</RequiredTechnology>
-    <SelectionGroupName>units/lizalfos/lizalfos_striker_b</SelectionGroupName>
-    <Tooltip>Armored Melee unit armed with a long reaching spear.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Promotion>
-    <Entity>units/lizalfos/lizalfos_striker_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
-  <Resistance>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/lizalfos/chameleofosB/chameleofosB_death.xml</death>
-      <order_attack>voice/lizalfos/chameleofosB/chameleofosB_attack.xml</order_attack>
-      <order_garrison>voice/lizalfos/chameleofosB/chameleofosB_garrison.xml</order_garrison>
-      <order_gather>voice/lizalfos/chameleofosB/chameleofosB_gather.xml</order_gather>
-      <order_repair>voice/lizalfos/chameleofosB/chameleofosB_repair.xml</order_repair>
-      <order_walk>voice/lizalfos/chameleofosB/chameleofosB_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/lizalfos/chameleofosB/chameleofosB_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/lizalfos/lizalfos_chameleo_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <Damage>
+                <Hack>0</Hack>
+            </Damage>
+        </Melee>
+    </Attack>
+    <Identity>
+        <Civ>lizalfos</Civ>
+        <Classes datatype="tokens">Medium Volvamight Striker Lizarmored Axetails</Classes>
+        <GenericName>Chameleofos Striker</GenericName>
+        <History>A warrior class of the Faron Chameleofos, the Striker was suited in armor and carried a spear into battle. Their natural camouflage allowed them to hide and ambush enemies.</History>
+        <Icon>units/lizalfos/liz_striker.dds</Icon>
+        <Lang>lizalfos</Lang>
+        <SelectionGroupName>units/lizalfos/lizalfos_striker_b</SelectionGroupName>
+        <Tooltip>Armored Melee unit armed with a long reaching spear.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>phase_village</Techs>
+        </Requirements>
+    </Identity>
+    <Promotion>
+        <Entity>units/lizalfos/lizalfos_striker_upg</Entity>
+        <RequiredXp>9999</RequiredXp>
+    </Promotion>
+    <Resistance>
+        <KnockbackResistance>75</KnockbackResistance>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/lizalfos/chameleofosB/chameleofosB_death.xml</death>
+            <order_attack>voice/lizalfos/chameleofosB/chameleofosB_attack.xml</order_attack>
+            <order_garrison>voice/lizalfos/chameleofosB/chameleofosB_garrison.xml</order_garrison>
+            <order_gather>voice/lizalfos/chameleofosB/chameleofosB_gather.xml</order_gather>
+            <order_repair>voice/lizalfos/chameleofosB/chameleofosB_repair.xml</order_repair>
+            <order_walk>voice/lizalfos/chameleofosB/chameleofosB_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/lizalfos/chameleofosB/chameleofosB_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/lizalfos/lizalfos_chameleo_b.xml</Actor>
+    </VisualActor>
 </Entity>

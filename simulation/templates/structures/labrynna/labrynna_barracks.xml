@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="38.0" width="38.0" />
+    <Square depth="38.0" width="38.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -25,32 +26,16 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>labrynna</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Drill Hall</GenericName>
     <History>Labrynna’s future soldiers were put through the best training possible under the policies of the Empire. From these halls both the Homeguards and Borderguards were educated and released to defend the Empire.</History>
     <Icon>structures/labrynna/lab_barracksA.dds</Icon>
     <Tooltip>Trains a variety of Labrynnian units.</Tooltip>
-    <VisibleClasses datatype="tokens" />
+    <VisibleClasses datatype="tokens"/>
   </Identity>
   <Obstruction>
-    <Static depth="34.0" width="34.0" />
+    <Static depth="34.0" width="34.0"/>
   </Obstruction>
-  <Upgrade>
-    <Tower>
-      <Cost>
-        <wood>150</wood>
-      </Cost>
-      <Entity>structures/labrynna/labrynna_barracksB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Upgrade Drill Hall into Academy.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_barracksA.xml</Actor>
-    <FoundationActor>structures/labrynna/labrynna_scaffoldD.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">labrynna/homeguard_policestate
     labrynna/borderguard_camocape
@@ -90,4 +75,22 @@
       <Z>-7</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <wood>150</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_barracksB</Entity>
+      <Time>60</Time>
+      <Tooltip>Upgrade Drill Hall into Academy.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_barracksA.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldD.xml</FoundationActor>
+  </VisualActor>
 </Entity>

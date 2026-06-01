@@ -32,6 +32,24 @@ Identity.prototype.TechnologyNotMetSchema =
 			<data type='boolean'/> 
 		</element> 
 	</optional>`
+
+Identity.prototype.RequirementsSchema =
+	`<zeroOrMore>
+		<element name='Requirements' a:help='Legacy production requirements used by Hyrule Conquest templates.'>
+			<interleave>
+				<optional>
+					<element name='Techs'>
+						<optional>
+							<attribute name='datatype'>
+								<value>tokens</value>
+							</attribute>
+						</optional>
+						<text/>
+					</element>
+				</optional>
+			</interleave>
+		</element>
+	</zeroOrMore>`
 // HC-End
 
 Identity.prototype.Schema =
@@ -121,9 +139,12 @@ Identity.prototype.Schema =
 	"</optional>" +
 	Identity.prototype.AiBuildSchema + // HC-Exodarion - Do you need this? Else remove
 	Identity.prototype.TechnologyNotMetSchema + // HC-Exodarion - Do you need this? Else remove
-	"<element name='Undeletable' a:help='Prevent players from deleting this entity.'>" +
-		"<data type='boolean'/>" +
-	"</element>";
+	Identity.prototype.RequirementsSchema +
+	"<optional>" +
+		"<element name='Undeletable' a:help='Prevent players from deleting this entity.'>" +
+			"<data type='boolean'/>" +
+		"</element>" +
+	"</optional>";
 
 Identity.prototype.Init = function()
 {

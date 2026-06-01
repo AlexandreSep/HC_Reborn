@@ -1,4 +1,4 @@
-<Entity parent="HC_template_structure_military">
+﻿<Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Territory>own neutral</Territory>
   </BuildRestrictions>
@@ -17,6 +17,7 @@
   </Footprint>
   <Decay>
     <Active>false</Active>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkAccel>0.01</SinkAccel>
     <SinkRate>0.0</SinkRate>

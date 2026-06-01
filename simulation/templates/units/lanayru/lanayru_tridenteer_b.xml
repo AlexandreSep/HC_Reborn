@@ -1,63 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_Knight">
-  <Attack>
-    <Melee>
-	<Damage>
-        <Hack>0</Hack>
-        <Pierce>10</Pierce>
-      </Damage>
-      <AttackName>Trident</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Creature</Classes>
-		   <Multiplier>6.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <MaxRange>5.0</MaxRange>
-      <PreferredClasses datatype="tokens">Creature Cavalry</PreferredClasses>
-    </Melee>
-  </Attack>
-  <Identity>
-    <Civ>lanayru</Civ>
-    <Classes datatype="tokens">SilverArmor Volunteers Medium UniqueUnit Tridenteer</Classes>
-    <GenericName>Lightscale Tridenteer</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>Hunters of all manner of sea beast, from the Gyorgs of the Great Sea to the Bigoctos of the west, Lightscale Tridenteers were powerful warriors when in the waters. They were exceptionally adept at killing creature units with their tridents, and when not in combat they could slowly heal their injuries.</History>
-    <Icon>units/lanayru/lan_tridenteer.dds</Icon>
-    <Lang>lanayru</Lang>
-    <RequiredTechnology>lanayru/get_coastwatch</RequiredTechnology>
-    <SelectionGroupName>units/lanayru/lanayru_tridenteer_b</SelectionGroupName>
-    <Tooltip>Mipha's Unique Unit. Fast moving Melee unit armed with a long reaching trident. Excells at combat against creatures and aquatic units.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Position>
-    <Floating>false</Floating>
-  </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <DodgeRating>20.0</DodgeRating>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/lanayru/tridenteer/tridenteer_death.xml</death>
-      <order_attack>voice/lanayru/tridenteer/tridenteer_attack.xml</order_attack>
-      <order_garrison>voice/lanayru/tridenteer/tridenteer_garrison.xml</order_garrison>
-      <order_gather>voice/lanayru/tridenteer/tridenteer_gather.xml</order_gather>
-      <order_repair>voice/lanayru/tridenteer/tridenteer_repair.xml</order_repair>
-      <order_walk>voice/lanayru/tridenteer/tridenteer_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/lanayru/tridenteer/tridenteer_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <PassabilityClass>aquatic</PassabilityClass>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/lanayru/lanayru_tridenteer_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <Damage>
+                <Hack>0</Hack>
+                <Pierce>10</Pierce>
+            </Damage>
+            <AttackName>Trident</AttackName>
+            <Bonuses>
+                <BonusCavMelee>
+                    <Classes>Creature</Classes>
+                    <Multiplier>6.0</Multiplier>
+                </BonusCavMelee>
+            </Bonuses>
+            <MaxRange>5.0</MaxRange>
+            <PreferredClasses datatype="tokens">Creature Cavalry</PreferredClasses>
+        </Melee>
+    </Attack>
+    <Identity>
+        <Civ>lanayru</Civ>
+        <Classes datatype="tokens">SilverArmor Volunteers Medium UniqueUnit Tridenteer</Classes>
+        <GenericName>Lightscale Tridenteer</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>Hunters of all manner of sea beast, from the Gyorgs of the Great Sea to the Bigoctos of the west, Lightscale Tridenteers were powerful warriors when in the waters. They were exceptionally adept at killing creature units with their tridents, and when not in combat they could slowly heal their injuries.</History>
+        <Icon>units/lanayru/lan_tridenteer.dds</Icon>
+        <Lang>lanayru</Lang>
+        <SelectionGroupName>units/lanayru/lanayru_tridenteer_b</SelectionGroupName>
+        <Tooltip>Mipha's Unique Unit. Fast moving Melee unit armed with a long reaching trident. Excells at combat against creatures and aquatic units.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>lanayru/get_coastwatch</Techs>
+        </Requirements>
+    </Identity>
+    <Position>
+        <Floating>false</Floating>
+    </Position>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <DodgeRating>20.0</DodgeRating>
+            </Damage>
+        </Entity>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/lanayru/tridenteer/tridenteer_death.xml</death>
+            <order_attack>voice/lanayru/tridenteer/tridenteer_attack.xml</order_attack>
+            <order_garrison>voice/lanayru/tridenteer/tridenteer_garrison.xml</order_garrison>
+            <order_gather>voice/lanayru/tridenteer/tridenteer_gather.xml</order_gather>
+            <order_repair>voice/lanayru/tridenteer/tridenteer_repair.xml</order_repair>
+            <order_walk>voice/lanayru/tridenteer/tridenteer_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/lanayru/tridenteer/tridenteer_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <PassabilityClass>aquatic</PassabilityClass>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/lanayru/lanayru_tridenteer_b.xml</Actor>
+    </VisualActor>
 </Entity>

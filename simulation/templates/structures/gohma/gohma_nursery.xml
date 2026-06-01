@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/solarium_aura_1
@@ -15,7 +16,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="15" />
+    <Circle radius="15"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -48,30 +49,32 @@
     <GenericName>Solarium Nursery</GenericName>
     <History>Arrayed across the Misery Mire, these giant nests are opened to the sun, a process that seems to increase both the speed of maturation and the strength of Gohma eggs. A Nursery can garrison a Gohma Queen, allowing her to lay eggs in batches as opposed to one at a time.</History>
     <Icon>structures/gohma/goh_nursery.dds</Icon>
-	<RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Nest that can lay Gohma Eggs to hatch into new units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="20.0" width="20.0" />
+    <Static depth="20.0" width="20.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/nursery_forcedlay
+    gohma/nursery_solgrowth
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_gohnestA.xml</constructed>
       <select>interface/select/building/gohma/sel_gohnestA.xml</select>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/gohma/gohma_nursery.xml</Actor>
     <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gohma/nursery_forcedlay
-    gohma/nursery_solgrowth
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

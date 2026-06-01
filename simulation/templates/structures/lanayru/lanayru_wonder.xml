@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_wonder">
   <BuildRestrictions>
     <Territory>own</Territory>
   </BuildRestrictions>
   <Footprint>
     <Height>10.0</Height>
-    <Square depth="90.0" width="90.0" />
+    <Square depth="90.0" width="90.0"/>
   </Footprint>
   <Health>
     <Max>10000</Max>
@@ -19,15 +20,21 @@
     <GenericName>Rutala Dam</GenericName>
     <History>This massive structure was built across the Airu River near its source in the Death Mountain range. It was able to regulate the flow of water through Lanayru Province as well as habor aquatic life in its reservoir.</History>
     <Icon>structures/lanayru/lan_rutaladam.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>The Lanayru Wonder, allows you to summon Vrylonacia, the Spirit of Lanayru.</Tooltip>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="90.0" width="90.0" />
+    <Static depth="90.0" width="90.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/lanayru/complete_rutaladam.xml</constructed>
@@ -39,14 +46,6 @@
     <Radius>52</Radius>
     <Root>false</Root>
   </TerritoryInfluence>
-  <VisualActor>
-    <Actor>structures/lanayru/lanayru_wonderA.xml</Actor>
-    <FoundationActor>structures/lanayru/lanayru_scaffoldM.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/lanayru/{civ}_titan_vrylonacia</Entities>
@@ -74,4 +73,8 @@
       <Z>50</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_wonderA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldM.xml</FoundationActor>
+  </VisualActor>
 </Entity>

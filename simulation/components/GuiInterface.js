@@ -163,7 +163,9 @@ GuiInterface.prototype.GetSimulationState = function()
 	ret.victoryConditions = cmpEndGameManager.GetVictoryConditions();
 	ret.alliedVictory = cmpEndGameManager.GetAlliedVictory();
 
-	ret.maxWorldPopulation = cmpPlayerManager.GetMaxWorldPopulation();
+	ret.maxWorldPopulation = cmpPlayerManager.GetMaxWorldPopulation ?
+		cmpPlayerManager.GetMaxWorldPopulation() :
+		undefined;
 
 	for (let i = 0; i < numPlayers; ++i)
 	{
@@ -190,7 +192,17 @@ GuiInterface.prototype.GetExtendedSimulationState = function()
 	{
 		let cmpPlayerStatisticsTracker = QueryPlayerIDInterface(i, IID_StatisticsTracker);
 		if (cmpPlayerStatisticsTracker)
-			ret.players[i].sequences = cmpPlayerStatisticsTracker.GetSequences();
+		{
+			try
+			{
+				ret.players[i].sequences = cmpPlayerStatisticsTracker.GetSequences();
+			}
+			catch (e)
+			{
+				warn("StatisticsTracker.GetSequences failed for player " + i + ": " + e);
+				ret.players[i].sequences = {};
+			}
+		}
 	}
 
 	return ret;

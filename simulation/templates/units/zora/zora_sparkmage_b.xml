@@ -11,7 +11,7 @@
   </Attack>
   <Identity>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">Electric SparkMage ZoraFemale Medium CanGarrison</Classes>
+    <Classes datatype="tokens">Electric SparkMage ZoraFemale Medium CanGarrison Swimmer</Classes>
     <GenericName>Spark Mage</GenericName>
     <History>Carrying an electrified crystal in one hand, the powerful Spark Mages can unleash a white-hot bolt of lightning from quite a distance. A single shot can stun its victim, and sometimes instantly incinerate a target. Spark Mages need protection however; they are very vulnerable to damage and can do little to defend themselves in a melee.</History>
     <Icon>units/zora/zor_sparkmage.dds</Icon>

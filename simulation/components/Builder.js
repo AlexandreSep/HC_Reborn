@@ -76,10 +76,31 @@ Builder.prototype.CanRepair = function(target)
 	let cmpFoundation = QueryMiragedInterface(target, IID_Foundation);
 	let cmpRepairable = QueryMiragedInterface(target, IID_Repairable);
 	if (!cmpFoundation && (!cmpRepairable || !cmpRepairable.IsRepairable()))
+	{
+		let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+		warn("[HC_DEBUG_BUILD] CanRepair false no foundation/repairable builder=" + this.entity +
+			" target=" + target +
+			" targetTemplate=" + cmpTemplateManager.GetCurrentTemplateName(target));
 		return false;
+	}
 
 	let cmpOwnership = Engine.QueryInterface(this.entity, IID_Ownership);
-	return cmpOwnership && IsOwnedByAllyOfPlayer(cmpOwnership.GetOwner(), target);
+	let owner = cmpOwnership ? cmpOwnership.GetOwner() : INVALID_PLAYER;
+	let canRepair = cmpOwnership && (
+		IsOwnedByPlayer(owner, target) ||
+		IsOwnedByAllyOfPlayer(owner, target)
+	);
+	if (!canRepair)
+	{
+		let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+		let cmpTargetOwnership = Engine.QueryInterface(target, IID_Ownership);
+		warn("[HC_DEBUG_BUILD] CanRepair false ownership builder=" + this.entity +
+			" builderOwner=" + (cmpOwnership ? owner : "no Ownership") +
+			" target=" + target +
+			" targetOwner=" + (cmpTargetOwnership ? cmpTargetOwnership.GetOwner() : "no Ownership") +
+			" targetTemplate=" + cmpTemplateManager.GetCurrentTemplateName(target));
+	}
+	return canRepair;
 };
 
 /**
@@ -93,7 +114,13 @@ Builder.prototype.StartRepairing = function(target, callerIID)
 		this.StopRepairing();
 
 	if (!this.CanRepair(target))
+	{
+		let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+		warn("[HC_DEBUG_BUILD] StartRepairing failed builder=" + this.entity +
+			" target=" + target +
+			" targetTemplate=" + cmpTemplateManager.GetCurrentTemplateName(target));
 		return false;
+	}
 
 	let cmpBuilderList = QueryBuilderListInterface(target);
 	if (cmpBuilderList)
@@ -161,6 +188,10 @@ Builder.prototype.PerformBuilding = function(data, lateness)
 
 	if (!this.IsTargetInRange(this.target))
 	{
+		let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+		warn("[HC_DEBUG_BUILD] PerformBuilding OutOfRange builder=" + this.entity +
+			" target=" + this.target +
+			" targetTemplate=" + cmpTemplateManager.GetCurrentTemplateName(this.target));
 		this.StopRepairing("OutOfRange");
 		return;
 	}

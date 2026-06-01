@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="27.0" />
+    <Circle radius="27.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -31,16 +32,18 @@
     <GenericName>Crafting Grove</GenericName>
     <History>A Grove dedicated to improving Kokiri buildings and units through crafting and training.</History>
     <Icon>structures/kokiri/kok_craftgrove.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Grove that can build Research Add-Ons.</Tooltip>
     <VisibleClasses datatype="tokens">Grove</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="43.0" width="43.0" />
+    <Static depth="43.0" width="43.0"/>
   </Obstruction>
   <Plots>
     <PlotsToSpawn>
@@ -116,6 +119,16 @@
       </PlotJ>
     </PlotsToSpawn>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/gulley_blacksmith
+    kokiri/armor_dekugouge
+      kokiri/armor_woodwork
+    kokiri/building_tracery
+    kokiri/ranged_squareoff
+      kokiri/ranged_driedseeds
+    kokiri/ranged_quickdraw
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -128,6 +141,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
@@ -135,18 +152,4 @@
     <Actor>structures/kokiri/kokiri_grove_craftA.xml</Actor>
     <FoundationActor>structures/kokiri/kokiri_scaffoldH.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">kokiri/gulley_blacksmith
-    kokiri/armor_dekugouge
-      kokiri/armor_woodwork
-    kokiri/building_tracery
-    kokiri/ranged_squareoff
-      kokiri/ranged_driedseeds
-    kokiri/ranged_quickdraw
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

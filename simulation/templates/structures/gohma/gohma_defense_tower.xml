@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
-  <Ranged>
+    <Ranged>
       <AttackName>TBD.</AttackName>
       <Damage>
         <Magic>5</Magic>
@@ -16,7 +17,7 @@
         <Speed>45.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>6000</RepeatTime>
       <Splash>
@@ -52,7 +53,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="10.0" />
+    <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -71,13 +72,19 @@
     <GenericName>Defense Node</GenericName>
     <History>The Defense Node is a small but important Gohma structure that can morph into various turrets used to defend the Hive. Before upgrading into a proper turret it serves little purpose.</History>
     <Icon>structures/gohma/goh_defense_node.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Node that can transform into several different Defensive fortification.</Tooltip>
     <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="7.5" width="7.5" />
+    <Static depth="7.5" width="7.5"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/mido_subpit
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_gohwallA.xml</constructed>
@@ -89,42 +96,42 @@
     <BarWidth>6.0</BarWidth>
     <HeightOffset>19.0</HeightOffset>
   </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <Tower>
       <Cost>
         <wood>150</wood>
       </Cost>
       <Entity>structures/gohma/gohma_special_tower</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Create Mite Mound.</Tooltip>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </Tower>
     <TowerA>
       <Cost>
         <wood>250</wood>
       </Cost>
       <Entity>structures/gohma/gohma_defense_tower_upg</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Create Acid Batch.</Tooltip>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
     </TowerA>
   </Upgrade>
-  <VisualActor>
-    <Actor>structures/gohma/gohma_turretA.xml</Actor>
-    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
-  </VisualActor>
   <Visibility>
     <CanSpotStealth>
       <MinRange>0</MinRange>
       <MaxRange>80</MaxRange>
     </CanSpotStealth>
   </Visibility>
-  <Researcher>
-    <Technologies datatype="tokens">gohma/mido_subpit
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_turretA.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
 </Entity>

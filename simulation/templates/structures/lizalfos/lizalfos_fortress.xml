@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -14,7 +15,7 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>2000</RepeatTime>
       <EffectDelay>0</EffectDelay>
@@ -45,11 +46,49 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="90.0" width="90.0" />
+    <Square depth="90.0" width="90.0"/>
   </Footprint>
   <GarrisonHolder>
     <Max>20</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>8000</Max>
+    <SpawnEntityOnDeath>rubble/debris_lizalfos_citadelA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>lizalfos</Civ>
+    <Classes datatype="tokens">Wargods</Classes>
+    <GenericName>Citadel</GenericName>
+    <History>A giant battle fortress constructed to protect the altars of Lizalfos sacrifice. The Citadel is an anltar of its own, shedding the blood of any foolish enemy that sets foot on Lizalfos ground</History>
+    <Icon>structures/lizalfos/liz_citadel.dds</Icon>
+    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <Requirements>
+      <Techs>pair_lizgodsC</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="87.0" width="87.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_fortress.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_fortress.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -154,35 +193,6 @@
       </Archer9>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>8000</Max>
-    <SpawnEntityOnDeath>rubble/debris_lizalfos_citadelA</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Wargods</Classes>
-    <GenericName>Citadel</GenericName>
-    <History>A giant battle fortress constructed to protect the altars of Lizalfos sacrifice. The Citadel is an anltar of its own, shedding the blood of any foolish enemy that sets foot on Lizalfos ground</History>
-    <Icon>structures/lizalfos/liz_citadel.dds</Icon>
-    <RequiredTechnology>pair_lizgodsC</RequiredTechnology>
-    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
-    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-  </Identity>
-  <Obstruction>
-    <Static depth="87.0" width="87.0" />
-  </Obstruction>
-  <Population>
-    <Bonus>10</Bonus>
-  </Population>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
-      <constructed>interface/complete/building/complete_fortress.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_fortress.xml</select>
-    </SoundGroups>
-  </Sound>
   <VisualActor>
     <Actor>structures/lizalfos/lizalfos_citadelA.xml</Actor>
     <FoundationActor>structures/lizalfos/lizalfos_scaffoldB_S.xml</FoundationActor>
@@ -191,11 +201,4 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

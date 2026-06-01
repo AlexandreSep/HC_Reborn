@@ -2,6 +2,9 @@ const CIV_CHOICE_BUTTON_WIDTH = 276;
 const CIV_CHOICE_BUTTON_SPACING = 50;
 
 const HEROES_PER_FACTION = 3;
+const MAX_CIV_CHOICE_BUTTONS = 6;
+const CIV_CHOICE_ROW_LEFT = 8.4;
+const CIV_CHOICE_ROW_RIGHT = 96;
 let allowHeroSelectionDuringMatch = false;
 
 let selectedHeroes = [];
@@ -28,17 +31,27 @@ function initCivChoicesDialog()
 	}
 
 	let civChoicesDialogPanel = Engine.GetGUIObjectByName("civChoicesDialogPanel");
-	let civChoicesDialogPanelWidth = civChoicesDialogPanel.size.right - civChoicesDialogPanel.size.left;
-	let buttonsLength = CIV_CHOICE_BUTTON_WIDTH * civChoices.length + CIV_CHOICE_BUTTON_SPACING * (civChoices.length - 1);
-	let buttonsStart = (civChoicesDialogPanelWidth - buttonsLength) / 2;
+	resetCivChoiceSlots();
 	
 	// Percentage size values for each button
-	let buttonWidth = 17;
-	let buttonHeight = 27;
-	let buttonSpacingVertical = 1;
-	let buttonSpacingHorizontal = 3;
-	let borderTop = 5;
-	let borderLeft = 12;
+	let buttonWidth = 22;
+	let buttonHeight = 37.4;
+
+	if(civChoices.length==4)
+	{
+		buttonWidth = 20;
+		buttonHeight= 34;
+	}
+
+
+	let buttonSpacing = 3;
+	let borderTop = 5;	
+	let rowWidth = CIV_CHOICE_ROW_RIGHT - CIV_CHOICE_ROW_LEFT;
+	let buttonsLength = buttonWidth * civChoices.length + buttonSpacing * (civChoices.length - 1);
+	let borderLeft = CIV_CHOICE_ROW_LEFT + (rowWidth - buttonsLength) / 2;
+
+	if (borderLeft < CIV_CHOICE_ROW_LEFT)
+		borderLeft = CIV_CHOICE_ROW_LEFT;
 
 	// Must be done here to correctly initialise the battalion helth bars
 	Engine.GuiInterfaceCall("ApplyInitBattalions");
@@ -69,7 +82,7 @@ function initCivChoicesDialog()
     heroConfirmIcon.sprite = "stretched:grayscale:session/portraits/technologies/confirm_heroes.png";
     
     // Display the maximum allowed amount of heroes
-    updateHeroCountDisplay(heroesPerFaction);
+    //updateHeroCountDisplay(heroesPerFaction);
     
     let heroSeelctionIsValid = false;
     heroConfirmButton.onPress = function ()
@@ -96,9 +109,9 @@ function initCivChoicesDialog()
         civChoiceButton.caption = civChoiceTechData.name.generic;
 
         let size = civChoiceButton.size;
-		size.rleft = borderLeft + (Math.floor(i/2) * (buttonWidth + buttonSpacingVertical) );
+		size.rleft = borderLeft + i * (buttonWidth + buttonSpacing);
 		size.rright = size.rleft + buttonWidth;
-		size.rtop = borderTop + (Math.floor(i%2) * (buttonHeight + buttonSpacingHorizontal) );
+		size.rtop = borderTop;
 		size.rbottom = size.rtop + buttonHeight;
 		civChoiceButton.size = size;
 
@@ -115,6 +128,9 @@ function initCivChoicesDialog()
 				toggleHero(tech);
 				civChoiceIconSelectionOverlay.hidden = true;
 			}else{
+				if (selectedHeroes.length + activatedHeroes.size >= heroesPerFaction)
+					clearPendingHeroSelection(civChoices.length);
+
 				if ((selectedHeroes.length + activatedHeroes.size) < heroesPerFaction){
 					selectedHeroes.push(tech);
 					civChoiceIconSelectionOverlay.hidden = false;
@@ -138,7 +154,7 @@ function initCivChoicesDialog()
 			}
 			Engine.GetGUIObjectByName("heroDescriptionArea[" + listIndex + "]").hidden = false;
 			
-			updateHeroCountDisplay(heroesPerFaction);
+			//updateHeroCountDisplay(heroesPerFaction);
 			
 			
 		}})(civChoices[i], i);
@@ -157,6 +173,46 @@ function initCivChoicesDialog()
 	civChoicesDialogPanel.hidden = false;
 }
 
+function resetCivChoiceSlots()
+{
+	selectedHeroes = [];
+
+	for (let i = 0; i < MAX_CIV_CHOICE_BUTTONS; ++i)
+	{
+		let civChoiceButton = Engine.GetGUIObjectByName("civChoice[" + i + "]");
+		civChoiceButton.hidden = true;
+		civChoiceButton.caption = "";
+		civChoiceButton.onPress = function() {};
+		civChoiceButton.onPressRight = function() {};
+
+		let civChoiceIcon = Engine.GetGUIObjectByName("civChoiceIcon[" + i + "]");
+		civChoiceIcon.sprite = "";
+
+		let civChoiceIconSelectionOverlay = Engine.GetGUIObjectByName("civChoiceIconSelectionOverlay[" + i + "]");
+		civChoiceIconSelectionOverlay.hidden = true;
+
+		let heroDescriptionArea = Engine.GetGUIObjectByName("heroDescriptionArea[" + i + "]");
+		heroDescriptionArea.hidden = true;
+
+		for (let j = 0; j < 5; ++j)
+		{
+			let heroDescriptionElement = Engine.GetGUIObjectByName("heroDescriptionElement[" + i + "]" + "[" + j + "]");
+			heroDescriptionElement.hidden = true;
+			heroDescriptionElement.tooltip = "";
+
+			Engine.GetGUIObjectByName("heroDescriptionIcon[" + i + "]" + "[" + j + "]").sprite = "";
+			Engine.GetGUIObjectByName("heroDescriptionShortText[" + i + "]" + "[" + j + "]").caption = "";
+		}
+	}
+}
+
+function clearPendingHeroSelection(choiceCount)
+{
+	selectedHeroes = [];
+	for (let i = 0; i < choiceCount; ++i)
+		Engine.GetGUIObjectByName("civChoiceIconSelectionOverlay[" + i + "]").hidden = true;
+}
+
 function readHeroSettings() {
 	let heroSettings = Engine.GuiInterfaceCall("GetHeroeSettings");
 	return heroSettings;
@@ -169,9 +225,9 @@ function setupHeroDescriptionWindow (listIndex, civChoiceTechData)
 		return;
 	}
 	
-	let descriptionElementBorderTop = 4;
+	let descriptionElementBorderTop = 6;
 	let descriptionElementHeight = 15;
-	let descriptionElementSpacing = 4;
+	let descriptionElementSpacing = 3;
 	
 	let numberOfLines = heroDescription.length;
 	if (numberOfLines > 5){
@@ -185,22 +241,40 @@ function setupHeroDescriptionWindow (listIndex, civChoiceTechData)
 		
 		let heroDescriptionElement = Engine.GetGUIObjectByName("heroDescriptionElement[" + listIndex + "]" + "[" + i + "]");
 		let size = heroDescriptionElement.size;
-		size.rtop = ((descriptionElementHeight*i) + (descriptionElementSpacing*(i+1)));
+		size.rtop = descriptionElementBorderTop + ((descriptionElementHeight + descriptionElementSpacing) * i);
 		size.rbottom = size.rtop + descriptionElementHeight;
+		size.rleft = 4;
+		size.rright = 65;
 		heroDescriptionElement.size = size;
 		
 		//~ let heroDescriptionButton = Engine.GetGUIObjectByName("heroDescriptionButton[" + listIndex + "]" + "[" + i + "]");
 		let heroDescriptionIcon = Engine.GetGUIObjectByName("heroDescriptionIcon[" + listIndex + "]" + "[" + i + "]");
 		heroDescriptionIcon.sprite = "stretched:" + iconPath;
+		let iconSize = heroDescriptionIcon.size;
+		iconSize.rleft = 0;
+		iconSize.rright = 12;
+		iconSize.rtop = -28;
+		iconSize.rbottom = 128;
+		heroDescriptionIcon.size = iconSize;
 		
 		let heroDescriptionShortText = Engine.GetGUIObjectByName("heroDescriptionShortText[" + listIndex + "]" + "[" + i + "]");
 		heroDescriptionShortText.caption = shortDescription;
+		let textSize = heroDescriptionShortText.size;
+		textSize.rleft = 14;
+		textSize.rright = 100;
+		heroDescriptionShortText.size = textSize;
 		
 		heroDescriptionElement.tooltip = tooltipText;
 		heroDescriptionElement.hidden = false;
 	}
 	
 	let heroDescriptionArea = Engine.GetGUIObjectByName("heroDescriptionArea[" + listIndex + "]");
+	let areaSize = heroDescriptionArea.size;
+	areaSize.rleft = 27;
+	areaSize.rright = 95;
+	areaSize.rtop = 43;
+	areaSize.rbottom = 65;
+	heroDescriptionArea.size = areaSize;
 	heroDescriptionArea.hidden = true;
 }
 

@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_plot">
-  <Capturable disable="" />
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
@@ -10,7 +11,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="15.0" />
+    <Circle radius="15.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -22,20 +23,29 @@
     <GenericName>Darknut Building Plot</GenericName>
     <History>Construct an extension of the Darknut Agora.</History>
     <Icon>structures/darknut/dar_plot.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Construct an extension of the Darknut Agora.</Tooltip>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="27.5" width="27.5" />
+    <Static depth="27.5" width="27.5"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <StatusBars>
     <BarHeight>0.6</BarHeight>
     <BarWidth>6.0</BarWidth>
     <HeightOffset>19.0</HeightOffset>
   </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -50,11 +60,4 @@
   <VisualActor>
     <Actor>structures/darknut/darknut_smallplotA.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

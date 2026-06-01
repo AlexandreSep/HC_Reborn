@@ -7,6 +7,7 @@
 
 	<!-- Background image -->
 	<object
+		name="minimapBackgroundTexture"
 		type="image"
 		size="4 4 100%-4 100%-4"
 		sprite="stretched:session/minimap_circle_modern.png"
@@ -49,10 +50,10 @@
 		size="3 3 58% 58%"
 		tooltip_style="sessionToolTip"
 		hotkey="session.flareactivate"
-		sprite="stretched:session/minimap-flare.png"
-		sprite_over="stretched:session/minimap-flare-highlight.png"
+		sprite="stretched:session/minimap-player-flare.png"
+		sprite_over="stretched:session/minimap-player-flare-highlight.png"
 		sprite_disabled="stretched:session/minimap-flare-disabled.png"
-		mouse_event_mask="texture:session/minimap-flare.png"
+		mouse_event_mask="texture:session/minimap-player-flare.png"
 	/>
 
 	<!-- HC-Code Toggle Units And Structures Button -->
@@ -107,7 +108,7 @@
 		size="0% 0% 100% 100%"
 		type="image"
 		ghost="true"
-		sprite="minimapPanel"
+		sprite="minimapPanelOverlay_hylian"
 	>
 	</object>
 	

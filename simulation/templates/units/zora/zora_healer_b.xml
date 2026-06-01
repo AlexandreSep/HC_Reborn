@@ -27,7 +27,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">Healer ZoraFemale ZorHealer Medium ZaleenBonus</Classes>
+    <Classes datatype="tokens">Healer ZoraFemale ZorHealer Medium ZaleenBonus Swimmer</Classes>
     <GenericName>Zora Healer</GenericName>
     <History>Nursing and healing the wounded is a large field of study among the Zora, and as such they have applied such knowledge to the battlefield. Zora Healers bring their medical talent to the frontlines, giving potions and magical aid to injured soldiers so they might fight on and survive longer.</History>
     <Icon>units/zora/zor_healer.dds</Icon>

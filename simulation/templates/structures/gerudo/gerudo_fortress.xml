@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -14,7 +15,7 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>2000</RepeatTime>
       <EffectDelay>0</EffectDelay>
@@ -45,8 +46,84 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="100.0" width="100.0" />
+    <Square depth="100.0" width="100.0"/>
   </Footprint>
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_fortressA</SpawnEntityOnDeath>
+    <SpawnGarrison>
+      <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
+      <SpawnNumber>20</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>45</MinPop>
+    </AIBuild>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Ashinon City</Classes>
+    <GenericName>Gerudo Fortress</GenericName>
+    <History>The mighty Gerudo Fortress is a difficult structure to siege. With many platforms for archers to attack from, as well as a maze of corridors within, only the largest armies can hope to take this bastion from the Gerudo.</History>
+    <Icon>structures/gerudo/ger_fortress.dds</Icon>
+    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory. Can also train Catapults.</Tooltip>
+    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="90.0" width="90.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/hidden_arrow_slits
+</Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_fortress.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_fortress.xml</select>
+      <upgraded>interface/complete/building/complete_fortress.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>100</Radius>
+    <Root>false</Root>
+    <Weight>40000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/gerudo/{civ}_catapult_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>10</X>
+        <Z>37</Z>
+      </step1>
+      <step2>
+        <X>10</X>
+        <Z>55</Z>
+      </step2>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>10</X>
+      <Z>24</Z>
+    </SpawnOffset>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -151,49 +228,6 @@
       </Archer9>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>6000</Max>
-    <SpawnEntityOnDeath>rubble/debris_gerudo_fortressA</SpawnEntityOnDeath>
-    <SpawnGarrison>
-      <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
-      <SpawnNumber>20</SpawnNumber>
-      <LinkedDestruction>true</LinkedDestruction>
-    </SpawnGarrison>
-  </Health>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>1</MaxCopies>
-      <MinPop>45</MinPop>
-    </AIBuild>
-    <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Ashinon City</Classes>
-    <GenericName>Gerudo Fortress</GenericName>
-    <History>The mighty Gerudo Fortress is a difficult structure to siege. With many platforms for archers to attack from, as well as a maze of corridors within, only the largest armies can hope to take this bastion from the Gerudo.</History>
-    <Icon>structures/gerudo/ger_fortress.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
-    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory. Can also train Catapults.</Tooltip>
-    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="90.0" width="90.0" />
-  </Obstruction>
-  <Population>
-    <Bonus>10</Bonus>
-  </Population>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
-      <constructed>interface/complete/building/complete_fortress.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_fortress.xml</select>
-      <upgraded>interface/complete/building/complete_fortress.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <TerritoryInfluence>
-    <Radius>100</Radius>
-    <Root>false</Root>
-    <Weight>40000</Weight>
-  </TerritoryInfluence>
   <VisualActor>
     <Actor>structures/gerudo/gerudo_fortressA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldG.xml</FoundationActor>
@@ -202,35 +236,4 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
-  <Researcher>
-    <Technologies datatype="tokens">gerudo/hidden_arrow_slits
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/gerudo/{civ}_catapult_b</Entities>
-    <DestinationOffset>
-      <step1>
-        <X>10</X>
-        <Z>37</Z>
-      </step1>
-      <step2>
-        <X>10</X>
-        <Z>55</Z>
-      </step2>
-    </DestinationOffset>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>10</X>
-      <Z>24</Z>
-    </SpawnOffset>
-  </Trainer>
 </Entity>

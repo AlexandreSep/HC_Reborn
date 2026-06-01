@@ -16,6 +16,7 @@
   </Cost>
   <Decay>
     <Active>false</Active>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>30.0</DelayTime>
     <SinkAccel>0.0</SinkAccel>
     <SinkRate>0.01</SinkRate>

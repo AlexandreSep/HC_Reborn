@@ -1,42 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_mage_heavy">
-  <Health>
-    <SpawnMultipleEntitiesOnDeath>
-      <Chance>50</Chance>
-      <OwnerID>0</OwnerID>
-      <SpawnNumberMax>1</SpawnNumberMax>
-      <SpawnNumberMin>1</SpawnNumberMin>
-      <Template>units/mad/mad_tiffer_b</Template>
-    </SpawnMultipleEntitiesOnDeath>
-  </Health>
-  <Identity>
-    <Civ>deku</Civ>
-    <Classes datatype="tokens">ScrubUnit Small DeppiBonus</Classes>
-    <GenericName>Tiffer</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>A fast hovering Deku Scrub that could burn down enemies with its candle. Tiffers seemed to be in the private service of Kuh-Do and were likely used by him as tax collectors and general bullies to maintain his profits.</History>
-    <Icon>units/deku/dek_tiffer.dds</Icon>
-    <Lang>deku</Lang>
-    <RequiredTechnology>civ_choices/deku/choosehero_butler</RequiredTechnology>
-    <SelectionGroupName>units/deku/deku_tiffer_b</SelectionGroupName>
-    <Tooltip>Butler Kuh-Do's Unique Unit. Hovering Missile unit that torches enemies with their burning candles.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/natural/flame_fire.xml</attack_ranged>
-      <death>voice/deku/scrubB/scrubB_death.xml</death>
-      <order_attack>voice/deku/scrubB/scrubB_attack.xml</order_attack>
-      <order_garrison>voice/deku/scrubB/scrubB_garrison.xml</order_garrison>
-      <order_gather>voice/deku/scrubB/scrubB_gather.xml</order_gather>
-      <order_repair>voice/deku/scrubB/scrubB_repair.xml</order_repair>
-      <order_walk>voice/deku/scrubB/scrubB_walk.xml</order_walk>
-      <run>actor/movement/dekuscrub/scrub_hoverA.xml</run>
-      <select>voice/deku/scrubB/scrubB_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/movement/dekuscrub/scrub_hoverA.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/deku/deku_tiffer_b.xml</Actor>
-  </VisualActor>
+    <Health>
+        <SpawnMultipleEntitiesOnDeath>
+            <Chance>50</Chance>
+            <OwnerID>0</OwnerID>
+            <SpawnNumberMax>1</SpawnNumberMax>
+            <SpawnNumberMin>1</SpawnNumberMin>
+            <Template>units/mad/mad_tiffer_b</Template>
+        </SpawnMultipleEntitiesOnDeath>
+    </Health>
+    <Identity>
+        <Civ>deku</Civ>
+        <Classes datatype="tokens">ScrubUnit Small DeppiBonus</Classes>
+        <GenericName>Tiffer</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>A fast hovering Deku Scrub that could burn down enemies with its candle. Tiffers seemed to be in the private service of Kuh-Do and were likely used by him as tax collectors and general bullies to maintain his profits.</History>
+        <Icon>units/deku/dek_tiffer.dds</Icon>
+        <Lang>deku</Lang>
+        <SelectionGroupName>units/deku/deku_tiffer_b</SelectionGroupName>
+        <Tooltip>Butler Kuh-Do's Unique Unit. Hovering Missile unit that torches enemies with their burning candles.</Tooltip>
+        <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/deku/choosehero_butler</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/natural/flame_fire.xml</attack_ranged>
+            <death>voice/deku/scrubB/scrubB_death.xml</death>
+            <order_attack>voice/deku/scrubB/scrubB_attack.xml</order_attack>
+            <order_garrison>voice/deku/scrubB/scrubB_garrison.xml</order_garrison>
+            <order_gather>voice/deku/scrubB/scrubB_gather.xml</order_gather>
+            <order_repair>voice/deku/scrubB/scrubB_repair.xml</order_repair>
+            <order_walk>voice/deku/scrubB/scrubB_walk.xml</order_walk>
+            <run>actor/movement/dekuscrub/scrub_hoverA.xml</run>
+            <select>voice/deku/scrubB/scrubB_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/movement/dekuscrub/scrub_hoverA.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/deku/deku_tiffer_b.xml</Actor>
+    </VisualActor>
 </Entity>

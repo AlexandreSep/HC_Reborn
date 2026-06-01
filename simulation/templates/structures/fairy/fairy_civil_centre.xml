@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <AutoBuildable>
     <Rate>1</Rate>
@@ -16,7 +17,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="25.0" />
+    <Circle radius="25.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -29,17 +30,22 @@
       <MinPop>60</MinPop>
     </AIBuild>
     <Civ>fairy</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Wishing Well</GenericName>
     <History>A Fairy Fountain dedicated to prayer and wishes. Fairies were believed to come to these fountains and through their wishing would bring more of their kind into the world.</History>
     <Icon>structures/fairy/fai_wishingwell_spring.dds</Icon>
-	<RequiredTechnology>civ_choices/fairy/choosehero_sekaia</RequiredTechnology>
     <Tooltip>Fairy Civil Center: Summons all Fairy Structures.</Tooltip>
-    <VisibleClasses datatype="tokens" />
+    <VisibleClasses datatype="tokens"/>
+    <Requirements>
+      <Techs>civ_choices/fairy/choosehero_sekaia</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="20.0" width="20.0" />
+    <Static depth="20.0" width="20.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/valanavi_weirdingpaths</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/fairy/complete_wishingwell.xml</constructed>
@@ -47,15 +53,12 @@
       <upgraded>interface/complete/building/fairy/complete_wishingwell.xml</upgraded>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/fairy/fairy_wishingwellA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">fairy/valanavi_weirdingpaths</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

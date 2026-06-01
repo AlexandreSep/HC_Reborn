@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>House</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="30.0" width="30.0" />
+    <Square depth="30.0" width="30.0"/>
   </Footprint>
   <Health>
     <Max>1600</Max>
@@ -29,7 +30,7 @@
     <VisibleClasses datatype="tokens">House</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Static depth="27.0" width="27.0" />
+    <Static depth="27.0" width="27.0"/>
   </Obstruction>
   <Population>
     <Bonus>10</Bonus>
@@ -40,10 +41,12 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_houseB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade Villa into Manor.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </Tower>
   </Upgrade>
   <VisualActor>

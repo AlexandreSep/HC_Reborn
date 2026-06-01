@@ -1,91 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
-  <BuildRestrictions>
-    <Category>Barracks</Category>
-  </BuildRestrictions>
-  <Cost>
-    <BuildTime>60</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>400</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Height>5.0</Height>
-    <Square depth="28.0" width="28.0" />
-  </Footprint>
-  <Health>
-    <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>1</MaxCopies>
-      <MinPop>50</MinPop>
-    </AIBuild>
-    <Civ>ordona</Civ>
-    <Classes datatype="tokens">Town</Classes>
-    <GenericName>Goat Barn</GenericName>
-    <History>Ordonians were notable for devoting sizeable portions of their farmlands to the signature goats that roamed the southern plains. Shephards tend to flocks of the creatures, while Yeoman pick from the group their mounts into battle.</History>
-    <Icon>structures/ordona/ord_goatbarn.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Trains Goat related Ordonian units.</Tooltip>
-    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="24.0" width="24.0" />
-  </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_stables.xml</constructed>
-      <select>interface/select/building/sel_stables.xml</select>
-      <upgraded>interface/complete/building/complete_stables.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/ordona/ordona_goatbarnA.xml</Actor>
-    <FoundationActor>structures/ordona/ordona_scaffoldF.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">ordona/goatbarn_prowrangler
+    <BuildRestrictions>
+        <Category>Barracks</Category>
+    </BuildRestrictions>
+    <Cost>
+        <BuildTime>60</BuildTime>
+        <Resources>
+            <food>0</food>
+            <metal>0</metal>
+            <stone>0</stone>
+            <wood>400</wood>
+        </Resources>
+    </Cost>
+    <Footprint>
+        <Height>5.0</Height>
+        <Square depth="28.0" width="28.0"/>
+    </Footprint>
+    <Health>
+        <Max>2000</Max>
+        <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
+    </Health>
+    <Identity>
+        <AIBuild>
+            <MaxCopies>1</MaxCopies>
+            <MinPop>50</MinPop>
+        </AIBuild>
+        <Civ>ordona</Civ>
+        <Classes datatype="tokens">Town</Classes>
+        <GenericName>Goat Barn</GenericName>
+        <History>Ordonians were notable for devoting sizeable portions of their farmlands to the signature goats that roamed the southern plains. Shephards tend to flocks of the creatures, while Yeoman pick from the group their mounts into battle.</History>
+        <Icon>structures/ordona/ord_goatbarn.dds</Icon>
+        <Tooltip>Trains Goat related Ordonian units.</Tooltip>
+        <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Obstruction>
+        <Static depth="24.0" width="24.0"/>
+    </Obstruction>
+    <Researcher>
+        <Technologies datatype="tokens">ordona/goatbarn_prowrangler
     ordona/goatbarn_billybuckin
     ordona/goatbarn_fadofrolick
 
 </Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/ordona/{civ}_hawk_b
+    </Researcher>
+    <Sound>
+        <SoundGroups>
+            <constructed>interface/complete/building/complete_stables.xml</constructed>
+            <select>interface/select/building/sel_stables.xml</select>
+            <upgraded>interface/complete/building/complete_stables.xml</upgraded>
+        </SoundGroups>
+    </Sound>
+    <Trainer>
+        <BatchTimeModifier>0.8</BatchTimeModifier>
+        <Entities datatype="tokens">units/ordona/{civ}_hawk_b
     units/ordona/{civ}_yeoman_b
     units/ordona/{civ}_billybat_b
 	units/ordona/{civ}_horseman_b</Entities>
-    <DestinationOffset>
-      <step1>
-        <X>-2</X>
-        <Z>2</Z>
-      </step1>
-      <step2>
-        <X>-3</X>
-        <Z>10</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>30</Z>
-      </step3>
-    </DestinationOffset>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>-2</X>
-      <Z>0</Z>
-    </SpawnOffset>
-  </Trainer>
+        <DestinationOffset>
+            <step1>
+                <X>-2</X>
+                <Z>2</Z>
+            </step1>
+            <step2>
+                <X>-3</X>
+                <Z>10</Z>
+            </step2>
+            <step3>
+                <X>0</X>
+                <Z>30</Z>
+            </step3>
+        </DestinationOffset>
+        <LineupOffset>
+            <MaxThresholdOffset>
+                <Threshold>5</Threshold>
+                <X>0</X>
+                <Z>5</Z>
+            </MaxThresholdOffset>
+            <X>-3</X>
+            <Z>0</Z>
+        </LineupOffset>
+        <SpawnOffset>
+            <X>-2</X>
+            <Z>0</Z>
+        </SpawnOffset>
+    </Trainer>
+    <VisualActor>
+        <Actor>structures/ordona/ordona_goatbarnA.xml</Actor>
+        <FoundationActor>structures/ordona/ordona_scaffoldF.xml</FoundationActor>
+    </VisualActor>
 </Entity>

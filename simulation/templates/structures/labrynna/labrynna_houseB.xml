@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/labrynna/labrynna_house">
   <Identity>
     <GenericName>Manor</GenericName>
@@ -10,13 +11,15 @@
   <Upgrade>
     <Tower>
       <Cost>
-		<wood>100</wood>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_houseC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade Manor with Steam Machinery.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
     </Tower>
   </Upgrade>
   <VisualActor>

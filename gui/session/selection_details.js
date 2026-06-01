@@ -1,3 +1,8 @@
+function showTemplateViewerOnRightClickTooltip()
+{
+	return "";
+}
+
 function layoutSelectionSingle()
 {
 	Engine.GetGUIObjectByName("detailsAreaSingle").hidden = false;

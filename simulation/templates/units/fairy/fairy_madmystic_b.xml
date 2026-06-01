@@ -1,58 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_beastramsmall">
-  <Attack>
-    <Melee>
-      <AttackName>Fairy Magic</AttackName>
-      <Damage>
-        <Crush>15.0</Crush>
-        <Magic>20</Magic>
-      </Damage>
-    </Melee>
-  </Attack>
-  <Health>
-    <SpawnMultipleEntitiesOnDeath>
-      <Chance>100</Chance>
-      <SpawnNumberMax>2</SpawnNumberMax>
-      <SpawnNumberMin>4</SpawnNumberMin>
-      <Template>units/fairy/fairy_stray_spring</Template>
-    </SpawnMultipleEntitiesOnDeath>
-  </Health>
-  <Identity>
-    <Civ>fairy</Civ>
-    <Classes datatype="tokens">Large Class80 UniqueUnit</Classes>
-    <GenericName>Mad Mystic</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>The Mad Mystics were an order of Great Fairies that set out with Venus to the far corners of Hyrule. It was said that they had spent centuries alone and were driven mad by the secrets they uncovered and power they gained from their exodus. Now the Mad Mystics spend most of their time laughing madly without reason in the wild, and depending on their mood they may grant wanderers magical gifts or torch them into oblivion.</History>
-    <Icon>units/fairy/fai_madmystic_spring.dds</Icon>
-    <Lang>fairy</Lang>
-    <RequiredTechnology>civ_choices/fairy/choosehero_venus</RequiredTechnology>
-    <SelectionGroupName>units/fairy/fairy_madmystic_b</SelectionGroupName>
-    <Tooltip>Venus' Unique Unit. Fast moving Melee unit with a powerful attack that changes properties each season.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Magic>20</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/magic/madmystic_attack.xml</attack_melee>
-      <attack_ranged>attack/magic/madmystic_attack.xml</attack_ranged>
-      <death>voice/fairy/madmystic/madmystic_death.xml</death>
-      <order_attack>voice/fairy/madmystic/madmystic_attack.xml</order_attack>
-      <order_garrison>voice/fairy/madmystic/madmystic_garrison.xml</order_garrison>
-      <order_gather>voice/fairy/madmystic/madmystic_gather.xml</order_gather>
-      <order_repair>voice/fairy/madmystic/madmystic_repair.xml</order_repair>
-      <order_walk>voice/fairy/madmystic/madmystic_walk.xml</order_walk>
-      <run>actor/movement/fairy/fairy_hoverA.xml</run>
-      <select>voice/fairy/madmystic/madmystic_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/fairy/fairy_mad_spring.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Fairy Magic</AttackName>
+            <Damage>
+                <Crush>15.0</Crush>
+                <Magic>20</Magic>
+            </Damage>
+        </Melee>
+    </Attack>
+    <Health>
+        <SpawnMultipleEntitiesOnDeath>
+            <Chance>100</Chance>
+            <SpawnNumberMax>2</SpawnNumberMax>
+            <SpawnNumberMin>4</SpawnNumberMin>
+            <Template>units/fairy/fairy_stray_spring</Template>
+        </SpawnMultipleEntitiesOnDeath>
+    </Health>
+    <Identity>
+        <Civ>fairy</Civ>
+        <Classes datatype="tokens">Large Class80 UniqueUnit</Classes>
+        <GenericName>Mad Mystic</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>The Mad Mystics were an order of Great Fairies that set out with Venus to the far corners of Hyrule. It was said that they had spent centuries alone and were driven mad by the secrets they uncovered and power they gained from their exodus. Now the Mad Mystics spend most of their time laughing madly without reason in the wild, and depending on their mood they may grant wanderers magical gifts or torch them into oblivion.</History>
+        <Icon>units/fairy/fai_madmystic_spring.dds</Icon>
+        <Lang>fairy</Lang>
+        <SelectionGroupName>units/fairy/fairy_madmystic_b</SelectionGroupName>
+        <Tooltip>Venus' Unique Unit. Fast moving Melee unit with a powerful attack that changes properties each season.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/fairy/choosehero_venus</Techs>
+        </Requirements>
+    </Identity>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <Magic>20</Magic>
+            </Damage>
+        </Entity>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/magic/madmystic_attack.xml</attack_melee>
+            <attack_ranged>attack/magic/madmystic_attack.xml</attack_ranged>
+            <death>voice/fairy/madmystic/madmystic_death.xml</death>
+            <order_attack>voice/fairy/madmystic/madmystic_attack.xml</order_attack>
+            <order_garrison>voice/fairy/madmystic/madmystic_garrison.xml</order_garrison>
+            <order_gather>voice/fairy/madmystic/madmystic_gather.xml</order_gather>
+            <order_repair>voice/fairy/madmystic/madmystic_repair.xml</order_repair>
+            <order_walk>voice/fairy/madmystic/madmystic_walk.xml</order_walk>
+            <run>actor/movement/fairy/fairy_hoverA.xml</run>
+            <select>voice/fairy/madmystic/madmystic_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/movement/fairy/fairy_hoverA.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/fairy/fairy_mad_spring.xml</Actor>
+    </VisualActor>
 </Entity>

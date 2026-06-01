@@ -35,6 +35,14 @@ var g_SelectionPanels = {};
 
 var g_SelectionPanelBarterButtonManager;
 
+function getRequiredTechnologyTooltip(technologyEnabled, requiredTechnology)
+{
+	if (technologyEnabled || !requiredTechnology)
+		return "";
+
+	return translate("Requires technology:") + " " + requiredTechnology;
+}
+
 g_SelectionPanels.Alert = {
 	"getMaxNumberOfItems": function()
 	{
@@ -1268,15 +1276,21 @@ function showTemplateDetails(templateName, civCode)
 {
 	if (inputState != INPUT_NORMAL)
 		return;
+
+	if (!Engine.OpenChildPage)
+	{
+		warn("[HC_DEBUG_UI] Template details viewer unavailable: Engine.OpenChildPage is not defined.");
+		return;
+	}
+
 	g_PauseControl.implicitPause();
 
-	Engine.PushGuiPage(
+	Engine.OpenChildPage(
 		"page_viewer.xml",
 		{
 			"templateName": templateName,
 			"civ": civCode
-		},
-		resumeGame);
+		}).then(resumeGame);
 }
 
 /**

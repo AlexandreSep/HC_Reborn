@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <Health>
     <Max>2000</Max>
@@ -26,27 +27,18 @@
     <GenericName>Beetle Barn</GenericName>
     <History>The Orhats of the Deep Woods were one of the only creatures the Scrubs successfully domesticated. They often treated the creatures like adopted cousins, building comfortable walled off barns for them to live in.</History>
     <Icon>structures/deku/dek_beetlebarn.dds</Icon>
-    <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
     <Tooltip>Trains Orhat Bettle units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/deku/choosehero_dekuprincess</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_stables.xml</constructed>
-      <select>interface/select/building/sel_stables.xml</select>
-      <upgraded>interface/complete/building/complete_stables.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/deku/deku_beetlebarnA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">deku/orhat_beetletraining
     deku/orhatgiant_platform
@@ -55,6 +47,13 @@
 
 </Technologies>
   </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_stables.xml</constructed>
+      <select>interface/select/building/sel_stables.xml</select>
+      <upgraded>interface/complete/building/complete_stables.xml</upgraded>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/deku/{civ}_orhat_b
@@ -89,4 +88,8 @@
       <Z>5</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/deku/deku_beetlebarnA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
 </Entity>

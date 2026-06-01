@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <Auras datatype="tokens">
     structures/hc_xp_trickle_1
@@ -16,7 +17,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>12.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -41,16 +42,22 @@
     <GenericName>Colosseum</GenericName>
     <History>These giant arenas often served as a Legion soldier’s final training and testing ground. The best Darknut warriors were pitted against each other, sometimes solo and sometimes squad on squad.</History>
     <Icon>structures/darknut/dar_colosseum.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Darknut units slowly gain experience points from here.</Tooltip>
     <VisibleClasses datatype="tokens">Special</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="43.0" width="43.0" />
+    <Static depth="43.0" width="43.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/colosseum_sponsors
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/darknut/complete_colosseum.xml</constructed>
@@ -58,16 +65,12 @@
       <upgraded>interface/complete/building/darknut/complete_colosseum.xml</upgraded>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/darknut/darknut_colosseumbaseA.xml</Actor>
     <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">darknut/colosseum_sponsors
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

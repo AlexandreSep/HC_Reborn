@@ -1,56 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_unit_auxiliary">
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>200</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>500</Max>
-  </Health>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>0</MaxCopies>
-      <MinPop>0</MinPop>
-    </AIBuild>
-    <Civ>gohma</Civ>
-    <Classes datatype="tokens">Huge CasteHive ShroudWalker</Classes>
-    <GenericName>Shroud Walker</GenericName>
-    <History>These truly massive Gohma are actually completely harmless on their own. Instead they can deploy and become immobile, creating a thick fog of Gohma Shroud around themselves. When deployed the Shroud Walker functions much like a Hive Node, generating territory. Its fog also reduces enemy line of sight and makes ranged attacks much more inaccurate against your units within its aura.</History>
-    <Icon>units/gohma/goh_shroudwalker.dds</Icon>
-    <RequiredTechnology>civ_choices/gohma/choosehero_agitha</RequiredTechnology>
-    <Tooltip>Agitha's Unique Unit. Large Support unit that can generate vision impairing clouds and Stealth nearby units..</Tooltip>
-    <VisibleClasses datatype="tokens">Support</VisibleClasses>
-  </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>10.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
-      <death>voice/gohma/gohma_janitor/gohma_janitor_death.xml</death>
-      <order_attack>voice/gohma/gohma_janitor/gohma_janitor_attack.xml</order_attack>
-      <order_garrison>voice/gohma/gohma_janitor/gohma_janitor_garrison.xml</order_garrison>
-      <order_gather>voice/gohma/gohma_janitor/gohma_janitor_gather.xml</order_gather>
-      <order_repair>voice/gohma/gohma_janitor/gohma_janitor_repair.xml</order_repair>
-      <order_walk>voice/gohma/gohma_janitor/gohma_janitor_walk.xml</order_walk>
-      <run>actor/movement/gohma/gohma_crawlE.xml</run>
-      <select>voice/gohma/gohma_janitor/gohma_janitor_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/movement/gohma/gohma_crawlE.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/gohma/gohma_shroudwalker_b.xml</Actor>
-  </VisualActor>
+    <Cost>
+        <BuildTime>12</BuildTime>
+        <Resources>
+            <food>200</food>
+            <metal>0</metal>
+            <stone>0</stone>
+            <wood>0</wood>
+        </Resources>
+    </Cost>
+    <Health>
+        <Max>500</Max>
+    </Health>
+    <Identity>
+        <AIBuild>
+            <MaxCopies>0</MaxCopies>
+            <MinPop>0</MinPop>
+        </AIBuild>
+        <Civ>gohma</Civ>
+        <Classes datatype="tokens">Huge CasteHive ShroudWalker</Classes>
+        <GenericName>Shroud Walker</GenericName>
+        <History>These truly massive Gohma are actually completely harmless on their own. Instead they can deploy and become immobile, creating a thick fog of Gohma Shroud around themselves. When deployed the Shroud Walker functions much like a Hive Node, generating territory. Its fog also reduces enemy line of sight and makes ranged attacks much more inaccurate against your units within its aura.</History>
+        <Icon>units/gohma/goh_shroudwalker.dds</Icon>
+        <Tooltip>Agitha's Unique Unit. Large Support unit that can generate vision impairing clouds and Stealth nearby units..</Tooltip>
+        <VisibleClasses datatype="tokens">Support</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/gohma/choosehero_agitha</Techs>
+        </Requirements>
+    </Identity>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <Crush>30.0</Crush>
+                <Hack>10.0</Hack>
+                <Pierce>10.0</Pierce>
+            </Damage>
+        </Entity>
+        <KnockbackResistance>100</KnockbackResistance>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
+            <death>voice/gohma/gohma_janitor/gohma_janitor_death.xml</death>
+            <order_attack>voice/gohma/gohma_janitor/gohma_janitor_attack.xml</order_attack>
+            <order_garrison>voice/gohma/gohma_janitor/gohma_janitor_garrison.xml</order_garrison>
+            <order_gather>voice/gohma/gohma_janitor/gohma_janitor_gather.xml</order_gather>
+            <order_repair>voice/gohma/gohma_janitor/gohma_janitor_repair.xml</order_repair>
+            <order_walk>voice/gohma/gohma_janitor/gohma_janitor_walk.xml</order_walk>
+            <run>actor/movement/gohma/gohma_crawlE.xml</run>
+            <select>voice/gohma/gohma_janitor/gohma_janitor_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/movement/gohma/gohma_crawlE.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/gohma/gohma_shroudwalker_b.xml</Actor>
+    </VisualActor>
 </Entity>

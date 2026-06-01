@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_plot">
-  <Capturable disable="" />
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
@@ -10,7 +11,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="10.0" />
+    <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -22,20 +23,29 @@
     <GenericName>Hub Addon-On</GenericName>
     <History>Construct Conscription Hub Add-ons on this space.</History>
     <Icon>structures/lanayru/lan_plotA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Construct Conscription Hub Add-ons on this space.</Tooltip>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="2.5" width="2.5" />
+    <Static depth="2.5" width="2.5"/>
   </Obstruction>
   <Plots>
     <IsPlot>true</IsPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <StatusBars>
     <BarHeight>0.6</BarHeight>
     <BarWidth>6.0</BarWidth>
     <HeightOffset>19.0</HeightOffset>
   </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -51,20 +61,24 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_barracksA</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Silver Armory to this building.</Tooltip>
       <Variant>upgrading_K</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </TowerB>
     <TowerC>
       <Cost>
         <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_barracksB</Entity>
-      <RequiredTechnology>civ_choices/lanayru/choosehero_mipha</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Coast Watch to this building.</Tooltip>
       <Variant>upgrading_K</Variant>
+      <Requirements>
+        <Techs>civ_choices/lanayru/choosehero_mipha</Techs>
+      </Requirements>
     </TowerC>
     <TowerD>
       <Cost>
@@ -79,11 +93,4 @@
   <VisualActor>
     <Actor>structures/lanayru/lanayru_plotB.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

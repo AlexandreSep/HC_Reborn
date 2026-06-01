@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -16,7 +17,7 @@
         <Speed>45.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>6000</RepeatTime>
       <Splash>
@@ -52,7 +53,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="10.0" />
+    <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -71,13 +72,20 @@
     <GenericName>Acid Batch</GenericName>
     <History>A Gohma form in a tower like structure, these turrets are able to boil and hurl large globs of burning acid from quite a distance. They are slow to fire, but deal very painful damage to anyone unfortunate enough to be in the blast radius.</History>
     <Icon>structures/gohma/goh_acidbatch.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Defensive Tower that lauches globs of burning Acid at its targets.</Tooltip>
     <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.5" width="15.5" />
+    <Static depth="15.5" width="15.5"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/mido_subpit
+		gohma/turret_toxicbath
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/natural/gohma_acid_impact.xml</attack_impact_ranged>
@@ -91,23 +99,18 @@
     <BarWidth>6.0</BarWidth>
     <HeightOffset>19.0</HeightOffset>
   </StatusBars>
-  <VisualActor>
-    <Actor>structures/gohma/gohma_turretC.xml</Actor>
-    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
-  </VisualActor>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Visibility>
     <CanSpotStealth>
       <MinRange>0</MinRange>
       <MaxRange>80</MaxRange>
     </CanSpotStealth>
   </Visibility>
-  <Researcher>
-    <Technologies datatype="tokens">gohma/mido_subpit
-		gohma/turret_toxicbath
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_turretC.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
 </Entity>

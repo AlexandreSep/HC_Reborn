@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense_wall">
   <Footprint>
     <Height>9.0</Height>
-    <Square depth="8.5" width="26.0" />
+    <Square depth="8.5" width="26.0"/>
   </Footprint>
   <Health>
     <SpawnEntityOnDeath>rubble/debris_lanayru_wall_long</SpawnEntityOnDeath>
@@ -11,11 +12,13 @@
     <GenericName>Silver Wall</GenericName>
     <History>The walls of Lanayru Province, while not as durable as those of other civilizations, were nonetheless impressive and served their defnesive purpose well.</History>
     <Icon>structures/lanayru/lan_wall.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="7.0" width="24.0" />
+    <Static depth="7.0" width="24.0"/>
   </Obstruction>
   <VisualActor>
     <Actor>structures/lanayru/lanayru_wall_medium.xml</Actor>

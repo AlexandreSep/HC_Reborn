@@ -1,34 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_siegeram">
-  <Decay>
-    <Active>false</Active>
-    <DelayTime>80.0</DelayTime>
-    <SinkAccel>0.0</SinkAccel>
-    <SinkRate>0.01</SinkRate>
-    <SinkingAnim>false</SinkingAnim>
-  </Decay>
-  <Identity>
-    <Civ>darknut</Civ>
-    <Classes datatype="tokens"> Construct Melee Ram Gymunit</Classes>
-    <GenericName>Aries</GenericName>
-    <History>Small but very durable rams built by the Legion to tear down enemy walls. The metal plating of these engines made them extremely resistant to most ranged attacks, often forcing the enemy to halt them in a melee or bombard them with magics.﻿﻿</History>
-    <Icon>units/darknut/dar_aries.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Siege unit that bashes enemy buildings into dust.</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
-      <death>voice/darknut/unarmored/unarmored_death.xml</death>
-      <order_attack>voice/darknut/unarmored/unarmored_attack.xml</order_attack>
-      <order_walk>voice/darknut/unarmored/unarmored_walk.xml</order_walk>
-      <run>actor/movement/cart/cart_move.xml</run>
-      <select>voice/darknut/unarmored/unarmored_select.xml</select>
-      <trained>interface/alarm/alarm_create_engine.xml</trained>
-      <walk>actor/movement/cart/cart_move.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/darknut/darknut_legionram_b.xml</Actor>
-  </VisualActor>
+    <Decay>
+        <Active>false</Active>
+        <SinkProb>0.0</SinkProb>
+        <DelayTime>80.0</DelayTime>
+        <SinkAccel>0.0</SinkAccel>
+        <SinkRate>0.01</SinkRate>
+        <SinkingAnim>false</SinkingAnim>
+    </Decay>
+    <Identity>
+        <Civ>darknut</Civ>
+        <Classes datatype="tokens"> Construct Melee Ram Gymunit</Classes>
+        <GenericName>Aries</GenericName>
+        <History>Small but very durable rams built by the Legion to tear down enemy walls. The metal plating of these engines made them extremely resistant to most ranged attacks, often forcing the enemy to halt them in a melee or bombard them with magics.ï»¿ï»¿</History>
+        <Icon>units/darknut/dar_aries.dds</Icon>
+        <Tooltip>Siege unit that bashes enemy buildings into dust.</Tooltip>
+        <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/siege/ram_attack.xml</attack_melee>
+            <death>voice/darknut/unarmored/unarmored_death.xml</death>
+            <order_attack>voice/darknut/unarmored/unarmored_attack.xml</order_attack>
+            <order_walk>voice/darknut/unarmored/unarmored_walk.xml</order_walk>
+            <run>actor/movement/cart/cart_move.xml</run>
+            <select>voice/darknut/unarmored/unarmored_select.xml</select>
+            <trained>interface/alarm/alarm_create_engine.xml</trained>
+            <walk>actor/movement/cart/cart_move.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/darknut/darknut_legionram_b.xml</Actor>
+    </VisualActor>
 </Entity>

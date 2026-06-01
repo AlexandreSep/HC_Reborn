@@ -30,7 +30,7 @@
   </Attack>
   <Identity>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">Medium Boomeranger</Classes>
+    <Classes datatype="tokens">Medium Boomeranger Swimmer</Classes>
     <GenericName>Boomeranger</GenericName>
     <History>Boomerangs are a unique weapon created by the Zora, and these quick warriors are skilled in using them in combat. A Boomeranger does not have the range of most archers and mages, but the wide arc of their attack can hit multiple enemies and deal quite a bit of splash damage.</History>
     <Icon>units/zora/zor_boomeranger.dds</Icon>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="50.0" width="50.0" />
+    <Square depth="50.0" width="50.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -29,20 +30,18 @@
     <GenericName>Salamander Den</GenericName>
     <History>The reptilian Salamanders have long dwelled underground, rarely coming to the surface unless provoked. Gorons have tamed the beasts for a variety of uses, in particular as war beasts.</History>
     <Icon>structures/goron/gor_saladen.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Allows the training of Salamander Creature units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.0" width="15.0" />
+    <Static depth="15.0" width="15.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <VisualActor>
-    <Actor>structures/goron/goron_saladenA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">goron/troop_heatedclutch</Technologies>
   </Researcher>
@@ -73,4 +72,8 @@
       <Z>13</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/goron/goron_saladenA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

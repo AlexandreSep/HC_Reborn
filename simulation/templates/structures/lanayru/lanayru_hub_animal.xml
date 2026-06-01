@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="37.0" />
+    <Circle radius="37.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -31,12 +32,14 @@
     <GenericName>Animal Hub</GenericName>
     <History>Hub structure that could add various animal pens on to itself. Domestic creatures and Cavalry required such a building to be set up.</History>
     <Icon>structures/lanayru/lan_hub_animal.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Hub that can add Creature and Cavalry training stuctures to itself.</Tooltip>
     <VisibleClasses datatype="tokens">Hub</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="60.0" width="60.0" />
+    <Static depth="60.0" width="60.0"/>
   </Obstruction>
   <Plots>
     <PlotsToSpawn>
@@ -63,10 +66,6 @@
       </PlotC>
     </PlotsToSpawn>
   </Plots>
-  <VisualActor>
-    <Actor>structures/lanayru/lanayru_animalhubA.xml</Actor>
-    <FoundationActor>structures/lanayru/lanayru_scaffoldD.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lanayru/animalhub_tamingcoast
     lanayru/animal_greatmigration
@@ -112,4 +111,8 @@
       <Z>10</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_animalhubA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldD.xml</FoundationActor>
+  </VisualActor>
 </Entity>

@@ -1,52 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_scout">
-  <Attack>
-    <Melee>
-      <AttackName>Deku Stick</AttackName>
-      <Damage>
-	    <Hack>0</Hack>
-        <Crush>4.0</Crush>
-      </Damage>
-    </Melee>
-  </Attack>
-  <Cost>
-    <Resources>
-      <food>40</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>5</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>75</Max>
-  </Health>
-  <Identity>
-    <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small FairyGuard</Classes>
-    <GenericName>Kokiri Explorer</GenericName>
-    <History>Kokiri rarely venture out of the woods, only sending these daring individuals into the wider world when needs be. A Kokiri Explorer is a bit more adapted to the outside world compared to their kin, and have learned to traverse a wide range of environments. Carries a Deku stick in hand to whack any would be foes in the face.</History>
-    <Icon>units/kokiri/kok_explorer.dds</Icon>
-    <Lang>kokiri</Lang>
-    <RequiredTechnology>kokiri/get_fightyard</RequiredTechnology>
-    <SelectionGroupName>units/kokiri/kokiri_explorer_b</SelectionGroupName>
-    <Tooltip>A fast moving Scout unit that can climb over any terrain and Camouflage. Can also detect hidden units.</Tooltip>
-    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/kokiri/explorer/explorer_death.xml</death>
-      <order_attack>voice/kokiri/explorer/explorer_attack.xml</order_attack>
-      <order_garrison>voice/kokiri/explorer/explorer_garrison.xml</order_garrison>
-      <order_gather>voice/kokiri/explorer/explorer_gather.xml</order_gather>
-      <order_repair>voice/kokiri/explorer/explorer_repair.xml</order_repair>
-      <order_walk>voice/kokiri/explorer/explorer_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/kokiri/explorer/explorer_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/kokiri/kokiri_explorer_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Deku Stick</AttackName>
+            <Damage>
+                <Hack>0</Hack>
+                <Crush>4.0</Crush>
+            </Damage>
+        </Melee>
+    </Attack>
+    <Cost>
+        <Resources>
+            <food>40</food>
+            <metal>0</metal>
+            <stone>0</stone>
+            <wood>5</wood>
+        </Resources>
+    </Cost>
+    <Health>
+        <Max>75</Max>
+    </Health>
+    <Identity>
+        <Civ>kokiri</Civ>
+        <Classes datatype="tokens">Small FairyGuard</Classes>
+        <GenericName>Kokiri Explorer</GenericName>
+        <History>Kokiri rarely venture out of the woods, only sending these daring individuals into the wider world when needs be. A Kokiri Explorer is a bit more adapted to the outside world compared to their kin, and have learned to traverse a wide range of environments. Carries a Deku stick in hand to whack any would be foes in the face.</History>
+        <Icon>units/kokiri/kok_explorer.dds</Icon>
+        <Lang>kokiri</Lang>
+        <SelectionGroupName>units/kokiri/kokiri_explorer_b</SelectionGroupName>
+        <Tooltip>A fast moving Scout unit that can climb over any terrain and Camouflage. Can also detect hidden units.</Tooltip>
+        <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+        <Requirements>
+            <Techs>kokiri/get_fightyard</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/kokiri/explorer/explorer_death.xml</death>
+            <order_attack>voice/kokiri/explorer/explorer_attack.xml</order_attack>
+            <order_garrison>voice/kokiri/explorer/explorer_garrison.xml</order_garrison>
+            <order_gather>voice/kokiri/explorer/explorer_gather.xml</order_gather>
+            <order_repair>voice/kokiri/explorer/explorer_repair.xml</order_repair>
+            <order_walk>voice/kokiri/explorer/explorer_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/kokiri/explorer/explorer_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/kokiri/kokiri_explorer_b.xml</Actor>
+    </VisualActor>
 </Entity>

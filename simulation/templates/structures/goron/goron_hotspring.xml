@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Temple</Category>
@@ -12,10 +13,10 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="30.0" />
+    <Circle radius="30.0"/>
     <Height>12.0</Height>
   </Footprint>
-    <GarrisonHolder>
+  <GarrisonHolder>
     <Max>20</Max>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
@@ -39,16 +40,22 @@
     <GenericName>Hot Spring</GenericName>
     <History>Resting in Hot Springs is a popular Goron pastime, and they often build many of their cities around these natural formations. With a bit of clever digging, the Gorons can unearth and set up Hot Springs almost anywhere they please.</History>
     <Icon>structures/goron/gor_hotspring.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Structure that heals wounded Goron units.</Tooltip>
     <VisibleClasses datatype="tokens">Special</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.0" width="15.0" />
+    <Static depth="15.0" width="15.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">goron/hotspring_mineralbath
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/goron/complete_hotspring.xml</constructed>
@@ -56,16 +63,12 @@
       <upgraded>interface/complete/building/goron/complete_hotspring.xml</upgraded>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/goron/goron_hotspringA.xml</Actor>
     <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">goron/hotspring_mineralbath
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

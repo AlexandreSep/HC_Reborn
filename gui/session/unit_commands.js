@@ -38,6 +38,21 @@ function setPanelObjectPosition(object, index, rowLength, vMargin = 1, hMargin =
 	object.size = size;
 }
 
+function getUnitPanelGUIObject(guiName, objectName, index)
+{
+	return Engine.TryGetGUIObjectByName("unit" + guiName + objectName + "[" + index + "]");
+}
+
+function getOptionalUnitPanelGUIObject(guiName, objectName, index)
+{
+	return getUnitPanelGUIObject(guiName, objectName, index) || {
+		"caption": "",
+		"hidden": true,
+		"sprite": "",
+		"tooltip": ""
+	};
+}
+
 /**
  * Helper function for updateUnitCommands; sets up "unit panels"
  * (i.e. panels with rows of icons) for the currently selected unit.
@@ -76,20 +91,19 @@ function setupUnitPanel(guiName, unitEntStates, playerState)
 			"rowLength": rowLength,
 			"numberOfItems": numberOfItems,
 			// depending on the XML, some of the GUI objects may be undefined
-			"button": Engine.GetGUIObjectByName("unit" + guiName + "Button[" + i + "]"),
-			"icon": Engine.GetGUIObjectByName("unit" + guiName + "Icon[" + i + "]"),
-			"guiSelection": Engine.GetGUIObjectByName("unit" + guiName + "Selection[" + i + "]"),
-			"countDisplay": Engine.GetGUIObjectByName("unit" + guiName + "Count[" + i + "]")
+			"button": getUnitPanelGUIObject(guiName, "Button", i),
+			"icon": getUnitPanelGUIObject(guiName, "Icon", i),
+			"guiSelection": getOptionalUnitPanelGUIObject(guiName, "Selection", i),
+			"countDisplay": getOptionalUnitPanelGUIObject(guiName, "Count", i)
 		};
 
-		if (data.button)
-		{
-			data.button.hidden = false;
-			data.button.enabled = true;
-			data.button.tooltip = "";
-			data.button.caption = "";
+		if (!data.button || !data.icon)
+			continue;
 
-		}
+		data.button.hidden = false;
+		data.button.enabled = true;
+		data.button.tooltip = "";
+		data.button.caption = "";
 
 		
 		if (g_SelectionPanels[guiName].setupButton &&
@@ -106,7 +120,11 @@ function setupUnitPanel(guiName, unitEntStates, playerState)
 		if (g_SelectionPanels[guiName].hideItem)
 			g_SelectionPanels[guiName].hideItem(i, rowLength);
 		else
-			Engine.GetGUIObjectByName("unit" + guiName + "Button[" + i + "]").hidden = true;
+		{
+			let button = getUnitPanelGUIObject(guiName, "Button", i);
+			if (button)
+				button.hidden = true;
+		}
 
 	g_unitPanelButtons[guiName] = numberOfItems;
 	g_SelectionPanels[guiName].used = true;
@@ -175,14 +193,22 @@ function updateUnitCommands(entStates, supplementalDetailsPanel, commandsPanel)
 
 	// Hides / unhides Unit Panels (panels should be grouped by type, not by order, but we will leave that for another time)
 	for (let panelName in g_SelectionPanels)
-		Engine.GetGUIObjectByName("unit" + panelName + "Panel").hidden = !g_SelectionPanels[panelName].used;
+	{
+		let panel = Engine.TryGetGUIObjectByName("unit" + panelName + "Panel");
+		if (panel)
+			panel.hidden = !g_SelectionPanels[panelName].used;
+	}
 }
 
 // Force hide commands panels
 function hideUnitCommands()
 {
 	for (var panelName in g_SelectionPanels)
-		Engine.GetGUIObjectByName("unit" + panelName + "Panel").hidden = true;
+	{
+		let panel = Engine.TryGetGUIObjectByName("unit" + panelName + "Panel");
+		if (panel)
+			panel.hidden = true;
+	}
 }
 
 // Get all of the available entities which can be trained by the selected entities

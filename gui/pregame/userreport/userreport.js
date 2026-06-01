@@ -55,13 +55,6 @@ function setUserReportVisibility()
 	let dateMadeInvisible = Engine.ConfigDB_GetValue("user", "gui.userreport.dateMadeInvisible");
 	let visible = Engine.ConfigDB_GetValue("user", "gui.userreport.visible");
 
-	if(visible === "" || visible === "true" || Date.now() - dateMadeInvisible >= g_IntervalReminderEnableFeedback)
-	{
-		Engine.ConfigDB_CreateAndWriteValueToFile("user", "gui.userreport.visible", "true", "config/user.cfg");
-		let userReport = Engine.GetGUIObjectByName("userReport");
-		userReport.hidden = false;
-		userReport.ghost = false;
-	};
 	if(visible === "false")
 	{
 		hideUserReport()

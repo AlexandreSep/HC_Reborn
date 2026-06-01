@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="20.0" />
+    <Circle radius="20.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -45,17 +46,28 @@
     <GenericName>Augmenter</GenericName>
     <History>The Augmenter twists and changes the forms and attributes of both current and future generations of Gohma. Through battle, experience, and learned knowledge, the Augmenter can adapt the Gohma's forces to match and counter changing enemy threats.</History>
     <Icon>structures/gohma/goh_augmenter.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Improves Gohma armor and attacks.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="35.0" width="35.0" />
+    <Static depth="35.0" width="35.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/armor_goh_all_01
+    gohma/armor_goh_all_02
+    gohma/attack_goh_melee_01
+    gohma/speed_goh_all_01
+    gohma/sulkaris_virid
+    gohma/matriarch_aracharmor
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_gohnestA.xml</constructed>
@@ -67,6 +79,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
@@ -74,17 +90,4 @@
     <Actor>structures/gohma/gohma_augmenter.xml</Actor>
     <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gohma/armor_goh_all_01
-    gohma/armor_goh_all_02
-    gohma/attack_goh_melee_01
-    gohma/speed_goh_all_01
-    gohma/sulkaris_virid
-    gohma/matriarch_aracharmor
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

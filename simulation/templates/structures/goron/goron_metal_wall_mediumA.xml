@@ -1,11 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense_wall">
   <Footprint>
     <Height>9.0</Height>
-    <Square depth="9.0" width="26.5" />
+    <Square depth="9.0" width="26.5"/>
   </Footprint>
   <GarrisonHolder>
     <Max>3</Max>
   </GarrisonHolder>
+  <Health>
+    <SpawnEntityOnDeath>rubble/debris_goron_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <GenericName>Goron Wall</GenericName>
+    <History>Goron Walls are some of the sturdiest defenses in all of Hyrule. It takes quite a force to break through metal and stone.</History>
+    <Icon>structures/goron/gor_wallA.dds</Icon>
+    <SelectionGroupName>structures/goron_metal_wall_mediumA</SelectionGroupName>
+    <Tooltip>Defensive Wall to slow invaders.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static depth="7.5" width="30.0"/>
+  </Obstruction>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -25,20 +40,6 @@
       </Archer3>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <SpawnEntityOnDeath>rubble/debris_goron_small</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>goron</Civ>
-    <GenericName>Goron Wall</GenericName>
-    <History>Goron Walls are some of the sturdiest defenses in all of Hyrule. It takes quite a force to break through metal and stone.</History>
-    <Icon>structures/goron/gor_wallA.dds</Icon>
-    <SelectionGroupName>structures/goron_metal_wall_mediumA</SelectionGroupName>
-    <Tooltip>Defensive Wall to slow invaders.</Tooltip>
-  </Identity>
-  <Obstruction>
-    <Static depth="7.5" width="30.0" />
-  </Obstruction>
   <Upgrade>
     <WallB>
       <Cost>
@@ -46,9 +47,11 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_mediumB</Entity>
       <Time>10</Time>
-	  <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
       <Tooltip>Upgrade with Double Layer.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_darunia</Techs>
+      </Requirements>
     </WallB>
     <WallC>
       <Cost>
@@ -56,9 +59,11 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_mediumC</Entity>
       <Time>10</Time>
-	  <RequiredTechnology>civ_choices/goron/choosehero_daruk</RequiredTechnology>
       <Tooltip>Upgrade with Lava Moat.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_daruk</Techs>
+      </Requirements>
     </WallC>
     <WallD>
       <Cost>
@@ -66,9 +71,11 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_mediumD</Entity>
       <Time>10</Time>
-	  <RequiredTechnology>civ_choices/goron/choosehero_dangoro</RequiredTechnology>
       <Tooltip>Upgrade with Bulwark.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_dangoro</Techs>
+      </Requirements>
     </WallD>
   </Upgrade>
   <VisualActor>

@@ -434,8 +434,9 @@ Trainer.prototype.GetEntitiesList = function()
 	    continue;
 	}
 	
-	let requiredTechnology = cmpTemplateManager.GetTemplate(template).Identity.RequiredTechnology;
-	let requiredTechIsResearched = cmpTechnologyManager.IsTechnologyResearched(requiredTechnology);
+	let requiredTechnology = GetIdentityRequiredTechnology(templateIdentity);
+	let requiredTechIsResearched = requiredTechnology &&
+		requiredTechnology.split(/\s+/).every(tech => cmpTechnologyManager.IsTechnologyResearched(tech));
 	if (requiredTechnology && requiredTechIsResearched){
 	    entitiesListToDisplay.push(template);
 	}

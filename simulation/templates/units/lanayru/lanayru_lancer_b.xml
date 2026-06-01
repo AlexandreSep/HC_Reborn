@@ -1,45 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_spearman">
-<Auras datatype="tokens">
+    <Auras datatype="tokens">
 	units/citizenguard
   </Auras>
-  <Identity>
-    <Civ>lanayru</Civ>
-    <Classes datatype="tokens">CoralLancer Volunteers SilverSpear Medium RalisBonus</Classes>
-    <GenericName>Coral Lancer</GenericName>
-    <History>Coral Lancers were the Province’s baseline soldier; serving as both a police force and quick response unit to invasions. Armed with a spiky coralmold pole-arm, they were a cheap counter to cavalry and other larger units that their enemies often threw in their direction.</History>
-    <Icon>units/lanayru/lan_lancer.dds</Icon>
-    <Lang>lanayru</Lang>
-    <RequiredTechnology>lanayru/get_volunteerpost</RequiredTechnology>
-    <SelectionGroupName>units/lanayru/lanayru_lancer_b</SelectionGroupName>
-    <Tooltip>Spear armed Melee Infantry unit with moderate armor.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Position>
-    <Floating>false</Floating>
-  </Position>
-  <Promotion>
-    <Entity>units/lanayru/lanayru_lancer_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/lanayru/lancer/lancer_death.xml</death>
-      <order_attack>voice/lanayru/lancer/lancer_attack.xml</order_attack>
-      <order_garrison>voice/lanayru/lancer/lancer_garrison.xml</order_garrison>
-      <order_gather>voice/lanayru/lancer/lancer_gather.xml</order_gather>
-      <order_repair>voice/lanayru/lancer/lancer_repair.xml</order_repair>
-      <order_walk>voice/lanayru/lancer/lancer_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/lanayru/lancer/lancer_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <PassabilityClass>aquatic</PassabilityClass>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/lanayru/lanayru_corallancer_b.xml</Actor>
-  </VisualActor>
+    <Identity>
+        <Civ>lanayru</Civ>
+        <Classes datatype="tokens">CoralLancer Volunteers SilverSpear Medium RalisBonus</Classes>
+        <GenericName>Coral Lancer</GenericName>
+        <History>Coral Lancers were the Province’s baseline soldier; serving as both a police force and quick response unit to invasions. Armed with a spiky coralmold pole-arm, they were a cheap counter to cavalry and other larger units that their enemies often threw in their direction.</History>
+        <Icon>units/lanayru/lan_lancer.dds</Icon>
+        <Lang>lanayru</Lang>
+        <SelectionGroupName>units/lanayru/lanayru_lancer_b</SelectionGroupName>
+        <Tooltip>Spear armed Melee Infantry unit with moderate armor.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>lanayru/get_volunteerpost</Techs>
+        </Requirements>
+    </Identity>
+    <Position>
+        <Floating>false</Floating>
+    </Position>
+    <Promotion>
+        <Entity>units/lanayru/lanayru_lancer_upg</Entity>
+        <RequiredXp>9999</RequiredXp>
+    </Promotion>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/lanayru/lancer/lancer_death.xml</death>
+            <order_attack>voice/lanayru/lancer/lancer_attack.xml</order_attack>
+            <order_garrison>voice/lanayru/lancer/lancer_garrison.xml</order_garrison>
+            <order_gather>voice/lanayru/lancer/lancer_gather.xml</order_gather>
+            <order_repair>voice/lanayru/lancer/lancer_repair.xml</order_repair>
+            <order_walk>voice/lanayru/lancer/lancer_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/lanayru/lancer/lancer_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <PassabilityClass>aquatic</PassabilityClass>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/lanayru/lanayru_corallancer_b.xml</Actor>
+    </VisualActor>
 </Entity>

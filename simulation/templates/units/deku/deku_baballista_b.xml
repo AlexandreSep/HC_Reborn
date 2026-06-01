@@ -1,81 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_siegeballista">
-  <Attack>
-    <Ranged>
-      <AttackName>Baba Bolts</AttackName>
-      <Damage>
-        <Pierce>25</Pierce>
-		<Siege>25</Siege>
-      </Damage>
-      <MaxRange>110.0</MaxRange>
-      <MinRange>45.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry Structure</PreferredClasses>
-      <PrepareTime>2000</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
-        <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
-        <Speed>57.5</Speed>
-        <Spread>3.0</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2500</RepeatTime>
-      <SpawnEntityOnImpact>
-        <SpawnNumberMax>4</SpawnNumberMax>
-        <SpawnNumberMin>1</SpawnNumberMin>
-        <SpawnOnHit>
-          <Chance>20</Chance>
-          <SpawnAtTarget>true</SpawnAtTarget>
-        </SpawnOnHit>
-        <SpawnOnImpact>
-          <Chance>10</Chance>
-        </SpawnOnImpact>
-        <Template>units/deku/deku_baba_b</Template>
-      </SpawnEntityOnImpact>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>30</BuildTime>
-    <Resources>
-      <stone>50</stone>
-      <wood>75</wood>
-    </Resources>
-  </Cost>
-  <Footprint replace="">
-    <Height>3.0</Height>
-    <Square depth="12.0" width="8.0" />
-  </Footprint>
-  <Health>
-    <Max>200</Max>
-  </Health>
-  <Identity>
-    <Civ>deku</Civ>
-    <Classes datatype="tokens"> Construct OrhatSiege DekuSiege Medium </Classes>
-    <GenericName>Baballista</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>The Baballista is a crazy contraption designed by Kado himself. Launching a giant bolt from its small engine, the attack could punch a hole in most targets with ease. Perhaps the nastiest trick of this weapon was the packs of Baba seeds attached to the bolts, which could then hatch and grow into Deku Babas shortly after landing on the mark.</History>
-    <Icon>units/deku/dek_baballista.dds</Icon>
-    <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
-    <Tooltip>Kado's Unique Unit. Siege unit that fires bolts laced with Deku Babas. Projectiles have a chance to spawn Deku Babas on impact.</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
-      <death>voice/deku/scrubA/scrubA_death.xml</death>
-      <order_attack>voice/deku/scrubA/scrubA_attack.xml</order_attack>
-      <order_garrison>voice/deku/scrubA/scrubA_garrison.xml</order_garrison>
-      <order_gather>voice/deku/scrubA/scrubA_gather.xml</order_gather>
-      <order_repair>voice/deku/scrubA/scrubA_repair.xml</order_repair>
-      <order_walk>voice/deku/scrubA/scrubA_walk.xml</order_walk>
-      <run>actor/movement/cart/cart_move.xml</run>
-      <select>voice/deku/scrubA/scrubA_select.xml</select>
-      <trained>interface/alarm/alarm_create_engine.xml</trained>
-      <walk>actor/movement/cart/cart_move.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/deku/deku_baballista_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Ranged>
+            <AttackName>Baba Bolts</AttackName>
+            <Damage>
+                <Pierce>25</Pierce>
+                <Siege>25</Siege>
+            </Damage>
+            <MaxRange>110.0</MaxRange>
+            <MinRange>45.0</MinRange>
+            <PreferredClasses datatype="tokens">Infantry Structure</PreferredClasses>
+            <PrepareTime>2000</PrepareTime>
+            <Projectile>
+                <Gravity>9.81</Gravity>
+                <ImpactActorName>props/units/explosions/catapult_explosion.xml</ImpactActorName>
+                <ImpactAnimationLifetime>0.2</ImpactAnimationLifetime>
+                <Speed>57.5</Speed>
+                <Spread>3.0</Spread>
+                <FriendlyFire>false</FriendlyFire>
+                <LaunchPoint y="3"/>
+            </Projectile>
+            <RepeatTime>2500</RepeatTime>
+            <SpawnEntityOnImpact>
+                <SpawnNumberMax>4</SpawnNumberMax>
+                <SpawnNumberMin>1</SpawnNumberMin>
+                <SpawnOnHit>
+                    <Chance>20</Chance>
+                    <SpawnAtTarget>true</SpawnAtTarget>
+                </SpawnOnHit>
+                <SpawnOnImpact>
+                    <Chance>10</Chance>
+                </SpawnOnImpact>
+                <Template>units/deku/deku_baba_b</Template>
+            </SpawnEntityOnImpact>
+            <EffectDelay>0</EffectDelay>
+        </Ranged>
+    </Attack>
+    <Cost>
+        <BuildTime>30</BuildTime>
+        <Resources>
+            <stone>50</stone>
+            <wood>75</wood>
+        </Resources>
+    </Cost>
+    <Footprint replace="">
+        <Height>3.0</Height>
+        <Square depth="12.0" width="8.0"/>
+    </Footprint>
+    <Health>
+        <Max>200</Max>
+    </Health>
+    <Identity>
+        <Civ>deku</Civ>
+        <Classes datatype="tokens"> Construct OrhatSiege DekuSiege Medium </Classes>
+        <GenericName>Baballista</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>The Baballista is a crazy contraption designed by Kado himself. Launching a giant bolt from its small engine, the attack could punch a hole in most targets with ease. Perhaps the nastiest trick of this weapon was the packs of Baba seeds attached to the bolts, which could then hatch and grow into Deku Babas shortly after landing on the mark.</History>
+        <Icon>units/deku/dek_baballista.dds</Icon>
+        <Tooltip>Kado's Unique Unit. Siege unit that fires bolts laced with Deku Babas. Projectiles have a chance to spawn Deku Babas on impact.</Tooltip>
+        <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/deku/choosehero_dekuprincess</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+            <death>voice/deku/scrubA/scrubA_death.xml</death>
+            <order_attack>voice/deku/scrubA/scrubA_attack.xml</order_attack>
+            <order_garrison>voice/deku/scrubA/scrubA_garrison.xml</order_garrison>
+            <order_gather>voice/deku/scrubA/scrubA_gather.xml</order_gather>
+            <order_repair>voice/deku/scrubA/scrubA_repair.xml</order_repair>
+            <order_walk>voice/deku/scrubA/scrubA_walk.xml</order_walk>
+            <run>actor/movement/cart/cart_move.xml</run>
+            <select>voice/deku/scrubA/scrubA_select.xml</select>
+            <trained>interface/alarm/alarm_create_engine.xml</trained>
+            <walk>actor/movement/cart/cart_move.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/deku/deku_baballista_b.xml</Actor>
+    </VisualActor>
 </Entity>

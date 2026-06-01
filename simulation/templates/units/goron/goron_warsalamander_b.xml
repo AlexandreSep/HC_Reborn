@@ -1,42 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_mage_heavy">
-  <Footprint>
-    <Circle radius="7.0" />
-    <Height>3.0</Height>
-  </Footprint>
-  <Identity>
-    <Civ>goron</Civ>
-    <Classes datatype="tokens">Salamander Large WarSalamander</Classes>
-    <GenericName>Salamander Warbeast</GenericName>
-    <History>These large and angry Salamanders are summoned into thick firefights with enemies of the Gorons. They are capable of breathing a large fireball and firing it from a fair distance at their targets. A group of these creatures can burn down enemy buildings and defensive emplacements.</History>
-    <Icon>units/goron/gor_warsalamander.dds</Icon>
-    <Lang>goron</Lang>
-    <RequiredTechnology>phase_city</RequiredTechnology>
-    <SelectionGroupName>units/goron/goron_warsalamander_b</SelectionGroupName>
-    <Tooltip>Large Creature unit with a ranged Fire attack.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/natural/salamander_big_breath.xml</attack_ranged>
-      <death>voice/goron/salamander_big/salamander_big_death.xml</death>
-      <order_attack>voice/goron/salamander_big/salamander_big_attack.xml</order_attack>
-      <order_garrison>voice/goron/salamander_big/salamander_big_garrison.xml</order_garrison>
-      <order_gather>voice/goron/salamander_big/salamander_big_gather.xml</order_gather>
-      <order_repair>voice/goron/salamander_big/salamander_big_repair.xml</order_repair>
-      <order_walk>voice/goron/salamander_big/salamander_big_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/goron/salamander_big/salamander_big_select.xml</select>
-      <trained>interface/alarm/alarm_create_creature.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/goron/goron_warsalamander_b.xml</Actor>
-  </VisualActor>
-  <Visibility>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
-  </Visibility>
+    <Footprint>
+        <Circle radius="7.0"/>
+        <Height>3.0</Height>
+    </Footprint>
+    <Identity>
+        <Civ>goron</Civ>
+        <Classes datatype="tokens">Salamander Large WarSalamander</Classes>
+        <GenericName>Salamander Warbeast</GenericName>
+        <History>These large and angry Salamanders are summoned into thick firefights with enemies of the Gorons. They are capable of breathing a large fireball and firing it from a fair distance at their targets. A group of these creatures can burn down enemy buildings and defensive emplacements.</History>
+        <Icon>units/goron/gor_warsalamander.dds</Icon>
+        <Lang>goron</Lang>
+        <SelectionGroupName>units/goron/goron_warsalamander_b</SelectionGroupName>
+        <Tooltip>Large Creature unit with a ranged Fire attack.</Tooltip>
+        <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+        <Requirements>
+            <Techs>phase_city</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/natural/salamander_big_breath.xml</attack_ranged>
+            <death>voice/goron/salamander_big/salamander_big_death.xml</death>
+            <order_attack>voice/goron/salamander_big/salamander_big_attack.xml</order_attack>
+            <order_garrison>voice/goron/salamander_big/salamander_big_garrison.xml</order_garrison>
+            <order_gather>voice/goron/salamander_big/salamander_big_gather.xml</order_gather>
+            <order_repair>voice/goron/salamander_big/salamander_big_repair.xml</order_repair>
+            <order_walk>voice/goron/salamander_big/salamander_big_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/goron/salamander_big/salamander_big_select.xml</select>
+            <trained>interface/alarm/alarm_create_creature.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <Visibility>
+        <CanSpotStealth>
+            <MinRange>0</MinRange>
+            <MaxRange>80</MaxRange>
+        </CanSpotStealth>
+    </Visibility>
+    <VisualActor>
+        <Actor>units/goron/goron_warsalamander_b.xml</Actor>
+    </VisualActor>
 </Entity>

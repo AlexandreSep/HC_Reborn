@@ -1,47 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_creature">
-  <Attack>
-    <Melee>
-      <AttackName>Fangs</AttackName>
-      <Splash>
-        <Damage>
-          <Pierce>5</Pierce>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>10</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-    </Melee>
-  </Attack>
-  <Health>
-    <IdleRegenRate>1</IdleRegenRate>
-  </Health>
-  <Identity>
-    <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small -Organic Undead</Classes>
-    <GenericName>Staldra</GenericName>
-    <History>The animated remains of a monster that predates all history and myth. These multiheaded creatures are able to attack from any and multiple directions, making it impossible to surround them. They seem to also possess the ability to regenerate, making them very difficult to destroy.</History>
-    <Icon>units/stalfos/sta_staldra.dds</Icon>
-    <SelectionGroupName>units/stalfos/stalfos_staldra_b</SelectionGroupName>
-    <Tooltip>Melee Creature unit in that can attack multiple enemies at once. Has regeneration.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-    <RequiredTechnology>civ_choices/stalfos/choosehero_blind</RequiredTechnology>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/staldra_bite.xml</attack_melee>
-      <death>voice/stalfos/staldra/staldra_death.xml</death>
-      <order_attack>voice/stalfos/staldra/staldra_attack.xml</order_attack>
-      <order_garrison>voice/stalfos/staldra/staldra_garrison.xml</order_garrison>
-      <order_gather>voice/stalfos/staldra/staldra_gather.xml</order_gather>
-      <order_repair>voice/stalfos/staldra/staldra_repair.xml</order_repair>
-      <order_walk>voice/stalfos/staldra/staldra_walk.xml</order_walk>
-      <run>actor/movement/blind/blind_slither.xml</run>
-      <select>voice/stalfos/staldra/staldra_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/movement/blind/blind_slither.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/stalfos/stalfos_staldra_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Fangs</AttackName>
+            <Splash>
+                <Damage>
+                    <Pierce>5</Pierce>
+                </Damage>
+                <FriendlyFire>false</FriendlyFire>
+                <Range>10</Range>
+                <Shape>Circular</Shape>
+            </Splash>
+        </Melee>
+    </Attack>
+    <Health>
+        <IdleRegenRate>1</IdleRegenRate>
+    </Health>
+    <Identity>
+        <Civ>stalfos</Civ>
+        <Classes datatype="tokens">Small -Organic Undead</Classes>
+        <GenericName>Staldra</GenericName>
+        <History>The animated remains of a monster that predates all history and myth. These multiheaded creatures are able to attack from any and multiple directions, making it impossible to surround them. They seem to also possess the ability to regenerate, making them very difficult to destroy.</History>
+        <Icon>units/stalfos/sta_staldra.dds</Icon>
+        <SelectionGroupName>units/stalfos/stalfos_staldra_b</SelectionGroupName>
+        <Tooltip>Melee Creature unit in that can attack multiple enemies at once. Has regeneration.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/stalfos/choosehero_blind</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/staldra_bite.xml</attack_melee>
+            <death>voice/stalfos/staldra/staldra_death.xml</death>
+            <order_attack>voice/stalfos/staldra/staldra_attack.xml</order_attack>
+            <order_garrison>voice/stalfos/staldra/staldra_garrison.xml</order_garrison>
+            <order_gather>voice/stalfos/staldra/staldra_gather.xml</order_gather>
+            <order_repair>voice/stalfos/staldra/staldra_repair.xml</order_repair>
+            <order_walk>voice/stalfos/staldra/staldra_walk.xml</order_walk>
+            <run>actor/movement/blind/blind_slither.xml</run>
+            <select>voice/stalfos/staldra/staldra_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/movement/blind/blind_slither.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/stalfos/stalfos_staldra_b.xml</Actor>
+    </VisualActor>
 </Entity>

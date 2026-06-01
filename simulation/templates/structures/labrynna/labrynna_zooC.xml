@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/labrynna/labrynna_zooB">
   <Identity>
     <AIBuild>
@@ -7,12 +8,10 @@
     <GenericName>Ursa Trainers</GenericName>
     <History>The Blue Bears of Labrynna were on the most violent creatures of the land and were very difficult to train. It took generations to break these animals and now the Empire enjoys using them as powerful beasts within their armies.</History>
     <Icon>structures/labrynna/lab_zooC.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
-  <Upgrade disable="" />
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_zooC.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">
 	labrynna/bluecaballero_clawfiling
@@ -24,4 +23,8 @@
     <Entities datatype="tokens">units/labrynna/{civ}_bluecaballero_b
 	units/labrynna/{civ}_ursawagon_b</Entities>
   </Trainer>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_zooC.xml</Actor>
+  </VisualActor>
 </Entity>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="27.0" />
+    <Circle radius="27.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -35,17 +36,24 @@
     <GenericName>Bodega</GenericName>
     <History>A small but bustling center for trade and barter within Labrynna. These markets export Labrynnian goods and bring in valuables from foreign nations.</History>
     <Icon>structures/labrynna/lab_marketA.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">labrynna/trade_insurance
+
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_market.xml</constructed>
@@ -53,28 +61,6 @@
       <upgraded>interface/complete/building/complete_market.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <Upgrade>
-    <Tower>
-      <Cost>
-		<stone>100</stone>
-		<wood>100</wood>
-      </Cost>
-      <Entity>structures/labrynna/labrynna_marketB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Add Clientele tents to Bodega.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_marketA.xml</Actor>
-    <FoundationActor>structures/labrynna/labrynna_scaffoldC.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">labrynna/trade_insurance
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/{civ}_trader_b
     gaia/lon_lon_cow_1</Entities>
@@ -106,4 +92,23 @@
       <Z>1</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <stone>100</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_marketB</Entity>
+      <Time>60</Time>
+      <Tooltip>Add Clientele tents to Bodega.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_marketA.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

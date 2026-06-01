@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="22.0" />
+    <Circle radius="22.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -35,32 +36,30 @@
     <GenericName>Communal Exchange</GenericName>
     <History>The beating heart of a Lizalfos community, this exchange sold many goods between their people and to the those that could befriend them.</History>
     <Icon>structures/lizalfos/liz_market.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="30.0" width="30.0" />
+    <Static depth="30.0" width="30.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_market.xml</constructed>
       <select>interface/select/building/sel_market.xml</select>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_marketA.xml</Actor>
-    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_W.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/{civ}_trader_b
     gaia/lon_lon_cow_1</Entities>
@@ -88,4 +87,8 @@
       <Z>5</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_marketA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_W.xml</FoundationActor>
+  </VisualActor>
 </Entity>

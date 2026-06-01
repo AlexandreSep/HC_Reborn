@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_plot">
-  <Capturable disable="" />
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
@@ -10,7 +11,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>15.0</Height>
   </Footprint>
   <Health>
@@ -22,20 +23,29 @@
     <GenericName>Large Construction Plot</GenericName>
     <History>Goron structures tended to be made from large hills and mountains. They would carve and build specialized areas to meet their needs.</History>
     <Icon>structures/goron/gor_plot.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Constructs Goron Buildings on this space.</Tooltip>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.5" width="15.5" />
+    <Static depth="15.5" width="15.5"/>
   </Obstruction>
   <Plots>
     <IsPlot>true</IsPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <StatusBars>
     <BarHeight>0.6</BarHeight>
     <BarWidth>6.0</BarWidth>
     <HeightOffset>19.0</HeightOffset>
   </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -63,21 +73,25 @@
         <wood>200</wood>
       </Cost>
       <Entity>structures/goron/goron_barracksC</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Gladiator Ring on this plot.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </TowerD>
-	<TowerB>
+    <TowerB>
       <Cost>
         <stone>200</stone>
         <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_barracksA</Entity>
-      <RequiredTechnology>goron/hero_town_darunia</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Hall of Warriors on this plot.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>goron/hero_town_darunia</Techs>
+      </Requirements>
     </TowerB>
     <TowerE>
       <Cost>
@@ -85,20 +99,15 @@
         <wood>300</wood>
       </Cost>
       <Entity>structures/goron/goron_barracksD</Entity>
-      <RequiredTechnology>goron/hero_town_dangoro</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build an Explosive Foundary on this plot.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>goron/hero_town_dangoro</Techs>
+      </Requirements>
     </TowerE>
   </Upgrade>
   <VisualActor>
     <Actor>structures/goron/goron_plot_largeA.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

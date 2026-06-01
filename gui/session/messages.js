@@ -345,6 +345,9 @@ var g_NotificationsTypes =
         CampaignSkipSetup(data);
     },
     "AIDialog": function (data, player) { // The main dialog functionality used for the AI players
+        if (!hasAIDialogContent(data))
+            return;
+
         //add queue data for every targeted player and run the dialog functionality
         for (let targetplayer of data.targetPlayers) {
             g_AIDialogQueue[targetplayer].push(data); // add data to the queue for this player
@@ -781,6 +784,11 @@ function updateAIDialog(data, origin) {
         return;
     }
 
+    if (!hasAIDialogContent(data)) {
+        Engine.GetGUIObjectByName("campaignPanel").hidden = true;
+        return;
+    }
+
     let campaignPanel = Engine.GetGUIObjectByName("campaignPanel");
     campaignPanel.sprite = "stretched:session/portraits/dialog/DialogueHyrule.png"; // change sprite
     campaignPanel.hidden = false; // show the campaign window
@@ -839,6 +847,14 @@ function updateAIDialog(data, origin) {
     }
 
     setTimeout(updateAIDialogQueue, 10000); // after the procedures have been ran, delete this element from the queue and run the next element if applicable 
+}
+
+function hasAIDialogContent(data) {
+    if (!data)
+        return false;
+
+    let dialogue = data.dialogue || "";
+    return !!String(dialogue).trim();
 }
 
 /**

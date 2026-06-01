@@ -1,6 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/lizalfos/lizalfos_striker_b">
-  <Identity>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <RequiredTechnology>lizalfos/nardu_boundA</RequiredTechnology>
-  </Identity>
+    <Identity>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <Requirements>
+            <Techs>lizalfos/nardu_boundA</Techs>
+        </Requirements>
+    </Identity>
 </Entity>

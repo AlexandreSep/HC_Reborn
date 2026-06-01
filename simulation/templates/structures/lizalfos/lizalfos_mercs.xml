@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>15.0</Height>
-    <Square depth="35.0" width="35.0" />
+    <Square depth="35.0" width="35.0"/>
   </Footprint>
   <Health>
     <Max>1500</Max>
@@ -29,14 +30,19 @@
     <GenericName>Treasure Trove</GenericName>
     <History>Allows the Lizalfos to hire Mercenary units.</History>
     <Icon>structures/lizalfos/liz_treasuretrove.dds</Icon>
-    <RequiredTechnology>pair_lizgodsA</RequiredTechnology>
     <Tooltip>A hoard of loot and treasure kept in a safe cavern from other plunderers. Such treasure draws the services of many mercenaries, and Lizalfos are more than willing to hand out some Rupees and Gold if they are paid in kind.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <Requirements>
+      <Techs>pair_lizgodsA</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="35.0" width="35.0" />
+    <Static depth="35.0" width="35.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">lizalfos/mercs_spoilsofhunt</Technologies>
+  </Researcher>
   <ResourceTrickle>
     <Interval>5000</Interval>
     <Rates>
@@ -52,16 +58,9 @@
       <select>interface/select/building/sel_mercs.xml</select>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_treasuretroveB.xml</Actor>
-    <FoundationActor>structures/lizalfos/lizalfos_scaffoldD_S.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">lizalfos/mercs_spoilsofhunt</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-	<Entities datatype="tokens" />
+    <Entities datatype="tokens"/>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -73,4 +72,8 @@
       </step2>
     </DestinationOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_treasuretroveB.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldD_S.xml</FoundationActor>
+  </VisualActor>
 </Entity>

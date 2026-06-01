@@ -1,57 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
-  <Auras datatype="tokens">
+    <Auras datatype="tokens">
     structures/theater_aura_1
   structures/theater_aura_2
   </Auras>
-  <BuildRestrictions>
-    <Category>Barracks</Category>
-  </BuildRestrictions>
-  <Cost>
-    <BuildTime>60</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>200</stone>
-      <wood>200</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="20.0" />
-    <Height>10.0</Height>
-  </Footprint>
-  <Health>
-    <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/debris_zora_medium</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>zora</Civ>
-    <Classes datatype="tokens">Town</Classes>
-    <GenericName>Theater</GenericName>
-    <History>Plays and other visual spectacles are a common Zora pastime. Everything from dramas to comedies are on display, and for a small fee the citizens of a Zora community can observe.</History>
-    <Icon>structures/zora/zor_theater.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Improves the performance of Zora units.</Tooltip>
-    <VisibleClasses datatype="tokens">Special</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="33.0" width="33.0" />
-  </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/darknut/complete_colosseum.xml</constructed>
-      <select>interface/select/building/darknut/sel_colosseum.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/zora/zora_theaterA.xml</Actor>
-    <FoundationActor>structures/zora/zora_scaffoldC.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">zora/theater_epicplays
+    <BuildRestrictions>
+        <Category>Barracks</Category>
+    </BuildRestrictions>
+    <Cost>
+        <BuildTime>60</BuildTime>
+        <Resources>
+            <food>0</food>
+            <metal>0</metal>
+            <stone>200</stone>
+            <wood>200</wood>
+        </Resources>
+    </Cost>
+    <Footprint>
+        <Circle radius="20.0"/>
+        <Height>10.0</Height>
+    </Footprint>
+    <Health>
+        <Max>2000</Max>
+        <SpawnEntityOnDeath>rubble/debris_zora_medium</SpawnEntityOnDeath>
+    </Health>
+    <Identity>
+        <Civ>zora</Civ>
+        <Classes datatype="tokens">Town</Classes>
+        <GenericName>Theater</GenericName>
+        <History>Plays and other visual spectacles are a common Zora pastime. Everything from dramas to comedies are on display, and for a small fee the citizens of a Zora community can observe.</History>
+        <Icon>structures/zora/zor_theater.dds</Icon>
+        <Tooltip>Improves the performance of Zora units.</Tooltip>
+        <VisibleClasses datatype="tokens">Special</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Obstruction>
+        <Static depth="33.0" width="33.0"/>
+    </Obstruction>
+    <Researcher>
+        <Technologies datatype="tokens">zora/theater_epicplays
 </Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
+    </Researcher>
+    <Sound>
+        <SoundGroups>
+            <constructed>interface/complete/building/darknut/complete_colosseum.xml</constructed>
+            <select>interface/select/building/darknut/sel_colosseum.xml</select>
+        </SoundGroups>
+    </Sound>
+    <Trainer>
+        <BatchTimeModifier>0.8</BatchTimeModifier>
+        <Entities datatype="tokens"/>
+    </Trainer>
+    <VisualActor>
+        <Actor>structures/zora/zora_theaterA.xml</Actor>
+        <FoundationActor>structures/zora/zora_scaffoldC.xml</FoundationActor>
+    </VisualActor>
 </Entity>

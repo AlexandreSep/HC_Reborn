@@ -1,49 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_Knight">
-  <Attack>
-    <Melee>
-      <AttackName>Great Fairy Sword</AttackName>
-    </Melee>
-  </Attack>
-  <Auras datatype="tokens">
+    <Attack>
+        <Melee>
+            <AttackName>Great Fairy Sword</AttackName>
+        </Melee>
+    </Attack>
+    <Auras datatype="tokens">
     units/thorn_aura_1
   </Auras>
-  <DeathDamage>
-    <Shape>Circular</Shape>
-    <FriendlyFire>false</FriendlyFire>
-    <Range>10</Range>
-    <Damage>
-      <Magic>35.0</Magic>
-    </Damage>
-  </DeathDamage>
-  <Identity>
-    <Civ>fairy</Civ>
-    <Classes datatype="tokens">Medium </Classes>
-    <GenericName>Bounded</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>The Bounded were Fairies that had at some point in the past committed a crime against their own people. As punishment, they were trapped within a suit of living and thorny armor, cut off from the magic inherent to their race. Their only chance at freedom was to serve as warrior slaves to their Fairy masters, a task they gladly performed.</History>
-    <Icon>units/fairy/fai_bounded_spring.dds</Icon>
-    <Lang>fairy</Lang>
-    <RequiredTechnology>civ_choices/fairy/choosehero_dezaia</RequiredTechnology>
-    <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
-    <Tooltip>Dezaia's Unique Unit. Durable sword armed Melee unit who's abilities change with the seasons.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword_large_swing.xml</attack_melee>
-      <death>voice/fairy/bounded/bounded_death.xml</death>
-      <order_attack>voice/fairy/bounded/bounded_attack.xml</order_attack>
-      <order_garrison>voice/fairy/bounded/bounded_garrison.xml</order_garrison>
-      <order_gather>voice/fairy/bounded/bounded_gather.xml</order_gather>
-      <order_repair>voice/fairy/bounded/bounded_repair.xml</order_repair>
-      <order_walk>voice/fairy/bounded/bounded_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/fairy/bounded/bounded_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/fairy/fairy_bounded_spring.xml</Actor>
-  </VisualActor>
+    <DeathDamage>
+        <Shape>Circular</Shape>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Damage>
+            <Magic>35.0</Magic>
+        </Damage>
+    </DeathDamage>
+    <Identity>
+        <Civ>fairy</Civ>
+        <Classes datatype="tokens">Medium </Classes>
+        <GenericName>Bounded</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>The Bounded were Fairies that had at some point in the past committed a crime against their own people. As punishment, they were trapped within a suit of living and thorny armor, cut off from the magic inherent to their race. Their only chance at freedom was to serve as warrior slaves to their Fairy masters, a task they gladly performed.</History>
+        <Icon>units/fairy/fai_bounded_spring.dds</Icon>
+        <Lang>fairy</Lang>
+        <SelectionGroupName>units/hylian/hylian_knightofhyrule_b</SelectionGroupName>
+        <Tooltip>Dezaia's Unique Unit. Durable sword armed Melee unit who's abilities change with the seasons.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/fairy/choosehero_dezaia</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword_large_swing.xml</attack_melee>
+            <death>voice/fairy/bounded/bounded_death.xml</death>
+            <order_attack>voice/fairy/bounded/bounded_attack.xml</order_attack>
+            <order_garrison>voice/fairy/bounded/bounded_garrison.xml</order_garrison>
+            <order_gather>voice/fairy/bounded/bounded_gather.xml</order_gather>
+            <order_repair>voice/fairy/bounded/bounded_repair.xml</order_repair>
+            <order_walk>voice/fairy/bounded/bounded_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/fairy/bounded/bounded_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/fairy/fairy_bounded_spring.xml</Actor>
+    </VisualActor>
 </Entity>

@@ -1,55 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_scout">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Bonuses>
-        <BonusCavMelee>
-          <Classes>Cavalry</Classes>
-          <Multiplier>2.0</Multiplier>
-        </BonusCavMelee>
-      </Bonuses>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
-    </Melee>
-  </Attack>
-  <Identity>
-    <Civ>lanayru</Civ>
-    <Classes datatype="tokens">SilverSpear Medium RalisBonus</Classes>
-    <GenericName>Shore Sentry</GenericName>
-    <History>All along the rivers and coasts of Lanayru Province a network of Sentries stood watch and guard. These lightly armored units passed on armor in favor of speed and camouflage. If enemy invaders approached the Shore Sentry could easily escape to warn the Province’s main force, or in more desperate situations ambush their enemies and stall their forces.</History>
-    <Icon>units/lanayru/lan_sentry.dds</Icon>
-    <Lang>lanayru</Lang>
-    <RequiredTechnology>lanayru/get_volunteerpost</RequiredTechnology>
-    <SelectionGroupName>units/lanayru/lanayru_sentry_b</SelectionGroupName>
-    <Tooltip>Scout unit armed with a spear. Can detect Camouflaged and Stealthed units.</Tooltip>
-    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
-  </Identity>
-  <Position>
-    <Floating>false</Floating>
-  </Position>
-  <Promotion>
-    <Entity>units/lanayru/lanayru_sentry_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/arrowfly.xml</attack_melee>
-      <death>voice/lanayru/shoresentry/shoresentry_death.xml</death>
-      <order_attack>voice/lanayru/shoresentry/shoresentry_attack.xml</order_attack>
-      <order_garrison>voice/lanayru/shoresentry/shoresentry_garrison.xml</order_garrison>
-      <order_gather>voice/lanayru/shoresentry/shoresentry_gather.xml</order_gather>
-      <order_repair>voice/lanayru/shoresentry/shoresentry_repair.xml</order_repair>
-      <order_walk>voice/lanayru/shoresentry/shoresentry_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/lanayru/shoresentry/shoresentry_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <PassabilityClass>aquatic</PassabilityClass>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/lanayru/lanayru_shoresentry_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Spear</AttackName>
+            <Bonuses>
+                <BonusCavMelee>
+                    <Classes>Cavalry</Classes>
+                    <Multiplier>2.0</Multiplier>
+                </BonusCavMelee>
+            </Bonuses>
+            <MaxRange>6.0</MaxRange>
+            <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+        </Melee>
+    </Attack>
+    <Identity>
+        <Civ>lanayru</Civ>
+        <Classes datatype="tokens">SilverSpear Medium RalisBonus</Classes>
+        <GenericName>Shore Sentry</GenericName>
+        <History>All along the rivers and coasts of Lanayru Province a network of Sentries stood watch and guard. These lightly armored units passed on armor in favor of speed and camouflage. If enemy invaders approached the Shore Sentry could easily escape to warn the Province’s main force, or in more desperate situations ambush their enemies and stall their forces.</History>
+        <Icon>units/lanayru/lan_sentry.dds</Icon>
+        <Lang>lanayru</Lang>
+        <SelectionGroupName>units/lanayru/lanayru_sentry_b</SelectionGroupName>
+        <Tooltip>Scout unit armed with a spear. Can detect Camouflaged and Stealthed units.</Tooltip>
+        <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+        <Requirements>
+            <Techs>lanayru/get_volunteerpost</Techs>
+        </Requirements>
+    </Identity>
+    <Position>
+        <Floating>false</Floating>
+    </Position>
+    <Promotion>
+        <Entity>units/lanayru/lanayru_sentry_upg</Entity>
+        <RequiredXp>9999</RequiredXp>
+    </Promotion>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/arrowfly.xml</attack_melee>
+            <death>voice/lanayru/shoresentry/shoresentry_death.xml</death>
+            <order_attack>voice/lanayru/shoresentry/shoresentry_attack.xml</order_attack>
+            <order_garrison>voice/lanayru/shoresentry/shoresentry_garrison.xml</order_garrison>
+            <order_gather>voice/lanayru/shoresentry/shoresentry_gather.xml</order_gather>
+            <order_repair>voice/lanayru/shoresentry/shoresentry_repair.xml</order_repair>
+            <order_walk>voice/lanayru/shoresentry/shoresentry_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/lanayru/shoresentry/shoresentry_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <PassabilityClass>aquatic</PassabilityClass>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/lanayru/lanayru_shoresentry_b.xml</Actor>
+    </VisualActor>
 </Entity>

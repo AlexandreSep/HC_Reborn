@@ -3,9 +3,20 @@
 
 	<script directory="gui/common/"/>
 	<script directory="gui/common/campaigns/"/>
-	<script directory="gui/pregame/"/>
-	<script directory="gui/pregame/backgrounds/"/>
-	<script directory="gui/pregame/userreport/"/>
+	<script file="gui/pregame/BackgroundHandler.js"/>
+	<script file="gui/pregame/SplashscreenHandler.js"/>
+	<script file="gui/pregame/BottomMenuItemHandler.js"/>
+	<script file="gui/pregame/BottomMenuItems.js"/>
+	<script file="gui/pregame/CenterMenuItemHandler.js"/>
+	<script file="gui/pregame/CenterMenuItems.js"/>
+	<script file="gui/pregame/ProjectInformationHandler.js"/>
+	<script file="gui/pregame/ProjectInformationItems.js"/>
+	<script file="gui/pregame/TopMenuItemHandler.js"/>
+	<script file="gui/pregame/TopMenuItems.js"/>
+	<script file="gui/pregame/MainMenuPage.js"/>
+	<script file="gui/pregame/mainmenu.js"/>
+	<script file="gui/pregame/backgrounds/hyrule.js"/>
+	<script file="gui/pregame/userreport/userreport.js"/>
 
 	<object name="mainMenuPage">
 		<include file="gui/pregame/backgrounds.xml"/>

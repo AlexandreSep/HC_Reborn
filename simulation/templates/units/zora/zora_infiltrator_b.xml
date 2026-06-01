@@ -5,7 +5,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">Infiltrator ZoraFemale Medium</Classes>
+    <Classes datatype="tokens">Infiltrator ZoraFemale Medium Swimmer</Classes>
     <GenericName>Infiltrator</GenericName>
     <History>Undergoing years of extreme body shaping, Infiltrators can sneak into just about any place they need to get the information they are after. Their warped frames allow them to bend into just about any position, and squeeze through any crevice that their skeleton can get through. Such talents are used by the Dominion to scout and spy on their neighboring lands.</History>
     <Icon>units/zora/zor_infiltrator.dds</Icon>

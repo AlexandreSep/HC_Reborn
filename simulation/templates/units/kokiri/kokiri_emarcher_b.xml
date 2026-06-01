@@ -1,76 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_archer">
-  <Attack>
-    <Ranged>
-      <Damage>
-        <Pierce>3.0</Pierce>
-        <Magic>3</Magic>
-      </Damage>
-      <MaxRange>90</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2500</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>30</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>60</Max>
-  </Health>
-  <Identity>
-    <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Small WoodArmor FairyGuard FairySense EmArcher CanGarrison</Classes>
-    <GenericName>Emerald Archer</GenericName>
-    <History>Emerald Archers represented some of the longest-lived Kokiri, those nearly ready for the transition into a Korok. Armed with a trusty Forest Bow and a keen eye, Emerald Archers could snipe enemies from a very long distance, as well as retreat to safe ground should the enemy close the gap.</History>
-    <Icon>units/kokiri/kok_emarcher.dds</Icon>
-    <Lang>kokiri</Lang>
-    <RequiredTechnology>kokiri/get_forestshrine</RequiredTechnology>
-    <SelectionGroupName>units/kokiri/kokiri_emarcher_b</SelectionGroupName>
-    <Tooltip>Elite Kokiri Missile unit with a long range and decent movement speed. Can also Camouflage and inflict Magic Damage through the Fairy Bow upgrade.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
-  </Identity>
-  <Promotion>
-    <Entity>units/kokiri/kokiri_emarcher_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-		<Magic>20</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/bow_OOT_fire.xml</attack_ranged>
-      <death>voice/kokiri/emarcher/emarcher_death.xml</death>
-      <order_attack>voice/kokiri/emarcher/emarcher_attack.xml</order_attack>
-      <order_garrison>voice/kokiri/emarcher/emarcher_garrison.xml</order_garrison>
-      <order_gather>voice/kokiri/emarcher/emarcher_gather.xml</order_gather>
-      <order_repair>voice/kokiri/emarcher/emarcher_repair.xml</order_repair>
-      <order_walk>voice/kokiri/emarcher/emarcher_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/kokiri/emarcher/emarcher_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/kokiri/kokiri_emarcher_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Ranged>
+            <Damage>
+                <Pierce>3.0</Pierce>
+                <Magic>3</Magic>
+            </Damage>
+            <MaxRange>90</MaxRange>
+            <MinRange>15.0</MinRange>
+            <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+            <PrepareTime>1500</PrepareTime>
+            <Projectile>
+                <Gravity>9.81</Gravity>
+                <Speed>75.0</Speed>
+                <Spread>1.5</Spread>
+                <FriendlyFire>false</FriendlyFire>
+                <LaunchPoint y="3"/>
+            </Projectile>
+            <RepeatTime>2500</RepeatTime>
+            <EffectDelay>0</EffectDelay>
+        </Ranged>
+    </Attack>
+    <Cost>
+        <BuildTime>12</BuildTime>
+        <Resources>
+            <food>35</food>
+            <metal>0</metal>
+            <stone>0</stone>
+            <wood>30</wood>
+        </Resources>
+    </Cost>
+    <Health>
+        <Max>60</Max>
+    </Health>
+    <Identity>
+        <Civ>kokiri</Civ>
+        <Classes datatype="tokens">Small WoodArmor FairyGuard FairySense EmArcher CanGarrison</Classes>
+        <GenericName>Emerald Archer</GenericName>
+        <History>Emerald Archers represented some of the longest-lived Kokiri, those nearly ready for the transition into a Korok. Armed with a trusty Forest Bow and a keen eye, Emerald Archers could snipe enemies from a very long distance, as well as retreat to safe ground should the enemy close the gap.</History>
+        <Icon>units/kokiri/kok_emarcher.dds</Icon>
+        <Lang>kokiri</Lang>
+        <SelectionGroupName>units/kokiri/kokiri_emarcher_b</SelectionGroupName>
+        <Tooltip>Elite Kokiri Missile unit with a long range and decent movement speed. Can also Camouflage and inflict Magic Damage through the Fairy Bow upgrade.</Tooltip>
+        <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+        <Requirements>
+            <Techs>kokiri/get_forestshrine</Techs>
+        </Requirements>
+    </Identity>
+    <Promotion>
+        <Entity>units/kokiri/kokiri_emarcher_upg</Entity>
+        <RequiredXp>9999</RequiredXp>
+    </Promotion>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <Magic>20</Magic>
+            </Damage>
+        </Entity>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/weapon/bow_OOT_fire.xml</attack_ranged>
+            <death>voice/kokiri/emarcher/emarcher_death.xml</death>
+            <order_attack>voice/kokiri/emarcher/emarcher_attack.xml</order_attack>
+            <order_garrison>voice/kokiri/emarcher/emarcher_garrison.xml</order_garrison>
+            <order_gather>voice/kokiri/emarcher/emarcher_gather.xml</order_gather>
+            <order_repair>voice/kokiri/emarcher/emarcher_repair.xml</order_repair>
+            <order_walk>voice/kokiri/emarcher/emarcher_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/kokiri/emarcher/emarcher_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/kokiri/kokiri_emarcher_b.xml</Actor>
+    </VisualActor>
 </Entity>

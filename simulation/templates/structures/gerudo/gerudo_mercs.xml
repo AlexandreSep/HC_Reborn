@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -18,7 +19,7 @@
   </Cost>
   <Footprint>
     <Height>15.0</Height>
-    <Square depth="37.0" width="37.0" />
+    <Square depth="37.0" width="37.0"/>
   </Footprint>
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
@@ -28,6 +29,80 @@
     <LoadingRange>6</LoadingRange>
     <Max>7</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_medium</SpawnEntityOnDeath>
+    <SpawnGarrison>
+      <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
+      <SpawnNumber>8</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>22</MinPop>
+    </AIBuild>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Brothel</GenericName>
+    <History>Though most Gerudo hold on to their honor and dignity, some have made great profit for their homes by hosting these brothels for travelers in their cities. Gerudo would attract all manner of mates from across Hyrule, offering to pleasure their whims in exchange for the next generation of Gerudo women. While the pollution of pure-blooded Gerudo lines is socially frowned upon, the dying people have few other options.</History>
+    <Icon>structures/gerudo/ger_brothel.dds</Icon>
+    <Tooltip>Allows the hiring of Mercenary units.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="37.0" width="37.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_mercs.xml</constructed>
+      <select>interface/select/building/sel_mercs.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/merc_geru_b
+	  units/merc_goriya_b 
+	  units/merc_tinsuit_b
+	  units/merc_taros_b
+	  units/merc_wosu_b
+	  units/merc_daira_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>2</X>
+        <Z>15</Z>
+      </step1>
+      <step2>
+        <X>2</X>
+        <Z>20</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>22</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>2</X>
+      <Z>9</Z>
+    </SpawnOffset>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -72,80 +147,8 @@
       </Archer8>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/debris_gerudo_medium</SpawnEntityOnDeath>
-    <SpawnGarrison>
-      <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
-      <SpawnNumber>8</SpawnNumber>
-      <LinkedDestruction>true</LinkedDestruction>
-    </SpawnGarrison>
-  </Health>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>1</MaxCopies>
-      <MinPop>22</MinPop>
-    </AIBuild>
-    <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Town</Classes>
-    <GenericName>Brothel</GenericName>
-    <History>Though most Gerudo hold on to their honor and dignity, some have made great profit for their homes by hosting these brothels for travelers in their cities. Gerudo would attract all manner of mates from across Hyrule, offering to pleasure their whims in exchange for the next generation of Gerudo women. While the pollution of pure-blooded Gerudo lines is socially frowned upon, the dying people have few other options.</History>
-    <Icon>structures/gerudo/ger_brothel.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Allows the hiring of Mercenary units.</Tooltip>
-    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="37.0" width="37.0" />
-  </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_mercs.xml</constructed>
-      <select>interface/select/building/sel_mercs.xml</select>
-    </SoundGroups>
-  </Sound>
   <VisualActor>
     <Actor>structures/gerudo/gerudo_brothelA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/merc_geru_b
-	  units/merc_goriya_b 
-	  units/merc_tinsuit_b
-	  units/merc_taros_b
-	  units/merc_wosu_b
-	  units/merc_daira_b</Entities>
-    <DestinationOffset>
-      <step1>
-        <X>2</X>
-        <Z>15</Z>
-      </step1>
-      <step2>
-        <X>2</X>
-        <Z>20</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>22</Z>
-      </step3>
-    </DestinationOffset>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>2</X>
-      <Z>9</Z>
-    </SpawnOffset>
-  </Trainer>
 </Entity>

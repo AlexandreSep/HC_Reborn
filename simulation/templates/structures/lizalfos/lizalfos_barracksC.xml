@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="50.0" width="50.0" />
+    <Square depth="50.0" width="50.0"/>
   </Footprint>
   <Health>
     <Max>5000</Max>
@@ -25,22 +26,20 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Crest</GenericName>
     <History>Lizalfos royalty is far from glamorous, though compared to their kin they live in style. Often building their homes high above their peers, the highest class of reptiles look down to rule over their warriors.</History>
     <Icon>structures/lizalfos/liz_crest.dds</Icon>
-    <RequiredTechnology>pair_lizgodsC</RequiredTechnology>
     <Tooltip>Trains many higher tier Lizalfos units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <Requirements>
+      <Techs>pair_lizgodsC</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="47.0" width="47.0" />
+    <Static depth="47.0" width="47.0"/>
   </Obstruction>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_crestA.xml</Actor>
-    <FoundationActor>structures/lizalfos/lizalfos_scaffoldA_S.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/aeralfos_flightoverfaron
     lizalfos/talik_volvagianlegacy
@@ -78,4 +77,8 @@
       <Z>14.5</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_crestA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldA_S.xml</FoundationActor>
+  </VisualActor>
 </Entity>

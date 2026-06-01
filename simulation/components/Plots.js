@@ -265,9 +265,20 @@ Plots.prototype.SpawnPlots = function (rot, owner)
         
         // spawn entity and query references to its variables
         let spawnedEntity = Engine.AddEntity(plot.template);
+        if (spawnedEntity == INVALID_ENTITY)
+        {
+            warn("Plots: failed to spawn plot template " + plot.template);
+            continue;
+        }
         let plotLocationCmp = Engine.QueryInterface(spawnedEntity, IID_Position);       
         let plotOwnershipCmp = Engine.QueryInterface(spawnedEntity, IID_Ownership);
         let spawnedEntityPlotsCmp = Engine.QueryInterface(spawnedEntity, IID_Plots);
+        if (!plotLocationCmp || !plotOwnershipCmp)
+        {
+            warn("Plots: spawned plot " + plot.template + " is missing Position or Ownership");
+            Engine.DestroyEntity(spawnedEntity);
+            continue;
+        }
 
         let tmpOffset = new Vector2D(plot.offset.x, plot.offset.z);
         tmpOffset.rotate(rot.y);

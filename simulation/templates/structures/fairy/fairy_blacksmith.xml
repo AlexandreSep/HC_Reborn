@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <AutoBuildable>
     <Rate>1</Rate>
@@ -15,7 +16,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="20.0" />
+    <Circle radius="20.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -24,21 +25,31 @@
   </Health>
   <Identity>
     <Civ>fairy</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Waters of Heaven</GenericName>
     <History>Legend has it that these magical waterfalls would grant wishes to anyone who offered enough of a material sacrifice to its waters. Travellers would seek them out to offer money and other doodads in hopes of receiving something in return from the Fairies who lorded over.</History>
     <Icon>structures/fairy/fai_waterheaven_spring.dds</Icon>
-    <RequiredTechnology>civ_choices/fairy/choosehero_venus</RequiredTechnology>
     <Tooltip>Improves various Fairy units.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/fairy/choosehero_venus</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="35.0" width="35.0" />
+    <Static depth="35.0" width="35.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/attack_disharmony
+    fairy/armor_earthcharm
+    fairy/armor_heavencharm
+    fairy/speed_easternwinds
+    fairy/vision_glimpseofnous
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/fairy/complete_waterheaven.xml</constructed>
@@ -50,6 +61,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
@@ -57,16 +72,4 @@
     <Actor>structures/fairy/fairy_waterheavenA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">fairy/attack_disharmony
-    fairy/armor_earthcharm
-    fairy/armor_heavencharm
-    fairy/speed_easternwinds
-    fairy/vision_glimpseofnous
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

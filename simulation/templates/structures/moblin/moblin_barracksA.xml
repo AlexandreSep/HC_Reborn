@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="20.0" />
+    <Circle radius="20.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -25,7 +26,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Baddy Buggo Camp</GenericName>
     <History>Whooooahh those Bugblins have the coolest treehouse! So cool! Bugblin treehouse is so awesome that they take the tree with em wherever they go! Smart little Bugblins! Now go get beated for us in the fight!</History>
     <Icon>structures/moblin/mob_camp_bug.dds</Icon>
@@ -33,21 +34,8 @@
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Static depth="30.0" width="30.0" />
+    <Static depth="30.0" width="30.0"/>
   </Obstruction>
-  <Upgrade>
-    <Tower>
-      <Entity>units/moblin/moblin_barracksA_packed</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
-      <Time>30</Time>
-      <Tooltip>Pack up this Baddy Buggo Camp.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/moblin/moblin_camp_bugA.xml</Actor>
-    <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">moblin/bug_buyembetter
     moblin/bug_fullrun
@@ -88,4 +76,19 @@
       <Z>0</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracksA_packed</Entity>
+      <Time>30</Time>
+      <Tooltip>Pack up this Baddy Buggo Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_bugA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

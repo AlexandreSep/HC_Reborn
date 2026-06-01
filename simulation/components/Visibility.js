@@ -221,6 +221,21 @@ Visibility.prototype.SpotEnemyUnits = function () {
         return;
 
     let enemyPlayers = cmpPlayer.GetEnemies(); // only check for enemy units
+    if (!enemyPlayers || !enemyPlayers.length)
+    {
+        if (!this.warnedEmptySpotEnemyPlayers)
+        {
+            let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+            let template = cmpTemplateManager.GetCurrentTemplateName(this.entity);
+            let cmpOwnership = Engine.QueryInterface(this.entity, IID_Ownership);
+            let owner = cmpOwnership ? cmpOwnership.GetOwner() : "no Ownership";
+            warn("[HC_DEBUG_RANGE] empty spot enemy players ent=" + this.entity +
+                " owner=" + owner +
+                " template=" + template);
+            this.warnedEmptySpotEnemyPlayers = true;
+        }
+        return;
+    }
 
     // get the nearby enemy entities within the specified range
     let nearbyEnemies = cmpRangeManager.ExecuteQuery(this.entity, this.minSpotRange, this.maxSpotRange, enemyPlayers, IID_Resistance);

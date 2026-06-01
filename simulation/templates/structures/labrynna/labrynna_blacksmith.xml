@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="38.0" width="38.0" />
+    <Square depth="38.0" width="38.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -29,37 +30,15 @@
     <GenericName>Powder Maker</GenericName>
     <History>Gunpowder has perhaps been the greatest discovery for military forces in the history of Hyrule. While many other nations have used explosives of various sorts, Labrynna was the first to refine the idea into hand held portable weaponry.</History>
     <Icon>structures/labrynna/lab_gunpowderA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Trains a variety of Gunpowder and Siege units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="38.0" width="38.0" />
+    <Static depth="38.0" width="38.0"/>
   </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
-      <select>interface/select/building/sel_blacksmith.xml</select>
-      <upgraded>interface/complete/building/complete_blacksmith.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <Upgrade>
-    <Tower>
-      <Cost>
-		<stone>50</stone>
-		<wood>100</wood>
-      </Cost>
-      <Entity>structures/labrynna/labrynna_blacksmithB</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Upgrade Powder Maker with Cannon Foundry.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_powderA.xml</Actor>
-    <FoundationActor>structures/labrynna/labrynna_scaffoldD.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">
     labrynna/conqueror_reloadingdrills
@@ -67,6 +46,13 @@
 	labrynna/handcannon_efficientmortar
 </Technologies>
   </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
+      <select>interface/select/building/sel_blacksmith.xml</select>
+      <upgraded>interface/complete/building/complete_blacksmith.xml</upgraded>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.9</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_conqueror_b
@@ -99,4 +85,23 @@
       <Z>-7</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <stone>50</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_blacksmithB</Entity>
+      <Time>60</Time>
+      <Tooltip>Upgrade Powder Maker with Cannon Foundry.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_powderA.xml</Actor>
+    <FoundationActor>structures/labrynna/labrynna_scaffoldD.xml</FoundationActor>
+  </VisualActor>
 </Entity>

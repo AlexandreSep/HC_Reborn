@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure">
   <BuildRestrictions>
     <Category>Field</Category>
@@ -14,7 +15,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="1.0" />
+    <Circle radius="1.0"/>
     <Height>5.0</Height>
   </Footprint>
   <Health>
@@ -38,8 +39,11 @@
   <Obstruction>
     <BlockMovement>false</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
-    <Static depth="3.0" width="3.0" />
+    <Static depth="3.0" width="3.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_eggA.xml</constructed>
@@ -52,61 +56,68 @@
     <Root>false</Root>
     <Weight>1</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <Tower>
       <Cost>
         <food>50</food>
       </Cost>
       <Entity>units/gohma_harvesterA</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>10</Time>
       <Tooltip>Create Harvester.</Tooltip>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
     </Tower>
     <TowerA>
       <Cost>
         <food>30</food>
       </Cost>
       <Entity>units/campaign/FS_01/gohma_larva_hive_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>6</Time>
       <Tooltip>Create Hive Larva.</Tooltip>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
     </TowerA>
     <TowerB>
       <Cost>
         <food>35</food>
       </Cost>
       <Entity>units/campaign/FS_01/gohma_larva_soldier_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>6</Time>
       <Tooltip>Create Soldier Larva.</Tooltip>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
     </TowerB>
     <TowerC>
       <Cost>
         <food>30</food>
       </Cost>
       <Entity>units/campaign/FS_01/gohma_larva_giant_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>6</Time>
       <Tooltip>Create Giant Larva.</Tooltip>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
     </TowerC>
     <TowerD>
       <Cost>
         <food>30</food>
       </Cost>
       <Entity>units/campaign/FS_01/gohma_larva_royal_b</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>6</Time>
       <Tooltip>Create Royal Larva.</Tooltip>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
     </TowerD>
   </Upgrade>
   <VisualActor>
     <Actor>structures/gohma/gohma_egg.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

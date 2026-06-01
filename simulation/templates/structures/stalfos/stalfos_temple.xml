@@ -1,51 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
-  <Auras datatype="tokens">
+    <Auras datatype="tokens">
     structures/religious_territory_1
 	structures/necromancy
 	structures/commclutch_aura_1
   </Auras>
-  <BuildRestrictions>
-    <Category>Temple</Category>
-    <Territory>own neutral</Territory>
-  </BuildRestrictions>
-  <Footprint>
-    <Height>12.0</Height>
-    <Square depth="33.0" width="33.0" />
-  </Footprint>
-  <Health>
-    <Max>2000</Max>
-    <SpawnEntityOnDeath>rubble/debris_stalfos_ruins_anc</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>1</MaxCopies>
-      <MinPop>50</MinPop>
-    </AIBuild>
-    <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Town</Classes>
-    <History>.</History>
-    <Icon>structures/stalfos/sta_darkreliquary.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <SpecificName>Dark Reliquary</SpecificName>
-    <Tooltip>Religious building that provides various buffs.</Tooltip>
-    <VisibleClasses datatype="tokens">Religious</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="43.0" width="43.0" />
-  </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_temple.xml</constructed>
-      <select>interface/select/building/sel_temple.xml</select>
-    </SoundGroups>
-  </Sound>
-  <Upgrade disable="" />
-  <VisualActor>
-    <Actor>structures/stalfos/stalfos_darkreliquaryA_anc.xml</Actor>
-    <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
+    <BuildRestrictions>
+        <Category>Temple</Category>
+        <Territory>own neutral</Territory>
+    </BuildRestrictions>
+    <Footprint>
+        <Height>12.0</Height>
+        <Square depth="33.0" width="33.0"/>
+    </Footprint>
+    <Health>
+        <Max>2000</Max>
+        <SpawnEntityOnDeath>rubble/debris_stalfos_ruins_anc</SpawnEntityOnDeath>
+    </Health>
+    <Identity>
+        <AIBuild>
+            <MaxCopies>1</MaxCopies>
+            <MinPop>50</MinPop>
+        </AIBuild>
+        <Civ>stalfos</Civ>
+        <Classes datatype="tokens">Town</Classes>
+        <History>.</History>
+        <Icon>structures/stalfos/sta_darkreliquary.dds</Icon>
+        <SpecificName>Dark Reliquary</SpecificName>
+        <Tooltip>Religious building that provides various buffs.</Tooltip>
+        <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Obstruction>
+        <Static depth="43.0" width="43.0"/>
+    </Obstruction>
+    <Researcher>
+        <Technologies datatype="tokens">
 </Technologies>
-  </Researcher>
+    </Researcher>
+    <Sound>
+        <SoundGroups>
+            <constructed>interface/complete/building/complete_temple.xml</constructed>
+            <select>interface/select/building/sel_temple.xml</select>
+        </SoundGroups>
+    </Sound>
+    <Upgrade disable=""/>
+    <VisualActor>
+        <Actor>structures/stalfos/stalfos_darkreliquaryA_anc.xml</Actor>
+        <FoundationActor>structures/sheikah/sheikah_scaffoldC.xml</FoundationActor>
+    </VisualActor>
 </Entity>

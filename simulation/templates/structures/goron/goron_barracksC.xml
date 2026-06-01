@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="60.0" width="60.0" />
+    <Square depth="60.0" width="60.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -29,27 +30,18 @@
     <GenericName>Gladiator Ring</GenericName>
     <History>The Gladiator Ring pits the biggest and meanest Goron warriors of all types and varieties against each other. Large and bulky Gorons exit the arena to do battle with enemies.</History>
     <Icon>structures/goron/gor_gladring.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Trains very large and powerful Goron units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.0" width="15.0" />
+    <Static depth="15.0" width="15.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/goron/complete_gladiator.xml</constructed>
-      <select>interface/select/building/goron/sel_gladiator.xml</select>
-      <upgraded>interface/complete/building/goron/complete_gladiator.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/goron/goron_gladringA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">goron/troop_coronroutine
 	goron/troop_elderhide
@@ -57,6 +49,13 @@
     goron/troop_lowlyaware
 </Technologies>
   </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/goron/complete_gladiator.xml</constructed>
+      <select>interface/select/building/goron/sel_gladiator.xml</select>
+      <upgraded>interface/complete/building/goron/complete_gladiator.xml</upgraded>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/goron/{civ}_sumo_b
@@ -88,4 +87,8 @@
       <Z>22</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/goron/goron_gladringA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

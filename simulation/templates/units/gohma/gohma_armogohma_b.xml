@@ -1,61 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_siegecannon">
-  <Attack>
-    <Ranged>
-      <AttackName>Fire Stream</AttackName>
-      <Damage>
-	    <Crush>0</Crush>
-        <Magic>30</Magic>
-		<Siege>50</Siege>
-      </Damage>    
-      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
-      <RepeatTime>2000</RepeatTime>
-      <Splash>
-        <Damage>
-		  <Crush>0</Crush>
-          <Magic>3</Magic>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>5</Range>
-        <Shape>Circular</Shape>
-      </Splash>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Capture disable="" />
-  <Footprint replace="">
-    <Circle radius="7.0" />
-    <Height>4.5</Height>
-  </Footprint>
-  <Identity>
-    <Civ>gohma</Civ>
-    <Classes datatype="tokens">Huge GohArmogohma CasteGiant</Classes>
-    <GenericName>Armogohma</GenericName>
-    <History>A highly specialized giant Gohma, the Armogohma secretes fluid from its eye that ignites into fire. These organic siege weapons can hurl beams of fire from a distance, torching enemy defenses.</History>
-    <Icon>units/gohma/goh_armogohma.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
-    <Tooltip>Giant Creature Siege unit that can attack with fire globs from a distance.</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
-  </Identity>
-  <Promotion>
-    <Entity>units/gohma/gohma_armogohma_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/natural/armogohma_blast.xml</attack_ranged>
-      <death>voice/gohma/gohma_largeA/gohma_largeA_death.xml</death>
-      <order_attack>voice/gohma/gohma_largeA/gohma_largeA_attack.xml</order_attack>
-      <order_garrison>voice/gohma/gohma_largeA/gohma_largeA_garrison.xml</order_garrison>
-      <order_gather>voice/gohma/gohma_largeA/gohma_largeA_gather.xml</order_gather>
-      <order_repair>voice/gohma/gohma_largeA/gohma_largeA_repair.xml</order_repair>
-      <order_walk>voice/gohma/gohma_largeA/gohma_largeA_walk.xml</order_walk>
-      <run>actor/movement/gohma/gohma_crawlE.xml</run>
-      <select>voice/gohma/gohma_largeA/gohma_largeA_select.xml</select>
-      <trained>interface/alarm/alarm_create_creature.xml</trained>
-      <walk>actor/movement/gohma/gohma_crawlE.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/gohma/gohma_armogohma_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Ranged>
+            <AttackName>Fire Stream</AttackName>
+            <Damage>
+                <Crush>0</Crush>
+                <Magic>30</Magic>
+                <Siege>50</Siege>
+            </Damage>
+            <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+            <RepeatTime>2000</RepeatTime>
+            <Splash>
+                <Damage>
+                    <Crush>0</Crush>
+                    <Magic>3</Magic>
+                </Damage>
+                <FriendlyFire>false</FriendlyFire>
+                <Range>5</Range>
+                <Shape>Circular</Shape>
+            </Splash>
+            <EffectDelay>0</EffectDelay>
+        </Ranged>
+    </Attack>
+    <Capture disable=""/>
+    <Footprint replace="">
+        <Circle radius="7.0"/>
+        <Height>4.5</Height>
+    </Footprint>
+    <Identity>
+        <Civ>gohma</Civ>
+        <Classes datatype="tokens">Huge GohArmogohma CasteGiant</Classes>
+        <GenericName>Armogohma</GenericName>
+        <History>A highly specialized giant Gohma, the Armogohma secretes fluid from its eye that ignites into fire. These organic siege weapons can hurl beams of fire from a distance, torching enemy defenses.</History>
+        <Icon>units/gohma/goh_armogohma.dds</Icon>
+        <Tooltip>Giant Creature Siege unit that can attack with fire globs from a distance.</Tooltip>
+        <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+        <Requirements>
+            <Techs>phase_city</Techs>
+        </Requirements>
+    </Identity>
+    <Promotion>
+        <Entity>units/gohma/gohma_armogohma_upg</Entity>
+        <RequiredXp>9999</RequiredXp>
+    </Promotion>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/natural/armogohma_blast.xml</attack_ranged>
+            <death>voice/gohma/gohma_largeA/gohma_largeA_death.xml</death>
+            <order_attack>voice/gohma/gohma_largeA/gohma_largeA_attack.xml</order_attack>
+            <order_garrison>voice/gohma/gohma_largeA/gohma_largeA_garrison.xml</order_garrison>
+            <order_gather>voice/gohma/gohma_largeA/gohma_largeA_gather.xml</order_gather>
+            <order_repair>voice/gohma/gohma_largeA/gohma_largeA_repair.xml</order_repair>
+            <order_walk>voice/gohma/gohma_largeA/gohma_largeA_walk.xml</order_walk>
+            <run>actor/movement/gohma/gohma_crawlE.xml</run>
+            <select>voice/gohma/gohma_largeA/gohma_largeA_select.xml</select>
+            <trained>interface/alarm/alarm_create_creature.xml</trained>
+            <walk>actor/movement/gohma/gohma_crawlE.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/gohma/gohma_armogohma_b.xml</Actor>
+    </VisualActor>
 </Entity>

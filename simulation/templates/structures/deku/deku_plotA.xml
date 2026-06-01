@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_plot">
-  <Capturable disable="" />
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
@@ -11,7 +12,7 @@
   </Cost>
   <Footprint>
     <Height>8.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <Health>
     <Max>750</Max>
@@ -25,16 +26,23 @@
     <Tooltip>Construct Deku Buildings on this space.</Tooltip>
   </Identity>
   <Obstruction>
-    <Static depth="15.5" width="15.5" />
+    <Static depth="15.5" width="15.5"/>
   </Obstruction>
   <Plots>
     <IsPlot>true</IsPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <StatusBars>
     <BarHeight>0.6</BarHeight>
     <BarWidth>6.0</BarWidth>
     <HeightOffset>19.0</HeightOffset>
   </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -100,120 +108,133 @@
       <Variant>upgrading_tall</Variant>
     </TowerG>
     <TowerH>
-	 <Cost>
+      <Cost>
         <stone>200</stone>
         <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_barracksB</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Blockhouse on this plot.</Tooltip>
-      <Variant>upgrading_tall</Variant>  
+      <Variant>upgrading_tall</Variant>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
     </TowerH>
     <TowerI>
-	 <Cost>
+      <Cost>
         <wood>100</wood>
-		<stone>200</stone>
+        <stone>200</stone>
       </Cost>
       <Entity>structures/deku/deku_blacksmithB</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>45</Time>
       <Tooltip>Build a Nut Carver on this plot.</Tooltip>
       <Variant>upgrading_short</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </TowerI>
     <TowerJ>
-	<Cost>
+      <Cost>
         <metal>100</metal>
         <wood>150</wood>
       </Cost>
       <Entity>structures/deku/deku_mercs</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>45</Time>
       <Tooltip>Build a Boiling Cauldron on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </TowerJ>
     <TowerK>
-     	<Cost>
+      <Cost>
         <metal>100</metal>
         <wood>200</wood>
       </Cost>
       <Entity>structures/deku/deku_greenhouse</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Greenhouse on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </TowerK>
     <TowerL>
-	<Cost>
+      <Cost>
         <metal>200</metal>
         <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_basin</Entity>
-      <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
       <Time>45</Time>
       <Tooltip>Build a Cleansing Basin on this plot.</Tooltip>
-      <Variant>upgrading_short</Variant> 
+      <Variant>upgrading_short</Variant>
+      <Requirements>
+        <Techs>civ_choices/deku/choosehero_dekuprincess</Techs>
+      </Requirements>
     </TowerL>
     <TowerM>
-       <Cost>
+      <Cost>
         <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_stables</Entity>
-      <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Beetle Barn on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
+      <Requirements>
+        <Techs>civ_choices/deku/choosehero_dekuprincess</Techs>
+      </Requirements>
     </TowerM>
     <TowerN>
-	<Cost>
+      <Cost>
         <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_stablesB</Entity>
-      <RequiredTechnology>civ_choices/deku/choosehero_dekuking</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Menagerie on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
+      <Requirements>
+        <Techs>civ_choices/deku/choosehero_dekuking</Techs>
+      </Requirements>
     </TowerN>
-	<TowerO>
-	<Cost>
+    <TowerO>
+      <Cost>
         <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_fortress</Entity>
-      <RequiredTechnology>civ_choices/deku/choosehero_dekuking</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Build a Blockhouse on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
+      <Requirements>
+        <Techs>civ_choices/deku/choosehero_dekuking</Techs>
+      </Requirements>
     </TowerO>
     <TowerP>
-	 <Cost>
+      <Cost>
         <wood>300</wood>
       </Cost>
       <Entity>structures/deku/deku_blacksmith</Entity>
-      <RequiredTechnology>civ_choices/deku/choosehero_butler</RequiredTechnology>
       <Time>45</Time>
       <Tooltip>Build a Loggery on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
+      <Requirements>
+        <Techs>civ_choices/deku/choosehero_butler</Techs>
+      </Requirements>
     </TowerP>
     <TowerQ>
-     <Cost>
+      <Cost>
         <metal>100</metal>
         <wood>150</wood>
       </Cost>
       <Entity>structures/deku/deku_stage</Entity>
-      <RequiredTechnology>civ_choices/deku/choosehero_butler</RequiredTechnology>
       <Time>45</Time>
       <Tooltip>Build a Stage on this plot.</Tooltip>
       <Variant>upgrading_tall</Variant>
+      <Requirements>
+        <Techs>civ_choices/deku/choosehero_butler</Techs>
+      </Requirements>
     </TowerQ>
   </Upgrade>
   <VisualActor>
     <Actor>structures/deku/deku_plotA.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

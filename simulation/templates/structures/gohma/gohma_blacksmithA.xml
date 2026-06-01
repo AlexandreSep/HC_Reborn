@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="20.0" />
+    <Circle radius="20.0"/>
     <Height>10.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -23,15 +24,6 @@
     <LoadingRange>15</LoadingRange>
     <Max>1</Max>
   </GarrisonHolder>
-  <TurretHolder>
-    <TurretPoints>
-      <Archer1>
-        <X>0</X>
-        <Y>3.6</Y>
-        <Z>-2.3</Z>
-      </Archer1>
-    </TurretPoints>
-  </TurretHolder>
   <Health>
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
@@ -61,18 +53,27 @@
     <Classes datatype="tokens">-Construct Organic GohmaDen GohmaBuild Village</Classes>
     <History>The Nesting Chambers allows for the growth and improvment of Soldier Caste forms. Various upgrades for the Gohma's main battle line can be found within these twisted halls.</History>
     <Icon>structures/gohma/goh_blacksmithA.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <SpecificName>Nesting Chambers</SpecificName>
     <Tooltip>Upgrades Soldier Gohma units.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/larva_twinincentive
+    gohma/pincer_strategem
+    gohma/spinal_longtongue
+    gohma/shield_did
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_gohnestA.xml</constructed>
@@ -84,20 +85,6 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
-  <Vision>
-    <Range>32</Range>
-  </Vision>
-  <VisualActor>
-    <Actor>structures/gohma/gohma_nestingchamber.xml</Actor>
-    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gohma/larva_twinincentive
-    gohma/pincer_strategem
-    gohma/spinal_longtongue
-    gohma/shield_did
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/gohma/{civ}_larva_soldier_b
@@ -129,4 +116,20 @@
       <Z>7.5</Z>
     </SpawnOffset>
   </Trainer>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>3.6</Y>
+        <Z>-2.3</Z>
+      </Archer1>
+    </TurretPoints>
+  </TurretHolder>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_nestingchamber.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
 </Entity>

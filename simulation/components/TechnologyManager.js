@@ -307,8 +307,9 @@ TechnologyManager.prototype.CanProduce = function(templateName)
 	var cmpTempManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
 	var template = cmpTempManager.GetTemplate(templateName);
 
-	if (template.Identity && template.Identity.RequiredTechnology)
-		return this.IsTechnologyResearched(template.Identity.RequiredTechnology);
+	let requiredTechnology = GetIdentityRequiredTechnology(template.Identity);
+	if (requiredTechnology)
+		return requiredTechnology.split(/\s+/).every(tech => this.IsTechnologyResearched(tech));
 	// If there is no required technology then this entity can be produced
 	return true;
 };

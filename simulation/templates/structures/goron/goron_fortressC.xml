@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/goron/goron_fortress">
   <Auras datatype="tokens">
     structures/lavawallbig_aura_1
@@ -6,9 +7,11 @@
   <Identity>
     <Classes datatype="tokens">LavaMoat City</Classes>
     <GenericName>Stronghold (Lava Moat)</GenericName>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
-  <Upgrade disable="" />
+  <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/goron/goron_strongholdC.xml</Actor>
   </VisualActor>

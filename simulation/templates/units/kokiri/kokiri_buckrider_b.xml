@@ -1,45 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Axe</AttackName>
-    </Melee>
-  </Attack>
-  <Identity>
-    <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Large WoodArmor Deer FairyGuard BuckRider</Classes>
-    <GenericName>Buck Rider</GenericName>
-    <History>Mounted on the back of the almost legendary Kokiri Buck, these are a very fast cavalry unit armed with an axe in hand. These melee cavalry can ram into enemy infantry and are excellent at dealing with such units. When outmatched these deer are frighteningly adept at retreating and vanishing into nothingness.</History>
-    <Icon>units/kokiri/kok_buckrider.dds</Icon>
-    <Lang>kokiri</Lang>
-    <RequiredTechnology>kokiri/get_seclude</RequiredTechnology>
-    <SelectionGroupName>units/kokiri/kokiri_buckrider_b</SelectionGroupName>
-    <Tooltip>A very fast Melee Cavalry unit armed with an axe in hand. These melee cavalry can ram into enemy Infantry and are excellent at dealing with such units.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Promotion>
-    <Entity>units/kokiri/kokiri_buckrider_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/kokiri/buckrider/buckrider_death.xml</death>
-      <order_attack>voice/kokiri/buckrider/buckrider_attack.xml</order_attack>
-      <order_garrison>voice/kokiri/buckrider/buckrider_garrison.xml</order_garrison>
-      <order_gather>voice/kokiri/buckrider/buckrider_gather.xml</order_gather>
-      <order_repair>voice/kokiri/buckrider/buckrider_repair.xml</order_repair>
-      <order_walk>voice/kokiri/buckrider/buckrider_walk.xml</order_walk>
-      <run>actor/movement/horse/horse_footsteps.xml</run>
-      <select>voice/kokiri/buckrider/buckrider_select.xml</select>
-      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
-      <walk>actor/movement/horse/horse_footsteps.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <RunMultiplier>3</RunMultiplier>
-    <WalkSpeed>16</WalkSpeed>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/kokiri/kokiri_buck_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Axe</AttackName>
+        </Melee>
+    </Attack>
+    <Identity>
+        <Civ>kokiri</Civ>
+        <Classes datatype="tokens">Large WoodArmor Deer FairyGuard BuckRider</Classes>
+        <GenericName>Buck Rider</GenericName>
+        <History>Mounted on the back of the almost legendary Kokiri Buck, these are a very fast cavalry unit armed with an axe in hand. These melee cavalry can ram into enemy infantry and are excellent at dealing with such units. When outmatched these deer are frighteningly adept at retreating and vanishing into nothingness.</History>
+        <Icon>units/kokiri/kok_buckrider.dds</Icon>
+        <Lang>kokiri</Lang>
+        <SelectionGroupName>units/kokiri/kokiri_buckrider_b</SelectionGroupName>
+        <Tooltip>A very fast Melee Cavalry unit armed with an axe in hand. These melee cavalry can ram into enemy Infantry and are excellent at dealing with such units.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>kokiri/get_seclude</Techs>
+        </Requirements>
+    </Identity>
+    <Promotion>
+        <Entity>units/kokiri/kokiri_buckrider_upg</Entity>
+        <RequiredXp>9999</RequiredXp>
+    </Promotion>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/kokiri/buckrider/buckrider_death.xml</death>
+            <order_attack>voice/kokiri/buckrider/buckrider_attack.xml</order_attack>
+            <order_garrison>voice/kokiri/buckrider/buckrider_garrison.xml</order_garrison>
+            <order_gather>voice/kokiri/buckrider/buckrider_gather.xml</order_gather>
+            <order_repair>voice/kokiri/buckrider/buckrider_repair.xml</order_repair>
+            <order_walk>voice/kokiri/buckrider/buckrider_walk.xml</order_walk>
+            <run>actor/movement/horse/horse_footsteps.xml</run>
+            <select>voice/kokiri/buckrider/buckrider_select.xml</select>
+            <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+            <walk>actor/movement/horse/horse_footsteps.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <RunMultiplier>3</RunMultiplier>
+        <WalkSpeed>16</WalkSpeed>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/kokiri/kokiri_buck_b.xml</Actor>
+    </VisualActor>
 </Entity>

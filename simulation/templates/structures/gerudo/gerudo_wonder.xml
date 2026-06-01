@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_wonder">
   <Cost>
     <BuildTime>330</BuildTime>
@@ -9,7 +10,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="40.0" />
+    <Circle radius="40.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -25,12 +26,18 @@
     <GenericName>Desert Colossus</GenericName>
     <History>Standing tall and defiant against the harsh winds of the Haunted Wasteland, the Desert Colossus is a true beacon of Gerudo masonry and engineering. Built in the likeness of the First Sage of Spirits, Kovaloo, the Desert Colossus guards the entrance to the Spirit Temple: a place of meditation, reflection, and communion with the souls of the deceased.</History>
     <Icon>structures/gerudo/ger_colossus.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>The Gerudo Wonder, allows you to summon Twinrova.</Tooltip>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="60.0" width="60.0" />
+    <Static depth="60.0" width="60.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage>
@@ -65,14 +72,6 @@
     <Radius>52</Radius>
     <Root>false</Root>
   </TerritoryInfluence>
-  <VisualActor>
-    <Actor>structures/gerudo/gerudo_wonder.xml</Actor>
-    <FoundationActor>structures/gerudo/gerudo_scaffoldJ.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/gerudo/{civ}_titan_twinrova</Entities>
@@ -100,4 +99,8 @@
       <Z>30</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_wonder.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldJ.xml</FoundationActor>
+  </VisualActor>
 </Entity>

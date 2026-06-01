@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -22,20 +23,28 @@
     <GenericName>Nut Carvers</GenericName>
     <History>Deku Nuts were a great source of food for the Scrubs, though their hard shells often went to waste. It seems the Scrubs caught on, and they would purposely grow extraordinaily large Deku Nuts in order to create a firm defensive shell that could cover their entire bodies.</History>
     <Icon>structures/deku/dek_nutcarver.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Upgrades Deku Scrub armor and attack methods.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">deku/attack_nuts_01
+    deku/armor_dek_all_01
+    deku/armor_dek_all_02
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -48,20 +57,14 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
   <VisualActor>
     <Actor>structures/deku/deku_nutcarversA.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">deku/attack_nuts_01
-    deku/armor_dek_all_01
-    deku/armor_dek_all_02
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

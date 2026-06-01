@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/bar_aura
@@ -16,7 +17,7 @@
   </Cost>
   <Footprint>
     <Height>15.0</Height>
-    <Square depth="23.0" width="23.0" />
+    <Square depth="23.0" width="23.0"/>
   </Footprint>
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
@@ -26,6 +27,37 @@
     <LoadingRange>6</LoadingRange>
     <Max>4</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_oasisA</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>0</MaxCopies>
+      <MinPop>0</MinPop>
+    </AIBuild>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">Town</Classes>
+    <GenericName>Civilian</GenericName>
+    <History>Serving everything from Keaton Cider to Lon Lon Milk, the local Bar was often a hotbed of activity for Gerudo civilians. After a long day's work, a Bar went to great lengths to improve the populace's happiness.</History>
+    <Icon>structures/gerudo/ger_bar.dds</Icon>
+    <SpecificName>Gerudo Bar</SpecificName>
+    <Tooltip>Gerudo Bar that serves drinks to patrons.</Tooltip>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/gerudo/choosehero_urbosa</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="23.0" width="23.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -55,37 +87,8 @@
       </Archer5>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>1500</Max>
-    <SpawnEntityOnDeath>rubble/debris_gerudo_oasisA</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>0</MaxCopies>
-      <MinPop>0</MinPop>
-    </AIBuild>
-    <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Town</Classes>
-    <GenericName>Civilian</GenericName>
-    <History>Serving everything from Keaton Cider to Lon Lon Milk, the local Bar was often a hotbed of activity for Gerudo civilians. After a long day's work, a Bar went to great lengths to improve the populace's happiness.</History>
-    <Icon>structures/gerudo/ger_bar.dds</Icon>
-    <RequiredTechnology>civ_choices/gerudo/choosehero_urbosa</RequiredTechnology>
-    <SpecificName>Gerudo Bar</SpecificName>
-    <Tooltip>Gerudo Bar that serves drinks to patrons.</Tooltip>
-    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="23.0" width="23.0" />
-  </Obstruction>
   <VisualActor>
     <Actor>structures/gerudo/gerudo_barA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

@@ -1002,6 +1002,9 @@ var g_Commands = {
 
     // Send a Hyrule Conquest AI Dialog message to all the players specified
     "AIDialog": function (player, cmd, data) {
+        if (!cmd.dialogue || !String(cmd.dialogue).trim())
+            return;
+
         let DialogData =
         {
             "type": "AIDialog",
@@ -1231,7 +1234,18 @@ function TryConstructBuilding(player, cmpPlayer, controlAllUnits, cmd)
 	// Check whether we can control these units
 	var entities = FilterEntityList(cmd.entities, player, controlAllUnits);
 	if (!entities.length)
+	{
+	/*	warn("[HC_DEBUG_BUILD] construct rejected no controlled entities player=" + player +
+			" template=" + cmd.template +
+			" cmdEntities=" + uneval(cmd.entities));*/
 		return false;
+	}
+
+	/*warn("[HC_DEBUG_BUILD] construct requested player=" + player +
+		" template=" + cmd.template +
+		" builders=" + uneval(entities) +
+		" autorepair=" + !!cmd.autorepair +
+		" queued=" + !!cmd.queued);*/
 
 	var foundationTemplate = "foundation|" + cmd.template;
 
@@ -1288,6 +1302,10 @@ function TryConstructBuilding(player, cmpPlayer, controlAllUnits, cmd)
 		var ret = cmpBuildRestrictions.CheckPlacement();
 		if (!ret.success)
 		{
+			/*warn("[HC_DEBUG_BUILD] placement failed player=" + player +
+				" template=" + cmd.template +
+				" foundation=" + ent +
+				" message=" + ret.message);*/
 			if (g_DebugCommands)
 				warn("Invalid command: build restrictions check failed with '"+ret.message+"' for player "+player+": "+uneval(cmd));
 
@@ -1309,6 +1327,10 @@ function TryConstructBuilding(player, cmpPlayer, controlAllUnits, cmd)
 	var cmpEntityLimits = QueryPlayerIDInterface(player, IID_EntityLimits);
 	if (cmpEntityLimits && !cmpEntityLimits.AllowedToBuild(cmpBuildRestrictions.GetCategory()))
 	{
+		/*warn("[HC_DEBUG_BUILD] entity limit failed player=" + player +
+			" template=" + cmd.template +
+			" foundation=" + ent +
+			" category=" + cmpBuildRestrictions.GetCategory());*/
 		if (g_DebugCommands)
 			warn("Invalid command: build limits check failed for player "+player+": "+uneval(cmd));
 
@@ -1321,6 +1343,9 @@ function TryConstructBuilding(player, cmpPlayer, controlAllUnits, cmd)
 	var cmpTechnologyManager = QueryPlayerIDInterface(player, IID_TechnologyManager);
 	if (cmpTechnologyManager && !cmpTechnologyManager.CanProduce(cmd.template))
 	{
+		/*warn("[HC_DEBUG_BUILD] technology failed player=" + player +
+			" template=" + cmd.template +
+			" foundation=" + ent);*/
 		if (g_DebugCommands)
 			warn("Invalid command: required technology check failed for player "+player+": "+uneval(cmd));
 
@@ -1343,6 +1368,10 @@ function TryConstructBuilding(player, cmpPlayer, controlAllUnits, cmd)
 
 	if (!cmpPlayer.TrySubtractResources(costs))
 	{
+		/*warn("[HC_DEBUG_BUILD] cost failed player=" + player +
+			" template=" + cmd.template +
+			" foundation=" + ent +
+			" costs=" + uneval(costs));*/
 		if (g_DebugCommands)
 			warn("Invalid command: building cost check failed for player "+player+": "+uneval(cmd));
 
@@ -1358,6 +1387,10 @@ function TryConstructBuilding(player, cmpPlayer, controlAllUnits, cmd)
 	// Initialise the foundation
 	var cmpFoundation = Engine.QueryInterface(ent, IID_Foundation);
 	cmpFoundation.InitialiseConstruction(cmd.template);
+	/*warn("[HC_DEBUG_BUILD] foundation created player=" + player +
+		" template=" + cmd.template +
+		" foundation=" + ent +
+		" builders=" + uneval(entities));*/
 
 	// send Metadata info if any
 	if (cmd.metadata)
@@ -1366,6 +1399,9 @@ function TryConstructBuilding(player, cmpPlayer, controlAllUnits, cmd)
 	// Tell the units to start building this new entity
 	if (cmd.autorepair)
 	{
+		/*warn("[HC_DEBUG_BUILD] autorepair command player=" + player +
+			" target=" + ent +
+			" builders=" + uneval(entities));*/
 		ProcessCommand(player, {
 			"type": "repair",
 			"entities": entities,

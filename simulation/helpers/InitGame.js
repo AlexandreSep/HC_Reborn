@@ -79,7 +79,11 @@ function InitGame(settings)
 			Engine.QueryInterface(cmpPlayer.entity, IID_TechnologyManager)?.ResearchTechnology(cmpPlayer.template.SharedLosTech);
 	}
 	if (settings.WorldPopulationCap)
-		Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager).SetMaxWorldPopulation(settings.WorldPopulationCap);
+	{
+		const cmpPlayerManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager);
+		if (cmpPlayerManager.SetMaxWorldPopulation)
+			cmpPlayerManager.SetMaxWorldPopulation(settings.WorldPopulationCap);
+	}
 
 	// Update the grid with all entities created for the map init.
 	Engine.QueryInterface(SYSTEM_ENTITY, IID_Pathfinder).UpdateGrid();

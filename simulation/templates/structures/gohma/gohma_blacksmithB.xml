@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="25.0" />
+    <Circle radius="25.0"/>
     <Height>10.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -23,15 +24,6 @@
     <LoadingRange>15</LoadingRange>
     <Max>1</Max>
   </GarrisonHolder>
-  <TurretHolder>
-    <TurretPoints>
-      <Archer1>
-        <X>0</X>
-        <Y>7.6</Y>
-        <Z>-5.4</Z>
-      </Archer1>
-    </TurretPoints>
-  </TurretHolder>
   <Health>
     <Max>2000</Max>
     <SpawnEntityOnDeath>rubble/destruct_gohmaA</SpawnEntityOnDeath>
@@ -62,17 +54,27 @@
     <GenericName>Large Birthing Chamber</GenericName>
     <History>These massive and oversized chambers allow for the growth of Giant Caste Gohma forms. Various improvements for these forms can be researched within this huge nest.</History>
     <Icon>structures/gohma/goh_blacksmithB.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Upgrades Giant Gohma units.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="45.0" width="45.0" />
+    <Static depth="45.0" width="45.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gohma/larva_acidjelly
+    gohma/longlegs_hydrajoints
+    gohma/tank_doubleclaws
+    gohma/armo_contbeam
+
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_gohnestA.xml</constructed>
@@ -84,21 +86,6 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
-  <Vision>
-    <Range>32</Range>
-  </Vision>
-  <VisualActor>
-    <Actor>structures/gohma/gohma_birthingchamber.xml</Actor>
-    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gohma/larva_acidjelly
-    gohma/longlegs_hydrajoints
-    gohma/tank_doubleclaws
-    gohma/armo_contbeam
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/gohma/{civ}_larva_giant_b
@@ -130,4 +117,20 @@
       <Z>8.7</Z>
     </SpawnOffset>
   </Trainer>
+  <TurretHolder>
+    <TurretPoints>
+      <Archer1>
+        <X>0</X>
+        <Y>7.6</Y>
+        <Z>-5.4</Z>
+      </Archer1>
+    </TurretPoints>
+  </TurretHolder>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/gohma/gohma_birthingchamber.xml</Actor>
+    <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
+  </VisualActor>
 </Entity>

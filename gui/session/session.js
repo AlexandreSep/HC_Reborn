@@ -21,7 +21,7 @@ var g_Menu;
 var g_MiniMapPanel;
 var g_NetworkStatusOverlay;
 var g_NetworkDelayOverlay;
-var g_ObjectivesDialog;
+var g_MatchSettingsDialog;
 var g_OutOfSyncNetwork;
 var g_OutOfSyncReplay;
 var g_PanelEntityManager;
@@ -221,6 +221,12 @@ function GetTemplateData(templateName, player)
 	if (!(templateName in g_TemplateData))
 	{
 		let template = Engine.GuiInterfaceCall("GetTemplateData", { "templateName": templateName, "player": player });
+		if (!template)
+		{
+			warn("GetTemplateData failed for template '" + templateName + "'.");
+			g_TemplateData[templateName] = undefined;
+			return undefined;
+		}
 		translateObjectKeys(template, ["specific", "generic", "tooltip"]);
 		g_TemplateData[templateName] = deepfreeze(template);
 	}
@@ -290,11 +296,11 @@ function init(initData, hotloadData)
 	g_DeveloperOverlay = new DeveloperOverlay(g_PlayerViewControl, g_Selection);
 	g_DiplomacyDialog = new DiplomacyDialog(g_PlayerViewControl, g_DiplomacyColors);
 	g_GameSpeedControl = new GameSpeedControl(g_PlayerViewControl);
+	g_MatchSettingsDialog = new MatchSettingsDialog(g_PlayerViewControl, mapCache);
 	g_Menu = new Menu(g_PauseControl, g_PlayerViewControl, g_Chat);
 	g_MiniMapPanel = new MiniMapPanel(g_PlayerViewControl, g_DiplomacyColors, g_WorkerTypes);
 	g_NetworkStatusOverlay = new NetworkStatusOverlay();
 	g_NetworkDelayOverlay = new NetworkDelayOverlay();
-	g_ObjectivesDialog = new ObjectivesDialog(g_PlayerViewControl, mapCache);
 	g_OutOfSyncNetwork = new OutOfSyncNetwork();
 	g_OutOfSyncReplay = new OutOfSyncReplay();
 	g_PanelEntityManager = new PanelEntityManager(g_PlayerViewControl, g_Selection, g_PanelEntityOrder);
@@ -304,7 +310,7 @@ function init(initData, hotloadData)
 	g_RangeOverlayManager = new RangeOverlayManager(g_Selection);
 	g_ResearchProgress = new ResearchProgress(g_PlayerViewControl, g_Selection);
 	g_TradeDialog = new TradeDialog(g_PlayerViewControl);
-	g_TopPanel = new TopPanel(g_PlayerViewControl, g_DiplomacyDialog, g_TradeDialog, g_ObjectivesDialog, g_GameSpeedControl);
+	g_TopPanel = new TopPanel(g_PlayerViewControl, g_DiplomacyDialog, g_TradeDialog, g_MatchSettingsDialog, g_GameSpeedControl);
 	g_TimeNotificationOverlay = new TimeNotificationOverlay(g_PlayerViewControl);
 
 	initBatchTrain();
@@ -519,7 +525,7 @@ function closeOpenDialogs()
 	g_Menu.close();
 	g_Chat.closePage();
 	g_DiplomacyDialog.close();
-	g_ObjectivesDialog.close();
+	g_MatchSettingsDialog.close();
 	g_TradeDialog.close();
 }
 

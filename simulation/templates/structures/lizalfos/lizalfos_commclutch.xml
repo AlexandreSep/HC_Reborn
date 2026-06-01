@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/commclutch_aura_1
@@ -17,7 +18,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="30.0" width="30.0" />
+    <Square depth="30.0" width="30.0"/>
   </Footprint>
   <Health>
     <Max>2000</Max>
@@ -32,30 +33,32 @@
     <Classes datatype="tokens">Town</Classes>
     <GenericName>Community Clutch</GenericName>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-	<History>Many Lizalfos families would join together to monitor and protect eggs if they happened to lay them in the same season. With a bit of regulation large Lizalfos cities would synch their mating habits so that all females would lay eggs at roughly the same time. The growing children would then be placed in a well guarded chamber.</History>
+    <History>Many Lizalfos families would join together to monitor and protect eggs if they happened to lay them in the same season. With a bit of regulation large Lizalfos cities would synch their mating habits so that all females would lay eggs at roughly the same time. The growing children would then be placed in a well guarded chamber.</History>
     <Icon>structures/lizalfos/liz_commclutch.dds</Icon>
-    <RequiredTechnology>civ_choices/lizalfos/choosehero_nardu</RequiredTechnology>
     <Tooltip>Improves the rate that units are trained at nearby structures.</Tooltip>
     <VisibleClasses datatype="tokens">Special</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/lizalfos/choosehero_nardu</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="28.0" width="28.0" />
+    <Static depth="28.0" width="28.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/lizalfos/complete_clutch.xml</constructed>
       <select>interface/select/building/lizalfos/sel_clutch.xml</select>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/lizalfos/lizalfos_commclutchA.xml</Actor>
     <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_S.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

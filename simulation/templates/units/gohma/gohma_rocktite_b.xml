@@ -1,48 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_monster">
-  <Attack>
-    <Melee>
-      <AttackName>Claws</AttackName>
-    </Melee>
-  </Attack>
-  <Footprint replace="">
-    <Circle radius="5.0" />
-    <Height>4.5</Height>
-  </Footprint>
-  <Identity>
-    <Civ>gohma</Civ>
-    <Classes datatype="tokens">Medium</Classes>
-    <GenericName>Rocktite</GenericName>
-    <History>These rare Gohma are found deep underground and occasionally summoned to the surface. Their rocky exterior makes them particularly resistant to damage.</History>
-    <Icon>units/gohma/goh_rocktite.dds</Icon>
-    <Lang>gohma</Lang>
-    <RequiredTechnology>civ_choices/gohma/choosehero_matriarch</RequiredTechnology>
-    <SelectionGroupName>units/gohma/gohma_shieldgohma_b</SelectionGroupName>
-    <Tooltip>Monster unit with durable armor. It can summon Burst Gohma to assist in defending itself and sieging</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
-      <death>voice/gohma/gohma_largeA/gohma_largeA_death.xml</death>
-      <order_attack>voice/gohma/gohma_largeA/gohma_largeA_attack.xml</order_attack>
-      <order_garrison>voice/gohma/gohma_largeA/gohma_largeA_garrison.xml</order_garrison>
-      <order_gather>voice/gohma/gohma_largeA/gohma_largeA_gather.xml</order_gather>
-      <order_repair>voice/gohma/gohma_largeA/gohma_largeA_repair.xml</order_repair>
-      <order_walk>voice/gohma/gohma_largeA/gohma_largeA_walk.xml</order_walk>
-      <run>actor/movement/gohma/gohma_crawlC.xml</run>
-      <select>voice/gohma/gohma_largeA/gohma_largeA_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/movement/gohma/gohma_crawlC.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <ProductionQueue/>
-  <Trainer>
-    <BatchTimeModifier>2</BatchTimeModifier>
-    <Entities datatype="tokens">
+    <Attack>
+        <Melee>
+            <AttackName>Claws</AttackName>
+        </Melee>
+    </Attack>
+    <Footprint replace="">
+        <Circle radius="5.0"/>
+        <Height>4.5</Height>
+    </Footprint>
+    <Identity>
+        <Civ>gohma</Civ>
+        <Classes datatype="tokens">Medium</Classes>
+        <GenericName>Rocktite</GenericName>
+        <History>These rare Gohma are found deep underground and occasionally summoned to the surface. Their rocky exterior makes them particularly resistant to damage.</History>
+        <Icon>units/gohma/goh_rocktite.dds</Icon>
+        <Lang>gohma</Lang>
+        <SelectionGroupName>units/gohma/gohma_shieldgohma_b</SelectionGroupName>
+        <Tooltip>Monster unit with durable armor. It can summon Burst Gohma to assist in defending itself and sieging</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/gohma/choosehero_matriarch</Techs>
+        </Requirements>
+    </Identity>
+    <ProductionQueue/>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/gohma_largeA_bite.xml</attack_melee>
+            <death>voice/gohma/gohma_largeA/gohma_largeA_death.xml</death>
+            <order_attack>voice/gohma/gohma_largeA/gohma_largeA_attack.xml</order_attack>
+            <order_garrison>voice/gohma/gohma_largeA/gohma_largeA_garrison.xml</order_garrison>
+            <order_gather>voice/gohma/gohma_largeA/gohma_largeA_gather.xml</order_gather>
+            <order_repair>voice/gohma/gohma_largeA/gohma_largeA_repair.xml</order_repair>
+            <order_walk>voice/gohma/gohma_largeA/gohma_largeA_walk.xml</order_walk>
+            <run>actor/movement/gohma/gohma_crawlC.xml</run>
+            <select>voice/gohma/gohma_largeA/gohma_largeA_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/movement/gohma/gohma_crawlC.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <Trainer>
+        <BatchTimeModifier>2</BatchTimeModifier>
+        <Entities datatype="tokens">
 		units/gohma/gohma_burst_b
 	</Entities>
-  </Trainer>
-  <VisualActor>
-    <Actor>units/gohma/gohma_rocktite_b.xml</Actor>
-  </VisualActor>
+    </Trainer>
+    <VisualActor>
+        <Actor>units/gohma/gohma_rocktite_b.xml</Actor>
+    </VisualActor>
 </Entity>

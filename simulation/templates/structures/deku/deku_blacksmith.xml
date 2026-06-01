@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <Health>
     <Max>2000</Max>
@@ -22,20 +23,28 @@
     <GenericName>Loggery</GenericName>
     <History>The Scrubs were notable for their highly organized and boxy cities built from well crafted and painted logs. Scrubs had a knack for growing, cutting down, and using the forests around them rather efficiently to do just that.</History>
     <Icon>structures/deku/dek_loggery.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Builds Deku Siege units.</Tooltip>
     <VisibleClasses datatype="tokens">Military</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">deku/siege_salvage
+    deku/building_sorosalt
+    deku/building_logcons
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_siegeworks.xml</constructed>
@@ -48,20 +57,14 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
   <VisualActor>
     <Actor>structures/deku/deku_loggeryA.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">deku/siege_salvage
-    deku/building_sorosalt
-    deku/building_logcons
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

@@ -1,4 +1,4 @@
-<Entity parent="template_entity_full">
+﻿<Entity parent="template_entity_full">
   <Auras datatype="tokens">
     units/shrapnel_aura_1
   </Auras>
@@ -14,6 +14,7 @@
   </Cost>
   <Decay>
     <Active>false</Active>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkAccel>0.01</SinkAccel>
     <SinkRate>0.0</SinkRate>

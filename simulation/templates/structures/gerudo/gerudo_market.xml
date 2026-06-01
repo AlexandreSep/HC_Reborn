@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>15.0</Height>
-    <Square depth="50.0" width="67.0" />
+    <Square depth="50.0" width="67.0"/>
   </Footprint>
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
@@ -43,17 +44,27 @@
     <GenericName>Barter Outlet</GenericName>
     <History>A series of shops that sold various goods and services within its host settlement, increasing both its economy and the happiness of people within. Trade was crucial to the survial of the Gerudo, and without these markets the civilization would have certainly died out by now.</History>
     <Icon>structures/gerudo/ger_market.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="50.0" width="67.0" />
+    <Static depth="50.0" width="67.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">unlock_shared_los
+      gerudo/trade_vegesurplus
+      gerudo/trade_camel_aid
+      gerudo/trade_isha_trinket
+
+</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage>
@@ -92,18 +103,6 @@
       <select>interface/select/building/sel_market.xml</select>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/gerudo/gerudo_marketA.xml</Actor>
-    <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">unlock_shared_los
-      gerudo/trade_vegesurplus
-      gerudo/trade_camel_aid
-      gerudo/trade_isha_trinket
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">units/{civ}_trader_b
@@ -132,4 +131,8 @@
       <Z>20</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_marketA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldF.xml</FoundationActor>
+  </VisualActor>
 </Entity>

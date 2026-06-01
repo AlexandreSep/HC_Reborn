@@ -57,6 +57,7 @@
   <Decay>
     <Active>false</Active>
     <SinkingAnim>false</SinkingAnim>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkRate>3.0</SinkRate>
     <SinkAccel>9.8</SinkAccel>

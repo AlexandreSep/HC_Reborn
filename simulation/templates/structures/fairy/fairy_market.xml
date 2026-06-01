@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <AutoBuildable>
     <Rate>1</Rate>
@@ -15,7 +16,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="25.0" />
+    <Circle radius="25.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -38,17 +39,25 @@
     <GenericName>Meeting Spring</GenericName>
     <History>There are stories from time to time of a Fairy revealing the location of their home to outsiders. Many would flock to these springs in hope of gaining the favor of Fairies, bringing gifts and services as offerings.</History>
     <Icon>structures/fairy/fai_meetingspring_spring.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies. Also allows the Fairies to hire Mercenaries.</Tooltip>
     <VisibleClasses datatype="tokens">Economig</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/trade_fairyfavor
+    fairy/trade_fairykiss
+
+</Technologies>
+  </Researcher>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -64,16 +73,6 @@
       <select>interface/select/building/fairy/sel_meetingspring.xml</select>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/fairy/fairy_meetingspringA_spring.xml</Actor>
-    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">fairy/trade_fairyfavor
-    fairy/trade_fairykiss
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/merc_forestthief_b
     units/merc_pikku_b
@@ -103,4 +102,8 @@
       <Z>20</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/fairy/fairy_meetingspringA_spring.xml</Actor>
+    <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
+  </VisualActor>
 </Entity>

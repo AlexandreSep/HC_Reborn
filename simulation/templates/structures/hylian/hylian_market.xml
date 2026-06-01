@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
@@ -13,7 +14,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="25.0" />
+    <Circle radius="25.0"/>
     <Height>5.0</Height>
   </Footprint>
   <Health>
@@ -26,17 +27,26 @@
     <GenericName>Kingdom Market Plaza</GenericName>
     <History>The center of any Kingdom city's economy. Market Plazas are bustling with activity and engaged in trade with many foreign powers and neighbors.</History>
     <Icon>structures/hylian/hyl_market.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="43.0" width="43.0" />
+    <Static depth="43.0" width="43.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">culture_civilized/postman_network
+      hylian/trade_hateno_dyes
+    hylian/trade_malo_mart
+
+</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage>
@@ -71,17 +81,6 @@
     <Root>true</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
-  <VisualActor>
-    <Actor>structures/hylian/hylian_marketA.xml</Actor>
-    <FoundationActor>structures/hylian/hylian_constA.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">culture_civilized/postman_network
-      hylian/trade_hateno_dyes
-    hylian/trade_malo_mart
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">
     units/{civ}_trader_b
@@ -110,4 +109,8 @@
       <Z>0</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_marketA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_constA.xml</FoundationActor>
+  </VisualActor>
 </Entity>

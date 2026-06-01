@@ -1,10 +1,6 @@
-var PlayerID = -1;
+globalThis.PlayerID = -1;
 
-var API3 = (function() {
-
-var m = {};
-
-m.BaseAI = function(settings)
+export function BaseAI(settings)
 {
 	if (!settings)
 		return;
@@ -13,10 +9,10 @@ m.BaseAI = function(settings)
 
 	// played turn, in case you don't want the AI to play every turn.
 	this.turn = 0;
-};
+}
 
 /** Return a simple object (using no classes etc) that will be serialized into saved games */
-m.BaseAI.prototype.Serialize = function()
+BaseAI.prototype.Serialize = function()
 {
 	return {};
 };
@@ -25,12 +21,12 @@ m.BaseAI.prototype.Serialize = function()
  * Called after the constructor when loading a saved game, with 'data' being
  * whatever Serialize() returned
  */
-m.BaseAI.prototype.Deserialize = function(data, sharedScript)
+BaseAI.prototype.Deserialize = function(data, sharedScript)
 {
 	this.isDeserialized = true;
 };
 
-m.BaseAI.prototype.Init = function(state, playerID, sharedAI)
+BaseAI.prototype.Init = function(state, playerID, sharedAI)
 {
 	PlayerID = playerID;
 
@@ -46,11 +42,11 @@ m.BaseAI.prototype.Init = function(state, playerID, sharedAI)
 };
 
 /** AIs override this function */
-m.BaseAI.prototype.CustomInit = function()
+BaseAI.prototype.CustomInit = function()
 {
 };
 
-m.BaseAI.prototype.HandleMessage = function(state, playerID, sharedAI)
+BaseAI.prototype.HandleMessage = function(state, playerID, sharedAI)
 {
 	PlayerID = playerID;
 	this.events = sharedAI.events;
@@ -65,16 +61,11 @@ m.BaseAI.prototype.HandleMessage = function(state, playerID, sharedAI)
 };
 
 /** AIs override this function */
-m.BaseAI.prototype.OnUpdate = function()
+BaseAI.prototype.OnUpdate = function()
 {
 };
 
-m.BaseAI.prototype.chat = function(message)
+BaseAI.prototype.chat = function(message)
 {
 	Engine.PostCommand(PlayerID, { "type": "aichat", "message": message });
 };
-
-return m;
-
-}());
-

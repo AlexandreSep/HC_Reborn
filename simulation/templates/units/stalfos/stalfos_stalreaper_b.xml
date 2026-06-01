@@ -1,42 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_mage_heavy">
-  <Attack>
-    <Ranged>
-      <AttackName>Blue Fire</AttackName>
-      <Damage>
-        <Siege>50</Siege>
-      </Damage>
-      <MaxRange>100</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Structures</PreferredClasses>
-    </Ranged>
-  </Attack>
-  <Identity>
-    <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Large Fire -Organic Undead</Classes>
-    <GenericName>Stalreaper</GenericName>
-    <History>In some cultures these undead mages are known as the Blue Stalfos, but in all myths they play the same role: reaping the souls of the living to add to their growing armies. The Stalreapers seem to be powerful mages with command over Blue Fire, and perhaps were well studied war wizards during their old lifetimes. They can torch just about anything with their burning attacks, as well as defend themselves with their scythes in a melee.</History>
-    <Icon>units/stalfos/sta_stalreaper.dds</Icon>
-    <SelectionGroupName>units/stalfos/stalfos_stalreaper_b</SelectionGroupName>
-    <RequiredTechnology>civ_choices/stalfos/choosehero_deathsword</RequiredTechnology>
-    <Tooltip>Hovering Mage unit that attacks enemies with blue fireballs from a distance.</Tooltip>
-    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_impact_ranged>attack/magic/immortal_fire_impact.xml</attack_impact_ranged>
-      <attack_ranged>attack/magic/stalreaper_fireball.xml</attack_ranged>
-      <death>voice/stalfos/stalreaper/stalreaper_death.xml</death>
-      <order_attack>voice/stalfos/stalreaper/stalreaper_attack.xml</order_attack>
-      <order_garrison>voice/stalfos/stalreaper/stalreaper_garrison.xml</order_garrison>
-      <order_gather>voice/stalfos/stalreaper/stalreaper_gather.xml</order_gather>
-      <order_repair>voice/stalfos/stalreaper/stalreaper_repair.xml</order_repair>
-      <order_walk>voice/stalfos/stalreaper/stalreaper_walk.xml</order_walk>
-      <run>actor/movement/immortal/immortal_hover.xml</run>
-      <select>voice/stalfos/stalreaper/stalreaper_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/movement/immortal/immortal_hover.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/stalfos/stalfos_deathstal_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Ranged>
+            <AttackName>Blue Fire</AttackName>
+            <Damage>
+                <Siege>50</Siege>
+            </Damage>
+            <MaxRange>100</MaxRange>
+            <PreferredClasses datatype="tokens">Infantry Structures</PreferredClasses>
+        </Ranged>
+    </Attack>
+    <Identity>
+        <Civ>stalfos</Civ>
+        <Classes datatype="tokens">Large Fire -Organic Undead</Classes>
+        <GenericName>Stalreaper</GenericName>
+        <History>In some cultures these undead mages are known as the Blue Stalfos, but in all myths they play the same role: reaping the souls of the living to add to their growing armies. The Stalreapers seem to be powerful mages with command over Blue Fire, and perhaps were well studied war wizards during their old lifetimes. They can torch just about anything with their burning attacks, as well as defend themselves with their scythes in a melee.</History>
+        <Icon>units/stalfos/sta_stalreaper.dds</Icon>
+        <SelectionGroupName>units/stalfos/stalfos_stalreaper_b</SelectionGroupName>
+        <Tooltip>Hovering Mage unit that attacks enemies with blue fireballs from a distance.</Tooltip>
+        <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/stalfos/choosehero_deathsword</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_impact_ranged>attack/magic/immortal_fire_impact.xml</attack_impact_ranged>
+            <attack_ranged>attack/magic/stalreaper_fireball.xml</attack_ranged>
+            <death>voice/stalfos/stalreaper/stalreaper_death.xml</death>
+            <order_attack>voice/stalfos/stalreaper/stalreaper_attack.xml</order_attack>
+            <order_garrison>voice/stalfos/stalreaper/stalreaper_garrison.xml</order_garrison>
+            <order_gather>voice/stalfos/stalreaper/stalreaper_gather.xml</order_gather>
+            <order_repair>voice/stalfos/stalreaper/stalreaper_repair.xml</order_repair>
+            <order_walk>voice/stalfos/stalreaper/stalreaper_walk.xml</order_walk>
+            <run>actor/movement/immortal/immortal_hover.xml</run>
+            <select>voice/stalfos/stalreaper/stalreaper_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/movement/immortal/immortal_hover.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/stalfos/stalfos_deathstal_b.xml</Actor>
+    </VisualActor>
 </Entity>

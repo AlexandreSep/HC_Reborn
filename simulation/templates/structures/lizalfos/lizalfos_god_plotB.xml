@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_plot">
-  <Battalion disable="" />
-  <Capturable disable="" />
+  <Battalion disable=""/>
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>100</BuildTime>
     <Resources>
@@ -11,7 +12,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="12.0" />
+    <Circle radius="12.0"/>
     <Height>15.0</Height>
   </Footprint>
   <Health>
@@ -24,11 +25,13 @@
     <GenericName>Deity Alcove</GenericName>
     <History>A space for the Lizalfos to place a stone idol of one of their gods.</History>
     <Icon>structures/lizalfos/liz_deity.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>A space for the Lizalfos to place a stone idol of one of their gods.</Tooltip>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.5" width="15.5" />
+    <Static depth="15.5" width="15.5"/>
   </Obstruction>
   <Plots>
     <IsPlot>true</IsPlot>
@@ -37,8 +40,11 @@
     <Entity>structures/lizalfos/lizalfos_deity_farosh</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <Selectable>
-    <EditorOnly />
+    <EditorOnly/>
     <Overlay>
       <Outline>
         <LineTexture>outline_border.png</LineTexture>
@@ -47,14 +53,11 @@
       </Outline>
     </Overlay>
   </Selectable>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/goron/goron_plot_smallA.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

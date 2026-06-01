@@ -1,16 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/hylian/hylian_scout_cavalry">
-  <Identity>
-    <Classes datatype="tokens">-ScoutCavalry LightCavalry Soldier</Classes>
-    <GenericName>Light Cavalry</GenericName>
-    <History>These mounted incarnations of the Kingdom Infantry add much-needed speed and range. Armed with a spear, Kingdom Cavalry are light, but swift, and can punch holes into soft enemy formations.</History>
-    <Icon>units/hylian/hyl_lightcav.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <SelectionGroupName>units/hylian/hylian_light_cavalry</SelectionGroupName>
-    <Tooltip>Light and fast cavalry unit with excellent vision range. Can detect Camouflaged and Stealthed units.</Tooltip>
-	<VisibleClasses datatype="tokens">Soldier</VisibleClasses>
-  </Identity>
-  <Promotion disable="" />
-  <VisualActor>
-    <Actor>units/hylian/hylian_lightcavalry_b.xml</Actor>
-  </VisualActor>
+    <Identity>
+        <Classes datatype="tokens">-ScoutCavalry LightCavalry Soldier</Classes>
+        <GenericName>Light Cavalry</GenericName>
+        <History>These mounted incarnations of the Kingdom Infantry add much-needed speed and range. Armed with a spear, Kingdom Cavalry are light, but swift, and can punch holes into soft enemy formations.</History>
+        <Icon>units/hylian/hyl_lightcav.dds</Icon>
+        <SelectionGroupName>units/hylian/hylian_light_cavalry</SelectionGroupName>
+        <Tooltip>Light and fast cavalry unit with excellent vision range. Can detect Camouflaged and Stealthed units.</Tooltip>
+        <VisibleClasses datatype="tokens">Soldier</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Promotion disable=""/>
+    <VisualActor>
+        <Actor>units/hylian/hylian_lightcavalry_b.xml</Actor>
+    </VisualActor>
 </Entity>

@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/lizalfos/lizalfos_barracksB">
   <Identity>
-    <RequiredTechnology>lizalfos_farosh</RequiredTechnology>
+    <Requirements>
+      <Techs>lizalfos_farosh</Techs>
+    </Requirements>
   </Identity>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_warriorclutchA.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/striker_perfectcloak
 	lizalfos/hammarine_reckless
@@ -20,4 +20,7 @@
 	units/lizalfos/{civ}_shaman_b
     units/lizalfos/{civ}_footman_nardu</Entities>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_warriorclutchA.xml</Actor>
+  </VisualActor>
 </Entity>

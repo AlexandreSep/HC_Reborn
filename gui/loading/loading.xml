@@ -14,7 +14,7 @@
 			<include file="gui/loading/TitleDisplay.xml"/>
 		</object>
 
-		<object size="0%+20 0%+220 100%-20 100%">
+		<object size="0%+20 0%+20 100%-20 100%">
 			<include file="gui/loading/TipDisplay.xml"/>
 		</object>
 

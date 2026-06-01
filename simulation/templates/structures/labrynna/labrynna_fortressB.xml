@@ -1,27 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/labrynna/labrynna_fortress">
   <BuildingAI>
     <DefaultArrowCount>15</DefaultArrowCount>
   </BuildingAI>
+  <GarrisonHolder>
+    <Max>30</Max>
+  </GarrisonHolder>
   <Identity>
     <GenericName>Towered Star Fort</GenericName>
     <History>A large expansion upon the Star Fort, outfitting it with a collection of defensive towers.</History>
     <Icon>structures/labrynna/lab_starfortB.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
-  <GarrisonHolder>
-    <Max>30</Max>
-  </GarrisonHolder>
   <Upgrade>
     <Tower>
       <Cost>
-		<stone>200</stone>
+        <stone>200</stone>
         <wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_fortressC</Entity>
-      <RequiredTechnology>civ_choices/labrynna/choosehero_onox</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade Star Fort with Cannon Ramparts.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/labrynna/choosehero_onox</Techs>
+      </Requirements>
     </Tower>
   </Upgrade>
   <VisualActor>

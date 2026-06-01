@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="38.0" width="38.0" />
+    <Square depth="38.0" width="38.0"/>
   </Footprint>
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
@@ -37,13 +38,23 @@
     <GenericName>Gerudo Training Grounds</GenericName>
     <History>A dangerous and grueling obstacle course, the Gerudo Training Grounds is a test to find the best of the best. Those that complete the challenge are rewarded with legendary Ice Arrows or other treasures for battle. Those that fail come out the other end harder and with more experience... assuming they don't die in the process.</History>
     <Icon>structures/gerudo/ger_trainingA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Trains a variety of Gerudo units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="34.0" width="34.0" />
+    <Static depth="34.0" width="34.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/spirit_trials
+    gerudo/mystathi_lore
+    gerudo/ashinons_test
+    gerudo/urbosa_goldenarmor
+
+</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage>
@@ -67,18 +78,6 @@
       </Damage>
     </Foundation>
   </Resistance>
-  <VisualActor>
-    <Actor>structures/gerudo/gerudo_trainingA.xml</Actor>
-    <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gerudo/spirit_trials
-    gerudo/mystathi_lore
-    gerudo/ashinons_test
-    gerudo/urbosa_goldenarmor
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/gerudo/{civ}_tombguard_b
@@ -110,4 +109,8 @@
       <Z>-10</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/gerudo/gerudo_trainingA.xml</Actor>
+    <FoundationActor>structures/gerudo/gerudo_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

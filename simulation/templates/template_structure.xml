@@ -31,6 +31,7 @@
   <Decay>
     <Active>false</Active>
     <SinkingAnim>false</SinkingAnim>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkRate>3.0</SinkRate>
     <SinkAccel>9.8</SinkAccel>
@@ -43,7 +44,7 @@
       <mediumdamage>0.65</mediumdamage>
       <heavydamage>0.35</heavydamage>
     </DamageVariants>
-    <DeathType>corpse</DeathType>
+    <DeathType>vanish</DeathType>
     <RegenRate>0</RegenRate>
     <IdleRegenRate>0</IdleRegenRate>
     <Unhealable>true</Unhealable>

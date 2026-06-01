@@ -1,4 +1,4 @@
-<Entity parent="template_unit">
+﻿<Entity parent="template_unit">
   <Auras datatype="tokens">
     units/idoldead_aura_1
   units/idoldead_aura_2
@@ -15,6 +15,7 @@
   </Cost>
   <Decay>
     <Active>false</Active>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkAccel>0.01</SinkAccel>
     <SinkRate>0.0</SinkRate>

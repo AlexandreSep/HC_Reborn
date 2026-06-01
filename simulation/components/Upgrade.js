@@ -60,6 +60,17 @@ Upgrade.prototype.Schema =
 					"</element>" +
 				"</optional>" +
 				"<optional>" +
+					"<element name='Requirements' a:help='Legacy technology requirements for this upgrade'>" +
+						"<interleave>" +
+							"<optional>" +
+								"<element name='Techs'>" +
+									"<text/>" +
+								"</element>" +
+							"</optional>" +
+						"</interleave>" +
+					"</element>" +
+				"</optional>" +
+				"<optional>" +
 					"<element name='CheckPlacementRestrictions' a:help='Upgrading will check for placement restrictions (nb:GUI only)'><empty/></element>" +
 				"</optional>" +
 				// HC-Code
@@ -246,6 +257,9 @@ Upgrade.prototype.GetRequiredTechnology = function(templateArg)
 
 	if (this.template[choice].RequiredTechnology)
 		return this.template[choice].RequiredTechnology;
+
+	if (this.template[choice].Requirements && this.template[choice].Requirements.Techs)
+		return this.template[choice].Requirements.Techs;
 
 	if (!("RequiredTechnology" in this.template[choice]))
 		return undefined;

@@ -1,6 +1,7 @@
-<Entity parent="template_rubble">
+﻿<Entity parent="template_rubble">
   <Decay>
     <Active>true</Active>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.1</DelayTime>
     <SinkAccel>0</SinkAccel>
     <SinkRate>0.5</SinkRate>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civil_centre">
   <Attack>
     <Ranged>
@@ -27,7 +28,7 @@
     <DefaultArrowCount>10</DefaultArrowCount>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
   </BuildingAI>
-  <Capturable disable="" />
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>500</BuildTime>
     <Resources>
@@ -38,7 +39,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="90.0" />
+    <Circle radius="90.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -52,10 +53,10 @@
     <History>The public center of any Darknut city, the Agora was a gathering place for Citizens, Soldiers, and Politicians throughout the Darknut lands to discuss and work towards the agenda of the Legion. In addition it provided the structural foundation for many expansions as well as basic defenses, Thrall training, and storerooms for resources.</History>
     <Icon>structures/darknut/dar_agora.dds</Icon>
     <Tooltip>Darknut Civil Center: Trains Worker units and all Resources can be dropped off here. Many additional structures can be added to the Agora.</Tooltip>
-    <VisibleClasses datatype="tokens" />
+    <VisibleClasses datatype="tokens"/>
   </Identity>
   <Obstruction>
-    <Static depth="120.0" width="120.0" />
+    <Static depth="120.0" width="120.0"/>
   </Obstruction>
   <Plots>
     <PlotsToSpawn>
@@ -225,7 +226,18 @@
   <Population>
     <Bonus>30</Bonus>
   </Population>
-    <ResourceTrickle>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/agora_legionreserves
+		darknut/onon_scoutingtech
+		darknut/militron_militros
+		darknut/player_isdarknut
+		darknut/ruins_isdarknut
+		darknut/unit_promotion_1
+		darknut/unit_promotion_2
+		darknut/unit_promotion_3
+</Technologies>
+  </Researcher>
+  <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
       <food>0.0</food>
@@ -247,37 +259,6 @@
       <upgraded>interface/complete/building/complete_civ_center_darknut.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <Upgrade>
-    <TowerA>
-      <Cost>
-        <food>1000</food>
-        <metal>1000</metal>
-        <stone>1000</stone>
-        <wood>1000</wood>
-      </Cost>
-      <Entity>structures/darknut/darknut_wonder</Entity>
-      <KeepPlots>true</KeepPlots>
-      <RequiredTechnology>phase_city</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Build the Tower of Hera on this Agora.</Tooltip>
-      <Variant>upgrading</Variant>
-    </TowerA>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_civic_centreA.xml</Actor>
-    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">darknut/agora_legionreserves
-		darknut/onon_scoutingtech
-		darknut/militron_militros
-		darknut/player_isdarknut
-		darknut/ruins_isdarknut
-		darknut/unit_promotion_1
-		darknut/unit_promotion_2
-		darknut/unit_promotion_3
-</Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/darknut/{civ}_thrallA
 	  units/darknut/{civ}_molgera_b
@@ -314,4 +295,26 @@
       <Z>48</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <TowerA>
+      <Cost>
+        <food>1000</food>
+        <metal>1000</metal>
+        <stone>1000</stone>
+        <wood>1000</wood>
+      </Cost>
+      <Entity>structures/darknut/darknut_wonder</Entity>
+      <KeepPlots>true</KeepPlots>
+      <Time>60</Time>
+      <Tooltip>Build the Tower of Hera on this Agora.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
+    </TowerA>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_civic_centreA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
 </Entity>

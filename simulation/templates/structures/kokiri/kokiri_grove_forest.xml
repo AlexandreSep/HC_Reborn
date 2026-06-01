@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="27.0" />
+    <Circle radius="27.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -30,12 +31,14 @@
     <GenericName>Forest Grove</GenericName>
     <History>A lust Grove dedicated to preserving the forest and its native wildlife. Within these grounds the Kokiri could summon and train all manner of beast.</History>
     <Icon>structures/kokiri/kok_forestgrove.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Grove that can build Forest Add-Ons and train units.</Tooltip>
     <VisibleClasses datatype="tokens">Grove</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="43.0" width="43.0" />
+    <Static depth="43.0" width="43.0"/>
   </Obstruction>
   <Plots>
     <PlotsToSpawn>
@@ -111,16 +114,6 @@
       </PlotJ>
     </PlotsToSpawn>
   </Plots>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_barracks.xml</constructed>
-      <select>interface/select/building/sel_barracks.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/kokiri/kokiri_grove_forestA.xml</Actor>
-    <FoundationActor>structures/kokiri/kokiri_scaffoldH.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">kokiri/deer_sacredacorn
       kokiri/deer_awareness
@@ -134,6 +127,12 @@
 
 </Technologies>
   </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <select>interface/select/building/sel_barracks.xml</select>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/kokiri/{civ}_huntingfox_b
@@ -168,4 +167,8 @@
       <Z>0</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_grove_forestA.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldH.xml</FoundationActor>
+  </VisualActor>
 </Entity>

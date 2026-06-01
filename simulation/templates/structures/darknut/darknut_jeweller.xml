@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Temple</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -31,16 +32,22 @@
     <GenericName>Jeweller</GenericName>
     <History>Jewllery, in particular gold jewellery, was extremely valued among the Darknut people. Gemcraft among their people was reknown across all of Hyrule, and many would traverse the Gerudo Desert to seek out the products of these makers.</History>
     <Icon>structures/darknut/dar_jeweller.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Automatically generates Rupees.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="33.0" width="33.0" />
+    <Static depth="33.0" width="33.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/jeweller_gemcraft
+</Technologies>
+  </Researcher>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -57,17 +64,9 @@
       <select>interface/select/building/sel_blacksmith.xml</select>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_jewellerbaseA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">darknut/jeweller_gemcraft
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-	<Entities datatype="tokens">
+    <Entities datatype="tokens">
       units/darknut/{civ}_glasswitch_b
 	  </Entities>
     <DestinationOffset>
@@ -94,4 +93,8 @@
       <Z>10</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_jewellerbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
 </Entity>

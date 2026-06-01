@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
   </BuildRestrictions>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -26,26 +27,17 @@
     <GenericName>Baba Patch</GenericName>
     <History>A garden dedicated to growing and cultivating the violent Deku Babas. Scrubs had many uses for these creatures, from guard dog duty to augmenting their war efforts.</History>
     <Icon>structures/deku/dek_babapatch.dds</Icon>
-	<RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Trains Deku Babas and related units.</Tooltip>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/deku/complete_babapatch.xml</constructed>
-      <select>interface/select/building/deku/sel_babapatch.xml</select>
-      <upgraded>interface/complete/building/deku/complete_babapatch.xml</upgraded>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/deku/deku_babapatchA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">deku/baba_projectileteeth
     deku/baba_venomteeth
@@ -53,6 +45,13 @@
 
 </Technologies>
   </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/deku/complete_babapatch.xml</constructed>
+      <select>interface/select/building/deku/sel_babapatch.xml</select>
+      <upgraded>interface/complete/building/deku/complete_babapatch.xml</upgraded>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/deku/{civ}_babacrawler_b
@@ -86,4 +85,8 @@
       <Z>5</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/deku/deku_babapatchA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
 </Entity>

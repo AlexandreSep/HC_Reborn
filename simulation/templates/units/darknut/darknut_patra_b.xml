@@ -1,57 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_beast">
-  <Cost>
-    <Resources>
-      <food>50</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>50</Max>
-  </Health>
-  <Identity>
-    <Civ>darknut</Civ>
-    <Classes datatype="tokens">Medium Flying</Classes>
-    <GenericName>Patra</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>The spawn and servants of the demon Vaati, Patra serve as the eyes of those in power of the Legion. Despite their size, Patra are infamous for their ability to hide and strike at enemies from the shadows.</History>
-    <Icon>units/darknut/dar_patra.dds</Icon>
-    <Lang>darknut</Lang>
-    <RequiredTechnology>civ_choices/darknut/choosehero_zalunbar</RequiredTechnology>
-    <SelectionGroupName>units/darknut/darknut_patra_b</SelectionGroupName>
-    <Tooltip>Zalunbar's Unique Unit. Flying Scout Creature concealed with Camouflage.</Tooltip>
-    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
-  </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>3.25</TurnRate>
-  </Position>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/patra_dive.xml</attack_melee>
-      <death>voice/darknut/patra/patra_death.xml</death>
-      <order_attack>voice/darknut/patra/patra_attack.xml</order_attack>
-      <order_garrison>voice/darknut/patra/patra_garrison.xml</order_garrison>
-      <order_gather>voice/darknut/patra/patra_gather.xml</order_gather>
-      <order_repair>voice/darknut/patra/patra_repair.xml</order_repair>
-      <order_walk>voice/darknut/patra/patra_walk.xml</order_walk>
-      <run>actor/movement/patra/patra_flap.xml</run>
-      <select>voice/darknut/patra/patra_select.xml</select>
-      <trained>interface/alarm/alarm_create_flying.xml</trained>
-      <walk>actor/movement/patra/patra_flap.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <PassabilityClass>hover</PassabilityClass>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/darknut/darknut_patra_holder.xml</Actor>
-  </VisualActor>
-  <Visibility>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
-  </Visibility>
+    <Cost>
+        <Resources>
+            <food>50</food>
+            <metal>0</metal>
+            <stone>0</stone>
+            <wood>0</wood>
+        </Resources>
+    </Cost>
+    <Health>
+        <Max>50</Max>
+    </Health>
+    <Identity>
+        <Civ>darknut</Civ>
+        <Classes datatype="tokens">Medium Flying</Classes>
+        <GenericName>Patra</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>The spawn and servants of the demon Vaati, Patra serve as the eyes of those in power of the Legion. Despite their size, Patra are infamous for their ability to hide and strike at enemies from the shadows.</History>
+        <Icon>units/darknut/dar_patra.dds</Icon>
+        <Lang>darknut</Lang>
+        <SelectionGroupName>units/darknut/darknut_patra_b</SelectionGroupName>
+        <Tooltip>Zalunbar's Unique Unit. Flying Scout Creature concealed with Camouflage.</Tooltip>
+        <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/darknut/choosehero_zalunbar</Techs>
+        </Requirements>
+    </Identity>
+    <Position>
+        <Floating>true</Floating>
+        <TurnRate>3.25</TurnRate>
+    </Position>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/patra_dive.xml</attack_melee>
+            <death>voice/darknut/patra/patra_death.xml</death>
+            <order_attack>voice/darknut/patra/patra_attack.xml</order_attack>
+            <order_garrison>voice/darknut/patra/patra_garrison.xml</order_garrison>
+            <order_gather>voice/darknut/patra/patra_gather.xml</order_gather>
+            <order_repair>voice/darknut/patra/patra_repair.xml</order_repair>
+            <order_walk>voice/darknut/patra/patra_walk.xml</order_walk>
+            <run>actor/movement/patra/patra_flap.xml</run>
+            <select>voice/darknut/patra/patra_select.xml</select>
+            <trained>interface/alarm/alarm_create_flying.xml</trained>
+            <walk>actor/movement/patra/patra_flap.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <PassabilityClass>hover</PassabilityClass>
+    </UnitMotion>
+    <Visibility>
+        <CanSpotStealth>
+            <MinRange>0</MinRange>
+            <MaxRange>80</MaxRange>
+        </CanSpotStealth>
+    </Visibility>
+    <VisualActor>
+        <Actor>units/darknut/darknut_patra_holder.xml</Actor>
+    </VisualActor>
 </Entity>

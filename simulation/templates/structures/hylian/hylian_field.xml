@@ -21,6 +21,10 @@
     <SpawnEntityOnDeath>rubble/debris_hylian_houseA</SpawnEntityOnDeath>
   </Health>
   <Identity>
+    <AIBuild>
+      <MaxCopies>3</MaxCopies>
+      <MinPop>0</MinPop>
+	</AIBuild>
     <Civ>hylian</Civ>
     <Classes datatype="tokens">DropsiteFood Field Farmstead</Classes>
     <GenericName>Urban Farm</GenericName>

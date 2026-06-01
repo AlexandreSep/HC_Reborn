@@ -1,90 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
-  <BuildRestrictions>
-    <Category>Barracks</Category>
-  </BuildRestrictions>
-  <Cost>
-    <BuildTime>60</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>0</metal>
-      <stone>150</stone>
-      <wood>50</wood>
-    </Resources>
-  </Cost>
-  <Footprint>
-    <Circle radius="20.0" />
-    <Height>10.0</Height>
-  </Footprint>
-  <GarrisonHolder>
-    <Max>20</Max>
-    <EjectHealth>0.1</EjectHealth>
-    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Infantry Cavalry</List>
-    <BuffHeal>3</BuffHeal>
-    <LoadingRange>2</LoadingRange>
-  </GarrisonHolder>
-  <Health>
-    <Max>1500</Max>
-    <SpawnEntityOnDeath>rubble/debris_zora_mediumB</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>1</MaxCopies>
-      <MinPop>35</MinPop>
-    </AIBuild>
-    <Civ>zora</Civ>
-    <Classes datatype="tokens">Town</Classes>
-    <GenericName>Public Baths</GenericName>
-    <History>Public location where the Dominion can seek to hire Mercenary units.</History>
-    <Icon>structures/zora/zor_bath.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>The cleanliness of Zoras is well-known throughout Hyrule, due in part to their rigorous and excessive bathing habits. Large public sectors are converted to the purpose of hygiene, drawing tourists and visitors seeking cleansing and relaxation.</Tooltip>
-    <VisibleClasses datatype="tokens">Special</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="33.0" width="33.0" />
-  </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_mercs.xml</constructed>
-      <select>interface/select/building/sel_mercs.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/zora/zora_bathA.xml</Actor>
-    <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
+    <BuildRestrictions>
+        <Category>Barracks</Category>
+    </BuildRestrictions>
+    <Cost>
+        <BuildTime>60</BuildTime>
+        <Resources>
+            <food>0</food>
+            <metal>0</metal>
+            <stone>150</stone>
+            <wood>50</wood>
+        </Resources>
+    </Cost>
+    <Footprint>
+        <Circle radius="20.0"/>
+        <Height>10.0</Height>
+    </Footprint>
+    <GarrisonHolder>
+        <Max>20</Max>
+        <EjectHealth>0.1</EjectHealth>
+        <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+        <List datatype="tokens">Support Infantry Cavalry</List>
+        <BuffHeal>3</BuffHeal>
+        <LoadingRange>2</LoadingRange>
+    </GarrisonHolder>
+    <Health>
+        <Max>1500</Max>
+        <SpawnEntityOnDeath>rubble/debris_zora_mediumB</SpawnEntityOnDeath>
+    </Health>
+    <Identity>
+        <AIBuild>
+            <MaxCopies>1</MaxCopies>
+            <MinPop>35</MinPop>
+        </AIBuild>
+        <Civ>zora</Civ>
+        <Classes datatype="tokens">Town</Classes>
+        <GenericName>Public Baths</GenericName>
+        <History>Public location where the Dominion can seek to hire Mercenary units.</History>
+        <Icon>structures/zora/zor_bath.dds</Icon>
+        <Tooltip>The cleanliness of Zoras is well-known throughout Hyrule, due in part to their rigorous and excessive bathing habits. Large public sectors are converted to the purpose of hygiene, drawing tourists and visitors seeking cleansing and relaxation.</Tooltip>
+        <VisibleClasses datatype="tokens">Special</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Obstruction>
+        <Static depth="33.0" width="33.0"/>
+    </Obstruction>
+    <Researcher>
+        <Technologies datatype="tokens">
 </Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/merc_geru_b
+    </Researcher>
+    <Sound>
+        <SoundGroups>
+            <constructed>interface/complete/building/complete_mercs.xml</constructed>
+            <select>interface/select/building/sel_mercs.xml</select>
+        </SoundGroups>
+    </Sound>
+    <Trainer>
+        <BatchTimeModifier>0.8</BatchTimeModifier>
+        <Entities datatype="tokens">units/merc_geru_b
     units/merc_tinsuit_b
     units/merc_wosu_b</Entities>
-    <DestinationOffset>
-      <step1>
-        <X>0</X>
-        <Z>25</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>30</Z>
-      </step2>
-    </DestinationOffset>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>0</X>
-      <Z>20</Z>
-    </SpawnOffset>
-  </Trainer>
+        <DestinationOffset>
+            <step1>
+                <X>0</X>
+                <Z>25</Z>
+            </step1>
+            <step2>
+                <X>0</X>
+                <Z>30</Z>
+            </step2>
+        </DestinationOffset>
+        <LineupOffset>
+            <MaxThresholdOffset>
+                <Threshold>5</Threshold>
+                <X>0</X>
+                <Z>5</Z>
+            </MaxThresholdOffset>
+            <X>-3</X>
+            <Z>0</Z>
+        </LineupOffset>
+        <SpawnOffset>
+            <X>0</X>
+            <Z>20</Z>
+        </SpawnOffset>
+    </Trainer>
+    <VisualActor>
+        <Actor>structures/zora/zora_bathA.xml</Actor>
+        <FoundationActor>structures/zora/zora_scaffoldB.xml</FoundationActor>
+    </VisualActor>
 </Entity>

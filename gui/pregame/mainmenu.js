@@ -13,7 +13,7 @@ var g_MainMenuPage;
 function init(data, hotloadData)
 {
 	let useNewBackground = Engine.ConfigDB_GetValue("user", "background") === "false" || Engine.ConfigDB_GetValue("user", "background") === "";
-	if (useNewBackground)
+	if (useNewBackground || !g_BackgroundLayerData.length)
 		g_BackgroundLayerData = g_NewBackgroundLayerData;
 
 	g_MainMenuPage =

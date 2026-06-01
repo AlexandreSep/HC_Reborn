@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Market</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -41,20 +42,26 @@
     <GenericName>Fairgrounds</GenericName>
     <History>Plenty of shops, food, and fun for the entire community. Resources can be bartered and traded here.</History>
     <Icon>structures/kokiri/kok_fairgrounds.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="20.0" width="10.0" />
+    <Static depth="20.0" width="10.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">kokiri/get_fairgrounds
+</Technologies>
+  </Researcher>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -65,7 +72,7 @@
     </Rates>
   </ResourceTrickle>
   <Selectable>
-    <EditorOnly />
+    <EditorOnly/>
     <Overlay>
       <Outline>
         <LineTexture>outline_border.png</LineTexture>
@@ -81,17 +88,9 @@
       <upgraded>interface/complete/building/complete_market.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/kokiri/kokiri_festivalA.xml</Actor>
-    <FoundationActor>structures/kokiri/kokiri_scaffoldB.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">kokiri/get_fairgrounds
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
+    <Entities datatype="tokens"/>
     <DestinationOffset>
       <step1>
         <X>1.5</X>
@@ -116,4 +115,8 @@
       <Z>17</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_festivalA.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldB.xml</FoundationActor>
+  </VisualActor>
 </Entity>

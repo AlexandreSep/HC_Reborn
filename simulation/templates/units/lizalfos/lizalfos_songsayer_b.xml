@@ -1,33 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_unit_auxiliary">
-  <Identity>
-    <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium Volvamight Lizarmored UniqueUnit</Classes>
-    <GenericName>Songsayer</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>Song Sayers were female Lizalfos destined to take command of their male counterparts. Still quite young, the Song Sayers practiced their infamous technique to control Lizalfos men: the Whisper Song. When backed into a corner they could kill their assailant with a wicked dagger.</History>
-    <Icon>units/lizalfos/liz_songsayer.dds</Icon>
-    <Lang>lizalfos</Lang>
-    <RequiredTechnology>civ_choices/lizalfos/choosehero_nardu</RequiredTechnology>
-    <SelectionGroupName>units/lizalfos/lizalfos_songsayer_b</SelectionGroupName>
-    <Tooltip>Nardu's Unique Unit. Support unit that can briefly turn enemy units against their masters.</Tooltip>
-    <VisibleClasses datatype="tokens">Support</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/lizalfos/songsayer/songsayer_death.xml</death>
-      <order_attack>voice/lizalfos/songsayer/songsayer_attack.xml</order_attack>
-      <order_garrison>voice/lizalfos/songsayer/songsayer_garrison.xml</order_garrison>
-      <order_gather>voice/lizalfos/songsayer/songsayer_gather.xml</order_gather>
-      <order_repair>voice/lizalfos/songsayer/songsayer_repair.xml</order_repair>
-      <order_walk>voice/lizalfos/songsayer/songsayer_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/lizalfos/songsayer/songsayer_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/lizalfos/lizalfos_songsayer_b.xml</Actor>
-  </VisualActor>
+    <Identity>
+        <Civ>lizalfos</Civ>
+        <Classes datatype="tokens">Medium Volvamight Lizarmored UniqueUnit</Classes>
+        <GenericName>Songsayer</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>Song Sayers were female Lizalfos destined to take command of their male counterparts. Still quite young, the Song Sayers practiced their infamous technique to control Lizalfos men: the Whisper Song. When backed into a corner they could kill their assailant with a wicked dagger.</History>
+        <Icon>units/lizalfos/liz_songsayer.dds</Icon>
+        <Lang>lizalfos</Lang>
+        <SelectionGroupName>units/lizalfos/lizalfos_songsayer_b</SelectionGroupName>
+        <Tooltip>Nardu's Unique Unit. Support unit that can briefly turn enemy units against their masters.</Tooltip>
+        <VisibleClasses datatype="tokens">Support</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/lizalfos/choosehero_nardu</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/lizalfos/songsayer/songsayer_death.xml</death>
+            <order_attack>voice/lizalfos/songsayer/songsayer_attack.xml</order_attack>
+            <order_garrison>voice/lizalfos/songsayer/songsayer_garrison.xml</order_garrison>
+            <order_gather>voice/lizalfos/songsayer/songsayer_gather.xml</order_gather>
+            <order_repair>voice/lizalfos/songsayer/songsayer_repair.xml</order_repair>
+            <order_walk>voice/lizalfos/songsayer/songsayer_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/lizalfos/songsayer/songsayer_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/lizalfos/lizalfos_songsayer_b.xml</Actor>
+    </VisualActor>
 </Entity>

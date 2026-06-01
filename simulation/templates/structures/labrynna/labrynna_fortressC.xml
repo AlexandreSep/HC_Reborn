@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/labrynna/labrynna_fortressB">
   <Attack>
     <Ranged>
@@ -23,22 +24,24 @@
   <BuildingAI>
     <DefaultArrowCount>20</DefaultArrowCount>
   </BuildingAI>
+  <GarrisonHolder>
+    <Max>40</Max>
+  </GarrisonHolder>
   <Identity>
     <GenericName>Battery Star Fort</GenericName>
     <History>A fully expanded Star Fort, adding ramparts for Cannons and Gunpowder defenders to garrison on to and fire upon invaders.</History>
     <Icon>structures/labrynna/lab_starfortB.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
-  <GarrisonHolder>
-    <Max>40</Max>
-  </GarrisonHolder>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/weapon/bullet_impact.xml</attack_impact_ranged>
       <attack_ranged>attack/weapon/musket.xml</attack_ranged>
     </SoundGroups>
   </Sound>
-  <Upgrade disable="" />
+  <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/labrynna/labrynna_starfortC.xml</Actor>
   </VisualActor>

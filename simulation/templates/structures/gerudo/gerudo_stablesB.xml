@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -18,7 +19,7 @@
   </Cost>
   <Footprint>
     <Height>5.0</Height>
-    <Square depth="45.0" width="45.0" />
+    <Square depth="45.0" width="45.0"/>
   </Footprint>
   <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
@@ -28,6 +29,95 @@
     <LoadingRange>6</LoadingRange>
     <Max>5</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>rubble/debris_gerudo_medium</SpawnEntityOnDeath>
+    <SpawnGarrison>
+      <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
+      <SpawnNumber>6</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <AIBuild>
+      <MaxCopies>1</MaxCopies>
+      <MinPop>35</MinPop>
+    </AIBuild>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens">SealPen Town</Classes>
+    <GenericName>Sandseal Pen</GenericName>
+    <History>The Sandseals native to the Gerudo Desert are stubborn animals that many civilizations fail to domesticate. The Gerudo somehow managed to tame the beasts, and house them in specialized stables.</History>
+    <Icon>structures/gerudo/ger_stablesB.dds</Icon>
+    <Tooltip>Trains Sandseal units for the Gerudo.</Tooltip>
+    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/gerudo/choosehero_riju</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="45.0" width="45.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/seal_shabonne_saddles
+	  gerudo/seal_tali_horn
+
+</Technologies>
+  </Researcher>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>40.0</Crush>
+        <Hack>75.0</Hack>
+        <Pierce>75.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Hack>1</Hack>
+        <Pierce>95</Pierce>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_stables.xml</constructed>
+      <select>interface/select/building/sel_stables.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">units/gerudo/{civ}_dunewalker_b
+	  units/gerudo/{civ}_sealplower_b
+	  units/gerudo/{civ}_dustsentinel_b</Entities>
+    <DestinationOffset>
+      <step1>
+        <X>-5</X>
+        <Z>10.4</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>10.4</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>30</Z>
+      </step3>
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>-17.5</X>
+      <Z>10.4</Z>
+    </SpawnOffset>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -62,95 +152,8 @@
       </Archer6>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>3000</Max>
-    <SpawnEntityOnDeath>rubble/debris_gerudo_medium</SpawnEntityOnDeath>
-    <SpawnGarrison>
-      <Template>units/gerudo/gerudo_sandsniper_garrison</Template>
-      <SpawnNumber>6</SpawnNumber>
-      <LinkedDestruction>true</LinkedDestruction>
-    </SpawnGarrison>
-  </Health>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>1</MaxCopies>
-      <MinPop>35</MinPop>
-    </AIBuild>
-    <Civ>gerudo</Civ>
-    <Classes datatype="tokens">SealPen Town</Classes>
-    <GenericName>Sandseal Pen</GenericName>
-    <History>The Sandseals native to the Gerudo Desert are stubborn animals that many civilizations fail to domesticate. The Gerudo somehow managed to tame the beasts, and house them in specialized stables.</History>
-    <Icon>structures/gerudo/ger_stablesB.dds</Icon>
-    <RequiredTechnology>civ_choices/gerudo/choosehero_riju</RequiredTechnology>
-    <Tooltip>Trains Sandseal units for the Gerudo.</Tooltip>
-    <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="45.0" width="45.0" />
-  </Obstruction>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>40.0</Crush>
-        <Hack>75.0</Hack>
-        <Pierce>75.0</Pierce>
-      </Damage>
-    </Entity>
-    <Foundation>
-      <Damage>
-        <Crush>1</Crush>
-        <Hack>1</Hack>
-        <Pierce>95</Pierce>
-      </Damage>
-    </Foundation>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_stables.xml</constructed>
-      <select>interface/select/building/sel_stables.xml</select>
-    </SoundGroups>
-  </Sound>
   <VisualActor>
     <Actor>structures/gerudo/gerudo_stablesB.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldE.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gerudo/seal_shabonne_saddles
-	  gerudo/seal_tali_horn
-
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/gerudo/{civ}_dunewalker_b
-	  units/gerudo/{civ}_sealplower_b
-	  units/gerudo/{civ}_dustsentinel_b</Entities>
-    <DestinationOffset>
-      <step1>
-        <X>-5</X>
-        <Z>10.4</Z>
-      </step1>
-      <step2>
-        <X>0</X>
-        <Z>10.4</Z>
-      </step2>
-      <step3>
-        <X>0</X>
-        <Z>30</Z>
-      </step3>
-    </DestinationOffset>
-    <LineupOffset>
-      <MaxThresholdOffset>
-        <Threshold>5</Threshold>
-        <X>0</X>
-        <Z>5</Z>
-      </MaxThresholdOffset>
-      <X>-3</X>
-      <Z>0</Z>
-    </LineupOffset>
-    <SpawnOffset>
-      <X>-17.5</X>
-      <Z>10.4</Z>
-    </SpawnOffset>
-  </Trainer>
 </Entity>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/goron/goron_fortress">
   <BuildingAI>
     <DefaultArrowCount>12</DefaultArrowCount>
@@ -6,6 +7,21 @@
   <GarrisonHolder>
     <Max>30</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_huge</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Bulwark City</Classes>
+    <GenericName>Stronghold (Bulwark)</GenericName>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -135,20 +151,7 @@
       </Archer9>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>6000</Max>
-    <SpawnEntityOnDeath>rubble/debris_goron_huge</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>goron</Civ>
-    <Classes datatype="tokens">Bulwark City</Classes>
-    <GenericName>Stronghold (Bulwark)</GenericName>
-    <RequiredTechnology>phase_city</RequiredTechnology>
-  </Identity>
-  <Plots>
-    <CanSpawnFromPlot>true</CanSpawnFromPlot>
-  </Plots>
-  <Upgrade disable="" />
+  <Upgrade disable=""/>
   <VisualActor>
     <Actor>structures/goron/goron_strongholdD.xml</Actor>
   </VisualActor>

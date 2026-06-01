@@ -1,6 +1,5 @@
 /**
  * This array determines the order in which the GUI controls are shown in the GameSettingTabs panel.
- * The names correspond to property names of the GameSettingControls prototype.
  */
 var g_GameSettingsLayout = [
 	{
@@ -11,7 +10,7 @@ var g_GameSettingsLayout = [
 			"MapSelection",
 			"MapBrowser",
 			"MapSize",
-			"TeamPlacement",
+			"PlayerPlacement",
 			"Landscape",
 			"Biome",
 			"SeaLevelRiseTime",
@@ -27,9 +26,8 @@ var g_GameSettingsLayout = [
 		"label": translateWithContext("Match settings tab name", "Player"),
 		"settings": [
 			"PlayerCount",
-			"WorldPopulation",
+			"PopulationCapType",
 			"PopulationCap",
-			"WorldPopulationCap",
 			"StartingResources",
 			"Spies",
 			"Cheats",

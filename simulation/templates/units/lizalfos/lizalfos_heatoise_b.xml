@@ -1,56 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_monster">
-  <Attack>
-    <Melee>
-      <AttackName>Shell</AttackName>
-    </Melee>
-  </Attack>
-  <Footprint>
-    <Circle radius="10.0" />
-    <Height>10.0</Height>
-  </Footprint>
-  <Identity>
-    <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Large Heatoise</Classes>
-    <GenericName>Heatoise</GenericName>
-    <History>Once a native to Turtle Rock on Death Mountain, the Heatoise suffered a similar fate to the rest of the Lizalfos and was driven from their homelands by the Gorons. A Heatoise has the invaluable trait of being able to survive extremely hot conditions and is immune to all fire. They also are decent, if clumsy, swimmers.</History>
-    <Icon>units/lizalfos/liz_heatoise.dds</Icon>
-    <Lang>lizalfos</Lang>
-    <RequiredTechnology>phase_village</RequiredTechnology>
-    <SelectionGroupName>units/lizalfos/lizalfos_heatoise_b</SelectionGroupName>
-    <Tooltip>Slow but very durable Melee Creature that can cross lava and bodies of water.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>70</Crush>
-        <Hack>70</Hack>
-        <Pierce>70</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/heatoise_bash.xml</attack_melee>
-      <death>voice/lizalfos/heatoise/heatoise_death.xml</death>
-      <order_attack>voice/lizalfos/heatoise/heatoise_attack.xml</order_attack>
-      <order_garrison>voice/lizalfos/heatoise/heatoise_garrison.xml</order_garrison>
-      <order_gather>voice/lizalfos/heatoise/heatoise_gather.xml</order_gather>
-      <order_repair>voice/lizalfos/heatoise/heatoise_repair.xml</order_repair>
-      <order_walk>voice/lizalfos/heatoise/heatoise_walk.xml</order_walk>
-      <run>actor/movement/boar/boar_footsteps.xml</run>
-      <select>voice/lizalfos/heatoise/heatoise_select.xml</select>
-      <trained>interface/alarm/alarm_create_creature.xml</trained>
-      <walk>actor/movement/boar/boar_footsteps.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.5</RunMultiplier>
-    <WalkSpeed>6</WalkSpeed>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/lizalfos/lizalfos_heatoise_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Shell</AttackName>
+        </Melee>
+    </Attack>
+    <Footprint>
+        <Circle radius="10.0"/>
+        <Height>10.0</Height>
+    </Footprint>
+    <Identity>
+        <Civ>lizalfos</Civ>
+        <Classes datatype="tokens">Large Heatoise</Classes>
+        <GenericName>Heatoise</GenericName>
+        <History>Once a native to Turtle Rock on Death Mountain, the Heatoise suffered a similar fate to the rest of the Lizalfos and was driven from their homelands by the Gorons. A Heatoise has the invaluable trait of being able to survive extremely hot conditions and is immune to all fire. They also are decent, if clumsy, swimmers.</History>
+        <Icon>units/lizalfos/liz_heatoise.dds</Icon>
+        <Lang>lizalfos</Lang>
+        <SelectionGroupName>units/lizalfos/lizalfos_heatoise_b</SelectionGroupName>
+        <Tooltip>Slow but very durable Melee Creature that can cross lava and bodies of water.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>phase_village</Techs>
+        </Requirements>
+    </Identity>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <Crush>70</Crush>
+                <Hack>70</Hack>
+                <Pierce>70</Pierce>
+            </Damage>
+        </Entity>
+        <KnockbackResistance>100</KnockbackResistance>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/heatoise_bash.xml</attack_melee>
+            <death>voice/lizalfos/heatoise/heatoise_death.xml</death>
+            <order_attack>voice/lizalfos/heatoise/heatoise_attack.xml</order_attack>
+            <order_garrison>voice/lizalfos/heatoise/heatoise_garrison.xml</order_garrison>
+            <order_gather>voice/lizalfos/heatoise/heatoise_gather.xml</order_gather>
+            <order_repair>voice/lizalfos/heatoise/heatoise_repair.xml</order_repair>
+            <order_walk>voice/lizalfos/heatoise/heatoise_walk.xml</order_walk>
+            <run>actor/movement/boar/boar_footsteps.xml</run>
+            <select>voice/lizalfos/heatoise/heatoise_select.xml</select>
+            <trained>interface/alarm/alarm_create_creature.xml</trained>
+            <walk>actor/movement/boar/boar_footsteps.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <PassabilityClass>aquatic</PassabilityClass>
+        <RunMultiplier>1.5</RunMultiplier>
+        <WalkSpeed>6</WalkSpeed>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/lizalfos/lizalfos_heatoise_b.xml</Actor>
+    </VisualActor>
 </Entity>

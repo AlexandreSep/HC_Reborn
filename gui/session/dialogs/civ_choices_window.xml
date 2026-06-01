@@ -21,7 +21,7 @@
 	</repeat>
 	
 	<repeat count="6" var="n">
-		<object name="heroDescriptionArea[n]" size="69% 5% 110% 50%" type="image" tooltip_style="sessionToolTip" sprite="stretched:session/portraits/technologies/heroselect_detailsA.png" hidden="false">
+		<object name="heroDescriptionArea[n]" size="69% 5% 110% 50%" type="image" tooltip_style="sessionToolTip" sprite="stretched:session/portraits/technologies/heroselect_detailsA.png" hidden="true">
 			<repeat count="5" var="m">
 				<object name="heroDescriptionElement[n][m]" size="7% 5% 65% 100%" type="button" tooltip_style="sessionToolTip" sprite="stretched:session/portraits/technologies/heroselect_descriptionA.png" hidden="true">
 						<object name="heroDescriptionIcon[n][m]" size="0% 0% 25% 100%" type="image" tooltip_style="sessionToolTip" ghost="true" hidden="false"/>

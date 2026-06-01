@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -16,7 +17,7 @@
         <Speed>45.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>4000</RepeatTime>
       <EffectDelay>0</EffectDelay>
@@ -52,7 +53,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="10.0" />
+    <Circle radius="10.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -81,13 +82,18 @@
     <GenericName>Mite Mound</GenericName>
     <History>The Mite Mound spawns and houses a huge swarm of Gohma Mites. When enemy forces come within the radius of the Mite Mound, its swarms will relentlessly tear apart anything they can get their tiny mouths unto.</History>
     <Icon>structures/gohma/goh_mitemound.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Defensive Structure that spawns Gohma Mites.</Tooltip>
     <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="7.5" width="7.5" />
+    <Static depth="7.5" width="7.5"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <attack_impact_ranged>attack/natural/gohma_acid_impact.xml</attack_impact_ranged>
@@ -101,15 +107,12 @@
     <BarWidth>6.0</BarWidth>
     <HeightOffset>19.0</HeightOffset>
   </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/gohma/gohma_turretB.xml</Actor>
     <FoundationActor>structures/gohma/gohma_cacoonB.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

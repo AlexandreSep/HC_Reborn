@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/misthenge_aura
@@ -18,7 +19,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="35.0" />
+    <Circle radius="35.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -27,21 +28,28 @@
   </Health>
   <Identity>
     <Civ>fairy</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Misthenge</GenericName>
     <History>Perhaps one of the rarest Fairy locations in all known records, a Misthenge was considered an impossible task to find unless its Fairy master allowed one to stumble unto it. Believed to be a library of all manner of ancient secrets, legend has it that magic too powerful to be known by the world was kept locked away under the stones of these ringed henges.</History>
     <Icon>structures/fairy/fai_misthenge_spring.dds</Icon>
-    <RequiredTechnology>civ_choices/fairy/choosehero_valanavi</RequiredTechnology>
     <Tooltip>Discovers Fairy secrets to improve various features.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/fairy/choosehero_valanavi</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="52.0" width="52.0" />
+    <Static depth="52.0" width="52.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/season_tooshort
+    fairy/valanavi_weirdingpaths
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/fairy/complete_misthenge.xml</constructed>
@@ -53,6 +61,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
@@ -60,13 +72,4 @@
     <Actor>structures/fairy/fairy_misthengeA_spring.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_spring.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">fairy/season_tooshort
-    fairy/valanavi_weirdingpaths
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

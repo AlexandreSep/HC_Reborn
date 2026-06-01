@@ -1,25 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/labrynna/labrynna_blacksmith">
   <Identity>
     <GenericName>Cannon Foundry</GenericName>
     <History>Cannons quickly became the siege weapon of choice used by the Regime, and dedicated factories could produce the machines at quite a staggering rate.</History>
     <Icon>structures/labrynna/lab_gunpowderB.dds</Icon>
   </Identity>
-  <Upgrade>
-    <Tower>
-      <Cost>
-		<stone>50</stone>
-		<wood>100</wood>
-      </Cost>
-      <Entity>structures/labrynna/labrynna_blacksmithC</Entity>
-      <RequiredTechnology>civ_choices/labrynna/choosehero_veran</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Upgrade Cannon Foundry with Garage.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_powderB.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">labrynna/cannon_highyield
 
@@ -30,4 +15,22 @@
     <Entities datatype="tokens">units/labrynna/{civ}_cannon
       units/labrynna/{civ}_organgun</Entities>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <stone>50</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_blacksmithC</Entity>
+      <Time>60</Time>
+      <Tooltip>Upgrade Cannon Foundry with Garage.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/labrynna/choosehero_veran</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_powderB.xml</Actor>
+  </VisualActor>
 </Entity>

@@ -1,4 +1,4 @@
-<Entity parent="template_unit">
+﻿<Entity parent="template_unit">
   <Attack>
     <Ranged>
       <AttackName>TBD.</AttackName>
@@ -42,6 +42,7 @@
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
   </BuildingAI>
   <Decay>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkAccel>7.0</SinkAccel>
     <SinkRate>3.0</SinkRate>

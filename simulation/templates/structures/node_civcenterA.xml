@@ -1,5 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_node">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
   <Cost>
     <BuildTime>60</BuildTime>
     <Resources>
@@ -10,7 +14,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="60.0" />
+    <Circle radius="60.0"/>
     <Height>5.0</Height>
   </Footprint>
   <Identity>
@@ -22,17 +26,11 @@
     <Icon>structures/node_civcenterA.dds</Icon>
   </Identity>
   <Obstruction>
-    <Static width="68.0" depth="68.0" />
+    <Static width="68.0" depth="68.0"/>
   </Obstruction>
-  <BuildRestrictions>
-    <Category>Barracks</Category>
-    <Territory>own neutral enemy</Territory>
-  </BuildRestrictions>
-  <TerritoryInfluence>
-    <Root>true</Root>
-    <Radius>50</Radius>
-    <Weight>30000</Weight>
-  </TerritoryInfluence>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <ResourceTrickle>
     <Rates>
       <food>0.0</food>
@@ -42,10 +40,15 @@
     </Rates>
     <Interval>2000</Interval>
   </ResourceTrickle>
-  <VisualActor>
-    <Actor>structures/node_civcenterA.xml</Actor>
-    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
-  </VisualActor>
+  <TerritoryInfluence>
+    <Root>true</Root>
+    <Radius>50</Radius>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <ADarknut>
       <Entity>structures/darknut/darknut_civil_centre</Entity>
@@ -56,8 +59,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_darknut</Variant>
-      <RequiredTechnology>darknut/player_isdarknut</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>darknut/player_isdarknut</Techs>
+      </Requirements>
     </ADarknut>
     <ADeku>
       <Entity>structures/deku/deku_civil_centre</Entity>
@@ -68,8 +73,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_deku</Variant>
-      <RequiredTechnology>deku/player_isdeku</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>deku/player_isdeku</Techs>
+      </Requirements>
     </ADeku>
     <AFairy>
       <Entity>structures/fairy/fairy_wishingwell_spring</Entity>
@@ -80,8 +87,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_fairy</Variant>
-      <RequiredTechnology>fairy/player_isfairy</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>fairy/player_isfairy</Techs>
+      </Requirements>
     </AFairy>
     <AGerudo>
       <Entity>structures/gerudo/gerudo_civil_centre</Entity>
@@ -92,8 +101,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_gerudo</Variant>
-      <RequiredTechnology>gerudo/player_isgerudo</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>gerudo/player_isgerudo</Techs>
+      </Requirements>
     </AGerudo>
     <AGohma>
       <Entity>structures/gohma/gohma_civil_centre</Entity>
@@ -104,8 +115,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_gohma</Variant>
-      <RequiredTechnology>gohma/player_isgohma</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>gohma/player_isgohma</Techs>
+      </Requirements>
     </AGohma>
     <AGoron>
       <Entity>structures/goron/goron_civil_centre</Entity>
@@ -116,8 +129,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_goron</Variant>
-      <RequiredTechnology>goron/player_isgoron</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>goron/player_isgoron</Techs>
+      </Requirements>
     </AGoron>
     <AHylian>
       <Entity>structures/hylian/hylian_civil_centre</Entity>
@@ -128,8 +143,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_hylian</Variant>
-      <RequiredTechnology>hylian/player_ishylian</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>hylian/player_ishylian</Techs>
+      </Requirements>
     </AHylian>
     <AKokiri>
       <Entity>structures/kokiri/kokiri_civil_centre</Entity>
@@ -140,8 +157,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_kokiri</Variant>
-      <RequiredTechnology>kokiri/player_iskokiri</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>kokiri/player_iskokiri</Techs>
+      </Requirements>
     </AKokiri>
     <ALabrynna>
       <Entity>structures/labrynna/labrynna_civil_centre</Entity>
@@ -152,8 +171,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_labrynna</Variant>
-      <RequiredTechnology>labrynna/player_islabrynna</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>labrynna/player_islabrynna</Techs>
+      </Requirements>
     </ALabrynna>
     <ALanayru>
       <Entity>structures/lanayru/lanayru_civil_centre</Entity>
@@ -164,8 +185,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_lanayru</Variant>
-      <RequiredTechnology>lanayru/player_islanayru</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>lanayru/player_islanayru</Techs>
+      </Requirements>
     </ALanayru>
     <ALizalfos>
       <Entity>structures/lizalfos/lizalfos_civil_centre</Entity>
@@ -176,8 +199,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_lizalfos</Variant>
-      <RequiredTechnology>lizalfos/player_islizalfos</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>lizalfos/player_islizalfos</Techs>
+      </Requirements>
     </ALizalfos>
     <AMoblin>
       <Entity>structures/moblin/moblin_civil_centre</Entity>
@@ -188,8 +213,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_moblin</Variant>
-      <RequiredTechnology>moblin/player_ismoblin</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>moblin/player_ismoblin</Techs>
+      </Requirements>
     </AMoblin>
     <AOrdona>
       <Entity>structures/ordona/ordona_civil_centre</Entity>
@@ -200,8 +227,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_ordona</Variant>
-      <RequiredTechnology>ordona/player_isordona</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>ordona/player_isordona</Techs>
+      </Requirements>
     </AOrdona>
     <ASheikah>
       <Entity>structures/sheikah/sheikah_civil_centre</Entity>
@@ -212,8 +241,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_sheikah</Variant>
-      <RequiredTechnology>sheikah/player_issheikah</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>sheikah/player_issheikah</Techs>
+      </Requirements>
     </ASheikah>
     <AStalfos>
       <Entity>structures/stalfos/stalfos_graveyard</Entity>
@@ -224,8 +255,10 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_stalfos</Variant>
-      <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>stalfos/player_isstalfos</Techs>
+      </Requirements>
     </AStalfos>
     <AZora>
       <Entity>structures/zora/zora_civil_centre</Entity>
@@ -236,15 +269,14 @@
       </Cost>
       <Time>60</Time>
       <Variant>upgrading_zora</Variant>
-      <RequiredTechnology>zora/player_iszora</RequiredTechnology>
       <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+      <Requirements>
+        <Techs>zora/player_iszora</Techs>
+      </Requirements>
     </AZora>
   </Upgrade>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
+  <VisualActor>
+    <Actor>structures/node_civcenterA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
 </Entity>

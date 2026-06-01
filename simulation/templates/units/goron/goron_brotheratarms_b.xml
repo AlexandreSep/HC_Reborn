@@ -1,58 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_swordsman_heavy">
-<Attack>
- <Melee>
-      <Splash>
-        <Damage>
-          <Hack>5.0</Hack>
-        </Damage>
-        <FriendlyFire>false</FriendlyFire>
-        <Range>5</Range>
-        <Shape>Circular</Shape>
-      </Splash>
- </Melee>
-</Attack>
-  <Cost>
-    <Resources>
-      <stone>40</stone>
-    </Resources>
-  </Cost>
-  <Identity>
-    <Civ>goron</Civ>
-    <Classes datatype="tokens">Medium Unique Unit BrotherAtArms</Classes>
-    <GenericName>Brother-at-Arms</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>Carrying the famous blades of the smithy Biggoron, Brothers-at-Arms are loyal defenders of Death Mountain and fearless in the face of battle. Their long blades have a very huge attack arc, allowing them to cut through multiple foes with one swing.</History>
-    <Icon>units/goron/gor_brotheratarms.dds</Icon>
-    <Lang>goron</Lang>
-    <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
-    <SelectionGroupName>units/goron/goron_brotheratarms_b</SelectionGroupName>
-    <Tooltip>Medigoron's Unique Unit. Swift Melee unit that deals a wide area of Splash Damage.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>40</Hack>
-        <Pierce>40.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/sword.xml</attack_melee>
-      <death>voice/goron/brotheratarms/brotheratarms_death.xml</death>
-      <order_attack>voice/goron/brotheratarms/brotheratarms_attack.xml</order_attack>
-      <order_garrison>voice/goron/brotheratarms/brotheratarms_garrison.xml</order_garrison>
-      <order_gather>voice/goron/brotheratarms/brotheratarms_gather.xml</order_gather>
-      <order_repair>voice/goron/brotheratarms/brotheratarms_repair.xml</order_repair>
-      <order_walk>voice/goron/brotheratarms/brotheratarms_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/goron/brotheratarms/brotheratarms_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/goron/goron_brotheratarms_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <Splash>
+                <Damage>
+                    <Hack>5.0</Hack>
+                </Damage>
+                <FriendlyFire>false</FriendlyFire>
+                <Range>5</Range>
+                <Shape>Circular</Shape>
+            </Splash>
+        </Melee>
+    </Attack>
+    <Cost>
+        <Resources>
+            <stone>40</stone>
+        </Resources>
+    </Cost>
+    <Identity>
+        <Civ>goron</Civ>
+        <Classes datatype="tokens">Medium Unique Unit BrotherAtArms</Classes>
+        <GenericName>Brother-at-Arms</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>Carrying the famous blades of the smithy Biggoron, Brothers-at-Arms are loyal defenders of Death Mountain and fearless in the face of battle. Their long blades have a very huge attack arc, allowing them to cut through multiple foes with one swing.</History>
+        <Icon>units/goron/gor_brotheratarms.dds</Icon>
+        <Lang>goron</Lang>
+        <SelectionGroupName>units/goron/goron_brotheratarms_b</SelectionGroupName>
+        <Tooltip>Medigoron's Unique Unit. Swift Melee unit that deals a wide area of Splash Damage.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/goron/choosehero_darunia</Techs>
+        </Requirements>
+    </Identity>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <Hack>40</Hack>
+                <Pierce>40.0</Pierce>
+            </Damage>
+        </Entity>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/sword.xml</attack_melee>
+            <death>voice/goron/brotheratarms/brotheratarms_death.xml</death>
+            <order_attack>voice/goron/brotheratarms/brotheratarms_attack.xml</order_attack>
+            <order_garrison>voice/goron/brotheratarms/brotheratarms_garrison.xml</order_garrison>
+            <order_gather>voice/goron/brotheratarms/brotheratarms_gather.xml</order_gather>
+            <order_repair>voice/goron/brotheratarms/brotheratarms_repair.xml</order_repair>
+            <order_walk>voice/goron/brotheratarms/brotheratarms_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/goron/brotheratarms/brotheratarms_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/goron/goron_brotheratarms_b.xml</Actor>
+    </VisualActor>
 </Entity>

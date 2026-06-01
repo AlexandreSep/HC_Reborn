@@ -1,38 +1,42 @@
-<Entity parent="classes/HC_template_unit_siegeram"> 
-  <Capturable disable="" />
-  <Decay>
-    <Active>false</Active>
-    <DelayTime>80.0</DelayTime>
-    <SinkAccel>0.0</SinkAccel>
-    <SinkRate>0.01</SinkRate>
-    <SinkingAnim>false</SinkingAnim>
-  </Decay>
-  <Identity>
-    <Civ>moblin</Civ>
-    <Classes datatype="tokens"> Construct Ram  Baddyram Bugblin</Classes>
-    <GenericName>Bugblin Baddy Ram</GenericName>
-    <History>Crafty little Bugblins they made a pretty cool big stick to knock down the gates! Get one of these beauty sticks out and take down them walls and houses!</History>
-    <Icon>units/moblin/mob_baddyram.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
-    <Tooltip>Bangin Melee Siege unit goes a banging on the enemy doors to knock em down!</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/siege/ram_attack.xml</attack_melee>
-      <death>voice/moblin/bugblin/bugblin_death.xml</death>
-      <order_attack>voice/moblin/bugblin/bugblin_attack.xml</order_attack>
-      <order_walk>voice/moblin/bugblin/bugblin_walk.xml</order_walk>
-      <run>actor/movement/cart/cart_move.xml</run>
-      <select>voice/moblin/bugblin/bugblin_select.xml</select>
-      <trained>interface/alarm/alarm_create_engine.xml</trained>
-      <walk>actor/movement/cart/cart_move.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <Vision>
-    <Range>80</Range>
-  </Vision>
-  <VisualActor>
-    <Actor>units/moblin/moblin_baddyram_b.xml</Actor>
-  </VisualActor>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="classes/HC_template_unit_siegeram">
+    <Capturable disable=""/>
+    <Decay>
+        <Active>false</Active>
+        <SinkProb>0.0</SinkProb>
+        <DelayTime>80.0</DelayTime>
+        <SinkAccel>0.0</SinkAccel>
+        <SinkRate>0.01</SinkRate>
+        <SinkingAnim>false</SinkingAnim>
+    </Decay>
+    <Identity>
+        <Civ>moblin</Civ>
+        <Classes datatype="tokens"> Construct Ram  Baddyram Bugblin</Classes>
+        <GenericName>Bugblin Baddy Ram</GenericName>
+        <History>Crafty little Bugblins they made a pretty cool big stick to knock down the gates! Get one of these beauty sticks out and take down them walls and houses!</History>
+        <Icon>units/moblin/mob_baddyram.dds</Icon>
+        <Tooltip>Bangin Melee Siege unit goes a banging on the enemy doors to knock em down!</Tooltip>
+        <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+        <Requirements>
+            <Techs>phase_village</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/siege/ram_attack.xml</attack_melee>
+            <death>voice/moblin/bugblin/bugblin_death.xml</death>
+            <order_attack>voice/moblin/bugblin/bugblin_attack.xml</order_attack>
+            <order_walk>voice/moblin/bugblin/bugblin_walk.xml</order_walk>
+            <run>actor/movement/cart/cart_move.xml</run>
+            <select>voice/moblin/bugblin/bugblin_select.xml</select>
+            <trained>interface/alarm/alarm_create_engine.xml</trained>
+            <walk>actor/movement/cart/cart_move.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <Vision>
+        <Range>80</Range>
+    </Vision>
+    <VisualActor>
+        <Actor>units/moblin/moblin_baddyram_b.xml</Actor>
+    </VisualActor>
 </Entity>

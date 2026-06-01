@@ -1,8 +1,9 @@
-<Entity parent="template_unit">
+﻿<Entity parent="template_unit">
   <Cost>
     <Population>0</Population>
   </Cost>
   <Decay>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkAccel>2.0</SinkAccel>
     <SinkRate>0.0</SinkRate>

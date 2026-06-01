@@ -24,7 +24,10 @@ function Cheat(input)
 		Engine.QueryInterface(SYSTEM_ENTITY, IID_RangeManager).SetLosRevealAll(-1, true);
 		return;
 	case "maxpopulation":
-		cmpPlayer.SetPopulationBonuses((cmpPlayerManager.GetMaxWorldPopulation() || cmpPlayer.GetMaxPopulation()) + 500);
+		cmpPlayer.SetPopulationBonuses(
+			(cmpPlayerManager.GetMaxWorldPopulation ?
+				cmpPlayerManager.GetMaxWorldPopulation() :
+				cmpPlayer.GetMaxPopulation()) + 500);
 		return;
 	case "changemaxpopulation":
 	{

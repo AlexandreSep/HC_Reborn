@@ -36,7 +36,7 @@ var g_BottomMenuButtons = [
 		"tooltip": translate("Show the Hyrule Conquest credits."),
 		"size": "80% 0% 100% 100%",
 		"onPress": () => {
-			Engine.PushGuiPage("page_credits.xml");
+			Engine.OpenChildPage("page_credits.xml");
 		}
 	},
 ];

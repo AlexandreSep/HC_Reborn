@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_wallset">
   <Identity>
     <Civ>fairy</Civ>
@@ -5,9 +6,11 @@
     <GenericName>Ley Line</GenericName>
     <History>A magical line drawn upon the earth by Fairies. It seems to confuse and halt the passage of enemies.</History>
     <Icon>structures/fairy/fai_leyline_spring.dds</Icon>
-    <RequiredTechnology>civ_choices/fairy/choosehero_dezaia</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
-    <VisibleClasses datatype="tokens" />
+    <VisibleClasses datatype="tokens"/>
+    <Requirements>
+      <Techs>civ_choices/fairy/choosehero_dezaia</Techs>
+    </Requirements>
   </Identity>
   <WallSet>
     <MaxTowerOverlap>0.80</MaxTowerOverlap>

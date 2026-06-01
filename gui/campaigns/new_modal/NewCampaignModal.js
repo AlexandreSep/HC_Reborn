@@ -5,11 +5,11 @@
  */
 class NewCampaignModal
 {
-	constructor(campaignTemplate)
+	constructor(campaignTemplate, closePageCallback)
 	{
 		this.template = campaignTemplate;
 
-		Engine.GetGUIObjectByName('cancelButton').onPress = () => Engine.PopGuiPage();
+		Engine.GetGUIObjectByName('cancelButton').onPress = closePageCallback;
 		Engine.GetGUIObjectByName('startButton').onPress = () => this.createAndStartCampaign();
 		Engine.GetGUIObjectByName("campaignImage").sprite = "stretched:" + this.template.FactionImage;
 		Engine.GetGUIObjectByName('title').caption = translateWithContext("Campaign Template", this.template.Name);
@@ -41,5 +41,7 @@ var g_NewCampaignModal;
 
 function init(campaign_template_data)
 {
-	g_NewCampaignModal = new NewCampaignModal(campaign_template_data);
+	return new Promise(closePageCallback => {
+		g_NewCampaignModal = new NewCampaignModal(campaign_template_data, closePageCallback);
+	});
 }

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/hivecreep
@@ -20,7 +21,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="15.0" />
+    <Circle radius="15.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -54,7 +55,7 @@
     <VisibleClasses datatype="tokens">Culture</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Static depth="35.0" width="35.0" />
+    <Static depth="35.0" width="35.0"/>
   </Obstruction>
   <Population>
     <Bonus>5</Bonus>
@@ -76,18 +77,22 @@
         <wood>50</wood>
       </Cost>
       <Entity>structures/gohma/gohma_temple_special</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Create Mite Mound.</Tooltip>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </AMiteMound>
     <BAcidBatch>
       <Cost>
         <wood>100</wood>
       </Cost>
       <Entity>structures/gohma/gohma_temple_defense</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Create Acid Batch.</Tooltip>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
     </BAcidBatch>
   </Upgrade>
   <VisualActor>

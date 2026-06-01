@@ -26,8 +26,9 @@ ProductionQueue.prototype.HideUnresearchedUnits = function (cmpPlayer,cmpTemplat
 			continue;
 		}
 
-		let requiredTechnology = cmpTemplateManager.GetTemplate(template).Identity.RequiredTechnology;
-		let requiredTechIsResearched = cmpTechnologyManager.IsTechnologyResearched(requiredTechnology);
+		let requiredTechnology = GetIdentityRequiredTechnology(cmpTemplateManager.GetTemplate(template).Identity);
+		let requiredTechIsResearched = requiredTechnology &&
+			requiredTechnology.split(/\s+/).every(tech => cmpTechnologyManager.IsTechnologyResearched(tech));
 		if (requiredTechnology && !requiredTechIsResearched)
 		{
 			disabledEntities[template] = true;
@@ -110,8 +111,9 @@ ProductionQueue.prototype.CalculateEntitiesList = function()
             continue;
 	    }
 	    
-	    let requiredTechnology = cmpTemplateManager.GetTemplate(template).Identity.RequiredTechnology;
-	    let requiredTechIsResearched = cmpTechnologyManager.IsTechnologyResearched(requiredTechnology);
+	    let requiredTechnology = GetIdentityRequiredTechnology(cmpTemplateManager.GetTemplate(template).Identity);
+	    let requiredTechIsResearched = requiredTechnology &&
+            requiredTechnology.split(/\s+/).every(tech => cmpTechnologyManager.IsTechnologyResearched(tech));
 	    if (requiredTechnology && !requiredTechIsResearched){
             disabledEntities[template] = true;
 	    } else {

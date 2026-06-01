@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense_wall">
   <Footprint>
     <Height>9.0</Height>
-    <Square depth="9.0" width="14.5" />
+    <Square depth="9.0" width="14.5"/>
   </Footprint>
   <Health>
     <SpawnEntityOnDeath>rubble/debris_goron_tiny</SpawnEntityOnDeath>
@@ -15,7 +16,7 @@
     <Tooltip>Defensive Wall to slow invaders.</Tooltip>
   </Identity>
   <Obstruction>
-    <Static depth="7.5" width="20.0" />
+    <Static depth="7.5" width="20.0"/>
   </Obstruction>
   <Upgrade>
     <WallB>
@@ -24,9 +25,11 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_shortB</Entity>
       <Time>10</Time>
-	  <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
       <Tooltip>Upgrade with Double Layer.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_darunia</Techs>
+      </Requirements>
     </WallB>
     <WallC>
       <Cost>
@@ -34,9 +37,11 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_shortC</Entity>
       <Time>10</Time>
-	  <RequiredTechnology>civ_choices/goron/choosehero_daruk</RequiredTechnology>
       <Tooltip>Upgrade with Lava Moat.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_daruk</Techs>
+      </Requirements>
     </WallC>
     <WallD>
       <Cost>
@@ -44,9 +49,11 @@
       </Cost>
       <Entity>structures/goron/goron_metal_wall_shortD</Entity>
       <Time>10</Time>
-	  <RequiredTechnology>civ_choices/goron/choosehero_dangoro</RequiredTechnology>
       <Tooltip>Upgrade with Bulwark.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_dangoro</Techs>
+      </Requirements>
     </WallD>
   </Upgrade>
   <VisualActor>

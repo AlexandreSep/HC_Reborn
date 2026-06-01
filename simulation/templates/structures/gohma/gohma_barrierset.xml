@@ -1,12 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_wallset">
   <Identity>
     <Civ>gohma</Civ>
     <GenericName>Hive Barrier</GenericName>
     <History>Deadly claws that jut forth from the ground, the Gohma would grow these structures along the edges of their Hives. Hive Barrier would attack anything that approached to prevent invasion.</History>
     <Icon>structures/gohma/goh_barrierA.dds</Icon>
-	<RequiredTechnology>civ_choices/gohma/choosehero_matriarch</RequiredTechnology>
     <Tooltip>Defense Wall that can attack enemy units.</Tooltip>
     <VisibleClasses datatype="tokens">Wall</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/gohma/choosehero_matriarch</Techs>
+    </Requirements>
   </Identity>
   <WallSet>
     <MaxTowerOverlap>0.80</MaxTowerOverlap>

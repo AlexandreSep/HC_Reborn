@@ -1,53 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_scout">
-  <Auras datatype="tokens">
+    <Attack>
+        <Melee>
+            <AttackName>Bash</AttackName>
+            <Damage>
+                <Hack>2</Hack>
+                <Pierce>2</Pierce>
+            </Damage>
+            <MaxRange>6.0</MaxRange>
+            <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+            <PrepareTime>1000</PrepareTime>
+            <RepeatTime>1100</RepeatTime>
+        </Melee>
+    </Attack>
+    <Auras datatype="tokens">
     units/eyesoar_aura_1
   </Auras>
-  <Attack>
-    <Melee>
-      <AttackName>Bash</AttackName>
-      <Damage>
-        <Hack>2</Hack>
-        <Pierce>2</Pierce>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-      <PrepareTime>1000</PrepareTime>
-      <RepeatTime>1100</RepeatTime>
-    </Melee>
-  </Attack>
-  <Health>
-    <Max>50</Max>
-  </Health>
-  <Identity>
-    <Civ>stalfos</Civ>
-    <Classes datatype="tokens">Small Flying Scout -Organic Undead</Classes>
-    <GenericName>Eyesoar</GenericName>
-    <History>Eyesoars are small soaring... eyes of which their complete body has been lost to time. Sprouting wings from the sides of their desiccated eyeballs, eyesoars are able to hover about and are able to detect hidden enemies as well as selflessly throw themselves in harms way of their masters.</History>
-    <Icon>units/stalfos/sta_eyesoar.dds</Icon>
-	<RequiredTechnology>civ_choices/stalfos/choosehero_blind</RequiredTechnology>
-    <SelectionGroupName>units/stalfos/stalfos_eyesoar_b</SelectionGroupName>
-    <Tooltip>Flying Creature Scout unit that can cover other units as well as ground and detect Camouflaged and Stealthed units.</Tooltip>
-    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/patra_dive.xml</attack_melee>
-      <death>voice/stalfos/eyesoar/eyesoar_death.xml</death>
-      <order_attack>voice/stalfos/eyesoar/eyesoar_attack.xml</order_attack>
-      <order_garrison>voice/stalfos/eyesoar/eyesoar_garrison.xml</order_garrison>
-      <order_gather>voice/stalfos/eyesoar/eyesoar_gather.xml</order_gather>
-      <order_repair>voice/stalfos/eyesoar/eyesoar_repair.xml</order_repair>
-      <order_walk>voice/stalfos/eyesoar/eyesoar_walk.xml</order_walk>
-      <run>actor/movement/patra/patra_flap.xml</run>
-      <select>voice/stalfos/eyesoar/eyesoar_select.xml</select>
-      <trained>interface/alarm/alarm_create_flying.xml</trained>
-      <walk>actor/movement/patra/patra_flap.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <PassabilityClass>hover</PassabilityClass>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/stalfos/stalfos_eyesoar_b.xml</Actor>
-  </VisualActor>
+    <Health>
+        <Max>50</Max>
+    </Health>
+    <Identity>
+        <Civ>stalfos</Civ>
+        <Classes datatype="tokens">Small Flying Scout -Organic Undead</Classes>
+        <GenericName>Eyesoar</GenericName>
+        <History>Eyesoars are small soaring... eyes of which their complete body has been lost to time. Sprouting wings from the sides of their desiccated eyeballs, eyesoars are able to hover about and are able to detect hidden enemies as well as selflessly throw themselves in harms way of their masters.</History>
+        <Icon>units/stalfos/sta_eyesoar.dds</Icon>
+        <SelectionGroupName>units/stalfos/stalfos_eyesoar_b</SelectionGroupName>
+        <Tooltip>Flying Creature Scout unit that can cover other units as well as ground and detect Camouflaged and Stealthed units.</Tooltip>
+        <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/stalfos/choosehero_blind</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/patra_dive.xml</attack_melee>
+            <death>voice/stalfos/eyesoar/eyesoar_death.xml</death>
+            <order_attack>voice/stalfos/eyesoar/eyesoar_attack.xml</order_attack>
+            <order_garrison>voice/stalfos/eyesoar/eyesoar_garrison.xml</order_garrison>
+            <order_gather>voice/stalfos/eyesoar/eyesoar_gather.xml</order_gather>
+            <order_repair>voice/stalfos/eyesoar/eyesoar_repair.xml</order_repair>
+            <order_walk>voice/stalfos/eyesoar/eyesoar_walk.xml</order_walk>
+            <run>actor/movement/patra/patra_flap.xml</run>
+            <select>voice/stalfos/eyesoar/eyesoar_select.xml</select>
+            <trained>interface/alarm/alarm_create_flying.xml</trained>
+            <walk>actor/movement/patra/patra_flap.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <PassabilityClass>hover</PassabilityClass>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/stalfos/stalfos_eyesoar_b.xml</Actor>
+    </VisualActor>
 </Entity>

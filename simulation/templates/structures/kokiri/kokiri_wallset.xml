@@ -1,11 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_wallset">
   <Identity>
     <Civ>kokiri</Civ>
     <GenericName>Kokiri Wall</GenericName>
     <History>The wooden Kokiri walls were durable enough and served them well keeping out invaders.</History>
     <Icon>structures/kokiri/kok_wall.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <WallSet>
     <MaxTowerOverlap>0.80</MaxTowerOverlap>

@@ -1,67 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_commander">
-  <Attack>
-  <Melee disable="" />
-    <Ranged>
-      <AttackName>Magic Sword</AttackName>
-      <Damage>
-        <Magic>15</Magic>
-      </Damage>
-      <MaxRange>15</MaxRange>
-      <MinRange>0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>900</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>1200</RepeatTime>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Identity>
-    <AIBuild>
-      <MaxCopies>2</MaxCopies>
-      <MinPop>0</MinPop>
-    </AIBuild>
-    <Civ>hylian</Civ>
-    <GenericName>Mage Captain</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>Lana's most poweful and truested soldiers, she used these Captains to replace those of the Hylian army during her brief takeover of the Kingdom.</History>
-    <Icon>units/hylian/hyl_magecaptain.dds</Icon>
-    <Lang>hylian</Lang>
-    <RequiredTechnology>civ_choices/hylian/choosehero_rauru</RequiredTechnology>
-    <SelectionGroupName>units/hylian/hylian_magecaptin_b</SelectionGroupName>
-    <Tooltip>Commander unit that can attack with magic from a distance so long as she has full health.</Tooltip>
-  </Identity>
-  <Position>
-    <Floating>false</Floating>
-  </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Magic>50</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/magic/sword_beam.xml</attack_ranged>
-      <death>voice/hylian/lightarcher/lightarcher_death.xml</death>
-      <order_attack>voice/hylian/lightarcher/lightarcher_attack.xml</order_attack>
-      <order_garrison>voice/hylian/lightarcher/lightarcher_garrison.xml</order_garrison>
-      <order_gather>voice/hylian/lightarcher/lightarcher_gather.xml</order_gather>
-      <order_repair>voice/hylian/lightarcher/lightarcher_repair.xml</order_repair>
-      <order_walk>voice/hylian/lightarcher/lightarcher_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/hylian/lightarcher/lightarcher_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/hylian/hylian_magecaptain_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee disable=""/>
+        <Ranged>
+            <AttackName>Magic Sword</AttackName>
+            <Damage>
+                <Magic>15</Magic>
+            </Damage>
+            <MaxRange>15</MaxRange>
+            <MinRange>0</MinRange>
+            <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+            <PrepareTime>900</PrepareTime>
+            <Projectile>
+                <Gravity>9.81</Gravity>
+                <Speed>75.0</Speed>
+                <Spread>1.5</Spread>
+                <FriendlyFire>false</FriendlyFire>
+                <LaunchPoint y="3"/>
+            </Projectile>
+            <RepeatTime>1200</RepeatTime>
+            <EffectDelay>0</EffectDelay>
+        </Ranged>
+    </Attack>
+    <Identity>
+        <AIBuild>
+            <MaxCopies>2</MaxCopies>
+            <MinPop>0</MinPop>
+        </AIBuild>
+        <Civ>hylian</Civ>
+        <GenericName>Mage Captain</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>Lana's most poweful and truested soldiers, she used these Captains to replace those of the Hylian army during her brief takeover of the Kingdom.</History>
+        <Icon>units/hylian/hyl_magecaptain.dds</Icon>
+        <Lang>hylian</Lang>
+        <SelectionGroupName>units/hylian/hylian_magecaptin_b</SelectionGroupName>
+        <Tooltip>Commander unit that can attack with magic from a distance so long as she has full health.</Tooltip>
+        <Requirements>
+            <Techs>civ_choices/hylian/choosehero_rauru</Techs>
+        </Requirements>
+    </Identity>
+    <Position>
+        <Floating>false</Floating>
+    </Position>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <Magic>50</Magic>
+            </Damage>
+        </Entity>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/magic/sword_beam.xml</attack_ranged>
+            <death>voice/hylian/lightarcher/lightarcher_death.xml</death>
+            <order_attack>voice/hylian/lightarcher/lightarcher_attack.xml</order_attack>
+            <order_garrison>voice/hylian/lightarcher/lightarcher_garrison.xml</order_garrison>
+            <order_gather>voice/hylian/lightarcher/lightarcher_gather.xml</order_gather>
+            <order_repair>voice/hylian/lightarcher/lightarcher_repair.xml</order_repair>
+            <order_walk>voice/hylian/lightarcher/lightarcher_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/hylian/lightarcher/lightarcher_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/hylian/hylian_magecaptain_b.xml</Actor>
+    </VisualActor>
 </Entity>

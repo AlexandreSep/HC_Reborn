@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Temple</Category>
   </BuildRestrictions>
   <Footprint>
     <Height>8.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
-    <GarrisonHolder>
+  <GarrisonHolder>
     <Max>20</Max>
     <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
@@ -36,16 +37,24 @@
     <GenericName>Cleansing Basin</GenericName>
     <History>The spread of Mad Scrub was a constant problem for the Deku Scrubs. Although it was not curable, bathing in the waters of the deep forests seemed to slow down the spread of the disease. It was wise for the Scrubs to build such a place to help prevent an outbreak and heal Scrubs from their injuries.</History>
     <Icon>structures/deku/dek_basin.dds</Icon>
-    <RequiredTechnology>civ_choices/deku/choosehero_dekuprincess</RequiredTechnology>
     <Tooltip>Researches abilities related to controlling Mad Scrub Disease.</Tooltip>
     <VisibleClasses datatype="tokens">Special</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/deku/choosehero_dekuprincess</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">deku/mad_pacify
+    deku/mad_drench
+    deku/kadakana_sonata
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/deku/complete_basin.xml</constructed>
@@ -53,17 +62,11 @@
       <upgraded>interface/complete/building/deku/complete_basin.xml</upgraded>
     </SoundGroups>
   </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <VisualActor>
     <Actor>structures/deku/deku_basinA.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">deku/mad_pacify
-    deku/mad_drench
-    deku/kadakana_sonata
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

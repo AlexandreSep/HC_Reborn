@@ -1,41 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_beast">
-  <Attack>
-    <Melee>
-      <AttackName>Fangs</AttackName>
-      <Damage>
-	    <Hack>0.0</Hack>
-        <Pierce>4.0</Pierce>
-      </Damage>
-    </Melee>
-  </Attack>
-  <Identity>
-    <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Small Okrablood_rope Rope</Classes>
-    <GenericName>Rope</GenericName>
-    <History>A small snake like creature, Ropes were very fragile but could be bred in huge swarms. Their ability to traverse any terrain made them a very nasty surprise for enemies ambushed by them in unexpected locations.</History>
-    <Icon>units/lizalfos/liz_rope.dds</Icon>
-    <Lang>lizalfos</Lang>
-    <RequiredTechnology>phase_village</RequiredTechnology>
-    <SelectionGroupName>units/lizalfos/lizalfos_rope_b</SelectionGroupName>
-    <Tooltip>Small Melee Creature who can move over any terrain.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/rope_bite.xml</attack_melee>
-      <death>voice/lizalfos/rope/rope_death.xml</death>
-      <order_attack>voice/lizalfos/rope/rope_attack.xml</order_attack>
-      <order_garrison>voice/lizalfos/rope/rope_garrison.xml</order_garrison>
-      <order_gather>voice/lizalfos/rope/rope_gather.xml</order_gather>
-      <order_repair>voice/lizalfos/rope/rope_repair.xml</order_repair>
-      <order_walk>voice/lizalfos/rope/rope_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/lizalfos/rope/rope_select.xml</select>
-      <trained>interface/alarm/alarm_create_creature.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/lizalfos/lizalfos_rope_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Fangs</AttackName>
+            <Damage>
+                <Hack>0.0</Hack>
+                <Pierce>4.0</Pierce>
+            </Damage>
+        </Melee>
+    </Attack>
+    <Identity>
+        <Civ>lizalfos</Civ>
+        <Classes datatype="tokens">Small Okrablood_rope Rope</Classes>
+        <GenericName>Rope</GenericName>
+        <History>A small snake like creature, Ropes were very fragile but could be bred in huge swarms. Their ability to traverse any terrain made them a very nasty surprise for enemies ambushed by them in unexpected locations.</History>
+        <Icon>units/lizalfos/liz_rope.dds</Icon>
+        <Lang>lizalfos</Lang>
+        <SelectionGroupName>units/lizalfos/lizalfos_rope_b</SelectionGroupName>
+        <Tooltip>Small Melee Creature who can move over any terrain.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+        <Requirements>
+            <Techs>phase_village</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/rope_bite.xml</attack_melee>
+            <death>voice/lizalfos/rope/rope_death.xml</death>
+            <order_attack>voice/lizalfos/rope/rope_attack.xml</order_attack>
+            <order_garrison>voice/lizalfos/rope/rope_garrison.xml</order_garrison>
+            <order_gather>voice/lizalfos/rope/rope_gather.xml</order_gather>
+            <order_repair>voice/lizalfos/rope/rope_repair.xml</order_repair>
+            <order_walk>voice/lizalfos/rope/rope_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/lizalfos/rope/rope_select.xml</select>
+            <trained>interface/alarm/alarm_create_creature.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/lizalfos/lizalfos_rope_b.xml</Actor>
+    </VisualActor>
 </Entity>

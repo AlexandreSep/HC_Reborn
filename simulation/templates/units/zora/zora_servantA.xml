@@ -54,7 +54,7 @@
   </Health>
   <Identity>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">Medium FemaleCitizen ZoraFemale ZaleenBonus</Classes>
+    <Classes datatype="tokens">Medium FemaleCitizen ZoraFemale ZaleenBonus Swimmer</Classes>
     <GenericName>Servant</GenericName>
     <History>Civilians that operate as a skilled workforce under the Dominion, Servants are the backbone of any Zora undertaking. Harvesting resources, tending Coralmold gardens, and building the glorious structures of the Dominion are but a sample of their tasks.</History>
     <Icon>units/zora/zor_servant.dds</Icon>

@@ -6,12 +6,6 @@
 Engine.RegisterMessageType("CivChanged");
 
 /**
- * Message of the form { "player": number, "otherPlayer": number }
- * sent from Player component when diplomacy changed for one player or between two players.
- */
-Engine.RegisterMessageType("DiplomacyChanged");
-
-/**
  * Message of the form {}
  * sent from Player component.
  */
@@ -22,18 +16,6 @@ Engine.RegisterMessageType("DisabledTechnologiesChanged");
  * sent from Player component.
  */
 Engine.RegisterMessageType("DisabledTemplatesChanged");
-
-/**
- * Message of the form { "playerID": number }
- * sent from Player component when a player is defeated.
- */
-Engine.RegisterMessageType("PlayerDefeated");
-
-/**
- * Message of the form { "playerID": number }
- * sent from Player component when a player has won.
- */
-Engine.RegisterMessageType("PlayerWon");
 
 /**
  * Message of the form { "to": number, "from": number, "amounts": object }

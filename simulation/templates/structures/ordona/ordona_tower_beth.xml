@@ -1,5 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/ordona/ordona_defense_tower">
-  <Identity>
-    <RequiredTechnology>phase_village</RequiredTechnology>
-  </Identity>
+    <Identity>
+        <Requirements>
+            <Techs>phase_village</Techs>
+        </Requirements>
+    </Identity>
 </Entity>

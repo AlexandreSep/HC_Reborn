@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_wonder">
   <Auras datatype="tokens">
     structures/urn1
   </Auras>
   <Footprint>
-    <Circle radius="45.0" />
+    <Circle radius="45.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -19,11 +20,13 @@
     <GenericName>Urn of Maphaeus</GenericName>
     <History>A mysterious giant urn that seems to move and dance about of its own will. The Gorons claim that the spirit of Maphaeus, the First Sage of Fire, possesses the Urn and entices it to dance. Regardless of the source of its magical animation, the Gorons revere the urn as the greatest work of art their culture has produced.</History>
     <Icon>structures/goron/gor_urn.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>The Goron Wonder, allows you to summon Biggoron.</Tooltip>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="90.0" width="90.0" />
+    <Static depth="90.0" width="90.0"/>
   </Obstruction>
   <Plots>
     <PlotsToSpawn>
@@ -78,18 +81,14 @@
       </PlotG>
     </PlotsToSpawn>
   </Plots>
-  <TerritoryInfluence>
-    <Radius>52</Radius>
-    <Root>false</Root>
-  </TerritoryInfluence>
-  <VisualActor>
-    <Actor>structures/goron/goron_wonderA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldA.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">
 </Technologies>
   </Researcher>
+  <TerritoryInfluence>
+    <Radius>52</Radius>
+    <Root>false</Root>
+  </TerritoryInfluence>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/goron/{civ}_titan_biggoron</Entities>
@@ -117,4 +116,8 @@
       <Z>30</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/goron/goron_wonderA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldA.xml</FoundationActor>
+  </VisualActor>
 </Entity>

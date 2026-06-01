@@ -1,56 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_beast">
-   <Attack>
-    <Melee>
-      <AttackName>Claws</AttackName>
-      <Damage>
-        <Hack>2.0</Hack>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-    </Melee>
-  </Attack>
-  <Identity>
-    <Civ>ordona</Civ>
-    <Classes datatype="tokens">Small Flying</Classes>
-    <GenericName>Ordona Hawk</GenericName>
-    <History>These large birds of prey native to the Province were often trained by Ordonian families to serve as messengers, hunting companions, and in times of war they could be deployed as scouts and unconventional battle units.</History>
-    <Icon>units/ordona/ord_hawk.dds</Icon>
-    <Lang>ordona</Lang>
-    <RequiredTechnology>ordona/tower_hawkpatrols</RequiredTechnology>
-    <SelectionGroupName>units/ordona/ordona_hawk_b</SelectionGroupName>
-    <Tooltip>Flying Creature Scout unit that can cover much ground and detect Camouflaged and Stealthed units.</Tooltip>
-    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
-  </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>3.25</TurnRate>
-  </Position>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/hawk_dive.xml</attack_melee>
-      <death>voice/ordona/hawk/hawk_death.xml</death>
-      <order_attack>voice/ordona/hawk/hawk_attack.xml</order_attack>
-      <order_garrison>voice/ordona/hawk/hawk_garrison.xml</order_garrison>
-      <order_gather>voice/ordona/hawk/hawk_gather.xml</order_gather>
-      <order_repair>voice/ordona/hawk/hawk_repair.xml</order_repair>
-      <order_walk>voice/ordona/hawk/hawk_walk.xml</order_walk>
-      <run>actor/movement/patra/patra_flap.xml</run>
-      <select>voice/ordona/hawk/hawk_select.xml</select>
-      <trained>interface/alarm/alarm_create_flying.xml</trained>
-      <walk>actor/movement/patra/patra_flap.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <TrainingRestrictions>
-    <Category>Senrtyhawk</Category>
-  </TrainingRestrictions>
-  <UnitAI>
-    <DefaultStance>defensive</DefaultStance>
-  </UnitAI>
-  <UnitMotion>
-    <PassabilityClass>hover</PassabilityClass>
-    <WalkSpeed>16.5</WalkSpeed>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/ordona/ordona_hawk_holder.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Claws</AttackName>
+            <Damage>
+                <Hack>2.0</Hack>
+            </Damage>
+            <MaxRange>6.0</MaxRange>
+            <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+        </Melee>
+    </Attack>
+    <Identity>
+        <Civ>ordona</Civ>
+        <Classes datatype="tokens">Small Flying</Classes>
+        <GenericName>Ordona Hawk</GenericName>
+        <History>These large birds of prey native to the Province were often trained by Ordonian families to serve as messengers, hunting companions, and in times of war they could be deployed as scouts and unconventional battle units.</History>
+        <Icon>units/ordona/ord_hawk.dds</Icon>
+        <Lang>ordona</Lang>
+        <SelectionGroupName>units/ordona/ordona_hawk_b</SelectionGroupName>
+        <Tooltip>Flying Creature Scout unit that can cover much ground and detect Camouflaged and Stealthed units.</Tooltip>
+        <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+        <Requirements>
+            <Techs>ordona/tower_hawkpatrols</Techs>
+        </Requirements>
+    </Identity>
+    <Position>
+        <Floating>true</Floating>
+        <TurnRate>3.25</TurnRate>
+    </Position>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/hawk_dive.xml</attack_melee>
+            <death>voice/ordona/hawk/hawk_death.xml</death>
+            <order_attack>voice/ordona/hawk/hawk_attack.xml</order_attack>
+            <order_garrison>voice/ordona/hawk/hawk_garrison.xml</order_garrison>
+            <order_gather>voice/ordona/hawk/hawk_gather.xml</order_gather>
+            <order_repair>voice/ordona/hawk/hawk_repair.xml</order_repair>
+            <order_walk>voice/ordona/hawk/hawk_walk.xml</order_walk>
+            <run>actor/movement/patra/patra_flap.xml</run>
+            <select>voice/ordona/hawk/hawk_select.xml</select>
+            <trained>interface/alarm/alarm_create_flying.xml</trained>
+            <walk>actor/movement/patra/patra_flap.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <TrainingRestrictions>
+        <Category>Senrtyhawk</Category>
+    </TrainingRestrictions>
+    <UnitAI>
+        <DefaultStance>defensive</DefaultStance>
+    </UnitAI>
+    <UnitMotion>
+        <PassabilityClass>hover</PassabilityClass>
+        <WalkSpeed>16.5</WalkSpeed>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/ordona/ordona_hawk_holder.xml</Actor>
+    </VisualActor>
 </Entity>

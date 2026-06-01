@@ -1,4 +1,4 @@
-<Entity parent="template_structure">
+﻿<Entity parent="template_structure">
   <BuildRestrictions>
     <Category>Wall</Category>
     <PlacementType>land-shore</PlacementType>
@@ -20,6 +20,7 @@
     <Range>50</Range>
   </DeathDamage>
   <Decay>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>1.0</DelayTime>
     <SinkAccel>0.1</SinkAccel>
     <SinkRate>0.0</SinkRate>

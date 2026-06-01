@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -14,7 +15,7 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>2000</RepeatTime>
       <EffectDelay>0</EffectDelay>
@@ -39,11 +40,58 @@
   </BuildingAI>
   <Footprint>
     <Height>8.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <GarrisonHolder>
     <Max>20</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>4000</Max>
+    <SpawnEntityOnDeath>rubble/debris_deku_medium</SpawnEntityOnDeath>
+    <SpawnMultipleEntitiesOnDeath>
+      <Chance>0</Chance>
+      <SpawnNumberMax>5</SpawnNumberMax>
+      <SpawnNumberMin>5</SpawnNumberMin>
+      <Template>units/deku/deku_scrubling_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>deku</Civ>
+    <Classes datatype="tokens">DekuBuilding City</Classes>
+    <GenericName>Blockhouse</GenericName>
+    <History>The Blockhouse serves as a durable defensive platform to protect a Deku Scrub Encampment. The Blockhouse itself is manned by Nut spitting Scrubs and can garrison batallions of units inside to bolster its attack power.</History>
+    <Icon>structures/deku/dek_blockhouse.dds</Icon>
+    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="40.0" width="40.0"/>
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <Population>
+    <Bonus>0</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/dekuscrub_spit.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_fortress.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_fortress.xml</select>
+      <upgraded>interface/complete/building/complete_fortress.xml</upgraded>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -128,44 +176,6 @@
       </Archer9>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>4000</Max>
-    <SpawnEntityOnDeath>rubble/debris_deku_medium</SpawnEntityOnDeath>
-    <SpawnMultipleEntitiesOnDeath>
-      <Chance>0</Chance>
-      <SpawnNumberMax>5</SpawnNumberMax>
-      <SpawnNumberMin>5</SpawnNumberMin>
-      <Template>units/deku/deku_scrubling_b</Template>
-    </SpawnMultipleEntitiesOnDeath>
-  </Health>
-  <Identity>
-    <Civ>deku</Civ>
-    <Classes datatype="tokens">DekuBuilding City</Classes>
-    <GenericName>Blockhouse</GenericName>
-    <History>The Blockhouse serves as a durable defensive platform to protect a Deku Scrub Encampment. The Blockhouse itself is manned by Nut spitting Scrubs and can garrison batallions of units inside to bolster its attack power.</History>
-    <Icon>structures/deku/dek_blockhouse.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
-    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
-    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="40.0" width="40.0" />
-  </Obstruction>
-  <Plots>
-    <CanSpawnFromPlot>true</CanSpawnFromPlot>
-  </Plots>
-  <Population>
-    <Bonus>0</Bonus>
-  </Population>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/natural/dekuscrub_spit.xml</attack_ranged>
-      <constructed>interface/complete/building/complete_fortress.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_fortress.xml</select>
-      <upgraded>interface/complete/building/complete_fortress.xml</upgraded>
-    </SoundGroups>
-  </Sound>
   <VisualActor>
     <Actor>structures/deku/deku_blockhouseA.xml</Actor>
   </VisualActor>
@@ -173,11 +183,4 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

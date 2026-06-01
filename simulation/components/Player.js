@@ -1,33 +1,38 @@
 function Player() {}
 
 Player.prototype.Schema =
-	"<element name='BarterMultiplier' a:help='Multipliers for barter prices.'>" +
-		"<interleave>" +
-			"<element name='Buy' a:help='Multipliers for the buy prices.'>" +
-				Resources.BuildSchema("positiveDecimal") +
+	"<interleave>" +
+		"<element name='BarterMultiplier' a:help='Multipliers for barter prices.'>" +
+			"<interleave>" +
+				"<element name='Buy' a:help='Multipliers for the buy prices.'>" +
+					Resources.BuildSchema("positiveDecimal") +
+				"</element>" +
+				"<element name='Sell' a:help='Multipliers for the sell prices.'>" +
+					Resources.BuildSchema("positiveDecimal") +
+				"</element>" +
+			"</interleave>" +
+		"</element>" +
+		"<element name='Formations' a:help='Space-separated list of formations this player can use.'>" +
+			"<attribute name='datatype'>" +
+				"<value>tokens</value>" +
+			"</attribute>" +
+			"<text/>" +
+		"</element>" +
+		"<optional>" +
+			"<element name='SharedLosTech' a:help='Allies will share los when this technology is researched. Leave empty to never share LOS.'>" +
+				"<text/>" +
 			"</element>" +
-			"<element name='Sell' a:help='Multipliers for the sell prices.'>" +
-				Resources.BuildSchema("positiveDecimal") +
+		"</optional>" +
+		"<optional>" +
+			"<element name='SharedDropsitesTech' a:help='Allies will share dropsites when this technology is researched. Leave empty to never share dropsites.'>" +
+				"<text/>" +
 			"</element>" +
-		"</interleave>" +
-	"</element>" +
-	"<element name='Formations' a:help='Space-separated list of formations this player can use.'>" +
-		"<attribute name='datatype'>" +
-			"<value>tokens</value>" +
-		"</attribute>" +
-		"<text/>" +
-	"</element>" +
-	"<element name='SharedLosTech' a:help='Allies will share los when this technology is researched. Leave empty to never share LOS.'>" +
-		"<text/>" +
-	"</element>" +
-	"<element name='SharedDropsitesTech' a:help='Allies will share dropsites when this technology is researched. Leave empty to never share dropsites.'>" +
-		"<text/>" +
-	"</element>" +
-	// HC-Code
-    "<element name='CorpseMax' a:help='The max number of corpses allowed at one time'><ref name='nonNegativeDecimal'/></element>" +
-	"<element name='SpyCostMultiplier'>" +
-		"<ref name='nonNegativeDecimal'/>" +
-	"</element>";
+		"</optional>" +
+		"<element name='CorpseMax' a:help='The max number of corpses allowed at one time'><ref name='nonNegativeDecimal'/></element>" +
+		"<element name='SpyCostMultiplier'>" +
+			"<ref name='nonNegativeDecimal'/>" +
+		"</element>" +
+	"</interleave>";
 
 /**
  * Don't serialize diplomacyColor or displayDiplomacyColor since they're modified by the GUI.
@@ -77,6 +82,7 @@ Player.prototype.Init = function()
 	this.startCam = undefined;
 	this.controlAllUnits = false;
 	this.isAI = false;
+	this.isRemoved = false;
 	this.cheatsEnabled = false;
 	this.panelEntities = [];
 	this.resourceNames = {};
@@ -450,6 +456,16 @@ Player.prototype.GetState = function()
 Player.prototype.IsActive = function()
 {
 	return this.state === "active";
+};
+
+Player.prototype.SetRemoved = function(flag)
+{
+	this.isRemoved = flag;
+};
+
+Player.prototype.IsRemoved = function()
+{
+	return this.isRemoved;
 };
 
 /**

@@ -7,7 +7,7 @@
     <Static depth="13.0" width="13.0" />
   </Obstruction>
   <ResourceSupply>
-    <Max>100000</Max>
+    <Max>20000</Max>
     <MaxGatherers>10</MaxGatherers>
   </ResourceSupply>
   <Sound>

@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civil_centre">
   <BuildRestrictions>
     <Category>Wonder</Category>
   </BuildRestrictions>
-  <Capturable disable="" />
+  <Capturable disable=""/>
   <Cost>
     <BuildTime>500</BuildTime>
     <Resources>
@@ -13,7 +14,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="90.0" />
+    <Circle radius="90.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -30,12 +31,14 @@
     <GenericName>Tower of Hera</GenericName>
     <History>One of the oldest structures in Hyrule, the Tower of Hera has long stood in the mountains of the Gerudo Desert, visible from many locations below. It has been abandoned by the Darknut people many times throughout history, only to be reconquered and repurposed. The original purpose of the tower is lost to history, though many believe it once served as an Apotheon for Darknut Kings and Queens. During their various reconquests of the ancient tower, it has also served as a prison, a lair for captured beasts and monsters, and a general temple of worship. In more modern times it serves as powerful Fortress and command center for those truely in power over the Legion.</History>
     <Icon>structures/darknut/dar_towerhera.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>The Darknut Wonder, allows you to summon Vaati. Continues to function as an Agora.</Tooltip>
     <VisibleClasses datatype="tokens">Wonder</VisibleClasses>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="115.0" width="115.0" />
+    <Static depth="115.0" width="115.0"/>
   </Obstruction>
   <Plots>
     <CanTakeOverPlots>true</CanTakeOverPlots>
@@ -43,6 +46,10 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
   <ResourceTrickle>
     <Interval>2000</Interval>
     <Rates>
@@ -64,14 +71,6 @@
       <upgraded>interface/complete/building/darknut/complete_towerhera.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_wonderA.xml</Actor>
-    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-</Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/darknut/{civ}_thrallA
       units/darknut/{civ}_molgera_b
@@ -108,4 +107,8 @@
       <Z>48</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_wonderA.xml</Actor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
 </Entity>

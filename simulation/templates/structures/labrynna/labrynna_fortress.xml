@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -14,7 +15,7 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>2000</RepeatTime>
       <EffectDelay>0</EffectDelay>
@@ -31,11 +32,11 @@
       <FromClass>Fortress</FromClass>
       <MinDistance>180</MinDistance>
     </Distance>
-	<Territory>own neutral</Territory>
+    <Territory>own neutral</Territory>
   </BuildRestrictions>
   <BuildingAI>
     <DefaultArrowCount>10</DefaultArrowCount>
-	<GarrisonArrowClasses>CanGarrison</GarrisonArrowClasses>
+    <GarrisonArrowClasses>CanGarrison</GarrisonArrowClasses>
     <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
   </BuildingAI>
   <Cost>
@@ -47,9 +48,9 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="70.0" width="70.0" />
+    <Square depth="70.0" width="70.0"/>
   </Footprint>
-    <GarrisonHolder>
+  <GarrisonHolder>
     <BuffHeal>0</BuffHeal>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
     <EjectHealth>0.9</EjectHealth>
@@ -57,6 +58,42 @@
     <LoadingRange>10</LoadingRange>
     <Max>20</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_huge</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>labrynna</Civ>
+    <Classes datatype="tokens">City</Classes>
+    <GenericName>Star Fort</GenericName>
+    <History>The Empire's Star Fort was a powerful fortification from which Labrynna could hold off just about any attack. Its unique shape allowed for a much wider range of fire, a design feature that would later greatly aid their Gunners and Cannons manning the ramparts.</History>
+    <Icon>structures/labrynna/lab_starfortA.dds</Icon>
+    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="67.0" width="67.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_fortress.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_fortress.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -161,45 +198,19 @@
       </Archer9>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>6000</Max>
-    <SpawnEntityOnDeath>rubble/debris_labrynna_huge</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>labrynna</Civ>
-    <Classes datatype="tokens">City</Classes>
-    <GenericName>Star Fort</GenericName>
-    <History>The Empire's Star Fort was a powerful fortification from which Labrynna could hold off just about any attack. Its unique shape allowed for a much wider range of fire, a design feature that would later greatly aid their Gunners and Cannons manning the ramparts.</History>
-    <Icon>structures/labrynna/lab_starfortA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
-    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="67.0" width="67.0" />
-  </Obstruction>
-  <Population>
-    <Bonus>10</Bonus>
-  </Population>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
-      <constructed>interface/complete/building/complete_fortress.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_fortress.xml</select>
-    </SoundGroups>
-  </Sound>
   <Upgrade>
     <Tower>
       <Cost>
-		<stone>200</stone>
+        <stone>200</stone>
         <wood>150</wood>
       </Cost>
       <Entity>structures/labrynna/labrynna_fortressB</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
       <Time>60</Time>
       <Tooltip>Upgrade Star Fort with Towers.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
     </Tower>
   </Upgrade>
   <VisualActor>
@@ -210,10 +221,4 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

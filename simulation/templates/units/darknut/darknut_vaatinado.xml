@@ -1,4 +1,4 @@
-<Entity parent="template_entity_full">
+﻿<Entity parent="template_entity_full">
   <Attack>
     <Ranged>
       <AttackName>Tornado</AttackName>
@@ -51,6 +51,7 @@
   </Cost>
   <Decay>
     <Active>false</Active>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkAccel>0.1</SinkAccel>
     <SinkRate>0.0</SinkRate>

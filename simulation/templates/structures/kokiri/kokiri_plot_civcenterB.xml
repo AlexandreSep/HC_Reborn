@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/kokiri/kokiri_plot_civcenterA">
   <Upgrade>
     <TowerA>
@@ -14,20 +15,24 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/kokiri/kokiri_publichanging</Entity>
-      <RequiredTechnology>civ_choices/kokiri/choosehero_gulley</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add Public Hangings to this building.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/kokiri/choosehero_gulley</Techs>
+      </Requirements>
     </TowerB>
     <TowerC>
       <Cost>
-		<wood>60</wood>
+        <wood>60</wood>
       </Cost>
       <Entity>structures/kokiri/kokiri_festivalA</Entity>
-	  <RequiredTechnology>civ_choices/kokiri/choosehero_saria</RequiredTechnology>
       <Time>20</Time>
       <Tooltip>Add a Community Home to this building.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/kokiri/choosehero_saria</Techs>
+      </Requirements>
     </TowerC>
     <TowerD>
       <Cost>

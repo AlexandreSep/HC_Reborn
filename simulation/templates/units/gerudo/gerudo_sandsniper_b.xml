@@ -1,36 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_archer">
-  <Attack>
-    <Ranged>
-      <MaxRange>75</MaxRange>
-    </Ranged>
-  </Attack>
-  <Identity>
-    <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Medium Sandsniper Human</Classes>
-    <GenericName>Sand Sniper</GenericName>
-    <History>The Gerudo Sand Snipers represent some of the best archers in all the desert. Trained from a very young age in the art of the bow, Sand Snipers are infamous for their ability to hit their targets dead-on from extremely long ranges. There are few individuals in Hyrule who can best them from a distance. </History>
-    <Icon>units/gerudo/ger_sandsniper.dds</Icon>
-    <Lang>gerudo</Lang>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <SelectionGroupName>units/gerudo/gerudo_sandsniper_b</SelectionGroupName>
-    <Tooltip>Long ranged Infantry Missile unit that has Camouflage.</Tooltip>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
-      <death>voice/gerudo/gerudo_deathA.xml</death>
-      <order_attack>voice/gerudo/sandsniper/sandsniper_attack.xml</order_attack>
-      <order_garrison>voice/gerudo/sandsniper/sandsniper_garrison.xml</order_garrison>
-      <order_gather>voice/gerudo/sandsniper/sandsniper_gather.xml</order_gather>
-      <order_repair>voice/gerudo/sandsniper/sandsniper_repair.xml</order_repair>
-      <order_walk>voice/gerudo/sandsniper/sandsniper_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/gerudo/sandsniper/sandsniper_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/gerudo/gerudo_sandsniper_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Ranged>
+            <MaxRange>75</MaxRange>
+        </Ranged>
+    </Attack>
+    <Identity>
+        <Civ>gerudo</Civ>
+        <Classes datatype="tokens">Medium Sandsniper Human</Classes>
+        <GenericName>Sand Sniper</GenericName>
+        <History>The Gerudo Sand Snipers represent some of the best archers in all the desert. Trained from a very young age in the art of the bow, Sand Snipers are infamous for their ability to hit their targets dead-on from extremely long ranges. There are few individuals in Hyrule who can best them from a distance. </History>
+        <Icon>units/gerudo/ger_sandsniper.dds</Icon>
+        <Lang>gerudo</Lang>
+        <SelectionGroupName>units/gerudo/gerudo_sandsniper_b</SelectionGroupName>
+        <Tooltip>Long ranged Infantry Missile unit that has Camouflage.</Tooltip>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+            <death>voice/gerudo/gerudo_deathA.xml</death>
+            <order_attack>voice/gerudo/sandsniper/sandsniper_attack.xml</order_attack>
+            <order_garrison>voice/gerudo/sandsniper/sandsniper_garrison.xml</order_garrison>
+            <order_gather>voice/gerudo/sandsniper/sandsniper_gather.xml</order_gather>
+            <order_repair>voice/gerudo/sandsniper/sandsniper_repair.xml</order_repair>
+            <order_walk>voice/gerudo/sandsniper/sandsniper_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/gerudo/sandsniper/sandsniper_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/gerudo/gerudo_sandsniper_b.xml</Actor>
+    </VisualActor>
 </Entity>

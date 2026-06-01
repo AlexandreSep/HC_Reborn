@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="37.0" width="37.0" />
+    <Square depth="37.0" width="37.0"/>
   </Footprint>
   <Health>
     <Max>2000</Max>
@@ -29,20 +30,28 @@
     <GenericName>Lava Smithy</GenericName>
     <History>The mighty Megaton hammers and other powerful weaponry are a closely guarded Goron secret. These forges are set up deep in the caverns of Death Mountain to craft and create the prized possessions of Goron warriors.</History>
     <Icon>structures/goron/gor_lavasmithy.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Upgrades Goron weapon and armor.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="15.0" width="15.0" />
+    <Static depth="15.0" width="15.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">goron/attack_lavaweap
+    goron/armor_magmahide
+    goron/armor_temperedsteel
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -56,6 +65,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
@@ -63,14 +76,4 @@
     <Actor>structures/goron/goron_lavasmithyA.xml</Actor>
     <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">goron/attack_lavaweap
-    goron/armor_magmahide
-    goron/armor_temperedsteel
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

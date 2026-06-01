@@ -1,6 +1,5 @@
 /**
  * The maximum number of players that the engine supports.
- * TODO: Maybe we can support more than 8 players sometime.
  */
 const g_MaxPlayers = 8;
 
@@ -19,19 +18,8 @@ const g_SettingsDirectory = "simulation/data/settings/";
  */
 const g_BiomesDirectory = "maps/random/rmbiome/";
 
-
-/**
- * An object containing all values given by setting name.
- * Used by lobby, game setup, session, summary screen, and replay menu.
- */
 const g_Settings = loadSettingsValues();
 
-/**
- * Loads and translates all values of all settings which
- * can be configured by dropdowns in the game setup.
- *
- * @returns {Object|undefined}
- */
 function loadSettingsValues()
 {
 	var settings = {
@@ -41,10 +29,10 @@ function loadSettingsValues()
 		"GameSpeeds": loadSettingValuesFile("game_speeds.json"),
 		"MapTypes": loadMapTypes(),
 		"MapSizes": loadSettingValuesFile("map_sizes.json"),
+		"PlayerPlacements": loadSettingValuesFile("player_placements.json"),
 		"Biomes": loadBiomes(),
 		"PlayerDefaults": loadPlayerDefaults(),
-		"PopulationCapacities": loadPopulationCapacities(),
-		"WorldPopulationCapacities": loadWorldPopulationCapacities(),
+		"PopulationCapacities": loadSettingValuesFile("population_capacities.json"),
 		"StartingResources": loadSettingValuesFile("starting_resources.json"),
 		"VictoryConditions": loadVictoryConditions(),
 		"TriggerDifficulties": loadSettingValuesFile("trigger_difficulties.json")
@@ -55,7 +43,6 @@ function loadSettingsValues()
 
 	return deepfreeze(settings);
 }
-
 /**
  * Returns an array of objects reflecting all possible values for a given setting.
  *
@@ -97,9 +84,31 @@ function loadSettingValuesFile(filename)
  */
 function loadAIDescriptions()
 {
-	var ais = Engine.GetAIs();
+	var ais = Engine.GetAIs().filter(ai => ai && ai.id && ai.id == "ConquestAI").map(ai => {
+		if (!ai.data)
+			ai.data = {};
+
+		if (ai.data.name === undefined)
+			ai.data.name = ai.name || ai.data.Name || ai.id || "Unknown AI";
+
+		if (ai.data.description === undefined)
+			ai.data.description = "";
+
+		return ai;
+	});
 	translateObjectKeys(ais, ["name", "description"]);
-	return ais.sort((a, b) => a.data.name.localeCompare(b.data.name));
+	for (let ai of ais)
+	{
+		if (!ai.data)
+			ai.data = {};
+
+		if (ai.data.name === undefined)
+			ai.data.name = ai.id || "Unknown AI";
+
+		if (ai.data.description === undefined)
+			ai.data.description = "";
+	}
+	return ais.sort((a, b) => String(a.data.name).localeCompare(String(b.data.name)));
 }
 
 /**
@@ -270,29 +279,6 @@ function loadPopulationCapacities()
 	}
 
 	return json.PopulationCapacities.map(population => ({
-		"Population": population,
-		"Default": population == json.Default,
-		"Title": population < 10000 ? population : translate("Unlimited")
-	}));
-}
-
-/**
- * Loads available world population capacities.
- *
- * @returns {Object[]|undefined} - An array of the world population capacities in the form:
- *	{ "Population": number, "Default": number, "Title": number|String }.
- */
-function loadWorldPopulationCapacities()
-{
-	let json = Engine.ReadJSONFile(g_SettingsDirectory + "world_population_capacities.json");
-
-	if (!json || json.Default === undefined || !json.WorldPopulationCapacities || !Array.isArray(json.WorldPopulationCapacities))
-	{
-		error("Could not load population_capacities.json");
-		return undefined;
-	}
-
-	return json.WorldPopulationCapacities.map(population => ({
 		"Population": population,
 		"Default": population == json.Default,
 		"Title": population < 10000 ? population : translate("Unlimited")

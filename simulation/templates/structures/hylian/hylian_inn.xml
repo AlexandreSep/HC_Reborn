@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
-<Auras datatype="tokens">
+  <Auras datatype="tokens">
     structures/bar_aura
   </Auras>
   <BuildRestrictions>
@@ -17,7 +18,7 @@
   </Cost>
   <Footprint>
     <Height>15.0</Height>
-    <Square depth="20.0" width="20.0" />
+    <Square depth="20.0" width="20.0"/>
   </Footprint>
   <Health>
     <Max>500</Max>
@@ -33,13 +34,19 @@
     <GenericName>Hylian Inn</GenericName>
     <History>Serving everything from Peahat Salad to Lon Lon Beef, the local inn is often a hotbed of activity for Hylian civilians. After a long day's work, an Inn goes to great lengths to improve the populace's happiness.</History>
     <Icon>structures/hylian/hyl_inn.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Improves Worker gather rates.</Tooltip>
     <VisibleClasses datatype="tokens">Bar</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.0" width="15.0" />
+    <Static depth="15.0" width="15.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage>
@@ -73,8 +80,4 @@
     <Actor>structures/hylian/hylian_innA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldI.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-</Technologies>
-  </Researcher>
 </Entity>

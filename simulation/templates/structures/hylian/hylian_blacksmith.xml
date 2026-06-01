@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="37.0" width="37.0" />
+    <Square depth="37.0" width="37.0"/>
   </Footprint>
   <Health>
     <Max>1500</Max>
@@ -29,17 +30,30 @@
     <GenericName>Blacksmith</GenericName>
     <History>A large barracks devoted entirely to the production and storage of armor, this structure creates all manner of improved weapons and armors for Hylian warriors.</History>
     <Icon>structures/hylian/hyl_blacksmithA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Researches and creates new and improved weapons and armor.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="35.0" width="35.0" />
+    <Static depth="35.0" width="35.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/attack_hyl_infantry_melee_01
+      hylian/attack_hyl_infantry_melee_02
+      hylian/attack_hyl_infantry_ranged_01
+      hylian/attack_hyl_infantry_ranged_02
+      hylian/attack_hyl_cavalry_01
+      hylian/attack_hyl_cavalry_02
+      hylian/armor_hyl_all_01
+      hylian/armor_hyl_all_02
+</Technologies>
+  </Researcher>
   <Resistance>
     <Entity>
       <Damage>
@@ -75,6 +89,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
@@ -82,19 +100,4 @@
     <Actor>structures/hylian/hylian_blacksmithA.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldB.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">hylian/attack_hyl_infantry_melee_01
-      hylian/attack_hyl_infantry_melee_02
-      hylian/attack_hyl_infantry_ranged_01
-      hylian/attack_hyl_infantry_ranged_02
-      hylian/attack_hyl_cavalry_01
-      hylian/attack_hyl_cavalry_02
-      hylian/armor_hyl_all_01
-      hylian/armor_hyl_all_02
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

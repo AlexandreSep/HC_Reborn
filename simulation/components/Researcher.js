@@ -198,6 +198,10 @@ Researcher.prototype.GetTechnologiesList = function()
 
 	let techs = string.split(/\s+/);
 
+	const cmpIdentity = Engine.QueryInterface(this.entity, IID_Identity);
+	if (cmpIdentity && (cmpIdentity.HasClass("CivCentre") || cmpIdentity.HasClass("CivilCentre")))
+		this.AddDefaultPhaseTechnologies(techs);
+
 	// Replace the civ specific technologies.
 	const civ = Engine.QueryInterface(playerEnt, IID_Identity).GetCiv();
 	for (let i = 0; i < techs.length; ++i)
@@ -296,6 +300,15 @@ Researcher.prototype.GetTechnologiesList = function()
 	}
 
 	return ret;
+};
+
+Researcher.prototype.AddDefaultPhaseTechnologies = function(techs)
+{
+	if (!techs.some(tech => tech.indexOf("phase_town") === 0))
+		techs.push("phase_town_generic");
+
+	if (!techs.some(tech => tech.indexOf("phase_city") === 0))
+		techs.push("phase_city_generic");
 };
 
 /**

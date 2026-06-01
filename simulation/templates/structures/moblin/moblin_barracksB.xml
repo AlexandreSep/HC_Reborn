@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -25,7 +26,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Bashin' Bulblin Camp</GenericName>
     <History>Those Bulblins are a nasty bunch they are! They may be small but they gots some smarts in their head! They don’t like to hang out with us other Blins much though, so they make their own village out over there! We don’t mind!</History>
     <Icon>structures/moblin/mob_camp_bulb.dds</Icon>
@@ -33,21 +34,8 @@
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
-  <Upgrade>
-    <Tower>
-      <Entity>units/moblin/moblin_barracksB_packed</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
-      <Time>30</Time>
-      <Tooltip>Pack up this Bashin' Bulblin Camp.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/moblin/moblin_camp_bulbA.xml</Actor>
-    <FoundationActor>structures/moblin/moblin_scaffoldB.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">moblin/bulb_headhittin
     moblin/bulb_flaminarrow
@@ -86,4 +74,19 @@
       <Z>-10</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracksB_packed</Entity>
+      <Time>30</Time>
+      <Tooltip>Pack up this Bashin' Bulblin Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_bulbA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldB.xml</FoundationActor>
+  </VisualActor>
 </Entity>

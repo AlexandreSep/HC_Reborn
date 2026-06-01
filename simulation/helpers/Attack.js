@@ -172,9 +172,17 @@ AttackHelper.prototype.GetTotalAttackEffects = function(target, effectData, effe
 	if (effectType == "Damage"){
         for (let type in effectData.Damage)
         { // HC-code, Damage is decreased per point of armour in that category
-            let resistanceValue = resistanceStrengths.Damage[type]
-            if (resistanceValue == null){ // HC-Code: Added a check for missing damage types to warn the programmer
-				error("Entity: " + target + " misses resistance of type " + type + ". Damage calculation skips that damage type. This might result in attacks dealing no damage.");
+            let resistanceValue = resistanceStrengths.Damage && resistanceStrengths.Damage[type]
+            if (resistanceValue == null){ // HC-Code: Missing resistances behave as 0 armor.
+				if (!this.missingResistanceWarnings)
+					this.missingResistanceWarnings = {};
+				const warningKey = target + ":" + type;
+				if (!this.missingResistanceWarnings[warningKey])
+				{
+					warn("Entity: " + target + " misses resistance of type " + type + ". Using 0 resistance.");
+					this.missingResistanceWarnings[warningKey] = true;
+				}
+				resistanceValue = 0;
             }
             if (resistanceValue > 98) // HC-code, prevent healing and full immunity to a resistance value
                 resistanceValue = 98;

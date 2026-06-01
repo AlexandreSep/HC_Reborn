@@ -1,29 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_siegecannon">
-  <Identity>
-    <Civ>gerudo</Civ>
-    <Classes datatype="tokens">Construct Large GerudoCatapult</Classes>
-    <GenericName>Gerudo Catapult</GenericName>
-    <History>The Gerudo have recently used Catapults to attack enemy cities: it has become their most reliable siege weapon in recent years. Made from the wood of Desert Palms, they are very easy to construct and maintain. The boulders launched by these engines can take down just about any stationary target, be it walls, gates, or enemy towers.</History>
-    <Icon>units/gerudo/ger_catapult.dds</Icon>
-	<RequiredTechnology>civ_choices/gerudo/choosehero_urbosa</RequiredTechnology>
-    <Tooltip>Cheap but effective Siege unit with a ranged attack.</Tooltip>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
-      <death>voice/gerudo/gerudo_deathA.xml</death>
-      <order_attack>voice/gerudo/glaivegrunt/glaivegrunt_attack.xml</order_attack>
-      <order_garrison>voice/gerudo/glaivegrunt/glaivegrunt_garrison.xml</order_garrison>
-      <order_gather>voice/gerudo/glaivegrunt/glaivegrunt_gather.xml</order_gather>
-      <order_repair>voice/gerudo/glaivegrunt/glaivegrunt_repair.xml</order_repair>
-      <order_walk>voice/gerudo/glaivegrunt/glaivegrunt_walk.xml</order_walk>
-      <run>actor/movement/cart/cart_move.xml</run>
-      <select>voice/gerudo/glaivegrunt/glaivegrunt_select.xml</select>
-      <trained>interface/alarm/alarm_create_engine.xml</trained>
-      <walk>actor/movement/cart/cart_move.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/gerudo/gerudo_catapult_b.xml</Actor>
-  </VisualActor>
+    <Identity>
+        <Civ>gerudo</Civ>
+        <Classes datatype="tokens">Construct Large GerudoCatapult</Classes>
+        <GenericName>Gerudo Catapult</GenericName>
+        <History>The Gerudo have recently used Catapults to attack enemy cities: it has become their most reliable siege weapon in recent years. Made from the wood of Desert Palms, they are very easy to construct and maintain. The boulders launched by these engines can take down just about any stationary target, be it walls, gates, or enemy towers.</History>
+        <Icon>units/gerudo/ger_catapult.dds</Icon>
+        <Tooltip>Cheap but effective Siege unit with a ranged attack.</Tooltip>
+        <Requirements>
+            <Techs>civ_choices/gerudo/choosehero_urbosa</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+            <death>voice/gerudo/gerudo_deathA.xml</death>
+            <order_attack>voice/gerudo/glaivegrunt/glaivegrunt_attack.xml</order_attack>
+            <order_garrison>voice/gerudo/glaivegrunt/glaivegrunt_garrison.xml</order_garrison>
+            <order_gather>voice/gerudo/glaivegrunt/glaivegrunt_gather.xml</order_gather>
+            <order_repair>voice/gerudo/glaivegrunt/glaivegrunt_repair.xml</order_repair>
+            <order_walk>voice/gerudo/glaivegrunt/glaivegrunt_walk.xml</order_walk>
+            <run>actor/movement/cart/cart_move.xml</run>
+            <select>voice/gerudo/glaivegrunt/glaivegrunt_select.xml</select>
+            <trained>interface/alarm/alarm_create_engine.xml</trained>
+            <walk>actor/movement/cart/cart_move.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/gerudo/gerudo_catapult_b.xml</Actor>
+    </VisualActor>
 </Entity>

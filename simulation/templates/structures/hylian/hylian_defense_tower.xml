@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -14,7 +15,7 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>2000</RepeatTime>
       <EffectDelay>0</EffectDelay>
@@ -43,9 +44,65 @@
   </Cost>
   <Footprint>
     <Height>15.0</Height>
-    <Square depth="20.0" width="20.0" />
+    <Square depth="20.0" width="20.0"/>
   </Footprint>
-  <GarrisonHolder disable="" />
+  <GarrisonHolder disable=""/>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_hylian_tiny</SpawnEntityOnDeath>
+    <SpawnGarrison>
+      <Template>units/hylian/hylian_soldier_archer_garrison</Template>
+      <SpawnNumber>5</SpawnNumber>
+      <LinkedDestruction>true</LinkedDestruction>
+    </SpawnGarrison>
+  </Health>
+  <Identity>
+    <Civ>hylian</Civ>
+    <Classes datatype="tokens">HylTower Nurses</Classes>
+    <GenericName>Kingdom Guard Tower</GenericName>
+    <History>These giant guard towers protect the cities of Hyrule during sieges and invasions. Manned by Crossbowmen and able to garrison other soldiers for defense.</History>
+    <Icon>structures/hylian/hyl_guard_tower.dds</Icon>
+    <Tooltip>Defensive Tower that shoots arrows at approaching targets.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="15.5" width="15.5"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/tower_sentries
+	hylian/tower_arrowshooters
+	hylian/tower_crenellations
+	hylian/tower_meticulations
+</Technologies>
+  </Researcher>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>85.0</Hack>
+        <Pierce>95.0</Pierce>
+      </Damage>
+    </Entity>
+    <Foundation>
+      <Damage>
+        <Crush>1</Crush>
+        <Hack>1</Hack>
+        <Pierce>95</Pierce>
+      </Damage>
+    </Foundation>
+  </Resistance>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -75,49 +132,12 @@
       </Archer5>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>1500</Max>
-    <SpawnEntityOnDeath>rubble/debris_hylian_tiny</SpawnEntityOnDeath>
-    <SpawnGarrison>
-      <Template>units/hylian/hylian_soldier_archer_garrison</Template>
-      <SpawnNumber>5</SpawnNumber>
-      <LinkedDestruction>true</LinkedDestruction>
-    </SpawnGarrison>
-  </Health>
-  <Identity>
-    <Civ>hylian</Civ>
-    <Classes datatype="tokens">HylTower Nurses</Classes>
-    <GenericName>Kingdom Guard Tower</GenericName>
-    <History>These giant guard towers protect the cities of Hyrule during sieges and invasions. Manned by Crossbowmen and able to garrison other soldiers for defense.</History>
-    <Icon>structures/hylian/hyl_guard_tower.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Defensive Tower that shoots arrows at approaching targets.</Tooltip>
-    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="15.5" width="15.5" />
-  </Obstruction>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50.0</Crush>
-        <Hack>85.0</Hack>
-        <Pierce>95.0</Pierce>
-      </Damage>
-    </Entity>
-    <Foundation>
-      <Damage>
-        <Crush>1</Crush>
-        <Hack>1</Hack>
-        <Pierce>95</Pierce>
-      </Damage>
-    </Foundation>
-  </Resistance>
-  <StatusBars>
-    <BarHeight>0.6</BarHeight>
-    <BarWidth>6.0</BarWidth>
-    <HeightOffset>19.0</HeightOffset>
-  </StatusBars>
+  <Visibility>
+    <CanSpotStealth>
+      <MinRange>0</MinRange>
+      <MaxRange>80</MaxRange>
+    </CanSpotStealth>
+  </Visibility>
   <Vision>
     <Range>120</Range>
   </Vision>
@@ -125,21 +145,4 @@
     <Actor>structures/hylian/hylian_towerB.xml</Actor>
     <FoundationActor>structures/hylian/hylian_scaffoldG.xml</FoundationActor>
   </VisualActor>
-  <Visibility>
-    <CanSpotStealth>
-      <MinRange>0</MinRange>
-      <MaxRange>80</MaxRange>
-    </CanSpotStealth>
-  </Visibility>
-  <Researcher>
-    <Technologies datatype="tokens">hylian/tower_sentries
-	hylian/tower_arrowshooters
-	hylian/tower_crenellations
-	hylian/tower_meticulations
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

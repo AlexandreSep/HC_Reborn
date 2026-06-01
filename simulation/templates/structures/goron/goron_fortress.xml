@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -16,13 +17,13 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>5000</RepeatTime>
       <Splash>
         <Damage>
           <Pierce>5</Pierce>
-		  <Magic>5</Magic>
+          <Magic>5</Magic>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>10</Range>
@@ -55,12 +56,56 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="35.0" />
+    <Circle radius="35.0"/>
     <Height>45.0</Height>
   </Footprint>
   <GarrisonHolder>
     <Max>15</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>6000</Max>
+    <SpawnEntityOnDeath>rubble/debris_goron_huge</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>goron</Civ>
+    <Classes datatype="tokens">Town Bombs</Classes>
+    <GenericName>Stronghold</GenericName>
+    <History>A giant looming edifice found along the sides of Death Mountain, Goron strongholds are some of the most defensible fortresses to have been erected in Hyrule. A lone Goron Stronghold can do wonders to hold an enemy invasion at bay.</History>
+    <Icon>structures/goron/gor_strongholdA.dds</Icon>
+    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
+    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="55.0" width="55.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">goron/building_explresist
+	  goron/building_mountaindef
+	  goron/building_medingorock
+	  goron/building_superlava
+	  goron/building_archoles
+	  goron/medigoron_biggoronbricks
+</Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/goron_bomb_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/goron_throw_bomb.xml</attack_ranged>
+      <constructed>interface/complete/building/complete_fortress.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_fortress.xml</select>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -105,68 +150,45 @@
       </Archer8>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>6000</Max>
-    <SpawnEntityOnDeath>rubble/debris_goron_huge</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>goron</Civ>
-    <Classes datatype="tokens">Town Bombs</Classes>
-    <GenericName>Stronghold</GenericName>
-    <History>A giant looming edifice found along the sides of Death Mountain, Goron strongholds are some of the most defensible fortresses to have been erected in Hyrule. A lone Goron Stronghold can do wonders to hold an enemy invasion at bay.</History>
-    <Icon>structures/goron/gor_strongholdA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Giant Defense fortification that attacks many enemies and generates Territory.</Tooltip>
-    <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="55.0" width="55.0" />
-  </Obstruction>
-  <Population>
-    <Bonus>10</Bonus>
-  </Population>
-  <Sound>
-    <SoundGroups>
-      <attack_impact_ranged>attack/weapon/goron_bomb_impact.xml</attack_impact_ranged>
-      <attack_ranged>attack/weapon/goron_throw_bomb.xml</attack_ranged>
-      <constructed>interface/complete/building/complete_fortress.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_fortress.xml</select>
-    </SoundGroups>
-  </Sound>
   <Upgrade>
     <StrongholdB>
       <Cost>
         <stone>100</stone>
-      <wood>200</wood>
+        <wood>200</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressB</Entity>
-      <RequiredTechnology>civ_choices/goron/choosehero_darunia</RequiredTechnology>
       <Time>90</Time>
       <Tooltip>Upgrade with Double Layer.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_darunia</Techs>
+      </Requirements>
     </StrongholdB>
     <StrongholdC>
       <Cost>
         <stone>150</stone>
-      <wood>150</wood>
+        <wood>150</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressC</Entity>
-      <RequiredTechnology>civ_choices/goron/choosehero_daruk</RequiredTechnology>
       <Time>90</Time>
       <Tooltip>Upgrade with Lava Moat.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_daruk</Techs>
+      </Requirements>
     </StrongholdC>
     <StrongholdD>
       <Cost>
         <stone>200</stone>
-      <wood>100</wood>
+        <wood>100</wood>
       </Cost>
       <Entity>structures/goron/goron_fortressD</Entity>
-      <RequiredTechnology>civ_choices/goron/choosehero_dangoro</RequiredTechnology>
       <Time>90</Time>
       <Tooltip>Upgrade with Bulwark.</Tooltip>
       <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/goron/choosehero_dangoro</Techs>
+      </Requirements>
     </StrongholdD>
   </Upgrade>
   <VisualActor>
@@ -177,17 +199,4 @@
     <Indent>7.6</Indent>
     <Length>50.0</Length>
   </WallPiece>
-  <Researcher>
-    <Technologies datatype="tokens">goron/building_explresist
-	  goron/building_mountaindef
-	  goron/building_medingorock
-	  goron/building_superlava
-	  goron/building_archoles
-	  goron/medigoron_biggoronbricks
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

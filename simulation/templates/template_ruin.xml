@@ -1,4 +1,4 @@
-<Entity parent="template_entity_full">
+﻿<Entity parent="template_entity_full">
   <BuildRestrictions>
     <PlacementType>land</PlacementType>
     <Territory>own</Territory>
@@ -26,6 +26,7 @@
   </Cost>
   <Decay>
     <Active>false</Active>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>0.0</DelayTime>
     <SinkAccel>9.8</SinkAccel>
     <SinkRate>3.0</SinkRate>

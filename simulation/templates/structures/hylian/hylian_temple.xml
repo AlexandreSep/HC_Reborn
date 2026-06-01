@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Auras datatype="tokens">
     structures/religious_territory_1
@@ -17,7 +18,7 @@
   </Cost>
   <Footprint>
     <Height>10.0</Height>
-    <Square depth="36.0" width="23.0" />
+    <Square depth="36.0" width="23.0"/>
   </Footprint>
   <Health>
     <Max>1200</Max>
@@ -32,37 +33,34 @@
     <Classes datatype="tokens">Town</Classes>
     <History>Larger Hylian cities are often full of various Churches that serve as religious and communal gatherings for the local population. In addition to being a welcoming place for Priests to speak of the Goddesses, they often serve as training grounds for future generations of religious preachers and missionaries.</History>
     <Icon>structures/hylian/hyl_church.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <GenericName>Church of the Goddesses</GenericName>
     <Tooltip>Religious building that increases the spread of your territory and allows the training of Support units.</Tooltip>
     <VisibleClasses datatype="tokens">Religious</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="21.0" width="34.0" />
+    <Static depth="21.0" width="34.0"/>
   </Obstruction>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_temple.xml</constructed>
-      <select>interface/select/building/sel_temple.xml</select>
-    </SoundGroups>
-  </Sound>
-  <ResourceTrickle>
-    <Interval>1000</Interval>
-    <Rates>
-      <metal>0.0</metal>
-    </Rates>
-  </ResourceTrickle>
-  <Upgrade disable="" />
-  <VisualActor>
-    <Actor>structures/hylian/hylian_religionA.xml</Actor>
-    <FoundationActor>structures/hylian/hylian_scaffoldE.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">hylian/priestess
       hylian/rauru_resistant
 	  hylian/seres_donation
 </Technologies>
   </Researcher>
+  <ResourceTrickle>
+    <Interval>1000</Interval>
+    <Rates>
+      <metal>0.0</metal>
+    </Rates>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_temple.xml</constructed>
+      <select>interface/select/building/sel_temple.xml</select>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/hylian/{civ}_deacon_b
@@ -92,4 +90,9 @@
       <Z>10</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/hylian/hylian_religionA.xml</Actor>
+    <FoundationActor>structures/hylian/hylian_scaffoldE.xml</FoundationActor>
+  </VisualActor>
 </Entity>

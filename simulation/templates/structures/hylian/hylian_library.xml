@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="37.0" width="37.0" />
+    <Square depth="37.0" width="37.0"/>
   </Footprint>
   <Health>
     <Max>2000</Max>
@@ -25,20 +26,29 @@
     <GenericName>Library</GenericName>
     <History>Hylian Library containing a large selection of books.</History>
     <Icon>structures/hylian/hyl_blacksmithA.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Hylian Library containing a large selection of books.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="35.0" width="35.0" />
+    <Static depth="35.0" width="35.0"/>
   </Obstruction>
   <Population>
     <Bonus>0</Bonus>
   </Population>
+  <Researcher>
+    <Technologies datatype="tokens">hylian/academy_dorms
+    hylian/glass_rupees
+    hylian/link_hyrontactics
+    hylian/scout_companion
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -51,21 +61,14 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
   <VisualActor>
     <Actor>structures/hylian/hylian_libraryA.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">hylian/academy_dorms
-    hylian/glass_rupees
-    hylian/link_hyrontactics
-    hylian/scout_companion
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

@@ -1,6 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/merc_mago_b">
-  <Identity>
-    <Civ>kokiri</Civ>
-    <RequiredTechnology>kokiri/get_forestlodge</RequiredTechnology>
-  </Identity>
+    <Identity>
+        <Civ>kokiri</Civ>
+        <Requirements>
+            <Techs>kokiri/get_forestlodge</Techs>
+        </Requirements>
+    </Identity>
 </Entity>

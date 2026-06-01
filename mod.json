@@ -1,11 +1,11 @@
 {
-  "name": "Hyrule Conquest Reborn",
+  "name": "HyruleConquestReborn",
   "version": "0.11.0",
-  "label": "0.26 port",
+  "label": "0.28 port",
   "url": "https://www.moddb.com/mods/hyrule-conquest/",
   "description": "A real time strategy game set withing the fantasy setting of Hyrule. Command one from over two dozen factions from the Zelda mythos.",
   "dependencies": [
-    "0ad=0.0.26"
+    "0ad=0.28.0"
   ],
   "type": "game"
 }

@@ -1,83 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
-  <AutoBuildable> 
-	<Rate>1</Rate> 
-  </AutoBuildable>
-  <BuildRestrictions>
-    <Category>Barracks</Category>
-  </BuildRestrictions>  
-  <Cost>
-    <BuildTime>80</BuildTime>
-    <Resources>
-      <food>0</food>
-      <metal>200</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>  
-  <Footprint>
-    <Height>5.0</Height>
-    <Square depth="48.0" width="48.0" />
-  </Footprint>
-  <Health>
-    <Max>1000</Max>
-    <SpawnEntityOnDeath>rubble/debris_stalfos_ruins_anc</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>gaia</Civ>
-	<Classes datatype="tokens">Barracks Ruins</Classes>
-	<GenericName>Ancient Ruins</GenericName>
-	<Tooltip>Unearth long-abandoned remnants of a past culture.</Tooltip>
-    <History>The long-abandoned remnants of a past culture.</History>
-	<Icon>structures/ruins/ruins_ancientA.dds</Icon>
-  </Identity>
-  <Population>
-    <Bonus>20</Bonus>
-  </Population>
-  <ResourceDropsite>
-    <Sharable>true</Sharable>
-    <Types>food wood stone metal</Types>
-  </ResourceDropsite>
-   <VisualActor>
-    <Actor>structures/ruins/ruins_ancientA.xml</Actor>
-    <FoundationActor>structures/stalfos/stalfos_summonA.xml</FoundationActor>
-  </VisualActor>
-  <Upgrade>
-  <ACrypt>
-      <Cost>
-        <stone>500</stone>
-        <wood>500</wood>
-      </Cost>
-      <Entity>structures/stalfos/stalfos_civil_centre_anc</Entity>
-      <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-      <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
-      <Time>30</Time>
-      <Tooltip>Convert ruins into a Crypt.</Tooltip>
-      <Variant>upg_stalfos</Variant>
-    </ACrypt>
-	<BTemple>
-      <Entity>structures/stalfos/stalfos_temple</Entity>
-      <Tooltip>Transform ruins into Dark Reliquary, allowing you to provide various buff for the Stalfos.</Tooltip>
-      <Cost>
-        <wood>200</wood>
-		<stone>200</stone>
-		<metal>200</metal>
-      </Cost>
-      <Time>30</Time>
-	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
-	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-	  <Variant>upg_stalfos</Variant>
-    </BTemple>
-	<CBiggrave>
-      <Entity>structures/stalfos/stalfos_graveyard</Entity>
-      <Tooltip>Transform ruins into a Graveyard, which contains bones piles of bones that can be gathered by many Stalchildren.</Tooltip>
-      <Cost>
-        <wood>400</wood>
-      </Cost>
-      <Time>60</Time>
-	  <RequiredTechnology>stalfos/player_isstalfos</RequiredTechnology>
-	  <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-	  <Variant>upg_stalfos</Variant>
-    </CBiggrave>					
-  </Upgrade> 
+    <AutoBuildable>
+        <Rate>1</Rate>
+    </AutoBuildable>
+    <BuildRestrictions>
+        <Category>Barracks</Category>
+    </BuildRestrictions>
+    <Cost>
+        <BuildTime>80</BuildTime>
+        <Resources>
+            <food>0</food>
+            <metal>200</metal>
+            <stone>0</stone>
+            <wood>0</wood>
+        </Resources>
+    </Cost>
+    <Footprint>
+        <Height>5.0</Height>
+        <Square depth="48.0" width="48.0"/>
+    </Footprint>
+    <Health>
+        <Max>1000</Max>
+        <SpawnEntityOnDeath>rubble/debris_stalfos_ruins_anc</SpawnEntityOnDeath>
+    </Health>
+    <Identity>
+        <Civ>gaia</Civ>
+        <Classes datatype="tokens">Barracks Ruins</Classes>
+        <GenericName>Ancient Ruins</GenericName>
+        <Tooltip>Unearth long-abandoned remnants of a past culture.</Tooltip>
+        <History>The long-abandoned remnants of a past culture.</History>
+        <Icon>structures/ruins/ruins_ancientA.dds</Icon>
+    </Identity>
+    <Population>
+        <Bonus>20</Bonus>
+    </Population>
+    <ResourceDropsite>
+        <Sharable>true</Sharable>
+        <Types>food wood stone metal</Types>
+    </ResourceDropsite>
+    <Upgrade>
+        <ACrypt>
+            <Cost>
+                <stone>500</stone>
+                <wood>500</wood>
+            </Cost>
+            <Entity>structures/stalfos/stalfos_civil_centre_anc</Entity>
+            <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+            <Time>30</Time>
+            <Tooltip>Convert ruins into a Crypt.</Tooltip>
+            <Variant>upg_stalfos</Variant>
+            <Requirements>
+                <Techs>stalfos/player_isstalfos</Techs>
+            </Requirements>
+        </ACrypt>
+        <BTemple>
+            <Entity>structures/stalfos/stalfos_temple</Entity>
+            <Tooltip>Transform ruins into Dark Reliquary, allowing you to provide various buff for the Stalfos.</Tooltip>
+            <Cost>
+                <wood>200</wood>
+                <stone>200</stone>
+                <metal>200</metal>
+            </Cost>
+            <Time>30</Time>
+            <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+            <Variant>upg_stalfos</Variant>
+            <Requirements>
+                <Techs>stalfos/player_isstalfos</Techs>
+            </Requirements>
+        </BTemple>
+        <CBiggrave>
+            <Entity>structures/stalfos/stalfos_graveyard</Entity>
+            <Tooltip>Transform ruins into a Graveyard, which contains bones piles of bones that can be gathered by many Stalchildren.</Tooltip>
+            <Cost>
+                <wood>400</wood>
+            </Cost>
+            <Time>60</Time>
+            <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+            <Variant>upg_stalfos</Variant>
+            <Requirements>
+                <Techs>stalfos/player_isstalfos</Techs>
+            </Requirements>
+        </CBiggrave>
+    </Upgrade>
+    <VisualActor>
+        <Actor>structures/ruins/ruins_ancientA.xml</Actor>
+        <FoundationActor>structures/stalfos/stalfos_summonA.xml</FoundationActor>
+    </VisualActor>
 </Entity>

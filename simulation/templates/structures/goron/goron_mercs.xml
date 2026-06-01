@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>15.0</Height>
-    <Square depth="30.0" width="30.0" />
+    <Square depth="30.0" width="30.0"/>
   </Footprint>
   <Health>
     <Max>2000</Max>
@@ -29,16 +30,24 @@
     <GenericName>Bazaar</GenericName>
     <History>A basic shop that can be set up early in a settlement's development, the Bazaar sells any extra supplies or items produced by its host settlement.</History>
     <Icon>structures/goron/gor_bazaar.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Allows the Gorons to hire Mercenary units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="15.0" width="15.0" />
+    <Static depth="15.0" width="15.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">goron/merc_favoredshop
+    goron/merc_armsdealer
+
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_mercs.xml</constructed>
@@ -46,16 +55,6 @@
       <upgraded>interface/complete/building/complete_mercs.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/goron/goron_bazaarA.xml</Actor>
-    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">goron/merc_favoredshop
-    goron/merc_armsdealer
-
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/merc_goriya_b
@@ -89,4 +88,8 @@
       <Z>-6.5</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/goron/goron_bazaarA.xml</Actor>
+    <FoundationActor>structures/goron/goron_scaffoldC.xml</FoundationActor>
+  </VisualActor>
 </Entity>

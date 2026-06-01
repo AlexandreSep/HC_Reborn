@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/fairy/fairy_sundial">
   <Auras datatype="tokens">
     structures/fairy_season_summer
@@ -22,6 +23,13 @@
     <GenericName>Summer Sundial</GenericName>
     <Icon>structures/fairy/fai_sundial_summer.dds</Icon>
   </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">fairy/unlock_autumn</Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <TowerA>
       <Cost>
@@ -29,20 +37,15 @@
       </Cost>
       <Entity>structures/fairy/fairy_sundial_autumn</Entity>
       <Icon>portraits/structures/fairy/fairy_autumn.dds</Icon>
-      <RequiredTechnology>fairy/unlock_autumn</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Change the Season to Autumn.</Tooltip>
+      <Requirements>
+        <Techs>fairy/unlock_autumn</Techs>
+      </Requirements>
     </TowerA>
   </Upgrade>
   <VisualActor>
     <Actor>structures/fairy/fairy_sundialA_summer.xml</Actor>
     <FoundationActor>structures/fairy/fairy_summonA_summer.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">fairy/unlock_autumn</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

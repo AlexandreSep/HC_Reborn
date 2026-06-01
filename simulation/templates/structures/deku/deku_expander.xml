@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
   <Battalion>
     <FormationTemplate>special/formations/battle_line</FormationTemplate>
@@ -15,7 +16,7 @@
   </BuildRestrictions>
   <Footprint>
     <Height>8.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <Health>
     <Max>1250</Max>
@@ -43,18 +44,20 @@
     <GenericName>Crossway</GenericName>
     <History>A crossroads between other Deku Scrub buildings, this area allows for more buildings to be expanded from the Deku Scrub Settlement.</History>
     <Icon>structures/deku/dek_encampment.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Expands Deku Scrub base, allowing for more buildings.</Tooltip>
-    <VisibleClasses datatype="tokens" />
+    <VisibleClasses datatype="tokens"/>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Obstructions>
-      <Back depth="8" width="8" x="-15" z="15" />
-      <Front depth="8" width="8" x="15" z="15" />
-      <Left depth="8" width="8" x="15" z="-15" />
-      <Right depth="8" width="8" x="-15" z="-15" />
+      <Back depth="8" width="8" x="-15" z="15"/>
+      <Front depth="8" width="8" x="15" z="15"/>
+      <Left depth="8" width="8" x="15" z="-15"/>
+      <Right depth="8" width="8" x="-15" z="-15"/>
     </Obstructions>
-    <Static disable="" />
+    <Static disable=""/>
   </Obstruction>
   <Plots>
     <DisableChainedPlotsUponDestruction>true</DisableChainedPlotsUponDestruction>

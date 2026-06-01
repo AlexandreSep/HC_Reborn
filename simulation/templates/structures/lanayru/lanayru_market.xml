@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
-<Auras datatype="tokens">
+  <Auras datatype="tokens">
     structures/lanayru/trade_silvercraft
 	structures/lanayru/trade_chillfin
   </Auras>
@@ -13,7 +14,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="20.0" />
+    <Circle radius="20.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -42,22 +43,28 @@
     <GenericName>Emporium</GenericName>
     <History>The Emporium stocked and sold various products created with Lanayru Province and was a hot spot for economic activity across all of Hyrule. Traders and customers from across the land would venture here just to obtain of of Lanayru's high quality goods.</History>
     <Icon>structures/lanayru/lan_emporium.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="33.0" width="33.0" />
+    <Static depth="33.0" width="33.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/get_emporium
+</Technologies>
+  </Researcher>
   <Selectable>
-    <EditorOnly />
+    <EditorOnly/>
     <Overlay>
       <Outline>
         <LineTexture>outline_border.png</LineTexture>
@@ -73,16 +80,8 @@
       <upgraded>interface/complete/building/complete_market.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/lanayru/lanayru_emporiumA.xml</Actor>
-    <FoundationActor>structures/lanayru/lanayru_scaffoldI.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">lanayru/get_emporium
-</Technologies>
-  </Researcher>
   <Trainer>
-    <Entities datatype="tokens" />
+    <Entities datatype="tokens"/>
     <DestinationOffset>
       <step1>
         <X>0</X>
@@ -107,4 +106,8 @@
       <Z>30</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_emporiumA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldI.xml</FoundationActor>
+  </VisualActor>
 </Entity>

@@ -1,7 +1,7 @@
 <Entity parent="classes/HC_template_unit_spearman">
   <Identity>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">CrystalShield Shatterback Medium RiverPatrol</Classes>
+    <Classes datatype="tokens">CrystalShield Shatterback Medium RiverPatrol Swimmer</Classes>
     <GenericName>River Patrol</GenericName>
     <History>Frequently seen travelling along the Zora's River, the police force of the Zora keep order within the Dominion. With their light spear and buckler, they are able to handle all sorts of minor threats, from bandits, to wild creatures, to criminal uprisings.</History>
     <Icon>units/zora/zor_rivpatrol.dds</Icon>

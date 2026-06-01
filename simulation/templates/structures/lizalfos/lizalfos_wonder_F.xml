@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_wonder">
   <BuildRestrictions>
     <Territory>own</Territory>
   </BuildRestrictions>
   <Footprint>
     <Height>10.0</Height>
-    <Square depth="115.0" width="115.0" />
+    <Square depth="115.0" width="115.0"/>
   </Footprint>
   <Health>
     <Max>10000</Max>
@@ -19,13 +20,19 @@
     <GenericName>Eastern Palace</GenericName>
     <History>Once a massive royal palace constructed by the ancient inhabitants of Faron, the Lizalfos came upon these ruins and restored them for their own dark purposes. Now the nameless Eastern Palace serves as a throne for the Helmasaur King and a den of sacrifice for Lizalfos prisoners.</History>
     <Icon>structures/lizalfos/liz_easternpalace.dds</Icon>
-    <RequiredTechnology>lizalfos_helmking</RequiredTechnology>
     <Tooltip>The Lizalfos Wonder, allows you to summon the Helmasaur King.</Tooltip>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <Requirements>
+      <Techs>lizalfos_helmking</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="108.0" width="108.0" />
+    <Static depth="108.0" width="108.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/lizalfos/complete_eastpalace.xml</constructed>
@@ -37,14 +44,6 @@
     <Radius>52</Radius>
     <Root>false</Root>
   </TerritoryInfluence>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_eastpalaceA.xml</Actor>
-    <FoundationActor>structures/lizalfos/lizalfos_scaffoldC_S.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/lizalfos/{civ}_titan_helmking</Entities>
@@ -72,4 +71,8 @@
       <Z>50</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_eastpalaceA.xml</Actor>
+    <FoundationActor>structures/lizalfos/lizalfos_scaffoldC_S.xml</FoundationActor>
+  </VisualActor>
 </Entity>

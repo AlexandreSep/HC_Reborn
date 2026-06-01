@@ -1,28 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/labrynna/labrynna_library">
   <Identity>
     <GenericName>School</GenericName>
     <History>Education became an important part of Labrynna’s culture around the time of the industrial boon. Free public schools became available for all young citizens of the Empire shortly after their construction.</History>
     <Icon>structures/labrynna/lab_libraryB.dds</Icon>
   </Identity>
-  <Upgrade>
-    <Tower>
-      <Cost>
-		<stone>100</stone>
-		<wood>100</wood>
-      </Cost>
-      <Entity>structures/labrynna/labrynna_libraryC</Entity>
-      <RequiredTechnology>civ_choices/labrynna/choosehero_ralph</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Upgrade School into University.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_libraryB.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">labrynna/school_mathtech
     labrynna/school_approvedreading
 </Technologies>
   </Researcher>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <stone>100</stone>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_libraryC</Entity>
+      <Time>60</Time>
+      <Tooltip>Upgrade School into University.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>civ_choices/labrynna/choosehero_ralph</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_libraryB.xml</Actor>
+  </VisualActor>
 </Entity>

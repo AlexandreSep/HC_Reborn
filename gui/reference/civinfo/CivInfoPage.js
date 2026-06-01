@@ -1,8 +1,9 @@
 class CivInfoPage extends ReferencePage
 {
-	constructor(data)
+	constructor(closePageCallback)
 	{
-		super();
+		super(closePageCallback);
+		this.closePageCallback = closePageCallback;
 
 		this.civSelection = new CivSelectDropdown(this.civData);
 		this.civSelection.registerHandler(this.selectCiv.bind(this));
@@ -18,12 +19,18 @@ class CivInfoPage extends ReferencePage
 
 	switchToStructreePage()
 	{
-		Engine.PopGuiPage({ "civ": this.activeCiv, "nextPage": "page_structree.xml" });
+		this.closePageCallback({
+			"nextPage": "page_structree.xml",
+			"args": { "civ": this.activeCiv }
+		});
 	}
 
 	closePage()
 	{
-		Engine.PopGuiPage({ "civ": this.activeCiv, "page": "page_civinfo.xml" });
+		this.closePageCallback({
+			"page": "page_civinfo.xml",
+			"args": { "civ": this.activeCiv }
+		});
 	}
 
 	/**

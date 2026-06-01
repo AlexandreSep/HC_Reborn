@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_entity_full">
   <Armour>
     <Hack>1</Hack>
@@ -32,6 +32,7 @@
   <Decay>
     <Active>false</Active>
     <SinkingAnim>false</SinkingAnim>
+    <SinkProb>0.0</SinkProb>
     <DelayTime>30.0</DelayTime>
     <SinkRate>0.01</SinkRate>
     <SinkAccel>0.0</SinkAccel>

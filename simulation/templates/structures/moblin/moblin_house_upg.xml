@@ -1,12 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/moblin/moblin_house">
-  <Promotion disable="" />
-  <Upgrade>
-    <Tower>
-      <Entity>units/moblin/moblin_house_packed_upg</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
-      <Time>10</Time>
-      <Tooltip>Pack this Housin' Yurt.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
+    <Promotion disable=""/>
+    <Upgrade>
+        <Tower>
+            <Entity>units/moblin/moblin_house_packed_upg</Entity>
+            <Time>10</Time>
+            <Tooltip>Pack this Housin' Yurt.</Tooltip>
+            <Variant>upgrading</Variant>
+            <Requirements>
+                <Techs>phase_village</Techs>
+            </Requirements>
+        </Tower>
+    </Upgrade>
 </Entity>

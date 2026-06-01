@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civil_centre">
   <Battalion>
     <FormationTemplate>special/formations/battle_line</FormationTemplate>
@@ -24,7 +25,7 @@
   </Cost>
   <Footprint>
     <Height>8.0</Height>
-    <Square depth="41.0" width="41.0" />
+    <Square depth="41.0" width="41.0"/>
   </Footprint>
   <Health>
     <Max>1250</Max>
@@ -53,12 +54,14 @@
     <GenericName>Small Encampment</GenericName>
     <History>A small Encampment set up by Deku Scrubs, serving as a base of operations in this region. Its presence likely indicates that the Scrubs will expand into a city.</History>
     <Icon>structures/deku/dek_encampment.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>A smaller Civil Center that all Resources can be dropped off here. The Small Encampent is built with plots that structures can be added to.</Tooltip>
-    <VisibleClasses datatype="tokens" />
+    <VisibleClasses datatype="tokens"/>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
   <Plots>
     <PlotsToSpawn>
@@ -116,6 +119,10 @@
   <Population>
     <Bonus>10</Bonus>
   </Population>
+  <Researcher>
+    <Technologies datatype="tokens">
+    </Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <alert0>interface/alarm/alarm_alert_0.xml</alert0>
@@ -128,14 +135,6 @@
       <upgraded>interface/complete/building/complete_civ_center_deku.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/deku/deku_civic_centre_small.xml</Actor>
-    <FoundationActor>structures/deku/deku_scaffoldB.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-    </Technologies>
-  </Researcher>
   <Trainer>
     <Entities datatype="tokens">units/deku/{civ}_underlingA
       units/deku/{civ}_peahatdrift_b</Entities>
@@ -163,4 +162,8 @@
       <Z>2</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/deku/deku_civic_centre_small.xml</Actor>
+    <FoundationActor>structures/deku/deku_scaffoldB.xml</FoundationActor>
+  </VisualActor>
 </Entity>

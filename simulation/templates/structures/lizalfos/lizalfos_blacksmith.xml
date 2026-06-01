@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -13,7 +14,7 @@
   </Cost>
   <Footprint>
     <Height>12.0</Height>
-    <Square depth="35.0" width="35.0" />
+    <Square depth="35.0" width="35.0"/>
   </Footprint>
   <Health>
     <Max>3000</Max>
@@ -21,22 +22,27 @@
   </Health>
   <Identity>
     <Civ>lizalfos</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Weapons Shack</GenericName>
     <History>Lizalfos weaponry is generally crude, though some Smiths have retained knowledge from the old empire of Death Mountain. These highly praised Smiths create weaponry that can compete with the more proffesional armies of Hyrule.</History>
     <Icon>structures/lizalfos/liz_weaponshack.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Upgrades Lizalfos armor and weapons.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
     <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="33.0" width="33.0" />
+    <Static depth="33.0" width="33.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -49,6 +55,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
@@ -56,11 +66,4 @@
     <Actor>structures/lizalfos/lizalfos_weaponshackA.xml</Actor>
     <FoundationActor>structures/lizalfos/lizalfos_scaffoldF_W.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

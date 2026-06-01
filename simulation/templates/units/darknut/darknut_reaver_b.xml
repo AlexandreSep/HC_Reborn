@@ -1,48 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_swordsman_heavy">
-  <Cost>
-    <Resources>
-      <metal>40</metal>
-	  <stone>0</stone>
-    </Resources>
-  </Cost>
-  <Identity>
-    <Civ>darknut</Civ>
-    <Classes datatype="tokens">Large</Classes>
-    <GenericName>Reaver</GenericName>
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>Outcast Darknut warriors that have survived through raiding and theft in the Gerudo Desert. Reavers have abandoned the bulky armor of their brothers and instead rely on their incredible muscles and speed to survive. The Legion is willing to hire these warriors when the need arrises.</History>
-    <Icon>units/darknut/dar_reaver.dds</Icon>
-    <Lang>darknut</Lang>
-    <RequiredTechnology>civ_choices/darknut/choosehero_alros</RequiredTechnology>
-    <SelectionGroupName>units/darknut/darknut_reaver_b</SelectionGroupName>
-    <Tooltip>Alros' Unique Unit. Quick Mercenary Melee unit that raids enemies with a huge sword.</Tooltip>
-    <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
-  </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <DodgeRating>30.0</DodgeRating>
-      </Damage>
-    </Entity>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/weapon/reaver_sword.xml</attack_melee>
-      <order_attack>voice/darknut/reaver/reaver_attack.xml</order_attack>
-      <order_garrison>voice/darknut/reaver/reaver_garrison.xml</order_garrison>
-      <order_gather>voice/darknut/reaver/reaver_gather.xml</order_gather>
-      <order_repair>voice/darknut/reaver/reaver_repair.xml</order_repair>
-      <order_walk>voice/darknut/reaver/reaver_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/darknut/reaver/reaver_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <PassabilityClass>climbing</PassabilityClass>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/darknut/darknut_reaver_b.xml</Actor>
-  </VisualActor>
+    <Cost>
+        <Resources>
+            <metal>40</metal>
+            <stone>0</stone>
+        </Resources>
+    </Cost>
+    <Identity>
+        <Civ>darknut</Civ>
+        <Classes datatype="tokens">Large</Classes>
+        <GenericName>Reaver</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>Outcast Darknut warriors that have survived through raiding and theft in the Gerudo Desert. Reavers have abandoned the bulky armor of their brothers and instead rely on their incredible muscles and speed to survive. The Legion is willing to hire these warriors when the need arrises.</History>
+        <Icon>units/darknut/dar_reaver.dds</Icon>
+        <Lang>darknut</Lang>
+        <SelectionGroupName>units/darknut/darknut_reaver_b</SelectionGroupName>
+        <Tooltip>Alros' Unique Unit. Quick Mercenary Melee unit that raids enemies with a huge sword.</Tooltip>
+        <VisibleClasses datatype="tokens">Melee Mercenary</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/darknut/choosehero_alros</Techs>
+        </Requirements>
+    </Identity>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <DodgeRating>30.0</DodgeRating>
+            </Damage>
+        </Entity>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/weapon/reaver_sword.xml</attack_melee>
+            <order_attack>voice/darknut/reaver/reaver_attack.xml</order_attack>
+            <order_garrison>voice/darknut/reaver/reaver_garrison.xml</order_garrison>
+            <order_gather>voice/darknut/reaver/reaver_gather.xml</order_gather>
+            <order_repair>voice/darknut/reaver/reaver_repair.xml</order_repair>
+            <order_walk>voice/darknut/reaver/reaver_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/darknut/reaver/reaver_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <PassabilityClass>climbing</PassabilityClass>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/darknut/darknut_reaver_b.xml</Actor>
+    </VisualActor>
 </Entity>

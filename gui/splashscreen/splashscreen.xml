@@ -3,7 +3,7 @@
 <objects>
 
 	<script directory="gui/common/"/>
-	<script directory="gui/splashscreen/"/>
+	<script file="gui/splashscreen/splashscreen.js"/>
 
 	<!-- Add a translucent black background to fade out the menu page -->
 	<object type="image" sprite="ModernFade"/>
@@ -23,7 +23,6 @@
 
 		<object name="btnOK" type="button" style="ModernButtonRed" size="18 100%-45 50%-5 100%-17" hotkey="cancel">
 			<translatableAttribute id="caption">OK</translatableAttribute>
-			<action on="Press">closePage();</action>
 		</object>
 
 		<object type="button" style="ModernButtonRed" size="50%+5 100%-45 100%-18 100%-17">

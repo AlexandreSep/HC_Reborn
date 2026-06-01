@@ -69,13 +69,16 @@ function LoadPlayerSettings(settings, newPlayers)
 		// Special case for gaia
 		if (i == 0)
 		{
-			// HC-Exodarion - The commented code (everything except the continue) is not present in a26. Did you add that? If not, remove. 
-			// Gaia should be its own ally.
-			// cmpPlayer.SetAlly(0);
-
-			// Gaia is everyone's enemy
-			// for (var j = 1; j < numPlayers; ++j)
-			//	cmpPlayer.SetEnemy(j);
+			const diplomacy = getPlayerSetting(i, "Diplomacy");
+			if (diplomacy !== undefined)
+				cmpPlayer.SetDiplomacy(diplomacy);
+			else
+			{
+				let defaultDiplomacy = [];
+				for (let j = 0; j < numPlayers; ++j)
+					defaultDiplomacy[j] = j == 0 ? 1 : -1;
+				cmpPlayer.SetDiplomacy(defaultDiplomacy);
+			}
 
 			continue;
 		}
@@ -132,12 +135,19 @@ function LoadPlayerSettings(settings, newPlayers)
 		}
 		//HC-End
 
-		// If diplomacy explicitly defined, use that; otherwise use teams.
+		// If diplomacy is explicitly defined, use that; otherwise start from the
+		// normal skirmish default: self allied, every other player hostile.
 		const diplomacy = getPlayerSetting(i, "Diplomacy");
 		if (diplomacy !== undefined)
 			cmpPlayer.SetDiplomacy(diplomacy);
 		else
+		{
+			let defaultDiplomacy = [];
+			for (let j = 0; j < numPlayers; ++j)
+				defaultDiplomacy[j] = i == j ? 1 : -1;
+			cmpPlayer.SetDiplomacy(defaultDiplomacy);
 			cmpPlayer.SetTeam(getPlayerSetting(i, "Team") ?? -1);
+		}
 
 		const formations = getPlayerSetting(i, "Formations");
 		if (formations)
@@ -326,6 +336,27 @@ function IsOwnedByHelper(player, target, check)
 	return cmpPlayer && cmpPlayer[check](targetOwner);
 }
 
+function GetIdentityRequiredTechnology(identity)
+{
+	if (!identity)
+		return undefined;
+
+	if (identity.RequiredTechnology)
+		return identity.RequiredTechnology;
+
+	if (identity.Requirements)
+	{
+		if (identity.Requirements.Techs)
+			return identity.Requirements.Techs;
+
+		for (let key in identity.Requirements)
+			if (identity.Requirements[key] && identity.Requirements[key].Techs)
+				return identity.Requirements[key].Techs;
+	}
+
+	return undefined;
+}
+
 Engine.RegisterGlobal("LoadPlayerSettings", LoadPlayerSettings);
 Engine.RegisterGlobal("QueryOwnerEntityID", QueryOwnerEntityID);
 Engine.RegisterGlobal("QueryOwnerInterface", QueryOwnerInterface);
@@ -340,3 +371,4 @@ Engine.RegisterGlobal("IsOwnedByAllyOfPlayer", IsOwnedByAllyOfPlayer);
 Engine.RegisterGlobal("IsOwnedByMutualAllyOfPlayer", IsOwnedByMutualAllyOfPlayer);
 Engine.RegisterGlobal("IsOwnedByNeutralOfPlayer", IsOwnedByNeutralOfPlayer);
 Engine.RegisterGlobal("IsOwnedByEnemyOfPlayer", IsOwnedByEnemyOfPlayer);
+Engine.RegisterGlobal("GetIdentityRequiredTechnology", GetIdentityRequiredTechnology);

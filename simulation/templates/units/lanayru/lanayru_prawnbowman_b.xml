@@ -1,88 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_cavalry">
-<Auras datatype="tokens">
+    <Attack>
+        <Melee disable=""/>
+        <Ranged>
+            <AttackName>Arrows</AttackName>
+            <TrueDamage>0</TrueDamage>
+            <Damage>
+                <Pierce>6</Pierce>
+            </Damage>
+            <MaxRange>60</MaxRange>
+            <MinRange>10</MinRange>
+            <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+            <PrepareTime>1500</PrepareTime>
+            <RepeatTime>2300</RepeatTime>
+            <Projectile>
+                <Gravity>9.81</Gravity>
+                <Speed>75.0</Speed>
+                <Spread>1.5</Spread>
+                <FriendlyFire>false</FriendlyFire>
+                <LaunchPoint y="3"/>
+            </Projectile>
+            <EffectDelay>0</EffectDelay>
+        </Ranged>
+    </Attack>
+    <Auras datatype="tokens">
 	units/lanayru_greatmigration
   </Auras>
-  <Attack>
-  <Melee disable="" />
-    <Ranged>
-      <AttackName>Arrows</AttackName>
-	  <TrueDamage>0</TrueDamage>
-      <Damage>
-        <Pierce>6</Pierce>
-      </Damage>
-      <MaxRange>60</MaxRange>
-      <MinRange>10</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-	  <RepeatTime>2300</RepeatTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <EffectDelay>0</EffectDelay>
-    </Ranged>
-  </Attack>
-  <Cost>
-    <Resources>
-	  <food>120</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>30</wood>
-	</Resources>
-  </Cost>
-  <Health>
-    <Max>200</Max>
-  </Health>
-  <Identity>
-    <Civ>lanayru</Civ>
-    <Classes datatype="tokens">PrawnBowman Prawn Large </Classes>
-    <GenericName>Prawn Bowman</GenericName>
-    <History>The slow moving Praddle Prawns can be found in the shallow waters of the Great Sea, though they migrate across the land every year in large trails. The Zora of Lanayru would capture and domesticate these slow creatures and use them as beasts of burden. While they are quite slow and not ideal for direct combat, their ability to climb rocky inclines and cliffs make them excellent platforms for archers.</History>
-    <Icon>units/lanayru/lan_prawnbowman.dds</Icon>
-    <Lang>lanayru</Lang>
-    <RequiredTechnology>lanayru/get_prawnpond</RequiredTechnology>
-    <SelectionGroupName>units/lanayru/lanayru_prawnbowman_b</SelectionGroupName>
-    <Tooltip>Slow moving Missile Cavalry that can climb any terrain.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
-  </Identity>
-  <Position>
-    <Anchor>pitch</Anchor>
-    <Floating>true</Floating>
-  </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30.0</Crush>
-        <Hack>30.0</Hack>
-        <Pierce>50.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/bow_TP_fire.xml</attack_ranged>
-      <death>voice/lanayru/battlecrab/battlecrab_death.xml</death>
-      <order_attack>voice/lanayru/battlecrab/battlecrab_attack.xml</order_attack>
-      <order_garrison>voice/lanayru/battlecrab/battlecrab_garrison.xml</order_garrison>
-      <order_gather>voice/lanayru/battlecrab/battlecrab_gather.xml</order_gather>
-      <order_repair>voice/lanayru/battlecrab/battlecrab_repair.xml</order_repair>
-      <order_walk>voice/lanayru/battlecrab/battlecrab_walk.xml</order_walk>
-      <run>actor/movement/arach/arach_walk.xml</run>
-      <select>voice/lanayru/battlecrab/battlecrab_select.xml</select>
-      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
-      <walk>actor/movement/arach/arach_walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <UnitMotion>
-    <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>2</RunMultiplier>
-    <WalkSpeed>12</WalkSpeed>
-  </UnitMotion>
-  <VisualActor>
-    <Actor>units/lanayru/lanayru_prawn_b.xml</Actor>
-  </VisualActor>
+    <Cost>
+        <Resources>
+            <food>120</food>
+            <metal>0</metal>
+            <stone>0</stone>
+            <wood>30</wood>
+        </Resources>
+    </Cost>
+    <Health>
+        <Max>200</Max>
+    </Health>
+    <Identity>
+        <Civ>lanayru</Civ>
+        <Classes datatype="tokens">PrawnBowman Prawn Large </Classes>
+        <GenericName>Prawn Bowman</GenericName>
+        <History>The slow moving Praddle Prawns can be found in the shallow waters of the Great Sea, though they migrate across the land every year in large trails. The Zora of Lanayru would capture and domesticate these slow creatures and use them as beasts of burden. While they are quite slow and not ideal for direct combat, their ability to climb rocky inclines and cliffs make them excellent platforms for archers.</History>
+        <Icon>units/lanayru/lan_prawnbowman.dds</Icon>
+        <Lang>lanayru</Lang>
+        <SelectionGroupName>units/lanayru/lanayru_prawnbowman_b</SelectionGroupName>
+        <Tooltip>Slow moving Missile Cavalry that can climb any terrain.</Tooltip>
+        <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+        <Requirements>
+            <Techs>lanayru/get_prawnpond</Techs>
+        </Requirements>
+    </Identity>
+    <Position>
+        <Anchor>pitch</Anchor>
+        <Floating>true</Floating>
+    </Position>
+    <Resistance>
+        <Entity>
+            <Damage>
+                <Crush>30.0</Crush>
+                <Hack>30.0</Hack>
+                <Pierce>50.0</Pierce>
+            </Damage>
+        </Entity>
+        <KnockbackResistance>75</KnockbackResistance>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/weapon/bow_TP_fire.xml</attack_ranged>
+            <death>voice/lanayru/battlecrab/battlecrab_death.xml</death>
+            <order_attack>voice/lanayru/battlecrab/battlecrab_attack.xml</order_attack>
+            <order_garrison>voice/lanayru/battlecrab/battlecrab_garrison.xml</order_garrison>
+            <order_gather>voice/lanayru/battlecrab/battlecrab_gather.xml</order_gather>
+            <order_repair>voice/lanayru/battlecrab/battlecrab_repair.xml</order_repair>
+            <order_walk>voice/lanayru/battlecrab/battlecrab_walk.xml</order_walk>
+            <run>actor/movement/arach/arach_walk.xml</run>
+            <select>voice/lanayru/battlecrab/battlecrab_select.xml</select>
+            <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+            <walk>actor/movement/arach/arach_walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <UnitMotion>
+        <PassabilityClass>aquatic</PassabilityClass>
+        <RunMultiplier>2</RunMultiplier>
+        <WalkSpeed>12</WalkSpeed>
+    </UnitMotion>
+    <VisualActor>
+        <Actor>units/lanayru/lanayru_prawn_b.xml</Actor>
+    </VisualActor>
 </Entity>

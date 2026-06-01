@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/labrynna/labrynna_zoo">
   <Identity>
     <AIBuild>
@@ -7,24 +8,10 @@
     <GenericName>Foreign Species Enclosures</GenericName>
     <History>Labrynna has very few native fauna compared to that of other lands. Labrynna’s citizens are more than willing to pay a pretty Rupee to see specimens brought back from the foreign lands conquered by the Empire. Everything from Eastern Kanagroo to Aquadongos could turn up in these enclosures.</History>
     <Icon>structures/labrynna/lab_zooB.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
-  <Upgrade>
-    <Tower>
-      <Cost>
-		<metal>50</metal>
-        <wood>100</wood>
-      </Cost>
-      <Entity>structures/labrynna/labrynna_zooC</Entity>
-      <RequiredTechnology>phase_city</RequiredTechnology>
-      <Time>60</Time>
-      <Tooltip>Upgrade Zoo with Ursa Trainers.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/labrynna/labrynna_zooB.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">
 	labrynna/aquadongo_driftingdongo
@@ -34,4 +21,22 @@
     <BatchTimeModifier>0.7</BatchTimeModifier>
     <Entities datatype="tokens">units/labrynna/{civ}_aquadongo_b</Entities>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <metal>50</metal>
+        <wood>100</wood>
+      </Cost>
+      <Entity>structures/labrynna/labrynna_zooC</Entity>
+      <Time>60</Time>
+      <Tooltip>Upgrade Zoo with Ursa Trainers.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_city</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/labrynna/labrynna_zooB.xml</Actor>
+  </VisualActor>
 </Entity>

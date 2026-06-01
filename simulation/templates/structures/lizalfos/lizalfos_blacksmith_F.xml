@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/lizalfos/lizalfos_blacksmith">
   <Identity>
-    <RequiredTechnology>lizalfos_farosh</RequiredTechnology>
+    <Requirements>
+      <Techs>lizalfos_farosh</Techs>
+    </Requirements>
   </Identity>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_weaponshackA.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/weapon_bonebow
     lizalfos/weapon_bitingblades
@@ -15,6 +15,9 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
+    <Entities datatype="tokens"/>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_weaponshackA.xml</Actor>
+  </VisualActor>
 </Entity>

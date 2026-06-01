@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="50.0" />
+    <Circle radius="50.0"/>
     <Height>10.0</Height>
   </Footprint>
   <GarrisonHolder>
@@ -37,17 +38,25 @@
     <GenericName>Tourney Field</GenericName>
     <History>These dedicated arenas host all sorts of horseback tournaments, from jousting to horse archery to outright mounted scimitar combat. Many come to watch and place bets, and those who participate leave with all the more battle experience.</History>
     <Icon>structures/gerudo/ger_tourneyA.dds</Icon>
-    <RequiredTechnology>civ_choices/gerudo/choosehero_ganondorf</RequiredTechnology>
     <Tooltip>Improves Gerudo Cavalry and Sandseal units.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>civ_choices/gerudo/choosehero_ganondorf</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="81.0" width="85.0" />
+    <Static depth="81.0" width="85.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">gerudo/tourney_wounds
+	  gerudo/tourney_sparring
+	  gerudo/tourney_bets
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_blacksmith.xml</constructed>
@@ -60,6 +69,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>40</Range>
   </Vision>
@@ -67,14 +80,4 @@
     <Actor>structures/gerudo/gerudo_tourneyA.xml</Actor>
     <FoundationActor>structures/gerudo/gerudo_scaffoldD.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">gerudo/tourney_wounds
-	  gerudo/tourney_sparring
-	  gerudo/tourney_bets
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

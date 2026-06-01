@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_civilian">
-<Auras datatype="tokens">
+  <Auras datatype="tokens">
     structures/lanayru/eco_wealthspotter
 	structures/lanayru/eco_silverweight
 	structures/lanayru/eco_coraldiver
@@ -17,7 +18,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="27.0" />
+    <Circle radius="27.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -36,16 +37,18 @@
     <GenericName>Economy Hub</GenericName>
     <History>Hub structure that could add various troops economic and upgrade facilities on to itself. Gathering and Market upgrades required such a building to be set up, and it also served as a drop off point for Food, Material, Ore, and Currency.</History>
     <Icon>structures/lanayru/lan_hub_economy.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
     <Tooltip>Hub that can add Economic stuctures to itself. Also serves as a drop off point for all Resources.</Tooltip>
     <VisibleClasses datatype="tokens">Hub</VisibleClasses>
+    <Requirements>
+      <Techs>phase_village</Techs>
+    </Requirements>
   </Identity>
   <Market>
     <InternationalBonus>0.2</InternationalBonus>
     <TradeType>land</TradeType>
   </Market>
   <Obstruction>
-    <Static depth="50.0" width="50.0" />
+    <Static depth="50.0" width="50.0"/>
   </Obstruction>
   <Plots>
     <PlotsToSpawn>
@@ -72,21 +75,6 @@
       </PlotC>
     </PlotsToSpawn>
   </Plots>
-  <ResourceDropsite>
-    <Sharable>true</Sharable>
-    <Types>food wood stone metal</Types>
-  </ResourceDropsite>
-  <Sound>
-    <SoundGroups>
-      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
-      <death>attack/destruction/building_collapse_large.xml</death>
-      <select>interface/select/building/sel_storehouse.xml</select>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>structures/lanayru/lanayru_ecohubA.xml</Actor>
-    <FoundationActor>structures/lanayru/lanayru_scaffoldB.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lanayru/eco_wealthspotter
     lanayru/eco_silverweight
@@ -101,6 +89,17 @@
 
 </Technologies>
   </Researcher>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_storehouse.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+      <select>interface/select/building/sel_storehouse.xml</select>
+    </SoundGroups>
+  </Sound>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/{civ}_trader_b
@@ -135,4 +134,8 @@
       <Z>8.5</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lanayru/lanayru_ecohubA.xml</Actor>
+    <FoundationActor>structures/lanayru/lanayru_scaffoldB.xml</FoundationActor>
+  </VisualActor>
 </Entity>

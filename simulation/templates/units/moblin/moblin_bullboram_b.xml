@@ -1,37 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_beastramsmall">
-  <Footprint>
-    <Circle radius="4" />
-    <Height>5.0</Height>
-  </Footprint>
-  <Identity>
-    <Civ>moblin</Civ>
-    <Classes datatype="tokens">Ram Large</Classes>
-    <GenericName>Bullbo War Ram</GenericName> 
-    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <History>Big Bullbo hit his dummy head on the wall and the wall comes falling down nice and fast! Big Bullbo not scared of baddies either, he can take all the hits!</History>
-    <Icon>units/moblin/mob_bullboram.dds</Icon>
-    <Lang>moblin</Lang>
-    <RequiredTechnology>civ_choices/moblin/choosehero_ghirahim</RequiredTechnology>
-    <SelectionGroupName>units/moblin/moblin_bullboram_b</SelectionGroupName>
-    <Tooltip>Whoah really biiiiig Bullbo! I mean reaaaallly big one! So big that only King Bulblin can make these guys! Siege Creature knock down bad guy buildings with his head!</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/bullbo_ram.xml</attack_melee>
-      <death>voice/moblin/bullbo/bullbo_death.xml</death>
-      <order_attack>voice/moblin/bullbo/bullbo_attack.xml</order_attack>
-      <order_garrison>voice/moblin/bullbo/bullbo_garrison.xml</order_garrison>
-      <order_gather>voice/moblin/bullbo/bullbo_gather.xml</order_gather>
-      <order_repair>voice/moblin/bullbo/bullbo_repair.xml</order_repair>
-      <order_walk>voice/moblin/bullbo/bullbo_walk.xml</order_walk>
-      <run>actor/movement/boar/boar_footsteps.xml</run>
-      <select>voice/moblin/bullbo/bullbo_select.xml</select>
-      <trained>interface/alarm/alarm_create_creature.xml</trained>
-      <walk>actor/movement/boar/boar_footsteps.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/moblin/moblin_bullboram_b.xml</Actor>
-  </VisualActor>
+    <Footprint>
+        <Circle radius="4"/>
+        <Height>5.0</Height>
+    </Footprint>
+    <Identity>
+        <Civ>moblin</Civ>
+        <Classes datatype="tokens">Ram Large</Classes>
+        <GenericName>Bullbo War Ram</GenericName>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <History>Big Bullbo hit his dummy head on the wall and the wall comes falling down nice and fast! Big Bullbo not scared of baddies either, he can take all the hits!</History>
+        <Icon>units/moblin/mob_bullboram.dds</Icon>
+        <Lang>moblin</Lang>
+        <SelectionGroupName>units/moblin/moblin_bullboram_b</SelectionGroupName>
+        <Tooltip>Whoah really biiiiig Bullbo! I mean reaaaallly big one! So big that only King Bulblin can make these guys! Siege Creature knock down bad guy buildings with his head!</Tooltip>
+        <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+        <Requirements>
+            <Techs>civ_choices/moblin/choosehero_ghirahim</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/bullbo_ram.xml</attack_melee>
+            <death>voice/moblin/bullbo/bullbo_death.xml</death>
+            <order_attack>voice/moblin/bullbo/bullbo_attack.xml</order_attack>
+            <order_garrison>voice/moblin/bullbo/bullbo_garrison.xml</order_garrison>
+            <order_gather>voice/moblin/bullbo/bullbo_gather.xml</order_gather>
+            <order_repair>voice/moblin/bullbo/bullbo_repair.xml</order_repair>
+            <order_walk>voice/moblin/bullbo/bullbo_walk.xml</order_walk>
+            <run>actor/movement/boar/boar_footsteps.xml</run>
+            <select>voice/moblin/bullbo/bullbo_select.xml</select>
+            <trained>interface/alarm/alarm_create_creature.xml</trained>
+            <walk>actor/movement/boar/boar_footsteps.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/moblin/moblin_bullboram_b.xml</Actor>
+    </VisualActor>
 </Entity>

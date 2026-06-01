@@ -1,5 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/merc_tinsuit_b">
-  <Identity>
-    <RequiredTechnology>lanayru/get_bordello</RequiredTechnology>
-  </Identity>
+    <Identity>
+        <Requirements>
+            <Techs>lanayru/get_bordello</Techs>
+        </Requirements>
+    </Identity>
 </Entity>

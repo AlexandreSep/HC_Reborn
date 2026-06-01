@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -29,16 +30,24 @@
     <GenericName>Foreign Quarter</GenericName>
     <History>The Foreign Quater was dedicated to hiring and housing mercenaries of all races and creeds for the Legion. A staggering number of creatures and warriors passed through and dwelled in these halls, all seeking the Rupees that the Legion was more than happy to provide.</History>
     <Icon>structures/darknut/dar_foreign.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Allows the Legion to hire Mercenary units.</Tooltip>
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="43.0" width="43.0" />
+    <Static depth="43.0" width="43.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">darknut/mercs_legionloyalty
+    darknut/mercs_privatepacts
+    darknut/alros_supermercs
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_mercs.xml</constructed>
@@ -46,16 +55,6 @@
       <upgraded>interface/complete/building/complete_mercs.xml</upgraded>
     </SoundGroups>
   </Sound>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_foreignbaseA.xml</Actor>
-    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">darknut/mercs_legionloyalty
-    darknut/mercs_privatepacts
-    darknut/alros_supermercs
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/darknut/{civ}_hypaspist_b
@@ -98,4 +97,8 @@
       <Z>10</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_foreignbaseA.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
 </Entity>

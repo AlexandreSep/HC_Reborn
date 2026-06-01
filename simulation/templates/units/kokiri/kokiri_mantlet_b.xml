@@ -1,43 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_crossbow">
-  <Footprint>
-    <Circle radius="2.0" />
-    <Height>3.0</Height>
-  </Footprint>
-  <Identity>
-    <Civ>kokiri</Civ>
-    <Classes datatype="tokens">Medium FairyGuard Mudman Mantlet</Classes>
-    <GenericName>Mudman Mantlet</GenericName>
-    <History>A pair of Mudmen hiding behind a large mantlet shield. This pair of Mudmen is brought up by the Kokiri to lead and protect the frontline of their armies from ranged attacks. When in range of enemies they toss javelins from behind their shield.</History>
-    <Icon>units/kokiri/kok_mantlet.dds</Icon>
-    <Lang>kokiri</Lang>
-    <RequiredTechnology>kokiri/get_mudcolony</RequiredTechnology>
-    <SelectionGroupName>units/kokiri/kokiri_mantlet_b</SelectionGroupName>
-    <Tooltip>Small, anti-Missile unit protected by a large mantlet shield. Extremely resistant to non-magic ranged attacks.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
-  </Identity>
-  <Promotion>
-    <Entity>units/kokiri/kokiri_mantlet_upg</Entity>
-    <RequiredXp>9999</RequiredXp>
-  </Promotion>
-  <Resistance>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
-      <death>voice/kokiri/mantlet/mantlet_death.xml</death>
-      <order_attack>voice/kokiri/mantlet/mantlet_attack.xml</order_attack>
-      <order_garrison>voice/kokiri/mantlet/mantlet_garrison.xml</order_garrison>
-      <order_gather>voice/kokiri/mantlet/mantlet_gather.xml</order_gather>
-      <order_repair>voice/kokiri/mantlet/mantlet_repair.xml</order_repair>
-      <order_walk>voice/kokiri/mantlet/mantlet_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/kokiri/mantlet/mantlet_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/kokiri/kokiri_mantlet_b.xml</Actor>
-  </VisualActor>
+    <Footprint>
+        <Circle radius="2.0"/>
+        <Height>3.0</Height>
+    </Footprint>
+    <Identity>
+        <Civ>kokiri</Civ>
+        <Classes datatype="tokens">Medium FairyGuard Mudman Mantlet</Classes>
+        <GenericName>Mudman Mantlet</GenericName>
+        <History>A pair of Mudmen hiding behind a large mantlet shield. This pair of Mudmen is brought up by the Kokiri to lead and protect the frontline of their armies from ranged attacks. When in range of enemies they toss javelins from behind their shield.</History>
+        <Icon>units/kokiri/kok_mantlet.dds</Icon>
+        <Lang>kokiri</Lang>
+        <SelectionGroupName>units/kokiri/kokiri_mantlet_b</SelectionGroupName>
+        <Tooltip>Small, anti-Missile unit protected by a large mantlet shield. Extremely resistant to non-magic ranged attacks.</Tooltip>
+        <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+        <Requirements>
+            <Techs>kokiri/get_mudcolony</Techs>
+        </Requirements>
+    </Identity>
+    <Promotion>
+        <Entity>units/kokiri/kokiri_mantlet_upg</Entity>
+        <RequiredXp>9999</RequiredXp>
+    </Promotion>
+    <Resistance>
+        <KnockbackResistance>100</KnockbackResistance>
+    </Resistance>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
+            <death>voice/kokiri/mantlet/mantlet_death.xml</death>
+            <order_attack>voice/kokiri/mantlet/mantlet_attack.xml</order_attack>
+            <order_garrison>voice/kokiri/mantlet/mantlet_garrison.xml</order_garrison>
+            <order_gather>voice/kokiri/mantlet/mantlet_gather.xml</order_gather>
+            <order_repair>voice/kokiri/mantlet/mantlet_repair.xml</order_repair>
+            <order_walk>voice/kokiri/mantlet/mantlet_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/kokiri/mantlet/mantlet_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/kokiri/kokiri_mantlet_b.xml</Actor>
+    </VisualActor>
 </Entity>

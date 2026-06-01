@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/lizalfos/lizalfos_blacksmith">
   <Identity>
-    <RequiredTechnology>lizalfos_dinraal</RequiredTechnology>
+    <Requirements>
+      <Techs>lizalfos_dinraal</Techs>
+    </Requirements>
   </Identity>
-  <VisualActor>
-    <Actor>structures/lizalfos/lizalfos_weaponshackB.xml</Actor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">lizalfos/weapon_wickedcraft
 	lizalfos/weapon_tukitalarrow
@@ -15,6 +15,9 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
+    <Entities datatype="tokens"/>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/lizalfos/lizalfos_weaponshackB.xml</Actor>
+  </VisualActor>
 </Entity>

@@ -1,6 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="units/merc_tinsuit_b">
-  <Identity>
-	<HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
-    <RequiredTechnology>civ_choices/ordona/choosehero_ashei</RequiredTechnology>
-  </Identity>
+    <Identity>
+        <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+        <Requirements>
+            <Techs>civ_choices/ordona/choosehero_ashei</Techs>
+        </Requirements>
+    </Identity>
 </Entity>

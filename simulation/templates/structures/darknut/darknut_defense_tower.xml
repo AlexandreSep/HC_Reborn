@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense">
   <Attack>
     <Ranged>
@@ -14,7 +15,7 @@
         <Speed>75.0</Speed>
         <Spread>1.5</Spread>
         <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
+        <LaunchPoint y="3"/>
       </Projectile>
       <RepeatTime>2000</RepeatTime>
       <EffectDelay>0</EffectDelay>
@@ -47,13 +48,53 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>12.0</Height>
   </Footprint>
   <GarrisonHolder>
     <List datatype="tokens">Medium Small LargeGarrison</List>
     <Max>3</Max>
   </GarrisonHolder>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>rubble/debris_darknut_small</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>gerudo</Civ>
+    <Classes datatype="tokens"/>
+    <GenericName>Overwatch</GenericName>
+    <History>A very tall tower built along the rims of Darknut cities. Citizens manned the Overwatch day and night, tossing Javelins from above with thunderous force.</History>
+    <Icon>structures/darknut/dar_overwatch.dds</Icon>
+    <Tooltip>Tower that attacks enemies wite javelins.</Tooltip>
+    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static depth="27.5" width="27.5"/>
+  </Obstruction>
+  <Plots>
+    <CanSpawnFromPlot>true</CanSpawnFromPlot>
+  </Plots>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/weapon/javelin_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/javelin_toss.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarHeight>0.6</BarHeight>
+    <BarWidth>6.0</BarWidth>
+    <HeightOffset>19.0</HeightOffset>
+  </StatusBars>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <TurretHolder>
     <TurretPoints>
       <Archer1>
@@ -73,51 +114,13 @@
       </Archer3>
     </TurretPoints>
   </TurretHolder>
-  <Health>
-    <Max>1500</Max>
-    <SpawnEntityOnDeath>rubble/debris_darknut_small</SpawnEntityOnDeath>
-  </Health>
-  <Identity>
-    <Civ>gerudo</Civ>
-    <Classes datatype="tokens" />
-    <GenericName>Overwatch</GenericName>
-    <History>A very tall tower built along the rims of Darknut cities. Citizens manned the Overwatch day and night, tossing Javelins from above with thunderous force.</History>
-    <Icon>structures/darknut/dar_overwatch.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <Tooltip>Tower that attacks enemies wite javelins.</Tooltip>
-    <VisibleClasses datatype="tokens">Tower</VisibleClasses>
-  </Identity>
-  <Obstruction>
-    <Static depth="27.5" width="27.5" />
-  </Obstruction>
-  <Plots>
-    <CanSpawnFromPlot>true</CanSpawnFromPlot>
-  </Plots>
-  <Sound>
-    <SoundGroups>
-      <attack_impact_ranged>attack/weapon/javelin_impact.xml</attack_impact_ranged>
-      <attack_ranged>attack/weapon/javelin_toss.xml</attack_ranged>
-    </SoundGroups>
-  </Sound>
-  <StatusBars>
-    <BarHeight>0.6</BarHeight>
-    <BarWidth>6.0</BarWidth>
-    <HeightOffset>19.0</HeightOffset>
-  </StatusBars>
-  <VisualActor>
-    <Actor>structures/darknut/darknut_overwatchA.xml</Actor>
-  </VisualActor>
   <Visibility>
     <CanSpotStealth>
       <MinRange>0</MinRange>
       <MaxRange>80</MaxRange>
     </CanSpotStealth>
   </Visibility>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
+  <VisualActor>
+    <Actor>structures/darknut/darknut_overwatchA.xml</Actor>
+  </VisualActor>
 </Entity>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="24.0" />
+    <Circle radius="24.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -25,7 +26,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Moblin Base n' Camp</GenericName>
     <History>Moblins smarter, braver, stronger, faster, cooler, prettier, handsomer, and better then all the Blins! That's why we boss them all around! Hahahahaha! We train really hard at our best base to boss the blinnys around and then boss the baddies around after that! Go Moblins!</History>
     <Icon>structures/moblin/mob_camp_mob.dds</Icon>
@@ -33,21 +34,8 @@
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Static depth="42.0" width="42.0" />
+    <Static depth="42.0" width="42.0"/>
   </Obstruction>
-  <Upgrade>
-    <Tower>
-      <Entity>units/moblin/moblin_barracksC_packed</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
-      <Time>30</Time>
-      <Tooltip>Pack up this Moblin Base n' Camp.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/moblin/moblin_camp_mobA.xml</Actor>
-    <FoundationActor>structures/moblin/moblin_scaffoldD.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">moblin/mob_joinmobby
     moblin/mob_traininghard
@@ -90,4 +78,19 @@
       <Z>-3</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracksC_packed</Entity>
+      <Time>30</Time>
+      <Tooltip>Pack up this Moblin Base n' Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_mobA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldD.xml</FoundationActor>
+  </VisualActor>
 </Entity>

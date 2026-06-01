@@ -1,6 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/goron/goron_fortress">
   <Identity>
     <GenericName>Stronghold</GenericName>
-    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
 </Entity>

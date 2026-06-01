@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="structures/lanayru/lanayru_plot_civcenterA">
   <Upgrade>
     <TowerA>
@@ -14,22 +15,26 @@
         <wood>100</wood>
       </Cost>
       <Entity>structures/lanayru/lanayru_temple</Entity>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add an Effigy to this building.</Tooltip>
       <Variant>upgrading_H</Variant>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </TowerB>
     <TowerC>
       <Cost>
         <wood>100</wood>
-		<metal>100</metal>
-		<stone>100</stone>
+        <metal>100</metal>
+        <stone>100</stone>
       </Cost>
       <Entity>structures/lanayru/lanayru_bank</Entity>
-      <RequiredTechnology>civ_choices/lanayru/choosehero_rutela</RequiredTechnology>
       <Time>30</Time>
       <Tooltip>Add a Bank to this building.</Tooltip>
       <Variant>upgrading_H</Variant>
+      <Requirements>
+        <Techs>civ_choices/lanayru/choosehero_rutela</Techs>
+      </Requirements>
     </TowerC>
     <TowerD>
       <Cost>

@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
-<Auras datatype="tokens">
+  <Auras datatype="tokens">
 	structures/lanayru/attack_silvercoral
     structures/lanayru/armor_glittersilver
   </Auras>
@@ -16,7 +17,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="20.0" />
+    <Circle radius="20.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -33,22 +34,28 @@
     <GenericName>Silver Exchange</GenericName>
     <History>Lanayru Province was known for their melding of Silver and Coralmold to create a strange but sturdy alloy. They would use this material in many of their weapons and armor and the beauty of such prized creations was admired throughout all of Hyrule.</History>
     <Icon>structures/lanayru/lan_silverexchange.dds</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Upgrades Silver aspects of Lanayru units and structures.</Tooltip>
     <VisibleClasses datatype="tokens">Research</VisibleClasses>
+    <Requirements>
+      <Techs>phase_town</Techs>
+    </Requirements>
   </Identity>
   <Loot>
     <metal>25</metal>
     <wood>50</wood>
   </Loot>
   <Obstruction>
-    <Static depth="33.0" width="33.0" />
+    <Static depth="33.0" width="33.0"/>
   </Obstruction>
   <Plots>
     <CanSpawnFromPlot>true</CanSpawnFromPlot>
   </Plots>
+  <Researcher>
+    <Technologies datatype="tokens">lanayru/get_silverexchange
+</Technologies>
+  </Researcher>
   <Selectable>
-    <EditorOnly />
+    <EditorOnly/>
     <Overlay>
       <Outline>
         <LineTexture>outline_border.png</LineTexture>
@@ -69,6 +76,10 @@
     <Root>false</Root>
     <Weight>30000</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>
@@ -76,12 +87,4 @@
     <Actor>structures/lanayru/lanayru_silverexchangeA.xml</Actor>
     <FoundationActor>structures/lanayru/lanayru_scaffoldL.xml</FoundationActor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">lanayru/get_silverexchange
-</Technologies>
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

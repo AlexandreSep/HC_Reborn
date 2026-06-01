@@ -19,7 +19,7 @@ class CampaignMenu extends AutoWatcher
 		this.levelSelection.onMouseLeftDoubleClickItem = () => this.startScenario();
 		Engine.GetGUIObjectByName('startButton').onPress = () => this.startScenario();
 		Engine.GetGUIObjectByName('backToMain').onPress = () => this.goBackToMainMenu();
-		Engine.GetGUIObjectByName('savedGamesButton').onPress = () => Engine.PushGuiPage('page_loadgame.xml', {
+		Engine.GetGUIObjectByName('savedGamesButton').onPress = () => Engine.OpenChildPage('page_loadgame.xml', {
 			'campaignRun': this.run.filename
 		});
 

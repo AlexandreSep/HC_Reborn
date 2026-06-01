@@ -1,31 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_archer">
-  <Identity>
-    <Civ>lizalfos</Civ>
-    <Classes datatype="tokens">Medium BasicSoldier Volvamight Okrablood_trap Trapper</Classes>
-    <GenericName>Trapper</GenericName>
-    <History>Skilled at seeking and bringing down particularly deadly prey, Trappers were deadly assassins when taken off the hunting grounds and placed on the battlefield. Armed with poison tipped bows, their shots were guaranteed to inflict illness or kill whatever they managed to hit at a later time.</History>
-    <Icon>units/lizalfos/liz_trapper.dds</Icon>
-    <RequiredTechnology>phase_village</RequiredTechnology>
-    <SelectionGroupName>units/lizalfos/lizalfos_trapper_b</SelectionGroupName>
-    <Tooltip>Missile unit armed with a bow and poison arrows.</Tooltip>
-    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_ranged>attack/weapon/bow_lizalfos_fire.xml</attack_ranged>
-      <death>voice/lizalfos/lizfemaleA/lizfemaleA_death.xml</death>
-      <order_attack>voice/lizalfos/lizfemaleA/lizfemaleA_attack.xml</order_attack>
-      <order_garrison>voice/lizalfos/lizfemaleA/lizfemaleA_garrison.xml</order_garrison>
-      <order_gather>voice/lizalfos/lizfemaleA/lizfemaleA_gather.xml</order_gather>
-      <order_repair>voice/lizalfos/lizfemaleA/lizfemaleA_repair.xml</order_repair>
-      <order_walk>voice/lizalfos/lizfemaleA/lizfemaleA_walk.xml</order_walk>
-      <run>actor/human/movement/walk.xml</run>
-      <select>voice/lizalfos/lizfemaleA/lizfemaleA_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/human/movement/walk.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <VisualActor>
-    <Actor>units/lizalfos/lizalfos_trapper_b.xml</Actor>
-  </VisualActor>
+    <Identity>
+        <Civ>lizalfos</Civ>
+        <Classes datatype="tokens">Medium BasicSoldier Volvamight Okrablood_trap Trapper</Classes>
+        <GenericName>Trapper</GenericName>
+        <History>Skilled at seeking and bringing down particularly deadly prey, Trappers were deadly assassins when taken off the hunting grounds and placed on the battlefield. Armed with poison tipped bows, their shots were guaranteed to inflict illness or kill whatever they managed to hit at a later time.</History>
+        <Icon>units/lizalfos/liz_trapper.dds</Icon>
+        <SelectionGroupName>units/lizalfos/lizalfos_trapper_b</SelectionGroupName>
+        <Tooltip>Missile unit armed with a bow and poison arrows.</Tooltip>
+        <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+        <Requirements>
+            <Techs>phase_village</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_ranged>attack/weapon/bow_lizalfos_fire.xml</attack_ranged>
+            <death>voice/lizalfos/lizfemaleA/lizfemaleA_death.xml</death>
+            <order_attack>voice/lizalfos/lizfemaleA/lizfemaleA_attack.xml</order_attack>
+            <order_garrison>voice/lizalfos/lizfemaleA/lizfemaleA_garrison.xml</order_garrison>
+            <order_gather>voice/lizalfos/lizfemaleA/lizfemaleA_gather.xml</order_gather>
+            <order_repair>voice/lizalfos/lizfemaleA/lizfemaleA_repair.xml</order_repair>
+            <order_walk>voice/lizalfos/lizfemaleA/lizfemaleA_walk.xml</order_walk>
+            <run>actor/human/movement/walk.xml</run>
+            <select>voice/lizalfos/lizfemaleA/lizfemaleA_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/human/movement/walk.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <VisualActor>
+        <Actor>units/lizalfos/lizalfos_trapper_b.xml</Actor>
+    </VisualActor>
 </Entity>

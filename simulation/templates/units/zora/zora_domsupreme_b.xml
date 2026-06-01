@@ -5,7 +5,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>zora</Civ>
-    <Classes datatype="tokens">Medium Falchion DomSupreme</Classes>
+    <Classes datatype="tokens">Medium Falchion DomSupreme Swimmer</Classes>
     <GenericName>Domain Supreme</GenericName>
     <History>Veterans in the Dominion's army, Domain Supremes are both skilled warriors and commanders. A lone Domain Supreme can keep a unit functioning and morale high, while an entire legion of Supremes can dramatically improve the performance of an entire army.</History>
     <Icon>units/zora/zor_domsupreme.dds</Icon>

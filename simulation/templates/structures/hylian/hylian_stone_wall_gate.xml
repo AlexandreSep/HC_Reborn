@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_defense_wall">
   <Footprint>
     <Height>9.0</Height>
-    <Square depth="8.5" width="38.5" />
+    <Square depth="8.5" width="38.5"/>
   </Footprint>
   <Gate>
     <PassRange>20</PassRange>
@@ -14,16 +15,18 @@
     <GenericName>Stone Gate</GenericName>
     <History>The cities on the plains of Hyrule were vulnerable from many sides. The Hylians resorted to building durable stone walls to protect themselves.</History>
     <Icon>structures/hylian/hyl_stonewall.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <Tooltip>Protective Wall to hold off attackers.</Tooltip>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
     <Obstructions>
-      <Door depth="7" width="10" x="0" z="0" />
-      <Left depth="7" width="14" x="-12" z="0" />
-      <Right depth="7" width="14" x="12" z="0" />
+      <Door depth="7" width="10" x="0" z="0"/>
+      <Left depth="7" width="14" x="-12" z="0"/>
+      <Right depth="7" width="14" x="12" z="0"/>
     </Obstructions>
-    <Static disable="" />
+    <Static disable=""/>
   </Obstruction>
   <VisualActor>
     <Actor>structures/hylian/hylian_stone_wall_gate.xml</Actor>

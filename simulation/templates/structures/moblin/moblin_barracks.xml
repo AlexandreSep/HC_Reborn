@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_military">
   <BuildRestrictions>
     <Category>Barracks</Category>
@@ -12,7 +13,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="21.0" />
+    <Circle radius="21.0"/>
     <Height>12.0</Height>
   </Footprint>
   <Health>
@@ -25,7 +26,7 @@
       <MinPop>0</MinPop>
     </AIBuild>
     <Civ>moblin</Civ>
-    <Classes datatype="tokens" />
+    <Classes datatype="tokens"/>
     <GenericName>Dumb Dodo Camp</GenericName>
     <History>Ahahaha the Dodo! Real freakin’s dumb those lots are! Have you seen the way they look?! What kind of Blin would look all cute like?! Pshaw, they make the Hylian scum go awwww!! instead of ahhhhhhgg! We loves our Ukblinro and stuff, but he seriously super failed at making an awesome Blin monster with those Dodo’s! Big Fail!</History>
     <Icon>structures/moblin/mob_camp_dodo.dds</Icon>
@@ -33,21 +34,8 @@
     <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
   </Identity>
   <Obstruction>
-    <Static depth="40.0" width="40.0" />
+    <Static depth="40.0" width="40.0"/>
   </Obstruction>
-  <Upgrade>
-    <Tower>
-      <Entity>units/moblin/moblin_barracks_packed</Entity>
-      <RequiredTechnology>phase_village</RequiredTechnology>
-      <Time>30</Time>
-      <Tooltip>Pack up this Dumb Dodo Camp.</Tooltip>
-      <Variant>upgrading</Variant>
-    </Tower>
-  </Upgrade>
-  <VisualActor>
-    <Actor>structures/moblin/moblin_camp_dodoA.xml</Actor>
-    <FoundationActor>structures/moblin/moblin_scaffoldE.xml</FoundationActor>
-  </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">moblin/dumb_niceandstinky
     moblin/dumb_betterguardin
@@ -86,4 +74,19 @@
       <Z>-5</Z>
     </SpawnOffset>
   </Trainer>
+  <Upgrade>
+    <Tower>
+      <Entity>units/moblin/moblin_barracks_packed</Entity>
+      <Time>30</Time>
+      <Tooltip>Pack up this Dumb Dodo Camp.</Tooltip>
+      <Variant>upgrading</Variant>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
+    </Tower>
+  </Upgrade>
+  <VisualActor>
+    <Actor>structures/moblin/moblin_camp_dodoA.xml</Actor>
+    <FoundationActor>structures/moblin/moblin_scaffoldE.xml</FoundationActor>
+  </VisualActor>
 </Entity>

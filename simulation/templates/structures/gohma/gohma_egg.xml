@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure">
   <Battalion>
     <FormationTemplate>special/formations/battle_line</FormationTemplate>
@@ -20,7 +21,7 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="1.0" />
+    <Circle radius="1.0"/>
     <Height>5.0</Height>
   </Footprint>
   <Health>
@@ -45,8 +46,11 @@
   <Obstruction>
     <BlockMovement>false</BlockMovement>
     <BlockPathfinding>false</BlockPathfinding>
-    <Static depth="3.0" width="3.0" />
+    <Static depth="3.0" width="3.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens"/>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/gohma/complete_eggA.xml</constructed>
@@ -59,6 +63,10 @@
     <Root>false</Root>
     <Weight>1</Weight>
   </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens"/>
+  </Trainer>
   <Upgrade>
     <Tower>
       <Cost>
@@ -66,9 +74,11 @@
       </Cost>
       <Entity>units/gohma/gohma_harvesterA</Entity>
       <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
-      <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>10</Time>
       <Tooltip>Create Harvester.</Tooltip>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
     </Tower>
     <TowerA>
       <Cost>
@@ -76,9 +86,11 @@
       </Cost>
       <Entity>units/gohma/gohma_larva_hive_b</Entity>
       <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
-      <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>6</Time>
       <Tooltip>Create Hive Larva.</Tooltip>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
     </TowerA>
     <TowerB>
       <Cost>
@@ -86,9 +98,11 @@
       </Cost>
       <Entity>units/gohma/gohma_larva_soldier_b</Entity>
       <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
-      <RequiredTechnology>phase_village</RequiredTechnology>
       <Time>6</Time>
       <Tooltip>Create Soldier Larva.</Tooltip>
+      <Requirements>
+        <Techs>phase_village</Techs>
+      </Requirements>
     </TowerB>
     <TowerC>
       <Cost>
@@ -96,9 +110,11 @@
       </Cost>
       <Entity>units/gohma/gohma_larva_giant_b</Entity>
       <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>6</Time>
       <Tooltip>Create Giant Larva.</Tooltip>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </TowerC>
     <TowerD>
       <Cost>
@@ -106,19 +122,14 @@
       </Cost>
       <Entity>units/gohma/gohma_larva_royal_b</Entity>
       <ReplenishBattalionAfterUpgrade>true</ReplenishBattalionAfterUpgrade>
-      <RequiredTechnology>phase_town</RequiredTechnology>
       <Time>6</Time>
       <Tooltip>Create Royal Larva.</Tooltip>
+      <Requirements>
+        <Techs>phase_town</Techs>
+      </Requirements>
     </TowerD>
   </Upgrade>
   <VisualActor>
     <Actor>structures/gohma/gohma_egg.xml</Actor>
   </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens" />
-  </Researcher>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens" />
-  </Trainer>
 </Entity>

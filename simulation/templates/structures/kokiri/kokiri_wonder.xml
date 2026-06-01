@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="HC_template_structure_wonder">
   <Footprint>
-    <Circle radius="37.0" />
+    <Circle radius="37.0"/>
     <Height>10.0</Height>
   </Footprint>
   <Health>
@@ -16,13 +17,19 @@
     <GenericName>Wonder</GenericName>
     <History>The resting place of Kasuto, the Great Deku Tree, from which he watches over his forest empire. The grove itself is astonishingly ancient, predating much of the current Kokiri Forest and Kasuto himself. The Kokiri come to this grove to give reverence to their master, and consider the ring sacred ground.</History>
     <Icon>structures/kokiri/kok_gdtgrove.dds</Icon>
-    <RequiredTechnology>phase_city</RequiredTechnology>
     <SpecificName>Great Deku Tree's Grove</SpecificName>
     <Tooltip>The Kokiri Wonder, allows you to summon the Great Deku Tree.</Tooltip>
+    <Requirements>
+      <Techs>phase_city</Techs>
+    </Requirements>
   </Identity>
   <Obstruction>
-    <Static depth="53.0" width="53.0" />
+    <Static depth="53.0" width="53.0"/>
   </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+</Technologies>
+  </Researcher>
   <Sound>
     <SoundGroups>
       <constructed>interface/complete/building/complete_wonder.xml</constructed>
@@ -34,14 +41,6 @@
     <Radius>52</Radius>
     <Root>false</Root>
   </TerritoryInfluence>
-  <VisualActor>
-    <Actor>structures/kokiri/kokiri_wonder.xml</Actor>
-    <FoundationActor>structures/kokiri/kokiri_scaffoldI.xml</FoundationActor>
-  </VisualActor>
-  <Researcher>
-    <Technologies datatype="tokens">
-</Technologies>
-  </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">units/kokiri/{civ}_titan_gdt</Entities>
@@ -69,4 +68,8 @@
       <Z>20</Z>
     </SpawnOffset>
   </Trainer>
+  <VisualActor>
+    <Actor>structures/kokiri/kokiri_wonder.xml</Actor>
+    <FoundationActor>structures/kokiri/kokiri_scaffoldI.xml</FoundationActor>
+  </VisualActor>
 </Entity>

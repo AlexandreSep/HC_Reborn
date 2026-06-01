@@ -1,43 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_beastramsmall">
-  <Attack>
-    <Melee>
-      <AttackName>Fist</AttackName>
-    </Melee>
-  </Attack>
-  <Identity>
-    <Civ>sheikah</Civ>
-    <Classes datatype="tokens">Large</Classes>
-    <GenericName>Wallmaster</GenericName>
-    <History>A monstrous disembodied hand given life by strange and evil magics, Wallmasters on their own hide in the deepest and most remote places minding their own business. The Cadre sometimes dominates these vile creatures and uses them to their own ends, be it pinning down enemy targets or smashing the walls of buildings.</History>
-    <Icon>units/sheikah/she_wallmaster.dds</Icon>
-    <Lang>sheikah</Lang>
-    <RequiredTechnology>phase_town</RequiredTechnology>
-    <SelectionGroupName>units/sheikah/sheikah_wallmaster_b</SelectionGroupName>
-    <Tooltip>Siege Creature that rips buildings apart with its hand-like body.</Tooltip>
-    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
-  </Identity>
-  <Sound>
-    <SoundGroups>
-      <attack_melee>attack/natural/wallmaster_attack.xml</attack_melee>
-      <death>voice/sheikah/floormaster/floormaster_death.xml</death>
-      <order_attack>voice/sheikah/floormaster/floormaster_attack.xml</order_attack>
-      <order_garrison>voice/sheikah/floormaster/floormaster_garrison.xml</order_garrison>
-      <order_gather>voice/sheikah/floormaster/floormaster_gather.xml</order_gather>
-      <order_repair>voice/sheikah/floormaster/floormaster_repair.xml</order_repair>
-      <order_walk>voice/sheikah/floormaster/floormaster_walk.xml</order_walk>
-      <run>actor/movement/floormaster/floormaster_crawl.xml</run>
-      <select>voice/sheikah/floormaster/floormaster_select.xml</select>
-      <trained>interface/alarm/alarm_create_infantry.xml</trained>
-      <walk>actor/movement/floormaster/floormaster_crawl.xml</walk>
-    </SoundGroups>
-  </Sound>
-  <Visibility>
-    <Camouflage>
-      <ActivateDelay>3000</ActivateDelay>
-      <PostDelay>3000</PostDelay>
-    </Camouflage>
-  </Visibility>
-  <VisualActor>
-    <Actor>units/sheikah/sheikah_wallmaster_b.xml</Actor>
-  </VisualActor>
+    <Attack>
+        <Melee>
+            <AttackName>Fist</AttackName>
+        </Melee>
+    </Attack>
+    <Identity>
+        <Civ>sheikah</Civ>
+        <Classes datatype="tokens">Large</Classes>
+        <GenericName>Wallmaster</GenericName>
+        <History>A monstrous disembodied hand given life by strange and evil magics, Wallmasters on their own hide in the deepest and most remote places minding their own business. The Cadre sometimes dominates these vile creatures and uses them to their own ends, be it pinning down enemy targets or smashing the walls of buildings.</History>
+        <Icon>units/sheikah/she_wallmaster.dds</Icon>
+        <Lang>sheikah</Lang>
+        <SelectionGroupName>units/sheikah/sheikah_wallmaster_b</SelectionGroupName>
+        <Tooltip>Siege Creature that rips buildings apart with its hand-like body.</Tooltip>
+        <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+        <Requirements>
+            <Techs>phase_town</Techs>
+        </Requirements>
+    </Identity>
+    <Sound>
+        <SoundGroups>
+            <attack_melee>attack/natural/wallmaster_attack.xml</attack_melee>
+            <death>voice/sheikah/floormaster/floormaster_death.xml</death>
+            <order_attack>voice/sheikah/floormaster/floormaster_attack.xml</order_attack>
+            <order_garrison>voice/sheikah/floormaster/floormaster_garrison.xml</order_garrison>
+            <order_gather>voice/sheikah/floormaster/floormaster_gather.xml</order_gather>
+            <order_repair>voice/sheikah/floormaster/floormaster_repair.xml</order_repair>
+            <order_walk>voice/sheikah/floormaster/floormaster_walk.xml</order_walk>
+            <run>actor/movement/floormaster/floormaster_crawl.xml</run>
+            <select>voice/sheikah/floormaster/floormaster_select.xml</select>
+            <trained>interface/alarm/alarm_create_infantry.xml</trained>
+            <walk>actor/movement/floormaster/floormaster_crawl.xml</walk>
+        </SoundGroups>
+    </Sound>
+    <Visibility>
+        <Camouflage>
+            <ActivateDelay>3000</ActivateDelay>
+            <PostDelay>3000</PostDelay>
+        </Camouflage>
+    </Visibility>
+    <VisualActor>
+        <Actor>units/sheikah/sheikah_wallmaster_b.xml</Actor>
+    </VisualActor>
 </Entity>
