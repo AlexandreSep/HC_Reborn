@@ -1,0 +1,47 @@
+<Entity parent="classes/HC_template_unit_beastrambig">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <SpawnNumberMax>5</SpawnNumberMax>
+      <SpawnNumberMin>2</SpawnNumberMin>
+      <Template>units/zola/zola_zol_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Large Zol</Classes>
+    <GenericName>Dera Zol</GenericName>
+    <History>These large slimy creatures wear durable shells and serve as living battering rams. In addition to their strong melee attack against buildings, the Zol slime oozed from these creatures slowly and passively deals damage to any structure in range.</History>
+    <Icon>units/zola/zol_derazol.dds</Icon>
+    <Lang>zola</Lang>
+    <SelectionGroupName>units/zola/zola_derazol_b</SelectionGroupName>
+    <Tooltip>Large Creature Siege unit that excells at destroying enemy structures. Splits into Zols when slain.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/derazol_slam.xml</attack_melee>
+	  <attack_ranged>attack/natural/derazol_slam.xml</attack_ranged>
+      <death>voice/zola/derazol/derazol_death.xml</death>
+      <order_attack>voice/zola/derazol/derazol_attack.xml</order_attack>
+      <order_garrison>voice/zola/derazol/derazol_garrison.xml</order_garrison>
+      <order_gather>voice/zola/derazol/derazol_gather.xml</order_gather>
+      <order_repair>voice/zola/derazol/derazol_repair.xml</order_repair>
+      <order_walk>voice/zola/derazol/derazol_walk.xml</order_walk>
+      <run>actor/movement/morpha/morphalong_move.xml</run>
+      <select>voice/zola/derazol/derazol_select.xml</select>
+      <trained>interface/alarm/alarm_create_cavalry.xml</trained>
+      <walk>actor/movement/morpha/morphalong_move.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_derazol_b.xml</Actor>
+  </VisualActor>
+</Entity>

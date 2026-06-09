@@ -1,0 +1,10 @@
+{
+	"type": "garrison",
+	"affects": [ "Structure" ],
+	"modifications": [{ "value": "ResourceTrickle/Rates/food", "add": 0.75 }],
+	"auraName": "Harvest Clam",
+	"stackable" : true ,
+	"requiredTechnology": "zola/clam_fat",	
+	"auraDescription": "(If Garrisoned, +0.75 Food Resource Trickle - Clam Farm)"
+}
+

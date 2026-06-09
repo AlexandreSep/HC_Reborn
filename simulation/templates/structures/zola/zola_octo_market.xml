@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_structure_bigocto">
+  <Identity>
+    <Civ>zola</Civ>
+    <GenericName>Octo Salvor</GenericName>
+    <Icon>structures/zola/zol_market.dds</Icon>
+    <Tooltip>Allows the trading of resources on the market or with your allies.</Tooltip>
+    <History>Though few dare to try, the Zola are sometimes willing to trade with outsiders. In particular, they prefer to trade all sorts of trinkets and treasures salvaged from shipwrecks. Only Labrynnian salvage ships are able to match this sort of demand.</History>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity> 
+  <Researcher>
+    <Technologies datatype="tokens">
+	zola/market_speed
+    </Technologies>
+  </Researcher>
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <metal>1.0</metal>
+    </Rates>
+  </ResourceTrickle>
+  <Trader>
+    <GainMultiplier>5</GainMultiplier>
+  </Trader>
+    <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/merc_goriya_b
+    units/merc_taros_b
+    units/merc_daira_b
+    </Entities>
+  </Trainer> 
+  <VisualActor>
+    <Actor>structures/zola/zol_octohuge_market.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,19 @@
+{
+	"genericName": "Octo snout specialisation",
+	"description": ".",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "25% gathering speed and +2 Resource Capacity - Octoroks",
+	"modifications": [
+		{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.25},
+		{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.25},
+		{"value": "ResourceGatherer/Capacities/wood", "add": 2},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 2},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 2}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

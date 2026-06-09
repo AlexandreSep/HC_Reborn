@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_structure_bigocto">
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes>Large Structure</Classes>
+    <GenericName>Octo Broodmother</GenericName>
+    <Icon>structures/zola/zol_barracksB.dds</Icon>
+    <Tooltip>Trains Octorok units.</Tooltip>
+    <History>Matured Octorok females grow to majestic sizes, and are considered a sight to behold. However, getting too close is risky even for armed soldiers; where a Broodmother goes, her spawn is sure to follow.</History>
+    <VisibleClasses datatype="tokens">Military</VisibleClasses>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+	zola/octo_armour
+	zola/octo_range
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/zola/{civ}_octorok_b
+    units/zola/{civ}_octoballoon_b
+	units/zola/{civ}_mucktorok_b
+    units/zola/{civ}_bigocto_b
+    units/zola/{civ}_octogon_b
+    </Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-10</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>-20</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>-30</Z>
+      </step3>	
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+  </Trainer> 
+  <VisualActor>
+    <Actor>structures/zola/zol_octohuge_octbarracks.xml</Actor>
+  </VisualActor>
+</Entity>

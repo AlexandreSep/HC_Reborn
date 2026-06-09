@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_structure_bigocto">
+  <Identity>
+    <Civ>zola</Civ>
+    <GenericName>Bari Octo</GenericName>
+    <Icon>structures/zola/zol_barracksD.dds</Icon>
+    <Tooltip>Trains Jellyfish units.</Tooltip>
+    <VisibleClasses datatype="tokens">Military</VisibleClasses>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+	zola/squid_parella
+	zola/squid_volt
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/zola/{civ}_tailpasaran_b
+    units/zola/{civ}_bari_b
+    units/zola/{civ}_parella_b
+    units/zola/{civ}_barihost_b
+    </Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-10</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>-20</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>-30</Z>
+      </step3>	  
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+  </Trainer> 
+  <VisualActor>
+    <Actor>structures/zola/zol_octohuge_barbarracks.xml</Actor>
+  </VisualActor>
+</Entity>

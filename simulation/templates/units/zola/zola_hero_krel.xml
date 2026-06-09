@@ -1,0 +1,86 @@
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Staff</AttackName>
+      <Damage>
+        <Crush>20.0</Crush>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1200</PrepareTime>
+      <RepeatTime>1400</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <metal>600</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Heal>
+    <HealableClasses datatype="tokens">Human</HealableClasses>
+    <Health>3</Health>
+    <Range>15</Range>
+    <Interval>200</Interval>
+    <UnhealableClasses datatype="tokens" />
+  </Heal>
+  <Health>
+    <Max>1100</Max>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">HeroKrel Hero4 Medium RiverZora</Classes>
+    <GenericName>Zola Mage</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A highly intelligent mage who came into service of Queen Oren. He presents himself as an arrogant wisecraker, though amongst the Wild Zora he perhaps is the most loyal servant the royals have in their service. Nothing is known of Krel's origin of where he came from or what his real motivations might possibly be. He seems to have vast knowledge of the Zol slime that links the Zora, Octroks, and Parella together and how to control it.</History>
+    <Icon>units/zola/zol_hero_krel.dds</Icon>
+    <Lang>zola</Lang>
+    <RequiredTechnology>civ_choices/zola/choosehero_oren</RequiredTechnology>
+    <SpecificName>Krel</SpecificName>
+    <Tooltip>Mage Hero who can summon Zols.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>25.0</Hack>
+        <Pierce>25.0</Pierce>
+        <Magic>50.0</Magic>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/weapon/sword.xml</attack_ranged>
+      <death>voice/zola/krel/krel_death.xml</death>
+      <order_attack>voice/zola/krel/krel_attack.xml</order_attack>
+      <order_garrison>voice/zola/krel/krel_garrison.xml</order_garrison>
+      <order_gather>voice/zola/krel/krel_gather.xml</order_gather>
+      <order_repair>voice/zola/krel/krel_repair.xml</order_repair>
+      <order_walk>voice/zola/krel/krel_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zola/krel/krel_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero4</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <RunMultiplier>1.5789</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/zola/zola_hero_krel_b.xml</Actor>
+  </VisualActor>
+</Entity>

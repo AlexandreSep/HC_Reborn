@@ -1,0 +1,58 @@
+<Entity parent="classes/HC_template_unit_beast">
+  <Attack>
+    <Melee>
+      <AttackName>Mandibles</AttackName>
+      <Damage>
+		<Hack>0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+	  <Stun>
+        <Chance>20</Chance>
+        <Time>1500</Time>
+      </Stun>
+    </Melee>
+  </Attack>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Small Volt</Classes>
+    <GenericName>Tailpasaran</GenericName>
+    <History>A parasitic monster used by Zolas to infect their enemies. Tailpasarans are able to stay motionless for long periods of time, springing forth with surprise on their prey.</History>
+    <Icon>units/zola/zol_tailpasaran.dds</Icon>
+    <Lang>zola</Lang>
+    <SelectionGroupName>units/zola/zola_tailpasaran_b</SelectionGroupName>
+    <Tooltip>Melee Creature unit with Camouflage.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/tailpasaran_bite.xml</attack_melee>
+      <death>voice/zola/tailpasaran/tailpasaran_death.xml</death>
+      <order_attack>voice/zola/tailpasaran/tailpasaran_attack.xml</order_attack>
+      <order_garrison>voice/zola/tailpasaran/tailpasaran_garrison.xml</order_garrison>
+      <order_gather>voice/zola/tailpasaran/tailpasaran_gather.xml</order_gather>
+      <order_repair>voice/zola/tailpasaran/tailpasaran_repair.xml</order_repair>
+      <order_walk>voice/zola/tailpasaran/tailpasaran_walk.xml</order_walk>
+      <run>actor/movement/tailpasaran/tailpasaran_crawl.xml</run>
+      <select>voice/zola/tailpasaran/tailpasaran_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/tailpasaran/tailpasaran_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+	<PassabilityClass>aquatic</PassabilityClass>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_tailpasaran_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Camouflage>
+     <ActivateDelay>3000</ActivateDelay>
+      <PostDelay>3000</PostDelay>
+    </Camouflage>
+  </Visibility>  
+</Entity>

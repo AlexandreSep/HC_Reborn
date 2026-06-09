@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_structure_bigocto">
+  <Identity>
+    <Civ>zola</Civ>
+    <GenericName>Zola Carrier</GenericName>
+    <Icon>structures/zola/zol_barracks.dds</Icon>
+    <Tooltip>Trains Zola units.</Tooltip>
+    <History>While Zola are hardly the only culture to employ mobile homes and barracks, they are the only ones to fully do so by using the insides of other creatures. Bigoctos which have grown to a large enough size have much of their shell hollowed out, allowing for soldiers and their gear to fit inside.</History>
+    <VisibleClasses datatype="tokens">Military</VisibleClasses>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+	zola/riverzora_dodge
+	zola/riverzora_magic
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/zola/{civ}_drudge_b
+    units/zola/{civ}_geozard_b
+    units/zola/{civ}_geochief_b
+    units/zola/{civ}_feral_b
+	units/zola/{civ}_auger_b
+    units/zola/{civ}_ku_b
+    </Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-10</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>-20</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>-30</Z>
+      </step3>	
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+  </Trainer> 
+  <VisualActor>
+    <Actor>structures/zola/zol_octohuge_barracks.xml</Actor>
+  </VisualActor>
+</Entity>

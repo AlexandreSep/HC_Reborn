@@ -1,0 +1,14 @@
+{
+  "genericName": "Breeding Pressures",
+  "description": ".",
+  "cost": {"food": 600, "wood": 0, "stone": 0, "metal": 600},
+  "requirements": {"all": [{ "tech": "phase_town" },{ "civ": "zola" }]},
+  "requirementsTooltip": "Unlocked with Town.",
+  "icon": "zora/troop_coredivision.dds",
+  "researchTime": 40,
+  "tooltip": "(+1 to 2 Units can spawn upon death - Unit)",
+  "modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/SpawnNumberMax","add": 1},
+  {"value": "Health/SpawnMultipleEntitiesOnDeath/SpawnNumberMin","add": 1}],
+  "affects": [ "Unit" ],
+  "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

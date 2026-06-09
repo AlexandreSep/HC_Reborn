@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Spines</AttackName>
+      <Damage>
+        <Pierce>15</Pierce>
+        <Water>5.0</Water>
+      </Damage>
+      <EffectDelay>0</EffectDelay>
+      <Knockback>
+        <Horizontal>3</Horizontal>
+      </Knockback>
+      <MaxRange>10.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1000</PrepareTime>
+      <Projectile>
+        <FriendlyFire>false</FriendlyFire>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+        <Speed>75.0</Speed>
+        <Spread>1.5</Spread>
+      </Projectile>
+      <RepeatTime>1100</RepeatTime>
+      <Splash>
+        <Damage>
+          <Pierce>15</Pierce>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>10</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <metal>800</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">HeroOren Hero1 Medium WaterElement Sage RiverZora</Classes>
+    <GenericName>Royal River Zora</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>The real power that holds the Wild Zora together, Queen Oren is a shrewd diplomat and has a keen understanding of aquatic warfare. Unlike many of her contemporaries, she is more than capable of being reasoned with and has more or less become the spokesperson of her people. Despite this, is seems Queen Oren has suppressed much and is prone to huge fits of rage, fits that become so bad she'll bloat into a horrifying monster. Her land dwelling Zora cousins believe it's only a matter of time before she slips up and causes a full scale war between the various Zora kingdoms.</History>
+    <Icon>units/zola/zol_hero_oren.dds</Icon>
+    <Lang>zola</Lang>
+    <RequiredTechnology>civ_choices/zola/choosehero_oren</RequiredTechnology>
+    <SpecificName>Queen Oren</SpecificName>
+    <Tooltip>Melee Hero that can attack many enemies with her spines.</Tooltip>
+    <VisibleClasses datatype="tokens">Mage</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Fire>10.0</Fire>
+        <Forest>10.0</Forest>
+        <Hack>30.0</Hack>
+        <Light>10.0</Light>
+        <Pierce>25.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Spirit>10.0</Spirit>
+        <Water>10.0</Water>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/feral_claws.xml</attack_ranged>
+      <death>voice/zola/oren/oren_death.xml</death>
+      <order_attack>voice/zola/oren/oren_attack.xml</order_attack>
+      <order_garrison>voice/zola/oren/oren_garrison.xml</order_garrison>
+      <order_gather>voice/zola/oren/oren_gather.xml</order_gather>
+      <order_repair>voice/zola/oren/oren_repair.xml</order_repair>
+      <order_walk>voice/zola/oren/oren_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zola/oren/oren_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero1</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.0526</RunMultiplier>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_hero_oren_b.xml</Actor>
+  </VisualActor>
+</Entity>
+

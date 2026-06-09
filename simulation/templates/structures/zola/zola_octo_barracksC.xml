@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_structure_bigocto">
+  <Identity>
+    <Civ>zola</Civ>
+    <GenericName>Zol Octo</GenericName>
+    <Icon>structures/zola/zol_barracksC.dds</Icon>
+    <Tooltip>Trains Zol slime units.</Tooltip>
+    <History>The Zol slime is a mystery to all, even many of the Zola. What little is clear is that it is living, and needs organic material to spawn more of itself. With enough time, the Zol slime consumes everything, leaving nothing but a hollow shell.</History>
+    <VisibleClasses datatype="tokens">Military</VisibleClasses>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+	zola/zol_spawnrate
+	zola/zol_armour
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/zola/{civ}_zol_b
+    units/zola/{civ}_zollike_b
+    units/zola/{civ}_derazol_b
+    units/zola/{civ}_sludgeshark_b
+	units/zola/{civ}_aerocuda_b
+    </Entities>
+    <DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>-10</Z>
+      </step1>
+      <step2>
+        <X>0</X>
+        <Z>-20</Z>
+      </step2>
+      <step3>
+        <X>0</X>
+        <Z>-30</Z>
+      </step3>	
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>-5</Z>
+    </SpawnOffset>
+  </Trainer> 
+  <VisualActor>
+    <Actor>structures/zola/zol_octohuge_zolbarracks.xml</Actor>
+  </VisualActor>
+</Entity>

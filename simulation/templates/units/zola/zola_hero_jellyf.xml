@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_hero_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Ink</AttackName>
+      <Damage>
+        <Magic>10.0</Magic>
+      </Damage>
+      <EffectDelay>0</EffectDelay>
+      <MaxRange>70.0</MaxRange>
+      <MinRange>35.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>1900</PrepareTime>
+      <Projectile>
+        <FriendlyFire>false</FriendlyFire>
+        <Gravity>9.81</Gravity>
+        <LaunchPoint y="3"/>
+        <Speed>45.0</Speed>
+        <Spread>1.5</Spread>
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Magic>10.0</Magic>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Range>15</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <metal>460</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2200</Max>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">HeroJellyf Hero3 Large</Classes>
+    <GenericName>Parella Matriarch</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>A very enigmatic figure in the court of the Zola, Jellyf is believed to be ancient and possibly one of the oldest beings alive in Hyrule. Jellyf uses her personal servants to speak for her, only speaking directly to Queen Oren. Jellyf's mysterious motivations raise suspicion and concern even amongst the royal court, but the turnaround success of reconquering lost Zola coves and territory since her arrival has kept any from questioning her.</History>
+    <Icon>units/zola/zol_hero_jellyf.dds</Icon>
+    <Lang>zola</Lang>
+    <RequiredTechnology>civ_choices/zola/choosehero_jellyf</RequiredTechnology>
+    <SpecificName>Jellyf</SpecificName>
+    <Tooltip>Ranged Hero that blinds her enemies with ink.</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>50.0</Crush>
+        <Hack>15.0</Hack>
+        <Pierce>25.0</Pierce>
+        <Shadow>10.0</Shadow>
+        <Magic>10.0</Magic>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/natural/parella_ink.xml</attack_impact_ranged>
+      <attack_ranged>attack/natural/parella_ink.xml</attack_ranged>
+      <death>voice/zola/jellyf/jellyf_death.xml</death>
+      <order_attack>voice/zola/jellyf/jellyf_attack.xml</order_attack>
+      <order_garrison>voice/zola/jellyf/jellyf_garrison.xml</order_garrison>
+      <order_gather>voice/zola/jellyf/jellyf_gather.xml</order_gather>
+      <order_repair>voice/zola/jellyf/jellyf_repair.xml</order_repair>
+      <order_walk>voice/zola/jellyf/jellyf_walk.xml</order_walk>
+      <run>actor/movement/bari/parella_crawl.xml</run>
+      <select>voice/zola/jellyf/jellyf_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/bari/parella_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero3</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <WalkSpeed>5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_hero_jellyf_b.xml</Actor>
+  </VisualActor>
+  <Visibility>
+    <Stealth>
+      <RevealOnAttackDelay>3000</RevealOnAttackDelay >
+    </Stealth>
+  </Visibility> 
+</Entity>
+

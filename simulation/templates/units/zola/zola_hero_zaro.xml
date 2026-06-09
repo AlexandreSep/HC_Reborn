@@ -1,0 +1,111 @@
+<Entity parent="HC_template_hero_cavalry">
+  <Attack>
+    <Ranged>
+      <AttackName>Club</AttackName>
+      <Damage>
+        <Crush>25</Crush>
+      </Damage>
+      <EffectDelay>0</EffectDelay>
+      <Knockback>
+        <Horizontal>20</Horizontal>
+        <Vertical>20</Vertical>
+      </Knockback>
+      <MaxRange>5</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
+      <PrepareTime>1400</PrepareTime>
+      <Projectile>
+        <FriendlyFire>false</FriendlyFire>
+        <Gravity>9.81</Gravity>
+        <ImpactActorName>props/units/explosions/small_dust_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.25</ImpactAnimationLifetime>
+        <LaunchPoint y="3"/>
+        <Speed>50.0</Speed>
+        <Spread>1.0</Spread>
+      </Projectile>
+      <RepeatTime>2000</RepeatTime>
+      <Splash>
+        <Damage>
+          <Crush>10.0</Crush>
+        </Damage>
+        <FriendlyFire>false</FriendlyFire>
+        <Knockback>
+          <Horizontal>10</Horizontal>
+          <Vertical>10</Vertical>
+        </Knockback>
+        <Range>5</Range>
+        <Shape>Circular</Shape>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <metal>480</metal>
+      
+      
+      
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="5.0" />
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>2500</Max>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">HeroZaro Hero2 Large Hero RiverZora</Classes>
+    <GenericName>River Lords</GenericName>
+    <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
+    <History>King Zaro wields immense power among his people, despite this he prefers to let his wife Oren run his little kingdom and spends most of his time lounging around and avoiding his responsibilities. While not necessarily lazy, he simply has little interest in running a kingdom. King Zaro is known however, for his intense rivalry with the Zora kings of the Dominion and Lanayru Province. If there is anything that can call him to action it's the opportunity to ruin their reputation, foil their endeavors, or if possible conquer their entire kingdoms.</History>
+    <Icon>units/zola/zol_hero_zaro.dds</Icon>
+    <Lang>zola</Lang>
+    <RequiredTechnology>civ_choices/zola/choosehero_zaro</RequiredTechnology>
+    <SpecificName>King Zaro</SpecificName>
+    <Tooltip>Mounted Cavalry Hero that attacks in melee.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>20.0</Crush>
+        <Hack>50.0</Hack>
+        <Pierce>70.0</Pierce>
+        <Magic>10.0</Magic>
+      </Damage>
+    </Entity>
+    <KnockbackResistance>100</KnockbackResistance>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+	  <attack_melee>attack/natural/bigocto_ram.xml</attack_melee>
+      <attack_ranged>attack/natural/bigocto_ram.xml</attack_ranged>
+      <death>voice/zola/zaro/zaro_death.xml</death>
+      <order_attack>voice/zola/zaro/zaro_attack.xml</order_attack>
+      <order_garrison>voice/zola/zaro/zaro_garrison.xml</order_garrison>
+      <order_gather>voice/zola/zaro/zaro_gather.xml</order_gather>
+      <order_repair>voice/zola/zaro/zaro_repair.xml</order_repair>
+      <order_walk>voice/zola/zaro/zaro_walk.xml</order_walk>
+      <run>actor/movement/bigocto/bigocto_crawl.xml</run>
+      <select>voice/zola/zaro/zaro_select.xml</select>
+      <trained>interface/alarm/alarm_create_hero.xml</trained>
+      <walk>actor/movement/bigocto/bigocto_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Hero2</Category>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <RunMultiplier>1.28</RunMultiplier>
+    <WalkSpeed>7.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_hero_zaro_b.xml</Actor>
+  </VisualActor>
+</Entity>

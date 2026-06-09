@@ -1,0 +1,13 @@
+{
+	"genericName": "Preemptive Division",
+	"description": ".",
+	"cost": {"food": 500, "wood": 600, "stone": 0, "metal": 0},
+	"requirements": {"all": [{ "tech": "phase_town" },{ "civ": "zola" }]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "zora/troop_coredivision.dds",
+	"researchTime": 40,
+	"tooltip": "(+25 chance Zol units divide upon Death - Zol)",
+	"modifications": [{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance","add": 25}],
+	"affects": [ "Zol" ],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,14 @@
+{
+	"genericName": "Early Octo gets the Worm",
+	"description": "",
+	"cost": {"food": 350, "wood": 350, "stone": 350, "metal": 350},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+50% Movement Speed and Trading Income, - Octobuildings",
+	"modifications": [{ "value": "UnitMotion/WalkSpeed", "multiply": 1.5 },
+		{"value": "Trader/GainMultiplier", "multiply": 1.5}],
+	"affects": ["Octobuilding"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,13 @@
+{
+	"genericName": "Queen Oren",
+	"description": "Queen Oren.",
+	"icon": "zola/choosehero_oren.png",
+	"tooltip": "Select Queen Oren as your hero of choice.",
+	"modifications": [{ "value": "Health/IdleRegenRate", "add": 2 , "affects": "RiverZora" },
+	{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance","add": 25, "affects": "Zol"} ],
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Zol Focus", "tooltipText": "Queen Oren focuses on Zol units."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Queen Oren", "tooltipText": "Allows you to summon Queen Oren, a frenzied Melee hero."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Ferals", "tooltipText": "Access to Feral, glass canon infantry, Sludge Shark, powerful melee creature, and Mucktorocks, support mages."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Zol Infestation", "tooltipText": "Zol units have a higher chance to spawn units upon death."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Flesh Mending", "tooltipText": "Health Regeneration rate of Riverzora units increased"}]
+}

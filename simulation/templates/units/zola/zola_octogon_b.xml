@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="classes/HC_template_unit_siegecannon">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>100</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/zola/zola_puffer_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Octo Creature Medium Organic -Construct</Classes>
+    <GenericName>Octogon</GenericName>
+    <History>A very large living siege weapon, Octogons are specialized Octoroks that can lob giant stones kept within their shells. These monsters are ideal for taking out turrets and otherwise heavily defended bases from a safe distance.</History>
+    <Icon>units/zola/zol_octogon.dds</Icon>
+    <Lang>zola</Lang>
+    <SelectionGroupName>units/zola/zol_octogon_b</SelectionGroupName>
+    <Tooltip>Ranged Siege unit. Spawns Puffers when slain.</Tooltip>
+    <VisibleClasses datatype="tokens">Siege</VisibleClasses>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/bigocto_ram.xml</attack_melee>
+      <attack_ranged>attack/natural/octogon_spit.xml</attack_ranged>
+	  <attack_impact_ranged>attack/siege/boulder_impact.xml</attack_impact_ranged>
+      <death>voice/zola/octogon/octogon_death.xml</death>
+      <order_attack>voice/zola/octogon/octogon_attack.xml</order_attack>
+      <order_garrison>voice/zola/octogon/octogon_garrison.xml</order_garrison>
+      <order_gather>voice/zola/octogon/octogon_gather.xml</order_gather>
+      <order_repair>voice/zola/octogon/octogon_repair.xml</order_repair>
+      <order_walk>voice/zola/octogon/octogon_walk.xml</order_walk>
+      <run>actor/movement/bigocto/bigocto_crawl.xml</run>
+      <select>voice/zola/octogon/octogon_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/bigocto/bigocto_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/zola/zola_octogon_b.xml</Actor>
+  </VisualActor>
+  <Vision>
+    <Range>110</Range>
+  </Vision>
+</Entity>
+

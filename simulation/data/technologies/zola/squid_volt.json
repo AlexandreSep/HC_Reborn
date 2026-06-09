@@ -1,0 +1,14 @@
+{
+	"genericName": "High Voltage",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 600},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 50,
+	"tooltip": "Doubles Stun Time and Chance - Tailparasan, Biri, Bari and Barihost.",
+	"modifications": [{"value": "Attack/Melee/Stun/Time", "multiply": 2},
+	{"value": "Attack/Melee/Stun/Chance", "multiply": 2}],
+	"affects": ["Volt"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

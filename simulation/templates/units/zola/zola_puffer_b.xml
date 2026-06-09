@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_unit_creature">
+  <Attack>
+    <Melee>
+      <AttackName>Mouth</AttackName>
+      <Damage>
+        <Crush>3.0</Crush>
+      </Damage>
+      <MaxRange>3.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <Resources>
+     <food>20</food>
+	</Resources>
+  </Cost>
+  <Health>
+    <Max>20</Max>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Octo Small HiddenUI</Classes>
+    <GenericName>Puffers</GenericName>
+    <History>Swarm of very tiny Octorocks</History>
+    <Icon>units/zola/zol_puffer.dds</Icon>
+    <Tooltip>Melee Creature unit.</Tooltip>
+	<RequiredTechnology>zola/unlock_puffers</RequiredTechnology>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>15.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/octorok_spit.xml</attack_ranged>
+      <death>voice/wild/octorok/octorok_death.xml</death>
+      <order_attack>voice/wild/octorok/octorok_attack.xml</order_attack>
+      <order_garrison>voice/wild/octorok/octorok_select.xml</order_garrison>
+      <order_gather>voice/wild/octorok/octorok_select.xml</order_gather>
+      <order_repair>voice/wild/octorok/octorok_select.xml</order_repair>
+      <order_walk>voice/wild/octorok/octorok_walk.xml</order_walk>
+      <select>voice/wild/octorok/octorok_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+	  <run>actor/movement/octorok/octorok_crawl.xml</run>
+	  <walk>actor/movement/octorok/octorok_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>  
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>  
+  <VisualActor>
+    <Actor>units/zola/zola_puffer_b.xml</Actor>
+  </VisualActor>
+</Entity>
+

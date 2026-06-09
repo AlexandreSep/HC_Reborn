@@ -1,0 +1,19 @@
+{
+	"genericName": "Overseers",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 250},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Village.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "10% gathering speed - Workers",
+	"modifications": [
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.1},
+		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.1},
+		{"value": "ResourceGatherer/Rates/food.fruit", "multiply": 1.1},
+		{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.1},
+		{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.1},
+		{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.1}],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

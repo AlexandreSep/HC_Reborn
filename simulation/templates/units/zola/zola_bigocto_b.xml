@@ -1,0 +1,43 @@
+<Entity parent="classes/HC_template_unit_beastramsmall">
+  <Health>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/zola/zola_puffer_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Large MaiamaiBonusB Octo</Classes>
+    <GenericName>Bigocto</GenericName>
+    <History>These large Octo creatures are not quite large enough to house a Zola base, but their durable shells give them use in Zola armies. Bigoctos are very durable, in particular their are highly resistant to non-magical ranged attacks like arrows and javelins. This makes them an excellent mobile shield against archer heavy armies.</History>
+    <Icon>units/zola/zol_bigocto.dds</Icon>
+    <Lang>zola</Lang>
+    <SelectionGroupName>units/zola/zola_bigocto_b</SelectionGroupName>
+    <Tooltip>Durable Melee unit that is extremely resistant to non-magic projectiles.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+	<RequiredTechnology>civ_choices/zola/choosehero_jellyf</RequiredTechnology>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/bigocto_ram.xml</attack_melee>
+      <death>voice/zola/bigocto/bigocto_death.xml</death>
+      <order_attack>voice/zola/bigocto/bigocto_attack.xml</order_attack>
+      <order_garrison>voice/zola/bigocto/bigocto_garrison.xml</order_garrison>
+      <order_gather>voice/zola/bigocto/bigocto_gather.xml</order_gather>
+      <order_repair>voice/zola/bigocto/bigocto_repair.xml</order_repair>
+      <order_walk>voice/zola/bigocto/bigocto_walk.xml</order_walk>
+      <run>actor/movement/bigocto/bigocto_crawl.xml</run>
+      <select>voice/zola/bigocto/bigocto_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/bigocto/bigocto_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+	<PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_bigocto_b.xml</Actor>
+  </VisualActor>
+</Entity>

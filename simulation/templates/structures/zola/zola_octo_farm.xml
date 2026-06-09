@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_structure_bigocto">
+  <GarrisonHolder>
+    <BuffHeal>0</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">Drudge</List>
+    <LoadingRange>5</LoadingRange>
+    <Max>6</Max>
+  </GarrisonHolder>
+  <Identity>
+    <Civ>zola</Civ>
+    <GenericName>Clam Farm</GenericName>
+    <Icon>structures/zola/zol_farm.dds</Icon>
+    <Tooltip>Generates Food.</Tooltip>
+    <History>The Zola need to eat, especially when on the march. When the land does not provide prey, they turn to creatures brought over from the sea. Various clams and barnacles can be latched onto the shell of a Bigocto to allow the Zolas' food to come to them.</History>
+    <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+	zola/clam_fat
+	zola/unlock_biri
+    </Technologies>
+  </Researcher>  
+  <ResourceTrickle>
+    <Interval>2000</Interval>
+    <Rates>
+      <food>2.0</food>
+    </Rates>
+  </ResourceTrickle>  
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/zola/zola_biri_b
+    </Entities>
+  </Trainer> 
+  <VisualActor>
+    <Actor>structures/zola/zol_octohuge_farm.xml</Actor>
+  </VisualActor>
+</Entity>

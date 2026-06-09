@@ -1,0 +1,12 @@
+{
+	"genericName": "Basic requirements",
+	"description": ".",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 75},
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zola"}]},
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "Removes metal cost - Drudge",
+	"modifications": [{"value": "Cost/Resources/stone", "add": -20}],
+	"affects": ["Drudge"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

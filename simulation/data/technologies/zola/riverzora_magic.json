@@ -1,0 +1,16 @@
+{
+	"genericName": "Seaserpent Fire",
+	"description": "",
+	"cost": {"food": 200, "wood": 0, "stone": 200, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_city"},{"civ": "zola"}]},
+	"icon": "gerudo/nabooru_kovaloogift.dds",
+	"researchTime": 40,
+	"tooltip": "+5 Magic Damage and +10 Siege Damage - Large RiverZora units ",
+	"modifications": [{"value": "Attack/Melee/Damage/Magic", "add": 5},
+	{"value": "Attack/Melee/Damage/Siege", "add": 10},
+	{"value": "Attack/Ranged/Damage/Magic", "add": 5},
+	{"value": "Attack/Ranged/Damage/Siege", "add": 10}],
+	"affects": ["Large RiverZora"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

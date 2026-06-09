@@ -1,0 +1,14 @@
+{
+	"genericName": "Eye of Bellum",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 300},
+	"requirements": {"all": [{"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "All ranged non Octo units gain +10 range.",
+	"modifications": [{"value": "Attack/Ranged/MaxRange", "add": 10}],
+	"affects": ["Octo"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

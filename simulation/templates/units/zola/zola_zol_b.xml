@@ -1,0 +1,58 @@
+<Entity parent="classes/HC_template_unit_beast">
+  <Attack>
+    <Melee>
+      <AttackName>Slime</AttackName>
+      <Damage>
+        <Magic>4.0</Magic>
+      </Damage>
+      <MaxRange>5.0</MaxRange>
+      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
+    </Melee>
+  </Attack>
+  <BuildRestrictions>
+    <Category>Special</Category>
+    <PlacementType>land</PlacementType>
+    <Territory>own neutral enemy</Territory>
+  </BuildRestrictions>
+  <Health>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <SpawnNumberMax>2</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/zola/zola_gel_b</Template>
+    </SpawnMultipleEntitiesOnDeath>	
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Medium Zol</Classes>
+    <GenericName>Zol</GenericName>
+    <History>Zols are the foundation of the Zola as a civilization. These living slimes gather and spread the Zol sludge everywhere they go and large colonies of them are a sure sign that their Zola masters are only a season behind them.</History>
+    <Icon>units/zola/zol_zol.dds</Icon>
+    <Lang>zola</Lang>
+    <SelectionGroupName>units/zola/zola_zol_b</SelectionGroupName>
+    <Tooltip>Small Melee Creature unit with a weak Water attack. Can move over most terrain types. Splits into Gels when slain.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/zol_bite.xml</attack_melee>
+      <death>voice/zola/zol/zol_death.xml</death>
+      <order_attack>voice/zola/zol/zol_attack.xml</order_attack>
+      <order_garrison>voice/zola/zol/zol_garrison.xml</order_garrison>
+      <order_gather>voice/zola/zol/zol_gather.xml</order_gather>
+      <order_repair>voice/zola/zol/zol_repair.xml</order_repair>
+      <order_walk>voice/zola/zol/zol_walk.xml</order_walk>
+      <run>actor/movement/zol/zol_crawl.xml</run>
+      <select>voice/zola/zol/zol_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+      <walk>actor/movement/zol/zol_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <WalkSpeed>5.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_zol_b.xml</Actor>
+  </VisualActor>
+</Entity>

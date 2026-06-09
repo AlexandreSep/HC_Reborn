@@ -1,0 +1,53 @@
+<Entity parent="classes/HC_template_unit_spearman">
+  <Auras datatype="tokens">
+    units/zola/drudge_clam_1
+	units/zola/drudge_clam_2
+  </Auras>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Medium Swimmer RiverZora Worker Drudge</Classes>
+    <GenericName>Drudge</GenericName>
+    <History>The lowest of the Zolas, Drudges are little more than slaves to their underwater overlords. They spend most of their lives raising and tending Octos, harvesting barnacles, and hunting and raiding. Within the Zola forces they serve as a simple Spearman unit, making them a cheap and effective way to halt enemy cavalry.</History>
+    <Icon>units/zola/zol_drudge.dds</Icon>
+    <Lang>zora</Lang>
+    <SelectionGroupName>units/zola/zora_drudge_b</SelectionGroupName>
+    <Tooltip>Worker and Light Melee Anti-Cavalry Spearman.</Tooltip>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Position>
+    <Floating>false</Floating>
+  </Position>
+  <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>10</food>
+    </Capacities>
+    <MaxDistance>2.0</MaxDistance>
+    <Rates>
+      <food.fruit>1.0</food.fruit>
+      <food.fish>1.0</food.fish>
+      <food.meat>1.0</food.meat>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <death>voice/zola/femalezola/femalezola_death.xml</death>
+      <order_attack>voice/zola/femalezola/femalezola_attack.xml</order_attack>
+      <order_garrison>voice/zola/femalezola/femalezola_garrison.xml</order_garrison>
+      <order_gather>voice/zola/femalezola/femalezola_gather.xml</order_gather>
+      <order_repair>voice/zola/femalezola/femalezola_repair.xml</order_repair>
+      <order_walk>voice/zola/femalezola/femalezola_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zola/femalezola/femalezola_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_drudge_b.xml</Actor>
+  </VisualActor>
+</Entity>

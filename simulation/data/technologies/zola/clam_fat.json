@@ -1,0 +1,9 @@
+{
+	"genericName": "Fat Clams",
+	"description": ".",
+	"cost": {"food": 300, "wood": 0, "stone": 0, "metal": 300},
+	"icon": "lanayru/gather_food_prawncluster.dds",
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"researchTime": 40,
+	"tooltip": "Garrisoned Drudges generate more food"
+}

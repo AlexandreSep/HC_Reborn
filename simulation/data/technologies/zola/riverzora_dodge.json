@@ -1,0 +1,13 @@
+{
+	"genericName": "Ritualized Domestic Violence",
+	"description": "",
+	"cost": {"food": 250, "wood": 0, "stone": 0, "metal": 100},
+	"requirements": {"all": [{"civ": "zola"}]},
+	"icon": "gerudo/nabooru_kovaloogift.dds",
+	"researchTime": 40,
+	"tooltip": " +8 Dodge Rating  - River Zora",
+	"modifications": [{"value": "Resistance/DodgeRating", "add": 8}],
+	"affects": ["RiverZora"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

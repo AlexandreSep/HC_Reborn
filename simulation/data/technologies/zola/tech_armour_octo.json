@@ -1,0 +1,15 @@
+{
+	"genericName": "Shell Polishing",
+	"description": "",
+	"cost": {"food": 0, "wood": 350, "stone": 850, "metal": 0},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+50% Non-Magic armor - Octobuildings",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 50},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 50},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 50}],
+	"affects": ["Octobuilding"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

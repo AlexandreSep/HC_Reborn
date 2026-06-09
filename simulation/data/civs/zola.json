@@ -118,9 +118,6 @@
 		}
 	],
 	"CivChoices": [
-		"civ_choices/zola/choosehero_barudakan",
-		"civ_choices/zola/choosehero_maiamai",
-		"civ_choices/zola/choosehero_krel",
 		"civ_choices/zola/choosehero_jellyf",
 		"civ_choices/zola/choosehero_oren",
 		"civ_choices/zola/choosehero_zaro"
@@ -157,15 +154,15 @@
 			"Template": "structures/zola/zola_civil_centre"
 		},
 		{
-			"Template": "units/zora/zora_servantA",
+			"Template": "units/zola/zola_octorock_b",
 			"Count": 4
 		},
 		{
-			"Template": "units/zora/zora_riverpatrol_b",
+			"Template": "units/zola/zola_drudge_b",
 			"Count": 2
 		},
 		{
-			"Template": "units/zora/zora_infiltrator_b"
+			"Template": "units/zora/zola_octoballoon_b"
 		}
 	],
 	"AINames": [
@@ -178,8 +175,10 @@
 	],
 	"SkirmishReplacements": {
 		"skirmish/structures/default_civil_centre": "structures/zola/zola_civil_centre",
-		"skirmish/units/default_scout_b": "units/zola/zola_octoballoon_b",
-		"skirmish/units/default_battalion_b": "units/zola/zola_drudge_b"
+		"skirmish/units/default_support_female_citizen": "units/zola/zola_octorok_b",
+		"skirmish/units/default_cavalry": "units/zola/zola_octoballoon_b",
+		"skirmish/units/default_infantry_melee_b": "units/zola/zola_drudge_b",
+		"skirmish/units/default_infantry_ranged_b": "units/zola/zola_drudge_b"
 	},
-	"SelectableInGameSetup": false
+	"SelectableInGameSetup": true
 }

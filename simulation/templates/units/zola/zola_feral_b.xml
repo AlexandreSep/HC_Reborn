@@ -1,0 +1,64 @@
+<Entity parent="classes/HC_template_unit_swordsman">
+  <Attack>
+    <Melee>
+      <AttackName>Claws and Teeth</AttackName>
+      <Damage>
+        <Hack>10</Hack>
+      </Damage>
+      <MaxRange>6.0</MaxRange>
+      <PreferredClasses datatype="tokens">Cavalry</PreferredClasses>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1100</RepeatTime>
+    </Melee>
+  </Attack>
+  <Health>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/zola/zola_tailpasaran_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Medium Swimmer RiverZora</Classes>
+    <GenericName>Feral</GenericName>
+    <History>These crazed Zola are kept on a leash by their own people, and let loose in ravaging packs on their enemies. A Feral can quickly tear apart an unarmored target with with claws and long tongue and regenerate any of its wounds with each injury dealt to a foe. They are also exceptionally fast and can even catch up to speedy Cavalry.</History>
+    <Icon>units/zola/zol_feral.dds</Icon>
+    <Lang>zola</Lang>
+    <SelectionGroupName>units/zola/zola_feral_b</SelectionGroupName>
+    <Tooltip>Melee unit that can rapidly regenerate when attacking enemies. Spawns a Tailsparan when slain.</Tooltip>
+	<RequiredTechnology>civ_choices/zola/choosehero_oren</RequiredTechnology>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10.0</Crush>
+        <Hack>5.0</Hack>
+        <Pierce>5.0</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/feral_claws.xml</attack_melee>
+      <death>voice/zola/feral/feral_death.xml</death>
+      <order_attack>voice/zola/feral/feral_attack.xml</order_attack>
+      <order_garrison>voice/zola/feral/feral_garrison.xml</order_garrison>
+      <order_gather>voice/zola/feral/feral_gather.xml</order_gather>
+      <order_repair>voice/zola/feral/feral_repair.xml</order_repair>
+      <order_walk>voice/zola/feral/feral_walk.xml</order_walk>
+      <run>actor/human/movement/walk.xml</run>
+      <select>voice/zola/feral/feral_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/human/movement/walk.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+    <WalkSpeed>12</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_feral_b.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="classes/HC_template_unit_mage">
+  <Attack>
+    <Ranged>
+      <AttackName>Slime</AttackName>
+      <SpawnEntityOnImpact>
+        <SpawnNumberMax>1</SpawnNumberMax>
+        <SpawnNumberMin>1</SpawnNumberMin>
+        <SpawnOnHit>
+          <Chance>25</Chance>
+          <SpawnAtTarget>true</SpawnAtTarget>
+        </SpawnOnHit>
+        <SpawnOnImpact>
+          <Chance>0</Chance>
+        </SpawnOnImpact>
+        <Template>units/zola/zola_gel_b</Template>
+      </SpawnEntityOnImpact>	  
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Medium Octo</Classes>
+    <GenericName>Mucktorok</GenericName>
+    <History>These Octorok monstrosities have been warped by the Zol slime into gibbering beasts. While frail, they are able to spit slime from quite a distance at targets.</History>
+    <Icon>units/zola/zol_mucktorok.dds</Icon>
+    <Lang>zola</Lang>
+    <SelectionGroupName>units/zola/zola_mucktorok_b</SelectionGroupName>
+    <Tooltip>Ranged unit that sprays its enemies with slime. Attack has a small chance to spawn a Gel.</Tooltip>
+    <VisibleClasses datatype="tokens">Missile</VisibleClasses>
+	<RequiredTechnology>civ_choices/zola/choosehero_oren</RequiredTechnology>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/mucktorok_spit.xml</attack_ranged>
+      <death>voice/zola/mucktorok/mucktorok_death.xml</death>
+      <order_attack>voice/zola/mucktorok/mucktorok_attack.xml</order_attack>
+      <order_garrison>voice/zola/mucktorok/mucktorok_garrison.xml</order_garrison>
+      <order_gather>voice/zola/mucktorok/mucktorok_gather.xml</order_gather>
+      <order_repair>voice/zola/mucktorok/mucktorok_repair.xml</order_repair>
+      <order_walk>voice/zola/mucktorok/mucktorok_walk.xml</order_walk>
+      <run>actor/movement/octorok/octorok_crawl.xml</run>
+      <select>voice/zola/mucktorok/mucktorok_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/octorok/octorok_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+	<PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/zola/zola_mucktorok_b.xml</Actor>
+  </VisualActor>
+</Entity>
+

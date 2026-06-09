@@ -1,0 +1,15 @@
+{
+	"genericName": "Barudakan",
+	"description": "Barudakan.",
+	"icon": "zola/choosehero_barudakan.png",
+	"tooltip": "Select Barudakan as your hero of choice.",
+	"modifications": [	{ "value": "UnitMotion/WalkSpeed", "multiply": 1.15 , "affects": "RiverZora" },
+						{ "value": "UnitMotion/WalkSpeed", "multiply": 1.15 , "affects": "RiverZora" }
+	],
+
+	"heroSelectionDescriptionElements": [{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Zola Focus", "tooltipText": "Barudakan focuses on improving his fellow Zolas."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Summon Barudakan", "tooltipText": "Allows you to summon Barudakan, a bulky Melee hero."},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Land Born", "tooltipText": "Zola unit movement speed is increased by 15%"},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Blood Frenzy", "tooltipText": "Damage of all Melee Zola are increased by 15%"},
+	{"icon": "session/portraits/technologies/hero_selectbonus.dds", "shortDescription": "Scavenged Armor", "tooltipText": "Non-Magic armor of Drudges, Geozard, and Geozard Chiefs improved by +10"}]
+}

@@ -1,0 +1,9 @@
+{
+	"genericName": "Unlocks Biri",
+	"description": ".",
+	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 50},
+	"icon": "tech_generic.dds",
+	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zola"}]},
+	"researchTime": 40,
+	"tooltip": "Allows training Biri at the Clam Farm"
+}

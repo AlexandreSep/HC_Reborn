@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="classes/HC_template_unit_archer">
+  <Attack>
+    <Ranged>
+      <AttackName>Rock</AttackName>
+      <Damage>
+        <Crush>5</Crush>
+		<Pierce>0</Pierce>
+      </Damage>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Small Creature MaiamaiBonus MaiamaiBonusC Worker Octorok Octo</Classes>
+    <GenericName>Octorok</GenericName>
+    <History>Cunning and craven, the River Octorok floats belong the surface of rivers and lakes, waiting for prey, upon which it will surface and attempt to disabled them with spit rocks and debris for later consumption. Collecting said debris and rocks also makes them perfect for gathering materials</History>
+    <Icon>gaia/fauna_octorokA.dds</Icon>
+    <Tooltip>Ranged Creature and Gather unit.</Tooltip>
+  </Identity>
+    <ResourceGatherer>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>8</food>
+      <metal>8</metal>
+      <stone>8</stone>
+      <wood>8</wood>
+    </Capacities>
+    <MaxDistance>2.0</MaxDistance>
+    <Rates>
+      <metal.rupees>0.50</metal.rupees>
+      <stone.ore>0.50</stone.ore>
+      <stone.ruins>0.50</stone.ruins>
+      <wood.rock>0.50</wood.rock>
+      <wood.ruins>0.50</wood.ruins>
+    </Rates>
+  </ResourceGatherer>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/natural/octorok_spit.xml</attack_ranged>
+      <death>voice/wild/octorok/octorok_death.xml</death>
+      <order_attack>voice/wild/octorok/octorok_attack.xml</order_attack>
+      <order_garrison>voice/wild/octorok/octorok_select.xml</order_garrison>
+      <order_gather>voice/wild/octorok/octorok_select.xml</order_gather>
+      <order_repair>voice/wild/octorok/octorok_select.xml</order_repair>
+      <order_walk>voice/wild/octorok/octorok_walk.xml</order_walk>
+      <select>voice/wild/octorok/octorok_select.xml</select>
+      <trained>interface/alarm/alarm_create_creature.xml</trained>
+	  <run>actor/movement/octorok/octorok_crawl.xml</run>
+	  <walk>actor/movement/octorok/octorok_crawl.xml</walk>
+    </SoundGroups>
+  </Sound> 
+  <UnitMotion>
+    <PassabilityClass>aquatic</PassabilityClass>
+  </UnitMotion>  
+  <VisualActor>
+    <Actor>units/wild/wild_octorokA.xml</Actor>
+  </VisualActor>
+</Entity>
+

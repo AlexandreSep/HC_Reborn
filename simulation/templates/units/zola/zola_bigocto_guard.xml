@@ -1,0 +1,21 @@
+<Entity parent="units/zola/zola_bigocto_b">
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Large MaiamaiBonusB HiddenUI</Classes>
+  </Identity>
+  <Selectable>
+    <EditorOnly />
+  </Selectable>
+  <UnitAI>
+    <DefaultStance>violent</DefaultStance>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+    <RoamDistance>8.0</RoamDistance>
+    <FleeDistance>24.0</FleeDistance>
+    <RoamTimeMin>2000</RoamTimeMin>
+    <RoamTimeMax>8000</RoamTimeMax>
+    <FeedTimeMin>15000</FeedTimeMin>
+    <FeedTimeMax>60000</FeedTimeMax>
+    <Formations disable=""/>
+  </UnitAI>
+</Entity>

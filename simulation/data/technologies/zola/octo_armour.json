@@ -1,0 +1,14 @@
+{
+	"genericName": "Shell Supplements",
+	"description": ".",
+	"cost": {"food": 0, "wood": 650, "stone": 100, "metal": 100},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+15 Pierce and Crush armor - Octorock",
+	"modifications": [{"value": "Resistance/Entity/Damage/Pierce", "add": 15},
+		{"value": "Resistance/Entity/Damage/Crush", "add": 15}],
+	"affects": ["Octo"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

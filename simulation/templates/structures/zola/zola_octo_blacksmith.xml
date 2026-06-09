@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_structure_bigocto">
+  <Identity>
+    <Civ>zola</Civ>
+    <GenericName>Indagator</GenericName>
+    <Icon>structures/zola/zol_research.dds</Icon>
+    <Tooltip>Upgrades Units.</Tooltip>
+    <History>Zola are not the most intellectual people, even by the standard of Blins or Anouki. Nonetheless, like all peoples, select individuals are born a step above their peers. With some time and funding, their experiments on various creatures under their command brings forth fruits.</History>
+    <VisibleClasses datatype="tokens">Research</VisibleClasses>
+	<RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+	zola/tech_armour
+	zola/tech_armour_octo
+	zola/tech_attack
+	zola/tech_range
+	zola/tech_spwanrate
+    </Technologies>
+  </Researcher>
+    <Trainer>
+    <BatchTimeModifier>0.5</BatchTimeModifier>
+    <Entities datatype="tokens">
+    units/zola/{civ}_geochief_b
+    </Entities>
+  </Trainer> 
+  <VisualActor>
+    <Actor>structures/zola/zol_octohuge_research.xml</Actor>
+  </VisualActor>
+</Entity>

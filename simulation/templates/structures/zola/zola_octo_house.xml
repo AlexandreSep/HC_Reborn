@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="HC_template_structure_bigocto">
+  <Identity>
+    <Civ>zola</Civ>
+    <GenericName>Octo Abode</GenericName>
+    <Icon>structures/zola/zol_house.dds</Icon>
+    <Tooltip>Increases Population Capacity.</Tooltip>
+    <History>In their homeland below the Great Sea, the Zola typically reside on coves. While on land, they prefer to fashion their residences in the shells of Bigoctos. While smaller than their underwater coves, the living coral allows their walking abodes to keep the right humidity and temperature.</History>
+    <VisibleClasses datatype="tokens">House</VisibleClasses>
+  </Identity>
+  <Population>
+    <Bonus>30</Bonus>
+  </Population>  
+  <Researcher>
+    <Technologies datatype="tokens">
+	zola/unlock_puffers
+    </Technologies>
+  </Researcher>  
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+	units/zola/zola_puffer_b
+    </Entities>
+  </Trainer> 
+  <VisualActor>
+    <Actor>structures/zola/zol_octohuge_house.xml</Actor>
+  </VisualActor>
+</Entity>

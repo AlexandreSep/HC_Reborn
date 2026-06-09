@@ -1,0 +1,41 @@
+<Entity parent="classes/HC_template_unit_creature">
+  <Capture disable="" />
+  <Health>
+	<SpawnMultipleEntitiesOnDeath>
+      <Chance>50</Chance>
+      <SpawnNumberMax>1</SpawnNumberMax>
+      <SpawnNumberMin>1</SpawnNumberMin>
+      <Template>units/zola/zola_mucktorok_b</Template>
+    </SpawnMultipleEntitiesOnDeath>
+  </Health>
+  <Identity>
+    <Civ>zola</Civ>
+    <Classes datatype="tokens">Large Zol</Classes>
+    <GenericName>Sludge Shark</GenericName>
+    <History>Sludge sharks are creature units that creates Zol slime that slows down enemy units around itself. They are much quicker than most Zola units and have quite a strong bite in melee.</History>
+    <Icon>units/zola/zol_sludgeshark.dds</Icon>
+    <Lang>zola</Lang>
+    <SelectionGroupName>units/zola/zola_sludgeshark_b</SelectionGroupName>
+    <Tooltip>Melee Creature unit that attacks with slime. Spawns a Mucktorok when slain.</Tooltip>
+    <VisibleClasses datatype="tokens"></VisibleClasses>
+	<RequiredTechnology>civ_choices/zola/choosehero_oren</RequiredTechnology>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/natural/sludgeshark_bite.xml</attack_melee>
+      <death>voice/zola/sludgeshark/sludgeshark_death.xml</death>
+      <order_attack>voice/zola/sludgeshark/sludgeshark_attack.xml</order_attack>
+      <order_garrison>voice/zola/sludgeshark/sludgeshark_garrison.xml</order_garrison>
+      <order_gather>voice/zola/sludgeshark/sludgeshark_gather.xml</order_gather>
+      <order_repair>voice/zola/sludgeshark/sludgeshark_repair.xml</order_repair>
+      <order_walk>voice/zola/sludgeshark/sludgeshark_walk.xml</order_walk>
+      <run>actor/movement/zol/zollike_crawl.xml</run>
+      <select>voice/zola/sludgeshark/sludgeshark_select.xml</select>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <walk>actor/movement/zol/zollike_crawl.xml</walk>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>units/zola/zola_sludgeshark_b.xml</Actor>
+  </VisualActor>
+</Entity>

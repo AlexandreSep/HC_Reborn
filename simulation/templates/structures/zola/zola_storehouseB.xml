@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/zola/zola_storehouseA">
+  <Health>
+    <Max>1000</Max>
+	<SpawnEntityOnDeath>rubble/debris_zora_medium</SpawnEntityOnDeath>
+    <SpawnOnInterval>
+      <one>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>10</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>5000</StartDelay>
+        <Template>units/zola/zola_octorok_guard</Template>
+      </one>
+	  <two>
+        <Interval>10000</Interval>
+        <LinkedDestruction>true</LinkedDestruction>
+        <Max>3</Max>
+        <SpawnNumber>1</SpawnNumber>
+        <StartDelay>10000</StartDelay>
+        <Template>units/zola/zola_bigocto_guard</Template>
+      </two>
+    </SpawnOnInterval>
+  </Health>
+  <Identity>
+    <GenericName>Deep Octorok Cave</GenericName>
+    <History>These deep caverns serve as nests for medium Octoroks. Zolas will often store valuables they can't place anywhere else to guard.</History>
+  </Identity>
+  <Upgrade disable=""/>
+  <ResourceTrickle>
+    <Interval>4000</Interval>
+    <Rates>
+      <wood>1.0</wood>
+	  <stone>1.0</stone>
+    </Rates>
+  </ResourceTrickle>
+</Entity>

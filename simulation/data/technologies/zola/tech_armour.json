@@ -1,0 +1,14 @@
+{
+	"genericName": "Armor Restauration",
+	"description": "",
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "+10% Hack and Pierce armor - Riverzora",
+	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 10},
+		{"value": "Resistance/Entity/Damage/Pierce", "add": 10}],
+	"affects": ["RiverZora"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

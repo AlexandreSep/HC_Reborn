@@ -1,0 +1,14 @@
+{
+	"genericName": "Spitting Competitions",
+	"description": "",
+	"cost": {"food": 900, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"requirementsTooltip": "Unlocked with Town.",
+	"icon": "tech_generic.dds",
+	"researchTime": 40,
+	"tooltip": "All ranged units gain +20 range.",
+	"modifications": [{"value": "Attack/Ranged/MaxRange", "add": 20}],
+	"affects": ["Unit"],
+	"hideIfTechnologyRequirementIsNotMet": "true",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}
