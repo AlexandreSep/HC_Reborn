@@ -1,7 +1,7 @@
 {
 	"type": "garrison",
 	"affects": [ "Structure" ],
-	"modifications": [{ "value": "ResourceTrickle/Rates/food", "add": 0.1 }],
+	"modifications": [{ "value": "ResourceTrickle/Rates/food", "add": 0.5 }],
 	"auraName": "Harvest Clam",
 	"stackable" : true ,
 	"auraDescription": "(If Garrisoned, +1 Food Resource Trickle - Clam Farm)"

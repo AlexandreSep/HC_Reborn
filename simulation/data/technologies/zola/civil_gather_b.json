@@ -1,19 +1,19 @@
 {
 	"genericName": "Overseers",
 	"description": "Often enough workers were left to their own devices in the rather lax Zola society. The increased presence on land and the ambitions of the nobility necessitated a change into a more extreme environment.",
-	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 250},
-	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
+	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 700},
+	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Village.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "10% gathering speed - Workers",
+	"tooltip": "20% gathering speed - Drudges and Octorok",
 	"modifications": [
-		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.1},
-		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.1},
-		{"value": "ResourceGatherer/Rates/food.fruit", "multiply": 1.1},
-		{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.1},
-		{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.1},
-		{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.1}],
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.2},
+		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.2},
+		{"value": "ResourceGatherer/Rates/food.fruit", "multiply": 1.2},
+		{"value": "ResourceGatherer/Rates/wood.rock", "multiply": 1.2},
+		{"value": "ResourceGatherer/Rates/stone.ore", "multiply": 1.2},
+		{"value": "ResourceGatherer/Rates/metal.rupees", "multiply": 1.2}],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

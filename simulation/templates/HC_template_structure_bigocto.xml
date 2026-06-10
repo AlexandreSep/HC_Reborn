@@ -3,7 +3,7 @@
     <Ranged>
       <AttackName>Snoutblast</AttackName>
       <Damage>
-        <Crush>20</Crush>
+        <Crush>10</Crush>
 		<Siege>20</Siege>
       </Damage>
       <EffectDelay>0</EffectDelay>
@@ -81,7 +81,7 @@
     </Capacities>
     <MaxDistance>6</MaxDistance>
     <Rates>
-      <wood.tree>3</wood.tree>
+      <wood.tree>2.5</wood.tree>
     </Rates>
   </ResourceGatherer>
   <Selectable>

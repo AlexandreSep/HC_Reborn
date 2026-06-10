@@ -60,8 +60,8 @@
     <Height>20.0</Height>
   </Footprint>
   <Health>
-    <IdleRegenRate>3</IdleRegenRate>
-    <Max>20000</Max>
+    <IdleRegenRate>4</IdleRegenRate>
+    <Max>15000</Max>
     <RegenRate>2</RegenRate>
   </Health>
   <Identity>

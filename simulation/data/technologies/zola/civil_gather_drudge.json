@@ -1,15 +1,15 @@
 {
 	"genericName": "Hunting Tradition",
 	"description": "Hunting on land and in the sea is time honored tradition for the zola.",
-	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 250},
+	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 150},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "Doubles meat and fish gathering speed and +10 Resource Capacity - Drudge",
+	"tooltip": "50% faster meat and fish gathering speed and +10 Resource Capacity - Drudge",
 	"modifications": [
-		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 2},
-		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 2},
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.5},
+		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.5},
 		{"value": "ResourceGatherer/Capacities/food", "add": 10}],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

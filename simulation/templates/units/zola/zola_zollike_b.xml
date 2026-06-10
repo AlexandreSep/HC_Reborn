@@ -1,6 +1,6 @@
 <Entity parent="classes/HC_template_unit_mage_heavy">
   <Auras datatype="tokens">
-    units/chuworm_aura_1
+    units/nayrublessed_aura_1
   </Auras>
   <Attack>
     <Ranged>
