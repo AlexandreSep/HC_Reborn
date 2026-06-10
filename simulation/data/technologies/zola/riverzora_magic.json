@@ -1,9 +1,9 @@
 {
 	"genericName": "Seaserpent Fire",
-	"description": "",
+	"description": "The fire of ancient sea dragons still burns in a Geozards Chest",
 	"cost": {"food": 200, "wood": 0, "stone": 200, "metal": 500},
 	"requirements": {"all": [{"tech": "phase_city"},{"civ": "zola"}]},
-	"icon": "gerudo/nabooru_kovaloogift.dds",
+	"icon": "goron/attack_lavaweap.dds.cached",
 	"researchTime": 40,
 	"tooltip": "+5 Magic Damage and +10 Siege Damage - Large RiverZora units ",
 	"modifications": [{"value": "Attack/Melee/Damage/Magic", "add": 5},

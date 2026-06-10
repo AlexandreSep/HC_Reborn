@@ -1,6 +1,6 @@
 {
 	"genericName": "High Voltage",
-	"description": "",
+	"description": "The Parella  believe that impulse control is something that can be teached to even those without a conventional brain.",
 	"cost": {"food": 0, "wood": 0, "stone": 0, "metal": 600},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

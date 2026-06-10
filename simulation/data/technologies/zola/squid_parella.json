@@ -1,6 +1,6 @@
 {
-	"genericName": "Muscle Trainging",
-	"description": "",
+	"genericName": "Tentacle Training",
+	"description": "Most Parella can walk at a reasonable speed on land. Their flight instinct does not permit reasonable.",
 	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 200},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

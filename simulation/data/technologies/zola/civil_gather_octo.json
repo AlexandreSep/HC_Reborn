@@ -1,6 +1,6 @@
 {
 	"genericName": "Octo snout specialisation",
-	"description": ".",
+	"description": "Octo snouts have adapted well to pick up rocks on land.",
 	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 250},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

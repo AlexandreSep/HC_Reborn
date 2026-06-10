@@ -1,7 +1,7 @@
 {
 	"genericName": "Shell Polishing",
-	"description": "",
-	"cost": {"food": 0, "wood": 350, "stone": 850, "metal": 0},
+	"description": "The larger an Octorock the more brittle their shell became. While most took it as a fact of life some Zola took huge efforts to find remedies for their homes blight.",
+	"cost": {"food": 0, "wood": 850, "stone": 850, "metal": 0},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "tech_generic.dds",

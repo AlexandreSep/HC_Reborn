@@ -1,6 +1,6 @@
 {
 	"genericName": "Gel Hardening",
-	"description": "",
+	"description": "With a bit of time and sun exposure, the slime of the Zols could withstand the elements",
 	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
 	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

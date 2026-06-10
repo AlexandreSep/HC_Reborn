@@ -1,6 +1,6 @@
 {
-	"genericName": "Basic requirements",
-	"description": ".",
+	"genericName": "Drudge tools",
+	"description": "Drudges are provided with basic tools.",
 	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 75},
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zola"}]},
 	"icon": "tech_generic.dds",

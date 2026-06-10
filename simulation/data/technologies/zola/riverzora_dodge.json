@@ -1,6 +1,6 @@
 {
 	"genericName": "Ritualized Domestic Violence",
-	"description": "",
+	"description": "Violence between the sexes (or just in general) was a regular occurrence in Zola society, often to a deadly degree. To uphold society (and to keep himself safe from his wife) King Dradd established a sort of open court, in which disputes would be carried out between partners. ",
 	"cost": {"food": 250, "wood": 0, "stone": 0, "metal": 100},
 	"requirements": {"all": [{"civ": "zola"}]},
 	"icon": "gerudo/nabooru_kovaloogift.dds",

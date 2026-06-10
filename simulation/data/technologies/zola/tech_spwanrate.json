@@ -1,6 +1,6 @@
 {
   "genericName": "Breeding Pressures",
-  "description": ".",
+  "description": "A sadistic Zola once found out that certained animals under stress tended to have larger litter sizes.",
   "cost": {"food": 600, "wood": 0, "stone": 0, "metal": 600},
   "requirements": {"all": [{ "tech": "phase_town" },{ "civ": "zola" }]},
   "requirementsTooltip": "Unlocked with Town.",

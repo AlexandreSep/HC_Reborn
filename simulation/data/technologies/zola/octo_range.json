@@ -1,6 +1,6 @@
 {
 	"genericName": "Eye of Bellum",
-	"description": "",
+	"description": "Octorok eyesight can seem out of this world.",
 	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 300},
 	"requirements": {"all": [{"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

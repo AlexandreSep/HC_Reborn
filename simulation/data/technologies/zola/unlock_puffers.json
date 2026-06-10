@@ -1,6 +1,6 @@
 {
 	"genericName": "Unlocks Puffers",
-	"description": ".",
+	"description": "Octoroks were the favorite pets of Zola. Unfortunately uncrontolled breeding often led to an excess of freshlings",
 	"cost": {"food": 200, "wood": 0, "stone": 0, "metal": 50},
 	"icon": "tech_generic.dds",
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zola"}]},

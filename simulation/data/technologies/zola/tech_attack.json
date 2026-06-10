@@ -1,6 +1,6 @@
 {
 	"genericName": "Quality Scavenging",
-	"description": "",
+	"description": "The Zola take care to sort out good weapons before melting down the rest.",
 	"cost": {"food": 0, "wood": 0, "stone": 400, "metal": 400},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

@@ -1,6 +1,6 @@
 {
 	"genericName": "Early Octo gets the Worm",
-	"description": "",
+	"description": "Aquamentus eggs are a favorite delicacy for giant Octorocks. They would cross oceans to reduce the numbers of their would be natural predators.",
 	"cost": {"food": 350, "wood": 350, "stone": 350, "metal": 350},
 	"requirements": {"all": [{"tech": "phase_city"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

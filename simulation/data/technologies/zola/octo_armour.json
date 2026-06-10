@@ -1,6 +1,6 @@
 {
 	"genericName": "Shell Supplements",
-	"description": ".",
+	"description": "Dwelling on the land more has led the zola to supplementing the diet of their octorok stock. After a bit of trial and error they have found a mixture that results in exceptionally hard shells",
 	"cost": {"food": 0, "wood": 650, "stone": 100, "metal": 100},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

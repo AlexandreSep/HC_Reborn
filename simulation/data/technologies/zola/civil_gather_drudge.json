@@ -1,6 +1,6 @@
 {
 	"genericName": "Hunting Tradition",
-	"description": ".",
+	"description": "Hunting on land and in the sea is time honored tradition for the zola.",
 	"cost": {"food": 0, "wood": 500, "stone": 0, "metal": 250},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

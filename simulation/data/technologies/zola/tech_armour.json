@@ -1,6 +1,6 @@
 {
 	"genericName": "Armor Restauration",
-	"description": "",
+	"description": "Their tough scales made armor uniteresting for the zola. Repeated skirmishes with the more well armed forces of Hyrule fixed this mindset fast.",
 	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",

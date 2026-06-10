@@ -1,6 +1,6 @@
 {
 	"genericName": "Spitting Competitions",
-	"description": "",
+	"description": "Spitting had a huge cultural significane for the Zola and competitions of it involved numerous species.",
 	"cost": {"food": 900, "wood": 0, "stone": 0, "metal": 300},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "zola"}]},
 	"requirementsTooltip": "Unlocked with Town.",
