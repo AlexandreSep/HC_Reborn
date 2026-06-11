@@ -48,8 +48,13 @@ Builder.prototype.GetEntitiesList = function()
 	let disabledTemplates = cmpPlayer.GetDisabledTemplates();
 
 	let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+	let cmpOwnership = Engine.QueryInterface(this.entity, IID_Ownership);
+	let cmpTechnologyManager = cmpOwnership && QueryPlayerIDInterface(cmpOwnership.GetOwner(), IID_TechnologyManager);
 
-	return entities.filter(ent => !disabledTemplates[ent] && cmpTemplateManager.TemplateExists(ent));
+	return entities.filter(ent =>
+		!disabledTemplates[ent] &&
+		cmpTemplateManager.TemplateExists(ent) &&
+		(!cmpTechnologyManager || cmpTechnologyManager.CanProduce(ent)));
 };
 
 Builder.prototype.GetRange = function()

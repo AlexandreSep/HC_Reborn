@@ -341,17 +341,30 @@ function GetIdentityRequiredTechnology(identity)
 	if (!identity)
 		return undefined;
 
+	let getTechString = techs => {
+		if (!techs)
+			return undefined;
+
+		if (typeof techs == "string")
+			return techs;
+
+		if (techs._string)
+			return techs._string;
+
+		return undefined;
+	};
+
 	if (identity.RequiredTechnology)
-		return identity.RequiredTechnology;
+		return getTechString(identity.RequiredTechnology);
 
 	if (identity.Requirements)
 	{
 		if (identity.Requirements.Techs)
-			return identity.Requirements.Techs;
+			return getTechString(identity.Requirements.Techs);
 
 		for (let key in identity.Requirements)
 			if (identity.Requirements[key] && identity.Requirements[key].Techs)
-				return identity.Requirements[key].Techs;
+				return getTechString(identity.Requirements[key].Techs);
 	}
 
 	return undefined;
