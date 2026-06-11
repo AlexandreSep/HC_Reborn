@@ -6,7 +6,7 @@
     <EjectHealth>0.1</EjectHealth>
     <List datatype="tokens">Drudge</List>
     <LoadingRange>5</LoadingRange>
-    <Max>6</Max>
+    <Max>4</Max>
   </GarrisonHolder>
   <Identity>
     <Civ>zola</Civ>

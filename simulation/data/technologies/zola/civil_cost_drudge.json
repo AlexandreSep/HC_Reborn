@@ -5,8 +5,9 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zola"}]},
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "Removes material cost - Drudge",
-	"modifications": [{"value": "Cost/Resources/wood", "add": -20}],
+	"tooltip": "Removes material cost, +5 Resource Capacity - Drudge",
+	"modifications": [{"value": "Cost/Resources/wood", "add": -20},
+	{"value": "ResourceGatherer/Capacities/food", "add": 5}],
 	"affects": ["Drudge"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

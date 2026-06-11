@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": [ "Octobuilding" ],
+	"modifications": [{"value": "Cost/Resources/food", "add": 50},{"value": "Cost/Resources/wood", "add": 50}],
+	"auraName": "Habitat Saturation",
+	"stackable" : true ,
+	"auraDescription": "(Each Octobuilding increases the price for the next one for 50 food and 50 material)"
+}
+

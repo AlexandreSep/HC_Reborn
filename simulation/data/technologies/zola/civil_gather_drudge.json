@@ -6,11 +6,11 @@
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "50% faster meat and fish gathering speed and +10 Resource Capacity - Drudge",
+	"tooltip": "30% faster meat and fish gathering speed and +5 Resource Capacity - Drudge",
 	"modifications": [
-		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.5},
-		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.5},
-		{"value": "ResourceGatherer/Capacities/food", "add": 10}],
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.2},
+		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.2},
+		{"value": "ResourceGatherer/Capacities/food", "add": 5}],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

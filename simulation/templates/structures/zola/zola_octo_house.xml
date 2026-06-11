@@ -9,7 +9,7 @@
     <VisibleClasses datatype="tokens">House</VisibleClasses>
   </Identity>
   <Population>
-    <Bonus>30</Bonus>
+    <Bonus>25</Bonus>
   </Population>  
   <Researcher>
     <Technologies datatype="tokens">

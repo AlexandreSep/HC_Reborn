@@ -5,8 +5,11 @@
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zola"}]},
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "Removes metal cost - Octoroks",
-	"modifications": [{"value": "Cost/Resources/stone", "add": -20}],
+	"tooltip": "Removes metal cost, +2 Resource Capacity - Octoroks",
+	"modifications": [{"value": "Cost/Resources/stone", "add": -20},		
+		{"value": "ResourceGatherer/Capacities/wood", "add": 2},
+		{"value": "ResourceGatherer/Capacities/stone", "add": 2},
+		{"value": "ResourceGatherer/Capacities/metal", "add": 2}],
 	"affects": ["Octorok"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

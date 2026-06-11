@@ -31,6 +31,9 @@
       </Splash>
     </Ranged>
   </Attack>
+  <Auras datatype="tokens">
+    units/zola/octobuilding_price
+  </Auras>
   <Builder>
     <Entities datatype="tokens">
 	structures/zola/zola_civil_centre
@@ -39,10 +42,10 @@
     <Rate>3</Rate>
   </Builder>
   <Cost>
-    <BuildTime>20</BuildTime>
+    <BuildTime>40</BuildTime>
     <Resources>
-	<food>200</food>
-	<wood>200</wood>
+	<food>100</food>
+	<wood>100</wood>
 	</Resources>
   </Cost>
     <Footprint>
