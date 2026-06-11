@@ -1264,6 +1264,25 @@ function initSelectionPanels()
 		g_SelectionPanelBarterButtonManager = new BarterButtonManager(unitBarterPanel);
 }
 
+function hasValidTemplateDetailsText(text)
+{
+	return typeof text == "string" && !!text.trim();
+}
+
+function hasTemplateDetailsDescription(templateName, civCode)
+{
+	if (templateName && templateName.indexOf("/") == -1 && !templateName.startsWith("HC_template_"))
+	{
+		let tech = civCode ? GetTechnologyData(templateName, civCode) : undefined;
+		return tech && hasValidTemplateDetailsText(tech.description);
+	}
+
+	let template = GetTemplateData(templateName);
+	return template && (
+		hasValidTemplateDetailsText(template.history) ||
+		hasValidTemplateDetailsText(template.History));
+}
+
 /**
  * Pauses game and opens the template details viewer for a selected entity or technology.
  *
@@ -1275,6 +1294,9 @@ function initSelectionPanels()
 function showTemplateDetails(templateName, civCode)
 {
 	if (inputState != INPUT_NORMAL)
+		return;
+
+	if (!hasTemplateDetailsDescription(templateName, civCode))
 		return;
 
 	if (!Engine.OpenChildPage)

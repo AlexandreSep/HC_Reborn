@@ -1,0 +1,192 @@
+{
+	"Code": "ikana",
+	"Culture": "shadow",
+	"Music": [
+		{
+			"File": "ikana_theme1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "battle"
+		},
+		{
+			"File": "ikana_ambient1.ogg",
+			"Type": "victory"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "",
+			"Description": "",
+			"Technologies": [
+				{
+					"Name": "Bones, Meat, Stone, Metal, Rupees, Gold, and Force Gems"
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Meg",
+					"Class": "",
+					"Armament": "Poe's Torch",
+					"Emblem": "",
+					"History": "."
+				},
+				{
+					"Name": "Irene",
+					"Class": "",
+					"Armament": "Witch's Broom",
+					"Emblem": "",
+					"History": "."
+				},
+				{
+					"Name": "Blind",
+					"Class": "",
+					"Armament": "Sword",
+					"Emblem": "",
+					"History": "."
+				},
+				{
+					"Name": "Death Sword",
+					"Class": "",
+					"Armament": "Death Sword",
+					"Emblem": "",
+					"History": "."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "",
+			"History": "",
+			"Description": ""
+		},
+		{
+			"Name": "",
+			"History": "",
+			"Description": ""
+		},
+		{
+			"Name": "",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"CivChoices": [
+		"civ_choices/stalfos/choosehero_meg",
+		"civ_choices/stalfos/choosehero_blind",
+		"civ_choices/stalfos/choosehero_deathsword"
+	],
+	"TeamBonuses": [
+		{
+			"Name": "",
+			"History": "",
+			"Description": ""
+		}
+	],
+	"Structures": [
+		{
+			"Name": "Wonder: Arbiter's Grounds",
+			"Class": "",
+			"Emblem": "",
+			"History": ".",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		},
+		{
+			"Name": "Titan: Stallord",
+			"Class": "",
+			"Emblem": "",
+			"History": ".",
+			"Requirements": "",
+			"Phase": "",
+			"Special": ""
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/stalfos/ikana_civil_centre"
+		},
+		{
+			"Template": "units/ikana/ikana_stalchildA",
+			"Count": 4
+		},
+		{
+			"Template": "units/stalfos/stalfos_stalkin_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/darknut/darknut_peltast_b",
+			"Count": 2
+		},
+		{
+			"Template": "units/stalfos/stalfos_eyesoar_b"
+		}
+	],
+	"Formations":
+	[
+		"special/formations/null",
+		"special/formations/box",
+		"special/formations/column_closed",
+		"special/formations/line_closed",
+		"special/formations/column_open",
+		"special/formations/line_open",
+		"special/formations/flank",
+		"special/formations/skirmish",
+		"special/formations/wedge",
+		"special/formations/battle_line"
+	],
+	"AINames":
+	[
+		"Dampe",
+		"Gabora",
+		"Meg",
+		"Irene",
+		"Blind the Thief",
+		"Death Sword"
+	],
+	"SkirmishReplacements":
+	{
+		"skirmish/structures/default_civil_centre" : "structures/ikana/ikana_civil_centre",
+		"skirmish/units/default_support_female_citizen": "units/ikana/ikana_stalchildA",
+		"skirmish/units/default_cavalry": "units/stalfos/stalfos_bubble_b",
+		"skirmish/units/default_infantry_melee_b": "units/stalfos/stalfos_stalchildA",
+		"skirmish/units/default_infantry_ranged_b": "units/stalfos/stalfos_stalchildA",
+		"skirmish/units/special_starting_unit": "units/stalfos/stalfos_poenecro_b"
+	},
+	"SelectableInGameSetup": false
+}

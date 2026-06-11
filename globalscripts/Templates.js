@@ -451,6 +451,7 @@ function GetTemplateDataHelper(template, player, auraTemplates, resources, modif
 		};
 		ret.icon = template.Identity.Icon;
 		ret.tooltip = template.Identity.Tooltip;
+		ret.history = template.Identity.History;
 		ret.requiredTechnology = template.Identity.RequiredTechnology;
 		ret.visibleIdentityClasses = GetVisibleIdentityClasses(template.Identity);
 		ret.nativeCiv = template.Identity.Civ;

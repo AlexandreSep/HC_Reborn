@@ -9,72 +9,18 @@
     </Resources>
   </Cost>
   <Footprint>
-    <Circle radius="25.0" />
-    <Height>5.0</Height>
+    <Height>12.0</Height>
+    <Square depth="70.0" width="70.0" />
   </Footprint>
   <GarrisonHolder disable="" />
-  <TurretHolder>
-    <TurretPoints>
-      <Archer1>
-        <X>0</X>
-        <Y>16.25</Y>
-        <Z>7.25</Z>
-      </Archer1>
-      <Archer2>
-        <X>3</X>
-        <Y>16.25</Y>
-        <Z>7</Z>
-      </Archer2>
-      <Archer3>
-        <X>-3</X>
-        <Y>16.25</Y>
-        <Z>7</Z>
-      </Archer3>
-      <Archer4>
-        <X>-6</X>
-        <Y>16.25</Y>
-        <Z>-3.5</Z>
-      </Archer4>
-      <Archer5>
-        <X>-7.5</X>
-        <Y>16.25</Y>
-        <Z>-1</Z>
-      </Archer5>
-      <Archer6>
-        <X>-4</X>
-        <Y>16.25</Y>
-        <Z>-6</Z>
-      </Archer6>
-      <Archer7>
-        <X>6</X>
-        <Y>16.25</Y>
-        <Z>-3.5</Z>
-      </Archer7>
-      <Archer8>
-        <X>7.5</X>
-        <Y>16.25</Y>
-        <Z>-1</Z>
-      </Archer8>
-      <Archer9>
-        <X>4</X>
-        <Y>16.25</Y>
-        <Z>-6</Z>
-      </Archer9>
-    </TurretPoints>
-  </TurretHolder>
   <Health>
     <Max>2500</Max>
     <SpawnEntityOnDeath>rubble/debris_hylian_civilcenterA</SpawnEntityOnDeath>
-    <SpawnGarrison>
-      <Template>units/hylian/hylian_soldier_archer_garrison</Template>
-      <SpawnNumber>9</SpawnNumber>
-      <LinkedDestruction>true</LinkedDestruction>
-    </SpawnGarrison>
   </Health>
   <Identity>
-    <Civ>hylian</Civ>
+    <Civ>ikana</Civ>
     <Classes datatype="tokens">Nurses</Classes>
-    <GenericName>Town Hall</GenericName>
+    <GenericName>Ancient Castle</GenericName>
     <History>The center of any Hylian establishment, a Town Hall mandates and regulates the economy and growth of both civilian and military expansion. Able to train a workforce of Citizens for both labor and soldier duty as well as stock resources.</History>
     <Icon>structures/hylian/hyl_townhall.dds</Icon>
     <Tooltip>Hylian Civil Center: Trains Worker units and all Resources can be dropped off here.</Tooltip>
@@ -121,22 +67,53 @@
     </SoundGroups>
   </Sound>
   <VisualActor>
-    <Actor>structures/hylian/hylian_civic_centreA.xml</Actor>
-    <FoundationActor>structures/hylian/hylian_scaffoldA.xml</FoundationActor>
+    <Actor>structures/ikana/ikana_civic_centreA.xml</Actor>
+    <FoundationActor>structures/ikana/ikana_portal.xml</FoundationActor>
   </VisualActor>
   <Researcher>
     <Technologies datatype="tokens">hylian/levy_bonuses
     hylian/player_ishylian
 </Technologies>
   </Researcher>
+<RandomIntervalSpawner>
+  <Interval>10000</Interval>
+  <Entities>
+    <Swordsman>
+      <Template>units/stalfos/stalfos_gibdo_b</Template>
+      <Weight>3</Weight>
+    </Swordsman>
+    <Spearman>
+      <Template>units/stalfos/stalfos_redeadknight_b</Template>
+      <Weight>1</Weight>
+    </Spearman>
+  </Entities>
+<DestinationOffset>
+      <step1>
+        <X>0</X>
+        <Z>10</Z>
+      </step1>
+      <step1>
+        <X>0</X>
+        <Z>35</Z>
+      </step1>	  
+    </DestinationOffset>
+    <LineupOffset>
+      <MaxThresholdOffset>
+        <Threshold>5</Threshold>
+        <X>0</X>
+        <Z>5</Z>
+      </MaxThresholdOffset>
+      <X>-3</X>
+      <Z>0</Z>
+    </LineupOffset>
+    <SpawnOffset>
+      <X>0</X>
+      <Z>7</Z>
+    </SpawnOffset>  
+</RandomIntervalSpawner>
+
   <Trainer>
-    <Entities datatype="tokens">units/hylian/{civ}_citizenA
-    units/hylian/{civ}_hero_krin
-    units/hylian/{civ}_hero_seres
-    units/hylian/{civ}_hero_kazakk
-    units/hylian/{civ}_hero_zeldaV
-    units/hylian/{civ}_hero_link
-    units/hylian/{civ}_hero_rauru</Entities>
+    <Entities datatype="tokens">units/stalfos/stalfos_stalchildA</Entities>
     <DestinationOffset>
       <step1>
         <X>21</X>
