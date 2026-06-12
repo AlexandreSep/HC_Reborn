@@ -1,0 +1,16 @@
+{
+	"Data": {
+		"Title": "Edge of Misery Survival",
+		"Description": "Two allied players must survive endless Gohma waves.",
+		"Scripts": [
+			"scripts/ConquestCommon.js",
+			"scripts/Conquest.js",
+			"skirmishes/Edge Of Misery V2.js"
+		],
+		"GUIOrder": 99
+	},
+	"TranslatedKeys": [
+		"Title",
+		"Description"
+	]
+}
