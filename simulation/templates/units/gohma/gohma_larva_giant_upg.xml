@@ -4,9 +4,7 @@
     <FriendlyFire>false</FriendlyFire>
     <Range>15</Range>
     <Damage>
-      <Pierce>15.0</Pierce>
-      <Hack>15.0</Hack>
-      <Crush>15.0</Crush>
+      <Magic>10</Magic>
     </Damage>
   </DeathDamage>
   <Promotion disable="" />

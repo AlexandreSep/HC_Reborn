@@ -10,7 +10,8 @@
         <FriendlyFire>false</FriendlyFire>
         <Range>20</Range>
         <Damage>
-            <Magic>250</Magic>
+            <Magic>50</Magic>
+			<Siege>150</Siege>
         </Damage>
     </DeathDamage>
     <Identity>
