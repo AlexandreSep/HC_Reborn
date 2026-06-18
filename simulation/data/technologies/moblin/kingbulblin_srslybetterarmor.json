@@ -2,7 +2,7 @@
 	"genericName": "Seriously Better Armor!",
 	"description": "Coolo little Bulblins get the good stuff from their King! Biiigggg nice shields look great!",
 	"cost": {"food": 0, "wood": 0, "stone": 250, "metal": 250},
-	"requirements": {"all": [ {"tech": "civ_choices/moblin/choosehero_girahim"}, {"civ": "moblin"}]},
+	"requirements": {"all": [ {"tech": "civ_choices/moblin/choosehero_ghirahim"}, {"civ": "moblin"}]},
 	"requirementsTooltip": "You must select King Bulblin as your hero.",
 	"icon": "moblin/kingbulblin_srslybetterarmor.dds",
 	"researchTime": 80,

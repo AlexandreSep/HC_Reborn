@@ -8,7 +8,7 @@
 	"researchTime": 80,
 	"tooltip": "(Hinox attack range increases by 25, Siege Damage increases by +15 ,Splash Damage increases by +5)",
 	"modifications": [{"value": "Attack/Ranged/MaxRange", "add": 25},
-					  {"value": "Attack/Ranged/Damage/Siege", "add": 15}
+					  {"value": "Attack/Ranged/Damage/Siege", "add": 15},
 					  {"value": "Attack/Ranged/Splash/Damage/Magic", "add": 5}],
 	"affects": ["Hinox"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
