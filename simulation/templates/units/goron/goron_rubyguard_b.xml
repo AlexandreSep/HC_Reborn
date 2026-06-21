@@ -5,11 +5,6 @@
             <AttackName>Hammer</AttackName>
         </Melee>
     </Attack>
-    <Cost>
-        <Resources>
-            <stone>80</stone>
-        </Resources>
-    </Cost>
     <Identity>
         <Civ>goron</Civ>
         <Classes datatype="tokens">RubyShield RubyArmor Medium RubyGuard</Classes>
@@ -28,16 +23,6 @@
         <Entity>units/goron/goron_rubyguard_upg</Entity>
         <RequiredXp>9999</RequiredXp>
     </Promotion>
-    <Resistance>
-        <Entity>
-            <Damage>
-                <Crush>20.0</Crush>
-                <Hack>50</Hack>
-                <Pierce>50</Pierce>
-                <Magic>20</Magic>
-            </Damage>
-        </Entity>
-    </Resistance>
     <Sound>
         <SoundGroups>
             <attack_melee>attack/weapon/goron_hammer.xml</attack_melee>

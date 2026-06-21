@@ -9,12 +9,6 @@
             </Damage>
         </Melee>
     </Attack>
-    <Cost>
-        <BuildTime>12</BuildTime>
-        <Resources>
-            <stone>75</stone>
-        </Resources>
-    </Cost>
     <Identity>
         <Civ>goron</Civ>
         <Classes datatype="tokens">Medium FireElement UniqueUnit Berserker</Classes>
@@ -30,15 +24,6 @@
             <Techs>civ_choices/goron/choosehero_darunia</Techs>
         </Requirements>
     </Identity>
-    <Resistance>
-        <Entity>
-            <Damage>
-                <Crush>20</Crush>
-                <Hack>45</Hack>
-                <Pierce>45</Pierce>
-            </Damage>
-        </Entity>
-    </Resistance>
     <Sound>
         <SoundGroups>
             <attack_melee>attack/natural/goron_fist_light.xml</attack_melee>

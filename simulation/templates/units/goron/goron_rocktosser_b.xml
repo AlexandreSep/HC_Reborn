@@ -8,11 +8,6 @@
       </Damage>
     </Ranged>
   </Attack>
-  <Cost>
-    <Resources>
-      <wood>40</wood>
-    </Resources>
-  </Cost>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">PowerBracelet Medium BasicSoldier CanGarrison RockTosser</Classes>
@@ -24,14 +19,6 @@
     <Tooltip>Light Missile unit that tosses rocks at enemies from a distance. Has a chance to deal Critical Hits.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>25</Hack>
-        <Pierce>25</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/natural/goron_throw_light.xml</attack_ranged>

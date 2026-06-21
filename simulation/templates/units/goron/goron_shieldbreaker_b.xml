@@ -14,7 +14,7 @@
     </Footprint>
     <Identity>
         <Civ>goron</Civ>
-        <Classes datatype="tokens">Large  UniqueUnit Shieldbreaker</Classes>
+        <Classes datatype="tokens">Large UniqueUnit Shieldbreaker</Classes>
         <GenericName>Shieldbreaker</GenericName>
         <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
         <History>Wearing a suit of armor and two powerful gauntlets, Shieldbreakers can build up and unleash a frightening level of force in a single punch. Their attack rate is quite slow, but a single punch can shatter just about any armor, and send enemies flying.</History>

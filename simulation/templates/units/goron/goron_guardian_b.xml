@@ -4,11 +4,6 @@
       <AttackName>Fists</AttackName>
     </Melee>
   </Attack>
-  <Cost>
-    <Resources>
-      <stone>20</stone>
-    </Resources>
-  </Cost>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">PowerBracelet Medium BasicSoldier GoronGuardian CoronBonusA</Classes>
@@ -20,14 +15,6 @@
     <Tooltip>Light Infantry Melee unit that can roll up and zoom across the map at rapid speeds.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Hack>25.0</Hack>
-        <Pierce>25.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/goron_fist_light.xml</attack_melee>

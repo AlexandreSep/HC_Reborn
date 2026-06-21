@@ -11,23 +11,10 @@
   <Auras datatype="tokens">
     units/commander_aura_1
   </Auras>
-  <Cost>
-    <BattalionSlots>2</BattalionSlots>
-    <BuildTime>12</BuildTime>
-    <Resources>
-	  <food>300</food>
-      <metal>150</metal>
-      <stone>150</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="5.0" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>1000</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Large LargeGarrison Patriarch</Classes>
@@ -39,16 +26,6 @@
     <Tooltip>Goron Commander unit that helps other Gorons fight better.</Tooltip>
     <VisibleClasses datatype="tokens">Commander Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>50</Crush>
-        <Hack>50</Hack>
-        <Pierce>50</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/goron_fist_light.xml</attack_melee>

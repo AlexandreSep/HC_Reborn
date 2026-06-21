@@ -33,19 +33,10 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <Resources>
-      <food>200</food> 
-      <stone>100</stone>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="5" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>600</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Large RubyShield RubyArmor LargeGarrison Firewarrior</Classes>
@@ -61,17 +52,6 @@
     <Entity>units/goron/goron_firewarrior_upg</Entity>
     <RequiredXp>9999</RequiredXp>
   </Promotion>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>30</Crush>
-        <Hack>60</Hack>
-        <Pierce>60</Pierce>
-        <Magic>25</Magic>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>100</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/goron_hammer.xml</attack_ranged>

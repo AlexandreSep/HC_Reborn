@@ -12,11 +12,6 @@
             </Splash>
         </Melee>
     </Attack>
-    <Cost>
-        <Resources>
-            <stone>40</stone>
-        </Resources>
-    </Cost>
     <Identity>
         <Civ>goron</Civ>
         <Classes datatype="tokens">Medium Unique Unit BrotherAtArms</Classes>
@@ -32,14 +27,6 @@
             <Techs>civ_choices/goron/choosehero_darunia</Techs>
         </Requirements>
     </Identity>
-    <Resistance>
-        <Entity>
-            <Damage>
-                <Hack>40</Hack>
-                <Pierce>40.0</Pierce>
-            </Damage>
-        </Entity>
-    </Resistance>
     <Sound>
         <SoundGroups>
             <attack_melee>attack/weapon/sword.xml</attack_melee>

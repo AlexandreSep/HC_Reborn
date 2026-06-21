@@ -1,10 +1,4 @@
 <Entity parent="classes/HC_template_unit_spearman">
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <stone>20</stone>
-    </Resources>
-  </Cost>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Beastmaster Medium</Classes>
@@ -16,16 +10,6 @@
     <Tooltip>Multipurpose Melee unit that has a damage bonus when attacking both Creatures and Cavalry.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>25</Hack>
-        <Pierce>25</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/weapon/sword.xml</attack_melee>

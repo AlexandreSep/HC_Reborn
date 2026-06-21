@@ -9,18 +9,10 @@
 		</Damage>
     </Melee>
   </Attack>
-  <Cost>
-    <Resources>
-      <food>175</food>
-    </Resources>
-  </Cost>
   <Footprint>
     <Circle radius="5.0" />
     <Height>5.0</Height>
   </Footprint>
-  <Health>
-    <Max>400</Max>
-  </Health>
   <Identity>
     <Civ>goron</Civ>
     <Classes datatype="tokens">Large LargeGarrison Sumo CoronBonusA</Classes>
