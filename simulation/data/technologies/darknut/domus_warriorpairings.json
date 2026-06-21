@@ -7,7 +7,7 @@
 	"icon": "darknut/domus_warriorpairings.dds",
 	"researchTime": 40,
 	"tooltip": "Domus provides an additional +10 population.",
-	"modifications": [{"value": "Cost/PopulationBonus", "add": 10}],
+	"modifications": [{"value": "Population/Bonus","add": 10}],
 	"affects": ["House"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

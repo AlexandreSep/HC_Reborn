@@ -7,7 +7,7 @@
 	"icon": "ordona/serfstead_guestroom.dds",
 	"researchTime": 40,
 	"tooltip": "(Serf Steads all provide +5 additional population.)",
-	"modifications": [{"value": "Cost/PopulationBonus", "add": 5}],
+	"modifications": [{"value": "Population/Bonus", "add": 5}],
 	"affects": ["House"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

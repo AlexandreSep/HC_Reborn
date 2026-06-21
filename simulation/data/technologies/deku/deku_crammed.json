@@ -7,7 +7,7 @@
 	"icon": "deku/deku_crammed.dds",
 	"researchTime": 40,
 	"tooltip": "Doubles Population Support of Slums, adds 25% chance for madscrub affliction for non-creature scrub units",
-	"modifications": [{"value": "Cost/PopulationBonus", "add": 10, "affects": "House"},
-	{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 25, "affects": "ScrubUnit" }],
+	"modifications": [{"value": "Population/Bonus", "multiply": 2, "affects": "House"},
+	{"value": "Health/SpawnMultipleEntitiesOnDeath/Chance", "add": 25, "affects": "ScrubUnit"}],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
