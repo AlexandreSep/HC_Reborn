@@ -1,15 +1,7 @@
 <Entity parent="classes/HC_template_unit_maceman_heavy">
-<Cost>
-    <Resources>
-      <food>150</food>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>375</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Holounit Large </Classes>
+    <Classes datatype="tokens">Holounit Large Darknut</Classes>
     <GenericName>Doomknocker</GenericName>
     <History>Doomkockers were large and powerful Darknut warriors, with many years of experience to their name. Wielding a giant mace and durable shield, Doomknockers would slowly and relentlessly march at their targets, shrugging off arrow fire without missing a beat. When in a melee they could pulverize and pummel just about any foe, even those with durable armor.</History>
     <Icon>units/darknut/dar_doomknocker.dds</Icon>

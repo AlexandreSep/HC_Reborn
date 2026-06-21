@@ -6,6 +6,6 @@
 	"autoResearch": true,
 	"researchTime": 0,
 	"tooltip": "You are the Darknuts, if you can see this tooltip then report this as a bug!",
-	"modifications": [],
-	"affects": []
+	"modifications": [{"value": "Health/Max", "multiply": 1.20},{"value": "Cost/Resources/food", "multiply": 1.15}],
+	"affects": ["Darknut"]
 }

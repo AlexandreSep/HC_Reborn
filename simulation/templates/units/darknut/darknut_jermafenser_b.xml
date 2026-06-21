@@ -1,15 +1,7 @@
 <Entity parent="classes/HC_template_unit_Knight">
-  <Cost>
-    <Resources>
-      <food>200</food>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>500</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Holounit Legion Large</Classes>
+    <Classes datatype="tokens">Holounit Legion Large Darknut</Classes>
     <GenericName>Jermafenser</GenericName>
     <History>Jermafensers were some of the tallest and largest Darknuts in service of the Legion. Standing at nearly ten feet tall, these hulking behemoths slowly mustered their way into combat, effortlessly slicing apart anything smaller than themselves.</History>
     <Icon>units/darknut/dar_jermafenser.dds</Icon>

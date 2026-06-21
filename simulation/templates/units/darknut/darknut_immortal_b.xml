@@ -3,13 +3,7 @@
     <Auras datatype="tokens">
     units/immortal_aura_1
   </Auras>
-    <Cost>
-        <Resources>
-            <food>160</food>
-        </Resources>
-    </Cost>
     <Health>
-        <Max>300</Max>
         <SpawnMultipleEntitiesOnDeath>
             <Chance>10</Chance>
             <SameBattalion>true</SameBattalion>
@@ -20,7 +14,7 @@
     </Health>
     <Identity>
         <Civ>darknut</Civ>
-        <Classes datatype="tokens">Immortal Large Fire</Classes>
+        <Classes datatype="tokens">Immortal Large Fire Darknut</Classes>
         <GenericName>Immortal</GenericName>
         <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
         <History>Once loved and prized figures of the Legion, these magic users were imprisoned and slain during Zalunbars takeover and ban on the use of sorcery. Many were sealed to their doom in Darknut tombs, while a few fled into the depths of the Gerudo Desert. On rare occasions they show up in the Legion army, perhaps to earn a pardon by those in charge.</History>

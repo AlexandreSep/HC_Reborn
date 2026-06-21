@@ -1,15 +1,7 @@
 <Entity parent="classes/HC_template_unit_crossbow">
-  <Cost>
-    <Resources>
-      <food>125</food>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>125</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Yarapromote Gymunit Large BasicSoldier</Classes>
+    <Classes datatype="tokens">Yarapromote Gymunit Large BasicSoldier Darknut</Classes>
     <GenericName>Peltast</GenericName>
     <History>Ranged combat was expressly forbidden to any warrior who joined the Legion. Luckily, the civilian run garrisons and armies had no such taboo against attacking enemies from a distance. Peltast men and women were trained in lobbing javelins from incredible distances, serving as a powerful skirmisher.</History>
     <Icon>units/darknut/dar_peltast.dds</Icon>

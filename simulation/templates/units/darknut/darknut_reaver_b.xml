@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="classes/HC_template_unit_swordsman_heavy">
-    <Cost>
-        <Resources>
-            <metal>40</metal>
-            <stone>0</stone>
-        </Resources>
-    </Cost>
     <Identity>
         <Civ>darknut</Civ>
-        <Classes datatype="tokens">Large</Classes>
+        <Classes datatype="tokens">Large Darknut</Classes>
         <GenericName>Reaver</GenericName>
         <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
         <History>Outcast Darknut warriors that have survived through raiding and theft in the Gerudo Desert. Reavers have abandoned the bulky armor of their brothers and instead rely on their incredible muscles and speed to survive. The Legion is willing to hire these warriors when the need arrises.</History>
@@ -24,7 +18,7 @@
     <Resistance>
         <Entity>
             <Damage>
-                <DodgeRating>30.0</DodgeRating>
+                <DodgeRating>20.0</DodgeRating>
             </Damage>
         </Entity>
     </Resistance>

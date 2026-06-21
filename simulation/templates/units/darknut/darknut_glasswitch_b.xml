@@ -9,17 +9,9 @@
             </Damage>
         </Ranged>
     </Attack>
-    <Cost>
-        <Resources>
-            <food>65</food>
-        </Resources>
-    </Cost>
-    <Health>
-        <Max>125</Max>
-    </Health>
     <Identity>
         <Civ>darknut</Civ>
-        <Classes datatype="tokens">Large </Classes>
+        <Classes datatype="tokens">Large Darknut</Classes>
         <GenericName>Glass Witch</GenericName>
         <HideIfTechnologyRequirementIsNotMet>true</HideIfTechnologyRequirementIsNotMet>
         <History>A fringe convent of lady Darknuts known for their unmatched crafting of all manner of jewelry and stained glass. In a battle the Glass Witches toss razor sharp bolts of crystal at their enemies, shredding their armor and knocking them off their feet.</History>

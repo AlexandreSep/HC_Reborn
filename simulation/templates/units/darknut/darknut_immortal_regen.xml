@@ -22,7 +22,7 @@
   </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Large Fire Class80</Classes>
+    <Classes datatype="tokens">Large Fire</Classes>
     <GenericName>Reanimating Immortal</GenericName>
     <History>A Darknut Immortal in the process of reanimating themselves.</History>
     <Icon>units/darknut/dar_immortal.dds</Icon>

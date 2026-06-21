@@ -1,16 +1,7 @@
 <Entity parent="classes/HC_template_unit_spearman_heavy">
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>150</food>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>375</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Yarapromote Gymunit Large BasicSoldier</Classes>
+    <Classes datatype="tokens">Yarapromote Gymunit Large BasicSoldier Darknut</Classes>
     <GenericName>Hoplite</GenericName>
     <History>Darknut Hoplites were low level soldiers that only underwent minimal training as oppossed to becoming a lifelong member of the Legion. Rather they served as city guards, national patrols, and emergency reinforcements to back up armies during wartime.</History>
     <Icon>units/darknut/dar_hoplite.dds</Icon>

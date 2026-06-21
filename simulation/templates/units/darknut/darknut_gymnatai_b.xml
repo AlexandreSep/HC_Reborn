@@ -4,17 +4,9 @@
       <AttackName>Khopesh</AttackName>
     </Melee>
   </Attack>
-  <Cost>
-    <Resources>
-      <food>90</food>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>250</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Yarapromote Gymunit Large BasicSoldier</Classes>
+    <Classes datatype="tokens">Yarapromote Gymunit Large BasicSoldier Darknut</Classes>
     <GenericName>Gymnatai</GenericName>
     <History>These young and eager warriors had yet to become trained by the Legion, and therefore attempted to prove themselves as volunteer soldiers. Those that survived combat or showed exceptional skill would be adopted into the Legion without question.</History>
     <Icon>units/darknut/dar_gymnatai.dds</Icon>

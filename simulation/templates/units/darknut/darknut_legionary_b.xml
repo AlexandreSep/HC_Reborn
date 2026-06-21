@@ -1,15 +1,7 @@
 <Entity parent="classes/HC_template_unit_swordsman_heavy">
-  <Cost>
-    <Resources>
-      <food>160</food>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>350</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Holounit Legion Large </Classes>
+    <Classes datatype="tokens">Holounit Legion Large Darknut</Classes>
     <GenericName>Legionary</GenericName>
     <History>The face of the Darknut armies, Legionaries tirelessly enforced the will of the Darknut people by defending against and conquering all enemies. Despite their size and power, Legionaries were actually the lowest rank of soldier in the Legion’s Code and had only undergone a year of formal training.</History>
     <Icon>units/darknut/dar_legionary.dds</Icon>

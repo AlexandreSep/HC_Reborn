@@ -1,19 +1,7 @@
 <Entity parent="classes/HC_template_unit_cavalryanti_heavy">
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>225</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>375</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Holounit Large Legion</Classes>
+    <Classes datatype="tokens">Holounit Large Legion Darknut</Classes>
     <GenericName>Rebonack</GenericName>
     <History>Short of Deities, the Rebonack were the most experienced soldiers in the entire Legion and perhaps some of their most terrifying warriors. Rebonacks rode on top of giant black horses that had for centuries been specially bred for size. Armed with a lance in one hand and a sword in the other, Rebonacks could knock down enemy soldiers with ease and lob the heads off of those that survived.</History>
     <Icon>units/darknut/dar_rebonack.dds</Icon>

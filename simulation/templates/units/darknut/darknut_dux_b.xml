@@ -3,17 +3,9 @@
     units/commander_aura_1
   units/dux_aura_2
   </Auras>
-  <Cost>
-    <Resources>
-      <food>250</food>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>1000</Max>
-  </Health>
   <Identity>
     <Civ>darknut</Civ>
-    <Classes datatype="tokens">Dux Holounit Large</Classes>
+    <Classes datatype="tokens">Dux Holounit Large Darknut</Classes>
     <GenericName>Dux</GenericName>
     <History>Expert warriors and even better teachers, Dux were commanders that lead by example and raised generations of Darknut warriors. A lone Dux was often attached to scores of soldiers to not only to command them, but to show them how to become even better fighters.</History>
     <Icon>units/darknut/dar_dux.dds</Icon>
