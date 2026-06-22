@@ -2,7 +2,7 @@
 <Entity parent="classes/HC_template_unit_cavalryanti">
     <Identity>
         <Civ>ordona</Civ>
-        <Classes datatype="tokens">Goat Large Yeoman</Classes>
+        <Classes datatype="tokens">Goat Large Yeoman Helmed</Classes>
         <GenericName>Yeoman</GenericName>
         <History>Yeomen were the owners of an Ordonian household, often with several families of farmers below them. Though they were often a bit wealthier than their workers, they still answered to their immediate fief lord and were drafted into mandatory military service. Often Yeomen would ride their family's Goat into battle, bringing with them a spear to match enemy cavalry. Like all of Ordona's goat cavalry, the Yeoman can climb over mountainous terrain.</History>
         <Icon>units/ordona/ord_yeoman.dds</Icon>

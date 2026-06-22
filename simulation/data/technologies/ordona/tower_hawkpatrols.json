@@ -12,7 +12,7 @@
       "value": "Vision/Range",
       "multiply": 1.5
     },
-	{"value": "Trainer/Entities/_string",	"tokens": "units/{civ}_hawk_b2>units/{civ}_hawk_b"}
+	{"value": "Trainer/Entities/_string",	"tokens": "units/{civ}/{civ}_hawk_b"}
   ],
 	"affects": ["Hawksentry"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

@@ -75,9 +75,9 @@
     <Obstruction>
         <Static depth="15.5" width="15.5"/>
     </Obstruction>
-    <Researcher>
-        <Technologies datatype="tokens"/>
-    </Researcher>
+  <Researcher>
+    <Technologies datatype="tokens">ordona/tower_boozebowls</Technologies>
+  </Researcher>
     <Sound>
         <SoundGroups>
             <attack_ranged>attack/weapon/arrowfly.xml</attack_ranged>
@@ -106,3 +106,5 @@
         <FoundationActor>structures/ordona/ordona_scaffoldG.xml</FoundationActor>
     </VisualActor>
 </Entity>
+
+

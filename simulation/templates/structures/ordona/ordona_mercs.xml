@@ -33,7 +33,9 @@
         <Tooltip>Ordonians brewed quite a few strong brands of ale and mead and were famous throughout Hyrule for it. Many travellers would pass through the Province just to sample and partake at the parties that unfolded at these jovial (and often drunken) halls.</Tooltip>
         <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
         <Requirements>
-            <Techs>phase_town</Techs>
+            <Techs>phase_town
+			civ_choices/ordona/choosehero_ashei
+			</Techs>
         </Requirements>
     </Identity>
     <Obstruction>

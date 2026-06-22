@@ -1,4 +1,31 @@
 <Entity parent="HC_template_structure_defense">
+ <Attack>
+        <Ranged>
+            <AttackName>TBD.</AttackName>
+            <Damage>
+                <Pierce>12.0</Pierce>
+                <Magic>0</Magic>
+            </Damage>
+            <MaxRange>90.0</MaxRange>
+            <MinRange>10.0</MinRange>
+            <PreferredClasses datatype="tokens">Human</PreferredClasses>
+            <PrepareTime>1200</PrepareTime>
+            <Projectile>
+                <Gravity>9.81</Gravity>
+                <Speed>75.0</Speed>
+                <Spread>1.5</Spread>
+                <FriendlyFire>false</FriendlyFire>
+                <LaunchPoint y="3"/>
+            </Projectile>
+            <RepeatTime>2000</RepeatTime>
+            <EffectDelay>0</EffectDelay>
+            <Origin>
+                <X>0</X>
+                <Y>15</Y>
+                <Z>0</Z>
+            </Origin>
+        </Ranged>
+    </Attack>
   <BuildRestrictions>
     <Category>DefenseTower</Category>
     <Distance>
@@ -6,6 +33,11 @@
       <MinDistance>60</MinDistance>
     </Distance>
   </BuildRestrictions>
+   <BuildingAI>
+        <DefaultArrowCount>4</DefaultArrowCount>
+        <GarrisonArrowClasses>Infantry</GarrisonArrowClasses>
+        <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    </BuildingAI>
   <Cost>
     <BuildTime>30</BuildTime>
     <Resources>
@@ -20,7 +52,8 @@
     <Square depth="10.0" width="10.0" />
   </Footprint>
   <GarrisonHolder>
-    <List datatype="tokens">Medium Small LargeGarrison</List>
+        <List datatype="tokens">Medium Small LargeGarrison</List>
+        <Max>5</Max>
   </GarrisonHolder>
   <TurretHolder>
     <TurretPoints>
@@ -32,7 +65,7 @@
     </TurretPoints>
   </TurretHolder>
   <Health>
-    <Max>1000</Max>
+    <Max>500</Max>
     <SpawnEntityOnDeath>rubble/debris_ordona_tiny</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -43,6 +76,11 @@
     <Icon>structures/ordona/ord_borderpost.dds</Icon>
     <Tooltip>Small Tower that can detect Camouflaged and Stealthed units.</Tooltip>
     <VisibleClasses datatype="tokens">Tower</VisibleClasses>
+	<Requirements>
+		<Techs>phase_town
+		civ_choices/ordona/choosehero_rusl
+		</Techs>
+	</Requirements>
   </Identity>
   <Obstruction>
     <Static depth="7.5" width="7.5" />
@@ -63,6 +101,6 @@
   </Researcher>
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">units/{civ}_hawk_b2</Entities>
+    <Entities datatype="tokens"></Entities>
   </Trainer>
 </Entity>

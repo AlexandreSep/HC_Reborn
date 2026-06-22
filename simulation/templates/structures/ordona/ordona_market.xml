@@ -63,6 +63,9 @@
     </Sound>
     <Trainer>
         <Entities datatype="tokens">units/{civ}_trader_b
+	units/merc_forestthief_b
+	units/merc_pikku_b
+	units/merc_mago_b
     gaia/lon_lon_cow_1</Entities>
         <DestinationOffset>
             <step1>

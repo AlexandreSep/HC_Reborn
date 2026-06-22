@@ -12,7 +12,7 @@
         <Icon>structures/ordona/ord_ranch.dds</Icon>
         <Tooltip>Trains many Ordonian Cavalry units.</Tooltip>
         <Requirements>
-            <Techs>phase_city</Techs>
+            <Techs>phase_town</Techs>
         </Requirements>
     </Identity>
     <Obstruction>
@@ -36,7 +36,7 @@
     <Trainer>
         <BatchTimeModifier>0.8</BatchTimeModifier>
         <Entities datatype="tokens">units/ordona/{civ}_hawk_b
-      units/ordona/{civ}_shepherd_b
+    units/ordona/{civ}_shepherd_b
     units/ordona/{civ}_yeoman_b
     units/ordona/{civ}_billybat_b
     units/ordona/{civ}_horseman_b

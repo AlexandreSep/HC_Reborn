@@ -39,6 +39,11 @@
     <Icon>structures/ordona/ord_apiary.dds</Icon>
     <Tooltip>Trains Beekeepers and provides a steady flow of Food.</Tooltip>
     <VisibleClasses datatype="tokens">Economic</VisibleClasses>
+	<Requirements>
+            <Techs>phase_town
+			civ_choices/ordona/choosehero_ashei
+			</Techs>
+	</Requirements>
   </Identity>
   <Obstruction>
     <Static depth="30.0" width="30.0" />

@@ -64,7 +64,9 @@
         <Tooltip>Giant Defense fortification that attacks many enemies, acts as a drop-off site and generates Territory. Can also train Rangers, Valiants and Lumberjacks.</Tooltip>
         <VisibleClasses datatype="tokens">Fortress</VisibleClasses>
         <Requirements>
-            <Techs>phase_city</Techs>
+            <Techs>phase_city
+			civ_choices/ordona/choosehero_rusl
+			</Techs>
         </Requirements>
     </Identity>
     <Obstruction>

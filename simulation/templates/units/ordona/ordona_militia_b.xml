@@ -10,7 +10,7 @@
   </Builder>
   <Identity>
     <Civ>ordona</Civ>
-    <Classes datatype="tokens">Medium Class100 Helmed Militia</Classes>
+    <Classes datatype="tokens">Medium Helmed Militia</Classes>
     <GenericName>Militia</GenericName>
     <History>Militia were designated civilians drafted or volunteered into military service during wartime. Often they had basic military training, and while some had state-crafted armor and swords, just as many brought their own handmade weapons and shields to battle.</History>
     <Icon>units/ordona/ord_militia.dds</Icon>

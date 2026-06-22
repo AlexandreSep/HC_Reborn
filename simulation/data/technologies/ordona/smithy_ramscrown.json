@@ -1,15 +1,15 @@
 {
 	"genericName": "Ram's Crown",
 	"description": ".",
-	"cost": {"food": 0, "wood": 100, "stone": 0, "metal": 200},
+	"cost": {"food": 0, "wood": 0, "stone": 500, "metal": 500},
 	"requirements": {"all": [{"tech": "phase_town"}, {"civ": "ordona"}]},
 	"requirementsTooltip": "Unlocked with Town.",
 	"icon": "ordona/smithy_ramscrown.dds",
 	"researchTime": 40,
-	"tooltip": "(Helmed units gain +5 non-magic armor.)",
+	"tooltip": "(Helmed units gain +5 Hack and Pierce armor and +15 Crush Armour.)",
 	"modifications": [{"value": "Resistance/Entity/Damage/Hack", "add": 5},
 		{"value": "Resistance/Entity/Damage/Pierce", "add": 5},
-		{"value": "Resistance/Entity/Damage/Crush", "add": 5}],
+		{"value": "Resistance/Entity/Damage/Crush", "add": 15}],
 	"affects": ["Helmed"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

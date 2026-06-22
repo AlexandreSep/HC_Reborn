@@ -1,14 +1,4 @@
 <Entity parent="classes/HC_template_unit_beast">
-  <Attack>
-    <Melee>
-      <AttackName>Claws</AttackName>
-      <Damage>
-        <Hack>2.0</Hack>
-      </Damage>
-      <MaxRange>6.0</MaxRange>
-      <PreferredClasses datatype="tokens">Infantry Siege</PreferredClasses>
-    </Melee>
-  </Attack>
   <Identity>
     <Civ>ordona</Civ>
     <Classes datatype="tokens">Small Flying</Classes>
@@ -20,10 +10,6 @@
     <Tooltip>Flying Creature Scout unit that can cover much ground and detect Camouflaged and Stealthed units.</Tooltip>
     <VisibleClasses datatype="tokens">Scout</VisibleClasses>
   </Identity>
-  <Position>
-    <Floating>true</Floating>
-    <TurnRate>3.25</TurnRate>
-  </Position>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/hawk_dive.xml</attack_melee>
