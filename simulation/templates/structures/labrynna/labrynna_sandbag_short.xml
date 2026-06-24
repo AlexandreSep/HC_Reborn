@@ -9,8 +9,8 @@
     <Square depth="9.0" width="14.5" />
   </Footprint>
   <Health>
-    <Max>25</Max>
-    <SpawnEntityOnDeath>structures/labrynna/labrynna_scaffold_sandA.xml</SpawnEntityOnDeath>
+    <Max>250</Max>
+    <SpawnEntityOnDeath>rubble/debris_labrynna_tiny</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>labrynna</Civ>
