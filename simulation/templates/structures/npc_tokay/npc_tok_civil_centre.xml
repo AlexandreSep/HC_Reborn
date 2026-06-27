@@ -6,7 +6,7 @@
     <RegenRate>0.5</RegenRate>
   </Capturable>
   <Cost>
-    <BuildTime>500</BuildTime>
+    <BuildTime>120</BuildTime>
     <Resources>
       <food>0</food>
       <metal>500</metal>

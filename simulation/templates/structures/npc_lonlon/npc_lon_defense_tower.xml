@@ -44,7 +44,7 @@
             <food>0</food>
             <metal>0</metal>
             <stone>0</stone>
-            <wood>300</wood>
+            <wood>400</wood>
         </Resources>
     </Cost>
     <Footprint>
@@ -52,7 +52,7 @@
         <Square depth="20.0" width="20.0"/>
     </Footprint>
     <GarrisonHolder>
-        <Max>5</Max>
+        <Max>10</Max>
     </GarrisonHolder>
     <Health>
         <Max>4000</Max>
@@ -63,7 +63,7 @@
         <GenericName>Lon Lon Guard Tower</GenericName>
         <History>Defensive Tower that attacks with arrows.</History>
         <Icon>structures/minor_lonlon/lonlon_tower.dds</Icon>
-        <Tooltip>Defensive Tower that attacks with arrows.</Tooltip>
+        <Tooltip>Defensive Tower with higher Vision and Durability than most of its peers.</Tooltip>
         <VisibleClasses datatype="tokens">Tower</VisibleClasses>
         <Requirements>
             <Techs>phase_town</Techs>
@@ -124,9 +124,12 @@
     <Visibility>
         <CanSpotStealth>
             <MinRange>0</MinRange>
-            <MaxRange>80</MaxRange>
+            <MaxRange>100</MaxRange>
         </CanSpotStealth>
     </Visibility>
+  <Vision>
+    <Range>150</Range>
+  </Vision>
     <VisualActor>
         <Actor>structures/npc_lonlon/npc_lon_towerA.xml</Actor>
     </VisualActor>
