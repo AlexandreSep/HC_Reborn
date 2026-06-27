@@ -7,9 +7,7 @@
 	"icon": "lizalfos/trapper_weakness.dds",
 	"researchTime": 40,
 	"tooltip": "Trappers gain +2 Truedamage",
-	"modifications": [
-		{"value": "Attack/Ranged/Damage/Truedamage", "add": 2}
-	],
+	"modifications": [{"value": "Attack/Ranged/Damage/TrueDamage", "add": 2}],
 	"affects": ["Trapper"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

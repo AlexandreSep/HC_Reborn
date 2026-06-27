@@ -7,10 +7,11 @@
 	"requirementsTooltip": "Requires a third deity.",
 	"icon": "lizalfos/weapon_tukitalarrow.dds",
 	"researchTime": 40,
-	"tooltip": "+30% Ranged Attack - Ranged Infantry",
+	"tooltip": "+30% Ranged Attack - Unit",
 	"modifications": [{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.3},
 	{"value": "Attack/Ranged/Damage/Pierce", "multiply": 1.3},
-	{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.3}],
-	"affects": ["Infantry Ranged"],
+	{"value": "Attack/Ranged/Damage/Crush", "multiply": 1.3},
+	{"value": "Attack/Ranged/Damage/Magic", "multiply": 1.3}],
+	"affects": ["Unit"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }
