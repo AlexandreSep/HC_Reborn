@@ -1,55 +1,22 @@
-<Entity parent="HC_template_unit_cavalry">
-  <Attack>
-    <Melee>
-      <AttackName>Spear</AttackName>
-      <Damage>
-        <Pierce>30</Pierce>
-      </Damage>
-      <MaxRange>7.0</MaxRange>
-      <PrepareTime>1375</PrepareTime>
-      <RepeatTime>1500</RepeatTime>
-    </Melee>
-  </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>200</food>
-      <metal>0</metal>
-      <stone>75</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
+<Entity parent="classes/HC_template_unit_cavalryanti_heavy">
   <Footprint>
     <Circle radius="5.0" />
     <Height>7.0</Height>
   </Footprint>
-  <Health>
-    <Max>380</Max>
-  </Health>
   <Identity>
     <Civ>npc_tokay</Civ>
-    <Classes datatype="tokens">Large Class90 MinorFaction</Classes>
+    <Classes datatype="tokens">Large MinorFaction</Classes>
     <GenericName>Aquadongo Jockey</GenericName>
     <History>Fitted with a giant head-mounted horn, the Sandseal Plower serves as a living battering ram for Gerudo armies. Capable of crossing harsh deserts as well as bodies of water, the Plower can charge into buildings and walls, tearing them apart brick-by-brick.</History>
-    <Icon>units/npc_tokay/npc_tok_aquajockey.dds</Icon>
+    <Icon>units/minor_tokay/tok_aquajockey.dds</Icon>
     <Lang>npc_tokay</Lang>
-    <SelectionGroupName>units/npc_tokay/npc_tok_aquajockey_b</SelectionGroupName>
+    <SelectionGroupName>units/minor_tokay/tok_aquajockey_b</SelectionGroupName>
     <Tooltip>Melee Cavalry unit that can cross over bodies of water.</Tooltip>
     <VisibleClasses datatype="tokens">Melee</VisibleClasses>
   </Identity>
   <Position>
     <Floating>true</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>20.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>20.0</Pierce>
-      </Damage>
-    </Entity>
-    <KnockbackResistance>75</KnockbackResistance>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_melee>attack/natural/aquadongo_bite.xml</attack_melee>
@@ -67,8 +34,6 @@
   </Sound>
   <UnitMotion>
     <PassabilityClass>aquatic</PassabilityClass>
-    <RunMultiplier>1.7142</RunMultiplier>
-    <WalkSpeed>3.5</WalkSpeed>
   </UnitMotion>
   <VisualActor>
     <Actor>units/npc_tokay/npc_tok_aquajockey_b.xml</Actor>

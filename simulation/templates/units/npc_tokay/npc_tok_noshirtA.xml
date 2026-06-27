@@ -20,14 +20,16 @@
   </Attack>
   <Builder>
     <Entities datatype="tokens">
-    structures/npc_tok_civil_centre
+    structures/npc_tokay/npc_tok_civil_centre
+	structures/npc_tokay/npc_tok_bighouse
+	structures/npc_tokay/npc_tok_house
     </Entities>
     <Rate>1.0</Rate>
   </Builder>
   <Cost>
     <BuildTime>7</BuildTime>
     <Resources>
-      <food>100</food>
+      <food>50</food>
     </Resources>
   </Cost>
   <Health>
@@ -38,9 +40,9 @@
     <Classes datatype="tokens">Medium Slave MinorFaction FemaleCitizen</Classes>
     <GenericName>Tokay No-Shirt</GenericName>
     <History>Tokay that have yet to obtain any clothing and are therefore the buttom rung of their culture. Tokay No-Shirts do all the heaviest labor to make sure what little culture the Tokay have remains standing.</History>
-    <Icon>units/npc_tokay/npc_tok_noshirt.dds</Icon>
+    <Icon>units/minor_tokay/tok_noshirt.dds</Icon>
     <Lang>npc_tokay</Lang>
-    <SelectionGroupName>units/npc_tok_noshirtA</SelectionGroupName>
+    <SelectionGroupName>units/npc_tokay/npc_tok_noshirtA</SelectionGroupName>
     <Tooltip>Worker unit: can gather all resources and construct buildings for the Tokay.</Tooltip>
     <VisibleClasses datatype="tokens">Worker</VisibleClasses>
   </Identity>
@@ -60,10 +62,10 @@
       <food.fruit>1</food.fruit>
       <food.grain>0.5</food.grain>
       <food.meat>1</food.meat>
-      <metal.rupees>0.35</metal.rupees>
-      <stone.ore>0.35</stone.ore>
+      <metal.rupees>0.5</metal.rupees>
+      <stone.ore>0.5</stone.ore>
       <stone.ruins>2</stone.ruins>
-      <wood.rock>0.15</wood.rock>
+      <wood.rock>0.5</wood.rock>
       <wood.ruins>5</wood.ruins>
       <wood.tree>0.7</wood.tree>
     </Rates>

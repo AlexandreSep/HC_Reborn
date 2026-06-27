@@ -3,12 +3,12 @@
     <Category>House</Category>
   </BuildRestrictions>
   <Cost>
-    <BuildTime>30</BuildTime>
+    <BuildTime>60</BuildTime>
     <Resources>
       <food>0</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>100</wood>
+      <wood>200</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -16,23 +16,27 @@
     <Height>5.0</Height>
   </Footprint>
   <Health>
-    <Max>1600</Max>
+    <Max>3000</Max>
     <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <Civ>npc_tokay</Civ>
     <GenericName>Tokay Boss Chief Shack</GenericName>
     <History>The Big Tokay Boss usually has a bigger and nicer shack to live in compared to other Tokay. Mostly bigger, not much nicer.</History>
-    <Icon>structures/npc_tokay/npc_tok_chiefshack.dds</Icon>
-    <Tooltip>Tokay Civil Center: trains all Zuna units and serves as a Resource drop off point.</Tooltip>
+    <Icon>structures/minor_tokay/tok_chiefshack.dds</Icon>
+    <Tooltip>Large House that also serves as a Resource drop off point.</Tooltip>
     <VisibleClasses datatype="tokens" />
   </Identity>
   <Obstruction>
     <Static depth="39.5" width="39.5" />
   </Obstruction>
   <Population>
-    <Bonus>35</Bonus>
+    <Bonus>30</Bonus>
   </Population>
+  <ResourceDropsite>
+    <Sharable>true</Sharable>
+    <Types>food wood stone metal</Types>
+  </ResourceDropsite>
   <VisualActor>
     <Actor>structures/npc_tokay/npc_tok_civiccenterA.xml</Actor>
     <FoundationActor>structures/fndn_8x8.xml</FoundationActor>

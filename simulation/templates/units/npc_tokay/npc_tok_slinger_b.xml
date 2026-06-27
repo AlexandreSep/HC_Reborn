@@ -1,59 +1,26 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_archer">
   <Attack>
     <Ranged>
       <AttackName>Sling</AttackName>
       <Damage>
+        <Pierce>0</Pierce>
         <Crush>8</Crush>
       </Damage>
-      <MaxRange>76</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>1500</PrepareTime>
-      <Projectile>
-        <Gravity>9.81</Gravity>
-        <Speed>75.0</Speed>
-        <Spread>1.5</Spread>
-        <FriendlyFire>false</FriendlyFire>
-        <LaunchPoint y="3" />
-      </Projectile>
-      <RepeatTime>2000</RepeatTime>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>135</food>
-      <metal>0</metal>
-      <stone>50</stone>
-      <wood>50</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>180</Max>
-  </Health>
   <Identity>
     <Civ>npc_tokay</Civ>
     <Classes datatype="tokens">Medium MinorFaction</Classes>
     <GenericName>Tokay Slinger</GenericName>
     <History>Tokay Slingers were the defenders of their island homeland, knocking out and tripping up anyone who invaded. Large groups of Slingers could unleash a huge storm of stones with terrifying speed.</History>
-    <Icon>units/npc_tokay/npc_tok_slinger.dds</Icon>
-    <SelectionGroupName>units/npc_tokay/npc_tok_slinger_b</SelectionGroupName>
+    <Icon>units/minor_tokay/tok_slinger.dds</Icon>
+    <SelectionGroupName>units/npc_tokay/tok_slinger_b</SelectionGroupName>
     <Tooltip>Missile unit that hurls stones from their slings.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
   <Position>
     <Floating>false</Floating>
   </Position>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/sling_toss.xml</attack_ranged>

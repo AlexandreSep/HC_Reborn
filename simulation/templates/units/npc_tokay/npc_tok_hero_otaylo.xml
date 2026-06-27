@@ -53,7 +53,7 @@
         <Classes datatype="tokens">HeroOtaylo Hero1 Medium MinorFaction</Classes>
         <GenericName>Tokay Big Boss</GenericName>
         <History>Otaylo became Boss of the Tokay not because of power, intellect, or bloodlines... but because she bought a blue shirt to wear from Labrynna. Her actions inadvertedly lead to Labrynna duping most of her people into slavery, something she’s not all that proud of.</History>
-        <Icon>units/npc_tokay/npc_tok_otaylo.dds</Icon>
+        <Icon>units/minor_tokay/tok_otaylo.dds</Icon>
         <SpecificName>Otaylo</SpecificName>
         <Tooltip>Melee Hero unit that attacks with her hunting spear.</Tooltip>
         <VisibleClasses datatype="tokens">Melee</VisibleClasses>

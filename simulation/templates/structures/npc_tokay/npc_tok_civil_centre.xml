@@ -28,8 +28,8 @@
     <Classes datatype="tokens" />
     <GenericName>Maku Temple</GenericName>
     <History>A large Tokay head carved out of a giant dead Maku tree stump on the beaches of Crescent Island. No one is quite sure the makeup of Tokay religion, not even the Tokay themselves.</History>
-    <Icon>structures/npc_tokay/npc_tok_temple.dds</Icon>
-    <Tooltip>Tokay Religious structure that spreads their territory.</Tooltip>
+    <Icon>structures/minor_tokay/tok_temple.dds</Icon>
+    <Tooltip>Tokay Religious and Civil Center: trains all Tokay units and serves as a Resource drop off point.</Tooltip>
     <VisibleClasses datatype="tokens">Religious</VisibleClasses>
   </Identity>
   <Obstruction>

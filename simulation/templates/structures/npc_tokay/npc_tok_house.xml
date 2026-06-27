@@ -8,7 +8,7 @@
       <food>0</food>
       <metal>0</metal>
       <stone>0</stone>
-      <wood>100</wood>
+      <wood>50</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -16,7 +16,7 @@
     <Square depth="25.0" width="25.0" />
   </Footprint>
   <Health>
-    <Max>1600</Max>
+    <Max>1000</Max>
     <SpawnEntityOnDeath>rubble/debris_moblin_small</SpawnEntityOnDeath>
   </Health>
   <Identity>
@@ -24,7 +24,7 @@
     <Classes datatype="tokens" />
     <GenericName>Tokay Shack</GenericName>
     <History>Crude dwelling that Tokay live in.</History>
-    <Icon>structures/npc_tokay/npc_tok_shack.dds</Icon>
+    <Icon>structures/minor_tokay/tok_shack.dds</Icon>
     <Tooltip>Crude dwelling that Tokay live in.</Tooltip>
     <VisibleClasses datatype="tokens">House</VisibleClasses>
   </Identity>
@@ -32,7 +32,7 @@
     <Static depth="23.0" width="23.0" />
   </Obstruction>
   <Population>
-    <Bonus>25</Bonus>
+    <Bonus>10</Bonus>
   </Population>
   <VisualActor>
     <Actor>structures/npc_tokay/npc_tok_houseA.xml</Actor>
