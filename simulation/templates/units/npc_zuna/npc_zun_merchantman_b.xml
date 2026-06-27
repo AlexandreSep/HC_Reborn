@@ -18,7 +18,7 @@
     <Formations disable="" />
     <GenericName>Zuna Merchantman</GenericName>
     <History>The crafty Zuna were known throughout Hyrule for their honest merchant skills. Many expensive and ornate weapons and decorations came from their work and were highly regarded by many. The Merchantmen could trade for vast sums of Rupees at Markets, as well as store gathered resources for later use.</History>
-    <Icon>units/npc_zuna/npc_zun_merchantman.dds</Icon>
+    <Icon>units/minor_zuna/zun_merchantman.dds</Icon>
     <Tooltip>Trader unit that also serves as a Storehouse for all types of Resources.</Tooltip>
     <VisibleClasses datatype="tokens">Storehouse</VisibleClasses>
   </Identity>
@@ -69,9 +69,6 @@
       <walk>actor/human/movement/walk.xml</walk>
     </SoundGroups>
   </Sound>
-  <Trader>
-    <GainMultiplier>1</GainMultiplier>
-  </Trader>
   <UnitAI>
     <CanPatrol>false</CanPatrol>
   </UnitAI>

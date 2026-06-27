@@ -1,64 +1,26 @@
-<Entity parent="HC_template_unit_infantry">
+<Entity parent="classes/HC_template_unit_crossbow">
   <Attack>
-    <Ranged>
-      <AttackName>Bolts</AttackName>
-      <Damage>
-        <Pierce>20</Pierce>
-      </Damage>
-      <MaxRange>70</MaxRange>
-      <MinRange>15.0</MinRange>
-      <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-      <PrepareTime>800</PrepareTime>
-      <Projectile>
-        <FriendlyFire>false</FriendlyFire>
-        <Gravity>9.81</Gravity>
-        <Speed>100.5</Speed>
-        <Spread>3.0</Spread>
-      </Projectile>
-      <RepeatTime>4000</RepeatTime>
+   <Ranged>
       <Splash>
         <Damage>
-          <Pierce>20</Pierce>
+          <Pierce>2</Pierce>
         </Damage>
         <FriendlyFire>false</FriendlyFire>
         <Range>7</Range>
         <Shape>Circular</Shape>
       </Splash>
-      <TrueDamage>20</TrueDamage>
-      <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>12</BuildTime>
-    <Resources>
-      <food>60</food>
-      <metal>0</metal>
-      <stone>20</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>280</Max>
-  </Health>
   <Identity>
     <Civ>npc_zuna</Civ>
-    <Classes datatype="tokens">Medium Class80 CanGarrison MinorFaction</Classes>
+    <Classes datatype="tokens">Medium CanGarrison MinorFaction</Classes>
     <GenericName>Zuna Tribowman</GenericName>
     <History>Along the terraced walls of Zunayus, scores of these deadly archers defended the capital for many generations. The strange design of the Zuna’s crossbow allowed it to hold and store up to three bolts instead of one, giving them the chance to fire several shots before reloading.</History>
-    <Icon>units/npc_zuna/npc_zun_tribowman.dds</Icon>
+    <Icon>units/minor_zuna/zun_tribowman.dds</Icon>
     <SelectionGroupName>units/npc_zuna/npc_zun_tribowman</SelectionGroupName>
     <Tooltip>Missile unit that looses a triad of projectiles from its crossbow.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>25.0</Crush>
-        <Hack>15.0</Hack>
-        <Pierce>10.0</Pierce>
-      </Damage>
-    </Entity>
-  </Resistance>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/weapon/crossbolt.xml</attack_ranged>

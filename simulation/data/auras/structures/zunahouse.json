@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affects": ["Worker"],
+	"modifications": [{ "value": "Builder/Rate", "multiply": 1.2 }],
+	"auraName": "Inspiring Sight",
+	"auraDescription": "(+20% Build Rate - Workers)",	
+	"overlayIcon": "art/textures/ui/session/auras/thermae_aura_2.dds"
+}

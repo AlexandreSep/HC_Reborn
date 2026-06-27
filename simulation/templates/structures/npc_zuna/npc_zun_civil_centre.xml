@@ -27,7 +27,7 @@
     <Civ>npc_zuna</Civ>
     <GenericName>Zunayan Weaponcrafters</GenericName>
     <History>The Zuna were masters at crafting weaponry. The Darknuts had commissioned and stolen their techniques for years, and many mercenaries from Hyrule would seek the Zuna out to purchase their fine weapons.</History>
-    <Icon>structures/npc_zuna/npc_zun_civcenter.dds</Icon>
+    <Icon>structures/minor_zuna/zun_civcenter.dds</Icon>
     <Tooltip>Zuna Civil Center: trains all Zuna units and serves as a Resource drop off point.</Tooltip>
     <VisibleClasses datatype="tokens" />
   </Identity>

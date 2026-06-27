@@ -1,33 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Entity parent="HC_template_unit_auxiliary">
-    <Attack>
-        <Melee>
-            <AttackName>Ram</AttackName>
-            <Bonuses>
-                <BonusCavMelee>
-                    <Classes>Structure</Classes>
-                    <Multiplier>2.0</Multiplier>
-                </BonusCavMelee>
-            </Bonuses>
-            <Damage>
-                <Crush>100.0</Crush>
-            </Damage>
-            <MaxRange>6.5</MaxRange>
-            <PreferredClasses datatype="tokens">Gates Structure</PreferredClasses>
-            <PrepareTime>1500</PrepareTime>
-            <RepeatTime>2000</RepeatTime>
-        </Melee>
-    </Attack>
-    <Capturable disable=""/>
-    <Cost>
-        <BuildTime>20</BuildTime>
-        <Resources>
-            <food>100</food>
-            <metal>0</metal>
-            <stone>10</stone>
-            <wood>50</wood>
-        </Resources>
-    </Cost>
+<Entity parent="classes/HC_template_unit_beastrambig">
     <Decay>
         <Active>false</Active>
         <SinkProb>0.0</SinkProb>
@@ -44,19 +16,16 @@
         <LoadingRange>6</LoadingRange>
         <Max>6</Max>
     </GarrisonHolder>
-    <Health>
-        <Max>300</Max>
-    </Health>
     <Identity>
         <Civ>civ_zuna</Civ>
-        <Classes datatype="tokens">-Organic Construct Ram Large Class40 MinorFaction</Classes>
+        <Classes datatype="tokens">-Organic Construct Ram Large MinorFaction</Classes>
         <History>A giant and mighty battering ram that the Zuna once used to destroy many a castle, they were perhaps most well known from history in the battle against Baral's Stand, where they managed to break into the mighty Darknut fortress. The Siege Tower can effortlessly destroy the heaviest of fortifications and garrison troops inside.</History>
-        <Icon>units/npc_zuna/npc_zun_siegetower.dds</Icon>
+        <Icon>units/minor_zuna/zun_siegetower.dds</Icon>
         <SpecificName>Zunayun Siege Tower</SpecificName>
         <Tooltip>Large Siege tower that tears apart enemy structures up close.</Tooltip>
         <VisibleClasses datatype="tokens">Siege</VisibleClasses>
         <Requirements>
-            <Techs>phase_town</Techs>
+            <Techs>phase_city</Techs>
         </Requirements>
     </Identity>
     <Position>
@@ -64,16 +33,6 @@
         <Floating>false</Floating>
         <TurnRate>1</TurnRate>
     </Position>
-    <Resistance>
-        <Entity>
-            <Damage>
-                <Crush>40.0</Crush>
-                <Hack>10.0</Hack>
-                <Pierce>20.0</Pierce>
-            </Damage>
-        </Entity>
-        <KnockbackResistance>100</KnockbackResistance>
-    </Resistance>
     <Sound>
         <SoundGroups>
             <attack_melee>attack/siege/ram_attack.xml</attack_melee>
@@ -123,13 +82,6 @@
             </Archer6>
         </TurretPoints>
     </TurretHolder>
-    <UnitMotion>
-        <RunMultiplier>1.4285</RunMultiplier>
-        <WalkSpeed>3.5</WalkSpeed>
-    </UnitMotion>
-    <Vision>
-        <Range>80</Range>
-    </Vision>
     <VisualActor>
         <Actor>units/npc_zuna/npc_zun_towerram_b.xml</Actor>
     </VisualActor>

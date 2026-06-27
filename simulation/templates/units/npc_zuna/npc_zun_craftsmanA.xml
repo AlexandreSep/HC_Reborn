@@ -20,7 +20,8 @@
   </Attack>
   <Builder>
     <Entities datatype="tokens">
-    structures/npc_zun_civil_centre
+    structures/npc_zuna/npc_zun_civil_centre
+	structures/npc_zuna/npc_zun_house
     </Entities>
     <Rate>1.0</Rate>
   </Builder>
@@ -38,7 +39,7 @@
     <Classes datatype="tokens">Medium MinorFaction FemaleCitizen</Classes>
     <GenericName>Craftsman</GenericName>
     <History>Most known for their weaponry, Zuna Crafstman did far more than just forge weapons. Their skill with masonry was excellent and as such they built much of the Zuna's elegant cities.</History>
-    <Icon>units/npc_zuna/npc_zun_craftsman.dds</Icon>
+    <Icon>units/minor_zuna/zun_craftsman.dds</Icon>
     <SelectionGroupName>units/npc_zuna/npc_zun_crafstman</SelectionGroupName>
     <Tooltip>Worker unit: can gather all resources and construct buildings for the Zuna.</Tooltip>
     <VisibleClasses datatype="tokens">Worker</VisibleClasses>

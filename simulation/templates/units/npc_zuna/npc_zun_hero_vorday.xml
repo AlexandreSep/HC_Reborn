@@ -44,7 +44,7 @@
         <Classes datatype="tokens">HeroVorday Hero1 Medium MinorFaction</Classes>
         <GenericName>Vizier of Zunayus</GenericName>
         <History>The wealthiest and most powerful Zuna to have lived, Master Vorday amassed his assests by being a suck-up and yes-man to the various empires of the Gerudo Desert. While he may be seen as a total coward by outsiders, his habit of selling out to foreigners has lead to the Zuna becoming a giant merchant empire and biggest arms dealer in all of Hyrule.</History>
-        <Icon>units/npc_zuna/npc_zun_vorday.dds</Icon>
+        <Icon>units/minor_zuna/zun_vorday.dds</Icon>
         <SpecificName>Master Vorday</SpecificName>
         <Tooltip>Melee Hero unit that uses his golden trident in battle.</Tooltip>
         <VisibleClasses datatype="tokens">Melee</VisibleClasses>
