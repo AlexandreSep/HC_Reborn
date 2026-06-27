@@ -62,7 +62,7 @@
         <Civ>npc_lonlon</Civ>
         <GenericName>Lon Lon Guard Tower</GenericName>
         <History>Defensive Tower that attacks with arrows.</History>
-        <Icon>structures/npc_lonlon/npc_lon_tower.dds</Icon>
+        <Icon>structures/minor_lonlon/lonlon_tower.dds</Icon>
         <Tooltip>Defensive Tower that attacks with arrows.</Tooltip>
         <VisibleClasses datatype="tokens">Tower</VisibleClasses>
         <Requirements>

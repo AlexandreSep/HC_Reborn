@@ -27,7 +27,7 @@
     <Civ>npc_lonlon</Civ>
     <GenericName>Lon Lon Ranch</GenericName>
     <History>The center of any Hylian establishment, a Town Hall mandates and regulates the economy and growth of both civilian and military expansion. Able to train a workforce of Citizens for both labor and soldier duty as well as stock resources.</History>
-    <Icon>structures/npc_lonlon/npc_lon_civcenter.dds</Icon>
+    <Icon>structures/minor_lonlon/lonlon_civcenter.dds</Icon>
     <Tooltip>Lon Lon Ranch Civil Center: trains all Lon Lon units and serves as a Resource drop off point.</Tooltip>
     <VisibleClasses datatype="tokens" />
   </Identity>

@@ -5,10 +5,10 @@
   <Cost>
     <BuildTime>12</BuildTime>
     <Resources>
-      <food>0</food>
+      <food>150</food>
       <metal>20</metal>
       <stone>0</stone>
-      <wood>85</wood>
+      <wood>50</wood>
     </Resources>
   </Cost>
   <Footprint>
@@ -23,7 +23,7 @@
     <Classes datatype="tokens">-Organic Construct Large MinorFaction</Classes>
     <GenericName>Cow Cart</GenericName>
     <History>A simple cart carrying a cache of famous Lon Lon Milk. In the heat of battle soldiers could return to this supply and refresh themselves, even healing some of their wound before returning to the frontlines.</History>
-    <Icon>units/npc_lonlon/npc_lon_cowcart.dds</Icon>
+    <Icon>units/minor_lonlon/lonlon_cowcart.dds</Icon>
     <SelectionGroupName>units/npc_lonlon/npc_lon_cowcart_b</SelectionGroupName>
     <Tooltip>Support unit that can heal nearby units.</Tooltip>
     <VisibleClasses datatype="tokens">Support</VisibleClasses>

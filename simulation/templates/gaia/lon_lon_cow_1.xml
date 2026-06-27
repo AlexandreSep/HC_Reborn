@@ -14,7 +14,7 @@
     <Civ>gaia</Civ>
     <GenericName>Meat</GenericName>
     <History/>
-    <Icon>units/npc_lonlon/npc_lon_cow.dds</Icon>
+    <Icon>units/minor_lonlon/lonlon_cow.dds</Icon>
     <SpecificName>Lon Lon Cow</SpecificName>
     <Tooltip>Cows from Lon Lon Ranch have a reputation for producing the best-tasting Milk in Hyrule. In addition to quenching thirst, the Milk has similar effects to alcohol.</Tooltip>
     <Requirements>

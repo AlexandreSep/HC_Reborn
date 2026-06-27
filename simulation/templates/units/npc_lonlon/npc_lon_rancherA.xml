@@ -1,7 +1,9 @@
 <Entity parent="HC_template_unit_auxiliary">
   <Builder>
     <Entities datatype="tokens">
-    structures/npc_lon_civil_centre
+    structures/npc_lonlon/npc_lon_civil_centre
+	structures/npc_lonlon/npc_lon_stables
+	structures/npc_lonlon/npc_lon_defense_tower
     </Entities>
     <Rate>1.0</Rate>
   </Builder>
@@ -9,18 +11,19 @@
     <BuildTime>7</BuildTime>
     <Resources>
       <food>50</food>
+	  <metal>0</metal>
     </Resources>
   </Cost>
   <Health>
-    <Max>25</Max>
+    <Max>50</Max>
   </Health>
   <Identity>
     <Civ>npc_lonlon</Civ>
     <Classes datatype="tokens">Medium MinorFaction FemaleCitizen</Classes>
     <GenericName>Rancher</GenericName>
     <History>One of countless hired hands in the employ of Malon and Lon Lon Ranch. The Ranchers tend to the various jobs needed to run the place: caring for the animals and livestock, farming the various crops, and of course milking the Cows for their famous milk.</History>
-    <Icon>units/npc_lonlon/npc_lon_rancher.dds</Icon>
-    <SelectionGroupName>units/npc_lon_rancherA</SelectionGroupName>
+    <Icon>units/minor_lonlon/lonlon_rancher.dds</Icon>
+    <SelectionGroupName>units/minor_lonlon/lonlon_rancherA</SelectionGroupName>
     <Tooltip>Worker unit: can gather all resources and construct buildings for Lon Lon Ranch.</Tooltip>
     <VisibleClasses datatype="tokens">Worker</VisibleClasses>
   </Identity>

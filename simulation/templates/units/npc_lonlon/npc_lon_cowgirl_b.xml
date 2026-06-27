@@ -1,5 +1,6 @@
-<Entity parent="HC_template_unit_cavalry">
+<Entity parent="classes/HC_template_unit_cavalry">
   <Attack>
+  <Melee disable="" />
     <Ranged>
       <AttackName>Arrows</AttackName>
       <Damage>
@@ -20,24 +21,12 @@
       <EffectDelay>0</EffectDelay>
     </Ranged>
   </Attack>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>0</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>150</Max>
-  </Health>
   <Identity>
     <Civ>npc_lonlon</Civ>
     <Classes datatype="tokens">Large MinorFaction</Classes>
     <GenericName>Cowgirl</GenericName>
     <History>The Cowgirls of Lon Lon Ranch helped wrangle their flocks and also kept the property safe from thieves and would be conquerors. Armed with a bow and arrow, Cowgirls could outride and snipe their targets.</History>
-    <Icon>units/npc_lonlon/npc_lon_cowgirl.dds</Icon>
+    <Icon>units/minor_lonlon/lonlon_cowgirl.dds</Icon>
     <SelectionGroupName>units/npc_lonlon/npc_lon_cowgirl_b</SelectionGroupName>
     <Tooltip>Missile Cavalry unit that attacks with bow and arrow.</Tooltip>
     <VisibleClasses datatype="tokens">Missile</VisibleClasses>

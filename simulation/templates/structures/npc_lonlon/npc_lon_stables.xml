@@ -9,7 +9,7 @@
             <food>0</food>
             <metal>0</metal>
             <stone>0</stone>
-            <wood>400</wood>
+            <wood>200</wood>
         </Resources>
     </Cost>
     <Footprint>
@@ -17,15 +17,15 @@
         <Square depth="38.0" width="38.0"/>
     </Footprint>
     <Health>
-        <Max>4000</Max>
+        <Max>2000</Max>
         <SpawnEntityOnDeath>rubble/debris_ordona_medium</SpawnEntityOnDeath>
     </Health>
     <Identity>
         <Civ>npc_lonlon</Civ>
         <GenericName>Lon Lon Stables</GenericName>
-        <History>Trains Lon Lon Cavalry units.</History>
-        <Icon>structures/npc_lonlon/npc_lon_barn.dds</Icon>
-        <Tooltip>Trains Lon Lon Cavalry units.</Tooltip>
+        <History>Trains Lon Lon Cavalry units especially fast in Batches.</History>
+        <Icon>structures/minor_lonlon/lonlon_barn.dds</Icon>
+        <Tooltip>Trains Lon Lon Cavalry units especially fast in Batches.</Tooltip>
         <VisibleClasses datatype="tokens">Barracks</VisibleClasses>
         <Requirements>
             <Techs>phase_village</Techs>
@@ -44,8 +44,11 @@
         </SoundGroups>
     </Sound>
     <Trainer>
-        <BatchTimeModifier>0.8</BatchTimeModifier>
-        <Entities datatype="tokens"/>
+        <BatchTimeModifier>0.4</BatchTimeModifier>
+		<Entities datatype="tokens">
+		units/npc_lonlon/npc_lon_riders_b
+		units/npc_lonlon/npc_lon_cowgirl_b
+		</Entities>
         <DestinationOffset>
             <step1>
                 <X>0</X>

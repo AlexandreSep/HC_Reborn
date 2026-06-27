@@ -1,58 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="HC_template_unit_cavalry">
-    <Attack>
-        <Melee>
-            <AttackName>Swords</AttackName>
-            <Bonuses>
-                <BonusCavMelee>
-                    <Classes>Cavalry</Classes>
-                    <Multiplier>3.0</Multiplier>
-                </BonusCavMelee>
-            </Bonuses>
-            <Damage>
-                <Hack>10.0</Hack>
-            </Damage>
-            <MaxRange>5.0</MaxRange>
-            <PreferredClasses datatype="tokens">Infantry</PreferredClasses>
-            <PrepareTime>1100</PrepareTime>
-            <RepeatTime>1300</RepeatTime>
-        </Melee>
-    </Attack>
-    <Cost>
-        <BuildTime>20</BuildTime>
-        <Resources>
-            <food>100</food>
-            <metal>0</metal>
-            <stone>30</stone>
-            <wood>0</wood>
-        </Resources>
-    </Cost>
-    <Health>
-        <Max>150</Max>
-    </Health>
+<Entity parent="classes/HC_template_unit_cavalryanti">
     <Identity>
         <Civ>npc_lonlon</Civ>
         <Classes datatype="tokens">Large MinorFaction</Classes>
         <GenericName>Ranch Riders</GenericName>
         <History>Mounted on the fastest horses in all of Hyrule, Lon Lon's Ranch Riders patrolled Hyrule Field with vigilance to protect the busienss and services of their employer. Nothing on foot could match their speed.</History>
-        <Icon>units/npc_lonlon/npc_lon_rider.dds</Icon>
+        <Icon>units/minor_lonlon/lonlon_rider.dds</Icon>
         <Tooltip>Fast Melee Cavalry unit that can take on and best other cavalry units.</Tooltip>
         <VisibleClasses datatype="tokens">Melee</VisibleClasses>
         <Requirements>
             <Techs>phase_village</Techs>
         </Requirements>
     </Identity>
-    <Resistance>
-        <Entity>
-            <Damage>
-                <Crush>7.0</Crush>
-                <Hack>7.0</Hack>
-                <Pierce>7.0</Pierce>
-                <Magic>1</Magic>
-            </Damage>
-        </Entity>
-        <KnockbackResistance>75</KnockbackResistance>
-    </Resistance>
     <Sound>
         <SoundGroups>
             <attack_melee>attack/weapon/sword.xml</attack_melee>
@@ -68,10 +27,6 @@
             <walk>actor/movement/horse/horse_footsteps.xml</walk>
         </SoundGroups>
     </Sound>
-    <UnitMotion>
-        <RunMultiplier>1.4814</RunMultiplier>
-        <WalkSpeed>27.0</WalkSpeed>
-    </UnitMotion>
     <VisualActor>
         <Actor>units/npc_lonlon/npc_lon_rider_b.xml</Actor>
     </VisualActor>

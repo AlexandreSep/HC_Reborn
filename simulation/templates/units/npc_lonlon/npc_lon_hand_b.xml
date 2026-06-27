@@ -1,14 +1,5 @@
-<Entity parent="HC_template_unit_auxiliary">
+<Entity parent="classes/HC_template_unit_spearman">
   <Attack>
-    <Melee>
-      <AttackName>Knife</AttackName>
-      <Damage>
-        <Hack>2.0</Hack>
-      </Damage>
-      <MaxRange>3</MaxRange>
-      <PrepareTime>500</PrepareTime>
-      <RepeatTime>1000</RepeatTime>
-    </Melee>
     <Slaughter>
       <RepeatTime>1000</RepeatTime>
       <AttackName>Knife</AttackName>
@@ -23,38 +14,16 @@
     </Entities>
     <Rate>0.75</Rate>
   </Builder>
-  <Cost>
-    <BuildTime>9</BuildTime>
-    <Resources>
-      <food>35</food>
-      <metal>0</metal>
-      <stone>5</stone>
-      <wood>0</wood>
-    </Resources>
-  </Cost>
-  <Health>
-    <Max>75</Max>
-  </Health>
   <Identity>
     <Civ>npc_lonlon</Civ>
     <Classes datatype="tokens">Medium MinorFaction</Classes>
     <GenericName>Ranch Hand</GenericName>
     <History>Ranch Hands helped maintain Lon Lon Ranch, doing some of the heavier dirty work and keeping wild animals away from their livestock.</History>
-    <Icon>units/npc_lonlon/npc_lon_hand.dds</Icon>
+    <Icon>units/minor_lonlon/lonlon_hand.dds</Icon>
     <SelectionGroupName>units/npc_lonlon/npc_lon_hand_b</SelectionGroupName>
     <Tooltip>Light Melee unit that can help workers construct buildings and gather resources.</Tooltip>
     <VisibleClasses datatype="tokens">Melee Worker</VisibleClasses>
   </Identity>
-  <Resistance>
-    <Entity>
-      <Damage>
-        <Crush>3.0</Crush>
-        <Hack>5.0</Hack>
-        <Pierce>5.0</Pierce>
-        <Magic>1</Magic>
-      </Damage>
-    </Entity>
-  </Resistance>
   <ResourceGatherer>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>

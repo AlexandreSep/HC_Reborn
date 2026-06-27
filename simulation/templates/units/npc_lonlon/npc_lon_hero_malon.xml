@@ -30,7 +30,7 @@
         <Classes datatype="tokens">HeroMalon Hero1 Large MinorFaction</Classes>
         <GenericName>Famous Rancher of Lon Lon</GenericName>
         <History>Malon Lontha is the owner of Lon Lon Ranch and a renowned businesswoman in the Kingdom of Hyrule. Continuing her father's work, she runs and operates Lon Lon Ranch, raising the world's best horses and selling the most famous milk to countless customers.</History>
-        <Icon>units/npc_lonlon/npc_lon_malon.dds</Icon>
+        <Icon>units/minor_lonlon/lonlon_malon.dds</Icon>
         <SpecificName>Malon</SpecificName>
         <Tooltip>Missile Cavalry Hero that snipes her enemies with bow and arrows on horseback.</Tooltip>
         <VisibleClasses datatype="tokens">Missile</VisibleClasses>
