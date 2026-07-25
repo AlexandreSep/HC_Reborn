@@ -8,8 +8,8 @@
 	"researchTime": 40,
 	"tooltip": "30% faster meat and fish gathering speed and +5 Resource Capacity - Drudge",
 	"modifications": [
-		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.2},
-		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.2},
+		{"value": "ResourceGatherer/Rates/food.meat", "multiply": 1.3},
+		{"value": "ResourceGatherer/Rates/food.fish", "multiply": 1.3},
 		{"value": "ResourceGatherer/Capacities/food", "add": 5}],
 	"affects": ["Worker"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"

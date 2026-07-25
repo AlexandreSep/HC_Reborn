@@ -15,7 +15,7 @@
 	  <two>
         <Interval>10000</Interval>
         <LinkedDestruction>true</LinkedDestruction>
-        <Max>3</Max>
+        <Max>2</Max>
         <SpawnNumber>1</SpawnNumber>
         <StartDelay>10000</StartDelay>
         <Template>units/zola/zola_bigocto_guard</Template>
@@ -30,8 +30,8 @@
   <ResourceTrickle>
     <Interval>4000</Interval>
     <Rates>
-      <wood>1.0</wood>
-	  <stone>1.0</stone>
+	<wood>1.0</wood>
+	<stone>1.0</stone>
     </Rates>
   </ResourceTrickle>
 </Entity>

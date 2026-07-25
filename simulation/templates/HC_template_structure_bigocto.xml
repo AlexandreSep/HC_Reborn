@@ -31,9 +31,6 @@
       </Splash>
     </Ranged>
   </Attack>
-  <Auras datatype="tokens">
-    units/zola/octobuilding_price
-  </Auras>
   <Builder>
     <Entities datatype="tokens">
 	structures/zola/zola_civil_centre
@@ -80,11 +77,15 @@
   <ResourceGatherer>
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>
-      <wood>30</wood>
+      <metal>30</metal>
+      <stone>30</stone>
+	  <wood>30</wood>
     </Capacities>
     <MaxDistance>6</MaxDistance>
     <Rates>
-      <wood.tree>2.5</wood.tree>
+      <wood.rock>2.5</wood.rock>
+	  <metal.rupees>2.0</metal.rupees>
+	  <stone.ore>2.0</stone.ore>
     </Rates>
   </ResourceGatherer>
   <Selectable>

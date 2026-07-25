@@ -39,10 +39,8 @@
       phase_town_generic
       phase_city_generic
 	  zola/civil_cost_drudge
-	  zola/civil_cost_octo
-	  zola/civil_gather_b
 	  zola/civil_gather_drudge
-	  zola/civil_gather_octo
+	  zola/civil_gather_b
 	  zola/player_iszola
     </Technologies>
   </Researcher>

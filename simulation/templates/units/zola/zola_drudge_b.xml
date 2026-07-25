@@ -21,12 +21,20 @@
     <BaseSpeed>1.0</BaseSpeed>
     <Capacities>
       <food>10</food>
+      <metal>10</metal>
+      <stone>10</stone>
+      <wood>10</wood>
     </Capacities>
     <MaxDistance>2.0</MaxDistance>
     <Rates>
       <food.fruit>1.0</food.fruit>
       <food.fish>1.0</food.fish>
       <food.meat>1.0</food.meat>
+	  <metal.rupees>0.60</metal.rupees>
+      <stone.ore>0.60</stone.ore>
+      <stone.ruins>0.60</stone.ruins>
+      <wood.tree>0.60</wood.tree>
+      <wood.ruins>0.60</wood.ruins>
     </Rates>
   </ResourceGatherer>
   <Sound>

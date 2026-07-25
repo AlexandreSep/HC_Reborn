@@ -1,13 +1,17 @@
 {
 	"genericName": "Drudge tools",
 	"description": "Drudges are provided with basic tools.",
-	"cost": {"food": 0, "wood": 200, "stone": 0, "metal": 75},
+	"cost": {"food": 0, "wood": 0, "stone": 200, "metal": 200},
 	"requirements": {"all": [{"tech": "phase_village"}, {"civ": "zola"}]},
 	"icon": "tech_generic.dds",
 	"researchTime": 40,
-	"tooltip": "Removes material cost, +5 Resource Capacity - Drudge",
+	"tooltip": "Removes material and wood cost, +5 Resource Capacity - Drudge",
 	"modifications": [{"value": "Cost/Resources/wood", "add": -20},
-	{"value": "ResourceGatherer/Capacities/food", "add": 5}],
+	{"value": "Cost/Resources/wood", "add": -20},
+	{"value": "ResourceGatherer/Capacities/food", "add": 5},
+	{"value": "ResourceGatherer/Capacities/wood", "add": 5},
+	{"value": "ResourceGatherer/Capacities/stone", "add": 5},
+	{"value": "ResourceGatherer/Capacities/metal", "add": 5}],
 	"affects": ["Drudge"],
 	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
 }

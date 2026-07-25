@@ -11,29 +11,12 @@
   </Attack>
   <Identity>
     <Civ>zola</Civ>
-    <Classes datatype="tokens">Small Creature MaiamaiBonus MaiamaiBonusC Worker Octorok Octo</Classes>
+    <Classes datatype="tokens">Small Creature MaiamaiBonus MaiamaiBonusC Octorok Octo</Classes>
     <GenericName>Octorok</GenericName>
     <History>Cunning and craven, the River Octorok floats belong the surface of rivers and lakes, waiting for prey, upon which it will surface and attempt to disabled them with spit rocks and debris for later consumption. Collecting said debris and rocks also makes them perfect for gathering materials</History>
     <Icon>gaia/fauna_octorokA.dds</Icon>
     <Tooltip>Ranged Creature and Gather unit.</Tooltip>
   </Identity>
-    <ResourceGatherer>
-    <BaseSpeed>1.0</BaseSpeed>
-    <Capacities>
-      <food>8</food>
-      <metal>8</metal>
-      <stone>8</stone>
-      <wood>8</wood>
-    </Capacities>
-    <MaxDistance>2.0</MaxDistance>
-    <Rates>
-      <metal.rupees>0.50</metal.rupees>
-      <stone.ore>0.50</stone.ore>
-      <stone.ruins>0.50</stone.ruins>
-      <wood.rock>0.50</wood.rock>
-      <wood.ruins>0.50</wood.ruins>
-    </Rates>
-  </ResourceGatherer>
   <Sound>
     <SoundGroups>
       <attack_ranged>attack/natural/octorok_spit.xml</attack_ranged>
