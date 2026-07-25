@@ -7,7 +7,7 @@
 	"researchTime": 40,
 	"tooltip": "Removes material and wood cost, +5 Resource Capacity - Drudge",
 	"modifications": [{"value": "Cost/Resources/wood", "add": -20},
-	{"value": "Cost/Resources/wood", "add": -20},
+	{"value": "Cost/Resources/stone", "add": -20},
 	{"value": "ResourceGatherer/Capacities/food", "add": 5},
 	{"value": "ResourceGatherer/Capacities/wood", "add": 5},
 	{"value": "ResourceGatherer/Capacities/stone", "add": 5},

@@ -58,7 +58,6 @@
   </Sound>
   <Trainer>
     <Entities datatype="tokens">
-	  units/zola/{civ}_octorok_b
 	  units/zola/{civ}_drudge_b
 	  units/zola/{civ}_hero_barudakan
 	  units/zola/{civ}_hero_maiamai
